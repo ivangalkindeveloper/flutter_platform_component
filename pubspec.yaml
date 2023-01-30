@@ -1,0 +1,35 @@
+name: flutter_component
+description: A new Flutter package project.
+version: 1.0.0
+homepage:
+publish_to: none
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  animate_do:
+    path: package/animate_do
+  animations:
+    path: package/animations
+  badges:
+    path: package/badges
+  custom_rounded_rectangle_border:
+    path: package/custom_rounded_rectangle_border
+  flutter_vibrate:
+    path: package/flutter_vibrate
+  modal_bottom_sheet:
+    path: package/modal_bottom_sheet
+  pinput:
+    path: package/pinput
+    
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints:
+
+flutter:
+  uses-material-design: true
