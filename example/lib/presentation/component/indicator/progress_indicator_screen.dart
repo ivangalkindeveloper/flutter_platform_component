@@ -26,26 +26,77 @@ class _ProgressIndicatorScreenState extends State<ProgressIndicatorScreen> {
       ),
       body: FCListView(
         children: [
+          FCPrimaryButton(
+            title: "Action",
+            onPressed: () => setState(() {
+              if (this._value == 1) {
+                this._value = 0;
+              } else {
+                this._value = this._value + 0.1;
+              }
+            }),
+          ),
+          SizedBox(height: size.s16),
           FCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          //TODO Dark
+          FCBlueDarkProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCGreenDarkProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCPrimaryDarkProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCRedDarkProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCSecondaryDarkProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCYellowDarkProgressIndicator(value: this._value),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          //TODO Default
+          FCBlackAlwaysProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCBlackProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCBlueProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCGreenProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCGreyProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCPrimaryProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCRedProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCSecondaryProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCWhiteAlwaysProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCWhiteProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCYellowProgressIndicator(value: this._value),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          //TODO Light
+          FCBlueLightProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCGreenLightProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCPrimaryLightProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCRedLightProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCSecondaryLightProgressIndicator(value: this._value),
+          SizedBox(height: size.s16 / 2),
+          FCYellowLightProgressIndicator(value: this._value),
         ],
       ),
     );
