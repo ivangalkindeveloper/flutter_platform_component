@@ -1,41 +1,41 @@
 # Flutter Component
-A ready-made platform component base that uses ready-made abstractions for quick use.
+📱 A ready-made platform component base that uses ready-made abstractions for quick use.
 
-## Purpose and benefits
+## Benefits
 This package was created in order to reduce the boilerplate of the presentation layer, to provide ready-made basic and custom components, which are also decomposed by platform.\
 The package contains mature components, behaviors and approaches that will suit most applications.
 
-## Design paradigma
+## Design
 Components follow the following design paradigm:
 1) All components must aspire to the behavior of the target platform;
 2) If there is no such component in the main platform cookbook, a component is needed that will be as similar as possible to it;
 3) Do not change the color of the blocked component;
 4) Do not mix the design of cross-platform components and their behavior.
 
-## Depends packages
+## Forks
 The package uses a fork of the following packages:\
-animate_do - fade animations.\
-animations - transitional animations.\
-badges - badges.\
-custom_rounded_rectangle_border - additional class for segment control components.\
-flutter_vibrate - all vibrations.\
-modal_bottom_sheet - transitions that support modal animations and modal windows appearance method.\
-pinput - code fields and PIN fields.\
+[animate_do](https://pub.dev/packages/animate_do) - Fade animations.\
+[animations](https://pub.dev/packages/animations) - transitional animations.\
+[badges](https://pub.dev/packages/badges) - badges.\
+[custom_rounded_rectangle_border](https://pub.dev/packages/custom_rounded_rectangle_border) - additional class for segment control component.\
+[flutter_vibrate](https://pub.dev/packages/flutter_vibrate) - all vibrations.\
+[modal_bottom_sheet](https://pub.dev/packages/modal_bottom_sheet) - transitions that support modal animations and modal windows appearance method.\
+[pinput](https://pub.dev/packages/pinput) - code fields and PIN fields.\
 We express our gratitude to the authors of these dependencies.
 
 ## Usage
 Initial setup:
 ```dart
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return FlutterComponent(
+    return FlutterComponent( // Initialize the component widget
       platform: TargetPlatform.iOS,
-      theme: MyLightTheme(),
+      theme: MyLightTheme(), 
       size: MySizes(),
       textStyle: MyTextStyle(),
       haptic: MyHaptic(),
@@ -47,17 +47,26 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-Usage base components:
+Usage basic components:
 ```dart
-const like = 'sample';
+    FCBasicButton(
+      backgroundColor: theme.primary,
+      splashColor: theme.primaryLight,
+      borderRadius: BorderRadius.circular(24),
+      child: Text("Next"),
+      onPressed: _next,
+    ),
 ```
 
 Usage custom components:
 ```dart
-const like = 'sample';
+    FCPrimaryButton(
+      title: "Next", 
+      onPressed: _next,
+    ),
 ```
 
-## Main entites
+## MaIn entites
 ### Platform
 ### Theme
 ### Size
@@ -67,65 +76,69 @@ const like = 'sample';
 ## Components
 
 ### Animation
-#### Animated container
-#### Animated cross fade
-#### Animated fade in down
-#### Animated fade in left
-#### Animated fade in right
-#### Animated fade in up
-#### Animated fade in
-#### Animated fade out down
-#### Animated fade out left
-#### Animated fade out right
-#### Animated fade out up
-#### Animated fade out
-#### Animated opacity stack
-#### Animated opacity
-#### Animated switcher
-#### Animated transition switcher
+#### Animated Container
+#### Animated Cross Fade
+#### Animated Fade In Down
+#### Animated Fade In Left
+#### Animated Fade In Right
+#### Animated Fade In Up
+#### Animated Fade In
+#### Animated Fade Out Down
+#### Animated Fade Out Left
+#### Animated Fade Out Right
+#### Animated Fade Out Up
+#### Animated Fade Out
+#### Animated Ppacity Stack
+#### Animated Opacity
+#### Animated Switcher
+#### Animated Transition Switcher
 
 ### App
 
-### App bar
+### App Bar
 
 ### Badge
-#### Basic badge
-#### Basic counter badge content
-#### Basic gradient counter badge content
-#### Basic dot badge content
-#### Basic gradient dot badge content
+#### Badge
+#### Counter Badge Content
+#### Gradient Counter Badge Content
+#### Dot Badge Content
+#### Gradient Dot Badge Content
 
 ### Blur
 
 ### Button
-#### Basic button
-#### Basic gradient button
-#### Basic icon button
+#### Button
+#### Gradient Button
+#### Icon Button
 
 ### Card
-#### Basic card
-#### Basic gradient card
-#### Basic select card
-#### Basic gradient select card
+#### Card
+#### Gradient Card
+#### Select Card
+#### Gradient Select Card
 
 ### Checkbox
-#### Basic checkbox
+#### Checkbox
 
-### Code field
-#### Basic code field
-#### Basic gradient code field
+### Code Field
+#### Code Field
+#### Gradient Code Field
 
-### Date picker
+### Date Picker
+
+### Default
+#### List View
+#### Padding
 
 ### Dialog
 #### Dialog
-#### Dialog item
+#### Dialog Item
 
 ### Field
-#### Basic form field
-#### Basic gradient form field
-#### Basic select field
-#### Basic gradient select field
+#### Form Field
+#### Gradient Form Field
+#### Select Field
+#### Gradient Select Field
 
 ### Global
 
@@ -134,92 +147,95 @@ const like = 'sample';
 #### Gradient mask
 
 ### Icon
+#### Icon
 
 ### Indicator
-#### Basic circular indicator
-#### Basic gradient circular indicator
-#### Basic page indicator
-#### Basic gradient page indicator
-#### Basic progress indicator
-#### Basic story indicator
+#### Circular Indicator
+#### Gradient Circular Indicator
+#### Page Indicator
+#### Gradient Page Indicator
+#### Progress Indicator
+#### Story Indicator
 
 ### Keyboard
 #### Keyboard
-#### Keyboard button
-#### Keyboard number button
+#### Keyboard Button
+#### Keyboard Number Button
 
 ### List
-#### List
-#### List item
-#### List view
-#### Refresh list
+#### List Card
+#### List Card Item
+#### List Refresh
 
 ### Modal
-#### Action modal
-#### Action modal item
-#### Expand modal
-#### White always expand modal
-#### Small modal
+#### Action Modal
+#### Action Modal Item
+#### Expanded Modal
+#### White Always Expanded Modal
+#### Small Modal
 
 ### Navigation
-#### Bottom navigation bar
-#### Bottom navigation bar icon item
-#### Bottom navigation bar icon item gradient
-#### Bottom navigation bar widget item
-#### Bottom navigation bar widget item gradient
-#### Nested navigation
+#### Bottom Navigation Bar
+#### Bottom Navigation Bar Icon Item
+#### Bottom Navigation Bar Gradient Icon Item
+#### Bottom Navigation Bar Widget Item
+#### Bottom Navigation Bar Gradient Widget Item
+#### Nested Navigation
 
-### PIN field
-#### Basic PIN Field
-#### Basic gradient PIN field
+### PIN Field
+#### PIN Field
+#### Gradient PIN Field
 
 ### Radio
-#### Basic radio
+#### Radio
 
 ### Scaffold
+#### Scaffold
 
 ### Scrollbar
+#### Scrollbar
 
-### Segment control
-#### Basic segment control
-#### Basic gradient segment control
-#### Segment control item
+### Segment Control
+#### Segment Control
+#### Gradient Segment Control
+#### Segment Control Item
 
 ### Shimmer
-#### Basic slow shimmer
-#### Basic gradient slow shimmer
-#### Basic shimmer
-#### Basic gradient shimmer
-#### Basic fast shimmer
-#### Basic gradient fast shimmer
+#### Slow Shimmer
+#### Gradient Slow Shimmer
+#### Shimmer
+#### Gradient Shimmer
+#### Fast Shimmer
+#### Gradient Fast Shimmer
 
 ### Slider
-#### Basic slider
+#### Slider
 
-### Sliding segment control
-#### Basic sliding segment control
-#### Sliding segment control
+### Sliding Segment Control
+#### Sliding Segment Control
+#### Sliding Segment Control Item
 
 ### Sliver
+#### Sliver
 
 ### Snackbar
-#### Basic snackbar
-#### Basic gradient snackbar
+#### Snackbar
+#### Gradient snackbar
 
 ### Switch
-#### Basic switch
+#### Switch
 
 ### Text
 #### Text
-#### TextStyle
-#### Text span
-#### Text span item
+#### Text Style
+#### Text Span
+#### Text Span Item
 
 ### Toggle
-#### Basic toggle
-#### Basic gradient toggle
-#### Toggle item
+#### Toggle
+#### Gradient Toggle
+#### Toggle Item
 
-## Additional information
+## Additional Information
 For more details see example project.\
 And feel free to open an issue if you find any bugs or errors or suggestions.
