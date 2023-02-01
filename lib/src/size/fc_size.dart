@@ -12,6 +12,8 @@ abstract class IFCSize {
   abstract final double s32;
 
   // Padding
+  // Padding / Card
+  abstract final EdgeInsets paddingCard;
   // Padding / Padding
   abstract final EdgeInsets paddingDefault;
   // Padding / List View
@@ -27,45 +29,46 @@ abstract class IFCSize {
 
   // BorderRadius
   // BorderRadius / Button
-  abstract final BorderRadius buttonCupertinoBorderRadius;
-  abstract final BorderRadius buttonMaterialBorderRadius;
+  abstract final BorderRadius buttonBorderRadiusCupertino;
+  abstract final BorderRadius buttonBorderRadiusMaterial;
   // BorderRadius / Card
-  abstract final BorderRadius cardCupertinoBorderRadius;
-  abstract final BorderRadius cardMaterialBorderRadius;
+  abstract final BorderRadius cardBorderRadiusCupertino;
+  abstract final BorderRadius cardBorderRadiusMaterial;
   // BorderRadius / Dialog
-  abstract final BorderRadius dialogMaterialBorderRadius;
+  abstract final BorderRadius dialogBorderRadiusCupertino;
+  abstract final BorderRadius dialogBorderRadiusMaterial;
   // BorderRadius / Field
-  abstract final BorderRadius fieldCupertinoBorderRadius;
-  abstract final BorderRadius fieldMaterialBorderRadius;
+  abstract final BorderRadius fieldBorderRadiusCupertino;
+  abstract final BorderRadius fieldBorderRadiusMaterial;
   // BorderRadius / Segment Control
-  abstract final BorderRadius segmentControlCupertinoBorderRadius;
-  abstract final BorderRadius segmentControlMaterialBorderRadius;
+  abstract final BorderRadius segmentControlBorderRadiusCupertino;
+  abstract final BorderRadius segmentControlBorderRadiusMaterial;
   // BorderRadius / Snackbar
-  abstract final BorderRadius snackbarCupertinoBorderRadius;
-  abstract final BorderRadius snackbarMaterialBorderRadius;
+  abstract final BorderRadius snackbarBorderRadiusCupertino;
+  abstract final BorderRadius snackbarBorderRadiusMaterial;
   // BorderRadius / Toggle
-  abstract final BorderRadius toggleCupertinoBorderRadius;
-  abstract final BorderRadius toggleMaterialBorderRadius;
+  abstract final BorderRadius toggleBorderRadiusCupertino;
+  abstract final BorderRadius toggleBorderRadiusMaterial;
 
   // BorderWidth
   // BorderWidth / Button
-  abstract final double buttonCupertinoBorderWidth;
-  abstract final double buttonMaterialBorderWidth;
+  abstract final double buttonBorderWidthCupertino;
+  abstract final double buttonBorderWidthMaterial;
   // BorderWidth / Card
-  abstract final double cardCupertinoBorderWidth;
-  abstract final double cardMaterialBorderWidth;
+  abstract final double cardBorderWidthCupertino;
+  abstract final double cardBorderWidthMaterial;
   // BorderWidth / Field
-  abstract final double fieldCupertinoBorderWidth;
-  abstract final double fieldMaterialBorderWidth;
+  abstract final double fieldBorderWidthCupertino;
+  abstract final double fieldBorderWidthMaterial;
   // BorderWidth / Segment Control
-  abstract final double segmentControlCupertinoBorderWidth;
-  abstract final double segmentControlMaterialBorderWidth;
+  abstract final double segmentControlBorderWidthCupertino;
+  abstract final double segmentControlBorderWidthMaterial;
   // BorderWidth / Snackbar
-  abstract final double snackbarCupertinoBorderWidth;
-  abstract final double snackbarMaterialBorderWidth;
+  abstract final double snackbarBorderWidthCupertino;
+  abstract final double snackbarBorderWidthMaterial;
   // BorderWidth / Toggle
-  abstract final double toggleCupertinoBorderWidth;
-  abstract final double toggleMaterialBorderWidth;
+  abstract final double toggleBorderWidthCupertino;
+  abstract final double toggleBorderWidthMaterial;
 
   // Icon
   abstract final double iconHeightSmall;

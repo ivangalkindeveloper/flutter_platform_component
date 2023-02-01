@@ -1,5 +1,8 @@
 export 'src/flutter_component.dart';
 
+// Config
+export 'src/config/fc_config.dart';
+
 // Data
 export 'src/data/fc_date_range.dart';
 
@@ -1188,7 +1191,7 @@ export 'src/widget/sliding_segment_control/custom/light/fc_secondary_light_slidi
 export 'src/widget/sliding_segment_control/custom/light/fc_yellow_light_sliding_segment_control.dart';
 
 // Sliver
-export 'src/widget/sliver/fc_sliver_navigation_bar.dart';
+export 'src/widget/sliver/fc_sliver_navigation_app_bar.dart';
 
 // Snackbar
 // Snackbar / Basic

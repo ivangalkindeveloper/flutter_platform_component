@@ -30,7 +30,7 @@ class FCBasicGradientCard extends StatelessWidget {
     return Stack(
       children: [
         FCAnimatedContainer(
-          padding: this.padding ?? EdgeInsets.all(size.s16),
+          padding: this.padding ?? size.paddingCard,
           constraints: this.constraints,
           decoration: BoxDecoration(
             gradient: this.backgroundGradient,

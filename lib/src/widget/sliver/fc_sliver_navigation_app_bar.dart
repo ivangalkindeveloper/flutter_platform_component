@@ -4,8 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class FCSliverNavigationBar extends FCPlatformWidget {
-  FCSliverNavigationBar({
+class FCSliverNavigationAppBar extends FCPlatformWidget {
+  FCSliverNavigationAppBar({
     Key? key,
     Color? blurColor,
     Widget? prefix,
@@ -15,7 +15,7 @@ class FCSliverNavigationBar extends FCPlatformWidget {
     PreferredSizeWidget? bottom,
   }) : super(
           key: key,
-          cupertino: _FCSliverNavigationBarCupertino(
+          cupertino: _FCSliverNavigationAppBarCupertino(
             blurColor: blurColor,
             prefix: prefix,
             title: title,
@@ -23,7 +23,7 @@ class FCSliverNavigationBar extends FCPlatformWidget {
             postfix: postfix,
             bottom: bottom,
           ),
-          material: _FCSliverNavigationBarMaterial(
+          material: _FCSliverNavigationAppBarMaterial(
             blurColor: blurColor,
             prefix: prefix,
             title: title,
@@ -34,8 +34,8 @@ class FCSliverNavigationBar extends FCPlatformWidget {
         );
 }
 
-class _FCSliverNavigationBarCupertino extends StatelessWidget {
-  const _FCSliverNavigationBarCupertino({
+class _FCSliverNavigationAppBarCupertino extends StatelessWidget {
+  const _FCSliverNavigationAppBarCupertino({
     Key? key,
     required this.blurColor,
     required this.prefix,
@@ -79,8 +79,8 @@ class _FCSliverNavigationBarCupertino extends StatelessWidget {
   }
 }
 
-class _FCSliverNavigationBarMaterial extends StatelessWidget {
-  const _FCSliverNavigationBarMaterial({
+class _FCSliverNavigationAppBarMaterial extends StatelessWidget {
+  const _FCSliverNavigationAppBarMaterial({
     Key? key,
     required this.blurColor,
     required this.prefix,

@@ -21,10 +21,12 @@ class FCDefaultSize implements IFCSize {
   final double s32 = 32;
 
   // Padding
+  // Padding / Card
+  final EdgeInsets paddingCard = EdgeInsets.all(16);
   // Padding / Padding
-  late final EdgeInsets paddingDefault = EdgeInsets.all(16);
+  final EdgeInsets paddingDefault = EdgeInsets.all(16);
   // Padding / List View
-  late final EdgeInsets paddingListView = EdgeInsets.only(
+  final EdgeInsets paddingListView = EdgeInsets.only(
     top: 16,
     left: 16,
     right: 16,
@@ -45,68 +47,71 @@ class FCDefaultSize implements IFCSize {
   // BorderRadius
   // BorderRadius / Button
   @override
-  final BorderRadius buttonCupertinoBorderRadius = BorderRadius.circular(8);
+  final BorderRadius buttonBorderRadiusCupertino = BorderRadius.circular(8);
   @override
-  final BorderRadius buttonMaterialBorderRadius = BorderRadius.circular(4);
+  final BorderRadius buttonBorderRadiusMaterial = BorderRadius.circular(4);
   // BorderRadius / Card
   @override
-  final BorderRadius cardCupertinoBorderRadius = BorderRadius.circular(8);
+  final BorderRadius cardBorderRadiusCupertino = BorderRadius.circular(8);
   @override
-  final BorderRadius cardMaterialBorderRadius = BorderRadius.circular(4);
+  final BorderRadius cardBorderRadiusMaterial = BorderRadius.circular(4);
   // BorderRadius / Dialog
-  final BorderRadius dialogMaterialBorderRadius = BorderRadius.circular(16);
+  @override
+  final BorderRadius dialogBorderRadiusCupertino = BorderRadius.circular(8);
+  @override
+  final BorderRadius dialogBorderRadiusMaterial = BorderRadius.circular(16);
   // BorderRadius / Field
   @override
-  final BorderRadius fieldCupertinoBorderRadius = BorderRadius.circular(8);
+  final BorderRadius fieldBorderRadiusCupertino = BorderRadius.circular(8);
   @override
-  final BorderRadius fieldMaterialBorderRadius = BorderRadius.circular(4);
+  final BorderRadius fieldBorderRadiusMaterial = BorderRadius.circular(4);
   // BorderRadius / Segment Control
   @override
-  final BorderRadius segmentControlCupertinoBorderRadius = BorderRadius.circular(16);
+  final BorderRadius segmentControlBorderRadiusCupertino = BorderRadius.circular(16);
   @override
-  final BorderRadius segmentControlMaterialBorderRadius = BorderRadius.circular(16);
+  final BorderRadius segmentControlBorderRadiusMaterial = BorderRadius.circular(16);
   // BorderRadius / Snackbar
   @override
-  final BorderRadius snackbarCupertinoBorderRadius = BorderRadius.circular(8);
+  final BorderRadius snackbarBorderRadiusCupertino = BorderRadius.circular(8);
   @override
-  final BorderRadius snackbarMaterialBorderRadius = BorderRadius.circular(4);
+  final BorderRadius snackbarBorderRadiusMaterial = BorderRadius.circular(4);
   // BorderRadius / Toggle
   @override
-  final BorderRadius toggleCupertinoBorderRadius = BorderRadius.circular(8);
+  final BorderRadius toggleBorderRadiusCupertino = BorderRadius.circular(8);
   @override
-  final BorderRadius toggleMaterialBorderRadius = BorderRadius.circular(4);
+  final BorderRadius toggleBorderRadiusMaterial = BorderRadius.circular(4);
 
   // BorderWidth
   // BorderWidth / Button
   @override
-  final double buttonCupertinoBorderWidth = 1;
+  final double buttonBorderWidthCupertino = 1;
   @override
-  final double buttonMaterialBorderWidth = 1;
+  final double buttonBorderWidthMaterial = 1;
   // BorderWidth / Card
   @override
-  final double cardCupertinoBorderWidth = 1;
+  final double cardBorderWidthCupertino = 1;
   @override
-  final double cardMaterialBorderWidth = 1;
+  final double cardBorderWidthMaterial = 1;
   // BorderWidth / Field
   @override
-  final double fieldCupertinoBorderWidth = 1;
+  final double fieldBorderWidthCupertino = 1;
   @override
-  final double fieldMaterialBorderWidth = 1;
+  final double fieldBorderWidthMaterial = 1;
   // BorderWidth / Segment Control
   @override
-  final double segmentControlCupertinoBorderWidth = 1;
+  final double segmentControlBorderWidthCupertino = 1;
   @override
-  final double segmentControlMaterialBorderWidth = 1;
+  final double segmentControlBorderWidthMaterial = 1;
   // BorderWidth / Snackbar
   @override
-  final double snackbarCupertinoBorderWidth = 1;
+  final double snackbarBorderWidthCupertino = 1;
   @override
-  final double snackbarMaterialBorderWidth = 1;
+  final double snackbarBorderWidthMaterial = 1;
   // BorderWidth / Toggle
   @override
-  final double toggleCupertinoBorderWidth = 1;
+  final double toggleBorderWidthCupertino = 1;
   @override
-  final double toggleMaterialBorderWidth = 1;
+  final double toggleBorderWidthMaterial = 1;
 
   // Icon
   @override

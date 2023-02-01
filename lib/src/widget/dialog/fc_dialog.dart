@@ -106,7 +106,7 @@ class _FCDialogMaterial extends StatelessWidget {
       elevation: 0,
       backgroundColor: theme.white,
       shape: RoundedRectangleBorder(
-        borderRadius: size.dialogMaterialBorderRadius,
+        borderRadius: config.dialogBorderRadius,
       ),
       title: Text(
         this.title,

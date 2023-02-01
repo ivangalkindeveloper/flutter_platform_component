@@ -105,7 +105,7 @@ class _FCDialogItemMaterial extends StatelessWidget {
       style: TextButton.styleFrom(
         elevation: 0,
         shape: RoundedRectangleBorder(
-          borderRadius: size.dialogMaterialBorderRadius,
+          borderRadius: config.dialogBorderRadius,
         ),
         foregroundColor: this.color,
       ),

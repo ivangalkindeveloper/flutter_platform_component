@@ -85,7 +85,7 @@ class _FCBasicButtonCupertino extends StatelessWidget {
         CupertinoButton(
           minSize: this.height ?? size.componentHeightDefault,
           padding: const EdgeInsets.all(0),
-          borderRadius: this.borderRadius ?? size.buttonCupertinoBorderRadius,
+          borderRadius: this.borderRadius ?? config.buttonBorderRadius,
           onPressed: this.isDisabled ? () {} : this.onPressed,
           child: FCAnimatedContainer(
             height: this.height ?? size.componentHeightDefault,
@@ -96,11 +96,11 @@ class _FCBasicButtonCupertino extends StatelessWidget {
                 ),
             decoration: BoxDecoration(
               color: this.backgroundColor,
-              borderRadius: this.borderRadius ?? size.buttonCupertinoBorderRadius,
+              borderRadius: this.borderRadius ?? config.buttonBorderRadius,
               border: this.borderColor != null
                   ? Border.all(
                       color: this.borderColor!,
-                      width: this.borderWidth ?? size.buttonCupertinoBorderWidth,
+                      width: this.borderWidth ?? config.buttonBorderWidth,
                     )
                   : null,
             ),
@@ -112,7 +112,7 @@ class _FCBasicButtonCupertino extends StatelessWidget {
             child: this.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.disabledColor,
-                    borderRadius: this.borderRadius ?? size.buttonCupertinoBorderRadius,
+                    borderRadius: this.borderRadius ?? config.buttonBorderRadius,
                   )
                 : null,
           ),
@@ -162,11 +162,11 @@ class _FCBasicButtonMaterial extends StatelessWidget {
           padding: const EdgeInsets.all(0),
           decoration: BoxDecoration(
             color: this.backgroundColor,
-            borderRadius: this.borderRadius ?? size.cardMaterialBorderRadius,
+            borderRadius: this.borderRadius ?? config.cardBorderRadius,
             border: this.borderColor != null
                 ? Border.all(
                     color: this.borderColor!,
-                    width: this.borderWidth ?? size.buttonCupertinoBorderWidth,
+                    width: this.borderWidth ?? config.buttonBorderWidth,
                   )
                 : null,
           ),
@@ -183,7 +183,7 @@ class _FCBasicButtonMaterial extends StatelessWidget {
                     vertical: size.s16 / 4,
                   ),
               shape: RoundedRectangleBorder(
-                  borderRadius: this.borderRadius ?? size.cardMaterialBorderRadius),
+                  borderRadius: this.borderRadius ?? config.cardBorderRadius),
             ),
             onPressed: this.isDisabled ? () {} : this.onPressed,
             child: this.child,
@@ -194,7 +194,7 @@ class _FCBasicButtonMaterial extends StatelessWidget {
             child: this.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.disabledColor,
-                    borderRadius: this.borderRadius ?? size.cardMaterialBorderRadius,
+                    borderRadius: this.borderRadius ?? config.cardBorderRadius,
                   )
                 : null,
           ),

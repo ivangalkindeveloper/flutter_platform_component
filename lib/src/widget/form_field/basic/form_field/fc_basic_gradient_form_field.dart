@@ -375,7 +375,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                   gradient: this._borderGradient(context: context),
                   child: FCAnimatedContainer(
                     decoration: BoxDecoration(
-                      borderRadius: this._size.buttonCupertinoBorderRadius,
+                      borderRadius: this._config.buttonBorderRadius,
                       border: Border.all(
                         color: Colors.white,
                         width: this._config.buttonBorderWidth,

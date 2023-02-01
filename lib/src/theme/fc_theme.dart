@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
-//TODO Component elevation
+//TODO
+// Component elevation
+// Material system navigation color
+// Additional color
 
 abstract class IFCTheme {
   // Mode
@@ -96,4 +99,15 @@ abstract class IFCTheme {
   // Red / Dark
   abstract final Color redDark;
   abstract final Gradient redDarkGradient;
+
+  // Barrier
+  // Barrier / Expanded Modal
+  abstract final Color barrierExpandedModalCupertino;
+  abstract final Color barrierExpandedModalMaterial;
+  // Barrier / Small Modal
+  abstract final Color barrierSmallModalCupertino;
+  abstract final Color barrierSmallModalMaterial;
+  // Barrier / Dialog
+  abstract final Color barrierDialogCupertino;
+  abstract final Color barrierDialogMaterial;
 }

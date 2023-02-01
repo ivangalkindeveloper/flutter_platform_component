@@ -5,6 +5,8 @@ import 'package:flutter/cupertino.dart' as cupertino;
 import 'package:flutter/material.dart' as material;
 import 'package:flutter/widgets.dart';
 
+//TODO showSlowSnackbar showSnackbar showFastSnackbar
+
 class FCGlobal {
   static material.MaterialPageRoute pageRoute({
     required BuildContext context,
@@ -59,8 +61,9 @@ class FCGlobal {
 
     switch (platform) {
       case TargetPlatform.iOS:
-        return bottomSheet.showCupertinoModalBottomSheet<T>(
+        return bottomSheet.showCupertinoModalBottomSheet<T?>(
           context: context,
+          barrierColor: config.barrierExpandedModalColor,
           backgroundColor: material.Colors.transparent,
           elevation: 0,
           expand: true,
@@ -70,8 +73,9 @@ class FCGlobal {
         );
 
       case TargetPlatform.android:
-        return bottomSheet.showMaterialModalBottomSheet<T>(
+        return bottomSheet.showMaterialModalBottomSheet<T?>(
           context: context,
+          barrierColor: config.barrierExpandedModalColor,
           backgroundColor: material.Colors.transparent,
           elevation: 0,
           expand: true,
@@ -80,8 +84,9 @@ class FCGlobal {
         );
 
       default:
-        return bottomSheet.showMaterialModalBottomSheet<T>(
+        return bottomSheet.showMaterialModalBottomSheet<T?>(
           context: context,
+          barrierColor: config.barrierExpandedModalColor,
           backgroundColor: material.Colors.transparent,
           elevation: 0,
           expand: true,
@@ -102,13 +107,16 @@ class FCGlobal {
       case TargetPlatform.iOS:
         return cupertino.showCupertinoModalPopup<T>(
           context: context,
+          barrierColor: config.barrierSmallModalColor,
+          barrierDismissible: true,
           useRootNavigator: false,
           builder: (BuildContext context) => child,
         );
 
       case TargetPlatform.android:
-        return bottomSheet.showMaterialModalBottomSheet<T>(
+        return bottomSheet.showBarModalBottomSheet<T>(
           context: context,
+          barrierColor: config.barrierSmallModalColor,
           backgroundColor: material.Colors.transparent,
           elevation: 0,
           useRootNavigator: false,
@@ -148,6 +156,7 @@ class FCGlobal {
       case TargetPlatform.android:
         return material.showDialog<T>(
           context: context,
+          barrierColor: config.barrierDialogColor,
           useRootNavigator: false,
           builder: (BuildContext context) => child,
         );
@@ -155,6 +164,7 @@ class FCGlobal {
       default:
         return material.showDialog<T>(
           context: context,
+          barrierColor: config.barrierDialogColor,
           useRootNavigator: false,
           builder: (BuildContext context) => child,
         );
@@ -165,7 +175,7 @@ class FCGlobal {
     required BuildContext context,
     required Locale locale,
     required FCDateRange dateRange,
-    required Widget cupertinoChild,
+    required Widget cupertinoModal,
   }) {
     final FCConfig config = context.config;
     final TargetPlatform platform = config.platform;
@@ -174,8 +184,9 @@ class FCGlobal {
       case TargetPlatform.iOS:
         return cupertino.showCupertinoModalPopup<DateTime?>(
           context: context,
+          barrierColor: config.barrierSmallModalColor,
           useRootNavigator: false,
-          builder: (BuildContext context) => cupertinoChild,
+          builder: (BuildContext context) => cupertinoModal,
         );
 
       case TargetPlatform.android:
@@ -209,6 +220,4 @@ class FCGlobal {
         );
     }
   }
-
-  //TODO showSlowSnackbar showSnackbar showFastSnackbar
 }

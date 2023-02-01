@@ -1,4 +1,5 @@
 import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
@@ -258,4 +259,15 @@ class FCDefaultLightTheme implements IFCTheme {
       Color(0xffFF6961),
     ],
   );
+
+  // Barrier
+  // Barrier / Expanded Modal
+  final Color barrierExpandedModalCupertino = kCupertinoModalBarrierColor;
+  final Color barrierExpandedModalMaterial = Colors.black.withOpacity(0.35);
+  // Barrier / Small Modal
+  final Color barrierSmallModalCupertino = kCupertinoModalBarrierColor;
+  final Color barrierSmallModalMaterial = Colors.black.withOpacity(0.35);
+  // Barrier / Dialog
+  final Color barrierDialogCupertino = Colors.black54;
+  final Color barrierDialogMaterial = Colors.black54;
 }

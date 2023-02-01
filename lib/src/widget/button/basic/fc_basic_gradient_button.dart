@@ -85,7 +85,7 @@ class _FCBasicGradientButtonCupertino extends StatelessWidget {
         CupertinoButton(
           minSize: this.height ?? size.componentHeightDefault,
           padding: const EdgeInsets.all(0),
-          borderRadius: this.borderRadius ?? size.buttonCupertinoBorderRadius,
+          borderRadius: this.borderRadius ?? config.buttonBorderRadius,
           onPressed: this.isDisabled ? () {} : this.onPressed,
           child: Stack(
             children: [
@@ -98,7 +98,7 @@ class _FCBasicGradientButtonCupertino extends StatelessWidget {
                     ),
                 decoration: BoxDecoration(
                   gradient: this.backgroundGradient,
-                  borderRadius: this.borderRadius ?? size.buttonCupertinoBorderRadius,
+                  borderRadius: this.borderRadius ?? config.buttonBorderRadius,
                 ),
                 child: this.child,
               ),
@@ -108,10 +108,10 @@ class _FCBasicGradientButtonCupertino extends StatelessWidget {
                     gradient: this.borderGradient!,
                     child: FCAnimatedContainer(
                       decoration: BoxDecoration(
-                        borderRadius: size.buttonCupertinoBorderRadius,
+                        borderRadius: config.buttonBorderRadius,
                         border: Border.all(
                           color: Colors.white,
-                          width: this.borderWidth ?? size.buttonCupertinoBorderWidth,
+                          width: this.borderWidth ?? config.buttonBorderWidth,
                         ),
                       ),
                       child: const SizedBox(),
@@ -126,7 +126,7 @@ class _FCBasicGradientButtonCupertino extends StatelessWidget {
             child: this.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.disabledColor,
-                    borderRadius: this.borderRadius ?? size.buttonCupertinoBorderRadius,
+                    borderRadius: this.borderRadius ?? config.buttonBorderRadius,
                   )
                 : null,
           ),
@@ -176,7 +176,7 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
           padding: const EdgeInsets.all(0),
           decoration: BoxDecoration(
             gradient: this.backgroundGradient,
-            borderRadius: this.borderRadius ?? size.buttonMaterialBorderRadius,
+            borderRadius: this.borderRadius ?? config.buttonBorderRadius,
           ),
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
@@ -190,8 +190,7 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
                     horizontal: size.s16,
                     vertical: size.s16 / 4,
                   ),
-              shape:
-                  RoundedRectangleBorder(borderRadius: size.buttonMaterialBorderRadius),
+              shape: RoundedRectangleBorder(borderRadius: config.buttonBorderRadius),
             ),
             onPressed: this.isDisabled ? () {} : this.onPressed,
             child: this.child,
@@ -203,10 +202,10 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
               gradient: this.borderGradient!,
               child: FCAnimatedContainer(
                 decoration: BoxDecoration(
-                  borderRadius: this.borderRadius ?? size.buttonMaterialBorderRadius,
+                  borderRadius: this.borderRadius ?? config.buttonBorderRadius,
                   border: Border.all(
                     color: Colors.white,
-                    width: this.borderWidth ?? size.buttonCupertinoBorderWidth,
+                    width: this.borderWidth ?? config.buttonBorderWidth,
                   ),
                 ),
                 child: const SizedBox(),
@@ -218,7 +217,7 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
             child: this.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.disabledColor,
-                    borderRadius: this.borderRadius ?? size.cardMaterialBorderRadius,
+                    borderRadius: this.borderRadius ?? config.cardBorderRadius,
                   )
                 : null,
           ),

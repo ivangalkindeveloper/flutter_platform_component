@@ -12,7 +12,7 @@ class SliverNavigationBarScreen extends StatelessWidget {
 
     return FCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      body: FCSliverNavigationBar(
+      body: FCSliverNavigationAppBar(
         title: "Title",
       ),
     );

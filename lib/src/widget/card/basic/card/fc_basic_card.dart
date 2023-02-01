@@ -28,7 +28,7 @@ class FCBasicCard extends StatelessWidget {
     final IFCSize size = config.size;
 
     return FCAnimatedContainer(
-      padding: this.padding ?? EdgeInsets.all(size.s16),
+      padding: this.padding ?? size.paddingCard,
       constraints: this.constraints,
       decoration: BoxDecoration(
         color: this.backgroundColor,
