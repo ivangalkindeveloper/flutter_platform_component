@@ -1,5 +1,5 @@
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 class ListCardScreen extends StatelessWidget {
   const ListCardScreen({Key? key}) : super(key: key);
@@ -19,8 +19,10 @@ class ListCardScreen extends StatelessWidget {
       body: FCListView(
         children: [
           FCListCard(
+            prefixIconColor: theme.primary,
             items: [
               FCListCardItem(
+                prefixIcon: Icons.airplay_sharp,
                 title: "Title 1",
                 onPressed: () {},
               ),

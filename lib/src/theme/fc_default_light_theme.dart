@@ -1,16 +1,28 @@
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
 class FCDefaultLightTheme implements IFCTheme {
-  // Mode
+  // System
   @override
-  final ThemeMode themeMode = ThemeMode.light;
+  final ThemeMode materialThemeMode = ThemeMode.light;
   @override
-  final ThemeData themeData = ThemeData.light();
+  final ThemeData materialThemeData = ThemeData.light();
   @override
-  final Brightness brightness = Brightness.light;
+  final CupertinoThemeData cupertinoThemeData = CupertinoThemeData();
+  @override
+  final SystemUiOverlayStyle systemOverlayStyle = const SystemUiOverlayStyle(
+    systemNavigationBarColor: const Color(0xffFFFFFF),
+    systemNavigationBarDividerColor: Colors.transparent,
+    systemNavigationBarIconBrightness: Brightness.dark,
+    systemNavigationBarContrastEnforced: false,
+    statusBarColor: const Color(0xffFFFFFF),
+    statusBarBrightness: Brightness.dark,
+    statusBarIconBrightness: Brightness.dark,
+    systemStatusBarContrastEnforced: false,
+  );
 
   // White
   @override

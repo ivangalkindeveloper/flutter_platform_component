@@ -36,13 +36,28 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return FlutterComponent( // Initialize the component widget
       platform: TargetPlatform.iOS,
-      theme: MyLightTheme(), 
-      size: MySizes(),
-      textStyle: MyTextStyle(),
-      haptic: MyHaptic(),
-      child: MaterialApp(
-          home: const HomeWidget(),
-        );
+      theme: ProjectLightTheme(),
+      size: ProjectSize(),
+      textStyle: ProjectTextStyle(),
+      haptic: ProjectHaptic(),
+      child: const App(),
+    );
+  }
+}
+
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    final FCConfig config = FCConfig.of(context);
+    final IFCTheme theme = config.theme;
+
+    return FCApp(
+      materialThemeMode: theme.materialThemeMode,
+      materialThemeData: theme.materialThemeData,
+      cupertinoThemeData: theme.cupertinoThemeData,
+      home: const HomeWidget(),
     );
   }
 }
@@ -175,7 +190,7 @@ Main root widget of the application, decomposed by platform.
 Main app bar widget, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 
 ### Badge
 #### Badge
@@ -199,18 +214,18 @@ Button component with solid background color, decomposed by platform.\
 Ready-made button has loading properties.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 #### Gradient Button
 Button component with gradient background color, decomposed by platform.\
 Ready-made button has loading properties.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 #### Icon Button
 Icon button component, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 #### Modal Button
 Dedicated decomposed buttons, separately for modal windows.
 
@@ -223,19 +238,19 @@ Card component with gradient background color.
 Clickable card component with solid background color.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 #### Gradient Select Card
 Clickable card component with gradient background color.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 
 ### Checkbox
 #### Checkbox
 Checkbox component, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 
 ### Code Field
 #### Code Field
@@ -249,7 +264,7 @@ Android - Native date picker dialog.\
 iOS - Native date picker carousel.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 
 ### Default
 #### List View
@@ -262,7 +277,7 @@ Default Padding widget are guided by size config.
 Dialog component, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 #### Dialog Item
 Dialog item for dialog component, decomposed by platform.
 
@@ -273,25 +288,25 @@ The design of this field is suitable for most applications and is more suitable.
 Form field component with solid colors, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 
 #### Gradient Form Field
 Form field component with gradient colors, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 
 #### Select Field
 Clickable field component with solid colors, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 
 #### Gradient Select Field
 Clickable field component with gradient colors, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 
 ### Global
 Class that contains platform-decomposed functions to invoke the required interface behaviors.
@@ -305,13 +320,19 @@ Widget for overlaying a gradient mask.
 ### Icon
 All icons sizes are guided by small, default and large sizes from the size config.
 #### Icon
-Large class with static icons in all theme colors.
+Class with icons in all theme colors.
 
 ### Indicator
 #### Circular Indicator
 Circular indicator component with solid color, decomposed by platform.
+| iOS | Android |
+|-----|---------|
+| | |
 #### Gradient Circular Indicator
 Circular indicator component with gradient color, decomposed by platform.
+| iOS | Android |
+|-----|---------|
+| | |
 #### Page Indicator
 Page indicator component with solid color, ideal for displaying the current page index of the carousel.
 #### Gradient Page Indicator
@@ -326,48 +347,54 @@ Story indicator component with solid color, needed to display the steps and the 
 Large widget that arranges keyboard buttons.
 #### Keyboard Button
 Button component of keyboard.
+| iOS | Android |
+|-----|---------|
+| | |
 #### Keyboard Number Button
 Button component of keyboard, specially for only numbers.
+| iOS | Android |
+|-----|---------|
+| | |
 
 ### List
 #### List Card
 Card component, needed to display multiple rows of settings buttons, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 #### List Card Item
 List card item for list card component, decomposed by platform.
 #### List Refresh
 List refresh component to display the loading of asynchronous behavior, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 
 ### Modal
 #### Action Modal
 Action modal component for selecting a specific action, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 #### Action Modal Item
 Action modal item for action modal component, decomposed by platform.
 #### Expanded Modal
 Expanded modal window component to display large modal content.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 #### Small Modal
 Expanded modal window component to display small modal content.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 
 ### Navigation
 #### Bottom Navigation Bar
 Bottom navigation bar component, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 #### Bottom Navigation Bar Icon Item
 Icom item for Bottom navigation bar component.
 #### Bottom Navigation Bar Gradient Icon Item
@@ -378,9 +405,12 @@ Widget item for Bottom navigation bar component.
 Gradient widget item for Bottom navigation bar component.
 #### Nested Navigation
 Special navigator widget, decomposed by platform.
+| iOS | Android |
+|-----|---------|
+| | |
 
 ### PIN Field
-A special component for entering an private PIN code.
+Special component for entering an private PIN code.
 #### PIN Field
 PIN field component with solid colors.
 #### Gradient PIN Field
@@ -391,7 +421,7 @@ PIN field component with gradient colors.
 Radio component, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 
 ### Scaffold
 #### Scaffold
@@ -420,7 +450,7 @@ Special component for loading animation with gradient color.
 Slider component, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 
 ### Sliding Segment Control
 Sliding segment control compoennt does not have a direct analogue on android, therefore it does not have a decomposition for this platform.
@@ -434,10 +464,10 @@ Segment control item for segment control component.
 Ready-made sliver navigation app bar component, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 
 ### Snackbar
-A special card component for displaying notifications.
+Special card component for displaying notifications.
 #### Snackbar
 Snackbar component with solid colors.
 #### Gradient snackbar
@@ -448,17 +478,17 @@ Snackbar component with gradient colors.
 Switch component, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 
 ### Text
 #### Text
-Huge class that combines all text widgets for quick display.
+Class that combines all text widgets for quick display.
 #### Text Style
-Huge class that combines all text widgets for quick use.
+Class that combines all text widgets for quick use.
 #### Text Span
 Ready-made shell widget for receiving text span items.
 #### Text Span Item
-Huge class that combines all text span widgets for quick use.
+Class that combines all text span widgets for quick use.
 
 ### Toggle
 One of the proposed visions of the segment control component.
@@ -466,12 +496,12 @@ One of the proposed visions of the segment control component.
 Toggle component with colid colors, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 #### Gradient Toggle
 Toggle component with gradient colors, decomposed by platform.
 | iOS | Android |
 |-----|---------|
-| | | 
+| | |
 #### Toggle Item
 Toggle item for toggle component.
 

@@ -16,24 +16,111 @@ class ConfigListTheme extends StatelessWidget {
         // Theme
         FCText.semiBold20Black(context: context, text: "Theme:"),
         SizedBox(height: size.s16 / 2),
-        // Theme // Mode
+        // Theme // System
         Row(
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Theme mode:"),
-            ),
+            FCText.regular16Black(context: context, text: "Material theme mode:"),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: theme.themeMode.name),
+            FCText.medium18Black(context: context, text: theme.materialThemeMode.name),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Brightness:"),
-            ),
+            FCText.regular16Black(context: context, text: "SystemNavigationBarColor:"),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: theme.brightness.name),
+            Expanded(
+              child: Container(
+                height: size.s16,
+                color: theme.systemOverlayStyle.systemNavigationBarColor,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          children: [
+            FCText.regular16Black(
+                context: context, text: "SystemNavigationBarDividerColor:"),
+            SizedBox(width: size.s16),
+            Expanded(
+              child: Container(
+                height: size.s16,
+                color: theme.systemOverlayStyle.systemNavigationBarDividerColor,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          children: [
+            FCText.regular16Black(
+                context: context, text: "SystemNavigationBarIconBrightness:"),
+            SizedBox(width: size.s16),
+            FCText.regular16Black(
+              context: context,
+              text: theme.systemOverlayStyle.systemNavigationBarIconBrightness.toString(),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          children: [
+            FCText.regular16Black(
+                context: context, text: "SystemNavigationBarContrastEnforced:"),
+            SizedBox(width: size.s16),
+            FCText.regular16Black(
+              context: context,
+              text:
+                  theme.systemOverlayStyle.systemNavigationBarContrastEnforced.toString(),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          children: [
+            FCText.regular16Black(context: context, text: "StatusBarColor:"),
+            SizedBox(width: size.s16),
+            Expanded(
+              child: Container(
+                height: size.s16,
+                color: theme.systemOverlayStyle.statusBarColor,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          children: [
+            FCText.regular16Black(context: context, text: "StatusBarBrightness:"),
+            SizedBox(width: size.s16),
+            FCText.regular16Black(
+              context: context,
+              text: theme.systemOverlayStyle.statusBarBrightness.toString(),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          children: [
+            FCText.regular16Black(context: context, text: "StatusBarIconBrightness:"),
+            SizedBox(width: size.s16),
+            FCText.regular16Black(
+              context: context,
+              text: theme.systemOverlayStyle.statusBarIconBrightness.toString(),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          children: [
+            FCText.regular16Black(
+                context: context, text: "SystemStatusBarContrastEnforced:"),
+            SizedBox(width: size.s16),
+            FCText.regular16Black(
+              context: context,
+              text: theme.systemOverlayStyle.systemStatusBarContrastEnforced.toString(),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 2),

@@ -48,7 +48,7 @@ class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> {
             isSelected: false,
             context: context,
             child: Container(
-              color: theme.green,
+              color: theme.yellowDark,
             ),
           ),
         ],

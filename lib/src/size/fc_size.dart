@@ -1,5 +1,8 @@
 import 'package:flutter/widgets.dart';
 
+//TODO
+// Component elevation
+
 abstract class IFCSize {
   // Size
   abstract final double s10;

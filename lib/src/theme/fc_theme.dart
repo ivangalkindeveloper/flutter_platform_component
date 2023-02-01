@@ -1,16 +1,17 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
 //TODO
-// Component elevation
-// Material system navigation color
 // Additional color
 
 abstract class IFCTheme {
-  // Mode
-  abstract final ThemeMode themeMode;
-  abstract final ThemeData themeData;
-  abstract final Brightness brightness;
+  // System
+  abstract final ThemeMode materialThemeMode;
+  abstract final ThemeData materialThemeData;
+  abstract final CupertinoThemeData cupertinoThemeData;
+  abstract final SystemUiOverlayStyle systemOverlayStyle;
 
   // White
   abstract final Color white;
