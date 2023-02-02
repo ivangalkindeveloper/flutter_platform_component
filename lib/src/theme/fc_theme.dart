@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'dart:ui';
 
 //TODO
-// Additional color
+// Accent color
 
 abstract class IFCTheme {
   // System
@@ -12,6 +12,11 @@ abstract class IFCTheme {
   abstract final ThemeData materialThemeData;
   abstract final CupertinoThemeData cupertinoThemeData;
   abstract final SystemUiOverlayStyle systemOverlayStyle;
+
+  // Gradient
+  abstract final Alignment gradientBegin;
+  abstract final Alignment gradientEnd;
+  abstract final List<double>? gradientStops;
 
   // White
   abstract final Color white;

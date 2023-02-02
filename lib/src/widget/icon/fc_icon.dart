@@ -19,7 +19,7 @@ class FCIcon {
     required double size,
     required Gradient gradient,
   }) =>
-      FCGradientMask(
+      FCLinearGradientMask(
         gradient: gradient,
         child: Icon(
           icon,

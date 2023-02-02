@@ -68,7 +68,8 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientSelectField(
-      backgroundGradient: FCGradient(
+      backgroundGradient: FCLinearGradient(
+        context: context,
         colors: [
           theme.backgroundComponent,
           theme.backgroundComponent,

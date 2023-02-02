@@ -45,13 +45,15 @@ class FCGreyGradientCodeField extends StatelessWidget {
     return FCBasicGradientCodeField(
       context: context,
       length: length,
-      unfocusedBackgroundGradient: FCGradient(
+      unfocusedBackgroundGradient: FCLinearGradient(
+        context: context,
         colors: [
           theme.backgroundComponent,
           theme.backgroundComponent,
         ],
       ),
-      focusedBackgroundGradient: FCGradient(
+      focusedBackgroundGradient: FCLinearGradient(
+        context: context,
         colors: [
           theme.backgroundComponent,
           theme.backgroundComponent,

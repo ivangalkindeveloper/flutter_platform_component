@@ -17,6 +17,7 @@ export 'src/haptic/fc_haptic.dart';
 // Platform
 export 'src/platform/fc_platform_app_bar.dart';
 export 'src/platform/fc_platform_widget.dart';
+export 'src/platform/fc_platform.dart';
 
 // Size
 export 'src/size/fc_default_size.dart';
@@ -593,7 +594,7 @@ export 'src/widget/global/fc_global.dart';
 
 // Gradient
 export 'src/widget/gradient/fc_gradient_mask.dart';
-export 'src/widget/gradient/fc_gradient.dart';
+export 'src/widget/gradient/fc_linear_gradient.dart';
 
 // Icon
 export 'src/widget/icon/fc_icon.dart';

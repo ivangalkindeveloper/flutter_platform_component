@@ -36,7 +36,7 @@ class FCBottomNavigationBarIconItemGradient extends BottomNavigationBarItem {
       width: size.iconHeightLarge,
       child: FCBasicBadge(
         content: badgeContent,
-        child: FCGradientMask(
+        child: FCLinearGradientMask(
           gradient: isSelected ? theme.primaryGradient : theme.greyGradient,
           child: Icon(
             iconData,

@@ -34,198 +34,125 @@ class FCConfig extends InheritedWidget {
 
   // Barrier
   // Barrier / Expanded Modal
-  Color get barrierExpandedModalColor {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.theme.barrierExpandedModalCupertino;
-      case TargetPlatform.android:
-        return this.theme.barrierExpandedModalMaterial;
-      default:
-        return this.theme.barrierExpandedModalMaterial;
-    }
-  }
+  Color get barrierExpandedModalColor => FCPlatform.decompose<Color, Color, Color>(
+        platform: this.platform,
+        cupertino: this.theme.barrierExpandedModalCupertino,
+        material: this.theme.barrierExpandedModalMaterial,
+      );
 
   // Barrier / Small Modal
-  Color get barrierSmallModalColor {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.theme.barrierSmallModalCupertino;
-      case TargetPlatform.android:
-        return this.theme.barrierSmallModalMaterial;
-      default:
-        return this.theme.barrierSmallModalMaterial;
-    }
-  }
+  Color get barrierSmallModalColor => FCPlatform.decompose<Color, Color, Color>(
+        platform: this.platform,
+        cupertino: this.theme.barrierSmallModalCupertino,
+        material: this.theme.barrierSmallModalMaterial,
+      );
 
   // Barrier / Dialog
-  Color get barrierDialogColor {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.theme.barrierDialogCupertino;
-      case TargetPlatform.android:
-        return this.theme.barrierDialogMaterial;
-      default:
-        return this.theme.barrierDialogMaterial;
-    }
-  }
+  Color get barrierDialogColor => FCPlatform.decompose<Color, Color, Color>(
+        platform: this.platform,
+        cupertino: this.theme.barrierDialogCupertino,
+        material: this.theme.barrierDialogMaterial,
+      );
 
   // BorderRadius
   // BorderRadius / Button
-  BorderRadius get buttonBorderRadius {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.size.buttonBorderRadiusCupertino;
-      case TargetPlatform.android:
-        return this.size.buttonBorderRadiusMaterial;
-      default:
-        return this.size.buttonBorderRadiusMaterial;
-    }
-  }
+  BorderRadius get buttonBorderRadius =>
+      FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+        platform: this.platform,
+        cupertino: this.size.buttonBorderRadiusCupertino,
+        material: this.size.buttonBorderRadiusMaterial,
+      );
 
   // BorderRadius / Card
-  BorderRadius get cardBorderRadius {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.size.cardBorderRadiusCupertino;
-      case TargetPlatform.android:
-        return this.size.cardBorderRadiusMaterial;
-      default:
-        return this.size.cardBorderRadiusMaterial;
-    }
-  }
+  BorderRadius get cardBorderRadius =>
+      FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+        platform: this.platform,
+        cupertino: this.size.cardBorderRadiusCupertino,
+        material: this.size.cardBorderRadiusMaterial,
+      );
 
   // BorderRadius / Dialog
-  BorderRadius get dialogBorderRadius {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.size.dialogBorderRadiusCupertino;
-      case TargetPlatform.android:
-        return this.size.dialogBorderRadiusMaterial;
-      default:
-        return this.size.dialogBorderRadiusMaterial;
-    }
-  }
+  BorderRadius get dialogBorderRadius =>
+      FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+        platform: this.platform,
+        cupertino: this.size.dialogBorderRadiusCupertino,
+        material: this.size.dialogBorderRadiusMaterial,
+      );
 
   // BorderRadius / Field
-  BorderRadius get fieldBorderRadius {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.size.fieldBorderRadiusCupertino;
-      case TargetPlatform.android:
-        return this.size.fieldBorderRadiusMaterial;
-      default:
-        return this.size.fieldBorderRadiusMaterial;
-    }
-  }
+  BorderRadius get fieldBorderRadius =>
+      FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+        platform: this.platform,
+        cupertino: this.size.fieldBorderRadiusCupertino,
+        material: this.size.fieldBorderRadiusMaterial,
+      );
 
   // BorderRadius / Segment Control
-  BorderRadius get segmentControlBorderRadius {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.size.segmentControlBorderRadiusCupertino;
-      case TargetPlatform.android:
-        return this.size.segmentControlBorderRadiusMaterial;
-      default:
-        return this.size.segmentControlBorderRadiusMaterial;
-    }
-  }
+  BorderRadius get segmentControlBorderRadius =>
+      FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+        platform: this.platform,
+        cupertino: this.size.segmentControlBorderRadiusCupertino,
+        material: this.size.segmentControlBorderRadiusMaterial,
+      );
 
   // BorderRadius / Snackbar
-  BorderRadius get snackbarBorderRadius {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.size.snackbarBorderRadiusCupertino;
-      case TargetPlatform.android:
-        return this.size.snackbarBorderRadiusMaterial;
-      default:
-        return this.size.snackbarBorderRadiusMaterial;
-    }
-  }
+  BorderRadius get snackbarBorderRadius =>
+      FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+        platform: this.platform,
+        cupertino: this.size.snackbarBorderRadiusCupertino,
+        material: this.size.snackbarBorderRadiusMaterial,
+      );
 
   // BorderRadius / Toggle
-  BorderRadius get toggleBorderRadius {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.size.toggleBorderRadiusCupertino;
-      case TargetPlatform.android:
-        return this.size.toggleBorderRadiusMaterial;
-      default:
-        return this.size.toggleBorderRadiusMaterial;
-    }
-  }
+  BorderRadius get toggleBorderRadius =>
+      FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+        platform: this.platform,
+        cupertino: this.size.toggleBorderRadiusCupertino,
+        material: this.size.toggleBorderRadiusMaterial,
+      );
 
   // BorderWidth
   // BorderWidth / Button
-  double get buttonBorderWidth {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.size.buttonBorderWidthCupertino;
-      case TargetPlatform.android:
-        return this.size.buttonBorderWidthMaterial;
-      default:
-        return this.size.buttonBorderWidthMaterial;
-    }
-  }
+  double get buttonBorderWidth => FCPlatform.decompose<double, double, double>(
+        platform: this.platform,
+        cupertino: this.size.buttonBorderWidthCupertino,
+        material: this.size.buttonBorderWidthMaterial,
+      );
 
   // BorderWidth / Card
-  double get cardBorderWidth {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.size.cardBorderWidthCupertino;
-      case TargetPlatform.android:
-        return this.size.cardBorderWidthMaterial;
-      default:
-        return this.size.cardBorderWidthMaterial;
-    }
-  }
+  double get cardBorderWidth => FCPlatform.decompose<double, double, double>(
+        platform: this.platform,
+        cupertino: this.size.cardBorderWidthCupertino,
+        material: this.size.cardBorderWidthMaterial,
+      );
 
   // BorderWidth / Field
-  double get fieldBorderWidth {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.size.fieldBorderWidthCupertino;
-      case TargetPlatform.android:
-        return this.size.fieldBorderWidthMaterial;
-      default:
-        return this.size.fieldBorderWidthMaterial;
-    }
-  }
+  double get fieldBorderWidth => FCPlatform.decompose<double, double, double>(
+        platform: this.platform,
+        cupertino: this.size.fieldBorderWidthCupertino,
+        material: this.size.fieldBorderWidthMaterial,
+      );
 
   // BorderWidth / Segment Control
-  double get segmentControlBorderWidth {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.size.segmentControlBorderWidthCupertino;
-      case TargetPlatform.android:
-        return this.size.segmentControlBorderWidthMaterial;
-      default:
-        return this.size.segmentControlBorderWidthMaterial;
-    }
-  }
+  double get segmentControlBorderWidth => FCPlatform.decompose<double, double, double>(
+        platform: this.platform,
+        cupertino: this.size.segmentControlBorderWidthCupertino,
+        material: this.size.segmentControlBorderWidthMaterial,
+      );
 
   // BorderWidth / Snackbar
-  double get snackbarBorderWidth {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.size.snackbarBorderWidthCupertino;
-      case TargetPlatform.android:
-        return this.size.snackbarBorderWidthMaterial;
-      default:
-        return this.size.snackbarBorderWidthMaterial;
-    }
-  }
+  double get snackbarBorderWidth => FCPlatform.decompose<double, double, double>(
+        platform: this.platform,
+        cupertino: this.size.snackbarBorderWidthCupertino,
+        material: this.size.snackbarBorderWidthMaterial,
+      );
 
   // BorderWidth / Toggle
-  double get toggleControlBorderWidth {
-    switch (this.platform) {
-      case TargetPlatform.iOS:
-        return this.size.toggleBorderWidthCupertino;
-      case TargetPlatform.android:
-        return this.size.toggleBorderWidthMaterial;
-      default:
-        return this.size.toggleBorderWidthMaterial;
-    }
-  }
+  double get toggleControlBorderWidth => FCPlatform.decompose<double, double, double>(
+        platform: this.platform,
+        cupertino: this.size.toggleBorderWidthCupertino,
+        material: this.size.toggleBorderWidthMaterial,
+      );
 
   static FCConfig of(BuildContext context) {
     final FCConfig? config = context.dependOnInheritedWidgetOfExactType<FCConfig>();

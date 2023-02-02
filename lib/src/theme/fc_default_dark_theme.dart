@@ -24,6 +24,14 @@ class FCDefaultDarkTheme implements IFCTheme {
     systemStatusBarContrastEnforced: false,
   );
 
+  // Gradient
+  @override
+  final Alignment gradientBegin = Alignment.topLeft;
+  @override
+  final Alignment gradientEnd = Alignment.bottomRight;
+  @override
+  final List<double>? gradientStops = null;
+
   // White
   @override
   final Color white = const Color(0xff171717);
@@ -57,8 +65,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color primaryButton = const Color(0xffFFFFFF);
   @override
-  final Gradient primaryGradient = const FCGradient(
-    colors: [
+  late final Gradient primaryGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xff0040DD),
       Color(0xff3634A3),
     ],
@@ -67,8 +78,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color primaryLight = const Color(0xff0040DD);
   @override
-  final Gradient primaryLightGradient = const FCGradient(
-    colors: [
+  late final Gradient primaryLightGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xff0040DD),
       Color(0xff3634A3),
     ],
@@ -77,8 +91,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color primaryDark = const Color(0xff0040DD);
   @override
-  final Gradient primaryDarkGradient = const FCGradient(
-    colors: [
+  late final Gradient primaryDarkGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xff0040DD),
       Color(0xff3634A3),
     ],
@@ -90,8 +107,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color secondaryButton = const Color(0xffFFFFFF);
   @override
-  final Gradient secondaryGradient = const FCGradient(
-    colors: [
+  late final Gradient secondaryGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xff5856D6),
       Color(0xff5E5CE6),
     ],
@@ -100,8 +120,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color secondaryLight = const Color(0xff5856D6);
   @override
-  final Gradient secondaryLightGradient = const FCGradient(
-    colors: [
+  late final Gradient secondaryLightGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xff5856D6),
       Color(0xff5E5CE6),
     ],
@@ -110,8 +133,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color secondaryDark = const Color(0xff5856D6);
   @override
-  final Gradient secondaryDarkGradient = const FCGradient(
-    colors: [
+  late final Gradient secondaryDarkGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xff5856D6),
       Color(0xff5E5CE6),
     ],
@@ -121,8 +147,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color grey = const Color(0xff999999);
   @override
-  final Gradient greyGradient = const FCGradient(
-    colors: [
+  late final Gradient greyGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xff999999),
       Color(0xffA5A5A5),
     ],
@@ -131,8 +160,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color greyLight = const Color(0xffE5E5EA);
   @override
-  final Gradient greyLightGradient = const FCGradient(
-    colors: [
+  late final Gradient greyLightGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xffE5E5EA),
       Color(0xffDFDFE3),
     ],
@@ -141,8 +173,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color greyDark = const Color(0xffE5E5EA);
   @override
-  final Gradient greyDarkGradient = const FCGradient(
-    colors: [
+  late final Gradient greyDarkGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xffE5E5EA),
       Color(0xffDFDFE3),
     ],
@@ -152,8 +187,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color blue = const Color(0xff5FCBFA);
   @override
-  final Gradient blueGradient = const FCGradient(
-    colors: [
+  late final Gradient blueGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xff5FCBFA),
       Color(0xff64D2FF),
     ],
@@ -162,8 +200,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color blueLight = const Color(0xff70D7FF);
   @override
-  final Gradient blueLightGradient = const FCGradient(
-    colors: [
+  late final Gradient blueLightGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xff70D7FF),
       Color(0xff84DDFF),
     ],
@@ -172,8 +213,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color blueDark = const Color(0xff70D7FF);
   @override
-  final Gradient blueDarkGradient = const FCGradient(
-    colors: [
+  late final Gradient blueDarkGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xff70D7FF),
       Color(0xff84DDFF),
     ],
@@ -183,8 +227,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color green = const Color(0xff34C759);
   @override
-  final Gradient greenGradient = const FCGradient(
-    colors: [
+  late final Gradient greenGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xff34C759),
       Color(0xff30D158),
     ],
@@ -193,8 +240,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color greenLight = const Color(0xff30DB5B);
   @override
-  final Gradient greenLightGradient = const FCGradient(
-    colors: [
+  late final Gradient greenLightGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xff30DB5B),
       Color(0xff6DE68B),
     ],
@@ -203,8 +253,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color greenDark = const Color(0xff30DB5B);
   @override
-  final Gradient greenDarkGradient = const FCGradient(
-    colors: [
+  late final Gradient greenDarkGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xff30DB5B),
       Color(0xff6DE68B),
     ],
@@ -214,8 +267,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color yellow = const Color(0xffFF9500);
   @override
-  final Gradient yellowGradient = const FCGradient(
-    colors: [
+  late final Gradient yellowGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xffFF9500),
       Color(0xffFF9F0A),
     ],
@@ -224,8 +280,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color yellowLight = const Color(0xffFFB340);
   @override
-  final Gradient yellowLightGradient = const FCGradient(
-    colors: [
+  late final Gradient yellowLightGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xffFFB340),
       Color(0xffFFC060),
     ],
@@ -234,8 +293,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color yellowDark = const Color(0xffFFB340);
   @override
-  final Gradient yellowDarkGradient = const FCGradient(
-    colors: [
+  late final Gradient yellowDarkGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xffFFB340),
       Color(0xffFFC060),
     ],
@@ -245,8 +307,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color red = const Color(0xffFF3B30);
   @override
-  final Gradient redGradient = const FCGradient(
-    colors: [
+  late final Gradient redGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xffFF3B30),
       Color(0xffFF2D55),
     ],
@@ -255,8 +320,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color redLight = const Color(0xffFF6961);
   @override
-  final Gradient redLightGradient = const FCGradient(
-    colors: [
+  late final Gradient redLightGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xffFF6961),
       Color(0xffFF6961),
     ],
@@ -265,8 +333,11 @@ class FCDefaultDarkTheme implements IFCTheme {
   @override
   final Color redDark = const Color(0xffFF6961);
   @override
-  final Gradient redDarkGradient = const FCGradient(
-    colors: [
+  late final Gradient redDarkGradient = LinearGradient(
+    begin: this.gradientBegin,
+    end: this.gradientEnd,
+    stops: this.gradientStops,
+    colors: const [
       Color(0xffFF6961),
       Color(0xffFF6961),
     ],

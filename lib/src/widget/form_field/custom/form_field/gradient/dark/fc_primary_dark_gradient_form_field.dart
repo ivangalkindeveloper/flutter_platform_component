@@ -68,7 +68,8 @@ class FCPrimaryDarkGradientFormField extends StatelessWidget {
 
     return FCBasicGradientFormField(
       context: context,
-      backgroundGradient: FCGradient(
+      backgroundGradient: FCLinearGradient(
+        context: context,
         colors: [
           theme.backgroundComponent,
           theme.backgroundComponent,

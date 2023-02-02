@@ -294,7 +294,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
           ),
         ),
         IgnorePointer(
-          child: FCGradientMask(
+          child: FCLinearGradientMask(
             gradient: this._borderGradient(theme: theme),
             child: Row(
               children: [

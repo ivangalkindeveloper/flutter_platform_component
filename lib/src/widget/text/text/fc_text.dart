@@ -92,7 +92,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -125,7 +125,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -158,7 +158,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -204,7 +204,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -237,7 +237,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -270,7 +270,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -303,7 +303,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -336,7 +336,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -369,7 +369,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -402,7 +402,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -435,7 +435,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -468,7 +468,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -501,7 +501,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -534,7 +534,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -567,7 +567,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -600,7 +600,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -633,7 +633,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -666,7 +666,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -699,7 +699,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -798,7 +798,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -831,7 +831,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -864,7 +864,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -910,7 +910,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -943,7 +943,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -976,7 +976,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -1009,7 +1009,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -1042,7 +1042,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -1075,7 +1075,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -1108,7 +1108,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -1141,7 +1141,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -1174,7 +1174,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -1207,7 +1207,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -1240,7 +1240,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -1273,7 +1273,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -1306,7 +1306,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -1339,7 +1339,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -1372,7 +1372,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -1405,7 +1405,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -1504,7 +1504,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -1537,7 +1537,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -1570,7 +1570,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -1616,7 +1616,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -1649,7 +1649,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -1682,7 +1682,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -1715,7 +1715,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -1748,7 +1748,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -1781,7 +1781,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -1814,7 +1814,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -1847,7 +1847,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -1880,7 +1880,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -1913,7 +1913,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -1946,7 +1946,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -1979,7 +1979,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -2012,7 +2012,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -2045,7 +2045,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -2078,7 +2078,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -2111,7 +2111,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -2210,7 +2210,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -2243,7 +2243,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -2276,7 +2276,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -2322,7 +2322,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -2355,7 +2355,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -2388,7 +2388,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -2421,7 +2421,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -2454,7 +2454,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -2487,7 +2487,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -2520,7 +2520,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -2553,7 +2553,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -2586,7 +2586,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -2619,7 +2619,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -2652,7 +2652,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -2685,7 +2685,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -2718,7 +2718,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -2751,7 +2751,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -2784,7 +2784,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -2817,7 +2817,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -2916,7 +2916,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -2949,7 +2949,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -2982,7 +2982,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -3028,7 +3028,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -3061,7 +3061,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -3094,7 +3094,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -3127,7 +3127,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -3160,7 +3160,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -3193,7 +3193,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -3226,7 +3226,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -3259,7 +3259,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -3292,7 +3292,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -3325,7 +3325,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -3358,7 +3358,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -3391,7 +3391,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -3424,7 +3424,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -3457,7 +3457,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -3490,7 +3490,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -3523,7 +3523,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -3622,7 +3622,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -3655,7 +3655,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -3688,7 +3688,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -3734,7 +3734,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -3767,7 +3767,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -3800,7 +3800,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -3833,7 +3833,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -3866,7 +3866,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -3899,7 +3899,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -3932,7 +3932,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -3965,7 +3965,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -3998,7 +3998,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -4031,7 +4031,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -4064,7 +4064,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -4097,7 +4097,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -4130,7 +4130,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -4163,7 +4163,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -4196,7 +4196,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -4229,7 +4229,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -4328,7 +4328,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -4361,7 +4361,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -4394,7 +4394,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -4440,7 +4440,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -4473,7 +4473,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -4506,7 +4506,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -4539,7 +4539,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -4572,7 +4572,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -4605,7 +4605,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -4638,7 +4638,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -4671,7 +4671,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -4704,7 +4704,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -4737,7 +4737,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -4770,7 +4770,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -4803,7 +4803,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -4836,7 +4836,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -4869,7 +4869,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -4902,7 +4902,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -4935,7 +4935,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -5034,7 +5034,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -5067,7 +5067,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -5100,7 +5100,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -5146,7 +5146,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -5179,7 +5179,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -5212,7 +5212,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -5245,7 +5245,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -5278,7 +5278,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -5311,7 +5311,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -5344,7 +5344,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -5377,7 +5377,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -5410,7 +5410,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -5443,7 +5443,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -5476,7 +5476,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -5509,7 +5509,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -5542,7 +5542,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -5575,7 +5575,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -5608,7 +5608,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -5641,7 +5641,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -5741,7 +5741,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -5774,7 +5774,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -5807,7 +5807,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -5853,7 +5853,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -5886,7 +5886,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -5919,7 +5919,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -5952,7 +5952,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -5985,7 +5985,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -6018,7 +6018,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -6051,7 +6051,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -6084,7 +6084,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -6117,7 +6117,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -6150,7 +6150,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -6183,7 +6183,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -6216,7 +6216,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -6249,7 +6249,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -6282,7 +6282,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -6315,7 +6315,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -6348,7 +6348,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -6447,7 +6447,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -6480,7 +6480,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -6513,7 +6513,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -6559,7 +6559,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -6592,7 +6592,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -6625,7 +6625,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -6658,7 +6658,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -6691,7 +6691,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -6724,7 +6724,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -6757,7 +6757,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -6790,7 +6790,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -6823,7 +6823,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -6856,7 +6856,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -6889,7 +6889,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -6922,7 +6922,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -6955,7 +6955,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -6988,7 +6988,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -7021,7 +7021,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -7054,7 +7054,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -7153,7 +7153,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -7186,7 +7186,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -7219,7 +7219,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -7265,7 +7265,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -7298,7 +7298,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -7331,7 +7331,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -7364,7 +7364,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -7397,7 +7397,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -7430,7 +7430,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -7463,7 +7463,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -7496,7 +7496,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -7529,7 +7529,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -7562,7 +7562,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -7595,7 +7595,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -7628,7 +7628,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -7661,7 +7661,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -7694,7 +7694,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -7727,7 +7727,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -7760,7 +7760,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -7859,7 +7859,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -7892,7 +7892,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -7925,7 +7925,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -7971,7 +7971,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -8004,7 +8004,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -8037,7 +8037,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -8070,7 +8070,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -8103,7 +8103,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -8136,7 +8136,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -8169,7 +8169,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -8202,7 +8202,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -8235,7 +8235,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -8268,7 +8268,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -8301,7 +8301,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -8334,7 +8334,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -8367,7 +8367,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -8400,7 +8400,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -8433,7 +8433,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -8466,7 +8466,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -8565,7 +8565,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -8598,7 +8598,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -8631,7 +8631,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -8677,7 +8677,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -8710,7 +8710,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -8743,7 +8743,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -8776,7 +8776,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -8809,7 +8809,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -8842,7 +8842,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -8875,7 +8875,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -8908,7 +8908,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -8941,7 +8941,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -8974,7 +8974,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -9007,7 +9007,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -9040,7 +9040,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -9073,7 +9073,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -9106,7 +9106,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -9139,7 +9139,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -9172,7 +9172,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -9271,7 +9271,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -9304,7 +9304,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -9337,7 +9337,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -9383,7 +9383,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -9416,7 +9416,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -9449,7 +9449,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -9482,7 +9482,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -9515,7 +9515,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -9548,7 +9548,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -9581,7 +9581,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -9614,7 +9614,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -9647,7 +9647,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -9680,7 +9680,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -9713,7 +9713,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -9746,7 +9746,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -9779,7 +9779,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -9812,7 +9812,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -9845,7 +9845,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -9878,7 +9878,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -9977,7 +9977,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -10010,7 +10010,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -10043,7 +10043,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -10089,7 +10089,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -10122,7 +10122,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -10155,7 +10155,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -10188,7 +10188,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -10221,7 +10221,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -10254,7 +10254,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -10287,7 +10287,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -10320,7 +10320,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -10353,7 +10353,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -10386,7 +10386,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -10419,7 +10419,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -10452,7 +10452,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -10485,7 +10485,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -10518,7 +10518,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -10551,7 +10551,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -10584,7 +10584,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -10683,7 +10683,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -10716,7 +10716,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -10749,7 +10749,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -10795,7 +10795,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -10828,7 +10828,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -10861,7 +10861,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -10894,7 +10894,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -10927,7 +10927,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -10960,7 +10960,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -10993,7 +10993,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -11026,7 +11026,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -11059,7 +11059,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -11092,7 +11092,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -11125,7 +11125,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -11158,7 +11158,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -11191,7 +11191,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -11224,7 +11224,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -11257,7 +11257,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -11290,7 +11290,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -11390,7 +11390,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -11423,7 +11423,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -11456,7 +11456,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -11502,7 +11502,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -11535,7 +11535,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -11568,7 +11568,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -11601,7 +11601,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -11634,7 +11634,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -11667,7 +11667,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -11700,7 +11700,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -11733,7 +11733,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -11766,7 +11766,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -11799,7 +11799,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -11832,7 +11832,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -11865,7 +11865,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -11898,7 +11898,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -11931,7 +11931,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -11964,7 +11964,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -11997,7 +11997,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -12096,7 +12096,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -12129,7 +12129,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -12162,7 +12162,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -12208,7 +12208,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -12241,7 +12241,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -12274,7 +12274,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -12307,7 +12307,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -12340,7 +12340,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -12373,7 +12373,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -12406,7 +12406,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -12439,7 +12439,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -12472,7 +12472,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -12505,7 +12505,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -12538,7 +12538,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -12571,7 +12571,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -12604,7 +12604,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -12637,7 +12637,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -12670,7 +12670,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -12703,7 +12703,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -12802,7 +12802,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -12835,7 +12835,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -12868,7 +12868,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -12914,7 +12914,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -12947,7 +12947,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -12980,7 +12980,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -13013,7 +13013,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -13046,7 +13046,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -13079,7 +13079,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -13112,7 +13112,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -13145,7 +13145,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -13178,7 +13178,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -13211,7 +13211,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -13244,7 +13244,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -13277,7 +13277,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -13310,7 +13310,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -13343,7 +13343,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -13376,7 +13376,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -13409,7 +13409,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -13508,7 +13508,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -13541,7 +13541,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -13574,7 +13574,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -13620,7 +13620,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -13653,7 +13653,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -13686,7 +13686,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -13719,7 +13719,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -13752,7 +13752,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -13785,7 +13785,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -13818,7 +13818,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -13851,7 +13851,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -13884,7 +13884,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -13917,7 +13917,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -13950,7 +13950,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -13983,7 +13983,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -14016,7 +14016,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -14049,7 +14049,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -14082,7 +14082,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -14115,7 +14115,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -14214,7 +14214,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -14247,7 +14247,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -14280,7 +14280,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -14326,7 +14326,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -14359,7 +14359,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -14392,7 +14392,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -14425,7 +14425,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -14458,7 +14458,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -14491,7 +14491,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -14524,7 +14524,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -14557,7 +14557,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -14590,7 +14590,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -14623,7 +14623,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -14656,7 +14656,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -14689,7 +14689,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -14722,7 +14722,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -14755,7 +14755,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -14788,7 +14788,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -14821,7 +14821,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -14920,7 +14920,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -14953,7 +14953,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -14986,7 +14986,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -15032,7 +15032,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -15065,7 +15065,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -15098,7 +15098,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -15131,7 +15131,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -15164,7 +15164,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -15197,7 +15197,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -15230,7 +15230,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -15263,7 +15263,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -15296,7 +15296,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -15329,7 +15329,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -15362,7 +15362,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -15395,7 +15395,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -15428,7 +15428,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -15461,7 +15461,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -15494,7 +15494,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -15527,7 +15527,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -15626,7 +15626,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -15659,7 +15659,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -15692,7 +15692,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -15738,7 +15738,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -15771,7 +15771,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -15804,7 +15804,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -15837,7 +15837,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -15870,7 +15870,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -15903,7 +15903,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -15936,7 +15936,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -15969,7 +15969,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -16002,7 +16002,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -16035,7 +16035,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -16068,7 +16068,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -16101,7 +16101,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -16134,7 +16134,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -16167,7 +16167,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -16200,7 +16200,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -16233,7 +16233,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -16332,7 +16332,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -16365,7 +16365,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -16398,7 +16398,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -16444,7 +16444,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -16477,7 +16477,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -16510,7 +16510,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -16543,7 +16543,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -16576,7 +16576,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -16609,7 +16609,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -16642,7 +16642,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -16675,7 +16675,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -16708,7 +16708,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -16741,7 +16741,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -16774,7 +16774,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -16807,7 +16807,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -16840,7 +16840,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -16873,7 +16873,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -16906,7 +16906,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -16939,7 +16939,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -17039,7 +17039,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -17072,7 +17072,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -17105,7 +17105,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -17151,7 +17151,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -17184,7 +17184,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -17217,7 +17217,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -17250,7 +17250,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -17283,7 +17283,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -17316,7 +17316,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -17349,7 +17349,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -17382,7 +17382,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -17415,7 +17415,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -17448,7 +17448,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -17481,7 +17481,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -17514,7 +17514,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -17547,7 +17547,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -17580,7 +17580,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -17613,7 +17613,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -17646,7 +17646,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -17745,7 +17745,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -17778,7 +17778,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -17811,7 +17811,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -17857,7 +17857,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -17890,7 +17890,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -17923,7 +17923,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -17956,7 +17956,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -17989,7 +17989,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -18022,7 +18022,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -18055,7 +18055,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -18088,7 +18088,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -18121,7 +18121,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -18154,7 +18154,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -18187,7 +18187,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -18220,7 +18220,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -18253,7 +18253,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -18286,7 +18286,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -18319,7 +18319,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -18352,7 +18352,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -18451,7 +18451,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -18484,7 +18484,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -18517,7 +18517,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -18563,7 +18563,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -18596,7 +18596,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -18629,7 +18629,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -18662,7 +18662,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -18695,7 +18695,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -18728,7 +18728,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -18761,7 +18761,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -18794,7 +18794,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -18827,7 +18827,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -18860,7 +18860,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -18893,7 +18893,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -18926,7 +18926,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -18959,7 +18959,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -18992,7 +18992,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -19025,7 +19025,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -19058,7 +19058,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -19157,7 +19157,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -19190,7 +19190,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -19223,7 +19223,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -19269,7 +19269,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -19302,7 +19302,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -19335,7 +19335,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -19368,7 +19368,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -19401,7 +19401,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -19434,7 +19434,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -19467,7 +19467,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -19500,7 +19500,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -19533,7 +19533,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -19566,7 +19566,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -19599,7 +19599,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -19632,7 +19632,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -19665,7 +19665,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -19698,7 +19698,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -19731,7 +19731,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -19764,7 +19764,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -19863,7 +19863,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -19896,7 +19896,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -19929,7 +19929,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -19975,7 +19975,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -20008,7 +20008,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -20041,7 +20041,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -20074,7 +20074,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -20107,7 +20107,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -20140,7 +20140,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -20173,7 +20173,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -20206,7 +20206,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -20239,7 +20239,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -20272,7 +20272,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -20305,7 +20305,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -20338,7 +20338,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -20371,7 +20371,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -20404,7 +20404,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -20437,7 +20437,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -20470,7 +20470,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -20569,7 +20569,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -20602,7 +20602,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -20635,7 +20635,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -20681,7 +20681,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -20714,7 +20714,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -20747,7 +20747,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -20780,7 +20780,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -20813,7 +20813,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -20846,7 +20846,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -20879,7 +20879,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -20912,7 +20912,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -20945,7 +20945,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -20978,7 +20978,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -21011,7 +21011,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -21044,7 +21044,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -21077,7 +21077,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -21110,7 +21110,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -21143,7 +21143,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -21176,7 +21176,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -21275,7 +21275,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -21308,7 +21308,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -21341,7 +21341,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -21387,7 +21387,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -21420,7 +21420,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -21453,7 +21453,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -21486,7 +21486,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -21519,7 +21519,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -21552,7 +21552,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -21585,7 +21585,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -21618,7 +21618,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -21651,7 +21651,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -21684,7 +21684,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -21717,7 +21717,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -21750,7 +21750,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -21783,7 +21783,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -21816,7 +21816,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -21849,7 +21849,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -21882,7 +21882,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -21981,7 +21981,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -22014,7 +22014,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -22047,7 +22047,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -22093,7 +22093,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -22126,7 +22126,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -22159,7 +22159,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -22192,7 +22192,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -22225,7 +22225,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -22258,7 +22258,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -22291,7 +22291,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -22324,7 +22324,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -22357,7 +22357,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -22390,7 +22390,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -22423,7 +22423,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -22456,7 +22456,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -22489,7 +22489,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -22522,7 +22522,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -22555,7 +22555,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -22588,7 +22588,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -22688,7 +22688,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -22721,7 +22721,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -22754,7 +22754,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -22800,7 +22800,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -22833,7 +22833,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -22866,7 +22866,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -22899,7 +22899,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -22932,7 +22932,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -22965,7 +22965,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -22998,7 +22998,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -23031,7 +23031,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -23064,7 +23064,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -23097,7 +23097,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -23130,7 +23130,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -23163,7 +23163,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -23196,7 +23196,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -23229,7 +23229,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -23262,7 +23262,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -23295,7 +23295,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -23394,7 +23394,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -23427,7 +23427,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -23460,7 +23460,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -23506,7 +23506,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -23539,7 +23539,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -23572,7 +23572,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -23605,7 +23605,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -23638,7 +23638,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -23671,7 +23671,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -23704,7 +23704,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -23737,7 +23737,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -23770,7 +23770,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -23803,7 +23803,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -23836,7 +23836,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -23869,7 +23869,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -23902,7 +23902,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -23935,7 +23935,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -23968,7 +23968,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -24001,7 +24001,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -24100,7 +24100,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -24133,7 +24133,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -24166,7 +24166,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -24212,7 +24212,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -24245,7 +24245,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -24278,7 +24278,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -24311,7 +24311,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -24344,7 +24344,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -24377,7 +24377,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -24410,7 +24410,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -24443,7 +24443,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -24476,7 +24476,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -24509,7 +24509,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -24542,7 +24542,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -24575,7 +24575,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -24608,7 +24608,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -24641,7 +24641,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -24674,7 +24674,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -24707,7 +24707,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -24806,7 +24806,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -24839,7 +24839,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -24872,7 +24872,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -24918,7 +24918,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -24951,7 +24951,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -24984,7 +24984,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -25017,7 +25017,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -25050,7 +25050,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -25083,7 +25083,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -25116,7 +25116,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -25149,7 +25149,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -25182,7 +25182,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -25215,7 +25215,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -25248,7 +25248,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -25281,7 +25281,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -25314,7 +25314,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -25347,7 +25347,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -25380,7 +25380,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -25413,7 +25413,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -25512,7 +25512,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -25545,7 +25545,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -25578,7 +25578,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -25624,7 +25624,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -25657,7 +25657,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -25690,7 +25690,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -25723,7 +25723,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -25756,7 +25756,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -25789,7 +25789,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -25822,7 +25822,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -25855,7 +25855,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -25888,7 +25888,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -25921,7 +25921,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -25954,7 +25954,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -25987,7 +25987,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -26020,7 +26020,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -26053,7 +26053,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -26086,7 +26086,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -26119,7 +26119,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -26218,7 +26218,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -26251,7 +26251,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -26284,7 +26284,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -26330,7 +26330,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -26363,7 +26363,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -26396,7 +26396,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -26429,7 +26429,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -26462,7 +26462,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -26495,7 +26495,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -26528,7 +26528,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -26561,7 +26561,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -26594,7 +26594,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -26627,7 +26627,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -26660,7 +26660,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -26693,7 +26693,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -26726,7 +26726,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -26759,7 +26759,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -26792,7 +26792,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -26825,7 +26825,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -26924,7 +26924,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -26957,7 +26957,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -26990,7 +26990,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -27036,7 +27036,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -27069,7 +27069,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -27102,7 +27102,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -27135,7 +27135,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -27168,7 +27168,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -27201,7 +27201,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -27234,7 +27234,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -27267,7 +27267,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -27300,7 +27300,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -27333,7 +27333,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -27366,7 +27366,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -27399,7 +27399,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -27432,7 +27432,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -27465,7 +27465,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -27498,7 +27498,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -27531,7 +27531,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,
@@ -27630,7 +27630,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryGradient,
       child: Text(
         text,
@@ -27663,7 +27663,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryLightGradient,
       child: Text(
         text,
@@ -27696,7 +27696,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.primaryDarkGradient,
       child: Text(
         text,
@@ -27742,7 +27742,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.secondaryGradient,
       child: Text(
         text,
@@ -27775,7 +27775,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyGradient,
       child: Text(
         text,
@@ -27808,7 +27808,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyLightGradient,
       child: Text(
         text,
@@ -27841,7 +27841,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greyDarkGradient,
       child: Text(
         text,
@@ -27874,7 +27874,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueGradient,
       child: Text(
         text,
@@ -27907,7 +27907,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueLightGradient,
       child: Text(
         text,
@@ -27940,7 +27940,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.blueDarkGradient,
       child: Text(
         text,
@@ -27973,7 +27973,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenGradient,
       child: Text(
         text,
@@ -28006,7 +28006,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenLightGradient,
       child: Text(
         text,
@@ -28039,7 +28039,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.greenDarkGradient,
       child: Text(
         text,
@@ -28072,7 +28072,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowGradient,
       child: Text(
         text,
@@ -28105,7 +28105,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowLightGradient,
       child: Text(
         text,
@@ -28138,7 +28138,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.yellowDarkGradient,
       child: Text(
         text,
@@ -28171,7 +28171,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redGradient,
       child: Text(
         text,
@@ -28204,7 +28204,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redLightGradient,
       child: Text(
         text,
@@ -28237,7 +28237,7 @@ class FCText {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCGradientMask(
+    return FCLinearGradientMask(
       gradient: theme.redDarkGradient,
       child: Text(
         text,

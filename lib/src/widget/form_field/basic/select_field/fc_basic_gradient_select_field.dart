@@ -100,7 +100,7 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
 
   @override
   Widget build(BuildContext context) {
-    return _FCGradientSelectFieldWrapper(
+    return _FCLinearGradientSelectFieldWrapper(
       context: context,
       splashColor: this.widget.splashColor,
       isDisabled: this.widget.isDisabled,
@@ -145,8 +145,8 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
   }
 }
 
-class _FCGradientSelectFieldWrapper extends FCPlatformWidget {
-  _FCGradientSelectFieldWrapper({
+class _FCLinearGradientSelectFieldWrapper extends FCPlatformWidget {
+  _FCLinearGradientSelectFieldWrapper({
     Key? key,
     required BuildContext context,
     required Color splashColor,

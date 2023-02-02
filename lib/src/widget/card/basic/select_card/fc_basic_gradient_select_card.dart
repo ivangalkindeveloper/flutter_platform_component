@@ -78,7 +78,6 @@ class _FCBasicGradientSelectCardCupertino extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
-    final IFCSize size = config.size;
 
     return Stack(
       children: [
@@ -142,7 +141,6 @@ class _FCBasicGradientSelectCardMaterial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
-    final IFCSize size = config.size;
 
     return Stack(
       children: [

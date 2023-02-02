@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
-class FCGradientMask extends ShaderMask {
-  FCGradientMask({
+class FCLinearGradientMask extends ShaderMask {
+  FCLinearGradientMask({
     required Gradient gradient,
     required Widget child,
   }) : super(

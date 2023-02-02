@@ -120,7 +120,7 @@ class _FCBasicGradientToggleState extends State<FCBasicGradientToggle> {
                           child: Row(
                             children: [
                               Expanded(
-                                child: _FCGradientToggleButton(
+                                child: _FCLinearGradientToggleButton(
                                   item: item,
                                   unselectedBackgroundGradient:
                                       this.widget.unselectedBackgroundGradient,
@@ -173,8 +173,8 @@ class _FCBasicGradientToggleState extends State<FCBasicGradientToggle> {
   }
 }
 
-class _FCGradientToggleButton<T> extends StatelessWidget {
-  const _FCGradientToggleButton({
+class _FCLinearGradientToggleButton<T> extends StatelessWidget {
+  const _FCLinearGradientToggleButton({
     Key? key,
     required this.item,
     required this.unselectedBackgroundGradient,
@@ -251,7 +251,7 @@ class _FCGradientToggleButton<T> extends StatelessWidget {
           if (this.item.prefix != null) this.item.prefix!,
           if (this.item.prefix != null) SizedBox(width: size.s16 / 2),
           if (this.item.prefixIcon != null)
-            FCGradientMask(
+            FCLinearGradientMask(
               gradient: this._internalGradient(theme: theme),
               child: Icon(
                 this.item.prefixIcon,
@@ -260,7 +260,7 @@ class _FCGradientToggleButton<T> extends StatelessWidget {
               ),
             ),
           if (this.item.prefixIcon != null) SizedBox(width: size.s16 / 2),
-          FCGradientMask(
+          FCLinearGradientMask(
             gradient: this._internalGradient(theme: theme),
             child: Text(
               item.title,
@@ -274,7 +274,7 @@ class _FCGradientToggleButton<T> extends StatelessWidget {
           ),
           if (this.item.postfixIcon != null) SizedBox(width: size.s16 / 2),
           if (this.item.postfixIcon != null)
-            FCGradientMask(
+            FCLinearGradientMask(
               gradient: this._internalGradient(theme: theme),
               child: Icon(
                 this.item.postfixIcon,

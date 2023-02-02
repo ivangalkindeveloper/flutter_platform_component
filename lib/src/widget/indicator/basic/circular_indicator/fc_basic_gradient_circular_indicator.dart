@@ -38,7 +38,7 @@ class _FCBasicGradientCircularIndicatorCupertino extends StatelessWidget {
     return SizedBox(
       height: this.height,
       width: this.height,
-      child: FCGradientMask(
+      child: FCLinearGradientMask(
         gradient: this.gradient,
         child: CupertinoActivityIndicator(
           radius: this.height / 2,
@@ -63,7 +63,7 @@ class _FBasicGradientCircularIndicatorMaterial extends StatelessWidget {
     return SizedBox(
       height: this.height,
       width: this.height,
-      child: FCGradientMask(
+      child: FCLinearGradientMask(
         gradient: this.gradient,
         child: CircularProgressIndicator(
           strokeWidth: 2,

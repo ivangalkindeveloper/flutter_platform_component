@@ -40,7 +40,8 @@ class FCGreenLightGradientPINField extends StatelessWidget {
       context: context,
       length: this.length,
       unfocusedBackgroundGradient: theme.greyLightGradient,
-      focusedBackgroundGradient: FCGradient(
+      focusedBackgroundGradient: FCLinearGradient(
+        context: context,
         colors: [
           theme.backgroundComponent,
           theme.backgroundComponent,

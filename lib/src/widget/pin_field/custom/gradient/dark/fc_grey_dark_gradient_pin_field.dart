@@ -40,7 +40,8 @@ class FCGreyDarkGradientPINField extends StatelessWidget {
       context: context,
       length: this.length,
       unfocusedBackgroundGradient: theme.greyDarkGradient,
-      focusedBackgroundGradient: FCGradient(
+      focusedBackgroundGradient: FCLinearGradient(
+        context: context,
         colors: [
           theme.backgroundComponent,
           theme.backgroundComponent,

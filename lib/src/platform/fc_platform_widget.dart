@@ -1,5 +1,4 @@
-import 'package:flutter_component/src/extension/fc_extension.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_component/src/platform/fc_platform.dart';
 import 'package:flutter/widgets.dart';
 
 class FCPlatformWidget extends StatelessWidget {
@@ -13,17 +12,10 @@ class FCPlatformWidget extends StatelessWidget {
   final Widget material;
 
   @override
-  Widget build(BuildContext context) {
-    final FCConfig config = context.config;
-    final TargetPlatform platform = config.platform;
-
-    switch (platform) {
-      case TargetPlatform.iOS:
-        return cupertino;
-      case TargetPlatform.android:
-        return material;
-      default:
-        return material;
-    }
-  }
+  Widget build(BuildContext context) =>
+      FCPlatform.decomposeFromContext<Widget, Widget, Widget>(
+        context: context,
+        cupertino: this.cupertino,
+        material: this.material,
+      );
 }

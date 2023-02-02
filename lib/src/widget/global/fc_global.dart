@@ -11,27 +11,16 @@ class FCGlobal {
   static material.MaterialPageRoute pageRoute({
     required BuildContext context,
     required Widget child,
-  }) {
-    final FCConfig config = context.config;
-    final TargetPlatform platform = config.platform;
-
-    switch (platform) {
-      case TargetPlatform.iOS:
-        return bottomSheet.MaterialWithModalsPageRoute(
+  }) =>
+      FCPlatform.decomposeFromContext(
+        context: context,
+        cupertino: bottomSheet.MaterialWithModalsPageRoute(
           builder: (BuildContext context) => child,
-        );
-
-      case TargetPlatform.android:
-        return material.MaterialPageRoute(
+        ),
+        material: material.MaterialPageRoute(
           builder: (BuildContext context) => child,
-        );
-
-      default:
-        return material.MaterialPageRoute(
-          builder: (BuildContext context) => child,
-        );
-    }
-  }
+        ),
+      );
 
   static PageRouteBuilder pageRouteFade({required Widget child}) => PageRouteBuilder(
         pageBuilder: (

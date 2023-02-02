@@ -35,7 +35,8 @@ class FCYellowDarkGradientToggle<T> extends StatelessWidget {
       value: this.value,
       items: this.items,
       onChanged: this.onChanged,
-      unselectedBackgroundGradient: FCGradient(
+      unselectedBackgroundGradient: FCLinearGradient(
+        context: context,
         colors: [
           theme.backgroundComponent,
           theme.white,
@@ -44,7 +45,8 @@ class FCYellowDarkGradientToggle<T> extends StatelessWidget {
       unselectedInternalGradient: theme.greyDarkGradient,
       unselectedSplashColor: theme.yellowDark,
       selectedBackgroundGradient: theme.yellowDarkGradient,
-      selectedInternalGradient: FCGradient(
+      selectedInternalGradient: FCLinearGradient(
+        context: context,
         colors: [
           theme.white,
           theme.white,
