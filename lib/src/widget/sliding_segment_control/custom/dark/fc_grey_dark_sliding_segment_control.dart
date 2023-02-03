@@ -2,8 +2,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCRedLightSlidingSegmentControl<T> extends StatelessWidget {
-  const FCRedLightSlidingSegmentControl({
+class FCGreenDarkSlidingSegmentControl<T> extends StatelessWidget {
+  const FCGreenDarkSlidingSegmentControl({
     Key? key,
     required this.value,
     required this.items,
@@ -31,8 +31,8 @@ class FCRedLightSlidingSegmentControl<T> extends StatelessWidget {
       value: this.value,
       items: this.items,
       onChanged: this.onChanged,
-      backgroundColor: theme.greyLight,
-      thumbColor: theme.redLight,
+      backgroundColor: theme.grey,
+      thumbColor: theme.greenDark,
       unselectedInternalColor: theme.black,
       selectedInternalColor: theme.white,
       iconHeight: this.iconHeight,

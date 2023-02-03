@@ -1,15 +1,14 @@
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class GradientSegmentControlScreen extends StatefulWidget {
-  const GradientSegmentControlScreen({Key? key}) : super(key: key);
+class GradientToggleScreen extends StatefulWidget {
+  const GradientToggleScreen({Key? key}) : super(key: key);
 
   @override
-  State<GradientSegmentControlScreen> createState() =>
-      _GradientSegmentControlScreenState();
+  State<GradientToggleScreen> createState() => _GradientToggleScreenState();
 }
 
-class _GradientSegmentControlScreenState extends State<GradientSegmentControlScreen> {
+class _GradientToggleScreenState extends State<GradientToggleScreen> {
   String _action = "";
 
   @override
@@ -22,7 +21,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
       backgroundColor: theme.backgroundScaffold,
       appBar: FCScreenAppBar(
         context: context,
-        title: "Gradient Segment Control",
+        title: "Gradient Toggle",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: FCListView(
@@ -32,18 +31,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkGradientSegmentControl<String>(
+          FCBlueDarkGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -51,18 +50,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkGradientSegmentControl<String>(
+          FCGreenDarkGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -70,18 +69,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkGradientSegmentControl<String>(
+          FCGreyDarkGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -89,18 +88,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkGradientSegmentControl<String>(
+          FCPrimaryDarkGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -108,18 +107,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkGradientSegmentControl<String>(
+          FCSecondaryDarkGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -127,37 +126,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkGradientSegmentControl<String>(
+          FCYellowDarkGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
-          ),
-          SizedBox(height: size.s16 / 2),
-          FCYellowDarkGradientSegmentControl<String>(
-            value: this._action,
-            items: [
-              FCSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -170,18 +150,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCBlueGradientSegmentControl<String>(
+          FCBlueGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -189,18 +169,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenGradientSegmentControl<String>(
+          FCGreenGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -208,18 +188,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyGradientSegmentControl<String>(
+          FCGreyGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -227,18 +207,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryGradientSegmentControl<String>(
+          FCPrimaryGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -246,18 +226,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedGradientSegmentControl<String>(
+          FCSecondaryGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -265,37 +245,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryGradientSegmentControl<String>(
+          FCYellowGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
-          ),
-          SizedBox(height: size.s16 / 2),
-          FCYellowGradientSegmentControl<String>(
-            value: this._action,
-            items: [
-              FCSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -308,18 +269,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightGradientSegmentControl<String>(
+          FCBlueLightGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -327,18 +288,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightGradientSegmentControl<String>(
+          FCGreenLightGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -346,18 +307,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyLightGradientSegmentControl<String>(
+          FCGreyLightGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -365,18 +326,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightGradientSegmentControl<String>(
+          FCPrimaryLightGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -384,18 +345,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightGradientSegmentControl<String>(
+          FCSecondaryLightGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),
@@ -403,37 +364,18 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightGradientSegmentControl<String>(
+          FCYellowLightGradientToggle<String>(
             value: this._action,
             items: [
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "First",
                 title: "First",
               ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Second",
                 title: "Second",
               ),
-              FCSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
-          ),
-          SizedBox(height: size.s16 / 2),
-          FCYellowLightGradientSegmentControl<String>(
-            value: this._action,
-            items: [
-              FCSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSegmentControlItem(
+              FCToggleItem(
                 value: "Third",
                 title: "Third",
               ),

@@ -11,6 +11,7 @@ class FCGreenDarkSlider extends StatelessWidget {
     this.max = 1.0,
     this.divisions,
     this.isDisabled = false,
+    this.disabledColor,
   }) : super(key: key);
 
   final double value;
@@ -19,6 +20,7 @@ class FCGreenDarkSlider extends StatelessWidget {
   final double max;
   final int? divisions;
   final bool isDisabled;
+  final Color? disabledColor;
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +36,7 @@ class FCGreenDarkSlider extends StatelessWidget {
       max: this.max,
       divisions: this.divisions,
       isDisabled: this.isDisabled,
+      disabledColor: this.disabledColor,
     );
   }
 }

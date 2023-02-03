@@ -31,21 +31,125 @@ class _SliderScreenState extends State<SliderScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          //TODO Dark
+          FCBlueDarkSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCGreenDarkSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCPrimaryDarkSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCRedDarkSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCSecondaryDarkSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCYellowDarkSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          //TODO Default
+          FCBlackAlwaysSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCBlackSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCBlueSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCGreenSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCPrimarySlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCRedSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCSecondarySlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCWhiteAlwaysSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCWhiteSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCYellowSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          //TODO Light
+          FCBlueLightSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCGreenLightSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCPrimaryLightSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCRedLightSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCSecondaryLightSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCYellowLightSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+          ),
         ],
       ),
     );

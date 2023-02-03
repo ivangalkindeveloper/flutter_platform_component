@@ -20,13 +20,13 @@ class TextScreen extends StatelessWidget {
       body: FCListView(
         children: [
           FCText.thin10Blue(context: context, text: "Thin 10 Blue"),
-          SizedBox(height: size.s16),
+          SizedBox(height: size.s16 / 2),
           FCText.regular16Black(context: context, text: "Regular 16 Black"),
-          SizedBox(height: size.s16),
+          SizedBox(height: size.s16 / 2),
           FCText.medium18Green(context: context, text: "Medium 18 Green"),
-          SizedBox(height: size.s16),
+          SizedBox(height: size.s16 / 2),
           FCText.semiBold20Grey(context: context, text: "Semibold 20 Grey"),
-          SizedBox(height: size.s16),
+          SizedBox(height: size.s16 / 2),
           FCText.bold28Red(context: context, text: "Bold 28 Red"),
         ],
       ),

@@ -31,21 +31,433 @@ class _ToggleScreenState extends State<ToggleScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          //TODO Dark
+          FCBlueDarkToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCGreenDarkToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCGreyDarkToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCPrimaryDarkToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCSecondaryDarkToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCYellowDarkToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          //TODO Default
+          FCBlackAlwaysToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCBlackToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCBlueToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCGreenToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCGreyToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCPrimaryToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCSecondaryToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCWhiteAlwaysToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCWhiteToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCYellowToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          //TODO Light
+          FCBlueLightToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCGreenLightToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCGreyLightToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCPrimaryLightToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCSecondaryLightToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCYellowLightToggle<String>(
+            value: this._action,
+            items: [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
         ],
       ),
     );

@@ -53,41 +53,30 @@ class _FCBasicSwitchCupertino extends StatelessWidget {
   final bool isDisabled;
   final Color? disabledColor;
 
-  Color _unselectedColor({required IFCTheme theme}) {
-    if (this.isDisabled == false) return this.unselectedColor;
-
-    if (this.disabledColor != null) return this.disabledColor!;
-
-    return theme.greyLight;
-  }
-
-  Color _selectedColor({required IFCTheme theme}) {
-    if (this.isDisabled == false) return this.selectedColor;
-
-    if (this.disabledColor != null) return this.disabledColor!;
-
-    return theme.greyLight;
-  }
-
-  Color _thumbColor({required IFCTheme theme}) {
-    if (this.isDisabled == false) return theme.white;
-
-    if (this.disabledColor != null) return this.disabledColor!;
-
-    return theme.greyLight;
-  }
-
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return CupertinoSwitch(
-      value: this.value,
-      onChanged: this.isDisabled ? null : this.onChanged,
-      trackColor: this._unselectedColor(theme: theme),
-      activeColor: this._selectedColor(theme: theme),
-      thumbColor: this._thumbColor(theme: theme),
+    return Stack(
+      children: [
+        CupertinoSwitch(
+          value: this.value,
+          onChanged: this.onChanged,
+          trackColor: this.unselectedColor,
+          activeColor: this.selectedColor,
+          thumbColor: theme.white,
+        ),
+        Positioned.fill(
+          child: FCAnimatedSwitcher(
+            child: this.isDisabled
+                ? FCComponentDisabledOverlay(
+                    color: this.disabledColor,
+                  )
+                : null,
+          ),
+        ),
+      ],
     );
   }
 }
@@ -110,32 +99,26 @@ class _FCBasicSwitchMaterial extends StatelessWidget {
   final bool isDisabled;
   final Color? disabledColor;
 
-  Color _unselectedColor({required IFCTheme theme}) {
-    if (this.isDisabled == false) return this.unselectedColor;
-
-    if (this.disabledColor != null) return this.disabledColor!;
-
-    return theme.greyLight;
-  }
-
-  Color _selectedColor({required IFCTheme theme}) {
-    if (this.isDisabled == false) return this.selectedColor;
-
-    if (this.disabledColor != null) return this.disabledColor!;
-
-    return theme.greyLight;
-  }
-
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = context.config;
-    final IFCTheme theme = config.theme;
-
-    return Switch(
-      value: this.value,
-      onChanged: this.isDisabled ? null : this.onChanged,
-      inactiveTrackColor: this._unselectedColor(theme: theme),
-      activeColor: this._selectedColor(theme: theme),
+    return Stack(
+      children: [
+        Switch(
+          value: this.value,
+          onChanged: this.onChanged,
+          inactiveTrackColor: this.unselectedColor,
+          activeColor: this.selectedColor,
+        ),
+        Positioned.fill(
+          child: FCAnimatedSwitcher(
+            child: this.isDisabled
+                ? FCComponentDisabledOverlay(
+                    color: this.disabledColor,
+                  )
+                : null,
+          ),
+        ),
+      ],
     );
   }
 }

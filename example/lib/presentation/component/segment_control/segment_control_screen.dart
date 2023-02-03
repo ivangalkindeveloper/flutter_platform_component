@@ -31,21 +31,490 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          //TODO Dark
+          FCBlueDarkSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCGreenDarkSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCGreyDarkSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCPrimaryDarkSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCRedDarkSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCSecondaryDarkSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCYellowDarkSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          //TODO Default
+          FCBlackAlwaysSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCBlackSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCBlueSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCGreenSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCGreySegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCPrimarySegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCRedSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCSecondarySegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCWhiteAlwaysSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCWhiteSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCYellowSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          //TODO Light
+          FCBlueLightSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCGreenLightSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCGreyLightSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCPrimaryLightSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCRedLightSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCSecondaryLightSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCYellowLightSegmentControl<String>(
+            value: this._action,
+            items: [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._action = value),
+          ),
         ],
       ),
     );

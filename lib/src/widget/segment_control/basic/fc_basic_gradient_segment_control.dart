@@ -6,7 +6,6 @@ import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 
 class FCBasicGradientSegmentControl<T> extends StatelessWidget {
-  //TODO isDisabled
   const FCBasicGradientSegmentControl({
     Key? key,
     required this.value,
@@ -22,6 +21,8 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
     required this.selectedSplashColor,
     this.iconHeight,
     this.style,
+    this.isDisabled = false,
+    this.disabledColor,
   }) : super(key: key);
 
   final T? value;
@@ -37,45 +38,57 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
   final Color selectedSplashColor;
   final double? iconHeight;
   final TextStyle? style;
+  final bool isDisabled;
+  final Color? disabledColor;
 
   @override
   Widget build(BuildContext context) {
-    if (this.items.isEmpty) {
-      throw const FCItemsEmptyException();
-    }
+    if (this.items.isEmpty) throw const FCItemsEmptyException();
 
-    if (this.items.length == 1) {
-      throw const FCItemsLengthException();
-    }
+    if (this.items.length == 1) throw const FCItemsLengthException();
 
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
     return SizedBox(
       height: size.componentHeightSmall,
-      child: Row(
+      child: Stack(
         children: [
-          ...this.items.mapIndexed(
-                (int index, FCSegmentControlItem item) => Expanded(
-                  child: _FCSegmentControlButton(
-                    index: index,
-                    item: item,
-                    length: this.items.length,
-                    unselectedBackgroundGradient: this.unselectedBackgroundGradient,
-                    unselectedBorderGradient: this.unselectedBorderGradient,
-                    unselectedInternalColor: this.unselectedInternalColor,
-                    unselectedSplashColor: this.unselectedSplashColor,
-                    selectedBackgroundGradient: this.selectedBackgroundGradient,
-                    selectedBorderGradient: this.selectedBorderGradient,
-                    selectedInternalColor: this.selectedInternalColor,
-                    selectedSplashColor: this.selectedSplashColor,
-                    iconHeight: this.iconHeight,
-                    style: this.style,
-                    onPressed: () => this.onChanged(item.value),
-                    isSelected: item.value == this.value,
+          Row(
+            children: [
+              ...this.items.mapIndexed(
+                    (int index, FCSegmentControlItem item) => Expanded(
+                      child: _FCSegmentControlButton(
+                        index: index,
+                        item: item,
+                        length: this.items.length,
+                        unselectedBackgroundGradient: this.unselectedBackgroundGradient,
+                        unselectedBorderGradient: this.unselectedBorderGradient,
+                        unselectedInternalColor: this.unselectedInternalColor,
+                        unselectedSplashColor: this.unselectedSplashColor,
+                        selectedBackgroundGradient: this.selectedBackgroundGradient,
+                        selectedBorderGradient: this.selectedBorderGradient,
+                        selectedInternalColor: this.selectedInternalColor,
+                        selectedSplashColor: this.selectedSplashColor,
+                        iconHeight: this.iconHeight,
+                        style: this.style,
+                        onPressed: () => this.onChanged(item.value),
+                        isSelected: item.value == this.value,
+                      ),
+                    ),
                   ),
-                ),
-              ),
+            ],
+          ),
+          Positioned.fill(
+            child: FCAnimatedSwitcher(
+              child: this.isDisabled
+                  ? FCComponentDisabledOverlay(
+                      color: this.disabledColor,
+                      borderRadius: config.segmentControlBorderRadius,
+                    )
+                  : null,
+            ),
+          ),
         ],
       ),
     );
@@ -294,7 +307,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
           ),
         ),
         IgnorePointer(
-          child: FCLinearGradientMask(
+          child: FCGradientMask(
             gradient: this._borderGradient(theme: theme),
             child: Row(
               children: [

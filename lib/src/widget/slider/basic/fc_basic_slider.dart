@@ -1,4 +1,3 @@
-import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +13,6 @@ class FCBasicSlider extends FCPlatformWidget {
     double max = 1.0,
     int? divisions,
     bool isDisabled = false,
-    Color? disabledBackgroundColor,
     Color? disabledColor,
   }) : super(
           key: key,
@@ -27,7 +25,6 @@ class FCBasicSlider extends FCPlatformWidget {
             max: max,
             divisions: divisions,
             isDisabled: isDisabled,
-            disabledBackgroundColor: disabledBackgroundColor,
             disabledColor: disabledColor,
           ),
           material: _FCBasicSliderMaterial(
@@ -39,7 +36,6 @@ class FCBasicSlider extends FCPlatformWidget {
             max: max,
             divisions: divisions,
             isDisabled: isDisabled,
-            disabledBackgroundColor: disabledBackgroundColor,
             disabledColor: disabledColor,
           ),
         );
@@ -56,7 +52,6 @@ class _FCBasicSliderCupertino extends StatelessWidget {
     required this.max,
     required this.divisions,
     required this.isDisabled,
-    required this.disabledBackgroundColor,
     required this.disabledColor,
   }) : super(key: key);
 
@@ -68,29 +63,30 @@ class _FCBasicSliderCupertino extends StatelessWidget {
   final double max;
   final int? divisions;
   final bool isDisabled;
-  final Color? disabledBackgroundColor;
   final Color? disabledColor;
-
-  Color _color({required IFCTheme theme}) {
-    if (this.isDisabled == false) return this.color;
-
-    if (this.disabledColor != null) return this.disabledColor!;
-
-    return theme.grey;
-  }
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = context.config;
-    final IFCTheme theme = config.theme;
-
-    return CupertinoSlider(
-      value: this.value,
-      onChanged: this.isDisabled ? null : this.onChanged,
-      activeColor: this._color(theme: theme),
-      min: this.min,
-      max: this.max,
-      divisions: this.divisions,
+    return Stack(
+      children: [
+        CupertinoSlider(
+          value: this.value,
+          onChanged: this.onChanged,
+          activeColor: this.color,
+          min: this.min,
+          max: this.max,
+          divisions: this.divisions,
+        ),
+        Positioned.fill(
+          child: FCAnimatedSwitcher(
+            child: this.isDisabled
+                ? FCComponentDisabledOverlay(
+                    color: this.disabledColor,
+                  )
+                : null,
+          ),
+        ),
+      ],
     );
   }
 }
@@ -106,7 +102,6 @@ class _FCBasicSliderMaterial extends StatelessWidget {
     required this.max,
     required this.divisions,
     required this.isDisabled,
-    required this.disabledBackgroundColor,
     required this.disabledColor,
   }) : super(key: key);
 
@@ -118,38 +113,31 @@ class _FCBasicSliderMaterial extends StatelessWidget {
   final double max;
   final int? divisions;
   final bool isDisabled;
-  final Color? disabledBackgroundColor;
   final Color? disabledColor;
-
-  Color _color({required IFCTheme theme}) {
-    if (this.isDisabled == false) return this.color;
-
-    if (this.disabledColor != null) return this.disabledColor!;
-
-    return theme.grey;
-  }
-
-  Color _backgroundColor({required IFCTheme theme}) {
-    if (this.isDisabled == false) return this.backgroundColor;
-
-    if (this.disabledColor != null) return this.disabledBackgroundColor!;
-
-    return theme.greyLight;
-  }
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = context.config;
-    final IFCTheme theme = config.theme;
-
-    return Slider(
-      value: this.value,
-      onChanged: this.isDisabled ? null : this.onChanged,
-      inactiveColor: this._backgroundColor(theme: theme),
-      activeColor: this._color(theme: theme),
-      min: this.min,
-      max: this.max,
-      divisions: this.divisions,
+    return Stack(
+      children: [
+        Slider(
+          value: this.value,
+          onChanged: this.isDisabled ? null : this.onChanged,
+          inactiveColor: this.backgroundColor,
+          activeColor: this.color,
+          min: this.min,
+          max: this.max,
+          divisions: this.divisions,
+        ),
+        Positioned.fill(
+          child: FCAnimatedSwitcher(
+            child: this.isDisabled
+                ? FCComponentDisabledOverlay(
+                    color: this.disabledColor,
+                  )
+                : null,
+          ),
+        ),
+      ],
     );
   }
 }

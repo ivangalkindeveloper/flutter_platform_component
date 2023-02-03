@@ -41,7 +41,7 @@ class FCBasicGradientCard extends StatelessWidget {
         if (this.borderGradient != null)
           Positioned.fill(
             child: IgnorePointer(
-              child: FCLinearGradientMask(
+              child: FCGradientMask(
                 gradient: this.borderGradient!,
                 child: FCAnimatedContainer(
                   decoration: BoxDecoration(

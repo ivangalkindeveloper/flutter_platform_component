@@ -67,7 +67,7 @@ class FCBasicGradientSnackbar extends StatelessWidget {
         ),
         if (this.borderGradient != null)
           Positioned.fill(
-            child: FCLinearGradientMask(
+            child: FCGradientMask(
               gradient: this.borderGradient!,
               child: FCAnimatedContainer(
                 decoration: BoxDecoration(

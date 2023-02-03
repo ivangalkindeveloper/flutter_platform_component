@@ -1,3 +1,5 @@
+library flutter_component;
+
 export 'src/flutter_component.dart';
 
 // Config
@@ -1167,6 +1169,7 @@ export 'src/widget/sliding_segment_control/basic/fc_sliding_segment_control_item
 // Sliding Segment Control / Custom / Dark
 export 'src/widget/sliding_segment_control/custom/dark/fc_blue_dark_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/dark/fc_green_dark_sliding_segment_control.dart';
+export 'src/widget/sliding_segment_control/custom/dark/fc_grey_dark_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/dark/fc_primary_dark_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/dark/fc_red_dark_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/dark/fc_secondary_dark_sliding_segment_control.dart';

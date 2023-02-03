@@ -7,12 +7,14 @@ class FCBlueLightSwitch extends StatelessWidget {
     Key? key,
     required this.value,
     required this.onChanged,
-    required this.isDisabled,
+    this.isDisabled = false,
+    this.disabledColor,
   }) : super(key: key);
 
   final bool value;
   final Function(bool) onChanged;
   final bool isDisabled;
+  final Color? disabledColor;
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +27,7 @@ class FCBlueLightSwitch extends StatelessWidget {
       unselectedColor: theme.greyLight,
       selectedColor: theme.blueLight,
       isDisabled: this.isDisabled,
+      disabledColor: this.disabledColor,
     );
   }
 }

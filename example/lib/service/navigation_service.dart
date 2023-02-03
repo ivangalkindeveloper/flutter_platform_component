@@ -63,6 +63,8 @@ import 'package:example/presentation/component/snackbar/gradient_snackbar_screen
 import 'package:example/presentation/component/snackbar/snackbar_screen.dart';
 import 'package:example/presentation/component/switch/switch_screen.dart';
 import 'package:example/presentation/component/text/text_screen.dart';
+import 'package:example/presentation/component/text/text_span_screen.dart';
+import 'package:example/presentation/component/toggle/gradient_toggle_screen.dart';
 import 'package:example/presentation/component/toggle/toggle_screen.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
@@ -168,8 +170,10 @@ class NavigationService {
   static const String switch_screen = "/switch_screen";
 
   static const String text_screen = "/text_screen";
+  static const String text_span_screen = "/text_span_screen";
 
   static const String toggle_screen = "/toggle_screen";
+  static const String gradient_toggle_screen = "/gradient_toggle_screen";
 
   Route<dynamic>? onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -526,11 +530,21 @@ class NavigationService {
           context: navigatorKey.currentContext!,
           child: const TextScreen(),
         );
+      case text_span_screen:
+        return FCGlobal.pageRoute(
+          context: navigatorKey.currentContext!,
+          child: const TextSpanScreen(),
+        );
 
       case toggle_screen:
         return FCGlobal.pageRoute(
           context: navigatorKey.currentContext!,
           child: const ToggleScreen(),
+        );
+      case gradient_toggle_screen:
+        return FCGlobal.pageRoute(
+          context: navigatorKey.currentContext!,
+          child: const GradientToggleScreen(),
         );
 
       default:

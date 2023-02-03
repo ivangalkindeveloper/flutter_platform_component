@@ -2,14 +2,16 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCGreenDarkSlidingSegmentControl<T> extends StatelessWidget {
-  const FCGreenDarkSlidingSegmentControl({
+class FCGreyDarkSlidingSegmentControl<T> extends StatelessWidget {
+  const FCGreyDarkSlidingSegmentControl({
     Key? key,
     required this.value,
     required this.items,
     required this.onChanged,
     this.iconHeight,
     this.style,
+    this.isDisabled = false,
+    this.disabledColor,
   }) : super(key: key);
 
   final T value;
@@ -17,6 +19,8 @@ class FCGreenDarkSlidingSegmentControl<T> extends StatelessWidget {
   final void Function(T) onChanged;
   final double? iconHeight;
   final TextStyle? style;
+  final bool isDisabled;
+  final Color? disabledColor;
 
   @override
   Widget build(BuildContext context) {
@@ -28,11 +32,13 @@ class FCGreenDarkSlidingSegmentControl<T> extends StatelessWidget {
       items: this.items,
       onChanged: this.onChanged,
       backgroundColor: theme.grey,
-      thumbColor: theme.greenDark,
+      thumbColor: theme.greyDark,
       unselectedInternalColor: theme.black,
-      selectedInternalColor: theme.black,
+      selectedInternalColor: theme.white,
       iconHeight: this.iconHeight,
       style: this.style,
+      isDisabled: this.isDisabled,
+      disabledColor: this.disabledColor,
     );
   }
 }

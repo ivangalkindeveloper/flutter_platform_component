@@ -10,6 +10,7 @@ class FCRedLightRadio<T> extends StatelessWidget {
     required this.onChanged,
     this.isToggleable = false,
     this.isDisabled = false,
+    this.disabledColor,
   }) : super(key: key);
 
   final T value;
@@ -17,6 +18,7 @@ class FCRedLightRadio<T> extends StatelessWidget {
   final void Function(T) onChanged;
   final bool isToggleable;
   final bool isDisabled;
+  final Color? disabledColor;
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +33,7 @@ class FCRedLightRadio<T> extends StatelessWidget {
       selectedColor: theme.redLight,
       isToggleable: this.isToggleable,
       isDisabled: this.isDisabled,
+      disabledColor: this.disabledColor,
     );
   }
 }

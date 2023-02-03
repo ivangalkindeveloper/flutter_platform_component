@@ -76,16 +76,11 @@ class _FCBasicToggleState extends State<FCBasicToggle> {
 
   @override
   Widget build(BuildContext context) {
-    if (this.widget.items.isEmpty) {
-      throw const FCItemsEmptyException();
-    }
+    if (this.widget.items.isEmpty) throw const FCItemsEmptyException();
 
-    if (this.widget.items.length == 1) {
-      throw const FCItemsLengthException();
-    }
+    if (this.widget.items.length == 1) throw const FCItemsLengthException();
 
     final FCConfig config = context.config;
-    final BorderRadius toggleBorderRadius = config.toggleBorderRadius;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
@@ -157,7 +152,7 @@ class _FCBasicToggleState extends State<FCBasicToggle> {
                             child: this.widget.isDisabled
                                 ? FCComponentDisabledOverlay(
                                     color: this.widget.disabledColor,
-                                    borderRadius: toggleBorderRadius,
+                                    borderRadius: config.toggleBorderRadius,
                                   )
                                 : null,
                           ),
@@ -228,7 +223,6 @@ class _FCToggleButton<T> extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
-    final BorderRadius toggleBorderRadius = config.toggleBorderRadius;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
@@ -237,7 +231,7 @@ class _FCToggleButton<T> extends StatelessWidget {
       backgroundColor: this._backgroundColor(theme: theme),
       splashColor: this._splashColor(theme: theme),
       height: size.componentHeightSmall,
-      borderRadius: toggleBorderRadius,
+      borderRadius: config.toggleBorderRadius,
       onPressed: this.onPressed,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,

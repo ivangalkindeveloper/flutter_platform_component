@@ -12,6 +12,12 @@ class FCComponentDisabledOverlay extends StatelessWidget {
   final Color? color;
   final BorderRadius? borderRadius;
 
+  Color _color({required IFCTheme theme}) {
+    if (this.color != null) return this.color!;
+
+    return theme.backgroundScaffold;
+  }
+
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
@@ -20,9 +26,7 @@ class FCComponentDisabledOverlay extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: this.color != null
-            ? this.color!.withOpacity(size.disabledOpacity)
-            : theme.backgroundComponent.withOpacity(size.disabledOpacity),
+        color: this._color(theme: theme).withOpacity(size.disabledOpacity),
         borderRadius: this.borderRadius,
       ),
     );

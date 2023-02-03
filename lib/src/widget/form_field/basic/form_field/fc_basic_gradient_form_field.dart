@@ -268,7 +268,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                         if (this.widget.prefixIcon != null)
                           Padding(
                             padding: EdgeInsets.only(right: this._size.s16),
-                            child: FCLinearGradientMask(
+                            child: FCGradientMask(
                               gradient: this._internalGradient(),
                               child: Icon(
                                 this.widget.prefixIcon,
@@ -353,7 +353,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                         if (this.widget.postfixIcon != null)
                           Padding(
                             padding: EdgeInsets.only(left: this._size.s16),
-                            child: FCLinearGradientMask(
+                            child: FCGradientMask(
                               gradient: this._internalGradient(),
                               child: Icon(
                                 this.widget.postfixIcon,
@@ -371,7 +371,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
             ),
             Positioned.fill(
               child: IgnorePointer(
-                child: FCLinearGradientMask(
+                child: FCGradientMask(
                   gradient: this._borderGradient(context: context),
                   child: FCAnimatedContainer(
                     decoration: BoxDecoration(

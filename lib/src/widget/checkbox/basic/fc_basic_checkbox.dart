@@ -52,22 +52,6 @@ class _FCBasicCheckboxCupertino extends StatelessWidget {
   final bool isDisabled;
   final Color? disabledColor;
 
-  Color _selectedColor({required IFCTheme theme}) {
-    if (this.isDisabled == false) return this.selectedColor;
-
-    if (this.disabledColor != null) return this.disabledColor!;
-
-    return theme.greyLight;
-  }
-
-  Color _unselectedColor({required IFCTheme theme}) {
-    if (this.isDisabled == false) return this.unselectedColor;
-
-    if (this.disabledColor != null) return this.disabledColor!;
-
-    return theme.greyLight;
-  }
-
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
@@ -76,23 +60,36 @@ class _FCBasicCheckboxCupertino extends StatelessWidget {
 
     return Material(
       color: Colors.transparent,
-      child: Checkbox(
-        value: this.value,
-        onChanged: (bool? value) {
-          if (value == null || this.isDisabled) return;
+      child: Stack(
+        children: [
+          Checkbox(
+            value: this.value,
+            onChanged: (bool? value) {
+              if (value == null) return;
 
-          this.onChanged(value);
-        },
-        activeColor: this._selectedColor(theme: theme),
-        checkColor: theme.white,
-        splashRadius: 0,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(size.s16),
-        ),
-        side: BorderSide(
-          width: size.s10 / 10,
-          color: this._unselectedColor(theme: theme),
-        ),
+              this.onChanged(value);
+            },
+            activeColor: this.selectedColor,
+            checkColor: theme.white,
+            splashRadius: 0,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(size.s16),
+            ),
+            side: BorderSide(
+              width: size.s10 / 10,
+              color: this.unselectedColor,
+            ),
+          ),
+          Positioned.fill(
+            child: FCAnimatedSwitcher(
+              child: this.isDisabled
+                  ? FCComponentDisabledOverlay(
+                      color: this.disabledColor,
+                    )
+                  : null,
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -116,43 +113,38 @@ class _FCBasicCheckboxMaterial extends StatelessWidget {
   final bool isDisabled;
   final Color? disabledColor;
 
-  Color _selectedColor({required IFCTheme theme}) {
-    if (this.isDisabled == false) return this.selectedColor;
-
-    if (this.disabledColor != null) return this.disabledColor!;
-
-    return theme.greyLight;
-  }
-
-  Color _unselectedColor({required IFCTheme theme}) {
-    if (this.isDisabled == false) return this.unselectedColor;
-
-    if (this.disabledColor != null) return this.disabledColor!;
-
-    return theme.greyLight;
-  }
-
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
-    return Checkbox(
-      value: this.value,
-      onChanged: (bool? value) {
-        if (value == null || this.isDisabled) {
-          return;
-        }
+    return Stack(
+      children: [
+        Checkbox(
+          value: this.value,
+          onChanged: (bool? value) {
+            if (value == null) return;
 
-        this.onChanged(value);
-      },
-      activeColor: this._selectedColor(theme: theme),
-      checkColor: theme.white,
-      side: BorderSide(
-        width: size.s10 / 5,
-        color: this._unselectedColor(theme: theme),
-      ),
+            this.onChanged(value);
+          },
+          activeColor: this.selectedColor,
+          checkColor: theme.white,
+          side: BorderSide(
+            width: size.s10 / 5,
+            color: this.unselectedColor,
+          ),
+        ),
+        Positioned.fill(
+          child: FCAnimatedSwitcher(
+            child: this.isDisabled
+                ? FCComponentDisabledOverlay(
+                    color: this.disabledColor,
+                  )
+                : null,
+          ),
+        ),
+      ],
     );
   }
 }

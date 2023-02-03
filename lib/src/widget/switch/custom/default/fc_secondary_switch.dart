@@ -7,12 +7,14 @@ class FCSecondarySwitch extends StatelessWidget {
     Key? key,
     required this.value,
     required this.onChanged,
-    required this.isDisabled,
+    this.isDisabled = false,
+    this.disabledColor,
   }) : super(key: key);
 
   final bool value;
   final Function(bool) onChanged;
   final bool isDisabled;
+  final Color? disabledColor;
 
   @override
   Widget build(BuildContext context) {
@@ -22,9 +24,10 @@ class FCSecondarySwitch extends StatelessWidget {
     return FCBasicSwitch(
       value: this.value,
       onChanged: this.onChanged,
-      unselectedColor: theme.greyLight,
+      unselectedColor: theme.grey,
       selectedColor: theme.secondary,
       isDisabled: this.isDisabled,
+      disabledColor: this.disabledColor,
     );
   }
 }

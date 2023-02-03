@@ -1,4 +1,3 @@
-import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/material.dart';
 
@@ -60,50 +59,42 @@ class _FCBasicRadioCupertino<T> extends StatelessWidget {
   final bool isDisabled;
   final Color? disabledColor;
 
-  Color _selectedColor({required IFCTheme theme}) {
-    if (this.isDisabled == false) return this.selectedColor;
-
-    if (this.disabledColor != null) return this.disabledColor!;
-
-    return theme.greyLight;
-  }
-
-  Color _unselectedColor({required IFCTheme theme}) {
-    if (this.isDisabled == false) return this.unselectedColor;
-
-    if (this.disabledColor != null) return this.disabledColor!;
-
-    return theme.greyLight;
-  }
-
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = context.config;
-    final IFCTheme theme = config.theme;
-
     return Material(
       color: Colors.transparent,
-      child: Theme(
-        data: ThemeData(
-          unselectedWidgetColor: this._unselectedColor(theme: theme),
-        ),
-        child: Radio<T>(
-          value: this.value,
-          groupValue: this.groupValue,
-          onChanged: (T? value) {
-            if (value == null || this.isDisabled) {
-              return;
-            }
+      child: Stack(
+        children: [
+          Theme(
+            data: ThemeData(
+              unselectedWidgetColor: this.unselectedColor,
+            ),
+            child: Radio<T>(
+              value: this.value,
+              groupValue: this.groupValue,
+              onChanged: (T? value) {
+                if (value == null) return;
 
-            this.onChanged(value);
-          },
-          activeColor: this._selectedColor(theme: theme),
-          focusColor: Colors.transparent,
-          hoverColor: Colors.transparent,
-          overlayColor: MaterialStateProperty.resolveWith(
-              (Set<MaterialState> states) => Colors.transparent),
-          toggleable: this.isToggleable,
-        ),
+                this.onChanged(value);
+              },
+              activeColor: this.selectedColor,
+              focusColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              overlayColor: MaterialStateProperty.resolveWith(
+                  (Set<MaterialState> states) => Colors.transparent),
+              toggleable: this.isToggleable,
+            ),
+          ),
+          Positioned.fill(
+            child: FCAnimatedSwitcher(
+              child: this.isDisabled
+                  ? FCComponentDisabledOverlay(
+                      color: this.disabledColor,
+                    )
+                  : null,
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -131,46 +122,38 @@ class _FCBasicRadioMaterial<T> extends StatelessWidget {
   final bool isDisabled;
   final Color? disabledColor;
 
-  Color _selectedColor({required IFCTheme theme}) {
-    if (this.isDisabled == false) return this.selectedColor;
-
-    if (this.disabledColor != null) return this.disabledColor!;
-
-    return theme.greyLight;
-  }
-
-  Color _unselectedColor({required IFCTheme theme}) {
-    if (this.isDisabled == false) return this.unselectedColor;
-
-    if (this.disabledColor != null) return this.disabledColor!;
-
-    return theme.greyLight;
-  }
-
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = context.config;
-    final IFCTheme theme = config.theme;
-
     return Material(
       color: Colors.transparent,
-      child: Theme(
-        data: ThemeData(
-          unselectedWidgetColor: this._unselectedColor(theme: theme),
-        ),
-        child: Radio<T>(
-          value: this.value,
-          groupValue: this.groupValue,
-          onChanged: (T? value) {
-            if (value == null || this.isDisabled) {
-              return;
-            }
+      child: Stack(
+        children: [
+          Theme(
+            data: ThemeData(
+              unselectedWidgetColor: this.unselectedColor,
+            ),
+            child: Radio<T>(
+              value: this.value,
+              groupValue: this.groupValue,
+              onChanged: (T? value) {
+                if (value == null) return;
 
-            this.onChanged(value);
-          },
-          activeColor: this._selectedColor(theme: theme),
-          toggleable: this.isToggleable,
-        ),
+                this.onChanged(value);
+              },
+              activeColor: this.selectedColor,
+              toggleable: this.isToggleable,
+            ),
+          ),
+          Positioned.fill(
+            child: FCAnimatedSwitcher(
+              child: this.isDisabled
+                  ? FCComponentDisabledOverlay(
+                      color: this.disabledColor,
+                    )
+                  : null,
+            ),
+          ),
+        ],
       ),
     );
   }

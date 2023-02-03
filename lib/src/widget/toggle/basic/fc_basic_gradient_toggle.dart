@@ -76,16 +76,11 @@ class _FCBasicGradientToggleState extends State<FCBasicGradientToggle> {
 
   @override
   Widget build(BuildContext context) {
-    if (this.widget.items.isEmpty) {
-      throw const FCItemsEmptyException();
-    }
+    if (this.widget.items.isEmpty) throw const FCItemsEmptyException();
 
-    if (this.widget.items.length == 1) {
-      throw const FCItemsLengthException();
-    }
+    if (this.widget.items.length == 1) throw const FCItemsLengthException();
 
     final FCConfig config = context.config;
-    final BorderRadius _toggleBorderRadius = config.toggleBorderRadius;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
@@ -157,7 +152,7 @@ class _FCBasicGradientToggleState extends State<FCBasicGradientToggle> {
                             child: this.widget.isDisabled
                                 ? FCComponentDisabledOverlay(
                                     color: this.widget.disabledColor,
-                                    borderRadius: _toggleBorderRadius,
+                                    borderRadius: config.toggleBorderRadius,
                                   )
                                 : null,
                           ),
@@ -203,13 +198,17 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
   final VoidCallback onPressed;
   final bool isSelected;
 
-  Gradient _backgroundGradient({required IFCTheme theme}) {
+  Gradient _backgroundGradient({
+    required BuildContext context,
+    required IFCTheme theme,
+  }) {
     if (this.isValidationError) return theme.redLightGradient;
 
     if (this.isSelected) return this.selectedBackgroundGradient;
 
     return this.unselectedBackgroundGradient ??
-        LinearGradient(
+        FCLinearGradient(
+          context: context,
           colors: [
             theme.white,
             theme.white,
@@ -234,16 +233,15 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
-    final BorderRadius _toggleBorderRadius = config.toggleBorderRadius;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientButton(
-      backgroundGradient: this._backgroundGradient(theme: theme),
+      backgroundGradient: this._backgroundGradient(context: context, theme: theme),
       splashColor: this._splashColor(theme: theme),
       height: size.componentHeightSmall,
-      borderRadius: _toggleBorderRadius,
+      borderRadius: config.toggleBorderRadius,
       onPressed: this.onPressed,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -251,7 +249,7 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
           if (this.item.prefix != null) this.item.prefix!,
           if (this.item.prefix != null) SizedBox(width: size.s16 / 2),
           if (this.item.prefixIcon != null)
-            FCLinearGradientMask(
+            FCGradientMask(
               gradient: this._internalGradient(theme: theme),
               child: Icon(
                 this.item.prefixIcon,
@@ -260,7 +258,7 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
               ),
             ),
           if (this.item.prefixIcon != null) SizedBox(width: size.s16 / 2),
-          FCLinearGradientMask(
+          FCGradientMask(
             gradient: this._internalGradient(theme: theme),
             child: Text(
               item.title,
@@ -274,7 +272,7 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
           ),
           if (this.item.postfixIcon != null) SizedBox(width: size.s16 / 2),
           if (this.item.postfixIcon != null)
-            FCLinearGradientMask(
+            FCGradientMask(
               gradient: this._internalGradient(theme: theme),
               child: Icon(
                 this.item.postfixIcon,
