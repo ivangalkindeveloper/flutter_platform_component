@@ -1,57 +1,42 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class FCModalCloseButton extends FCPlatformWidget {
-  FCModalCloseButton({
+class FCPopUpModalCloseButton extends FCPlatformWidget {
+  FCPopUpModalCloseButton({
     Key? key,
-    required String localeBack,
     required VoidCallback onPressed,
   }) : super(
           key: key,
-          cupertino: _FCModalCloseButtonCupertino(
+          cupertino: _FCPopUpModalCloseButtonCupertino(
             key: key,
-            localeBack: localeBack,
             onPressed: onPressed,
           ),
-          material: _FCModalCloseButtonMaterial(
+          material: _FCPopUpModalCloseButtonMaterial(
             key: key,
             onPressed: onPressed,
           ),
         );
 }
 
-class _FCModalCloseButtonCupertino extends StatelessWidget {
-  const _FCModalCloseButtonCupertino({
+class _FCPopUpModalCloseButtonCupertino extends StatelessWidget {
+  const _FCPopUpModalCloseButtonCupertino({
     Key? key,
-    required this.localeBack,
     required this.onPressed,
   }) : super(key: key);
 
-  final String localeBack;
   final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = context.config;
-    final IFCTheme theme = config.theme;
-
-    return CupertinoButton(
-      padding: EdgeInsets.zero,
-      child: Text(
-        localeBack,
-        style: TextStyle(
-          color: theme.primary,
-        ),
-      ),
-      onPressed: onPressed,
+    return FCCupertinoModalButton(
+      onPressed: this.onPressed,
     );
   }
 }
 
-class _FCModalCloseButtonMaterial extends StatelessWidget {
-  const _FCModalCloseButtonMaterial({
+class _FCPopUpModalCloseButtonMaterial extends StatelessWidget {
+  const _FCPopUpModalCloseButtonMaterial({
     Key? key,
     required this.onPressed,
   }) : super(key: key);

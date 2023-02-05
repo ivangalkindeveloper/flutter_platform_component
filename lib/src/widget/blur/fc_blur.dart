@@ -1,18 +1,29 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
+import 'dart:ui';
 
 class FCBlur extends StatelessWidget {
   const FCBlur({
     Key? key,
-    this.backgroundColor,
+    this.color,
+    this.opacity,
+    this.filter,
     this.borderRadius,
     required this.child,
   }) : super(key: key);
 
-  final Color? backgroundColor;
+  final Color? color;
+  final double? opacity;
+  final ImageFilter? filter;
   final BorderRadius? borderRadius;
   final Widget child;
+
+  Color _color({required IFCTheme theme}) {
+    if (this.color != null) return this.color!;
+
+    return theme.blur;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -23,10 +34,9 @@ class FCBlur extends StatelessWidget {
     return ClipRRect(
       borderRadius: this.borderRadius ?? BorderRadius.zero,
       child: BackdropFilter(
-        filter: theme.blurFilter,
+        filter: this.filter ?? theme.blurFilter,
         child: Container(
-          color: this.backgroundColor?.withOpacity(size.blurOpacity) ??
-              theme.blur.withOpacity(size.blurOpacity),
+          color: this._color(theme: theme).withOpacity(opacity ?? size.blurOpacity),
           alignment: Alignment.center,
           child: this.child,
         ),

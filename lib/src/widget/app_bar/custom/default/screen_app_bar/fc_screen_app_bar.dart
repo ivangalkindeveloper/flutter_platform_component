@@ -3,36 +3,33 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class FCWhiteAlwaysScreenAppBar extends FCBasicAppBar {
-  FCWhiteAlwaysScreenAppBar({
+class FCScreenAppBar extends FCBasicAppBar {
+  FCScreenAppBar({
     Key? key,
     required BuildContext context,
-    Color? blurColor,
+    Color? backgroundColor,
     Widget? prefix,
     VoidCallback? onPressedBack,
     String? title,
     TextStyle? style,
     Widget? middle,
     Widget? postfix,
+    EdgeInsets? bottomPadding,
     PreferredSizeWidget? bottom,
   }) : super(
           key: key,
           context: context,
-          blurColor: blurColor,
+          backgroundColor: backgroundColor,
           prefix: _prefix(
             context: context,
             prefix: prefix,
             onPressedBack: onPressedBack,
           ),
           title: title,
-          style: TextStyle(
-            color: FCConfig.of(context).theme.whiteAlways,
-            fontSize: style?.fontSize,
-            fontWeight: style?.fontWeight,
-            fontFamily: style?.fontFamily,
-          ),
+          style: style,
           middle: middle,
           postfix: postfix,
+          bottomPadding: bottomPadding,
           bottom: bottom,
         );
 
@@ -43,35 +40,25 @@ class FCWhiteAlwaysScreenAppBar extends FCBasicAppBar {
   }) {
     if (prefix != null) return prefix;
 
-    final FCConfig config = context.config;
-    final IFCTheme theme = config.theme;
+    if (onPressedBack != null) {
+      final FCConfig config = context.config;
+      final TargetPlatform platform = config.platform;
+      final IFCTheme theme = config.theme;
 
-    if (onPressedBack != null)
       return FCBasicIconButton(
-        splashColor: theme.grey,
-        icon: FCIcon.whiteAlways(
+        splashColor: theme.greyLight,
+        icon: FCIcon.black(
           context: context,
-          icon: _closeIcon(context: context),
+          icon: FCPlatform.decompose<IconData, IconData, IconData>(
+            platform: platform,
+            cupertino: CupertinoIcons.back,
+            material: Icons.arrow_back,
+          ),
         ),
         onPressed: onPressedBack,
       );
+    }
 
     return null;
-  }
-
-  static IconData _closeIcon({required BuildContext context}) {
-    final FCConfig config = context.config;
-    final TargetPlatform? _platform = config.platform;
-
-    switch (_platform) {
-      case TargetPlatform.iOS:
-        return CupertinoIcons.back;
-
-      case TargetPlatform.android:
-        return Icons.arrow_back;
-
-      default:
-        return Icons.arrow_back;
-    }
   }
 }

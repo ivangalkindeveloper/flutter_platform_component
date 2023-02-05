@@ -6,13 +6,13 @@ import 'package:flutter/material.dart';
 class FCAlwaysWhiteModalCloseButton extends FCPlatformWidget {
   FCAlwaysWhiteModalCloseButton({
     Key? key,
-    required String localeBack,
+    required String cupertinoLocale,
     required VoidCallback onPressed,
   }) : super(
           key: key,
           cupertino: _FCAlwaysWhiteModalCloseButtonCupertino(
             key: key,
-            localeBack: localeBack,
+            cupertinoLocale: cupertinoLocale,
             onPressed: onPressed,
           ),
           material: _FCAlwaysWhiteModalCloseButtonMaterial(
@@ -25,11 +25,11 @@ class FCAlwaysWhiteModalCloseButton extends FCPlatformWidget {
 class _FCAlwaysWhiteModalCloseButtonCupertino extends StatelessWidget {
   const _FCAlwaysWhiteModalCloseButtonCupertino({
     Key? key,
-    required this.localeBack,
+    required this.cupertinoLocale,
     required this.onPressed,
   }) : super(key: key);
 
-  final String localeBack;
+  final String cupertinoLocale;
   final VoidCallback onPressed;
 
   @override
@@ -40,7 +40,7 @@ class _FCAlwaysWhiteModalCloseButtonCupertino extends StatelessWidget {
     return CupertinoButton(
       padding: EdgeInsets.zero,
       child: Text(
-        localeBack,
+        cupertinoLocale,
         style: TextStyle(
           color: theme.whiteAlways,
         ),

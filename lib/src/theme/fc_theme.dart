@@ -1,3 +1,4 @@
+import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
@@ -12,11 +13,6 @@ abstract class IFCTheme {
   abstract final ThemeData materialThemeData;
   abstract final CupertinoThemeData cupertinoThemeData;
   abstract final SystemUiOverlayStyle systemOverlayStyle;
-
-  // Gradient
-  abstract final Alignment gradientBegin;
-  abstract final Alignment gradientEnd;
-  abstract final List<double>? gradientStops;
 
   // White
   abstract final Color white;
@@ -116,4 +112,9 @@ abstract class IFCTheme {
   // Barrier / Dialog
   abstract final Color barrierDialogCupertino;
   abstract final Color barrierDialogMaterial;
+
+  // Gradient
+  abstract final IFCLinearGradientConfig linearGradientConfig;
+  abstract final IFCRadialGradientConfig radialGradientConfig;
+  abstract final IFCSweepGradientConfig sweepGradientConfig;
 }

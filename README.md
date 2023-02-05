@@ -36,10 +36,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return FlutterComponent( // Initialize the component widget
       platform: TargetPlatform.iOS,
-      theme: ProjectLightTheme(),
-      size: ProjectSize(),
-      textStyle: ProjectTextStyle(),
-      haptic: ProjectHaptic(),
+      theme: LightTheme(),
+      size: Sizes(),
+      textStyle: TextStyles(),
+      haptic: Haptics(),
       child: const App(),
     );
   }

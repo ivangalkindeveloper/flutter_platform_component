@@ -7,6 +7,9 @@ export 'src/config/fc_config.dart';
 
 // Data
 export 'src/data/fc_date_range.dart';
+export 'src/config/fc_linear_gradient_config.dart';
+export 'src/config/fc_radial_gradient_config.dart';
+export 'src/config/fc_sweep_gradient_config.dart';
 
 // Enum
 export 'src/enum/fc_badge_position.dart';
@@ -93,14 +96,24 @@ export 'src/widget/app/fc_app.dart';
 // App Bar
 // App Bar / Basic
 export 'src/widget/app_bar/basic/fc_basic_app_bar.dart';
+export 'src/widget/app_bar/basic/fc_basic_blur_app_bar.dart';
 // App Bar / Custom
-// App Bar / Custom / Modal App Bar
-export 'src/widget/app_bar/custom/modal_app_bar/fc_expanded_modal_app_bar.dart';
-export 'src/widget/app_bar/custom/modal_app_bar/fc_small_modal_app_bar.dart';
-export 'src/widget/app_bar/custom/modal_app_bar/fc_white_always_expanded_modal_app_bar.dart';
-// App Bar / Custom / Screen App Bar
-export 'src/widget/app_bar/custom/screen_app_bar/fc_screen_app_bar.dart';
-export 'src/widget/app_bar/custom/screen_app_bar/fc_white_always_screen_app_bar.dart';
+// App Bar / Custom / Blur
+// App Bar / Custom / Blur / Modal App Bar
+export 'src/widget/app_bar/custom/blur/modal_app_bar/fc_expanded_modal_blur_app_bar.dart';
+export 'src/widget/app_bar/custom/blur/modal_app_bar/fc_pop_up_modal_blur_app_bar.dart';
+export 'src/widget/app_bar/custom/blur/modal_app_bar/fc_white_always_expanded_modal_blur_app_bar.dart';
+// App Bar / Custom / Blur / Screen App Bar
+export 'src/widget/app_bar/custom/blur/screen_app_bar/fc_screen_blur_app_bar.dart';
+export 'src/widget/app_bar/custom/blur/screen_app_bar/fc_white_always_screen_blur_app_bar.dart';
+// App Bar / Custom / Default
+// App Bar / Custom / Default / Modal App Bar
+export 'src/widget/app_bar/custom/default/modal_app_bar/fc_expanded_modal_app_bar.dart';
+export 'src/widget/app_bar/custom/default/modal_app_bar/fc_pop_up_modal_app_bar.dart';
+export 'src/widget/app_bar/custom/default/modal_app_bar/fc_white_always_expanded_modal_app_bar.dart';
+// App Bar / Custom / Default / Screen App Bar
+export 'src/widget/app_bar/custom/default/screen_app_bar/fc_screen_app_bar.dart';
+export 'src/widget/app_bar/custom/default/screen_app_bar/fc_white_always_screen_app_bar.dart';
 
 // Badge
 // Badge / Basic
@@ -296,8 +309,8 @@ export 'src/widget/button/custom/gradient/outline/fc_yellow_outline_gradient_but
 // Button / Custom / Modal Button
 export 'src/widget/button/custom/modal_button/fc_always_white_modal_close_button.dart';
 export 'src/widget/button/custom/modal_button/fc_cupertino_modal_button.dart';
-export 'src/widget/button/custom/modal_button/fc_modal_close_button.dart';
-export 'src/widget/button/custom/modal_button/fc_small_modal_close_button.dart';
+export 'src/widget/button/custom/modal_button/fc_expanded_modal_close_button.dart';
+export 'src/widget/button/custom/modal_button/fc_pop_up_modal_close_button.dart';
 
 // Card
 // Card / Basic
@@ -849,7 +862,7 @@ export 'src/widget/modal/action_modal/fc_action_modal_item.dart';
 export 'src/widget/modal/action_modal/fc_action_modal.dart';
 // Modal / Modal
 export 'src/widget/modal/modal/fc_expanded_modal.dart';
-export 'src/widget/modal/modal/fc_small_modal.dart';
+export 'src/widget/modal/modal/fc_pop_up_modal.dart';
 export 'src/widget/modal/modal/fc_white_always_expanded_modal.dart';
 
 // Navigation

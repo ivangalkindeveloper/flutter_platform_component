@@ -2,12 +2,15 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'dart:ui';
 
-class FCBasicAppBar extends FCPlatformAppBar {
-  FCBasicAppBar({
+class FCBasicBlurAppBar extends FCPlatformAppBar {
+  FCBasicBlurAppBar({
     Key? key,
     required BuildContext context,
-    Color? backgroundColor,
+    Color? blurColor,
+    double? blurOpacity,
+    ImageFilter? blurFilter,
     Widget? prefix,
     String? title,
     TextStyle? style,
@@ -20,7 +23,9 @@ class FCBasicAppBar extends FCPlatformAppBar {
           context: context,
           cupertino: _FCAppBarCupertino(
             key: key,
-            backgroundColor: backgroundColor,
+            blurColor: blurColor,
+            blurOpacity: blurOpacity,
+            blurFilter: blurFilter,
             prefix: prefix,
             middle: _middle(
               context: context,
@@ -34,7 +39,9 @@ class FCBasicAppBar extends FCPlatformAppBar {
           ),
           material: _FCAppBarMaterial(
             key: key,
-            backgroundColor: backgroundColor,
+            blurColor: blurColor,
+            blurOpacity: blurOpacity,
+            blurFilter: blurFilter,
             prefix: prefix,
             middle: _middle(
               context: context,
@@ -80,7 +87,9 @@ class FCBasicAppBar extends FCPlatformAppBar {
 class _FCAppBarCupertino extends StatelessWidget {
   const _FCAppBarCupertino({
     Key? key,
-    required this.backgroundColor,
+    required this.blurColor,
+    required this.blurOpacity,
+    required this.blurFilter,
     required this.prefix,
     required this.middle,
     required this.postfix,
@@ -88,7 +97,9 @@ class _FCAppBarCupertino extends StatelessWidget {
     required this.bottom,
   }) : super(key: key);
 
-  final Color? backgroundColor;
+  final Color? blurColor;
+  final double? blurOpacity;
+  final ImageFilter? blurFilter;
   final Widget? prefix;
   final Widget? middle;
   final Widget? postfix;
@@ -101,32 +112,37 @@ class _FCAppBarCupertino extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        CupertinoNavigationBar(
-          automaticallyImplyLeading: false,
-          automaticallyImplyMiddle: false,
-          brightness: theme.cupertinoThemeData.brightness,
-          backgroundColor: this.backgroundColor ?? theme.white,
-          border: Border.all(
-            color: Colors.transparent,
-            width: 0,
+    return FCBlur(
+      color: this.blurColor,
+      opacity: this.blurOpacity,
+      filter: this.blurFilter,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          CupertinoNavigationBar(
+            automaticallyImplyLeading: false,
+            automaticallyImplyMiddle: false,
+            brightness: theme.cupertinoThemeData.brightness,
+            backgroundColor: theme.white.withOpacity(0),
+            border: Border.all(
+              color: Colors.transparent,
+              width: 0,
+            ),
+            leading: this.prefix,
+            middle: this.middle,
+            trailing: this.postfix,
           ),
-          leading: this.prefix,
-          middle: this.middle,
-          trailing: this.postfix,
-        ),
-        if (this.bottom != null)
-          Padding(
-            padding: this.bottomPadding ??
-                EdgeInsets.symmetric(
-                  horizontal: size.s16,
-                  vertical: size.s16 / 4,
-                ),
-            child: this.bottom!,
-          ),
-      ],
+          if (this.bottom != null)
+            Padding(
+              padding: this.bottomPadding ??
+                  EdgeInsets.symmetric(
+                    horizontal: size.s16,
+                    vertical: size.s16 / 4,
+                  ),
+              child: this.bottom!,
+            ),
+        ],
+      ),
     );
   }
 }
@@ -134,7 +150,9 @@ class _FCAppBarCupertino extends StatelessWidget {
 class _FCAppBarMaterial extends StatelessWidget {
   const _FCAppBarMaterial({
     Key? key,
-    required this.backgroundColor,
+    required this.blurColor,
+    required this.blurOpacity,
+    required this.blurFilter,
     required this.prefix,
     required this.middle,
     required this.postfix,
@@ -142,7 +160,9 @@ class _FCAppBarMaterial extends StatelessWidget {
     required this.bottom,
   }) : super(key: key);
 
-  final Color? backgroundColor;
+  final Color? blurColor;
+  final double? blurOpacity;
+  final ImageFilter? blurFilter;
   final Widget? prefix;
   final Widget? middle;
   final Widget? postfix;
@@ -155,37 +175,42 @@ class _FCAppBarMaterial extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        AppBar(
-          elevation: 0,
-          automaticallyImplyLeading: false,
-          systemOverlayStyle: theme.systemOverlayStyle,
-          backgroundColor: this.backgroundColor ?? theme.white,
-          leading: this.prefix,
-          title: this.middle,
-          centerTitle: true,
-          actions: this.postfix != null
-              ? [
-                  Row(
-                    children: [
-                      this.postfix!,
-                    ],
-                  ),
-                ]
-              : null,
-        ),
-        if (this.bottom != null)
-          Padding(
-            padding: this.bottomPadding ??
-                EdgeInsets.symmetric(
-                  horizontal: size.s16,
-                  vertical: size.s16 / 4,
-                ),
-            child: this.bottom!,
+    return FCBlur(
+      color: this.blurColor,
+      opacity: this.blurOpacity,
+      filter: this.blurFilter,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          AppBar(
+            elevation: 0,
+            automaticallyImplyLeading: false,
+            systemOverlayStyle: theme.systemOverlayStyle,
+            backgroundColor: theme.white.withOpacity(0),
+            leading: this.prefix,
+            title: this.middle,
+            centerTitle: true,
+            actions: this.postfix != null
+                ? [
+                    Row(
+                      children: [
+                        this.postfix!,
+                      ],
+                    ),
+                  ]
+                : null,
           ),
-      ],
+          if (this.bottom != null)
+            Padding(
+              padding: this.bottomPadding ??
+                  EdgeInsets.symmetric(
+                    horizontal: size.s16,
+                    vertical: size.s16 / 4,
+                  ),
+              child: this.bottom!,
+            ),
+        ],
+      ),
     );
   }
 }

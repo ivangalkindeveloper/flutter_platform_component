@@ -2,8 +2,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCSmallModal extends StatelessWidget {
-  const FCSmallModal({
+class FCPopUpModal extends StatelessWidget {
+  const FCPopUpModal({
     Key? key,
     required this.backgroundColor,
     this.appBarPrefix,
@@ -37,7 +37,7 @@ class FCSmallModal extends StatelessWidget {
             horizontal: size.s16,
             vertical: size.s16 / 2,
           ),
-          child: FCSmallModalAppBar(
+          child: FCPopUpModalAppBar(
             context: context,
             prefix: this.appBarPrefix,
             title: this.title,

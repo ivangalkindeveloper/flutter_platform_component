@@ -6,41 +6,43 @@ class FCExpandedModalAppBar extends FCBasicAppBar {
   FCExpandedModalAppBar({
     Key? key,
     required BuildContext context,
-    Color? blurColor,
+    Color? backgroundColor,
     Widget? prefix,
-    String? localeBack,
+    String? cupertinoLocale,
     VoidCallback? onPressedBack,
     String? title,
+    TextStyle? style,
     Widget? middle,
     Widget? postfix,
+    EdgeInsets? bottomPadding,
     PreferredSizeWidget? bottom,
   }) : super(
           key: key,
           context: context,
-          blurColor: blurColor,
+          backgroundColor: backgroundColor,
           prefix: _prefix(
-            context: context,
             prefix: prefix,
-            localeBack: localeBack,
+            cupertinoLocale: cupertinoLocale,
             onPressedBack: onPressedBack,
           ),
           title: title,
+          style: style,
           middle: middle,
           postfix: postfix,
+          bottomPadding: bottomPadding,
           bottom: bottom,
         );
 
   static Widget? _prefix({
-    required BuildContext context,
     required Widget? prefix,
-    required String? localeBack,
+    required String? cupertinoLocale,
     required VoidCallback? onPressedBack,
   }) {
     if (prefix != null) return prefix;
 
-    if (localeBack != null && onPressedBack != null)
-      return FCModalCloseButton(
-        localeBack: localeBack,
+    if (cupertinoLocale != null && onPressedBack != null)
+      return FCExpandedModalCloseButton(
+        cupertinoLocale: cupertinoLocale,
         onPressed: onPressedBack,
       );
 
