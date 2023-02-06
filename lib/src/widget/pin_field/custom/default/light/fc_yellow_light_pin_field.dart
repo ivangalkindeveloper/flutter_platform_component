@@ -5,7 +5,7 @@ import 'dart:async';
 
 class FCYellowLightPINField extends StatelessWidget {
   const FCYellowLightPINField({
-    Key? key,
+    super.key,
     required this.length,
     this.itemHeight,
     this.controller,
@@ -17,7 +17,7 @@ class FCYellowLightPINField extends StatelessWidget {
     this.onCompleted,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final int length;
   final double? itemHeight;

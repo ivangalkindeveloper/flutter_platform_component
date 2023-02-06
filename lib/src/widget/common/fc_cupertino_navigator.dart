@@ -5,7 +5,7 @@ typedef RouteFactory = Route<dynamic>? Function(RouteSettings settings);
 class FCCupertinoNavigator extends StatefulWidget {
   /// Creates the content area for a tab in a [CupertinoTabScaffold].
   const FCCupertinoNavigator({
-    Key? key,
+    super.key,
     required this.builder,
     required this.navigatorKey,
     this.defaultTitle,
@@ -15,7 +15,7 @@ class FCCupertinoNavigator extends StatefulWidget {
     this.onUnknownRoute,
     this.navigatorObservers = const <NavigatorObserver>[],
     this.restorationScopeId,
-  }) : super(key: key);
+  });
 
   final WidgetBuilder builder;
   final GlobalKey<NavigatorState> navigatorKey;

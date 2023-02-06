@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCKeyboard extends StatelessWidget {
   const FCKeyboard({
-    Key? key,
+    super.key,
     this.style,
     this.horizontalInterval,
     this.verticalInterval,
@@ -13,7 +13,7 @@ class FCKeyboard extends StatelessWidget {
     required this.onPressed,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final TextStyle? style;
   final double? horizontalInterval;

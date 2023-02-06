@@ -4,10 +4,10 @@ import 'package:flutter/widgets.dart';
 
 class FCBlueGradientPageIndicator extends StatelessWidget {
   const FCBlueGradientPageIndicator({
-    Key? key,
+    super.key,
     required this.length,
     required this.currentIndex,
-  }) : super(key: key);
+  });
 
   final int length;
   final int currentIndex;

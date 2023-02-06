@@ -4,9 +4,9 @@ import 'package:flutter/widgets.dart';
 
 class FCAnimatedSlowSwitcher extends StatelessWidget {
   const FCAnimatedSlowSwitcher({
-    Key? key,
+    super.key,
     required this.child,
-  }) : super(key: key);
+  });
 
   final Widget? child;
 

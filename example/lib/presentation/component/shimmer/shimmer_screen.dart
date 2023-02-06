@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ShimmerScreen extends StatelessWidget {
-  const ShimmerScreen({Key? key}) : super(key: key);
+  const ShimmerScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

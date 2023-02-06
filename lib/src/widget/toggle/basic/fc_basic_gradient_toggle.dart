@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicGradientToggle<T> extends StatefulWidget {
   const FCBasicGradientToggle({
-    Key? key,
+    super.key,
     required this.value,
     required this.items,
     required this.onChanged,
@@ -22,7 +22,7 @@ class FCBasicGradientToggle<T> extends StatefulWidget {
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final T? value;
   final List<FCToggleItem<T>> items;
@@ -170,7 +170,7 @@ class _FCBasicGradientToggleState extends State<FCBasicGradientToggle> {
 
 class _FCLinearGradientToggleButton<T> extends StatelessWidget {
   const _FCLinearGradientToggleButton({
-    Key? key,
+    super.key,
     required this.item,
     required this.unselectedBackgroundGradient,
     required this.unselectedInternalGradient,
@@ -183,7 +183,7 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
     required this.isValidationError,
     required this.onPressed,
     required this.isSelected,
-  }) : super(key: key);
+  });
 
   final FCToggleItem<T> item;
   final Gradient? unselectedBackgroundGradient;

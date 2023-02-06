@@ -4,14 +4,14 @@ import 'package:flutter/widgets.dart';
 
 class FCGreyDarkGradientCard extends StatelessWidget {
   const FCGreyDarkGradientCard({
-    Key? key,
+    super.key,
     this.constraints,
     this.borderRadius,
     this.borderGradient,
     this.borderWidth,
     this.padding,
     required this.child,
-  }) : super(key: key);
+  });
 
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;

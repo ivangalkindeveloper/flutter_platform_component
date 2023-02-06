@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCPrimaryLightGradientToggle<T> extends StatelessWidget {
   const FCPrimaryLightGradientToggle({
-    Key? key,
+    super.key,
     required this.value,
     required this.items,
     required this.onChanged,
@@ -14,7 +14,7 @@ class FCPrimaryLightGradientToggle<T> extends StatelessWidget {
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final T? value;
   final List<FCToggleItem<T>> items;

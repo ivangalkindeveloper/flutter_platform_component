@@ -5,7 +5,7 @@ import 'dart:async';
 
 class FCBlackCodeField extends StatelessWidget {
   const FCBlackCodeField({
-    Key? key,
+    super.key,
     required this.length,
     this.itemHeight,
     this.itemWidth,
@@ -20,7 +20,7 @@ class FCBlackCodeField extends StatelessWidget {
     this.onCompleted,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final int length;
   final double? itemHeight;

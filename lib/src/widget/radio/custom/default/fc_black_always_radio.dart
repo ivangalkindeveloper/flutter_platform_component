@@ -4,14 +4,14 @@ import 'package:flutter/widgets.dart';
 
 class FCBlackAlwaysRadio<T> extends StatelessWidget {
   const FCBlackAlwaysRadio({
-    Key? key,
+    super.key,
     required this.value,
     required this.groupValue,
     required this.onChanged,
     this.isToggleable = false,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final T value;
   final T groupValue;

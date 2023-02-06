@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientCodeFieldScreen extends StatelessWidget {
-  const GradientCodeFieldScreen({Key? key}) : super(key: key);
+  const GradientCodeFieldScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

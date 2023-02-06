@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientSegmentControlScreen extends StatefulWidget {
-  const GradientSegmentControlScreen({Key? key}) : super(key: key);
+  const GradientSegmentControlScreen({Key? key});
 
   @override
   State<GradientSegmentControlScreen> createState() =>

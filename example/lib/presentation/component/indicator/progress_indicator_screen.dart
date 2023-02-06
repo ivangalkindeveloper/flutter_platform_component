@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ProgressIndicatorScreen extends StatefulWidget {
-  const ProgressIndicatorScreen({Key? key}) : super(key: key);
+  const ProgressIndicatorScreen({Key? key});
 
   @override
   State<ProgressIndicatorScreen> createState() => _ProgressIndicatorScreenState();

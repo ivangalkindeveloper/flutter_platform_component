@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class SwitchScreen extends StatefulWidget {
-  const SwitchScreen({Key? key}) : super(key: key);
+  const SwitchScreen({Key? key});
 
   @override
   State<SwitchScreen> createState() => _SwitchScreenState();

@@ -1,10 +1,11 @@
 import 'package:example/presentation/config_list/config_list.dart';
 import 'package:example/service/navigation_service.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/material.dart';
 
 class ComponentScreen extends StatelessWidget {
-  const ComponentScreen({Key? key}) : super(key: key);
+  const ComponentScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -48,18 +49,22 @@ class ComponentScreen extends StatelessWidget {
                 Expanded(
                   child: FCPrimaryLightButton(
                     title: "Light Theme",
-                    onPressed: () => config.changeTheme(
-                      theme: FCDefaultLightTheme(),
-                    ),
+                    onPressed: () {
+                      final IFCTheme theme = FCDefaultLightTheme();
+                      SystemChrome.setSystemUIOverlayStyle(theme.systemOverlayStyle);
+                      config.changeTheme(theme: theme);
+                    },
                   ),
                 ),
                 SizedBox(width: size.s16),
                 Expanded(
                   child: FCPrimaryLightButton(
                     title: "Dark Theme",
-                    onPressed: () => config.changeTheme(
-                      theme: FCDefaultDarkTheme(),
-                    ),
+                    onPressed: () {
+                      final IFCTheme theme = FCDefaultDarkTheme();
+                      SystemChrome.setSystemUIOverlayStyle(theme.systemOverlayStyle);
+                      config.changeTheme(theme: theme);
+                    },
                   ),
                 ),
               ],

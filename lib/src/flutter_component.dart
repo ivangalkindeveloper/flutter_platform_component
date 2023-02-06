@@ -4,14 +4,14 @@ import 'package:flutter/widgets.dart';
 
 class FlutterComponent extends StatefulWidget {
   const FlutterComponent({
-    Key? key,
+    super.key,
     this.platform,
     this.theme,
     this.size,
     this.textStyle,
     this.haptic,
     required this.child,
-  }) : super(key: key);
+  });
 
   final TargetPlatform? platform;
   final IFCTheme? theme;

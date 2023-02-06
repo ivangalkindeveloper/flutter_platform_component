@@ -6,7 +6,7 @@ import 'dart:async';
 
 class FCBasicGradientPINField extends StatefulWidget {
   const FCBasicGradientPINField({
-    Key? key,
+    super.key,
     required this.context,
     required this.length,
     required this.unfocusedBackgroundGradient,
@@ -23,7 +23,7 @@ class FCBasicGradientPINField extends StatefulWidget {
     this.onCompleted,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final BuildContext context;
   final int length;

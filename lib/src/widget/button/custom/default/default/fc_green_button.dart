@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCGreenButton extends StatelessWidget {
   const FCGreenButton({
-    Key? key,
+    super.key,
     this.prefix,
     this.prefixIcon,
     required this.title,
@@ -14,7 +14,7 @@ class FCGreenButton extends StatelessWidget {
     this.isLoading = false,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final Widget? prefix;
   final IconData? prefixIcon;

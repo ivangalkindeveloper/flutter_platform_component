@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class AnimatedTransitionSwitcherScreen extends StatefulWidget {
-  const AnimatedTransitionSwitcherScreen({Key? key}) : super(key: key);
+  const AnimatedTransitionSwitcherScreen({Key? key});
 
   @override
   State<AnimatedTransitionSwitcherScreen> createState() =>

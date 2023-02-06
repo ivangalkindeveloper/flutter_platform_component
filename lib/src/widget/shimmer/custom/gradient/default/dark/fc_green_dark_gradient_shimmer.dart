@@ -4,12 +4,12 @@ import 'package:flutter/widgets.dart';
 
 class FCGreenDarkGradientShimmer extends StatelessWidget {
   const FCGreenDarkGradientShimmer({
-    Key? key,
+    super.key,
     this.shape = BoxShape.rectangle,
     this.height,
     this.width,
     this.child,
-  }) : super(key: key);
+  });
 
   final BoxShape shape;
   final double? height;

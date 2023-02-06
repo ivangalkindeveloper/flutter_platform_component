@@ -4,10 +4,10 @@ import 'package:flutter/widgets.dart';
 
 class FCAnimatedSlowOpacity extends StatelessWidget {
   const FCAnimatedSlowOpacity({
-    Key? key,
+    super.key,
     required this.condition,
     required this.child,
-  }) : super(key: key);
+  });
 
   final bool condition;
   final Widget child;

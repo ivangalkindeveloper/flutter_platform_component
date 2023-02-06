@@ -4,12 +4,12 @@ import 'package:flutter/widgets.dart';
 
 class FCGreyGradientSlowShimmer extends StatelessWidget {
   const FCGreyGradientSlowShimmer({
-    Key? key,
+    super.key,
     this.shape = BoxShape.rectangle,
     this.height,
     this.width,
     this.child,
-  }) : super(key: key);
+  });
 
   final BoxShape shape;
   final double? height;

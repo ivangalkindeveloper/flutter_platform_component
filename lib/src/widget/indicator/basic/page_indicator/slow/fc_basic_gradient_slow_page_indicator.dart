@@ -4,12 +4,12 @@ import 'package:flutter/widgets.dart';
 
 class FCBasicGradientSlowPageIndicator extends StatelessWidget {
   const FCBasicGradientSlowPageIndicator({
-    Key? key,
+    super.key,
     required this.length,
     required this.currentIndex,
     required this.activeGradident,
     required this.inactiveGradident,
-  }) : super(key: key);
+  });
 
   final int length;
   final int currentIndex;

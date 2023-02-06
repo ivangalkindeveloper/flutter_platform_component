@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientButtonScreen extends StatefulWidget {
-  const GradientButtonScreen({Key? key}) : super(key: key);
+  const GradientButtonScreen({Key? key});
 
   @override
   State<GradientButtonScreen> createState() => _GradientButtonScreenState();

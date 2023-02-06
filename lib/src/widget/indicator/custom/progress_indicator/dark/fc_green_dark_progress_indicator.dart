@@ -4,9 +4,9 @@ import 'package:flutter/widgets.dart';
 
 class FCGreenDarkProgressIndicator extends StatelessWidget {
   const FCGreenDarkProgressIndicator({
-    Key? key,
+    super.key,
     required this.value,
-  }) : super(key: key);
+  });
 
   final double value;
 

@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class PageIndicatorScreen extends StatefulWidget {
-  const PageIndicatorScreen({Key? key}) : super(key: key);
+  const PageIndicatorScreen({Key? key});
 
   @override
   State<PageIndicatorScreen> createState() => _PageIndicatorScreenState();

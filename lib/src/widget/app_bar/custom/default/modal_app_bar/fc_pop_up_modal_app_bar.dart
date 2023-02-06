@@ -1,9 +1,10 @@
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
+//TODO
 class FCPopUpModalAppBar extends FCBasicAppBar {
   FCPopUpModalAppBar({
-    Key? key,
+    super.key,
     required BuildContext context,
     Color? backgroundColor,
     Widget? prefix,
@@ -15,7 +16,6 @@ class FCPopUpModalAppBar extends FCBasicAppBar {
     EdgeInsets? bottomPadding,
     PreferredSizeWidget? bottom,
   }) : super(
-          key: key,
           context: context,
           backgroundColor: backgroundColor,
           prefix: prefix,

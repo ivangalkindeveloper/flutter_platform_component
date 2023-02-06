@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicSelectCard extends FCPlatformWidget {
   FCBasicSelectCard({
-    Key? key,
+    super.key,
     required Color backgroundColor,
     required Color splashColor,
     BoxConstraints? constraints,
@@ -18,7 +18,6 @@ class FCBasicSelectCard extends FCPlatformWidget {
     bool isDisabled = false,
     Color? disabledColor,
   }) : super(
-          key: key,
           cupertino: _FCBasicSelectCardCupertino(
             key: key,
             backgroundColor: backgroundColor,
@@ -51,7 +50,7 @@ class FCBasicSelectCard extends FCPlatformWidget {
 
 class _FCBasicSelectCardCupertino extends StatelessWidget {
   const _FCBasicSelectCardCupertino({
-    Key? key,
+    super.key,
     required this.backgroundColor,
     required this.constraints,
     required this.borderRadius,
@@ -62,7 +61,7 @@ class _FCBasicSelectCardCupertino extends StatelessWidget {
     required this.child,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final Color backgroundColor;
   final BoxConstraints? constraints;
@@ -84,7 +83,7 @@ class _FCBasicSelectCardCupertino extends StatelessWidget {
       children: [
         CupertinoButton(
           onPressed: this.onPressed,
-          padding: const EdgeInsets.all(0),
+          padding: EdgeInsets.zero,
           borderRadius: this.borderRadius ?? config.cardBorderRadius,
           child: FCBasicCard(
             backgroundColor: this.backgroundColor,
@@ -113,7 +112,7 @@ class _FCBasicSelectCardCupertino extends StatelessWidget {
 
 class _FCBasicSelectCardMaterial extends StatelessWidget {
   const _FCBasicSelectCardMaterial({
-    Key? key,
+    super.key,
     required this.backgroundColor,
     required this.splashColor,
     required this.constraints,
@@ -125,7 +124,7 @@ class _FCBasicSelectCardMaterial extends StatelessWidget {
     required this.child,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final Color backgroundColor;
   final Color splashColor;

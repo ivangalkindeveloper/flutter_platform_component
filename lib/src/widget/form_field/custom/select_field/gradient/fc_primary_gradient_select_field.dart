@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCPrimaryGradientSelectField extends StatelessWidget {
   const FCPrimaryGradientSelectField({
-    Key? key,
+    super.key,
     this.internalGradient,
     this.internalIconHeight,
     required this.title,
@@ -32,7 +32,7 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
     required this.onPressed,
     this.isRequired = false,
     this.isDisabled = false,
-  }) : super(key: key);
+  });
 
   final Gradient? internalGradient;
   final double? internalIconHeight;

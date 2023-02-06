@@ -4,9 +4,9 @@ import 'package:flutter/widgets.dart';
 
 class FCSecondaryLightProgressIndicator extends StatelessWidget {
   const FCSecondaryLightProgressIndicator({
-    Key? key,
+    super.key,
     required this.value,
-  }) : super(key: key);
+  });
 
   final double value;
 

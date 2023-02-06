@@ -4,14 +4,14 @@ import 'package:flutter/widgets.dart';
 
 class FCAnimatedFastContainer extends StatelessWidget {
   const FCAnimatedFastContainer({
-    Key? key,
+    super.key,
     this.height,
     this.width,
     this.constraints,
     this.decoration,
     this.padding,
     this.child,
-  }) : super(key: key);
+  });
 
   final double? height;
   final double? width;

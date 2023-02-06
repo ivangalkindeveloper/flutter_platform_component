@@ -102,7 +102,7 @@ class FCGlobal {
         );
 
       case TargetPlatform.android:
-        return bottomSheet.showBarModalBottomSheet<T>(
+        return bottomSheet.showMaterialModalBottomSheet<T>(
           context: context,
           barrierColor: config.barrierPopUpModalColor,
           backgroundColor: material.Colors.transparent,

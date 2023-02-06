@@ -4,14 +4,14 @@ import 'package:flutter/widgets.dart';
 
 class FCWhiteCard extends StatelessWidget {
   const FCWhiteCard({
-    Key? key,
+    super.key,
     this.constraints,
     this.borderRadius,
     this.borderColor,
     this.borderWidth,
     this.padding,
     required this.child,
-  }) : super(key: key);
+  });
 
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;

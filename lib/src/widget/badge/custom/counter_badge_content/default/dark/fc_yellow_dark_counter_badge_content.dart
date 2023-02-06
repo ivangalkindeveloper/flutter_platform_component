@@ -4,9 +4,9 @@ import 'package:flutter/widgets.dart';
 
 class FCYellowDarkCounterBadgeContent extends StatelessWidget {
   const FCYellowDarkCounterBadgeContent({
-    Key? key,
+    super.key,
     required this.count,
-  }) : super(key: key);
+  });
 
   final int? count;
 
@@ -21,4 +21,3 @@ class FCYellowDarkCounterBadgeContent extends StatelessWidget {
     );
   }
 }
-

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicButton extends FCPlatformWidget {
   FCBasicButton({
-    Key? key,
+    super.key,
     Color? backgroundColor,
     Color? borderColor,
     required Color splashColor,
@@ -18,7 +18,6 @@ class FCBasicButton extends FCPlatformWidget {
     bool isDisabled = false,
     Color? disabledColor,
   }) : super(
-          key: key,
           cupertino: _FCBasicButtonCupertino(
             key: key,
             backgroundColor: backgroundColor,
@@ -51,7 +50,7 @@ class FCBasicButton extends FCPlatformWidget {
 
 class _FCBasicButtonCupertino extends StatelessWidget {
   const _FCBasicButtonCupertino({
-    Key? key,
+    super.key,
     required this.backgroundColor,
     required this.borderColor,
     required this.height,
@@ -62,7 +61,7 @@ class _FCBasicButtonCupertino extends StatelessWidget {
     required this.onPressed,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final Color? backgroundColor;
   final Color? borderColor;
@@ -84,7 +83,7 @@ class _FCBasicButtonCupertino extends StatelessWidget {
       children: [
         CupertinoButton(
           minSize: this.height ?? size.componentHeightDefault,
-          padding: const EdgeInsets.all(0),
+          padding: EdgeInsets.zero,
           borderRadius: this.borderRadius ?? config.buttonBorderRadius,
           onPressed: this.isDisabled ? () {} : this.onPressed,
           child: FCAnimatedContainer(
@@ -124,7 +123,7 @@ class _FCBasicButtonCupertino extends StatelessWidget {
 
 class _FCBasicButtonMaterial extends StatelessWidget {
   const _FCBasicButtonMaterial({
-    Key? key,
+    super.key,
     required this.backgroundColor,
     required this.borderColor,
     required this.splashColor,
@@ -136,7 +135,7 @@ class _FCBasicButtonMaterial extends StatelessWidget {
     required this.onPressed,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final Color? backgroundColor;
   final Color? borderColor;
@@ -159,7 +158,7 @@ class _FCBasicButtonMaterial extends StatelessWidget {
       children: [
         FCAnimatedContainer(
           height: this.height ?? size.componentHeightDefault,
-          padding: const EdgeInsets.all(0),
+          padding: EdgeInsets.zero,
           decoration: BoxDecoration(
             color: this.backgroundColor,
             borderRadius: this.borderRadius ?? config.cardBorderRadius,

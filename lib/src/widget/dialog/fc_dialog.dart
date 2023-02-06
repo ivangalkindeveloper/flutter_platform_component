@@ -5,14 +5,13 @@ import 'package:flutter/material.dart';
 
 class FCDialog extends FCPlatformWidget {
   FCDialog({
-    Key? key,
+    super.key,
     required String title,
     required String description,
     required List<FCDialogItem> items,
     TextStyle? titleStyle,
     TextStyle? descriptionStyle,
   }) : super(
-          key: key,
           cupertino: _FCDialogCupertino(
             key: key,
             title: title,
@@ -34,13 +33,13 @@ class FCDialog extends FCPlatformWidget {
 
 class _FCDialogCupertino extends StatelessWidget {
   const _FCDialogCupertino({
-    Key? key,
+    super.key,
     required this.title,
     required this.description,
     required this.items,
     required this.titleStyle,
     required this.descriptionStyle,
-  }) : super(key: key);
+  });
 
   final String title;
   final String description;
@@ -81,13 +80,13 @@ class _FCDialogCupertino extends StatelessWidget {
 
 class _FCDialogMaterial extends StatelessWidget {
   const _FCDialogMaterial({
-    Key? key,
+    super.key,
     required this.title,
     required this.description,
     required this.items,
     required this.titleStyle,
     required this.descriptionStyle,
-  }) : super(key: key);
+  });
 
   final String title;
   final String description;

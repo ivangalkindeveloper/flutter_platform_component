@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class DialogScreen extends StatelessWidget {
-  const DialogScreen({Key? key}) : super(key: key);
+  const DialogScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

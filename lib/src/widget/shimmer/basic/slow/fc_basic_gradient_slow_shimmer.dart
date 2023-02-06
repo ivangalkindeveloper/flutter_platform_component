@@ -5,7 +5,7 @@ import 'dart:async';
 
 class FCBasicGradientSlowShimmer extends StatefulWidget {
   const FCBasicGradientSlowShimmer({
-    Key? key,
+    super.key,
     required this.context,
     required this.backgroundGradient,
     required this.highlightGradient,
@@ -13,7 +13,7 @@ class FCBasicGradientSlowShimmer extends StatefulWidget {
     this.height,
     this.width,
     this.child,
-  }) : super(key: key);
+  });
 
   final BuildContext context;
   final Gradient backgroundGradient;

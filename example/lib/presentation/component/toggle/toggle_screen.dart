@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ToggleScreen extends StatefulWidget {
-  const ToggleScreen({Key? key}) : super(key: key);
+  const ToggleScreen({Key? key});
 
   @override
   State<ToggleScreen> createState() => _ToggleScreenState();

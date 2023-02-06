@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicSlider extends FCPlatformWidget {
   FCBasicSlider({
-    Key? key,
+    super.key,
     required double value,
     required void Function(double) onChanged,
     required Color backgroundColor,
@@ -15,8 +15,8 @@ class FCBasicSlider extends FCPlatformWidget {
     bool isDisabled = false,
     Color? disabledColor,
   }) : super(
-          key: key,
           cupertino: _FCBasicSliderCupertino(
+            key: key,
             value: value,
             onChanged: onChanged,
             backgroundColor: backgroundColor,
@@ -28,6 +28,7 @@ class FCBasicSlider extends FCPlatformWidget {
             disabledColor: disabledColor,
           ),
           material: _FCBasicSliderMaterial(
+            key: key,
             value: value,
             onChanged: onChanged,
             backgroundColor: backgroundColor,
@@ -43,7 +44,7 @@ class FCBasicSlider extends FCPlatformWidget {
 
 class _FCBasicSliderCupertino extends StatelessWidget {
   const _FCBasicSliderCupertino({
-    Key? key,
+    super.key,
     required this.value,
     required this.onChanged,
     required this.backgroundColor,
@@ -53,7 +54,7 @@ class _FCBasicSliderCupertino extends StatelessWidget {
     required this.divisions,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final double value;
   final void Function(double) onChanged;
@@ -93,7 +94,7 @@ class _FCBasicSliderCupertino extends StatelessWidget {
 
 class _FCBasicSliderMaterial extends StatelessWidget {
   const _FCBasicSliderMaterial({
-    Key? key,
+    super.key,
     required this.value,
     required this.onChanged,
     required this.backgroundColor,
@@ -103,7 +104,7 @@ class _FCBasicSliderMaterial extends StatelessWidget {
     required this.divisions,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final double value;
   final void Function(double) onChanged;

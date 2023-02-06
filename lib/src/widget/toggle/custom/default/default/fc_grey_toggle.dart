@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCGreyToggle<T> extends StatelessWidget {
   const FCGreyToggle({
-    Key? key,
+    super.key,
     required this.value,
     required this.items,
     required this.onChanged,
@@ -14,7 +14,7 @@ class FCGreyToggle<T> extends StatelessWidget {
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final T? value;
   final List<FCToggleItem<T>> items;

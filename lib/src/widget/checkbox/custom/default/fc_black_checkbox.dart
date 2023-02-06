@@ -4,12 +4,12 @@ import 'package:flutter/widgets.dart';
 
 class FCBlackCheckbox extends StatelessWidget {
   const FCBlackCheckbox({
-    Key? key,
+    super.key,
     required this.value,
     required this.onChanged,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final bool value;
   final void Function(bool) onChanged;

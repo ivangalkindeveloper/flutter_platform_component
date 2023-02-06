@@ -4,9 +4,9 @@ import 'package:flutter/widgets.dart';
 
 class FCWhiteAlwaysCounterBadgeContent extends StatelessWidget {
   const FCWhiteAlwaysCounterBadgeContent({
-    Key? key,
+    super.key,
     required this.count,
-  }) : super(key: key);
+  });
 
   final int? count;
 

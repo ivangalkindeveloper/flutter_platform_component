@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class SliderScreen extends StatefulWidget {
-  const SliderScreen({Key? key}) : super(key: key);
+  const SliderScreen({Key? key});
 
   @override
   State<SliderScreen> createState() => _SliderScreenState();

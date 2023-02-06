@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientSelectFieldScreen extends StatelessWidget {
-  const GradientSelectFieldScreen({Key? key}) : super(key: key);
+  const GradientSelectFieldScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

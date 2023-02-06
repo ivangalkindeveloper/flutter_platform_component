@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicGradientButton extends FCPlatformWidget {
   FCBasicGradientButton({
-    Key? key,
+    super.key,
     Gradient? backgroundGradient,
     Gradient? borderGradient,
     required Color splashColor,
@@ -18,7 +18,6 @@ class FCBasicGradientButton extends FCPlatformWidget {
     bool isDisabled = false,
     Color? disabledColor,
   }) : super(
-          key: key,
           cupertino: _FCBasicGradientButtonCupertino(
             key: key,
             backgroundGradient: backgroundGradient,
@@ -51,7 +50,7 @@ class FCBasicGradientButton extends FCPlatformWidget {
 
 class _FCBasicGradientButtonCupertino extends StatelessWidget {
   const _FCBasicGradientButtonCupertino({
-    Key? key,
+    super.key,
     required this.backgroundGradient,
     required this.borderGradient,
     required this.height,
@@ -62,7 +61,7 @@ class _FCBasicGradientButtonCupertino extends StatelessWidget {
     required this.onPressed,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final Gradient? backgroundGradient;
   final Gradient? borderGradient;
@@ -84,7 +83,7 @@ class _FCBasicGradientButtonCupertino extends StatelessWidget {
       children: [
         CupertinoButton(
           minSize: this.height ?? size.componentHeightDefault,
-          padding: const EdgeInsets.all(0),
+          padding: EdgeInsets.zero,
           borderRadius: this.borderRadius ?? config.buttonBorderRadius,
           onPressed: this.isDisabled ? () {} : this.onPressed,
           child: Stack(
@@ -138,7 +137,7 @@ class _FCBasicGradientButtonCupertino extends StatelessWidget {
 
 class _FCBasicGradientButtonMaterial extends StatelessWidget {
   const _FCBasicGradientButtonMaterial({
-    Key? key,
+    super.key,
     required this.backgroundGradient,
     required this.borderGradient,
     required this.splashColor,
@@ -150,7 +149,7 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
     required this.onPressed,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final Gradient? backgroundGradient;
   final Gradient? borderGradient;
@@ -173,7 +172,7 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
       children: [
         FCAnimatedContainer(
           height: this.height ?? size.componentHeightDefault,
-          padding: const EdgeInsets.all(0),
+          padding: EdgeInsets.zero,
           decoration: BoxDecoration(
             gradient: this.backgroundGradient,
             borderRadius: this.borderRadius ?? config.buttonBorderRadius,

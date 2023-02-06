@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class CheckboxScreen extends StatefulWidget {
-  const CheckboxScreen({Key? key}) : super(key: key);
+  const CheckboxScreen({Key? key});
 
   @override
   State<CheckboxScreen> createState() => _CheckboxScreenState();

@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class SelectFieldScreen extends StatelessWidget {
-  const SelectFieldScreen({Key? key}) : super(key: key);
+  const SelectFieldScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

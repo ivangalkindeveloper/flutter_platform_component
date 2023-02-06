@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCYellowButton extends StatelessWidget {
   const FCYellowButton({
-    Key? key,
+    super.key,
     this.prefix,
     this.prefixIcon,
     required this.title,
@@ -14,7 +14,7 @@ class FCYellowButton extends StatelessWidget {
     this.isLoading = false,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final Widget? prefix;
   final IconData? prefixIcon;

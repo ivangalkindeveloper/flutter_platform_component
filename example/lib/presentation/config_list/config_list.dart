@@ -6,7 +6,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ConfigList extends StatelessWidget {
-  const ConfigList({Key? key}) : super(key: key);
+  const ConfigList({Key? key});
 
   @override
   Widget build(BuildContext context) {

@@ -4,10 +4,10 @@ import 'package:flutter/widgets.dart';
 
 class FCYellowFastPageIndicator extends StatelessWidget {
   const FCYellowFastPageIndicator({
-    Key? key,
+    super.key,
     required this.length,
     required this.currentIndex,
-  }) : super(key: key);
+  });
 
   final int length;
   final int currentIndex;

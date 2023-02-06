@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class AnimatedContainerScreen extends StatefulWidget {
-  const AnimatedContainerScreen({Key? key}) : super(key: key);
+  const AnimatedContainerScreen({Key? key});
 
   @override
   State<AnimatedContainerScreen> createState() => _AnimatedContainerScreenState();

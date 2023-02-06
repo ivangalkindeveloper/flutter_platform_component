@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 
 class FCCupertinoModalButton extends StatelessWidget {
   const FCCupertinoModalButton({
-    Key? key,
+    super.key,
     required this.onPressed,
-  }) : super(key: key);
+  });
 
   final VoidCallback onPressed;
 

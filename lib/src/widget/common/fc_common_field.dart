@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 class FCCommonField extends StatelessWidget {
   const FCCommonField({
-    Key? key,
+    super.key,
     required this.controller,
     required this.focusNode,
     //
@@ -33,7 +33,7 @@ class FCCommonField extends StatelessWidget {
     required this.inputFormatters,
     required this.cursorColor,
     required this.isEnabled,
-  }) : super(key: key);
+  });
 
   final TextEditingController? controller;
   final FocusNode? focusNode;

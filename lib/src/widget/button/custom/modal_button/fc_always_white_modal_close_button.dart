@@ -5,11 +5,10 @@ import 'package:flutter/material.dart';
 
 class FCAlwaysWhiteModalCloseButton extends FCPlatformWidget {
   FCAlwaysWhiteModalCloseButton({
-    Key? key,
+    super.key,
     required String cupertinoLocale,
     required VoidCallback onPressed,
   }) : super(
-          key: key,
           cupertino: _FCAlwaysWhiteModalCloseButtonCupertino(
             key: key,
             cupertinoLocale: cupertinoLocale,
@@ -24,10 +23,10 @@ class FCAlwaysWhiteModalCloseButton extends FCPlatformWidget {
 
 class _FCAlwaysWhiteModalCloseButtonCupertino extends StatelessWidget {
   const _FCAlwaysWhiteModalCloseButtonCupertino({
-    Key? key,
+    super.key,
     required this.cupertinoLocale,
     required this.onPressed,
-  }) : super(key: key);
+  });
 
   final String cupertinoLocale;
   final VoidCallback onPressed;
@@ -52,9 +51,9 @@ class _FCAlwaysWhiteModalCloseButtonCupertino extends StatelessWidget {
 
 class _FCAlwaysWhiteModalCloseButtonMaterial extends StatelessWidget {
   const _FCAlwaysWhiteModalCloseButtonMaterial({
-    Key? key,
+    super.key,
     required this.onPressed,
-  }) : super(key: key);
+  });
 
   final VoidCallback onPressed;
 
@@ -69,7 +68,7 @@ class _FCAlwaysWhiteModalCloseButtonMaterial extends StatelessWidget {
       child: IconButton(
         iconSize: size.iconHeightLarge,
         onPressed: this.onPressed,
-        padding: const EdgeInsets.all(0),
+        padding: EdgeInsets.zero,
         icon: FCIcon.whiteAlways(
           context: context,
           icon: Icons.close,

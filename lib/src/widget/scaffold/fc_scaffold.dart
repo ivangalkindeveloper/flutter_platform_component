@@ -5,13 +5,12 @@ import 'package:flutter/material.dart';
 
 class FCScaffold extends FCPlatformWidget {
   FCScaffold({
-    Key? key,
+    super.key,
     Color? backgroundColor,
     ObstructingPreferredSizeWidget? appBar,
     required Widget body,
     Widget? bottomNavigationBar,
   }) : super(
-          key: key,
           cupertino: _FCScaffoldCupertino(
             key: key,
             backgroundColor: backgroundColor,
@@ -31,12 +30,12 @@ class FCScaffold extends FCPlatformWidget {
 
 class _FCScaffoldCupertino extends StatelessWidget {
   const _FCScaffoldCupertino({
-    Key? key,
+    super.key,
     required this.backgroundColor,
     required this.appBar,
     required this.body,
     required this.bottomNavigationBar,
-  }) : super(key: key);
+  });
 
   final Color? backgroundColor;
   final ObstructingPreferredSizeWidget? appBar;
@@ -70,12 +69,12 @@ class _FCScaffoldCupertino extends StatelessWidget {
 
 class _FCScaffoldMaterial extends StatelessWidget {
   const _FCScaffoldMaterial({
-    Key? key,
+    super.key,
     required this.backgroundColor,
     required this.appBar,
     required this.body,
     required this.bottomNavigationBar,
-  }) : super(key: key);
+  });
 
   final Color? backgroundColor;
   final ObstructingPreferredSizeWidget? appBar;

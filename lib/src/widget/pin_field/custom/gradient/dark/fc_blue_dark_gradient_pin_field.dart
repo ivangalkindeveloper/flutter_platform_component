@@ -5,7 +5,7 @@ import 'dart:async';
 
 class FCBlueDarkGradientPINField extends StatelessWidget {
   const FCBlueDarkGradientPINField({
-    Key? key,
+    super.key,
     required this.length,
     this.itemHeight,
     this.controller,
@@ -17,7 +17,7 @@ class FCBlueDarkGradientPINField extends StatelessWidget {
     this.onCompleted,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final int length;
   final double? itemHeight;
@@ -40,7 +40,8 @@ class FCBlueDarkGradientPINField extends StatelessWidget {
       context: context,
       length: this.length,
       unfocusedBackgroundGradient: theme.greyDarkGradient,
-      focusedBackgroundGradient: FCLinearGradient(        context: context,
+      focusedBackgroundGradient: FCLinearGradient(
+        context: context,
         colors: [
           theme.backgroundComponent,
           theme.backgroundComponent,

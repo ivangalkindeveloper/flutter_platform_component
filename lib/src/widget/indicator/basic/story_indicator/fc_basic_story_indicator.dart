@@ -4,13 +4,13 @@ import 'package:flutter/widgets.dart';
 
 class FCBasicStoryIndicator extends StatelessWidget {
   const FCBasicStoryIndicator({
-    Key? key,
+    super.key,
     required this.backgroundColor,
     required this.color,
     required this.length,
     required this.currentIndex,
     required this.value,
-  }) : super(key: key);
+  });
 
   final Color backgroundColor;
   final Color color;

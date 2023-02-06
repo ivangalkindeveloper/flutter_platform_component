@@ -5,7 +5,7 @@ import 'package:flutter/widgets.dart';
 
 class FCGreyDarkFormField extends StatelessWidget {
   const FCGreyDarkFormField({
-    Key? key,
+    super.key,
     this.internalColor,
     this.internalIconHeight,
     this.controller,
@@ -41,7 +41,7 @@ class FCGreyDarkFormField extends StatelessWidget {
     this.bottom,
     this.isRequired = false,
     this.isDisabled = false,
-  }) : super(key: key);
+  });
 
   final Color? internalColor;
   final double? internalIconHeight;

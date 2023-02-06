@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigationBarScreen extends StatefulWidget {
-  const BottomNavigationBarScreen({Key? key}) : super(key: key);
+  const BottomNavigationBarScreen({Key? key});
 
   @override
   State<BottomNavigationBarScreen> createState() => _BottomNavigationBarScreenState();

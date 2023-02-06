@@ -4,11 +4,11 @@ import 'package:flutter/widgets.dart';
 
 class FCPrimaryStoryIndicator extends StatelessWidget {
   const FCPrimaryStoryIndicator({
-    Key? key,
+    super.key,
     required this.length,
     required this.currentIndex,
     required this.value,
-  }) : super(key: key);
+  });
 
   final int length;
   final int currentIndex;

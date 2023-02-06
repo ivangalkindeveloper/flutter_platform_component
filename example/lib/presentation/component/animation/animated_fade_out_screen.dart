@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class AnimatedFadeOutScreen extends StatefulWidget {
-  const AnimatedFadeOutScreen({Key? key}) : super(key: key);
+  const AnimatedFadeOutScreen({Key? key});
 
   @override
   State<AnimatedFadeOutScreen> createState() => _AnimatedFadeOutScreenState();

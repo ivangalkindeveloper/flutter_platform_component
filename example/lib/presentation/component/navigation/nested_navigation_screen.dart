@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class NestedNavigationScreen extends StatelessWidget {
-  NestedNavigationScreen({Key? key}) : super(key: key);
+  NestedNavigationScreen({Key? key});
 
   final GlobalKey<NavigatorState> _navigatorKey = GlobalKey<NavigatorState>();
 

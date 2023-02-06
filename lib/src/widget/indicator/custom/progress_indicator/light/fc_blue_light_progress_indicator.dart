@@ -4,9 +4,9 @@ import 'package:flutter/widgets.dart';
 
 class FCBlueLightProgressIndicator extends StatelessWidget {
   const FCBlueLightProgressIndicator({
-    Key? key,
+    super.key,
     required this.value,
-  }) : super(key: key);
+  });
 
   final double value;
 

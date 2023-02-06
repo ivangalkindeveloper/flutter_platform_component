@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class FCListCard extends StatelessWidget {
   const FCListCard({
-    Key? key,
+    super.key,
     required this.items,
     this.backroundColor,
     this.splashColor,
@@ -21,7 +21,7 @@ class FCListCard extends StatelessWidget {
     this.separatorPadding,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final List<FCListCardItem> items;
   final Color? backroundColor;

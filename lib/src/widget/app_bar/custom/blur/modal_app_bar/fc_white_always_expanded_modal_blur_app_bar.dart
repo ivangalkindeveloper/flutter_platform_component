@@ -6,7 +6,7 @@ import 'dart:ui';
 
 class FCWhiteAlwaysExpandedModalBlurAppBar extends FCBasicBlurAppBar {
   FCWhiteAlwaysExpandedModalBlurAppBar({
-    Key? key,
+    super.key,
     required BuildContext context,
     bool transitionBetweenRoutes = false,
     Color? blurColor,
@@ -22,7 +22,6 @@ class FCWhiteAlwaysExpandedModalBlurAppBar extends FCBasicBlurAppBar {
     EdgeInsets? bottomPadding,
     PreferredSizeWidget? bottom,
   }) : super(
-          key: key,
           context: context,
           transitionBetweenRoutes: transitionBetweenRoutes,
           blurColor: blurColor ?? context.config.theme.blackAlways,

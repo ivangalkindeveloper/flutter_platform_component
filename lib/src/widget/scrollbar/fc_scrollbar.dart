@@ -4,11 +4,10 @@ import 'package:flutter/material.dart';
 
 class FCScrollbar extends FCPlatformWidget {
   FCScrollbar({
-    Key? key,
+    super.key,
     ScrollController? controller,
     required Widget child,
   }) : super(
-          key: key,
           cupertino: _FCScrollbarCupertino(
             key: key,
             controller: controller,
@@ -24,10 +23,10 @@ class FCScrollbar extends FCPlatformWidget {
 
 class _FCScrollbarCupertino extends StatelessWidget {
   const _FCScrollbarCupertino({
-    Key? key,
+    super.key,
     required this.controller,
     required this.child,
-  }) : super(key: key);
+  });
 
   final ScrollController? controller;
   final Widget child;
@@ -43,10 +42,10 @@ class _FCScrollbarCupertino extends StatelessWidget {
 
 class _FCScrollbarMaterial extends StatelessWidget {
   const _FCScrollbarMaterial({
-    Key? key,
+    super.key,
     required this.controller,
     required this.child,
-  }) : super(key: key);
+  });
 
   final ScrollController? controller;
   final Widget child;

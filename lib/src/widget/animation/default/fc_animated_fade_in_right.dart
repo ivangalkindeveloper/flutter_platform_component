@@ -5,12 +5,12 @@ import 'package:flutter/widgets.dart';
 
 class FCAnimatedFadeInRight extends StatelessWidget {
   const FCAnimatedFadeInRight({
-    Key? key,
+    super.key,
     required this.child,
     this.onCreated,
     this.isAnimate = true,
     this.from,
-  }) : super(key: key);
+  });
 
   final Widget child;
   final dynamic Function(AnimationController)? onCreated;

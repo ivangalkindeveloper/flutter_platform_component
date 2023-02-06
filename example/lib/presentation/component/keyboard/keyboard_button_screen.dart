@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class KeyboardButtonScreen extends StatelessWidget {
-  const KeyboardButtonScreen({Key? key}) : super(key: key);
+  const KeyboardButtonScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

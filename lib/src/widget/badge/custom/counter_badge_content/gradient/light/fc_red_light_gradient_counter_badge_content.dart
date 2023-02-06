@@ -4,9 +4,9 @@ import 'package:flutter/widgets.dart';
 
 class FCRedLightGradientCounterBadgeContent extends StatelessWidget {
   const FCRedLightGradientCounterBadgeContent({
-    Key? key,
+    super.key,
     required this.count,
-  }) : super(key: key);
+  });
 
   final int? count;
 

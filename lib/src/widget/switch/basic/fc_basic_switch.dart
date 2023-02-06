@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicSwitch extends FCPlatformWidget {
   FCBasicSwitch({
-    Key? key,
+    super.key,
     required bool value,
     required Function(bool) onChanged,
     required Color unselectedColor,
@@ -13,7 +13,6 @@ class FCBasicSwitch extends FCPlatformWidget {
     bool isDisabled = false,
     Color? disabledColor,
   }) : super(
-          key: key,
           cupertino: _FCBasicSwitchCupertino(
             key: key,
             value: value,
@@ -37,14 +36,14 @@ class FCBasicSwitch extends FCPlatformWidget {
 
 class _FCBasicSwitchCupertino extends StatelessWidget {
   const _FCBasicSwitchCupertino({
-    Key? key,
+    super.key,
     required this.value,
     required this.onChanged,
     required this.unselectedColor,
     required this.selectedColor,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final bool value;
   final Function(bool) onChanged;
@@ -83,14 +82,14 @@ class _FCBasicSwitchCupertino extends StatelessWidget {
 
 class _FCBasicSwitchMaterial extends StatelessWidget {
   const _FCBasicSwitchMaterial({
-    Key? key,
+    super.key,
     required this.value,
     required this.onChanged,
     required this.unselectedColor,
     required this.selectedColor,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final bool value;
   final Function(bool) onChanged;

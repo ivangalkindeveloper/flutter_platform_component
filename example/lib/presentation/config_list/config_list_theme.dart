@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/material.dart';
 
 class ConfigListTheme extends StatelessWidget {
-  const ConfigListTheme({Key? key}) : super(key: key);
+  const ConfigListTheme({Key? key});
 
   @override
   Widget build(BuildContext context) {

@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class AnimatedOpacityStackScreen extends StatefulWidget {
-  const AnimatedOpacityStackScreen({Key? key}) : super(key: key);
+  const AnimatedOpacityStackScreen({Key? key});
 
   @override
   State<AnimatedOpacityStackScreen> createState() => _AnimatedOpacityStackScreenState();

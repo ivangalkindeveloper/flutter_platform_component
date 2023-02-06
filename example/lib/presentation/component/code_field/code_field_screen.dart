@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class CodeFieldScreen extends StatelessWidget {
-  const CodeFieldScreen({Key? key}) : super(key: key);
+  const CodeFieldScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

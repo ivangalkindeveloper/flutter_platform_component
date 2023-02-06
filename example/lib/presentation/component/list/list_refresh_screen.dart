@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ListRefreshScreen extends StatefulWidget {
-  const ListRefreshScreen({Key? key}) : super(key: key);
+  const ListRefreshScreen({Key? key});
 
   @override
   State<ListRefreshScreen> createState() => _ListRefreshScreenState();

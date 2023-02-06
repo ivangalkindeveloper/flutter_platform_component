@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCRedDarkSelectCard extends StatelessWidget {
   const FCRedDarkSelectCard({
-    Key? key,
+    super.key,
     this.constraints,
     this.borderRadius,
     this.borderColor,
@@ -12,7 +12,7 @@ class FCRedDarkSelectCard extends StatelessWidget {
     this.padding,
     required this.onPressed,
     required this.child,
-  }) : super(key: key);
+  });
 
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;

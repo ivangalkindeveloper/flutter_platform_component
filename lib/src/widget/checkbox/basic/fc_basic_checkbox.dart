@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicCheckbox extends FCPlatformWidget {
   FCBasicCheckbox({
-    Key? key,
+    super.key,
     required bool value,
     required void Function(bool) onChanged,
     required Color unselectedColor,
@@ -12,7 +12,6 @@ class FCBasicCheckbox extends FCPlatformWidget {
     bool isDisabled = false,
     Color? disabledColor,
   }) : super(
-          key: key,
           cupertino: _FCBasicCheckboxCupertino(
             key: key,
             value: value,
@@ -36,14 +35,14 @@ class FCBasicCheckbox extends FCPlatformWidget {
 
 class _FCBasicCheckboxCupertino extends StatelessWidget {
   const _FCBasicCheckboxCupertino({
-    Key? key,
+    super.key,
     required this.value,
     required this.onChanged,
     required this.unselectedColor,
     required this.selectedColor,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final bool value;
   final void Function(bool) onChanged;
@@ -97,14 +96,14 @@ class _FCBasicCheckboxCupertino extends StatelessWidget {
 
 class _FCBasicCheckboxMaterial extends StatelessWidget {
   const _FCBasicCheckboxMaterial({
-    Key? key,
+    super.key,
     required this.value,
     required this.onChanged,
     required this.unselectedColor,
     required this.selectedColor,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final bool value;
   final void Function(bool) onChanged;

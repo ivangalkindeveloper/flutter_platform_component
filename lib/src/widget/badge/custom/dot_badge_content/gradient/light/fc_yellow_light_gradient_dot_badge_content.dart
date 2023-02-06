@@ -3,7 +3,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class FCYellowLightGradientDotBadgeContent extends StatelessWidget {
-  const FCYellowLightGradientDotBadgeContent({Key? key}) : super(key: key);
+  const FCYellowLightGradientDotBadgeContent({Key? key});
 
   @override
   Widget build(BuildContext context) {

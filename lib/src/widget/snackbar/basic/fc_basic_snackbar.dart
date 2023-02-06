@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCBasicSnackbar extends StatelessWidget {
   const FCBasicSnackbar({
-    Key? key,
+    super.key,
     required this.backgroundColor,
     this.borderColor,
     this.padding,
@@ -13,7 +13,7 @@ class FCBasicSnackbar extends StatelessWidget {
     required this.child,
     this.postfix,
     this.bottom,
-  }) : super(key: key);
+  });
 
   final Color backgroundColor;
   final Color? borderColor;

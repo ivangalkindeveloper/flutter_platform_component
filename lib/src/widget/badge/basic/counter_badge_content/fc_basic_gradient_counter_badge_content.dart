@@ -4,10 +4,10 @@ import 'package:flutter/widgets.dart';
 
 class FCBasicGradientCounterBadgeContent extends StatelessWidget {
   const FCBasicGradientCounterBadgeContent({
-    Key? key,
+    super.key,
     required this.gradient,
     required this.count,
-  }) : super(key: key);
+  });
 
   final Gradient gradient;
   final int? count;

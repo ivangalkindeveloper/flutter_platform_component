@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicRadio<T> extends FCPlatformWidget {
   FCBasicRadio({
-    Key? key,
+    super.key,
     required T value,
     required T groupValue,
     required void Function(T) onChanged,
@@ -13,8 +13,8 @@ class FCBasicRadio<T> extends FCPlatformWidget {
     bool isDisabled = false,
     Color? disabledColor,
   }) : super(
-          key: key,
           cupertino: _FCBasicRadioCupertino<T>(
+            key: key,
             value: value,
             groupValue: groupValue,
             onChanged: onChanged,
@@ -25,6 +25,7 @@ class FCBasicRadio<T> extends FCPlatformWidget {
             disabledColor: disabledColor,
           ),
           material: _FCBasicRadioMaterial<T>(
+            key: key,
             value: value,
             groupValue: groupValue,
             onChanged: onChanged,
@@ -39,7 +40,7 @@ class FCBasicRadio<T> extends FCPlatformWidget {
 
 class _FCBasicRadioCupertino<T> extends StatelessWidget {
   const _FCBasicRadioCupertino({
-    Key? key,
+    super.key,
     required this.value,
     required this.groupValue,
     required this.onChanged,
@@ -48,7 +49,7 @@ class _FCBasicRadioCupertino<T> extends StatelessWidget {
     required this.isToggleable,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final T value;
   final T groupValue;
@@ -102,7 +103,7 @@ class _FCBasicRadioCupertino<T> extends StatelessWidget {
 
 class _FCBasicRadioMaterial<T> extends StatelessWidget {
   const _FCBasicRadioMaterial({
-    Key? key,
+    super.key,
     required this.value,
     required this.groupValue,
     required this.onChanged,
@@ -111,7 +112,7 @@ class _FCBasicRadioMaterial<T> extends StatelessWidget {
     required this.isToggleable,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final T value;
   final T groupValue;

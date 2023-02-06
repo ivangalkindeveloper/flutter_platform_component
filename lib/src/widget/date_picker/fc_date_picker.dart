@@ -5,12 +5,11 @@ import 'package:flutter/material.dart';
 
 class FCDatePicker extends FCPlatformWidget {
   FCDatePicker({
-    Key? key,
+    super.key,
     required this.dateRange,
     required this.onChanged,
     this.child,
   }) : super(
-          key: key,
           cupertino: _FCDatePickerCupertino(
             key: key,
             dateRange: dateRange,
@@ -32,11 +31,11 @@ class FCDatePicker extends FCPlatformWidget {
 
 class _FCDatePickerCupertino extends StatelessWidget {
   const _FCDatePickerCupertino({
-    Key? key,
+    super.key,
     required this.dateRange,
     required this.onChanged,
     required this.child,
-  }) : super(key: key);
+  });
 
   final FCDateRange dateRange;
   final Function(DateTime) onChanged;
@@ -73,11 +72,11 @@ class _FCDatePickerCupertino extends StatelessWidget {
 
 class _FCDatePickerMaterial extends StatelessWidget {
   const _FCDatePickerMaterial({
-    Key? key,
+    super.key,
     required this.dateRange,
     required this.onChanged,
     required this.child,
-  }) : super(key: key);
+  });
 
   final FCDateRange dateRange;
   final Function(DateTime) onChanged;

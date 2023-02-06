@@ -6,7 +6,7 @@ import 'dart:async';
 
 class FCBasicPINField extends StatefulWidget {
   const FCBasicPINField({
-    Key? key,
+    super.key,
     required this.context,
     required this.length,
     required this.unfocusedBackgroundColor,
@@ -23,7 +23,7 @@ class FCBasicPINField extends StatefulWidget {
     this.onCompleted,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final BuildContext context;
   final int length;

@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientSnackbarScreen extends StatelessWidget {
-  const GradientSnackbarScreen({Key? key}) : super(key: key);
+  const GradientSnackbarScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,7 @@
 class FCConfigNullException implements Exception {
   const FCConfigNullException();
 
-  final String message = "FlutterComponent config is null";
+  final String message = "FlutterComponent not initizalized";
 }
 
 class FCItemsEmptyException implements Exception {

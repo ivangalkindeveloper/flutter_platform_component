@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ButtonScreen extends StatefulWidget {
-  const ButtonScreen({Key? key}) : super(key: key);
+  const ButtonScreen({Key? key});
 
   @override
   State<ButtonScreen> createState() => _ButtonScreenState();

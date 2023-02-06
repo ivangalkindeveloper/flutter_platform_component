@@ -2,12 +2,11 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCExpandedModal extends StatelessWidget {
-  const FCExpandedModal({
-    Key? key,
+class FCPopUpModal extends StatelessWidget {
+  const FCPopUpModal({
+    super.key,
     this.appBarBackgroundColor,
     this.appBarPrefix,
-    this.appBarCupertinoLocale,
     this.onPressedBack,
     this.appBarTitle,
     this.appBarStyle,
@@ -16,13 +15,13 @@ class FCExpandedModal extends StatelessWidget {
     this.appBarBottomPadding,
     this.appBarBottom,
     this.backgroundColor,
-    required this.body,
-  }) : super(key: key);
+    this.padding,
+    required this.child,
+  });
 
   // App Bar
   final Color? appBarBackgroundColor;
   final Widget? appBarPrefix;
-  final String? appBarCupertinoLocale;
   final VoidCallback? onPressedBack;
   final String? appBarTitle;
   final TextStyle? appBarStyle;
@@ -30,36 +29,48 @@ class FCExpandedModal extends StatelessWidget {
   final Widget? appBarProstfix;
   final EdgeInsets? appBarBottomPadding;
   final PreferredSizeWidget? appBarBottom;
-  // Scaffold
+  // Child
   final Color? backgroundColor;
-  final Widget body;
+  final EdgeInsets? padding;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
 
     return ClipRRect(
       borderRadius: BorderRadius.only(
         topLeft: config.modalBorderRadius.topLeft,
         topRight: config.modalBorderRadius.topRight,
       ),
-      child: FCScaffold(
-        appBar: FCExpandedModalAppBar(
-          context: context,
-          backgroundColor: this.appBarBackgroundColor,
-          prefix: this.appBarPrefix,
-          cupertinoLocale: this.appBarCupertinoLocale,
-          onPressedBack: this.onPressedBack,
-          title: this.appBarTitle,
-          style: this.appBarStyle,
-          middle: this.appBarMiddle,
-          postfix: this.appBarProstfix,
-          bottomPadding: this.appBarBottomPadding,
-          bottom: this.appBarBottom,
+      child: Container(
+        color: this.backgroundColor ?? theme.white,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            FCPopUpModalAppBar(
+              context: context,
+              backgroundColor: this.appBarBackgroundColor,
+              onPressedBack: this.onPressedBack,
+              prefix: this.appBarPrefix,
+              title: this.appBarTitle,
+              style: this.appBarStyle,
+              middle: this.appBarMiddle,
+              postfix: this.appBarProstfix,
+              bottomPadding: this.appBarBottomPadding,
+              bottom: this.appBarBottom,
+            ),
+            SafeArea(
+              top: false,
+              child: Padding(
+                padding: padding ?? EdgeInsets.all(size.s16),
+                child: this.child,
+              ),
+            ),
+          ],
         ),
-        backgroundColor: this.backgroundColor ?? theme.backgroundScaffold,
-        body: this.body,
       ),
     );
   }

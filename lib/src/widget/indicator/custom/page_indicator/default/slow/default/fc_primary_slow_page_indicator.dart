@@ -4,10 +4,10 @@ import 'package:flutter/widgets.dart';
 
 class FCPrimarySlowPageIndicator extends StatelessWidget {
   const FCPrimarySlowPageIndicator({
-    Key? key,
+    super.key,
     required this.length,
     required this.currentIndex,
-  }) : super(key: key);
+  });
 
   final int length;
   final int currentIndex;

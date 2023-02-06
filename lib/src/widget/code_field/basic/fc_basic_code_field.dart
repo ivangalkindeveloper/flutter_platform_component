@@ -6,7 +6,7 @@ import 'dart:async';
 
 class FCBasicCodeField extends StatefulWidget {
   const FCBasicCodeField({
-    Key? key,
+    super.key,
     required this.context,
     required this.length,
     required this.unfocusedBackgroundColor,
@@ -25,7 +25,7 @@ class FCBasicCodeField extends StatefulWidget {
     this.onCompleted,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final BuildContext context;
   final int length;

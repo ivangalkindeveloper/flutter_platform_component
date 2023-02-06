@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCWhiteAlwaysExpandedModal extends StatelessWidget {
   const FCWhiteAlwaysExpandedModal({
-    Key? key,
+    super.key,
     this.appBarBackgroundColor,
     this.appBarPrefix,
     this.appBarCupertinoLocale,
@@ -17,7 +17,7 @@ class FCWhiteAlwaysExpandedModal extends StatelessWidget {
     this.appBarBottom,
     this.backgroundColor,
     required this.body,
-  }) : super(key: key);
+  });
 
   // App Bar
   final Color? appBarBackgroundColor;

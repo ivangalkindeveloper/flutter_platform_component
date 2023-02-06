@@ -4,13 +4,13 @@ import 'package:flutter/widgets.dart';
 
 class FCListView extends StatelessWidget {
   const FCListView({
-    Key? key,
+    super.key,
     this.controller,
     this.scrollDirection = Axis.vertical,
     this.padding,
     this.alignment = CrossAxisAlignment.start,
     required this.children,
-  }) : super(key: key);
+  });
 
   final ScrollController? controller;
   final Axis scrollDirection;
@@ -31,7 +31,7 @@ class FCListView extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
-    return ListView(
+    return ListView(            key: key,
       controller: this.controller,
       scrollDirection: this.scrollDirection,
       physics: const BouncingScrollPhysics(),

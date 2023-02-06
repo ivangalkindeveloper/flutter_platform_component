@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientPageIndicatorScreen extends StatefulWidget {
-  const GradientPageIndicatorScreen({Key? key}) : super(key: key);
+  const GradientPageIndicatorScreen({Key? key});
 
   @override
   State<GradientPageIndicatorScreen> createState() => _GradientPageIndicatorScreenState();

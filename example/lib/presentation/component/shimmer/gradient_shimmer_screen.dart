@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientShimmerScreen extends StatelessWidget {
-  const GradientShimmerScreen({Key? key}) : super(key: key);
+  const GradientShimmerScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

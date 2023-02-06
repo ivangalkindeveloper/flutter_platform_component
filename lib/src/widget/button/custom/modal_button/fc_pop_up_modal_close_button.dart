@@ -4,10 +4,9 @@ import 'package:flutter/material.dart';
 
 class FCPopUpModalCloseButton extends FCPlatformWidget {
   FCPopUpModalCloseButton({
-    Key? key,
+    super.key,
     required VoidCallback onPressed,
   }) : super(
-          key: key,
           cupertino: _FCPopUpModalCloseButtonCupertino(
             key: key,
             onPressed: onPressed,
@@ -21,9 +20,9 @@ class FCPopUpModalCloseButton extends FCPlatformWidget {
 
 class _FCPopUpModalCloseButtonCupertino extends StatelessWidget {
   const _FCPopUpModalCloseButtonCupertino({
-    Key? key,
+    super.key,
     required this.onPressed,
-  }) : super(key: key);
+  });
 
   final VoidCallback onPressed;
 
@@ -37,9 +36,9 @@ class _FCPopUpModalCloseButtonCupertino extends StatelessWidget {
 
 class _FCPopUpModalCloseButtonMaterial extends StatelessWidget {
   const _FCPopUpModalCloseButtonMaterial({
-    Key? key,
+    super.key,
     required this.onPressed,
-  }) : super(key: key);
+  });
 
   final VoidCallback onPressed;
 
@@ -54,7 +53,7 @@ class _FCPopUpModalCloseButtonMaterial extends StatelessWidget {
       child: IconButton(
         iconSize: size.iconHeightLarge,
         onPressed: this.onPressed,
-        padding: const EdgeInsets.all(0),
+        padding: EdgeInsets.zero,
         icon: FCIcon.grey(
           context: context,
           icon: Icons.close,

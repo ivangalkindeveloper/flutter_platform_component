@@ -4,10 +4,10 @@ import 'package:flutter/widgets.dart';
 
 class FCBasicCounterBadgeContent extends StatelessWidget {
   const FCBasicCounterBadgeContent({
-    Key? key,
+    super.key,
     required this.color,
     required this.count,
-  }) : super(key: key);
+  });
 
   final Color color;
   final int? count;

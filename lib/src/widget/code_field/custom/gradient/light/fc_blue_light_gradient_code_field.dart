@@ -5,7 +5,7 @@ import 'dart:async';
 
 class FCBlueLightGradientCodeField extends StatelessWidget {
   const FCBlueLightGradientCodeField({
-    Key? key,
+    super.key,
     required this.length,
     this.itemHeight,
     this.itemWidth,
@@ -20,7 +20,7 @@ class FCBlueLightGradientCodeField extends StatelessWidget {
     this.onCompleted,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final int length;
   final double? itemHeight;

@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class FormFieldScreen extends StatelessWidget {
-  const FormFieldScreen({Key? key}) : super(key: key);
+  const FormFieldScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

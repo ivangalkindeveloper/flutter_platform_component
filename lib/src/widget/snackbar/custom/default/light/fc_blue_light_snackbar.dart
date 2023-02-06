@@ -4,14 +4,14 @@ import 'package:flutter/widgets.dart';
 
 class FCBlueLightSnackbar extends StatelessWidget {
   const FCBlueLightSnackbar({
-    Key? key,
+    super.key,
     this.padding,
     this.mainAxisAlignment,
     this.prefix,
     required this.child,
     this.postfix,
     this.bottom,
-  }) : super(key: key);
+  });
 
   final EdgeInsets? padding;
   final MainAxisAlignment? mainAxisAlignment;

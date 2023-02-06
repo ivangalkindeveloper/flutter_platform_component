@@ -4,10 +4,10 @@ import 'package:flutter/widgets.dart';
 
 class FCWhiteAlwaysFastPageIndicator extends StatelessWidget {
   const FCWhiteAlwaysFastPageIndicator({
-    Key? key,
+    super.key,
     required this.length,
     required this.currentIndex,
-  }) : super(key: key);
+  });
 
   final int length;
   final int currentIndex;

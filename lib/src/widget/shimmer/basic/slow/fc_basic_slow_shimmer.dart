@@ -5,7 +5,7 @@ import 'dart:async';
 
 class FCBasicSlowShimmer extends StatefulWidget {
   const FCBasicSlowShimmer({
-    Key? key,
+    super.key,
     required this.context,
     required this.backgroundColor,
     required this.highlightColor,
@@ -13,7 +13,7 @@ class FCBasicSlowShimmer extends StatefulWidget {
     this.height,
     this.width,
     this.child,
-  }) : super(key: key);
+  });
 
   final BuildContext context;
   final Color backgroundColor;

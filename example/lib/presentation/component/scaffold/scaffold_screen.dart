@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_component/flutter_component.dart';
 
 class ScaffoldScreen extends StatelessWidget {
-  const ScaffoldScreen({Key? key}) : super(key: key);
+  const ScaffoldScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

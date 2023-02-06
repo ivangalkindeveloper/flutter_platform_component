@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientPINFieldScreen extends StatelessWidget {
-  const GradientPINFieldScreen({Key? key}) : super(key: key);
+  const GradientPINFieldScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

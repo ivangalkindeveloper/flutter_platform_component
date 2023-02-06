@@ -5,11 +5,11 @@ import 'package:flutter/widgets.dart';
 
 class FCAnimatedSlowFadeOut extends StatelessWidget {
   const FCAnimatedSlowFadeOut({
-    Key? key,
+    super.key,
     required this.child,
     this.onCreated,
     this.isAnimate = true,
-  }) : super(key: key);
+  });
 
   final Widget child;
   final dynamic Function(AnimationController)? onCreated;

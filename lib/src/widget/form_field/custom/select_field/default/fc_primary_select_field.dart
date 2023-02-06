@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCPrimarySelectField extends StatelessWidget {
   const FCPrimarySelectField({
-    Key? key,
+    super.key,
     this.internalColor,
     this.internalIconHeight,
     required this.title,
@@ -32,7 +32,7 @@ class FCPrimarySelectField extends StatelessWidget {
     required this.onPressed,
     this.isRequired = false,
     this.isDisabled = false,
-  }) : super(key: key);
+  });
 
   final Color? internalColor;
   final double? internalIconHeight;

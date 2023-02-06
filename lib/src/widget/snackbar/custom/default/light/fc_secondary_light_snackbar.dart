@@ -4,14 +4,14 @@ import 'package:flutter/widgets.dart';
 
 class FCSecondaryLightSnackbar extends StatelessWidget {
   const FCSecondaryLightSnackbar({
-    Key? key,
+    super.key,
     this.padding,
     this.mainAxisAlignment,
     this.prefix,
     required this.child,
     this.postfix,
     this.bottom,
-  }) : super(key: key);
+  });
 
   final EdgeInsets? padding;
   final MainAxisAlignment? mainAxisAlignment;

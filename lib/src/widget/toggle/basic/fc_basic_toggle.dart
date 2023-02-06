@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicToggle<T> extends StatefulWidget {
   const FCBasicToggle({
-    Key? key,
+    super.key,
     required this.value,
     required this.items,
     required this.onChanged,
@@ -22,7 +22,7 @@ class FCBasicToggle<T> extends StatefulWidget {
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final T? value;
   final List<FCToggleItem<T>> items;
@@ -170,7 +170,7 @@ class _FCBasicToggleState extends State<FCBasicToggle> {
 
 class _FCToggleButton<T> extends StatelessWidget {
   const _FCToggleButton({
-    Key? key,
+    super.key,
     required this.item,
     required this.unselectedBackgroundColor,
     required this.selectedBackgroundColor,
@@ -183,7 +183,7 @@ class _FCToggleButton<T> extends StatelessWidget {
     required this.isValidationError,
     required this.onPressed,
     required this.isSelected,
-  }) : super(key: key);
+  });
 
   final FCToggleItem<T> item;
   final Color? unselectedBackgroundColor;

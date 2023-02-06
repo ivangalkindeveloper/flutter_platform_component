@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class PINFieldScreen extends StatelessWidget {
-  const PINFieldScreen({Key? key}) : super(key: key);
+  const PINFieldScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

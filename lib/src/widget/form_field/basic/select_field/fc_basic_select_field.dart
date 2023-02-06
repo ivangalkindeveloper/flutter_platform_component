@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicSelectField extends StatefulWidget {
   const FCBasicSelectField({
-    Key? key,
+    super.key,
     required this.backgroundColor,
     required this.splashColor,
     this.internalColor,
@@ -34,7 +34,7 @@ class FCBasicSelectField extends StatefulWidget {
     required this.onPressed,
     this.isRequired = false,
     this.isDisabled = false,
-  }) : super(key: key);
+  });
 
   final Color backgroundColor;
   final Color splashColor;
@@ -147,14 +147,12 @@ class _FCBasicSelectFieldState extends State<FCBasicSelectField> {
 
 class _FCSelectFieldWrapper extends FCPlatformWidget {
   _FCSelectFieldWrapper({
-    Key? key,
     required BuildContext context,
     required Color splashColor,
     required VoidCallback onPressed,
     required Widget child,
     required bool isDisabled,
   }) : super(
-          key: key,
           cupertino: CupertinoButton(
             onPressed: onPressed,
             padding: EdgeInsets.zero,

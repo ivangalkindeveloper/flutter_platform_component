@@ -4,10 +4,10 @@ import 'package:flutter/widgets.dart';
 
 class FCPadding extends StatelessWidget {
   const FCPadding({
-    Key? key,
+    super.key,
     this.padding,
     required this.child,
-  }) : super(key: key);
+  });
 
   final EdgeInsets? padding;
   final Widget child;
@@ -17,7 +17,7 @@ class FCPadding extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
-    return Padding(
+    return Padding(            key: key,
       padding: this.padding ?? size.paddingDefault,
       child: this.child,
     );

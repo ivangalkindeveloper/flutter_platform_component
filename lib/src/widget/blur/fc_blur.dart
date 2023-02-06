@@ -5,13 +5,13 @@ import 'dart:ui';
 
 class FCBlur extends StatelessWidget {
   const FCBlur({
-    Key? key,
+    super.key,
     this.color,
     this.opacity,
     this.filter,
     this.borderRadius,
     required this.child,
-  }) : super(key: key);
+  });
 
   final Color? color;
   final double? opacity;

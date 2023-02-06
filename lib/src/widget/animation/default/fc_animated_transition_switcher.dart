@@ -5,11 +5,11 @@ import 'package:flutter/widgets.dart';
 
 class FCAnimatedTransitionSwitcher extends StatelessWidget {
   const FCAnimatedTransitionSwitcher({
-    Key? key,
+    super.key,
     required this.type,
     required this.child,
     this.isReverse = false,
-  }) : super(key: key);
+  });
 
   final FCTransitionType type;
   final Widget child;

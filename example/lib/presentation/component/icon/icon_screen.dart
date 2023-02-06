@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/material.dart';
 
 class IconScreen extends StatelessWidget {
-  const IconScreen({Key? key}) : super(key: key);
+  const IconScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

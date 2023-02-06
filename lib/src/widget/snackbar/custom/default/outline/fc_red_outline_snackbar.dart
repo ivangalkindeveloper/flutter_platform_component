@@ -4,14 +4,14 @@ import 'package:flutter/widgets.dart';
 
 class FCRedOutlineSnackbar extends StatelessWidget {
   const FCRedOutlineSnackbar({
-    Key? key,
+    super.key,
     this.padding,
     this.mainAxisAlignment,
     this.prefix,
     required this.child,
     this.postfix,
     this.bottom,
-  }) : super(key: key);
+  });
 
   final EdgeInsets? padding;
   final MainAxisAlignment? mainAxisAlignment;

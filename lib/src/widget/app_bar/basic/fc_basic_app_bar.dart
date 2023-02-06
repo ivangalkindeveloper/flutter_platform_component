@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicAppBar extends FCPlatformAppBar {
   FCBasicAppBar({
-    Key? key,
+    super.key,
     required BuildContext context,
     bool transitionBetweenRoutes = true,
     Color? backgroundColor,
@@ -17,7 +17,6 @@ class FCBasicAppBar extends FCPlatformAppBar {
     EdgeInsets? bottomPadding,
     PreferredSizeWidget? bottom,
   }) : super(
-          key: key,
           context: context,
           cupertino: _FCAppBarCupertino(
             key: key,
@@ -82,7 +81,7 @@ class FCBasicAppBar extends FCPlatformAppBar {
 
 class _FCAppBarCupertino extends StatelessWidget {
   const _FCAppBarCupertino({
-    Key? key,
+    super.key,
     required this.transitionBetweenRoutes,
     required this.backgroundColor,
     required this.prefix,
@@ -90,7 +89,7 @@ class _FCAppBarCupertino extends StatelessWidget {
     required this.postfix,
     required this.bottomPadding,
     required this.bottom,
-  }) : super(key: key);
+  });
 
   final bool transitionBetweenRoutes;
   final Color? backgroundColor;
@@ -139,7 +138,7 @@ class _FCAppBarCupertino extends StatelessWidget {
 
 class _FCAppBarMaterial extends StatelessWidget {
   const _FCAppBarMaterial({
-    Key? key,
+    super.key,
     required this.transitionBetweenRoutes,
     required this.backgroundColor,
     required this.prefix,
@@ -147,7 +146,7 @@ class _FCAppBarMaterial extends StatelessWidget {
     required this.postfix,
     required this.bottomPadding,
     required this.bottom,
-  }) : super(key: key);
+  });
 
   final bool transitionBetweenRoutes;
   final Color? backgroundColor;

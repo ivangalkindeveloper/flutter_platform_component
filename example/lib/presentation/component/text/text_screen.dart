@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class TextScreen extends StatelessWidget {
-  const TextScreen({Key? key}) : super(key: key);
+  const TextScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

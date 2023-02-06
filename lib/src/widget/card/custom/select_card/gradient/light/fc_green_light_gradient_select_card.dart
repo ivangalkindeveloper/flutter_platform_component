@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCGreenLightGradientSelectCard extends StatelessWidget {
   const FCGreenLightGradientSelectCard({
-    Key? key,
+    super.key,
     this.constraints,
     this.borderRadius,
     this.borderGradient,
@@ -12,7 +12,7 @@ class FCGreenLightGradientSelectCard extends StatelessWidget {
     this.padding,
     required this.onPressed,
     required this.child,
-  }) : super(key: key);
+  });
 
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;

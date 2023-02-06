@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class CircularIndicatorScreen extends StatelessWidget {
-  const CircularIndicatorScreen({Key? key}) : super(key: key);
+  const CircularIndicatorScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

@@ -5,11 +5,10 @@ import 'package:flutter/material.dart';
 
 class FCBasicGradientCircularIndicator extends FCPlatformWidget {
   FCBasicGradientCircularIndicator({
-    Key? key,
+    super.key,
     required Gradient gradient,
     required double height,
   }) : super(
-          key: key,
           cupertino: _FCBasicGradientCircularIndicatorCupertino(
             key: key,
             gradient: gradient,
@@ -25,10 +24,10 @@ class FCBasicGradientCircularIndicator extends FCPlatformWidget {
 
 class _FCBasicGradientCircularIndicatorCupertino extends StatelessWidget {
   const _FCBasicGradientCircularIndicatorCupertino({
-    Key? key,
+    super.key,
     required this.gradient,
     required this.height,
-  }) : super(key: key);
+  });
 
   final Gradient gradient;
   final double height;
@@ -50,10 +49,10 @@ class _FCBasicGradientCircularIndicatorCupertino extends StatelessWidget {
 
 class _FBasicGradientCircularIndicatorMaterial extends StatelessWidget {
   const _FBasicGradientCircularIndicatorMaterial({
-    Key? key,
+    super.key,
     required this.gradient,
     required this.height,
-  }) : super(key: key);
+  });
 
   final Gradient gradient;
   final double height;

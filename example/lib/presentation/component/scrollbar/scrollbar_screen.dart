@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ScrollbarScreen extends StatelessWidget {
-  const ScrollbarScreen({Key? key}) : super(key: key);
+  const ScrollbarScreen({Key? key});
 
   List<Widget> _children({required IFCSize size}) => List.filled(
         16,

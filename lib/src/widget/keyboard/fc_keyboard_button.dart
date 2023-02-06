@@ -5,13 +5,12 @@ import 'package:flutter/material.dart';
 
 class FCKeyboardButton extends FCPlatformWidget {
   FCKeyboardButton({
-    Key? key,
+    super.key,
     required Widget child,
     required VoidCallback onPressed,
     bool isDisabled = false,
     Color? disabledColor,
   }) : super(
-          key: key,
           cupertino: _FCKeyboardButtonCupertino(
             key: key,
             child: child,
@@ -31,12 +30,12 @@ class FCKeyboardButton extends FCPlatformWidget {
 
 class _FCKeyboardButtonCupertino extends StatelessWidget {
   const _FCKeyboardButtonCupertino({
-    Key? key,
+    super.key,
     required this.child,
     required this.onPressed,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final Widget child;
   final VoidCallback onPressed;
@@ -61,7 +60,7 @@ class _FCKeyboardButtonCupertino extends StatelessWidget {
               haptic.selection();
               this.onPressed();
             },
-            padding: const EdgeInsets.all(0),
+            padding: EdgeInsets.zero,
             child: this.child,
           ),
           Positioned.fill(
@@ -81,12 +80,12 @@ class _FCKeyboardButtonCupertino extends StatelessWidget {
 
 class _FCKeyboardButtonMaterial extends StatelessWidget {
   const _FCKeyboardButtonMaterial({
-    Key? key,
+    super.key,
     required this.child,
     required this.onPressed,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final Widget child;
   final VoidCallback onPressed;
@@ -111,7 +110,7 @@ class _FCKeyboardButtonMaterial extends StatelessWidget {
               haptic.selection();
               this.onPressed();
             },
-            padding: const EdgeInsets.all(0),
+            padding: EdgeInsets.zero,
             icon: this.child,
           ),
           Positioned.fill(

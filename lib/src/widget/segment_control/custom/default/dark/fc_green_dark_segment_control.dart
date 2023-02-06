@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class FCGreenDarkSegmentControl<T> extends StatelessWidget {
   const FCGreenDarkSegmentControl({
-    Key? key,
+    super.key,
     required this.value,
     required this.items,
     required this.onChanged,
@@ -12,7 +12,7 @@ class FCGreenDarkSegmentControl<T> extends StatelessWidget {
     this.style,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final T? value;
   final List<FCSegmentControlItem<T>> items;

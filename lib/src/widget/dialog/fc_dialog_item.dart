@@ -5,13 +5,12 @@ import 'package:flutter/material.dart';
 
 class FCDialogItem extends FCPlatformWidget {
   FCDialogItem({
-    Key? key,
+    super.key,
     required Color color,
     required String title,
     required VoidCallback onPressed,
     TextStyle? style,
   }) : super(
-          key: key,
           cupertino: _FCDialogItemCupertino(
             key: key,
             color: color,
@@ -31,12 +30,12 @@ class FCDialogItem extends FCPlatformWidget {
 
 class _FCDialogItemCupertino extends StatelessWidget {
   const _FCDialogItemCupertino({
-    Key? key,
+    super.key,
     required this.color,
     required this.title,
     required this.onPressed,
     required this.style,
-  }) : super(key: key);
+  });
 
   final Color color;
   final String title;
@@ -74,12 +73,12 @@ class _FCDialogItemCupertino extends StatelessWidget {
 
 class _FCDialogItemMaterial extends StatelessWidget {
   const _FCDialogItemMaterial({
-    Key? key,
+    super.key,
     required this.color,
     required this.title,
     required this.onPressed,
     required this.style,
-  }) : super(key: key);
+  });
 
   final Color color;
   final String title;

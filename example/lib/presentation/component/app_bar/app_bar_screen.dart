@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class AppBarScreen extends StatefulWidget {
-  const AppBarScreen({Key? key}) : super(key: key);
+  const AppBarScreen({Key? key});
 
   @override
   State<AppBarScreen> createState() => _AppBarScreenState();

@@ -4,10 +4,10 @@ import 'package:flutter/widgets.dart';
 
 class FCBlueSlowPageIndicator extends StatelessWidget {
   const FCBlueSlowPageIndicator({
-    Key? key,
+    super.key,
     required this.length,
     required this.currentIndex,
-  }) : super(key: key);
+  });
 
   final int length;
   final int currentIndex;

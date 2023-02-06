@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class PopUpModalScreen extends StatelessWidget {
-  const PopUpModalScreen({Key? key}) : super(key: key);
+  const PopUpModalScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

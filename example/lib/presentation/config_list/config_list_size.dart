@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/material.dart';
 
 class ConfigListSize extends StatelessWidget {
-  const ConfigListSize({Key? key}) : super(key: key);
+  const ConfigListSize({Key? key});
 
   @override
   Widget build(BuildContext context) {

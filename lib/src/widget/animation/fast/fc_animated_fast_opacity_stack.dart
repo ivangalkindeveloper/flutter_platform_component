@@ -3,12 +3,12 @@ import 'package:flutter/widgets.dart';
 
 class FCAnimatedFastOpacityStack extends StatelessWidget {
   const FCAnimatedFastOpacityStack({
-    Key? key,
+    super.key,
     required this.condition,
     required this.firstChild,
     required this.secondChild,
     this.alignment,
-  }) : super(key: key);
+  });
 
   final bool condition;
   final Widget firstChild;

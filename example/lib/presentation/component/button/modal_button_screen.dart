@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ModalButtonScreen extends StatelessWidget {
-  const ModalButtonScreen({Key? key}) : super(key: key);
+  const ModalButtonScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

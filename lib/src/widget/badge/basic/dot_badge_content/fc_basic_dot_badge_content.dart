@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 
 class FCBasicDotBadgeContent extends StatelessWidget {
   const FCBasicDotBadgeContent({
-    Key? key,
+    super.key,
     required this.color,
-  }) : super(key: key);
+  });
 
   final Color color;
 

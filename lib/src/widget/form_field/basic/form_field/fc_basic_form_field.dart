@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 
 class FCBasicFormField extends StatefulWidget {
   const FCBasicFormField({
-    Key? key,
+    super.key,
     required this.context,
     required this.backgroundColor,
     required this.focusedColor,
@@ -46,7 +46,7 @@ class FCBasicFormField extends StatefulWidget {
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final BuildContext context;
   final Color backgroundColor;
@@ -278,7 +278,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
                             padding: this._focusNode.hasPrimaryFocus ||
                                     this._controller.text.isNotEmpty
                                 ? EdgeInsets.only(top: (this._size.s10 / 2) + 1)
-                                : const EdgeInsets.all(0),
+                                : EdgeInsets.zero,
                             child: FCCommonField(
                               controller: this._controller,
                               focusNode: this._focusNode,

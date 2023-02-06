@@ -2,9 +2,10 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:ui';
 
+//TODO
 class FCPopUpModalBlurAppBar extends FCBasicBlurAppBar {
   FCPopUpModalBlurAppBar({
-    Key? key,
+    super.key,
     required BuildContext context,
     Color? blurColor,
     double? blurOpacity,
@@ -18,7 +19,6 @@ class FCPopUpModalBlurAppBar extends FCBasicBlurAppBar {
     EdgeInsets? bottomPadding,
     PreferredSizeWidget? bottom,
   }) : super(
-          key: key,
           context: context,
           blurColor: blurColor,
           blurOpacity: blurOpacity,

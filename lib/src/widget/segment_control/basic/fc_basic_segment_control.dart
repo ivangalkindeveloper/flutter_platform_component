@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicSegmentControl<T> extends StatelessWidget {
   const FCBasicSegmentControl({
-    Key? key,
+    super.key,
     required this.value,
     required this.items,
     required this.onChanged,
@@ -23,7 +23,7 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
     this.style,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final T? value;
   final List<FCSegmentControlItem<T>> items;
@@ -97,7 +97,7 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
 
 class _FCSegmentControlButton<T> extends StatelessWidget {
   const _FCSegmentControlButton({
-    Key? key,
+    super.key,
     required this.index,
     required this.item,
     required this.length,
@@ -113,7 +113,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required this.style,
     required this.onPressed,
     required this.isSelected,
-  }) : super(key: key);
+  });
 
   final int index;
   final FCSegmentControlItem<T> item;

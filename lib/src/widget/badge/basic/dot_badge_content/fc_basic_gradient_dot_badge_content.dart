@@ -4,9 +4,9 @@ import 'package:flutter/widgets.dart';
 
 class FCBasicGradientDotBadgeContent extends StatelessWidget {
   const FCBasicGradientDotBadgeContent({
-    Key? key,
+    super.key,
     required this.gradient,
-  }) : super(key: key);
+  });
 
   final Gradient gradient;
 

@@ -3,7 +3,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class FCBlueDotBadgeContent extends StatelessWidget {
-  const FCBlueDotBadgeContent({Key? key}) : super(key: key);
+  const FCBlueDotBadgeContent({Key? key});
 
   @override
   Widget build(BuildContext context) {

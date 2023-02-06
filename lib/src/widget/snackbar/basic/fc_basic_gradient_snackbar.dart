@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicGradientSnackbar extends StatelessWidget {
   const FCBasicGradientSnackbar({
-    Key? key,
+    super.key,
     required this.backgroundGradient,
     this.borderGradient,
     this.padding,
@@ -13,7 +13,7 @@ class FCBasicGradientSnackbar extends StatelessWidget {
     required this.child,
     this.postfix,
     this.bottom,
-  }) : super(key: key);
+  });
 
   final Gradient backgroundGradient;
   final Gradient? borderGradient;

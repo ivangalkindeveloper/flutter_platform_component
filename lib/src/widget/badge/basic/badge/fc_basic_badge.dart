@@ -5,11 +5,11 @@ import 'package:flutter/material.dart';
 
 class FCBasicBadge extends StatelessWidget {
   const FCBasicBadge({
-    Key? key,
+    super.key,
     required this.content,
     this.position = FCBadgePosition.topEnd,
     required this.child,
-  }) : super(key: key);
+  });
 
   final Widget? content;
   final FCBadgePosition position;

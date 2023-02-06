@@ -4,10 +4,10 @@ import 'package:flutter/widgets.dart';
 
 class FCComponentDisabledOverlay extends StatelessWidget {
   const FCComponentDisabledOverlay({
-    Key? key,
+    super.key,
     this.color,
     this.borderRadius,
-  }) : super(key: key);
+  });
 
   final Color? color;
   final BorderRadius? borderRadius;

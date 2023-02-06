@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ExpandedModalScreen extends StatelessWidget {
-  const ExpandedModalScreen({Key? key}) : super(key: key);
+  const ExpandedModalScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

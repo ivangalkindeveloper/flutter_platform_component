@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class WhiteAlwaysExpandedModalScreen extends StatelessWidget {
-  const WhiteAlwaysExpandedModalScreen({Key? key}) : super(key: key);
+  const WhiteAlwaysExpandedModalScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

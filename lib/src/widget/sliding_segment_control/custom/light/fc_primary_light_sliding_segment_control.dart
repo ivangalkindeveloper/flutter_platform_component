@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCPrimaryLightSlidingSegmentControl<T> extends StatelessWidget {
   const FCPrimaryLightSlidingSegmentControl({
-    Key? key,
+    super.key,
     required this.value,
     required this.items,
     required this.onChanged,
@@ -12,7 +12,7 @@ class FCPrimaryLightSlidingSegmentControl<T> extends StatelessWidget {
     this.style,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final T value;
   final List<FCSlidingSegmentControlItem<T>> items;

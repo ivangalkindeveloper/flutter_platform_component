@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class TextSpanScreen extends StatelessWidget {
-  const TextSpanScreen({Key? key}) : super(key: key);
+  const TextSpanScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

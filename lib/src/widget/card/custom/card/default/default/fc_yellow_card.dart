@@ -4,14 +4,14 @@ import 'package:flutter/widgets.dart';
 
 class FCYellowCard extends StatelessWidget {
   const FCYellowCard({
-    Key? key,
+    super.key,
     this.constraints,
     this.borderRadius,
     this.borderColor,
     this.borderWidth,
     this.padding,
     required this.child,
-  }) : super(key: key);
+  });
 
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;

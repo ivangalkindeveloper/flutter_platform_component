@@ -4,10 +4,10 @@ import 'package:flutter/widgets.dart';
 
 class FCSecondaryGradientPageIndicator extends StatelessWidget {
   const FCSecondaryGradientPageIndicator({
-    Key? key,
+    super.key,
     required this.length,
     required this.currentIndex,
-  }) : super(key: key);
+  });
 
   final int length;
   final int currentIndex;

@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientSelectCardScreen extends StatelessWidget {
-  const GradientSelectCardScreen({Key? key}) : super(key: key);
+  const GradientSelectCardScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

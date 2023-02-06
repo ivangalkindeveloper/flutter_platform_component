@@ -5,7 +5,7 @@ import 'dart:async';
 
 class FCSecondaryGradientCodeField extends StatelessWidget {
   const FCSecondaryGradientCodeField({
-    Key? key,
+    super.key,
     required this.length,
     this.itemHeight,
     this.itemWidth,
@@ -20,7 +20,7 @@ class FCSecondaryGradientCodeField extends StatelessWidget {
     this.onCompleted,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final int length;
   final double? itemHeight;

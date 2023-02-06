@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCPrimarySlider extends StatelessWidget {
   const FCPrimarySlider({
-    Key? key,
+    super.key,
     required this.value,
     required this.onChanged,
     this.min = 0.0,
@@ -12,7 +12,7 @@ class FCPrimarySlider extends StatelessWidget {
     this.divisions,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final double value;
   final void Function(double) onChanged;

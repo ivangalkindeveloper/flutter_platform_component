@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicIconButton extends FCPlatformWidget {
   FCBasicIconButton({
-    Key? key,
+    super.key,
     required Color splashColor,
     required Widget icon,
     required VoidCallback onPressed,
@@ -13,7 +13,6 @@ class FCBasicIconButton extends FCPlatformWidget {
     bool isDisabled = false,
     Color? disabledColor,
   }) : super(
-          key: key,
           cupertino: _FCBasicIconButtonCupertino(
             key: key,
             icon: icon,
@@ -36,13 +35,13 @@ class FCBasicIconButton extends FCPlatformWidget {
 
 class _FCBasicIconButtonCupertino extends StatelessWidget {
   const _FCBasicIconButtonCupertino({
-    Key? key,
+    super.key,
     required this.icon,
     required this.onPressed,
     required this.badgeContent,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final Widget icon;
   final VoidCallback onPressed;
@@ -64,7 +63,7 @@ class _FCBasicIconButtonCupertino extends StatelessWidget {
           CupertinoButton(
             minSize: size.iconHeightLarge,
             onPressed: this.isDisabled ? () {} : this.onPressed,
-            padding: const EdgeInsets.all(0),
+            padding: EdgeInsets.zero,
             child: FCBasicBadge(
               content: this.badgeContent,
               child: this.icon,
@@ -87,14 +86,14 @@ class _FCBasicIconButtonCupertino extends StatelessWidget {
 
 class _FCBasicIconButtonMaterial extends StatelessWidget {
   const _FCBasicIconButtonMaterial({
-    Key? key,
+    super.key,
     required this.splashColor,
     required this.icon,
     required this.onPressed,
     required this.badgeContent,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final Color splashColor;
   final Widget icon;
@@ -118,7 +117,7 @@ class _FCBasicIconButtonMaterial extends StatelessWidget {
             splashColor: this.splashColor,
             iconSize: size.iconHeightLarge,
             onPressed: this.isDisabled ? () {} : this.onPressed,
-            padding: const EdgeInsets.all(0),
+            padding: EdgeInsets.zero,
             icon: FCBasicBadge(
               content: this.badgeContent,
               child: this.icon,

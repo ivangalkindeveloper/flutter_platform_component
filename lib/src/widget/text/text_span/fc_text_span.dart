@@ -2,11 +2,11 @@ import 'package:flutter/widgets.dart';
 
 class FCTextSpan extends StatelessWidget {
   const FCTextSpan({
-    Key? key,
+    super.key,
     required this.children,
     this.align,
     this.overflow,
-  }) : super(key: key);
+  });
 
   final List<InlineSpan> children;
   final TextAlign? align;

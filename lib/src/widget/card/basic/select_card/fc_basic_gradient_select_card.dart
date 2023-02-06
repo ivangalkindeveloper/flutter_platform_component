@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicGradientSelectCard extends FCPlatformWidget {
   FCBasicGradientSelectCard({
-    Key? key,
+    super.key,
     required Gradient backgroundGradient,
     required Color splashColor,
     BoxConstraints? constraints,
@@ -18,7 +18,6 @@ class FCBasicGradientSelectCard extends FCPlatformWidget {
     bool isDisabled = false,
     Color? disabledColor,
   }) : super(
-          key: key,
           cupertino: _FCBasicGradientSelectCardCupertino(
             key: key,
             backgroundGradient: backgroundGradient,
@@ -51,7 +50,7 @@ class FCBasicGradientSelectCard extends FCPlatformWidget {
 
 class _FCBasicGradientSelectCardCupertino extends StatelessWidget {
   const _FCBasicGradientSelectCardCupertino({
-    Key? key,
+    super.key,
     required this.backgroundGradient,
     required this.constraints,
     required this.borderRadius,
@@ -62,7 +61,7 @@ class _FCBasicGradientSelectCardCupertino extends StatelessWidget {
     required this.child,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final Gradient backgroundGradient;
   final BoxConstraints? constraints;
@@ -83,7 +82,7 @@ class _FCBasicGradientSelectCardCupertino extends StatelessWidget {
       children: [
         CupertinoButton(
           onPressed: this.onPressed,
-          padding: const EdgeInsets.all(0),
+          padding: EdgeInsets.zero,
           borderRadius: this.borderRadius ?? config.cardBorderRadius,
           child: FCBasicGradientCard(
             backgroundGradient: this.backgroundGradient,
@@ -112,7 +111,7 @@ class _FCBasicGradientSelectCardCupertino extends StatelessWidget {
 
 class _FCBasicGradientSelectCardMaterial extends StatelessWidget {
   const _FCBasicGradientSelectCardMaterial({
-    Key? key,
+    super.key,
     required this.backgroundGradient,
     required this.splashColor,
     required this.constraints,
@@ -124,7 +123,7 @@ class _FCBasicGradientSelectCardMaterial extends StatelessWidget {
     required this.child,
     required this.isDisabled,
     required this.disabledColor,
-  }) : super(key: key);
+  });
 
   final Gradient backgroundGradient;
   final Color splashColor;

@@ -4,12 +4,12 @@ import 'package:flutter/widgets.dart';
 
 class FCGreenLightSwitch extends StatelessWidget {
   const FCGreenLightSwitch({
-    Key? key,
+    super.key,
     required this.value,
     required this.onChanged,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final bool value;
   final Function(bool) onChanged;

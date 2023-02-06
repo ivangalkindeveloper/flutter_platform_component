@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCBlueOutlineButton extends StatelessWidget {
   const FCBlueOutlineButton({
-    Key? key,
+    super.key,
     this.prefix,
     this.prefixIcon,
     required this.title,
@@ -15,7 +15,7 @@ class FCBlueOutlineButton extends StatelessWidget {
     this.isLoading = false,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final Widget? prefix;
   final IconData? prefixIcon;

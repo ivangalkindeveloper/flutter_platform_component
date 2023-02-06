@@ -4,14 +4,14 @@ import 'package:flutter/widgets.dart';
 
 class FCYellowLightRadio<T> extends StatelessWidget {
   const FCYellowLightRadio({
-    Key? key,
+    super.key,
     required this.value,
     required this.groupValue,
     required this.onChanged,
     this.isToggleable = false,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final T value;
   final T groupValue;

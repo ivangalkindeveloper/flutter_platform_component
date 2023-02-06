@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class FCScreenAppBar extends FCBasicAppBar {
   FCScreenAppBar({
-    Key? key,
+    super.key,
     required BuildContext context,
     bool transitionBetweenRoutes = true,
     Color? backgroundColor,
@@ -18,7 +18,6 @@ class FCScreenAppBar extends FCBasicAppBar {
     EdgeInsets? bottomPadding,
     PreferredSizeWidget? bottom,
   }) : super(
-          key: key,
           context: context,
           transitionBetweenRoutes: transitionBetweenRoutes,
           backgroundColor: backgroundColor,

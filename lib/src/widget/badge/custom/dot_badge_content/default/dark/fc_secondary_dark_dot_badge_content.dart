@@ -3,7 +3,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class FCSecondaryDarkDotBadgeContent extends StatelessWidget {
-  const FCSecondaryDarkDotBadgeContent({Key? key}) : super(key: key);
+  const FCSecondaryDarkDotBadgeContent({Key? key});
 
   @override
   Widget build(BuildContext context) {

@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class DatePickerScreen extends StatelessWidget {
-  const DatePickerScreen({Key? key}) : super(key: key);
+  const DatePickerScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {

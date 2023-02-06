@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class SegmentControlScreen extends StatefulWidget {
-  const SegmentControlScreen({Key? key}) : super(key: key);
+  const SegmentControlScreen({Key? key});
 
   @override
   State<SegmentControlScreen> createState() => _SegmentControlScreenState();

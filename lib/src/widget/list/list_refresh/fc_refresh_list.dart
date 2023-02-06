@@ -5,12 +5,11 @@ import 'package:flutter/material.dart';
 
 class FCListRefresh extends FCPlatformWidget {
   FCListRefresh({
-    Key? key,
+    super.key,
     required ScrollController controller,
     required Future<void> Function() onRefresh,
     required Widget child,
   }) : super(
-          key: key,
           cupertino: _FCListRefreshCupertino(
             key: key,
             controller: controller,
@@ -28,11 +27,11 @@ class FCListRefresh extends FCPlatformWidget {
 
 class _FCListRefreshCupertino extends StatelessWidget {
   const _FCListRefreshCupertino({
-    Key? key,
+    super.key,
     required this.controller,
     required this.onRefresh,
     required this.child,
-  }) : super(key: key);
+  });
 
   final ScrollController controller;
   final Future<void> Function() onRefresh;
@@ -67,11 +66,11 @@ class _FCListRefreshCupertino extends StatelessWidget {
 
 class _FCListRefreshMaterial extends StatelessWidget {
   const _FCListRefreshMaterial({
-    Key? key,
+    super.key,
     required this.controller,
     required this.onRefresh,
     required this.child,
-  }) : super(key: key);
+  });
 
   final ScrollController controller;
   final Future<void> Function() onRefresh;

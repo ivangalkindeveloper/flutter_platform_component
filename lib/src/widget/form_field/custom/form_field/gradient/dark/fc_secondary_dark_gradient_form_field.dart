@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 class FCSecondaryDarkGradientFormField extends StatelessWidget {
   const FCSecondaryDarkGradientFormField({
-    Key? key,
+    super.key,
     this.internalGradient,
     this.internalIconHeight,
     this.controller,
@@ -32,7 +32,7 @@ class FCSecondaryDarkGradientFormField extends StatelessWidget {
     this.bottom,
     this.isRequired = false,
     this.isDisabled = false,
-  }) : super(key: key);
+  });
 
   final Gradient? internalGradient;
   final double? internalIconHeight;

@@ -5,11 +5,11 @@ import 'package:flutter/widgets.dart';
 
 class FCAnimatedFadeIn extends StatelessWidget {
   const FCAnimatedFadeIn({
-    Key? key,
+    super.key,
     required this.child,
     this.onCreated,
     this.isAnimate = true,
-  }) : super(key: key);
+  });
 
   final Widget child;
   final dynamic Function(AnimationController)? onCreated;

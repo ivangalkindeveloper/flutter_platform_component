@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 
 class FCBasicProgressIndicator extends StatelessWidget {
   const FCBasicProgressIndicator({
-    Key? key,
+    super.key,
     required this.backgroundColor,
     required this.color,
     required this.value,
-  }) : super(key: key);
+  });
 
   final Color backgroundColor;
   final Color color;

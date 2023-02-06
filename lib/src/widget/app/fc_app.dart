@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class FCApp extends FCPlatformWidget {
   FCApp({
-    Key? key,
+    super.key,
     bool debugShowCheckedModeBanner = false,
     Locale? locale,
     List<Locale> supportedLocales = const [],
@@ -20,7 +20,6 @@ class FCApp extends FCPlatformWidget {
     Widget Function(BuildContext, Widget?)? builder,
     Widget? home,
   }) : super(
-          key: key,
           cupertino: CupertinoApp(
             key: key,
             debugShowCheckedModeBanner: debugShowCheckedModeBanner,

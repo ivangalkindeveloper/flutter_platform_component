@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientToggleScreen extends StatefulWidget {
-  const GradientToggleScreen({Key? key}) : super(key: key);
+  const GradientToggleScreen({Key? key});
 
   @override
   State<GradientToggleScreen> createState() => _GradientToggleScreenState();

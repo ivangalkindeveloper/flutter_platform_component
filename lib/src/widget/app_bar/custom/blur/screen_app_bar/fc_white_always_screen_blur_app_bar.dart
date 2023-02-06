@@ -6,7 +6,7 @@ import 'dart:ui';
 
 class FCWhiteAlwaysScreenBlurAppBar extends FCBasicBlurAppBar {
   FCWhiteAlwaysScreenBlurAppBar({
-    Key? key,
+    super.key,
     required BuildContext context,
     bool transitionBetweenRoutes = true,
     Color? blurColor,
@@ -21,7 +21,6 @@ class FCWhiteAlwaysScreenBlurAppBar extends FCBasicBlurAppBar {
     EdgeInsets? bottomPadding,
     PreferredSizeWidget? bottom,
   }) : super(
-          key: key,
           context: context,
           transitionBetweenRoutes: transitionBetweenRoutes,
           blurColor: blurColor,

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class FCBasicGradientCard extends StatelessWidget {
   const FCBasicGradientCard({
-    Key? key,
+    super.key,
     required this.backgroundGradient,
     this.constraints,
     this.borderRadius,
@@ -12,7 +12,7 @@ class FCBasicGradientCard extends StatelessWidget {
     this.borderWidth,
     this.padding,
     required this.child,
-  }) : super(key: key);
+  });
 
   final Gradient backgroundGradient;
   final BoxConstraints? constraints;

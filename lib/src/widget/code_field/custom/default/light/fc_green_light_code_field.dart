@@ -5,7 +5,7 @@ import 'dart:async';
 
 class FCGreenLightCodeField extends StatelessWidget {
   const FCGreenLightCodeField({
-    Key? key,
+    super.key,
     required this.length,
     this.itemHeight,
     this.itemWidth,
@@ -20,7 +20,7 @@ class FCGreenLightCodeField extends StatelessWidget {
     this.onCompleted,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final int length;
   final double? itemHeight;

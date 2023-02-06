@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 class FCSecondaryGradientFormField extends StatelessWidget {
   const FCSecondaryGradientFormField({
-    Key? key,
+    super.key,
     this.internalGradient,
     this.internalIconHeight,
     this.controller,
@@ -32,7 +32,7 @@ class FCSecondaryGradientFormField extends StatelessWidget {
     this.bottom,
     this.isRequired = false,
     this.isDisabled = false,
-  }) : super(key: key);
+  });
 
   final Gradient? internalGradient;
   final double? internalIconHeight;

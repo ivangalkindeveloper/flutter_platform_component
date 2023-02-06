@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class KeyboardScreen extends StatefulWidget {
-  const KeyboardScreen({Key? key}) : super(key: key);
+  const KeyboardScreen({Key? key});
 
   @override
   State<KeyboardScreen> createState() => _KeyboardScreenState();

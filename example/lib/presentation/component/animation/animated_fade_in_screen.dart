@@ -2,7 +2,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class AnimatedFadeInScreen extends StatefulWidget {
-  const AnimatedFadeInScreen({Key? key}) : super(key: key);
+  const AnimatedFadeInScreen({Key? key});
 
   @override
   State<AnimatedFadeInScreen> createState() => _AnimatedFadeInScreenState();

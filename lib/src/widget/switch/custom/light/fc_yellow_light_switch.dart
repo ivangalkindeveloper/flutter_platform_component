@@ -4,12 +4,12 @@ import 'package:flutter/widgets.dart';
 
 class FCYellowLightSwitch extends StatelessWidget {
   const FCYellowLightSwitch({
-    Key? key,
+    super.key,
     required this.value,
     required this.onChanged,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final bool value;
   final Function(bool) onChanged;

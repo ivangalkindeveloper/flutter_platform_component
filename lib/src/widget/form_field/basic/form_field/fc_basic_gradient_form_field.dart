@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 
 class FCBasicGradientFormField extends StatefulWidget {
   const FCBasicGradientFormField({
-    Key? key,
+    super.key,
     required this.context,
     required this.backgroundGradient,
     required this.focusedGradient,
@@ -46,7 +46,7 @@ class FCBasicGradientFormField extends StatefulWidget {
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final BuildContext context;
   final Gradient backgroundGradient;
@@ -281,7 +281,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                             padding: this._focusNode.hasPrimaryFocus ||
                                     this._controller.text.isNotEmpty
                                 ? EdgeInsets.only(top: this._size.s10)
-                                : const EdgeInsets.all(0),
+                                : EdgeInsets.zero,
                             child: FCCommonField(
                               controller: this._controller,
                               focusNode: this._focusNode,

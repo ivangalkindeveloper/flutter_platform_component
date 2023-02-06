@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCBasicCard extends StatelessWidget {
   const FCBasicCard({
-    Key? key,
+    super.key,
     required this.backgroundColor,
     this.constraints,
     this.borderRadius,
@@ -12,7 +12,7 @@ class FCBasicCard extends StatelessWidget {
     this.borderWidth,
     this.padding,
     required this.child,
-  }) : super(key: key);
+  });
 
   final Color backgroundColor;
   final BoxConstraints? constraints;

@@ -5,14 +5,13 @@ import 'package:flutter/widgets.dart';
 
 class FCNestedNavigation extends FCPlatformWidget {
   FCNestedNavigation({
-    Key? key,
+    super.key,
     required GlobalKey<NavigatorState> navigatorKey,
     required Widget initialPage,
     String? initialRoute,
     List<Route<dynamic>> Function(NavigatorState, String)? onGenerateInitialRoutes,
     Route<dynamic>? Function(RouteSettings)? onGenerateRoute,
   }) : super(
-          key: key,
           cupertino: FCCupertinoNavigator(
             key: key,
             navigatorKey: navigatorKey,

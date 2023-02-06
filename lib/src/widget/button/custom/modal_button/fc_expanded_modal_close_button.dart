@@ -5,11 +5,10 @@ import 'package:flutter/material.dart';
 
 class FCExpandedModalCloseButton extends FCPlatformWidget {
   FCExpandedModalCloseButton({
-    Key? key,
+    super.key,
     required String cupertinoLocale,
     required VoidCallback onPressed,
   }) : super(
-          key: key,
           cupertino: _FCExpandedModalCloseButtonCupertino(
             key: key,
             cupertinoLocale: cupertinoLocale,
@@ -24,10 +23,10 @@ class FCExpandedModalCloseButton extends FCPlatformWidget {
 
 class _FCExpandedModalCloseButtonCupertino extends StatelessWidget {
   const _FCExpandedModalCloseButtonCupertino({
-    Key? key,
+    super.key,
     required this.cupertinoLocale,
     required this.onPressed,
-  }) : super(key: key);
+  });
 
   final String cupertinoLocale;
   final VoidCallback onPressed;
@@ -52,9 +51,9 @@ class _FCExpandedModalCloseButtonCupertino extends StatelessWidget {
 
 class _FCExpandedModalCloseButtonMaterial extends StatelessWidget {
   const _FCExpandedModalCloseButtonMaterial({
-    Key? key,
+    super.key,
     required this.onPressed,
-  }) : super(key: key);
+  });
 
   final VoidCallback onPressed;
 
@@ -69,7 +68,7 @@ class _FCExpandedModalCloseButtonMaterial extends StatelessWidget {
       child: IconButton(
         iconSize: size.iconHeightLarge,
         onPressed: this.onPressed,
-        padding: const EdgeInsets.all(0),
+        padding: EdgeInsets.zero,
         icon: FCIcon.grey(
           context: context,
           icon: Icons.close,

@@ -4,11 +4,11 @@ import 'package:flutter/widgets.dart';
 
 class FCAnimatedFastCrossFade extends StatelessWidget {
   const FCAnimatedFastCrossFade({
-    Key? key,
+    super.key,
     required this.condition,
     required this.firstChild,
     required this.secondChild,
-  }) : super(key: key);
+  });
 
   final bool condition;
   final Widget firstChild;

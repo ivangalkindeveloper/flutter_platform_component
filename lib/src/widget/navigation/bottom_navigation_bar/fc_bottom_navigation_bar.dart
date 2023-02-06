@@ -5,12 +5,11 @@ import 'package:flutter/material.dart';
 
 class FCBottomNavigationBar extends FCPlatformWidget {
   FCBottomNavigationBar({
-    Key? key,
+    super.key,
     required int currentIndex,
     required ValueChanged<int> onTap,
     required List<BottomNavigationBarItem> items,
   }) : super(
-          key: key,
           cupertino: _FCBottomNavigationBarCupertino(
             key: key,
             currentIndex: currentIndex,
@@ -28,11 +27,11 @@ class FCBottomNavigationBar extends FCPlatformWidget {
 
 class _FCBottomNavigationBarCupertino extends StatelessWidget {
   const _FCBottomNavigationBarCupertino({
-    Key? key,
+    super.key,
     required this.currentIndex,
     required this.onTap,
     required this.items,
-  }) : super(key: key);
+  });
 
   final int currentIndex;
   final ValueChanged<int> onTap;
@@ -67,11 +66,11 @@ class _FCBottomNavigationBarCupertino extends StatelessWidget {
 
 class _FCBottomNavigationBarMaterial extends StatelessWidget {
   const _FCBottomNavigationBarMaterial({
-    Key? key,
+    super.key,
     required this.currentIndex,
     required this.onTap,
     required this.items,
-  }) : super(key: key);
+  });
 
   final int currentIndex;
   final ValueChanged<int> onTap;

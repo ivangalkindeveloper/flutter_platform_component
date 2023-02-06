@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCWhiteAlwaysSelectCard extends StatelessWidget {
   const FCWhiteAlwaysSelectCard({
-    Key? key,
+    super.key,
     this.constraints,
     this.borderRadius,
     this.borderColor,
@@ -12,7 +12,7 @@ class FCWhiteAlwaysSelectCard extends StatelessWidget {
     this.padding,
     required this.onPressed,
     required this.child,
-  }) : super(key: key);
+  });
 
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;

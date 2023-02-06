@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 
 class FCTransparentCard extends StatelessWidget {
   const FCTransparentCard({
-    Key? key,
+    super.key,
     this.constraints,
     this.borderRadius,
     this.borderColor,
     this.borderWidth,
     this.padding,
     required this.child,
-  }) : super(key: key);
+  });
 
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;

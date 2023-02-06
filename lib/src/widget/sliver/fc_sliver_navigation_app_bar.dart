@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 
 class FCSliverNavigationAppBar extends FCPlatformWidget {
   FCSliverNavigationAppBar({
-    Key? key,
+    super.key,
     Color? blurColor,
     Widget? prefix,
     required String title,
@@ -14,8 +14,8 @@ class FCSliverNavigationAppBar extends FCPlatformWidget {
     Widget? postfix,
     PreferredSizeWidget? bottom,
   }) : super(
-          key: key,
           cupertino: _FCSliverNavigationAppBarCupertino(
+            key: key,
             blurColor: blurColor,
             prefix: prefix,
             title: title,
@@ -24,6 +24,7 @@ class FCSliverNavigationAppBar extends FCPlatformWidget {
             bottom: bottom,
           ),
           material: _FCSliverNavigationAppBarMaterial(
+            key: key,
             blurColor: blurColor,
             prefix: prefix,
             title: title,
@@ -36,14 +37,14 @@ class FCSliverNavigationAppBar extends FCPlatformWidget {
 
 class _FCSliverNavigationAppBarCupertino extends StatelessWidget {
   const _FCSliverNavigationAppBarCupertino({
-    Key? key,
+    super.key,
     required this.blurColor,
     required this.prefix,
     required this.title,
     required this.style,
     required this.postfix,
     required this.bottom,
-  }) : super(key: key);
+  });
 
   final Color? blurColor;
   final Widget? prefix;
@@ -81,14 +82,14 @@ class _FCSliverNavigationAppBarCupertino extends StatelessWidget {
 
 class _FCSliverNavigationAppBarMaterial extends StatelessWidget {
   const _FCSliverNavigationAppBarMaterial({
-    Key? key,
+    super.key,
     required this.blurColor,
     required this.prefix,
     required this.title,
     required this.style,
     required this.postfix,
     required this.bottom,
-  }) : super(key: key);
+  });
 
   final Color? blurColor;
   final Widget? prefix;

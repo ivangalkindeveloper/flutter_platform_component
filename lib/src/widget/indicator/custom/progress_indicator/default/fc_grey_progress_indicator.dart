@@ -4,9 +4,9 @@ import 'package:flutter/widgets.dart';
 
 class FCGreyProgressIndicator extends StatelessWidget {
   const FCGreyProgressIndicator({
-    Key? key,
+    super.key,
     required this.value,
-  }) : super(key: key);
+  });
 
   final double value;
 

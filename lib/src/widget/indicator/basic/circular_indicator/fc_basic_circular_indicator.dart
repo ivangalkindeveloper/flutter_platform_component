@@ -4,11 +4,10 @@ import 'package:flutter/material.dart';
 
 class FCBasicCircularIndicator extends FCPlatformWidget {
   FCBasicCircularIndicator({
-    Key? key,
+    super.key,
     required Color color,
     required double height,
   }) : super(
-          key: key,
           cupertino: _FCBasicCircularIndicatorCupertino(
             key: key,
             color: color,
@@ -24,10 +23,10 @@ class FCBasicCircularIndicator extends FCPlatformWidget {
 
 class _FCBasicCircularIndicatorCupertino extends StatelessWidget {
   const _FCBasicCircularIndicatorCupertino({
-    Key? key,
+    super.key,
     required this.color,
     required this.height,
-  }) : super(key: key);
+  });
 
   final Color color;
   final double height;
@@ -47,10 +46,10 @@ class _FCBasicCircularIndicatorCupertino extends StatelessWidget {
 
 class _FBasicCircularIndicatorMaterial extends StatelessWidget {
   const _FBasicCircularIndicatorMaterial({
-    Key? key,
+    super.key,
     required this.color,
     required this.height,
-  }) : super(key: key);
+  });
 
   final Color color;
   final double height;

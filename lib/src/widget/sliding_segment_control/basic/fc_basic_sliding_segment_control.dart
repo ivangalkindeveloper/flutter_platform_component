@@ -5,7 +5,7 @@ import 'package:flutter/cupertino.dart';
 
 class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
   const FCBasicSlidingSegmentControl({
-    Key? key,
+    super.key,
     required this.value,
     required this.items,
     required this.onChanged,
@@ -17,7 +17,7 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
     this.style,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final T value;
   final List<FCSlidingSegmentControlItem<T>> items;

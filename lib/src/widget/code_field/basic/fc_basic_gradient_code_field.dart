@@ -6,7 +6,7 @@ import 'dart:async';
 
 class FCBasicGradientCodeField extends StatefulWidget {
   const FCBasicGradientCodeField({
-    Key? key,
+    super.key,
     required this.context,
     required this.length,
     required this.unfocusedBackgroundGradient,
@@ -25,7 +25,7 @@ class FCBasicGradientCodeField extends StatefulWidget {
     this.onCompleted,
     this.isDisabled = false,
     this.disabledColor,
-  }) : super(key: key);
+  });
 
   final BuildContext context;
   final int length;

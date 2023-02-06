@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class FCActionModal extends FCPlatformWidget {
   FCActionModal({
-    Key? key,
+    super.key,
     String? title,
     TextStyle? titleStyle,
     String? description,
@@ -19,7 +19,6 @@ class FCActionModal extends FCPlatformWidget {
     required List<FCActionModalItem> items,
     FCActionModalItem? cancelItem,
   }) : super(
-          key: key,
           cupertino: _FCActionModalCupertino(
             key: key,
             title: title,
@@ -55,7 +54,7 @@ class FCActionModal extends FCPlatformWidget {
 
 class _FCActionModalCupertino extends StatelessWidget {
   const _FCActionModalCupertino({
-    Key? key,
+    super.key,
     required this.title,
     required this.titleStyle,
     required this.description,
@@ -68,7 +67,7 @@ class _FCActionModalCupertino extends StatelessWidget {
     required this.postfixIconHeight,
     required this.items,
     required this.cancelItem,
-  }) : super(key: key);
+  });
 
   final String? title;
   final TextStyle? titleStyle;
@@ -212,7 +211,7 @@ class _FCActionModalCupertino extends StatelessWidget {
 
 class _FCActionModalMaterial extends StatelessWidget {
   const _FCActionModalMaterial({
-    Key? key,
+    super.key,
     required this.title,
     required this.titleStyle,
     required this.description,
@@ -225,7 +224,7 @@ class _FCActionModalMaterial extends StatelessWidget {
     required this.postfixIconHeight,
     required this.items,
     required this.cancelItem,
-  }) : super(key: key);
+  });
 
   final String? title;
   final TextStyle? titleStyle;

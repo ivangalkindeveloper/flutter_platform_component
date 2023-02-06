@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCExpandedModalAppBar extends FCBasicAppBar {
   FCExpandedModalAppBar({
-    Key? key,
+    super.key,
     required BuildContext context,
     bool transitionBetweenRoutes = false,
     Color? backgroundColor,
@@ -18,7 +18,6 @@ class FCExpandedModalAppBar extends FCBasicAppBar {
     EdgeInsets? bottomPadding,
     PreferredSizeWidget? bottom,
   }) : super(
-          key: key,
           context: context,
           transitionBetweenRoutes: transitionBetweenRoutes,
           backgroundColor: backgroundColor,
