@@ -4,12 +4,12 @@ export 'src/flutter_component.dart';
 
 // Config
 export 'src/config/fc_config.dart';
-
-// Data
-export 'src/data/fc_date_range.dart';
 export 'src/config/fc_linear_gradient_config.dart';
 export 'src/config/fc_radial_gradient_config.dart';
 export 'src/config/fc_sweep_gradient_config.dart';
+
+// Data
+export 'src/data/fc_date_range.dart';
 
 // Enum
 export 'src/enum/fc_badge_position.dart';

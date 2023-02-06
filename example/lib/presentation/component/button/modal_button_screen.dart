@@ -23,7 +23,7 @@ class ModalButtonScreen extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               FCAlwaysWhiteModalCloseButton(
-                localeBack: "Back",
+                cupertinoLocale: "Back",
                 onPressed: () {},
               ),
               SizedBox(height: size.s16 / 2),
@@ -31,12 +31,12 @@ class ModalButtonScreen extends StatelessWidget {
                 onPressed: () {},
               ),
               SizedBox(height: size.s16 / 2),
-              FCModalCloseButton(
-                localeBack: "Back",
+              FCExpandedModalCloseButton(
+                cupertinoLocale: "Back",
                 onPressed: () {},
               ),
               SizedBox(height: size.s16 / 2),
-              FCSmallModalCloseButton(
+              FCPopUpModalCloseButton(
                 onPressed: () {},
               ),
             ],

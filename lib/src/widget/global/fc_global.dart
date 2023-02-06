@@ -5,8 +5,6 @@ import 'package:flutter/cupertino.dart' as cupertino;
 import 'package:flutter/material.dart' as material;
 import 'package:flutter/widgets.dart';
 
-//TODO showSlowSnackbar showSnackbar showFastSnackbar
-
 class FCGlobal {
   static material.MaterialPageRoute pageRoute({
     required BuildContext context,
@@ -52,6 +50,7 @@ class FCGlobal {
       case TargetPlatform.iOS:
         return bottomSheet.showCupertinoModalBottomSheet<T?>(
           context: context,
+          topRadius: config.modalBorderRadius.topLeft,
           barrierColor: config.barrierExpandedModalColor,
           backgroundColor: material.Colors.transparent,
           elevation: 0,
@@ -85,7 +84,7 @@ class FCGlobal {
     }
   }
 
-  static Future<T?> showSmallModal<T>({
+  static Future<T?> showPopUpModal<T>({
     required BuildContext context,
     required Widget child,
   }) {
@@ -96,7 +95,7 @@ class FCGlobal {
       case TargetPlatform.iOS:
         return cupertino.showCupertinoModalPopup<T>(
           context: context,
-          barrierColor: config.barrierSmallModalColor,
+          barrierColor: config.barrierPopUpModalColor,
           barrierDismissible: true,
           useRootNavigator: false,
           builder: (BuildContext context) => child,
@@ -105,7 +104,7 @@ class FCGlobal {
       case TargetPlatform.android:
         return bottomSheet.showBarModalBottomSheet<T>(
           context: context,
-          barrierColor: config.barrierSmallModalColor,
+          barrierColor: config.barrierPopUpModalColor,
           backgroundColor: material.Colors.transparent,
           elevation: 0,
           useRootNavigator: false,
@@ -173,7 +172,7 @@ class FCGlobal {
       case TargetPlatform.iOS:
         return cupertino.showCupertinoModalPopup<DateTime?>(
           context: context,
-          barrierColor: config.barrierSmallModalColor,
+          barrierColor: config.barrierPopUpModalColor,
           useRootNavigator: false,
           builder: (BuildContext context) => cupertinoModal,
         );

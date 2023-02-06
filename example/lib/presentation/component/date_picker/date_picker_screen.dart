@@ -28,9 +28,9 @@ class DatePickerScreen extends StatelessWidget {
                   context: context,
                   locale: Locale("en"),
                   dateRange: FCDateRange(context: context),
-                  cupertinoModal: FCSmallModal(
+                  cupertinoModal: FCPopUpModal(
                     backgroundColor: theme.backgroundScaffold,
-                    title: "Date",
+                    appBarTitle: "Date",
                     child: Padding(
                       padding: EdgeInsets.all(size.s16),
                       child: FCDatePicker(

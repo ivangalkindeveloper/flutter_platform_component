@@ -8,6 +8,7 @@ class FCBasicBlurAppBar extends FCPlatformAppBar {
   FCBasicBlurAppBar({
     Key? key,
     required BuildContext context,
+    bool transitionBetweenRoutes = true,
     Color? blurColor,
     double? blurOpacity,
     ImageFilter? blurFilter,
@@ -23,6 +24,7 @@ class FCBasicBlurAppBar extends FCPlatformAppBar {
           context: context,
           cupertino: _FCAppBarCupertino(
             key: key,
+            transitionBetweenRoutes: transitionBetweenRoutes,
             blurColor: blurColor,
             blurOpacity: blurOpacity,
             blurFilter: blurFilter,
@@ -39,6 +41,7 @@ class FCBasicBlurAppBar extends FCPlatformAppBar {
           ),
           material: _FCAppBarMaterial(
             key: key,
+            transitionBetweenRoutes: transitionBetweenRoutes,
             blurColor: blurColor,
             blurOpacity: blurOpacity,
             blurFilter: blurFilter,
@@ -87,6 +90,7 @@ class FCBasicBlurAppBar extends FCPlatformAppBar {
 class _FCAppBarCupertino extends StatelessWidget {
   const _FCAppBarCupertino({
     Key? key,
+    required this.transitionBetweenRoutes,
     required this.blurColor,
     required this.blurOpacity,
     required this.blurFilter,
@@ -97,6 +101,7 @@ class _FCAppBarCupertino extends StatelessWidget {
     required this.bottom,
   }) : super(key: key);
 
+  final bool transitionBetweenRoutes;
   final Color? blurColor;
   final double? blurOpacity;
   final ImageFilter? blurFilter;
@@ -120,6 +125,7 @@ class _FCAppBarCupertino extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           CupertinoNavigationBar(
+            transitionBetweenRoutes: this.transitionBetweenRoutes,
             automaticallyImplyLeading: false,
             automaticallyImplyMiddle: false,
             brightness: theme.cupertinoThemeData.brightness,
@@ -150,6 +156,7 @@ class _FCAppBarCupertino extends StatelessWidget {
 class _FCAppBarMaterial extends StatelessWidget {
   const _FCAppBarMaterial({
     Key? key,
+    required this.transitionBetweenRoutes,
     required this.blurColor,
     required this.blurOpacity,
     required this.blurFilter,
@@ -160,6 +167,7 @@ class _FCAppBarMaterial extends StatelessWidget {
     required this.bottom,
   }) : super(key: key);
 
+  final bool transitionBetweenRoutes;
   final Color? blurColor;
   final double? blurOpacity;
   final ImageFilter? blurFilter;

@@ -19,9 +19,9 @@ class WhiteAlwaysExpandedModalScreen extends StatelessWidget {
       body: GestureDetector(
         onTap: () => FCGlobal.showExpandedModal(
           context: context,
-          child: FCExpandedModal(
+          child: FCWhiteAlwaysExpandedModal(
+            appBarTitle: "White Always Expanded Modal Title",
             backgroundColor: theme.backgroundScaffold,
-            title: "White Always Expanded Modal Title",
             body: Center(
               child: FCText.regular14Black(
                 context: context,

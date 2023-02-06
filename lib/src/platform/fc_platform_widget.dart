@@ -3,10 +3,10 @@ import 'package:flutter/widgets.dart';
 
 class FCPlatformWidget extends StatelessWidget {
   const FCPlatformWidget({
-    Key? key,
+    super.key,
     required this.cupertino,
     required this.material,
-  }) : super(key: key);
+  });
 
   final Widget cupertino;
   final Widget material;

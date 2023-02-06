@@ -43,7 +43,7 @@ import 'package:example/presentation/component/list/list_card_screen.dart';
 import 'package:example/presentation/component/list/list_refresh_screen.dart';
 import 'package:example/presentation/component/modal/action_modal_screen.dart';
 import 'package:example/presentation/component/modal/expanded_modal_screen.dart';
-import 'package:example/presentation/component/modal/small_modal_screen.dart';
+import 'package:example/presentation/component/modal/pop_up_modal_screen.dart';
 import 'package:example/presentation/component/modal/white_always_expanded_modal_screen.dart';
 import 'package:example/presentation/component/navigation/bottom_navigation_bar_screen.dart';
 import 'package:example/presentation/component/navigation/nested_navigation_screen.dart';
@@ -135,7 +135,7 @@ class NavigationService {
 
   static const String action_modal_screen = "/action_modal_screen";
   static const String expand_modal_screen = "/expand_modal_screen";
-  static const String small_modal_screen = "/small_modal_screen";
+  static const String pop_up_modal_screen = "/pop_up_modal_screen";
   static const String white_always_expand_modal_screen =
       "/white_always_expand_modal_screen";
 
@@ -417,10 +417,10 @@ class NavigationService {
           context: navigatorKey.currentContext!,
           child: const ExpandedModalScreen(),
         );
-      case small_modal_screen:
+      case pop_up_modal_screen:
         return FCGlobal.pageRoute(
           context: navigatorKey.currentContext!,
-          child: const SmallModalScreen(),
+          child: const PopUpModalScreen(),
         );
       case white_always_expand_modal_screen:
         return FCGlobal.pageRoute(

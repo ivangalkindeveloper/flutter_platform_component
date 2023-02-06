@@ -17,7 +17,7 @@ class ActionModalScreen extends StatelessWidget {
         onPressedBack: () => Navigator.pop(context),
       ),
       body: GestureDetector(
-        onTap: () => FCGlobal.showSmallModal(
+        onTap: () => FCGlobal.showPopUpModal(
           context: context,
           child: FCActionModal(
             items: [

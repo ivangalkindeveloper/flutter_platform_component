@@ -1,13 +1,14 @@
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class SmallModalScreen extends StatelessWidget {
-  const SmallModalScreen({Key? key}) : super(key: key);
+class PopUpModalScreen extends StatelessWidget {
+  const PopUpModalScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final FCConfig config = FCConfig.of(context);
     final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
 
     return FCScaffold(
       backgroundColor: theme.backgroundScaffold,
@@ -17,15 +18,18 @@ class SmallModalScreen extends StatelessWidget {
         onPressedBack: () => Navigator.pop(context),
       ),
       body: GestureDetector(
-        onTap: () => FCGlobal.showSmallModal(
+        onTap: () => FCGlobal.showPopUpModal(
           context: context,
-          child: FCSmallModal(
-            backgroundColor: theme.backgroundScaffold,
-            title: "Small Modal Title",
-            child: Center(
-              child: FCText.regular14Black(
-                context: context,
-                text: "Small Modal",
+          child: FCPopUpModal(
+            backgroundColor: theme.white,
+            appBarTitle: "Pop Up Modal Title",
+            child: Container(
+              height: size.s32 * 4,
+              child: Center(
+                child: FCText.regular14Black(
+                  context: context,
+                  text: "Small Modal",
+                ),
               ),
             ),
           ),

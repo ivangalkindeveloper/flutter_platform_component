@@ -4,9 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
-//TODO
-// Accent color
-
 abstract class IFCTheme {
   // System
   abstract final ThemeMode materialThemeMode;
@@ -106,9 +103,9 @@ abstract class IFCTheme {
   // Barrier / Expanded Modal
   abstract final Color barrierExpandedModalCupertino;
   abstract final Color barrierExpandedModalMaterial;
-  // Barrier / Small Modal
-  abstract final Color barrierSmallModalCupertino;
-  abstract final Color barrierSmallModalMaterial;
+  // Barrier / Modal
+  abstract final Color barrierPopUpModalCupertino;
+  abstract final Color barrierPopUpModalMaterial;
   // Barrier / Dialog
   abstract final Color barrierDialogCupertino;
   abstract final Color barrierDialogMaterial;

@@ -7,6 +7,7 @@ class FCBasicAppBar extends FCPlatformAppBar {
   FCBasicAppBar({
     Key? key,
     required BuildContext context,
+    bool transitionBetweenRoutes = true,
     Color? backgroundColor,
     Widget? prefix,
     String? title,
@@ -20,6 +21,7 @@ class FCBasicAppBar extends FCPlatformAppBar {
           context: context,
           cupertino: _FCAppBarCupertino(
             key: key,
+            transitionBetweenRoutes: transitionBetweenRoutes,
             backgroundColor: backgroundColor,
             prefix: prefix,
             middle: _middle(
@@ -34,6 +36,7 @@ class FCBasicAppBar extends FCPlatformAppBar {
           ),
           material: _FCAppBarMaterial(
             key: key,
+            transitionBetweenRoutes: transitionBetweenRoutes,
             backgroundColor: backgroundColor,
             prefix: prefix,
             middle: _middle(
@@ -80,6 +83,7 @@ class FCBasicAppBar extends FCPlatformAppBar {
 class _FCAppBarCupertino extends StatelessWidget {
   const _FCAppBarCupertino({
     Key? key,
+    required this.transitionBetweenRoutes,
     required this.backgroundColor,
     required this.prefix,
     required this.middle,
@@ -88,6 +92,7 @@ class _FCAppBarCupertino extends StatelessWidget {
     required this.bottom,
   }) : super(key: key);
 
+  final bool transitionBetweenRoutes;
   final Color? backgroundColor;
   final Widget? prefix;
   final Widget? middle;
@@ -105,6 +110,7 @@ class _FCAppBarCupertino extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         CupertinoNavigationBar(
+          transitionBetweenRoutes: this.transitionBetweenRoutes,
           automaticallyImplyLeading: false,
           automaticallyImplyMiddle: false,
           brightness: theme.cupertinoThemeData.brightness,
@@ -134,6 +140,7 @@ class _FCAppBarCupertino extends StatelessWidget {
 class _FCAppBarMaterial extends StatelessWidget {
   const _FCAppBarMaterial({
     Key? key,
+    required this.transitionBetweenRoutes,
     required this.backgroundColor,
     required this.prefix,
     required this.middle,
@@ -142,6 +149,7 @@ class _FCAppBarMaterial extends StatelessWidget {
     required this.bottom,
   }) : super(key: key);
 
+  final bool transitionBetweenRoutes;
   final Color? backgroundColor;
   final Widget? prefix;
   final Widget? middle;

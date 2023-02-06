@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 
 class FCPlatformAppBar extends StatelessWidget implements ObstructingPreferredSizeWidget {
   const FCPlatformAppBar({
-    Key? key,
+    super.key,
     required this.context,
     required this.cupertino,
     required this.material,
     this.bottom,
-  }) : super(key: key);
+  });
 
   final BuildContext context;
   final Widget cupertino;

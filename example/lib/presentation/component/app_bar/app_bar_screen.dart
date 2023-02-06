@@ -41,7 +41,7 @@ class _AppBarScreenState extends State<AppBarScreen> {
       backgroundColor: theme.black,
       appBar: FCWhiteAlwaysExpandedModalAppBar(
         context: context,
-        localeBack: "Back",
+        cupertinoLocale: "Back",
         onPressedBack: () => Navigator.pop(context),
         title: "White Always Expanded Modal",
       ),

@@ -5,54 +5,73 @@ import 'package:flutter/widgets.dart';
 class FCPopUpModal extends StatelessWidget {
   const FCPopUpModal({
     Key? key,
-    required this.backgroundColor,
+    this.appBarBackgroundColor,
     this.appBarPrefix,
-    this.title,
-    this.appBarMiddle,
     this.onPressedBack,
+    this.appBarTitle,
+    this.appBarStyle,
+    this.appBarMiddle,
     this.appBarProstfix,
+    this.appBarBottomPadding,
+    this.appBarBottom,
+    this.backgroundColor,
     this.padding,
     required this.child,
   }) : super(key: key);
 
-  final Color backgroundColor;
+  // App Bar
+  final Color? appBarBackgroundColor;
   final Widget? appBarPrefix;
-  final String? title;
-  final Widget? appBarMiddle;
   final VoidCallback? onPressedBack;
+  final String? appBarTitle;
+  final TextStyle? appBarStyle;
+  final Widget? appBarMiddle;
   final Widget? appBarProstfix;
+  final EdgeInsets? appBarBottomPadding;
+  final PreferredSizeWidget? appBarBottom;
+  // Child
+  final Color? backgroundColor;
   final EdgeInsets? padding;
   final Widget child;
 
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: size.s16,
-            vertical: size.s16 / 2,
-          ),
-          child: FCPopUpModalAppBar(
-            context: context,
-            prefix: this.appBarPrefix,
-            title: this.title,
-            middle: this.appBarMiddle,
-            onPressedBack: this.onPressedBack,
-            postfix: this.appBarProstfix,
-          ),
+    return ClipRRect(
+      borderRadius: BorderRadius.only(
+        topLeft: config.modalBorderRadius.topLeft,
+        topRight: config.modalBorderRadius.topRight,
+      ),
+      child: Container(
+        color: this.backgroundColor ?? theme.white,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            FCPopUpModalAppBar(
+              context: context,
+              backgroundColor: this.appBarBackgroundColor,
+              onPressedBack: this.onPressedBack,
+              prefix: this.appBarPrefix,
+              title: this.appBarTitle,
+              style: this.appBarStyle,
+              middle: this.appBarMiddle,
+              postfix: this.appBarProstfix,
+              bottomPadding: this.appBarBottomPadding,
+              bottom: this.appBarBottom,
+            ),
+            SafeArea(
+              top: false,
+              child: Padding(
+                padding: padding ?? EdgeInsets.all(size.s16),
+                child: this.child,
+              ),
+            ),
+          ],
         ),
-        SafeArea(
-          child: Padding(
-            padding: padding ?? EdgeInsets.all(size.s16),
-            child: this.child,
-          ),
-        ),
-      ],
+      ),
     );
   }
 }

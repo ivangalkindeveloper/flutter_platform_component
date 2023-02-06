@@ -1,8 +1,5 @@
 import 'package:flutter/widgets.dart';
 
-//TODO
-// Component elevation
-
 abstract class IFCSize {
   // Size
   abstract final double s10;
@@ -43,6 +40,9 @@ abstract class IFCSize {
   // BorderRadius / Field
   abstract final BorderRadius fieldBorderRadiusCupertino;
   abstract final BorderRadius fieldBorderRadiusMaterial;
+  // BorderRadius / Modal
+  abstract final BorderRadius modalBorderRadiusCupertino;
+  abstract final BorderRadius modalBorderRadiusMaterial;
   // BorderRadius / Segment Control
   abstract final BorderRadius segmentControlBorderRadiusCupertino;
   abstract final BorderRadius segmentControlBorderRadiusMaterial;

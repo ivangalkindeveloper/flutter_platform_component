@@ -1,45 +1,66 @@
+import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class FCWhiteAlwaysExpandedModal extends StatelessWidget {
   const FCWhiteAlwaysExpandedModal({
     Key? key,
-    required this.backgroundColor,
+    this.appBarBackgroundColor,
     this.appBarPrefix,
-    this.appBarLocaleBack,
+    this.appBarCupertinoLocale,
     this.onPressedBack,
-    this.title,
+    this.appBarTitle,
+    this.appBarStyle,
     this.appBarMiddle,
     this.appBarProstfix,
+    this.appBarBottomPadding,
     this.appBarBottom,
+    this.backgroundColor,
     required this.body,
   }) : super(key: key);
 
-  final Color backgroundColor;
+  // App Bar
+  final Color? appBarBackgroundColor;
   final Widget? appBarPrefix;
-  final String? appBarLocaleBack;
+  final String? appBarCupertinoLocale;
   final VoidCallback? onPressedBack;
-  final String? title;
+  final String? appBarTitle;
+  final TextStyle? appBarStyle;
   final Widget? appBarMiddle;
   final Widget? appBarProstfix;
+  final EdgeInsets? appBarBottomPadding;
   final PreferredSizeWidget? appBarBottom;
+  // Scaffold
+  final Color? backgroundColor;
   final Widget body;
 
   @override
   Widget build(BuildContext context) {
-    return FCScaffold(
-      backgroundColor: this.backgroundColor,
-      appBar: FCWhiteAlwaysExpandedModalAppBar(
-        context: context,
-        prefix: this.appBarPrefix,
-        localeBack: this.appBarLocaleBack,
-        onPressedBack: this.onPressedBack,
-        title: this.title,
-        middle: this.appBarMiddle,
-        postfix: this.appBarProstfix,
-        bottom: this.appBarBottom,
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return ClipRRect(
+      borderRadius: BorderRadius.only(
+        topLeft: config.modalBorderRadius.topLeft,
+        topRight: config.modalBorderRadius.topRight,
       ),
-      body: this.body,
+      child: FCScaffold(
+        appBar: FCWhiteAlwaysExpandedModalAppBar(
+          context: context,
+          backgroundColor: this.appBarBackgroundColor,
+          prefix: this.appBarPrefix,
+          cupertinoLocale: this.appBarCupertinoLocale,
+          onPressedBack: this.onPressedBack,
+          title: this.appBarTitle,
+          style: this.appBarStyle,
+          middle: this.appBarMiddle,
+          postfix: this.appBarProstfix,
+          bottomPadding: this.appBarBottomPadding,
+          bottom: this.appBarBottom,
+        ),
+        backgroundColor: this.backgroundColor ?? theme.blackAlways,
+        body: this.body,
+      ),
     );
   }
 }

@@ -7,6 +7,7 @@ class FCWhiteAlwaysScreenAppBar extends FCBasicAppBar {
   FCWhiteAlwaysScreenAppBar({
     Key? key,
     required BuildContext context,
+    bool transitionBetweenRoutes = true,
     Color? backgroundColor,
     Widget? prefix,
     VoidCallback? onPressedBack,
@@ -19,6 +20,7 @@ class FCWhiteAlwaysScreenAppBar extends FCBasicAppBar {
   }) : super(
           key: key,
           context: context,
+          transitionBetweenRoutes: transitionBetweenRoutes,
           backgroundColor: backgroundColor,
           prefix: _prefix(
             context: context,

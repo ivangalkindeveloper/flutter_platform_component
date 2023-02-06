@@ -8,6 +8,7 @@ class FCWhiteAlwaysExpandedModalBlurAppBar extends FCBasicBlurAppBar {
   FCWhiteAlwaysExpandedModalBlurAppBar({
     Key? key,
     required BuildContext context,
+    bool transitionBetweenRoutes = false,
     Color? blurColor,
     double? blurOpacity,
     ImageFilter? blurFilter,
@@ -23,7 +24,8 @@ class FCWhiteAlwaysExpandedModalBlurAppBar extends FCBasicBlurAppBar {
   }) : super(
           key: key,
           context: context,
-          blurColor: blurColor,
+          transitionBetweenRoutes: transitionBetweenRoutes,
+          blurColor: blurColor ?? context.config.theme.blackAlways,
           blurOpacity: blurOpacity,
           blurFilter: blurFilter,
           prefix: _prefix(

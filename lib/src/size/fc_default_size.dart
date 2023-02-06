@@ -65,6 +65,11 @@ class FCDefaultSize implements IFCSize {
   final BorderRadius fieldBorderRadiusCupertino = BorderRadius.circular(8);
   @override
   final BorderRadius fieldBorderRadiusMaterial = BorderRadius.circular(4);
+  // BorderRadius / Modal
+  @override
+  final BorderRadius modalBorderRadiusCupertino = BorderRadius.circular(12);
+  @override
+  final BorderRadius modalBorderRadiusMaterial = BorderRadius.circular(16);
   // BorderRadius / Segment Control
   @override
   final BorderRadius segmentControlBorderRadiusCupertino = BorderRadius.circular(16);

@@ -382,8 +382,8 @@ class FCDefaultDarkTheme implements IFCTheme {
   final Color barrierExpandedModalCupertino = kCupertinoModalBarrierColor;
   final Color barrierExpandedModalMaterial = Colors.black.withOpacity(0.35);
   // Barrier / Small Modal
-  final Color barrierSmallModalCupertino = kCupertinoModalBarrierColor;
-  final Color barrierSmallModalMaterial = Colors.black.withOpacity(0.35);
+  final Color barrierPopUpModalCupertino = kCupertinoModalBarrierColor;
+  final Color barrierPopUpModalMaterial = Colors.black.withOpacity(0.35);
   // Barrier / Dialog
   final Color barrierDialogCupertino = Colors.black54;
   final Color barrierDialogMaterial = Colors.black54;

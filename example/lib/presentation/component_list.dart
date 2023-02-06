@@ -338,9 +338,9 @@ class ComponentScreen extends StatelessWidget {
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(
-              title: "Small Modal",
+              title: "Pop Up Modal",
               onPressed: () =>
-                  Navigator.pushNamed(context, NavigationService.small_modal_screen),
+                  Navigator.pushNamed(context, NavigationService.pop_up_modal_screen),
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(

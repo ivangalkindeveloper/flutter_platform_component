@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class FCConfig extends InheritedWidget {
   const FCConfig({
-    Key? key,
+    super.key,
     required this.platform,
     required this.textStyle,
     required this.haptic,
@@ -15,11 +15,8 @@ class FCConfig extends InheritedWidget {
     required this.changeSize,
     required this.changeTextStyle,
     required this.changeHaptic,
-    required Widget child,
-  }) : super(
-          key: key,
-          child: child,
-        );
+    required super.child,
+  });
 
   final TargetPlatform platform;
   final IFCTheme theme;
@@ -40,11 +37,11 @@ class FCConfig extends InheritedWidget {
         material: this.theme.barrierExpandedModalMaterial,
       );
 
-  // Barrier / Small Modal
-  Color get barrierSmallModalColor => FCPlatform.decompose<Color, Color, Color>(
+  // Barrier / Pop Up Modal
+  Color get barrierPopUpModalColor => FCPlatform.decompose<Color, Color, Color>(
         platform: this.platform,
-        cupertino: this.theme.barrierSmallModalCupertino,
-        material: this.theme.barrierSmallModalMaterial,
+        cupertino: this.theme.barrierPopUpModalCupertino,
+        material: this.theme.barrierPopUpModalMaterial,
       );
 
   // Barrier / Dialog
@@ -85,6 +82,14 @@ class FCConfig extends InheritedWidget {
         platform: this.platform,
         cupertino: this.size.fieldBorderRadiusCupertino,
         material: this.size.fieldBorderRadiusMaterial,
+      );
+
+  // BorderRadius / Modal
+  BorderRadius get modalBorderRadius =>
+      FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+        platform: this.platform,
+        cupertino: this.size.modalBorderRadiusCupertino,
+        material: this.size.modalBorderRadiusMaterial,
       );
 
   // BorderRadius / Segment Control

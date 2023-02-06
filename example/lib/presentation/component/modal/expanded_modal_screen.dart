@@ -20,8 +20,8 @@ class ExpandedModalScreen extends StatelessWidget {
         onTap: () => FCGlobal.showExpandedModal(
           context: context,
           child: FCExpandedModal(
+            appBarTitle: "Expanded Modal Title",
             backgroundColor: theme.backgroundScaffold,
-            title: "Expanded Modal Title",
             body: Center(
               child: FCText.regular14Black(
                 context: context,

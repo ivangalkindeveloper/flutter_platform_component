@@ -8,6 +8,7 @@ class FCScreenBlurAppBar extends FCBasicBlurAppBar {
   FCScreenBlurAppBar({
     Key? key,
     required BuildContext context,
+    bool transitionBetweenRoutes = true,
     Color? blurColor,
     double? blurOpacity,
     ImageFilter? blurFilter,
@@ -22,6 +23,7 @@ class FCScreenBlurAppBar extends FCBasicBlurAppBar {
   }) : super(
           key: key,
           context: context,
+          transitionBetweenRoutes: transitionBetweenRoutes,
           blurColor: blurColor,
           blurOpacity: blurOpacity,
           blurFilter: blurFilter,
