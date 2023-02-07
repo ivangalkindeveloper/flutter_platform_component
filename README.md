@@ -2,8 +2,26 @@
 📱 Ready-made component base using ready-made abstractions for quick use and decomposed by platform.
 
 ## Benefits
-This package was created in order to reduce the boilerplate code of the presentation layer, to provide ready-made basic and custom components, which are also decomposed by platform.\
-The package contains ready-made components, behaviors and approaches that will suit most applications.
+The package works according to the principle - fill out one contract - get all ready-made platform components.
+### Platform decomposition
+Components are separated by platform by style and behavior.
+### One theme contract
+Extension themes along with the ThemeData class are very good when you use widgets only for Design Material.
+In case you want to get the correct behavior of widgets for the platform, you must fill in Theme and CupertinoTheme and each time remember to separate these colors in the widgets you use.
+Theme Extension works in the same way as this package.
+In the case of this package - it is necessary to fill in only one contract of the theme used.
+### Color scheme
+The color scheme was created in terms of the convenience of designers (primary and secondary colors).
+In the scheme by name, permanent colors and tint colors are created (note - primaryLight and primaryDark).
+### Boilerplate
+Ready-made components reduce the declarative layout code.
+### Simplified and unified API
+Each package component has simplified APIs because some component properties are never used.
+All component property names are unified, for example, you will never see "background" and "backgroundColor".
+### Disabled Components
+Every component that can be clicked has the property to be disabled implemented.
+### Basic entities
+In addition to the theme, there are other basic entities that are managed identically to the theme - sizes, text styles and haptics.
 
 ## Design
 Components follow the following design paradigm:

@@ -1,48 +1,53 @@
 import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:ui';
 
-//TODO
-class FCPopUpModalBlurAppBar extends FCBasicBlurAppBar {
-  FCPopUpModalBlurAppBar({
+class FCBlurExpandedModalAppBar extends FCBasicBlurAppBar {
+  FCBlurExpandedModalAppBar({
     super.key,
     required BuildContext context,
     Color? blurColor,
     double? blurOpacity,
     ImageFilter? blurFilter,
     Widget? prefix,
+    String? cupertinoLocale,
+    VoidCallback? onPressedBack,
     String? title,
     TextStyle? style,
     Widget? middle,
     Widget? postfix,
-    VoidCallback? onPressedBack,
     EdgeInsets? bottomPadding,
     PreferredSizeWidget? bottom,
   }) : super(
           context: context,
+          transitionBetweenRoutes: false,
           blurColor: blurColor,
           blurOpacity: blurOpacity,
           blurFilter: blurFilter,
-          prefix: prefix,
+          prefix: _prefix(
+            prefix: prefix,
+            cupertinoLocale: cupertinoLocale,
+            onPressedBack: onPressedBack,
+          ),
           title: title,
           style: style,
           middle: middle,
-          postfix: _postfix(
-            postfix: postfix,
-            onPressedBack: onPressedBack,
-          ),
+          postfix: postfix,
           bottomPadding: bottomPadding,
           bottom: bottom,
         );
 
-  static Widget? _postfix({
-    required Widget? postfix,
+  static Widget? _prefix({
+    required Widget? prefix,
+    required String? cupertinoLocale,
     required VoidCallback? onPressedBack,
   }) {
-    if (postfix != null) return postfix;
+    if (prefix != null) return prefix;
 
-    if (onPressedBack != null)
-      return FCPopUpModalCloseButton(
+    if (cupertinoLocale != null && onPressedBack != null)
+      return FCExpandedModalCloseButton(
+        cupertinoLocale: cupertinoLocale,
         onPressed: onPressedBack,
       );
 

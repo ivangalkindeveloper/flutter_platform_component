@@ -30,7 +30,7 @@ class FCKeyboardNumberButton extends StatelessWidget {
         this.number.toString(),
         style: TextStyle(
           color: this.style?.color ?? theme.black,
-          fontSize: this.style?.fontSize ?? size.s20,
+          fontSize: this.style?.fontSize ?? size.s28,
           fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
           fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
         ),

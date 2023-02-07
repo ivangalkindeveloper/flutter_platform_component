@@ -30,7 +30,6 @@ class DatePickerScreen extends StatelessWidget {
                   dateRange: FCDateRange(context: context),
                   cupertinoModal: FCPopUpModal(
                     backgroundColor: theme.backgroundScaffold,
-                    appBarTitle: "Date",
                     child: Padding(
                       padding: EdgeInsets.all(size.s16),
                       child: FCDatePicker(

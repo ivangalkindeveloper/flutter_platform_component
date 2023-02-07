@@ -1,18 +1,18 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'dart:ui';
 
-class FCWhiteAlwaysScreenBlurAppBar extends FCBasicBlurAppBar {
-  FCWhiteAlwaysScreenBlurAppBar({
+class FCBlurWhiteAlwaysExpandedModalAppBar extends FCBasicBlurAppBar {
+  FCBlurWhiteAlwaysExpandedModalAppBar({
     super.key,
     required BuildContext context,
-    bool transitionBetweenRoutes = true,
     Color? blurColor,
     double? blurOpacity,
     ImageFilter? blurFilter,
     Widget? prefix,
+    String? cupertinoLocale,
     VoidCallback? onPressedBack,
     String? title,
     TextStyle? style,
@@ -22,13 +22,13 @@ class FCWhiteAlwaysScreenBlurAppBar extends FCBasicBlurAppBar {
     PreferredSizeWidget? bottom,
   }) : super(
           context: context,
-          transitionBetweenRoutes: transitionBetweenRoutes,
-          blurColor: blurColor,
+          transitionBetweenRoutes: false,
+          blurColor: blurColor ?? context.config.theme.blackAlways,
           blurOpacity: blurOpacity,
           blurFilter: blurFilter,
           prefix: _prefix(
-            context: context,
             prefix: prefix,
+            cupertinoLocale: cupertinoLocale,
             onPressedBack: onPressedBack,
           ),
           title: title,
@@ -45,30 +45,17 @@ class FCWhiteAlwaysScreenBlurAppBar extends FCBasicBlurAppBar {
         );
 
   static Widget? _prefix({
-    required BuildContext context,
     required Widget? prefix,
+    required String? cupertinoLocale,
     required VoidCallback? onPressedBack,
   }) {
     if (prefix != null) return prefix;
 
-    if (onPressedBack != null) {
-      final FCConfig config = context.config;
-      final TargetPlatform platform = config.platform;
-      final IFCTheme theme = config.theme;
-
-      return FCBasicIconButton(
-        splashColor: theme.grey,
-        icon: FCIcon.whiteAlways(
-          context: context,
-          icon: FCPlatform.decompose<IconData, IconData, IconData>(
-            platform: platform,
-            cupertino: CupertinoIcons.back,
-            material: Icons.arrow_back,
-          ),
-        ),
+    if (cupertinoLocale != null && onPressedBack != null)
+      return FCAlwaysWhiteModalCloseButton(
+        cupertinoLocale: cupertinoLocale,
         onPressed: onPressedBack,
       );
-    }
 
     return null;
   }

@@ -14,7 +14,7 @@ class PopUpModalScreen extends StatelessWidget {
       backgroundColor: theme.backgroundScaffold,
       appBar: FCScreenAppBar(
         context: context,
-        title: "Small Modal",
+        title: "Pop Up Modal",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: GestureDetector(
@@ -22,7 +22,6 @@ class PopUpModalScreen extends StatelessWidget {
           context: context,
           child: FCPopUpModal(
             backgroundColor: theme.white,
-            appBarTitle: "Pop Up Modal Title",
             child: Container(
               height: size.s32 * 4,
               child: Center(

@@ -7,7 +7,6 @@ class FCWhiteAlwaysExpandedModalAppBar extends FCBasicAppBar {
   FCWhiteAlwaysExpandedModalAppBar({
     super.key,
     required BuildContext context,
-    bool transitionBetweenRoutes = false,
     Color? backgroundColor,
     Widget? prefix,
     String? cupertinoLocale,
@@ -20,7 +19,7 @@ class FCWhiteAlwaysExpandedModalAppBar extends FCBasicAppBar {
     PreferredSizeWidget? bottom,
   }) : super(
           context: context,
-          transitionBetweenRoutes: transitionBetweenRoutes,
+          transitionBetweenRoutes: false,
           backgroundColor: backgroundColor ?? context.config.theme.blackAlways,
           prefix: _prefix(
             prefix: prefix,

@@ -100,16 +100,14 @@ export 'src/widget/app_bar/basic/fc_basic_blur_app_bar.dart';
 // App Bar / Custom
 // App Bar / Custom / Blur
 // App Bar / Custom / Blur / Modal App Bar
-export 'src/widget/app_bar/custom/blur/modal_app_bar/fc_expanded_modal_blur_app_bar.dart';
-export 'src/widget/app_bar/custom/blur/modal_app_bar/fc_pop_up_modal_blur_app_bar.dart';
-export 'src/widget/app_bar/custom/blur/modal_app_bar/fc_white_always_expanded_modal_blur_app_bar.dart';
+export 'src/widget/app_bar/custom/blur/modal_app_bar/fc_blur_expanded_modal_app_bar.dart';
+export 'src/widget/app_bar/custom/blur/modal_app_bar/fc_blur_white_always_expanded_modal_app_bar.dart';
 // App Bar / Custom / Blur / Screen App Bar
-export 'src/widget/app_bar/custom/blur/screen_app_bar/fc_screen_blur_app_bar.dart';
-export 'src/widget/app_bar/custom/blur/screen_app_bar/fc_white_always_screen_blur_app_bar.dart';
+export 'src/widget/app_bar/custom/blur/screen_app_bar/fc_blur_screen_app_bar.dart';
+export 'src/widget/app_bar/custom/blur/screen_app_bar/fc_blur_white_always_screen_app_bar.dart';
 // App Bar / Custom / Default
 // App Bar / Custom / Default / Modal App Bar
 export 'src/widget/app_bar/custom/default/modal_app_bar/fc_expanded_modal_app_bar.dart';
-export 'src/widget/app_bar/custom/default/modal_app_bar/fc_pop_up_modal_app_bar.dart';
 export 'src/widget/app_bar/custom/default/modal_app_bar/fc_white_always_expanded_modal_app_bar.dart';
 // App Bar / Custom / Default / Screen App Bar
 export 'src/widget/app_bar/custom/default/screen_app_bar/fc_screen_app_bar.dart';
@@ -862,7 +860,8 @@ export 'src/widget/modal/action_modal/fc_action_modal_item.dart';
 export 'src/widget/modal/action_modal/fc_action_modal.dart';
 // Modal / Modal
 // Modal / Modal / Blur
-//TODO
+export 'src/widget/modal/modal/blur/fc_blur_expanded_modal.dart';
+export 'src/widget/modal/modal/blur/fc_blur_white_always_expanded_modal.dart';
 // Modal / Modal / Default
 export 'src/widget/modal/modal/default/fc_expanded_modal.dart';
 export 'src/widget/modal/modal/default/fc_pop_up_modal.dart';

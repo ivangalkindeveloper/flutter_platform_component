@@ -1,19 +1,18 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 import 'dart:ui';
 
-class FCWhiteAlwaysExpandedModalBlurAppBar extends FCBasicBlurAppBar {
-  FCWhiteAlwaysExpandedModalBlurAppBar({
+class FCBlurScreenAppBar extends FCBasicBlurAppBar {
+  FCBlurScreenAppBar({
     super.key,
     required BuildContext context,
-    bool transitionBetweenRoutes = false,
+    bool transitionBetweenRoutes = true,
     Color? blurColor,
     double? blurOpacity,
     ImageFilter? blurFilter,
     Widget? prefix,
-    String? cupertinoLocale,
     VoidCallback? onPressedBack,
     String? title,
     TextStyle? style,
@@ -24,21 +23,16 @@ class FCWhiteAlwaysExpandedModalBlurAppBar extends FCBasicBlurAppBar {
   }) : super(
           context: context,
           transitionBetweenRoutes: transitionBetweenRoutes,
-          blurColor: blurColor ?? context.config.theme.blackAlways,
+          blurColor: blurColor,
           blurOpacity: blurOpacity,
           blurFilter: blurFilter,
           prefix: _prefix(
+            context: context,
             prefix: prefix,
-            cupertinoLocale: cupertinoLocale,
             onPressedBack: onPressedBack,
           ),
           title: title,
-          style: TextStyle(
-            color: style?.color ?? context.config.theme.whiteAlways,
-            fontSize: style?.fontSize,
-            fontWeight: style?.fontWeight,
-            fontFamily: style?.fontFamily,
-          ),
+          style: style,
           middle: middle,
           postfix: postfix,
           bottomPadding: bottomPadding,
@@ -46,17 +40,30 @@ class FCWhiteAlwaysExpandedModalBlurAppBar extends FCBasicBlurAppBar {
         );
 
   static Widget? _prefix({
+    required BuildContext context,
     required Widget? prefix,
-    required String? cupertinoLocale,
     required VoidCallback? onPressedBack,
   }) {
     if (prefix != null) return prefix;
 
-    if (cupertinoLocale != null && onPressedBack != null)
-      return FCAlwaysWhiteModalCloseButton(
-        cupertinoLocale: cupertinoLocale,
+    if (onPressedBack != null) {
+      final FCConfig config = context.config;
+      final TargetPlatform platform = config.platform;
+      final IFCTheme theme = config.theme;
+
+      return FCBasicIconButton(
+        splashColor: theme.greyLight,
+        icon: FCIcon.black(
+          context: context,
+          icon: FCPlatform.decompose<IconData, IconData, IconData>(
+            platform: platform,
+            cupertino: CupertinoIcons.back,
+            material: Icons.arrow_back,
+          ),
+        ),
         onPressed: onPressedBack,
       );
+    }
 
     return null;
   }

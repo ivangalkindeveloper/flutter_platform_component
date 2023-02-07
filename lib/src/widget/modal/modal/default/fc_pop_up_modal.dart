@@ -5,32 +5,18 @@ import 'package:flutter/widgets.dart';
 class FCPopUpModal extends StatelessWidget {
   const FCPopUpModal({
     super.key,
-    this.appBarBackgroundColor,
-    this.appBarPrefix,
-    this.onPressedBack,
-    this.appBarTitle,
-    this.appBarStyle,
-    this.appBarMiddle,
-    this.appBarProstfix,
-    this.appBarBottomPadding,
-    this.appBarBottom,
     this.backgroundColor,
+    this.barColor,
+    this.barHeight,
+    this.barWidth,
     this.padding,
     required this.child,
   });
 
-  // App Bar
-  final Color? appBarBackgroundColor;
-  final Widget? appBarPrefix;
-  final VoidCallback? onPressedBack;
-  final String? appBarTitle;
-  final TextStyle? appBarStyle;
-  final Widget? appBarMiddle;
-  final Widget? appBarProstfix;
-  final EdgeInsets? appBarBottomPadding;
-  final PreferredSizeWidget? appBarBottom;
-  // Child
   final Color? backgroundColor;
+  final Color? barColor;
+  final double? barHeight;
+  final double? barWidth;
   final EdgeInsets? padding;
   final Widget child;
 
@@ -46,22 +32,20 @@ class FCPopUpModal extends StatelessWidget {
         topRight: config.modalBorderRadius.topRight,
       ),
       child: Container(
-        color: this.backgroundColor ?? theme.white,
+        color: this.backgroundColor ?? theme.backgroundScaffold,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            FCPopUpModalAppBar(
-              context: context,
-              backgroundColor: this.appBarBackgroundColor,
-              onPressedBack: this.onPressedBack,
-              prefix: this.appBarPrefix,
-              title: this.appBarTitle,
-              style: this.appBarStyle,
-              middle: this.appBarMiddle,
-              postfix: this.appBarProstfix,
-              bottomPadding: this.appBarBottomPadding,
-              bottom: this.appBarBottom,
+            SizedBox(height: size.s16 / 2),
+            Container(
+              height: this.barHeight ?? size.s20 / 4,
+              width: this.barWidth ?? size.s32,
+              decoration: BoxDecoration(
+                color: theme.greyLight,
+                borderRadius: BorderRadius.circular(this.barHeight ?? size.s16 / 2),
+              ),
             ),
+            SizedBox(height: size.s16 / 2),
             SafeArea(
               top: false,
               child: Padding(

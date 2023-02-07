@@ -4,8 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
-class FCScreenBlurAppBar extends FCBasicBlurAppBar {
-  FCScreenBlurAppBar({
+class FCBlurWhiteAlwaysScreenAppBar extends FCBasicBlurAppBar {
+  FCBlurWhiteAlwaysScreenAppBar({
     super.key,
     required BuildContext context,
     bool transitionBetweenRoutes = true,
@@ -32,7 +32,12 @@ class FCScreenBlurAppBar extends FCBasicBlurAppBar {
             onPressedBack: onPressedBack,
           ),
           title: title,
-          style: style,
+          style: TextStyle(
+            color: style?.color ?? context.config.theme.whiteAlways,
+            fontSize: style?.fontSize,
+            fontWeight: style?.fontWeight,
+            fontFamily: style?.fontFamily,
+          ),
           middle: middle,
           postfix: postfix,
           bottomPadding: bottomPadding,
@@ -52,8 +57,8 @@ class FCScreenBlurAppBar extends FCBasicBlurAppBar {
       final IFCTheme theme = config.theme;
 
       return FCBasicIconButton(
-        splashColor: theme.greyLight,
-        icon: FCIcon.black(
+        splashColor: theme.grey,
+        icon: FCIcon.whiteAlways(
           context: context,
           icon: FCPlatform.decompose<IconData, IconData, IconData>(
             platform: platform,

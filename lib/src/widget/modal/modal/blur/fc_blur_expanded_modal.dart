@@ -1,11 +1,14 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
+import 'dart:ui';
 
-class FCWhiteAlwaysExpandedModal extends StatelessWidget {
-  const FCWhiteAlwaysExpandedModal({
+class FCBlurExpandedModal extends StatelessWidget {
+  const FCBlurExpandedModal({
     super.key,
-    this.appBarBackgroundColor,
+    this.appBarBlurColor,
+    this.appBarBlurOpacity,
+    this.appBarBlurFilter,
     this.appBarPrefix,
     this.appBarCupertinoLocale,
     this.onPressedBack,
@@ -20,7 +23,9 @@ class FCWhiteAlwaysExpandedModal extends StatelessWidget {
   });
 
   // App Bar
-  final Color? appBarBackgroundColor;
+  final Color? appBarBlurColor;
+  final double? appBarBlurOpacity;
+  final ImageFilter? appBarBlurFilter;
   final Widget? appBarPrefix;
   final String? appBarCupertinoLocale;
   final VoidCallback? onPressedBack;
@@ -45,9 +50,11 @@ class FCWhiteAlwaysExpandedModal extends StatelessWidget {
         topRight: config.modalBorderRadius.topRight,
       ),
       child: FCScaffold(
-        appBar: FCWhiteAlwaysExpandedModalAppBar(
+        appBar: FCBlurExpandedModalAppBar(
           context: context,
-          backgroundColor: this.appBarBackgroundColor ?? theme.blackAlways,
+          blurColor: this.appBarBlurColor,
+          blurOpacity: this.appBarBlurOpacity,
+          blurFilter: this.appBarBlurFilter,
           prefix: this.appBarPrefix,
           cupertinoLocale: this.appBarCupertinoLocale,
           onPressedBack: this.onPressedBack,
@@ -58,7 +65,7 @@ class FCWhiteAlwaysExpandedModal extends StatelessWidget {
           bottomPadding: this.appBarBottomPadding,
           bottom: this.appBarBottom,
         ),
-        backgroundColor: this.backgroundColor ?? theme.blackAlways,
+        backgroundColor: this.backgroundColor ?? theme.backgroundScaffold,
         body: this.body,
       ),
     );

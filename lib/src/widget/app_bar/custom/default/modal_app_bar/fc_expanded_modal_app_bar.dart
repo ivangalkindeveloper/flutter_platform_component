@@ -6,7 +6,6 @@ class FCExpandedModalAppBar extends FCBasicAppBar {
   FCExpandedModalAppBar({
     super.key,
     required BuildContext context,
-    bool transitionBetweenRoutes = false,
     Color? backgroundColor,
     Widget? prefix,
     String? cupertinoLocale,
@@ -19,7 +18,7 @@ class FCExpandedModalAppBar extends FCBasicAppBar {
     PreferredSizeWidget? bottom,
   }) : super(
           context: context,
-          transitionBetweenRoutes: transitionBetweenRoutes,
+          transitionBetweenRoutes: false,
           backgroundColor: backgroundColor,
           prefix: _prefix(
             prefix: prefix,

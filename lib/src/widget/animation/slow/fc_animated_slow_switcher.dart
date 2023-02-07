@@ -20,7 +20,10 @@ class FCAnimatedSlowSwitcher extends StatelessWidget {
       switchInCurve: Curves.easeInOut,
       reverseDuration: size.durationSlow,
       switchOutCurve: Curves.easeInOut,
-      child: this.child ?? Container(),
+      child: this.child ??
+          Container(
+            key: UniqueKey(),
+          ),
     );
   }
 }
