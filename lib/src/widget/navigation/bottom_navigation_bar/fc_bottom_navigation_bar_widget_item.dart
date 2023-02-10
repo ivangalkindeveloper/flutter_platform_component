@@ -5,14 +5,12 @@ import 'package:flutter/widgets.dart';
 class FCBottomNavigationBarWidgetItem extends BottomNavigationBarItem {
   FCBottomNavigationBarWidgetItem({
     required BuildContext context,
-    Widget? badgeContent,
     required Widget child,
     String? label,
     String? tooltip,
   }) : super(
           icon: _item(
             context: context,
-            badgeContent: badgeContent,
             child: child,
           ),
           label: label,
@@ -21,7 +19,6 @@ class FCBottomNavigationBarWidgetItem extends BottomNavigationBarItem {
 
   static Widget _item({
     required BuildContext context,
-    required Widget? badgeContent,
     required Widget child,
   }) {
     final FCConfig config = context.config;
@@ -30,10 +27,7 @@ class FCBottomNavigationBarWidgetItem extends BottomNavigationBarItem {
     return SizedBox(
       height: size.iconHeightLarge,
       width: size.iconHeightLarge,
-      child: FCBasicBadge(
-        content: badgeContent,
-        child: child,
-      ),
+      child: child,
     );
   }
 }

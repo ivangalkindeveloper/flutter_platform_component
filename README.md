@@ -6,17 +6,17 @@ The package works according to the principle - fill out one contract - get all r
 ### Platform decomposition
 Components are separated by platform by style and behavior.
 ### One theme contract
-Extension themes along with the ThemeData class are very good when you use widgets only for Design Material.
-In case you want to get the correct behavior of widgets for the platform, you must fill in Theme and CupertinoTheme and each time remember to separate these colors in the widgets you use.
-Theme Extension works in the same way as this package.
+Extension themes along with the ThemeData class are very good when you use widgets only for Design Material.\
+In case you want to get the correct behavior of widgets for the platform, you must fill in Theme and CupertinoTheme and each time remember to separate these colors in the widgets you use.\
+Theme Extension works in the same way as this package.\
 In the case of this package - it is necessary to fill in only one contract of the theme used.
 ### Color scheme
-The color scheme was created in terms of the convenience of designers (primary and secondary colors).
+The color scheme was created in terms of the convenience of designers (primary and secondary colors).\
 In the scheme by name, permanent colors and tint colors are created (note - primaryLight and primaryDark).
 ### Boilerplate
 Ready-made components reduce the declarative layout code.
 ### Simplified and unified API
-Each package component has simplified APIs because some component properties are never used.
+Each package component has simplified APIs because some component properties are never used.\
 All component property names are unified, for example, you will never see "background" and "backgroundColor".
 ### Disabled Components
 Every component that can be clicked has the property to be disabled implemented.
@@ -58,27 +58,14 @@ class MyApp extends StatelessWidget {
       size: Sizes(),
       textStyle: TextStyles(),
       haptic: Haptics(),
-      child: const App(),
+      child: FCApp(
+        context: context,
+        home: const HomeWidget(),
+      ),
     );
   }
 }
 
-class App extends StatelessWidget {
-  const App({Key? key});
-
-  @override
-  Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-
-    return FCApp(
-      materialThemeMode: theme.materialThemeMode,
-      materialThemeData: theme.materialThemeData,
-      cupertinoThemeData: theme.cupertinoThemeData,
-      home: const HomeWidget(),
-    );
-  }
-}
 ```
 Usage basic components:
 ```dart

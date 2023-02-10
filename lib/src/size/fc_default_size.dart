@@ -145,25 +145,23 @@ class FCDefaultSize implements IFCSize {
   // Duration
   // Duration / Default
   @override
-  final Duration durationFast = const Duration(milliseconds: 160);
+  final Duration durationAnimationFast = const Duration(milliseconds: 160);
   @override
-  final Duration durationDefault = const Duration(milliseconds: 320);
+  final Duration durationAnimationDefault = const Duration(milliseconds: 320);
   @override
-  final Duration durationSlow = const Duration(milliseconds: 640);
+  final Duration durationAnimationSlow = const Duration(milliseconds: 640);
+  // Duration / Badge
+  @override
+  final Duration durationBadge = const Duration(milliseconds: 320);
+  // Duration / Page Indicator
+  @override
+  final Duration durationPageIndicator = const Duration(milliseconds: 320);
   // Duration / Shimmer
   @override
-  final Duration durationShimmerFast = const Duration(milliseconds: 500);
-  @override
-  final Duration durationShimmerDefault = const Duration(seconds: 1);
-  @override
-  final Duration durationShimmerSlow = const Duration(seconds: 4);
+  final Duration durationShimmer = const Duration(seconds: 1);
   // Duration / Snackbar
   @override
-  final Duration durationSnackbarFast = const Duration(seconds: 2);
-  @override
-  final Duration durationSnackbarDefault = const Duration(seconds: 8);
-  @override
-  final Duration durationSnackbarSlow = const Duration(seconds: 16);
+  final Duration durationSnackbar = const Duration(seconds: 4);
 
   // Opacity
   // Opacity / Blur

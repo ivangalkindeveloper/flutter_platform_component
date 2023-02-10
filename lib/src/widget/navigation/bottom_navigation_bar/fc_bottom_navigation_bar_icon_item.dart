@@ -6,7 +6,6 @@ class FCBottomNavigationBarIconItem extends BottomNavigationBarItem {
   FCBottomNavigationBarIconItem({
     required BuildContext context,
     required bool isSelected,
-    Widget? badgeContent,
     required IconData iconData,
     String? label,
     String? tooltip,
@@ -14,7 +13,6 @@ class FCBottomNavigationBarIconItem extends BottomNavigationBarItem {
           icon: _item(
             context: context,
             isSelected: isSelected,
-            badgeContent: badgeContent,
             iconData: iconData,
           ),
           label: label,
@@ -24,7 +22,6 @@ class FCBottomNavigationBarIconItem extends BottomNavigationBarItem {
   static Widget _item({
     required BuildContext context,
     required bool isSelected,
-    required Widget? badgeContent,
     required IconData iconData,
   }) {
     final FCConfig config = context.config;
@@ -33,11 +30,8 @@ class FCBottomNavigationBarIconItem extends BottomNavigationBarItem {
     return SizedBox(
       height: size.iconHeightLarge,
       width: size.iconHeightLarge,
-      child: FCBasicBadge(
-        content: badgeContent,
-        child: Icon(
-          iconData,
-        ),
+      child: Icon(
+        iconData,
       ),
     );
   }

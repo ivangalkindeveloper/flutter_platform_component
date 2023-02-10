@@ -19,7 +19,7 @@ class FCAnimatedFastOpacity extends StatelessWidget {
 
     return AnimatedOpacity(
       opacity: this.condition ? 1 : 0,
-      duration: size.durationFast,
+      duration: size.durationAnimationFast,
       curve: Curves.easeInOut,
       child: this.child,
     );

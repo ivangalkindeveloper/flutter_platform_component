@@ -22,10 +22,10 @@ class FCAnimatedSlowCrossFade extends StatelessWidget {
     return AnimatedCrossFade(
       crossFadeState:
           this.condition ? CrossFadeState.showFirst : CrossFadeState.showSecond,
-      duration: size.durationSlow,
+      duration: size.durationAnimationSlow,
       firstCurve: Curves.easeInOut,
       firstChild: this.firstChild,
-      reverseDuration: size.durationSlow,
+      reverseDuration: size.durationAnimationSlow,
       secondCurve: Curves.easeInOut,
       secondChild: this.secondChild,
       sizeCurve: Curves.easeInOut,

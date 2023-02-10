@@ -16,9 +16,9 @@ class FCAnimatedSlowSwitcher extends StatelessWidget {
     final IFCSize size = config.size;
 
     return AnimatedSwitcher(
-      duration: size.durationSlow,
+      duration: size.durationAnimationSlow,
       switchInCurve: Curves.easeInOut,
-      reverseDuration: size.durationSlow,
+      reverseDuration: size.durationAnimationSlow,
       switchOutCurve: Curves.easeInOut,
       child: this.child ??
           Container(

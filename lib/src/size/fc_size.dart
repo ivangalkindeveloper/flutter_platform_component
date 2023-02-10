@@ -89,18 +89,18 @@ abstract class IFCSize {
   abstract final DateTime upperDate;
 
   // Duration
-  // Duration / Default
-  abstract final Duration durationFast;
-  abstract final Duration durationDefault;
-  abstract final Duration durationSlow;
+  // Duration / Animation
+  abstract final Duration durationAnimationFast;
+  abstract final Duration durationAnimationDefault;
+  abstract final Duration durationAnimationSlow;
+  // Duration / Badge
+  abstract final Duration durationBadge;
+  // Duration / Page Indicator
+  abstract final Duration durationPageIndicator;
   // Duration / Shimmer
-  abstract final Duration durationShimmerFast;
-  abstract final Duration durationShimmerDefault;
-  abstract final Duration durationShimmerSlow;
+  abstract final Duration durationShimmer;
   // Duration / Snackbar
-  abstract final Duration durationSnackbarFast;
-  abstract final Duration durationSnackbarDefault;
-  abstract final Duration durationSnackbarSlow;
+  abstract final Duration durationSnackbar;
 
   // Opacity
   // Opacity / Blur

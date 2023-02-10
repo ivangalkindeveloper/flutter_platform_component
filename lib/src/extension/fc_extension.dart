@@ -21,7 +21,7 @@ extension FCTransitionTypeExtension on FCTransitionType {
 }
 
 extension FCBadgePositionExtension on FCBadgePosition {
-  badges.BadgePosition get packageMap {
+  badges.BadgePosition get packageMapForCounter {
     switch (this) {
       case FCBadgePosition.center:
         return badges.BadgePosition.center();
@@ -29,10 +29,37 @@ extension FCBadgePositionExtension on FCBadgePosition {
         return badges.BadgePosition.topStart();
       case FCBadgePosition.topEnd:
         return badges.BadgePosition.topEnd();
-      case FCBadgePosition.bottomEnd:
-        return badges.BadgePosition.bottomEnd();
       case FCBadgePosition.bottomStart:
         return badges.BadgePosition.bottomStart();
+      case FCBadgePosition.bottomEnd:
+        return badges.BadgePosition.bottomEnd();
+    }
+  }
+
+  badges.BadgePosition get packageMapForDot {
+    switch (this) {
+      case FCBadgePosition.center:
+        return badges.BadgePosition.center();
+      case FCBadgePosition.topStart:
+        return badges.BadgePosition.topStart(
+          top: -4,
+          start: -4,
+        );
+      case FCBadgePosition.topEnd:
+        return badges.BadgePosition.topEnd(
+          top: -4,
+          end: -4,
+        );
+      case FCBadgePosition.bottomStart:
+        return badges.BadgePosition.bottomStart(
+          bottom: -4,
+          start: -4,
+        );
+      case FCBadgePosition.bottomEnd:
+        return badges.BadgePosition.bottomEnd(
+          bottom: -4,
+          end: -4,
+        );
     }
   }
 }

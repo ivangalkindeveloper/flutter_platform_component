@@ -1,10 +1,12 @@
 import 'package:flutter_component/src/platform/fc_platform_widget.dart';
+import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FCApp extends FCPlatformWidget {
   FCApp({
     super.key,
+    required BuildContext context,
     bool debugShowCheckedModeBanner = false,
     Locale? locale,
     List<Locale> supportedLocales = const [],
@@ -36,7 +38,7 @@ class FCApp extends FCPlatformWidget {
             onGenerateInitialRoutes: onGenerateInitialRoutes,
             onGenerateRoute: onGenerateRoute,
             onGenerateTitle: onGenerateTitle,
-            theme: cupertinoThemeData,
+            theme: cupertinoThemeData ?? context.config.theme.cupertinoThemeData,
             builder: builder,
             home: home,
           ),
@@ -56,8 +58,8 @@ class FCApp extends FCPlatformWidget {
             onGenerateInitialRoutes: onGenerateInitialRoutes,
             onGenerateRoute: onGenerateRoute,
             onGenerateTitle: onGenerateTitle,
-            themeMode: materialThemeMode,
-            theme: materialThemeData,
+            themeMode: materialThemeMode ?? context.config.theme.materialThemeMode,
+            theme: materialThemeData ?? context.config.theme.materialThemeData,
             builder: builder,
             home: home,
           ),

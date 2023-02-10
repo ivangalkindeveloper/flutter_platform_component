@@ -22,7 +22,7 @@ class FCAnimatedFastFadeOut extends StatelessWidget {
 
     return FadeOut(
       child: child,
-      duration: size.durationFast,
+      duration: size.durationAnimationFast,
       controller: this.onCreated,
       animate: this.isAnimate,
     );

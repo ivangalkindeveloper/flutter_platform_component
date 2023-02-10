@@ -21,7 +21,7 @@ class FCAnimatedSlowTransitionSwitcher extends StatelessWidget {
     final IFCSize size = config.size;
 
     return PageTransitionSwitcher(
-      duration: size.durationSlow,
+      duration: size.durationAnimationSlow,
       reverse: this.isReverse,
       transitionBuilder: (
         Widget childWidget,

@@ -6,7 +6,6 @@ class FCBottomNavigationBarWidgetItemGradient extends BottomNavigationBarItem {
   FCBottomNavigationBarWidgetItemGradient({
     required BuildContext context,
     required bool isSelected,
-    Widget? badgeContent,
     required Widget child,
     String? label,
     String? tooltip,
@@ -14,7 +13,6 @@ class FCBottomNavigationBarWidgetItemGradient extends BottomNavigationBarItem {
           icon: _item(
             context: context,
             isSelected: isSelected,
-            badgeContent: badgeContent,
             child: child,
           ),
           label: label,
@@ -24,7 +22,6 @@ class FCBottomNavigationBarWidgetItemGradient extends BottomNavigationBarItem {
   static Widget _item({
     required BuildContext context,
     required bool isSelected,
-    required Widget? badgeContent,
     required Widget child,
   }) {
     final FCConfig config = context.config;
@@ -34,12 +31,9 @@ class FCBottomNavigationBarWidgetItemGradient extends BottomNavigationBarItem {
     return SizedBox(
       height: size.iconHeightLarge,
       width: size.iconHeightLarge,
-      child: FCBasicBadge(
-        content: badgeContent,
-        child: FCGradientMask(
-          gradient: isSelected ? theme.primaryGradient : theme.greyGradient,
-          child: child,
-        ),
+      child: FCGradientMask(
+        gradient: isSelected ? theme.primaryGradient : theme.greyGradient,
+        child: child,
       ),
     );
   }

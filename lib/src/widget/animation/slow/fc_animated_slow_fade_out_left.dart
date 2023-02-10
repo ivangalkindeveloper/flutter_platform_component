@@ -24,7 +24,7 @@ class FCAnimatedSlowFadeOutLeft extends StatelessWidget {
 
     return FadeOutLeft(
       child: child,
-      duration: size.durationSlow,
+      duration: size.durationAnimationSlow,
       controller: this.onCreated,
       animate: this.isAnimate,
       from: this.from ?? size.s16 * 4,

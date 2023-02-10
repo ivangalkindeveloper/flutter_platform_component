@@ -22,7 +22,7 @@ class FCAnimatedFadeIn extends StatelessWidget {
 
     return FadeIn(
       child: child,
-      duration: size.durationDefault,
+      duration: size.durationAnimationDefault,
       controller: this.onCreated,
       animate: this.isAnimate,
     );

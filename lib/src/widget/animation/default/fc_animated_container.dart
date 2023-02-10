@@ -32,7 +32,7 @@ class FCAnimatedContainer extends StatelessWidget {
       constraints: this.constraints,
       decoration: this.decoration,
       padding: this.padding,
-      duration: size.durationDefault,
+      duration: size.durationAnimationDefault,
       curve: Curves.easeInOut,
       child: this.child,
     );

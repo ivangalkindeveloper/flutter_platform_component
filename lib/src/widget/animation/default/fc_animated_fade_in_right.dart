@@ -24,7 +24,7 @@ class FCAnimatedFadeInRight extends StatelessWidget {
 
     return FadeInRight(
       child: child,
-      duration: size.durationDefault,
+      duration: size.durationAnimationDefault,
       controller: this.onCreated,
       animate: this.isAnimate,
       from: this.from ?? size.s16 * 4,

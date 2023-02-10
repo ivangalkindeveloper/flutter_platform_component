@@ -24,7 +24,7 @@ class FCAnimatedSlowFadeInUp extends StatelessWidget {
 
     return FadeInUp(
       child: child,
-      duration: size.durationSlow,
+      duration: size.durationAnimationSlow,
       controller: this.onCreated,
       animate: this.isAnimate,
       from: this.from ?? size.s16 * 4,

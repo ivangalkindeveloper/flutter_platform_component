@@ -9,7 +9,6 @@ class FCBasicIconButton extends FCPlatformWidget {
     required Color splashColor,
     required Widget icon,
     required VoidCallback onPressed,
-    Widget? badgeContent,
     bool isDisabled = false,
     Color? disabledColor,
   }) : super(
@@ -17,7 +16,6 @@ class FCBasicIconButton extends FCPlatformWidget {
             key: key,
             icon: icon,
             onPressed: onPressed,
-            badgeContent: badgeContent,
             isDisabled: isDisabled,
             disabledColor: disabledColor,
           ),
@@ -26,7 +24,6 @@ class FCBasicIconButton extends FCPlatformWidget {
             splashColor: splashColor,
             icon: icon,
             onPressed: onPressed,
-            badgeContent: badgeContent,
             isDisabled: isDisabled,
             disabledColor: disabledColor,
           ),
@@ -38,14 +35,12 @@ class _FCBasicIconButtonCupertino extends StatelessWidget {
     super.key,
     required this.icon,
     required this.onPressed,
-    required this.badgeContent,
     required this.isDisabled,
     required this.disabledColor,
   });
 
   final Widget icon;
   final VoidCallback onPressed;
-  final Widget? badgeContent;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -64,10 +59,7 @@ class _FCBasicIconButtonCupertino extends StatelessWidget {
             minSize: size.iconHeightLarge,
             onPressed: this.isDisabled ? () {} : this.onPressed,
             padding: EdgeInsets.zero,
-            child: FCBasicBadge(
-              content: this.badgeContent,
-              child: this.icon,
-            ),
+            child: this.icon,
           ),
           Positioned.fill(
             child: FCAnimatedSwitcher(
@@ -90,7 +82,6 @@ class _FCBasicIconButtonMaterial extends StatelessWidget {
     required this.splashColor,
     required this.icon,
     required this.onPressed,
-    required this.badgeContent,
     required this.isDisabled,
     required this.disabledColor,
   });
@@ -98,7 +89,6 @@ class _FCBasicIconButtonMaterial extends StatelessWidget {
   final Color splashColor;
   final Widget icon;
   final VoidCallback onPressed;
-  final Widget? badgeContent;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -118,10 +108,7 @@ class _FCBasicIconButtonMaterial extends StatelessWidget {
             iconSize: size.iconHeightLarge,
             onPressed: this.isDisabled ? () {} : this.onPressed,
             padding: EdgeInsets.zero,
-            icon: FCBasicBadge(
-              content: this.badgeContent,
-              child: this.icon,
-            ),
+            icon: this.icon,
           ),
           Positioned.fill(
             child: FCAnimatedSwitcher(

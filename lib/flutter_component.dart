@@ -115,127 +115,123 @@ export 'src/widget/app_bar/custom/default/screen_app_bar/fc_white_always_screen_
 
 // Badge
 // Badge / Basic
-// Badge / Basic / Badge
-export 'src/widget/badge/basic/badge/fc_basic_badge.dart';
-export 'src/widget/badge/basic/badge/fc_basic_fast_badge.dart';
-export 'src/widget/badge/basic/badge/fc_basic_slow_badge.dart';
-// Badge / Basic / Counter Badge Content
-export 'src/widget/badge/basic/counter_badge_content/fc_basic_counter_badge_content.dart';
-export 'src/widget/badge/basic/counter_badge_content/fc_basic_gradient_counter_badge_content.dart';
-// Badge / Basic / Dot Badge Content
-export 'src/widget/badge/basic/dot_badge_content/fc_basic_dot_badge_content.dart';
-export 'src/widget/badge/basic/dot_badge_content/fc_basic_gradient_dot_badge_content.dart';
+// Badge / Basic / Counter Badge
+export 'src/widget/badge/basic/counter_badge/fc_basic_counter_badge.dart';
+export 'src/widget/badge/basic/counter_badge/fc_basic_gradient_counter_badge.dart';
+// Badge / Basic / Dot Badge
+export 'src/widget/badge/basic/dot_badge/fc_basic_dot_badge.dart';
+export 'src/widget/badge/basic/dot_badge/fc_basic_gradient_dot_badge.dart';
 // Badge / Custom
-// Badge / Custom / Counter Badge Content
-// Badge / Custom / Counter Badge Content / Default
-// Badge / Custom / Counter Badge Content / Default / Dark
-export 'src/widget/badge/custom/counter_badge_content/default/dark/fc_blue_dark_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/dark/fc_green_dark_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/dark/fc_grey_dark_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/dark/fc_primary_dark_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/dark/fc_red_dark_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/dark/fc_secondary_dark_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/dark/fc_yellow_dark_counter_badge_content.dart';
-// Badge / Custom / Counter Badge Content / Default / Default
-export 'src/widget/badge/custom/counter_badge_content/default/default/fc_black_always_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/default/fc_black_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/default/fc_blue_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/default/fc_green_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/default/fc_grey_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/default/fc_primary_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/default/fc_red_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/default/fc_secondary_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/default/fc_white_always_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/default/fc_white_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/default/fc_yellow_counter_badge_content.dart';
-// Badge / Custom / Counter Badge Content / Default / Light
-export 'src/widget/badge/custom/counter_badge_content/default/light/fc_blue_light_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/light/fc_green_light_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/light/fc_grey_light_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/light/fc_primary_light_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/light/fc_red_light_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/light/fc_secondary_light_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/default/light/fc_yellow_light_counter_badge_content.dart';
-// Badge / Custom / Counter Badge Content / Gradient
-// Badge / Custom / Counter Badge Content / Gradient / Light
-export 'src/widget/badge/custom/counter_badge_content/gradient/dark/fc_blue_dark_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/dark/fc_green_dark_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/dark/fc_grey_dark_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/dark/fc_primary_dark_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/dark/fc_red_dark_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/dark/fc_secondary_dark_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/dark/fc_yellow_dark_gradient_counter_badge_content.dart';
-// Badge / Custom / Counter Badge Content / Gradient / Default
-export 'src/widget/badge/custom/counter_badge_content/gradient/default/fc_blue_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/default/fc_green_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/default/fc_grey_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/default/fc_primary_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/default/fc_red_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/default/fc_secondary_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/default/fc_yellow_gradient_counter_badge_content.dart';
-// Badge / Custom / Counter Badge Content / Gradient / Light
-export 'src/widget/badge/custom/counter_badge_content/gradient/light/fc_blue_light_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/light/fc_green_light_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/light/fc_grey_light_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/light/fc_primary_light_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/light/fc_red_light_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/light/fc_secondary_light_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge_content/gradient/light/fc_yellow_light_gradient_counter_badge_content.dart';
-// Badge / Custom / Dot Badge Content
-// Badge / Custom / Dot Badge Content / Default
-// Badge / Custom / Dot Badge Content / Default / Dark
-export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_blue_dark_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_green_dark_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_grey_dark_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_primary_dark_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_red_dark_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_secondary_dark_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_yellow_dark_dot_badge_content.dart';
-// Badge / Custom / Dot Badge Content / Default / Default
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_black_always_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_black_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_blue_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_green_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_grey_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_primary_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_red_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_secondary_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_white_always_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_white_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_yellow_dot_badge_content.dart';
-// Badge / Custom / Dot Badge Content / Default / Light
-export 'src/widget/badge/custom/dot_badge_content/default/light/fc_blue_light_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/light/fc_green_light_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/light/fc_grey_light_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/light/fc_primary_light_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/light/fc_red_light_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/light/fc_secondary_light_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/light/fc_yellow_light_dot_badge_content.dart';
-// Badge / Custom / Dot Badge Content / Gradient
-// Badge / Custom / Dot Badge Content / Gradient / Dark
-export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_blue_dark_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_green_dark_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_grey_dark_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_primary_dark_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_red_dark_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_secondary_dark_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_yellow_dark_gradient_dot_badge_content.dart';
-// Badge / Custom / Dot Badge Content / Gradient / Default
-export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_blue_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_green_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_grey_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_primary_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_red_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_secondary_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_yellow_gradient_dot_badge_content.dart';
-// Badge / Custom / Dot Badge Content / Gradient / Light
-export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_blue_light_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_green_light_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_grey_light_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_primary_light_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_red_light_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_secondary_light_gradient_dot_badge_content.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_yellow_light_gradient_dot_badge_content.dart';
+// Badge / Custom / Counter Badge
+// Badge / Custom / Counter Badge / Default
+// Badge / Custom / Counter Badge / Default / Dark
+export 'src/widget/badge/custom/counter_badge/default/dark/fc_blue_dark_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/dark/fc_green_dark_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/dark/fc_grey_dark_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/dark/fc_primary_dark_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/dark/fc_red_dark_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/dark/fc_secondary_dark_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/dark/fc_yellow_dark_counter_badge.dart';
+// Badge / Custom / Counter Badge / Default / Default
+export 'src/widget/badge/custom/counter_badge/default/default/fc_black_always_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/default/fc_black_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/default/fc_blue_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/default/fc_green_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/default/fc_grey_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/default/fc_primary_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/default/fc_red_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/default/fc_secondary_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/default/fc_white_always_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/default/fc_white_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/default/fc_yellow_counter_badge.dart';
+// Badge / Custom / Counter Badge / Default / Light
+export 'src/widget/badge/custom/counter_badge/default/light/fc_blue_light_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/light/fc_green_light_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/light/fc_grey_light_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/light/fc_primary_light_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/light/fc_red_light_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/light/fc_secondary_light_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/default/light/fc_yellow_light_counter_badge.dart';
+// Badge / Custom / Counter Badge / Gradient
+// Badge / Custom / Counter Badge / Gradient / Light
+export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_blue_dark_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_green_dark_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_grey_dark_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_primary_dark_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_red_dark_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_secondary_dark_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_yellow_dark_gradient_counter_badge.dart';
+// Badge / Custom / Counter Badge / Gradient / Default
+export 'src/widget/badge/custom/counter_badge/gradient/default/fc_blue_gradient_counter_badge_content.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/default/fc_green_gradient_counter_badge_content.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/default/fc_grey_gradient_counter_badge_content.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/default/fc_primary_gradient_counter_badge_content.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/default/fc_red_gradient_counter_badge_content.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/default/fc_secondary_gradient_counter_badge_content.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/default/fc_yellow_gradient_counter_badge_content.dart';
+// Badge / Custom / Counter Badge / Gradient / Light
+export 'src/widget/badge/custom/counter_badge/gradient/light/fc_blue_light_gradient_counter_badge_content.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/light/fc_green_light_gradient_counter_badge_content.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/light/fc_grey_light_gradient_counter_badge_content.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/light/fc_primary_light_gradient_counter_badge_content.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/light/fc_red_light_gradient_counter_badge_content.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/light/fc_secondary_light_gradient_counter_badge_content.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/light/fc_yellow_light_gradient_counter_badge_content.dart';
+// Badge / Custom / Dot Badge
+// Badge / Custom / Dot Badge / Default
+// Badge / Custom / Dot Badge / Default / Dark
+export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_blue_dark_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_green_dark_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_grey_dark_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_primary_dark_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_red_dark_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_secondary_dark_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_yellow_dark_dot_badge.dart';
+// Badge / Custom / Dot Badge / Default / Default
+export 'src/widget/badge/custom/dot_badge_content/default/default/fc_black_always_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/default/fc_black_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/default/fc_blue_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/default/fc_green_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/default/fc_grey_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/default/fc_primary_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/default/fc_red_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/default/fc_secondary_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/default/fc_white_always_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/default/fc_white_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/default/fc_yellow_dot_badge.dart';
+// Badge / Custom / Dot Badge / Default / Light
+export 'src/widget/badge/custom/dot_badge_content/default/light/fc_blue_light_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/light/fc_green_light_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/light/fc_grey_light_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/light/fc_primary_light_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/light/fc_red_light_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/light/fc_secondary_light_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/default/light/fc_yellow_light_dot_badge.dart';
+// Badge / Custom / Dot Badge / Gradient
+// Badge / Custom / Dot Badge / Gradient / Dark
+export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_blue_dark_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_green_dark_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_grey_dark_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_primary_dark_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_red_dark_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_secondary_dark_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_yellow_dark_gradient_dot_badge.dart';
+// Badge / Custom / Dot Badge / Gradient / Default
+export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_blue_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_green_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_grey_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_primary_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_red_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_secondary_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_yellow_gradient_dot_badge.dart';
+// Badge / Custom / Dot Badge / Gradient / Light
+export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_blue_light_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_green_light_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_grey_light_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_primary_light_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_red_light_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_secondary_light_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_yellow_light_gradient_dot_badge.dart';
 
 // Blur
 export 'src/widget/blur/fc_blur.dart';
@@ -618,15 +614,8 @@ export 'src/widget/icon/fc_icon.dart';
 export 'src/widget/indicator/basic/circular_indicator/fc_basic_circular_indicator.dart';
 export 'src/widget/indicator/basic/circular_indicator/fc_basic_gradient_circular_indicator.dart';
 // Indicator / Basic / Page Indicator
-// Indicator / Basic / Page Indicator / Default
-export 'src/widget/indicator/basic/page_indicator/default/fc_basic_page_indicator.dart';
-export 'src/widget/indicator/basic/page_indicator/default/fc_basic_gradient_page_indicator.dart';
-// Indicator / Basic / Page Indicator / Fast
-export 'src/widget/indicator/basic/page_indicator/fast/fc_basic_fast_page_indicator.dart';
-export 'src/widget/indicator/basic/page_indicator/fast/fc_basic_gradient_fast_page_indicator.dart';
-// Indicator / Basic / Page Indicator / Slow
-export 'src/widget/indicator/basic/page_indicator/slow/fc_basic_slow_page_indicator.dart';
-export 'src/widget/indicator/basic/page_indicator/slow/fc_basic_gradient_slow_page_indicator.dart';
+export 'src/widget/indicator/basic/page_indicator/fc_basic_page_indicator.dart';
+export 'src/widget/indicator/basic/page_indicator/fc_basic_gradient_page_indicator.dart';
 // Indicator / Basic / Progress Indicator
 export 'src/widget/indicator/basic/progress_indicator/fc_basic_progress_indicator.dart';
 // Indicator / Basic / Story Indicator
@@ -636,157 +625,55 @@ export 'src/widget/indicator/basic/story_indicator/fc_basic_story_indicator.dart
 export 'src/widget/indicator/custom/circular_indicator/fc_circular_indicator.dart';
 // Indicator / Custom / Page Indicator
 // Indicator / Custom / Page Indicator / Default
+// Indicator / Custom / Page Indicator / Default / Dark
+export 'src/widget/indicator/custom/page_indicator/default/dark/fc_blue_dark_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/dark/fc_green_dark_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/dark/fc_primary_dark_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/dark/fc_red_dark_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/dark/fc_secondary_dark_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/dark/fc_yellow_dark_page_indicator.dart';
 // Indicator / Custom / Page Indicator / Default / Default
-// Indicator / Custom / Page Indicator / Default / Default / Dark
-export 'src/widget/indicator/custom/page_indicator/default/default/dark/fc_blue_dark_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/dark/fc_green_dark_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/dark/fc_primary_dark_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/dark/fc_red_dark_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/dark/fc_secondary_dark_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/dark/fc_yellow_dark_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Default / Default / Default
-export 'src/widget/indicator/custom/page_indicator/default/default/default/fc_black_always_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/default/fc_black_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/default/fc_blue_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/default/fc_green_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/default/fc_grey_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/default/fc_primary_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/default/fc_red_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/default/fc_secondary_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/default/fc_white_always_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/default/fc_white_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/default/fc_yellow_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Default / Default / Light
-export 'src/widget/indicator/custom/page_indicator/default/default/light/fc_blue_light_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/light/fc_green_light_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/light/fc_primary_light_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/light/fc_red_light_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/light/fc_secondary_light_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/default/light/fc_yellow_light_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Default / Fast
-// Indicator / Custom / Page Indicator / Default / Fast / Dark
-export 'src/widget/indicator/custom/page_indicator/default/fast/dark/fc_blue_dark_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/dark/fc_green_dark_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/dark/fc_primary_dark_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/dark/fc_red_dark_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/dark/fc_secondary_dark_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/dark/fc_yellow_dark_fast_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Default / Fast / Default
-export 'src/widget/indicator/custom/page_indicator/default/fast/default/fc_black_always_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/default/fc_black_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/default/fc_blue_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/default/fc_green_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/default/fc_grey_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/default/fc_primary_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/default/fc_red_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/default/fc_secondary_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/default/fc_white_always_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/default/fc_white_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/default/fc_yellow_fast_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Default / Fast / Light
-export 'src/widget/indicator/custom/page_indicator/default/fast/light/fc_blue_light_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/light/fc_green_light_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/light/fc_primary_light_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/light/fc_red_light_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/light/fc_secondary_light_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/fast/light/fc_yellow_light_fast_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Default / Slow
-// Indicator / Custom / Page Indicator / Default / Slow / Dark
-export 'src/widget/indicator/custom/page_indicator/default/slow/dark/fc_blue_dark_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/dark/fc_green_dark_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/dark/fc_primary_dark_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/dark/fc_red_dark_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/dark/fc_secondary_dark_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/dark/fc_yellow_dark_slow_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Default / Slow / Default
-export 'src/widget/indicator/custom/page_indicator/default/slow/default/fc_black_always_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/default/fc_black_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/default/fc_blue_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/default/fc_green_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/default/fc_grey_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/default/fc_primary_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/default/fc_red_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/default/fc_secondary_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/default/fc_white_always_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/default/fc_white_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/default/fc_yellow_slow_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Default / Slow / Light
-export 'src/widget/indicator/custom/page_indicator/default/slow/light/fc_blue_light_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/light/fc_green_light_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/light/fc_primary_light_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/light/fc_red_light_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/light/fc_secondary_light_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/default/slow/light/fc_yellow_light_slow_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/default/fc_black_always_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/default/fc_black_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/default/fc_blue_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/default/fc_green_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/default/fc_grey_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/default/fc_primary_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/default/fc_red_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/default/fc_secondary_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/default/fc_white_always_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/default/fc_white_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/default/fc_yellow_page_indicator.dart';
+// Indicator / Custom / Page Indicator / Default / Light
+export 'src/widget/indicator/custom/page_indicator/default/light/fc_blue_light_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/light/fc_green_light_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/light/fc_primary_light_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/light/fc_red_light_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/light/fc_secondary_light_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/default/light/fc_yellow_light_page_indicator.dart';
 // Indicator / Custom / Page Indicator / Gradient
+// Indicator / Custom / Page Indicator / Gradient / Dark
+export 'src/widget/indicator/custom/page_indicator/gradient/dark/fc_blue_dark_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/dark/fc_green_dark_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/dark/fc_primary_dark_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/dark/fc_red_dark_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/dark/fc_secondary_dark_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/dark/fc_yellow_dark_gradient_page_indicator.dart';
 // Indicator / Custom / Page Indicator / Gradient / Default
-// Indicator / Custom / Page Indicator / Gradient / Default / Dark
-export 'src/widget/indicator/custom/page_indicator/gradient/default/dark/fc_blue_dark_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/dark/fc_green_dark_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/dark/fc_primary_dark_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/dark/fc_red_dark_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/dark/fc_secondary_dark_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/dark/fc_yellow_dark_gradient_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Gradient / Default / Default
-export 'src/widget/indicator/custom/page_indicator/gradient/default/default/fc_blue_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/default/fc_green_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/default/fc_grey_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/default/fc_primary_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/default/fc_red_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/default/fc_secondary_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/default/fc_yellow_gradient_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Gradient / Default / Light
-export 'src/widget/indicator/custom/page_indicator/gradient/default/light/fc_blue_light_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/light/fc_green_light_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/light/fc_primary_light_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/light/fc_red_light_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/light/fc_secondary_light_gradient_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/default/light/fc_yellow_light_gradient_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Gradient / Fast
-// Indicator / Custom / Page Indicator / Gradient / Fast / Dark
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/dark/fc_blue_dark_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/dark/fc_green_dark_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/dark/fc_primary_dark_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/dark/fc_red_dark_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/dark/fc_secondary_dark_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/dark/fc_yellow_dark_gradient_fast_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Gradient / Fast / Default
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/default/fc_blue_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/default/fc_green_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/default/fc_grey_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/default/fc_primary_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/default/fc_red_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/default/fc_secondary_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/default/fc_yellow_gradient_fast_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Gradient / Fast / Light
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/light/fc_blue_light_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/light/fc_green_light_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/light/fc_primary_light_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/light/fc_red_light_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/light/fc_secondary_light_gradient_fast_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/fast/light/fc_yellow_light_gradient_fast_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Gradient / Slow
-// Indicator / Custom / Page Indicator / Gradient / Slow / Dark
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/dark/fc_blue_dark_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/dark/fc_green_dark_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/dark/fc_primary_dark_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/dark/fc_red_dark_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/dark/fc_secondary_dark_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/dark/fc_yellow_dark_gradient_slow_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Gradient / Slow / Default
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/default/fc_blue_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/default/fc_green_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/default/fc_grey_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/default/fc_primary_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/default/fc_red_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/default/fc_secondary_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/default/fc_yellow_gradient_slow_page_indicator.dart';
-// Indicator / Custom / Page Indicator / Gradient / Slow / Light
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/light/fc_blue_light_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/light/fc_green_light_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/light/fc_primary_light_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/light/fc_red_light_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/light/fc_secondary_light_gradient_slow_page_indicator.dart';
-export 'src/widget/indicator/custom/page_indicator/gradient/slow/light/fc_yellow_light_gradient_slow_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/default/fc_blue_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/default/fc_green_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/default/fc_grey_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/default/fc_primary_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/default/fc_red_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/default/fc_secondary_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/default/fc_yellow_gradient_page_indicator.dart';
+// Indicator / Custom / Page Indicator / Gradient / Light
+export 'src/widget/indicator/custom/page_indicator/gradient/light/fc_blue_light_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/light/fc_green_light_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/light/fc_primary_light_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/light/fc_red_light_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/light/fc_secondary_light_gradient_page_indicator.dart';
+export 'src/widget/indicator/custom/page_indicator/gradient/light/fc_yellow_light_gradient_page_indicator.dart';
 // Indicator / Custom / Progress Indicator
 // Indicator / Custom / Progress Indicator / Dark
 export 'src/widget/indicator/custom/progress_indicator/dark/fc_blue_dark_progress_indicator.dart';

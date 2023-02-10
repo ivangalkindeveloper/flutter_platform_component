@@ -32,7 +32,7 @@ class FCAnimatedSlowContainer extends StatelessWidget {
       constraints: this.constraints,
       decoration: this.decoration,
       padding: this.padding,
-      duration: size.durationSlow,
+      duration: size.durationAnimationSlow,
       curve: Curves.easeInOut,
       child: this.child,
     );
