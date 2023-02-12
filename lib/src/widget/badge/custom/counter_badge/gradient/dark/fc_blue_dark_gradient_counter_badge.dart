@@ -6,7 +6,7 @@ class FCBlueDarkGradientCounterBadge extends StatelessWidget {
   const FCBlueDarkGradientCounterBadge({
     super.key,
     required this.count,
-    required this.isShow,
+    this.isShow = true,
     this.duration,
     this.style,
     this.position = FCBadgePosition.topEnd,

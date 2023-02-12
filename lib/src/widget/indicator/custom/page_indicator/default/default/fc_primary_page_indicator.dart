@@ -6,11 +6,19 @@ class FCPrimaryPageIndicator extends StatelessWidget {
   const FCPrimaryPageIndicator({
     super.key,
     required this.length,
-    required this.currentIndex,
+    required this.value,
+    this.height,
+    this.unselectedWidth,
+    this.selectedWidth,
+    this.duration,
   });
 
   final int length;
-  final int currentIndex;
+  final int value;
+  final double? height;
+  final double? unselectedWidth;
+  final double? selectedWidth;
+  final Duration? duration;
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +27,13 @@ class FCPrimaryPageIndicator extends StatelessWidget {
 
     return FCBasicPageIndicator(
       length: this.length,
-      currentIndex: this.currentIndex,
-      activeColor: theme.primary,
-      inactiveColor: theme.grey,
+      value: this.value,
+      unselectedColor: theme.grey,
+      selectedColor: theme.primary,
+      height: this.height,
+      unselectedWidth: this.unselectedWidth,
+      selectedWidth: this.selectedWidth,
+      duration: this.duration,
     );
   }
 }

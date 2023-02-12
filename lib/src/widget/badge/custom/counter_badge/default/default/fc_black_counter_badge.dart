@@ -6,7 +6,7 @@ class FCBlackCounterBadge extends StatelessWidget {
   const FCBlackCounterBadge({
     super.key,
     required this.count,
-    required this.isShow,
+    this.isShow = true,
     this.duration,
     this.style,
     this.position = FCBadgePosition.topEnd,

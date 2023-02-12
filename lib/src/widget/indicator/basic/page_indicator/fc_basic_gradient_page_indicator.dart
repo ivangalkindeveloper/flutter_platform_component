@@ -2,21 +2,27 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-//TODO height, width
-
 class FCBasicGradientPageIndicator extends StatelessWidget {
   const FCBasicGradientPageIndicator({
     super.key,
     required this.length,
-    required this.currentIndex,
-    required this.activeGradident,
-    required this.inactiveGradident,
+    required this.value,
+    required this.unselectedGradident,
+    required this.selectedGradident,
+    this.height,
+    this.unselectedWidth,
+    this.selectedWidth,
+    this.duration,
   });
 
   final int length;
-  final int currentIndex;
-  final Gradient activeGradident;
-  final Gradient inactiveGradident;
+  final int value;
+  final Gradient unselectedGradident;
+  final Gradient selectedGradident;
+  final double? height;
+  final double? unselectedWidth;
+  final double? selectedWidth;
+  final Duration? duration;
 
   @override
   Widget build(BuildContext context) {
@@ -31,16 +37,18 @@ class FCBasicGradientPageIndicator extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               AnimatedContainer(
-                height: size.s16 / 2,
-                width: this.currentIndex == index ? size.s16 : size.s16 / 2,
+                height: this.height ?? size.s16 / 2,
+                width: this.value == index
+                    ? (this.selectedWidth ?? size.s16)
+                    : (this.unselectedWidth ?? size.s16 / 2),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(size.s16),
-                  gradient: this.currentIndex == index
-                      ? this.activeGradident
-                      : this.inactiveGradident,
+                  gradient: this.value == index
+                      ? this.selectedGradident
+                      : this.unselectedGradident,
                 ),
-                duration: size.durationPageIndicator,
+                duration: this.duration ?? size.durationPageIndicator,
                 curve: Curves.easeInOut,
                 child: const SizedBox(),
               ),

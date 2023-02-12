@@ -7,11 +7,10 @@ import 'package:example/presentation/component/animation/animated_opacity_stack_
 import 'package:example/presentation/component/animation/animated_switcher_screen.dart';
 import 'package:example/presentation/component/animation/animated_transition_switcher_screen.dart';
 import 'package:example/presentation/component/app_bar/app_bar_screen.dart';
-import 'package:example/presentation/component/badge/badge_screen.dart';
-import 'package:example/presentation/component/badge/counter_badge_content_screen.dart';
-import 'package:example/presentation/component/badge/dot_badge_content_screen.dart';
-import 'package:example/presentation/component/badge/gradient_counter_badge_content_screen.dart';
-import 'package:example/presentation/component/badge/gradient_dot_badge_content_screen.dart';
+import 'package:example/presentation/component/badge/counter_badge_screen.dart';
+import 'package:example/presentation/component/badge/dot_badge_screen.dart';
+import 'package:example/presentation/component/badge/gradient_counter_badge_screen.dart';
+import 'package:example/presentation/component/badge/gradient_dot_badge_screen.dart';
 import 'package:example/presentation/component/blur/blur_screen.dart';
 import 'package:example/presentation/component/button/button_default_screen.dart';
 import 'package:example/presentation/component/button/gradient_button_screen.dart';
@@ -46,7 +45,7 @@ import 'package:example/presentation/component/modal/expanded_modal_screen.dart'
 import 'package:example/presentation/component/modal/pop_up_modal_screen.dart';
 import 'package:example/presentation/component/modal/white_always_expanded_modal_screen.dart';
 import 'package:example/presentation/component/navigation/bottom_navigation_bar_screen.dart';
-import 'package:example/presentation/component/navigation/nested_navigation_screen.dart';
+import 'package:example/presentation/component/navigation/navigator_screen.dart';
 import 'package:example/presentation/component/pin_field/gradient_pin_field_screen.dart';
 import 'package:example/presentation/component/pin_field/pin_field_screen.dart';
 import 'package:example/presentation/component/radio/radio_screen.dart';
@@ -84,13 +83,11 @@ class NavigationService {
 
   static const String app_bar_screen = "/app_bar_screen";
 
-  static const String badge_screen = "/badge_screen";
-  static const String counter_badge_content_screen = "/counter_badge_content_screen";
-  static const String gradient_counter_badge_content_screen =
+  static const String counter_badge_screen = "/counter_badge_screen";
+  static const String gradient_counter_badge_screen =
       "/gradient_counter_badge_content_screen";
-  static const String dot_badge_content_screen = "/dot_badge_content_screen";
-  static const String gradient_dot_badge_content_screen =
-      "/gradient_dot_badge_content_screen";
+  static const String dot_badge_screen = "/dot_badge_screen";
+  static const String gradient_dot_badge_screen = "/gradient_dot_badge_content_screen";
 
   static const String blur_screen = "/blur_screen";
 
@@ -140,7 +137,7 @@ class NavigationService {
       "/white_always_expand_modal_screen";
 
   static const String bottom_navigation_bar_screen = "/bottom_navigation_bar_screen";
-  static const String nested_navigation_screen = "/nested_navigation_screen";
+  static const String navigator_screen = "/navigator_screen";
 
   static const String pin_field_screen = "/pin_field_screen";
   static const String gradient_pin_field_screen = "/gradient_pin_field_screen";
@@ -224,30 +221,25 @@ class NavigationService {
           child: const AppBarScreen(),
         );
 
-      case badge_screen:
+      case counter_badge_screen:
         return FCGlobal.pageRoute(
           context: navigatorKey.currentContext!,
-          child: const BadgeScreen(),
+          child: const CounterBadgeScreen(),
         );
-      case counter_badge_content_screen:
+      case gradient_counter_badge_screen:
         return FCGlobal.pageRoute(
           context: navigatorKey.currentContext!,
-          child: const CounterBadgeContentScreen(),
+          child: const GradientCounterBadgeScreen(),
         );
-      case gradient_counter_badge_content_screen:
+      case dot_badge_screen:
         return FCGlobal.pageRoute(
           context: navigatorKey.currentContext!,
-          child: const GradientCounterBadgeContentScreen(),
+          child: const DotBadgeScreen(),
         );
-      case dot_badge_content_screen:
+      case gradient_dot_badge_screen:
         return FCGlobal.pageRoute(
           context: navigatorKey.currentContext!,
-          child: const DotBadgeContentScreen(),
-        );
-      case gradient_dot_badge_content_screen:
-        return FCGlobal.pageRoute(
-          context: navigatorKey.currentContext!,
-          child: const GradientDotBadgeContentScreen(),
+          child: const GradientDotBadgeScreen(),
         );
 
       case blur_screen:
@@ -433,10 +425,10 @@ class NavigationService {
           context: navigatorKey.currentContext!,
           child: const BottomNavigationBarScreen(),
         );
-      case nested_navigation_screen:
+      case navigator_screen:
         return FCGlobal.pageRoute(
           context: navigatorKey.currentContext!,
-          child: NestedNavigationScreen(),
+          child: const NavigatorScreen(),
         );
 
       case pin_field_screen:

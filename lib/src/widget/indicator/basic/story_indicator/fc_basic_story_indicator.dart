@@ -8,20 +8,20 @@ class FCBasicStoryIndicator extends StatelessWidget {
     required this.backgroundColor,
     required this.color,
     required this.length,
-    required this.currentIndex,
+    required this.index,
     required this.value,
   });
 
   final Color backgroundColor;
   final Color color;
   final int length;
-  final int currentIndex;
+  final int index;
   final double value;
 
   double _currentValue({required int index}) {
-    if (index < this.currentIndex) return 1;
+    if (index < this.index) return 1;
 
-    if (index == this.currentIndex) return this.value;
+    if (index == this.index) return this.value;
 
     return 0;
   }

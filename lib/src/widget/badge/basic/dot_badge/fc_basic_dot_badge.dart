@@ -7,7 +7,7 @@ class FCBasicDotBadge extends StatelessWidget {
   const FCBasicDotBadge({
     super.key,
     required this.color,
-    required this.isShow,
+    this.isShow = true,
     this.duration,
     this.position = FCBadgePosition.topEnd,
     required this.child,

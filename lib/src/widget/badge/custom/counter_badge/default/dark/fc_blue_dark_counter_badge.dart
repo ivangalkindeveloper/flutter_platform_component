@@ -1,4 +1,3 @@
-
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
@@ -7,7 +6,7 @@ class FCBlueDarkCounterBadge extends StatelessWidget {
   const FCBlueDarkCounterBadge({
     super.key,
     required this.count,
-    required this.isShow,
+    this.isShow = true,
     this.duration,
     this.style,
     this.position = FCBadgePosition.topEnd,

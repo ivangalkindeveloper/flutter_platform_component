@@ -7,16 +7,15 @@ class ConfigListTextStyle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = FCConfig.of(context);
-    final IFCSize size = config.size;
     final IFCTextStyle textStyle = config.textStyle;
+    final IFCSize size = config.size;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Text Style
         FCText.semiBold20Black(context: context, text: "Text Style:"),
         SizedBox(height: size.s16 / 2),
-        // Text Style / FontWeight
+        // FontWeight
         Row(
           children: [
             Expanded(
@@ -74,7 +73,7 @@ class ConfigListTextStyle extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Text Style / FontFamily
+        // FontFamily
         Row(
           children: [
             Expanded(

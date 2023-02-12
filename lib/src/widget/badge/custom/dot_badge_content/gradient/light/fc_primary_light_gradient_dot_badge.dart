@@ -5,18 +5,14 @@ import 'package:flutter/widgets.dart';
 class FCPrimaryLightGradientDotBadge extends StatelessWidget {
   const FCPrimaryLightGradientDotBadge({
     super.key,
-    required this.count,
-    required this.isShow,
+    this.isShow = true,
     this.duration,
-    this.style,
     this.position = FCBadgePosition.topEnd,
     required this.child,
   });
 
-  final int count;
   final bool isShow;
   final Duration? duration;
-  final TextStyle? style;
   final FCBadgePosition position;
   final Widget child;
 

@@ -12,11 +12,10 @@ class ConfigListPlatform extends StatelessWidget {
 
     return Row(
       children: [
-        // Platfrom
         Expanded(
           child: FCText.semiBold20Black(context: context, text: "Platform:"),
         ),
-        SizedBox(width: size.s16),
+        SizedBox(height: size.s16 / 2),
         FCText.medium18Black(context: context, text: platform.name),
       ],
     );

@@ -65,13 +65,13 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
     this._theme = this._config.theme;
     this._size = this._config.size;
 
-    this._animationController =
-        AnimationController(vsync: this, duration: this._size.durationSlow);
+    this._animationController = AnimationController(
+      vsync: this,
+      duration: this._size.durationAnimationSlow,
+    );
     this._animationController.addStatusListener(this._controllerListener);
     this._errorSubscription = this.widget.errorController?.stream.listen((bool? isError) {
-      if (this.mounted == false) {
-        return;
-      }
+      if (this.mounted == false) return;
 
       if (isError == null) {
         setState(() => this._isError = false);
@@ -80,7 +80,7 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
 
       setState(() => this._isError = true);
       this._animationController.forward();
-      Future.delayed(this._size.durationDefault, () {
+      Future.delayed(this._size.durationAnimationDefault, () {
         this._haptic.error();
         this.widget.errorController?.add(null);
         this.widget.controller?.clear();
@@ -97,12 +97,10 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
   }
 
   void _controllerListener(AnimationStatus status) {
-    if (status == AnimationStatus.completed) {
-      this._animationController.reverse();
-    }
+    if (status == AnimationStatus.completed) this._animationController.reverse();
   }
 
-  PinTheme _codeItem({
+  PinTheme _item({
     required Gradient backgroundGradient,
     Color? borderColor,
   }) =>
@@ -117,7 +115,7 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
           border: borderColor != null
               ? Border.all(
                   color: borderColor,
-                  width: this._config.buttonBorderWidth,
+                  width: this._config.fieldBorderWidth,
                 )
               : null,
         ),
@@ -141,25 +139,25 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
             color: Colors.transparent,
             child: Pinput(
               length: this.widget.length,
-              animationDuration: this._size.durationFast,
+              controller: this.widget.controller,
+              focusNode: this.widget.focusNode,
               pinAnimationType: PinAnimationType.fade,
-              forceErrorState: this._isError,
-              defaultPinTheme: this._codeItem(
+              animationDuration: this._size.durationAnimationFast,
+              animationCurve: Curves.easeInOut,
+              defaultPinTheme: this._item(
                 backgroundGradient: this.widget.unfocusedBackgroundGradient,
               ),
-              focusedPinTheme: this._codeItem(
+              focusedPinTheme: this._item(
                 backgroundGradient: this.widget.focusedBackgroundGradient,
                 borderColor: this.widget.focusedBorderColor,
               ),
-              submittedPinTheme: this._codeItem(
+              submittedPinTheme: this._item(
                 backgroundGradient: this.widget.submittedBackgroundGradient,
               ),
-              errorPinTheme: this._codeItem(
+              errorPinTheme: this._item(
                 backgroundGradient: this._theme.redGradient,
               ),
-              controller: this.widget.controller,
-              focusNode: this.widget.focusNode,
-              animationCurve: Curves.easeInOut,
+              forceErrorState: this._isError,
               separator:
                   SizedBox(width: this.widget.horizontalInterval ?? this._size.s16 / 2),
               autofocus: this.widget.isAutofocus,

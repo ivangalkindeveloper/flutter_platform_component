@@ -71,13 +71,13 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
     this._theme = this._config.theme;
     this._size = this._config.size;
 
-    this._animationController =
-        AnimationController(vsync: this, duration: this._size.durationSlow);
+    this._animationController = AnimationController(
+      vsync: this,
+      duration: this._size.durationAnimationSlow,
+    );
     this._animationController.addStatusListener(this._controllerListener);
     this._errorSubscription = this.widget.errorController?.stream.listen((bool? isError) {
-      if (this.mounted == false) {
-        return;
-      }
+      if (this.mounted == false) return;
 
       if (isError == null) {
         setState(() => this._isError = false);
@@ -86,7 +86,7 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
 
       setState(() => this._isError = true);
       this._animationController.forward();
-      Future.delayed(_size.durationDefault, () {
+      Future.delayed(_size.durationAnimationDefault, () {
         this._haptic.error();
         this.widget.errorController?.add(null);
         this.widget.controller?.clear();
@@ -103,15 +103,13 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
   }
 
   void _controllerListener(AnimationStatus status) {
-    if (status == AnimationStatus.completed) {
-      this._animationController.reverse();
-    }
+    if (status == AnimationStatus.completed) this._animationController.reverse();
   }
 
-  PinTheme _codeItem({
+  PinTheme _item({
     required Gradient backgroundGradient,
-    Color? borderColor,
     required TextStyle? style,
+    Color? borderColor,
   }) =>
       PinTheme(
         height: this.widget.itemHeight ?? this._size.componentHeightDefault,
@@ -152,36 +150,36 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
             color: Colors.transparent,
             child: Pinput(
               length: this.widget.length,
-              animationDuration: this._size.durationFast,
+              controller: this.widget.controller,
+              focusNode: this.widget.focusNode,
               pinAnimationType: PinAnimationType.fade,
-              forceErrorState: this._isError,
-              defaultPinTheme: this._codeItem(
+              animationDuration: this._size.durationAnimationFast,
+              animationCurve: Curves.easeInOut,
+              defaultPinTheme: this._item(
                 backgroundGradient: this.widget.unfocusedBackgroundGradient,
                 style: this.widget.style,
               ),
-              focusedPinTheme: this._codeItem(
+              focusedPinTheme: this._item(
                 backgroundGradient: this.widget.focusedBackgroundGradient,
                 borderColor: this.widget.focusedBorderColor,
                 style: this.widget.style,
               ),
-              submittedPinTheme: this._codeItem(
+              submittedPinTheme: this._item(
                 backgroundGradient: this.widget.unfocusedBackgroundGradient,
                 style: this.widget.style,
               ),
-              errorPinTheme: this._codeItem(
+              errorPinTheme: this._item(
                 backgroundGradient: this._theme.redLightGradient,
                 style: TextStyle(
                   color: this._theme.red,
-                  fontSize: this.widget.style?.fontSize ?? this._size.s16,
+                  fontSize: this.widget.style?.fontSize ?? this._size.s20,
                   fontWeight:
                       this.widget.style?.fontWeight ?? this._textStyle.fontWeightMedium,
                   fontFamily:
                       this.widget.style?.fontFamily ?? this._textStyle.fontFamilyMedium,
                 ),
               ),
-              controller: this.widget.controller,
-              focusNode: this.widget.focusNode,
-              animationCurve: Curves.easeInOut,
+              forceErrorState: this._isError,
               separator:
                   SizedBox(width: this.widget.horizontalInterval ?? this._size.s16 / 2),
               autofocus: this.widget.isAutofocus,
@@ -190,7 +188,7 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
                 color: this.widget.focusedBorderColor,
                 height: (this.widget.itemWidth ?? this._size.componentHeightSmall) -
                     this._size.s14,
-                width: 1,
+                width: this._size.s10 / 10,
               ),
               onChanged: (String value) => this.widget.onChanged?.call(value),
               onCompleted: (String value) => this.widget.onCompleted?.call(value),

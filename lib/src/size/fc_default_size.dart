@@ -21,10 +21,10 @@ class FCDefaultSize implements IFCSize {
   final double s32 = 32;
 
   // Padding
-  // Padding / Card
-  final EdgeInsets paddingCard = EdgeInsets.all(16);
   // Padding / Padding
   final EdgeInsets paddingDefault = EdgeInsets.all(16);
+  // Padding / Card
+  final EdgeInsets paddingCard = EdgeInsets.all(16);
   // Padding / List View
   final EdgeInsets paddingListView = EdgeInsets.only(
     top: 16,
@@ -112,11 +112,6 @@ class FCDefaultSize implements IFCSize {
   final double snackbarBorderWidthCupertino = 1;
   @override
   final double snackbarBorderWidthMaterial = 1;
-  // BorderWidth / Toggle
-  @override
-  final double toggleBorderWidthCupertino = 1;
-  @override
-  final double toggleBorderWidthMaterial = 1;
 
   // Icon
   @override

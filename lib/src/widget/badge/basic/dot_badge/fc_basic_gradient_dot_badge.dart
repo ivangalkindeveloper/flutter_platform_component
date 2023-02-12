@@ -7,7 +7,7 @@ class FCBasicGradientDotBadge extends StatelessWidget {
   const FCBasicGradientDotBadge({
     super.key,
     required this.gradient,
-    required this.isShow,
+    this.isShow = true,
     this.duration,
     this.position = FCBadgePosition.topEnd,
     required this.child,

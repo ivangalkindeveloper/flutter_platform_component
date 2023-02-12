@@ -6,11 +6,19 @@ class FCGreenPageIndicator extends StatelessWidget {
   const FCGreenPageIndicator({
     super.key,
     required this.length,
-    required this.currentIndex,
+    required this.value,
+    this.height,
+    this.unselectedWidth,
+    this.selectedWidth,
+    this.duration,
   });
 
   final int length;
-  final int currentIndex;
+  final int value;
+  final double? height;
+  final double? unselectedWidth;
+  final double? selectedWidth;
+  final Duration? duration;
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +27,13 @@ class FCGreenPageIndicator extends StatelessWidget {
 
     return FCBasicPageIndicator(
       length: this.length,
-      currentIndex: this.currentIndex,
-      activeColor: theme.green,
-      inactiveColor: theme.grey,
+      value: this.value,
+      unselectedColor: theme.grey,
+      selectedColor: theme.green,
+      height: this.height,
+      unselectedWidth: this.unselectedWidth,
+      selectedWidth: this.selectedWidth,
+      duration: this.duration,
     );
   }
 }

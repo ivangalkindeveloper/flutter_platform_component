@@ -127,33 +127,27 @@ class ComponentScreen extends StatelessWidget {
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(
-              title: "Badge",
+              title: "Counter Badge",
               onPressed: () =>
-                  Navigator.pushNamed(context, NavigationService.badge_screen),
+                  Navigator.pushNamed(context, NavigationService.counter_badge_screen),
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(
-              title: "Counter Badge Content",
+              title: "Gradient Counter Badge",
               onPressed: () => Navigator.pushNamed(
-                  context, NavigationService.counter_badge_content_screen),
+                  context, NavigationService.gradient_counter_badge_screen),
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(
-              title: "Gradient Counter Badge Content",
-              onPressed: () => Navigator.pushNamed(
-                  context, NavigationService.gradient_counter_badge_content_screen),
+              title: "Dot Badge",
+              onPressed: () =>
+                  Navigator.pushNamed(context, NavigationService.dot_badge_screen),
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(
-              title: "Dot Badge Content",
+              title: "Gradient Dot Badge",
               onPressed: () => Navigator.pushNamed(
-                  context, NavigationService.dot_badge_content_screen),
-            ),
-            SizedBox(height: size.s16),
-            FCPrimaryButton(
-              title: "Gradient Dot Badge Content",
-              onPressed: () => Navigator.pushNamed(
-                  context, NavigationService.gradient_dot_badge_content_screen),
+                  context, NavigationService.gradient_dot_badge_screen),
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(
@@ -361,9 +355,9 @@ class ComponentScreen extends StatelessWidget {
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(
-              title: "Nested Navigation",
-              onPressed: () => Navigator.pushNamed(
-                  context, NavigationService.nested_navigation_screen),
+              title: "Navigator",
+              onPressed: () =>
+                  Navigator.pushNamed(context, NavigationService.navigator_screen),
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(

@@ -13,10 +13,9 @@ class ConfigListTheme extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Theme
         FCText.semiBold20Black(context: context, text: "Theme:"),
         SizedBox(height: size.s16 / 2),
-        // Theme // System
+        // System
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Material theme mode:"),
@@ -124,7 +123,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Theme // White
+        // White
         Row(
           children: [
             FCText.regular16Black(context: context, text: "White:"),
@@ -151,7 +150,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Theme // Black
+        // Black
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Black:"),
@@ -178,7 +177,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Theme // Background Scaffold
+        // Background
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Background Scaffold:"),
@@ -192,7 +191,6 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Theme // Background Component
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Background Component:"),
@@ -206,7 +204,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Theme // Blur
+        // Blur
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Blur:"),
@@ -235,7 +233,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Theme // Primary
+        // Primary
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Primary:"),
@@ -277,7 +275,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Theme // Primary / Light
+        // Primary / Light
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Primary Light:"),
@@ -306,7 +304,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Theme // Primary / Dark
+        // Primary / Dark
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Primary Dark:"),
@@ -335,7 +333,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16),
-        // Theme // Secondary
+        // Secondary
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Secondary:"),
@@ -377,7 +375,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Theme // Secondary / Light
+        // Secondary / Light
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Secondary Light:"),
@@ -406,7 +404,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Theme // Secondary / Dark
+        // Secondary / Dark
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Secondary Dark:"),
@@ -435,7 +433,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16),
-        // Theme // Grey
+        // Grey
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Grey:"),
@@ -464,7 +462,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Theme // Grey / Light
+        // Grey / Light
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Grey Light:"),
@@ -493,7 +491,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Theme // Grey / Dark
+        // Grey / Dark
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Grey Dark:"),
@@ -522,7 +520,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Theme // Blue
+        // Blue
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Blue:"),
@@ -551,7 +549,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Theme // Blue / Light
+        // Blue / Light
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Blue Light:"),
@@ -580,7 +578,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Theme // Blue / Dark
+        // Blue / Dark
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Blue Dark:"),
@@ -609,7 +607,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Theme // Green
+        // Green
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Green:"),
@@ -638,7 +636,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Theme // Green / Light
+        // Green / Light
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Green Light:"),
@@ -667,7 +665,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Theme // Green / Dark
+        // Green / Dark
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Green Dark:"),
@@ -696,7 +694,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Theme // Yellow
+        // Yellow
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Yellow:"),
@@ -725,7 +723,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Theme // Yellow / Light
+        // Yellow / Light
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Yellow Light:"),
@@ -754,7 +752,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Theme // Yellow / Dark
+        // Yellow / Dark
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Yellow Dark:"),
@@ -783,7 +781,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Theme // Red
+        // Red
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Red:"),
@@ -812,7 +810,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Theme // Red / Light
+        // Red / Light
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Red Light:"),
@@ -841,7 +839,7 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Theme // Red / Dark
+        // Red / Dark
         Row(
           children: [
             FCText.regular16Black(context: context, text: "Red Dark:"),
@@ -869,6 +867,93 @@ class ConfigListTheme extends StatelessWidget {
             ),
           ],
         ),
+        SizedBox(height: size.s16 / 2),
+        // Barrier
+        // Barrier / Expanded Modal
+        Row(
+          children: [
+            FCText.regular16Black(
+                context: context, text: "Barrier Expanded Modal Cupertino:"),
+            SizedBox(width: size.s16),
+            Expanded(
+              child: Container(
+                height: size.s16,
+                color: theme.barrierExpandedModalCupertino,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          children: [
+            FCText.regular16Black(
+                context: context, text: "Barrier Expanded Modal Material:"),
+            SizedBox(width: size.s16),
+            Expanded(
+              child: Container(
+                height: size.s16,
+                color: theme.barrierExpandedModalMaterial,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Barrier / Pop Up Modal
+        Row(
+          children: [
+            FCText.regular16Black(
+                context: context, text: "Barrier Pop Up Modal Cupertino:"),
+            SizedBox(width: size.s16),
+            Expanded(
+              child: Container(
+                height: size.s16,
+                color: theme.barrierPopUpModalCupertino,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          children: [
+            FCText.regular16Black(
+                context: context, text: "Barrier Pop Up Modal Material:"),
+            SizedBox(width: size.s16),
+            Expanded(
+              child: Container(
+                height: size.s16,
+                color: theme.barrierPopUpModalMaterial,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Barrier / Dialog
+        Row(
+          children: [
+            FCText.regular16Black(context: context, text: "Barrier Dialog Cupertino:"),
+            SizedBox(width: size.s16),
+            Expanded(
+              child: Container(
+                height: size.s16,
+                color: theme.barrierDialogCupertino,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          children: [
+            FCText.regular16Black(context: context, text: "Barrier Dialog Material:"),
+            SizedBox(width: size.s16),
+            Expanded(
+              child: Container(
+                height: size.s16,
+                color: theme.barrierDialogMaterial,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
       ],
     );
   }

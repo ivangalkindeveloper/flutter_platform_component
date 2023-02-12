@@ -6,12 +6,12 @@ class FCWhiteAlwaysStoryIndicator extends StatelessWidget {
   const FCWhiteAlwaysStoryIndicator({
     super.key,
     required this.length,
-    required this.currentIndex,
+    required this.index,
     required this.value,
   });
 
   final int length;
-  final int currentIndex;
+  final int index;
   final double value;
 
   @override
@@ -23,7 +23,7 @@ class FCWhiteAlwaysStoryIndicator extends StatelessWidget {
       backgroundColor: theme.grey,
       color: theme.whiteAlways,
       length: this.length,
-      currentIndex: this.currentIndex,
+      index: this.index,
       value: this.value,
     );
   }

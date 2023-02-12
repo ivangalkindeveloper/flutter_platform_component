@@ -6,11 +6,19 @@ class FCGreyGradientPageIndicator extends StatelessWidget {
   const FCGreyGradientPageIndicator({
     super.key,
     required this.length,
-    required this.currentIndex,
+    required this.value,
+    this.height,
+    this.unselectedWidth,
+    this.selectedWidth,
+    this.duration,
   });
 
   final int length;
-  final int currentIndex;
+  final int value;
+  final double? height;
+  final double? unselectedWidth;
+  final double? selectedWidth;
+  final Duration? duration;
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +27,13 @@ class FCGreyGradientPageIndicator extends StatelessWidget {
 
     return FCBasicGradientPageIndicator(
       length: this.length,
-      currentIndex: this.currentIndex,
-      activeGradident: theme.greyGradient,
-      inactiveGradident: theme.greyLightGradient,
+      value: this.value,
+      unselectedGradident: theme.greyLightGradient,
+      selectedGradident: theme.greyGradient,
+      height: this.height,
+      unselectedWidth: this.unselectedWidth,
+      selectedWidth: this.selectedWidth,
+      duration: this.duration,
     );
   }
 }

@@ -6,12 +6,12 @@ class FCGreenLightStoryIndicator extends StatelessWidget {
   const FCGreenLightStoryIndicator({
     super.key,
     required this.length,
-    required this.currentIndex,
+    required this.index,
     required this.value,
   });
 
   final int length;
-  final int currentIndex;
+  final int index;
   final double value;
 
   @override
@@ -23,7 +23,7 @@ class FCGreenLightStoryIndicator extends StatelessWidget {
       backgroundColor: theme.greyLight,
       color: theme.greenLight,
       length: this.length,
-      currentIndex: this.currentIndex,
+      index: this.index,
       value: this.value,
     );
   }

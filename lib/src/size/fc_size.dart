@@ -12,19 +12,19 @@ abstract class IFCSize {
   abstract final double s32;
 
   // Padding
+  // Padding / Default
+  abstract final EdgeInsets paddingDefault;
   // Padding / Card
   abstract final EdgeInsets paddingCard;
-  // Padding / Padding
-  abstract final EdgeInsets paddingDefault;
   // Padding / List View
   abstract final EdgeInsets paddingListView;
 
   // Component
-  // Component / Code Field / Segment Control / Sliding Segment Control / Toggle
+  // Component / Small - Code Field, Segment Control, Sliding Segment Control, Toggle
   abstract final double componentHeightSmall;
-  // Component / Button / Code Field / Form Field
+  // Component / Default - Button, Code Field, Form Field
   abstract final double componentHeightDefault;
-  // Component / Keyboard Button
+  // Component / Large - Keyboard Button
   abstract final double componentHeightLarge;
 
   // BorderRadius
@@ -69,9 +69,6 @@ abstract class IFCSize {
   // BorderWidth / Snackbar
   abstract final double snackbarBorderWidthCupertino;
   abstract final double snackbarBorderWidthMaterial;
-  // BorderWidth / Toggle
-  abstract final double toggleBorderWidthCupertino;
-  abstract final double toggleBorderWidthMaterial;
 
   // Icon
   abstract final double iconHeightSmall;

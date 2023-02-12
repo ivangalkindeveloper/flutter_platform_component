@@ -152,13 +152,6 @@ class FCConfig extends InheritedWidget {
         material: this.size.snackbarBorderWidthMaterial,
       );
 
-  // BorderWidth / Toggle
-  double get toggleControlBorderWidth => FCPlatform.decompose<double, double, double>(
-        platform: this.platform,
-        cupertino: this.size.toggleBorderWidthCupertino,
-        material: this.size.toggleBorderWidthMaterial,
-      );
-
   static FCConfig of(BuildContext context) {
     final FCConfig? config = context.dependOnInheritedWidgetOfExactType<FCConfig>();
     if (config == null) throw const FCConfigNullException();

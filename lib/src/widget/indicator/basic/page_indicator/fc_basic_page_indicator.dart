@@ -6,15 +6,23 @@ class FCBasicPageIndicator extends StatelessWidget {
   const FCBasicPageIndicator({
     super.key,
     required this.length,
-    required this.currentIndex,
-    required this.activeColor,
-    required this.inactiveColor,
+    required this.value,
+    required this.unselectedColor,
+    required this.selectedColor,
+    this.height,
+    this.unselectedWidth,
+    this.selectedWidth,
+    this.duration,
   });
 
   final int length;
-  final int currentIndex;
-  final Color activeColor;
-  final Color inactiveColor;
+  final int value;
+  final Color unselectedColor;
+  final Color selectedColor;
+  final double? height;
+  final double? unselectedWidth;
+  final double? selectedWidth;
+  final Duration? duration;
 
   @override
   Widget build(BuildContext context) {
@@ -29,15 +37,16 @@ class FCBasicPageIndicator extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               AnimatedContainer(
-                height: size.s16 / 2,
-                width: this.currentIndex == index ? size.s16 : size.s16 / 2,
+                height: this.height ?? size.s16 / 2,
+                width: this.value == index
+                    ? (this.selectedWidth ?? size.s16)
+                    : (this.unselectedWidth ?? size.s16 / 2),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(size.s16),
-                  color:
-                      this.currentIndex == index ? this.activeColor : this.inactiveColor,
+                  color: this.value == index ? this.selectedColor : this.unselectedColor,
                 ),
-                duration: size.durationPageIndicator,
+                duration: this.duration ?? size.durationPageIndicator,
                 curve: Curves.easeInOut,
                 child: const SizedBox(),
               ),

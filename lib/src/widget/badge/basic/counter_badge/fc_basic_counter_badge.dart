@@ -8,7 +8,7 @@ class FCBasicCounterBadge extends StatelessWidget {
     super.key,
     required this.color,
     required this.count,
-    required this.isShow,
+    this.isShow = true,
     this.duration,
     this.style,
     this.position = FCBadgePosition.topEnd,

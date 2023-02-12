@@ -12,8 +12,7 @@ export 'src/config/fc_sweep_gradient_config.dart';
 export 'src/data/fc_date_range.dart';
 
 // Enum
-export 'src/enum/fc_badge_position.dart';
-export 'src/enum/fc_transition_type.dart';
+export 'src/enum/fc_enum.dart';
 
 // Haptic
 export 'src/haptic/fc_default_haptic.dart';
@@ -162,21 +161,21 @@ export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_red_dark_gradient
 export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_secondary_dark_gradient_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_yellow_dark_gradient_counter_badge.dart';
 // Badge / Custom / Counter Badge / Gradient / Default
-export 'src/widget/badge/custom/counter_badge/gradient/default/fc_blue_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge/gradient/default/fc_green_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge/gradient/default/fc_grey_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge/gradient/default/fc_primary_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge/gradient/default/fc_red_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge/gradient/default/fc_secondary_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge/gradient/default/fc_yellow_gradient_counter_badge_content.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/default/fc_blue_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/default/fc_green_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/default/fc_grey_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/default/fc_primary_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/default/fc_red_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/default/fc_secondary_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/default/fc_yellow_gradient_counter_badge.dart';
 // Badge / Custom / Counter Badge / Gradient / Light
-export 'src/widget/badge/custom/counter_badge/gradient/light/fc_blue_light_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge/gradient/light/fc_green_light_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge/gradient/light/fc_grey_light_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge/gradient/light/fc_primary_light_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge/gradient/light/fc_red_light_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge/gradient/light/fc_secondary_light_gradient_counter_badge_content.dart';
-export 'src/widget/badge/custom/counter_badge/gradient/light/fc_yellow_light_gradient_counter_badge_content.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/light/fc_blue_light_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/light/fc_green_light_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/light/fc_grey_light_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/light/fc_primary_light_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/light/fc_red_light_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/light/fc_secondary_light_gradient_counter_badge.dart';
+export 'src/widget/badge/custom/counter_badge/gradient/light/fc_yellow_light_gradient_counter_badge.dart';
 // Badge / Custom / Dot Badge
 // Badge / Custom / Dot Badge / Default
 // Badge / Custom / Dot Badge / Default / Dark
@@ -761,8 +760,8 @@ export 'src/widget/navigation/bottom_navigation_bar/fc_bottom_navigation_bar_ico
 export 'src/widget/navigation/bottom_navigation_bar/fc_bottom_navigation_bar_widget_item_gradient.dart';
 export 'src/widget/navigation/bottom_navigation_bar/fc_bottom_navigation_bar_widget_item.dart';
 export 'src/widget/navigation/bottom_navigation_bar/fc_bottom_navigation_bar.dart';
-// Navigation / Nested Navigation
-export 'src/widget/navigation/nested_navigation/fc_nested_navigation.dart';
+// Navigation / Navigator
+export 'src/widget/navigation/navigator/fc_navigator.dart';
 
 // PIN Field
 // PIN Field / Basic
@@ -918,120 +917,43 @@ export 'src/widget/segment_control/custom/gradient/light/fc_yellow_light_gradien
 
 // Shimmer
 // Shimmer / Basic
-// Shimmer / Basic / Default
-export 'src/widget/shimmer/basic/default/fc_basic_shimmer.dart';
-export 'src/widget/shimmer/basic/default/fc_basic_gradient_shimmer.dart';
-// Shimmer / Basic / Fast
-export 'src/widget/shimmer/basic/fast/fc_basic_fast_shimmer.dart';
-export 'src/widget/shimmer/basic/fast/fc_basic_gradient_fast_shimmer.dart';
-// Shimmer / Basic / Slow
-export 'src/widget/shimmer/basic/slow/fc_basic_slow_shimmer.dart';
-export 'src/widget/shimmer/basic/slow/fc_basic_gradient_slow_shimmer.dart';
+export 'src/widget/shimmer/basic/fc_basic_shimmer.dart';
+export 'src/widget/shimmer/basic/fc_basic_gradient_shimmer.dart';
 // Shimmer / Custom
 // Shimmer / Custom / Default
+// Shimmer / Custom / Default / Dark
+export 'src/widget/shimmer/custom/default/dark/fc_blue_dark_shimmer.dart';
+export 'src/widget/shimmer/custom/default/dark/fc_green_dark_shimmer.dart';
+export 'src/widget/shimmer/custom/default/dark/fc_grey_dark_shimmer.dart';
+export 'src/widget/shimmer/custom/default/dark/fc_primary_dark_shimmer.dart';
+export 'src/widget/shimmer/custom/default/dark/fc_red_dark_shimmer.dart';
+export 'src/widget/shimmer/custom/default/dark/fc_secondary_dark_shimmer.dart';
+export 'src/widget/shimmer/custom/default/dark/fc_yellow_dark_shimmer.dart';
 // Shimmer / Custom / Default / Default
-// Shimmer / Custom / Default / Default / Dark
-export 'src/widget/shimmer/custom/default/default/dark/fc_blue_dark_shimmer.dart';
-export 'src/widget/shimmer/custom/default/default/dark/fc_green_dark_shimmer.dart';
-export 'src/widget/shimmer/custom/default/default/dark/fc_grey_dark_shimmer.dart';
-export 'src/widget/shimmer/custom/default/default/dark/fc_primary_dark_shimmer.dart';
-export 'src/widget/shimmer/custom/default/default/dark/fc_red_dark_shimmer.dart';
-export 'src/widget/shimmer/custom/default/default/dark/fc_secondary_dark_shimmer.dart';
-export 'src/widget/shimmer/custom/default/default/dark/fc_yellow_dark_shimmer.dart';
-// Shimmer / Custom / Default / Default / Default
-export 'src/widget/shimmer/custom/default/default/default/fc_blue_shimmer.dart';
-export 'src/widget/shimmer/custom/default/default/default/fc_green_shimmer.dart';
-export 'src/widget/shimmer/custom/default/default/default/fc_grey_shimmer.dart';
-export 'src/widget/shimmer/custom/default/default/default/fc_primary_shimmer.dart';
-export 'src/widget/shimmer/custom/default/default/default/fc_red_shimmer.dart';
-export 'src/widget/shimmer/custom/default/default/default/fc_secondary_shimmer.dart';
-export 'src/widget/shimmer/custom/default/default/default/fc_yellow_shimmer.dart';
-// Shimmer / Custom / Default / Fast
-// Shimmer / Custom / Default / Fast / Dark
-export 'src/widget/shimmer/custom/default/fast/dark/fc_blue_dark_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/default/fast/dark/fc_green_dark_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/default/fast/dark/fc_grey_dark_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/default/fast/dark/fc_primary_dark_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/default/fast/dark/fc_red_dark_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/default/fast/dark/fc_secondary_dark_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/default/fast/dark/fc_yellow_dark_fast_shimmer.dart';
-// Shimmer / Custom / Default / Fast / Default
-export 'src/widget/shimmer/custom/default/fast/default/fc_blue_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/default/fast/default/fc_green_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/default/fast/default/fc_grey_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/default/fast/default/fc_primary_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/default/fast/default/fc_red_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/default/fast/default/fc_secondary_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/default/fast/default/fc_yellow_fast_shimmer.dart';
-// Shimmer / Custom / Default / Slow
-// Shimmer / Custom / Default / Slow / Dark
-export 'src/widget/shimmer/custom/default/slow/dark/fc_blue_dark_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/default/slow/dark/fc_green_dark_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/default/slow/dark/fc_grey_dark_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/default/slow/dark/fc_primary_dark_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/default/slow/dark/fc_red_dark_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/default/slow/dark/fc_secondary_dark_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/default/slow/dark/fc_yellow_dark_slow_shimmer.dart';
-// Shimmer / Custom / Default / Slow / Default
-export 'src/widget/shimmer/custom/default/slow/default/fc_blue_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/default/slow/default/fc_green_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/default/slow/default/fc_grey_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/default/slow/default/fc_primary_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/default/slow/default/fc_red_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/default/slow/default/fc_secondary_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/default/slow/default/fc_yellow_slow_shimmer.dart';
+export 'src/widget/shimmer/custom/default/default/fc_blue_shimmer.dart';
+export 'src/widget/shimmer/custom/default/default/fc_green_shimmer.dart';
+export 'src/widget/shimmer/custom/default/default/fc_grey_shimmer.dart';
+export 'src/widget/shimmer/custom/default/default/fc_primary_shimmer.dart';
+export 'src/widget/shimmer/custom/default/default/fc_red_shimmer.dart';
+export 'src/widget/shimmer/custom/default/default/fc_secondary_shimmer.dart';
+export 'src/widget/shimmer/custom/default/default/fc_yellow_shimmer.dart';
 // Shimmer / Custom / Gradient
+// Shimmer / Custom / Gradient / Dark
+export 'src/widget/shimmer/custom/gradient/dark/fc_blue_dark_gradient_shimmer.dart';
+export 'src/widget/shimmer/custom/gradient/dark/fc_green_dark_gradient_shimmer.dart';
+export 'src/widget/shimmer/custom/gradient/dark/fc_grey_dark_gradient_shimmer.dart';
+export 'src/widget/shimmer/custom/gradient/dark/fc_primary_dark_gradient_shimmer.dart';
+export 'src/widget/shimmer/custom/gradient/dark/fc_red_dark_gradient_shimmer.dart';
+export 'src/widget/shimmer/custom/gradient/dark/fc_secondary_dark_gradient_shimmer.dart';
+export 'src/widget/shimmer/custom/gradient/dark/fc_yellow_dark_gradient_shimmer.dart';
 // Shimmer / Custom / Gradient / Default
-// Shimmer / Custom / Gradient / Default / Dark
-export 'src/widget/shimmer/custom/gradient/default/dark/fc_blue_dark_gradient_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/default/dark/fc_green_dark_gradient_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/default/dark/fc_grey_dark_gradient_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/default/dark/fc_primary_dark_gradient_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/default/dark/fc_red_dark_gradient_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/default/dark/fc_secondary_dark_gradient_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/default/dark/fc_yellow_dark_gradient_shimmer.dart';
-// Shimmer / Custom / Gradient / Default / Default
-export 'src/widget/shimmer/custom/gradient/default/default/fc_blue_gradient_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/default/default/fc_green_gradient_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/default/default/fc_grey_gradient_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/default/default/fc_primary_gradient_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/default/default/fc_red_gradient_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/default/default/fc_secondary_gradient_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/default/default/fc_yellow_gradient_shimmer.dart';
-// Shimmer / Custom / Gradient / Fast
-// Shimmer / Custom / Gradient / Fast / Dark
-export 'src/widget/shimmer/custom/gradient/fast/dark/fc_blue_dark_gradient_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/fast/dark/fc_green_dark_gradient_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/fast/dark/fc_grey_dark_gradient_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/fast/dark/fc_primary_dark_gradient_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/fast/dark/fc_red_dark_gradient_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/fast/dark/fc_secondary_dark_gradient_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/fast/dark/fc_yellow_dark_gradient_fast_shimmer.dart';
-// Shimmer / Custom / Gradient / Fast / Default
-export 'src/widget/shimmer/custom/gradient/fast/default/fc_blue_gradient_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/fast/default/fc_green_gradient_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/fast/default/fc_grey_gradient_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/fast/default/fc_primary_gradient_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/fast/default/fc_red_gradient_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/fast/default/fc_secondary_gradient_fast_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/fast/default/fc_yellow_gradient_fast_shimmer.dart';
-// Shimmer / Custom / Gradient / Slow
-// Shimmer / Custom / Gradient / Slow / Dark
-export 'src/widget/shimmer/custom/gradient/slow/dark/fc_blue_dark_gradient_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/slow/dark/fc_green_dark_gradient_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/slow/dark/fc_grey_dark_gradient_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/slow/dark/fc_primary_dark_gradient_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/slow/dark/fc_red_dark_gradient_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/slow/dark/fc_secondary_dark_gradient_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/slow/dark/fc_yellow_dark_gradient_slow_shimmer.dart';
-// Shimmer / Custom / Gradient / Slow / Default
-export 'src/widget/shimmer/custom/gradient/slow/default/fc_blue_gradient_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/slow/default/fc_green_gradient_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/slow/default/fc_grey_gradient_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/slow/default/fc_primary_gradient_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/slow/default/fc_red_gradient_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/slow/default/fc_secondary_gradient_slow_shimmer.dart';
-export 'src/widget/shimmer/custom/gradient/slow/default/fc_yellow_gradient_slow_shimmer.dart';
+export 'src/widget/shimmer/custom/gradient/default/fc_blue_gradient_shimmer.dart';
+export 'src/widget/shimmer/custom/gradient/default/fc_green_gradient_shimmer.dart';
+export 'src/widget/shimmer/custom/gradient/default/fc_grey_gradient_shimmer.dart';
+export 'src/widget/shimmer/custom/gradient/default/fc_primary_gradient_shimmer.dart';
+export 'src/widget/shimmer/custom/gradient/default/fc_red_gradient_shimmer.dart';
+export 'src/widget/shimmer/custom/gradient/default/fc_secondary_gradient_shimmer.dart';
+export 'src/widget/shimmer/custom/gradient/default/fc_yellow_gradient_shimmer.dart';
 
 // Slider
 // Slider / Basic

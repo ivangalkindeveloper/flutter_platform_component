@@ -12,10 +12,9 @@ class ConfigListSize extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Size
         FCText.semiBold20Black(context: context, text: "Size:"),
         SizedBox(height: size.s16 / 2),
-        // Size / s10
+        // Size
         Row(
           children: [
             Expanded(
@@ -26,7 +25,6 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / s12
         Row(
           children: [
             Expanded(
@@ -37,7 +35,6 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / s14
         Row(
           children: [
             Expanded(
@@ -48,7 +45,6 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / s16
         Row(
           children: [
             Expanded(
@@ -59,7 +55,6 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / s18
         Row(
           children: [
             Expanded(
@@ -70,7 +65,6 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / s20
         Row(
           children: [
             Expanded(
@@ -81,7 +75,6 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / s28
         Row(
           children: [
             Expanded(
@@ -92,7 +85,6 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / s32
         Row(
           children: [
             Expanded(
@@ -103,12 +95,87 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Size / Button Cupertino BorderRadius
+        // Padding
+        // Padding / Default
+        Row(
+          children: [
+            Expanded(
+              child: FCText.regular16Black(context: context, text: "Padding Default:"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(context: context, text: size.paddingDefault.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Padding / Card
+        Row(
+          children: [
+            Expanded(
+              child: FCText.regular16Black(context: context, text: "Padding Card:"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(context: context, text: size.paddingCard.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Padding / List View
+        Row(
+          children: [
+            Expanded(
+              child: FCText.regular16Black(context: context, text: "Padding List View:"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(context: context, text: size.paddingListView.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 2),
+        // Component
+        // Component / Small - Code Field, Segment Control, Sliding Segment Control, Toggle
+        Row(
+          children: [
+            Expanded(
+              child:
+                  FCText.regular16Black(context: context, text: "Component Height Small"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(
+                context: context, text: size.componentHeightSmall.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Component / Default - Button, Code Field, Form Field
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Button Cupertino BorderRadius:"),
+                  context: context, text: "Component Height Default"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(
+                context: context, text: size.componentHeightDefault.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Component / Large - Keyboard Button
+        Row(
+          children: [
+            Expanded(
+              child:
+                  FCText.regular16Black(context: context, text: "Component Height Large"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(
+                context: context, text: size.componentHeightLarge.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 2),
+        // BorderRadius
+        // BorderRadius / Button
+        Row(
+          children: [
+            Expanded(
+              child: FCText.regular16Black(
+                  context: context, text: "Button BorderRadius Cupertino:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -116,12 +183,11 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Button Material BorderRadius
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Button Material BorderRadius:"),
+                  context: context, text: "Button BorderRadius Material:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -129,12 +195,12 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Card Cupertino BorderRadius
+        // BorderRadius / Card
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Card Cupertino BorderRadius:"),
+                  context: context, text: "Card BorderRadius Cupertino:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -142,12 +208,11 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Card Material BorderRadius
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Card Material BorderRadius:"),
+                  context: context, text: "Card BorderRadius Material:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -155,12 +220,24 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Dialog BorderRadius
+        // BorderRadius / Dialog
         Row(
           children: [
             Expanded(
-              child:
-                  FCText.regular16Black(context: context, text: "Dialog BorderRadius:"),
+              child: FCText.regular16Black(
+                  context: context, text: "Dialog BorderRadius Cupertino:"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(
+                context: context, text: size.dialogBorderRadiusCupertino.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          children: [
+            Expanded(
+              child: FCText.regular16Black(
+                  context: context, text: "Dialog BorderRadius Material:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -168,12 +245,12 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Field Cupertino BorderRadius
+        // BorderRadius / Field
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Field Cupertino BorderRadius:"),
+                  context: context, text: "Field BorderRadius Cupertino:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -181,12 +258,11 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Field Material BorderRadius
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Field Material BorderRadius:"),
+                  context: context, text: "Field BorderRadius Material:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -194,12 +270,37 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Segment Control Cupertino BorderRadius
+        // BorderRadius / Modal
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Segment Control Cupertino BorderRadius:"),
+                  context: context, text: "Modal BorderRadius Cupertino:"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(
+                context: context, text: size.modalBorderRadiusCupertino.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          children: [
+            Expanded(
+              child: FCText.regular16Black(
+                  context: context, text: "Modal BorderRadius Material:"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(
+                context: context, text: size.modalBorderRadiusMaterial.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // BorderRadius / Segment Control
+        Row(
+          children: [
+            Expanded(
+              child: FCText.regular16Black(
+                  context: context, text: "Segment Control BorderRadius Cupertino:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -208,12 +309,11 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Segment Control Material BorderRadius
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Segment Control Material BorderRadius:"),
+                  context: context, text: "Segment Control BorderRadius Material:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -222,12 +322,12 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Snackbar Cupertino BorderRadius
+        // BorderRadius / Snackbar
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Snackbar Cupertino BorderRadius:"),
+                  context: context, text: "Snackbar BorderRadius Cupertino:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -235,12 +335,11 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Snackbar Material BorderRadius
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Snackbar Material BorderRadius:"),
+                  context: context, text: "Snackbar BorderRadius Material:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -248,25 +347,24 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Toggle Cupertino BorderRadius
+        // BorderRadius / Toggle
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Toggle Cupertino BorderRadius:"),
+                  context: context, text: "Toggle BorderRadius Cupertino:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
                 context: context, text: size.toggleBorderRadiusCupertino.toString()),
           ],
         ),
-        SizedBox(height: size.s16 / 2),
-        // Size / Toggle Material BorderRadius
+        SizedBox(height: size.s16 / 4),
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Toggle Material BorderRadius:"),
+                  context: context, text: "Toggle BorderRadius Material:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -274,11 +372,13 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Size / Button Cupertino BorderWidth
+        // BorderWidth
+        // BorderWidth / Button
         Row(
           children: [
             Expanded(
-              child: FCText.regular16Black(context: context, text: "Button BorderWidth:"),
+              child: FCText.regular16Black(
+                  context: context, text: "Button BorderWidth Cupertino:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -286,12 +386,11 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Button Material BorderWidth
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Button Material BorderWidth:"),
+                  context: context, text: "Button BorderWidth Material:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -299,12 +398,12 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Card Cupertino BorderWidth
+        // BorderWidth / Card
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Card Cupertino BorderWidth:"),
+                  context: context, text: "Card BorderWidth Cupertino:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -312,12 +411,11 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Card Material BorderWidth
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Card Material BorderWidth:"),
+                  context: context, text: "Card BorderWidth Material:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -325,12 +423,12 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Field Cupertino BorderWidth
+        // BorderWidth / Field
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Field Cupertino BorderWidth:"),
+                  context: context, text: "Field BorderWidth Cupertino:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -338,12 +436,11 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Field Material BorderWidth
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Field Material BorderWidth:"),
+                  context: context, text: "Field BorderWidth Material:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -351,12 +448,12 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Segment Control Cupertino BorderWidth
+        // BorderWidth / Segment Control
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Segment Control Cupertino BorderWidth:"),
+                  context: context, text: "Segment Control BorderWidth Cupertino:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -365,12 +462,11 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Segment Control Material BorderWidth
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Segment Control Material BorderWidth:"),
+                  context: context, text: "Segment Control BorderWidth Material:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -379,25 +475,24 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Snackbar Cupertino BorderWidth
+        // BorderWidth / Snackbar
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Snackbar Cupertino BorderWidth:"),
+                  context: context, text: "Snackbar BorderWidth Cupertino:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
                 context: context, text: size.snackbarBorderWidthCupertino.toString()),
           ],
         ),
-        SizedBox(height: size.s16 / 2),
-        // Size / Snackbar Material BorderWidth
+        SizedBox(height: size.s16 / 4),
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Snackbar Material BorderWidth:"),
+                  context: context, text: "Snackbar BorderWidth Material:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
@@ -405,7 +500,7 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Size / Icon
+        // Icon
         Row(
           children: [
             Expanded(
@@ -438,7 +533,7 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Size / Indicator
+        // Indicator
         Row(
           children: [
             Expanded(
@@ -475,7 +570,7 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Size / DateTime
+        // DateTime
         Row(
           children: [
             Expanded(
@@ -506,48 +601,17 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Size / Duration
-        // Size / Duration / Default
+        // Duration
+        // Duration / Animation
         Row(
           children: [
             Expanded(
-              child: FCText.regular16Black(context: context, text: "Duration Fast:"),
-            ),
-            SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.durationFast.toString()),
-          ],
-        ),
-        SizedBox(height: size.s16 / 4),
-        Row(
-          children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Duration Default:"),
-            ),
-            SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.durationDefault.toString()),
-          ],
-        ),
-        SizedBox(height: size.s16 / 4),
-        Row(
-          children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Duration Slow:"),
-            ),
-            SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.durationSlow.toString()),
-          ],
-        ),
-        SizedBox(height: size.s16 / 4),
-        // Size / Duration / Shimmer
-        Row(
-          children: [
-            Expanded(
-              child:
-                  FCText.regular16Black(context: context, text: "Duration Shimmer Fast:"),
+              child: FCText.regular16Black(
+                  context: context, text: "Duration Animation Fast:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.durationShimmerFast.toString()),
+                context: context, text: size.durationAnimationFast.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -555,36 +619,11 @@ class ConfigListSize extends StatelessWidget {
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Duration Shimmer Default:"),
+                  context: context, text: "Duration Animation Default:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.durationShimmerDefault.toString()),
-          ],
-        ),
-        SizedBox(height: size.s16 / 4),
-        Row(
-          children: [
-            Expanded(
-              child:
-                  FCText.regular16Black(context: context, text: "Duration Shimmer Slow:"),
-            ),
-            SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.durationShimmerSlow.toString()),
-          ],
-        ),
-        SizedBox(height: size.s16 / 4),
-        // Size / Duration / Snackbar
-        Row(
-          children: [
-            Expanded(
-              child: FCText.regular16Black(
-                  context: context, text: "Duration Snackbar Fast:"),
-            ),
-            SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.durationSnackbarFast.toString()),
+                context: context, text: size.durationAnimationDefault.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -592,28 +631,63 @@ class ConfigListSize extends StatelessWidget {
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Duration Snackbar Default:"),
+                  context: context, text: "Duration Animation Slow:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.durationSnackbarDefault.toString()),
+                context: context, text: size.durationAnimationSlow.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
+        // Duration / Badge
+        Row(
+          children: [
+            Expanded(
+              child: FCText.regular16Black(context: context, text: "Duration Badge:"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(context: context, text: size.durationBadge.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Duration / Page Indicator
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Duration Snackbar Slow:"),
+                  context: context, text: "Duration Page Indicator:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.durationSnackbarSlow.toString()),
+                context: context, text: size.durationPageIndicator.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Duration / Shimmer
+        Row(
+          children: [
+            Expanded(
+              child: FCText.regular16Black(context: context, text: "Duration Shimmer:"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(context: context, text: size.durationShimmer.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Duration / Snackbar
+        Row(
+          children: [
+            Expanded(
+              child: FCText.regular16Black(context: context, text: "Duration Snackbar:"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(
+                context: context, text: size.durationSnackbar.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Size / Opacity
-        // Size / Opacity / Blur
+        // Opacity
+        // Opacity / Blur
         Row(
           children: [
             Expanded(
@@ -624,7 +698,7 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Size / Opacity / Disabled
+        // Opacity / Disabled
         Row(
           children: [
             Expanded(

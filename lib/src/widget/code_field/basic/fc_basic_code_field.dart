@@ -71,13 +71,13 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
     this._theme = this._config.theme;
     this._size = this._config.size;
 
-    this._animationController =
-        AnimationController(vsync: this, duration: this._size.durationSlow);
+    this._animationController = AnimationController(
+      vsync: this,
+      duration: this._size.durationAnimationSlow,
+    );
     this._animationController.addStatusListener(this._controllerListener);
     this._errorSubscription = this.widget.errorController?.stream.listen((bool? isError) {
-      if (this.mounted == false) {
-        return;
-      }
+      if (this.mounted == false) return;
 
       if (isError == null) {
         setState(() => this._isError = false);
@@ -86,7 +86,7 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
 
       setState(() => this._isError = true);
       this._animationController.forward();
-      Future.delayed(this._size.durationDefault, () {
+      Future.delayed(this._size.durationAnimationDefault, () {
         this._haptic.error();
         this.widget.errorController?.add(null);
         this.widget.controller?.clear();
@@ -103,15 +103,13 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
   }
 
   void _controllerListener(AnimationStatus status) {
-    if (status == AnimationStatus.completed) {
-      this._animationController.reverse();
-    }
+    if (status == AnimationStatus.completed) this._animationController.reverse();
   }
 
-  PinTheme _codeItem({
+  PinTheme _item({
     required Color backgroundColor,
-    Color? borderColor,
     required TextStyle? style,
+    Color? borderColor,
   }) =>
       PinTheme(
         height: this.widget.itemHeight ?? this._size.componentHeightDefault,
@@ -152,35 +150,30 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
             color: Colors.transparent,
             child: Pinput(
               length: this.widget.length,
-              defaultPinTheme: this._codeItem(
+              controller: this.widget.controller,
+              focusNode: this.widget.focusNode,
+              pinAnimationType: PinAnimationType.fade,
+              animationDuration: this._size.durationAnimationFast,
+              animationCurve: Curves.easeInOut,
+              defaultPinTheme: this._item(
                 backgroundColor: this.widget.unfocusedBackgroundColor,
                 style: this.widget.style,
               ),
-              focusedPinTheme: this._codeItem(
+              focusedPinTheme: this._item(
                 backgroundColor: this.widget.focusedBackgroundColor,
                 borderColor: this.widget.focusedBorderColor,
                 style: this.widget.style,
               ),
-              submittedPinTheme: this._codeItem(
+              submittedPinTheme: this._item(
                 backgroundColor: this.widget.unfocusedBackgroundColor,
                 style: this.widget.style,
               ),
-              errorPinTheme: this._codeItem(
+              errorPinTheme: this._item(
                 backgroundColor: this._theme.redLight,
                 style: TextStyle(
                   color: this._theme.red,
-                  fontSize: this.widget.style?.fontSize ?? this._size.s16,
-                  fontWeight:
-                      this.widget.style?.fontWeight ?? this._textStyle.fontWeightMedium,
-                  fontFamily:
-                      this.widget.style?.fontFamily ?? this._textStyle.fontFamilyMedium,
                 ),
               ),
-              controller: this.widget.controller,
-              focusNode: this.widget.focusNode,
-              animationDuration: this._size.durationFast,
-              animationCurve: Curves.easeInOut,
-              pinAnimationType: PinAnimationType.fade,
               forceErrorState: this._isError,
               separator:
                   SizedBox(width: this.widget.horizontalInterval ?? this._size.s16 / 2),
@@ -190,7 +183,7 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
                 color: this.widget.focusedBorderColor,
                 height: (this.widget.itemWidth ?? this._size.componentHeightSmall) -
                     this._size.s14,
-                width: 1,
+                width: this._size.s10 / 10,
               ),
               onChanged: (String value) => this.widget.onChanged?.call(value),
               onCompleted: (String value) => this.widget.onCompleted?.call(value),
