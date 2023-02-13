@@ -42,24 +42,31 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
             children: [
               FCBlueDarkDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCGreenDarkDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCGreyDarkDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCPrimaryDarkDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCRedDarkDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCSecondaryDarkDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCYellowDarkDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
             ],
           ),
@@ -75,36 +82,47 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
             children: [
               FCBlackAlwaysDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCBlackDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCBlueDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCGreenDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCGreyDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCPrimaryDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCRedDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCSecondaryDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCWhiteDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCWhiteAlwaysDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCYellowDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
             ],
           ),
@@ -120,24 +138,31 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
             children: [
               FCBlueLightDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCGreenLightDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCGreyLightDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCPrimaryLightDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCRedLightDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCSecondaryLightDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
               FCYellowLightDotBadge(
                 child: const _ChildWidget(),
+                isShow: this._action,
               ),
             ],
           ),

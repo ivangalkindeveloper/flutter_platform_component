@@ -12,6 +12,7 @@ class FCBasicShimmer extends StatefulWidget {
     this.shape = BoxShape.rectangle,
     this.height,
     this.width,
+    this.duration,
     this.child,
   });
 
@@ -21,6 +22,7 @@ class FCBasicShimmer extends StatefulWidget {
   final BoxShape shape;
   final double? height;
   final double? width;
+  final Duration? duration;
   final Widget? child;
 
   @override
@@ -41,7 +43,7 @@ class _FCBasicShimmerState extends State<FCBasicShimmer> {
     this._size = this._config.size;
 
     this._highlightSubscription = Stream.periodic(
-            _size.durationShimmer, (int second) => second % 2 == 0)
+           this.widget.duration ??  this._size.durationShimmer, (int second) => second % 2 == 0)
         .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
   }
 

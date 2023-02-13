@@ -115,8 +115,8 @@ class _FCSliverNavigationAppBarMaterial extends StatelessWidget {
         style: TextStyle(
           color: this.style?.color ?? theme.black,
           fontSize: this.style?.fontSize,
-          fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
-          fontFamily: this.style?.fontFamily,
+          fontWeight: this.style?.fontWeight ?? textStyle.fontWeightBold,
+          fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyBold,
         ),
       ),
       centerTitle: true,

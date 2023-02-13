@@ -7,30 +7,37 @@ class FCWhiteCounterBadge extends StatelessWidget {
     super.key,
     required this.count,
     this.isShow = true,
+    this.position = FCBadgePosition.topEnd,
     this.duration,
     this.style,
-    this.position = FCBadgePosition.topEnd,
     required this.child,
   });
 
   final int count;
   final bool isShow;
+  final FCBadgePosition position;
   final Duration? duration;
   final TextStyle? style;
-  final FCBadgePosition position;
   final Widget child;
 
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
 
     return FCBasicCounterBadge(
       color: theme.white,
       count: this.count,
       isShow: this.isShow,
       duration: this.duration,
-      style: this.style,
+      style: TextStyle(
+        color: style?.color ?? context.config.theme.black,
+        fontSize: style?.fontSize ?? size.s14,
+        fontWeight: style?.fontWeight ?? textStyle.fontWeightRegular,
+        fontFamily: style?.fontFamily ?? textStyle.fontFamilyRegular,
+      ),
       position: this.position,
       child: this.child,
     );

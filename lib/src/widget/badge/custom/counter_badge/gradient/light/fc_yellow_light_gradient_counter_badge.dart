@@ -7,17 +7,17 @@ class FCYellowLightGradientCounterBadge extends StatelessWidget {
     super.key,
     required this.count,
     this.isShow = true,
+    this.position = FCBadgePosition.topEnd,
     this.duration,
     this.style,
-    this.position = FCBadgePosition.topEnd,
     required this.child,
   });
 
   final int count;
   final bool isShow;
+  final FCBadgePosition position;
   final Duration? duration;
   final TextStyle? style;
-  final FCBadgePosition position;
   final Widget child;
 
   @override
@@ -29,9 +29,9 @@ class FCYellowLightGradientCounterBadge extends StatelessWidget {
       gradient: theme.yellowLightGradient,
       count: this.count,
       isShow: this.isShow,
+      position: this.position,
       duration: this.duration,
       style: this.style,
-      position: this.position,
       child: this.child,
     );
   }

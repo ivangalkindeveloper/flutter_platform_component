@@ -179,58 +179,58 @@ export 'src/widget/badge/custom/counter_badge/gradient/light/fc_yellow_light_gra
 // Badge / Custom / Dot Badge
 // Badge / Custom / Dot Badge / Default
 // Badge / Custom / Dot Badge / Default / Dark
-export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_blue_dark_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_green_dark_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_grey_dark_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_primary_dark_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_red_dark_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_secondary_dark_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/dark/fc_yellow_dark_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/dark/fc_blue_dark_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/dark/fc_green_dark_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/dark/fc_grey_dark_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/dark/fc_primary_dark_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/dark/fc_red_dark_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/dark/fc_secondary_dark_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/dark/fc_yellow_dark_dot_badge.dart';
 // Badge / Custom / Dot Badge / Default / Default
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_black_always_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_black_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_blue_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_green_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_grey_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_primary_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_red_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_secondary_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_white_always_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_white_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/default/fc_yellow_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/default/fc_black_always_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/default/fc_black_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/default/fc_blue_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/default/fc_green_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/default/fc_grey_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/default/fc_primary_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/default/fc_red_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/default/fc_secondary_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/default/fc_white_always_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/default/fc_white_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/default/fc_yellow_dot_badge.dart';
 // Badge / Custom / Dot Badge / Default / Light
-export 'src/widget/badge/custom/dot_badge_content/default/light/fc_blue_light_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/light/fc_green_light_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/light/fc_grey_light_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/light/fc_primary_light_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/light/fc_red_light_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/light/fc_secondary_light_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/default/light/fc_yellow_light_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/light/fc_blue_light_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/light/fc_green_light_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/light/fc_grey_light_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/light/fc_primary_light_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/light/fc_red_light_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/light/fc_secondary_light_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/default/light/fc_yellow_light_dot_badge.dart';
 // Badge / Custom / Dot Badge / Gradient
 // Badge / Custom / Dot Badge / Gradient / Dark
-export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_blue_dark_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_green_dark_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_grey_dark_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_primary_dark_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_red_dark_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_secondary_dark_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/dark/fc_yellow_dark_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/dark/fc_blue_dark_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/dark/fc_green_dark_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/dark/fc_grey_dark_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/dark/fc_primary_dark_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/dark/fc_red_dark_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/dark/fc_secondary_dark_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/dark/fc_yellow_dark_gradient_dot_badge.dart';
 // Badge / Custom / Dot Badge / Gradient / Default
-export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_blue_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_green_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_grey_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_primary_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_red_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_secondary_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/default/fc_yellow_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/default/fc_blue_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/default/fc_green_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/default/fc_grey_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/default/fc_primary_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/default/fc_red_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/default/fc_secondary_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/default/fc_yellow_gradient_dot_badge.dart';
 // Badge / Custom / Dot Badge / Gradient / Light
-export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_blue_light_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_green_light_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_grey_light_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_primary_light_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_red_light_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_secondary_light_gradient_dot_badge.dart';
-export 'src/widget/badge/custom/dot_badge_content/gradient/light/fc_yellow_light_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/light/fc_blue_light_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/light/fc_green_light_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/light/fc_grey_light_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/light/fc_primary_light_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/light/fc_red_light_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/light/fc_secondary_light_gradient_dot_badge.dart';
+export 'src/widget/badge/custom/dot_badge/gradient/light/fc_yellow_light_gradient_dot_badge.dart';
 
 // Blur
 export 'src/widget/blur/fc_blur.dart';

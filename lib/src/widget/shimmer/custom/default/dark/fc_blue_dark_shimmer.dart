@@ -8,12 +8,14 @@ class FCBlueDarkShimmer extends StatelessWidget {
     this.shape = BoxShape.rectangle,
     this.height,
     this.width,
+    this.duration,
     this.child,
   });
 
   final BoxShape shape;
   final double? height;
   final double? width;
+  final Duration? duration;
   final Widget? child;
 
   @override
@@ -28,6 +30,7 @@ class FCBlueDarkShimmer extends StatelessWidget {
       shape: this.shape,
       height: this.height,
       width: this.width,
+      duration: this.duration,
       child: this.child,
     );
   }

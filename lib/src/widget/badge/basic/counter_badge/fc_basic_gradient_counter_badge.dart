@@ -9,18 +9,20 @@ class FCBasicGradientCounterBadge extends StatelessWidget {
     required this.gradient,
     required this.count,
     this.isShow = true,
-    this.duration,
-    this.style,
     this.position = FCBadgePosition.topEnd,
+    this.duration,
+    this.padding,
+    this.style,
     required this.child,
   });
 
   final Gradient gradient;
   final int count;
   final bool isShow;
-  final Duration? duration;
-  final TextStyle? style;
   final FCBadgePosition position;
+  final Duration? duration;
+  final EdgeInsets? padding;
+  final TextStyle? style;
   final Widget child;
 
   bool _isShow() {
@@ -46,6 +48,8 @@ class FCBasicGradientCounterBadge extends StatelessWidget {
       badgeAnimation: badges.BadgeAnimation.fade(
         animationDuration: this.duration ?? size.durationBadge,
         disappearanceFadeAnimationDuration: this.duration ?? size.durationBadge,
+        curve: Curves.easeInOut,
+        colorChangeAnimationCurve: Curves.easeInOut,
       ),
       showBadge: this._isShow(),
       badgeStyle: badges.BadgeStyle(
@@ -55,16 +59,21 @@ class FCBasicGradientCounterBadge extends StatelessWidget {
       ),
       badgeContent: Container(
         alignment: Alignment.center,
-        padding: EdgeInsets.symmetric(horizontal: size.s10 / 2),
+        padding: this.padding ??
+            EdgeInsets.symmetric(
+              vertical: size.s10 / 4,
+              horizontal: size.s10 / 2,
+            ),
         decoration: BoxDecoration(
           gradient: this.gradient,
           borderRadius: BorderRadius.circular(size.s16 * 2),
         ),
+        constraints: BoxConstraints(minWidth: size.s10 * 2),
         child: Text(
           this._count(),
           style: TextStyle(
             color: style?.color ?? context.config.theme.whiteAlways,
-            fontSize: style?.fontSize ?? size.s12,
+            fontSize: style?.fontSize ?? size.s14,
             fontWeight: style?.fontWeight ?? textStyle.fontWeightRegular,
             fontFamily: style?.fontFamily ?? textStyle.fontFamilyRegular,
           ),

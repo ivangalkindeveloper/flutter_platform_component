@@ -3,8 +3,6 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:async';
 
-//TODO Duration
-
 class FCBasicGradientShimmer extends StatefulWidget {
   const FCBasicGradientShimmer({
     super.key,
@@ -14,6 +12,7 @@ class FCBasicGradientShimmer extends StatefulWidget {
     this.shape = BoxShape.rectangle,
     this.height,
     this.width,
+    this.duration,
     this.child,
   });
 
@@ -23,6 +22,7 @@ class FCBasicGradientShimmer extends StatefulWidget {
   final BoxShape shape;
   final double? height;
   final double? width;
+  final Duration? duration;
   final Widget? child;
 
   @override
@@ -43,7 +43,8 @@ class _FCBasicGradientShimmerState extends State<FCBasicGradientShimmer> {
     this._size = this._config.size;
 
     this._highlightSubscription = Stream.periodic(
-            this._size.durationShimmer, (int second) => second % 2 == 0)
+            this.widget.duration ?? this._size.durationShimmer,
+            (int second) => second % 2 == 0)
         .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
   }
 

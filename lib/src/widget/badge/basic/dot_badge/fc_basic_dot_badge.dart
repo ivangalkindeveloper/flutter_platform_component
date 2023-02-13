@@ -8,15 +8,17 @@ class FCBasicDotBadge extends StatelessWidget {
     super.key,
     required this.color,
     this.isShow = true,
-    this.duration,
     this.position = FCBadgePosition.topEnd,
+    this.duration,
+    this.height,
     required this.child,
   });
 
   final Color color;
   final bool isShow;
-  final Duration? duration;
   final FCBadgePosition position;
+  final Duration? duration;
+  final double? height;
   final Widget child;
 
   @override
@@ -29,13 +31,22 @@ class FCBasicDotBadge extends StatelessWidget {
       badgeAnimation: badges.BadgeAnimation.fade(
         animationDuration: this.duration ?? size.durationBadge,
         disappearanceFadeAnimationDuration: this.duration ?? size.durationBadge,
+        curve: Curves.easeInOut,
+        colorChangeAnimationCurve: Curves.easeInOut,
       ),
       showBadge: this.isShow,
       badgeStyle: badges.BadgeStyle(
         elevation: 0,
-        badgeColor: this.color,
-        padding: EdgeInsets.symmetric(horizontal: size.s10 / 2),
-        borderRadius: BorderRadius.circular(size.s16 * 2),
+        padding: EdgeInsets.zero,
+        badgeColor: Colors.transparent,
+      ),
+      badgeContent: Container(
+        height: this.height ?? size.s10,
+        width: this.height ?? size.s10,
+        decoration: BoxDecoration(
+          color: this.color,
+          shape: BoxShape.circle,
+        ),
       ),
       child: this.child,
     );

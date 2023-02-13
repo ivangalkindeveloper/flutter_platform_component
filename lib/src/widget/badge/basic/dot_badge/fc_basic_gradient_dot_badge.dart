@@ -8,15 +8,17 @@ class FCBasicGradientDotBadge extends StatelessWidget {
     super.key,
     required this.gradient,
     this.isShow = true,
-    this.duration,
     this.position = FCBadgePosition.topEnd,
+    this.duration,
+    this.height,
     required this.child,
   });
 
   final Gradient gradient;
   final bool isShow;
-  final Duration? duration;
   final FCBadgePosition position;
+  final Duration? duration;
+  final double? height;
   final Widget child;
 
   @override
@@ -29,6 +31,8 @@ class FCBasicGradientDotBadge extends StatelessWidget {
       badgeAnimation: badges.BadgeAnimation.fade(
         animationDuration: this.duration ?? size.durationBadge,
         disappearanceFadeAnimationDuration: this.duration ?? size.durationBadge,
+        curve: Curves.easeInOut,
+        colorChangeAnimationCurve: Curves.easeInOut,
       ),
       showBadge: this.isShow,
       badgeStyle: badges.BadgeStyle(
@@ -37,11 +41,11 @@ class FCBasicGradientDotBadge extends StatelessWidget {
         badgeColor: Colors.transparent,
       ),
       badgeContent: Container(
-        alignment: Alignment.center,
-        padding: EdgeInsets.symmetric(horizontal: size.s10 / 2),
+        height: this.height ?? size.s10,
+        width: this.height ?? size.s10,
         decoration: BoxDecoration(
           gradient: this.gradient,
-          borderRadius: BorderRadius.circular(size.s16 * 2),
+          shape: BoxShape.circle,
         ),
       ),
       child: this.child,
