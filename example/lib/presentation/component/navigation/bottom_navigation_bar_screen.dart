@@ -41,14 +41,14 @@ class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> {
           FCBottomNavigationBarWidgetItem(
             context: context,
             child: Container(
-              color: theme.green,
+              color: theme.success,
             ),
           ),
           FCBottomNavigationBarWidgetItemGradient(
             isSelected: false,
             context: context,
             child: Container(
-              color: theme.yellowDark,
+              color: theme.warningDark,
             ),
           ),
         ],

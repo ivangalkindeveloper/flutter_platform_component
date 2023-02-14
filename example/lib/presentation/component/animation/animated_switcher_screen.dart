@@ -51,13 +51,13 @@ class _AnimatedSwitcherScreenState extends State<AnimatedSwitcherScreen> {
                                     key: UniqueKey(),
                                     height: size.s28 * 2,
                                     width: size.s28 * 4,
-                                    color: theme.red,
+                                    color: theme.danger,
                                   )
                                 : Container(
                                     key: UniqueKey(),
                                     height: size.s28 * 4,
                                     width: size.s28 * 4,
-                                    color: theme.blue,
+                                    color: theme.info,
                                   ),
                           ),
                         ],
@@ -77,13 +77,13 @@ class _AnimatedSwitcherScreenState extends State<AnimatedSwitcherScreen> {
                                     key: UniqueKey(),
                                     height: size.s28 * 2,
                                     width: size.s28 * 4,
-                                    color: theme.red,
+                                    color: theme.danger,
                                   )
                                 : Container(
                                     key: UniqueKey(),
                                     height: size.s28 * 4,
                                     width: size.s28 * 4,
-                                    color: theme.blue,
+                                    color: theme.info,
                                   ),
                           ),
                         ],
@@ -103,13 +103,13 @@ class _AnimatedSwitcherScreenState extends State<AnimatedSwitcherScreen> {
                                     key: UniqueKey(),
                                     height: size.s28 * 2,
                                     width: size.s28 * 4,
-                                    color: theme.red,
+                                    color: theme.danger,
                                   )
                                 : Container(
                                     key: UniqueKey(),
                                     height: size.s28 * 4,
                                     width: size.s28 * 4,
-                                    color: theme.blue,
+                                    color: theme.info,
                                   ),
                           ),
                         ],

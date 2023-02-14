@@ -169,9 +169,9 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
                 style: this.widget.style,
               ),
               errorPinTheme: this._item(
-                backgroundColor: this._theme.redLight,
+                backgroundColor: this._theme.dangerLight,
                 style: TextStyle(
-                  color: this._theme.red,
+                  color: this._theme.danger,
                 ),
               ),
               forceErrorState: this._isError,

@@ -143,7 +143,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
     if (this._focusNode.hasPrimaryFocus) return this.widget.backgroundColor;
 
     if (this._isValidationError || this._isAutoValidationError)
-      return this._theme.redLight;
+      return this._theme.dangerLight;
 
     return this.widget.backgroundColor;
   }
@@ -151,13 +151,13 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
   Color _borderColor() {
     if (this._focusNode.hasPrimaryFocus == false) return Colors.transparent;
 
-    if (this._isValidationError || this._isAutoValidationError) return this._theme.red;
+    if (this._isValidationError || this._isAutoValidationError) return this._theme.danger;
 
     return this.widget.focusedColor;
   }
 
   Color _labelColor() {
-    if (this._isValidationError || this._isAutoValidationError) return this._theme.red;
+    if (this._isValidationError || this._isAutoValidationError) return this._theme.danger;
 
     if (this._focusNode.hasPrimaryFocus)
       return this.widget.labelColor ?? this.widget.focusedColor;
@@ -166,7 +166,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
   }
 
   Color _internalColor() {
-    if (this._isValidationError || this._isAutoValidationError) return this._theme.red;
+    if (this._isValidationError || this._isAutoValidationError) return this._theme.danger;
 
     if (this._focusNode.hasPrimaryFocus)
       return this.widget.internalColor ?? this.widget.focusedColor;
@@ -199,7 +199,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
   String? _validator(String? value) {
     if (value == null || this.mounted == false) return null;
 
-    // Required
+    // Requidanger
     if (this.widget.isRequired && value.isEmpty) {
       this._haptic.error();
       setState(() {
@@ -309,7 +309,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
                                   onNewValue: (String value) {
                                     if (this.mounted == false) return null;
 
-                                    // Required
+                                    // Requidanger
                                     if (this.widget.isRequired && value.isEmpty) {
                                       this._haptic.error();
                                       setState(() {
@@ -387,7 +387,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
             child: Row(
               children: [
                 Expanded(
-                  child: FCText.regular14Red(
+                  child: FCText.regular14Danger(
                     context: context,
                     text: this._errorText(),
                   ),

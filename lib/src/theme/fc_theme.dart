@@ -59,45 +59,45 @@ abstract class IFCTheme {
   abstract final Color greyDark;
   abstract final Gradient greyDarkGradient;
 
-  // Blue
-  abstract final Color blue;
-  abstract final Gradient blueGradient;
-  // Blue / Light
-  abstract final Color blueLight;
-  abstract final Gradient blueLightGradient;
-  // Blue / Dark
-  abstract final Color blueDark;
-  abstract final Gradient blueDarkGradient;
+  // Info
+  abstract final Color info;
+  abstract final Gradient infoGradient;
+  // Info / Light
+  abstract final Color infoLight;
+  abstract final Gradient infoLightGradient;
+  // Info / Dark
+  abstract final Color infoDark;
+  abstract final Gradient infoDarkGradient;
 
-  // Green
-  abstract final Color green;
-  abstract final Gradient greenGradient;
-  // Green / Light
-  abstract final Color greenLight;
-  abstract final Gradient greenLightGradient;
-  // Green / Dark
-  abstract final Color greenDark;
-  abstract final Gradient greenDarkGradient;
+  // Success
+  abstract final Color success;
+  abstract final Gradient successGradient;
+  // Success / Light
+  abstract final Color successLight;
+  abstract final Gradient successLightGradient;
+  // Success / Dark
+  abstract final Color successDark;
+  abstract final Gradient successDarkGradient;
 
-  // Yellow
-  abstract final Color yellow;
-  abstract final Gradient yellowGradient;
-  // Yellow / Light
-  abstract final Color yellowLight;
-  abstract final Gradient yellowLightGradient;
-  // Yellow / Dark
-  abstract final Color yellowDark;
-  abstract final Gradient yellowDarkGradient;
+  // Warning
+  abstract final Color warning;
+  abstract final Gradient warningGradient;
+  // Warning / Light
+  abstract final Color warningLight;
+  abstract final Gradient warningLightGradient;
+  // Warning / Dark
+  abstract final Color warningDark;
+  abstract final Gradient warningDarkGradient;
 
-  // Red
-  abstract final Color red;
-  abstract final Gradient redGradient;
-  // Red / Light
-  abstract final Color redLight;
-  abstract final Gradient redLightGradient;
-  // Red / Dark
-  abstract final Color redDark;
-  abstract final Gradient redDarkGradient;
+  // Danger
+  abstract final Color danger;
+  abstract final Gradient dangerGradient;
+  // Danger / Light
+  abstract final Color dangerLight;
+  abstract final Gradient dangerLightGradient;
+  // Danger / Dark
+  abstract final Color dangerDark;
+  abstract final Gradient dangerDarkGradient;
 
   // Barrier
   // Barrier / Expanded Modal

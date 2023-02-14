@@ -24,11 +24,11 @@ class ShimmerScreen extends StatelessWidget {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkShimmer(
+          FCInfoDarkShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkShimmer(
+          FCSuccessDarkShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
@@ -40,7 +40,7 @@ class ShimmerScreen extends StatelessWidget {
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkShimmer(
+          FCDangerDarkShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
@@ -48,7 +48,7 @@ class ShimmerScreen extends StatelessWidget {
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkShimmer(
+          FCWarningDarkShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16),
@@ -57,11 +57,11 @@ class ShimmerScreen extends StatelessWidget {
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCBlueShimmer(
+          FCInfoShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenShimmer(
+          FCSuccessShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
@@ -73,7 +73,7 @@ class ShimmerScreen extends StatelessWidget {
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedShimmer(
+          FCDangerShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
@@ -81,7 +81,7 @@ class ShimmerScreen extends StatelessWidget {
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowShimmer(
+          FCWarningShimmer(
             height: size.s16 * 2,
           ),
         ],

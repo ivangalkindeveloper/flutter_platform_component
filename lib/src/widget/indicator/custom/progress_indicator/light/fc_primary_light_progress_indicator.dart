@@ -17,7 +17,7 @@ class FCPrimaryLightProgressIndicator extends StatelessWidget {
 
     return FCBasicProgressIndicator(
       backgroundColor: theme.primaryLight,
-      color: theme.greenLight,
+      color: theme.successLight,
       value: this.value,
     );
   }

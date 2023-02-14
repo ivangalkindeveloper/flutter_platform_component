@@ -49,7 +49,7 @@ class _AnimatedContainerScreenState extends State<AnimatedContainerScreen> {
                             height: this._action ? size.s28 * 4 : size.s28 * 2,
                             width: this._action ? size.s28 * 4 : size.s28 * 2,
                             decoration: BoxDecoration(
-                              color: this._action ? theme.red : theme.blue,
+                              color: this._action ? theme.danger : theme.info,
                             ),
                           ),
                         ],
@@ -67,7 +67,7 @@ class _AnimatedContainerScreenState extends State<AnimatedContainerScreen> {
                             height: this._action ? size.s28 * 4 : size.s28 * 2,
                             width: this._action ? size.s28 * 4 : size.s28 * 2,
                             decoration: BoxDecoration(
-                              color: this._action ? theme.red : theme.blue,
+                              color: this._action ? theme.danger : theme.info,
                             ),
                           ),
                         ],
@@ -85,7 +85,7 @@ class _AnimatedContainerScreenState extends State<AnimatedContainerScreen> {
                             height: this._action ? size.s28 * 4 : size.s28 * 2,
                             width: this._action ? size.s28 * 4 : size.s28 * 2,
                             decoration: BoxDecoration(
-                              color: this._action ? theme.red : theme.blue,
+                              color: this._action ? theme.danger : theme.info,
                             ),
                           ),
                         ],

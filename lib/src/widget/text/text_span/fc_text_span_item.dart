@@ -148,135 +148,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin10Blue({
+  static InlineSpan thin10Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin10Blue(context: context),
+        style: FCTextStyle.thin10Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin10BlueLight({
+  static InlineSpan thin10InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin10BlueLight(context: context),
+        style: FCTextStyle.thin10InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin10BlueDark({
+  static InlineSpan thin10InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin10BlueDark(context: context),
+        style: FCTextStyle.thin10InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin10Green({
+  static InlineSpan thin10Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin10Green(context: context),
+        style: FCTextStyle.thin10Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin10GreenLight({
+  static InlineSpan thin10SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin10GreenLight(context: context),
+        style: FCTextStyle.thin10SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin10GreenDark({
+  static InlineSpan thin10SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin10GreenDark(context: context),
+        style: FCTextStyle.thin10SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin10Yellow({
+  static InlineSpan thin10Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin10Yellow(context: context),
+        style: FCTextStyle.thin10Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin10YellowLight({
+  static InlineSpan thin10WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin10YellowLight(context: context),
+        style: FCTextStyle.thin10WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin10YellowDark({
+  static InlineSpan thin10WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin10YellowDark(context: context),
+        style: FCTextStyle.thin10WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin10Red({
+  static InlineSpan thin10Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin10Red(context: context),
+        style: FCTextStyle.thin10Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin10RedLight({
+  static InlineSpan thin10DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin10RedLight(context: context),
+        style: FCTextStyle.thin10DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin10RedDark({
+  static InlineSpan thin10DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin10RedDark(context: context),
+        style: FCTextStyle.thin10DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -424,135 +424,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin12Blue({
+  static InlineSpan thin12Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin12Blue(context: context),
+        style: FCTextStyle.thin12Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin12BlueLight({
+  static InlineSpan thin12InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin12BlueLight(context: context),
+        style: FCTextStyle.thin12InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin12BlueDark({
+  static InlineSpan thin12InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin12BlueDark(context: context),
+        style: FCTextStyle.thin12InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin12Green({
+  static InlineSpan thin12Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin12Green(context: context),
+        style: FCTextStyle.thin12Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin12GreenLight({
+  static InlineSpan thin12SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin12GreenLight(context: context),
+        style: FCTextStyle.thin12SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin12GreenDark({
+  static InlineSpan thin12SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin12GreenDark(context: context),
+        style: FCTextStyle.thin12SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin12Yellow({
+  static InlineSpan thin12Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin12Yellow(context: context),
+        style: FCTextStyle.thin12Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin12YellowLight({
+  static InlineSpan thin12WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin12YellowLight(context: context),
+        style: FCTextStyle.thin12WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin12YellowDark({
+  static InlineSpan thin12WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin12YellowDark(context: context),
+        style: FCTextStyle.thin12WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin12Red({
+  static InlineSpan thin12Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin12Red(context: context),
+        style: FCTextStyle.thin12Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin12RedLight({
+  static InlineSpan thin12DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin12RedLight(context: context),
+        style: FCTextStyle.thin12DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin12RedDark({
+  static InlineSpan thin12DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin12RedDark(context: context),
+        style: FCTextStyle.thin12DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -700,135 +700,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin14Blue({
+  static InlineSpan thin14Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin14Blue(context: context),
+        style: FCTextStyle.thin14Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin14BlueLight({
+  static InlineSpan thin14InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin14BlueLight(context: context),
+        style: FCTextStyle.thin14InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin14BlueDark({
+  static InlineSpan thin14InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin14BlueDark(context: context),
+        style: FCTextStyle.thin14InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin14Green({
+  static InlineSpan thin14Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin14Green(context: context),
+        style: FCTextStyle.thin14Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin14GreenLight({
+  static InlineSpan thin14SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin14GreenLight(context: context),
+        style: FCTextStyle.thin14SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin14GreenDark({
+  static InlineSpan thin14SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin14GreenDark(context: context),
+        style: FCTextStyle.thin14SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin14Yellow({
+  static InlineSpan thin14Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin14Yellow(context: context),
+        style: FCTextStyle.thin14Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin14YellowLight({
+  static InlineSpan thin14WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin14YellowLight(context: context),
+        style: FCTextStyle.thin14WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin14YellowDark({
+  static InlineSpan thin14WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin14YellowDark(context: context),
+        style: FCTextStyle.thin14WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin14Red({
+  static InlineSpan thin14Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin14Red(context: context),
+        style: FCTextStyle.thin14Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin14RedLight({
+  static InlineSpan thin14DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin14RedLight(context: context),
+        style: FCTextStyle.thin14DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin14RedDark({
+  static InlineSpan thin14DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin14RedDark(context: context),
+        style: FCTextStyle.thin14DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -976,135 +976,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin16Blue({
+  static InlineSpan thin16Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin16Blue(context: context),
+        style: FCTextStyle.thin16Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin16BlueLight({
+  static InlineSpan thin16InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin16BlueLight(context: context),
+        style: FCTextStyle.thin16InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin16BlueDark({
+  static InlineSpan thin16InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin16BlueDark(context: context),
+        style: FCTextStyle.thin16InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin16Green({
+  static InlineSpan thin16Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin16Green(context: context),
+        style: FCTextStyle.thin16Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin16GreenLight({
+  static InlineSpan thin16SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin16GreenLight(context: context),
+        style: FCTextStyle.thin16SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin16GreenDark({
+  static InlineSpan thin16SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin16GreenDark(context: context),
+        style: FCTextStyle.thin16SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin16Yellow({
+  static InlineSpan thin16Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin16Yellow(context: context),
+        style: FCTextStyle.thin16Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin16YellowLight({
+  static InlineSpan thin16WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin16YellowLight(context: context),
+        style: FCTextStyle.thin16WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin16YellowDark({
+  static InlineSpan thin16WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin16YellowDark(context: context),
+        style: FCTextStyle.thin16WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin16Red({
+  static InlineSpan thin16Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin16Red(context: context),
+        style: FCTextStyle.thin16Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin16RedLight({
+  static InlineSpan thin16DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin16RedLight(context: context),
+        style: FCTextStyle.thin16DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin16RedDark({
+  static InlineSpan thin16DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin16RedDark(context: context),
+        style: FCTextStyle.thin16DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -1252,135 +1252,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin18Blue({
+  static InlineSpan thin18Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin18Blue(context: context),
+        style: FCTextStyle.thin18Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin18BlueLight({
+  static InlineSpan thin18InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin18BlueLight(context: context),
+        style: FCTextStyle.thin18InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin18BlueDark({
+  static InlineSpan thin18InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin18BlueDark(context: context),
+        style: FCTextStyle.thin18InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin18Green({
+  static InlineSpan thin18Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin18Green(context: context),
+        style: FCTextStyle.thin18Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin18GreenLight({
+  static InlineSpan thin18SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin18GreenLight(context: context),
+        style: FCTextStyle.thin18SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin18GreenDark({
+  static InlineSpan thin18SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin18GreenDark(context: context),
+        style: FCTextStyle.thin18SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin18Yellow({
+  static InlineSpan thin18Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin18Yellow(context: context),
+        style: FCTextStyle.thin18Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin18YellowLight({
+  static InlineSpan thin18WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin18YellowLight(context: context),
+        style: FCTextStyle.thin18WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin18YellowDark({
+  static InlineSpan thin18WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin18YellowDark(context: context),
+        style: FCTextStyle.thin18WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin18Red({
+  static InlineSpan thin18Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin18Red(context: context),
+        style: FCTextStyle.thin18Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin18RedLight({
+  static InlineSpan thin18DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin18RedLight(context: context),
+        style: FCTextStyle.thin18DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin18RedDark({
+  static InlineSpan thin18DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin18RedDark(context: context),
+        style: FCTextStyle.thin18DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -1528,135 +1528,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin20Blue({
+  static InlineSpan thin20Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin20Blue(context: context),
+        style: FCTextStyle.thin20Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin20BlueLight({
+  static InlineSpan thin20InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin20BlueLight(context: context),
+        style: FCTextStyle.thin20InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin20BlueDark({
+  static InlineSpan thin20InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin20BlueDark(context: context),
+        style: FCTextStyle.thin20InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin20Green({
+  static InlineSpan thin20Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin20Green(context: context),
+        style: FCTextStyle.thin20Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin20GreenLight({
+  static InlineSpan thin20SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin20GreenLight(context: context),
+        style: FCTextStyle.thin20SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin20GreenDark({
+  static InlineSpan thin20SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin20GreenDark(context: context),
+        style: FCTextStyle.thin20SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin20Yellow({
+  static InlineSpan thin20Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin20Yellow(context: context),
+        style: FCTextStyle.thin20Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin20YellowLight({
+  static InlineSpan thin20WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin20YellowLight(context: context),
+        style: FCTextStyle.thin20WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin20YellowDark({
+  static InlineSpan thin20WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin20YellowDark(context: context),
+        style: FCTextStyle.thin20WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin20Red({
+  static InlineSpan thin20Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin20Red(context: context),
+        style: FCTextStyle.thin20Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin20RedLight({
+  static InlineSpan thin20DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin20RedLight(context: context),
+        style: FCTextStyle.thin20DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin20RedDark({
+  static InlineSpan thin20DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin20RedDark(context: context),
+        style: FCTextStyle.thin20DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -1804,135 +1804,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin28Blue({
+  static InlineSpan thin28Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin28Blue(context: context),
+        style: FCTextStyle.thin28Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin28BlueLight({
+  static InlineSpan thin28InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin28BlueLight(context: context),
+        style: FCTextStyle.thin28InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin28BlueDark({
+  static InlineSpan thin28InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin28BlueDark(context: context),
+        style: FCTextStyle.thin28InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin28Green({
+  static InlineSpan thin28Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin28Green(context: context),
+        style: FCTextStyle.thin28Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin28GreenLight({
+  static InlineSpan thin28SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin28GreenLight(context: context),
+        style: FCTextStyle.thin28SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin28GreenDark({
+  static InlineSpan thin28SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin28GreenDark(context: context),
+        style: FCTextStyle.thin28SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin28Yellow({
+  static InlineSpan thin28Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin28Yellow(context: context),
+        style: FCTextStyle.thin28Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin28YellowLight({
+  static InlineSpan thin28WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin28YellowLight(context: context),
+        style: FCTextStyle.thin28WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin28YellowDark({
+  static InlineSpan thin28WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin28YellowDark(context: context),
+        style: FCTextStyle.thin28WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin28Red({
+  static InlineSpan thin28Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin28Red(context: context),
+        style: FCTextStyle.thin28Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin28RedLight({
+  static InlineSpan thin28DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin28RedLight(context: context),
+        style: FCTextStyle.thin28DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin28RedDark({
+  static InlineSpan thin28DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin28RedDark(context: context),
+        style: FCTextStyle.thin28DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -2080,135 +2080,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin32Blue({
+  static InlineSpan thin32Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin32Blue(context: context),
+        style: FCTextStyle.thin32Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin32BlueLight({
+  static InlineSpan thin32InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin32BlueLight(context: context),
+        style: FCTextStyle.thin32InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin32BlueDark({
+  static InlineSpan thin32InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin32BlueDark(context: context),
+        style: FCTextStyle.thin32InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin32Green({
+  static InlineSpan thin32Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin32Green(context: context),
+        style: FCTextStyle.thin32Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin32GreenLight({
+  static InlineSpan thin32SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin32GreenLight(context: context),
+        style: FCTextStyle.thin32SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin32GreenDark({
+  static InlineSpan thin32SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin32GreenDark(context: context),
+        style: FCTextStyle.thin32SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin32Yellow({
+  static InlineSpan thin32Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin32Yellow(context: context),
+        style: FCTextStyle.thin32Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin32YellowLight({
+  static InlineSpan thin32WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin32YellowLight(context: context),
+        style: FCTextStyle.thin32WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin32YellowDark({
+  static InlineSpan thin32WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin32YellowDark(context: context),
+        style: FCTextStyle.thin32WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin32Red({
+  static InlineSpan thin32Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin32Red(context: context),
+        style: FCTextStyle.thin32Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin32RedLight({
+  static InlineSpan thin32DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin32RedLight(context: context),
+        style: FCTextStyle.thin32DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan thin32RedDark({
+  static InlineSpan thin32DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.thin32RedDark(context: context),
+        style: FCTextStyle.thin32DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -2357,135 +2357,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular10Blue({
+  static InlineSpan regular10Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular10Blue(context: context),
+        style: FCTextStyle.regular10Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular10BlueLight({
+  static InlineSpan regular10InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular10BlueLight(context: context),
+        style: FCTextStyle.regular10InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular10BlueDark({
+  static InlineSpan regular10InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular10BlueDark(context: context),
+        style: FCTextStyle.regular10InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular10Green({
+  static InlineSpan regular10Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular10Green(context: context),
+        style: FCTextStyle.regular10Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular10GreenLight({
+  static InlineSpan regular10SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular10GreenLight(context: context),
+        style: FCTextStyle.regular10SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular10GreenDark({
+  static InlineSpan regular10SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular10GreenDark(context: context),
+        style: FCTextStyle.regular10SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular10Yellow({
+  static InlineSpan regular10Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular10Yellow(context: context),
+        style: FCTextStyle.regular10Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular10YellowLight({
+  static InlineSpan regular10WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular10YellowLight(context: context),
+        style: FCTextStyle.regular10WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular10YellowDark({
+  static InlineSpan regular10WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular10YellowDark(context: context),
+        style: FCTextStyle.regular10WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular10Red({
+  static InlineSpan regular10Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular10Red(context: context),
+        style: FCTextStyle.regular10Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular10RedLight({
+  static InlineSpan regular10DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular10RedLight(context: context),
+        style: FCTextStyle.regular10DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular10RedDark({
+  static InlineSpan regular10DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular10RedDark(context: context),
+        style: FCTextStyle.regular10DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -2633,135 +2633,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular12Blue({
+  static InlineSpan regular12Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular12Blue(context: context),
+        style: FCTextStyle.regular12Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular12BlueLight({
+  static InlineSpan regular12InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular12BlueLight(context: context),
+        style: FCTextStyle.regular12InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular12BlueDark({
+  static InlineSpan regular12InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular12BlueDark(context: context),
+        style: FCTextStyle.regular12InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular12Green({
+  static InlineSpan regular12Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular12Green(context: context),
+        style: FCTextStyle.regular12Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular12GreenLight({
+  static InlineSpan regular12SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular12GreenLight(context: context),
+        style: FCTextStyle.regular12SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular12GreenDark({
+  static InlineSpan regular12SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular12GreenDark(context: context),
+        style: FCTextStyle.regular12SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular12Yellow({
+  static InlineSpan regular12Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular12Yellow(context: context),
+        style: FCTextStyle.regular12Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular12YellowLight({
+  static InlineSpan regular12WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular12YellowLight(context: context),
+        style: FCTextStyle.regular12WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular12YellowDark({
+  static InlineSpan regular12WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular12YellowDark(context: context),
+        style: FCTextStyle.regular12WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular12Red({
+  static InlineSpan regular12Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular12Red(context: context),
+        style: FCTextStyle.regular12Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular12RedLight({
+  static InlineSpan regular12DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular12RedLight(context: context),
+        style: FCTextStyle.regular12DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular12RedDark({
+  static InlineSpan regular12DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular12RedDark(context: context),
+        style: FCTextStyle.regular12DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -2909,135 +2909,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular14Blue({
+  static InlineSpan regular14Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular14Blue(context: context),
+        style: FCTextStyle.regular14Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular14BlueLight({
+  static InlineSpan regular14InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular14BlueLight(context: context),
+        style: FCTextStyle.regular14InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular14BlueDark({
+  static InlineSpan regular14InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular14BlueDark(context: context),
+        style: FCTextStyle.regular14InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular14Green({
+  static InlineSpan regular14Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular14Green(context: context),
+        style: FCTextStyle.regular14Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular14GreenLight({
+  static InlineSpan regular14SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular14GreenLight(context: context),
+        style: FCTextStyle.regular14SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular14GreenDark({
+  static InlineSpan regular14SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular14GreenDark(context: context),
+        style: FCTextStyle.regular14SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular14Yellow({
+  static InlineSpan regular14Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular14Yellow(context: context),
+        style: FCTextStyle.regular14Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular14YellowLight({
+  static InlineSpan regular14WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular14YellowLight(context: context),
+        style: FCTextStyle.regular14WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular14YellowDark({
+  static InlineSpan regular14WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular14YellowDark(context: context),
+        style: FCTextStyle.regular14WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular14Red({
+  static InlineSpan regular14Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular14Red(context: context),
+        style: FCTextStyle.regular14Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular14RedLight({
+  static InlineSpan regular14DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular14RedLight(context: context),
+        style: FCTextStyle.regular14DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular14RedDark({
+  static InlineSpan regular14DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular14RedDark(context: context),
+        style: FCTextStyle.regular14DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -3185,135 +3185,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular16Blue({
+  static InlineSpan regular16Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular16Blue(context: context),
+        style: FCTextStyle.regular16Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular16BlueLight({
+  static InlineSpan regular16InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular16BlueLight(context: context),
+        style: FCTextStyle.regular16InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular16BlueDark({
+  static InlineSpan regular16InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular16BlueDark(context: context),
+        style: FCTextStyle.regular16InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular16Green({
+  static InlineSpan regular16Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular16Green(context: context),
+        style: FCTextStyle.regular16Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular16GreenLight({
+  static InlineSpan regular16SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular16GreenLight(context: context),
+        style: FCTextStyle.regular16SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular16GreenDark({
+  static InlineSpan regular16SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular16GreenDark(context: context),
+        style: FCTextStyle.regular16SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular16Yellow({
+  static InlineSpan regular16Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular16Yellow(context: context),
+        style: FCTextStyle.regular16Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular16YellowLight({
+  static InlineSpan regular16WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular16YellowLight(context: context),
+        style: FCTextStyle.regular16WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular16YellowDark({
+  static InlineSpan regular16WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular16YellowDark(context: context),
+        style: FCTextStyle.regular16WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular16Red({
+  static InlineSpan regular16Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular16Red(context: context),
+        style: FCTextStyle.regular16Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular16RedLight({
+  static InlineSpan regular16DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular16RedLight(context: context),
+        style: FCTextStyle.regular16DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular16RedDark({
+  static InlineSpan regular16DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular16RedDark(context: context),
+        style: FCTextStyle.regular16DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -3461,135 +3461,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular18Blue({
+  static InlineSpan regular18Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular18Blue(context: context),
+        style: FCTextStyle.regular18Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular18BlueLight({
+  static InlineSpan regular18InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular18BlueLight(context: context),
+        style: FCTextStyle.regular18InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular18BlueDark({
+  static InlineSpan regular18InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular18BlueDark(context: context),
+        style: FCTextStyle.regular18InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular18Green({
+  static InlineSpan regular18Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular18Green(context: context),
+        style: FCTextStyle.regular18Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular18GreenLight({
+  static InlineSpan regular18SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular18GreenLight(context: context),
+        style: FCTextStyle.regular18SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular18GreenDark({
+  static InlineSpan regular18SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular18GreenDark(context: context),
+        style: FCTextStyle.regular18SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular18Yellow({
+  static InlineSpan regular18Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular18Yellow(context: context),
+        style: FCTextStyle.regular18Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular18YellowLight({
+  static InlineSpan regular18WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular18YellowLight(context: context),
+        style: FCTextStyle.regular18WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular18YellowDark({
+  static InlineSpan regular18WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular18YellowDark(context: context),
+        style: FCTextStyle.regular18WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular18Red({
+  static InlineSpan regular18Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular18Red(context: context),
+        style: FCTextStyle.regular18Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular18RedLight({
+  static InlineSpan regular18DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular18RedLight(context: context),
+        style: FCTextStyle.regular18DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular18RedDark({
+  static InlineSpan regular18DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular18RedDark(context: context),
+        style: FCTextStyle.regular18DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -3737,135 +3737,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular20Blue({
+  static InlineSpan regular20Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular20Blue(context: context),
+        style: FCTextStyle.regular20Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular20BlueLight({
+  static InlineSpan regular20InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular20BlueLight(context: context),
+        style: FCTextStyle.regular20InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular20BlueDark({
+  static InlineSpan regular20InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular20BlueDark(context: context),
+        style: FCTextStyle.regular20InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular20Green({
+  static InlineSpan regular20Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular20Green(context: context),
+        style: FCTextStyle.regular20Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular20GreenLight({
+  static InlineSpan regular20SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular20GreenLight(context: context),
+        style: FCTextStyle.regular20SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular20GreenDark({
+  static InlineSpan regular20SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular20GreenDark(context: context),
+        style: FCTextStyle.regular20SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular20Yellow({
+  static InlineSpan regular20Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular20Yellow(context: context),
+        style: FCTextStyle.regular20Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular20YellowLight({
+  static InlineSpan regular20WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular20YellowLight(context: context),
+        style: FCTextStyle.regular20WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular20YellowDark({
+  static InlineSpan regular20WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular20YellowDark(context: context),
+        style: FCTextStyle.regular20WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular20Red({
+  static InlineSpan regular20Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular20Red(context: context),
+        style: FCTextStyle.regular20Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular20RedLight({
+  static InlineSpan regular20DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular20RedLight(context: context),
+        style: FCTextStyle.regular20DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular20RedDark({
+  static InlineSpan regular20DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular20RedDark(context: context),
+        style: FCTextStyle.regular20DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -4013,135 +4013,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular28Blue({
+  static InlineSpan regular28Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular28Blue(context: context),
+        style: FCTextStyle.regular28Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular28BlueLight({
+  static InlineSpan regular28InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular28BlueLight(context: context),
+        style: FCTextStyle.regular28InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular28BlueDark({
+  static InlineSpan regular28InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular28BlueDark(context: context),
+        style: FCTextStyle.regular28InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular28Green({
+  static InlineSpan regular28Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular28Green(context: context),
+        style: FCTextStyle.regular28Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular28GreenLight({
+  static InlineSpan regular28SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular28GreenLight(context: context),
+        style: FCTextStyle.regular28SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular28GreenDark({
+  static InlineSpan regular28SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular28GreenDark(context: context),
+        style: FCTextStyle.regular28SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular28Yellow({
+  static InlineSpan regular28Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular28Yellow(context: context),
+        style: FCTextStyle.regular28Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular28YellowLight({
+  static InlineSpan regular28WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular28YellowLight(context: context),
+        style: FCTextStyle.regular28WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular28YellowDark({
+  static InlineSpan regular28WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular28YellowDark(context: context),
+        style: FCTextStyle.regular28WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular28Red({
+  static InlineSpan regular28Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular28Red(context: context),
+        style: FCTextStyle.regular28Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular28RedLight({
+  static InlineSpan regular28DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular28RedLight(context: context),
+        style: FCTextStyle.regular28DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular28RedDark({
+  static InlineSpan regular28DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular28RedDark(context: context),
+        style: FCTextStyle.regular28DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -4289,135 +4289,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular32Blue({
+  static InlineSpan regular32Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular32Blue(context: context),
+        style: FCTextStyle.regular32Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular32BlueLight({
+  static InlineSpan regular32InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular32BlueLight(context: context),
+        style: FCTextStyle.regular32InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular32BlueDark({
+  static InlineSpan regular32InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular32BlueDark(context: context),
+        style: FCTextStyle.regular32InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular32Green({
+  static InlineSpan regular32Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular32Green(context: context),
+        style: FCTextStyle.regular32Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular32GreenLight({
+  static InlineSpan regular32SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular32GreenLight(context: context),
+        style: FCTextStyle.regular32SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular32GreenDark({
+  static InlineSpan regular32SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular32GreenDark(context: context),
+        style: FCTextStyle.regular32SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular32Yellow({
+  static InlineSpan regular32Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular32Yellow(context: context),
+        style: FCTextStyle.regular32Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular32YellowLight({
+  static InlineSpan regular32WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular32YellowLight(context: context),
+        style: FCTextStyle.regular32WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular32YellowDark({
+  static InlineSpan regular32WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular32YellowDark(context: context),
+        style: FCTextStyle.regular32WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular32Red({
+  static InlineSpan regular32Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular32Red(context: context),
+        style: FCTextStyle.regular32Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular32RedLight({
+  static InlineSpan regular32DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular32RedLight(context: context),
+        style: FCTextStyle.regular32DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan regular32RedDark({
+  static InlineSpan regular32DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.regular32RedDark(context: context),
+        style: FCTextStyle.regular32DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -4566,135 +4566,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium10Blue({
+  static InlineSpan medium10Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium10Blue(context: context),
+        style: FCTextStyle.medium10Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium10BlueLight({
+  static InlineSpan medium10InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium10BlueLight(context: context),
+        style: FCTextStyle.medium10InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium10BlueDark({
+  static InlineSpan medium10InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium10BlueDark(context: context),
+        style: FCTextStyle.medium10InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium10Green({
+  static InlineSpan medium10Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium10Green(context: context),
+        style: FCTextStyle.medium10Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium10GreenLight({
+  static InlineSpan medium10SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium10GreenLight(context: context),
+        style: FCTextStyle.medium10SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium10GreenDark({
+  static InlineSpan medium10SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium10GreenDark(context: context),
+        style: FCTextStyle.medium10SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium10Yellow({
+  static InlineSpan medium10Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium10Yellow(context: context),
+        style: FCTextStyle.medium10Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium10YellowLight({
+  static InlineSpan medium10WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium10YellowLight(context: context),
+        style: FCTextStyle.medium10WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium10YellowDark({
+  static InlineSpan medium10WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium10YellowDark(context: context),
+        style: FCTextStyle.medium10WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium10Red({
+  static InlineSpan medium10Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium10Red(context: context),
+        style: FCTextStyle.medium10Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium10RedLight({
+  static InlineSpan medium10DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium10RedLight(context: context),
+        style: FCTextStyle.medium10DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium10RedDark({
+  static InlineSpan medium10DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium10RedDark(context: context),
+        style: FCTextStyle.medium10DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -4842,135 +4842,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium12Blue({
+  static InlineSpan medium12Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium12Blue(context: context),
+        style: FCTextStyle.medium12Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium12BlueLight({
+  static InlineSpan medium12InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium12BlueLight(context: context),
+        style: FCTextStyle.medium12InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium12BlueDark({
+  static InlineSpan medium12InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium12BlueDark(context: context),
+        style: FCTextStyle.medium12InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium12Green({
+  static InlineSpan medium12Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium12Green(context: context),
+        style: FCTextStyle.medium12Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium12GreenLight({
+  static InlineSpan medium12SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium12GreenLight(context: context),
+        style: FCTextStyle.medium12SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium12GreenDark({
+  static InlineSpan medium12SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium12GreenDark(context: context),
+        style: FCTextStyle.medium12SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium12Yellow({
+  static InlineSpan medium12Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium12Yellow(context: context),
+        style: FCTextStyle.medium12Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium12YellowLight({
+  static InlineSpan medium12WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium12YellowLight(context: context),
+        style: FCTextStyle.medium12WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium12YellowDark({
+  static InlineSpan medium12WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium12YellowDark(context: context),
+        style: FCTextStyle.medium12WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium12Red({
+  static InlineSpan medium12Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium12Red(context: context),
+        style: FCTextStyle.medium12Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium12RedLight({
+  static InlineSpan medium12DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium12RedLight(context: context),
+        style: FCTextStyle.medium12DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium12RedDark({
+  static InlineSpan medium12DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium12RedDark(context: context),
+        style: FCTextStyle.medium12DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -5118,135 +5118,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium14Blue({
+  static InlineSpan medium14Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium14Blue(context: context),
+        style: FCTextStyle.medium14Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium14BlueLight({
+  static InlineSpan medium14InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium14BlueLight(context: context),
+        style: FCTextStyle.medium14InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium14BlueDark({
+  static InlineSpan medium14InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium14BlueDark(context: context),
+        style: FCTextStyle.medium14InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium14Green({
+  static InlineSpan medium14Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium14Green(context: context),
+        style: FCTextStyle.medium14Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium14GreenLight({
+  static InlineSpan medium14SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium14GreenLight(context: context),
+        style: FCTextStyle.medium14SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium14GreenDark({
+  static InlineSpan medium14SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium14GreenDark(context: context),
+        style: FCTextStyle.medium14SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium14Yellow({
+  static InlineSpan medium14Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium14Yellow(context: context),
+        style: FCTextStyle.medium14Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium14YellowLight({
+  static InlineSpan medium14WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium14YellowLight(context: context),
+        style: FCTextStyle.medium14WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium14YellowDark({
+  static InlineSpan medium14WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium14YellowDark(context: context),
+        style: FCTextStyle.medium14WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium14Red({
+  static InlineSpan medium14Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium14Red(context: context),
+        style: FCTextStyle.medium14Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium14RedLight({
+  static InlineSpan medium14DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium14RedLight(context: context),
+        style: FCTextStyle.medium14DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium14RedDark({
+  static InlineSpan medium14DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium14RedDark(context: context),
+        style: FCTextStyle.medium14DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -5394,135 +5394,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium16Blue({
+  static InlineSpan medium16Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium16Blue(context: context),
+        style: FCTextStyle.medium16Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium16BlueLight({
+  static InlineSpan medium16InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium16BlueLight(context: context),
+        style: FCTextStyle.medium16InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium16BlueDark({
+  static InlineSpan medium16InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium16BlueDark(context: context),
+        style: FCTextStyle.medium16InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium16Green({
+  static InlineSpan medium16Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium16Green(context: context),
+        style: FCTextStyle.medium16Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium16GreenLight({
+  static InlineSpan medium16SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium16GreenLight(context: context),
+        style: FCTextStyle.medium16SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium16GreenDark({
+  static InlineSpan medium16SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium16GreenDark(context: context),
+        style: FCTextStyle.medium16SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium16Yellow({
+  static InlineSpan medium16Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium16Yellow(context: context),
+        style: FCTextStyle.medium16Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium16YellowLight({
+  static InlineSpan medium16WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium16YellowLight(context: context),
+        style: FCTextStyle.medium16WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium16YellowDark({
+  static InlineSpan medium16WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium16YellowDark(context: context),
+        style: FCTextStyle.medium16WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium16Red({
+  static InlineSpan medium16Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium16Red(context: context),
+        style: FCTextStyle.medium16Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium16RedLight({
+  static InlineSpan medium16DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium16RedLight(context: context),
+        style: FCTextStyle.medium16DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium16RedDark({
+  static InlineSpan medium16DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium16RedDark(context: context),
+        style: FCTextStyle.medium16DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -5670,135 +5670,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium18Blue({
+  static InlineSpan medium18Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium18Blue(context: context),
+        style: FCTextStyle.medium18Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium18BlueLight({
+  static InlineSpan medium18InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium18BlueLight(context: context),
+        style: FCTextStyle.medium18InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium18BlueDark({
+  static InlineSpan medium18InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium18BlueDark(context: context),
+        style: FCTextStyle.medium18InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium18Green({
+  static InlineSpan medium18Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium18Green(context: context),
+        style: FCTextStyle.medium18Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium18GreenLight({
+  static InlineSpan medium18SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium18GreenLight(context: context),
+        style: FCTextStyle.medium18SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium18GreenDark({
+  static InlineSpan medium18SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium18GreenDark(context: context),
+        style: FCTextStyle.medium18SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium18Yellow({
+  static InlineSpan medium18Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium18Yellow(context: context),
+        style: FCTextStyle.medium18Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium18YellowLight({
+  static InlineSpan medium18WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium18YellowLight(context: context),
+        style: FCTextStyle.medium18WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium18YellowDark({
+  static InlineSpan medium18WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium18YellowDark(context: context),
+        style: FCTextStyle.medium18WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium18Red({
+  static InlineSpan medium18Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium18Red(context: context),
+        style: FCTextStyle.medium18Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium18RedLight({
+  static InlineSpan medium18DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium18RedLight(context: context),
+        style: FCTextStyle.medium18DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium18RedDark({
+  static InlineSpan medium18DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium18RedDark(context: context),
+        style: FCTextStyle.medium18DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -5946,135 +5946,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium20Blue({
+  static InlineSpan medium20Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium20Blue(context: context),
+        style: FCTextStyle.medium20Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium20BlueLight({
+  static InlineSpan medium20InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium20BlueLight(context: context),
+        style: FCTextStyle.medium20InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium20BlueDark({
+  static InlineSpan medium20InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium20BlueDark(context: context),
+        style: FCTextStyle.medium20InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium20Green({
+  static InlineSpan medium20Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium20Green(context: context),
+        style: FCTextStyle.medium20Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium20GreenLight({
+  static InlineSpan medium20SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium20GreenLight(context: context),
+        style: FCTextStyle.medium20SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium20GreenDark({
+  static InlineSpan medium20SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium20GreenDark(context: context),
+        style: FCTextStyle.medium20SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium20Yellow({
+  static InlineSpan medium20Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium20Yellow(context: context),
+        style: FCTextStyle.medium20Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium20YellowLight({
+  static InlineSpan medium20WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium20YellowLight(context: context),
+        style: FCTextStyle.medium20WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium20YellowDark({
+  static InlineSpan medium20WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium20YellowDark(context: context),
+        style: FCTextStyle.medium20WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium20Red({
+  static InlineSpan medium20Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium20Red(context: context),
+        style: FCTextStyle.medium20Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium20RedLight({
+  static InlineSpan medium20DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium20RedLight(context: context),
+        style: FCTextStyle.medium20DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium20RedDark({
+  static InlineSpan medium20DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium20RedDark(context: context),
+        style: FCTextStyle.medium20DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -6222,135 +6222,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium28Blue({
+  static InlineSpan medium28Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium28Blue(context: context),
+        style: FCTextStyle.medium28Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium28BlueLight({
+  static InlineSpan medium28InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium28BlueLight(context: context),
+        style: FCTextStyle.medium28InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium28BlueDark({
+  static InlineSpan medium28InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium28BlueDark(context: context),
+        style: FCTextStyle.medium28InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium28Green({
+  static InlineSpan medium28Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium28Green(context: context),
+        style: FCTextStyle.medium28Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium28GreenLight({
+  static InlineSpan medium28SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium28GreenLight(context: context),
+        style: FCTextStyle.medium28SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium28GreenDark({
+  static InlineSpan medium28SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium28GreenDark(context: context),
+        style: FCTextStyle.medium28SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium28Yellow({
+  static InlineSpan medium28Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium28Yellow(context: context),
+        style: FCTextStyle.medium28Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium28YellowLight({
+  static InlineSpan medium28WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium28YellowLight(context: context),
+        style: FCTextStyle.medium28WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium28YellowDark({
+  static InlineSpan medium28WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium28YellowDark(context: context),
+        style: FCTextStyle.medium28WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium28Red({
+  static InlineSpan medium28Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium28Red(context: context),
+        style: FCTextStyle.medium28Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium28RedLight({
+  static InlineSpan medium28DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium28RedLight(context: context),
+        style: FCTextStyle.medium28DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium28RedDark({
+  static InlineSpan medium28DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium28RedDark(context: context),
+        style: FCTextStyle.medium28DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -6498,135 +6498,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium32Blue({
+  static InlineSpan medium32Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium32Blue(context: context),
+        style: FCTextStyle.medium32Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium32BlueLight({
+  static InlineSpan medium32InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium32BlueLight(context: context),
+        style: FCTextStyle.medium32InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium32BlueDark({
+  static InlineSpan medium32InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium32BlueDark(context: context),
+        style: FCTextStyle.medium32InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium32Green({
+  static InlineSpan medium32Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium32Green(context: context),
+        style: FCTextStyle.medium32Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium32GreenLight({
+  static InlineSpan medium32SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium32GreenLight(context: context),
+        style: FCTextStyle.medium32SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium32GreenDark({
+  static InlineSpan medium32SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium32GreenDark(context: context),
+        style: FCTextStyle.medium32SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium32Yellow({
+  static InlineSpan medium32Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium32Yellow(context: context),
+        style: FCTextStyle.medium32Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium32YellowLight({
+  static InlineSpan medium32WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium32YellowLight(context: context),
+        style: FCTextStyle.medium32WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium32YellowDark({
+  static InlineSpan medium32WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium32YellowDark(context: context),
+        style: FCTextStyle.medium32WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium32Red({
+  static InlineSpan medium32Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium32Red(context: context),
+        style: FCTextStyle.medium32Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium32RedLight({
+  static InlineSpan medium32DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium32RedLight(context: context),
+        style: FCTextStyle.medium32DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan medium32RedDark({
+  static InlineSpan medium32DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.medium32RedDark(context: context),
+        style: FCTextStyle.medium32DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -6775,135 +6775,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold10Blue({
+  static InlineSpan semiBold10Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold10Blue(context: context),
+        style: FCTextStyle.semiBold10Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold10BlueLight({
+  static InlineSpan semiBold10InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold10BlueLight(context: context),
+        style: FCTextStyle.semiBold10InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold10BlueDark({
+  static InlineSpan semiBold10InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold10BlueDark(context: context),
+        style: FCTextStyle.semiBold10InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold10Green({
+  static InlineSpan semiBold10Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold10Green(context: context),
+        style: FCTextStyle.semiBold10Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold10GreenLight({
+  static InlineSpan semiBold10SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold10GreenLight(context: context),
+        style: FCTextStyle.semiBold10SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold10GreenDark({
+  static InlineSpan semiBold10SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold10GreenDark(context: context),
+        style: FCTextStyle.semiBold10SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold10Yellow({
+  static InlineSpan semiBold10Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold10Yellow(context: context),
+        style: FCTextStyle.semiBold10Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold10YellowLight({
+  static InlineSpan semiBold10WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold10YellowLight(context: context),
+        style: FCTextStyle.semiBold10WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold10YellowDark({
+  static InlineSpan semiBold10WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold10YellowDark(context: context),
+        style: FCTextStyle.semiBold10WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold10Red({
+  static InlineSpan semiBold10Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold10Red(context: context),
+        style: FCTextStyle.semiBold10Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold10RedLight({
+  static InlineSpan semiBold10DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold10RedLight(context: context),
+        style: FCTextStyle.semiBold10DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold10RedDark({
+  static InlineSpan semiBold10DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold10RedDark(context: context),
+        style: FCTextStyle.semiBold10DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -7051,135 +7051,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold12Blue({
+  static InlineSpan semiBold12Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold12Blue(context: context),
+        style: FCTextStyle.semiBold12Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold12BlueLight({
+  static InlineSpan semiBold12InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold12BlueLight(context: context),
+        style: FCTextStyle.semiBold12InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold12BlueDark({
+  static InlineSpan semiBold12InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold12BlueDark(context: context),
+        style: FCTextStyle.semiBold12InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold12Green({
+  static InlineSpan semiBold12Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold12Green(context: context),
+        style: FCTextStyle.semiBold12Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold12GreenLight({
+  static InlineSpan semiBold12SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold12GreenLight(context: context),
+        style: FCTextStyle.semiBold12SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold12GreenDark({
+  static InlineSpan semiBold12SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold12GreenDark(context: context),
+        style: FCTextStyle.semiBold12SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold12Yellow({
+  static InlineSpan semiBold12Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold12Yellow(context: context),
+        style: FCTextStyle.semiBold12Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold12YellowLight({
+  static InlineSpan semiBold12WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold12YellowLight(context: context),
+        style: FCTextStyle.semiBold12WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold12YellowDark({
+  static InlineSpan semiBold12WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold12YellowDark(context: context),
+        style: FCTextStyle.semiBold12WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold12Red({
+  static InlineSpan semiBold12Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold12Red(context: context),
+        style: FCTextStyle.semiBold12Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold12RedLight({
+  static InlineSpan semiBold12DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold12RedLight(context: context),
+        style: FCTextStyle.semiBold12DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold12RedDark({
+  static InlineSpan semiBold12DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold12RedDark(context: context),
+        style: FCTextStyle.semiBold12DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -7327,135 +7327,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold14Blue({
+  static InlineSpan semiBold14Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold14Blue(context: context),
+        style: FCTextStyle.semiBold14Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold14BlueLight({
+  static InlineSpan semiBold14InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold14BlueLight(context: context),
+        style: FCTextStyle.semiBold14InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold14BlueDark({
+  static InlineSpan semiBold14InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold14BlueDark(context: context),
+        style: FCTextStyle.semiBold14InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold14Green({
+  static InlineSpan semiBold14Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold14Green(context: context),
+        style: FCTextStyle.semiBold14Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold14GreenLight({
+  static InlineSpan semiBold14SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold14GreenLight(context: context),
+        style: FCTextStyle.semiBold14SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold14GreenDark({
+  static InlineSpan semiBold14SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold14GreenDark(context: context),
+        style: FCTextStyle.semiBold14SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold14Yellow({
+  static InlineSpan semiBold14Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold14Yellow(context: context),
+        style: FCTextStyle.semiBold14Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold14YellowLight({
+  static InlineSpan semiBold14WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold14YellowLight(context: context),
+        style: FCTextStyle.semiBold14WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold14YellowDark({
+  static InlineSpan semiBold14WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold14YellowDark(context: context),
+        style: FCTextStyle.semiBold14WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold14Red({
+  static InlineSpan semiBold14Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold14Red(context: context),
+        style: FCTextStyle.semiBold14Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold14RedLight({
+  static InlineSpan semiBold14DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold14RedLight(context: context),
+        style: FCTextStyle.semiBold14DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold14RedDark({
+  static InlineSpan semiBold14DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold14RedDark(context: context),
+        style: FCTextStyle.semiBold14DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -7603,135 +7603,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold16Blue({
+  static InlineSpan semiBold16Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold16Blue(context: context),
+        style: FCTextStyle.semiBold16Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold16BlueLight({
+  static InlineSpan semiBold16InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold16BlueLight(context: context),
+        style: FCTextStyle.semiBold16InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold16BlueDark({
+  static InlineSpan semiBold16InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold16BlueDark(context: context),
+        style: FCTextStyle.semiBold16InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold16Green({
+  static InlineSpan semiBold16Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold16Green(context: context),
+        style: FCTextStyle.semiBold16Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold16GreenLight({
+  static InlineSpan semiBold16SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold16GreenLight(context: context),
+        style: FCTextStyle.semiBold16SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold16GreenDark({
+  static InlineSpan semiBold16SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold16GreenDark(context: context),
+        style: FCTextStyle.semiBold16SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold16Yellow({
+  static InlineSpan semiBold16Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold16Yellow(context: context),
+        style: FCTextStyle.semiBold16Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold16YellowLight({
+  static InlineSpan semiBold16WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold16YellowLight(context: context),
+        style: FCTextStyle.semiBold16WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold16YellowDark({
+  static InlineSpan semiBold16WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold16YellowDark(context: context),
+        style: FCTextStyle.semiBold16WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold16Red({
+  static InlineSpan semiBold16Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold16Red(context: context),
+        style: FCTextStyle.semiBold16Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold16RedLight({
+  static InlineSpan semiBold16DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold16RedLight(context: context),
+        style: FCTextStyle.semiBold16DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold16RedDark({
+  static InlineSpan semiBold16DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold16RedDark(context: context),
+        style: FCTextStyle.semiBold16DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -7879,135 +7879,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold18Blue({
+  static InlineSpan semiBold18Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold18Blue(context: context),
+        style: FCTextStyle.semiBold18Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold18BlueLight({
+  static InlineSpan semiBold18InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold18BlueLight(context: context),
+        style: FCTextStyle.semiBold18InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold18BlueDark({
+  static InlineSpan semiBold18InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold18BlueDark(context: context),
+        style: FCTextStyle.semiBold18InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold18Green({
+  static InlineSpan semiBold18Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold18Green(context: context),
+        style: FCTextStyle.semiBold18Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold18GreenLight({
+  static InlineSpan semiBold18SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold18GreenLight(context: context),
+        style: FCTextStyle.semiBold18SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold18GreenDark({
+  static InlineSpan semiBold18SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold18GreenDark(context: context),
+        style: FCTextStyle.semiBold18SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold18Yellow({
+  static InlineSpan semiBold18Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold18Yellow(context: context),
+        style: FCTextStyle.semiBold18Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold18YellowLight({
+  static InlineSpan semiBold18WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold18YellowLight(context: context),
+        style: FCTextStyle.semiBold18WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold18YellowDark({
+  static InlineSpan semiBold18WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold18YellowDark(context: context),
+        style: FCTextStyle.semiBold18WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold18Red({
+  static InlineSpan semiBold18Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold18Red(context: context),
+        style: FCTextStyle.semiBold18Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold18RedLight({
+  static InlineSpan semiBold18DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold18RedLight(context: context),
+        style: FCTextStyle.semiBold18DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold18RedDark({
+  static InlineSpan semiBold18DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold18RedDark(context: context),
+        style: FCTextStyle.semiBold18DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -8155,135 +8155,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold20Blue({
+  static InlineSpan semiBold20Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold20Blue(context: context),
+        style: FCTextStyle.semiBold20Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold20BlueLight({
+  static InlineSpan semiBold20InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold20BlueLight(context: context),
+        style: FCTextStyle.semiBold20InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold20BlueDark({
+  static InlineSpan semiBold20InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold20BlueDark(context: context),
+        style: FCTextStyle.semiBold20InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold20Green({
+  static InlineSpan semiBold20Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold20Green(context: context),
+        style: FCTextStyle.semiBold20Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold20GreenLight({
+  static InlineSpan semiBold20SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold20GreenLight(context: context),
+        style: FCTextStyle.semiBold20SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold20GreenDark({
+  static InlineSpan semiBold20SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold20GreenDark(context: context),
+        style: FCTextStyle.semiBold20SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold20Yellow({
+  static InlineSpan semiBold20Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold20Yellow(context: context),
+        style: FCTextStyle.semiBold20Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold20YellowLight({
+  static InlineSpan semiBold20WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold20YellowLight(context: context),
+        style: FCTextStyle.semiBold20WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold20YellowDark({
+  static InlineSpan semiBold20WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold20YellowDark(context: context),
+        style: FCTextStyle.semiBold20WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold20Red({
+  static InlineSpan semiBold20Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold20Red(context: context),
+        style: FCTextStyle.semiBold20Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold20RedLight({
+  static InlineSpan semiBold20DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold20RedLight(context: context),
+        style: FCTextStyle.semiBold20DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold20RedDark({
+  static InlineSpan semiBold20DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold20RedDark(context: context),
+        style: FCTextStyle.semiBold20DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -8431,135 +8431,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold28Blue({
+  static InlineSpan semiBold28Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold28Blue(context: context),
+        style: FCTextStyle.semiBold28Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold28BlueLight({
+  static InlineSpan semiBold28InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold28BlueLight(context: context),
+        style: FCTextStyle.semiBold28InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold28BlueDark({
+  static InlineSpan semiBold28InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold28BlueDark(context: context),
+        style: FCTextStyle.semiBold28InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold28Green({
+  static InlineSpan semiBold28Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold28Green(context: context),
+        style: FCTextStyle.semiBold28Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold28GreenLight({
+  static InlineSpan semiBold28SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold28GreenLight(context: context),
+        style: FCTextStyle.semiBold28SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold28GreenDark({
+  static InlineSpan semiBold28SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold28GreenDark(context: context),
+        style: FCTextStyle.semiBold28SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold28Yellow({
+  static InlineSpan semiBold28Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold28Yellow(context: context),
+        style: FCTextStyle.semiBold28Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold28YellowLight({
+  static InlineSpan semiBold28WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold28YellowLight(context: context),
+        style: FCTextStyle.semiBold28WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold28YellowDark({
+  static InlineSpan semiBold28WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold28YellowDark(context: context),
+        style: FCTextStyle.semiBold28WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold28Red({
+  static InlineSpan semiBold28Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold28Red(context: context),
+        style: FCTextStyle.semiBold28Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold28RedLight({
+  static InlineSpan semiBold28DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold28RedLight(context: context),
+        style: FCTextStyle.semiBold28DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold28RedDark({
+  static InlineSpan semiBold28DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold28RedDark(context: context),
+        style: FCTextStyle.semiBold28DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -8707,135 +8707,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold32Blue({
+  static InlineSpan semiBold32Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold32Blue(context: context),
+        style: FCTextStyle.semiBold32Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold32BlueLight({
+  static InlineSpan semiBold32InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold32BlueLight(context: context),
+        style: FCTextStyle.semiBold32InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold32BlueDark({
+  static InlineSpan semiBold32InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold32BlueDark(context: context),
+        style: FCTextStyle.semiBold32InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold32Green({
+  static InlineSpan semiBold32Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold32Green(context: context),
+        style: FCTextStyle.semiBold32Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold32GreenLight({
+  static InlineSpan semiBold32SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold32GreenLight(context: context),
+        style: FCTextStyle.semiBold32SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold32GreenDark({
+  static InlineSpan semiBold32SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold32GreenDark(context: context),
+        style: FCTextStyle.semiBold32SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold32Yellow({
+  static InlineSpan semiBold32Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold32Yellow(context: context),
+        style: FCTextStyle.semiBold32Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold32YellowLight({
+  static InlineSpan semiBold32WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold32YellowLight(context: context),
+        style: FCTextStyle.semiBold32WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold32YellowDark({
+  static InlineSpan semiBold32WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold32YellowDark(context: context),
+        style: FCTextStyle.semiBold32WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold32Red({
+  static InlineSpan semiBold32Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold32Red(context: context),
+        style: FCTextStyle.semiBold32Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold32RedLight({
+  static InlineSpan semiBold32DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold32RedLight(context: context),
+        style: FCTextStyle.semiBold32DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan semiBold32RedDark({
+  static InlineSpan semiBold32DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.semiBold32RedDark(context: context),
+        style: FCTextStyle.semiBold32DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -8984,135 +8984,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold10Blue({
+  static InlineSpan bold10Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold10Blue(context: context),
+        style: FCTextStyle.bold10Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold10BlueLight({
+  static InlineSpan bold10InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold10BlueLight(context: context),
+        style: FCTextStyle.bold10InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold10BlueDark({
+  static InlineSpan bold10InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold10BlueDark(context: context),
+        style: FCTextStyle.bold10InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold10Green({
+  static InlineSpan bold10Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold10Green(context: context),
+        style: FCTextStyle.bold10Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold10GreenLight({
+  static InlineSpan bold10SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold10GreenLight(context: context),
+        style: FCTextStyle.bold10SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold10GreenDark({
+  static InlineSpan bold10SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold10GreenDark(context: context),
+        style: FCTextStyle.bold10SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold10Yellow({
+  static InlineSpan bold10Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold10Yellow(context: context),
+        style: FCTextStyle.bold10Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold10YellowLight({
+  static InlineSpan bold10WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold10YellowLight(context: context),
+        style: FCTextStyle.bold10WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold10YellowDark({
+  static InlineSpan bold10WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold10YellowDark(context: context),
+        style: FCTextStyle.bold10WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold10Red({
+  static InlineSpan bold10Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold10Red(context: context),
+        style: FCTextStyle.bold10Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold10RedLight({
+  static InlineSpan bold10DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold10RedLight(context: context),
+        style: FCTextStyle.bold10DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold10RedDark({
+  static InlineSpan bold10DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold10RedDark(context: context),
+        style: FCTextStyle.bold10DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -9260,135 +9260,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold12Blue({
+  static InlineSpan bold12Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold12Blue(context: context),
+        style: FCTextStyle.bold12Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold12BlueLight({
+  static InlineSpan bold12InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold12BlueLight(context: context),
+        style: FCTextStyle.bold12InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold12BlueDark({
+  static InlineSpan bold12InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold12BlueDark(context: context),
+        style: FCTextStyle.bold12InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold12Green({
+  static InlineSpan bold12Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold12Green(context: context),
+        style: FCTextStyle.bold12Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold12GreenLight({
+  static InlineSpan bold12SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold12GreenLight(context: context),
+        style: FCTextStyle.bold12SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold12GreenDark({
+  static InlineSpan bold12SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold12GreenDark(context: context),
+        style: FCTextStyle.bold12SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold12Yellow({
+  static InlineSpan bold12Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold12Yellow(context: context),
+        style: FCTextStyle.bold12Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold12YellowLight({
+  static InlineSpan bold12WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold12YellowLight(context: context),
+        style: FCTextStyle.bold12WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold12YellowDark({
+  static InlineSpan bold12WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold12YellowDark(context: context),
+        style: FCTextStyle.bold12WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold12Red({
+  static InlineSpan bold12Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold12Red(context: context),
+        style: FCTextStyle.bold12Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold12RedLight({
+  static InlineSpan bold12DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold12RedLight(context: context),
+        style: FCTextStyle.bold12DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold12RedDark({
+  static InlineSpan bold12DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold12RedDark(context: context),
+        style: FCTextStyle.bold12DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -9536,135 +9536,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold14Blue({
+  static InlineSpan bold14Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold14Blue(context: context),
+        style: FCTextStyle.bold14Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold14BlueLight({
+  static InlineSpan bold14InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold14BlueLight(context: context),
+        style: FCTextStyle.bold14InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold14BlueDark({
+  static InlineSpan bold14InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold14BlueDark(context: context),
+        style: FCTextStyle.bold14InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold14Green({
+  static InlineSpan bold14Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold14Green(context: context),
+        style: FCTextStyle.bold14Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold14GreenLight({
+  static InlineSpan bold14SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold14GreenLight(context: context),
+        style: FCTextStyle.bold14SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold14GreenDark({
+  static InlineSpan bold14SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold14GreenDark(context: context),
+        style: FCTextStyle.bold14SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold14Yellow({
+  static InlineSpan bold14Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold14Yellow(context: context),
+        style: FCTextStyle.bold14Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold14YellowLight({
+  static InlineSpan bold14WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold14YellowLight(context: context),
+        style: FCTextStyle.bold14WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold14YellowDark({
+  static InlineSpan bold14WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold14YellowDark(context: context),
+        style: FCTextStyle.bold14WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold14Red({
+  static InlineSpan bold14Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold14Red(context: context),
+        style: FCTextStyle.bold14Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold14RedLight({
+  static InlineSpan bold14DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold14RedLight(context: context),
+        style: FCTextStyle.bold14DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold14RedDark({
+  static InlineSpan bold14DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold14RedDark(context: context),
+        style: FCTextStyle.bold14DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -9812,135 +9812,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold16Blue({
+  static InlineSpan bold16Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold16Blue(context: context),
+        style: FCTextStyle.bold16Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold16BlueLight({
+  static InlineSpan bold16InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold16BlueLight(context: context),
+        style: FCTextStyle.bold16InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold16BlueDark({
+  static InlineSpan bold16InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold16BlueDark(context: context),
+        style: FCTextStyle.bold16InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold16Green({
+  static InlineSpan bold16Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold16Green(context: context),
+        style: FCTextStyle.bold16Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold16GreenLight({
+  static InlineSpan bold16SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold16GreenLight(context: context),
+        style: FCTextStyle.bold16SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold16GreenDark({
+  static InlineSpan bold16SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold16GreenDark(context: context),
+        style: FCTextStyle.bold16SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold16Yellow({
+  static InlineSpan bold16Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold16Yellow(context: context),
+        style: FCTextStyle.bold16Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold16YellowLight({
+  static InlineSpan bold16WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold16YellowLight(context: context),
+        style: FCTextStyle.bold16WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold16YellowDark({
+  static InlineSpan bold16WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold16YellowDark(context: context),
+        style: FCTextStyle.bold16WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold16Red({
+  static InlineSpan bold16Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold16Red(context: context),
+        style: FCTextStyle.bold16Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold16RedLight({
+  static InlineSpan bold16DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold16RedLight(context: context),
+        style: FCTextStyle.bold16DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold16RedDark({
+  static InlineSpan bold16DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold16RedDark(context: context),
+        style: FCTextStyle.bold16DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -10088,135 +10088,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold18Blue({
+  static InlineSpan bold18Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold18Blue(context: context),
+        style: FCTextStyle.bold18Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold18BlueLight({
+  static InlineSpan bold18InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold18BlueLight(context: context),
+        style: FCTextStyle.bold18InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold18BlueDark({
+  static InlineSpan bold18InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold18BlueDark(context: context),
+        style: FCTextStyle.bold18InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold18Green({
+  static InlineSpan bold18Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold18Green(context: context),
+        style: FCTextStyle.bold18Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold18GreenLight({
+  static InlineSpan bold18SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold18GreenLight(context: context),
+        style: FCTextStyle.bold18SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold18GreenDark({
+  static InlineSpan bold18SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold18GreenDark(context: context),
+        style: FCTextStyle.bold18SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold18Yellow({
+  static InlineSpan bold18Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold18Yellow(context: context),
+        style: FCTextStyle.bold18Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold18YellowLight({
+  static InlineSpan bold18WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold18YellowLight(context: context),
+        style: FCTextStyle.bold18WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold18YellowDark({
+  static InlineSpan bold18WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold18YellowDark(context: context),
+        style: FCTextStyle.bold18WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold18Red({
+  static InlineSpan bold18Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold18Red(context: context),
+        style: FCTextStyle.bold18Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold18RedLight({
+  static InlineSpan bold18DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold18RedLight(context: context),
+        style: FCTextStyle.bold18DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold18RedDark({
+  static InlineSpan bold18DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold18RedDark(context: context),
+        style: FCTextStyle.bold18DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -10364,135 +10364,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold20Blue({
+  static InlineSpan bold20Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold20Blue(context: context),
+        style: FCTextStyle.bold20Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold20BlueLight({
+  static InlineSpan bold20InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold20BlueLight(context: context),
+        style: FCTextStyle.bold20InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold20BlueDark({
+  static InlineSpan bold20InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold20BlueDark(context: context),
+        style: FCTextStyle.bold20InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold20Green({
+  static InlineSpan bold20Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold20Green(context: context),
+        style: FCTextStyle.bold20Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold20GreenLight({
+  static InlineSpan bold20SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold20GreenLight(context: context),
+        style: FCTextStyle.bold20SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold20GreenDark({
+  static InlineSpan bold20SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold20GreenDark(context: context),
+        style: FCTextStyle.bold20SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold20Yellow({
+  static InlineSpan bold20Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold20Yellow(context: context),
+        style: FCTextStyle.bold20Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold20YellowLight({
+  static InlineSpan bold20WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold20YellowLight(context: context),
+        style: FCTextStyle.bold20WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold20YellowDark({
+  static InlineSpan bold20WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold20YellowDark(context: context),
+        style: FCTextStyle.bold20WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold20Red({
+  static InlineSpan bold20Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold20Red(context: context),
+        style: FCTextStyle.bold20Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold20RedLight({
+  static InlineSpan bold20DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold20RedLight(context: context),
+        style: FCTextStyle.bold20DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold20RedDark({
+  static InlineSpan bold20DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold20RedDark(context: context),
+        style: FCTextStyle.bold20DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -10640,135 +10640,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold28Blue({
+  static InlineSpan bold28Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold28Blue(context: context),
+        style: FCTextStyle.bold28Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold28BlueLight({
+  static InlineSpan bold28InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold28BlueLight(context: context),
+        style: FCTextStyle.bold28InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold28BlueDark({
+  static InlineSpan bold28InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold28BlueDark(context: context),
+        style: FCTextStyle.bold28InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold28Green({
+  static InlineSpan bold28Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold28Green(context: context),
+        style: FCTextStyle.bold28Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold28GreenLight({
+  static InlineSpan bold28SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold28GreenLight(context: context),
+        style: FCTextStyle.bold28SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold28GreenDark({
+  static InlineSpan bold28SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold28GreenDark(context: context),
+        style: FCTextStyle.bold28SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold28Yellow({
+  static InlineSpan bold28Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold28Yellow(context: context),
+        style: FCTextStyle.bold28Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold28YellowLight({
+  static InlineSpan bold28WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold28YellowLight(context: context),
+        style: FCTextStyle.bold28WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold28YellowDark({
+  static InlineSpan bold28WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold28YellowDark(context: context),
+        style: FCTextStyle.bold28WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold28Red({
+  static InlineSpan bold28Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold28Red(context: context),
+        style: FCTextStyle.bold28Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold28RedLight({
+  static InlineSpan bold28DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold28RedLight(context: context),
+        style: FCTextStyle.bold28DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold28RedDark({
+  static InlineSpan bold28DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold28RedDark(context: context),
+        style: FCTextStyle.bold28DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -10916,135 +10916,135 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold32Blue({
+  static InlineSpan bold32Info({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold32Blue(context: context),
+        style: FCTextStyle.bold32Info(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold32BlueLight({
+  static InlineSpan bold32InfoLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold32BlueLight(context: context),
+        style: FCTextStyle.bold32InfoLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold32BlueDark({
+  static InlineSpan bold32InfoDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold32BlueDark(context: context),
+        style: FCTextStyle.bold32InfoDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold32Green({
+  static InlineSpan bold32Success({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold32Green(context: context),
+        style: FCTextStyle.bold32Success(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold32GreenLight({
+  static InlineSpan bold32SuccessLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold32GreenLight(context: context),
+        style: FCTextStyle.bold32SuccessLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold32GreenDark({
+  static InlineSpan bold32SuccessDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold32GreenDark(context: context),
+        style: FCTextStyle.bold32SuccessDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold32Yellow({
+  static InlineSpan bold32Warning({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold32Yellow(context: context),
+        style: FCTextStyle.bold32Warning(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold32YellowLight({
+  static InlineSpan bold32WarningLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold32YellowLight(context: context),
+        style: FCTextStyle.bold32WarningLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold32YellowDark({
+  static InlineSpan bold32WarningDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold32YellowDark(context: context),
+        style: FCTextStyle.bold32WarningDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold32Red({
+  static InlineSpan bold32Danger({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold32Red(context: context),
+        style: FCTextStyle.bold32Danger(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold32RedLight({
+  static InlineSpan bold32DangerLight({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold32RedLight(context: context),
+        style: FCTextStyle.bold32DangerLight(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
-  static InlineSpan bold32RedDark({
+  static InlineSpan bold32DangerDark({
     required BuildContext context,
     required String text,
     VoidCallback? onPressed,
   }) =>
       TextSpan(
         text: text,
-        style: FCTextStyle.bold32RedDark(context: context),
+        style: FCTextStyle.bold32DangerDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 }

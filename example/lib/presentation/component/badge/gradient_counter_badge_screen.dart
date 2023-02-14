@@ -40,11 +40,11 @@ class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen>
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCBlueDarkGradientCounterBadge(
+              FCInfoDarkGradientCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCGreenDarkGradientCounterBadge(
+              FCSuccessDarkGradientCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -56,7 +56,7 @@ class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen>
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCRedDarkGradientCounterBadge(
+              FCDangerDarkGradientCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -64,7 +64,7 @@ class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen>
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCYellowDarkGradientCounterBadge(
+              FCWarningDarkGradientCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -80,11 +80,11 @@ class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen>
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCBlueGradientCounterBadge(
+              FCInfoGradientCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCGreenGradientCounterBadge(
+              FCSuccessGradientCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -96,7 +96,7 @@ class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen>
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCRedGradientCounterBadge(
+              FCDangerGradientCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -104,7 +104,7 @@ class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen>
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCYellowGradientCounterBadge(
+              FCWarningGradientCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -120,11 +120,11 @@ class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen>
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCBlueLightGradientCounterBadge(
+              FCInfoLightGradientCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCGreenLightGradientCounterBadge(
+              FCSuccessLightGradientCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -136,7 +136,7 @@ class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen>
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCRedLightGradientCounterBadge(
+              FCDangerLightGradientCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -144,7 +144,7 @@ class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen>
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCYellowLightGradientCounterBadge(
+              FCWarningLightGradientCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),

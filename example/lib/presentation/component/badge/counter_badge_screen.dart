@@ -40,11 +40,11 @@ class _CounterBadgeScreenState extends State<CounterBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCBlueDarkCounterBadge(
+              FCInfoDarkCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCGreenDarkCounterBadge(
+              FCSuccessDarkCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -56,7 +56,7 @@ class _CounterBadgeScreenState extends State<CounterBadgeScreen> {
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCRedDarkCounterBadge(
+              FCDangerDarkCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -64,7 +64,7 @@ class _CounterBadgeScreenState extends State<CounterBadgeScreen> {
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCYellowDarkCounterBadge(
+              FCWarningDarkCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -88,11 +88,11 @@ class _CounterBadgeScreenState extends State<CounterBadgeScreen> {
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCBlueCounterBadge(
+              FCInfoCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCGreenCounterBadge(
+              FCSuccessCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -104,7 +104,7 @@ class _CounterBadgeScreenState extends State<CounterBadgeScreen> {
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCRedCounterBadge(
+              FCDangerCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -120,7 +120,7 @@ class _CounterBadgeScreenState extends State<CounterBadgeScreen> {
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCYellowCounterBadge(
+              FCWarningCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -136,11 +136,11 @@ class _CounterBadgeScreenState extends State<CounterBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCBlueLightCounterBadge(
+              FCInfoLightCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCGreenLightCounterBadge(
+              FCSuccessLightCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -152,7 +152,7 @@ class _CounterBadgeScreenState extends State<CounterBadgeScreen> {
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCRedLightCounterBadge(
+              FCDangerLightCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),
@@ -160,7 +160,7 @@ class _CounterBadgeScreenState extends State<CounterBadgeScreen> {
                 count: this._count,
                 child: const _ChildWidget(),
               ),
-              FCYellowLightCounterBadge(
+              FCWarningLightCounterBadge(
                 count: this._count,
                 child: const _ChildWidget(),
               ),

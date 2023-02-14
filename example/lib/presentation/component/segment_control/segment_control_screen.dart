@@ -31,7 +31,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkSegmentControl<String>(
+          FCInfoDarkSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -50,7 +50,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkSegmentControl<String>(
+          FCSuccessDarkSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -107,7 +107,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkSegmentControl<String>(
+          FCDangerDarkSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -145,7 +145,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkSegmentControl<String>(
+          FCWarningDarkSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -207,7 +207,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueSegmentControl<String>(
+          FCInfoSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -226,7 +226,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenSegmentControl<String>(
+          FCSuccessSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -283,7 +283,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedSegmentControl<String>(
+          FCDangerSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -359,7 +359,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowSegmentControl<String>(
+          FCWarningSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -383,7 +383,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightSegmentControl<String>(
+          FCInfoLightSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -402,7 +402,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightSegmentControl<String>(
+          FCSuccessLightSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -459,7 +459,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightSegmentControl<String>(
+          FCDangerLightSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -497,7 +497,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightSegmentControl<String>(
+          FCWarningLightSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(

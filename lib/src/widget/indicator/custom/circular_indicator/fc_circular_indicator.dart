@@ -268,266 +268,266 @@ class FCCircularIndicator {
     );
   }
 
-  static Widget smallBlue({required BuildContext context}) {
+  static Widget smallInfo({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.blue,
+      color: theme.info,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallBlueGradient({required BuildContext context}) {
+  static Widget smallInfoGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallBlueLight({required BuildContext context}) {
+  static Widget smallInfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.blueLight,
+      color: theme.infoLight,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallBlueLightGradient({required BuildContext context}) {
+  static Widget smallInfoLightGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallBlueDark({required BuildContext context}) {
+  static Widget smallInfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.blueDark,
+      color: theme.infoDark,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallBlueDarkGradient({required BuildContext context}) {
+  static Widget smallInfoDarkGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallGreen({required BuildContext context}) {
+  static Widget smallSuccess({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.green,
+      color: theme.success,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallGreenGradient({required BuildContext context}) {
+  static Widget smallSuccessGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallGreenLight({required BuildContext context}) {
+  static Widget smallSuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.greenLight,
+      color: theme.successLight,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallGreenLightGradient({required BuildContext context}) {
+  static Widget smallSuccessLightGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallGreenDark({required BuildContext context}) {
+  static Widget smallSuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.greenDark,
+      color: theme.successDark,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallGreenDarkGradient({required BuildContext context}) {
+  static Widget smallSuccessDarkGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallYellow({required BuildContext context}) {
+  static Widget smallWarning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.yellow,
+      color: theme.warning,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallYellowGradient({required BuildContext context}) {
+  static Widget smallWarningGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallYellowLight({required BuildContext context}) {
+  static Widget smallWarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallYellowLightGradient({required BuildContext context}) {
+  static Widget smallWarningLightGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallYellowDark({required BuildContext context}) {
+  static Widget smallWarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallYellowDarkGradient({required BuildContext context}) {
+  static Widget smallWarningDarkGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallRed({required BuildContext context}) {
+  static Widget smallDanger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.red,
+      color: theme.danger,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallRedGradient({required BuildContext context}) {
+  static Widget smallDangerGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallRedLight({required BuildContext context}) {
+  static Widget smallDangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.redLight,
+      color: theme.dangerLight,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallRedLightGradient({required BuildContext context}) {
+  static Widget smallDangerLightGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallRedDark({required BuildContext context}) {
+  static Widget smallDangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.redDark,
+      color: theme.dangerDark,
       height: size.indicatorHeightSmall,
     );
   }
 
-  static Widget smallRedDarkGradient({required BuildContext context}) {
+  static Widget smallDangerDarkGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       height: size.indicatorHeightSmall,
     );
   }
@@ -797,266 +797,266 @@ class FCCircularIndicator {
     );
   }
 
-  static Widget blue({required BuildContext context}) {
+  static Widget info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.blue,
+      color: theme.info,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget blueGradient({required BuildContext context}) {
+  static Widget infoGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget blueLight({required BuildContext context}) {
+  static Widget infoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.blueLight,
+      color: theme.infoLight,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget blueLightGradient({required BuildContext context}) {
+  static Widget infoLightGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget blueDark({required BuildContext context}) {
+  static Widget infoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.blueDark,
+      color: theme.infoDark,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget blueDarkGradient({required BuildContext context}) {
+  static Widget infoDarkGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget green({required BuildContext context}) {
+  static Widget success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.green,
+      color: theme.success,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget greenGradient({required BuildContext context}) {
+  static Widget successGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget greenLight({required BuildContext context}) {
+  static Widget successLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.greenLight,
+      color: theme.successLight,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget greenLightGradient({required BuildContext context}) {
+  static Widget successLightGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget greenDark({required BuildContext context}) {
+  static Widget successDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.greenDark,
+      color: theme.successDark,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget greenDarkGradient({required BuildContext context}) {
+  static Widget successDarkGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget yellow({required BuildContext context}) {
+  static Widget warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.yellow,
+      color: theme.warning,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget yellowGradient({required BuildContext context}) {
+  static Widget warningGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget yellowLight({required BuildContext context}) {
+  static Widget warningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget yellowLightGradient({required BuildContext context}) {
+  static Widget warningLightGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget yellowDark({required BuildContext context}) {
+  static Widget warningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget yellowDarkGradient({required BuildContext context}) {
+  static Widget warningDarkGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget red({required BuildContext context}) {
+  static Widget danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.red,
+      color: theme.danger,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget redGradient({required BuildContext context}) {
+  static Widget dangerGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget redLight({required BuildContext context}) {
+  static Widget dangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.redLight,
+      color: theme.dangerLight,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget redLightGradient({required BuildContext context}) {
+  static Widget dangerLightGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget redDark({required BuildContext context}) {
+  static Widget dangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.redDark,
+      color: theme.dangerDark,
       height: size.indicatorHeightDefault,
     );
   }
 
-  static Widget redDarkGradient({required BuildContext context}) {
+  static Widget dangerDarkGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       height: size.indicatorHeightDefault,
     );
   }
@@ -1326,266 +1326,266 @@ class FCCircularIndicator {
     );
   }
 
-  static Widget largeBlue({required BuildContext context}) {
+  static Widget largeInfo({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.blue,
+      color: theme.info,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeBlueGradient({required BuildContext context}) {
+  static Widget largeInfoGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeBlueLight({required BuildContext context}) {
+  static Widget largeInfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.blueLight,
+      color: theme.infoLight,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeBlueLightGradient({required BuildContext context}) {
+  static Widget largeInfoLightGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeBlueDark({required BuildContext context}) {
+  static Widget largeInfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.blueDark,
+      color: theme.infoDark,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeBlueDarkGradient({required BuildContext context}) {
+  static Widget largeInfoDarkGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeGreen({required BuildContext context}) {
+  static Widget largeSuccess({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.green,
+      color: theme.success,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeGreenGradient({required BuildContext context}) {
+  static Widget largeSuccessGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeGreenLight({required BuildContext context}) {
+  static Widget largeSuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.greenLight,
+      color: theme.successLight,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeGreenLightGradient({required BuildContext context}) {
+  static Widget largeSuccessLightGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeGreenDark({required BuildContext context}) {
+  static Widget largeSuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.greenDark,
+      color: theme.successDark,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeGreenDarkGradient({required BuildContext context}) {
+  static Widget largeSuccessDarkGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeYellow({required BuildContext context}) {
+  static Widget largeWarning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.yellow,
+      color: theme.warning,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeYellowGradient({required BuildContext context}) {
+  static Widget largeWarningGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeYellowLight({required BuildContext context}) {
+  static Widget largeWarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeYellowLightGradient({required BuildContext context}) {
+  static Widget largeWarningLightGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeYellowDark({required BuildContext context}) {
+  static Widget largeWarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeYellowDarkGradient({required BuildContext context}) {
+  static Widget largeWarningDarkGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeRed({required BuildContext context}) {
+  static Widget largeDanger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.red,
+      color: theme.danger,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeRedGradient({required BuildContext context}) {
+  static Widget largeDangerGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeRedLight({required BuildContext context}) {
+  static Widget largeDangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.redLight,
+      color: theme.dangerLight,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeRedLightGradient({required BuildContext context}) {
+  static Widget largeDangerLightGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeRedDark({required BuildContext context}) {
+  static Widget largeDangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicCircularIndicator(
-      color: theme.redDark,
+      color: theme.dangerDark,
       height: size.indicatorHeightLarge,
     );
   }
 
-  static Widget largeRedDarkGradient({required BuildContext context}) {
+  static Widget largeDangerDarkGradient({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return FCBasicGradientCircularIndicator(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       height: size.indicatorHeightLarge,
     );
   }

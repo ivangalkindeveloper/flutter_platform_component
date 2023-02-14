@@ -24,11 +24,11 @@ class CodeFieldScreen extends StatelessWidget {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkCodeField(
+          FCInfoDarkCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkCodeField(
+          FCSuccessDarkCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
@@ -44,7 +44,7 @@ class CodeFieldScreen extends StatelessWidget {
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkCodeField(
+          FCWarningDarkCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 * 2),
@@ -61,11 +61,11 @@ class CodeFieldScreen extends StatelessWidget {
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueCodeField(
+          FCInfoCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenCodeField(
+          FCSuccessCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
@@ -89,7 +89,7 @@ class CodeFieldScreen extends StatelessWidget {
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowCodeField(
+          FCWarningCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 * 2),
@@ -98,11 +98,11 @@ class CodeFieldScreen extends StatelessWidget {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightCodeField(
+          FCInfoLightCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightCodeField(
+          FCSuccessLightCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
@@ -118,7 +118,7 @@ class CodeFieldScreen extends StatelessWidget {
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightCodeField(
+          FCWarningLightCodeField(
             length: 6,
           ),
         ],

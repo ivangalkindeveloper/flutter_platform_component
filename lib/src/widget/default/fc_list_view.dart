@@ -31,7 +31,8 @@ class FCListView extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
-    return ListView(            key: key,
+    return ListView(
+      key: key,
       controller: this.controller,
       scrollDirection: this.scrollDirection,
       physics: const BouncingScrollPhysics(),

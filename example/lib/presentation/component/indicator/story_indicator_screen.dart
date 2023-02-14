@@ -48,13 +48,13 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkStoryIndicator(
+          FCInfoDarkStoryIndicator(
             length: 4,
             index: this._index,
             value: this._value,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkStoryIndicator(
+          FCSuccessDarkStoryIndicator(
             length: 4,
             index: this._index,
             value: this._value,
@@ -66,7 +66,7 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen> {
             value: this._value,
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkStoryIndicator(
+          FCDangerDarkStoryIndicator(
             length: 4,
             index: this._index,
             value: this._value,
@@ -78,7 +78,7 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen> {
             value: this._value,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkStoryIndicator(
+          FCWarningDarkStoryIndicator(
             length: 4,
             index: this._index,
             value: this._value,
@@ -101,13 +101,13 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen> {
             value: this._value,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueStoryIndicator(
+          FCInfoStoryIndicator(
             length: 4,
             index: this._index,
             value: this._value,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenStoryIndicator(
+          FCSuccessStoryIndicator(
             length: 4,
             index: this._index,
             value: this._value,
@@ -125,7 +125,7 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen> {
             value: this._value,
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedStoryIndicator(
+          FCDangerStoryIndicator(
             length: 4,
             index: this._index,
             value: this._value,
@@ -149,7 +149,7 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen> {
             value: this._value,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowStoryIndicator(
+          FCWarningStoryIndicator(
             length: 4,
             index: this._index,
             value: this._value,
@@ -160,13 +160,13 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightStoryIndicator(
+          FCInfoLightStoryIndicator(
             length: 4,
             index: this._index,
             value: this._value,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightStoryIndicator(
+          FCSuccessLightStoryIndicator(
             length: 4,
             index: this._index,
             value: this._value,
@@ -178,7 +178,7 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen> {
             value: this._value,
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightStoryIndicator(
+          FCDangerLightStoryIndicator(
             length: 4,
             index: this._index,
             value: this._value,
@@ -190,7 +190,7 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen> {
             value: this._value,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightStoryIndicator(
+          FCWarningLightStoryIndicator(
             length: 4,
             index: this._index,
             value: this._value,

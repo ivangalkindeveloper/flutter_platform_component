@@ -31,12 +31,12 @@ class _SwitchScreenState extends State<SwitchScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkSwitch(
+          FCInfoDarkSwitch(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkSwitch(
+          FCSuccessDarkSwitch(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
@@ -46,7 +46,7 @@ class _SwitchScreenState extends State<SwitchScreen> {
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkSwitch(
+          FCDangerDarkSwitch(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
@@ -56,7 +56,7 @@ class _SwitchScreenState extends State<SwitchScreen> {
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkSwitch(
+          FCWarningDarkSwitch(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
@@ -76,17 +76,17 @@ class _SwitchScreenState extends State<SwitchScreen> {
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueSwitch(
+          FCInfoSwitch(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueSwitch(
+          FCInfoSwitch(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenSwitch(
+          FCSuccessSwitch(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
@@ -101,7 +101,7 @@ class _SwitchScreenState extends State<SwitchScreen> {
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedSwitch(
+          FCDangerSwitch(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
@@ -121,7 +121,7 @@ class _SwitchScreenState extends State<SwitchScreen> {
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowSwitch(
+          FCWarningSwitch(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
@@ -131,12 +131,12 @@ class _SwitchScreenState extends State<SwitchScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightSwitch(
+          FCInfoLightSwitch(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightSwitch(
+          FCSuccessLightSwitch(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
@@ -146,7 +146,7 @@ class _SwitchScreenState extends State<SwitchScreen> {
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightSwitch(
+          FCDangerLightSwitch(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
@@ -156,7 +156,7 @@ class _SwitchScreenState extends State<SwitchScreen> {
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightSwitch(
+          FCWarningLightSwitch(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = value),
           ),

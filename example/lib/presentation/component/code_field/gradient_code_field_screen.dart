@@ -24,11 +24,11 @@ class GradientCodeFieldScreen extends StatelessWidget {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkGradientCodeField(
+          FCInfoDarkGradientCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkGradientCodeField(
+          FCSuccessDarkGradientCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
@@ -44,7 +44,7 @@ class GradientCodeFieldScreen extends StatelessWidget {
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkGradientCodeField(
+          FCWarningDarkGradientCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 * 2),
@@ -53,11 +53,11 @@ class GradientCodeFieldScreen extends StatelessWidget {
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCBlueGradientCodeField(
+          FCInfoGradientCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenGradientCodeField(
+          FCSuccessGradientCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
@@ -73,7 +73,7 @@ class GradientCodeFieldScreen extends StatelessWidget {
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowGradientCodeField(
+          FCWarningGradientCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 * 2),
@@ -82,11 +82,11 @@ class GradientCodeFieldScreen extends StatelessWidget {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightGradientCodeField(
+          FCInfoLightGradientCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightGradientCodeField(
+          FCSuccessLightGradientCodeField(
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
@@ -102,7 +102,7 @@ class GradientCodeFieldScreen extends StatelessWidget {
             length: 6,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightGradientCodeField(
+          FCWarningLightGradientCodeField(
             length: 6,
           ),
         ],

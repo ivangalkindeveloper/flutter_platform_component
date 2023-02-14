@@ -56,14 +56,14 @@ class _ButtonScreenState extends State<ButtonScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueButton(
+          FCInfoButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenButton(
+          FCSuccessButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
@@ -84,7 +84,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedButton(
+          FCDangerButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
@@ -112,7 +112,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowButton(
+          FCWarningButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
@@ -124,14 +124,14 @@ class _ButtonScreenState extends State<ButtonScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightButton(
+          FCInfoLightButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightButton(
+          FCSuccessLightButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
@@ -152,7 +152,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightButton(
+          FCDangerLightButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
@@ -166,7 +166,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightButton(
+          FCWarningLightButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
@@ -192,14 +192,14 @@ class _ButtonScreenState extends State<ButtonScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueOutlineButton(
+          FCInfoOutlineButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenOutlineButton(
+          FCSuccessOutlineButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
@@ -220,7 +220,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedOutlineButton(
+          FCDangerOutlineButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
@@ -248,7 +248,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowOutlineButton(
+          FCWarningOutlineButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,

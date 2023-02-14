@@ -65,7 +65,7 @@ class _FCBasicToggleState extends State<FCBasicToggle> {
     if (value == null || this.mounted == false) {
       return null;
     }
-    // Required
+    // Requidanger
     if (this.widget.isRequired && value.isEmpty) {
       setState(() => this._isValidationError = true);
       return "";
@@ -199,7 +199,7 @@ class _FCToggleButton<T> extends StatelessWidget {
   final bool isSelected;
 
   Color _backgroundColor({required IFCTheme theme}) {
-    if (this.isValidationError) return theme.redLight;
+    if (this.isValidationError) return theme.dangerLight;
 
     if (this.isSelected) return this.selectedBackgroundColor;
 
@@ -207,7 +207,7 @@ class _FCToggleButton<T> extends StatelessWidget {
   }
 
   Color _internalColor({required IFCTheme theme}) {
-    if (this.isValidationError) return theme.red;
+    if (this.isValidationError) return theme.danger;
 
     if (this.isSelected) return this.selectedInternalColor;
 

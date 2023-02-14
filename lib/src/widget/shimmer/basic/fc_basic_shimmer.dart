@@ -43,7 +43,8 @@ class _FCBasicShimmerState extends State<FCBasicShimmer> {
     this._size = this._config.size;
 
     this._highlightSubscription = Stream.periodic(
-           this.widget.duration ??  this._size.durationShimmer, (int second) => second % 2 == 0)
+            this.widget.duration ?? this._size.durationShimmer,
+            (int second) => second % 2 == 0)
         .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
   }
 

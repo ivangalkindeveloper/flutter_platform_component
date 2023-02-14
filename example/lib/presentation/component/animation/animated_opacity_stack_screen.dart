@@ -50,12 +50,12 @@ class _AnimatedOpacityStackScreenState extends State<AnimatedOpacityStackScreen>
                             firstChild: Container(
                               height: size.s28 * 2,
                               width: size.s28 * 4,
-                              color: theme.red,
+                              color: theme.danger,
                             ),
                             secondChild: Container(
                               height: size.s28 * 4,
                               width: size.s28 * 4,
-                              color: theme.blue,
+                              color: theme.info,
                             ),
                           ),
                         ],
@@ -74,12 +74,12 @@ class _AnimatedOpacityStackScreenState extends State<AnimatedOpacityStackScreen>
                             firstChild: Container(
                               height: size.s28 * 2,
                               width: size.s28 * 4,
-                              color: theme.red,
+                              color: theme.danger,
                             ),
                             secondChild: Container(
                               height: size.s28 * 4,
                               width: size.s28 * 4,
-                              color: theme.blue,
+                              color: theme.info,
                             ),
                           ),
                         ],
@@ -98,12 +98,12 @@ class _AnimatedOpacityStackScreenState extends State<AnimatedOpacityStackScreen>
                             firstChild: Container(
                               height: size.s28 * 2,
                               width: size.s28 * 4,
-                              color: theme.red,
+                              color: theme.danger,
                             ),
                             secondChild: Container(
                               height: size.s28 * 4,
                               width: size.s28 * 4,
-                              color: theme.blue,
+                              color: theme.info,
                             ),
                           ),
                         ],

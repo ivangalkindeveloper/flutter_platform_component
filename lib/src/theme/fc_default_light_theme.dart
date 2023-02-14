@@ -193,11 +193,11 @@ class FCDefaultLightTheme implements IFCTheme {
     ],
   );
 
-  // Blue
+  // Info
   @override
-  final Color blue = const Color(0xff5FCBFA);
+  final Color info = const Color(0xff5FCBFA);
   @override
-  late final Gradient blueGradient = LinearGradient(
+  late final Gradient infoGradient = LinearGradient(
     begin: this.linearGradientConfig.begin,
     end: this.linearGradientConfig.end,
     stops: this.linearGradientConfig.stops,
@@ -208,11 +208,11 @@ class FCDefaultLightTheme implements IFCTheme {
       Color(0xff64D2FF),
     ],
   );
-  // Blue / Light
+  // Info / Light
   @override
-  final Color blueLight = const Color(0xff70D7FF);
+  final Color infoLight = const Color(0xff70D7FF);
   @override
-  late final Gradient blueLightGradient = LinearGradient(
+  late final Gradient infoLightGradient = LinearGradient(
     begin: this.linearGradientConfig.begin,
     end: this.linearGradientConfig.end,
     stops: this.linearGradientConfig.stops,
@@ -223,11 +223,11 @@ class FCDefaultLightTheme implements IFCTheme {
       Color(0xff84DDFF),
     ],
   );
-  // Blue / Dark
+  // Info / Dark
   @override
-  final Color blueDark = const Color(0xff70D7FF);
+  final Color infoDark = const Color(0xff70D7FF);
   @override
-  late final Gradient blueDarkGradient = LinearGradient(
+  late final Gradient infoDarkGradient = LinearGradient(
     begin: this.linearGradientConfig.begin,
     end: this.linearGradientConfig.end,
     stops: this.linearGradientConfig.stops,
@@ -239,11 +239,11 @@ class FCDefaultLightTheme implements IFCTheme {
     ],
   );
 
-  // Green
+  // Success
   @override
-  final Color green = const Color(0xff34C759);
+  final Color success = const Color(0xff34C759);
   @override
-  late final Gradient greenGradient = LinearGradient(
+  late final Gradient successGradient = LinearGradient(
     begin: this.linearGradientConfig.begin,
     end: this.linearGradientConfig.end,
     stops: this.linearGradientConfig.stops,
@@ -254,11 +254,11 @@ class FCDefaultLightTheme implements IFCTheme {
       Color(0xff30D158),
     ],
   );
-  // Green / Light
+  // Success / Light
   @override
-  final Color greenLight = const Color(0xff30DB5B);
+  final Color successLight = const Color(0xff30DB5B);
   @override
-  late final Gradient greenLightGradient = LinearGradient(
+  late final Gradient successLightGradient = LinearGradient(
     begin: this.linearGradientConfig.begin,
     end: this.linearGradientConfig.end,
     stops: this.linearGradientConfig.stops,
@@ -269,11 +269,11 @@ class FCDefaultLightTheme implements IFCTheme {
       Color(0xff6DE68B),
     ],
   );
-  // Green / Dark
+  // Success / Dark
   @override
-  final Color greenDark = const Color(0xff30DB5B);
+  final Color successDark = const Color(0xff30DB5B);
   @override
-  late final Gradient greenDarkGradient = LinearGradient(
+  late final Gradient successDarkGradient = LinearGradient(
     begin: this.linearGradientConfig.begin,
     end: this.linearGradientConfig.end,
     stops: this.linearGradientConfig.stops,
@@ -285,11 +285,11 @@ class FCDefaultLightTheme implements IFCTheme {
     ],
   );
 
-  // Yellow
+  // Warning
   @override
-  final Color yellow = const Color(0xffFF9500);
+  final Color warning = const Color(0xffFF9500);
   @override
-  late final Gradient yellowGradient = LinearGradient(
+  late final Gradient warningGradient = LinearGradient(
     begin: this.linearGradientConfig.begin,
     end: this.linearGradientConfig.end,
     stops: this.linearGradientConfig.stops,
@@ -300,11 +300,11 @@ class FCDefaultLightTheme implements IFCTheme {
       Color(0xffFF9F0A),
     ],
   );
-  // Yellow / Light
+  // Warning / Light
   @override
-  final Color yellowLight = const Color(0xffFFB340);
+  final Color warningLight = const Color(0xffFFB340);
   @override
-  late final Gradient yellowLightGradient = LinearGradient(
+  late final Gradient warningLightGradient = LinearGradient(
     begin: this.linearGradientConfig.begin,
     end: this.linearGradientConfig.end,
     stops: this.linearGradientConfig.stops,
@@ -315,11 +315,11 @@ class FCDefaultLightTheme implements IFCTheme {
       Color(0xffFFC060),
     ],
   );
-  // Yellow / Dark
+  // Warning / Dark
   @override
-  final Color yellowDark = const Color(0xffFFB340);
+  final Color warningDark = const Color(0xffFFB340);
   @override
-  late final Gradient yellowDarkGradient = LinearGradient(
+  late final Gradient warningDarkGradient = LinearGradient(
     begin: this.linearGradientConfig.begin,
     end: this.linearGradientConfig.end,
     stops: this.linearGradientConfig.stops,
@@ -331,11 +331,11 @@ class FCDefaultLightTheme implements IFCTheme {
     ],
   );
 
-  // Red
+  // Danger
   @override
-  final Color red = const Color(0xffFF3B30);
+  final Color danger = const Color(0xffFF3B30);
   @override
-  late final Gradient redGradient = LinearGradient(
+  late final Gradient dangerGradient = LinearGradient(
     begin: this.linearGradientConfig.begin,
     end: this.linearGradientConfig.end,
     stops: this.linearGradientConfig.stops,
@@ -346,11 +346,11 @@ class FCDefaultLightTheme implements IFCTheme {
       Color(0xffFF2D55),
     ],
   );
-  // Red / Light
+  // Danger / Light
   @override
-  final Color redLight = const Color(0xffFF6961);
+  final Color dangerLight = const Color(0xffFF6961);
   @override
-  late final Gradient redLightGradient = LinearGradient(
+  late final Gradient dangerLightGradient = LinearGradient(
     begin: this.linearGradientConfig.begin,
     end: this.linearGradientConfig.end,
     stops: this.linearGradientConfig.stops,
@@ -361,11 +361,11 @@ class FCDefaultLightTheme implements IFCTheme {
       Color(0xffFF6961),
     ],
   );
-  // Red / Dark
+  // Danger / Dark
   @override
-  final Color redDark = const Color(0xffFF6961);
+  final Color dangerDark = const Color(0xffFF6961);
   @override
-  late final Gradient redDarkGradient = LinearGradient(
+  late final Gradient dangerDarkGradient = LinearGradient(
     begin: this.linearGradientConfig.begin,
     end: this.linearGradientConfig.end,
     stops: this.linearGradientConfig.stops,

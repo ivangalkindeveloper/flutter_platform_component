@@ -215,168 +215,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle thin10Blue({required BuildContext context}) {
+  static TextStyle thin10Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin10BlueLight({required BuildContext context}) {
+  static TextStyle thin10InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin10BlueDark({required BuildContext context}) {
+  static TextStyle thin10InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin10Green({required BuildContext context}) {
+  static TextStyle thin10Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin10GreenLight({required BuildContext context}) {
+  static TextStyle thin10SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin10GreenDark({required BuildContext context}) {
+  static TextStyle thin10SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin10Yellow({required BuildContext context}) {
+  static TextStyle thin10Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin10YellowLight({required BuildContext context}) {
+  static TextStyle thin10WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin10YellowDark({required BuildContext context}) {
+  static TextStyle thin10WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin10Red({required BuildContext context}) {
+  static TextStyle thin10Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin10RedLight({required BuildContext context}) {
+  static TextStyle thin10DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin10RedDark({required BuildContext context}) {
+  static TextStyle thin10DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
@@ -594,168 +594,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle thin12Blue({required BuildContext context}) {
+  static TextStyle thin12Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin12BlueLight({required BuildContext context}) {
+  static TextStyle thin12InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin12BlueDark({required BuildContext context}) {
+  static TextStyle thin12InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin12Green({required BuildContext context}) {
+  static TextStyle thin12Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin12GreenLight({required BuildContext context}) {
+  static TextStyle thin12SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin12GreenDark({required BuildContext context}) {
+  static TextStyle thin12SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin12Yellow({required BuildContext context}) {
+  static TextStyle thin12Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin12YellowLight({required BuildContext context}) {
+  static TextStyle thin12WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin12YellowDark({required BuildContext context}) {
+  static TextStyle thin12WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin12Red({required BuildContext context}) {
+  static TextStyle thin12Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin12RedLight({required BuildContext context}) {
+  static TextStyle thin12DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin12RedDark({required BuildContext context}) {
+  static TextStyle thin12DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
@@ -973,168 +973,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle thin14Blue({required BuildContext context}) {
+  static TextStyle thin14Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin14BlueLight({required BuildContext context}) {
+  static TextStyle thin14InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin14BlueDark({required BuildContext context}) {
+  static TextStyle thin14InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin14Green({required BuildContext context}) {
+  static TextStyle thin14Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin14GreenLight({required BuildContext context}) {
+  static TextStyle thin14SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin14GreenDark({required BuildContext context}) {
+  static TextStyle thin14SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin14Yellow({required BuildContext context}) {
+  static TextStyle thin14Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin14YellowLight({required BuildContext context}) {
+  static TextStyle thin14WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin14YellowDark({required BuildContext context}) {
+  static TextStyle thin14WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin14Red({required BuildContext context}) {
+  static TextStyle thin14Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin14RedLight({required BuildContext context}) {
+  static TextStyle thin14DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin14RedDark({required BuildContext context}) {
+  static TextStyle thin14DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
@@ -1352,168 +1352,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle thin16Blue({required BuildContext context}) {
+  static TextStyle thin16Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin16BlueLight({required BuildContext context}) {
+  static TextStyle thin16InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin16BlueDark({required BuildContext context}) {
+  static TextStyle thin16InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin16Green({required BuildContext context}) {
+  static TextStyle thin16Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin16GreenLight({required BuildContext context}) {
+  static TextStyle thin16SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin16GreenDark({required BuildContext context}) {
+  static TextStyle thin16SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin16Yellow({required BuildContext context}) {
+  static TextStyle thin16Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin16YellowLight({required BuildContext context}) {
+  static TextStyle thin16WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin16YellowDark({required BuildContext context}) {
+  static TextStyle thin16WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin16Red({required BuildContext context}) {
+  static TextStyle thin16Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin16RedLight({required BuildContext context}) {
+  static TextStyle thin16DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin16RedDark({required BuildContext context}) {
+  static TextStyle thin16DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
@@ -1731,168 +1731,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle thin18Blue({required BuildContext context}) {
+  static TextStyle thin18Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin18BlueLight({required BuildContext context}) {
+  static TextStyle thin18InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin18BlueDark({required BuildContext context}) {
+  static TextStyle thin18InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin18Green({required BuildContext context}) {
+  static TextStyle thin18Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin18GreenLight({required BuildContext context}) {
+  static TextStyle thin18SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin18GreenDark({required BuildContext context}) {
+  static TextStyle thin18SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin18Yellow({required BuildContext context}) {
+  static TextStyle thin18Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin18YellowLight({required BuildContext context}) {
+  static TextStyle thin18WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin18YellowDark({required BuildContext context}) {
+  static TextStyle thin18WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin18Red({required BuildContext context}) {
+  static TextStyle thin18Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin18RedLight({required BuildContext context}) {
+  static TextStyle thin18DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin18RedDark({required BuildContext context}) {
+  static TextStyle thin18DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
@@ -2110,168 +2110,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle thin20Blue({required BuildContext context}) {
+  static TextStyle thin20Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin20BlueLight({required BuildContext context}) {
+  static TextStyle thin20InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin20BlueDark({required BuildContext context}) {
+  static TextStyle thin20InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin20Green({required BuildContext context}) {
+  static TextStyle thin20Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin20GreenLight({required BuildContext context}) {
+  static TextStyle thin20SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin20GreenDark({required BuildContext context}) {
+  static TextStyle thin20SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin20Yellow({required BuildContext context}) {
+  static TextStyle thin20Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin20YellowLight({required BuildContext context}) {
+  static TextStyle thin20WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin20YellowDark({required BuildContext context}) {
+  static TextStyle thin20WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin20Red({required BuildContext context}) {
+  static TextStyle thin20Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin20RedLight({required BuildContext context}) {
+  static TextStyle thin20DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin20RedDark({required BuildContext context}) {
+  static TextStyle thin20DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
@@ -2489,168 +2489,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle thin28Blue({required BuildContext context}) {
+  static TextStyle thin28Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin28BlueLight({required BuildContext context}) {
+  static TextStyle thin28InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin28BlueDark({required BuildContext context}) {
+  static TextStyle thin28InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin28Green({required BuildContext context}) {
+  static TextStyle thin28Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin28GreenLight({required BuildContext context}) {
+  static TextStyle thin28SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin28GreenDark({required BuildContext context}) {
+  static TextStyle thin28SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin28Yellow({required BuildContext context}) {
+  static TextStyle thin28Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin28YellowLight({required BuildContext context}) {
+  static TextStyle thin28WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin28YellowDark({required BuildContext context}) {
+  static TextStyle thin28WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin28Red({required BuildContext context}) {
+  static TextStyle thin28Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin28RedLight({required BuildContext context}) {
+  static TextStyle thin28DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin28RedDark({required BuildContext context}) {
+  static TextStyle thin28DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
@@ -2868,168 +2868,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle thin32Blue({required BuildContext context}) {
+  static TextStyle thin32Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin32BlueLight({required BuildContext context}) {
+  static TextStyle thin32InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin32BlueDark({required BuildContext context}) {
+  static TextStyle thin32InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin32Green({required BuildContext context}) {
+  static TextStyle thin32Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin32GreenLight({required BuildContext context}) {
+  static TextStyle thin32SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin32GreenDark({required BuildContext context}) {
+  static TextStyle thin32SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin32Yellow({required BuildContext context}) {
+  static TextStyle thin32Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin32YellowLight({required BuildContext context}) {
+  static TextStyle thin32WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin32YellowDark({required BuildContext context}) {
+  static TextStyle thin32WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin32Red({required BuildContext context}) {
+  static TextStyle thin32Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin32RedLight({required BuildContext context}) {
+  static TextStyle thin32DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
     );
   }
 
-  static TextStyle thin32RedDark({required BuildContext context}) {
+  static TextStyle thin32DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
@@ -3248,168 +3248,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle regular10Blue({required BuildContext context}) {
+  static TextStyle regular10Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular10BlueLight({required BuildContext context}) {
+  static TextStyle regular10InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular10BlueDark({required BuildContext context}) {
+  static TextStyle regular10InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular10Green({required BuildContext context}) {
+  static TextStyle regular10Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular10GreenLight({required BuildContext context}) {
+  static TextStyle regular10SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular10GreenDark({required BuildContext context}) {
+  static TextStyle regular10SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular10Yellow({required BuildContext context}) {
+  static TextStyle regular10Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular10YellowLight({required BuildContext context}) {
+  static TextStyle regular10WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular10YellowDark({required BuildContext context}) {
+  static TextStyle regular10WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular10Red({required BuildContext context}) {
+  static TextStyle regular10Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular10RedLight({required BuildContext context}) {
+  static TextStyle regular10DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular10RedDark({required BuildContext context}) {
+  static TextStyle regular10DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
@@ -3627,168 +3627,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle regular12Blue({required BuildContext context}) {
+  static TextStyle regular12Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular12BlueLight({required BuildContext context}) {
+  static TextStyle regular12InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular12BlueDark({required BuildContext context}) {
+  static TextStyle regular12InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular12Green({required BuildContext context}) {
+  static TextStyle regular12Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular12GreenLight({required BuildContext context}) {
+  static TextStyle regular12SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular12GreenDark({required BuildContext context}) {
+  static TextStyle regular12SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular12Yellow({required BuildContext context}) {
+  static TextStyle regular12Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular12YellowLight({required BuildContext context}) {
+  static TextStyle regular12WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular12YellowDark({required BuildContext context}) {
+  static TextStyle regular12WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular12Red({required BuildContext context}) {
+  static TextStyle regular12Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular12RedLight({required BuildContext context}) {
+  static TextStyle regular12DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular12RedDark({required BuildContext context}) {
+  static TextStyle regular12DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
@@ -4006,168 +4006,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle regular14Blue({required BuildContext context}) {
+  static TextStyle regular14Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular14BlueLight({required BuildContext context}) {
+  static TextStyle regular14InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular14BlueDark({required BuildContext context}) {
+  static TextStyle regular14InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular14Green({required BuildContext context}) {
+  static TextStyle regular14Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular14GreenLight({required BuildContext context}) {
+  static TextStyle regular14SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular14GreenDark({required BuildContext context}) {
+  static TextStyle regular14SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular14Yellow({required BuildContext context}) {
+  static TextStyle regular14Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular14YellowLight({required BuildContext context}) {
+  static TextStyle regular14WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular14YellowDark({required BuildContext context}) {
+  static TextStyle regular14WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular14Red({required BuildContext context}) {
+  static TextStyle regular14Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular14RedLight({required BuildContext context}) {
+  static TextStyle regular14DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular14RedDark({required BuildContext context}) {
+  static TextStyle regular14DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
@@ -4385,168 +4385,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle regular16Blue({required BuildContext context}) {
+  static TextStyle regular16Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular16BlueLight({required BuildContext context}) {
+  static TextStyle regular16InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular16BlueDark({required BuildContext context}) {
+  static TextStyle regular16InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular16Green({required BuildContext context}) {
+  static TextStyle regular16Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular16GreenLight({required BuildContext context}) {
+  static TextStyle regular16SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular16GreenDark({required BuildContext context}) {
+  static TextStyle regular16SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular16Yellow({required BuildContext context}) {
+  static TextStyle regular16Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular16YellowLight({required BuildContext context}) {
+  static TextStyle regular16WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular16YellowDark({required BuildContext context}) {
+  static TextStyle regular16WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular16Red({required BuildContext context}) {
+  static TextStyle regular16Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular16RedLight({required BuildContext context}) {
+  static TextStyle regular16DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular16RedDark({required BuildContext context}) {
+  static TextStyle regular16DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
@@ -4764,168 +4764,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle regular18Blue({required BuildContext context}) {
+  static TextStyle regular18Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular18BlueLight({required BuildContext context}) {
+  static TextStyle regular18InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular18BlueDark({required BuildContext context}) {
+  static TextStyle regular18InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular18Green({required BuildContext context}) {
+  static TextStyle regular18Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular18GreenLight({required BuildContext context}) {
+  static TextStyle regular18SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular18GreenDark({required BuildContext context}) {
+  static TextStyle regular18SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular18Yellow({required BuildContext context}) {
+  static TextStyle regular18Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular18YellowLight({required BuildContext context}) {
+  static TextStyle regular18WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular18YellowDark({required BuildContext context}) {
+  static TextStyle regular18WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular18Red({required BuildContext context}) {
+  static TextStyle regular18Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular18RedLight({required BuildContext context}) {
+  static TextStyle regular18DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular18RedDark({required BuildContext context}) {
+  static TextStyle regular18DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
@@ -5143,168 +5143,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle regular20Blue({required BuildContext context}) {
+  static TextStyle regular20Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular20BlueLight({required BuildContext context}) {
+  static TextStyle regular20InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular20BlueDark({required BuildContext context}) {
+  static TextStyle regular20InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular20Green({required BuildContext context}) {
+  static TextStyle regular20Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular20GreenLight({required BuildContext context}) {
+  static TextStyle regular20SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular20GreenDark({required BuildContext context}) {
+  static TextStyle regular20SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular20Yellow({required BuildContext context}) {
+  static TextStyle regular20Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular20YellowLight({required BuildContext context}) {
+  static TextStyle regular20WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular20YellowDark({required BuildContext context}) {
+  static TextStyle regular20WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular20Red({required BuildContext context}) {
+  static TextStyle regular20Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular20RedLight({required BuildContext context}) {
+  static TextStyle regular20DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular20RedDark({required BuildContext context}) {
+  static TextStyle regular20DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
@@ -5522,168 +5522,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle regular28Blue({required BuildContext context}) {
+  static TextStyle regular28Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular28BlueLight({required BuildContext context}) {
+  static TextStyle regular28InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular28BlueDark({required BuildContext context}) {
+  static TextStyle regular28InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular28Green({required BuildContext context}) {
+  static TextStyle regular28Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular28GreenLight({required BuildContext context}) {
+  static TextStyle regular28SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular28GreenDark({required BuildContext context}) {
+  static TextStyle regular28SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular28Yellow({required BuildContext context}) {
+  static TextStyle regular28Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular28YellowLight({required BuildContext context}) {
+  static TextStyle regular28WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular28YellowDark({required BuildContext context}) {
+  static TextStyle regular28WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular28Red({required BuildContext context}) {
+  static TextStyle regular28Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular28RedLight({required BuildContext context}) {
+  static TextStyle regular28DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular28RedDark({required BuildContext context}) {
+  static TextStyle regular28DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
@@ -5901,168 +5901,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle regular32Blue({required BuildContext context}) {
+  static TextStyle regular32Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular32BlueLight({required BuildContext context}) {
+  static TextStyle regular32InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular32BlueDark({required BuildContext context}) {
+  static TextStyle regular32InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular32Green({required BuildContext context}) {
+  static TextStyle regular32Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular32GreenLight({required BuildContext context}) {
+  static TextStyle regular32SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular32GreenDark({required BuildContext context}) {
+  static TextStyle regular32SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular32Yellow({required BuildContext context}) {
+  static TextStyle regular32Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular32YellowLight({required BuildContext context}) {
+  static TextStyle regular32WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular32YellowDark({required BuildContext context}) {
+  static TextStyle regular32WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular32Red({required BuildContext context}) {
+  static TextStyle regular32Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular32RedLight({required BuildContext context}) {
+  static TextStyle regular32DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
     );
   }
 
-  static TextStyle regular32RedDark({required BuildContext context}) {
+  static TextStyle regular32DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
@@ -6281,168 +6281,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle medium10Blue({required BuildContext context}) {
+  static TextStyle medium10Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium10BlueLight({required BuildContext context}) {
+  static TextStyle medium10InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium10BlueDark({required BuildContext context}) {
+  static TextStyle medium10InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium10Green({required BuildContext context}) {
+  static TextStyle medium10Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium10GreenLight({required BuildContext context}) {
+  static TextStyle medium10SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium10GreenDark({required BuildContext context}) {
+  static TextStyle medium10SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium10Yellow({required BuildContext context}) {
+  static TextStyle medium10Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium10YellowLight({required BuildContext context}) {
+  static TextStyle medium10WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium10YellowDark({required BuildContext context}) {
+  static TextStyle medium10WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium10Red({required BuildContext context}) {
+  static TextStyle medium10Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium10RedLight({required BuildContext context}) {
+  static TextStyle medium10DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium10RedDark({required BuildContext context}) {
+  static TextStyle medium10DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
@@ -6660,168 +6660,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle medium12Blue({required BuildContext context}) {
+  static TextStyle medium12Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium12BlueLight({required BuildContext context}) {
+  static TextStyle medium12InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium12BlueDark({required BuildContext context}) {
+  static TextStyle medium12InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium12Green({required BuildContext context}) {
+  static TextStyle medium12Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium12GreenLight({required BuildContext context}) {
+  static TextStyle medium12SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium12GreenDark({required BuildContext context}) {
+  static TextStyle medium12SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium12Yellow({required BuildContext context}) {
+  static TextStyle medium12Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium12YellowLight({required BuildContext context}) {
+  static TextStyle medium12WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium12YellowDark({required BuildContext context}) {
+  static TextStyle medium12WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium12Red({required BuildContext context}) {
+  static TextStyle medium12Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium12RedLight({required BuildContext context}) {
+  static TextStyle medium12DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium12RedDark({required BuildContext context}) {
+  static TextStyle medium12DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
@@ -7039,168 +7039,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle medium14Blue({required BuildContext context}) {
+  static TextStyle medium14Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium14BlueLight({required BuildContext context}) {
+  static TextStyle medium14InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium14BlueDark({required BuildContext context}) {
+  static TextStyle medium14InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium14Green({required BuildContext context}) {
+  static TextStyle medium14Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium14GreenLight({required BuildContext context}) {
+  static TextStyle medium14SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium14GreenDark({required BuildContext context}) {
+  static TextStyle medium14SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium14Yellow({required BuildContext context}) {
+  static TextStyle medium14Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium14YellowLight({required BuildContext context}) {
+  static TextStyle medium14WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium14YellowDark({required BuildContext context}) {
+  static TextStyle medium14WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium14Red({required BuildContext context}) {
+  static TextStyle medium14Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium14RedLight({required BuildContext context}) {
+  static TextStyle medium14DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium14RedDark({required BuildContext context}) {
+  static TextStyle medium14DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
@@ -7418,168 +7418,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle medium16Blue({required BuildContext context}) {
+  static TextStyle medium16Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium16BlueLight({required BuildContext context}) {
+  static TextStyle medium16InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium16BlueDark({required BuildContext context}) {
+  static TextStyle medium16InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium16Green({required BuildContext context}) {
+  static TextStyle medium16Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium16GreenLight({required BuildContext context}) {
+  static TextStyle medium16SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium16GreenDark({required BuildContext context}) {
+  static TextStyle medium16SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium16Yellow({required BuildContext context}) {
+  static TextStyle medium16Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium16YellowLight({required BuildContext context}) {
+  static TextStyle medium16WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium16YellowDark({required BuildContext context}) {
+  static TextStyle medium16WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium16Red({required BuildContext context}) {
+  static TextStyle medium16Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium16RedLight({required BuildContext context}) {
+  static TextStyle medium16DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium16RedDark({required BuildContext context}) {
+  static TextStyle medium16DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
@@ -7797,168 +7797,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle medium18Blue({required BuildContext context}) {
+  static TextStyle medium18Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium18BlueLight({required BuildContext context}) {
+  static TextStyle medium18InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium18BlueDark({required BuildContext context}) {
+  static TextStyle medium18InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium18Green({required BuildContext context}) {
+  static TextStyle medium18Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium18GreenLight({required BuildContext context}) {
+  static TextStyle medium18SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium18GreenDark({required BuildContext context}) {
+  static TextStyle medium18SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium18Yellow({required BuildContext context}) {
+  static TextStyle medium18Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium18YellowLight({required BuildContext context}) {
+  static TextStyle medium18WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium18YellowDark({required BuildContext context}) {
+  static TextStyle medium18WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium18Red({required BuildContext context}) {
+  static TextStyle medium18Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium18RedLight({required BuildContext context}) {
+  static TextStyle medium18DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium18RedDark({required BuildContext context}) {
+  static TextStyle medium18DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
@@ -8176,168 +8176,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle medium20Blue({required BuildContext context}) {
+  static TextStyle medium20Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium20BlueLight({required BuildContext context}) {
+  static TextStyle medium20InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium20BlueDark({required BuildContext context}) {
+  static TextStyle medium20InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium20Green({required BuildContext context}) {
+  static TextStyle medium20Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium20GreenLight({required BuildContext context}) {
+  static TextStyle medium20SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium20GreenDark({required BuildContext context}) {
+  static TextStyle medium20SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium20Yellow({required BuildContext context}) {
+  static TextStyle medium20Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium20YellowLight({required BuildContext context}) {
+  static TextStyle medium20WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium20YellowDark({required BuildContext context}) {
+  static TextStyle medium20WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium20Red({required BuildContext context}) {
+  static TextStyle medium20Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium20RedLight({required BuildContext context}) {
+  static TextStyle medium20DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium20RedDark({required BuildContext context}) {
+  static TextStyle medium20DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
@@ -8555,168 +8555,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle medium28Blue({required BuildContext context}) {
+  static TextStyle medium28Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium28BlueLight({required BuildContext context}) {
+  static TextStyle medium28InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium28BlueDark({required BuildContext context}) {
+  static TextStyle medium28InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium28Green({required BuildContext context}) {
+  static TextStyle medium28Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium28GreenLight({required BuildContext context}) {
+  static TextStyle medium28SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium28GreenDark({required BuildContext context}) {
+  static TextStyle medium28SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium28Yellow({required BuildContext context}) {
+  static TextStyle medium28Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium28YellowLight({required BuildContext context}) {
+  static TextStyle medium28WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium28YellowDark({required BuildContext context}) {
+  static TextStyle medium28WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium28Red({required BuildContext context}) {
+  static TextStyle medium28Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium28RedLight({required BuildContext context}) {
+  static TextStyle medium28DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium28RedDark({required BuildContext context}) {
+  static TextStyle medium28DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
@@ -8934,168 +8934,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle medium32Blue({required BuildContext context}) {
+  static TextStyle medium32Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium32BlueLight({required BuildContext context}) {
+  static TextStyle medium32InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium32BlueDark({required BuildContext context}) {
+  static TextStyle medium32InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium32Green({required BuildContext context}) {
+  static TextStyle medium32Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium32GreenLight({required BuildContext context}) {
+  static TextStyle medium32SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium32GreenDark({required BuildContext context}) {
+  static TextStyle medium32SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium32Yellow({required BuildContext context}) {
+  static TextStyle medium32Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium32YellowLight({required BuildContext context}) {
+  static TextStyle medium32WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium32YellowDark({required BuildContext context}) {
+  static TextStyle medium32WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium32Red({required BuildContext context}) {
+  static TextStyle medium32Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium32RedLight({required BuildContext context}) {
+  static TextStyle medium32DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
     );
   }
 
-  static TextStyle medium32RedDark({required BuildContext context}) {
+  static TextStyle medium32DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
@@ -9314,168 +9314,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle semiBold10Blue({required BuildContext context}) {
+  static TextStyle semiBold10Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold10BlueLight({required BuildContext context}) {
+  static TextStyle semiBold10InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold10BlueDark({required BuildContext context}) {
+  static TextStyle semiBold10InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold10Green({required BuildContext context}) {
+  static TextStyle semiBold10Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold10GreenLight({required BuildContext context}) {
+  static TextStyle semiBold10SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold10GreenDark({required BuildContext context}) {
+  static TextStyle semiBold10SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold10Yellow({required BuildContext context}) {
+  static TextStyle semiBold10Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold10YellowLight({required BuildContext context}) {
+  static TextStyle semiBold10WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold10YellowDark({required BuildContext context}) {
+  static TextStyle semiBold10WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold10Red({required BuildContext context}) {
+  static TextStyle semiBold10Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold10RedLight({required BuildContext context}) {
+  static TextStyle semiBold10DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold10RedDark({required BuildContext context}) {
+  static TextStyle semiBold10DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
@@ -9693,168 +9693,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle semiBold12Blue({required BuildContext context}) {
+  static TextStyle semiBold12Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold12BlueLight({required BuildContext context}) {
+  static TextStyle semiBold12InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold12BlueDark({required BuildContext context}) {
+  static TextStyle semiBold12InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold12Green({required BuildContext context}) {
+  static TextStyle semiBold12Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold12GreenLight({required BuildContext context}) {
+  static TextStyle semiBold12SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold12GreenDark({required BuildContext context}) {
+  static TextStyle semiBold12SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold12Yellow({required BuildContext context}) {
+  static TextStyle semiBold12Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold12YellowLight({required BuildContext context}) {
+  static TextStyle semiBold12WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold12YellowDark({required BuildContext context}) {
+  static TextStyle semiBold12WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold12Red({required BuildContext context}) {
+  static TextStyle semiBold12Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold12RedLight({required BuildContext context}) {
+  static TextStyle semiBold12DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold12RedDark({required BuildContext context}) {
+  static TextStyle semiBold12DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
@@ -10072,168 +10072,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle semiBold14Blue({required BuildContext context}) {
+  static TextStyle semiBold14Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold14BlueLight({required BuildContext context}) {
+  static TextStyle semiBold14InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold14BlueDark({required BuildContext context}) {
+  static TextStyle semiBold14InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold14Green({required BuildContext context}) {
+  static TextStyle semiBold14Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold14GreenLight({required BuildContext context}) {
+  static TextStyle semiBold14SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold14GreenDark({required BuildContext context}) {
+  static TextStyle semiBold14SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold14Yellow({required BuildContext context}) {
+  static TextStyle semiBold14Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold14YellowLight({required BuildContext context}) {
+  static TextStyle semiBold14WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold14YellowDark({required BuildContext context}) {
+  static TextStyle semiBold14WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold14Red({required BuildContext context}) {
+  static TextStyle semiBold14Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold14RedLight({required BuildContext context}) {
+  static TextStyle semiBold14DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold14RedDark({required BuildContext context}) {
+  static TextStyle semiBold14DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
@@ -10451,168 +10451,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle semiBold16Blue({required BuildContext context}) {
+  static TextStyle semiBold16Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold16BlueLight({required BuildContext context}) {
+  static TextStyle semiBold16InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold16BlueDark({required BuildContext context}) {
+  static TextStyle semiBold16InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold16Green({required BuildContext context}) {
+  static TextStyle semiBold16Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold16GreenLight({required BuildContext context}) {
+  static TextStyle semiBold16SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold16GreenDark({required BuildContext context}) {
+  static TextStyle semiBold16SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold16Yellow({required BuildContext context}) {
+  static TextStyle semiBold16Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold16YellowLight({required BuildContext context}) {
+  static TextStyle semiBold16WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold16YellowDark({required BuildContext context}) {
+  static TextStyle semiBold16WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold16Red({required BuildContext context}) {
+  static TextStyle semiBold16Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold16RedLight({required BuildContext context}) {
+  static TextStyle semiBold16DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold16RedDark({required BuildContext context}) {
+  static TextStyle semiBold16DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
@@ -10830,168 +10830,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle semiBold18Blue({required BuildContext context}) {
+  static TextStyle semiBold18Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold18BlueLight({required BuildContext context}) {
+  static TextStyle semiBold18InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold18BlueDark({required BuildContext context}) {
+  static TextStyle semiBold18InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold18Green({required BuildContext context}) {
+  static TextStyle semiBold18Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold18GreenLight({required BuildContext context}) {
+  static TextStyle semiBold18SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold18GreenDark({required BuildContext context}) {
+  static TextStyle semiBold18SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold18Yellow({required BuildContext context}) {
+  static TextStyle semiBold18Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold18YellowLight({required BuildContext context}) {
+  static TextStyle semiBold18WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold18YellowDark({required BuildContext context}) {
+  static TextStyle semiBold18WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold18Red({required BuildContext context}) {
+  static TextStyle semiBold18Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold18RedLight({required BuildContext context}) {
+  static TextStyle semiBold18DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold18RedDark({required BuildContext context}) {
+  static TextStyle semiBold18DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
@@ -11209,168 +11209,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle semiBold20Blue({required BuildContext context}) {
+  static TextStyle semiBold20Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold20BlueLight({required BuildContext context}) {
+  static TextStyle semiBold20InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold20BlueDark({required BuildContext context}) {
+  static TextStyle semiBold20InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold20Green({required BuildContext context}) {
+  static TextStyle semiBold20Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold20GreenLight({required BuildContext context}) {
+  static TextStyle semiBold20SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold20GreenDark({required BuildContext context}) {
+  static TextStyle semiBold20SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold20Yellow({required BuildContext context}) {
+  static TextStyle semiBold20Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold20YellowLight({required BuildContext context}) {
+  static TextStyle semiBold20WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold20YellowDark({required BuildContext context}) {
+  static TextStyle semiBold20WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold20Red({required BuildContext context}) {
+  static TextStyle semiBold20Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold20RedLight({required BuildContext context}) {
+  static TextStyle semiBold20DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold20RedDark({required BuildContext context}) {
+  static TextStyle semiBold20DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
@@ -11588,168 +11588,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle semiBold28Blue({required BuildContext context}) {
+  static TextStyle semiBold28Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold28BlueLight({required BuildContext context}) {
+  static TextStyle semiBold28InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold28BlueDark({required BuildContext context}) {
+  static TextStyle semiBold28InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold28Green({required BuildContext context}) {
+  static TextStyle semiBold28Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold28GreenLight({required BuildContext context}) {
+  static TextStyle semiBold28SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold28GreenDark({required BuildContext context}) {
+  static TextStyle semiBold28SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold28Yellow({required BuildContext context}) {
+  static TextStyle semiBold28Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold28YellowLight({required BuildContext context}) {
+  static TextStyle semiBold28WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold28YellowDark({required BuildContext context}) {
+  static TextStyle semiBold28WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold28Red({required BuildContext context}) {
+  static TextStyle semiBold28Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold28RedLight({required BuildContext context}) {
+  static TextStyle semiBold28DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold28RedDark({required BuildContext context}) {
+  static TextStyle semiBold28DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
@@ -11967,168 +11967,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle semiBold32Blue({required BuildContext context}) {
+  static TextStyle semiBold32Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold32BlueLight({required BuildContext context}) {
+  static TextStyle semiBold32InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold32BlueDark({required BuildContext context}) {
+  static TextStyle semiBold32InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold32Green({required BuildContext context}) {
+  static TextStyle semiBold32Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold32GreenLight({required BuildContext context}) {
+  static TextStyle semiBold32SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold32GreenDark({required BuildContext context}) {
+  static TextStyle semiBold32SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold32Yellow({required BuildContext context}) {
+  static TextStyle semiBold32Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold32YellowLight({required BuildContext context}) {
+  static TextStyle semiBold32WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold32YellowDark({required BuildContext context}) {
+  static TextStyle semiBold32WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold32Red({required BuildContext context}) {
+  static TextStyle semiBold32Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold32RedLight({required BuildContext context}) {
+  static TextStyle semiBold32DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
     );
   }
 
-  static TextStyle semiBold32RedDark({required BuildContext context}) {
+  static TextStyle semiBold32DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
@@ -12347,168 +12347,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle bold10Blue({required BuildContext context}) {
+  static TextStyle bold10Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold10BlueLight({required BuildContext context}) {
+  static TextStyle bold10InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold10BlueDark({required BuildContext context}) {
+  static TextStyle bold10InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold10Green({required BuildContext context}) {
+  static TextStyle bold10Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold10GreenLight({required BuildContext context}) {
+  static TextStyle bold10SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold10GreenDark({required BuildContext context}) {
+  static TextStyle bold10SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold10Yellow({required BuildContext context}) {
+  static TextStyle bold10Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold10YellowLight({required BuildContext context}) {
+  static TextStyle bold10WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold10YellowDark({required BuildContext context}) {
+  static TextStyle bold10WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold10Red({required BuildContext context}) {
+  static TextStyle bold10Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold10RedLight({required BuildContext context}) {
+  static TextStyle bold10DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold10RedDark({required BuildContext context}) {
+  static TextStyle bold10DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
@@ -12726,168 +12726,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle bold12Blue({required BuildContext context}) {
+  static TextStyle bold12Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold12BlueLight({required BuildContext context}) {
+  static TextStyle bold12InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold12BlueDark({required BuildContext context}) {
+  static TextStyle bold12InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold12Green({required BuildContext context}) {
+  static TextStyle bold12Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold12GreenLight({required BuildContext context}) {
+  static TextStyle bold12SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold12GreenDark({required BuildContext context}) {
+  static TextStyle bold12SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold12Yellow({required BuildContext context}) {
+  static TextStyle bold12Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold12YellowLight({required BuildContext context}) {
+  static TextStyle bold12WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold12YellowDark({required BuildContext context}) {
+  static TextStyle bold12WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold12Red({required BuildContext context}) {
+  static TextStyle bold12Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold12RedLight({required BuildContext context}) {
+  static TextStyle bold12DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold12RedDark({required BuildContext context}) {
+  static TextStyle bold12DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
@@ -13105,168 +13105,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle bold14Blue({required BuildContext context}) {
+  static TextStyle bold14Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold14BlueLight({required BuildContext context}) {
+  static TextStyle bold14InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold14BlueDark({required BuildContext context}) {
+  static TextStyle bold14InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold14Green({required BuildContext context}) {
+  static TextStyle bold14Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold14GreenLight({required BuildContext context}) {
+  static TextStyle bold14SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold14GreenDark({required BuildContext context}) {
+  static TextStyle bold14SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold14Yellow({required BuildContext context}) {
+  static TextStyle bold14Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold14YellowLight({required BuildContext context}) {
+  static TextStyle bold14WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold14YellowDark({required BuildContext context}) {
+  static TextStyle bold14WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold14Red({required BuildContext context}) {
+  static TextStyle bold14Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold14RedLight({required BuildContext context}) {
+  static TextStyle bold14DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold14RedDark({required BuildContext context}) {
+  static TextStyle bold14DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
@@ -13484,168 +13484,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle bold16Blue({required BuildContext context}) {
+  static TextStyle bold16Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold16BlueLight({required BuildContext context}) {
+  static TextStyle bold16InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold16BlueDark({required BuildContext context}) {
+  static TextStyle bold16InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold16Green({required BuildContext context}) {
+  static TextStyle bold16Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold16GreenLight({required BuildContext context}) {
+  static TextStyle bold16SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold16GreenDark({required BuildContext context}) {
+  static TextStyle bold16SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold16Yellow({required BuildContext context}) {
+  static TextStyle bold16Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold16YellowLight({required BuildContext context}) {
+  static TextStyle bold16WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold16YellowDark({required BuildContext context}) {
+  static TextStyle bold16WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold16Red({required BuildContext context}) {
+  static TextStyle bold16Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold16RedLight({required BuildContext context}) {
+  static TextStyle bold16DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold16RedDark({required BuildContext context}) {
+  static TextStyle bold16DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
@@ -13863,168 +13863,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle bold18Blue({required BuildContext context}) {
+  static TextStyle bold18Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold18BlueLight({required BuildContext context}) {
+  static TextStyle bold18InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold18BlueDark({required BuildContext context}) {
+  static TextStyle bold18InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold18Green({required BuildContext context}) {
+  static TextStyle bold18Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold18GreenLight({required BuildContext context}) {
+  static TextStyle bold18SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold18GreenDark({required BuildContext context}) {
+  static TextStyle bold18SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold18Yellow({required BuildContext context}) {
+  static TextStyle bold18Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold18YellowLight({required BuildContext context}) {
+  static TextStyle bold18WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold18YellowDark({required BuildContext context}) {
+  static TextStyle bold18WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold18Red({required BuildContext context}) {
+  static TextStyle bold18Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold18RedLight({required BuildContext context}) {
+  static TextStyle bold18DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold18RedDark({required BuildContext context}) {
+  static TextStyle bold18DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
@@ -14242,168 +14242,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle bold20Blue({required BuildContext context}) {
+  static TextStyle bold20Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold20BlueLight({required BuildContext context}) {
+  static TextStyle bold20InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold20BlueDark({required BuildContext context}) {
+  static TextStyle bold20InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold20Green({required BuildContext context}) {
+  static TextStyle bold20Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold20GreenLight({required BuildContext context}) {
+  static TextStyle bold20SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold20GreenDark({required BuildContext context}) {
+  static TextStyle bold20SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold20Yellow({required BuildContext context}) {
+  static TextStyle bold20Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold20YellowLight({required BuildContext context}) {
+  static TextStyle bold20WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold20YellowDark({required BuildContext context}) {
+  static TextStyle bold20WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold20Red({required BuildContext context}) {
+  static TextStyle bold20Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold20RedLight({required BuildContext context}) {
+  static TextStyle bold20DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold20RedDark({required BuildContext context}) {
+  static TextStyle bold20DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
@@ -14621,168 +14621,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle bold28Blue({required BuildContext context}) {
+  static TextStyle bold28Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold28BlueLight({required BuildContext context}) {
+  static TextStyle bold28InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold28BlueDark({required BuildContext context}) {
+  static TextStyle bold28InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold28Green({required BuildContext context}) {
+  static TextStyle bold28Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold28GreenLight({required BuildContext context}) {
+  static TextStyle bold28SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold28GreenDark({required BuildContext context}) {
+  static TextStyle bold28SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold28Yellow({required BuildContext context}) {
+  static TextStyle bold28Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold28YellowLight({required BuildContext context}) {
+  static TextStyle bold28WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold28YellowDark({required BuildContext context}) {
+  static TextStyle bold28WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold28Red({required BuildContext context}) {
+  static TextStyle bold28Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold28RedLight({required BuildContext context}) {
+  static TextStyle bold28DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold28RedDark({required BuildContext context}) {
+  static TextStyle bold28DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
@@ -15000,168 +15000,168 @@ class FCTextStyle {
     );
   }
 
-  static TextStyle bold32Blue({required BuildContext context}) {
+  static TextStyle bold32Info({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blue,
+      color: theme.info,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold32BlueLight({required BuildContext context}) {
+  static TextStyle bold32InfoLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueLight,
+      color: theme.infoLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold32BlueDark({required BuildContext context}) {
+  static TextStyle bold32InfoDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.blueDark,
+      color: theme.infoDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold32Green({required BuildContext context}) {
+  static TextStyle bold32Success({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.green,
+      color: theme.success,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold32GreenLight({required BuildContext context}) {
+  static TextStyle bold32SuccessLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenLight,
+      color: theme.successLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold32GreenDark({required BuildContext context}) {
+  static TextStyle bold32SuccessDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.greenDark,
+      color: theme.successDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold32Yellow({required BuildContext context}) {
+  static TextStyle bold32Warning({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellow,
+      color: theme.warning,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold32YellowLight({required BuildContext context}) {
+  static TextStyle bold32WarningLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowLight,
+      color: theme.warningLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold32YellowDark({required BuildContext context}) {
+  static TextStyle bold32WarningDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.yellowDark,
+      color: theme.warningDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold32Red({required BuildContext context}) {
+  static TextStyle bold32Danger({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.red,
+      color: theme.danger,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold32RedLight({required BuildContext context}) {
+  static TextStyle bold32DangerLight({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redLight,
+      color: theme.dangerLight,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
     );
   }
 
-  static TextStyle bold32RedDark({required BuildContext context}) {
+  static TextStyle bold32DangerDark({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return TextStyle(
-      color: theme.redDark,
+      color: theme.dangerDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,

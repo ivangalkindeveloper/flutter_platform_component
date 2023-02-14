@@ -31,7 +31,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkToggle<String>(
+          FCInfoDarkToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -50,7 +50,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkToggle<String>(
+          FCSuccessDarkToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -126,7 +126,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkToggle<String>(
+          FCWarningDarkToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -188,7 +188,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueToggle<String>(
+          FCInfoToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -207,7 +207,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenToggle<String>(
+          FCSuccessToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -321,7 +321,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowToggle<String>(
+          FCWarningToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -345,7 +345,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightToggle<String>(
+          FCInfoLightToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -364,7 +364,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightToggle<String>(
+          FCSuccessLightToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -440,7 +440,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightToggle<String>(
+          FCWarningLightToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(

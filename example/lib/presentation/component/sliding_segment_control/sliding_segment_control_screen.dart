@@ -31,7 +31,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkSlidingSegmentControl<String>(
+          FCInfoDarkSlidingSegmentControl<String>(
             value: this._action,
             items: [
               FCSlidingSegmentControlItem(
@@ -50,7 +50,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkSlidingSegmentControl<String>(
+          FCSuccessDarkSlidingSegmentControl<String>(
             value: this._action,
             items: [
               FCSlidingSegmentControlItem(
@@ -107,7 +107,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkSlidingSegmentControl<String>(
+          FCDangerDarkSlidingSegmentControl<String>(
             value: this._action,
             items: [
               FCSlidingSegmentControlItem(
@@ -145,7 +145,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkSlidingSegmentControl<String>(
+          FCWarningDarkSlidingSegmentControl<String>(
             value: this._action,
             items: [
               FCSlidingSegmentControlItem(
@@ -207,7 +207,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueSlidingSegmentControl<String>(
+          FCInfoSlidingSegmentControl<String>(
             value: this._action,
             items: [
               FCSlidingSegmentControlItem(
@@ -226,7 +226,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenSlidingSegmentControl<String>(
+          FCSuccessSlidingSegmentControl<String>(
             value: this._action,
             items: [
               FCSlidingSegmentControlItem(
@@ -283,7 +283,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedSlidingSegmentControl<String>(
+          FCDangerSlidingSegmentControl<String>(
             value: this._action,
             items: [
               FCSlidingSegmentControlItem(
@@ -359,7 +359,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowSlidingSegmentControl<String>(
+          FCWarningSlidingSegmentControl<String>(
             value: this._action,
             items: [
               FCSlidingSegmentControlItem(
@@ -383,7 +383,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightSlidingSegmentControl<String>(
+          FCInfoLightSlidingSegmentControl<String>(
             value: this._action,
             items: [
               FCSlidingSegmentControlItem(
@@ -402,7 +402,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightSlidingSegmentControl<String>(
+          FCSuccessLightSlidingSegmentControl<String>(
             value: this._action,
             items: [
               FCSlidingSegmentControlItem(
@@ -440,7 +440,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightSlidingSegmentControl<String>(
+          FCDangerLightSlidingSegmentControl<String>(
             value: this._action,
             items: [
               FCSlidingSegmentControlItem(
@@ -478,7 +478,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightSlidingSegmentControl<String>(
+          FCWarningLightSlidingSegmentControl<String>(
             value: this._action,
             items: [
               FCSlidingSegmentControlItem(

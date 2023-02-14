@@ -143,7 +143,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
     if (this._focusNode.hasPrimaryFocus) return this.widget.backgroundGradient;
 
     if (this._isValidationError || this._isAutoValidationError)
-      return this._theme.redLightGradient;
+      return this._theme.dangerLightGradient;
 
     return this.widget.backgroundGradient;
   }
@@ -156,13 +156,13 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
       ]);
 
     if (this._isValidationError || this._isAutoValidationError)
-      return this._theme.redGradient;
+      return this._theme.dangerGradient;
 
     return this.widget.focusedGradient;
   }
 
   Color _labelColor() {
-    if (this._isValidationError || this._isAutoValidationError) return this._theme.red;
+    if (this._isValidationError || this._isAutoValidationError) return this._theme.danger;
 
     if (this._focusNode.hasPrimaryFocus)
       return this.widget.labelColor ?? this.widget.focusedGradient.colors.first;
@@ -172,7 +172,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
 
   Gradient _internalGradient() {
     if (this._isValidationError || this._isAutoValidationError)
-      return this._theme.redGradient;
+      return this._theme.dangerGradient;
 
     if (this._focusNode.hasPrimaryFocus)
       return this.widget.internalGradient ?? this.widget.focusedGradient;
@@ -205,7 +205,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
   String? _validator(String? value) {
     if (value == null || this.mounted == false) return null;
 
-    // Required
+    // Requidanger
     if (this.widget.isRequired && value.isEmpty) {
       this._haptic.error();
       setState(() {
@@ -312,7 +312,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                                   onNewValue: (String value) {
                                     if (this.mounted == false) return null;
 
-                                    // Required
+                                    // Requidanger
                                     if (this.widget.isRequired && value.isEmpty) {
                                       this._haptic.error();
                                       setState(() {
@@ -409,7 +409,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
             child: Row(
               children: [
                 Expanded(
-                  child: FCText.regular14Red(
+                  child: FCText.regular14Danger(
                     context: context,
                     text: this._errorText(),
                   ),

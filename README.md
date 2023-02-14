@@ -14,7 +14,7 @@ In the case of this package - it is necessary to fill in only one contract of th
 The color scheme was created in terms of the convenience of designers (primary and secondary colors).\
 In the scheme by name, permanent colors and tint colors are created (note - primaryLight and primaryDark).
 ### Boilerplate
-Ready-made components reduce the declarative layout code.
+Ready-made components dangeruce the declarative layout code.
 ### Simplified and unified API
 Each package component has simplified APIs because some component properties are never used.\
 All component property names are unified, for example, you will never see "background" and "backgroundColor".

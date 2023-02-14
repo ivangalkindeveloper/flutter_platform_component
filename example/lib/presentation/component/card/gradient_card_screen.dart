@@ -24,11 +24,11 @@ class GradientCardScreen extends StatelessWidget {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkGradientCard(
+          FCInfoDarkGradientCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkGradientCard(
+          FCSuccessDarkGradientCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -40,7 +40,7 @@ class GradientCardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkGradientCard(
+          FCDangerDarkGradientCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -48,7 +48,7 @@ class GradientCardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkGradientCard(
+          FCWarningDarkGradientCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 * 2),
@@ -57,11 +57,11 @@ class GradientCardScreen extends StatelessWidget {
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCBlueGradientCard(
+          FCInfoGradientCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16),
-          FCGreenGradientCard(
+          FCSuccessGradientCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -73,7 +73,7 @@ class GradientCardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedGradientCard(
+          FCDangerGradientCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -81,7 +81,7 @@ class GradientCardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowGradientCard(
+          FCWarningGradientCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 * 2),
@@ -90,11 +90,11 @@ class GradientCardScreen extends StatelessWidget {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightGradientCard(
+          FCInfoLightGradientCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightGradientCard(
+          FCSuccessLightGradientCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -106,7 +106,7 @@ class GradientCardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightGradientCard(
+          FCDangerLightGradientCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -114,7 +114,7 @@ class GradientCardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightGradientCard(
+          FCWarningLightGradientCard(
             child: const SizedBox(),
           ),
         ],

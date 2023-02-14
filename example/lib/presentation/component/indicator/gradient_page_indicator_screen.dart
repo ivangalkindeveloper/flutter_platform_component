@@ -42,12 +42,12 @@ class _GradientPageIndicatorScreenState extends State<GradientPageIndicatorScree
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkGradientPageIndicator(
+          FCInfoDarkGradientPageIndicator(
             length: 4,
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkGradientPageIndicator(
+          FCSuccessDarkGradientPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -57,7 +57,7 @@ class _GradientPageIndicatorScreenState extends State<GradientPageIndicatorScree
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkGradientPageIndicator(
+          FCDangerDarkGradientPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -67,7 +67,7 @@ class _GradientPageIndicatorScreenState extends State<GradientPageIndicatorScree
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkGradientPageIndicator(
+          FCWarningDarkGradientPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -77,12 +77,12 @@ class _GradientPageIndicatorScreenState extends State<GradientPageIndicatorScree
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCBlueGradientPageIndicator(
+          FCInfoGradientPageIndicator(
             length: 4,
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenGradientPageIndicator(
+          FCSuccessGradientPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -92,7 +92,7 @@ class _GradientPageIndicatorScreenState extends State<GradientPageIndicatorScree
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedGradientPageIndicator(
+          FCDangerGradientPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -102,7 +102,7 @@ class _GradientPageIndicatorScreenState extends State<GradientPageIndicatorScree
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowGradientPageIndicator(
+          FCWarningGradientPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -112,12 +112,12 @@ class _GradientPageIndicatorScreenState extends State<GradientPageIndicatorScree
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightGradientPageIndicator(
+          FCInfoLightGradientPageIndicator(
             length: 4,
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightGradientPageIndicator(
+          FCSuccessLightGradientPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -127,7 +127,7 @@ class _GradientPageIndicatorScreenState extends State<GradientPageIndicatorScree
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightGradientPageIndicator(
+          FCDangerLightGradientPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -137,7 +137,7 @@ class _GradientPageIndicatorScreenState extends State<GradientPageIndicatorScree
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightGradientPageIndicator(
+          FCWarningLightGradientPageIndicator(
             length: 4,
             value: this._page,
           ),

@@ -520,15 +520,15 @@ class ConfigListTheme extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Blue
+        // Info
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Blue:"),
+            FCText.regular16Black(context: context, text: "Info:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
-                color: theme.blue,
+                color: theme.info,
               ),
             ),
           ],
@@ -536,28 +536,28 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Blue Gradient:"),
+            FCText.regular16Black(context: context, text: "Info Gradient:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
                 decoration: BoxDecoration(
-                  gradient: theme.blueGradient,
+                  gradient: theme.infoGradient,
                 ),
               ),
             ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Blue / Light
+        // Info / Light
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Blue Light:"),
+            FCText.regular16Black(context: context, text: "Info Light:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
-                color: theme.blueLight,
+                color: theme.infoLight,
               ),
             ),
           ],
@@ -565,28 +565,28 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Blue Light Gradient:"),
+            FCText.regular16Black(context: context, text: "Info Light Gradient:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
                 decoration: BoxDecoration(
-                  gradient: theme.blueLightGradient,
+                  gradient: theme.infoLightGradient,
                 ),
               ),
             ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Blue / Dark
+        // Info / Dark
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Blue Dark:"),
+            FCText.regular16Black(context: context, text: "Info Dark:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
-                color: theme.blueDark,
+                color: theme.infoDark,
               ),
             ),
           ],
@@ -594,115 +594,28 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Blue Dark Gradient:"),
+            FCText.regular16Black(context: context, text: "Info Dark Gradient:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
                 decoration: BoxDecoration(
-                  gradient: theme.blueDarkGradient,
-                ),
-              ),
-            ),
-          ],
-        ),
-        SizedBox(height: size.s16 / 2),
-        // Green
-        Row(
-          children: [
-            FCText.regular16Black(context: context, text: "Green:"),
-            SizedBox(width: size.s16),
-            Expanded(
-              child: Container(
-                height: size.s16,
-                color: theme.green,
-              ),
-            ),
-          ],
-        ),
-        SizedBox(height: size.s16 / 4),
-        Row(
-          children: [
-            FCText.regular16Black(context: context, text: "Green Gradient:"),
-            SizedBox(width: size.s16),
-            Expanded(
-              child: Container(
-                height: size.s16,
-                decoration: BoxDecoration(
-                  gradient: theme.greenGradient,
-                ),
-              ),
-            ),
-          ],
-        ),
-        SizedBox(height: size.s16 / 4),
-        // Green / Light
-        Row(
-          children: [
-            FCText.regular16Black(context: context, text: "Green Light:"),
-            SizedBox(width: size.s16),
-            Expanded(
-              child: Container(
-                height: size.s16,
-                color: theme.greenLight,
-              ),
-            ),
-          ],
-        ),
-        SizedBox(height: size.s16 / 4),
-        Row(
-          children: [
-            FCText.regular16Black(context: context, text: "Green Light Gradient:"),
-            SizedBox(width: size.s16),
-            Expanded(
-              child: Container(
-                height: size.s16,
-                decoration: BoxDecoration(
-                  gradient: theme.greenLightGradient,
-                ),
-              ),
-            ),
-          ],
-        ),
-        SizedBox(height: size.s16 / 4),
-        // Green / Dark
-        Row(
-          children: [
-            FCText.regular16Black(context: context, text: "Green Dark:"),
-            SizedBox(width: size.s16),
-            Expanded(
-              child: Container(
-                height: size.s16,
-                color: theme.greenDark,
-              ),
-            ),
-          ],
-        ),
-        SizedBox(height: size.s16 / 4),
-        Row(
-          children: [
-            FCText.regular16Black(context: context, text: "Green Dark Gradient:"),
-            SizedBox(width: size.s16),
-            Expanded(
-              child: Container(
-                height: size.s16,
-                decoration: BoxDecoration(
-                  gradient: theme.greenDarkGradient,
+                  gradient: theme.infoDarkGradient,
                 ),
               ),
             ),
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Yellow
+        // Success
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Yellow:"),
+            FCText.regular16Black(context: context, text: "Success:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
-                color: theme.yellow,
+                color: theme.success,
               ),
             ),
           ],
@@ -710,28 +623,28 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Yellow Gradient:"),
+            FCText.regular16Black(context: context, text: "Success Gradient:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
                 decoration: BoxDecoration(
-                  gradient: theme.yellowGradient,
+                  gradient: theme.successGradient,
                 ),
               ),
             ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Yellow / Light
+        // Success / Light
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Yellow Light:"),
+            FCText.regular16Black(context: context, text: "Success Light:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
-                color: theme.yellowLight,
+                color: theme.successLight,
               ),
             ),
           ],
@@ -739,28 +652,28 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Yellow Light Gradient:"),
+            FCText.regular16Black(context: context, text: "Success Light Gradient:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
                 decoration: BoxDecoration(
-                  gradient: theme.yellowLightGradient,
+                  gradient: theme.successLightGradient,
                 ),
               ),
             ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Yellow / Dark
+        // Success / Dark
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Yellow Dark:"),
+            FCText.regular16Black(context: context, text: "Success Dark:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
-                color: theme.yellowDark,
+                color: theme.successDark,
               ),
             ),
           ],
@@ -768,28 +681,28 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Yellow Dark Gradient:"),
+            FCText.regular16Black(context: context, text: "Success Dark Gradient:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
                 decoration: BoxDecoration(
-                  gradient: theme.yellowDarkGradient,
+                  gradient: theme.successDarkGradient,
                 ),
               ),
             ),
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Red
+        // Warning
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Red:"),
+            FCText.regular16Black(context: context, text: "Warning:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
-                color: theme.red,
+                color: theme.warning,
               ),
             ),
           ],
@@ -797,28 +710,28 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Red Gradient:"),
+            FCText.regular16Black(context: context, text: "Warning Gradient:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
                 decoration: BoxDecoration(
-                  gradient: theme.redGradient,
+                  gradient: theme.warningGradient,
                 ),
               ),
             ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Red / Light
+        // Warning / Light
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Red Light:"),
+            FCText.regular16Black(context: context, text: "Warning Light:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
-                color: theme.redLight,
+                color: theme.warningLight,
               ),
             ),
           ],
@@ -826,28 +739,28 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Red Light Gradient:"),
+            FCText.regular16Black(context: context, text: "Warning Light Gradient:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
                 decoration: BoxDecoration(
-                  gradient: theme.redLightGradient,
+                  gradient: theme.warningLightGradient,
                 ),
               ),
             ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Red / Dark
+        // Warning / Dark
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Red Dark:"),
+            FCText.regular16Black(context: context, text: "Warning Dark:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
-                color: theme.redDark,
+                color: theme.warningDark,
               ),
             ),
           ],
@@ -855,13 +768,100 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         Row(
           children: [
-            FCText.regular16Black(context: context, text: "Red Dark Gradient:"),
+            FCText.regular16Black(context: context, text: "Warning Dark Gradient:"),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
                 decoration: BoxDecoration(
-                  gradient: theme.redDarkGradient,
+                  gradient: theme.warningDarkGradient,
+                ),
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 2),
+        // Danger
+        Row(
+          children: [
+            FCText.regular16Black(context: context, text: "Danger:"),
+            SizedBox(width: size.s16),
+            Expanded(
+              child: Container(
+                height: size.s16,
+                color: theme.danger,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          children: [
+            FCText.regular16Black(context: context, text: "Danger Gradient:"),
+            SizedBox(width: size.s16),
+            Expanded(
+              child: Container(
+                height: size.s16,
+                decoration: BoxDecoration(
+                  gradient: theme.dangerGradient,
+                ),
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Danger / Light
+        Row(
+          children: [
+            FCText.regular16Black(context: context, text: "Danger Light:"),
+            SizedBox(width: size.s16),
+            Expanded(
+              child: Container(
+                height: size.s16,
+                color: theme.dangerLight,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          children: [
+            FCText.regular16Black(context: context, text: "Danger Light Gradient:"),
+            SizedBox(width: size.s16),
+            Expanded(
+              child: Container(
+                height: size.s16,
+                decoration: BoxDecoration(
+                  gradient: theme.dangerLightGradient,
+                ),
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Danger / Dark
+        Row(
+          children: [
+            FCText.regular16Black(context: context, text: "Danger Dark:"),
+            SizedBox(width: size.s16),
+            Expanded(
+              child: Container(
+                height: size.s16,
+                color: theme.dangerDark,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          children: [
+            FCText.regular16Black(context: context, text: "Danger Dark Gradient:"),
+            SizedBox(width: size.s16),
+            Expanded(
+              child: Container(
+                height: size.s16,
+                decoration: BoxDecoration(
+                  gradient: theme.dangerDarkGradient,
                 ),
               ),
             ),

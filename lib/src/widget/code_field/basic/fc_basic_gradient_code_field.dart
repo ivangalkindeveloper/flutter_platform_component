@@ -169,9 +169,9 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
                 style: this.widget.style,
               ),
               errorPinTheme: this._item(
-                backgroundGradient: this._theme.redLightGradient,
+                backgroundGradient: this._theme.dangerLightGradient,
                 style: TextStyle(
-                  color: this._theme.red,
+                  color: this._theme.danger,
                   fontSize: this.widget.style?.fontSize ?? this._size.s20,
                   fontWeight:
                       this.widget.style?.fontWeight ?? this._textStyle.fontWeightMedium,

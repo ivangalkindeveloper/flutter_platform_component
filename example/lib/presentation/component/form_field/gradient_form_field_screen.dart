@@ -24,11 +24,11 @@ class GradientFormFieldScreen extends StatelessWidget {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkGradientFormField(
+          FCInfoDarkGradientFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkGradientFormField(
+          FCSuccessDarkGradientFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
@@ -44,7 +44,7 @@ class GradientFormFieldScreen extends StatelessWidget {
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkGradientFormField(
+          FCWarningDarkGradientFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 * 2),
@@ -53,11 +53,11 @@ class GradientFormFieldScreen extends StatelessWidget {
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCBlueGradientFormField(
+          FCInfoGradientFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenGradientFormField(
+          FCSuccessGradientFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
@@ -73,7 +73,7 @@ class GradientFormFieldScreen extends StatelessWidget {
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowGradientFormField(
+          FCWarningGradientFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 * 2),
@@ -82,11 +82,11 @@ class GradientFormFieldScreen extends StatelessWidget {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightGradientFormField(
+          FCInfoLightGradientFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightGradientFormField(
+          FCSuccessLightGradientFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
@@ -102,7 +102,7 @@ class GradientFormFieldScreen extends StatelessWidget {
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightGradientFormField(
+          FCWarningLightGradientFormField(
             labelText: "Label",
           ),
         ],

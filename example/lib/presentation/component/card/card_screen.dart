@@ -24,11 +24,11 @@ class CardScreen extends StatelessWidget {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkCard(
+          FCInfoDarkCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkCard(
+          FCSuccessDarkCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -40,7 +40,7 @@ class CardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkCard(
+          FCDangerDarkCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -48,7 +48,7 @@ class CardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkCard(
+          FCWarningDarkCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 * 2),
@@ -65,7 +65,7 @@ class CardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueCard(
+          FCInfoCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -73,7 +73,7 @@ class CardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenCard(
+          FCSuccessCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -85,7 +85,7 @@ class CardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedCard(
+          FCDangerCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -105,7 +105,7 @@ class CardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowCard(
+          FCWarningCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 * 2),
@@ -114,11 +114,11 @@ class CardScreen extends StatelessWidget {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightCard(
+          FCInfoLightCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightCard(
+          FCSuccessLightCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -130,7 +130,7 @@ class CardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightCard(
+          FCDangerLightCard(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -138,7 +138,7 @@ class CardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightCard(
+          FCWarningLightCard(
             child: const SizedBox(),
           ),
         ],

@@ -31,13 +31,13 @@ class _RadioScreenState extends State<RadioScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkRadio<bool>(
+          FCInfoDarkRadio<bool>(
             value: _action,
             groupValue: true,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkRadio<bool>(
+          FCSuccessDarkRadio<bool>(
             value: _action,
             groupValue: true,
             onChanged: (bool value) => setState(() => this._action = value),
@@ -49,7 +49,7 @@ class _RadioScreenState extends State<RadioScreen> {
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkRadio<bool>(
+          FCDangerDarkRadio<bool>(
             value: _action,
             groupValue: true,
             onChanged: (bool value) => setState(() => this._action = value),
@@ -61,7 +61,7 @@ class _RadioScreenState extends State<RadioScreen> {
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkRadio<bool>(
+          FCWarningDarkRadio<bool>(
             value: _action,
             groupValue: true,
             onChanged: (bool value) => setState(() => this._action = value),
@@ -84,19 +84,19 @@ class _RadioScreenState extends State<RadioScreen> {
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueRadio<bool>(
+          FCInfoRadio<bool>(
             value: _action,
             groupValue: true,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenRadio<bool>(
+          FCSuccessRadio<bool>(
             value: _action,
             groupValue: true,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenRadio<bool>(
+          FCSuccessRadio<bool>(
             value: _action,
             groupValue: true,
             onChanged: (bool value) => setState(() => this._action = value),
@@ -114,7 +114,7 @@ class _RadioScreenState extends State<RadioScreen> {
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedRadio<bool>(
+          FCDangerRadio<bool>(
             value: _action,
             groupValue: true,
             onChanged: (bool value) => setState(() => this._action = value),
@@ -138,7 +138,7 @@ class _RadioScreenState extends State<RadioScreen> {
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowRadio<bool>(
+          FCWarningRadio<bool>(
             value: _action,
             groupValue: true,
             onChanged: (bool value) => setState(() => this._action = value),
@@ -149,13 +149,13 @@ class _RadioScreenState extends State<RadioScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightRadio<bool>(
+          FCInfoLightRadio<bool>(
             value: _action,
             groupValue: true,
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightRadio<bool>(
+          FCSuccessLightRadio<bool>(
             value: _action,
             groupValue: true,
             onChanged: (bool value) => setState(() => this._action = value),
@@ -167,7 +167,7 @@ class _RadioScreenState extends State<RadioScreen> {
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightRadio<bool>(
+          FCDangerLightRadio<bool>(
             value: _action,
             groupValue: true,
             onChanged: (bool value) => setState(() => this._action = value),
@@ -179,7 +179,7 @@ class _RadioScreenState extends State<RadioScreen> {
             onChanged: (bool value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightRadio<bool>(
+          FCWarningLightRadio<bool>(
             value: _action,
             groupValue: true,
             onChanged: (bool value) => setState(() => this._action = value),

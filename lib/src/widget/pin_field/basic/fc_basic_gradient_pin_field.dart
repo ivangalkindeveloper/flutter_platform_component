@@ -155,7 +155,7 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
                 backgroundGradient: this.widget.submittedBackgroundGradient,
               ),
               errorPinTheme: this._item(
-                backgroundGradient: this._theme.redGradient,
+                backgroundGradient: this._theme.dangerGradient,
               ),
               forceErrorState: this._isError,
               separator:

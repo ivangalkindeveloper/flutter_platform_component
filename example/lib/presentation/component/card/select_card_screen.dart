@@ -24,12 +24,12 @@ class SelectCardScreen extends StatelessWidget {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkSelectCard(
+          FCInfoDarkSelectCard(
             onPressed: () {},
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkSelectCard(
+          FCSuccessDarkSelectCard(
             onPressed: () {},
             child: const SizedBox(),
           ),
@@ -44,7 +44,7 @@ class SelectCardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkSelectCard(
+          FCDangerDarkSelectCard(
             onPressed: () {},
             child: const SizedBox(),
           ),
@@ -54,7 +54,7 @@ class SelectCardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkSelectCard(
+          FCWarningDarkSelectCard(
             onPressed: () {},
             child: const SizedBox(),
           ),
@@ -74,7 +74,7 @@ class SelectCardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueSelectCard(
+          FCInfoSelectCard(
             onPressed: () {},
             child: const SizedBox(),
           ),
@@ -84,7 +84,7 @@ class SelectCardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenSelectCard(
+          FCSuccessSelectCard(
             onPressed: () {},
             child: const SizedBox(),
           ),
@@ -99,7 +99,7 @@ class SelectCardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedSelectCard(
+          FCDangerSelectCard(
             onPressed: () {},
             child: const SizedBox(),
           ),
@@ -124,7 +124,7 @@ class SelectCardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowSelectCard(
+          FCWarningSelectCard(
             onPressed: () {},
             child: const SizedBox(),
           ),
@@ -134,12 +134,12 @@ class SelectCardScreen extends StatelessWidget {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightSelectCard(
+          FCInfoLightSelectCard(
             onPressed: () {},
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightSelectCard(
+          FCSuccessLightSelectCard(
             onPressed: () {},
             child: const SizedBox(),
           ),
@@ -154,7 +154,7 @@ class SelectCardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightSelectCard(
+          FCDangerLightSelectCard(
             onPressed: () {},
             child: const SizedBox(),
           ),
@@ -164,7 +164,7 @@ class SelectCardScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightSelectCard(
+          FCWarningLightSelectCard(
             onPressed: () {},
             child: const SizedBox(),
           ),

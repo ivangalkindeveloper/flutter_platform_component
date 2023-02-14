@@ -40,11 +40,11 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCBlueDarkDotBadge(
+              FCInfoDarkDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCGreenDarkDotBadge(
+              FCSuccessDarkDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -56,7 +56,7 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCRedDarkDotBadge(
+              FCDangerDarkDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -64,7 +64,7 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCYellowDarkDotBadge(
+              FCWarningDarkDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -88,11 +88,11 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCBlueDotBadge(
+              FCInfoDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCGreenDotBadge(
+              FCSuccessDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -104,7 +104,7 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCRedDotBadge(
+              FCDangerDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -120,7 +120,7 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCYellowDotBadge(
+              FCWarningDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -136,11 +136,11 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCBlueLightDotBadge(
+              FCInfoLightDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCGreenLightDotBadge(
+              FCSuccessLightDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -152,7 +152,7 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCRedLightDotBadge(
+              FCDangerLightDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -160,7 +160,7 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCYellowLightDotBadge(
+              FCWarningLightDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),

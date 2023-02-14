@@ -17,7 +17,8 @@ class FCPadding extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
-    return Padding(            key: key,
+    return Padding(
+      key: key,
       padding: this.padding ?? size.paddingDefault,
       child: this.child,
     );

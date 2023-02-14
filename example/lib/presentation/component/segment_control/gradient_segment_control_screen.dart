@@ -32,7 +32,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkGradientSegmentControl<String>(
+          FCInfoDarkGradientSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -51,7 +51,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkGradientSegmentControl<String>(
+          FCSuccessDarkGradientSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -108,7 +108,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkGradientSegmentControl<String>(
+          FCDangerDarkGradientSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -146,7 +146,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkGradientSegmentControl<String>(
+          FCWarningDarkGradientSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -170,7 +170,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCBlueGradientSegmentControl<String>(
+          FCInfoGradientSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -189,7 +189,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenGradientSegmentControl<String>(
+          FCSuccessGradientSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -246,7 +246,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedGradientSegmentControl<String>(
+          FCDangerGradientSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -284,7 +284,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowGradientSegmentControl<String>(
+          FCWarningGradientSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -308,7 +308,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightGradientSegmentControl<String>(
+          FCInfoLightGradientSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -327,7 +327,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightGradientSegmentControl<String>(
+          FCSuccessLightGradientSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -384,7 +384,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightGradientSegmentControl<String>(
+          FCDangerLightGradientSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(
@@ -422,7 +422,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightGradientSegmentControl<String>(
+          FCWarningLightGradientSegmentControl<String>(
             value: this._action,
             items: [
               FCSegmentControlItem(

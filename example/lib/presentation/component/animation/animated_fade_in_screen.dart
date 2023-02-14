@@ -59,7 +59,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 child: Container(
                                   height: size.s28 * 2,
                                   width: size.s28 * 2,
-                                  color: theme.blue,
+                                  color: theme.info,
                                 ),
                               ),
                             ],
@@ -78,7 +78,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 child: Container(
                                   height: size.s28 * 2,
                                   width: size.s28 * 2,
-                                  color: theme.blue,
+                                  color: theme.info,
                                 ),
                               ),
                             ],
@@ -97,7 +97,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 child: Container(
                                   height: size.s28 * 2,
                                   width: size.s28 * 2,
-                                  color: theme.blue,
+                                  color: theme.info,
                                 ),
                               ),
                             ],
@@ -116,7 +116,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 child: Container(
                                   height: size.s28 * 2,
                                   width: size.s28 * 2,
-                                  color: theme.blue,
+                                  color: theme.info,
                                 ),
                               ),
                             ],
@@ -135,7 +135,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 child: Container(
                                   height: size.s28 * 2,
                                   width: size.s28 * 2,
-                                  color: theme.blue,
+                                  color: theme.info,
                                 ),
                               ),
                             ],
@@ -163,7 +163,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 child: Container(
                                   height: size.s28 * 2,
                                   width: size.s28 * 2,
-                                  color: theme.blue,
+                                  color: theme.info,
                                 ),
                               ),
                             ],
@@ -182,7 +182,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 child: Container(
                                   height: size.s28 * 2,
                                   width: size.s28 * 2,
-                                  color: theme.blue,
+                                  color: theme.info,
                                 ),
                               ),
                             ],
@@ -201,7 +201,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 child: Container(
                                   height: size.s28 * 2,
                                   width: size.s28 * 2,
-                                  color: theme.blue,
+                                  color: theme.info,
                                 ),
                               ),
                             ],
@@ -220,7 +220,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 child: Container(
                                   height: size.s28 * 2,
                                   width: size.s28 * 2,
-                                  color: theme.blue,
+                                  color: theme.info,
                                 ),
                               ),
                             ],
@@ -239,7 +239,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 child: Container(
                                   height: size.s28 * 2,
                                   width: size.s28 * 2,
-                                  color: theme.blue,
+                                  color: theme.info,
                                 ),
                               ),
                             ],
@@ -267,7 +267,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 child: Container(
                                   height: size.s28 * 2,
                                   width: size.s28 * 2,
-                                  color: theme.blue,
+                                  color: theme.info,
                                 ),
                               ),
                             ],
@@ -286,7 +286,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 child: Container(
                                   height: size.s28 * 2,
                                   width: size.s28 * 2,
-                                  color: theme.blue,
+                                  color: theme.info,
                                 ),
                               ),
                             ],
@@ -305,7 +305,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 child: Container(
                                   height: size.s28 * 2,
                                   width: size.s28 * 2,
-                                  color: theme.blue,
+                                  color: theme.info,
                                 ),
                               ),
                             ],
@@ -324,7 +324,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 child: Container(
                                   height: size.s28 * 2,
                                   width: size.s28 * 2,
-                                  color: theme.blue,
+                                  color: theme.info,
                                 ),
                               ),
                             ],
@@ -343,7 +343,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 child: Container(
                                   height: size.s28 * 2,
                                   width: size.s28 * 2,
-                                  color: theme.blue,
+                                  color: theme.info,
                                 ),
                               ),
                             ],

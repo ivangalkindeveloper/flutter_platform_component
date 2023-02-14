@@ -314,7 +314,7 @@ class FCText {
     );
   }
 
-  static Widget thin10Blue({
+  static Widget thin10Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -324,10 +324,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10Blue(context: context),
+        style: FCTextStyle.thin10Info(context: context),
       );
 
-  static Widget thin10BlueGradient({
+  static Widget thin10InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -337,17 +337,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10Blue(context: context),
+        style: FCTextStyle.thin10Info(context: context),
       ),
     );
   }
 
-  static Widget thin10BlueLight({
+  static Widget thin10InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -357,10 +357,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10BlueLight(context: context),
+        style: FCTextStyle.thin10InfoLight(context: context),
       );
 
-  static Widget thin10BlueLightGradient({
+  static Widget thin10InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -370,17 +370,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10BlueLight(context: context),
+        style: FCTextStyle.thin10InfoLight(context: context),
       ),
     );
   }
 
-  static Widget thin10BlueDark({
+  static Widget thin10InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -390,10 +390,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10BlueDark(context: context),
+        style: FCTextStyle.thin10InfoDark(context: context),
       );
 
-  static Widget thin10BlueDarkGradient({
+  static Widget thin10InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -403,17 +403,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10BlueDark(context: context),
+        style: FCTextStyle.thin10InfoDark(context: context),
       ),
     );
   }
 
-  static Widget thin10Green({
+  static Widget thin10Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -423,10 +423,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10Green(context: context),
+        style: FCTextStyle.thin10Success(context: context),
       );
 
-  static Widget thin10GreenGradient({
+  static Widget thin10SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -436,17 +436,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10Green(context: context),
+        style: FCTextStyle.thin10Success(context: context),
       ),
     );
   }
 
-  static Widget thin10GreenLight({
+  static Widget thin10SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -456,10 +456,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10GreenLight(context: context),
+        style: FCTextStyle.thin10SuccessLight(context: context),
       );
 
-  static Widget thin10GreenLightGradient({
+  static Widget thin10SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -469,17 +469,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10GreenLight(context: context),
+        style: FCTextStyle.thin10SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget thin10GreenDark({
+  static Widget thin10SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -489,10 +489,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10GreenDark(context: context),
+        style: FCTextStyle.thin10SuccessDark(context: context),
       );
 
-  static Widget thin10GreenDarkGradient({
+  static Widget thin10SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -502,17 +502,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10GreenDark(context: context),
+        style: FCTextStyle.thin10SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget thin10Yellow({
+  static Widget thin10Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -522,10 +522,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10Yellow(context: context),
+        style: FCTextStyle.thin10Warning(context: context),
       );
 
-  static Widget thin10YellowGradient({
+  static Widget thin10WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -535,17 +535,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10Yellow(context: context),
+        style: FCTextStyle.thin10Warning(context: context),
       ),
     );
   }
 
-  static Widget thin10YellowLight({
+  static Widget thin10WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -555,10 +555,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10YellowLight(context: context),
+        style: FCTextStyle.thin10WarningLight(context: context),
       );
 
-  static Widget thin10YellowLightGradient({
+  static Widget thin10WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -568,17 +568,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10YellowLight(context: context),
+        style: FCTextStyle.thin10WarningLight(context: context),
       ),
     );
   }
 
-  static Widget thin10YellowDark({
+  static Widget thin10WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -588,10 +588,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10YellowDark(context: context),
+        style: FCTextStyle.thin10WarningDark(context: context),
       );
 
-  static Widget thin10YellowDarkGradient({
+  static Widget thin10WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -601,17 +601,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10YellowDark(context: context),
+        style: FCTextStyle.thin10WarningDark(context: context),
       ),
     );
   }
 
-  static Widget thin10Red({
+  static Widget thin10Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -621,10 +621,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10Red(context: context),
+        style: FCTextStyle.thin10Danger(context: context),
       );
 
-  static Widget thin10RedGradient({
+  static Widget thin10DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -634,17 +634,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10Red(context: context),
+        style: FCTextStyle.thin10Danger(context: context),
       ),
     );
   }
 
-  static Widget thin10RedLight({
+  static Widget thin10DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -654,10 +654,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10RedLight(context: context),
+        style: FCTextStyle.thin10DangerLight(context: context),
       );
 
-  static Widget thin10RedLightGradient({
+  static Widget thin10DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -667,17 +667,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10RedLight(context: context),
+        style: FCTextStyle.thin10DangerLight(context: context),
       ),
     );
   }
 
-  static Widget thin10RedDark({
+  static Widget thin10DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -687,10 +687,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10RedDark(context: context),
+        style: FCTextStyle.thin10DangerDark(context: context),
       );
 
-  static Widget thin10RedDarkGradient({
+  static Widget thin10DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -700,12 +700,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin10RedDark(context: context),
+        style: FCTextStyle.thin10DangerDark(context: context),
       ),
     );
   }
@@ -1020,7 +1020,7 @@ class FCText {
     );
   }
 
-  static Widget thin12Blue({
+  static Widget thin12Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1030,10 +1030,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12Blue(context: context),
+        style: FCTextStyle.thin12Info(context: context),
       );
 
-  static Widget thin12BlueGradient({
+  static Widget thin12InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1043,17 +1043,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12Blue(context: context),
+        style: FCTextStyle.thin12Info(context: context),
       ),
     );
   }
 
-  static Widget thin12BlueLight({
+  static Widget thin12InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1063,10 +1063,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12BlueLight(context: context),
+        style: FCTextStyle.thin12InfoLight(context: context),
       );
 
-  static Widget thin12BlueLightGradient({
+  static Widget thin12InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1076,17 +1076,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12BlueLight(context: context),
+        style: FCTextStyle.thin12InfoLight(context: context),
       ),
     );
   }
 
-  static Widget thin12BlueDark({
+  static Widget thin12InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1096,10 +1096,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12BlueDark(context: context),
+        style: FCTextStyle.thin12InfoDark(context: context),
       );
 
-  static Widget thin12BlueDarkGradient({
+  static Widget thin12InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1109,17 +1109,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12BlueDark(context: context),
+        style: FCTextStyle.thin12InfoDark(context: context),
       ),
     );
   }
 
-  static Widget thin12Green({
+  static Widget thin12Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1129,10 +1129,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12Green(context: context),
+        style: FCTextStyle.thin12Success(context: context),
       );
 
-  static Widget thin12GreenGradient({
+  static Widget thin12SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1142,17 +1142,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12Green(context: context),
+        style: FCTextStyle.thin12Success(context: context),
       ),
     );
   }
 
-  static Widget thin12GreenLight({
+  static Widget thin12SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1162,10 +1162,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12GreenLight(context: context),
+        style: FCTextStyle.thin12SuccessLight(context: context),
       );
 
-  static Widget thin12GreenLightGradient({
+  static Widget thin12SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1175,17 +1175,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12GreenLight(context: context),
+        style: FCTextStyle.thin12SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget thin12GreenDark({
+  static Widget thin12SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1195,10 +1195,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12GreenDark(context: context),
+        style: FCTextStyle.thin12SuccessDark(context: context),
       );
 
-  static Widget thin12GreenDarkGradient({
+  static Widget thin12SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1208,17 +1208,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12GreenDark(context: context),
+        style: FCTextStyle.thin12SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget thin12Yellow({
+  static Widget thin12Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1228,10 +1228,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12Yellow(context: context),
+        style: FCTextStyle.thin12Warning(context: context),
       );
 
-  static Widget thin12YellowGradient({
+  static Widget thin12WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1241,17 +1241,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12Yellow(context: context),
+        style: FCTextStyle.thin12Warning(context: context),
       ),
     );
   }
 
-  static Widget thin12YellowLight({
+  static Widget thin12WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1261,10 +1261,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12YellowLight(context: context),
+        style: FCTextStyle.thin12WarningLight(context: context),
       );
 
-  static Widget thin12YellowLightGradient({
+  static Widget thin12WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1274,17 +1274,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12YellowLight(context: context),
+        style: FCTextStyle.thin12WarningLight(context: context),
       ),
     );
   }
 
-  static Widget thin12YellowDark({
+  static Widget thin12WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1294,10 +1294,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12YellowDark(context: context),
+        style: FCTextStyle.thin12WarningDark(context: context),
       );
 
-  static Widget thin12YellowDarkGradient({
+  static Widget thin12WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1307,17 +1307,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12YellowDark(context: context),
+        style: FCTextStyle.thin12WarningDark(context: context),
       ),
     );
   }
 
-  static Widget thin12Red({
+  static Widget thin12Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1327,10 +1327,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12Red(context: context),
+        style: FCTextStyle.thin12Danger(context: context),
       );
 
-  static Widget thin12RedGradient({
+  static Widget thin12DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1340,17 +1340,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12Red(context: context),
+        style: FCTextStyle.thin12Danger(context: context),
       ),
     );
   }
 
-  static Widget thin12RedLight({
+  static Widget thin12DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1360,10 +1360,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12RedLight(context: context),
+        style: FCTextStyle.thin12DangerLight(context: context),
       );
 
-  static Widget thin12RedLightGradient({
+  static Widget thin12DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1373,17 +1373,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12RedLight(context: context),
+        style: FCTextStyle.thin12DangerLight(context: context),
       ),
     );
   }
 
-  static Widget thin12RedDark({
+  static Widget thin12DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1393,10 +1393,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12RedDark(context: context),
+        style: FCTextStyle.thin12DangerDark(context: context),
       );
 
-  static Widget thin12RedDarkGradient({
+  static Widget thin12DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1406,12 +1406,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin12RedDark(context: context),
+        style: FCTextStyle.thin12DangerDark(context: context),
       ),
     );
   }
@@ -1726,7 +1726,7 @@ class FCText {
     );
   }
 
-  static Widget thin14Blue({
+  static Widget thin14Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1736,10 +1736,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14Blue(context: context),
+        style: FCTextStyle.thin14Info(context: context),
       );
 
-  static Widget thin14BlueGradient({
+  static Widget thin14InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1749,17 +1749,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14Blue(context: context),
+        style: FCTextStyle.thin14Info(context: context),
       ),
     );
   }
 
-  static Widget thin14BlueLight({
+  static Widget thin14InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1769,10 +1769,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14BlueLight(context: context),
+        style: FCTextStyle.thin14InfoLight(context: context),
       );
 
-  static Widget thin14BlueLightGradient({
+  static Widget thin14InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1782,17 +1782,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14BlueLight(context: context),
+        style: FCTextStyle.thin14InfoLight(context: context),
       ),
     );
   }
 
-  static Widget thin14BlueDark({
+  static Widget thin14InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1802,10 +1802,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14BlueDark(context: context),
+        style: FCTextStyle.thin14InfoDark(context: context),
       );
 
-  static Widget thin14BlueDarkGradient({
+  static Widget thin14InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1815,17 +1815,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14BlueDark(context: context),
+        style: FCTextStyle.thin14InfoDark(context: context),
       ),
     );
   }
 
-  static Widget thin14Green({
+  static Widget thin14Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1835,10 +1835,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14Green(context: context),
+        style: FCTextStyle.thin14Success(context: context),
       );
 
-  static Widget thin14GreenGradient({
+  static Widget thin14SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1848,17 +1848,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14Green(context: context),
+        style: FCTextStyle.thin14Success(context: context),
       ),
     );
   }
 
-  static Widget thin14GreenLight({
+  static Widget thin14SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1868,10 +1868,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14GreenLight(context: context),
+        style: FCTextStyle.thin14SuccessLight(context: context),
       );
 
-  static Widget thin14GreenLightGradient({
+  static Widget thin14SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1881,17 +1881,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14GreenLight(context: context),
+        style: FCTextStyle.thin14SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget thin14GreenDark({
+  static Widget thin14SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1901,10 +1901,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14GreenDark(context: context),
+        style: FCTextStyle.thin14SuccessDark(context: context),
       );
 
-  static Widget thin14GreenDarkGradient({
+  static Widget thin14SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1914,17 +1914,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14GreenDark(context: context),
+        style: FCTextStyle.thin14SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget thin14Yellow({
+  static Widget thin14Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1934,10 +1934,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14Yellow(context: context),
+        style: FCTextStyle.thin14Warning(context: context),
       );
 
-  static Widget thin14YellowGradient({
+  static Widget thin14WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1947,17 +1947,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14Yellow(context: context),
+        style: FCTextStyle.thin14Warning(context: context),
       ),
     );
   }
 
-  static Widget thin14YellowLight({
+  static Widget thin14WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1967,10 +1967,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14YellowLight(context: context),
+        style: FCTextStyle.thin14WarningLight(context: context),
       );
 
-  static Widget thin14YellowLightGradient({
+  static Widget thin14WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -1980,17 +1980,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14YellowLight(context: context),
+        style: FCTextStyle.thin14WarningLight(context: context),
       ),
     );
   }
 
-  static Widget thin14YellowDark({
+  static Widget thin14WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2000,10 +2000,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14YellowDark(context: context),
+        style: FCTextStyle.thin14WarningDark(context: context),
       );
 
-  static Widget thin14YellowDarkGradient({
+  static Widget thin14WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2013,17 +2013,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14YellowDark(context: context),
+        style: FCTextStyle.thin14WarningDark(context: context),
       ),
     );
   }
 
-  static Widget thin14Red({
+  static Widget thin14Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2033,10 +2033,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14Red(context: context),
+        style: FCTextStyle.thin14Danger(context: context),
       );
 
-  static Widget thin14RedGradient({
+  static Widget thin14DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2046,17 +2046,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14Red(context: context),
+        style: FCTextStyle.thin14Danger(context: context),
       ),
     );
   }
 
-  static Widget thin14RedLight({
+  static Widget thin14DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2066,10 +2066,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14RedLight(context: context),
+        style: FCTextStyle.thin14DangerLight(context: context),
       );
 
-  static Widget thin14RedLightGradient({
+  static Widget thin14DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2079,17 +2079,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14RedLight(context: context),
+        style: FCTextStyle.thin14DangerLight(context: context),
       ),
     );
   }
 
-  static Widget thin14RedDark({
+  static Widget thin14DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2099,10 +2099,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14RedDark(context: context),
+        style: FCTextStyle.thin14DangerDark(context: context),
       );
 
-  static Widget thin14RedDarkGradient({
+  static Widget thin14DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2112,12 +2112,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin14RedDark(context: context),
+        style: FCTextStyle.thin14DangerDark(context: context),
       ),
     );
   }
@@ -2432,7 +2432,7 @@ class FCText {
     );
   }
 
-  static Widget thin16Blue({
+  static Widget thin16Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2442,10 +2442,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16Blue(context: context),
+        style: FCTextStyle.thin16Info(context: context),
       );
 
-  static Widget thin16BlueGradient({
+  static Widget thin16InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2455,17 +2455,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16Blue(context: context),
+        style: FCTextStyle.thin16Info(context: context),
       ),
     );
   }
 
-  static Widget thin16BlueLight({
+  static Widget thin16InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2475,10 +2475,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16BlueLight(context: context),
+        style: FCTextStyle.thin16InfoLight(context: context),
       );
 
-  static Widget thin16BlueLightGradient({
+  static Widget thin16InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2488,17 +2488,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16BlueLight(context: context),
+        style: FCTextStyle.thin16InfoLight(context: context),
       ),
     );
   }
 
-  static Widget thin16BlueDark({
+  static Widget thin16InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2508,10 +2508,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16BlueDark(context: context),
+        style: FCTextStyle.thin16InfoDark(context: context),
       );
 
-  static Widget thin16BlueDarkGradient({
+  static Widget thin16InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2521,17 +2521,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16BlueDark(context: context),
+        style: FCTextStyle.thin16InfoDark(context: context),
       ),
     );
   }
 
-  static Widget thin16Green({
+  static Widget thin16Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2541,10 +2541,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16Green(context: context),
+        style: FCTextStyle.thin16Success(context: context),
       );
 
-  static Widget thin16GreenGradient({
+  static Widget thin16SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2554,17 +2554,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16Green(context: context),
+        style: FCTextStyle.thin16Success(context: context),
       ),
     );
   }
 
-  static Widget thin16GreenLight({
+  static Widget thin16SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2574,10 +2574,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16GreenLight(context: context),
+        style: FCTextStyle.thin16SuccessLight(context: context),
       );
 
-  static Widget thin16GreenLightGradient({
+  static Widget thin16SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2587,17 +2587,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16GreenLight(context: context),
+        style: FCTextStyle.thin16SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget thin16GreenDark({
+  static Widget thin16SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2607,10 +2607,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16GreenDark(context: context),
+        style: FCTextStyle.thin16SuccessDark(context: context),
       );
 
-  static Widget thin16GreenDarkGradient({
+  static Widget thin16SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2620,17 +2620,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16GreenDark(context: context),
+        style: FCTextStyle.thin16SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget thin16Yellow({
+  static Widget thin16Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2640,10 +2640,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16Yellow(context: context),
+        style: FCTextStyle.thin16Warning(context: context),
       );
 
-  static Widget thin16YellowGradient({
+  static Widget thin16WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2653,17 +2653,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16Yellow(context: context),
+        style: FCTextStyle.thin16Warning(context: context),
       ),
     );
   }
 
-  static Widget thin16YellowLight({
+  static Widget thin16WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2673,10 +2673,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16YellowLight(context: context),
+        style: FCTextStyle.thin16WarningLight(context: context),
       );
 
-  static Widget thin16YellowLightGradient({
+  static Widget thin16WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2686,17 +2686,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16YellowLight(context: context),
+        style: FCTextStyle.thin16WarningLight(context: context),
       ),
     );
   }
 
-  static Widget thin16YellowDark({
+  static Widget thin16WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2706,10 +2706,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16YellowDark(context: context),
+        style: FCTextStyle.thin16WarningDark(context: context),
       );
 
-  static Widget thin16YellowDarkGradient({
+  static Widget thin16WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2719,17 +2719,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16YellowDark(context: context),
+        style: FCTextStyle.thin16WarningDark(context: context),
       ),
     );
   }
 
-  static Widget thin16Red({
+  static Widget thin16Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2739,10 +2739,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16Red(context: context),
+        style: FCTextStyle.thin16Danger(context: context),
       );
 
-  static Widget thin16RedGradient({
+  static Widget thin16DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2752,17 +2752,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16Red(context: context),
+        style: FCTextStyle.thin16Danger(context: context),
       ),
     );
   }
 
-  static Widget thin16RedLight({
+  static Widget thin16DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2772,10 +2772,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16RedLight(context: context),
+        style: FCTextStyle.thin16DangerLight(context: context),
       );
 
-  static Widget thin16RedLightGradient({
+  static Widget thin16DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2785,17 +2785,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16RedLight(context: context),
+        style: FCTextStyle.thin16DangerLight(context: context),
       ),
     );
   }
 
-  static Widget thin16RedDark({
+  static Widget thin16DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2805,10 +2805,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16RedDark(context: context),
+        style: FCTextStyle.thin16DangerDark(context: context),
       );
 
-  static Widget thin16RedDarkGradient({
+  static Widget thin16DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -2818,12 +2818,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin16RedDark(context: context),
+        style: FCTextStyle.thin16DangerDark(context: context),
       ),
     );
   }
@@ -3138,7 +3138,7 @@ class FCText {
     );
   }
 
-  static Widget thin18Blue({
+  static Widget thin18Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3148,10 +3148,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18Blue(context: context),
+        style: FCTextStyle.thin18Info(context: context),
       );
 
-  static Widget thin18BlueGradient({
+  static Widget thin18InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3161,17 +3161,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18Blue(context: context),
+        style: FCTextStyle.thin18Info(context: context),
       ),
     );
   }
 
-  static Widget thin18BlueLight({
+  static Widget thin18InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3181,10 +3181,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18BlueLight(context: context),
+        style: FCTextStyle.thin18InfoLight(context: context),
       );
 
-  static Widget thin18BlueLightGradient({
+  static Widget thin18InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3194,17 +3194,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18BlueLight(context: context),
+        style: FCTextStyle.thin18InfoLight(context: context),
       ),
     );
   }
 
-  static Widget thin18BlueDark({
+  static Widget thin18InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3214,10 +3214,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18BlueDark(context: context),
+        style: FCTextStyle.thin18InfoDark(context: context),
       );
 
-  static Widget thin18BlueDarkGradient({
+  static Widget thin18InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3227,17 +3227,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18BlueDark(context: context),
+        style: FCTextStyle.thin18InfoDark(context: context),
       ),
     );
   }
 
-  static Widget thin18Green({
+  static Widget thin18Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3247,10 +3247,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18Green(context: context),
+        style: FCTextStyle.thin18Success(context: context),
       );
 
-  static Widget thin18GreenGradient({
+  static Widget thin18SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3260,17 +3260,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18Green(context: context),
+        style: FCTextStyle.thin18Success(context: context),
       ),
     );
   }
 
-  static Widget thin18GreenLight({
+  static Widget thin18SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3280,10 +3280,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18GreenLight(context: context),
+        style: FCTextStyle.thin18SuccessLight(context: context),
       );
 
-  static Widget thin18GreenLightGradient({
+  static Widget thin18SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3293,17 +3293,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18GreenLight(context: context),
+        style: FCTextStyle.thin18SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget thin18GreenDark({
+  static Widget thin18SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3313,10 +3313,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18GreenDark(context: context),
+        style: FCTextStyle.thin18SuccessDark(context: context),
       );
 
-  static Widget thin18GreenDarkGradient({
+  static Widget thin18SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3326,17 +3326,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18GreenDark(context: context),
+        style: FCTextStyle.thin18SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget thin18Yellow({
+  static Widget thin18Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3346,10 +3346,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18Yellow(context: context),
+        style: FCTextStyle.thin18Warning(context: context),
       );
 
-  static Widget thin18YellowGradient({
+  static Widget thin18WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3359,17 +3359,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18Yellow(context: context),
+        style: FCTextStyle.thin18Warning(context: context),
       ),
     );
   }
 
-  static Widget thin18YellowLight({
+  static Widget thin18WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3379,10 +3379,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18YellowLight(context: context),
+        style: FCTextStyle.thin18WarningLight(context: context),
       );
 
-  static Widget thin18YellowLightGradient({
+  static Widget thin18WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3392,17 +3392,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18YellowLight(context: context),
+        style: FCTextStyle.thin18WarningLight(context: context),
       ),
     );
   }
 
-  static Widget thin18YellowDark({
+  static Widget thin18WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3412,10 +3412,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18YellowDark(context: context),
+        style: FCTextStyle.thin18WarningDark(context: context),
       );
 
-  static Widget thin18YellowDarkGradient({
+  static Widget thin18WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3425,17 +3425,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18YellowDark(context: context),
+        style: FCTextStyle.thin18WarningDark(context: context),
       ),
     );
   }
 
-  static Widget thin18Red({
+  static Widget thin18Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3445,10 +3445,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18Red(context: context),
+        style: FCTextStyle.thin18Danger(context: context),
       );
 
-  static Widget thin18RedGradient({
+  static Widget thin18DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3458,17 +3458,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18Red(context: context),
+        style: FCTextStyle.thin18Danger(context: context),
       ),
     );
   }
 
-  static Widget thin18RedLight({
+  static Widget thin18DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3478,10 +3478,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18RedLight(context: context),
+        style: FCTextStyle.thin18DangerLight(context: context),
       );
 
-  static Widget thin18RedLightGradient({
+  static Widget thin18DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3491,17 +3491,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18RedLight(context: context),
+        style: FCTextStyle.thin18DangerLight(context: context),
       ),
     );
   }
 
-  static Widget thin18RedDark({
+  static Widget thin18DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3511,10 +3511,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18RedDark(context: context),
+        style: FCTextStyle.thin18DangerDark(context: context),
       );
 
-  static Widget thin18RedDarkGradient({
+  static Widget thin18DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3524,12 +3524,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin18RedDark(context: context),
+        style: FCTextStyle.thin18DangerDark(context: context),
       ),
     );
   }
@@ -3844,7 +3844,7 @@ class FCText {
     );
   }
 
-  static Widget thin20Blue({
+  static Widget thin20Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3854,10 +3854,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20Blue(context: context),
+        style: FCTextStyle.thin20Info(context: context),
       );
 
-  static Widget thin20BlueGradient({
+  static Widget thin20InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3867,17 +3867,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20Blue(context: context),
+        style: FCTextStyle.thin20Info(context: context),
       ),
     );
   }
 
-  static Widget thin20BlueLight({
+  static Widget thin20InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3887,10 +3887,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20BlueLight(context: context),
+        style: FCTextStyle.thin20InfoLight(context: context),
       );
 
-  static Widget thin20BlueLightGradient({
+  static Widget thin20InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3900,17 +3900,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20BlueLight(context: context),
+        style: FCTextStyle.thin20InfoLight(context: context),
       ),
     );
   }
 
-  static Widget thin20BlueDark({
+  static Widget thin20InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3920,10 +3920,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20BlueDark(context: context),
+        style: FCTextStyle.thin20InfoDark(context: context),
       );
 
-  static Widget thin20BlueDarkGradient({
+  static Widget thin20InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3933,17 +3933,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20BlueDark(context: context),
+        style: FCTextStyle.thin20InfoDark(context: context),
       ),
     );
   }
 
-  static Widget thin20Green({
+  static Widget thin20Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3953,10 +3953,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20Green(context: context),
+        style: FCTextStyle.thin20Success(context: context),
       );
 
-  static Widget thin20GreenGradient({
+  static Widget thin20SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3966,17 +3966,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20Green(context: context),
+        style: FCTextStyle.thin20Success(context: context),
       ),
     );
   }
 
-  static Widget thin20GreenLight({
+  static Widget thin20SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3986,10 +3986,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20GreenLight(context: context),
+        style: FCTextStyle.thin20SuccessLight(context: context),
       );
 
-  static Widget thin20GreenLightGradient({
+  static Widget thin20SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -3999,17 +3999,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20GreenLight(context: context),
+        style: FCTextStyle.thin20SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget thin20GreenDark({
+  static Widget thin20SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4019,10 +4019,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20GreenDark(context: context),
+        style: FCTextStyle.thin20SuccessDark(context: context),
       );
 
-  static Widget thin20GreenDarkGradient({
+  static Widget thin20SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4032,17 +4032,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20GreenDark(context: context),
+        style: FCTextStyle.thin20SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget thin20Yellow({
+  static Widget thin20Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4052,10 +4052,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20Yellow(context: context),
+        style: FCTextStyle.thin20Warning(context: context),
       );
 
-  static Widget thin20YellowGradient({
+  static Widget thin20WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4065,17 +4065,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20Yellow(context: context),
+        style: FCTextStyle.thin20Warning(context: context),
       ),
     );
   }
 
-  static Widget thin20YellowLight({
+  static Widget thin20WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4085,10 +4085,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20YellowLight(context: context),
+        style: FCTextStyle.thin20WarningLight(context: context),
       );
 
-  static Widget thin20YellowLightGradient({
+  static Widget thin20WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4098,17 +4098,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20YellowLight(context: context),
+        style: FCTextStyle.thin20WarningLight(context: context),
       ),
     );
   }
 
-  static Widget thin20YellowDark({
+  static Widget thin20WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4118,10 +4118,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20YellowDark(context: context),
+        style: FCTextStyle.thin20WarningDark(context: context),
       );
 
-  static Widget thin20YellowDarkGradient({
+  static Widget thin20WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4131,17 +4131,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20YellowDark(context: context),
+        style: FCTextStyle.thin20WarningDark(context: context),
       ),
     );
   }
 
-  static Widget thin20Red({
+  static Widget thin20Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4151,10 +4151,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20Red(context: context),
+        style: FCTextStyle.thin20Danger(context: context),
       );
 
-  static Widget thin20RedGradient({
+  static Widget thin20DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4164,17 +4164,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20Red(context: context),
+        style: FCTextStyle.thin20Danger(context: context),
       ),
     );
   }
 
-  static Widget thin20RedLight({
+  static Widget thin20DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4184,10 +4184,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20RedLight(context: context),
+        style: FCTextStyle.thin20DangerLight(context: context),
       );
 
-  static Widget thin20RedLightGradient({
+  static Widget thin20DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4197,17 +4197,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20RedLight(context: context),
+        style: FCTextStyle.thin20DangerLight(context: context),
       ),
     );
   }
 
-  static Widget thin20RedDark({
+  static Widget thin20DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4217,10 +4217,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20RedDark(context: context),
+        style: FCTextStyle.thin20DangerDark(context: context),
       );
 
-  static Widget thin20RedDarkGradient({
+  static Widget thin20DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4230,12 +4230,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin20RedDark(context: context),
+        style: FCTextStyle.thin20DangerDark(context: context),
       ),
     );
   }
@@ -4550,7 +4550,7 @@ class FCText {
     );
   }
 
-  static Widget thin28Blue({
+  static Widget thin28Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4560,10 +4560,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28Blue(context: context),
+        style: FCTextStyle.thin28Info(context: context),
       );
 
-  static Widget thin28BlueGradient({
+  static Widget thin28InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4573,17 +4573,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28Blue(context: context),
+        style: FCTextStyle.thin28Info(context: context),
       ),
     );
   }
 
-  static Widget thin28BlueLight({
+  static Widget thin28InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4593,10 +4593,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28BlueLight(context: context),
+        style: FCTextStyle.thin28InfoLight(context: context),
       );
 
-  static Widget thin28BlueLightGradient({
+  static Widget thin28InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4606,17 +4606,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28BlueLight(context: context),
+        style: FCTextStyle.thin28InfoLight(context: context),
       ),
     );
   }
 
-  static Widget thin28BlueDark({
+  static Widget thin28InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4626,10 +4626,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28BlueDark(context: context),
+        style: FCTextStyle.thin28InfoDark(context: context),
       );
 
-  static Widget thin28BlueDarkGradient({
+  static Widget thin28InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4639,17 +4639,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28BlueDark(context: context),
+        style: FCTextStyle.thin28InfoDark(context: context),
       ),
     );
   }
 
-  static Widget thin28Green({
+  static Widget thin28Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4659,10 +4659,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28Green(context: context),
+        style: FCTextStyle.thin28Success(context: context),
       );
 
-  static Widget thin28GreenGradient({
+  static Widget thin28SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4672,17 +4672,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28Green(context: context),
+        style: FCTextStyle.thin28Success(context: context),
       ),
     );
   }
 
-  static Widget thin28GreenLight({
+  static Widget thin28SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4692,10 +4692,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28GreenLight(context: context),
+        style: FCTextStyle.thin28SuccessLight(context: context),
       );
 
-  static Widget thin28GreenLightGradient({
+  static Widget thin28SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4705,17 +4705,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28GreenLight(context: context),
+        style: FCTextStyle.thin28SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget thin28GreenDark({
+  static Widget thin28SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4725,10 +4725,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28GreenDark(context: context),
+        style: FCTextStyle.thin28SuccessDark(context: context),
       );
 
-  static Widget thin28GreenDarkGradient({
+  static Widget thin28SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4738,17 +4738,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28GreenDark(context: context),
+        style: FCTextStyle.thin28SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget thin28Yellow({
+  static Widget thin28Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4758,10 +4758,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28Yellow(context: context),
+        style: FCTextStyle.thin28Warning(context: context),
       );
 
-  static Widget thin28YellowGradient({
+  static Widget thin28WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4771,17 +4771,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28Yellow(context: context),
+        style: FCTextStyle.thin28Warning(context: context),
       ),
     );
   }
 
-  static Widget thin28YellowLight({
+  static Widget thin28WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4791,10 +4791,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28YellowLight(context: context),
+        style: FCTextStyle.thin28WarningLight(context: context),
       );
 
-  static Widget thin28YellowLightGradient({
+  static Widget thin28WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4804,17 +4804,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28YellowLight(context: context),
+        style: FCTextStyle.thin28WarningLight(context: context),
       ),
     );
   }
 
-  static Widget thin28YellowDark({
+  static Widget thin28WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4824,10 +4824,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28YellowDark(context: context),
+        style: FCTextStyle.thin28WarningDark(context: context),
       );
 
-  static Widget thin28YellowDarkGradient({
+  static Widget thin28WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4837,17 +4837,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28YellowDark(context: context),
+        style: FCTextStyle.thin28WarningDark(context: context),
       ),
     );
   }
 
-  static Widget thin28Red({
+  static Widget thin28Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4857,10 +4857,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28Red(context: context),
+        style: FCTextStyle.thin28Danger(context: context),
       );
 
-  static Widget thin28RedGradient({
+  static Widget thin28DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4870,17 +4870,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28Red(context: context),
+        style: FCTextStyle.thin28Danger(context: context),
       ),
     );
   }
 
-  static Widget thin28RedLight({
+  static Widget thin28DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4890,10 +4890,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28RedLight(context: context),
+        style: FCTextStyle.thin28DangerLight(context: context),
       );
 
-  static Widget thin28RedLightGradient({
+  static Widget thin28DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4903,17 +4903,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28RedLight(context: context),
+        style: FCTextStyle.thin28DangerLight(context: context),
       ),
     );
   }
 
-  static Widget thin28RedDark({
+  static Widget thin28DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4923,10 +4923,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28RedDark(context: context),
+        style: FCTextStyle.thin28DangerDark(context: context),
       );
 
-  static Widget thin28RedDarkGradient({
+  static Widget thin28DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -4936,12 +4936,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin28RedDark(context: context),
+        style: FCTextStyle.thin28DangerDark(context: context),
       ),
     );
   }
@@ -5256,7 +5256,7 @@ class FCText {
     );
   }
 
-  static Widget thin32Blue({
+  static Widget thin32Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5266,10 +5266,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32Blue(context: context),
+        style: FCTextStyle.thin32Info(context: context),
       );
 
-  static Widget thin32BlueGradient({
+  static Widget thin32InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5279,17 +5279,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32Blue(context: context),
+        style: FCTextStyle.thin32Info(context: context),
       ),
     );
   }
 
-  static Widget thin32BlueLight({
+  static Widget thin32InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5299,10 +5299,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32BlueLight(context: context),
+        style: FCTextStyle.thin32InfoLight(context: context),
       );
 
-  static Widget thin32BlueLightGradient({
+  static Widget thin32InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5312,17 +5312,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32BlueLight(context: context),
+        style: FCTextStyle.thin32InfoLight(context: context),
       ),
     );
   }
 
-  static Widget thin32BlueDark({
+  static Widget thin32InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5332,10 +5332,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32BlueDark(context: context),
+        style: FCTextStyle.thin32InfoDark(context: context),
       );
 
-  static Widget thin32BlueDarkGradient({
+  static Widget thin32InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5345,17 +5345,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32BlueDark(context: context),
+        style: FCTextStyle.thin32InfoDark(context: context),
       ),
     );
   }
 
-  static Widget thin32Green({
+  static Widget thin32Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5365,10 +5365,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32Green(context: context),
+        style: FCTextStyle.thin32Success(context: context),
       );
 
-  static Widget thin32GreenGradient({
+  static Widget thin32SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5378,17 +5378,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32Green(context: context),
+        style: FCTextStyle.thin32Success(context: context),
       ),
     );
   }
 
-  static Widget thin32GreenLight({
+  static Widget thin32SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5398,10 +5398,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32GreenLight(context: context),
+        style: FCTextStyle.thin32SuccessLight(context: context),
       );
 
-  static Widget thin32GreenLightGradient({
+  static Widget thin32SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5411,17 +5411,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32GreenLight(context: context),
+        style: FCTextStyle.thin32SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget thin32GreenDark({
+  static Widget thin32SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5431,10 +5431,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32GreenDark(context: context),
+        style: FCTextStyle.thin32SuccessDark(context: context),
       );
 
-  static Widget thin32GreenDarkGradient({
+  static Widget thin32SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5444,17 +5444,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32GreenDark(context: context),
+        style: FCTextStyle.thin32SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget thin32Yellow({
+  static Widget thin32Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5464,10 +5464,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32Yellow(context: context),
+        style: FCTextStyle.thin32Warning(context: context),
       );
 
-  static Widget thin32YellowGradient({
+  static Widget thin32WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5477,17 +5477,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32Yellow(context: context),
+        style: FCTextStyle.thin32Warning(context: context),
       ),
     );
   }
 
-  static Widget thin32YellowLight({
+  static Widget thin32WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5497,10 +5497,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32YellowLight(context: context),
+        style: FCTextStyle.thin32WarningLight(context: context),
       );
 
-  static Widget thin32YellowLightGradient({
+  static Widget thin32WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5510,17 +5510,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32YellowLight(context: context),
+        style: FCTextStyle.thin32WarningLight(context: context),
       ),
     );
   }
 
-  static Widget thin32YellowDark({
+  static Widget thin32WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5530,10 +5530,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32YellowDark(context: context),
+        style: FCTextStyle.thin32WarningDark(context: context),
       );
 
-  static Widget thin32YellowDarkGradient({
+  static Widget thin32WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5543,17 +5543,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32YellowDark(context: context),
+        style: FCTextStyle.thin32WarningDark(context: context),
       ),
     );
   }
 
-  static Widget thin32Red({
+  static Widget thin32Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5563,10 +5563,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32Red(context: context),
+        style: FCTextStyle.thin32Danger(context: context),
       );
 
-  static Widget thin32RedGradient({
+  static Widget thin32DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5576,17 +5576,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32Red(context: context),
+        style: FCTextStyle.thin32Danger(context: context),
       ),
     );
   }
 
-  static Widget thin32RedLight({
+  static Widget thin32DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5596,10 +5596,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32RedLight(context: context),
+        style: FCTextStyle.thin32DangerLight(context: context),
       );
 
-  static Widget thin32RedLightGradient({
+  static Widget thin32DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5609,17 +5609,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32RedLight(context: context),
+        style: FCTextStyle.thin32DangerLight(context: context),
       ),
     );
   }
 
-  static Widget thin32RedDark({
+  static Widget thin32DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5629,10 +5629,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32RedDark(context: context),
+        style: FCTextStyle.thin32DangerDark(context: context),
       );
 
-  static Widget thin32RedDarkGradient({
+  static Widget thin32DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5642,12 +5642,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.thin32RedDark(context: context),
+        style: FCTextStyle.thin32DangerDark(context: context),
       ),
     );
   }
@@ -5963,7 +5963,7 @@ class FCText {
     );
   }
 
-  static Widget regular10Blue({
+  static Widget regular10Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5973,10 +5973,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10Blue(context: context),
+        style: FCTextStyle.regular10Info(context: context),
       );
 
-  static Widget regular10BlueGradient({
+  static Widget regular10InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -5986,17 +5986,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10Blue(context: context),
+        style: FCTextStyle.regular10Info(context: context),
       ),
     );
   }
 
-  static Widget regular10BlueLight({
+  static Widget regular10InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6006,10 +6006,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10BlueLight(context: context),
+        style: FCTextStyle.regular10InfoLight(context: context),
       );
 
-  static Widget regular10BlueLightGradient({
+  static Widget regular10InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6019,17 +6019,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10BlueLight(context: context),
+        style: FCTextStyle.regular10InfoLight(context: context),
       ),
     );
   }
 
-  static Widget regular10BlueDark({
+  static Widget regular10InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6039,10 +6039,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10BlueDark(context: context),
+        style: FCTextStyle.regular10InfoDark(context: context),
       );
 
-  static Widget regular10BlueDarkGradient({
+  static Widget regular10InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6052,17 +6052,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10BlueDark(context: context),
+        style: FCTextStyle.regular10InfoDark(context: context),
       ),
     );
   }
 
-  static Widget regular10Green({
+  static Widget regular10Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6072,10 +6072,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10Green(context: context),
+        style: FCTextStyle.regular10Success(context: context),
       );
 
-  static Widget regular10GreenGradient({
+  static Widget regular10SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6085,17 +6085,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10Green(context: context),
+        style: FCTextStyle.regular10Success(context: context),
       ),
     );
   }
 
-  static Widget regular10GreenLight({
+  static Widget regular10SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6105,10 +6105,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10GreenLight(context: context),
+        style: FCTextStyle.regular10SuccessLight(context: context),
       );
 
-  static Widget regular10GreenLightGradient({
+  static Widget regular10SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6118,17 +6118,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10GreenLight(context: context),
+        style: FCTextStyle.regular10SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget regular10GreenDark({
+  static Widget regular10SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6138,10 +6138,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10GreenDark(context: context),
+        style: FCTextStyle.regular10SuccessDark(context: context),
       );
 
-  static Widget regular10GreenDarkGradient({
+  static Widget regular10SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6151,17 +6151,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10GreenDark(context: context),
+        style: FCTextStyle.regular10SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget regular10Yellow({
+  static Widget regular10Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6171,10 +6171,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10Yellow(context: context),
+        style: FCTextStyle.regular10Warning(context: context),
       );
 
-  static Widget regular10YellowGradient({
+  static Widget regular10WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6184,17 +6184,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10Yellow(context: context),
+        style: FCTextStyle.regular10Warning(context: context),
       ),
     );
   }
 
-  static Widget regular10YellowLight({
+  static Widget regular10WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6204,10 +6204,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10YellowLight(context: context),
+        style: FCTextStyle.regular10WarningLight(context: context),
       );
 
-  static Widget regular10YellowLightGradient({
+  static Widget regular10WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6217,17 +6217,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10YellowLight(context: context),
+        style: FCTextStyle.regular10WarningLight(context: context),
       ),
     );
   }
 
-  static Widget regular10YellowDark({
+  static Widget regular10WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6237,10 +6237,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10YellowDark(context: context),
+        style: FCTextStyle.regular10WarningDark(context: context),
       );
 
-  static Widget regular10YellowDarkGradient({
+  static Widget regular10WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6250,17 +6250,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10YellowDark(context: context),
+        style: FCTextStyle.regular10WarningDark(context: context),
       ),
     );
   }
 
-  static Widget regular10Red({
+  static Widget regular10Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6270,10 +6270,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10Red(context: context),
+        style: FCTextStyle.regular10Danger(context: context),
       );
 
-  static Widget regular10RedGradient({
+  static Widget regular10DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6283,17 +6283,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10Red(context: context),
+        style: FCTextStyle.regular10Danger(context: context),
       ),
     );
   }
 
-  static Widget regular10RedLight({
+  static Widget regular10DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6303,10 +6303,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10RedLight(context: context),
+        style: FCTextStyle.regular10DangerLight(context: context),
       );
 
-  static Widget regular10RedLightGradient({
+  static Widget regular10DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6316,17 +6316,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10RedLight(context: context),
+        style: FCTextStyle.regular10DangerLight(context: context),
       ),
     );
   }
 
-  static Widget regular10RedDark({
+  static Widget regular10DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6336,10 +6336,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10RedDark(context: context),
+        style: FCTextStyle.regular10DangerDark(context: context),
       );
 
-  static Widget regular10RedDarkGradient({
+  static Widget regular10DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6349,12 +6349,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular10RedDark(context: context),
+        style: FCTextStyle.regular10DangerDark(context: context),
       ),
     );
   }
@@ -6669,7 +6669,7 @@ class FCText {
     );
   }
 
-  static Widget regular12Blue({
+  static Widget regular12Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6679,10 +6679,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12Blue(context: context),
+        style: FCTextStyle.regular12Info(context: context),
       );
 
-  static Widget regular12BlueGradient({
+  static Widget regular12InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6692,17 +6692,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12Blue(context: context),
+        style: FCTextStyle.regular12Info(context: context),
       ),
     );
   }
 
-  static Widget regular12BlueLight({
+  static Widget regular12InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6712,10 +6712,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12BlueLight(context: context),
+        style: FCTextStyle.regular12InfoLight(context: context),
       );
 
-  static Widget regular12BlueLightGradient({
+  static Widget regular12InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6725,17 +6725,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12BlueLight(context: context),
+        style: FCTextStyle.regular12InfoLight(context: context),
       ),
     );
   }
 
-  static Widget regular12BlueDark({
+  static Widget regular12InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6745,10 +6745,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12BlueDark(context: context),
+        style: FCTextStyle.regular12InfoDark(context: context),
       );
 
-  static Widget regular12BlueDarkGradient({
+  static Widget regular12InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6758,17 +6758,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12BlueDark(context: context),
+        style: FCTextStyle.regular12InfoDark(context: context),
       ),
     );
   }
 
-  static Widget regular12Green({
+  static Widget regular12Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6778,10 +6778,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12Green(context: context),
+        style: FCTextStyle.regular12Success(context: context),
       );
 
-  static Widget regular12GreenGradient({
+  static Widget regular12SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6791,17 +6791,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12Green(context: context),
+        style: FCTextStyle.regular12Success(context: context),
       ),
     );
   }
 
-  static Widget regular12GreenLight({
+  static Widget regular12SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6811,10 +6811,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12GreenLight(context: context),
+        style: FCTextStyle.regular12SuccessLight(context: context),
       );
 
-  static Widget regular12GreenLightGradient({
+  static Widget regular12SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6824,17 +6824,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12GreenLight(context: context),
+        style: FCTextStyle.regular12SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget regular12GreenDark({
+  static Widget regular12SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6844,10 +6844,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12GreenDark(context: context),
+        style: FCTextStyle.regular12SuccessDark(context: context),
       );
 
-  static Widget regular12GreenDarkGradient({
+  static Widget regular12SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6857,17 +6857,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12GreenDark(context: context),
+        style: FCTextStyle.regular12SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget regular12Yellow({
+  static Widget regular12Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6877,10 +6877,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12Yellow(context: context),
+        style: FCTextStyle.regular12Warning(context: context),
       );
 
-  static Widget regular12YellowGradient({
+  static Widget regular12WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6890,17 +6890,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12Yellow(context: context),
+        style: FCTextStyle.regular12Warning(context: context),
       ),
     );
   }
 
-  static Widget regular12YellowLight({
+  static Widget regular12WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6910,10 +6910,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12YellowLight(context: context),
+        style: FCTextStyle.regular12WarningLight(context: context),
       );
 
-  static Widget regular12YellowLightGradient({
+  static Widget regular12WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6923,17 +6923,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12YellowLight(context: context),
+        style: FCTextStyle.regular12WarningLight(context: context),
       ),
     );
   }
 
-  static Widget regular12YellowDark({
+  static Widget regular12WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6943,10 +6943,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12YellowDark(context: context),
+        style: FCTextStyle.regular12WarningDark(context: context),
       );
 
-  static Widget regular12YellowDarkGradient({
+  static Widget regular12WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6956,17 +6956,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12YellowDark(context: context),
+        style: FCTextStyle.regular12WarningDark(context: context),
       ),
     );
   }
 
-  static Widget regular12Red({
+  static Widget regular12Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6976,10 +6976,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12Red(context: context),
+        style: FCTextStyle.regular12Danger(context: context),
       );
 
-  static Widget regular12RedGradient({
+  static Widget regular12DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -6989,17 +6989,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12Red(context: context),
+        style: FCTextStyle.regular12Danger(context: context),
       ),
     );
   }
 
-  static Widget regular12RedLight({
+  static Widget regular12DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7009,10 +7009,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12RedLight(context: context),
+        style: FCTextStyle.regular12DangerLight(context: context),
       );
 
-  static Widget regular12RedLightGradient({
+  static Widget regular12DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7022,17 +7022,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12RedLight(context: context),
+        style: FCTextStyle.regular12DangerLight(context: context),
       ),
     );
   }
 
-  static Widget regular12RedDark({
+  static Widget regular12DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7042,10 +7042,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12RedDark(context: context),
+        style: FCTextStyle.regular12DangerDark(context: context),
       );
 
-  static Widget regular12RedDarkGradient({
+  static Widget regular12DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7055,12 +7055,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular12RedDark(context: context),
+        style: FCTextStyle.regular12DangerDark(context: context),
       ),
     );
   }
@@ -7375,7 +7375,7 @@ class FCText {
     );
   }
 
-  static Widget regular14Blue({
+  static Widget regular14Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7385,10 +7385,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14Blue(context: context),
+        style: FCTextStyle.regular14Info(context: context),
       );
 
-  static Widget regular14BlueGradient({
+  static Widget regular14InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7398,17 +7398,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14Blue(context: context),
+        style: FCTextStyle.regular14Info(context: context),
       ),
     );
   }
 
-  static Widget regular14BlueLight({
+  static Widget regular14InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7418,10 +7418,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14BlueLight(context: context),
+        style: FCTextStyle.regular14InfoLight(context: context),
       );
 
-  static Widget regular14BlueLightGradient({
+  static Widget regular14InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7431,17 +7431,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14BlueLight(context: context),
+        style: FCTextStyle.regular14InfoLight(context: context),
       ),
     );
   }
 
-  static Widget regular14BlueDark({
+  static Widget regular14InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7451,10 +7451,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14BlueDark(context: context),
+        style: FCTextStyle.regular14InfoDark(context: context),
       );
 
-  static Widget regular14BlueDarkGradient({
+  static Widget regular14InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7464,17 +7464,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14BlueDark(context: context),
+        style: FCTextStyle.regular14InfoDark(context: context),
       ),
     );
   }
 
-  static Widget regular14Green({
+  static Widget regular14Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7484,10 +7484,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14Green(context: context),
+        style: FCTextStyle.regular14Success(context: context),
       );
 
-  static Widget regular14GreenGradient({
+  static Widget regular14SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7497,17 +7497,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14Green(context: context),
+        style: FCTextStyle.regular14Success(context: context),
       ),
     );
   }
 
-  static Widget regular14GreenLight({
+  static Widget regular14SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7517,10 +7517,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14GreenLight(context: context),
+        style: FCTextStyle.regular14SuccessLight(context: context),
       );
 
-  static Widget regular14GreenLightGradient({
+  static Widget regular14SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7530,17 +7530,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14GreenLight(context: context),
+        style: FCTextStyle.regular14SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget regular14GreenDark({
+  static Widget regular14SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7550,10 +7550,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14GreenDark(context: context),
+        style: FCTextStyle.regular14SuccessDark(context: context),
       );
 
-  static Widget regular14GreenDarkGradient({
+  static Widget regular14SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7563,17 +7563,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14GreenDark(context: context),
+        style: FCTextStyle.regular14SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget regular14Yellow({
+  static Widget regular14Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7583,10 +7583,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14Yellow(context: context),
+        style: FCTextStyle.regular14Warning(context: context),
       );
 
-  static Widget regular14YellowGradient({
+  static Widget regular14WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7596,17 +7596,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14Yellow(context: context),
+        style: FCTextStyle.regular14Warning(context: context),
       ),
     );
   }
 
-  static Widget regular14YellowLight({
+  static Widget regular14WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7616,10 +7616,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14YellowLight(context: context),
+        style: FCTextStyle.regular14WarningLight(context: context),
       );
 
-  static Widget regular14YellowLightGradient({
+  static Widget regular14WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7629,17 +7629,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14YellowLight(context: context),
+        style: FCTextStyle.regular14WarningLight(context: context),
       ),
     );
   }
 
-  static Widget regular14YellowDark({
+  static Widget regular14WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7649,10 +7649,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14YellowDark(context: context),
+        style: FCTextStyle.regular14WarningDark(context: context),
       );
 
-  static Widget regular14YellowDarkGradient({
+  static Widget regular14WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7662,17 +7662,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14YellowDark(context: context),
+        style: FCTextStyle.regular14WarningDark(context: context),
       ),
     );
   }
 
-  static Widget regular14Red({
+  static Widget regular14Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7682,10 +7682,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14Red(context: context),
+        style: FCTextStyle.regular14Danger(context: context),
       );
 
-  static Widget regular14RedGradient({
+  static Widget regular14DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7695,17 +7695,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14Red(context: context),
+        style: FCTextStyle.regular14Danger(context: context),
       ),
     );
   }
 
-  static Widget regular14RedLight({
+  static Widget regular14DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7715,10 +7715,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14RedLight(context: context),
+        style: FCTextStyle.regular14DangerLight(context: context),
       );
 
-  static Widget regular14RedLightGradient({
+  static Widget regular14DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7728,17 +7728,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14RedLight(context: context),
+        style: FCTextStyle.regular14DangerLight(context: context),
       ),
     );
   }
 
-  static Widget regular14RedDark({
+  static Widget regular14DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7748,10 +7748,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14RedDark(context: context),
+        style: FCTextStyle.regular14DangerDark(context: context),
       );
 
-  static Widget regular14RedDarkGradient({
+  static Widget regular14DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -7761,12 +7761,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular14RedDark(context: context),
+        style: FCTextStyle.regular14DangerDark(context: context),
       ),
     );
   }
@@ -8081,7 +8081,7 @@ class FCText {
     );
   }
 
-  static Widget regular16Blue({
+  static Widget regular16Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8091,10 +8091,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16Blue(context: context),
+        style: FCTextStyle.regular16Info(context: context),
       );
 
-  static Widget regular16BlueGradient({
+  static Widget regular16InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8104,17 +8104,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16Blue(context: context),
+        style: FCTextStyle.regular16Info(context: context),
       ),
     );
   }
 
-  static Widget regular16BlueLight({
+  static Widget regular16InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8124,10 +8124,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16BlueLight(context: context),
+        style: FCTextStyle.regular16InfoLight(context: context),
       );
 
-  static Widget regular16BlueLightGradient({
+  static Widget regular16InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8137,17 +8137,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16BlueLight(context: context),
+        style: FCTextStyle.regular16InfoLight(context: context),
       ),
     );
   }
 
-  static Widget regular16BlueDark({
+  static Widget regular16InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8157,10 +8157,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16BlueDark(context: context),
+        style: FCTextStyle.regular16InfoDark(context: context),
       );
 
-  static Widget regular16BlueDarkGradient({
+  static Widget regular16InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8170,17 +8170,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16BlueDark(context: context),
+        style: FCTextStyle.regular16InfoDark(context: context),
       ),
     );
   }
 
-  static Widget regular16Green({
+  static Widget regular16Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8190,10 +8190,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16Green(context: context),
+        style: FCTextStyle.regular16Success(context: context),
       );
 
-  static Widget regular16GreenGradient({
+  static Widget regular16SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8203,17 +8203,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16Green(context: context),
+        style: FCTextStyle.regular16Success(context: context),
       ),
     );
   }
 
-  static Widget regular16GreenLight({
+  static Widget regular16SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8223,10 +8223,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16GreenLight(context: context),
+        style: FCTextStyle.regular16SuccessLight(context: context),
       );
 
-  static Widget regular16GreenLightGradient({
+  static Widget regular16SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8236,17 +8236,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16GreenLight(context: context),
+        style: FCTextStyle.regular16SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget regular16GreenDark({
+  static Widget regular16SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8256,10 +8256,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16GreenDark(context: context),
+        style: FCTextStyle.regular16SuccessDark(context: context),
       );
 
-  static Widget regular16GreenDarkGradient({
+  static Widget regular16SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8269,17 +8269,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16GreenDark(context: context),
+        style: FCTextStyle.regular16SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget regular16Yellow({
+  static Widget regular16Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8289,10 +8289,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16Yellow(context: context),
+        style: FCTextStyle.regular16Warning(context: context),
       );
 
-  static Widget regular16YellowGradient({
+  static Widget regular16WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8302,17 +8302,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16Yellow(context: context),
+        style: FCTextStyle.regular16Warning(context: context),
       ),
     );
   }
 
-  static Widget regular16YellowLight({
+  static Widget regular16WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8322,10 +8322,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16YellowLight(context: context),
+        style: FCTextStyle.regular16WarningLight(context: context),
       );
 
-  static Widget regular16YellowLightGradient({
+  static Widget regular16WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8335,17 +8335,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16YellowLight(context: context),
+        style: FCTextStyle.regular16WarningLight(context: context),
       ),
     );
   }
 
-  static Widget regular16YellowDark({
+  static Widget regular16WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8355,10 +8355,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16YellowDark(context: context),
+        style: FCTextStyle.regular16WarningDark(context: context),
       );
 
-  static Widget regular16YellowDarkGradient({
+  static Widget regular16WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8368,17 +8368,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16YellowDark(context: context),
+        style: FCTextStyle.regular16WarningDark(context: context),
       ),
     );
   }
 
-  static Widget regular16Red({
+  static Widget regular16Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8388,10 +8388,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16Red(context: context),
+        style: FCTextStyle.regular16Danger(context: context),
       );
 
-  static Widget regular16RedGradient({
+  static Widget regular16DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8401,17 +8401,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16Red(context: context),
+        style: FCTextStyle.regular16Danger(context: context),
       ),
     );
   }
 
-  static Widget regular16RedLight({
+  static Widget regular16DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8421,10 +8421,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16RedLight(context: context),
+        style: FCTextStyle.regular16DangerLight(context: context),
       );
 
-  static Widget regular16RedLightGradient({
+  static Widget regular16DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8434,17 +8434,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16RedLight(context: context),
+        style: FCTextStyle.regular16DangerLight(context: context),
       ),
     );
   }
 
-  static Widget regular16RedDark({
+  static Widget regular16DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8454,10 +8454,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16RedDark(context: context),
+        style: FCTextStyle.regular16DangerDark(context: context),
       );
 
-  static Widget regular16RedDarkGradient({
+  static Widget regular16DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8467,12 +8467,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular16RedDark(context: context),
+        style: FCTextStyle.regular16DangerDark(context: context),
       ),
     );
   }
@@ -8787,7 +8787,7 @@ class FCText {
     );
   }
 
-  static Widget regular18Blue({
+  static Widget regular18Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8797,10 +8797,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18Blue(context: context),
+        style: FCTextStyle.regular18Info(context: context),
       );
 
-  static Widget regular18BlueGradient({
+  static Widget regular18InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8810,17 +8810,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18Blue(context: context),
+        style: FCTextStyle.regular18Info(context: context),
       ),
     );
   }
 
-  static Widget regular18BlueLight({
+  static Widget regular18InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8830,10 +8830,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18BlueLight(context: context),
+        style: FCTextStyle.regular18InfoLight(context: context),
       );
 
-  static Widget regular18BlueLightGradient({
+  static Widget regular18InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8843,17 +8843,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18BlueLight(context: context),
+        style: FCTextStyle.regular18InfoLight(context: context),
       ),
     );
   }
 
-  static Widget regular18BlueDark({
+  static Widget regular18InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8863,10 +8863,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18BlueDark(context: context),
+        style: FCTextStyle.regular18InfoDark(context: context),
       );
 
-  static Widget regular18BlueDarkGradient({
+  static Widget regular18InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8876,17 +8876,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18BlueDark(context: context),
+        style: FCTextStyle.regular18InfoDark(context: context),
       ),
     );
   }
 
-  static Widget regular18Green({
+  static Widget regular18Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8896,10 +8896,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18Green(context: context),
+        style: FCTextStyle.regular18Success(context: context),
       );
 
-  static Widget regular18GreenGradient({
+  static Widget regular18SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8909,17 +8909,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18Green(context: context),
+        style: FCTextStyle.regular18Success(context: context),
       ),
     );
   }
 
-  static Widget regular18GreenLight({
+  static Widget regular18SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8929,10 +8929,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18GreenLight(context: context),
+        style: FCTextStyle.regular18SuccessLight(context: context),
       );
 
-  static Widget regular18GreenLightGradient({
+  static Widget regular18SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8942,17 +8942,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18GreenLight(context: context),
+        style: FCTextStyle.regular18SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget regular18GreenDark({
+  static Widget regular18SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8962,10 +8962,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18GreenDark(context: context),
+        style: FCTextStyle.regular18SuccessDark(context: context),
       );
 
-  static Widget regular18GreenDarkGradient({
+  static Widget regular18SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8975,17 +8975,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18GreenDark(context: context),
+        style: FCTextStyle.regular18SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget regular18Yellow({
+  static Widget regular18Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -8995,10 +8995,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18Yellow(context: context),
+        style: FCTextStyle.regular18Warning(context: context),
       );
 
-  static Widget regular18YellowGradient({
+  static Widget regular18WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9008,17 +9008,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18Yellow(context: context),
+        style: FCTextStyle.regular18Warning(context: context),
       ),
     );
   }
 
-  static Widget regular18YellowLight({
+  static Widget regular18WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9028,10 +9028,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18YellowLight(context: context),
+        style: FCTextStyle.regular18WarningLight(context: context),
       );
 
-  static Widget regular18YellowLightGradient({
+  static Widget regular18WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9041,17 +9041,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18YellowLight(context: context),
+        style: FCTextStyle.regular18WarningLight(context: context),
       ),
     );
   }
 
-  static Widget regular18YellowDark({
+  static Widget regular18WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9061,10 +9061,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18YellowDark(context: context),
+        style: FCTextStyle.regular18WarningDark(context: context),
       );
 
-  static Widget regular18YellowDarkGradient({
+  static Widget regular18WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9074,17 +9074,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18YellowDark(context: context),
+        style: FCTextStyle.regular18WarningDark(context: context),
       ),
     );
   }
 
-  static Widget regular18Red({
+  static Widget regular18Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9094,10 +9094,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18Red(context: context),
+        style: FCTextStyle.regular18Danger(context: context),
       );
 
-  static Widget regular18RedGradient({
+  static Widget regular18DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9107,17 +9107,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18Red(context: context),
+        style: FCTextStyle.regular18Danger(context: context),
       ),
     );
   }
 
-  static Widget regular18RedLight({
+  static Widget regular18DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9127,10 +9127,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18RedLight(context: context),
+        style: FCTextStyle.regular18DangerLight(context: context),
       );
 
-  static Widget regular18RedLightGradient({
+  static Widget regular18DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9140,17 +9140,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18RedLight(context: context),
+        style: FCTextStyle.regular18DangerLight(context: context),
       ),
     );
   }
 
-  static Widget regular18RedDark({
+  static Widget regular18DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9160,10 +9160,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18RedDark(context: context),
+        style: FCTextStyle.regular18DangerDark(context: context),
       );
 
-  static Widget regular18RedDarkGradient({
+  static Widget regular18DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9173,12 +9173,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular18RedDark(context: context),
+        style: FCTextStyle.regular18DangerDark(context: context),
       ),
     );
   }
@@ -9493,7 +9493,7 @@ class FCText {
     );
   }
 
-  static Widget regular20Blue({
+  static Widget regular20Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9503,10 +9503,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20Blue(context: context),
+        style: FCTextStyle.regular20Info(context: context),
       );
 
-  static Widget regular20BlueGradient({
+  static Widget regular20InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9516,17 +9516,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20Blue(context: context),
+        style: FCTextStyle.regular20Info(context: context),
       ),
     );
   }
 
-  static Widget regular20BlueLight({
+  static Widget regular20InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9536,10 +9536,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20BlueLight(context: context),
+        style: FCTextStyle.regular20InfoLight(context: context),
       );
 
-  static Widget regular20BlueLightGradient({
+  static Widget regular20InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9549,17 +9549,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20BlueLight(context: context),
+        style: FCTextStyle.regular20InfoLight(context: context),
       ),
     );
   }
 
-  static Widget regular20BlueDark({
+  static Widget regular20InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9569,10 +9569,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20BlueDark(context: context),
+        style: FCTextStyle.regular20InfoDark(context: context),
       );
 
-  static Widget regular20BlueDarkGradient({
+  static Widget regular20InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9582,17 +9582,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20BlueDark(context: context),
+        style: FCTextStyle.regular20InfoDark(context: context),
       ),
     );
   }
 
-  static Widget regular20Green({
+  static Widget regular20Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9602,10 +9602,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20Green(context: context),
+        style: FCTextStyle.regular20Success(context: context),
       );
 
-  static Widget regular20GreenGradient({
+  static Widget regular20SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9615,17 +9615,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20Green(context: context),
+        style: FCTextStyle.regular20Success(context: context),
       ),
     );
   }
 
-  static Widget regular20GreenLight({
+  static Widget regular20SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9635,10 +9635,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20GreenLight(context: context),
+        style: FCTextStyle.regular20SuccessLight(context: context),
       );
 
-  static Widget regular20GreenLightGradient({
+  static Widget regular20SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9648,17 +9648,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20GreenLight(context: context),
+        style: FCTextStyle.regular20SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget regular20GreenDark({
+  static Widget regular20SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9668,10 +9668,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20GreenDark(context: context),
+        style: FCTextStyle.regular20SuccessDark(context: context),
       );
 
-  static Widget regular20GreenDarkGradient({
+  static Widget regular20SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9681,17 +9681,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20GreenDark(context: context),
+        style: FCTextStyle.regular20SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget regular20Yellow({
+  static Widget regular20Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9701,10 +9701,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20Yellow(context: context),
+        style: FCTextStyle.regular20Warning(context: context),
       );
 
-  static Widget regular20YellowGradient({
+  static Widget regular20WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9714,17 +9714,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20Yellow(context: context),
+        style: FCTextStyle.regular20Warning(context: context),
       ),
     );
   }
 
-  static Widget regular20YellowLight({
+  static Widget regular20WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9734,10 +9734,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20YellowLight(context: context),
+        style: FCTextStyle.regular20WarningLight(context: context),
       );
 
-  static Widget regular20YellowLightGradient({
+  static Widget regular20WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9747,17 +9747,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20YellowLight(context: context),
+        style: FCTextStyle.regular20WarningLight(context: context),
       ),
     );
   }
 
-  static Widget regular20YellowDark({
+  static Widget regular20WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9767,10 +9767,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20YellowDark(context: context),
+        style: FCTextStyle.regular20WarningDark(context: context),
       );
 
-  static Widget regular20YellowDarkGradient({
+  static Widget regular20WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9780,17 +9780,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20YellowDark(context: context),
+        style: FCTextStyle.regular20WarningDark(context: context),
       ),
     );
   }
 
-  static Widget regular20Red({
+  static Widget regular20Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9800,10 +9800,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20Red(context: context),
+        style: FCTextStyle.regular20Danger(context: context),
       );
 
-  static Widget regular20RedGradient({
+  static Widget regular20DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9813,17 +9813,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20Red(context: context),
+        style: FCTextStyle.regular20Danger(context: context),
       ),
     );
   }
 
-  static Widget regular20RedLight({
+  static Widget regular20DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9833,10 +9833,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20RedLight(context: context),
+        style: FCTextStyle.regular20DangerLight(context: context),
       );
 
-  static Widget regular20RedLightGradient({
+  static Widget regular20DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9846,17 +9846,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20RedLight(context: context),
+        style: FCTextStyle.regular20DangerLight(context: context),
       ),
     );
   }
 
-  static Widget regular20RedDark({
+  static Widget regular20DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9866,10 +9866,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20RedDark(context: context),
+        style: FCTextStyle.regular20DangerDark(context: context),
       );
 
-  static Widget regular20RedDarkGradient({
+  static Widget regular20DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -9879,12 +9879,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular20RedDark(context: context),
+        style: FCTextStyle.regular20DangerDark(context: context),
       ),
     );
   }
@@ -10199,7 +10199,7 @@ class FCText {
     );
   }
 
-  static Widget regular28Blue({
+  static Widget regular28Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10209,10 +10209,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28Blue(context: context),
+        style: FCTextStyle.regular28Info(context: context),
       );
 
-  static Widget regular28BlueGradient({
+  static Widget regular28InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10222,17 +10222,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28Blue(context: context),
+        style: FCTextStyle.regular28Info(context: context),
       ),
     );
   }
 
-  static Widget regular28BlueLight({
+  static Widget regular28InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10242,10 +10242,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28BlueLight(context: context),
+        style: FCTextStyle.regular28InfoLight(context: context),
       );
 
-  static Widget regular28BlueLightGradient({
+  static Widget regular28InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10255,17 +10255,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28BlueLight(context: context),
+        style: FCTextStyle.regular28InfoLight(context: context),
       ),
     );
   }
 
-  static Widget regular28BlueDark({
+  static Widget regular28InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10275,10 +10275,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28BlueDark(context: context),
+        style: FCTextStyle.regular28InfoDark(context: context),
       );
 
-  static Widget regular28BlueDarkGradient({
+  static Widget regular28InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10288,17 +10288,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28BlueDark(context: context),
+        style: FCTextStyle.regular28InfoDark(context: context),
       ),
     );
   }
 
-  static Widget regular28Green({
+  static Widget regular28Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10308,10 +10308,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28Green(context: context),
+        style: FCTextStyle.regular28Success(context: context),
       );
 
-  static Widget regular28GreenGradient({
+  static Widget regular28SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10321,17 +10321,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28Green(context: context),
+        style: FCTextStyle.regular28Success(context: context),
       ),
     );
   }
 
-  static Widget regular28GreenLight({
+  static Widget regular28SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10341,10 +10341,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28GreenLight(context: context),
+        style: FCTextStyle.regular28SuccessLight(context: context),
       );
 
-  static Widget regular28GreenLightGradient({
+  static Widget regular28SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10354,17 +10354,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28GreenLight(context: context),
+        style: FCTextStyle.regular28SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget regular28GreenDark({
+  static Widget regular28SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10374,10 +10374,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28GreenDark(context: context),
+        style: FCTextStyle.regular28SuccessDark(context: context),
       );
 
-  static Widget regular28GreenDarkGradient({
+  static Widget regular28SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10387,17 +10387,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28GreenDark(context: context),
+        style: FCTextStyle.regular28SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget regular28Yellow({
+  static Widget regular28Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10407,10 +10407,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28Yellow(context: context),
+        style: FCTextStyle.regular28Warning(context: context),
       );
 
-  static Widget regular28YellowGradient({
+  static Widget regular28WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10420,17 +10420,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28Yellow(context: context),
+        style: FCTextStyle.regular28Warning(context: context),
       ),
     );
   }
 
-  static Widget regular28YellowLight({
+  static Widget regular28WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10440,10 +10440,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28YellowLight(context: context),
+        style: FCTextStyle.regular28WarningLight(context: context),
       );
 
-  static Widget regular28YellowLightGradient({
+  static Widget regular28WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10453,17 +10453,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28YellowLight(context: context),
+        style: FCTextStyle.regular28WarningLight(context: context),
       ),
     );
   }
 
-  static Widget regular28YellowDark({
+  static Widget regular28WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10473,10 +10473,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28YellowDark(context: context),
+        style: FCTextStyle.regular28WarningDark(context: context),
       );
 
-  static Widget regular28YellowDarkGradient({
+  static Widget regular28WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10486,17 +10486,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28YellowDark(context: context),
+        style: FCTextStyle.regular28WarningDark(context: context),
       ),
     );
   }
 
-  static Widget regular28Red({
+  static Widget regular28Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10506,10 +10506,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28Red(context: context),
+        style: FCTextStyle.regular28Danger(context: context),
       );
 
-  static Widget regular28RedGradient({
+  static Widget regular28DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10519,17 +10519,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28Red(context: context),
+        style: FCTextStyle.regular28Danger(context: context),
       ),
     );
   }
 
-  static Widget regular28RedLight({
+  static Widget regular28DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10539,10 +10539,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28RedLight(context: context),
+        style: FCTextStyle.regular28DangerLight(context: context),
       );
 
-  static Widget regular28RedLightGradient({
+  static Widget regular28DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10552,17 +10552,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28RedLight(context: context),
+        style: FCTextStyle.regular28DangerLight(context: context),
       ),
     );
   }
 
-  static Widget regular28RedDark({
+  static Widget regular28DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10572,10 +10572,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28RedDark(context: context),
+        style: FCTextStyle.regular28DangerDark(context: context),
       );
 
-  static Widget regular28RedDarkGradient({
+  static Widget regular28DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10585,12 +10585,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular28RedDark(context: context),
+        style: FCTextStyle.regular28DangerDark(context: context),
       ),
     );
   }
@@ -10905,7 +10905,7 @@ class FCText {
     );
   }
 
-  static Widget regular32Blue({
+  static Widget regular32Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10915,10 +10915,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32Blue(context: context),
+        style: FCTextStyle.regular32Info(context: context),
       );
 
-  static Widget regular32BlueGradient({
+  static Widget regular32InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10928,17 +10928,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32Blue(context: context),
+        style: FCTextStyle.regular32Info(context: context),
       ),
     );
   }
 
-  static Widget regular32BlueLight({
+  static Widget regular32InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10948,10 +10948,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32BlueLight(context: context),
+        style: FCTextStyle.regular32InfoLight(context: context),
       );
 
-  static Widget regular32BlueLightGradient({
+  static Widget regular32InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10961,17 +10961,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32BlueLight(context: context),
+        style: FCTextStyle.regular32InfoLight(context: context),
       ),
     );
   }
 
-  static Widget regular32BlueDark({
+  static Widget regular32InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10981,10 +10981,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32BlueDark(context: context),
+        style: FCTextStyle.regular32InfoDark(context: context),
       );
 
-  static Widget regular32BlueDarkGradient({
+  static Widget regular32InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -10994,17 +10994,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32BlueDark(context: context),
+        style: FCTextStyle.regular32InfoDark(context: context),
       ),
     );
   }
 
-  static Widget regular32Green({
+  static Widget regular32Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11014,10 +11014,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32Green(context: context),
+        style: FCTextStyle.regular32Success(context: context),
       );
 
-  static Widget regular32GreenGradient({
+  static Widget regular32SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11027,17 +11027,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32Green(context: context),
+        style: FCTextStyle.regular32Success(context: context),
       ),
     );
   }
 
-  static Widget regular32GreenLight({
+  static Widget regular32SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11047,10 +11047,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32GreenLight(context: context),
+        style: FCTextStyle.regular32SuccessLight(context: context),
       );
 
-  static Widget regular32GreenLightGradient({
+  static Widget regular32SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11060,17 +11060,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32GreenLight(context: context),
+        style: FCTextStyle.regular32SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget regular32GreenDark({
+  static Widget regular32SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11080,10 +11080,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32GreenDark(context: context),
+        style: FCTextStyle.regular32SuccessDark(context: context),
       );
 
-  static Widget regular32GreenDarkGradient({
+  static Widget regular32SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11093,17 +11093,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32GreenDark(context: context),
+        style: FCTextStyle.regular32SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget regular32Yellow({
+  static Widget regular32Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11113,10 +11113,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32Yellow(context: context),
+        style: FCTextStyle.regular32Warning(context: context),
       );
 
-  static Widget regular32YellowGradient({
+  static Widget regular32WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11126,17 +11126,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32Yellow(context: context),
+        style: FCTextStyle.regular32Warning(context: context),
       ),
     );
   }
 
-  static Widget regular32YellowLight({
+  static Widget regular32WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11146,10 +11146,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32YellowLight(context: context),
+        style: FCTextStyle.regular32WarningLight(context: context),
       );
 
-  static Widget regular32YellowLightGradient({
+  static Widget regular32WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11159,17 +11159,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32YellowLight(context: context),
+        style: FCTextStyle.regular32WarningLight(context: context),
       ),
     );
   }
 
-  static Widget regular32YellowDark({
+  static Widget regular32WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11179,10 +11179,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32YellowDark(context: context),
+        style: FCTextStyle.regular32WarningDark(context: context),
       );
 
-  static Widget regular32YellowDarkGradient({
+  static Widget regular32WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11192,17 +11192,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32YellowDark(context: context),
+        style: FCTextStyle.regular32WarningDark(context: context),
       ),
     );
   }
 
-  static Widget regular32Red({
+  static Widget regular32Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11212,10 +11212,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32Red(context: context),
+        style: FCTextStyle.regular32Danger(context: context),
       );
 
-  static Widget regular32RedGradient({
+  static Widget regular32DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11225,17 +11225,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32Red(context: context),
+        style: FCTextStyle.regular32Danger(context: context),
       ),
     );
   }
 
-  static Widget regular32RedLight({
+  static Widget regular32DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11245,10 +11245,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32RedLight(context: context),
+        style: FCTextStyle.regular32DangerLight(context: context),
       );
 
-  static Widget regular32RedLightGradient({
+  static Widget regular32DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11258,17 +11258,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32RedLight(context: context),
+        style: FCTextStyle.regular32DangerLight(context: context),
       ),
     );
   }
 
-  static Widget regular32RedDark({
+  static Widget regular32DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11278,10 +11278,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32RedDark(context: context),
+        style: FCTextStyle.regular32DangerDark(context: context),
       );
 
-  static Widget regular32RedDarkGradient({
+  static Widget regular32DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11291,12 +11291,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.regular32RedDark(context: context),
+        style: FCTextStyle.regular32DangerDark(context: context),
       ),
     );
   }
@@ -11612,7 +11612,7 @@ class FCText {
     );
   }
 
-  static Widget medium10Blue({
+  static Widget medium10Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11622,10 +11622,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10Blue(context: context),
+        style: FCTextStyle.medium10Info(context: context),
       );
 
-  static Widget medium10BlueGradient({
+  static Widget medium10InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11635,17 +11635,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10Blue(context: context),
+        style: FCTextStyle.medium10Info(context: context),
       ),
     );
   }
 
-  static Widget medium10BlueLight({
+  static Widget medium10InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11655,10 +11655,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10BlueLight(context: context),
+        style: FCTextStyle.medium10InfoLight(context: context),
       );
 
-  static Widget medium10BlueLightGradient({
+  static Widget medium10InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11668,17 +11668,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10BlueLight(context: context),
+        style: FCTextStyle.medium10InfoLight(context: context),
       ),
     );
   }
 
-  static Widget medium10BlueDark({
+  static Widget medium10InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11688,10 +11688,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10BlueDark(context: context),
+        style: FCTextStyle.medium10InfoDark(context: context),
       );
 
-  static Widget medium10BlueDarkGradient({
+  static Widget medium10InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11701,17 +11701,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10BlueDark(context: context),
+        style: FCTextStyle.medium10InfoDark(context: context),
       ),
     );
   }
 
-  static Widget medium10Green({
+  static Widget medium10Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11721,10 +11721,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10Green(context: context),
+        style: FCTextStyle.medium10Success(context: context),
       );
 
-  static Widget medium10GreenGradient({
+  static Widget medium10SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11734,17 +11734,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10Green(context: context),
+        style: FCTextStyle.medium10Success(context: context),
       ),
     );
   }
 
-  static Widget medium10GreenLight({
+  static Widget medium10SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11754,10 +11754,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10GreenLight(context: context),
+        style: FCTextStyle.medium10SuccessLight(context: context),
       );
 
-  static Widget medium10GreenLightGradient({
+  static Widget medium10SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11767,17 +11767,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10GreenLight(context: context),
+        style: FCTextStyle.medium10SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget medium10GreenDark({
+  static Widget medium10SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11787,10 +11787,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10GreenDark(context: context),
+        style: FCTextStyle.medium10SuccessDark(context: context),
       );
 
-  static Widget medium10GreenDarkGradient({
+  static Widget medium10SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11800,17 +11800,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10GreenDark(context: context),
+        style: FCTextStyle.medium10SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget medium10Yellow({
+  static Widget medium10Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11820,10 +11820,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10Yellow(context: context),
+        style: FCTextStyle.medium10Warning(context: context),
       );
 
-  static Widget medium10YellowGradient({
+  static Widget medium10WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11833,17 +11833,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10Yellow(context: context),
+        style: FCTextStyle.medium10Warning(context: context),
       ),
     );
   }
 
-  static Widget medium10YellowLight({
+  static Widget medium10WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11853,10 +11853,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10YellowLight(context: context),
+        style: FCTextStyle.medium10WarningLight(context: context),
       );
 
-  static Widget medium10YellowLightGradient({
+  static Widget medium10WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11866,17 +11866,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10YellowLight(context: context),
+        style: FCTextStyle.medium10WarningLight(context: context),
       ),
     );
   }
 
-  static Widget medium10YellowDark({
+  static Widget medium10WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11886,10 +11886,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10YellowDark(context: context),
+        style: FCTextStyle.medium10WarningDark(context: context),
       );
 
-  static Widget medium10YellowDarkGradient({
+  static Widget medium10WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11899,17 +11899,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10YellowDark(context: context),
+        style: FCTextStyle.medium10WarningDark(context: context),
       ),
     );
   }
 
-  static Widget medium10Red({
+  static Widget medium10Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11919,10 +11919,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10Red(context: context),
+        style: FCTextStyle.medium10Danger(context: context),
       );
 
-  static Widget medium10RedGradient({
+  static Widget medium10DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11932,17 +11932,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10Red(context: context),
+        style: FCTextStyle.medium10Danger(context: context),
       ),
     );
   }
 
-  static Widget medium10RedLight({
+  static Widget medium10DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11952,10 +11952,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10RedLight(context: context),
+        style: FCTextStyle.medium10DangerLight(context: context),
       );
 
-  static Widget medium10RedLightGradient({
+  static Widget medium10DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11965,17 +11965,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10RedLight(context: context),
+        style: FCTextStyle.medium10DangerLight(context: context),
       ),
     );
   }
 
-  static Widget medium10RedDark({
+  static Widget medium10DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11985,10 +11985,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10RedDark(context: context),
+        style: FCTextStyle.medium10DangerDark(context: context),
       );
 
-  static Widget medium10RedDarkGradient({
+  static Widget medium10DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -11998,12 +11998,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium10RedDark(context: context),
+        style: FCTextStyle.medium10DangerDark(context: context),
       ),
     );
   }
@@ -12318,7 +12318,7 @@ class FCText {
     );
   }
 
-  static Widget medium12Blue({
+  static Widget medium12Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12328,10 +12328,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12Blue(context: context),
+        style: FCTextStyle.medium12Info(context: context),
       );
 
-  static Widget medium12BlueGradient({
+  static Widget medium12InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12341,17 +12341,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12Blue(context: context),
+        style: FCTextStyle.medium12Info(context: context),
       ),
     );
   }
 
-  static Widget medium12BlueLight({
+  static Widget medium12InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12361,10 +12361,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12BlueLight(context: context),
+        style: FCTextStyle.medium12InfoLight(context: context),
       );
 
-  static Widget medium12BlueLightGradient({
+  static Widget medium12InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12374,17 +12374,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12BlueLight(context: context),
+        style: FCTextStyle.medium12InfoLight(context: context),
       ),
     );
   }
 
-  static Widget medium12BlueDark({
+  static Widget medium12InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12394,10 +12394,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12BlueDark(context: context),
+        style: FCTextStyle.medium12InfoDark(context: context),
       );
 
-  static Widget medium12BlueDarkGradient({
+  static Widget medium12InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12407,17 +12407,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12BlueDark(context: context),
+        style: FCTextStyle.medium12InfoDark(context: context),
       ),
     );
   }
 
-  static Widget medium12Green({
+  static Widget medium12Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12427,10 +12427,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12Green(context: context),
+        style: FCTextStyle.medium12Success(context: context),
       );
 
-  static Widget medium12GreenGradient({
+  static Widget medium12SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12440,17 +12440,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12Green(context: context),
+        style: FCTextStyle.medium12Success(context: context),
       ),
     );
   }
 
-  static Widget medium12GreenLight({
+  static Widget medium12SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12460,10 +12460,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12GreenLight(context: context),
+        style: FCTextStyle.medium12SuccessLight(context: context),
       );
 
-  static Widget medium12GreenLightGradient({
+  static Widget medium12SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12473,17 +12473,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12GreenLight(context: context),
+        style: FCTextStyle.medium12SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget medium12GreenDark({
+  static Widget medium12SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12493,10 +12493,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12GreenDark(context: context),
+        style: FCTextStyle.medium12SuccessDark(context: context),
       );
 
-  static Widget medium12GreenDarkGradient({
+  static Widget medium12SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12506,17 +12506,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12GreenDark(context: context),
+        style: FCTextStyle.medium12SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget medium12Yellow({
+  static Widget medium12Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12526,10 +12526,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12Yellow(context: context),
+        style: FCTextStyle.medium12Warning(context: context),
       );
 
-  static Widget medium12YellowGradient({
+  static Widget medium12WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12539,17 +12539,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12Yellow(context: context),
+        style: FCTextStyle.medium12Warning(context: context),
       ),
     );
   }
 
-  static Widget medium12YellowLight({
+  static Widget medium12WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12559,10 +12559,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12YellowLight(context: context),
+        style: FCTextStyle.medium12WarningLight(context: context),
       );
 
-  static Widget medium12YellowLightGradient({
+  static Widget medium12WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12572,17 +12572,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12YellowLight(context: context),
+        style: FCTextStyle.medium12WarningLight(context: context),
       ),
     );
   }
 
-  static Widget medium12YellowDark({
+  static Widget medium12WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12592,10 +12592,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12YellowDark(context: context),
+        style: FCTextStyle.medium12WarningDark(context: context),
       );
 
-  static Widget medium12YellowDarkGradient({
+  static Widget medium12WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12605,17 +12605,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12YellowDark(context: context),
+        style: FCTextStyle.medium12WarningDark(context: context),
       ),
     );
   }
 
-  static Widget medium12Red({
+  static Widget medium12Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12625,10 +12625,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12Red(context: context),
+        style: FCTextStyle.medium12Danger(context: context),
       );
 
-  static Widget medium12RedGradient({
+  static Widget medium12DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12638,17 +12638,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12Red(context: context),
+        style: FCTextStyle.medium12Danger(context: context),
       ),
     );
   }
 
-  static Widget medium12RedLight({
+  static Widget medium12DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12658,10 +12658,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12RedLight(context: context),
+        style: FCTextStyle.medium12DangerLight(context: context),
       );
 
-  static Widget medium12RedLightGradient({
+  static Widget medium12DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12671,17 +12671,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12RedLight(context: context),
+        style: FCTextStyle.medium12DangerLight(context: context),
       ),
     );
   }
 
-  static Widget medium12RedDark({
+  static Widget medium12DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12691,10 +12691,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12RedDark(context: context),
+        style: FCTextStyle.medium12DangerDark(context: context),
       );
 
-  static Widget medium12RedDarkGradient({
+  static Widget medium12DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -12704,12 +12704,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium12RedDark(context: context),
+        style: FCTextStyle.medium12DangerDark(context: context),
       ),
     );
   }
@@ -13024,7 +13024,7 @@ class FCText {
     );
   }
 
-  static Widget medium14Blue({
+  static Widget medium14Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13034,10 +13034,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14Blue(context: context),
+        style: FCTextStyle.medium14Info(context: context),
       );
 
-  static Widget medium14BlueGradient({
+  static Widget medium14InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13047,17 +13047,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14Blue(context: context),
+        style: FCTextStyle.medium14Info(context: context),
       ),
     );
   }
 
-  static Widget medium14BlueLight({
+  static Widget medium14InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13067,10 +13067,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14BlueLight(context: context),
+        style: FCTextStyle.medium14InfoLight(context: context),
       );
 
-  static Widget medium14BlueLightGradient({
+  static Widget medium14InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13080,17 +13080,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14BlueLight(context: context),
+        style: FCTextStyle.medium14InfoLight(context: context),
       ),
     );
   }
 
-  static Widget medium14BlueDark({
+  static Widget medium14InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13100,10 +13100,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14BlueDark(context: context),
+        style: FCTextStyle.medium14InfoDark(context: context),
       );
 
-  static Widget medium14BlueDarkGradient({
+  static Widget medium14InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13113,17 +13113,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14BlueDark(context: context),
+        style: FCTextStyle.medium14InfoDark(context: context),
       ),
     );
   }
 
-  static Widget medium14Green({
+  static Widget medium14Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13133,10 +13133,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14Green(context: context),
+        style: FCTextStyle.medium14Success(context: context),
       );
 
-  static Widget medium14GreenGradient({
+  static Widget medium14SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13146,17 +13146,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14Green(context: context),
+        style: FCTextStyle.medium14Success(context: context),
       ),
     );
   }
 
-  static Widget medium14GreenLight({
+  static Widget medium14SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13166,10 +13166,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14GreenLight(context: context),
+        style: FCTextStyle.medium14SuccessLight(context: context),
       );
 
-  static Widget medium14GreenLightGradient({
+  static Widget medium14SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13179,17 +13179,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14GreenLight(context: context),
+        style: FCTextStyle.medium14SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget medium14GreenDark({
+  static Widget medium14SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13199,10 +13199,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14GreenDark(context: context),
+        style: FCTextStyle.medium14SuccessDark(context: context),
       );
 
-  static Widget medium14GreenDarkGradient({
+  static Widget medium14SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13212,17 +13212,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14GreenDark(context: context),
+        style: FCTextStyle.medium14SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget medium14Yellow({
+  static Widget medium14Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13232,10 +13232,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14Yellow(context: context),
+        style: FCTextStyle.medium14Warning(context: context),
       );
 
-  static Widget medium14YellowGradient({
+  static Widget medium14WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13245,17 +13245,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14Yellow(context: context),
+        style: FCTextStyle.medium14Warning(context: context),
       ),
     );
   }
 
-  static Widget medium14YellowLight({
+  static Widget medium14WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13265,10 +13265,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14YellowLight(context: context),
+        style: FCTextStyle.medium14WarningLight(context: context),
       );
 
-  static Widget medium14YellowLightGradient({
+  static Widget medium14WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13278,17 +13278,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14YellowLight(context: context),
+        style: FCTextStyle.medium14WarningLight(context: context),
       ),
     );
   }
 
-  static Widget medium14YellowDark({
+  static Widget medium14WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13298,10 +13298,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14YellowDark(context: context),
+        style: FCTextStyle.medium14WarningDark(context: context),
       );
 
-  static Widget medium14YellowDarkGradient({
+  static Widget medium14WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13311,17 +13311,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14YellowDark(context: context),
+        style: FCTextStyle.medium14WarningDark(context: context),
       ),
     );
   }
 
-  static Widget medium14Red({
+  static Widget medium14Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13331,10 +13331,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14Red(context: context),
+        style: FCTextStyle.medium14Danger(context: context),
       );
 
-  static Widget medium14RedGradient({
+  static Widget medium14DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13344,17 +13344,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14Red(context: context),
+        style: FCTextStyle.medium14Danger(context: context),
       ),
     );
   }
 
-  static Widget medium14RedLight({
+  static Widget medium14DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13364,10 +13364,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14RedLight(context: context),
+        style: FCTextStyle.medium14DangerLight(context: context),
       );
 
-  static Widget medium14RedLightGradient({
+  static Widget medium14DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13377,17 +13377,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14RedLight(context: context),
+        style: FCTextStyle.medium14DangerLight(context: context),
       ),
     );
   }
 
-  static Widget medium14RedDark({
+  static Widget medium14DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13397,10 +13397,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14RedDark(context: context),
+        style: FCTextStyle.medium14DangerDark(context: context),
       );
 
-  static Widget medium14RedDarkGradient({
+  static Widget medium14DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13410,12 +13410,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium14RedDark(context: context),
+        style: FCTextStyle.medium14DangerDark(context: context),
       ),
     );
   }
@@ -13730,7 +13730,7 @@ class FCText {
     );
   }
 
-  static Widget medium16Blue({
+  static Widget medium16Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13740,10 +13740,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16Blue(context: context),
+        style: FCTextStyle.medium16Info(context: context),
       );
 
-  static Widget medium16BlueGradient({
+  static Widget medium16InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13753,17 +13753,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16Blue(context: context),
+        style: FCTextStyle.medium16Info(context: context),
       ),
     );
   }
 
-  static Widget medium16BlueLight({
+  static Widget medium16InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13773,10 +13773,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16BlueLight(context: context),
+        style: FCTextStyle.medium16InfoLight(context: context),
       );
 
-  static Widget medium16BlueLightGradient({
+  static Widget medium16InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13786,17 +13786,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16BlueLight(context: context),
+        style: FCTextStyle.medium16InfoLight(context: context),
       ),
     );
   }
 
-  static Widget medium16BlueDark({
+  static Widget medium16InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13806,10 +13806,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16BlueDark(context: context),
+        style: FCTextStyle.medium16InfoDark(context: context),
       );
 
-  static Widget medium16BlueDarkGradient({
+  static Widget medium16InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13819,17 +13819,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16BlueDark(context: context),
+        style: FCTextStyle.medium16InfoDark(context: context),
       ),
     );
   }
 
-  static Widget medium16Green({
+  static Widget medium16Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13839,10 +13839,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16Green(context: context),
+        style: FCTextStyle.medium16Success(context: context),
       );
 
-  static Widget medium16GreenGradient({
+  static Widget medium16SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13852,17 +13852,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16Green(context: context),
+        style: FCTextStyle.medium16Success(context: context),
       ),
     );
   }
 
-  static Widget medium16GreenLight({
+  static Widget medium16SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13872,10 +13872,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16GreenLight(context: context),
+        style: FCTextStyle.medium16SuccessLight(context: context),
       );
 
-  static Widget medium16GreenLightGradient({
+  static Widget medium16SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13885,17 +13885,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16GreenLight(context: context),
+        style: FCTextStyle.medium16SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget medium16GreenDark({
+  static Widget medium16SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13905,10 +13905,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16GreenDark(context: context),
+        style: FCTextStyle.medium16SuccessDark(context: context),
       );
 
-  static Widget medium16GreenDarkGradient({
+  static Widget medium16SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13918,17 +13918,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16GreenDark(context: context),
+        style: FCTextStyle.medium16SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget medium16Yellow({
+  static Widget medium16Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13938,10 +13938,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16Yellow(context: context),
+        style: FCTextStyle.medium16Warning(context: context),
       );
 
-  static Widget medium16YellowGradient({
+  static Widget medium16WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13951,17 +13951,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16Yellow(context: context),
+        style: FCTextStyle.medium16Warning(context: context),
       ),
     );
   }
 
-  static Widget medium16YellowLight({
+  static Widget medium16WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13971,10 +13971,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16YellowLight(context: context),
+        style: FCTextStyle.medium16WarningLight(context: context),
       );
 
-  static Widget medium16YellowLightGradient({
+  static Widget medium16WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -13984,17 +13984,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16YellowLight(context: context),
+        style: FCTextStyle.medium16WarningLight(context: context),
       ),
     );
   }
 
-  static Widget medium16YellowDark({
+  static Widget medium16WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14004,10 +14004,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16YellowDark(context: context),
+        style: FCTextStyle.medium16WarningDark(context: context),
       );
 
-  static Widget medium16YellowDarkGradient({
+  static Widget medium16WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14017,17 +14017,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16YellowDark(context: context),
+        style: FCTextStyle.medium16WarningDark(context: context),
       ),
     );
   }
 
-  static Widget medium16Red({
+  static Widget medium16Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14037,10 +14037,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16Red(context: context),
+        style: FCTextStyle.medium16Danger(context: context),
       );
 
-  static Widget medium16RedGradient({
+  static Widget medium16DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14050,17 +14050,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16Red(context: context),
+        style: FCTextStyle.medium16Danger(context: context),
       ),
     );
   }
 
-  static Widget medium16RedLight({
+  static Widget medium16DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14070,10 +14070,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16RedLight(context: context),
+        style: FCTextStyle.medium16DangerLight(context: context),
       );
 
-  static Widget medium16RedLightGradient({
+  static Widget medium16DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14083,17 +14083,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16RedLight(context: context),
+        style: FCTextStyle.medium16DangerLight(context: context),
       ),
     );
   }
 
-  static Widget medium16RedDark({
+  static Widget medium16DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14103,10 +14103,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16RedDark(context: context),
+        style: FCTextStyle.medium16DangerDark(context: context),
       );
 
-  static Widget medium16RedDarkGradient({
+  static Widget medium16DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14116,12 +14116,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium16RedDark(context: context),
+        style: FCTextStyle.medium16DangerDark(context: context),
       ),
     );
   }
@@ -14436,7 +14436,7 @@ class FCText {
     );
   }
 
-  static Widget medium18Blue({
+  static Widget medium18Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14446,10 +14446,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18Blue(context: context),
+        style: FCTextStyle.medium18Info(context: context),
       );
 
-  static Widget medium18BlueGradient({
+  static Widget medium18InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14459,17 +14459,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18Blue(context: context),
+        style: FCTextStyle.medium18Info(context: context),
       ),
     );
   }
 
-  static Widget medium18BlueLight({
+  static Widget medium18InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14479,10 +14479,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18BlueLight(context: context),
+        style: FCTextStyle.medium18InfoLight(context: context),
       );
 
-  static Widget medium18BlueLightGradient({
+  static Widget medium18InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14492,17 +14492,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18BlueLight(context: context),
+        style: FCTextStyle.medium18InfoLight(context: context),
       ),
     );
   }
 
-  static Widget medium18BlueDark({
+  static Widget medium18InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14512,10 +14512,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18BlueDark(context: context),
+        style: FCTextStyle.medium18InfoDark(context: context),
       );
 
-  static Widget medium18BlueDarkGradient({
+  static Widget medium18InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14525,17 +14525,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18BlueDark(context: context),
+        style: FCTextStyle.medium18InfoDark(context: context),
       ),
     );
   }
 
-  static Widget medium18Green({
+  static Widget medium18Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14545,10 +14545,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18Green(context: context),
+        style: FCTextStyle.medium18Success(context: context),
       );
 
-  static Widget medium18GreenGradient({
+  static Widget medium18SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14558,17 +14558,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18Green(context: context),
+        style: FCTextStyle.medium18Success(context: context),
       ),
     );
   }
 
-  static Widget medium18GreenLight({
+  static Widget medium18SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14578,10 +14578,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18GreenLight(context: context),
+        style: FCTextStyle.medium18SuccessLight(context: context),
       );
 
-  static Widget medium18GreenLightGradient({
+  static Widget medium18SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14591,17 +14591,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18GreenLight(context: context),
+        style: FCTextStyle.medium18SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget medium18GreenDark({
+  static Widget medium18SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14611,10 +14611,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18GreenDark(context: context),
+        style: FCTextStyle.medium18SuccessDark(context: context),
       );
 
-  static Widget medium18GreenDarkGradient({
+  static Widget medium18SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14624,17 +14624,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18GreenDark(context: context),
+        style: FCTextStyle.medium18SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget medium18Yellow({
+  static Widget medium18Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14644,10 +14644,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18Yellow(context: context),
+        style: FCTextStyle.medium18Warning(context: context),
       );
 
-  static Widget medium18YellowGradient({
+  static Widget medium18WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14657,17 +14657,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18Yellow(context: context),
+        style: FCTextStyle.medium18Warning(context: context),
       ),
     );
   }
 
-  static Widget medium18YellowLight({
+  static Widget medium18WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14677,10 +14677,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18YellowLight(context: context),
+        style: FCTextStyle.medium18WarningLight(context: context),
       );
 
-  static Widget medium18YellowLightGradient({
+  static Widget medium18WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14690,17 +14690,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18YellowLight(context: context),
+        style: FCTextStyle.medium18WarningLight(context: context),
       ),
     );
   }
 
-  static Widget medium18YellowDark({
+  static Widget medium18WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14710,10 +14710,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18YellowDark(context: context),
+        style: FCTextStyle.medium18WarningDark(context: context),
       );
 
-  static Widget medium18YellowDarkGradient({
+  static Widget medium18WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14723,17 +14723,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18YellowDark(context: context),
+        style: FCTextStyle.medium18WarningDark(context: context),
       ),
     );
   }
 
-  static Widget medium18Red({
+  static Widget medium18Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14743,10 +14743,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18Red(context: context),
+        style: FCTextStyle.medium18Danger(context: context),
       );
 
-  static Widget medium18RedGradient({
+  static Widget medium18DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14756,17 +14756,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18Red(context: context),
+        style: FCTextStyle.medium18Danger(context: context),
       ),
     );
   }
 
-  static Widget medium18RedLight({
+  static Widget medium18DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14776,10 +14776,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18RedLight(context: context),
+        style: FCTextStyle.medium18DangerLight(context: context),
       );
 
-  static Widget medium18RedLightGradient({
+  static Widget medium18DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14789,17 +14789,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18RedLight(context: context),
+        style: FCTextStyle.medium18DangerLight(context: context),
       ),
     );
   }
 
-  static Widget medium18RedDark({
+  static Widget medium18DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14809,10 +14809,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18RedDark(context: context),
+        style: FCTextStyle.medium18DangerDark(context: context),
       );
 
-  static Widget medium18RedDarkGradient({
+  static Widget medium18DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -14822,12 +14822,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium18RedDark(context: context),
+        style: FCTextStyle.medium18DangerDark(context: context),
       ),
     );
   }
@@ -15142,7 +15142,7 @@ class FCText {
     );
   }
 
-  static Widget medium20Blue({
+  static Widget medium20Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15152,10 +15152,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20Blue(context: context),
+        style: FCTextStyle.medium20Info(context: context),
       );
 
-  static Widget medium20BlueGradient({
+  static Widget medium20InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15165,17 +15165,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20Blue(context: context),
+        style: FCTextStyle.medium20Info(context: context),
       ),
     );
   }
 
-  static Widget medium20BlueLight({
+  static Widget medium20InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15185,10 +15185,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20BlueLight(context: context),
+        style: FCTextStyle.medium20InfoLight(context: context),
       );
 
-  static Widget medium20BlueLightGradient({
+  static Widget medium20InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15198,17 +15198,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20BlueLight(context: context),
+        style: FCTextStyle.medium20InfoLight(context: context),
       ),
     );
   }
 
-  static Widget medium20BlueDark({
+  static Widget medium20InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15218,10 +15218,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20BlueDark(context: context),
+        style: FCTextStyle.medium20InfoDark(context: context),
       );
 
-  static Widget medium20BlueDarkGradient({
+  static Widget medium20InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15231,17 +15231,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20BlueDark(context: context),
+        style: FCTextStyle.medium20InfoDark(context: context),
       ),
     );
   }
 
-  static Widget medium20Green({
+  static Widget medium20Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15251,10 +15251,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20Green(context: context),
+        style: FCTextStyle.medium20Success(context: context),
       );
 
-  static Widget medium20GreenGradient({
+  static Widget medium20SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15264,17 +15264,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20Green(context: context),
+        style: FCTextStyle.medium20Success(context: context),
       ),
     );
   }
 
-  static Widget medium20GreenLight({
+  static Widget medium20SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15284,10 +15284,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20GreenLight(context: context),
+        style: FCTextStyle.medium20SuccessLight(context: context),
       );
 
-  static Widget medium20GreenLightGradient({
+  static Widget medium20SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15297,17 +15297,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20GreenLight(context: context),
+        style: FCTextStyle.medium20SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget medium20GreenDark({
+  static Widget medium20SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15317,10 +15317,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20GreenDark(context: context),
+        style: FCTextStyle.medium20SuccessDark(context: context),
       );
 
-  static Widget medium20GreenDarkGradient({
+  static Widget medium20SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15330,17 +15330,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20GreenDark(context: context),
+        style: FCTextStyle.medium20SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget medium20Yellow({
+  static Widget medium20Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15350,10 +15350,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20Yellow(context: context),
+        style: FCTextStyle.medium20Warning(context: context),
       );
 
-  static Widget medium20YellowGradient({
+  static Widget medium20WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15363,17 +15363,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20Yellow(context: context),
+        style: FCTextStyle.medium20Warning(context: context),
       ),
     );
   }
 
-  static Widget medium20YellowLight({
+  static Widget medium20WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15383,10 +15383,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20YellowLight(context: context),
+        style: FCTextStyle.medium20WarningLight(context: context),
       );
 
-  static Widget medium20YellowLightGradient({
+  static Widget medium20WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15396,17 +15396,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20YellowLight(context: context),
+        style: FCTextStyle.medium20WarningLight(context: context),
       ),
     );
   }
 
-  static Widget medium20YellowDark({
+  static Widget medium20WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15416,10 +15416,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20YellowDark(context: context),
+        style: FCTextStyle.medium20WarningDark(context: context),
       );
 
-  static Widget medium20YellowDarkGradient({
+  static Widget medium20WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15429,17 +15429,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20YellowDark(context: context),
+        style: FCTextStyle.medium20WarningDark(context: context),
       ),
     );
   }
 
-  static Widget medium20Red({
+  static Widget medium20Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15449,10 +15449,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20Red(context: context),
+        style: FCTextStyle.medium20Danger(context: context),
       );
 
-  static Widget medium20RedGradient({
+  static Widget medium20DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15462,17 +15462,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20Red(context: context),
+        style: FCTextStyle.medium20Danger(context: context),
       ),
     );
   }
 
-  static Widget medium20RedLight({
+  static Widget medium20DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15482,10 +15482,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20RedLight(context: context),
+        style: FCTextStyle.medium20DangerLight(context: context),
       );
 
-  static Widget medium20RedLightGradient({
+  static Widget medium20DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15495,17 +15495,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20RedLight(context: context),
+        style: FCTextStyle.medium20DangerLight(context: context),
       ),
     );
   }
 
-  static Widget medium20RedDark({
+  static Widget medium20DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15515,10 +15515,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20RedDark(context: context),
+        style: FCTextStyle.medium20DangerDark(context: context),
       );
 
-  static Widget medium20RedDarkGradient({
+  static Widget medium20DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15528,12 +15528,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium20RedDark(context: context),
+        style: FCTextStyle.medium20DangerDark(context: context),
       ),
     );
   }
@@ -15848,7 +15848,7 @@ class FCText {
     );
   }
 
-  static Widget medium28Blue({
+  static Widget medium28Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15858,10 +15858,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28Blue(context: context),
+        style: FCTextStyle.medium28Info(context: context),
       );
 
-  static Widget medium28BlueGradient({
+  static Widget medium28InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15871,17 +15871,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28Blue(context: context),
+        style: FCTextStyle.medium28Info(context: context),
       ),
     );
   }
 
-  static Widget medium28BlueLight({
+  static Widget medium28InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15891,10 +15891,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28BlueLight(context: context),
+        style: FCTextStyle.medium28InfoLight(context: context),
       );
 
-  static Widget medium28BlueLightGradient({
+  static Widget medium28InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15904,17 +15904,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28BlueLight(context: context),
+        style: FCTextStyle.medium28InfoLight(context: context),
       ),
     );
   }
 
-  static Widget medium28BlueDark({
+  static Widget medium28InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15924,10 +15924,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28BlueDark(context: context),
+        style: FCTextStyle.medium28InfoDark(context: context),
       );
 
-  static Widget medium28BlueDarkGradient({
+  static Widget medium28InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15937,17 +15937,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28BlueDark(context: context),
+        style: FCTextStyle.medium28InfoDark(context: context),
       ),
     );
   }
 
-  static Widget medium28Green({
+  static Widget medium28Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15957,10 +15957,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28Green(context: context),
+        style: FCTextStyle.medium28Success(context: context),
       );
 
-  static Widget medium28GreenGradient({
+  static Widget medium28SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15970,17 +15970,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28Green(context: context),
+        style: FCTextStyle.medium28Success(context: context),
       ),
     );
   }
 
-  static Widget medium28GreenLight({
+  static Widget medium28SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -15990,10 +15990,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28GreenLight(context: context),
+        style: FCTextStyle.medium28SuccessLight(context: context),
       );
 
-  static Widget medium28GreenLightGradient({
+  static Widget medium28SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16003,17 +16003,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28GreenLight(context: context),
+        style: FCTextStyle.medium28SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget medium28GreenDark({
+  static Widget medium28SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16023,10 +16023,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28GreenDark(context: context),
+        style: FCTextStyle.medium28SuccessDark(context: context),
       );
 
-  static Widget medium28GreenDarkGradient({
+  static Widget medium28SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16036,17 +16036,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28GreenDark(context: context),
+        style: FCTextStyle.medium28SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget medium28Yellow({
+  static Widget medium28Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16056,10 +16056,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28Yellow(context: context),
+        style: FCTextStyle.medium28Warning(context: context),
       );
 
-  static Widget medium28YellowGradient({
+  static Widget medium28WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16069,17 +16069,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28Yellow(context: context),
+        style: FCTextStyle.medium28Warning(context: context),
       ),
     );
   }
 
-  static Widget medium28YellowLight({
+  static Widget medium28WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16089,10 +16089,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28YellowLight(context: context),
+        style: FCTextStyle.medium28WarningLight(context: context),
       );
 
-  static Widget medium28YellowLightGradient({
+  static Widget medium28WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16102,17 +16102,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28YellowLight(context: context),
+        style: FCTextStyle.medium28WarningLight(context: context),
       ),
     );
   }
 
-  static Widget medium28YellowDark({
+  static Widget medium28WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16122,10 +16122,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28YellowDark(context: context),
+        style: FCTextStyle.medium28WarningDark(context: context),
       );
 
-  static Widget medium28YellowDarkGradient({
+  static Widget medium28WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16135,17 +16135,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28YellowDark(context: context),
+        style: FCTextStyle.medium28WarningDark(context: context),
       ),
     );
   }
 
-  static Widget medium28Red({
+  static Widget medium28Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16155,10 +16155,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28Red(context: context),
+        style: FCTextStyle.medium28Danger(context: context),
       );
 
-  static Widget medium28RedGradient({
+  static Widget medium28DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16168,17 +16168,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28Red(context: context),
+        style: FCTextStyle.medium28Danger(context: context),
       ),
     );
   }
 
-  static Widget medium28RedLight({
+  static Widget medium28DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16188,10 +16188,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28RedLight(context: context),
+        style: FCTextStyle.medium28DangerLight(context: context),
       );
 
-  static Widget medium28RedLightGradient({
+  static Widget medium28DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16201,17 +16201,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28RedLight(context: context),
+        style: FCTextStyle.medium28DangerLight(context: context),
       ),
     );
   }
 
-  static Widget medium28RedDark({
+  static Widget medium28DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16221,10 +16221,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28RedDark(context: context),
+        style: FCTextStyle.medium28DangerDark(context: context),
       );
 
-  static Widget medium28RedDarkGradient({
+  static Widget medium28DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16234,12 +16234,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium28RedDark(context: context),
+        style: FCTextStyle.medium28DangerDark(context: context),
       ),
     );
   }
@@ -16554,7 +16554,7 @@ class FCText {
     );
   }
 
-  static Widget medium32Blue({
+  static Widget medium32Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16564,10 +16564,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32Blue(context: context),
+        style: FCTextStyle.medium32Info(context: context),
       );
 
-  static Widget medium32BlueGradient({
+  static Widget medium32InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16577,17 +16577,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32Blue(context: context),
+        style: FCTextStyle.medium32Info(context: context),
       ),
     );
   }
 
-  static Widget medium32BlueLight({
+  static Widget medium32InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16597,10 +16597,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32BlueLight(context: context),
+        style: FCTextStyle.medium32InfoLight(context: context),
       );
 
-  static Widget medium32BlueLightGradient({
+  static Widget medium32InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16610,17 +16610,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32BlueLight(context: context),
+        style: FCTextStyle.medium32InfoLight(context: context),
       ),
     );
   }
 
-  static Widget medium32BlueDark({
+  static Widget medium32InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16630,10 +16630,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32BlueDark(context: context),
+        style: FCTextStyle.medium32InfoDark(context: context),
       );
 
-  static Widget medium32BlueDarkGradient({
+  static Widget medium32InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16643,17 +16643,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32BlueDark(context: context),
+        style: FCTextStyle.medium32InfoDark(context: context),
       ),
     );
   }
 
-  static Widget medium32Green({
+  static Widget medium32Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16663,10 +16663,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32Green(context: context),
+        style: FCTextStyle.medium32Success(context: context),
       );
 
-  static Widget medium32GreenGradient({
+  static Widget medium32SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16676,17 +16676,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32Green(context: context),
+        style: FCTextStyle.medium32Success(context: context),
       ),
     );
   }
 
-  static Widget medium32GreenLight({
+  static Widget medium32SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16696,10 +16696,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32GreenLight(context: context),
+        style: FCTextStyle.medium32SuccessLight(context: context),
       );
 
-  static Widget medium32GreenLightGradient({
+  static Widget medium32SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16709,17 +16709,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32GreenLight(context: context),
+        style: FCTextStyle.medium32SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget medium32GreenDark({
+  static Widget medium32SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16729,10 +16729,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32GreenDark(context: context),
+        style: FCTextStyle.medium32SuccessDark(context: context),
       );
 
-  static Widget medium32GreenDarkGradient({
+  static Widget medium32SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16742,17 +16742,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32GreenDark(context: context),
+        style: FCTextStyle.medium32SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget medium32Yellow({
+  static Widget medium32Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16762,10 +16762,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32Yellow(context: context),
+        style: FCTextStyle.medium32Warning(context: context),
       );
 
-  static Widget medium32YellowGradient({
+  static Widget medium32WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16775,17 +16775,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32Yellow(context: context),
+        style: FCTextStyle.medium32Warning(context: context),
       ),
     );
   }
 
-  static Widget medium32YellowLight({
+  static Widget medium32WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16795,10 +16795,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32YellowLight(context: context),
+        style: FCTextStyle.medium32WarningLight(context: context),
       );
 
-  static Widget medium32YellowLightGradient({
+  static Widget medium32WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16808,17 +16808,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32YellowLight(context: context),
+        style: FCTextStyle.medium32WarningLight(context: context),
       ),
     );
   }
 
-  static Widget medium32YellowDark({
+  static Widget medium32WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16828,10 +16828,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32YellowDark(context: context),
+        style: FCTextStyle.medium32WarningDark(context: context),
       );
 
-  static Widget medium32YellowDarkGradient({
+  static Widget medium32WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16841,17 +16841,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32YellowDark(context: context),
+        style: FCTextStyle.medium32WarningDark(context: context),
       ),
     );
   }
 
-  static Widget medium32Red({
+  static Widget medium32Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16861,10 +16861,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32Red(context: context),
+        style: FCTextStyle.medium32Danger(context: context),
       );
 
-  static Widget medium32RedGradient({
+  static Widget medium32DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16874,17 +16874,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32Red(context: context),
+        style: FCTextStyle.medium32Danger(context: context),
       ),
     );
   }
 
-  static Widget medium32RedLight({
+  static Widget medium32DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16894,10 +16894,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32RedLight(context: context),
+        style: FCTextStyle.medium32DangerLight(context: context),
       );
 
-  static Widget medium32RedLightGradient({
+  static Widget medium32DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16907,17 +16907,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32RedLight(context: context),
+        style: FCTextStyle.medium32DangerLight(context: context),
       ),
     );
   }
 
-  static Widget medium32RedDark({
+  static Widget medium32DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16927,10 +16927,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32RedDark(context: context),
+        style: FCTextStyle.medium32DangerDark(context: context),
       );
 
-  static Widget medium32RedDarkGradient({
+  static Widget medium32DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -16940,12 +16940,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.medium32RedDark(context: context),
+        style: FCTextStyle.medium32DangerDark(context: context),
       ),
     );
   }
@@ -17261,7 +17261,7 @@ class FCText {
     );
   }
 
-  static Widget semiBold10Blue({
+  static Widget semiBold10Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17271,10 +17271,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10Blue(context: context),
+        style: FCTextStyle.semiBold10Info(context: context),
       );
 
-  static Widget semiBold10BlueGradient({
+  static Widget semiBold10InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17284,17 +17284,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10Blue(context: context),
+        style: FCTextStyle.semiBold10Info(context: context),
       ),
     );
   }
 
-  static Widget semiBold10BlueLight({
+  static Widget semiBold10InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17304,10 +17304,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10BlueLight(context: context),
+        style: FCTextStyle.semiBold10InfoLight(context: context),
       );
 
-  static Widget semiBold10BlueLightGradient({
+  static Widget semiBold10InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17317,17 +17317,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10BlueLight(context: context),
+        style: FCTextStyle.semiBold10InfoLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold10BlueDark({
+  static Widget semiBold10InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17337,10 +17337,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10BlueDark(context: context),
+        style: FCTextStyle.semiBold10InfoDark(context: context),
       );
 
-  static Widget semiBold10BlueDarkGradient({
+  static Widget semiBold10InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17350,17 +17350,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10BlueDark(context: context),
+        style: FCTextStyle.semiBold10InfoDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold10Green({
+  static Widget semiBold10Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17370,10 +17370,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10Green(context: context),
+        style: FCTextStyle.semiBold10Success(context: context),
       );
 
-  static Widget semiBold10GreenGradient({
+  static Widget semiBold10SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17383,17 +17383,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10Green(context: context),
+        style: FCTextStyle.semiBold10Success(context: context),
       ),
     );
   }
 
-  static Widget semiBold10GreenLight({
+  static Widget semiBold10SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17403,10 +17403,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10GreenLight(context: context),
+        style: FCTextStyle.semiBold10SuccessLight(context: context),
       );
 
-  static Widget semiBold10GreenLightGradient({
+  static Widget semiBold10SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17416,17 +17416,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10GreenLight(context: context),
+        style: FCTextStyle.semiBold10SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold10GreenDark({
+  static Widget semiBold10SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17436,10 +17436,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10GreenDark(context: context),
+        style: FCTextStyle.semiBold10SuccessDark(context: context),
       );
 
-  static Widget semiBold10GreenDarkGradient({
+  static Widget semiBold10SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17449,17 +17449,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10GreenDark(context: context),
+        style: FCTextStyle.semiBold10SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold10Yellow({
+  static Widget semiBold10Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17469,10 +17469,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10Yellow(context: context),
+        style: FCTextStyle.semiBold10Warning(context: context),
       );
 
-  static Widget semiBold10YellowGradient({
+  static Widget semiBold10WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17482,17 +17482,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10Yellow(context: context),
+        style: FCTextStyle.semiBold10Warning(context: context),
       ),
     );
   }
 
-  static Widget semiBold10YellowLight({
+  static Widget semiBold10WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17502,10 +17502,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10YellowLight(context: context),
+        style: FCTextStyle.semiBold10WarningLight(context: context),
       );
 
-  static Widget semiBold10YellowLightGradient({
+  static Widget semiBold10WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17515,17 +17515,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10YellowLight(context: context),
+        style: FCTextStyle.semiBold10WarningLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold10YellowDark({
+  static Widget semiBold10WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17535,10 +17535,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10YellowDark(context: context),
+        style: FCTextStyle.semiBold10WarningDark(context: context),
       );
 
-  static Widget semiBold10YellowDarkGradient({
+  static Widget semiBold10WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17548,17 +17548,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10YellowDark(context: context),
+        style: FCTextStyle.semiBold10WarningDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold10Red({
+  static Widget semiBold10Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17568,10 +17568,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10Red(context: context),
+        style: FCTextStyle.semiBold10Danger(context: context),
       );
 
-  static Widget semiBold10RedGradient({
+  static Widget semiBold10DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17581,17 +17581,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10Red(context: context),
+        style: FCTextStyle.semiBold10Danger(context: context),
       ),
     );
   }
 
-  static Widget semiBold10RedLight({
+  static Widget semiBold10DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17601,10 +17601,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10RedLight(context: context),
+        style: FCTextStyle.semiBold10DangerLight(context: context),
       );
 
-  static Widget semiBold10RedLightGradient({
+  static Widget semiBold10DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17614,17 +17614,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10RedLight(context: context),
+        style: FCTextStyle.semiBold10DangerLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold10RedDark({
+  static Widget semiBold10DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17634,10 +17634,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10RedDark(context: context),
+        style: FCTextStyle.semiBold10DangerDark(context: context),
       );
 
-  static Widget semiBold10RedDarkGradient({
+  static Widget semiBold10DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17647,12 +17647,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold10RedDark(context: context),
+        style: FCTextStyle.semiBold10DangerDark(context: context),
       ),
     );
   }
@@ -17967,7 +17967,7 @@ class FCText {
     );
   }
 
-  static Widget semiBold12Blue({
+  static Widget semiBold12Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17977,10 +17977,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12Blue(context: context),
+        style: FCTextStyle.semiBold12Info(context: context),
       );
 
-  static Widget semiBold12BlueGradient({
+  static Widget semiBold12InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -17990,17 +17990,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12Blue(context: context),
+        style: FCTextStyle.semiBold12Info(context: context),
       ),
     );
   }
 
-  static Widget semiBold12BlueLight({
+  static Widget semiBold12InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18010,10 +18010,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12BlueLight(context: context),
+        style: FCTextStyle.semiBold12InfoLight(context: context),
       );
 
-  static Widget semiBold12BlueLightGradient({
+  static Widget semiBold12InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18023,17 +18023,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12BlueLight(context: context),
+        style: FCTextStyle.semiBold12InfoLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold12BlueDark({
+  static Widget semiBold12InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18043,10 +18043,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12BlueDark(context: context),
+        style: FCTextStyle.semiBold12InfoDark(context: context),
       );
 
-  static Widget semiBold12BlueDarkGradient({
+  static Widget semiBold12InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18056,17 +18056,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12BlueDark(context: context),
+        style: FCTextStyle.semiBold12InfoDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold12Green({
+  static Widget semiBold12Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18076,10 +18076,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12Green(context: context),
+        style: FCTextStyle.semiBold12Success(context: context),
       );
 
-  static Widget semiBold12GreenGradient({
+  static Widget semiBold12SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18089,17 +18089,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12Green(context: context),
+        style: FCTextStyle.semiBold12Success(context: context),
       ),
     );
   }
 
-  static Widget semiBold12GreenLight({
+  static Widget semiBold12SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18109,10 +18109,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12GreenLight(context: context),
+        style: FCTextStyle.semiBold12SuccessLight(context: context),
       );
 
-  static Widget semiBold12GreenLightGradient({
+  static Widget semiBold12SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18122,17 +18122,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12GreenLight(context: context),
+        style: FCTextStyle.semiBold12SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold12GreenDark({
+  static Widget semiBold12SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18142,10 +18142,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12GreenDark(context: context),
+        style: FCTextStyle.semiBold12SuccessDark(context: context),
       );
 
-  static Widget semiBold12GreenDarkGradient({
+  static Widget semiBold12SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18155,17 +18155,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12GreenDark(context: context),
+        style: FCTextStyle.semiBold12SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold12Yellow({
+  static Widget semiBold12Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18175,10 +18175,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12Yellow(context: context),
+        style: FCTextStyle.semiBold12Warning(context: context),
       );
 
-  static Widget semiBold12YellowGradient({
+  static Widget semiBold12WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18188,17 +18188,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12Yellow(context: context),
+        style: FCTextStyle.semiBold12Warning(context: context),
       ),
     );
   }
 
-  static Widget semiBold12YellowLight({
+  static Widget semiBold12WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18208,10 +18208,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12YellowLight(context: context),
+        style: FCTextStyle.semiBold12WarningLight(context: context),
       );
 
-  static Widget semiBold12YellowLightGradient({
+  static Widget semiBold12WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18221,17 +18221,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12YellowLight(context: context),
+        style: FCTextStyle.semiBold12WarningLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold12YellowDark({
+  static Widget semiBold12WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18241,10 +18241,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12YellowDark(context: context),
+        style: FCTextStyle.semiBold12WarningDark(context: context),
       );
 
-  static Widget semiBold12YellowDarkGradient({
+  static Widget semiBold12WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18254,17 +18254,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12YellowDark(context: context),
+        style: FCTextStyle.semiBold12WarningDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold12Red({
+  static Widget semiBold12Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18274,10 +18274,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12Red(context: context),
+        style: FCTextStyle.semiBold12Danger(context: context),
       );
 
-  static Widget semiBold12RedGradient({
+  static Widget semiBold12DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18287,17 +18287,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12Red(context: context),
+        style: FCTextStyle.semiBold12Danger(context: context),
       ),
     );
   }
 
-  static Widget semiBold12RedLight({
+  static Widget semiBold12DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18307,10 +18307,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12RedLight(context: context),
+        style: FCTextStyle.semiBold12DangerLight(context: context),
       );
 
-  static Widget semiBold12RedLightGradient({
+  static Widget semiBold12DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18320,17 +18320,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12RedLight(context: context),
+        style: FCTextStyle.semiBold12DangerLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold12RedDark({
+  static Widget semiBold12DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18340,10 +18340,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12RedDark(context: context),
+        style: FCTextStyle.semiBold12DangerDark(context: context),
       );
 
-  static Widget semiBold12RedDarkGradient({
+  static Widget semiBold12DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18353,12 +18353,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold12RedDark(context: context),
+        style: FCTextStyle.semiBold12DangerDark(context: context),
       ),
     );
   }
@@ -18673,7 +18673,7 @@ class FCText {
     );
   }
 
-  static Widget semiBold14Blue({
+  static Widget semiBold14Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18683,10 +18683,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14Blue(context: context),
+        style: FCTextStyle.semiBold14Info(context: context),
       );
 
-  static Widget semiBold14BlueGradient({
+  static Widget semiBold14InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18696,17 +18696,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14Blue(context: context),
+        style: FCTextStyle.semiBold14Info(context: context),
       ),
     );
   }
 
-  static Widget semiBold14BlueLight({
+  static Widget semiBold14InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18716,10 +18716,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14BlueLight(context: context),
+        style: FCTextStyle.semiBold14InfoLight(context: context),
       );
 
-  static Widget semiBold14BlueLightGradient({
+  static Widget semiBold14InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18729,17 +18729,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14BlueLight(context: context),
+        style: FCTextStyle.semiBold14InfoLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold14BlueDark({
+  static Widget semiBold14InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18749,10 +18749,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14BlueDark(context: context),
+        style: FCTextStyle.semiBold14InfoDark(context: context),
       );
 
-  static Widget semiBold14BlueDarkGradient({
+  static Widget semiBold14InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18762,17 +18762,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14BlueDark(context: context),
+        style: FCTextStyle.semiBold14InfoDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold14Green({
+  static Widget semiBold14Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18782,10 +18782,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14Green(context: context),
+        style: FCTextStyle.semiBold14Success(context: context),
       );
 
-  static Widget semiBold14GreenGradient({
+  static Widget semiBold14SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18795,17 +18795,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14Green(context: context),
+        style: FCTextStyle.semiBold14Success(context: context),
       ),
     );
   }
 
-  static Widget semiBold14GreenLight({
+  static Widget semiBold14SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18815,10 +18815,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14GreenLight(context: context),
+        style: FCTextStyle.semiBold14SuccessLight(context: context),
       );
 
-  static Widget semiBold14GreenLightGradient({
+  static Widget semiBold14SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18828,17 +18828,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14GreenLight(context: context),
+        style: FCTextStyle.semiBold14SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold14GreenDark({
+  static Widget semiBold14SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18848,10 +18848,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14GreenDark(context: context),
+        style: FCTextStyle.semiBold14SuccessDark(context: context),
       );
 
-  static Widget semiBold14GreenDarkGradient({
+  static Widget semiBold14SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18861,17 +18861,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14GreenDark(context: context),
+        style: FCTextStyle.semiBold14SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold14Yellow({
+  static Widget semiBold14Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18881,10 +18881,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14Yellow(context: context),
+        style: FCTextStyle.semiBold14Warning(context: context),
       );
 
-  static Widget semiBold14YellowGradient({
+  static Widget semiBold14WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18894,17 +18894,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14Yellow(context: context),
+        style: FCTextStyle.semiBold14Warning(context: context),
       ),
     );
   }
 
-  static Widget semiBold14YellowLight({
+  static Widget semiBold14WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18914,10 +18914,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14YellowLight(context: context),
+        style: FCTextStyle.semiBold14WarningLight(context: context),
       );
 
-  static Widget semiBold14YellowLightGradient({
+  static Widget semiBold14WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18927,17 +18927,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14YellowLight(context: context),
+        style: FCTextStyle.semiBold14WarningLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold14YellowDark({
+  static Widget semiBold14WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18947,10 +18947,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14YellowDark(context: context),
+        style: FCTextStyle.semiBold14WarningDark(context: context),
       );
 
-  static Widget semiBold14YellowDarkGradient({
+  static Widget semiBold14WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18960,17 +18960,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14YellowDark(context: context),
+        style: FCTextStyle.semiBold14WarningDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold14Red({
+  static Widget semiBold14Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18980,10 +18980,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14Red(context: context),
+        style: FCTextStyle.semiBold14Danger(context: context),
       );
 
-  static Widget semiBold14RedGradient({
+  static Widget semiBold14DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -18993,17 +18993,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14Red(context: context),
+        style: FCTextStyle.semiBold14Danger(context: context),
       ),
     );
   }
 
-  static Widget semiBold14RedLight({
+  static Widget semiBold14DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19013,10 +19013,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14RedLight(context: context),
+        style: FCTextStyle.semiBold14DangerLight(context: context),
       );
 
-  static Widget semiBold14RedLightGradient({
+  static Widget semiBold14DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19026,17 +19026,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14RedLight(context: context),
+        style: FCTextStyle.semiBold14DangerLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold14RedDark({
+  static Widget semiBold14DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19046,10 +19046,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14RedDark(context: context),
+        style: FCTextStyle.semiBold14DangerDark(context: context),
       );
 
-  static Widget semiBold14RedDarkGradient({
+  static Widget semiBold14DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19059,12 +19059,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold14RedDark(context: context),
+        style: FCTextStyle.semiBold14DangerDark(context: context),
       ),
     );
   }
@@ -19379,7 +19379,7 @@ class FCText {
     );
   }
 
-  static Widget semiBold16Blue({
+  static Widget semiBold16Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19389,10 +19389,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16Blue(context: context),
+        style: FCTextStyle.semiBold16Info(context: context),
       );
 
-  static Widget semiBold16BlueGradient({
+  static Widget semiBold16InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19402,17 +19402,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16Blue(context: context),
+        style: FCTextStyle.semiBold16Info(context: context),
       ),
     );
   }
 
-  static Widget semiBold16BlueLight({
+  static Widget semiBold16InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19422,10 +19422,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16BlueLight(context: context),
+        style: FCTextStyle.semiBold16InfoLight(context: context),
       );
 
-  static Widget semiBold16BlueLightGradient({
+  static Widget semiBold16InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19435,17 +19435,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16BlueLight(context: context),
+        style: FCTextStyle.semiBold16InfoLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold16BlueDark({
+  static Widget semiBold16InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19455,10 +19455,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16BlueDark(context: context),
+        style: FCTextStyle.semiBold16InfoDark(context: context),
       );
 
-  static Widget semiBold16BlueDarkGradient({
+  static Widget semiBold16InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19468,17 +19468,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16BlueDark(context: context),
+        style: FCTextStyle.semiBold16InfoDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold16Green({
+  static Widget semiBold16Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19488,10 +19488,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16Green(context: context),
+        style: FCTextStyle.semiBold16Success(context: context),
       );
 
-  static Widget semiBold16GreenGradient({
+  static Widget semiBold16SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19501,17 +19501,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16Green(context: context),
+        style: FCTextStyle.semiBold16Success(context: context),
       ),
     );
   }
 
-  static Widget semiBold16GreenLight({
+  static Widget semiBold16SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19521,10 +19521,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16GreenLight(context: context),
+        style: FCTextStyle.semiBold16SuccessLight(context: context),
       );
 
-  static Widget semiBold16GreenLightGradient({
+  static Widget semiBold16SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19534,17 +19534,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16GreenLight(context: context),
+        style: FCTextStyle.semiBold16SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold16GreenDark({
+  static Widget semiBold16SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19554,10 +19554,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16GreenDark(context: context),
+        style: FCTextStyle.semiBold16SuccessDark(context: context),
       );
 
-  static Widget semiBold16GreenDarkGradient({
+  static Widget semiBold16SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19567,17 +19567,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16GreenDark(context: context),
+        style: FCTextStyle.semiBold16SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold16Yellow({
+  static Widget semiBold16Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19587,10 +19587,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16Yellow(context: context),
+        style: FCTextStyle.semiBold16Warning(context: context),
       );
 
-  static Widget semiBold16YellowGradient({
+  static Widget semiBold16WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19600,17 +19600,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16Yellow(context: context),
+        style: FCTextStyle.semiBold16Warning(context: context),
       ),
     );
   }
 
-  static Widget semiBold16YellowLight({
+  static Widget semiBold16WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19620,10 +19620,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16YellowLight(context: context),
+        style: FCTextStyle.semiBold16WarningLight(context: context),
       );
 
-  static Widget semiBold16YellowLightGradient({
+  static Widget semiBold16WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19633,17 +19633,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16YellowLight(context: context),
+        style: FCTextStyle.semiBold16WarningLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold16YellowDark({
+  static Widget semiBold16WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19653,10 +19653,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16YellowDark(context: context),
+        style: FCTextStyle.semiBold16WarningDark(context: context),
       );
 
-  static Widget semiBold16YellowDarkGradient({
+  static Widget semiBold16WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19666,17 +19666,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16YellowDark(context: context),
+        style: FCTextStyle.semiBold16WarningDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold16Red({
+  static Widget semiBold16Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19686,10 +19686,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16Red(context: context),
+        style: FCTextStyle.semiBold16Danger(context: context),
       );
 
-  static Widget semiBold16RedGradient({
+  static Widget semiBold16DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19699,17 +19699,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16Red(context: context),
+        style: FCTextStyle.semiBold16Danger(context: context),
       ),
     );
   }
 
-  static Widget semiBold16RedLight({
+  static Widget semiBold16DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19719,10 +19719,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16RedLight(context: context),
+        style: FCTextStyle.semiBold16DangerLight(context: context),
       );
 
-  static Widget semiBold16RedLightGradient({
+  static Widget semiBold16DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19732,17 +19732,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16RedLight(context: context),
+        style: FCTextStyle.semiBold16DangerLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold16RedDark({
+  static Widget semiBold16DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19752,10 +19752,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16RedDark(context: context),
+        style: FCTextStyle.semiBold16DangerDark(context: context),
       );
 
-  static Widget semiBold16RedDarkGradient({
+  static Widget semiBold16DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -19765,12 +19765,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold16RedDark(context: context),
+        style: FCTextStyle.semiBold16DangerDark(context: context),
       ),
     );
   }
@@ -20085,7 +20085,7 @@ class FCText {
     );
   }
 
-  static Widget semiBold18Blue({
+  static Widget semiBold18Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20095,10 +20095,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18Blue(context: context),
+        style: FCTextStyle.semiBold18Info(context: context),
       );
 
-  static Widget semiBold18BlueGradient({
+  static Widget semiBold18InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20108,17 +20108,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18Blue(context: context),
+        style: FCTextStyle.semiBold18Info(context: context),
       ),
     );
   }
 
-  static Widget semiBold18BlueLight({
+  static Widget semiBold18InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20128,10 +20128,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18BlueLight(context: context),
+        style: FCTextStyle.semiBold18InfoLight(context: context),
       );
 
-  static Widget semiBold18BlueLightGradient({
+  static Widget semiBold18InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20141,17 +20141,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18BlueLight(context: context),
+        style: FCTextStyle.semiBold18InfoLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold18BlueDark({
+  static Widget semiBold18InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20161,10 +20161,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18BlueDark(context: context),
+        style: FCTextStyle.semiBold18InfoDark(context: context),
       );
 
-  static Widget semiBold18BlueDarkGradient({
+  static Widget semiBold18InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20174,17 +20174,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18BlueDark(context: context),
+        style: FCTextStyle.semiBold18InfoDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold18Green({
+  static Widget semiBold18Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20194,10 +20194,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18Green(context: context),
+        style: FCTextStyle.semiBold18Success(context: context),
       );
 
-  static Widget semiBold18GreenGradient({
+  static Widget semiBold18SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20207,17 +20207,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18Green(context: context),
+        style: FCTextStyle.semiBold18Success(context: context),
       ),
     );
   }
 
-  static Widget semiBold18GreenLight({
+  static Widget semiBold18SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20227,10 +20227,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18GreenLight(context: context),
+        style: FCTextStyle.semiBold18SuccessLight(context: context),
       );
 
-  static Widget semiBold18GreenLightGradient({
+  static Widget semiBold18SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20240,17 +20240,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18GreenLight(context: context),
+        style: FCTextStyle.semiBold18SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold18GreenDark({
+  static Widget semiBold18SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20260,10 +20260,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18GreenDark(context: context),
+        style: FCTextStyle.semiBold18SuccessDark(context: context),
       );
 
-  static Widget semiBold18GreenDarkGradient({
+  static Widget semiBold18SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20273,17 +20273,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18GreenDark(context: context),
+        style: FCTextStyle.semiBold18SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold18Yellow({
+  static Widget semiBold18Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20293,10 +20293,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18Yellow(context: context),
+        style: FCTextStyle.semiBold18Warning(context: context),
       );
 
-  static Widget semiBold18YellowGradient({
+  static Widget semiBold18WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20306,17 +20306,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18Yellow(context: context),
+        style: FCTextStyle.semiBold18Warning(context: context),
       ),
     );
   }
 
-  static Widget semiBold18YellowLight({
+  static Widget semiBold18WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20326,10 +20326,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18YellowLight(context: context),
+        style: FCTextStyle.semiBold18WarningLight(context: context),
       );
 
-  static Widget semiBold18YellowLightGradient({
+  static Widget semiBold18WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20339,17 +20339,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18YellowLight(context: context),
+        style: FCTextStyle.semiBold18WarningLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold18YellowDark({
+  static Widget semiBold18WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20359,10 +20359,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18YellowDark(context: context),
+        style: FCTextStyle.semiBold18WarningDark(context: context),
       );
 
-  static Widget semiBold18YellowDarkGradient({
+  static Widget semiBold18WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20372,17 +20372,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18YellowDark(context: context),
+        style: FCTextStyle.semiBold18WarningDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold18Red({
+  static Widget semiBold18Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20392,10 +20392,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18Red(context: context),
+        style: FCTextStyle.semiBold18Danger(context: context),
       );
 
-  static Widget semiBold18RedGradient({
+  static Widget semiBold18DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20405,17 +20405,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18Red(context: context),
+        style: FCTextStyle.semiBold18Danger(context: context),
       ),
     );
   }
 
-  static Widget semiBold18RedLight({
+  static Widget semiBold18DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20425,10 +20425,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18RedLight(context: context),
+        style: FCTextStyle.semiBold18DangerLight(context: context),
       );
 
-  static Widget semiBold18RedLightGradient({
+  static Widget semiBold18DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20438,17 +20438,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18RedLight(context: context),
+        style: FCTextStyle.semiBold18DangerLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold18RedDark({
+  static Widget semiBold18DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20458,10 +20458,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18RedDark(context: context),
+        style: FCTextStyle.semiBold18DangerDark(context: context),
       );
 
-  static Widget semiBold18RedDarkGradient({
+  static Widget semiBold18DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20471,12 +20471,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold18RedDark(context: context),
+        style: FCTextStyle.semiBold18DangerDark(context: context),
       ),
     );
   }
@@ -20791,7 +20791,7 @@ class FCText {
     );
   }
 
-  static Widget semiBold20Blue({
+  static Widget semiBold20Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20801,10 +20801,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20Blue(context: context),
+        style: FCTextStyle.semiBold20Info(context: context),
       );
 
-  static Widget semiBold20BlueGradient({
+  static Widget semiBold20InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20814,17 +20814,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20Blue(context: context),
+        style: FCTextStyle.semiBold20Info(context: context),
       ),
     );
   }
 
-  static Widget semiBold20BlueLight({
+  static Widget semiBold20InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20834,10 +20834,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20BlueLight(context: context),
+        style: FCTextStyle.semiBold20InfoLight(context: context),
       );
 
-  static Widget semiBold20BlueLightGradient({
+  static Widget semiBold20InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20847,17 +20847,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20BlueLight(context: context),
+        style: FCTextStyle.semiBold20InfoLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold20BlueDark({
+  static Widget semiBold20InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20867,10 +20867,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20BlueDark(context: context),
+        style: FCTextStyle.semiBold20InfoDark(context: context),
       );
 
-  static Widget semiBold20BlueDarkGradient({
+  static Widget semiBold20InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20880,17 +20880,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20BlueDark(context: context),
+        style: FCTextStyle.semiBold20InfoDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold20Green({
+  static Widget semiBold20Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20900,10 +20900,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20Green(context: context),
+        style: FCTextStyle.semiBold20Success(context: context),
       );
 
-  static Widget semiBold20GreenGradient({
+  static Widget semiBold20SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20913,17 +20913,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20Green(context: context),
+        style: FCTextStyle.semiBold20Success(context: context),
       ),
     );
   }
 
-  static Widget semiBold20GreenLight({
+  static Widget semiBold20SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20933,10 +20933,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20GreenLight(context: context),
+        style: FCTextStyle.semiBold20SuccessLight(context: context),
       );
 
-  static Widget semiBold20GreenLightGradient({
+  static Widget semiBold20SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20946,17 +20946,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20GreenLight(context: context),
+        style: FCTextStyle.semiBold20SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold20GreenDark({
+  static Widget semiBold20SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20966,10 +20966,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20GreenDark(context: context),
+        style: FCTextStyle.semiBold20SuccessDark(context: context),
       );
 
-  static Widget semiBold20GreenDarkGradient({
+  static Widget semiBold20SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20979,17 +20979,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20GreenDark(context: context),
+        style: FCTextStyle.semiBold20SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold20Yellow({
+  static Widget semiBold20Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -20999,10 +20999,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20Yellow(context: context),
+        style: FCTextStyle.semiBold20Warning(context: context),
       );
 
-  static Widget semiBold20YellowGradient({
+  static Widget semiBold20WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21012,17 +21012,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20Yellow(context: context),
+        style: FCTextStyle.semiBold20Warning(context: context),
       ),
     );
   }
 
-  static Widget semiBold20YellowLight({
+  static Widget semiBold20WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21032,10 +21032,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20YellowLight(context: context),
+        style: FCTextStyle.semiBold20WarningLight(context: context),
       );
 
-  static Widget semiBold20YellowLightGradient({
+  static Widget semiBold20WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21045,17 +21045,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20YellowLight(context: context),
+        style: FCTextStyle.semiBold20WarningLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold20YellowDark({
+  static Widget semiBold20WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21065,10 +21065,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20YellowDark(context: context),
+        style: FCTextStyle.semiBold20WarningDark(context: context),
       );
 
-  static Widget semiBold20YellowDarkGradient({
+  static Widget semiBold20WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21078,17 +21078,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20YellowDark(context: context),
+        style: FCTextStyle.semiBold20WarningDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold20Red({
+  static Widget semiBold20Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21098,10 +21098,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20Red(context: context),
+        style: FCTextStyle.semiBold20Danger(context: context),
       );
 
-  static Widget semiBold20RedGradient({
+  static Widget semiBold20DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21111,17 +21111,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20Red(context: context),
+        style: FCTextStyle.semiBold20Danger(context: context),
       ),
     );
   }
 
-  static Widget semiBold20RedLight({
+  static Widget semiBold20DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21131,10 +21131,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20RedLight(context: context),
+        style: FCTextStyle.semiBold20DangerLight(context: context),
       );
 
-  static Widget semiBold20RedLightGradient({
+  static Widget semiBold20DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21144,17 +21144,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20RedLight(context: context),
+        style: FCTextStyle.semiBold20DangerLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold20RedDark({
+  static Widget semiBold20DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21164,10 +21164,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20RedDark(context: context),
+        style: FCTextStyle.semiBold20DangerDark(context: context),
       );
 
-  static Widget semiBold20RedDarkGradient({
+  static Widget semiBold20DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21177,12 +21177,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold20RedDark(context: context),
+        style: FCTextStyle.semiBold20DangerDark(context: context),
       ),
     );
   }
@@ -21497,7 +21497,7 @@ class FCText {
     );
   }
 
-  static Widget semiBold28Blue({
+  static Widget semiBold28Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21507,10 +21507,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28Blue(context: context),
+        style: FCTextStyle.semiBold28Info(context: context),
       );
 
-  static Widget semiBold28BlueGradient({
+  static Widget semiBold28InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21520,17 +21520,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28Blue(context: context),
+        style: FCTextStyle.semiBold28Info(context: context),
       ),
     );
   }
 
-  static Widget semiBold28BlueLight({
+  static Widget semiBold28InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21540,10 +21540,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28BlueLight(context: context),
+        style: FCTextStyle.semiBold28InfoLight(context: context),
       );
 
-  static Widget semiBold28BlueLightGradient({
+  static Widget semiBold28InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21553,17 +21553,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28BlueLight(context: context),
+        style: FCTextStyle.semiBold28InfoLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold28BlueDark({
+  static Widget semiBold28InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21573,10 +21573,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28BlueDark(context: context),
+        style: FCTextStyle.semiBold28InfoDark(context: context),
       );
 
-  static Widget semiBold28BlueDarkGradient({
+  static Widget semiBold28InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21586,17 +21586,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28BlueDark(context: context),
+        style: FCTextStyle.semiBold28InfoDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold28Green({
+  static Widget semiBold28Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21606,10 +21606,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28Green(context: context),
+        style: FCTextStyle.semiBold28Success(context: context),
       );
 
-  static Widget semiBold28GreenGradient({
+  static Widget semiBold28SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21619,17 +21619,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28Green(context: context),
+        style: FCTextStyle.semiBold28Success(context: context),
       ),
     );
   }
 
-  static Widget semiBold28GreenLight({
+  static Widget semiBold28SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21639,10 +21639,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28GreenLight(context: context),
+        style: FCTextStyle.semiBold28SuccessLight(context: context),
       );
 
-  static Widget semiBold28GreenLightGradient({
+  static Widget semiBold28SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21652,17 +21652,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28GreenLight(context: context),
+        style: FCTextStyle.semiBold28SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold28GreenDark({
+  static Widget semiBold28SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21672,10 +21672,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28GreenDark(context: context),
+        style: FCTextStyle.semiBold28SuccessDark(context: context),
       );
 
-  static Widget semiBold28GreenDarkGradient({
+  static Widget semiBold28SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21685,17 +21685,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28GreenDark(context: context),
+        style: FCTextStyle.semiBold28SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold28Yellow({
+  static Widget semiBold28Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21705,10 +21705,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28Yellow(context: context),
+        style: FCTextStyle.semiBold28Warning(context: context),
       );
 
-  static Widget semiBold28YellowGradient({
+  static Widget semiBold28WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21718,17 +21718,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28Yellow(context: context),
+        style: FCTextStyle.semiBold28Warning(context: context),
       ),
     );
   }
 
-  static Widget semiBold28YellowLight({
+  static Widget semiBold28WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21738,10 +21738,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28YellowLight(context: context),
+        style: FCTextStyle.semiBold28WarningLight(context: context),
       );
 
-  static Widget semiBold28YellowLightGradient({
+  static Widget semiBold28WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21751,17 +21751,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28YellowLight(context: context),
+        style: FCTextStyle.semiBold28WarningLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold28YellowDark({
+  static Widget semiBold28WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21771,10 +21771,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28YellowDark(context: context),
+        style: FCTextStyle.semiBold28WarningDark(context: context),
       );
 
-  static Widget semiBold28YellowDarkGradient({
+  static Widget semiBold28WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21784,17 +21784,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28YellowDark(context: context),
+        style: FCTextStyle.semiBold28WarningDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold28Red({
+  static Widget semiBold28Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21804,10 +21804,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28Red(context: context),
+        style: FCTextStyle.semiBold28Danger(context: context),
       );
 
-  static Widget semiBold28RedGradient({
+  static Widget semiBold28DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21817,17 +21817,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28Red(context: context),
+        style: FCTextStyle.semiBold28Danger(context: context),
       ),
     );
   }
 
-  static Widget semiBold28RedLight({
+  static Widget semiBold28DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21837,10 +21837,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28RedLight(context: context),
+        style: FCTextStyle.semiBold28DangerLight(context: context),
       );
 
-  static Widget semiBold28RedLightGradient({
+  static Widget semiBold28DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21850,17 +21850,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28RedLight(context: context),
+        style: FCTextStyle.semiBold28DangerLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold28RedDark({
+  static Widget semiBold28DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21870,10 +21870,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28RedDark(context: context),
+        style: FCTextStyle.semiBold28DangerDark(context: context),
       );
 
-  static Widget semiBold28RedDarkGradient({
+  static Widget semiBold28DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -21883,12 +21883,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold28RedDark(context: context),
+        style: FCTextStyle.semiBold28DangerDark(context: context),
       ),
     );
   }
@@ -22203,7 +22203,7 @@ class FCText {
     );
   }
 
-  static Widget semiBold32Blue({
+  static Widget semiBold32Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22213,10 +22213,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32Blue(context: context),
+        style: FCTextStyle.semiBold32Info(context: context),
       );
 
-  static Widget semiBold32BlueGradient({
+  static Widget semiBold32InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22226,17 +22226,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32Blue(context: context),
+        style: FCTextStyle.semiBold32Info(context: context),
       ),
     );
   }
 
-  static Widget semiBold32BlueLight({
+  static Widget semiBold32InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22246,10 +22246,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32BlueLight(context: context),
+        style: FCTextStyle.semiBold32InfoLight(context: context),
       );
 
-  static Widget semiBold32BlueLightGradient({
+  static Widget semiBold32InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22259,17 +22259,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32BlueLight(context: context),
+        style: FCTextStyle.semiBold32InfoLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold32BlueDark({
+  static Widget semiBold32InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22279,10 +22279,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32BlueDark(context: context),
+        style: FCTextStyle.semiBold32InfoDark(context: context),
       );
 
-  static Widget semiBold32BlueDarkGradient({
+  static Widget semiBold32InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22292,17 +22292,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32BlueDark(context: context),
+        style: FCTextStyle.semiBold32InfoDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold32Green({
+  static Widget semiBold32Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22312,10 +22312,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32Green(context: context),
+        style: FCTextStyle.semiBold32Success(context: context),
       );
 
-  static Widget semiBold32GreenGradient({
+  static Widget semiBold32SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22325,17 +22325,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32Green(context: context),
+        style: FCTextStyle.semiBold32Success(context: context),
       ),
     );
   }
 
-  static Widget semiBold32GreenLight({
+  static Widget semiBold32SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22345,10 +22345,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32GreenLight(context: context),
+        style: FCTextStyle.semiBold32SuccessLight(context: context),
       );
 
-  static Widget semiBold32GreenLightGradient({
+  static Widget semiBold32SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22358,17 +22358,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32GreenLight(context: context),
+        style: FCTextStyle.semiBold32SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold32GreenDark({
+  static Widget semiBold32SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22378,10 +22378,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32GreenDark(context: context),
+        style: FCTextStyle.semiBold32SuccessDark(context: context),
       );
 
-  static Widget semiBold32GreenDarkGradient({
+  static Widget semiBold32SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22391,17 +22391,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32GreenDark(context: context),
+        style: FCTextStyle.semiBold32SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold32Yellow({
+  static Widget semiBold32Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22411,10 +22411,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32Yellow(context: context),
+        style: FCTextStyle.semiBold32Warning(context: context),
       );
 
-  static Widget semiBold32YellowGradient({
+  static Widget semiBold32WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22424,17 +22424,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32Yellow(context: context),
+        style: FCTextStyle.semiBold32Warning(context: context),
       ),
     );
   }
 
-  static Widget semiBold32YellowLight({
+  static Widget semiBold32WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22444,10 +22444,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32YellowLight(context: context),
+        style: FCTextStyle.semiBold32WarningLight(context: context),
       );
 
-  static Widget semiBold32YellowLightGradient({
+  static Widget semiBold32WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22457,17 +22457,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32YellowLight(context: context),
+        style: FCTextStyle.semiBold32WarningLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold32YellowDark({
+  static Widget semiBold32WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22477,10 +22477,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32YellowDark(context: context),
+        style: FCTextStyle.semiBold32WarningDark(context: context),
       );
 
-  static Widget semiBold32YellowDarkGradient({
+  static Widget semiBold32WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22490,17 +22490,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32YellowDark(context: context),
+        style: FCTextStyle.semiBold32WarningDark(context: context),
       ),
     );
   }
 
-  static Widget semiBold32Red({
+  static Widget semiBold32Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22510,10 +22510,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32Red(context: context),
+        style: FCTextStyle.semiBold32Danger(context: context),
       );
 
-  static Widget semiBold32RedGradient({
+  static Widget semiBold32DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22523,17 +22523,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32Red(context: context),
+        style: FCTextStyle.semiBold32Danger(context: context),
       ),
     );
   }
 
-  static Widget semiBold32RedLight({
+  static Widget semiBold32DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22543,10 +22543,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32RedLight(context: context),
+        style: FCTextStyle.semiBold32DangerLight(context: context),
       );
 
-  static Widget semiBold32RedLightGradient({
+  static Widget semiBold32DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22556,17 +22556,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32RedLight(context: context),
+        style: FCTextStyle.semiBold32DangerLight(context: context),
       ),
     );
   }
 
-  static Widget semiBold32RedDark({
+  static Widget semiBold32DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22576,10 +22576,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32RedDark(context: context),
+        style: FCTextStyle.semiBold32DangerDark(context: context),
       );
 
-  static Widget semiBold32RedDarkGradient({
+  static Widget semiBold32DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22589,12 +22589,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.semiBold32RedDark(context: context),
+        style: FCTextStyle.semiBold32DangerDark(context: context),
       ),
     );
   }
@@ -22910,7 +22910,7 @@ class FCText {
     );
   }
 
-  static Widget bold10Blue({
+  static Widget bold10Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22920,10 +22920,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10Blue(context: context),
+        style: FCTextStyle.bold10Info(context: context),
       );
 
-  static Widget bold10BlueGradient({
+  static Widget bold10InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22933,17 +22933,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10Blue(context: context),
+        style: FCTextStyle.bold10Info(context: context),
       ),
     );
   }
 
-  static Widget bold10BlueLight({
+  static Widget bold10InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22953,10 +22953,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10BlueLight(context: context),
+        style: FCTextStyle.bold10InfoLight(context: context),
       );
 
-  static Widget bold10BlueLightGradient({
+  static Widget bold10InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22966,17 +22966,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10BlueLight(context: context),
+        style: FCTextStyle.bold10InfoLight(context: context),
       ),
     );
   }
 
-  static Widget bold10BlueDark({
+  static Widget bold10InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22986,10 +22986,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10BlueDark(context: context),
+        style: FCTextStyle.bold10InfoDark(context: context),
       );
 
-  static Widget bold10BlueDarkGradient({
+  static Widget bold10InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -22999,17 +22999,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10BlueDark(context: context),
+        style: FCTextStyle.bold10InfoDark(context: context),
       ),
     );
   }
 
-  static Widget bold10Green({
+  static Widget bold10Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23019,10 +23019,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10Green(context: context),
+        style: FCTextStyle.bold10Success(context: context),
       );
 
-  static Widget bold10GreenGradient({
+  static Widget bold10SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23032,17 +23032,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10Green(context: context),
+        style: FCTextStyle.bold10Success(context: context),
       ),
     );
   }
 
-  static Widget bold10GreenLight({
+  static Widget bold10SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23052,10 +23052,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10GreenLight(context: context),
+        style: FCTextStyle.bold10SuccessLight(context: context),
       );
 
-  static Widget bold10GreenLightGradient({
+  static Widget bold10SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23065,17 +23065,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10GreenLight(context: context),
+        style: FCTextStyle.bold10SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget bold10GreenDark({
+  static Widget bold10SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23085,10 +23085,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10GreenDark(context: context),
+        style: FCTextStyle.bold10SuccessDark(context: context),
       );
 
-  static Widget bold10GreenDarkGradient({
+  static Widget bold10SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23098,17 +23098,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10GreenDark(context: context),
+        style: FCTextStyle.bold10SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget bold10Yellow({
+  static Widget bold10Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23118,10 +23118,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10Yellow(context: context),
+        style: FCTextStyle.bold10Warning(context: context),
       );
 
-  static Widget bold10YellowGradient({
+  static Widget bold10WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23131,17 +23131,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10Yellow(context: context),
+        style: FCTextStyle.bold10Warning(context: context),
       ),
     );
   }
 
-  static Widget bold10YellowLight({
+  static Widget bold10WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23151,10 +23151,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10YellowLight(context: context),
+        style: FCTextStyle.bold10WarningLight(context: context),
       );
 
-  static Widget bold10YellowLightGradient({
+  static Widget bold10WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23164,17 +23164,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10YellowLight(context: context),
+        style: FCTextStyle.bold10WarningLight(context: context),
       ),
     );
   }
 
-  static Widget bold10YellowDark({
+  static Widget bold10WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23184,10 +23184,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10YellowDark(context: context),
+        style: FCTextStyle.bold10WarningDark(context: context),
       );
 
-  static Widget bold10YellowDarkGradient({
+  static Widget bold10WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23197,17 +23197,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10YellowDark(context: context),
+        style: FCTextStyle.bold10WarningDark(context: context),
       ),
     );
   }
 
-  static Widget bold10Red({
+  static Widget bold10Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23217,10 +23217,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10Red(context: context),
+        style: FCTextStyle.bold10Danger(context: context),
       );
 
-  static Widget bold10RedGradient({
+  static Widget bold10DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23230,17 +23230,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10Red(context: context),
+        style: FCTextStyle.bold10Danger(context: context),
       ),
     );
   }
 
-  static Widget bold10RedLight({
+  static Widget bold10DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23250,10 +23250,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10RedLight(context: context),
+        style: FCTextStyle.bold10DangerLight(context: context),
       );
 
-  static Widget bold10RedLightGradient({
+  static Widget bold10DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23263,17 +23263,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10RedLight(context: context),
+        style: FCTextStyle.bold10DangerLight(context: context),
       ),
     );
   }
 
-  static Widget bold10RedDark({
+  static Widget bold10DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23283,10 +23283,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10RedDark(context: context),
+        style: FCTextStyle.bold10DangerDark(context: context),
       );
 
-  static Widget bold10RedDarkGradient({
+  static Widget bold10DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23296,12 +23296,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold10RedDark(context: context),
+        style: FCTextStyle.bold10DangerDark(context: context),
       ),
     );
   }
@@ -23616,7 +23616,7 @@ class FCText {
     );
   }
 
-  static Widget bold12Blue({
+  static Widget bold12Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23626,10 +23626,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12Blue(context: context),
+        style: FCTextStyle.bold12Info(context: context),
       );
 
-  static Widget bold12BlueGradient({
+  static Widget bold12InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23639,17 +23639,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12Blue(context: context),
+        style: FCTextStyle.bold12Info(context: context),
       ),
     );
   }
 
-  static Widget bold12BlueLight({
+  static Widget bold12InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23659,10 +23659,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12BlueLight(context: context),
+        style: FCTextStyle.bold12InfoLight(context: context),
       );
 
-  static Widget bold12BlueLightGradient({
+  static Widget bold12InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23672,17 +23672,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12BlueLight(context: context),
+        style: FCTextStyle.bold12InfoLight(context: context),
       ),
     );
   }
 
-  static Widget bold12BlueDark({
+  static Widget bold12InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23692,10 +23692,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12BlueDark(context: context),
+        style: FCTextStyle.bold12InfoDark(context: context),
       );
 
-  static Widget bold12BlueDarkGradient({
+  static Widget bold12InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23705,17 +23705,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12BlueDark(context: context),
+        style: FCTextStyle.bold12InfoDark(context: context),
       ),
     );
   }
 
-  static Widget bold12Green({
+  static Widget bold12Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23725,10 +23725,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12Green(context: context),
+        style: FCTextStyle.bold12Success(context: context),
       );
 
-  static Widget bold12GreenGradient({
+  static Widget bold12SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23738,17 +23738,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12Green(context: context),
+        style: FCTextStyle.bold12Success(context: context),
       ),
     );
   }
 
-  static Widget bold12GreenLight({
+  static Widget bold12SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23758,10 +23758,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12GreenLight(context: context),
+        style: FCTextStyle.bold12SuccessLight(context: context),
       );
 
-  static Widget bold12GreenLightGradient({
+  static Widget bold12SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23771,17 +23771,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12GreenLight(context: context),
+        style: FCTextStyle.bold12SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget bold12GreenDark({
+  static Widget bold12SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23791,10 +23791,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12GreenDark(context: context),
+        style: FCTextStyle.bold12SuccessDark(context: context),
       );
 
-  static Widget bold12GreenDarkGradient({
+  static Widget bold12SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23804,17 +23804,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12GreenDark(context: context),
+        style: FCTextStyle.bold12SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget bold12Yellow({
+  static Widget bold12Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23824,10 +23824,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12Yellow(context: context),
+        style: FCTextStyle.bold12Warning(context: context),
       );
 
-  static Widget bold12YellowGradient({
+  static Widget bold12WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23837,17 +23837,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12Yellow(context: context),
+        style: FCTextStyle.bold12Warning(context: context),
       ),
     );
   }
 
-  static Widget bold12YellowLight({
+  static Widget bold12WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23857,10 +23857,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12YellowLight(context: context),
+        style: FCTextStyle.bold12WarningLight(context: context),
       );
 
-  static Widget bold12YellowLightGradient({
+  static Widget bold12WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23870,17 +23870,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12YellowLight(context: context),
+        style: FCTextStyle.bold12WarningLight(context: context),
       ),
     );
   }
 
-  static Widget bold12YellowDark({
+  static Widget bold12WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23890,10 +23890,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12YellowDark(context: context),
+        style: FCTextStyle.bold12WarningDark(context: context),
       );
 
-  static Widget bold12YellowDarkGradient({
+  static Widget bold12WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23903,17 +23903,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12YellowDark(context: context),
+        style: FCTextStyle.bold12WarningDark(context: context),
       ),
     );
   }
 
-  static Widget bold12Red({
+  static Widget bold12Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23923,10 +23923,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12Red(context: context),
+        style: FCTextStyle.bold12Danger(context: context),
       );
 
-  static Widget bold12RedGradient({
+  static Widget bold12DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23936,17 +23936,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12Red(context: context),
+        style: FCTextStyle.bold12Danger(context: context),
       ),
     );
   }
 
-  static Widget bold12RedLight({
+  static Widget bold12DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23956,10 +23956,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12RedLight(context: context),
+        style: FCTextStyle.bold12DangerLight(context: context),
       );
 
-  static Widget bold12RedLightGradient({
+  static Widget bold12DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23969,17 +23969,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12RedLight(context: context),
+        style: FCTextStyle.bold12DangerLight(context: context),
       ),
     );
   }
 
-  static Widget bold12RedDark({
+  static Widget bold12DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -23989,10 +23989,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12RedDark(context: context),
+        style: FCTextStyle.bold12DangerDark(context: context),
       );
 
-  static Widget bold12RedDarkGradient({
+  static Widget bold12DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24002,12 +24002,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold12RedDark(context: context),
+        style: FCTextStyle.bold12DangerDark(context: context),
       ),
     );
   }
@@ -24322,7 +24322,7 @@ class FCText {
     );
   }
 
-  static Widget bold14Blue({
+  static Widget bold14Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24332,10 +24332,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14Blue(context: context),
+        style: FCTextStyle.bold14Info(context: context),
       );
 
-  static Widget bold14BlueGradient({
+  static Widget bold14InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24345,17 +24345,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14Blue(context: context),
+        style: FCTextStyle.bold14Info(context: context),
       ),
     );
   }
 
-  static Widget bold14BlueLight({
+  static Widget bold14InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24365,10 +24365,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14BlueLight(context: context),
+        style: FCTextStyle.bold14InfoLight(context: context),
       );
 
-  static Widget bold14BlueLightGradient({
+  static Widget bold14InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24378,17 +24378,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14BlueLight(context: context),
+        style: FCTextStyle.bold14InfoLight(context: context),
       ),
     );
   }
 
-  static Widget bold14BlueDark({
+  static Widget bold14InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24398,10 +24398,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14BlueDark(context: context),
+        style: FCTextStyle.bold14InfoDark(context: context),
       );
 
-  static Widget bold14BlueDarkGradient({
+  static Widget bold14InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24411,17 +24411,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14BlueDark(context: context),
+        style: FCTextStyle.bold14InfoDark(context: context),
       ),
     );
   }
 
-  static Widget bold14Green({
+  static Widget bold14Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24431,10 +24431,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14Green(context: context),
+        style: FCTextStyle.bold14Success(context: context),
       );
 
-  static Widget bold14GreenGradient({
+  static Widget bold14SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24444,17 +24444,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14Green(context: context),
+        style: FCTextStyle.bold14Success(context: context),
       ),
     );
   }
 
-  static Widget bold14GreenLight({
+  static Widget bold14SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24464,10 +24464,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14GreenLight(context: context),
+        style: FCTextStyle.bold14SuccessLight(context: context),
       );
 
-  static Widget bold14GreenLightGradient({
+  static Widget bold14SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24477,17 +24477,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14GreenLight(context: context),
+        style: FCTextStyle.bold14SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget bold14GreenDark({
+  static Widget bold14SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24497,10 +24497,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14GreenDark(context: context),
+        style: FCTextStyle.bold14SuccessDark(context: context),
       );
 
-  static Widget bold14GreenDarkGradient({
+  static Widget bold14SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24510,17 +24510,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14GreenDark(context: context),
+        style: FCTextStyle.bold14SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget bold14Yellow({
+  static Widget bold14Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24530,10 +24530,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14Yellow(context: context),
+        style: FCTextStyle.bold14Warning(context: context),
       );
 
-  static Widget bold14YellowGradient({
+  static Widget bold14WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24543,17 +24543,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14Yellow(context: context),
+        style: FCTextStyle.bold14Warning(context: context),
       ),
     );
   }
 
-  static Widget bold14YellowLight({
+  static Widget bold14WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24563,10 +24563,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14YellowLight(context: context),
+        style: FCTextStyle.bold14WarningLight(context: context),
       );
 
-  static Widget bold14YellowLightGradient({
+  static Widget bold14WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24576,17 +24576,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14YellowLight(context: context),
+        style: FCTextStyle.bold14WarningLight(context: context),
       ),
     );
   }
 
-  static Widget bold14YellowDark({
+  static Widget bold14WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24596,10 +24596,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14YellowDark(context: context),
+        style: FCTextStyle.bold14WarningDark(context: context),
       );
 
-  static Widget bold14YellowDarkGradient({
+  static Widget bold14WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24609,17 +24609,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14YellowDark(context: context),
+        style: FCTextStyle.bold14WarningDark(context: context),
       ),
     );
   }
 
-  static Widget bold14Red({
+  static Widget bold14Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24629,10 +24629,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14Red(context: context),
+        style: FCTextStyle.bold14Danger(context: context),
       );
 
-  static Widget bold14RedGradient({
+  static Widget bold14DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24642,17 +24642,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14Red(context: context),
+        style: FCTextStyle.bold14Danger(context: context),
       ),
     );
   }
 
-  static Widget bold14RedLight({
+  static Widget bold14DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24662,10 +24662,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14RedLight(context: context),
+        style: FCTextStyle.bold14DangerLight(context: context),
       );
 
-  static Widget bold14RedLightGradient({
+  static Widget bold14DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24675,17 +24675,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14RedLight(context: context),
+        style: FCTextStyle.bold14DangerLight(context: context),
       ),
     );
   }
 
-  static Widget bold14RedDark({
+  static Widget bold14DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24695,10 +24695,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14RedDark(context: context),
+        style: FCTextStyle.bold14DangerDark(context: context),
       );
 
-  static Widget bold14RedDarkGradient({
+  static Widget bold14DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -24708,12 +24708,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold14RedDark(context: context),
+        style: FCTextStyle.bold14DangerDark(context: context),
       ),
     );
   }
@@ -25028,7 +25028,7 @@ class FCText {
     );
   }
 
-  static Widget bold16Blue({
+  static Widget bold16Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25038,10 +25038,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16Blue(context: context),
+        style: FCTextStyle.bold16Info(context: context),
       );
 
-  static Widget bold16BlueGradient({
+  static Widget bold16InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25051,17 +25051,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16Blue(context: context),
+        style: FCTextStyle.bold16Info(context: context),
       ),
     );
   }
 
-  static Widget bold16BlueLight({
+  static Widget bold16InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25071,10 +25071,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16BlueLight(context: context),
+        style: FCTextStyle.bold16InfoLight(context: context),
       );
 
-  static Widget bold16BlueLightGradient({
+  static Widget bold16InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25084,17 +25084,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16BlueLight(context: context),
+        style: FCTextStyle.bold16InfoLight(context: context),
       ),
     );
   }
 
-  static Widget bold16BlueDark({
+  static Widget bold16InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25104,10 +25104,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16BlueDark(context: context),
+        style: FCTextStyle.bold16InfoDark(context: context),
       );
 
-  static Widget bold16BlueDarkGradient({
+  static Widget bold16InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25117,17 +25117,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16BlueDark(context: context),
+        style: FCTextStyle.bold16InfoDark(context: context),
       ),
     );
   }
 
-  static Widget bold16Green({
+  static Widget bold16Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25137,10 +25137,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16Green(context: context),
+        style: FCTextStyle.bold16Success(context: context),
       );
 
-  static Widget bold16GreenGradient({
+  static Widget bold16SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25150,17 +25150,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16Green(context: context),
+        style: FCTextStyle.bold16Success(context: context),
       ),
     );
   }
 
-  static Widget bold16GreenLight({
+  static Widget bold16SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25170,10 +25170,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16GreenLight(context: context),
+        style: FCTextStyle.bold16SuccessLight(context: context),
       );
 
-  static Widget bold16GreenLightGradient({
+  static Widget bold16SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25183,17 +25183,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16GreenLight(context: context),
+        style: FCTextStyle.bold16SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget bold16GreenDark({
+  static Widget bold16SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25203,10 +25203,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16GreenDark(context: context),
+        style: FCTextStyle.bold16SuccessDark(context: context),
       );
 
-  static Widget bold16GreenDarkGradient({
+  static Widget bold16SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25216,17 +25216,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16GreenDark(context: context),
+        style: FCTextStyle.bold16SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget bold16Yellow({
+  static Widget bold16Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25236,10 +25236,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16Yellow(context: context),
+        style: FCTextStyle.bold16Warning(context: context),
       );
 
-  static Widget bold16YellowGradient({
+  static Widget bold16WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25249,17 +25249,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16Yellow(context: context),
+        style: FCTextStyle.bold16Warning(context: context),
       ),
     );
   }
 
-  static Widget bold16YellowLight({
+  static Widget bold16WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25269,10 +25269,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16YellowLight(context: context),
+        style: FCTextStyle.bold16WarningLight(context: context),
       );
 
-  static Widget bold16YellowLightGradient({
+  static Widget bold16WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25282,17 +25282,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16YellowLight(context: context),
+        style: FCTextStyle.bold16WarningLight(context: context),
       ),
     );
   }
 
-  static Widget bold16YellowDark({
+  static Widget bold16WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25302,10 +25302,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16YellowDark(context: context),
+        style: FCTextStyle.bold16WarningDark(context: context),
       );
 
-  static Widget bold16YellowDarkGradient({
+  static Widget bold16WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25315,17 +25315,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16YellowDark(context: context),
+        style: FCTextStyle.bold16WarningDark(context: context),
       ),
     );
   }
 
-  static Widget bold16Red({
+  static Widget bold16Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25335,10 +25335,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16Red(context: context),
+        style: FCTextStyle.bold16Danger(context: context),
       );
 
-  static Widget bold16RedGradient({
+  static Widget bold16DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25348,17 +25348,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16Red(context: context),
+        style: FCTextStyle.bold16Danger(context: context),
       ),
     );
   }
 
-  static Widget bold16RedLight({
+  static Widget bold16DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25368,10 +25368,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16RedLight(context: context),
+        style: FCTextStyle.bold16DangerLight(context: context),
       );
 
-  static Widget bold16RedLightGradient({
+  static Widget bold16DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25381,17 +25381,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16RedLight(context: context),
+        style: FCTextStyle.bold16DangerLight(context: context),
       ),
     );
   }
 
-  static Widget bold16RedDark({
+  static Widget bold16DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25401,10 +25401,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16RedDark(context: context),
+        style: FCTextStyle.bold16DangerDark(context: context),
       );
 
-  static Widget bold16RedDarkGradient({
+  static Widget bold16DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25414,12 +25414,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold16RedDark(context: context),
+        style: FCTextStyle.bold16DangerDark(context: context),
       ),
     );
   }
@@ -25734,7 +25734,7 @@ class FCText {
     );
   }
 
-  static Widget bold18Blue({
+  static Widget bold18Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25744,10 +25744,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18Blue(context: context),
+        style: FCTextStyle.bold18Info(context: context),
       );
 
-  static Widget bold18BlueGradient({
+  static Widget bold18InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25757,17 +25757,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18Blue(context: context),
+        style: FCTextStyle.bold18Info(context: context),
       ),
     );
   }
 
-  static Widget bold18BlueLight({
+  static Widget bold18InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25777,10 +25777,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18BlueLight(context: context),
+        style: FCTextStyle.bold18InfoLight(context: context),
       );
 
-  static Widget bold18BlueLightGradient({
+  static Widget bold18InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25790,17 +25790,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18BlueLight(context: context),
+        style: FCTextStyle.bold18InfoLight(context: context),
       ),
     );
   }
 
-  static Widget bold18BlueDark({
+  static Widget bold18InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25810,10 +25810,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18BlueDark(context: context),
+        style: FCTextStyle.bold18InfoDark(context: context),
       );
 
-  static Widget bold18BlueDarkGradient({
+  static Widget bold18InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25823,17 +25823,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18BlueDark(context: context),
+        style: FCTextStyle.bold18InfoDark(context: context),
       ),
     );
   }
 
-  static Widget bold18Green({
+  static Widget bold18Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25843,10 +25843,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18Green(context: context),
+        style: FCTextStyle.bold18Success(context: context),
       );
 
-  static Widget bold18GreenGradient({
+  static Widget bold18SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25856,17 +25856,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18Green(context: context),
+        style: FCTextStyle.bold18Success(context: context),
       ),
     );
   }
 
-  static Widget bold18GreenLight({
+  static Widget bold18SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25876,10 +25876,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18GreenLight(context: context),
+        style: FCTextStyle.bold18SuccessLight(context: context),
       );
 
-  static Widget bold18GreenLightGradient({
+  static Widget bold18SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25889,17 +25889,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18GreenLight(context: context),
+        style: FCTextStyle.bold18SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget bold18GreenDark({
+  static Widget bold18SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25909,10 +25909,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18GreenDark(context: context),
+        style: FCTextStyle.bold18SuccessDark(context: context),
       );
 
-  static Widget bold18GreenDarkGradient({
+  static Widget bold18SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25922,17 +25922,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18GreenDark(context: context),
+        style: FCTextStyle.bold18SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget bold18Yellow({
+  static Widget bold18Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25942,10 +25942,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18Yellow(context: context),
+        style: FCTextStyle.bold18Warning(context: context),
       );
 
-  static Widget bold18YellowGradient({
+  static Widget bold18WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25955,17 +25955,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18Yellow(context: context),
+        style: FCTextStyle.bold18Warning(context: context),
       ),
     );
   }
 
-  static Widget bold18YellowLight({
+  static Widget bold18WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25975,10 +25975,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18YellowLight(context: context),
+        style: FCTextStyle.bold18WarningLight(context: context),
       );
 
-  static Widget bold18YellowLightGradient({
+  static Widget bold18WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -25988,17 +25988,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18YellowLight(context: context),
+        style: FCTextStyle.bold18WarningLight(context: context),
       ),
     );
   }
 
-  static Widget bold18YellowDark({
+  static Widget bold18WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26008,10 +26008,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18YellowDark(context: context),
+        style: FCTextStyle.bold18WarningDark(context: context),
       );
 
-  static Widget bold18YellowDarkGradient({
+  static Widget bold18WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26021,17 +26021,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18YellowDark(context: context),
+        style: FCTextStyle.bold18WarningDark(context: context),
       ),
     );
   }
 
-  static Widget bold18Red({
+  static Widget bold18Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26041,10 +26041,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18Red(context: context),
+        style: FCTextStyle.bold18Danger(context: context),
       );
 
-  static Widget bold18RedGradient({
+  static Widget bold18DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26054,17 +26054,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18Red(context: context),
+        style: FCTextStyle.bold18Danger(context: context),
       ),
     );
   }
 
-  static Widget bold18RedLight({
+  static Widget bold18DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26074,10 +26074,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18RedLight(context: context),
+        style: FCTextStyle.bold18DangerLight(context: context),
       );
 
-  static Widget bold18RedLightGradient({
+  static Widget bold18DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26087,17 +26087,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18RedLight(context: context),
+        style: FCTextStyle.bold18DangerLight(context: context),
       ),
     );
   }
 
-  static Widget bold18RedDark({
+  static Widget bold18DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26107,10 +26107,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18RedDark(context: context),
+        style: FCTextStyle.bold18DangerDark(context: context),
       );
 
-  static Widget bold18RedDarkGradient({
+  static Widget bold18DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26120,12 +26120,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold18RedDark(context: context),
+        style: FCTextStyle.bold18DangerDark(context: context),
       ),
     );
   }
@@ -26440,7 +26440,7 @@ class FCText {
     );
   }
 
-  static Widget bold20Blue({
+  static Widget bold20Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26450,10 +26450,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20Blue(context: context),
+        style: FCTextStyle.bold20Info(context: context),
       );
 
-  static Widget bold20BlueGradient({
+  static Widget bold20InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26463,17 +26463,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20Blue(context: context),
+        style: FCTextStyle.bold20Info(context: context),
       ),
     );
   }
 
-  static Widget bold20BlueLight({
+  static Widget bold20InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26483,10 +26483,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20BlueLight(context: context),
+        style: FCTextStyle.bold20InfoLight(context: context),
       );
 
-  static Widget bold20BlueLightGradient({
+  static Widget bold20InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26496,17 +26496,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20BlueLight(context: context),
+        style: FCTextStyle.bold20InfoLight(context: context),
       ),
     );
   }
 
-  static Widget bold20BlueDark({
+  static Widget bold20InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26516,10 +26516,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20BlueDark(context: context),
+        style: FCTextStyle.bold20InfoDark(context: context),
       );
 
-  static Widget bold20BlueDarkGradient({
+  static Widget bold20InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26529,17 +26529,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20BlueDark(context: context),
+        style: FCTextStyle.bold20InfoDark(context: context),
       ),
     );
   }
 
-  static Widget bold20Green({
+  static Widget bold20Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26549,10 +26549,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20Green(context: context),
+        style: FCTextStyle.bold20Success(context: context),
       );
 
-  static Widget bold20GreenGradient({
+  static Widget bold20SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26562,17 +26562,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20Green(context: context),
+        style: FCTextStyle.bold20Success(context: context),
       ),
     );
   }
 
-  static Widget bold20GreenLight({
+  static Widget bold20SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26582,10 +26582,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20GreenLight(context: context),
+        style: FCTextStyle.bold20SuccessLight(context: context),
       );
 
-  static Widget bold20GreenLightGradient({
+  static Widget bold20SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26595,17 +26595,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20GreenLight(context: context),
+        style: FCTextStyle.bold20SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget bold20GreenDark({
+  static Widget bold20SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26615,10 +26615,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20GreenDark(context: context),
+        style: FCTextStyle.bold20SuccessDark(context: context),
       );
 
-  static Widget bold20GreenDarkGradient({
+  static Widget bold20SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26628,17 +26628,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20GreenDark(context: context),
+        style: FCTextStyle.bold20SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget bold20Yellow({
+  static Widget bold20Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26648,10 +26648,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20Yellow(context: context),
+        style: FCTextStyle.bold20Warning(context: context),
       );
 
-  static Widget bold20YellowGradient({
+  static Widget bold20WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26661,17 +26661,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20Yellow(context: context),
+        style: FCTextStyle.bold20Warning(context: context),
       ),
     );
   }
 
-  static Widget bold20YellowLight({
+  static Widget bold20WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26681,10 +26681,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20YellowLight(context: context),
+        style: FCTextStyle.bold20WarningLight(context: context),
       );
 
-  static Widget bold20YellowLightGradient({
+  static Widget bold20WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26694,17 +26694,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20YellowLight(context: context),
+        style: FCTextStyle.bold20WarningLight(context: context),
       ),
     );
   }
 
-  static Widget bold20YellowDark({
+  static Widget bold20WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26714,10 +26714,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20YellowDark(context: context),
+        style: FCTextStyle.bold20WarningDark(context: context),
       );
 
-  static Widget bold20YellowDarkGradient({
+  static Widget bold20WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26727,17 +26727,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20YellowDark(context: context),
+        style: FCTextStyle.bold20WarningDark(context: context),
       ),
     );
   }
 
-  static Widget bold20Red({
+  static Widget bold20Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26747,10 +26747,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20Red(context: context),
+        style: FCTextStyle.bold20Danger(context: context),
       );
 
-  static Widget bold20RedGradient({
+  static Widget bold20DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26760,17 +26760,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20Red(context: context),
+        style: FCTextStyle.bold20Danger(context: context),
       ),
     );
   }
 
-  static Widget bold20RedLight({
+  static Widget bold20DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26780,10 +26780,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20RedLight(context: context),
+        style: FCTextStyle.bold20DangerLight(context: context),
       );
 
-  static Widget bold20RedLightGradient({
+  static Widget bold20DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26793,17 +26793,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20RedLight(context: context),
+        style: FCTextStyle.bold20DangerLight(context: context),
       ),
     );
   }
 
-  static Widget bold20RedDark({
+  static Widget bold20DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26813,10 +26813,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20RedDark(context: context),
+        style: FCTextStyle.bold20DangerDark(context: context),
       );
 
-  static Widget bold20RedDarkGradient({
+  static Widget bold20DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -26826,12 +26826,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold20RedDark(context: context),
+        style: FCTextStyle.bold20DangerDark(context: context),
       ),
     );
   }
@@ -27146,7 +27146,7 @@ class FCText {
     );
   }
 
-  static Widget bold28Blue({
+  static Widget bold28Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27156,10 +27156,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28Blue(context: context),
+        style: FCTextStyle.bold28Info(context: context),
       );
 
-  static Widget bold28BlueGradient({
+  static Widget bold28InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27169,17 +27169,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28Blue(context: context),
+        style: FCTextStyle.bold28Info(context: context),
       ),
     );
   }
 
-  static Widget bold28BlueLight({
+  static Widget bold28InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27189,10 +27189,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28BlueLight(context: context),
+        style: FCTextStyle.bold28InfoLight(context: context),
       );
 
-  static Widget bold28BlueLightGradient({
+  static Widget bold28InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27202,17 +27202,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28BlueLight(context: context),
+        style: FCTextStyle.bold28InfoLight(context: context),
       ),
     );
   }
 
-  static Widget bold28BlueDark({
+  static Widget bold28InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27222,10 +27222,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28BlueDark(context: context),
+        style: FCTextStyle.bold28InfoDark(context: context),
       );
 
-  static Widget bold28BlueDarkGradient({
+  static Widget bold28InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27235,17 +27235,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28BlueDark(context: context),
+        style: FCTextStyle.bold28InfoDark(context: context),
       ),
     );
   }
 
-  static Widget bold28Green({
+  static Widget bold28Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27255,10 +27255,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28Green(context: context),
+        style: FCTextStyle.bold28Success(context: context),
       );
 
-  static Widget bold28GreenGradient({
+  static Widget bold28SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27268,17 +27268,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28Green(context: context),
+        style: FCTextStyle.bold28Success(context: context),
       ),
     );
   }
 
-  static Widget bold28GreenLight({
+  static Widget bold28SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27288,10 +27288,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28GreenLight(context: context),
+        style: FCTextStyle.bold28SuccessLight(context: context),
       );
 
-  static Widget bold28GreenLightGradient({
+  static Widget bold28SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27301,17 +27301,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28GreenLight(context: context),
+        style: FCTextStyle.bold28SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget bold28GreenDark({
+  static Widget bold28SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27321,10 +27321,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28GreenDark(context: context),
+        style: FCTextStyle.bold28SuccessDark(context: context),
       );
 
-  static Widget bold28GreenDarkGradient({
+  static Widget bold28SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27334,17 +27334,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28GreenDark(context: context),
+        style: FCTextStyle.bold28SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget bold28Yellow({
+  static Widget bold28Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27354,10 +27354,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28Yellow(context: context),
+        style: FCTextStyle.bold28Warning(context: context),
       );
 
-  static Widget bold28YellowGradient({
+  static Widget bold28WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27367,17 +27367,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28Yellow(context: context),
+        style: FCTextStyle.bold28Warning(context: context),
       ),
     );
   }
 
-  static Widget bold28YellowLight({
+  static Widget bold28WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27387,10 +27387,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28YellowLight(context: context),
+        style: FCTextStyle.bold28WarningLight(context: context),
       );
 
-  static Widget bold28YellowLightGradient({
+  static Widget bold28WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27400,17 +27400,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28YellowLight(context: context),
+        style: FCTextStyle.bold28WarningLight(context: context),
       ),
     );
   }
 
-  static Widget bold28YellowDark({
+  static Widget bold28WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27420,10 +27420,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28YellowDark(context: context),
+        style: FCTextStyle.bold28WarningDark(context: context),
       );
 
-  static Widget bold28YellowDarkGradient({
+  static Widget bold28WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27433,17 +27433,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28YellowDark(context: context),
+        style: FCTextStyle.bold28WarningDark(context: context),
       ),
     );
   }
 
-  static Widget bold28Red({
+  static Widget bold28Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27453,10 +27453,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28Red(context: context),
+        style: FCTextStyle.bold28Danger(context: context),
       );
 
-  static Widget bold28RedGradient({
+  static Widget bold28DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27466,17 +27466,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28Red(context: context),
+        style: FCTextStyle.bold28Danger(context: context),
       ),
     );
   }
 
-  static Widget bold28RedLight({
+  static Widget bold28DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27486,10 +27486,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28RedLight(context: context),
+        style: FCTextStyle.bold28DangerLight(context: context),
       );
 
-  static Widget bold28RedLightGradient({
+  static Widget bold28DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27499,17 +27499,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28RedLight(context: context),
+        style: FCTextStyle.bold28DangerLight(context: context),
       ),
     );
   }
 
-  static Widget bold28RedDark({
+  static Widget bold28DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27519,10 +27519,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28RedDark(context: context),
+        style: FCTextStyle.bold28DangerDark(context: context),
       );
 
-  static Widget bold28RedDarkGradient({
+  static Widget bold28DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27532,12 +27532,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold28RedDark(context: context),
+        style: FCTextStyle.bold28DangerDark(context: context),
       ),
     );
   }
@@ -27852,7 +27852,7 @@ class FCText {
     );
   }
 
-  static Widget bold32Blue({
+  static Widget bold32Info({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27862,10 +27862,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32Blue(context: context),
+        style: FCTextStyle.bold32Info(context: context),
       );
 
-  static Widget bold32BlueGradient({
+  static Widget bold32InfoGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27875,17 +27875,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32Blue(context: context),
+        style: FCTextStyle.bold32Info(context: context),
       ),
     );
   }
 
-  static Widget bold32BlueLight({
+  static Widget bold32InfoLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27895,10 +27895,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32BlueLight(context: context),
+        style: FCTextStyle.bold32InfoLight(context: context),
       );
 
-  static Widget bold32BlueLightGradient({
+  static Widget bold32InfoLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27908,17 +27908,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32BlueLight(context: context),
+        style: FCTextStyle.bold32InfoLight(context: context),
       ),
     );
   }
 
-  static Widget bold32BlueDark({
+  static Widget bold32InfoDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27928,10 +27928,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32BlueDark(context: context),
+        style: FCTextStyle.bold32InfoDark(context: context),
       );
 
-  static Widget bold32BlueDarkGradient({
+  static Widget bold32InfoDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27941,17 +27941,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32BlueDark(context: context),
+        style: FCTextStyle.bold32InfoDark(context: context),
       ),
     );
   }
 
-  static Widget bold32Green({
+  static Widget bold32Success({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27961,10 +27961,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32Green(context: context),
+        style: FCTextStyle.bold32Success(context: context),
       );
 
-  static Widget bold32GreenGradient({
+  static Widget bold32SuccessGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27974,17 +27974,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32Green(context: context),
+        style: FCTextStyle.bold32Success(context: context),
       ),
     );
   }
 
-  static Widget bold32GreenLight({
+  static Widget bold32SuccessLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -27994,10 +27994,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32GreenLight(context: context),
+        style: FCTextStyle.bold32SuccessLight(context: context),
       );
 
-  static Widget bold32GreenLightGradient({
+  static Widget bold32SuccessLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -28007,17 +28007,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32GreenLight(context: context),
+        style: FCTextStyle.bold32SuccessLight(context: context),
       ),
     );
   }
 
-  static Widget bold32GreenDark({
+  static Widget bold32SuccessDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -28027,10 +28027,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32GreenDark(context: context),
+        style: FCTextStyle.bold32SuccessDark(context: context),
       );
 
-  static Widget bold32GreenDarkGradient({
+  static Widget bold32SuccessDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -28040,17 +28040,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32GreenDark(context: context),
+        style: FCTextStyle.bold32SuccessDark(context: context),
       ),
     );
   }
 
-  static Widget bold32Yellow({
+  static Widget bold32Warning({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -28060,10 +28060,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32Yellow(context: context),
+        style: FCTextStyle.bold32Warning(context: context),
       );
 
-  static Widget bold32YellowGradient({
+  static Widget bold32WarningGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -28073,17 +28073,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32Yellow(context: context),
+        style: FCTextStyle.bold32Warning(context: context),
       ),
     );
   }
 
-  static Widget bold32YellowLight({
+  static Widget bold32WarningLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -28093,10 +28093,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32YellowLight(context: context),
+        style: FCTextStyle.bold32WarningLight(context: context),
       );
 
-  static Widget bold32YellowLightGradient({
+  static Widget bold32WarningLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -28106,17 +28106,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32YellowLight(context: context),
+        style: FCTextStyle.bold32WarningLight(context: context),
       ),
     );
   }
 
-  static Widget bold32YellowDark({
+  static Widget bold32WarningDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -28126,10 +28126,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32YellowDark(context: context),
+        style: FCTextStyle.bold32WarningDark(context: context),
       );
 
-  static Widget bold32YellowDarkGradient({
+  static Widget bold32WarningDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -28139,17 +28139,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32YellowDark(context: context),
+        style: FCTextStyle.bold32WarningDark(context: context),
       ),
     );
   }
 
-  static Widget bold32Red({
+  static Widget bold32Danger({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -28159,10 +28159,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32Red(context: context),
+        style: FCTextStyle.bold32Danger(context: context),
       );
 
-  static Widget bold32RedGradient({
+  static Widget bold32DangerGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -28172,17 +28172,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32Red(context: context),
+        style: FCTextStyle.bold32Danger(context: context),
       ),
     );
   }
 
-  static Widget bold32RedLight({
+  static Widget bold32DangerLight({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -28192,10 +28192,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32RedLight(context: context),
+        style: FCTextStyle.bold32DangerLight(context: context),
       );
 
-  static Widget bold32RedLightGradient({
+  static Widget bold32DangerLightGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -28205,17 +28205,17 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32RedLight(context: context),
+        style: FCTextStyle.bold32DangerLight(context: context),
       ),
     );
   }
 
-  static Widget bold32RedDark({
+  static Widget bold32DangerDark({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -28225,10 +28225,10 @@ class FCText {
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32RedDark(context: context),
+        style: FCTextStyle.bold32DangerDark(context: context),
       );
 
-  static Widget bold32RedDarkGradient({
+  static Widget bold32DangerDarkGradient({
     required BuildContext context,
     required String text,
     TextAlign? align,
@@ -28238,12 +28238,12 @@ class FCText {
     final IFCTheme theme = config.theme;
 
     return FCGradientMask(
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
       child: Text(
         text,
         textAlign: align,
         overflow: overflow,
-        style: FCTextStyle.bold32RedDark(context: context),
+        style: FCTextStyle.bold32DangerDark(context: context),
       ),
     );
   }

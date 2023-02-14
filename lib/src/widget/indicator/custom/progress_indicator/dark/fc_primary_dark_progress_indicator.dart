@@ -17,7 +17,7 @@ class FCPrimaryDarkProgressIndicator extends StatelessWidget {
 
     return FCBasicProgressIndicator(
       backgroundColor: theme.primaryDark,
-      color: theme.greenDark,
+      color: theme.successDark,
       value: this.value,
     );
   }

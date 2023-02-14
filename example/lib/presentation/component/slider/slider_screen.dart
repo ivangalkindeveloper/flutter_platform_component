@@ -31,12 +31,12 @@ class _SliderScreenState extends State<SliderScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkSlider(
+          FCInfoDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkSlider(
+          FCSuccessDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
           ),
@@ -46,7 +46,7 @@ class _SliderScreenState extends State<SliderScreen> {
             onChanged: (double value) => setState(() => this._value = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkSlider(
+          FCDangerDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
           ),
@@ -56,7 +56,7 @@ class _SliderScreenState extends State<SliderScreen> {
             onChanged: (double value) => setState(() => this._value = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkSlider(
+          FCWarningDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
           ),
@@ -76,12 +76,12 @@ class _SliderScreenState extends State<SliderScreen> {
             onChanged: (double value) => setState(() => this._value = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueSlider(
+          FCInfoSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenSlider(
+          FCSuccessSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
           ),
@@ -91,7 +91,7 @@ class _SliderScreenState extends State<SliderScreen> {
             onChanged: (double value) => setState(() => this._value = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedSlider(
+          FCDangerSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
           ),
@@ -111,7 +111,7 @@ class _SliderScreenState extends State<SliderScreen> {
             onChanged: (double value) => setState(() => this._value = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowSlider(
+          FCWarningSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
           ),
@@ -121,12 +121,12 @@ class _SliderScreenState extends State<SliderScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightSlider(
+          FCInfoLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightSlider(
+          FCSuccessLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
           ),
@@ -136,7 +136,7 @@ class _SliderScreenState extends State<SliderScreen> {
             onChanged: (double value) => setState(() => this._value = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightSlider(
+          FCDangerLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
           ),
@@ -146,7 +146,7 @@ class _SliderScreenState extends State<SliderScreen> {
             onChanged: (double value) => setState(() => this._value = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightSlider(
+          FCWarningLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
           ),

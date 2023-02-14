@@ -65,7 +65,7 @@ class _FCBasicGradientToggleState extends State<FCBasicGradientToggle> {
     if (value == null || this.mounted == false) {
       return null;
     }
-    // Required
+    // Requidanger
     if (this.widget.isRequired && value.isEmpty) {
       setState(() => this._isValidationError = true);
       return "";
@@ -202,7 +202,7 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
     required BuildContext context,
     required IFCTheme theme,
   }) {
-    if (this.isValidationError) return theme.redLightGradient;
+    if (this.isValidationError) return theme.dangerLightGradient;
 
     if (this.isSelected) return this.selectedBackgroundGradient;
 
@@ -217,7 +217,7 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
   }
 
   Gradient _internalGradient({required IFCTheme theme}) {
-    if (this.isValidationError) return theme.redGradient;
+    if (this.isValidationError) return theme.dangerGradient;
 
     if (this.isSelected) return this.selectedInternalGradient;
 

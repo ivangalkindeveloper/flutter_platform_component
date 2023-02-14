@@ -154,7 +154,7 @@ class _FCBasicPINFieldState extends State<FCBasicPINField> with TickerProviderSt
                 backgroundColor: this.widget.submittedBackgroundColor,
               ),
               errorPinTheme: this._item(
-                backgroundColor: this._theme.red,
+                backgroundColor: this._theme.danger,
               ),
               forceErrorState: this._isError,
               separator:

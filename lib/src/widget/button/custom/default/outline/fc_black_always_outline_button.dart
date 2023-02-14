@@ -37,7 +37,7 @@ class FCBlackAlwaysOutlineButton extends StatelessWidget {
       splashColor: theme.blackAlways,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.blue(context: context),
+        firstChild: FCCircularIndicator.info(context: context),
         secondChild: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

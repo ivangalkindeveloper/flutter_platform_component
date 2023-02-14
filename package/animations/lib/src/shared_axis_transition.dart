@@ -161,11 +161,11 @@ class SharedAxisPageTransitionsBuilder extends PageTransitionsBuilder {
 ///         ),
 ///         BottomNavigationBarItem(
 ///           icon: Icon(Icons.business),
-///           title: Text('Red'),
+///           title: Text('Danger'),
 ///         ),
 ///         BottomNavigationBarItem(
 ///           icon: Icon(Icons.school),
-///           title: Text('Yellow'),
+///           title: Text('Warning'),
 ///         ),
 ///       ],
 ///       currentIndex: _selectedIndex,

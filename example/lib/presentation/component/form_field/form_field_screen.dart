@@ -24,11 +24,11 @@ class FormFieldScreen extends StatelessWidget {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkFormField(
+          FCInfoDarkFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkFormField(
+          FCSuccessDarkFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
@@ -44,7 +44,7 @@ class FormFieldScreen extends StatelessWidget {
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkFormField(
+          FCWarningDarkFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 * 2),
@@ -61,11 +61,11 @@ class FormFieldScreen extends StatelessWidget {
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueFormField(
+          FCInfoFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenFormField(
+          FCSuccessFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
@@ -89,7 +89,7 @@ class FormFieldScreen extends StatelessWidget {
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowFormField(
+          FCWarningFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 * 2),
@@ -98,11 +98,11 @@ class FormFieldScreen extends StatelessWidget {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightFormField(
+          FCInfoLightFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightFormField(
+          FCSuccessLightFormField(
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
@@ -118,7 +118,7 @@ class FormFieldScreen extends StatelessWidget {
             labelText: "Label",
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightFormField(
+          FCWarningLightFormField(
             labelText: "Label",
           ),
         ],

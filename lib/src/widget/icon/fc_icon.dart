@@ -388,7 +388,7 @@ class FCIcon {
     );
   }
 
-  static Widget smallBlue({
+  static Widget smallInfo({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -399,11 +399,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightSmall,
-      color: theme.blue,
+      color: theme.info,
     );
   }
 
-  static Widget smallBlueGradient({
+  static Widget smallInfoGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -414,11 +414,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightSmall,
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
     );
   }
 
-  static Widget smallBlueLight({
+  static Widget smallInfoLight({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -429,11 +429,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightSmall,
-      color: theme.blueLight,
+      color: theme.infoLight,
     );
   }
 
-  static Widget smallBlueLightGradient({
+  static Widget smallInfoLightGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -444,11 +444,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightSmall,
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
     );
   }
 
-  static Widget smallBlueDark({
+  static Widget smallInfoDark({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -459,11 +459,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightSmall,
-      color: theme.blueDark,
+      color: theme.infoDark,
     );
   }
 
-  static Widget smallBlueDarkGradient({
+  static Widget smallInfoDarkGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -474,11 +474,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightSmall,
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
     );
   }
 
-  static Widget smallGreen({
+  static Widget smallSuccess({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -489,11 +489,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightSmall,
-      color: theme.green,
+      color: theme.success,
     );
   }
 
-  static Widget smallGreenGradient({
+  static Widget smallSuccessGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -504,11 +504,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightSmall,
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
     );
   }
 
-  static Widget smallGreenLight({
+  static Widget smallSuccessLight({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -519,11 +519,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightSmall,
-      color: theme.greenLight,
+      color: theme.successLight,
     );
   }
 
-  static Widget smallGreenLightGradient({
+  static Widget smallSuccessLightGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -534,11 +534,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightSmall,
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
     );
   }
 
-  static Widget smallGreenDark({
+  static Widget smallSuccessDark({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -549,11 +549,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightSmall,
-      color: theme.greenDark,
+      color: theme.successDark,
     );
   }
 
-  static Widget smallGreenDarkGradient({
+  static Widget smallSuccessDarkGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -564,11 +564,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightSmall,
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
     );
   }
 
-  static Widget smallYellow({
+  static Widget smallWarning({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -579,11 +579,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightSmall,
-      color: theme.yellow,
+      color: theme.warning,
     );
   }
 
-  static Widget smallYellowGradient({
+  static Widget smallWarningGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -594,11 +594,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightSmall,
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
     );
   }
 
-  static Widget smallYellowLight({
+  static Widget smallWarningLight({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -609,11 +609,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightSmall,
-      color: theme.yellowLight,
+      color: theme.warningLight,
     );
   }
 
-  static Widget smallYellowLightGradient({
+  static Widget smallWarningLightGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -624,11 +624,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightSmall,
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
     );
   }
 
-  static Widget smallYellowDark({
+  static Widget smallWarningDark({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -639,11 +639,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightSmall,
-      color: theme.yellowDark,
+      color: theme.warningDark,
     );
   }
 
-  static Widget smallYellowDarkGradient({
+  static Widget smallWarningDarkGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -654,11 +654,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightSmall,
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
     );
   }
 
-  static Widget smallRed({
+  static Widget smallDanger({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -669,11 +669,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightSmall,
-      color: theme.red,
+      color: theme.danger,
     );
   }
 
-  static Widget smallRedGradient({
+  static Widget smallDangerGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -684,11 +684,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightSmall,
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
     );
   }
 
-  static Widget smallRedLight({
+  static Widget smallDangerLight({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -699,11 +699,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightSmall,
-      color: theme.redLight,
+      color: theme.dangerLight,
     );
   }
 
-  static Widget smallRedLightGradient({
+  static Widget smallDangerLightGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -714,11 +714,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightSmall,
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
     );
   }
 
-  static Widget smallRedDark({
+  static Widget smallDangerDark({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -729,11 +729,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightSmall,
-      color: theme.redDark,
+      color: theme.dangerDark,
     );
   }
 
-  static Widget smallRedDarkGradient({
+  static Widget smallDangerDarkGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -744,7 +744,7 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightSmall,
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
     );
   }
 
@@ -1109,7 +1109,7 @@ class FCIcon {
     );
   }
 
-  static Widget blue({
+  static Widget info({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1120,11 +1120,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightDefault,
-      color: theme.blue,
+      color: theme.info,
     );
   }
 
-  static Widget blueGradient({
+  static Widget infoGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1135,11 +1135,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightDefault,
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
     );
   }
 
-  static Widget blueLight({
+  static Widget infoLight({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1150,11 +1150,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightDefault,
-      color: theme.blueLight,
+      color: theme.infoLight,
     );
   }
 
-  static Widget blueLightGradient({
+  static Widget infoLightGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1165,11 +1165,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightDefault,
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
     );
   }
 
-  static Widget blueDark({
+  static Widget infoDark({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1180,11 +1180,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightDefault,
-      color: theme.blueDark,
+      color: theme.infoDark,
     );
   }
 
-  static Widget blueDarkGradient({
+  static Widget infoDarkGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1195,11 +1195,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightDefault,
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
     );
   }
 
-  static Widget green({
+  static Widget success({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1210,11 +1210,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightDefault,
-      color: theme.green,
+      color: theme.success,
     );
   }
 
-  static Widget greenGradient({
+  static Widget successGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1225,11 +1225,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightDefault,
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
     );
   }
 
-  static Widget greenLight({
+  static Widget successLight({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1240,11 +1240,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightDefault,
-      color: theme.greenLight,
+      color: theme.successLight,
     );
   }
 
-  static Widget greenLightGradient({
+  static Widget successLightGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1255,11 +1255,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightDefault,
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
     );
   }
 
-  static Widget greenDark({
+  static Widget successDark({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1270,11 +1270,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightDefault,
-      color: theme.greenDark,
+      color: theme.successDark,
     );
   }
 
-  static Widget greenDarkGradient({
+  static Widget successDarkGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1285,11 +1285,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightDefault,
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
     );
   }
 
-  static Widget yellow({
+  static Widget warning({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1300,11 +1300,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightDefault,
-      color: theme.yellow,
+      color: theme.warning,
     );
   }
 
-  static Widget yellowGradient({
+  static Widget warningGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1315,11 +1315,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightDefault,
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
     );
   }
 
-  static Widget yellowLight({
+  static Widget warningLight({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1330,11 +1330,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightDefault,
-      color: theme.yellowLight,
+      color: theme.warningLight,
     );
   }
 
-  static Widget yellowLightGradient({
+  static Widget warningLightGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1345,11 +1345,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightDefault,
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
     );
   }
 
-  static Widget yellowDark({
+  static Widget warningDark({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1360,11 +1360,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightDefault,
-      color: theme.yellowDark,
+      color: theme.warningDark,
     );
   }
 
-  static Widget yellowDarkGradient({
+  static Widget warningDarkGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1375,11 +1375,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightDefault,
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
     );
   }
 
-  static Widget red({
+  static Widget danger({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1390,11 +1390,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightDefault,
-      color: theme.red,
+      color: theme.danger,
     );
   }
 
-  static Widget redGradient({
+  static Widget dangerGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1405,11 +1405,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightDefault,
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
     );
   }
 
-  static Widget redLight({
+  static Widget dangerLight({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1420,11 +1420,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightDefault,
-      color: theme.redLight,
+      color: theme.dangerLight,
     );
   }
 
-  static Widget redLightGradient({
+  static Widget dangerLightGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1435,11 +1435,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightDefault,
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
     );
   }
 
-  static Widget redDark({
+  static Widget dangerDark({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1450,11 +1450,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightDefault,
-      color: theme.redDark,
+      color: theme.dangerDark,
     );
   }
 
-  static Widget redDarkGradient({
+  static Widget dangerDarkGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1465,7 +1465,7 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightDefault,
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
     );
   }
 
@@ -1830,7 +1830,7 @@ class FCIcon {
     );
   }
 
-  static Widget largeBlue({
+  static Widget largeInfo({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1841,11 +1841,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightLarge,
-      color: theme.blue,
+      color: theme.info,
     );
   }
 
-  static Widget largeBlueGradient({
+  static Widget largeInfoGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1856,11 +1856,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightLarge,
-      gradient: theme.blueGradient,
+      gradient: theme.infoGradient,
     );
   }
 
-  static Widget largeBlueLight({
+  static Widget largeInfoLight({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1871,11 +1871,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightLarge,
-      color: theme.blueLight,
+      color: theme.infoLight,
     );
   }
 
-  static Widget largeBlueLightGradient({
+  static Widget largeInfoLightGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1886,11 +1886,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightLarge,
-      gradient: theme.blueLightGradient,
+      gradient: theme.infoLightGradient,
     );
   }
 
-  static Widget largeBlueDark({
+  static Widget largeInfoDark({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1901,11 +1901,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightLarge,
-      color: theme.blueDark,
+      color: theme.infoDark,
     );
   }
 
-  static Widget largeBlueDarkGradient({
+  static Widget largeInfoDarkGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1916,11 +1916,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightLarge,
-      gradient: theme.blueDarkGradient,
+      gradient: theme.infoDarkGradient,
     );
   }
 
-  static Widget largeGreen({
+  static Widget largeSuccess({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1931,11 +1931,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightLarge,
-      color: theme.green,
+      color: theme.success,
     );
   }
 
-  static Widget largeGreenGradient({
+  static Widget largeSuccessGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1946,11 +1946,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightLarge,
-      gradient: theme.greenGradient,
+      gradient: theme.successGradient,
     );
   }
 
-  static Widget largeGreenLight({
+  static Widget largeSuccessLight({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1961,11 +1961,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightLarge,
-      color: theme.greenLight,
+      color: theme.successLight,
     );
   }
 
-  static Widget largeGreenLightGradient({
+  static Widget largeSuccessLightGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1976,11 +1976,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightLarge,
-      gradient: theme.greenLightGradient,
+      gradient: theme.successLightGradient,
     );
   }
 
-  static Widget largeGreenDark({
+  static Widget largeSuccessDark({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1991,11 +1991,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightLarge,
-      color: theme.greenDark,
+      color: theme.successDark,
     );
   }
 
-  static Widget largeGreenDarkGradient({
+  static Widget largeSuccessDarkGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -2006,11 +2006,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightLarge,
-      gradient: theme.greenDarkGradient,
+      gradient: theme.successDarkGradient,
     );
   }
 
-  static Widget largeYellow({
+  static Widget largeWarning({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -2021,11 +2021,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightLarge,
-      color: theme.yellow,
+      color: theme.warning,
     );
   }
 
-  static Widget largeYellowGradient({
+  static Widget largeWarningGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -2036,11 +2036,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightLarge,
-      gradient: theme.yellowGradient,
+      gradient: theme.warningGradient,
     );
   }
 
-  static Widget largeYellowLight({
+  static Widget largeWarningLight({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -2051,11 +2051,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightLarge,
-      color: theme.yellowLight,
+      color: theme.warningLight,
     );
   }
 
-  static Widget largeYellowLightGradient({
+  static Widget largeWarningLightGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -2066,11 +2066,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightLarge,
-      gradient: theme.yellowLightGradient,
+      gradient: theme.warningLightGradient,
     );
   }
 
-  static Widget largeYellowDark({
+  static Widget largeWarningDark({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -2081,11 +2081,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightLarge,
-      color: theme.yellowDark,
+      color: theme.warningDark,
     );
   }
 
-  static Widget largeYellowDarkGradient({
+  static Widget largeWarningDarkGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -2096,11 +2096,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightLarge,
-      gradient: theme.yellowDarkGradient,
+      gradient: theme.warningDarkGradient,
     );
   }
 
-  static Widget largeRed({
+  static Widget largeDanger({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -2111,11 +2111,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightLarge,
-      color: theme.red,
+      color: theme.danger,
     );
   }
 
-  static Widget largeRedGradient({
+  static Widget largeDangerGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -2126,11 +2126,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightLarge,
-      gradient: theme.redGradient,
+      gradient: theme.dangerGradient,
     );
   }
 
-  static Widget largeRedLight({
+  static Widget largeDangerLight({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -2141,11 +2141,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightLarge,
-      color: theme.redLight,
+      color: theme.dangerLight,
     );
   }
 
-  static Widget largeRedLightGradient({
+  static Widget largeDangerLightGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -2156,11 +2156,11 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightLarge,
-      gradient: theme.redLightGradient,
+      gradient: theme.dangerLightGradient,
     );
   }
 
-  static Widget largeRedDark({
+  static Widget largeDangerDark({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -2171,11 +2171,11 @@ class FCIcon {
     return _iconColor(
       icon: icon,
       size: size.iconHeightLarge,
-      color: theme.redDark,
+      color: theme.dangerDark,
     );
   }
 
-  static Widget largeRedDarkGradient({
+  static Widget largeDangerDarkGradient({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -2186,7 +2186,7 @@ class FCIcon {
     return _iconGradient(
       icon: icon,
       size: size.iconHeightLarge,
-      gradient: theme.redDarkGradient,
+      gradient: theme.dangerDarkGradient,
     );
   }
 }

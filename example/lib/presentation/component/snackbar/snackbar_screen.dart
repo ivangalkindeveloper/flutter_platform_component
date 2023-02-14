@@ -24,11 +24,11 @@ class SnackbarScreen extends StatelessWidget {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkSnackbar(
+          FCInfoDarkSnackbar(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkSnackbar(
+          FCSuccessDarkSnackbar(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -40,7 +40,7 @@ class SnackbarScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkSnackbar(
+          FCDangerDarkSnackbar(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -48,7 +48,7 @@ class SnackbarScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkSnackbar(
+          FCWarningDarkSnackbar(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 * 2),
@@ -65,11 +65,11 @@ class SnackbarScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueSnackbar(
+          FCInfoSnackbar(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenSnackbar(
+          FCSuccessSnackbar(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -81,7 +81,7 @@ class SnackbarScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedSnackbar(
+          FCDangerSnackbar(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -97,7 +97,7 @@ class SnackbarScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowSnackbar(
+          FCWarningSnackbar(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 * 2),
@@ -106,11 +106,11 @@ class SnackbarScreen extends StatelessWidget {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightSnackbar(
+          FCInfoLightSnackbar(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightSnackbar(
+          FCSuccessLightSnackbar(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -122,7 +122,7 @@ class SnackbarScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightSnackbar(
+          FCDangerLightSnackbar(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -130,7 +130,7 @@ class SnackbarScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightSnackbar(
+          FCWarningLightSnackbar(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 * 2),
@@ -139,11 +139,11 @@ class SnackbarScreen extends StatelessWidget {
             text: "Outline",
           ),
           SizedBox(height: size.s16),
-          FCBlueOutlineSnackbar(
+          FCInfoOutlineSnackbar(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenOutlineSnackbar(
+          FCSuccessOutlineSnackbar(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -155,7 +155,7 @@ class SnackbarScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedOutlineSnackbar(
+          FCDangerOutlineSnackbar(
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
@@ -163,7 +163,7 @@ class SnackbarScreen extends StatelessWidget {
             child: const SizedBox(),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowOutlineSnackbar(
+          FCWarningOutlineSnackbar(
             child: const SizedBox(),
           ),
         ],

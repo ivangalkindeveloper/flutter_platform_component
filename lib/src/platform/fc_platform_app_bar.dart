@@ -26,14 +26,14 @@ class FCPlatformAppBar extends StatelessWidget implements ObstructingPreferredSi
     final TargetPlatform platform = config.platform;
     final IFCSize size = config.size;
 
-    final double additionalPrefferedHeight =
+    final double additionalPreferredHeight =
         this.bottom != null ? (this.bottom!.preferredSize.height + size.s16 / 2) : 0;
 
     return FCPlatform.decompose<Size, Size, Size>(
       platform: platform,
       cupertino:
-          Size.fromHeight(kMinInteractiveDimensionCupertino + additionalPrefferedHeight),
-      material: Size.fromHeight(kToolbarHeight + additionalPrefferedHeight),
+          Size.fromHeight(kMinInteractiveDimensionCupertino + additionalPreferredHeight),
+      material: Size.fromHeight(kToolbarHeight + additionalPreferredHeight),
     );
   }
 

@@ -42,12 +42,12 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkPageIndicator(
+          FCInfoDarkPageIndicator(
             length: 4,
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkPageIndicator(
+          FCSuccessDarkPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -57,7 +57,7 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkPageIndicator(
+          FCDangerDarkPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -67,7 +67,7 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkPageIndicator(
+          FCWarningDarkPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -77,12 +77,12 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCBluePageIndicator(
+          FCInfoPageIndicator(
             length: 4,
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenPageIndicator(
+          FCSuccessPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -92,7 +92,7 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedPageIndicator(
+          FCDangerPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -102,7 +102,7 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowPageIndicator(
+          FCWarningPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -112,12 +112,12 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightPageIndicator(
+          FCInfoLightPageIndicator(
             length: 4,
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightPageIndicator(
+          FCSuccessLightPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -127,7 +127,7 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightPageIndicator(
+          FCDangerLightPageIndicator(
             length: 4,
             value: this._page,
           ),
@@ -137,7 +137,7 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
             value: this._page,
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightPageIndicator(
+          FCWarningLightPageIndicator(
             length: 4,
             value: this._page,
           ),

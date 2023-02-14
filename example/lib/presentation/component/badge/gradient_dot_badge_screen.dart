@@ -40,11 +40,11 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCBlueDarkGradientDotBadge(
+              FCInfoDarkGradientDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCGreenDarkGradientDotBadge(
+              FCSuccessDarkGradientDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -56,7 +56,7 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCRedDarkGradientDotBadge(
+              FCDangerDarkGradientDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -64,7 +64,7 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCYellowDarkGradientDotBadge(
+              FCWarningDarkGradientDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -80,11 +80,11 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCBlueGradientDotBadge(
+              FCInfoGradientDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCGreenGradientDotBadge(
+              FCSuccessGradientDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -96,7 +96,7 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCRedGradientDotBadge(
+              FCDangerGradientDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -104,7 +104,7 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCYellowGradientDotBadge(
+              FCWarningGradientDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -120,11 +120,11 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCBlueLightGradientDotBadge(
+              FCInfoLightGradientDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCGreenLightGradientDotBadge(
+              FCSuccessLightGradientDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -136,7 +136,7 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCRedLightGradientDotBadge(
+              FCDangerLightGradientDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
@@ -144,7 +144,7 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),
-              FCYellowLightGradientDotBadge(
+              FCWarningLightGradientDotBadge(
                 child: const _ChildWidget(),
                 isShow: this._action,
               ),

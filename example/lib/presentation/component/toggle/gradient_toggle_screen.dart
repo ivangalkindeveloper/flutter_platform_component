@@ -31,7 +31,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkGradientToggle<String>(
+          FCInfoDarkGradientToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -50,7 +50,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkGradientToggle<String>(
+          FCSuccessDarkGradientToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -126,7 +126,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkGradientToggle<String>(
+          FCWarningDarkGradientToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -150,7 +150,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCBlueGradientToggle<String>(
+          FCInfoGradientToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -169,7 +169,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenGradientToggle<String>(
+          FCSuccessGradientToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -245,7 +245,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowGradientToggle<String>(
+          FCWarningGradientToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -269,7 +269,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightGradientToggle<String>(
+          FCInfoLightGradientToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -288,7 +288,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightGradientToggle<String>(
+          FCSuccessLightGradientToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(
@@ -364,7 +364,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
             onChanged: (String value) => setState(() => this._action = value),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightGradientToggle<String>(
+          FCWarningLightGradientToggle<String>(
             value: this._action,
             items: [
               FCToggleItem(

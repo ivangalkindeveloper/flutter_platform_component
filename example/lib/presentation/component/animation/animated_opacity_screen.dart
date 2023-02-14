@@ -50,7 +50,7 @@ class _AnimatedOpacityScreenState extends State<AnimatedOpacityScreen> {
                             child: Container(
                               height: size.s28 * 4,
                               width: size.s28 * 4,
-                              color: theme.blue,
+                              color: theme.info,
                             ),
                           ),
                         ],
@@ -69,7 +69,7 @@ class _AnimatedOpacityScreenState extends State<AnimatedOpacityScreen> {
                             child: Container(
                               height: size.s28 * 4,
                               width: size.s28 * 4,
-                              color: theme.blue,
+                              color: theme.info,
                             ),
                           ),
                         ],
@@ -88,7 +88,7 @@ class _AnimatedOpacityScreenState extends State<AnimatedOpacityScreen> {
                             child: Container(
                               height: size.s28 * 4,
                               width: size.s28 * 4,
-                              color: theme.blue,
+                              color: theme.info,
                             ),
                           ),
                         ],

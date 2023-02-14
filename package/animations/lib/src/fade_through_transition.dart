@@ -134,15 +134,15 @@ class FadeThroughPageTransitionsBuilder extends PageTransitionsBuilder {
 ///        items: const <BottomNavigationBarItem>[
 ///          BottomNavigationBarItem(
 ///            icon: Icon(Icons.home),
-///            title: Text('Blue'),
+///            title: Text('Info'),
 ///          ),
 ///          BottomNavigationBarItem(
 ///            icon: Icon(Icons.business),
-///            title: Text('Red'),
+///            title: Text('Danger'),
 ///          ),
 ///          BottomNavigationBarItem(
 ///            icon: Icon(Icons.school),
-///            title: Text('Yellow'),
+///            title: Text('Warning'),
 ///          ),
 ///        ],
 ///        currentIndex: _selectedIndex,

@@ -31,12 +31,12 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCBlueDarkCheckbox(
+          FCInfoDarkCheckbox(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenDarkCheckbox(
+          FCSuccessDarkCheckbox(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
@@ -51,7 +51,7 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedDarkCheckbox(
+          FCDangerDarkCheckbox(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
@@ -61,7 +61,7 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowDarkCheckbox(
+          FCWarningDarkCheckbox(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
@@ -81,12 +81,12 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlueCheckbox(
+          FCInfoCheckbox(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenCheckbox(
+          FCSuccessCheckbox(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
@@ -101,7 +101,7 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedCheckbox(
+          FCDangerCheckbox(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
@@ -121,7 +121,7 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowCheckbox(
+          FCWarningCheckbox(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
@@ -131,12 +131,12 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCBlueLightCheckbox(
+          FCInfoLightCheckbox(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreenLightCheckbox(
+          FCSuccessLightCheckbox(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
@@ -151,7 +151,7 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
           SizedBox(height: size.s16 / 2),
-          FCRedLightCheckbox(
+          FCDangerLightCheckbox(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
@@ -161,7 +161,7 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
           SizedBox(height: size.s16 / 2),
-          FCYellowLightCheckbox(
+          FCWarningLightCheckbox(
             value: this._action,
             onChanged: (bool value) => setState(() => this._action = !this._action),
           ),
