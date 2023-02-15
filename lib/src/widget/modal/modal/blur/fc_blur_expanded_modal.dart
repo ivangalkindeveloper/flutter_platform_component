@@ -46,8 +46,8 @@ class FCBlurExpandedModal extends StatelessWidget {
 
     return ClipRRect(
       borderRadius: BorderRadius.only(
-        topLeft: config.modalBorderRadius.topLeft,
-        topRight: config.modalBorderRadius.topRight,
+        topLeft: config.borderRadiusModal.topLeft,
+        topRight: config.borderRadiusModal.topRight,
       ),
       child: FCScaffold(
         appBar: FCBlurExpandedModalAppBar(

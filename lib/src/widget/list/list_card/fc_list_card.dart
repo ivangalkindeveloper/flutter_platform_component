@@ -46,7 +46,7 @@ class FCListCard extends StatelessWidget {
     if (index == 0)
       return this.borderRadius != null
           ? Radius.circular(this.borderRadius!.topLeft.x)
-          : Radius.circular(config.cardBorderRadius.topLeft.x);
+          : Radius.circular(config.borderRadiusCard.topLeft.x);
 
     return Radius.zero;
   }
@@ -58,7 +58,7 @@ class FCListCard extends StatelessWidget {
     if (index == 0)
       return this.borderRadius != null
           ? Radius.circular(this.borderRadius!.topRight.x)
-          : Radius.circular(config.cardBorderRadius.topRight.x);
+          : Radius.circular(config.borderRadiusCard.topRight.x);
 
     return Radius.zero;
   }
@@ -70,7 +70,7 @@ class FCListCard extends StatelessWidget {
     if ((index + 1) == this.items.length)
       return this.borderRadius != null
           ? Radius.circular(this.borderRadius!.bottomLeft.x)
-          : Radius.circular(config.cardBorderRadius.bottomLeft.x);
+          : Radius.circular(config.borderRadiusCard.bottomLeft.x);
 
     return Radius.zero;
   }
@@ -82,7 +82,7 @@ class FCListCard extends StatelessWidget {
     if ((index + 1) == this.items.length)
       return this.borderRadius != null
           ? Radius.circular(this.borderRadius!.bottomRight.x)
-          : Radius.circular(config.cardBorderRadius.bottomRight.x);
+          : Radius.circular(config.borderRadiusCard.bottomRight.x);
 
     return Radius.zero;
   }

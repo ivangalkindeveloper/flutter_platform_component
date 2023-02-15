@@ -84,7 +84,7 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
               child: this.isDisabled
                   ? FCComponentDisabledOverlay(
                       color: this.disabledColor,
-                      borderRadius: config.segmentControlBorderRadius,
+                      borderRadius: config.borderRadiusSegmentControl,
                     )
                   : null,
             ),
@@ -135,7 +135,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required FCConfig config,
     required int index,
   }) {
-    if (index == 0) return Radius.circular(config.segmentControlBorderRadius.topLeft.x);
+    if (index == 0) return Radius.circular(config.borderRadiusSegmentControl.topLeft.x);
 
     return Radius.zero;
   }
@@ -145,7 +145,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required int index,
   }) {
     if ((index + 1) == this.length)
-      return Radius.circular(config.segmentControlBorderRadius.topRight.x);
+      return Radius.circular(config.borderRadiusSegmentControl.topRight.x);
 
     return Radius.zero;
   }
@@ -155,7 +155,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required int index,
   }) {
     if (index == 0)
-      return Radius.circular(config.segmentControlBorderRadius.bottomLeft.x);
+      return Radius.circular(config.borderRadiusSegmentControl.bottomLeft.x);
 
     return Radius.zero;
   }
@@ -165,7 +165,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required int index,
   }) {
     if ((index + 1) == this.length)
-      return Radius.circular(config.segmentControlBorderRadius.bottomRight.x);
+      return Radius.circular(config.borderRadiusSegmentControl.bottomRight.x);
 
     return Radius.zero;
   }
@@ -174,7 +174,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required FCConfig config,
     required int index,
   }) {
-    if (index == 0) return config.segmentControlBorderWidth;
+    if (index == 0) return config.borderWidthSegmentControl;
 
     return 0;
   }
@@ -183,7 +183,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required FCConfig config,
     required int index,
   }) {
-    if ((index + 1) == this.length) return config.segmentControlBorderWidth;
+    if ((index + 1) == this.length) return config.borderWidthSegmentControl;
 
     return 0;
   }
@@ -226,7 +226,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   }) {
     if ((index + 1) != this.length)
       return Container(
-        width: config.segmentControlBorderWidth,
+        width: config.borderWidthSegmentControl,
         color: this.unselectedBorderColor ?? this.selectedBorderColor,
       );
 
@@ -307,11 +307,11 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
                     shape: CustomRoundedRectangleBorder(
                       topSide: BorderSide(
                         color: this._borderColor(theme: theme),
-                        width: config.segmentControlBorderWidth,
+                        width: config.borderWidthSegmentControl,
                       ),
                       bottomSide: BorderSide(
                         color: this._borderColor(theme: theme),
-                        width: config.segmentControlBorderWidth,
+                        width: config.borderWidthSegmentControl,
                       ),
                       leftSide: BorderSide(
                         color: this._borderColor(theme: theme),
@@ -329,19 +329,19 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
                       ),
                       topLeftCornerSide: BorderSide(
                         color: this._borderColor(theme: theme),
-                        width: config.segmentControlBorderWidth,
+                        width: config.borderWidthSegmentControl,
                       ),
                       topRightCornerSide: BorderSide(
                         color: this._borderColor(theme: theme),
-                        width: config.segmentControlBorderWidth,
+                        width: config.borderWidthSegmentControl,
                       ),
                       bottomLeftCornerSide: BorderSide(
                         color: this._borderColor(theme: theme),
-                        width: config.segmentControlBorderWidth,
+                        width: config.borderWidthSegmentControl,
                       ),
                       bottomRightCornerSide: BorderSide(
                         color: this._borderColor(theme: theme),
-                        width: config.segmentControlBorderWidth,
+                        width: config.borderWidthSegmentControl,
                       ),
                       borderRadius: BorderRadius.only(
                         topLeft: this._topLeftRadius(

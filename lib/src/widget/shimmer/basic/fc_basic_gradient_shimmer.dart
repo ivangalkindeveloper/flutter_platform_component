@@ -63,7 +63,7 @@ class _FCBasicGradientShimmerState extends State<FCBasicGradientShimmer> {
         gradient: this._isHighlight
             ? this.widget.highlightGradient
             : this.widget.backgroundGradient,
-        borderRadius: this._config.cardBorderRadius,
+        borderRadius: this._config.borderRadiusCard,
         shape: this.widget.shape,
       ),
       child: this.widget.child ?? const SizedBox(),

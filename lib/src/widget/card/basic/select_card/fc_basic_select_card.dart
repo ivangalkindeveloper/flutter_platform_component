@@ -84,11 +84,11 @@ class _FCBasicSelectCardCupertino extends StatelessWidget {
         CupertinoButton(
           onPressed: this.onPressed,
           padding: EdgeInsets.zero,
-          borderRadius: this.borderRadius ?? config.cardBorderRadius,
+          borderRadius: this.borderRadius ?? config.borderRadiusCard,
           child: FCBasicCard(
             backgroundColor: this.backgroundColor,
             constraints: this.constraints,
-            borderRadius: this.borderRadius ?? config.cardBorderRadius,
+            borderRadius: this.borderRadius ?? config.borderRadiusCard,
             borderColor: this.borderColor,
             borderWidth: this.borderWidth,
             padding: this.padding ?? EdgeInsets.all(size.s16),
@@ -100,7 +100,7 @@ class _FCBasicSelectCardCupertino extends StatelessWidget {
             child: this.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.disabledColor,
-                    borderRadius: this.borderRadius ?? config.cardBorderRadius,
+                    borderRadius: this.borderRadius ?? config.borderRadiusCard,
                   )
                 : null,
           ),
@@ -148,7 +148,7 @@ class _FCBasicSelectCardMaterial extends StatelessWidget {
         FCBasicCard(
           backgroundColor: this.backgroundColor,
           constraints: this.constraints,
-          borderRadius: this.borderRadius ?? config.cardBorderRadius,
+          borderRadius: this.borderRadius ?? config.borderRadiusCard,
           borderColor: this.borderColor,
           borderWidth: this.borderWidth,
           child: ElevatedButton(
@@ -159,7 +159,7 @@ class _FCBasicSelectCardMaterial extends StatelessWidget {
               shadowColor: Colors.transparent,
               padding: this.padding ?? EdgeInsets.all(size.s16),
               shape: RoundedRectangleBorder(
-                  borderRadius: this.borderRadius ?? config.cardBorderRadius),
+                  borderRadius: this.borderRadius ?? config.borderRadiusCard),
             ),
             onPressed: this.onPressed,
             child: this.child,
@@ -170,7 +170,7 @@ class _FCBasicSelectCardMaterial extends StatelessWidget {
             child: this.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.disabledColor,
-                    borderRadius: this.borderRadius ?? config.cardBorderRadius,
+                    borderRadius: this.borderRadius ?? config.borderRadiusCard,
                   )
                 : null,
           ),

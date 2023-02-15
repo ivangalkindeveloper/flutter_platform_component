@@ -50,8 +50,8 @@ class FCGlobal {
       case TargetPlatform.iOS:
         return bottomSheet.showCupertinoModalBottomSheet<T?>(
           context: context,
-          topRadius: config.modalBorderRadius.topLeft,
-          barrierColor: config.barrierExpandedModalColor,
+          topRadius: config.borderRadiusModal.topLeft,
+          barrierColor: config.barrierColorExpandedModal,
           backgroundColor: material.Colors.transparent,
           elevation: 0,
           expand: true,
@@ -63,7 +63,7 @@ class FCGlobal {
       case TargetPlatform.android:
         return bottomSheet.showMaterialModalBottomSheet<T?>(
           context: context,
-          barrierColor: config.barrierExpandedModalColor,
+          barrierColor: config.barrierColorExpandedModal,
           backgroundColor: material.Colors.transparent,
           elevation: 0,
           expand: true,
@@ -74,7 +74,7 @@ class FCGlobal {
       default:
         return bottomSheet.showMaterialModalBottomSheet<T?>(
           context: context,
-          barrierColor: config.barrierExpandedModalColor,
+          barrierColor: config.barrierColorExpandedModal,
           backgroundColor: material.Colors.transparent,
           elevation: 0,
           expand: true,
@@ -95,7 +95,7 @@ class FCGlobal {
       case TargetPlatform.iOS:
         return cupertino.showCupertinoModalPopup<T>(
           context: context,
-          barrierColor: config.barrierPopUpModalColor,
+          barrierColor: config.barrierColorPopUpModal,
           barrierDismissible: true,
           useRootNavigator: false,
           builder: (BuildContext context) => child,
@@ -104,7 +104,7 @@ class FCGlobal {
       case TargetPlatform.android:
         return bottomSheet.showMaterialModalBottomSheet<T>(
           context: context,
-          barrierColor: config.barrierPopUpModalColor,
+          barrierColor: config.barrierColorPopUpModal,
           backgroundColor: material.Colors.transparent,
           elevation: 0,
           useRootNavigator: false,
@@ -144,7 +144,7 @@ class FCGlobal {
       case TargetPlatform.android:
         return material.showDialog<T>(
           context: context,
-          barrierColor: config.barrierDialogColor,
+          barrierColor: config.barrierColorDialog,
           useRootNavigator: false,
           builder: (BuildContext context) => child,
         );
@@ -152,7 +152,7 @@ class FCGlobal {
       default:
         return material.showDialog<T>(
           context: context,
-          barrierColor: config.barrierDialogColor,
+          barrierColor: config.barrierColorDialog,
           useRootNavigator: false,
           builder: (BuildContext context) => child,
         );
@@ -172,7 +172,7 @@ class FCGlobal {
       case TargetPlatform.iOS:
         return cupertino.showCupertinoModalPopup<DateTime?>(
           context: context,
-          barrierColor: config.barrierPopUpModalColor,
+          barrierColor: config.barrierColorPopUpModal,
           useRootNavigator: false,
           builder: (BuildContext context) => cupertinoModal,
         );

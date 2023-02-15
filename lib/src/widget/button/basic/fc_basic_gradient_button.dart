@@ -84,7 +84,7 @@ class _FCBasicGradientButtonCupertino extends StatelessWidget {
         CupertinoButton(
           minSize: this.height ?? size.componentHeightDefault,
           padding: EdgeInsets.zero,
-          borderRadius: this.borderRadius ?? config.buttonBorderRadius,
+          borderRadius: this.borderRadius ?? config.borderRadiusButton,
           onPressed: this.isDisabled ? () {} : this.onPressed,
           child: Stack(
             children: [
@@ -97,7 +97,7 @@ class _FCBasicGradientButtonCupertino extends StatelessWidget {
                     ),
                 decoration: BoxDecoration(
                   gradient: this.backgroundGradient,
-                  borderRadius: this.borderRadius ?? config.buttonBorderRadius,
+                  borderRadius: this.borderRadius ?? config.borderRadiusButton,
                 ),
                 child: this.child,
               ),
@@ -107,10 +107,10 @@ class _FCBasicGradientButtonCupertino extends StatelessWidget {
                     gradient: this.borderGradient!,
                     child: FCAnimatedContainer(
                       decoration: BoxDecoration(
-                        borderRadius: config.buttonBorderRadius,
+                        borderRadius: config.borderRadiusButton,
                         border: Border.all(
                           color: Colors.white,
-                          width: this.borderWidth ?? config.buttonBorderWidth,
+                          width: this.borderWidth ?? config.borderWidthButton,
                         ),
                       ),
                       child: const SizedBox(),
@@ -125,7 +125,7 @@ class _FCBasicGradientButtonCupertino extends StatelessWidget {
             child: this.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.disabledColor,
-                    borderRadius: this.borderRadius ?? config.buttonBorderRadius,
+                    borderRadius: this.borderRadius ?? config.borderRadiusButton,
                   )
                 : null,
           ),
@@ -175,7 +175,7 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
           padding: EdgeInsets.zero,
           decoration: BoxDecoration(
             gradient: this.backgroundGradient,
-            borderRadius: this.borderRadius ?? config.buttonBorderRadius,
+            borderRadius: this.borderRadius ?? config.borderRadiusButton,
           ),
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
@@ -189,7 +189,7 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
                     horizontal: size.s16,
                     vertical: size.s16 / 4,
                   ),
-              shape: RoundedRectangleBorder(borderRadius: config.buttonBorderRadius),
+              shape: RoundedRectangleBorder(borderRadius: config.borderRadiusButton),
             ),
             onPressed: this.isDisabled ? () {} : this.onPressed,
             child: this.child,
@@ -201,10 +201,10 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
               gradient: this.borderGradient!,
               child: FCAnimatedContainer(
                 decoration: BoxDecoration(
-                  borderRadius: this.borderRadius ?? config.buttonBorderRadius,
+                  borderRadius: this.borderRadius ?? config.borderRadiusButton,
                   border: Border.all(
                     color: Colors.white,
-                    width: this.borderWidth ?? config.buttonBorderWidth,
+                    width: this.borderWidth ?? config.borderWidthButton,
                   ),
                 ),
                 child: const SizedBox(),
@@ -216,7 +216,7 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
             child: this.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.disabledColor,
-                    borderRadius: this.borderRadius ?? config.cardBorderRadius,
+                    borderRadius: this.borderRadius ?? config.borderRadiusCard,
                   )
                 : null,
           ),

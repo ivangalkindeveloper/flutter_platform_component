@@ -32,11 +32,11 @@ class FCBasicSnackbar extends StatelessWidget {
     return FCAnimatedContainer(
       decoration: BoxDecoration(
         color: this.backgroundColor,
-        borderRadius: config.snackbarBorderRadius,
+        borderRadius: config.borderRadiusSnackbar,
         border: this.borderColor != null
             ? Border.all(
                 color: this.borderColor!,
-                width: config.snackbarBorderWidth,
+                width: config.borderWidthSnackbar,
               )
             : null,
       ),

@@ -31,21 +31,21 @@ class FCConfig extends InheritedWidget {
 
   // Barrier
   // Barrier / Expanded Modal
-  Color get barrierExpandedModalColor => FCPlatform.decompose<Color, Color, Color>(
+  Color get barrierColorExpandedModal => FCPlatform.decompose<Color, Color, Color>(
         platform: this.platform,
         cupertino: this.theme.barrierExpandedModalCupertino,
         material: this.theme.barrierExpandedModalMaterial,
       );
 
   // Barrier / Pop Up Modal
-  Color get barrierPopUpModalColor => FCPlatform.decompose<Color, Color, Color>(
+  Color get barrierColorPopUpModal => FCPlatform.decompose<Color, Color, Color>(
         platform: this.platform,
         cupertino: this.theme.barrierPopUpModalCupertino,
         material: this.theme.barrierPopUpModalMaterial,
       );
 
   // Barrier / Dialog
-  Color get barrierDialogColor => FCPlatform.decompose<Color, Color, Color>(
+  Color get barrierColorDialog => FCPlatform.decompose<Color, Color, Color>(
         platform: this.platform,
         cupertino: this.theme.barrierDialogCupertino,
         material: this.theme.barrierDialogMaterial,
@@ -53,103 +53,103 @@ class FCConfig extends InheritedWidget {
 
   // BorderRadius
   // BorderRadius / Button
-  BorderRadius get buttonBorderRadius =>
+  BorderRadius get borderRadiusButton =>
       FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
-        cupertino: this.size.buttonBorderRadiusCupertino,
-        material: this.size.buttonBorderRadiusMaterial,
+        cupertino: this.size.borderRadiusButtonCupertino,
+        material: this.size.borderRadiusButtonMaterial,
       );
 
   // BorderRadius / Card
-  BorderRadius get cardBorderRadius =>
+  BorderRadius get borderRadiusCard =>
       FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
-        cupertino: this.size.cardBorderRadiusCupertino,
-        material: this.size.cardBorderRadiusMaterial,
+        cupertino: this.size.borderRadiusCardCupertino,
+        material: this.size.borderRadiusCardMaterial,
       );
 
   // BorderRadius / Dialog
-  BorderRadius get dialogBorderRadius =>
+  BorderRadius get borderRadiusDialog =>
       FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
-        cupertino: this.size.dialogBorderRadiusCupertino,
-        material: this.size.dialogBorderRadiusMaterial,
+        cupertino: this.size.borderRadiusDialogCupertino,
+        material: this.size.borderRadiusDialogMaterial,
       );
 
   // BorderRadius / Field
-  BorderRadius get fieldBorderRadius =>
+  BorderRadius get borderRadiusField =>
       FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
-        cupertino: this.size.fieldBorderRadiusCupertino,
-        material: this.size.fieldBorderRadiusMaterial,
+        cupertino: this.size.borderRadiusFieldCupertino,
+        material: this.size.borderRadiusFieldMaterial,
       );
 
   // BorderRadius / Modal
-  BorderRadius get modalBorderRadius =>
+  BorderRadius get borderRadiusModal =>
       FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
-        cupertino: this.size.modalBorderRadiusCupertino,
-        material: this.size.modalBorderRadiusMaterial,
+        cupertino: this.size.borderRadiusModalCupertino,
+        material: this.size.borderRadiusModalMaterial,
       );
 
   // BorderRadius / Segment Control
-  BorderRadius get segmentControlBorderRadius =>
+  BorderRadius get borderRadiusSegmentControl =>
       FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
-        cupertino: this.size.segmentControlBorderRadiusCupertino,
-        material: this.size.segmentControlBorderRadiusMaterial,
+        cupertino: this.size.borderRadiusSegmentControlCupertino,
+        material: this.size.borderRadiusSegmentControlMaterial,
       );
 
   // BorderRadius / Snackbar
-  BorderRadius get snackbarBorderRadius =>
+  BorderRadius get borderRadiusSnackbar =>
       FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
-        cupertino: this.size.snackbarBorderRadiusCupertino,
-        material: this.size.snackbarBorderRadiusMaterial,
+        cupertino: this.size.borderRadiusSnackbarCupertino,
+        material: this.size.borderRadiusSnackbarMaterial,
       );
 
   // BorderRadius / Toggle
-  BorderRadius get toggleBorderRadius =>
+  BorderRadius get borderRadiusToggle =>
       FCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
-        cupertino: this.size.toggleBorderRadiusCupertino,
-        material: this.size.toggleBorderRadiusMaterial,
+        cupertino: this.size.borderRadiusToggleCupertino,
+        material: this.size.borderRadiusToggleMaterial,
       );
 
   // BorderWidth
   // BorderWidth / Button
-  double get buttonBorderWidth => FCPlatform.decompose<double, double, double>(
+  double get borderWidthButton => FCPlatform.decompose<double, double, double>(
         platform: this.platform,
-        cupertino: this.size.buttonBorderWidthCupertino,
-        material: this.size.buttonBorderWidthMaterial,
+        cupertino: this.size.borderWidthButtonCupertino,
+        material: this.size.borderWidthButtonMaterial,
       );
 
   // BorderWidth / Card
-  double get cardBorderWidth => FCPlatform.decompose<double, double, double>(
+  double get borderWidthCard => FCPlatform.decompose<double, double, double>(
         platform: this.platform,
-        cupertino: this.size.cardBorderWidthCupertino,
-        material: this.size.cardBorderWidthMaterial,
+        cupertino: this.size.borderWidthCardCupertino,
+        material: this.size.borderWidthCardMaterial,
       );
 
   // BorderWidth / Field
-  double get fieldBorderWidth => FCPlatform.decompose<double, double, double>(
+  double get borderWidthField => FCPlatform.decompose<double, double, double>(
         platform: this.platform,
-        cupertino: this.size.fieldBorderWidthCupertino,
-        material: this.size.fieldBorderWidthMaterial,
+        cupertino: this.size.borderWidthFieldCupertino,
+        material: this.size.borderWidthFieldMaterial,
       );
 
   // BorderWidth / Segment Control
-  double get segmentControlBorderWidth => FCPlatform.decompose<double, double, double>(
+  double get borderWidthSegmentControl => FCPlatform.decompose<double, double, double>(
         platform: this.platform,
-        cupertino: this.size.segmentControlBorderWidthCupertino,
-        material: this.size.segmentControlBorderWidthMaterial,
+        cupertino: this.size.borderWidthSegmentControlCupertino,
+        material: this.size.borderWidthSegmentControlMaterial,
       );
 
   // BorderWidth / Snackbar
-  double get snackbarBorderWidth => FCPlatform.decompose<double, double, double>(
+  double get borderWidthSnackbar => FCPlatform.decompose<double, double, double>(
         platform: this.platform,
-        cupertino: this.size.snackbarBorderWidthCupertino,
-        material: this.size.snackbarBorderWidthMaterial,
+        cupertino: this.size.borderWidthSnackbarCupertino,
+        material: this.size.borderWidthSnackbarMaterial,
       );
 
   static FCConfig of(BuildContext context) {
@@ -161,9 +161,9 @@ class FCConfig extends InheritedWidget {
 
   @override
   bool updateShouldNotify(FCConfig oldWidget) =>
-      oldWidget.platform != platform ||
-      oldWidget.textStyle != textStyle ||
-      oldWidget.haptic != haptic ||
-      oldWidget.theme != theme ||
-      oldWidget.size != size;
+      oldWidget.platform != this.platform ||
+      oldWidget.textStyle != this.textStyle ||
+      oldWidget.haptic != this.haptic ||
+      oldWidget.theme != this.theme ||
+      oldWidget.size != this.size;
 }

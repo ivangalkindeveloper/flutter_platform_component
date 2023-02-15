@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'dart:ui';
 
 abstract class IFCTheme {
+  const IFCTheme();
+
   // System
   abstract final ThemeMode materialThemeMode;
   abstract final ThemeData materialThemeData;
@@ -114,4 +116,11 @@ abstract class IFCTheme {
   abstract final IFCLinearGradientConfig linearGradientConfig;
   abstract final IFCRadialGradientConfig radialGradientConfig;
   abstract final IFCSweepGradientConfig sweepGradientConfig;
+
+  IFCTheme copyWith();
+
+  IFCTheme lerp({
+    required IFCTheme other,
+    required double t,
+  });
 }

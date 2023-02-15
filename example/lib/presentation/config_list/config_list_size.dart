@@ -179,7 +179,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.buttonBorderRadiusCupertino.toString()),
+                context: context, text: size.borderRadiusButtonCupertino.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -191,7 +191,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.buttonBorderRadiusMaterial.toString()),
+                context: context, text: size.borderRadiusButtonMaterial.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -204,7 +204,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.cardBorderRadiusCupertino.toString()),
+                context: context, text: size.borderRadiusCardCupertino.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -216,7 +216,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.cardBorderRadiusMaterial.toString()),
+                context: context, text: size.borderRadiusCardMaterial.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -229,7 +229,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.dialogBorderRadiusCupertino.toString()),
+                context: context, text: size.borderRadiusDialogCupertino.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -241,7 +241,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.dialogBorderRadiusMaterial.toString()),
+                context: context, text: size.borderRadiusDialogMaterial.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -254,7 +254,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.fieldBorderRadiusCupertino.toString()),
+                context: context, text: size.borderRadiusFieldCupertino.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -266,7 +266,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.fieldBorderRadiusMaterial.toString()),
+                context: context, text: size.borderRadiusFieldMaterial.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -279,7 +279,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.modalBorderRadiusCupertino.toString()),
+                context: context, text: size.borderRadiusModalCupertino.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -291,7 +291,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.modalBorderRadiusMaterial.toString()),
+                context: context, text: size.borderRadiusModalMaterial.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -305,7 +305,7 @@ class ConfigListSize extends StatelessWidget {
             SizedBox(width: size.s16),
             FCText.medium18Black(
                 context: context,
-                text: size.segmentControlBorderRadiusCupertino.toString()),
+                text: size.borderRadiusSegmentControlCupertino.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -318,7 +318,7 @@ class ConfigListSize extends StatelessWidget {
             SizedBox(width: size.s16),
             FCText.medium18Black(
                 context: context,
-                text: size.segmentControlBorderRadiusMaterial.toString()),
+                text: size.borderRadiusSegmentControlMaterial.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -331,7 +331,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.snackbarBorderRadiusCupertino.toString()),
+                context: context, text: size.borderRadiusSnackbarCupertino.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -343,7 +343,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.snackbarBorderRadiusMaterial.toString()),
+                context: context, text: size.borderRadiusSnackbarMaterial.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -356,7 +356,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.toggleBorderRadiusCupertino.toString()),
+                context: context, text: size.borderRadiusToggleCupertino.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -368,7 +368,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.toggleBorderRadiusMaterial.toString()),
+                context: context, text: size.borderRadiusToggleMaterial.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 2),
@@ -382,7 +382,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.buttonBorderWidthCupertino.toString()),
+                context: context, text: size.borderWidthButtonCupertino.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -394,7 +394,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.buttonBorderWidthMaterial.toString()),
+                context: context, text: size.borderWidthButtonMaterial.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -407,7 +407,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.cardBorderWidthCupertino.toString()),
+                context: context, text: size.borderWidthCardCupertino.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -419,7 +419,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.cardBorderWidthMaterial.toString()),
+                context: context, text: size.borderWidthCardMaterial.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -432,7 +432,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.fieldBorderWidthCupertino.toString()),
+                context: context, text: size.borderWidthFieldCupertino.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -444,7 +444,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.fieldBorderWidthMaterial.toString()),
+                context: context, text: size.borderWidthFieldMaterial.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -458,7 +458,7 @@ class ConfigListSize extends StatelessWidget {
             SizedBox(width: size.s16),
             FCText.medium18Black(
                 context: context,
-                text: size.segmentControlBorderWidthCupertino.toString()),
+                text: size.borderWidthSegmentControlCupertino.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -471,7 +471,7 @@ class ConfigListSize extends StatelessWidget {
             SizedBox(width: size.s16),
             FCText.medium18Black(
                 context: context,
-                text: size.segmentControlBorderWidthMaterial.toString()),
+                text: size.borderWidthSegmentControlMaterial.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -484,7 +484,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.snackbarBorderWidthCupertino.toString()),
+                context: context, text: size.borderWidthSnackbarCupertino.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -496,7 +496,7 @@ class ConfigListSize extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.snackbarBorderWidthMaterial.toString()),
+                context: context, text: size.borderWidthSnackbarMaterial.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 2),
@@ -577,7 +577,7 @@ class ConfigListSize extends StatelessWidget {
               child: FCText.regular16Black(context: context, text: "Lower Date:"),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.lowerDate.toString()),
+            FCText.medium18Black(context: context, text: size.dateLower.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -587,7 +587,7 @@ class ConfigListSize extends StatelessWidget {
               child: FCText.regular16Black(context: context, text: "Initial Date:"),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.initialDate.toString()),
+            FCText.medium18Black(context: context, text: size.dateInitial.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -597,7 +597,7 @@ class ConfigListSize extends StatelessWidget {
               child: FCText.regular16Black(context: context, text: "Upper Date:"),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.upperDate.toString()),
+            FCText.medium18Black(context: context, text: size.dateUpper.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 2),
@@ -694,7 +694,7 @@ class ConfigListSize extends StatelessWidget {
               child: FCText.regular16Black(context: context, text: "Opacity Blur:"),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.blurOpacity.toString()),
+            FCText.medium18Black(context: context, text: size.opacityBlur.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
@@ -705,7 +705,7 @@ class ConfigListSize extends StatelessWidget {
               child: FCText.regular16Black(context: context, text: "Opacity Disabled:"),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.disabledOpacity.toString()),
+            FCText.medium18Black(context: context, text: size.opacityDisabled.toString()),
           ],
         ),
       ],

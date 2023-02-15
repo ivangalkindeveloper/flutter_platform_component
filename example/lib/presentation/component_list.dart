@@ -50,7 +50,7 @@ class ComponentScreen extends StatelessWidget {
                   child: FCPrimaryLightButton(
                     title: "Light Theme",
                     onPressed: () {
-                      final IFCTheme theme = FCDefaultLightTheme();
+                      final IFCTheme theme = FCDefaultTheme.defaultLightTheme;
                       SystemChrome.setSystemUIOverlayStyle(theme.systemOverlayStyle);
                       config.changeTheme(theme: theme);
                     },
@@ -61,7 +61,7 @@ class ComponentScreen extends StatelessWidget {
                   child: FCPrimaryLightButton(
                     title: "Dark Theme",
                     onPressed: () {
-                      final IFCTheme theme = FCDefaultDarkTheme();
+                      final IFCTheme theme = FCDefaultTheme.defaultDarkTheme;
                       SystemChrome.setSystemUIOverlayStyle(theme.systemOverlayStyle);
                       config.changeTheme(theme: theme);
                     },

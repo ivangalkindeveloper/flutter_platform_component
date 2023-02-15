@@ -114,7 +114,7 @@ class _FCBasicPINFieldState extends State<FCBasicPINField> with TickerProviderSt
           border: borderColor != null
               ? Border.all(
                   color: borderColor,
-                  width: this._config.fieldBorderWidth,
+                  width: this._config.borderWidthField,
                 )
               : null,
         ),

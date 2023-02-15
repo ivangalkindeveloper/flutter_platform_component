@@ -179,7 +179,7 @@ class _FCSelectFieldWrapper extends FCPlatformWidget {
                     shadowColor: Colors.transparent,
                     padding: EdgeInsets.zero,
                     shape: RoundedRectangleBorder(
-                        borderRadius: FCConfig.of(context).cardBorderRadius),
+                        borderRadius: FCConfig.of(context).borderRadiusCard),
                   ),
                   onPressed: isDisabled ? () {} : onPressed,
                   child: const SizedBox(),

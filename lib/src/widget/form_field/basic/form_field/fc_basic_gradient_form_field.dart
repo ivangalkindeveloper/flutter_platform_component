@@ -257,7 +257,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
               child: FCAnimatedFastContainer(
                 decoration: BoxDecoration(
                   gradient: this._backgroundGradient(),
-                  borderRadius: this._config.fieldBorderRadius,
+                  borderRadius: this._config.borderRadiusField,
                 ),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -375,10 +375,10 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                   gradient: this._borderGradient(context: context),
                   child: FCAnimatedContainer(
                     decoration: BoxDecoration(
-                      borderRadius: this._config.buttonBorderRadius,
+                      borderRadius: this._config.borderRadiusButton,
                       border: Border.all(
                         color: Colors.white,
-                        width: this._config.buttonBorderWidth,
+                        width: this._config.borderWidthButton,
                       ),
                     ),
                     child: const SizedBox(),
@@ -391,7 +391,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                 child: this.widget.isDisabled
                     ? FCComponentDisabledOverlay(
                         color: this.widget.disabledColor,
-                        borderRadius: this._config.fieldBorderRadius,
+                        borderRadius: this._config.borderRadiusField,
                       )
                     : null,
               ),

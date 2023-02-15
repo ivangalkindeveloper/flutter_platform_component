@@ -32,8 +32,7 @@ export 'src/text_style/fc_default_text_style.dart';
 export 'src/text_style/fc_text_style.dart';
 
 // Theme
-export 'src/theme/fc_default_dark_theme.dart';
-export 'src/theme/fc_default_light_theme.dart';
+export 'src/theme/fc_default_theme.dart';
 export 'src/theme/fc_theme.dart';
 
 // Animation

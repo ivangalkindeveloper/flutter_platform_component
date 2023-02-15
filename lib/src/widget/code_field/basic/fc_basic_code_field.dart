@@ -122,11 +122,11 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
         ),
         decoration: BoxDecoration(
           color: backgroundColor,
-          borderRadius: this._config.fieldBorderRadius,
+          borderRadius: this._config.borderRadiusField,
           border: borderColor != null
               ? Border.all(
                   color: borderColor,
-                  width: this._config.fieldBorderWidth,
+                  width: this._config.borderWidthField,
                 )
               : null,
         ),
@@ -198,7 +198,7 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
             child: this.widget.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.widget.disabledColor,
-                    borderRadius: this._config.fieldBorderRadius,
+                    borderRadius: this._config.borderRadiusField,
                   )
                 : null,
           ),

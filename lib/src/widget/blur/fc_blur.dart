@@ -36,7 +36,7 @@ class FCBlur extends StatelessWidget {
       child: BackdropFilter(
         filter: this.filter ?? theme.blurFilter,
         child: Container(
-          color: this._color(theme: theme).withOpacity(opacity ?? size.blurOpacity),
+          color: this._color(theme: theme).withOpacity(opacity ?? size.opacityBlur),
           alignment: Alignment.center,
           child: this.child,
         ),

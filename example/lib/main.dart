@@ -10,7 +10,7 @@ void main() {
 }
 
 class InitApp extends StatelessWidget {
-  InitApp({
+  const InitApp({
     super.key,
     required this.navigationService,
   });

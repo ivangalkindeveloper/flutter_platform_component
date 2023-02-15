@@ -62,7 +62,7 @@ class _FCBasicShimmerState extends State<FCBasicShimmer> {
       decoration: BoxDecoration(
         color:
             this._isHighlight ? this.widget.highlightColor : this.widget.backgroundColor,
-        borderRadius: this._config.cardBorderRadius,
+        borderRadius: this._config.borderRadiusCard,
         shape: this.widget.shape,
       ),
       child: this.widget.child ?? const SizedBox(),

@@ -34,7 +34,7 @@ class FCBasicGradientSnackbar extends StatelessWidget {
         FCAnimatedContainer(
           decoration: BoxDecoration(
             gradient: this.backgroundGradient,
-            borderRadius: config.snackbarBorderRadius,
+            borderRadius: config.borderRadiusSnackbar,
           ),
           padding: this.padding ??
               EdgeInsets.symmetric(
@@ -71,10 +71,10 @@ class FCBasicGradientSnackbar extends StatelessWidget {
               gradient: this.borderGradient!,
               child: FCAnimatedContainer(
                 decoration: BoxDecoration(
-                  borderRadius: config.snackbarBorderRadius,
+                  borderRadius: config.borderRadiusSnackbar,
                   border: Border.all(
                     color: Colors.white,
-                    width: config.snackbarBorderWidth,
+                    width: config.borderWidthSnackbar,
                   ),
                 ),
                 child: const SizedBox(),

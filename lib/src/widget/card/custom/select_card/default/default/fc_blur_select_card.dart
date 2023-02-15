@@ -28,7 +28,7 @@ class FCBlurSelectCard extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBlur(
-      borderRadius: this.borderRadius ?? config.cardBorderRadius,
+      borderRadius: this.borderRadius ?? config.borderRadiusCard,
       child: FCBasicSelectCard(
         backgroundColor: Colors.transparent,
         splashColor: theme.primary,

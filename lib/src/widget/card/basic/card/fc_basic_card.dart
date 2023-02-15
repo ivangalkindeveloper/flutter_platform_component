@@ -32,11 +32,11 @@ class FCBasicCard extends StatelessWidget {
       constraints: this.constraints,
       decoration: BoxDecoration(
         color: this.backgroundColor,
-        borderRadius: this.borderRadius ?? config.cardBorderRadius,
+        borderRadius: this.borderRadius ?? config.borderRadiusCard,
         border: this.borderColor != null
             ? Border.all(
                 color: this.borderColor!,
-                width: this.borderWidth ?? config.cardBorderWidth,
+                width: this.borderWidth ?? config.borderWidthCard,
               )
             : null,
       ),

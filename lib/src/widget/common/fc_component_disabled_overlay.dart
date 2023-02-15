@@ -26,7 +26,7 @@ class FCComponentDisabledOverlay extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: this._color(theme: theme).withOpacity(size.disabledOpacity),
+        color: this._color(theme: theme).withOpacity(size.opacityDisabled),
         borderRadius: this.borderRadius,
       ),
     );

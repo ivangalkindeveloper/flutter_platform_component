@@ -115,7 +115,7 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
           border: borderColor != null
               ? Border.all(
                   color: borderColor,
-                  width: this._config.fieldBorderWidth,
+                  width: this._config.borderWidthField,
                 )
               : null,
         ),

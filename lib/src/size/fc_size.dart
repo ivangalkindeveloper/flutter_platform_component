@@ -1,6 +1,8 @@
 import 'package:flutter/widgets.dart';
 
 abstract class IFCSize {
+  const IFCSize();
+
   // Size
   abstract final double s10;
   abstract final double s12;
@@ -29,46 +31,46 @@ abstract class IFCSize {
 
   // BorderRadius
   // BorderRadius / Button
-  abstract final BorderRadius buttonBorderRadiusCupertino;
-  abstract final BorderRadius buttonBorderRadiusMaterial;
+  abstract final BorderRadius borderRadiusButtonCupertino;
+  abstract final BorderRadius borderRadiusButtonMaterial;
   // BorderRadius / Card
-  abstract final BorderRadius cardBorderRadiusCupertino;
-  abstract final BorderRadius cardBorderRadiusMaterial;
+  abstract final BorderRadius borderRadiusCardCupertino;
+  abstract final BorderRadius borderRadiusCardMaterial;
   // BorderRadius / Dialog
-  abstract final BorderRadius dialogBorderRadiusCupertino;
-  abstract final BorderRadius dialogBorderRadiusMaterial;
+  abstract final BorderRadius borderRadiusDialogCupertino;
+  abstract final BorderRadius borderRadiusDialogMaterial;
   // BorderRadius / Field
-  abstract final BorderRadius fieldBorderRadiusCupertino;
-  abstract final BorderRadius fieldBorderRadiusMaterial;
+  abstract final BorderRadius borderRadiusFieldCupertino;
+  abstract final BorderRadius borderRadiusFieldMaterial;
   // BorderRadius / Modal
-  abstract final BorderRadius modalBorderRadiusCupertino;
-  abstract final BorderRadius modalBorderRadiusMaterial;
+  abstract final BorderRadius borderRadiusModalCupertino;
+  abstract final BorderRadius borderRadiusModalMaterial;
   // BorderRadius / Segment Control
-  abstract final BorderRadius segmentControlBorderRadiusCupertino;
-  abstract final BorderRadius segmentControlBorderRadiusMaterial;
+  abstract final BorderRadius borderRadiusSegmentControlCupertino;
+  abstract final BorderRadius borderRadiusSegmentControlMaterial;
   // BorderRadius / Snackbar
-  abstract final BorderRadius snackbarBorderRadiusCupertino;
-  abstract final BorderRadius snackbarBorderRadiusMaterial;
+  abstract final BorderRadius borderRadiusSnackbarCupertino;
+  abstract final BorderRadius borderRadiusSnackbarMaterial;
   // BorderRadius / Toggle
-  abstract final BorderRadius toggleBorderRadiusCupertino;
-  abstract final BorderRadius toggleBorderRadiusMaterial;
+  abstract final BorderRadius borderRadiusToggleCupertino;
+  abstract final BorderRadius borderRadiusToggleMaterial;
 
   // BorderWidth
   // BorderWidth / Button
-  abstract final double buttonBorderWidthCupertino;
-  abstract final double buttonBorderWidthMaterial;
+  abstract final double borderWidthButtonCupertino;
+  abstract final double borderWidthButtonMaterial;
   // BorderWidth / Card
-  abstract final double cardBorderWidthCupertino;
-  abstract final double cardBorderWidthMaterial;
+  abstract final double borderWidthCardCupertino;
+  abstract final double borderWidthCardMaterial;
   // BorderWidth / Field
-  abstract final double fieldBorderWidthCupertino;
-  abstract final double fieldBorderWidthMaterial;
+  abstract final double borderWidthFieldCupertino;
+  abstract final double borderWidthFieldMaterial;
   // BorderWidth / Segment Control
-  abstract final double segmentControlBorderWidthCupertino;
-  abstract final double segmentControlBorderWidthMaterial;
+  abstract final double borderWidthSegmentControlCupertino;
+  abstract final double borderWidthSegmentControlMaterial;
   // BorderWidth / Snackbar
-  abstract final double snackbarBorderWidthCupertino;
-  abstract final double snackbarBorderWidthMaterial;
+  abstract final double borderWidthSnackbarCupertino;
+  abstract final double borderWidthSnackbarMaterial;
 
   // Icon
   abstract final double iconHeightSmall;
@@ -81,9 +83,9 @@ abstract class IFCSize {
   abstract final double indicatorHeightLarge;
 
   // DateTime
-  abstract final DateTime lowerDate;
-  abstract final DateTime initialDate;
-  abstract final DateTime upperDate;
+  abstract final DateTime dateLower;
+  abstract final DateTime dateInitial;
+  abstract final DateTime dateUpper;
 
   // Duration
   // Duration / Animation
@@ -101,7 +103,9 @@ abstract class IFCSize {
 
   // Opacity
   // Opacity / Blur
-  abstract final double blurOpacity;
+  abstract final double opacityBlur;
   // Opacity / Disabled
-  abstract final double disabledOpacity;
+  abstract final double opacityDisabled;
+
+  IFCSize copyWith();
 }

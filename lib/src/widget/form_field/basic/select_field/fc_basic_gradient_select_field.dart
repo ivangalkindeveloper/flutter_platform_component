@@ -178,7 +178,7 @@ class _FCLinearGradientSelectFieldWrapper extends FCPlatformWidget {
                     backgroundColor: Colors.transparent,
                     shadowColor: Colors.transparent,
                     shape: RoundedRectangleBorder(
-                        borderRadius: FCConfig.of(context).cardBorderRadius),
+                        borderRadius: FCConfig.of(context).borderRadiusCard),
                   ),
                   onPressed: isDisabled ? () {} : onPressed,
                   child: const SizedBox(),

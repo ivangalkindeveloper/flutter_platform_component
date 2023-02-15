@@ -35,9 +35,9 @@ class _FlutterComponentState extends State<FlutterComponent> {
   void initState() {
     super.initState();
     this.platform = this.widget.platform ?? defaultTargetPlatform;
-    this.theme = this.widget.theme ?? FCDefaultLightTheme();
-    this.size = this.widget.size ?? FCDefaultSize();
-    this.textStyle = this.widget.textStyle ?? FCDefaultTextStyle();
+    this.theme = this.widget.theme ?? FCDefaultTheme.defaultLightTheme;
+    this.size = this.widget.size ?? FCDefaultSize.defaultSize;
+    this.textStyle = this.widget.textStyle ?? FCDefaultTextStyle.defaultTextStyle;
     this.haptic = this.widget.haptic ?? FCDefaultHaptic();
   }
 

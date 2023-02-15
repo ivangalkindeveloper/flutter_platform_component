@@ -1,6 +1,8 @@
 import 'package:flutter/widgets.dart';
 
 abstract class IFCTextStyle {
+  const IFCTextStyle();
+
   // FontWeight
   abstract final FontWeight fontWeightThin;
   abstract final FontWeight fontWeightRegular;
@@ -14,4 +16,6 @@ abstract class IFCTextStyle {
   abstract final String? fontFamilyMedium;
   abstract final String? fontFamilySemiBold;
   abstract final String? fontFamilyBold;
+
+  IFCTextStyle copyWith();
 }

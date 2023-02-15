@@ -252,10 +252,10 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
                 padding: EdgeInsets.symmetric(vertical: this._size.s16 / 4),
                 decoration: BoxDecoration(
                   color: this._backgroundColor(),
-                  borderRadius: this._config.fieldBorderRadius,
+                  borderRadius: this._config.borderRadiusField,
                   border: Border.all(
                     color: this._borderColor(),
-                    width: this._config.fieldBorderWidth,
+                    width: this._config.borderWidthField,
                   ),
                 ),
                 child: Column(
@@ -369,7 +369,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
                 child: this.widget.isDisabled
                     ? FCComponentDisabledOverlay(
                         color: this.widget.disabledColor,
-                        borderRadius: this._config.fieldBorderRadius,
+                        borderRadius: this._config.borderRadiusField,
                       )
                     : null,
               ),

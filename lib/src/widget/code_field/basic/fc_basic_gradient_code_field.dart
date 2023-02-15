@@ -122,11 +122,11 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
         ),
         decoration: BoxDecoration(
           gradient: backgroundGradient,
-          borderRadius: this._config.fieldBorderRadius,
+          borderRadius: this._config.borderRadiusField,
           border: borderColor != null
               ? Border.all(
                   color: borderColor,
-                  width: this._config.fieldBorderWidth,
+                  width: this._config.borderWidthField,
                 )
               : null,
         ),
@@ -203,7 +203,7 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
             child: this.widget.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.widget.disabledColor,
-                    borderRadius: this._config.fieldBorderRadius,
+                    borderRadius: this._config.borderRadiusField,
                   )
                 : null,
           ),

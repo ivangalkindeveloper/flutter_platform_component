@@ -25,7 +25,7 @@ class FCBlurCard extends StatelessWidget {
     final FCConfig config = context.config;
 
     return FCBlur(
-      borderRadius: this.borderRadius ?? config.cardBorderRadius,
+      borderRadius: this.borderRadius ?? config.borderRadiusCard,
       child: FCBasicCard(
         backgroundColor: Colors.transparent,
         constraints: this.constraints,

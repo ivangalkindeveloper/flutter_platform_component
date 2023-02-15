@@ -170,7 +170,7 @@ class _ChildWidget extends StatelessWidget {
       width: size.s28 * 2,
       decoration: BoxDecoration(
         color: theme.greyLight,
-        borderRadius: config.cardBorderRadius,
+        borderRadius: config.borderRadiusCard,
       ),
     );
   }

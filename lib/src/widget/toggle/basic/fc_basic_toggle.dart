@@ -152,7 +152,7 @@ class _FCBasicToggleState extends State<FCBasicToggle> {
                             child: this.widget.isDisabled
                                 ? FCComponentDisabledOverlay(
                                     color: this.widget.disabledColor,
-                                    borderRadius: config.toggleBorderRadius,
+                                    borderRadius: config.borderRadiusToggle,
                                   )
                                 : null,
                           ),
@@ -231,7 +231,7 @@ class _FCToggleButton<T> extends StatelessWidget {
       backgroundColor: this._backgroundColor(theme: theme),
       splashColor: this._splashColor(theme: theme),
       height: size.componentHeightSmall,
-      borderRadius: config.toggleBorderRadius,
+      borderRadius: config.borderRadiusToggle,
       onPressed: this.onPressed,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,

@@ -152,7 +152,7 @@ class _FCBasicGradientToggleState extends State<FCBasicGradientToggle> {
                             child: this.widget.isDisabled
                                 ? FCComponentDisabledOverlay(
                                     color: this.widget.disabledColor,
-                                    borderRadius: config.toggleBorderRadius,
+                                    borderRadius: config.borderRadiusToggle,
                                   )
                                 : null,
                           ),
@@ -241,7 +241,7 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
       backgroundGradient: this._backgroundGradient(context: context, theme: theme),
       splashColor: this._splashColor(theme: theme),
       height: size.componentHeightSmall,
-      borderRadius: config.toggleBorderRadius,
+      borderRadius: config.borderRadiusToggle,
       onPressed: this.onPressed,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
