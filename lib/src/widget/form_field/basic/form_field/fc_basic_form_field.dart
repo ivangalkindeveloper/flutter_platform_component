@@ -8,6 +8,7 @@ class FCBasicFormField extends StatefulWidget {
   const FCBasicFormField({
     super.key,
     required this.context,
+    this.height,
     required this.backgroundColor,
     required this.focusedColor,
     this.internalColor,
@@ -49,6 +50,7 @@ class FCBasicFormField extends StatefulWidget {
   });
 
   final BuildContext context;
+  final double? height;
   final Color backgroundColor;
   final Color focusedColor;
   final Color? internalColor;
@@ -246,7 +248,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
           children: [
             ConstrainedBox(
               constraints: BoxConstraints(
-                minHeight: this._size.componentHeightDefault,
+                minHeight: this.widget.height ?? this._size.heightFormField,
               ),
               child: FCAnimatedFastContainer(
                 padding: EdgeInsets.symmetric(vertical: this._size.s16 / 4),

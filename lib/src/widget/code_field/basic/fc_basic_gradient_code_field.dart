@@ -112,8 +112,8 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
     Color? borderColor,
   }) =>
       PinTheme(
-        height: this.widget.itemHeight ?? this._size.componentHeightDefault,
-        width: this.widget.itemWidth ?? this._size.componentHeightSmall,
+        height: this.widget.itemHeight ?? this._size.heightCodeField,
+        width: this.widget.itemWidth ?? (this._size.heightCodeField * 0.7),
         textStyle: TextStyle(
           color: style?.color ?? this._theme.black,
           fontSize: style?.fontSize ?? this._size.s20,
@@ -186,7 +186,7 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
               showCursor: this.widget.isShowCursor,
               cursor: Container(
                 color: this.widget.focusedBorderColor,
-                height: (this.widget.itemWidth ?? this._size.componentHeightSmall) -
+                height: (this.widget.itemWidth ?? this._size.heightCodeField) -
                     this._size.s14,
                 width: this._size.s10 / 10,
               ),

@@ -11,6 +11,7 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
     required this.value,
     required this.items,
     required this.onChanged,
+    this.height,
     this.unselectedBackgroundGradient,
     this.unselectedBorderGradient,
     this.unselectedInternalColor,
@@ -28,6 +29,7 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
   final T? value;
   final List<FCSegmentControlItem<T>> items;
   final void Function(T) onChanged;
+  final double? height;
   final Gradient? unselectedBackgroundGradient;
   final Gradient? unselectedBorderGradient;
   final Color? unselectedInternalColor;
@@ -51,7 +53,7 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
     final IFCSize size = config.size;
 
     return SizedBox(
-      height: size.componentHeightSmall,
+      height: this.height ?? size.heightSegmentControl,
       child: Stack(
         children: [
           Row(
@@ -62,6 +64,7 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
                         index: index,
                         item: item,
                         length: this.items.length,
+                        height: this.height,
                         unselectedBackgroundGradient: this.unselectedBackgroundGradient,
                         unselectedBorderGradient: this.unselectedBorderGradient,
                         unselectedInternalColor: this.unselectedInternalColor,
@@ -101,6 +104,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required this.index,
     required this.item,
     required this.length,
+    required this.height,
     required this.unselectedBackgroundGradient,
     required this.unselectedBorderGradient,
     required this.unselectedInternalColor,
@@ -118,6 +122,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   final int index;
   final FCSegmentControlItem<T> item;
   final int length;
+  final double? height;
   final Gradient? unselectedBackgroundGradient;
   final Gradient? unselectedBorderGradient;
   final Color? unselectedInternalColor;
@@ -193,13 +198,15 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   }) {
     if (this.isSelected) return this.selectedBackgroundGradient;
 
-    return this.unselectedBackgroundGradient ??
-        LinearGradient(
-          colors: [
-            Colors.transparent,
-            Colors.transparent,
-          ],
-        );
+    if (this.unselectedBackgroundGradient != null)
+      return this.unselectedBackgroundGradient!;
+
+    return const LinearGradient(
+      colors: [
+        Colors.transparent,
+        Colors.transparent,
+      ],
+    );
   }
 
   Gradient _borderGradient({
@@ -207,7 +214,9 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   }) {
     if (this.isSelected) return this.selectedBorderGradient;
 
-    return this.unselectedBorderGradient ?? this.selectedBorderGradient;
+    if (this.unselectedBorderGradient != null) return this.unselectedBorderGradient!;
+
+    return this.selectedBorderGradient;
   }
 
   Color _internalColor({
@@ -215,7 +224,9 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   }) {
     if (this.isSelected) return this.selectedInternalColor;
 
-    return this.unselectedInternalColor ?? this.selectedBorderGradient.colors.first;
+    if (this.unselectedInternalColor != null) return this.unselectedInternalColor!;
+
+    return this.selectedBorderGradient.colors.first;
   }
 
   Color _splashColor({
@@ -223,7 +234,9 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   }) {
     if (this.isSelected) return this.selectedSplashColor;
 
-    return this.unselectedSplashColor ?? theme.white;
+    if (this.unselectedSplashColor != null) return this.unselectedSplashColor!;
+
+    return theme.white;
   }
 
   Widget _separator({
@@ -253,7 +266,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
         FCBasicGradientButton(
           backgroundGradient: this._backgroundGradient(theme: theme),
           splashColor: this._splashColor(theme: theme),
-          height: size.componentHeightSmall,
+          height: this.height ?? size.heightSegmentControl,
           borderRadius: BorderRadius.only(
             topLeft: this._topLeftRadius(
               config: config,

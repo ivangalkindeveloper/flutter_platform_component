@@ -6,6 +6,7 @@ import 'package:flutter/widgets.dart';
 class FCSuccessDarkFormField extends StatelessWidget {
   const FCSuccessDarkFormField({
     super.key,
+    this.height,
     this.internalColor,
     this.internalIconHeight,
     this.controller,
@@ -43,6 +44,7 @@ class FCSuccessDarkFormField extends StatelessWidget {
     this.isDisabled = false,
   });
 
+  final double? height;
   final Color? internalColor;
   final double? internalIconHeight;
   final TextEditingController? controller;
@@ -86,6 +88,7 @@ class FCSuccessDarkFormField extends StatelessWidget {
 
     return FCBasicFormField(
       context: context,
+      height: this.height,
       backgroundColor: theme.backgroundComponent,
       focusedColor: theme.successDark,
       internalColor: this.internalColor,

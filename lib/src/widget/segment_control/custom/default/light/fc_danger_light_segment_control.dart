@@ -8,6 +8,7 @@ class FCDangerLightSegmentControl<T> extends StatelessWidget {
     required this.value,
     required this.items,
     required this.onChanged,
+    this.height,
     this.iconHeight,
     this.style,
     this.isDisabled = false,
@@ -17,6 +18,7 @@ class FCDangerLightSegmentControl<T> extends StatelessWidget {
   final T? value;
   final List<FCSegmentControlItem<T>> items;
   final void Function(T) onChanged;
+  final double? height;
   final double? iconHeight;
   final TextStyle? style;
   final bool isDisabled;
@@ -31,6 +33,7 @@ class FCDangerLightSegmentControl<T> extends StatelessWidget {
       value: this.value,
       items: this.items,
       onChanged: this.onChanged,
+      height: this.height,
       unselectedBackgroundColor: Colors.transparent,
       unselectedBorderColor: theme.dangerLight,
       unselectedInternalColor: theme.dangerLight,

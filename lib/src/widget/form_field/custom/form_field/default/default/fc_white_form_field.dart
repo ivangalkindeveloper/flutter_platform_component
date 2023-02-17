@@ -6,6 +6,7 @@ import 'package:flutter/widgets.dart';
 class FCWhiteFormField extends StatelessWidget {
   const FCWhiteFormField({
     super.key,
+    this.height,
     this.internalColor,
     this.internalIconHeight,
     this.controller,
@@ -43,6 +44,7 @@ class FCWhiteFormField extends StatelessWidget {
     this.isDisabled = false,
   });
 
+  final double? height;
   final Color? internalColor;
   final double? internalIconHeight;
   final TextEditingController? controller;
@@ -86,6 +88,7 @@ class FCWhiteFormField extends StatelessWidget {
 
     return FCBasicFormField(
       context: context,
+      height: this.height,
       backgroundColor: theme.backgroundComponent,
       focusedColor: theme.white,
       internalColor: this.internalColor,

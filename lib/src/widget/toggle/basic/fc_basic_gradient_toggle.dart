@@ -10,6 +10,7 @@ class FCBasicGradientToggle<T> extends StatefulWidget {
     required this.value,
     required this.items,
     required this.onChanged,
+    this.height,
     this.unselectedBackgroundGradient,
     this.unselectedInternalGradient,
     this.unselectedSplashColor,
@@ -27,6 +28,7 @@ class FCBasicGradientToggle<T> extends StatefulWidget {
   final T? value;
   final List<FCToggleItem<T>> items;
   final void Function(T) onChanged;
+  final double? height;
   final Gradient? unselectedBackgroundGradient;
   final Gradient? unselectedInternalGradient;
   final Color? unselectedSplashColor;
@@ -85,7 +87,7 @@ class _FCBasicGradientToggleState extends State<FCBasicGradientToggle> {
     final IFCSize size = config.size;
 
     return SizedBox(
-      height: size.componentHeightSmall,
+      height: this.widget.height ?? size.heightToggle,
       child: Stack(
         children: [
           FCBasicFormField(
@@ -103,7 +105,7 @@ class _FCBasicGradientToggleState extends State<FCBasicGradientToggle> {
             isRequired: this.widget.isRequired,
           ),
           Container(
-            height: size.componentHeightSmall,
+            height: this.widget.height ?? size.heightToggle,
             color: theme.backgroundScaffold,
           ),
           Row(
@@ -117,6 +119,7 @@ class _FCBasicGradientToggleState extends State<FCBasicGradientToggle> {
                               Expanded(
                                 child: _FCLinearGradientToggleButton(
                                   item: item,
+                                  height: this.widget.height,
                                   unselectedBackgroundGradient:
                                       this.widget.unselectedBackgroundGradient,
                                   unselectedInternalGradient:
@@ -172,6 +175,7 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
   const _FCLinearGradientToggleButton({
     super.key,
     required this.item,
+    required this.height,
     required this.unselectedBackgroundGradient,
     required this.unselectedInternalGradient,
     required this.unselectedSplashColor,
@@ -186,6 +190,7 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
   });
 
   final FCToggleItem<T> item;
+  final double? height;
   final Gradient? unselectedBackgroundGradient;
   final Gradient? unselectedInternalGradient;
   final Color? unselectedSplashColor;
@@ -240,7 +245,7 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
     return FCBasicGradientButton(
       backgroundGradient: this._backgroundGradient(context: context, theme: theme),
       splashColor: this._splashColor(theme: theme),
-      height: size.componentHeightSmall,
+      height: this.height ?? size.heightToggle,
       borderRadius: config.borderRadiusToggle,
       onPressed: this.onPressed,
       child: Row(

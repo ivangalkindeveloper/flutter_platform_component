@@ -9,6 +9,7 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
     required this.value,
     required this.items,
     required this.onChanged,
+    this.height,
     required this.backgroundColor,
     required this.thumbColor,
     required this.unselectedInternalColor,
@@ -22,6 +23,7 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
   final T value;
   final List<FCSlidingSegmentControlItem<T>> items;
   final void Function(T) onChanged;
+  final double? height;
   final Color backgroundColor;
   final Color thumbColor;
   final Color unselectedInternalColor;
@@ -44,8 +46,8 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
     if (this.items.length == 1) throw const FCItemsLengthException();
 
     final FCConfig config = context.config;
-    final IFCSize size = config.size;
     final IFCTextStyle textStyle = config.textStyle;
+    final IFCSize size = config.size;
 
     return Row(
       children: [
@@ -66,7 +68,7 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
                         (FCSlidingSegmentControlItem item) => MapEntry(
                           item.value,
                           SizedBox(
-                            height: size.componentHeightSmall,
+                            height: this.height ?? size.heightSlidingSegmentControl,
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [

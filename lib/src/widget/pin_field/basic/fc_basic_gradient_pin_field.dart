@@ -106,7 +106,7 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
   }) =>
       PinTheme(
         height: this.widget.itemHeight ?? this._size.s16 * 2,
-        textStyle: TextStyle(
+        textStyle: const TextStyle(
           color: Colors.transparent,
         ),
         decoration: BoxDecoration(

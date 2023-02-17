@@ -8,6 +8,7 @@ class FCGreyLightToggle<T> extends StatelessWidget {
     required this.value,
     required this.items,
     required this.onChanged,
+    this.height,
     this.horizontalInterval,
     this.iconHeight,
     this.style,
@@ -19,6 +20,7 @@ class FCGreyLightToggle<T> extends StatelessWidget {
   final T? value;
   final List<FCToggleItem<T>> items;
   final void Function(T) onChanged;
+  final double? height;
   final double? horizontalInterval;
   final double? iconHeight;
   final TextStyle? style;
@@ -35,6 +37,7 @@ class FCGreyLightToggle<T> extends StatelessWidget {
       value: this.value,
       items: this.items,
       onChanged: this.onChanged,
+      height: this.height,
       unselectedBackgroundColor: theme.backgroundComponent,
       unselectedInternalColor: theme.greyLight,
       unselectedSplashColor: theme.greyLight,

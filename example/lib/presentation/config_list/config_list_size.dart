@@ -129,43 +129,87 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // Component
-        // Component / Small - Code Field, Segment Control, Sliding Segment Control, Toggle
+        // Height
+        // Height / Button
         Row(
           children: [
             Expanded(
-              child:
-                  FCText.regular16Black(context: context, text: "Component Height Small"),
+              child: FCText.regular16Black(context: context, text: "Height Button:"),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.componentHeightSmall.toString()),
+            FCText.medium18Black(context: context, text: size.heightButton.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Component / Default - Button, Code Field, Form Field
+        // Height / Code Field
+        Row(
+          children: [
+            Expanded(
+              child: FCText.regular16Black(context: context, text: "Height Code Field:"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(context: context, text: size.heightCodeField.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Height / Form Field
+        Row(
+          children: [
+            Expanded(
+              child: FCText.regular16Black(context: context, text: "Height Form Field:"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(context: context, text: size.heightFormField.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Height / Keyboard Button
         Row(
           children: [
             Expanded(
               child: FCText.regular16Black(
-                  context: context, text: "Component Height Default"),
+                  context: context, text: "Height Keyboard Button:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.componentHeightDefault.toString()),
+                context: context, text: size.heightKeyboardButton.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 4),
-        // Component / Large - Keyboard Button
+        // Height / Segment Control
         Row(
           children: [
             Expanded(
-              child:
-                  FCText.regular16Black(context: context, text: "Component Height Large"),
+              child: FCText.regular16Black(
+                  context: context, text: "Height Segment Control:"),
             ),
             SizedBox(width: size.s16),
             FCText.medium18Black(
-                context: context, text: size.componentHeightLarge.toString()),
+                context: context, text: size.heightSegmentControl.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Height / Sliding Segment Control
+        Row(
+          children: [
+            Expanded(
+              child: FCText.regular16Black(
+                  context: context, text: "Height Sliding Segment Control:"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(
+                context: context, text: size.heightSlidingSegmentControl.toString()),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Height / Toggle
+        Row(
+          children: [
+            Expanded(
+              child: FCText.regular16Black(context: context, text: "Height Toggle:"),
+            ),
+            SizedBox(width: size.s16),
+            FCText.medium18Black(context: context, text: size.heightToggle.toString()),
           ],
         ),
         SizedBox(height: size.s16 / 2),

@@ -10,6 +10,7 @@ class FCBasicToggle<T> extends StatefulWidget {
     required this.value,
     required this.items,
     required this.onChanged,
+    this.height,
     this.unselectedBackgroundColor,
     this.unselectedInternalColor,
     this.unselectedSplashColor,
@@ -27,6 +28,7 @@ class FCBasicToggle<T> extends StatefulWidget {
   final T? value;
   final List<FCToggleItem<T>> items;
   final void Function(T) onChanged;
+  final double? height;
   final Color? unselectedBackgroundColor;
   final Color? unselectedInternalColor;
   final Color? unselectedSplashColor;
@@ -85,7 +87,7 @@ class _FCBasicToggleState extends State<FCBasicToggle> {
     final IFCSize size = config.size;
 
     return SizedBox(
-      height: size.componentHeightSmall,
+      height: this.widget.height ?? size.heightToggle,
       child: Stack(
         children: [
           FCBasicFormField(
@@ -103,7 +105,7 @@ class _FCBasicToggleState extends State<FCBasicToggle> {
             isRequired: this.widget.isRequired,
           ),
           Container(
-            height: size.componentHeightSmall,
+            height: this.widget.height ?? size.heightToggle,
             color: theme.backgroundScaffold,
           ),
           Row(
@@ -117,6 +119,7 @@ class _FCBasicToggleState extends State<FCBasicToggle> {
                               Expanded(
                                 child: _FCToggleButton(
                                   item: item,
+                                  height: this.widget.height,
                                   unselectedBackgroundColor:
                                       this.widget.unselectedBackgroundColor,
                                   unselectedInternalColor:
@@ -172,6 +175,7 @@ class _FCToggleButton<T> extends StatelessWidget {
   const _FCToggleButton({
     super.key,
     required this.item,
+    required this.height,
     required this.unselectedBackgroundColor,
     required this.selectedBackgroundColor,
     required this.unselectedInternalColor,
@@ -186,6 +190,7 @@ class _FCToggleButton<T> extends StatelessWidget {
   });
 
   final FCToggleItem<T> item;
+  final double? height;
   final Color? unselectedBackgroundColor;
   final Color? unselectedInternalColor;
   final Color? unselectedSplashColor;
@@ -230,7 +235,7 @@ class _FCToggleButton<T> extends StatelessWidget {
     return FCBasicButton(
       backgroundColor: this._backgroundColor(theme: theme),
       splashColor: this._splashColor(theme: theme),
-      height: size.componentHeightSmall,
+      height: this.height ?? size.heightToggle,
       borderRadius: config.borderRadiusToggle,
       onPressed: this.onPressed,
       child: Row(

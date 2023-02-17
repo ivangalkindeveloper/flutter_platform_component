@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 class FCBasicSelectField extends StatefulWidget {
   const FCBasicSelectField({
     super.key,
+    this.height,
     required this.backgroundColor,
     required this.splashColor,
     this.internalColor,
@@ -36,6 +37,7 @@ class FCBasicSelectField extends StatefulWidget {
     this.isDisabled = false,
   });
 
+  final double? height;
   final Color backgroundColor;
   final Color splashColor;
   final Color? internalColor;
@@ -112,6 +114,7 @@ class _FCBasicSelectFieldState extends State<FCBasicSelectField> {
       onPressed: this.widget.onPressed,
       child: FCBasicFormField(
         context: context,
+        height: this.widget.height,
         backgroundColor: this.widget.backgroundColor,
         focusedColor: Colors.transparent,
         internalColor: this.widget.internalColor,

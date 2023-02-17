@@ -8,6 +8,7 @@ class FCBasicGradientFormField extends StatefulWidget {
   const FCBasicGradientFormField({
     super.key,
     required this.context,
+    this.height,
     required this.backgroundGradient,
     required this.focusedGradient,
     this.internalGradient,
@@ -49,6 +50,7 @@ class FCBasicGradientFormField extends StatefulWidget {
   });
 
   final BuildContext context;
+  final double? height;
   final Gradient backgroundGradient;
   final Gradient focusedGradient;
   final Gradient? internalGradient;
@@ -150,10 +152,12 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
 
   Gradient _borderGradient({required BuildContext context}) {
     if (this._focusNode.hasPrimaryFocus == false)
-      return const LinearGradient(colors: [
-        Colors.transparent,
-        Colors.transparent,
-      ]);
+      return const LinearGradient(
+        colors: [
+          Colors.transparent,
+          Colors.transparent,
+        ],
+      );
 
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.dangerGradient;
@@ -252,7 +256,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
           children: [
             ConstrainedBox(
               constraints: BoxConstraints(
-                minHeight: this._size.componentHeightDefault,
+                minHeight: this.widget.height ?? this._size.heightFormField,
               ),
               child: FCAnimatedFastContainer(
                 decoration: BoxDecoration(

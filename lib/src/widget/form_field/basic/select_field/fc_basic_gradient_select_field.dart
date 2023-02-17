@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 class FCBasicGradientSelectField extends StatefulWidget {
   const FCBasicGradientSelectField({
     super.key,
+    this.height,
     required this.backgroundGradient,
     required this.splashColor,
     this.internalGradient,
@@ -36,6 +37,7 @@ class FCBasicGradientSelectField extends StatefulWidget {
     this.isDisabled = false,
   });
 
+  final double? height;
   final Gradient backgroundGradient;
   final Color splashColor;
   final Gradient? internalGradient;
@@ -107,6 +109,7 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
       onPressed: this.widget.onPressed,
       child: FCBasicGradientFormField(
         context: context,
+        height: this.widget.height,
         backgroundGradient: this.widget.backgroundGradient,
         focusedGradient: const LinearGradient(
           colors: [

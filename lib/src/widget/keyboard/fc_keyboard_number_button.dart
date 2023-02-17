@@ -5,15 +5,17 @@ import 'package:flutter/widgets.dart';
 class FCKeyboardNumberButton extends StatelessWidget {
   const FCKeyboardNumberButton({
     super.key,
-    required this.number,
+    this.height,
     this.style,
+    required this.number,
     required this.onPressed,
     this.isDisabled = false,
     this.disabledColor,
   });
 
-  final int number;
+  final double? height;
   final TextStyle? style;
+  final int number;
   final VoidCallback onPressed;
   final bool isDisabled;
   final Color? disabledColor;
@@ -36,6 +38,7 @@ class FCKeyboardNumberButton extends StatelessWidget {
         ),
       ),
       onPressed: this.onPressed,
+      height: this.height,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

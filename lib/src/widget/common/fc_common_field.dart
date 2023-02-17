@@ -165,22 +165,22 @@ class FCCommonField extends StatelessWidget {
             errorText: null,
             errorStyle: const TextStyle(height: 0),
             border: const OutlineInputBorder(
-              borderSide: const BorderSide(color: Colors.transparent),
+              borderSide: BorderSide(color: Colors.transparent),
             ),
             enabledBorder: const OutlineInputBorder(
-              borderSide: const BorderSide(color: Colors.transparent),
+              borderSide: BorderSide(color: Colors.transparent),
             ),
             disabledBorder: const OutlineInputBorder(
-              borderSide: const BorderSide(color: Colors.transparent),
+              borderSide: BorderSide(color: Colors.transparent),
             ),
             focusedBorder: const OutlineInputBorder(
-              borderSide: const BorderSide(color: Colors.transparent),
+              borderSide: BorderSide(color: Colors.transparent),
             ),
             focusedErrorBorder: const OutlineInputBorder(
-              borderSide: const BorderSide(color: Colors.transparent),
+              borderSide: BorderSide(color: Colors.transparent),
             ),
             errorBorder: const OutlineInputBorder(
-              borderSide: const BorderSide(color: Colors.transparent),
+              borderSide: BorderSide(color: Colors.transparent),
             ),
           ),
           keyboardType: this.textInputType,

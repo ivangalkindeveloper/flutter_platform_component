@@ -5,6 +5,7 @@ import 'package:flutter/widgets.dart';
 class FCPrimaryGradientSelectField extends StatelessWidget {
   const FCPrimaryGradientSelectField({
     super.key,
+    this.height,
     this.internalGradient,
     this.internalIconHeight,
     required this.title,
@@ -34,6 +35,7 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
     this.isDisabled = false,
   });
 
+  final double? height;
   final Gradient? internalGradient;
   final double? internalIconHeight;
   final String? title;
@@ -68,6 +70,7 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientSelectField(
+      height: this.height,
       backgroundGradient: FCLinearGradient(
         context: context,
         colors: [

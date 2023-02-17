@@ -5,6 +5,7 @@ import 'package:flutter/widgets.dart';
 class FCPrimarySelectField extends StatelessWidget {
   const FCPrimarySelectField({
     super.key,
+    this.height,
     this.internalColor,
     this.internalIconHeight,
     required this.title,
@@ -34,6 +35,7 @@ class FCPrimarySelectField extends StatelessWidget {
     this.isDisabled = false,
   });
 
+  final double? height;
   final Color? internalColor;
   final double? internalIconHeight;
   final String? title;
@@ -68,6 +70,7 @@ class FCPrimarySelectField extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicSelectField(
+      height: this.height,
       backgroundColor: theme.backgroundComponent,
       splashColor: theme.primary,
       internalColor: this.internalColor,

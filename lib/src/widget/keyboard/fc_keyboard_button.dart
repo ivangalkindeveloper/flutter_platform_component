@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 class FCKeyboardButton extends FCPlatformWidget {
   FCKeyboardButton({
     super.key,
+    double? height,
     required Widget child,
     required VoidCallback onPressed,
     bool isDisabled = false,
@@ -13,6 +14,7 @@ class FCKeyboardButton extends FCPlatformWidget {
   }) : super(
           cupertino: _FCKeyboardButtonCupertino(
             key: key,
+            height: height,
             child: child,
             onPressed: onPressed,
             isDisabled: isDisabled,
@@ -20,6 +22,7 @@ class FCKeyboardButton extends FCPlatformWidget {
           ),
           material: _FCKeyboardButtonMaterial(
             key: key,
+            height: height,
             child: child,
             onPressed: onPressed,
             isDisabled: isDisabled,
@@ -31,12 +34,14 @@ class FCKeyboardButton extends FCPlatformWidget {
 class _FCKeyboardButtonCupertino extends StatelessWidget {
   const _FCKeyboardButtonCupertino({
     super.key,
+    required this.height,
     required this.child,
     required this.onPressed,
     required this.isDisabled,
     required this.disabledColor,
   });
 
+  final double? height;
   final Widget child;
   final VoidCallback onPressed;
   final bool isDisabled;
@@ -49,13 +54,13 @@ class _FCKeyboardButtonCupertino extends StatelessWidget {
     final IFCSize size = config.size;
 
     return SizedBox(
-      height: size.componentHeightLarge,
-      width: size.componentHeightLarge,
+      height: this.height ?? size.heightKeyboardButton,
+      width: this.height ?? size.heightKeyboardButton,
       child: Stack(
         alignment: Alignment.center,
         children: [
           CupertinoButton(
-            minSize: size.componentHeightLarge,
+            minSize: this.height ?? size.heightKeyboardButton,
             onPressed: () {
               haptic.selection();
               this.onPressed();
@@ -81,12 +86,14 @@ class _FCKeyboardButtonCupertino extends StatelessWidget {
 class _FCKeyboardButtonMaterial extends StatelessWidget {
   const _FCKeyboardButtonMaterial({
     super.key,
+    required this.height,
     required this.child,
     required this.onPressed,
     required this.isDisabled,
     required this.disabledColor,
   });
 
+  final double? height;
   final Widget child;
   final VoidCallback onPressed;
   final bool isDisabled;
@@ -99,13 +106,13 @@ class _FCKeyboardButtonMaterial extends StatelessWidget {
     final IFCSize size = config.size;
 
     return SizedBox(
-      height: size.componentHeightLarge,
-      width: size.componentHeightLarge,
+      height: this.height ?? size.heightKeyboardButton,
+      width: this.height ?? size.heightKeyboardButton,
       child: Stack(
         alignment: Alignment.center,
         children: [
           IconButton(
-            iconSize: size.componentHeightLarge,
+            iconSize: this.height ?? size.heightKeyboardButton,
             onPressed: () {
               haptic.selection();
               this.onPressed();

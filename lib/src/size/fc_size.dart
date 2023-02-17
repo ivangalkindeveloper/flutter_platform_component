@@ -21,13 +21,21 @@ abstract class IFCSize {
   // Padding / List View
   abstract final EdgeInsets paddingListView;
 
-  // Component
-  // Component / Small - Code Field, Segment Control, Sliding Segment Control, Toggle
-  abstract final double componentHeightSmall;
-  // Component / Default - Button, Code Field, Form Field
-  abstract final double componentHeightDefault;
-  // Component / Large - Keyboard Button
-  abstract final double componentHeightLarge;
+  // Height
+  // Height / Button
+  abstract final double heightButton;
+  // Height / Code Field
+  abstract final double heightCodeField;
+  // Height / Form Field
+  abstract final double heightFormField;
+  // Height / Keyboard Button
+  abstract final double heightKeyboardButton;
+  // Height / Segment Control
+  abstract final double heightSegmentControl;
+  // Height / Sliding Segment Control
+  abstract final double heightSlidingSegmentControl;
+  // Height / Toggle
+  abstract final double heightToggle;
 
   // BorderRadius
   // BorderRadius / Button

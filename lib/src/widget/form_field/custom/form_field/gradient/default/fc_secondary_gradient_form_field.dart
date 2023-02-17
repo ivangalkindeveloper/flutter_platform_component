@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 class FCSecondaryGradientFormField extends StatelessWidget {
   const FCSecondaryGradientFormField({
     super.key,
+    this.height,
     this.internalGradient,
     this.internalIconHeight,
     this.controller,
@@ -34,6 +35,7 @@ class FCSecondaryGradientFormField extends StatelessWidget {
     this.isDisabled = false,
   });
 
+  final double? height;
   final Gradient? internalGradient;
   final double? internalIconHeight;
   final TextEditingController? controller;
@@ -68,6 +70,7 @@ class FCSecondaryGradientFormField extends StatelessWidget {
 
     return FCBasicGradientFormField(
       context: context,
+      height: this.height,
       backgroundGradient: FCLinearGradient(
         context: context,
         colors: [

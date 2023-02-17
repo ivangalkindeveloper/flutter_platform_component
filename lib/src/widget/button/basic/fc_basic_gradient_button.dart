@@ -82,14 +82,14 @@ class _FCBasicGradientButtonCupertino extends StatelessWidget {
     return Stack(
       children: [
         CupertinoButton(
-          minSize: this.height ?? size.componentHeightDefault,
+          minSize: this.height ?? size.heightButton,
           padding: EdgeInsets.zero,
           borderRadius: this.borderRadius ?? config.borderRadiusButton,
           onPressed: this.isDisabled ? () {} : this.onPressed,
           child: Stack(
             children: [
               FCAnimatedContainer(
-                height: this.height ?? size.componentHeightDefault,
+                height: this.height ?? size.heightButton,
                 padding: this.padding ??
                     EdgeInsets.symmetric(
                       horizontal: size.s16,
@@ -171,7 +171,7 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
     return Stack(
       children: [
         FCAnimatedContainer(
-          height: this.height ?? size.componentHeightDefault,
+          height: this.height ?? size.heightButton,
           padding: EdgeInsets.zero,
           decoration: BoxDecoration(
             gradient: this.backgroundGradient,
@@ -183,7 +183,7 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
               foregroundColor: this.splashColor,
               backgroundColor: Colors.transparent,
               shadowColor: Colors.transparent,
-              fixedSize: Size.fromHeight(this.height ?? size.componentHeightDefault),
+              fixedSize: Size.fromHeight(this.height ?? size.heightButton),
               padding: this.padding ??
                   EdgeInsets.symmetric(
                     horizontal: size.s16,

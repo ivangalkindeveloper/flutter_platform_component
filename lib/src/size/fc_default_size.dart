@@ -21,13 +21,21 @@ class FCDefaultSize implements IFCSize {
     // Padding / List View
     required this.paddingListView,
 
-    // Component
-    // Component / Code Field / Segment Control / Sliding Segment Control / Toggle
-    required this.componentHeightSmall,
-    // Component / Button / Code Field / Form Field
-    required this.componentHeightDefault,
-    // Component / Keyboard Button
-    required this.componentHeightLarge,
+    // Height
+    // Height / Button
+    required this.heightButton,
+    // Height / Code Field
+    required this.heightCodeField,
+    // Height / Form Field
+    required this.heightFormField,
+    // Height / Keyboard Button
+    required this.heightKeyboardButton,
+    // Height / Segment Control
+    required this.heightSegmentControl,
+    // Height / Sliding Segment Control
+    required this.heightSlidingSegmentControl,
+    // Height / Toggle
+    required this.heightToggle,
 
     // BorderRadius
     // BorderRadius / Button
@@ -137,16 +145,28 @@ class FCDefaultSize implements IFCSize {
   @override
   final EdgeInsets paddingListView;
 
-  // Component
-  // Component / Code Field / Segment Control / Sliding Segment Control / Toggle
+  // Height
+  // Height / Button
   @override
-  final double componentHeightSmall;
-  // Component / Button / Code Field / Form Field
+  final double heightButton;
+  // Height / Code Field
   @override
-  final double componentHeightDefault;
-  // Component / Keyboard Button
+  final double heightCodeField;
+  // Height / Form Field
   @override
-  final double componentHeightLarge;
+  final double heightFormField;
+  // Height / Keyboard Button
+  @override
+  final double heightKeyboardButton;
+  // Height / Segment Control
+  @override
+  final double heightSegmentControl;
+  // Height / Sliding Segment Control
+  @override
+  final double heightSlidingSegmentControl;
+  // Height / Toggle
+  @override
+  final double heightToggle;
 
   // BorderRadius
   // BorderRadius / Button
@@ -289,13 +309,21 @@ class FCDefaultSize implements IFCSize {
     // Padding / List View
     EdgeInsets? paddingListView,
 
-    // Component
-    // Component / Code Field / Segment Control / Sliding Segment Control / Toggle
-    double? componentHeightSmall,
-    // Component / Button / Code Field / Form Field
-    double? componentHeightDefault,
-    // Component / Keyboard Button
-    double? componentHeightLarge,
+    // Height
+    // Height / Button
+    double? heightButton,
+    // Height / Code Field
+    double? heightCodeField,
+    // Height / Form Field
+    double? heightFormField,
+    // Height / Keyboard Button
+    double? heightKeyboardButton,
+    // Height / Segment Control
+    double? heightSegmentControl,
+    // Height / Sliding Segment Control
+    double? heightSlidingSegmentControl,
+    // Height / Toggle
+    double? heightToggle,
 
     // BorderRadius
     // BorderRadius / Button
@@ -394,13 +422,22 @@ class FCDefaultSize implements IFCSize {
         // Padding / List View
         paddingListView: paddingListView ?? this.paddingListView,
 
-        // Component
-        // Component / Code Field / Segment Control / Sliding Segment Control / Toggle
-        componentHeightSmall: componentHeightSmall ?? this.componentHeightSmall,
-        // Component / Button / Code Field / Form Field
-        componentHeightDefault: componentHeightDefault ?? this.componentHeightDefault,
-        // Component / Keyboard Button
-        componentHeightLarge: componentHeightLarge ?? this.componentHeightLarge,
+        // Height
+        // Height / Button
+        heightButton: heightButton ?? this.heightButton,
+        // Height / Code Field
+        heightCodeField: heightCodeField ?? this.heightCodeField,
+        // Height / Form Field
+        heightFormField: heightFormField ?? this.heightFormField,
+        // Height / Keyboard Button
+        heightKeyboardButton: heightKeyboardButton ?? this.heightKeyboardButton,
+        // Height / Segment Control
+        heightSegmentControl: heightSegmentControl ?? this.heightSegmentControl,
+        // Height / Sliding Segment Control
+        heightSlidingSegmentControl:
+            heightSlidingSegmentControl ?? this.heightSlidingSegmentControl,
+        // Height / Toggle
+        heightToggle: heightToggle ?? this.heightToggle,
 
         // BorderRadius
         // BorderRadius / Button
@@ -531,13 +568,21 @@ class FCDefaultSize implements IFCSize {
           bottom: 96,
         ),
 
-        // Component
-        // Component / Code Field / Segment Control / Sliding Segment Control / Toggle
-        componentHeightSmall: 36,
-        // Component / Button / Code Field / Form Field
-        componentHeightDefault: 48,
-        // Component / Keyboard Button
-        componentHeightLarge: 72,
+        // Height
+        // Height / Button
+        heightButton: 48,
+        // Height / Code Field
+        heightCodeField: 48,
+        // Height / Form Field
+        heightFormField: 48,
+        // Height / Keyboard Button
+        heightKeyboardButton: 72,
+        // Height / Segment Control
+        heightSegmentControl: 36,
+        // Height / Sliding Segment Control
+        heightSlidingSegmentControl: 36,
+        // Height / Toggle
+        heightToggle: 36,
 
         // BorderRadius
         // BorderRadius / Button

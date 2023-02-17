@@ -11,6 +11,7 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
     required this.value,
     required this.items,
     required this.onChanged,
+    this.height,
     this.unselectedBackgroundColor,
     this.unselectedBorderColor,
     this.unselectedInternalColor,
@@ -28,6 +29,7 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
   final T? value;
   final List<FCSegmentControlItem<T>> items;
   final void Function(T) onChanged;
+  final double? height;
   final Color? unselectedBackgroundColor;
   final Color? unselectedBorderColor;
   final Color? unselectedInternalColor;
@@ -51,7 +53,7 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
     final IFCSize size = config.size;
 
     return SizedBox(
-      height: size.componentHeightSmall,
+      height: this.height ?? size.heightSegmentControl,
       child: Stack(
         children: [
           Row(
@@ -62,6 +64,7 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
                         index: index,
                         item: item,
                         length: this.items.length,
+                        height: this.height,
                         unselectedBackgroundColor: this.unselectedBackgroundColor,
                         unselectedBorderColor: this.unselectedBorderColor,
                         unselectedInternalColor: this.unselectedInternalColor,
@@ -101,6 +104,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required this.index,
     required this.item,
     required this.length,
+    required this.height,
     required this.unselectedBackgroundColor,
     required this.unselectedBorderColor,
     required this.unselectedInternalColor,
@@ -118,6 +122,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   final int index;
   final FCSegmentControlItem<T> item;
   final int length;
+  final double? height;
   final Color? unselectedBackgroundColor;
   final Color? unselectedBorderColor;
   final Color? unselectedInternalColor;
@@ -193,7 +198,9 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   }) {
     if (this.isSelected) return this.selectedBackgroundColor;
 
-    return this.unselectedBackgroundColor ?? Colors.transparent;
+    if (this.unselectedBackgroundColor != null) return this.unselectedBackgroundColor!;
+
+    return Colors.transparent;
   }
 
   Color _borderColor({
@@ -201,7 +208,9 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   }) {
     if (this.isSelected) return this.selectedBorderColor;
 
-    return this.unselectedBorderColor ?? this.selectedBorderColor;
+    if (this.unselectedBorderColor != null) return this.unselectedBorderColor!;
+
+    return this.selectedBorderColor;
   }
 
   Color _internalColor({
@@ -209,7 +218,9 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   }) {
     if (this.isSelected) return this.selectedInternalColor;
 
-    return this.unselectedInternalColor ?? this.selectedBorderColor;
+    if (this.unselectedInternalColor != null) return this.unselectedInternalColor!;
+
+    return this.selectedBorderColor;
   }
 
   Color _splashColor({
@@ -217,7 +228,9 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   }) {
     if (this.isSelected) return this.selectedSplashColor;
 
-    return this.unselectedSplashColor ?? theme.white;
+    if (this.unselectedSplashColor != null) return this.unselectedSplashColor!;
+
+    return theme.white;
   }
 
   Widget _separator({
@@ -245,7 +258,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
         FCBasicButton(
           backgroundColor: this._backgroundColor(theme: theme),
           splashColor: this._splashColor(theme: theme),
-          height: size.componentHeightSmall,
+          height: this.height ?? size.heightSegmentControl,
           borderRadius: BorderRadius.only(
             topLeft: this._topLeftRadius(
               config: config,
