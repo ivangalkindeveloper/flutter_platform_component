@@ -1,8 +1,15 @@
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class KeyboardNumberButtonScreen extends StatelessWidget {
+class KeyboardNumberButtonScreen extends StatefulWidget {
   const KeyboardNumberButtonScreen({Key? key});
+
+  @override
+  State<KeyboardNumberButtonScreen> createState() => _KeyboardNumberButtonScreenState();
+}
+
+class _KeyboardNumberButtonScreenState extends State<KeyboardNumberButtonScreen> {
+  bool _isDisabled = false;
 
   @override
   Widget build(BuildContext context) {
@@ -16,10 +23,25 @@ class KeyboardNumberButtonScreen extends StatelessWidget {
         title: "Keyboard Number Button",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: Center(
-        child: FCKeyboardNumberButton(
-          number: 1,
-          onPressed: () {},
+      body: SafeArea(
+        child: FCPadding(
+          child: Column(
+            children: [
+              FCPrimaryButton(
+                title: "isDisabled",
+                onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+              ),
+              Expanded(
+                child: Center(
+                  child: FCKeyboardNumberButton(
+                    number: 1,
+                    onPressed: () {},
+                    isDisabled: this._isDisabled,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

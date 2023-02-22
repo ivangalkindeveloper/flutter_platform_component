@@ -12,7 +12,7 @@ import 'package:example/presentation/component/badge/dot_badge_screen.dart';
 import 'package:example/presentation/component/badge/gradient_counter_badge_screen.dart';
 import 'package:example/presentation/component/badge/gradient_dot_badge_screen.dart';
 import 'package:example/presentation/component/blur/blur_screen.dart';
-import 'package:example/presentation/component/button/button_default_screen.dart';
+import 'package:example/presentation/component/button/button_screen.dart';
 import 'package:example/presentation/component/button/gradient_button_screen.dart';
 import 'package:example/presentation/component/button/icon_button_screen.dart';
 import 'package:example/presentation/component/button/modal_button_screen.dart';

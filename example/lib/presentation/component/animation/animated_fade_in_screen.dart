@@ -25,8 +25,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
         onPressedBack: () => Navigator.pop(context),
       ),
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.all(size.s16),
+        child: FCPadding(
           child: Column(
             children: [
               FCPrimaryButton(

@@ -8,25 +8,25 @@ class FCDatePicker extends FCPlatformWidget {
     super.key,
     required this.dateRange,
     required this.onChanged,
-    this.child,
+    this.materialDialog,
   }) : super(
           cupertino: _FCDatePickerCupertino(
             key: key,
             dateRange: dateRange,
             onChanged: onChanged,
-            child: child,
+            materialDialog: materialDialog,
           ),
           material: _FCDatePickerMaterial(
             key: key,
             dateRange: dateRange,
             onChanged: onChanged,
-            child: child,
+            materialDialog: materialDialog,
           ),
         );
 
   final FCDateRange dateRange;
   final Function(DateTime) onChanged;
-  final Widget? child;
+  final Widget? materialDialog;
 }
 
 class _FCDatePickerCupertino extends StatelessWidget {
@@ -34,12 +34,12 @@ class _FCDatePickerCupertino extends StatelessWidget {
     super.key,
     required this.dateRange,
     required this.onChanged,
-    required this.child,
+    required this.materialDialog,
   });
 
   final FCDateRange dateRange;
   final Function(DateTime) onChanged;
-  final Widget? child;
+  final Widget? materialDialog;
 
   @override
   Widget build(BuildContext context) {
@@ -52,9 +52,9 @@ class _FCDatePickerCupertino extends StatelessWidget {
         data: CupertinoThemeData(
           textTheme: CupertinoTextThemeData(
             dateTimePickerTextStyle:
-                CupertinoTheme.of(context).textTheme.pickerTextStyle.copyWith(
-                      color: CupertinoDynamicColor.maybeResolve(theme.black, context),
-                    ),
+                theme.cupertinoThemeData.textTheme.pickerTextStyle.copyWith(
+              color: CupertinoDynamicColor.maybeResolve(theme.black, context),
+            ),
           ),
         ),
         child: CupertinoDatePicker(
@@ -75,34 +75,33 @@ class _FCDatePickerMaterial extends StatelessWidget {
     super.key,
     required this.dateRange,
     required this.onChanged,
-    required this.child,
+    required this.materialDialog,
   });
 
   final FCDateRange dateRange;
   final Function(DateTime) onChanged;
-  final Widget? child;
+  final Widget? materialDialog;
 
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
 
     return Theme(
-      data: ThemeData.light().copyWith(
+      data: theme.materialThemeData.copyWith(
         colorScheme: ColorScheme.fromSeed(
           seedColor: theme.primary,
         ),
         dialogTheme: DialogTheme(
-          backgroundColor: theme.white,
           elevation: 0,
+          backgroundColor: theme.white,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(size.s16),
+            borderRadius: config.borderRadiusDialog,
           ),
           actionsPadding: EdgeInsets.zero,
         ),
       ),
-      child: this.child!,
+      child: this.materialDialog ?? const SizedBox(),
     );
   }
 }

@@ -8,7 +8,6 @@ class DialogScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final FCConfig config = FCConfig.of(context);
     final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
 
     return FCScaffold(
       backgroundColor: theme.backgroundScaffold,
@@ -18,33 +17,28 @@ class DialogScreen extends StatelessWidget {
         onPressedBack: () => Navigator.pop(context),
       ),
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.all(size.s16),
-          child: Column(
-            children: [
-              FCPrimaryButton(
-                title: "Action",
-                onPressed: () => FCGlobal.showDialog(
-                  context: context,
-                  child: FCDialog(
-                    title: "Title",
-                    description: "Description",
-                    items: [
-                      FCDialogItem(
-                        color: theme.primary,
-                        title: "Cancel",
-                        onPressed: () => Navigator.pop(context),
-                      ),
-                      FCDialogItem(
-                        color: theme.primary,
-                        title: "Confirm",
-                        onPressed: () => Navigator.pop(context),
-                      ),
-                    ],
+        child: FCPadding(
+          child: FCPrimaryButton(
+            title: "Action",
+            onPressed: () => FCGlobal.showDialog(
+              context: context,
+              child: FCDialog(
+                title: "Title",
+                description: "Description",
+                items: [
+                  FCDialogItem(
+                    color: theme.primary,
+                    title: "Cancel",
+                    onPressed: () => Navigator.pop(context),
                   ),
-                ),
+                  FCDialogItem(
+                    color: theme.primary,
+                    title: "Confirm",
+                    onPressed: () => Navigator.pop(context),
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
         ),
       ),

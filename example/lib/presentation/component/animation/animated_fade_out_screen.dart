@@ -25,8 +25,7 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
         onPressedBack: () => Navigator.pop(context),
       ),
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.all(size.s16),
+        child: FCPadding(
           child: Column(
             children: [
               FCPrimaryButton(

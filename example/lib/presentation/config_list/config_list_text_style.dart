@@ -13,121 +13,200 @@ class ConfigListTextStyle extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        FCText.semiBold20Black(context: context, text: "Text Style:"),
+        FCText.semiBold20Black(
+          context: context,
+          text: "Text Style:",
+        ),
         SizedBox(height: size.s16 / 2),
         // FontWeight
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Font Weight Thin:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Font Weight Thin:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: textStyle.fontWeightThin.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: textStyle.fontWeightThin.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child:
-                  FCText.regular16Black(context: context, text: "Font Weight Regular:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Font Weight Regular:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: textStyle.fontWeightRegular.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: textStyle.fontWeightRegular.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Font Weight Medium:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Font Weight Medium:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: textStyle.fontWeightMedium.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: textStyle.fontWeightMedium.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child:
-                  FCText.regular16Black(context: context, text: "Font Weight SemiBold:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Font Weight SemiBold:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: textStyle.fontWeightSemiBold.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: textStyle.fontWeightSemiBold.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Font Weight Bold:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Font Weight Bold:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: textStyle.fontWeightBold.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: textStyle.fontWeightBold.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 2),
         // FontFamily
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Font Family Thin:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Font Family Thin:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: textStyle.fontFamilyThin.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: textStyle.fontFamilyThin.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child:
-                  FCText.regular16Black(context: context, text: "Font Family Regular:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Font Family Regular:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: textStyle.fontFamilyRegular.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: textStyle.fontFamilyRegular.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Font Family Medium:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Font Family Medium:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: textStyle.fontFamilyMedium.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: textStyle.fontFamilyMedium.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child:
-                  FCText.regular16Black(context: context, text: "Font Family SemiBold:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Font Family SemiBold:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: textStyle.fontFamilySemiBold.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: textStyle.fontFamilySemiBold.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Font Family Bold:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Font Family Bold:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: textStyle.fontFamilyBold.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: textStyle.fontFamilyBold.toString(),
+              ),
+            ),
           ],
         ),
       ],

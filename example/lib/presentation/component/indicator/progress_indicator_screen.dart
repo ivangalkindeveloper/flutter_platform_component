@@ -1,5 +1,6 @@
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
+import 'dart:async';
 
 class ProgressIndicatorScreen extends StatefulWidget {
   const ProgressIndicatorScreen({Key? key});
@@ -8,8 +9,47 @@ class ProgressIndicatorScreen extends StatefulWidget {
   State<ProgressIndicatorScreen> createState() => _ProgressIndicatorScreenState();
 }
 
-class _ProgressIndicatorScreenState extends State<ProgressIndicatorScreen> {
-  double _value = 0;
+class _ProgressIndicatorScreenState extends State<ProgressIndicatorScreen>
+    with TickerProviderStateMixin {
+  late final AnimationController _timerController;
+  final StreamController<double> _value$ = StreamController<double>();
+  StreamSubscription? _timerSubscription;
+
+  @override
+  void initState() {
+    super.initState();
+    this._timerController = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 4),
+    );
+    this._timerController.addListener(this._timerControllerListener);
+  }
+
+  @override
+  void dispose() {
+    this._timerController.removeListener(this._timerControllerListener);
+    this._timerController.dispose();
+    this._value$.close();
+    this._timerSubscription?.cancel();
+    super.dispose();
+  }
+
+  void _timerControllerListener() => this._value$.add(this._timerController.value);
+
+  void _startTimer() {
+    this._timerController.reset();
+    this._timerController.forward();
+
+    this._timerSubscription?.cancel();
+    this._timerSubscription = this._timer$().listen(null);
+  }
+
+  Stream<void> _timer$() => Stream.periodic(const Duration(seconds: 4), (int second) {
+        this._timerController.reset();
+        this._timerController.forward();
+
+        this._value$.add(0);
+      });
 
   @override
   Widget build(BuildContext context) {
@@ -24,81 +64,81 @@ class _ProgressIndicatorScreenState extends State<ProgressIndicatorScreen> {
         title: "Progress Indicator",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
-        children: [
-          FCPrimaryButton(
-            title: "Action",
-            onPressed: () => setState(() {
-              if (this._value == 1) {
-                this._value = 0;
-              } else {
-                this._value = this._value + 0.1;
-              }
-            }),
-          ),
-          SizedBox(height: size.s16),
-          FCText.regular16Black(
-            context: context,
-            text: "Dark",
-          ),
-          SizedBox(height: size.s16),
-          FCInfoDarkProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCSuccessDarkProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCDangerDarkProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCWarningDarkProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
-            context: context,
-            text: "Default",
-          ),
-          SizedBox(height: size.s16),
-          FCBlackAlwaysProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCBlackProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCInfoProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCSuccessProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCGreyProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCPrimaryProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCDangerProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCSecondaryProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCWhiteAlwaysProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCWhiteProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCWarningProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
-            context: context,
-            text: "Light",
-          ),
-          SizedBox(height: size.s16),
-          FCInfoLightProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCSuccessLightProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCPrimaryLightProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCDangerLightProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCSecondaryLightProgressIndicator(value: this._value),
-          SizedBox(height: size.s16 / 2),
-          FCWarningLightProgressIndicator(value: this._value),
-        ],
-      ),
+      body: StreamBuilder<double>(
+          stream: this._value$.stream,
+          builder: (BuildContext context, AsyncSnapshot<double> snapshotValue) {
+            final double value = snapshotValue.data ?? 0;
+
+            return FCListView(
+              children: [
+                FCPrimaryButton(
+                  title: "Start",
+                  onPressed: this._startTimer,
+                ),
+                SizedBox(height: size.s16 * 2),
+                FCText.regular16Black(
+                  context: context,
+                  text: "Dark",
+                ),
+                SizedBox(height: size.s16),
+                FCInfoDarkProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCSuccessDarkProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCPrimaryDarkProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCDangerDarkProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCSecondaryDarkProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCWarningDarkProgressIndicator(value: value),
+                SizedBox(height: size.s16 * 2),
+                FCText.regular16Black(
+                  context: context,
+                  text: "Default",
+                ),
+                SizedBox(height: size.s16),
+                FCBlackAlwaysProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCBlackProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCInfoProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCSuccessProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCGreyProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCPrimaryProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCDangerProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCSecondaryProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCWhiteAlwaysProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCWhiteProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCWarningProgressIndicator(value: value),
+                SizedBox(height: size.s16 * 2),
+                FCText.regular16Black(
+                  context: context,
+                  text: "Light",
+                ),
+                SizedBox(height: size.s16),
+                FCInfoLightProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCSuccessLightProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCPrimaryLightProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCDangerLightProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCSecondaryLightProgressIndicator(value: value),
+                SizedBox(height: size.s16),
+                FCWarningLightProgressIndicator(value: value),
+              ],
+            );
+          }),
     );
   }
 }

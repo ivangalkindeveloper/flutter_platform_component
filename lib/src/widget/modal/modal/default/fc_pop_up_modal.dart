@@ -45,7 +45,6 @@ class FCPopUpModal extends StatelessWidget {
                 borderRadius: BorderRadius.circular(this.barHeight ?? size.s16 / 2),
               ),
             ),
-            SizedBox(height: size.s16 / 2),
             SafeArea(
               top: false,
               child: Padding(

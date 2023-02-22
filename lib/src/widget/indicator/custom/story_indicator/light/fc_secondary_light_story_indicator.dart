@@ -20,8 +20,8 @@ class FCSecondaryLightStoryIndicator extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicStoryIndicator(
-      backgroundColor: theme.secondaryLight,
-      color: theme.warningLight,
+      backgroundColor: theme.greyLight,
+      color: theme.secondaryLight,
       length: this.length,
       index: this.index,
       value: this.value,

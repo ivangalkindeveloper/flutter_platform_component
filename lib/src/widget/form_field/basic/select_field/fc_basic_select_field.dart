@@ -35,6 +35,7 @@ class FCBasicSelectField extends StatefulWidget {
     required this.onPressed,
     this.isRequired = false,
     this.isDisabled = false,
+    this.disabledColor,
   });
 
   final double? height;
@@ -67,6 +68,7 @@ class FCBasicSelectField extends StatefulWidget {
   final VoidCallback onPressed;
   final bool isRequired;
   final bool isDisabled;
+  final Color? disabledColor;
 
   @override
   State<FCBasicSelectField> createState() => _FCBasicSelectFieldState();
@@ -143,6 +145,7 @@ class _FCBasicSelectFieldState extends State<FCBasicSelectField> {
         bottom: this.widget.bottom,
         isRequired: this.widget.isRequired,
         isDisabled: this.widget.isDisabled,
+        disabledColor: this.widget.disabledColor,
       ),
     );
   }

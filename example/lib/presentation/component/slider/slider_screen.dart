@@ -10,6 +10,7 @@ class SliderScreen extends StatefulWidget {
 
 class _SliderScreenState extends State<SliderScreen> {
   double _value = 0;
+  bool _isDisabled = false;
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +27,11 @@ class _SliderScreenState extends State<SliderScreen> {
       ),
       body: FCListView(
         children: [
+          FCPrimaryButton(
+            title: "isDisabled",
+            onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+          ),
+          SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Dark",
@@ -34,31 +40,37 @@ class _SliderScreenState extends State<SliderScreen> {
           FCInfoDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -69,51 +81,61 @@ class _SliderScreenState extends State<SliderScreen> {
           FCBlackAlwaysSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCBlackSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimarySlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondarySlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteAlwaysSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -124,31 +146,37 @@ class _SliderScreenState extends State<SliderScreen> {
           FCInfoLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
           ),
         ],
       ),

@@ -8,7 +8,6 @@ class DatePickerScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final FCConfig config = FCConfig.of(context);
     final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
 
     return FCScaffold(
       backgroundColor: theme.backgroundScaffold,
@@ -18,29 +17,21 @@ class DatePickerScreen extends StatelessWidget {
         onPressedBack: () => Navigator.pop(context),
       ),
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.all(size.s16),
-          child: Column(
-            children: [
-              FCPrimaryButton(
-                title: "Action",
-                onPressed: () => FCGlobal.showDateTimePicker(
-                  context: context,
-                  locale: Locale("en"),
+        child: FCPadding(
+          child: FCPrimaryButton(
+            title: "Action",
+            onPressed: () => FCGlobal.showDateTimePicker(
+              context: context,
+              locale: const Locale("en", "EN"),
+              dateRange: FCDateRange(context: context),
+              cupertinoModal: FCPopUpModal(
+                backgroundColor: theme.backgroundScaffold,
+                child: FCDatePicker(
                   dateRange: FCDateRange(context: context),
-                  cupertinoModal: FCPopUpModal(
-                    backgroundColor: theme.backgroundScaffold,
-                    child: Padding(
-                      padding: EdgeInsets.all(size.s16),
-                      child: FCDatePicker(
-                        dateRange: FCDateRange(context: context),
-                        onChanged: (DateTime value) {},
-                      ),
-                    ),
-                  ),
+                  onChanged: (DateTime value) {},
                 ),
               ),
-            ],
+            ),
           ),
         ),
       ),

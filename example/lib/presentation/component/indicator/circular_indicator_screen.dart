@@ -58,7 +58,7 @@ class CircularIndicatorScreen extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: size.s16 * 4),
+          SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Small",

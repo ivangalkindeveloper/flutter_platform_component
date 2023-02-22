@@ -129,6 +129,7 @@ class _FCActionModalCupertino extends StatelessWidget {
     required IFCTheme theme,
     required IFCSize size,
     required FCActionModalItem item,
+    required bool isCancel,
   }) =>
       CupertinoActionSheetAction(
         isDefaultAction: item.isDefaultAction,
@@ -151,8 +152,10 @@ class _FCActionModalCupertino extends StatelessWidget {
               style: TextStyle(
                 color: this.itemStyle?.color ?? theme.black,
                 fontSize: this.itemStyle?.fontSize ?? size.s16,
-                fontWeight: this.itemStyle?.fontWeight ?? textStyle.fontWeightRegular,
-                fontFamily: this.itemStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+                fontWeight: this.itemStyle?.fontWeight ??
+                    (isCancel ? textStyle.fontWeightMedium : textStyle.fontWeightRegular),
+                fontFamily: this.itemStyle?.fontFamily ??
+                    (isCancel ? textStyle.fontFamilyMedium : textStyle.fontFamilyRegular),
               ),
             ),
             if (item.postfixIcon != null) SizedBox(width: size.s16),
@@ -194,6 +197,7 @@ class _FCActionModalCupertino extends StatelessWidget {
             theme: theme,
             size: size,
             item: item,
+            isCancel: false,
           ),
         ),
       ],
@@ -203,6 +207,7 @@ class _FCActionModalCupertino extends StatelessWidget {
               theme: theme,
               size: size,
               item: cancelItem!,
+              isCancel: true,
             )
           : null,
     );

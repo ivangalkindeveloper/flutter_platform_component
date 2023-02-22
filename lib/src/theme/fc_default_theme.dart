@@ -662,8 +662,8 @@ class FCDefaultTheme implements IFCTheme {
         whiteAlways: const Color(0xffFFFFFF),
 
         // Black
-        black: const Color(0xffFFFFFF),
-        blackAlways: const Color(0xffFFFFFF),
+        black: const Color(0xff171717),
+        blackAlways: const Color(0xff171717),
 
         // Background
         backgroundScaffold: const Color(0xffFAFAFA),

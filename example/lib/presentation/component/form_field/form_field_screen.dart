@@ -1,8 +1,15 @@
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FormFieldScreen extends StatelessWidget {
+class FormFieldScreen extends StatefulWidget {
   const FormFieldScreen({Key? key});
+
+  @override
+  State<FormFieldScreen> createState() => _FormFieldScreenState();
+}
+
+class _FormFieldScreenState extends State<FormFieldScreen> {
+  bool _isDisabled = false;
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +26,11 @@ class FormFieldScreen extends StatelessWidget {
       ),
       body: FCListView(
         children: [
+          FCPrimaryButton(
+            title: "isDisabled",
+            onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+          ),
+          SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Dark",
@@ -26,26 +38,32 @@ class FormFieldScreen extends StatelessWidget {
           SizedBox(height: size.s16),
           FCInfoDarkFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyDarkFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningDarkFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -55,42 +73,52 @@ class FormFieldScreen extends StatelessWidget {
           SizedBox(height: size.s16),
           FCBlackAlwaysFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCBlackFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteAlwaysFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -100,26 +128,32 @@ class FormFieldScreen extends StatelessWidget {
           SizedBox(height: size.s16),
           FCInfoLightFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessLightFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyLightFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningLightFormField(
             labelText: "Label",
+            isDisabled: this._isDisabled,
           ),
         ],
       ),

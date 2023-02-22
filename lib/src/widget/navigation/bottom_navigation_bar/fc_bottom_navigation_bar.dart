@@ -6,20 +6,20 @@ import 'package:flutter/material.dart';
 class FCBottomNavigationBar extends FCPlatformWidget {
   FCBottomNavigationBar({
     super.key,
-    required int currentIndex,
-    required ValueChanged<int> onTap,
+    required int index,
+    required ValueChanged<int> onPressed,
     required List<BottomNavigationBarItem> items,
   }) : super(
           cupertino: _FCBottomNavigationBarCupertino(
             key: key,
-            currentIndex: currentIndex,
-            onTap: onTap,
+            index: index,
+            onPressed: onPressed,
             items: items,
           ),
           material: _FCBottomNavigationBarMaterial(
             key: key,
-            currentIndex: currentIndex,
-            onTap: onTap,
+            index: index,
+            onPressed: onPressed,
             items: items,
           ),
         );
@@ -28,13 +28,13 @@ class FCBottomNavigationBar extends FCPlatformWidget {
 class _FCBottomNavigationBarCupertino extends StatelessWidget {
   const _FCBottomNavigationBarCupertino({
     super.key,
-    required this.currentIndex,
-    required this.onTap,
+    required this.index,
+    required this.onPressed,
     required this.items,
   });
 
-  final int currentIndex;
-  final ValueChanged<int> onTap;
+  final int index;
+  final ValueChanged<int> onPressed;
   final List<BottomNavigationBarItem> items;
 
   @override
@@ -51,11 +51,11 @@ class _FCBottomNavigationBarCupertino extends StatelessWidget {
               color: Colors.transparent,
               width: 0,
             ),
-            currentIndex: this.currentIndex,
+            currentIndex: this.index,
             backgroundColor: Colors.transparent,
             activeColor: theme.primary,
             inactiveColor: theme.grey,
-            onTap: this.onTap,
+            onTap: this.onPressed,
             items: this.items,
           ),
         ),
@@ -67,13 +67,13 @@ class _FCBottomNavigationBarCupertino extends StatelessWidget {
 class _FCBottomNavigationBarMaterial extends StatelessWidget {
   const _FCBottomNavigationBarMaterial({
     super.key,
-    required this.currentIndex,
-    required this.onTap,
+    required this.index,
+    required this.onPressed,
     required this.items,
   });
 
-  final int currentIndex;
-  final ValueChanged<int> onTap;
+  final int index;
+  final ValueChanged<int> onPressed;
   final List<BottomNavigationBarItem> items;
 
   @override
@@ -89,7 +89,7 @@ class _FCBottomNavigationBarMaterial extends StatelessWidget {
           child: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
             elevation: 0,
-            currentIndex: this.currentIndex,
+            currentIndex: this.index,
             backgroundColor: Colors.transparent,
             selectedItemColor: theme.primary,
             unselectedItemColor: theme.grey,
@@ -104,7 +104,7 @@ class _FCBottomNavigationBarMaterial extends StatelessWidget {
               fontFamily: textStyle.fontFamilyRegular,
             ),
             enableFeedback: false,
-            onTap: this.onTap,
+            onTap: this.onPressed,
             items: this.items,
           ),
         ),

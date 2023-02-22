@@ -12,744 +12,1226 @@ class ConfigListSize extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        FCText.semiBold20Black(context: context, text: "Size:"),
+        FCText.semiBold20Black(
+          context: context,
+          text: "Size:",
+        ),
         SizedBox(height: size.s16 / 2),
         // Size
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "s10:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "s10:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.s10.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.s10.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "s12:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "s12:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.s12.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.s12.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "s14:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "s14:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.s14.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.s14.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "s16:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "s16:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.s16.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.s16.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "s18:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "s18:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.s18.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.s18.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "s20:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "s20:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.s20.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.s20.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "s28:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "s28:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.s28.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.s28.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "s32:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "s32:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.s32.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.s32.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 2),
         // Padding
         // Padding / Default
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Padding Default:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Padding Default:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.paddingDefault.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.paddingDefault.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // Padding / Card
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Padding Card:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Padding Card:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.paddingCard.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.paddingCard.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // Padding / List View
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Padding List View:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Padding List View:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.paddingListView.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.paddingListView.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 2),
         // Height
         // Height / Button
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Height Button:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Height Button:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.heightButton.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.heightButton.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // Height / Code Field
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Height Code Field:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Height Code Field:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.heightCodeField.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.heightCodeField.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // Height / Form Field
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Height Form Field:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Height Form Field:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.heightFormField.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.heightFormField.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // Height / Keyboard Button
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Height Keyboard Button:"),
+                context: context,
+                text: "Height Keyboard Button:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.heightKeyboardButton.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.heightKeyboardButton.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // Height / Segment Control
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Height Segment Control:"),
+                context: context,
+                text: "Height Segment Control:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.heightSegmentControl.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.heightSegmentControl.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // Height / Sliding Segment Control
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Height Sliding Segment Control:"),
+                context: context,
+                text: "Height Sliding Segment Control:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.heightSlidingSegmentControl.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.heightSlidingSegmentControl.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // Height / Toggle
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Height Toggle:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Height Toggle:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.heightToggle.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.heightToggle.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 2),
         // BorderRadius
         // BorderRadius / Button
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Button BorderRadius Cupertino:"),
+                context: context,
+                text: "Button BorderRadius Cupertino:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderRadiusButtonCupertino.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderRadiusButtonCupertino.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Button BorderRadius Material:"),
+                context: context,
+                text: "Button BorderRadius Material:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderRadiusButtonMaterial.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderRadiusButtonMaterial.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // BorderRadius / Card
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Card BorderRadius Cupertino:"),
+                context: context,
+                text: "Card BorderRadius Cupertino:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderRadiusCardCupertino.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderRadiusCardCupertino.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Card BorderRadius Material:"),
+                context: context,
+                text: "Card BorderRadius Material:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderRadiusCardMaterial.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderRadiusCardMaterial.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // BorderRadius / Dialog
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Dialog BorderRadius Cupertino:"),
+                context: context,
+                text: "Dialog BorderRadius Cupertino:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderRadiusDialogCupertino.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderRadiusDialogCupertino.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Dialog BorderRadius Material:"),
+                context: context,
+                text: "Dialog BorderRadius Material:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderRadiusDialogMaterial.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderRadiusDialogMaterial.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // BorderRadius / Field
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Field BorderRadius Cupertino:"),
+                context: context,
+                text: "Field BorderRadius Cupertino:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderRadiusFieldCupertino.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderRadiusFieldCupertino.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Field BorderRadius Material:"),
+                context: context,
+                text: "Field BorderRadius Material:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderRadiusFieldMaterial.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderRadiusFieldMaterial.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // BorderRadius / Modal
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Modal BorderRadius Cupertino:"),
+                context: context,
+                text: "Modal BorderRadius Cupertino:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderRadiusModalCupertino.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderRadiusModalCupertino.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Modal BorderRadius Material:"),
+                context: context,
+                text: "Modal BorderRadius Material:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderRadiusModalMaterial.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderRadiusModalMaterial.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // BorderRadius / Segment Control
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Segment Control BorderRadius Cupertino:"),
+                context: context,
+                text: "Segment Control BorderRadius Cupertino:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
+            Flexible(
+              child: FCText.medium18Black(
                 context: context,
-                text: size.borderRadiusSegmentControlCupertino.toString()),
+                text: size.borderRadiusSegmentControlCupertino.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Segment Control BorderRadius Material:"),
+                context: context,
+                text: "Segment Control BorderRadius Material:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
+            Flexible(
+              child: FCText.medium18Black(
                 context: context,
-                text: size.borderRadiusSegmentControlMaterial.toString()),
+                text: size.borderRadiusSegmentControlMaterial.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // BorderRadius / Snackbar
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Snackbar BorderRadius Cupertino:"),
+                context: context,
+                text: "Snackbar BorderRadius Cupertino:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderRadiusSnackbarCupertino.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderRadiusSnackbarCupertino.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Snackbar BorderRadius Material:"),
+                context: context,
+                text: "Snackbar BorderRadius Material:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderRadiusSnackbarMaterial.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderRadiusSnackbarMaterial.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // BorderRadius / Toggle
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Toggle BorderRadius Cupertino:"),
+                context: context,
+                text: "Toggle BorderRadius Cupertino:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderRadiusToggleCupertino.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderRadiusToggleCupertino.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Toggle BorderRadius Material:"),
+                context: context,
+                text: "Toggle BorderRadius Material:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderRadiusToggleMaterial.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderRadiusToggleMaterial.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 2),
         // BorderWidth
         // BorderWidth / Button
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Button BorderWidth Cupertino:"),
+                context: context,
+                text: "Button BorderWidth Cupertino:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderWidthButtonCupertino.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderWidthButtonCupertino.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Button BorderWidth Material:"),
+                context: context,
+                text: "Button BorderWidth Material:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderWidthButtonMaterial.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderWidthButtonMaterial.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // BorderWidth / Card
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Card BorderWidth Cupertino:"),
+                context: context,
+                text: "Card BorderWidth Cupertino:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderWidthCardCupertino.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderWidthCardCupertino.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Card BorderWidth Material:"),
+                context: context,
+                text: "Card BorderWidth Material:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderWidthCardMaterial.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderWidthCardMaterial.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // BorderWidth / Field
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Field BorderWidth Cupertino:"),
+                context: context,
+                text: "Field BorderWidth Cupertino:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderWidthFieldCupertino.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderWidthFieldCupertino.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Field BorderWidth Material:"),
+                context: context,
+                text: "Field BorderWidth Material:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderWidthFieldMaterial.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderWidthFieldMaterial.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // BorderWidth / Segment Control
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Segment Control BorderWidth Cupertino:"),
+                context: context,
+                text: "Segment Control BorderWidth Cupertino:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
+            Flexible(
+              child: FCText.medium18Black(
                 context: context,
-                text: size.borderWidthSegmentControlCupertino.toString()),
+                text: size.borderWidthSegmentControlCupertino.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Segment Control BorderWidth Material:"),
+                context: context,
+                text: "Segment Control BorderWidth Material:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
+            Flexible(
+              child: FCText.medium18Black(
                 context: context,
-                text: size.borderWidthSegmentControlMaterial.toString()),
+                text: size.borderWidthSegmentControlMaterial.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // BorderWidth / Snackbar
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Snackbar BorderWidth Cupertino:"),
+                context: context,
+                text: "Snackbar BorderWidth Cupertino:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderWidthSnackbarCupertino.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderWidthSnackbarCupertino.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Snackbar BorderWidth Material:"),
+                context: context,
+                text: "Snackbar BorderWidth Material:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.borderWidthSnackbarMaterial.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.borderWidthSnackbarMaterial.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 2),
         // Icon
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Icon Height Small:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Icon Height Small:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.iconHeightSmall.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.iconHeightSmall.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child:
-                  FCText.regular16Black(context: context, text: "Icon Height Default:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Icon Height Default:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.iconHeightDefault.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.iconHeightDefault.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Icon Height Large:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Icon Height Large:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.iconHeightLarge.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.iconHeightLarge.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 2),
         // Indicator
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Indicator Height Small:"),
+                context: context,
+                text: "Indicator Height Small:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.indicatorHeightSmall.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.indicatorHeightSmall.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Indicator Height Default:"),
+                context: context,
+                text: "Indicator Height Default:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.indicatorHeightDefault.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.indicatorHeightDefault.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Indicator Height Large:"),
+                context: context,
+                text: "Indicator Height Large:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.indicatorHeightLarge.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.indicatorHeightLarge.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 2),
         // DateTime
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Lower Date:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Lower Date:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.dateLower.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.dateLower.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Initial Date:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Initial Date:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.dateInitial.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.dateInitial.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Upper Date:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Upper Date:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.dateUpper.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.dateUpper.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 2),
         // Duration
         // Duration / Animation
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Duration Animation Fast:"),
+                context: context,
+                text: "Duration Animation Fast:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.durationAnimationFast.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.durationAnimationFast.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Duration Animation Default:"),
+                context: context,
+                text: "Duration Animation Default:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.durationAnimationDefault.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.durationAnimationDefault.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Duration Animation Slow:"),
+                context: context,
+                text: "Duration Animation Slow:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.durationAnimationSlow.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.durationAnimationSlow.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // Duration / Badge
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Duration Badge:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Duration Badge:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.durationBadge.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.durationBadge.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // Duration / Page Indicator
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
+            Flexible(
               child: FCText.regular16Black(
-                  context: context, text: "Duration Page Indicator:"),
+                context: context,
+                text: "Duration Page Indicator:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.durationPageIndicator.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.durationPageIndicator.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // Duration / Shimmer
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Duration Shimmer:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Duration Shimmer:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.durationShimmer.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.durationShimmer.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // Duration / Snackbar
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Duration Snackbar:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Duration Snackbar:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(
-                context: context, text: size.durationSnackbar.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.durationSnackbar.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 2),
         // Opacity
         // Opacity / Blur
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Opacity Blur:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Opacity Blur:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.opacityBlur.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.opacityBlur.toString(),
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         // Opacity / Disabled
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: FCText.regular16Black(context: context, text: "Opacity Disabled:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Opacity Disabled:",
+              ),
             ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: size.opacityDisabled.toString()),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.opacityDisabled.toString(),
+              ),
+            ),
           ],
         ),
       ],

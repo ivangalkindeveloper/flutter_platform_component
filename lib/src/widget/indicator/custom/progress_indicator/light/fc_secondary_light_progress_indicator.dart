@@ -16,8 +16,8 @@ class FCSecondaryLightProgressIndicator extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicProgressIndicator(
-      backgroundColor: theme.secondaryLight,
-      color: theme.warningLight,
+      backgroundColor: theme.greyLight,
+      color: theme.secondaryLight,
       value: this.value,
     );
   }

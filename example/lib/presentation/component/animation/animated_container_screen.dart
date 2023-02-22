@@ -25,8 +25,7 @@ class _AnimatedContainerScreenState extends State<AnimatedContainerScreen> {
         onPressedBack: () => Navigator.pop(context),
       ),
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.all(size.s16 * 2),
+        child: FCPadding(
           child: Column(
             children: [
               FCPrimaryButton(

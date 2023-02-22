@@ -12,6 +12,8 @@ class FCSuccessLightGradientSelectCard extends StatelessWidget {
     this.padding,
     required this.onPressed,
     required this.child,
+    this.isDisabled = false,
+    this.disabledColor,
   });
 
   final BoxConstraints? constraints;
@@ -19,8 +21,10 @@ class FCSuccessLightGradientSelectCard extends StatelessWidget {
   final Gradient? borderGradient;
   final double? borderWidth;
   final EdgeInsets? padding;
-  final Widget child;
   final VoidCallback onPressed;
+  final Widget child;
+  final bool isDisabled;
+  final Color? disabledColor;
 
   @override
   Widget build(BuildContext context) {
@@ -37,6 +41,8 @@ class FCSuccessLightGradientSelectCard extends StatelessWidget {
       padding: this.padding,
       onPressed: this.onPressed,
       child: this.child,
+      isDisabled: this.isDisabled,
+      disabledColor: this.disabledColor,
     );
   }
 }

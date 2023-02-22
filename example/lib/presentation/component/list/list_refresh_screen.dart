@@ -23,6 +23,7 @@ class _ListRefreshScreenState extends State<ListRefreshScreen> {
   Widget build(BuildContext context) {
     final FCConfig config = FCConfig.of(context);
     final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
 
     return FCScaffold(
       backgroundColor: theme.backgroundScaffold,
@@ -34,7 +35,28 @@ class _ListRefreshScreenState extends State<ListRefreshScreen> {
       body: FCListRefresh(
         controller: this._controller,
         onRefresh: this._onRefresh,
-        child: const SizedBox(),
+        child: FCPadding(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

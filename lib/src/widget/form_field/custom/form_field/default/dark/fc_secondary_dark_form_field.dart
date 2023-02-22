@@ -42,6 +42,7 @@ class FCSecondaryDarkFormField extends StatelessWidget {
     this.bottom,
     this.isRequired = false,
     this.isDisabled = false,
+    this.disabledColor,
   });
 
   final double? height;
@@ -80,6 +81,7 @@ class FCSecondaryDarkFormField extends StatelessWidget {
   final Widget? bottom;
   final bool isRequired;
   final bool isDisabled;
+  final Color? disabledColor;
 
   @override
   Widget build(BuildContext context) {
@@ -126,6 +128,7 @@ class FCSecondaryDarkFormField extends StatelessWidget {
       bottom: this.bottom,
       isRequired: this.isRequired,
       isDisabled: this.isDisabled,
+      disabledColor: this.disabledColor,
     );
   }
 }

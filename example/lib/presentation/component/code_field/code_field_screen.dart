@@ -1,8 +1,16 @@
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class CodeFieldScreen extends StatelessWidget {
+class CodeFieldScreen extends StatefulWidget {
   const CodeFieldScreen({Key? key});
+
+  @override
+  State<CodeFieldScreen> createState() => _CodeFieldScreenState();
+}
+
+class _CodeFieldScreenState extends State<CodeFieldScreen> {
+  final int _length = 6;
+  bool _isDisabled = false;
 
   @override
   Widget build(BuildContext context) {
@@ -19,33 +27,44 @@ class CodeFieldScreen extends StatelessWidget {
       ),
       body: FCListView(
         children: [
+          FCPrimaryButton(
+            title: "isDisabled",
+            onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+          ),
+          SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
           FCInfoDarkCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyDarkCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningDarkCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -54,43 +73,53 @@ class CodeFieldScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCBlackAlwaysCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCBlackCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteAlwaysCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -99,27 +128,33 @@ class CodeFieldScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCInfoLightCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessLightCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyLightCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningLightCodeField(
-            length: 6,
+            length: this._length,
+            isDisabled: this._isDisabled,
           ),
         ],
       ),

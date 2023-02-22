@@ -21,9 +21,9 @@ class WhiteAlwaysExpandedModalScreen extends StatelessWidget {
           context: context,
           child: FCWhiteAlwaysExpandedModal(
             appBarTitle: "White Always Expanded Modal Title",
-            backgroundColor: theme.backgroundScaffold,
+            backgroundColor: theme.blackAlways,
             body: Center(
-              child: FCText.regular14Black(
+              child: FCText.regular16WhiteAlways(
                 context: context,
                 text: "White Always Expanded Modal",
               ),

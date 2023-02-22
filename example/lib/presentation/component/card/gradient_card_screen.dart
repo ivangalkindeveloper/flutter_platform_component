@@ -25,31 +25,52 @@ class GradientCardScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCInfoDarkGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyDarkGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerDarkGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningDarkGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -58,31 +79,52 @@ class GradientCardScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCInfoGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16),
           FCSuccessGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -91,31 +133,52 @@ class GradientCardScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCInfoLightGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessLightGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyLightGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerLightGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningLightGradientCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
         ],
       ),

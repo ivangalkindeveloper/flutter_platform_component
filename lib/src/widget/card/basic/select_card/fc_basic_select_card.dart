@@ -91,7 +91,7 @@ class _FCBasicSelectCardCupertino extends StatelessWidget {
             borderRadius: this.borderRadius ?? config.borderRadiusCard,
             borderColor: this.borderColor,
             borderWidth: this.borderWidth,
-            padding: this.padding ?? EdgeInsets.all(size.s16),
+            padding: this.padding ?? size.paddingCard,
             child: this.child,
           ),
         ),
@@ -157,7 +157,7 @@ class _FCBasicSelectCardMaterial extends StatelessWidget {
               foregroundColor: this.splashColor,
               backgroundColor: Colors.transparent,
               shadowColor: Colors.transparent,
-              padding: this.padding ?? EdgeInsets.all(size.s16),
+              padding: this.padding ?? size.paddingCard,
               shape: RoundedRectangleBorder(
                   borderRadius: this.borderRadius ?? config.borderRadiusCard),
             ),

@@ -39,7 +39,7 @@ class FCWhiteAlwaysOutlineButton extends StatelessWidget {
       splashColor: theme.whiteAlways,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.warning(context: context),
+        firstChild: FCCircularIndicator.whiteAlways(context: context),
         secondChild: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

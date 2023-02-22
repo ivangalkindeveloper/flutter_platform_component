@@ -25,8 +25,7 @@ class _AnimatedCrossFadeScreenState extends State<AnimatedCrossFadeScreen> {
         onPressedBack: () => Navigator.pop(context),
       ),
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.all(size.s16 * 2),
+        child: FCPadding(
           child: Column(
             children: [
               FCPrimaryButton(

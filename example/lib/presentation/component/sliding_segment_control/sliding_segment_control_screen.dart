@@ -10,6 +10,7 @@ class SlidingSegmentControlScreen extends StatefulWidget {
 
 class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScreen> {
   String _action = "";
+  bool _isDisabled = false;
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +27,11 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
       ),
       body: FCListView(
         children: [
+          FCPrimaryButton(
+            title: "isDisabled",
+            onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+          ),
+          SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Dark",
@@ -48,6 +54,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkSlidingSegmentControl<String>(
@@ -67,6 +74,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyDarkSlidingSegmentControl<String>(
@@ -86,6 +94,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkSlidingSegmentControl<String>(
@@ -105,6 +114,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerDarkSlidingSegmentControl<String>(
@@ -124,6 +134,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkSlidingSegmentControl<String>(
@@ -143,6 +154,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningDarkSlidingSegmentControl<String>(
@@ -162,6 +174,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -186,6 +199,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCBlackSlidingSegmentControl<String>(
@@ -205,6 +219,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoSlidingSegmentControl<String>(
@@ -224,6 +239,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessSlidingSegmentControl<String>(
@@ -243,6 +259,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreySlidingSegmentControl<String>(
@@ -262,6 +279,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimarySlidingSegmentControl<String>(
@@ -281,6 +299,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerSlidingSegmentControl<String>(
@@ -300,6 +319,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondarySlidingSegmentControl<String>(
@@ -319,6 +339,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteAlwaysSlidingSegmentControl<String>(
@@ -338,6 +359,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteSlidingSegmentControl<String>(
@@ -357,6 +379,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningSlidingSegmentControl<String>(
@@ -376,6 +399,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -400,6 +424,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessLightSlidingSegmentControl<String>(
@@ -419,6 +444,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightSlidingSegmentControl<String>(
@@ -438,6 +464,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerLightSlidingSegmentControl<String>(
@@ -457,6 +484,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightSlidingSegmentControl<String>(
@@ -476,6 +504,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningLightSlidingSegmentControl<String>(
@@ -495,6 +524,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
         ],
       ),

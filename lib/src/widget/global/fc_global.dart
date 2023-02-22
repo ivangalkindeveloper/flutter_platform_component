@@ -188,7 +188,7 @@ class FCGlobal {
           builder: (BuildContext context, Widget? dialog) => FCDatePicker(
             dateRange: dateRange,
             onChanged: (DateTime value) {},
-            child: dialog,
+            materialDialog: dialog,
           ),
         );
 
@@ -203,9 +203,43 @@ class FCGlobal {
           builder: (BuildContext context, Widget? dialog) => FCDatePicker(
             dateRange: dateRange,
             onChanged: (DateTime value) {},
-            child: dialog,
+            materialDialog: dialog,
           ),
         );
     }
   }
+
+  static material
+          .ScaffoldFeatureController<material.SnackBar, material.SnackBarClosedReason>
+      showSnackBar({
+    required BuildContext context,
+    required Widget child,
+    EdgeInsets? padding,
+    Duration? duration,
+  }) {
+    final FCConfig config = context.config;
+    final IFCSize size = config.size;
+
+    final material.ScaffoldMessengerState messenger =
+        material.ScaffoldMessenger.of(context);
+    messenger.hideCurrentSnackBar();
+
+    return messenger.showSnackBar(
+      material.SnackBar(
+        elevation: 0,
+        padding: EdgeInsets.zero,
+        backgroundColor: material.Colors.transparent,
+        dismissDirection: DismissDirection.none,
+        behavior: material.SnackBarBehavior.floating,
+        duration: duration ?? size.durationSnackbar,
+        margin: padding ?? EdgeInsets.all(size.s16),
+        content: child,
+      ),
+    );
+  }
+
+  static void hideSnackBar({
+    required BuildContext context,
+  }) =>
+      material.ScaffoldMessenger.of(context).hideCurrentSnackBar();
 }

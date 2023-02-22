@@ -24,18 +24,20 @@ class _KeyboardScreenState extends State<KeyboardScreen> {
         onPressedBack: () => Navigator.pop(context),
       ),
       body: SafeArea(
-        child: Column(
-          children: [
-            FCPrimaryButton(
-              title: "IsDisabled",
-              onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
-            ),
-            const Spacer(),
-            FCKeyboard(
-              onPressed: (int value) {},
-              isDisabled: this._isDisabled,
-            ),
-          ],
+        child: FCPadding(
+          child: Column(
+            children: [
+              FCPrimaryButton(
+                title: "isDisabled",
+                onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+              ),
+              const Spacer(),
+              FCKeyboard(
+                onPressed: (int value) {},
+                isDisabled: this._isDisabled,
+              ),
+            ],
+          ),
         ),
       ),
     );

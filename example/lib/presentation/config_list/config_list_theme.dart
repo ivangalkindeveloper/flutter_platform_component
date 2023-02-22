@@ -13,20 +13,38 @@ class ConfigListTheme extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        FCText.semiBold20Black(context: context, text: "Theme:"),
+        FCText.semiBold20Black(
+          context: context,
+          text: "Theme:",
+        ),
         SizedBox(height: size.s16 / 2),
         // System
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Material theme mode:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Material theme mode:",
+              ),
+            ),
             SizedBox(width: size.s16),
-            FCText.medium18Black(context: context, text: theme.materialThemeMode.name),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: theme.materialThemeMode.name,
+              ),
+            ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "SystemNavigationBarColor:"),
+            FCText.regular16Black(
+              context: context,
+              text: "SystemNavigationBarColor:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -38,9 +56,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             FCText.regular16Black(
-                context: context, text: "SystemNavigationBarDividerColor:"),
+              context: context,
+              text: "SystemNavigationBarDividerColor:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -52,33 +73,52 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
-                context: context, text: "SystemNavigationBarIconBrightness:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "SystemNavigationBarIconBrightness:",
+              ),
+            ),
             SizedBox(width: size.s16),
-            FCText.regular16Black(
-              context: context,
-              text: theme.systemOverlayStyle.systemNavigationBarIconBrightness.toString(),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text:
+                    theme.systemOverlayStyle.systemNavigationBarIconBrightness.toString(),
+              ),
             ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
-                context: context, text: "SystemNavigationBarContrastEnforced:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "SystemNavigationBarContrastEnforced:",
+              ),
+            ),
             SizedBox(width: size.s16),
-            FCText.regular16Black(
-              context: context,
-              text:
-                  theme.systemOverlayStyle.systemNavigationBarContrastEnforced.toString(),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: theme.systemOverlayStyle.systemNavigationBarContrastEnforced
+                    .toString(),
+              ),
             ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "StatusBarColor:"),
+            FCText.regular16Black(
+              context: context,
+              text: "StatusBarColor:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -90,43 +130,70 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "StatusBarBrightness:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "StatusBarBrightness:",
+              ),
+            ),
             SizedBox(width: size.s16),
-            FCText.regular16Black(
-              context: context,
-              text: theme.systemOverlayStyle.statusBarBrightness.toString(),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: theme.systemOverlayStyle.statusBarBrightness.toString(),
+              ),
             ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "StatusBarIconBrightness:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "StatusBarIconBrightness:",
+              ),
+            ),
             SizedBox(width: size.s16),
-            FCText.regular16Black(
-              context: context,
-              text: theme.systemOverlayStyle.statusBarIconBrightness.toString(),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: theme.systemOverlayStyle.statusBarIconBrightness.toString(),
+              ),
             ),
           ],
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
-                context: context, text: "SystemStatusBarContrastEnforced:"),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "SystemStatusBarContrastEnforced:",
+              ),
+            ),
             SizedBox(width: size.s16),
-            FCText.regular16Black(
-              context: context,
-              text: theme.systemOverlayStyle.systemStatusBarContrastEnforced.toString(),
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: theme.systemOverlayStyle.systemStatusBarContrastEnforced.toString(),
+              ),
             ),
           ],
         ),
         SizedBox(height: size.s16 / 2),
         // White
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "White:"),
+            FCText.regular16Black(
+              context: context,
+              text: "White:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -138,8 +205,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 2),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "White always:"),
+            FCText.regular16Black(
+              context: context,
+              text: "White always:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -152,8 +223,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         // Black
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Black:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Black:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -165,8 +240,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Black always:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Black always:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -179,8 +258,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         // Background
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Background Scaffold:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Background Scaffold:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -192,8 +275,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 2),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Background Component:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Background Component:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -206,8 +293,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         // Blur
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Blur:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Blur:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -219,8 +310,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Blur Filter:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Blur Filter:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: FCBlur(
@@ -235,8 +330,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         // Primary
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Primary:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Primary:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -248,8 +347,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Primary Button:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Primary Button:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -261,8 +364,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Primary Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Primary Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -277,8 +384,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Primary / Light
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Primary Light:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Primary Light:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -290,8 +401,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Primary Light Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Primary Light Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -306,8 +421,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Primary / Dark
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Primary Dark:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Primary Dark:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -319,8 +438,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Primary Dark Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Primary Dark Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -335,8 +458,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16),
         // Secondary
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Secondary:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Secondary:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -348,8 +475,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Secondary Button:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Secondary Button:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -361,8 +492,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Secondary Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Secondary Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -377,8 +512,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Secondary / Light
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Secondary Light:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Secondary Light:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -390,8 +529,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Secondary Light Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Secondary Light Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -406,8 +549,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Secondary / Dark
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Secondary Dark:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Secondary Dark:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -419,8 +566,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Secondary Dark Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Secondary Dark Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -435,8 +586,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16),
         // Grey
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Grey:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Grey:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -448,8 +603,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Grey Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Grey Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -464,8 +623,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Grey / Light
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Grey Light:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Grey Light:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -477,8 +640,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Grey Light Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Grey Light Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -493,8 +660,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Grey / Dark
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Grey Dark:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Grey Dark:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -506,8 +677,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Grey Dark Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Grey Dark Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -522,8 +697,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         // Info
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Info:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Info:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -535,8 +714,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Info Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Info Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -551,8 +734,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Info / Light
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Info Light:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Info Light:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -564,8 +751,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Info Light Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Info Light Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -580,8 +771,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Info / Dark
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Info Dark:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Info Dark:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -593,8 +788,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Info Dark Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Info Dark Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -609,8 +808,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         // Success
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Success:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Success:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -622,8 +825,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Success Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Success Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -638,8 +845,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Success / Light
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Success Light:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Success Light:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -651,8 +862,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Success Light Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Success Light Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -667,8 +882,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Success / Dark
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Success Dark:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Success Dark:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -680,8 +899,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Success Dark Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Success Dark Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -696,8 +919,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         // Warning
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Warning:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Warning:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -709,8 +936,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Warning Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Warning Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -725,8 +956,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Warning / Light
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Warning Light:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Warning Light:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -738,8 +973,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Warning Light Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Warning Light Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -754,8 +993,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Warning / Dark
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Warning Dark:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Warning Dark:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -767,8 +1010,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Warning Dark Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Warning Dark Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -783,8 +1030,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         // Danger
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Danger:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Danger:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -796,8 +1047,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Danger Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Danger Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -812,8 +1067,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Danger / Light
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Danger Light:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Danger Light:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -825,8 +1084,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Danger Light Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Danger Light Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -841,8 +1104,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Danger / Dark
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Danger Dark:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Danger Dark:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -854,8 +1121,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Danger Dark Gradient:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Danger Dark Gradient:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -871,9 +1142,12 @@ class ConfigListTheme extends StatelessWidget {
         // Barrier
         // Barrier / Expanded Modal
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             FCText.regular16Black(
-                context: context, text: "Barrier Expanded Modal Cupertino:"),
+              context: context,
+              text: "Barrier Expanded Modal Cupertino:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -885,9 +1159,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             FCText.regular16Black(
-                context: context, text: "Barrier Expanded Modal Material:"),
+              context: context,
+              text: "Barrier Expanded Modal Material:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -900,9 +1177,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Barrier / Pop Up Modal
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             FCText.regular16Black(
-                context: context, text: "Barrier Pop Up Modal Cupertino:"),
+              context: context,
+              text: "Barrier Pop Up Modal Cupertino:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -914,9 +1194,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             FCText.regular16Black(
-                context: context, text: "Barrier Pop Up Modal Material:"),
+              context: context,
+              text: "Barrier Pop Up Modal Material:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -929,8 +1212,12 @@ class ConfigListTheme extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Barrier / Dialog
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Barrier Dialog Cupertino:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Barrier Dialog Cupertino:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
@@ -942,8 +1229,12 @@ class ConfigListTheme extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 4),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(context: context, text: "Barrier Dialog Material:"),
+            FCText.regular16Black(
+              context: context,
+              text: "Barrier Dialog Material:",
+            ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(

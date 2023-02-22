@@ -9,7 +9,7 @@ class BottomNavigationBarScreen extends StatefulWidget {
 }
 
 class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> {
-  int _page = 0;
+  int _index = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -25,17 +25,17 @@ class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> {
       ),
       body: const SizedBox(),
       bottomNavigationBar: FCBottomNavigationBar(
-        currentIndex: this._page,
-        onTap: (int value) => setState(() => this._page = value),
+        index: this._index,
+        onPressed: (int value) => setState(() => this._index = value),
         items: [
           FCBottomNavigationBarIconItem(
             context: context,
-            isSelected: this._page == 0,
+            isSelected: this._index == 0,
             iconData: Icons.access_alarm,
           ),
           FCBottomNavigationBarIconItemGradient(
             context: context,
-            isSelected: this._page == 1,
+            isSelected: this._index == 1,
             iconData: Icons.access_alarm,
           ),
           FCBottomNavigationBarWidgetItem(

@@ -27,8 +27,7 @@ class _AnimatedTransitionSwitcherScreenState
         onPressedBack: () => Navigator.pop(context),
       ),
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.all(size.s16 * 2),
+        child: FCPadding(
           child: Column(
             children: [
               FCPrimaryButton(

@@ -1,8 +1,15 @@
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class KeyboardButtonScreen extends StatelessWidget {
+class KeyboardButtonScreen extends StatefulWidget {
   const KeyboardButtonScreen({Key? key});
+
+  @override
+  State<KeyboardButtonScreen> createState() => _KeyboardButtonScreenState();
+}
+
+class _KeyboardButtonScreenState extends State<KeyboardButtonScreen> {
+  bool _isDisabled = false;
 
   @override
   Widget build(BuildContext context) {
@@ -16,13 +23,28 @@ class KeyboardButtonScreen extends StatelessWidget {
         title: "Keyboard Button",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: Center(
-        child: FCKeyboardButton(
-          child: FCText.regular10Black(
-            context: context,
-            text: "Child",
+      body: SafeArea(
+        child: FCPadding(
+          child: Column(
+            children: [
+              FCPrimaryButton(
+                title: "isDisabled",
+                onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+              ),
+              Expanded(
+                child: Center(
+                  child: FCKeyboardButton(
+                    child: FCText.medium20Black(
+                      context: context,
+                      text: "?",
+                    ),
+                    onPressed: () {},
+                    isDisabled: this._isDisabled,
+                  ),
+                ),
+              ),
+            ],
           ),
-          onPressed: () {},
         ),
       ),
     );

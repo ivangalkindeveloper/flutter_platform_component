@@ -223,7 +223,7 @@ class ComponentScreen extends StatelessWidget {
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(
-              title: "Date picker",
+              title: "Date Picker",
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.date_picker_screen),
             ),
@@ -261,7 +261,7 @@ class ComponentScreen extends StatelessWidget {
             FCPrimaryButton(
               title: "Icon",
               onPressed: () =>
-                  Navigator.pushNamed(context, NavigationService.icon_button_screen),
+                  Navigator.pushNamed(context, NavigationService.icon_screen),
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(

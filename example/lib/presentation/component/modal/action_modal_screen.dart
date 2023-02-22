@@ -20,6 +20,7 @@ class ActionModalScreen extends StatelessWidget {
         onTap: () => FCGlobal.showPopUpModal(
           context: context,
           child: FCActionModal(
+            description: "Action Modal Description",
             items: [
               FCActionModalItem(
                 title: "Action 1",
@@ -36,6 +37,11 @@ class ActionModalScreen extends StatelessWidget {
                 onPressed: () {},
               ),
             ],
+            cancelItem: FCActionModalItem(
+              isDestructiveAction: true,
+              title: "Cancel",
+              onPressed: () {},
+            ),
           ),
         ),
       ),

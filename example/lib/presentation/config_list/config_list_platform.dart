@@ -11,12 +11,21 @@ class ConfigListPlatform extends StatelessWidget {
     final IFCSize size = config.size;
 
     return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Expanded(
-          child: FCText.semiBold20Black(context: context, text: "Platform:"),
+        Flexible(
+          child: FCText.semiBold20Black(
+            context: context,
+            text: "Platform:",
+          ),
         ),
-        SizedBox(height: size.s16 / 2),
-        FCText.medium18Black(context: context, text: platform.name),
+        SizedBox(width: size.s16),
+        Flexible(
+          child: FCText.regular16Black(
+            context: context,
+            text: platform.name,
+          ),
+        ),
       ],
     );
   }

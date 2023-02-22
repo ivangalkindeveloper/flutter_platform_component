@@ -33,6 +33,7 @@ class FCWarningDarkGradientFormField extends StatelessWidget {
     this.bottom,
     this.isRequired = false,
     this.isDisabled = false,
+    this.disabledColor,
   });
 
   final double? height;
@@ -62,6 +63,7 @@ class FCWarningDarkGradientFormField extends StatelessWidget {
   final Widget? bottom;
   final bool isRequired;
   final bool isDisabled;
+  final Color? disabledColor;
 
   @override
   Widget build(BuildContext context) {
@@ -105,6 +107,7 @@ class FCWarningDarkGradientFormField extends StatelessWidget {
       bottom: this.bottom,
       isRequired: this.isRequired,
       isDisabled: this.isDisabled,
+      disabledColor: this.disabledColor,
     );
   }
 }

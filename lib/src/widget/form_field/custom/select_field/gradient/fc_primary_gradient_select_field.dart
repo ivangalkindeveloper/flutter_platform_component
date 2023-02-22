@@ -33,6 +33,7 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
     required this.onPressed,
     this.isRequired = false,
     this.isDisabled = false,
+    this.disabledColor,
   });
 
   final double? height;
@@ -63,6 +64,7 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
   final VoidCallback onPressed;
   final bool isRequired;
   final bool isDisabled;
+  final Color? disabledColor;
 
   @override
   Widget build(BuildContext context) {
@@ -106,6 +108,7 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
       onPressed: this.onPressed,
       isRequired: this.isRequired,
       isDisabled: this.isDisabled,
+      disabledColor: this.disabledColor,
     );
   }
 }

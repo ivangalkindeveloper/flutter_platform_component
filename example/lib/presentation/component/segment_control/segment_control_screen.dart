@@ -10,6 +10,7 @@ class SegmentControlScreen extends StatefulWidget {
 
 class _SegmentControlScreenState extends State<SegmentControlScreen> {
   String _action = "";
+  bool _isDisabled = false;
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +27,11 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
       ),
       body: FCListView(
         children: [
+          FCPrimaryButton(
+            title: "isDisabled",
+            onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+          ),
+          SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Dark",
@@ -48,6 +54,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkSegmentControl<String>(
@@ -67,6 +74,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyDarkSegmentControl<String>(
@@ -86,6 +94,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkSegmentControl<String>(
@@ -105,6 +114,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerDarkSegmentControl<String>(
@@ -124,6 +134,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkSegmentControl<String>(
@@ -143,6 +154,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningDarkSegmentControl<String>(
@@ -162,6 +174,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -186,6 +199,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCBlackSegmentControl<String>(
@@ -205,6 +219,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoSegmentControl<String>(
@@ -224,6 +239,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessSegmentControl<String>(
@@ -243,6 +259,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreySegmentControl<String>(
@@ -262,6 +279,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimarySegmentControl<String>(
@@ -281,6 +299,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerSegmentControl<String>(
@@ -300,6 +319,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondarySegmentControl<String>(
@@ -319,6 +339,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteAlwaysSegmentControl<String>(
@@ -338,6 +359,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteSegmentControl<String>(
@@ -357,6 +379,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningSegmentControl<String>(
@@ -376,6 +399,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -400,6 +424,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessLightSegmentControl<String>(
@@ -419,6 +444,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyLightSegmentControl<String>(
@@ -438,6 +464,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightSegmentControl<String>(
@@ -457,6 +484,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerLightSegmentControl<String>(
@@ -476,6 +504,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightSegmentControl<String>(
@@ -495,6 +524,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningLightSegmentControl<String>(
@@ -514,6 +544,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               ),
             ],
             onChanged: (String value) => setState(() => this._action = value),
+            isDisabled: this._isDisabled,
           ),
         ],
       ),

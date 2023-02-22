@@ -1,8 +1,15 @@
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class GradientSelectCardScreen extends StatelessWidget {
+class GradientSelectCardScreen extends StatefulWidget {
   const GradientSelectCardScreen({Key? key});
+
+  @override
+  State<GradientSelectCardScreen> createState() => _GradientSelectCardScreenState();
+}
+
+class _GradientSelectCardScreenState extends State<GradientSelectCardScreen> {
+  bool _isDisabled = false;
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +26,11 @@ class GradientSelectCardScreen extends StatelessWidget {
       ),
       body: FCListView(
         children: [
+          FCPrimaryButton(
+            title: "isDisabled",
+            onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+          ),
+          SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Dark",
@@ -26,37 +38,65 @@ class GradientSelectCardScreen extends StatelessWidget {
           SizedBox(height: size.s16),
           FCInfoDarkGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyDarkGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerDarkGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningDarkGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -66,37 +106,65 @@ class GradientSelectCardScreen extends StatelessWidget {
           SizedBox(height: size.s16),
           FCInfoGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -106,37 +174,65 @@ class GradientSelectCardScreen extends StatelessWidget {
           SizedBox(height: size.s16),
           FCInfoLightGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessLightGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyLightGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerLightGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningLightGradientSelectCard(
             onPressed: () {},
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
           ),
         ],
       ),

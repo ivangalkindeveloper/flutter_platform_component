@@ -25,31 +25,52 @@ class CardScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCInfoDarkCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyDarkCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerDarkCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningDarkCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -58,55 +79,94 @@ class CardScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCBlackAlwaysCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCBlackCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCBlurCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCTransparentCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteAlwaysCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -115,31 +175,52 @@ class CardScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCInfoLightCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessLightCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyLightCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerLightCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningLightCard(
-            child: const SizedBox(),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
         ],
       ),
