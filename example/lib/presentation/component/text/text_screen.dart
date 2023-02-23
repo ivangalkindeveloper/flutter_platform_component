@@ -1,3 +1,4 @@
+import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -19,6 +20,8 @@ class TextScreen extends StatelessWidget {
       ),
       body: FCListView(
         children: [
+          const ConfigSection(),
+          SizedBox(height: size.s16 * 2),
           FCText.thin10Info(context: context, text: "Thin 10 Info"),
           SizedBox(height: size.s16 / 2),
           FCText.regular16Black(context: context, text: "Regular 16 Black"),

@@ -1,3 +1,4 @@
+import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -9,7 +10,7 @@ class ToggleScreen extends StatefulWidget {
 }
 
 class _ToggleScreenState extends State<ToggleScreen> {
-  String _action = "";
+  String _value = "";
   bool _isDisabled = false;
 
   @override
@@ -27,6 +28,8 @@ class _ToggleScreenState extends State<ToggleScreen> {
       ),
       body: FCListView(
         children: [
+          const ConfigSection(),
+          SizedBox(height: size.s16 / 2),
           FCPrimaryButton(
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
@@ -38,7 +41,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
           ),
           SizedBox(height: size.s16),
           FCInfoDarkToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -53,12 +56,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -73,12 +76,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyDarkToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -93,12 +96,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -113,12 +116,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -133,12 +136,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningDarkToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -153,7 +156,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
@@ -163,7 +166,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
           ),
           SizedBox(height: size.s16),
           FCBlackAlwaysToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -178,12 +181,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCBlackToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -198,12 +201,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -218,12 +221,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -238,12 +241,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -258,12 +261,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -278,12 +281,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -298,12 +301,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteAlwaysToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -318,12 +321,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -338,12 +341,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -358,7 +361,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
@@ -368,7 +371,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
           ),
           SizedBox(height: size.s16),
           FCInfoLightToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -383,12 +386,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessLightToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -403,12 +406,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyLightToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -423,12 +426,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -443,12 +446,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -463,12 +466,12 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningLightToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -483,7 +486,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
         ],

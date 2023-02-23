@@ -1,3 +1,4 @@
+import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -26,8 +27,10 @@ class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen>
       ),
       body: FCListView(
         children: [
+          const ConfigSection(),
+          SizedBox(height: size.s16 / 2),
           FCPrimaryButton(
-            title: "Action",
+            title: "Count",
             onPressed: () => setState(() => this._count++),
           ),
           SizedBox(height: size.s16 * 2),

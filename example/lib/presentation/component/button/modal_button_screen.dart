@@ -1,3 +1,4 @@
+import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -17,31 +18,28 @@ class ModalButtonScreen extends StatelessWidget {
         title: "Modal Button",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: SafeArea(
-        child: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              FCAlwaysWhiteModalCloseButton(
-                cupertinoLocale: "Back",
-                onPressed: () {},
-              ),
-              SizedBox(height: size.s16 / 2),
-              FCCupertinoModalButton(
-                onPressed: () {},
-              ),
-              SizedBox(height: size.s16 / 2),
-              FCExpandedModalCloseButton(
-                cupertinoLocale: "Back",
-                onPressed: () {},
-              ),
-              SizedBox(height: size.s16 / 2),
-              FCPopUpModalCloseButton(
-                onPressed: () {},
-              ),
-            ],
+      body: FCListView(
+        children: [
+          const ConfigSection(),
+          SizedBox(height: size.s16 * 2),
+          FCAlwaysWhiteModalCloseButton(
+            cupertinoLocale: "Back",
+            onPressed: () {},
           ),
-        ),
+          SizedBox(height: size.s16 / 2),
+          FCCupertinoModalButton(
+            onPressed: () {},
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCExpandedModalCloseButton(
+            cupertinoLocale: "Back",
+            onPressed: () {},
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCPopUpModalCloseButton(
+            onPressed: () {},
+          ),
+        ],
       ),
     );
   }

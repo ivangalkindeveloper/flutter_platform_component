@@ -1,3 +1,4 @@
+import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -15,6 +16,7 @@ class _KeyboardNumberButtonScreenState extends State<KeyboardNumberButtonScreen>
   Widget build(BuildContext context) {
     final FCConfig config = FCConfig.of(context);
     final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
 
     return FCScaffold(
       backgroundColor: theme.backgroundScaffold,
@@ -23,26 +25,21 @@ class _KeyboardNumberButtonScreenState extends State<KeyboardNumberButtonScreen>
         title: "Keyboard Number Button",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: SafeArea(
-        child: FCPadding(
-          child: Column(
-            children: [
-              FCPrimaryButton(
-                title: "isDisabled",
-                onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
-              ),
-              Expanded(
-                child: Center(
-                  child: FCKeyboardNumberButton(
-                    number: 1,
-                    onPressed: () {},
-                    isDisabled: this._isDisabled,
-                  ),
-                ),
-              ),
-            ],
+      body: FCListView(
+        children: [
+          const ConfigSection(),
+          SizedBox(height: size.s16 / 2),
+          FCPrimaryButton(
+            title: "isDisabled",
+            onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
           ),
-        ),
+          SizedBox(height: size.s16 * 2),
+          FCKeyboardNumberButton(
+            number: 1,
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+          ),
+        ],
       ),
     );
   }

@@ -159,7 +159,8 @@ class _FCBasicSelectCardMaterial extends StatelessWidget {
               shadowColor: Colors.transparent,
               padding: this.padding ?? size.paddingCard,
               shape: RoundedRectangleBorder(
-                  borderRadius: this.borderRadius ?? config.borderRadiusCard),
+                borderRadius: this.borderRadius ?? config.borderRadiusCard,
+              ),
             ),
             onPressed: this.onPressed,
             child: this.child,

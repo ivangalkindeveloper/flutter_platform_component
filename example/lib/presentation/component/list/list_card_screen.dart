@@ -1,3 +1,4 @@
+import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +27,8 @@ class _ListCardScreenState extends State<ListCardScreen> {
       ),
       body: FCListView(
         children: [
+          const ConfigSection(),
+          SizedBox(height: size.s16 / 2),
           FCPrimaryButton(
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),

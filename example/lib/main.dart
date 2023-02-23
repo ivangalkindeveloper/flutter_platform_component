@@ -3,9 +3,7 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:example/service/navigation_service.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const InitApp());
-}
+void main() => runApp(const InitApp());
 
 class InitApp extends StatelessWidget {
   const InitApp({super.key});

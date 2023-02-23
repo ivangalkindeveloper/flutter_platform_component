@@ -19,18 +19,3 @@ class FCTextInputHandlerFormatter implements TextInputFormatter {
   }
 }
 
-// TODO
-// class UpperCaseTextInputFormatter implements TextInputFormatter {
-//   const UpperCaseTextInputFormatter();
-
-//   @override
-//   TextEditingValue formatEditUpdate(
-//     TextEditingValue oldValue,
-//     TextEditingValue newValue,
-//   ) {
-//     return TextEditingValue(
-//       text: newValue.text.toUpperCase(),
-//       selection: newValue.selection,
-//     );
-//   }
-// }

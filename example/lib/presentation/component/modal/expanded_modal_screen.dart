@@ -1,3 +1,4 @@
+import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -8,6 +9,7 @@ class ExpandedModalScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final FCConfig config = FCConfig.of(context);
     final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
 
     return FCScaffold(
       backgroundColor: theme.backgroundScaffold,
@@ -16,20 +18,27 @@ class ExpandedModalScreen extends StatelessWidget {
         title: "Expanded Modal",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: GestureDetector(
-        onTap: () => FCGlobal.showExpandedModal(
-          context: context,
-          child: FCExpandedModal(
-            appBarTitle: "Expanded Modal Title",
-            backgroundColor: theme.backgroundScaffold,
-            body: Center(
-              child: FCText.regular14Black(
-                context: context,
-                text: "Expanded Modal",
+      body: FCListView(
+        children: [
+          const ConfigSection(),
+          SizedBox(height: size.s16 / 2),
+          FCPrimaryButton(
+            title: "Open",
+            onPressed: () => FCGlobal.showExpandedModal(
+              context: context,
+              child: FCExpandedModal(
+                appBarTitle: "Expanded Modal Title",
+                backgroundColor: theme.backgroundScaffold,
+                body: Center(
+                  child: FCText.regular14Black(
+                    context: context,
+                    text: "Expanded Modal",
+                  ),
+                ),
               ),
             ),
           ),
-        ),
+        ],
       ),
     );
   }

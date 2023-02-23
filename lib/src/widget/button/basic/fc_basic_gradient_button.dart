@@ -189,7 +189,9 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
                     horizontal: size.s16,
                     vertical: size.s16 / 4,
                   ),
-              shape: RoundedRectangleBorder(borderRadius: config.borderRadiusButton),
+              shape: RoundedRectangleBorder(
+                borderRadius: this.borderRadius ?? config.borderRadiusButton,
+              ),
             ),
             onPressed: this.isDisabled ? () {} : this.onPressed,
             child: this.child,
@@ -216,7 +218,7 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
             child: this.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.disabledColor,
-                    borderRadius: this.borderRadius ?? config.borderRadiusCard,
+                    borderRadius: this.borderRadius ?? config.borderRadiusButton,
                   )
                 : null,
           ),

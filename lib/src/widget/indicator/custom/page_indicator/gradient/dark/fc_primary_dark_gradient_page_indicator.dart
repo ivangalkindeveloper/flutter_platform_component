@@ -6,7 +6,7 @@ class FCPrimaryDarkGradientPageIndicator extends StatelessWidget {
   const FCPrimaryDarkGradientPageIndicator({
     super.key,
     required this.length,
-    required this.value,
+    required this.index,
     this.height,
     this.unselectedWidth,
     this.selectedWidth,
@@ -14,7 +14,7 @@ class FCPrimaryDarkGradientPageIndicator extends StatelessWidget {
   });
 
   final int length;
-  final int value;
+  final int index;
   final double? height;
   final double? unselectedWidth;
   final double? selectedWidth;
@@ -27,7 +27,7 @@ class FCPrimaryDarkGradientPageIndicator extends StatelessWidget {
 
     return FCBasicGradientPageIndicator(
       length: this.length,
-      value: this.value,
+      index: this.index,
       unselectedGradident: theme.greyDarkGradient,
       selectedGradident: theme.primaryDarkGradient,
       height: this.height,

@@ -1,3 +1,4 @@
+import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -9,7 +10,7 @@ class DotBadgeScreen extends StatefulWidget {
 }
 
 class _DotBadgeScreenState extends State<DotBadgeScreen> {
-  bool _action = false;
+  bool _isShow = false;
 
   @override
   Widget build(BuildContext context) {
@@ -26,9 +27,11 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
       ),
       body: FCListView(
         children: [
+          const ConfigSection(),
+          SizedBox(height: size.s16 / 2),
           FCPrimaryButton(
-            title: "Action",
-            onPressed: () => setState(() => this._action = !this._action),
+            title: "isShow",
+            onPressed: () => setState(() => this._isShow = !this._isShow),
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -42,31 +45,31 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
             children: [
               FCInfoDarkDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCSuccessDarkDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCGreyDarkDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCPrimaryDarkDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCDangerDarkDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCSecondaryDarkDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCWarningDarkDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
             ],
           ),
@@ -82,47 +85,47 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
             children: [
               FCBlackAlwaysDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCBlackDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCInfoDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCSuccessDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCGreyDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCPrimaryDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCDangerDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCSecondaryDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCWhiteDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCWhiteAlwaysDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCWarningDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
             ],
           ),
@@ -138,31 +141,31 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
             children: [
               FCInfoLightDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCSuccessLightDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCGreyLightDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCPrimaryLightDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCDangerLightDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCSecondaryLightDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
               FCWarningLightDotBadge(
                 child: const _ChildWidget(),
-                isShow: this._action,
+                isShow: this._isShow,
               ),
             ],
           ),

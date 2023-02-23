@@ -1,3 +1,4 @@
+import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -10,7 +11,7 @@ class GradientSegmentControlScreen extends StatefulWidget {
 }
 
 class _GradientSegmentControlScreenState extends State<GradientSegmentControlScreen> {
-  String _action = "";
+  String _value = "";
   bool _isDisabled = false;
 
   @override
@@ -28,6 +29,8 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
       ),
       body: FCListView(
         children: [
+          const ConfigSection(),
+          SizedBox(height: size.s16 / 2),
           FCPrimaryButton(
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
@@ -39,7 +42,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
           ),
           SizedBox(height: size.s16),
           FCInfoDarkGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -54,12 +57,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -74,12 +77,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyDarkGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -94,12 +97,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -114,12 +117,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerDarkGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -134,12 +137,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -154,12 +157,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningDarkGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -174,7 +177,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
@@ -184,7 +187,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
           ),
           SizedBox(height: size.s16),
           FCInfoGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -199,12 +202,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -219,12 +222,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -239,12 +242,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -259,12 +262,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -279,12 +282,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -299,12 +302,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -319,7 +322,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
@@ -329,7 +332,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
           ),
           SizedBox(height: size.s16),
           FCInfoLightGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -344,12 +347,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessLightGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -364,12 +367,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyLightGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -384,12 +387,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -404,12 +407,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerLightGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -424,12 +427,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -444,12 +447,12 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningLightGradientSegmentControl<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCSegmentControlItem(
                 value: "First",
@@ -464,7 +467,7 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
         ],

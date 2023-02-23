@@ -1,3 +1,4 @@
+import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -9,7 +10,7 @@ class GradientToggleScreen extends StatefulWidget {
 }
 
 class _GradientToggleScreenState extends State<GradientToggleScreen> {
-  String _action = "";
+  String _value = "";
   bool _isDisabled = false;
 
   @override
@@ -27,6 +28,8 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
       ),
       body: FCListView(
         children: [
+          const ConfigSection(),
+          SizedBox(height: size.s16 / 2),
           FCPrimaryButton(
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
@@ -38,7 +41,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           ),
           SizedBox(height: size.s16),
           FCInfoDarkGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -53,12 +56,12 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -73,12 +76,12 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyDarkGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -93,12 +96,12 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -113,12 +116,12 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -133,12 +136,12 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningDarkGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -153,7 +156,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
@@ -163,7 +166,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           ),
           SizedBox(height: size.s16),
           FCInfoGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -178,12 +181,12 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -198,12 +201,12 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -218,12 +221,12 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -238,12 +241,12 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -258,12 +261,12 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -278,7 +281,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
@@ -288,7 +291,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           ),
           SizedBox(height: size.s16),
           FCInfoLightGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -303,12 +306,12 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessLightGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -323,12 +326,12 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyLightGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -343,12 +346,12 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -363,12 +366,12 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -383,12 +386,12 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningLightGradientToggle<String>(
-            value: this._action,
+            value: this._value,
             items: [
               FCToggleItem(
                 value: "First",
@@ -403,7 +406,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
                 title: "Third",
               ),
             ],
-            onChanged: (String value) => setState(() => this._action = value),
+            onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
         ],

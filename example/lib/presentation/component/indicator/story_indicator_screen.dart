@@ -1,3 +1,4 @@
+import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:async';
@@ -92,6 +93,8 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen>
 
                   return FCListView(
                     children: [
+                      const ConfigSection(),
+                      SizedBox(height: size.s16 / 2),
                       FCPrimaryButton(
                         title: "Start",
                         onPressed: this._startTimer,

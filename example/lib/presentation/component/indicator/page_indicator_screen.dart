@@ -1,3 +1,4 @@
+import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -9,7 +10,7 @@ class PageIndicatorScreen extends StatefulWidget {
 }
 
 class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
-  int _page = 0;
+  int _index = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -26,13 +27,15 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
       ),
       body: FCListView(
         children: [
+          const ConfigSection(),
+          SizedBox(height: size.s16 / 2),
           FCPrimaryButton(
-            title: "Action",
+            title: "Index",
             onPressed: () => setState(() {
-              if (this._page == 3) {
-                this._page = 0;
+              if (this._index == 3) {
+                this._index = 0;
               } else {
-                this._page++;
+                this._index++;
               }
             }),
           ),
@@ -44,32 +47,32 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
           SizedBox(height: size.s16),
           FCInfoDarkPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCSuccessDarkPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCPrimaryDarkPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCDangerDarkPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCSecondaryDarkPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCWarningDarkPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCText.regular16Black(
@@ -79,32 +82,32 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
           SizedBox(height: size.s16),
           FCInfoPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCSuccessPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCPrimaryPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCDangerPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCSecondaryPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCWarningPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCText.regular16Black(
@@ -114,32 +117,32 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
           SizedBox(height: size.s16),
           FCInfoLightPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCSuccessLightPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCPrimaryLightPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCDangerLightPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCSecondaryLightPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
           SizedBox(height: size.s16),
           FCWarningLightPageIndicator(
             length: 4,
-            value: this._page,
+            index: this._index,
           ),
         ],
       ),

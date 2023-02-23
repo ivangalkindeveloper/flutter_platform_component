@@ -6,7 +6,7 @@ class FCPrimaryDarkPageIndicator extends StatelessWidget {
   const FCPrimaryDarkPageIndicator({
     super.key,
     required this.length,
-    required this.value,
+    required this.index,
     this.height,
     this.unselectedWidth,
     this.selectedWidth,
@@ -14,7 +14,7 @@ class FCPrimaryDarkPageIndicator extends StatelessWidget {
   });
 
   final int length;
-  final int value;
+  final int index;
   final double? height;
   final double? unselectedWidth;
   final double? selectedWidth;
@@ -27,7 +27,7 @@ class FCPrimaryDarkPageIndicator extends StatelessWidget {
 
     return FCBasicPageIndicator(
       length: this.length,
-      value: this.value,
+      index: this.index,
       unselectedColor: theme.greyDark,
       selectedColor: theme.primaryDark,
       height: this.height,

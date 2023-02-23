@@ -1,3 +1,4 @@
+import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -17,20 +18,17 @@ class BlurScreen extends StatelessWidget {
         title: "Blur",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: SafeArea(
-        child: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              FCBlur(
-                child: Container(
-                  height: size.s32,
-                  width: size.s32 * 2,
-                ),
-              ),
-            ],
+      body: FCListView(
+        children: [
+          const ConfigSection(),
+          SizedBox(height: size.s16 * 2),
+          FCBlur(
+            child: Container(
+              height: size.s32,
+              width: size.s32 * 2,
+            ),
           ),
-        ),
+        ],
       ),
     );
   }

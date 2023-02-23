@@ -99,7 +99,7 @@ class _FCBasicGradientSelectCardCupertino extends StatelessWidget {
             child: this.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.disabledColor,
-                    borderRadius: this.borderRadius ?? config.borderRadiusButton,
+                    borderRadius: this.borderRadius ?? config.borderRadiusCard,
                   )
                 : null,
           ),
@@ -157,7 +157,8 @@ class _FCBasicGradientSelectCardMaterial extends StatelessWidget {
               backgroundColor: Colors.transparent,
               shadowColor: Colors.transparent,
               shape: RoundedRectangleBorder(
-                  borderRadius: this.borderRadius ?? config.borderRadiusCard),
+                borderRadius: this.borderRadius ?? config.borderRadiusCard,
+              ),
             ),
             onPressed: this.onPressed,
             child: this.child,

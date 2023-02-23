@@ -1,6 +1,5 @@
 import 'package:example/presentation/config_list/config_list.dart';
 import 'package:example/service/navigation_service.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/material.dart';
 
@@ -22,54 +21,6 @@ class ComponentScreen extends StatelessWidget {
       body: FCScrollbar(
         child: FCListView(
           children: [
-            Row(
-              children: [
-                Expanded(
-                  child: FCPrimaryLightButton(
-                    title: "iOS",
-                    onPressed: () => config.changePlatform(
-                      platform: TargetPlatform.iOS,
-                    ),
-                  ),
-                ),
-                SizedBox(width: size.s16),
-                Expanded(
-                  child: FCPrimaryLightButton(
-                    title: "Android",
-                    onPressed: () => config.changePlatform(
-                      platform: TargetPlatform.android,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(height: size.s16 / 4),
-            Row(
-              children: [
-                Expanded(
-                  child: FCPrimaryLightButton(
-                    title: "Light Theme",
-                    onPressed: () {
-                      final IFCTheme theme = FCDefaultTheme.defaultLightTheme;
-                      SystemChrome.setSystemUIOverlayStyle(theme.systemOverlayStyle);
-                      config.changeTheme(theme: theme);
-                    },
-                  ),
-                ),
-                SizedBox(width: size.s16),
-                Expanded(
-                  child: FCPrimaryLightButton(
-                    title: "Dark Theme",
-                    onPressed: () {
-                      final IFCTheme theme = FCDefaultTheme.defaultDarkTheme;
-                      SystemChrome.setSystemUIOverlayStyle(theme.systemOverlayStyle);
-                      config.changeTheme(theme: theme);
-                    },
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(height: size.s16),
             const ConfigList(),
             SizedBox(height: size.s16),
             FCPrimaryButton(
@@ -131,19 +82,19 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.counter_badge_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Gradient Counter Badge",
               onPressed: () => Navigator.pushNamed(
                   context, NavigationService.gradient_counter_badge_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Dot Badge",
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.dot_badge_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Gradient Dot Badge",
               onPressed: () => Navigator.pushNamed(
@@ -161,19 +112,19 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.button_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Gradient Button",
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.gradient_button_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Icon Button",
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.icon_button_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Modal Button",
               onPressed: () =>
@@ -185,19 +136,19 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.card_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Gradient Card",
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.gradient_card_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Select Card",
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.select_card_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Gradient Select Card",
               onPressed: () => Navigator.pushNamed(
@@ -215,7 +166,7 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.code_field_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Gradient Code Field",
               onPressed: () => Navigator.pushNamed(
@@ -239,19 +190,19 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.form_field_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Gradient Form Field",
               onPressed: () => Navigator.pushNamed(
                   context, NavigationService.gradient_form_field_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Select Field",
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.select_field_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Gradient Select Field",
               onPressed: () => Navigator.pushNamed(
@@ -269,25 +220,25 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () => Navigator.pushNamed(
                   context, NavigationService.circular_indicator_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Page Indicator",
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.page_indicator_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Gradient Page Indicator",
               onPressed: () => Navigator.pushNamed(
                   context, NavigationService.gradient_page_indicator_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Progress Indicator",
               onPressed: () => Navigator.pushNamed(
                   context, NavigationService.progress_indicator_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Story Indicator",
               onPressed: () =>
@@ -299,13 +250,13 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.keyboard_button_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Keyboard Number Button",
               onPressed: () => Navigator.pushNamed(
                   context, NavigationService.keyboard_number_button_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Keyboard",
               onPressed: () =>
@@ -317,7 +268,7 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.list_card_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "List Refresh",
               onPressed: () =>
@@ -329,19 +280,19 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.action_modal_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Expand Modal",
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.expand_modal_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Pop Up Modal",
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.pop_up_modal_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "White Always Modal",
               onPressed: () => Navigator.pushNamed(
@@ -353,7 +304,7 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () => Navigator.pushNamed(
                   context, NavigationService.bottom_navigation_bar_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Navigator",
               onPressed: () =>
@@ -365,7 +316,7 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.pin_field_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Gradient PIN Field",
               onPressed: () => Navigator.pushNamed(
@@ -391,13 +342,13 @@ class ComponentScreen extends StatelessWidget {
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(
-              title: "Segment control",
+              title: "Segment Control",
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.segment_control_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
-              title: "Gradient Segment control",
+              title: "Gradient Segment Control",
               onPressed: () => Navigator.pushNamed(
                   context, NavigationService.gradient_segment_control_screen),
             ),
@@ -407,7 +358,7 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.shimmer_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Gradient Shimmer",
               onPressed: () =>
@@ -437,7 +388,7 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.snackbar_screen),
             ),
-            SizedBox(height: size.s16),
+            SizedBox(height: size.s16 / 2),
             FCPrimaryButton(
               title: "Gradient Snackbar",
               onPressed: () => Navigator.pushNamed(
@@ -461,6 +412,7 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.toggle_screen),
             ),
+            //TODO Toogle Gradient
           ],
         ),
       ),

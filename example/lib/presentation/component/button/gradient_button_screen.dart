@@ -1,3 +1,4 @@
+import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -27,6 +28,8 @@ class _GradientButtonScreenState extends State<GradientButtonScreen> {
       ),
       body: FCListView(
         children: [
+          const ConfigSection(),
+          SizedBox(height: size.s16 / 2),
           FCPrimaryButton(
             title: "isLoading",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),

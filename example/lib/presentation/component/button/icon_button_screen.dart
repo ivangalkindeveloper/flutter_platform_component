@@ -1,3 +1,4 @@
+import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +16,7 @@ class _IconButtonScreenState extends State<IconButtonScreen> {
   Widget build(BuildContext context) {
     final FCConfig config = FCConfig.of(context);
     final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
 
     return FCScaffold(
       backgroundColor: theme.white,
@@ -23,26 +25,25 @@ class _IconButtonScreenState extends State<IconButtonScreen> {
         title: "Icon Button",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: SafeArea(
-        child: Column(
-          children: [
-            FCPrimaryButton(
-              title: "isDisabled",
-              onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+      body: FCListView(
+        children: [
+          const ConfigSection(),
+          SizedBox(height: size.s16 / 2),
+          FCPrimaryButton(
+            title: "isDisabled",
+            onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+          ),
+          SizedBox(height: size.s16 * 2),
+          FCBasicIconButton(
+            splashColor: theme.primary,
+            icon: FCIcon.primary(
+              context: context,
+              icon: Icons.account_circle_outlined,
             ),
-            Center(
-              child: FCBasicIconButton(
-                splashColor: theme.primary,
-                icon: FCIcon.primary(
-                  context: context,
-                  icon: Icons.account_circle_outlined,
-                ),
-                onPressed: () {},
-                isDisabled: this._isDisabled,
-              ),
-            ),
-          ],
-        ),
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+          ),
+        ],
       ),
     );
   }

@@ -23,7 +23,12 @@ class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> {
         title: "Bottom Navigation Bar",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: const SizedBox(),
+      body: Center(
+        child: FCText.medium16Black(
+          context: context,
+          text: this._index.toString(),
+        ),
+      ),
       bottomNavigationBar: FCBottomNavigationBar(
         index: this._index,
         onPressed: (int value) => setState(() => this._index = value),
