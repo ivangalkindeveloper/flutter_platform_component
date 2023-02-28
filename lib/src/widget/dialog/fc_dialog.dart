@@ -57,21 +57,33 @@ class _FCDialogCupertino extends StatelessWidget {
     return CupertinoAlertDialog(
       title: Text(
         this.title,
-        style: TextStyle(
-          color: this.titleStyle?.color ?? theme.blackAlways,
-          fontSize: this.titleStyle?.fontSize ?? size.s16,
-          fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
-          fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
-        ),
+        style: this.titleStyle?.copyWith(
+                  color: this.titleStyle?.color ?? theme.blackAlways,
+                  fontSize: this.titleStyle?.fontSize ?? size.s16,
+                  fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+                  fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+                ) ??
+            TextStyle(
+              color: theme.blackAlways,
+              fontSize: size.s16,
+              fontWeight: textStyle.fontWeightMedium,
+              fontFamily: textStyle.fontFamilyMedium,
+            ),
       ),
       content: Text(
         this.description,
-        style: TextStyle(
-          color: this.descriptionStyle?.color ?? theme.blackAlways,
-          fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-          fontWeight: this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
-          fontFamily: this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
-        ),
+        style: this.titleStyle?.copyWith(
+                  color: this.titleStyle?.color ?? theme.blackAlways,
+                  fontSize: this.titleStyle?.fontSize ?? size.s14,
+                  fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
+                  fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+                ) ??
+            TextStyle(
+              color: theme.blackAlways,
+              fontSize: size.s14,
+              fontWeight: textStyle.fontWeightRegular,
+              fontFamily: textStyle.fontFamilyRegular,
+            ),
       ),
       actions: this.items,
     );
@@ -109,21 +121,33 @@ class _FCDialogMaterial extends StatelessWidget {
       ),
       title: Text(
         this.title,
-        style: TextStyle(
-          color: this.titleStyle?.color ?? theme.black,
-          fontSize: this.titleStyle?.fontSize ?? size.s16,
-          fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
-          fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
-        ),
+        style: this.titleStyle?.copyWith(
+                  color: this.titleStyle?.color ?? theme.blackAlways,
+                  fontSize: this.titleStyle?.fontSize ?? size.s16,
+                  fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+                  fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+                ) ??
+            TextStyle(
+              color: theme.blackAlways,
+              fontSize: size.s16,
+              fontWeight: textStyle.fontWeightMedium,
+              fontFamily: textStyle.fontFamilyMedium,
+            ),
       ),
       content: Text(
         this.description,
-        style: TextStyle(
-          color: this.descriptionStyle?.color ?? theme.black,
-          fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-          fontWeight: this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
-          fontFamily: this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
-        ),
+        style: this.titleStyle?.copyWith(
+                  color: this.titleStyle?.color ?? theme.blackAlways,
+                  fontSize: this.titleStyle?.fontSize ?? size.s14,
+                  fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
+                  fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+                ) ??
+            TextStyle(
+              color: theme.blackAlways,
+              fontSize: size.s14,
+              fontWeight: textStyle.fontWeightRegular,
+              fontFamily: textStyle.fontFamilyRegular,
+            ),
       ),
       actions: this.items,
     );

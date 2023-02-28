@@ -51,19 +51,31 @@ class _FCDialogItemCupertino extends StatelessWidget {
     return CupertinoDialogAction(
       child: Text(
         this.title,
-        style: TextStyle(
-          color: this.color,
-          fontSize: this.style?.fontSize ?? size.s16,
-          fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
-          fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
-        ),
+        style: this.style?.copyWith(
+                  color: this.style?.color ?? this.color,
+                  fontSize: this.style?.fontSize ?? size.s16,
+                  fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
+                  fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
+                ) ??
+            TextStyle(
+              color: this.color,
+              fontSize: size.s16,
+              fontWeight: textStyle.fontWeightMedium,
+              fontFamily: textStyle.fontFamilyMedium,
+            ),
       ),
-      textStyle: TextStyle(
-        color: this.color,
-        fontSize: this.style?.fontSize ?? size.s16,
-        fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
-        fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
-      ),
+      textStyle: this.style?.copyWith(
+                color: this.style?.color ?? this.color,
+                fontSize: this.style?.fontSize ?? size.s16,
+                fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
+                fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
+              ) ??
+          TextStyle(
+            color: this.color,
+            fontSize: size.s16,
+            fontWeight: textStyle.fontWeightMedium,
+            fontFamily: textStyle.fontFamilyMedium,
+          ),
       isDefaultAction: true,
       isDestructiveAction: true,
       onPressed: this.onPressed,
@@ -94,12 +106,18 @@ class _FCDialogItemMaterial extends StatelessWidget {
     return TextButton(
       child: Text(
         this.title,
-        style: TextStyle(
-          color: this.color,
-          fontSize: this.style?.fontSize ?? size.s16,
-          fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
-          fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
-        ),
+        style: this.style?.copyWith(
+                  color: this.style?.color ?? this.color,
+                  fontSize: this.style?.fontSize ?? size.s16,
+                  fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
+                  fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
+                ) ??
+            TextStyle(
+              color: this.color,
+              fontSize: size.s16,
+              fontWeight: textStyle.fontWeightMedium,
+              fontFamily: textStyle.fontFamilyMedium,
+            ),
       ),
       style: TextButton.styleFrom(
         elevation: 0,

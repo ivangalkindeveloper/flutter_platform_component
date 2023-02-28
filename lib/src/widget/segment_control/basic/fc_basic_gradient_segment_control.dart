@@ -300,12 +300,20 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
               if (this.item.prefixIcon != null) SizedBox(width: size.s16 / 2),
               Text(
                 item.title,
-                style: TextStyle(
-                  color: this._internalColor(theme: theme),
-                  fontSize: this.style?.fontSize ?? size.s16,
-                  fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,
-                  fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyRegular,
-                ),
+                style: this.style?.copyWith(
+                          color: this.style?.color ?? this._internalColor(theme: theme),
+                          fontSize: this.style?.fontSize ?? size.s16,
+                          fontWeight:
+                              this.style?.fontWeight ?? textStyle.fontWeightRegular,
+                          fontFamily:
+                              this.style?.fontFamily ?? textStyle.fontFamilyRegular,
+                        ) ??
+                    TextStyle(
+                      color: this._internalColor(theme: theme),
+                      fontSize: size.s16,
+                      fontWeight: textStyle.fontWeightRegular,
+                      fontFamily: textStyle.fontFamilyRegular,
+                    ),
               ),
               if (this.item.postfixIcon != null) SizedBox(width: size.s16 / 2),
               if (this.item.postfixIcon != null)

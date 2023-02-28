@@ -32,12 +32,18 @@ class FCBlackCounterBadge extends StatelessWidget {
       count: this.count,
       isShow: this.isShow,
       duration: this.duration,
-      style: TextStyle(
-        color: style?.color ?? context.config.theme.white,
-        fontSize: style?.fontSize ?? size.s14,
-        fontWeight: style?.fontWeight ?? textStyle.fontWeightRegular,
-        fontFamily: style?.fontFamily ?? textStyle.fontFamilyRegular,
-      ),
+      style: style?.copyWith(
+            color: style?.color ?? context.config.theme.white,
+            fontSize: style?.fontSize ?? size.s14,
+            fontWeight: style?.fontWeight ?? textStyle.fontWeightRegular,
+            fontFamily: style?.fontFamily ?? textStyle.fontFamilyRegular,
+          ) ??
+          TextStyle(
+            color: context.config.theme.white,
+            fontSize: size.s14,
+            fontWeight: textStyle.fontWeightRegular,
+            fontFamily: textStyle.fontFamilyRegular,
+          ),
       position: this.position,
       child: this.child,
     );

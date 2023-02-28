@@ -267,12 +267,18 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
             gradient: this._internalGradient(theme: theme),
             child: Text(
               item.title,
-              style: TextStyle(
-                color: theme.black,
-                fontSize: this.style?.fontSize ?? size.s14,
-                fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,
-                fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyRegular,
-              ),
+              style: this.style?.copyWith(
+                        color: this.style?.color ?? theme.black,
+                        fontSize: this.style?.fontSize ?? size.s14,
+                        fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,
+                        fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyRegular,
+                      ) ??
+                  TextStyle(
+                    color: theme.black,
+                    fontSize: size.s14,
+                    fontWeight: textStyle.fontWeightRegular,
+                    fontFamily: textStyle.fontFamilyRegular,
+                  ),
             ),
           ),
           if (this.item.postfixIcon != null) SizedBox(width: size.s16 / 2),

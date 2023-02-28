@@ -66,12 +66,12 @@ class FCBasicAppBar extends FCPlatformAppBar {
       return Text(
         title,
         textAlign: TextAlign.center,
-        style: TextStyle(
-          color: style?.color ?? theme.black,
-          fontSize: style?.fontSize,
-          fontWeight: style?.fontWeight,
-          fontFamily: style?.fontFamily,
-        ),
+        style: style?.copyWith(
+              color: style.color ?? theme.black,
+            ) ??
+            TextStyle(
+              color: theme.black,
+            ),
       );
     }
 

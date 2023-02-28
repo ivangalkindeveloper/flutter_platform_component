@@ -114,12 +114,18 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
       PinTheme(
         height: this.widget.itemHeight ?? this._size.heightCodeField,
         width: this.widget.itemWidth ?? (this._size.heightCodeField * 0.7),
-        textStyle: TextStyle(
-          color: style?.color ?? this._theme.black,
-          fontSize: style?.fontSize ?? this._size.s20,
-          fontWeight: style?.fontWeight ?? this._textStyle.fontWeightMedium,
-          fontFamily: style?.fontFamily ?? this._textStyle.fontFamilyMedium,
-        ),
+        textStyle: style?.copyWith(
+              color: style.color ?? this._theme.black,
+              fontSize: style.fontSize ?? this._size.s20,
+              fontWeight: style.fontWeight ?? this._textStyle.fontWeightMedium,
+              fontFamily: style.fontFamily ?? this._textStyle.fontFamilyMedium,
+            ) ??
+            TextStyle(
+              color: this._theme.black,
+              fontSize: this._size.s20,
+              fontWeight: this._textStyle.fontWeightMedium,
+              fontFamily: this._textStyle.fontFamilyMedium,
+            ),
         decoration: BoxDecoration(
           color: backgroundColor,
           borderRadius: this._config.borderRadiusField,
@@ -175,8 +181,9 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
                 ),
               ),
               forceErrorState: this._isError,
-              separator:
-                  SizedBox(width: this.widget.horizontalInterval ?? this._size.s16 / 2),
+              separator: SizedBox(
+                width: this.widget.horizontalInterval ?? this._size.s16 / 2,
+              ),
               autofocus: this.widget.isAutofocus,
               showCursor: this.widget.isShowCursor,
               cursor: Container(

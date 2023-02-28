@@ -9,18 +9,30 @@ class FCBottomNavigationBar extends FCPlatformWidget {
     required int index,
     required ValueChanged<int> onPressed,
     required List<BottomNavigationBarItem> items,
+    Color? backgroundColor,
+    Color? unselectedColor,
+    Color? selectedColor,
+    TextStyle? style,
   }) : super(
           cupertino: _FCBottomNavigationBarCupertino(
             key: key,
             index: index,
             onPressed: onPressed,
             items: items,
+            backgroundColor: backgroundColor,
+            unselectedColor: unselectedColor,
+            selectedColor: selectedColor,
+            style: style,
           ),
           material: _FCBottomNavigationBarMaterial(
             key: key,
             index: index,
             onPressed: onPressed,
             items: items,
+            backgroundColor: backgroundColor,
+            unselectedColor: unselectedColor,
+            selectedColor: selectedColor,
+            style: style,
           ),
         );
 }
@@ -31,35 +43,35 @@ class _FCBottomNavigationBarCupertino extends StatelessWidget {
     required this.index,
     required this.onPressed,
     required this.items,
+    required this.backgroundColor,
+    required this.unselectedColor,
+    required this.selectedColor,
+    required this.style,
   });
 
   final int index;
   final ValueChanged<int> onPressed;
   final List<BottomNavigationBarItem> items;
+  final Color? backgroundColor;
+  final Color? unselectedColor;
+  final Color? selectedColor;
+  final TextStyle? style;
 
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        FCBlur(
-          child: CupertinoTabBar(
-            border: Border.all(
-              color: Colors.transparent,
-              width: 0,
-            ),
-            currentIndex: this.index,
-            backgroundColor: Colors.transparent,
-            activeColor: theme.primary,
-            inactiveColor: theme.grey,
-            onTap: this.onPressed,
-            items: this.items,
-          ),
-        ),
-      ],
+    return CupertinoTabBar(
+      border: const Border(
+        top: BorderSide(width: 0.0),
+      ),
+      currentIndex: this.index,
+      onTap: this.onPressed,
+      items: this.items,
+      backgroundColor: Colors.transparent,
+      inactiveColor: this.unselectedColor ?? theme.greyLight,
+      activeColor: this.selectedColor ?? theme.primary,
     );
   }
 }
@@ -70,11 +82,19 @@ class _FCBottomNavigationBarMaterial extends StatelessWidget {
     required this.index,
     required this.onPressed,
     required this.items,
+    required this.backgroundColor,
+    required this.unselectedColor,
+    required this.selectedColor,
+    required this.style,
   });
 
   final int index;
   final ValueChanged<int> onPressed;
   final List<BottomNavigationBarItem> items;
+  final Color? backgroundColor;
+  final Color? unselectedColor;
+  final Color? selectedColor;
+  final TextStyle? style;
 
   @override
   Widget build(BuildContext context) {
@@ -82,33 +102,34 @@ class _FCBottomNavigationBarMaterial extends StatelessWidget {
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
 
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        FCBlur(
-          child: BottomNavigationBar(
-            type: BottomNavigationBarType.fixed,
-            elevation: 0,
-            currentIndex: this.index,
-            backgroundColor: Colors.transparent,
-            selectedItemColor: theme.primary,
-            unselectedItemColor: theme.grey,
-            showSelectedLabels: true,
-            showUnselectedLabels: true,
-            unselectedLabelStyle: TextStyle(
-              fontWeight: textStyle.fontWeightRegular,
-              fontFamily: textStyle.fontFamilyRegular,
-            ),
-            selectedLabelStyle: TextStyle(
-              fontWeight: textStyle.fontWeightRegular,
-              fontFamily: textStyle.fontFamilyRegular,
-            ),
-            enableFeedback: false,
-            onTap: this.onPressed,
-            items: this.items,
+    return BottomNavigationBar(
+      elevation: 0,
+      type: BottomNavigationBarType.fixed,
+      enableFeedback: false,
+      showSelectedLabels: true,
+      showUnselectedLabels: true,
+      currentIndex: this.index,
+      onTap: this.onPressed,
+      items: this.items,
+      backgroundColor: Colors.transparent,
+      unselectedItemColor: this.unselectedColor ?? theme.greyLight,
+      selectedItemColor: this.selectedColor ?? theme.primary,
+      unselectedLabelStyle: style?.copyWith(
+            fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,
+            fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyRegular,
+          ) ??
+          TextStyle(
+            fontWeight: textStyle.fontWeightRegular,
+            fontFamily: textStyle.fontFamilyRegular,
           ),
-        ),
-      ],
+      selectedLabelStyle: style?.copyWith(
+            fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,
+            fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyRegular,
+          ) ??
+          TextStyle(
+            fontWeight: textStyle.fontWeightRegular,
+            fontFamily: textStyle.fontFamilyRegular,
+          ),
     );
   }
 }

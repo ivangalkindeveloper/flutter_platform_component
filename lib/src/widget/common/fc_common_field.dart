@@ -68,11 +68,17 @@ class FCCommonField extends StatelessWidget {
     required IFCTheme theme,
     required IFCSize size,
   }) =>
+      this.textStyle?.copyWith(
+            color: this.textStyle?.color ?? theme.black,
+            fontSize: this.textStyle?.fontSize ?? size.s16,
+            fontWeight: this.textStyle?.fontWeight ?? textStyle.fontWeightRegular,
+            fontFamily: this.textStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+          ) ??
       TextStyle(
-        color: this.textStyle?.color ?? theme.black,
-        fontSize: this.textStyle?.fontSize ?? size.s16,
-        fontWeight: this.textStyle?.fontWeight ?? textStyle.fontWeightRegular,
-        fontFamily: this.textStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+        color: theme.black,
+        fontSize: size.s16,
+        fontWeight: textStyle.fontWeightRegular,
+        fontFamily: textStyle.fontFamilyRegular,
       );
 
   TextStyle _fieldLabelStyle({
@@ -80,11 +86,17 @@ class FCCommonField extends StatelessWidget {
     required IFCSize size,
     required Color color,
   }) =>
+      this.labelStyle?.copyWith(
+            color: color,
+            fontSize: this.labelStyle?.fontSize ?? size.s16,
+            fontWeight: this.labelStyle?.fontWeight ?? textStyle.fontWeightRegular,
+            fontFamily: this.labelStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+          ) ??
       TextStyle(
         color: color,
-        fontSize: this.labelStyle?.fontSize ?? size.s16,
-        fontWeight: this.labelStyle?.fontWeight ?? textStyle.fontWeightRegular,
-        fontFamily: this.labelStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+        fontSize: size.s16,
+        fontWeight: textStyle.fontWeightRegular,
+        fontFamily: textStyle.fontFamilyRegular,
       );
 
   TextStyle _fieldPrefixStyle({
@@ -92,11 +104,17 @@ class FCCommonField extends StatelessWidget {
     required IFCTheme theme,
     required IFCSize size,
   }) =>
+      this.prefixStyle?.copyWith(
+            color: this.prefixStyle?.color ?? theme.black,
+            fontSize: this.prefixStyle?.fontSize ?? size.s16,
+            fontWeight: this.prefixStyle?.fontWeight ?? textStyle.fontWeightRegular,
+            fontFamily: this.prefixStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+          ) ??
       TextStyle(
-        color: this.prefixStyle?.color ?? theme.black,
-        fontSize: this.prefixStyle?.fontSize ?? size.s16,
-        fontWeight: this.prefixStyle?.fontWeight ?? textStyle.fontWeightRegular,
-        fontFamily: this.prefixStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+        color: theme.black,
+        fontSize: size.s16,
+        fontWeight: textStyle.fontWeightRegular,
+        fontFamily: textStyle.fontFamilyRegular,
       );
 
   TextStyle _fieldHintStyle({
@@ -104,11 +122,17 @@ class FCCommonField extends StatelessWidget {
     required IFCTheme theme,
     required IFCSize size,
   }) =>
+      this.hintStyle?.copyWith(
+            color: this.hintStyle?.color ?? theme.greyLight,
+            fontSize: this.hintStyle?.fontSize ?? size.s16,
+            fontWeight: this.hintStyle?.fontWeight ?? textStyle.fontWeightRegular,
+            fontFamily: this.hintStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+          ) ??
       TextStyle(
-        color: this.hintStyle?.color ?? theme.greyLight,
-        fontSize: this.hintStyle?.fontSize ?? size.s16,
-        fontWeight: this.hintStyle?.fontWeight ?? textStyle.fontWeightRegular,
-        fontFamily: this.hintStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+        color: theme.greyLight,
+        fontSize: size.s16,
+        fontWeight: textStyle.fontWeightRegular,
+        fontFamily: textStyle.fontFamilyRegular,
       );
 
   @override

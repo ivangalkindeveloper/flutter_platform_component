@@ -34,26 +34,12 @@ class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> {
         onPressed: (int value) => setState(() => this._index = value),
         items: [
           FCBottomNavigationBarIconItem(
-            context: context,
-            isSelected: this._index == 0,
-            iconData: Icons.access_alarm,
-          ),
-          FCBottomNavigationBarIconItemGradient(
-            context: context,
-            isSelected: this._index == 1,
-            iconData: Icons.access_alarm,
+            icon: Icons.access_alarm,
+            label: "Item 1",
           ),
           FCBottomNavigationBarWidgetItem(
-            context: context,
             child: Container(
               color: theme.success,
-            ),
-          ),
-          FCBottomNavigationBarWidgetItemGradient(
-            isSelected: false,
-            context: context,
-            child: Container(
-              color: theme.warningDark,
             ),
           ),
         ],

@@ -61,19 +61,15 @@ class _FCSliverNavigationAppBarCupertino extends StatelessWidget {
     return CupertinoSliverNavigationBar(
       // transitionBetweenRoutes: false,
       backgroundColor: theme.white.withOpacity(0),
-      border: Border.all(
-        color: Colors.transparent,
-        width: 0,
+      border: const Border(
+        top: BorderSide(width: 0.0),
       ),
       leading: this.prefix,
       largeTitle: Text(
         this.title,
-        style: TextStyle(
-          color: this.style?.color,
-          fontSize: this.style?.fontSize,
-          fontWeight: this.style?.fontWeight,
-          fontFamily: this.style?.fontFamily,
-        ),
+        style: this.style?.copyWith(
+              color: this.style?.color ?? theme.black,
+            ),
       ),
       trailing: this.postfix,
     );
@@ -112,12 +108,16 @@ class _FCSliverNavigationAppBarMaterial extends StatelessWidget {
       leading: this.prefix,
       title: Text(
         this.title,
-        style: TextStyle(
-          color: this.style?.color ?? theme.black,
-          fontSize: this.style?.fontSize,
-          fontWeight: this.style?.fontWeight ?? textStyle.fontWeightBold,
-          fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyBold,
-        ),
+        style: this.style?.copyWith(
+                  color: this.style?.color ?? theme.black,
+                  fontWeight: this.style?.fontWeight ?? textStyle.fontWeightBold,
+                  fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyBold,
+                ) ??
+            TextStyle(
+              color: theme.black,
+              fontWeight: textStyle.fontWeightBold,
+              fontFamily: textStyle.fontFamilyBold,
+            ),
       ),
       centerTitle: true,
       actions: this.postfix != null

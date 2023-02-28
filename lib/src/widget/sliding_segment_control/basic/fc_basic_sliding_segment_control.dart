@@ -84,14 +84,21 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
                                   SizedBox(width: size.s16 / 2),
                                 Text(
                                   item.title,
-                                  style: TextStyle(
-                                    color: this._internalColor(value: item.value),
-                                    fontSize: this.style?.fontSize ?? size.s16,
-                                    fontWeight: this.style?.fontWeight ??
-                                        textStyle.fontWeightMedium,
-                                    fontFamily: this.style?.fontFamily ??
-                                        textStyle.fontFamilyMedium,
-                                  ),
+                                  style: this.style?.copyWith(
+                                            color: this.style?.color ??
+                                                this._internalColor(value: item.value),
+                                            fontSize: this.style?.fontSize ?? size.s16,
+                                            fontWeight: this.style?.fontWeight ??
+                                                textStyle.fontWeightMedium,
+                                            fontFamily: this.style?.fontFamily ??
+                                                textStyle.fontFamilyMedium,
+                                          ) ??
+                                      TextStyle(
+                                        color: this._internalColor(value: item.value),
+                                        fontSize: size.s16,
+                                        fontWeight: textStyle.fontWeightMedium,
+                                        fontFamily: textStyle.fontFamilyMedium,
+                                      ),
                                 ),
                                 if (item.postfixIcon != null)
                                   SizedBox(width: size.s16 / 2),

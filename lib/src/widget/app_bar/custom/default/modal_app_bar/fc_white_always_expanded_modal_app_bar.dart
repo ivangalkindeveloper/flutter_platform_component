@@ -27,12 +27,12 @@ class FCWhiteAlwaysExpandedModalAppBar extends FCBasicAppBar {
             onPressedBack: onPressedBack,
           ),
           title: title,
-          style: TextStyle(
-            color: style?.color ?? context.config.theme.whiteAlways,
-            fontSize: style?.fontSize,
-            fontWeight: style?.fontWeight,
-            fontFamily: style?.fontFamily,
-          ),
+          style: style?.copyWith(
+                color: style.color ?? context.config.theme.whiteAlways,
+              ) ??
+              TextStyle(
+                color: context.config.theme.whiteAlways,
+              ),
           middle: middle,
           postfix: postfix,
           bottomPadding: bottomPadding,

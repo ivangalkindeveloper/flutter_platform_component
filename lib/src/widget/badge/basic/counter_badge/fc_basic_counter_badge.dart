@@ -71,12 +71,18 @@ class FCBasicCounterBadge extends StatelessWidget {
         constraints: BoxConstraints(minWidth: size.s10 * 2),
         child: Text(
           this._count(),
-          style: TextStyle(
-            color: style?.color ?? context.config.theme.whiteAlways,
-            fontSize: style?.fontSize ?? size.s14,
-            fontWeight: style?.fontWeight ?? textStyle.fontWeightRegular,
-            fontFamily: style?.fontFamily ?? textStyle.fontFamilyRegular,
-          ),
+          style: style?.copyWith(
+                color: style?.color ?? context.config.theme.whiteAlways,
+                fontSize: style?.fontSize ?? size.s14,
+                fontWeight: style?.fontWeight ?? textStyle.fontWeightRegular,
+                fontFamily: style?.fontFamily ?? textStyle.fontFamilyRegular,
+              ) ??
+              TextStyle(
+                color: context.config.theme.whiteAlways,
+                fontSize: size.s14,
+                fontWeight: textStyle.fontWeightRegular,
+                fontFamily: textStyle.fontFamilyRegular,
+              ),
         ),
       ),
       child: this.child,

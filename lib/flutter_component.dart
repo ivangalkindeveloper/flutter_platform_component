@@ -20,6 +20,7 @@ export 'src/haptic/fc_haptic.dart';
 
 // Platform
 export 'src/platform/fc_platform_app_bar.dart';
+export 'src/platform/fc_platform_router_widget.dart';
 export 'src/platform/fc_platform_widget.dart';
 export 'src/platform/fc_platform.dart';
 
@@ -754,10 +755,9 @@ export 'src/widget/modal/modal/default/fc_white_always_expanded_modal.dart';
 
 // Navigation
 // Navigation / Bottom Navigation Bar
-export 'src/widget/navigation/bottom_navigation_bar/fc_bottom_navigation_bar_icon_item_gradient.dart';
+export 'src/widget/navigation/bottom_navigation_bar/fc_blur_bottom_navigation_bar.dart';
 export 'src/widget/navigation/bottom_navigation_bar/fc_bottom_navigation_bar_icon_item.dart';
-export 'src/widget/navigation/bottom_navigation_bar/fc_bottom_navigation_bar_widget_item_gradient.dart';
-export 'src/widget/navigation/bottom_navigation_bar/fc_bottom_navigation_bar_widget_item.dart';
+export 'src/widget/navigation/bottom_navigation_bar/fc_bottom_navigation_bar_item.dart';
 export 'src/widget/navigation/bottom_navigation_bar/fc_bottom_navigation_bar.dart';
 // Navigation / Navigator
 export 'src/widget/navigation/navigator/fc_navigator.dart';
