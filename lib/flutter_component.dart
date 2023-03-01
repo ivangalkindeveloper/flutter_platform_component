@@ -527,6 +527,66 @@ export 'src/widget/date_picker/fc_date_picker.dart';
 export 'src/widget/dialog/fc_dialog_item.dart';
 export 'src/widget/dialog/fc_dialog.dart';
 
+// Divider
+// Divider / Basic
+export 'src/widget/divider/basic/fc_basic_divider.dart';
+export 'src/widget/divider/basic/fc_basic_gradient_divider.dart';
+// Divider / Custom
+// Divider / Custom / Default
+// Divider / Custom / Default / Dark
+export 'src/widget/divider/custom/default/dark/fc_danger_dark_divider.dart';
+export 'src/widget/divider/custom/default/dark/fc_grey_dark_divider.dart';
+export 'src/widget/divider/custom/default/dark/fc_info_dark_divider.dart';
+export 'src/widget/divider/custom/default/dark/fc_primary_dark_divider.dart';
+export 'src/widget/divider/custom/default/dark/fc_secondary_dark_divider.dart';
+export 'src/widget/divider/custom/default/dark/fc_success_dark_divider.dart';
+export 'src/widget/divider/custom/default/dark/fc_warning_dark_divider.dart';
+// Divider / Custom / Default / Default
+export 'src/widget/divider/custom/default/default/fc_black_always_divider.dart';
+export 'src/widget/divider/custom/default/default/fc_black_divider.dart';
+export 'src/widget/divider/custom/default/default/fc_danger_divider.dart';
+export 'src/widget/divider/custom/default/default/fc_grey_divider.dart';
+export 'src/widget/divider/custom/default/default/fc_info_divider.dart';
+export 'src/widget/divider/custom/default/default/fc_primary_divider.dart';
+export 'src/widget/divider/custom/default/default/fc_secondary_divider.dart';
+export 'src/widget/divider/custom/default/default/fc_success_divider.dart';
+export 'src/widget/divider/custom/default/default/fc_warning_divider.dart';
+export 'src/widget/divider/custom/default/default/fc_white_always_divider.dart';
+export 'src/widget/divider/custom/default/default/fc_white_divider.dart';
+// Divider / Custom / Default / Light
+export 'src/widget/divider/custom/default/light/fc_danger_light_divider.dart';
+export 'src/widget/divider/custom/default/light/fc_grey_light_divider.dart';
+export 'src/widget/divider/custom/default/light/fc_info_light_divider.dart';
+export 'src/widget/divider/custom/default/light/fc_primary_light_divider.dart';
+export 'src/widget/divider/custom/default/light/fc_secondary_light_divider.dart';
+export 'src/widget/divider/custom/default/light/fc_success_light_divider.dart';
+export 'src/widget/divider/custom/default/light/fc_warning_light_divider.dart';
+// Divider / Custom / Gradient
+// Divider / Custom / Gradient / Dark
+export 'src/widget/divider/custom/gradient/dark/fc_danger_dark_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/dark/fc_grey_dark_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/dark/fc_info_dark_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/dark/fc_primary_dark_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/dark/fc_secondary_dark_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/dark/fc_success_dark_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/dark/fc_warning_dark_gradient_divider.dart';
+// Divider / Custom / Gradient / Default
+export 'src/widget/divider/custom/gradient/default/fc_danger_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/default/fc_grey_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/default/fc_info_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/default/fc_primary_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/default/fc_secondary_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/default/fc_success_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/default/fc_warning_gradient_divider.dart';
+// Divider / Custom / Gradient / Light
+export 'src/widget/divider/custom/gradient/light/fc_danger_light_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/light/fc_grey_light_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/light/fc_info_light_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/light/fc_primary_light_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/light/fc_secondary_light_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/light/fc_success_light_gradient_divider.dart';
+export 'src/widget/divider/custom/gradient/light/fc_warning_light_gradient_divider.dart';
+
 // Default
 // Default / List View
 export 'src/widget/default/fc_list_view.dart';
