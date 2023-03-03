@@ -215,6 +215,184 @@ class FCText {
     );
   }
 
+  static Widget thin10SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin10SecondaryLight(context: context),
+      );
+
+  static Widget thin10SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin10SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin10SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin10SecondaryDark(context: context),
+      );
+
+  static Widget thin10SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin10SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget thin10Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin10Accent(context: context),
+      );
+
+  static Widget thin10AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin10AccentButton(context: context),
+      );
+
+  static Widget thin10AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin10Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget thin10AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin10AccentLight(context: context),
+      );
+
+  static Widget thin10AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin10AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin10AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin10AccentDark(context: context),
+      );
+
+  static Widget thin10AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin10AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget thin10Grey({
     required BuildContext context,
     required String text,
@@ -917,6 +1095,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.thin12Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget thin12SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin12SecondaryLight(context: context),
+      );
+
+  static Widget thin12SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin12SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin12SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin12SecondaryDark(context: context),
+      );
+
+  static Widget thin12SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin12SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget thin12Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin12Accent(context: context),
+      );
+
+  static Widget thin12AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin12AccentButton(context: context),
+      );
+
+  static Widget thin12AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin12Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget thin12AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin12AccentLight(context: context),
+      );
+
+  static Widget thin12AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin12AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin12AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin12AccentDark(context: context),
+      );
+
+  static Widget thin12AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin12AccentDark(context: context),
       ),
     );
   }
@@ -1627,6 +1983,184 @@ class FCText {
     );
   }
 
+  static Widget thin14SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin14SecondaryLight(context: context),
+      );
+
+  static Widget thin14SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin14SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin14SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin14SecondaryDark(context: context),
+      );
+
+  static Widget thin14SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin14SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget thin14Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin14Accent(context: context),
+      );
+
+  static Widget thin14AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin14AccentButton(context: context),
+      );
+
+  static Widget thin14AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin14Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget thin14AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin14AccentLight(context: context),
+      );
+
+  static Widget thin14AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin14AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin14AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin14AccentDark(context: context),
+      );
+
+  static Widget thin14AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin14AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget thin14Grey({
     required BuildContext context,
     required String text,
@@ -2329,6 +2863,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.thin16Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget thin16SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin16SecondaryLight(context: context),
+      );
+
+  static Widget thin16SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin16SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin16SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin16SecondaryDark(context: context),
+      );
+
+  static Widget thin16SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin16SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget thin16Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin16Accent(context: context),
+      );
+
+  static Widget thin16AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin16AccentButton(context: context),
+      );
+
+  static Widget thin16AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin16Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget thin16AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin16AccentLight(context: context),
+      );
+
+  static Widget thin16AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin16AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin16AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin16AccentDark(context: context),
+      );
+
+  static Widget thin16AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin16AccentDark(context: context),
       ),
     );
   }
@@ -3039,6 +3751,184 @@ class FCText {
     );
   }
 
+  static Widget thin18SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin18SecondaryLight(context: context),
+      );
+
+  static Widget thin18SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin18SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin18SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin18SecondaryDark(context: context),
+      );
+
+  static Widget thin18SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin18SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget thin18Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin18Accent(context: context),
+      );
+
+  static Widget thin18AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin18AccentButton(context: context),
+      );
+
+  static Widget thin18AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin18Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget thin18AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin18AccentLight(context: context),
+      );
+
+  static Widget thin18AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin18AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin18AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin18AccentDark(context: context),
+      );
+
+  static Widget thin18AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin18AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget thin18Grey({
     required BuildContext context,
     required String text,
@@ -3741,6 +4631,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.thin20Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget thin20SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin20SecondaryLight(context: context),
+      );
+
+  static Widget thin20SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin20SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin20SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin20SecondaryDark(context: context),
+      );
+
+  static Widget thin20SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin20SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget thin20Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin20Accent(context: context),
+      );
+
+  static Widget thin20AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin20AccentButton(context: context),
+      );
+
+  static Widget thin20AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin20Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget thin20AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin20AccentLight(context: context),
+      );
+
+  static Widget thin20AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin20AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin20AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin20AccentDark(context: context),
+      );
+
+  static Widget thin20AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin20AccentDark(context: context),
       ),
     );
   }
@@ -4451,6 +5519,184 @@ class FCText {
     );
   }
 
+  static Widget thin28SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin28SecondaryLight(context: context),
+      );
+
+  static Widget thin28SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin28SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin28SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin28SecondaryDark(context: context),
+      );
+
+  static Widget thin28SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin28SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget thin28Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin28Accent(context: context),
+      );
+
+  static Widget thin28AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin28AccentButton(context: context),
+      );
+
+  static Widget thin28AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin28Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget thin28AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin28AccentLight(context: context),
+      );
+
+  static Widget thin28AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin28AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin28AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin28AccentDark(context: context),
+      );
+
+  static Widget thin28AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin28AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget thin28Grey({
     required BuildContext context,
     required String text,
@@ -5153,6 +6399,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.thin32Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget thin32SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin32SecondaryLight(context: context),
+      );
+
+  static Widget thin32SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin32SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin32SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin32SecondaryDark(context: context),
+      );
+
+  static Widget thin32SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin32SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget thin32Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin32Accent(context: context),
+      );
+
+  static Widget thin32AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin32AccentButton(context: context),
+      );
+
+  static Widget thin32AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin32Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget thin32AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin32AccentLight(context: context),
+      );
+
+  static Widget thin32AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin32AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget thin32AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin32AccentDark(context: context),
+      );
+
+  static Widget thin32AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.thin32AccentDark(context: context),
       ),
     );
   }
@@ -5864,6 +7288,184 @@ class FCText {
     );
   }
 
+  static Widget regular10SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular10SecondaryLight(context: context),
+      );
+
+  static Widget regular10SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular10SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular10SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular10SecondaryDark(context: context),
+      );
+
+  static Widget regular10SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular10SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget regular10Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular10Accent(context: context),
+      );
+
+  static Widget regular10AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular10AccentButton(context: context),
+      );
+
+  static Widget regular10AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular10Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget regular10AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular10AccentLight(context: context),
+      );
+
+  static Widget regular10AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular10AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular10AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular10AccentDark(context: context),
+      );
+
+  static Widget regular10AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular10AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget regular10Grey({
     required BuildContext context,
     required String text,
@@ -6566,6 +8168,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.regular12Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget regular12SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular12SecondaryLight(context: context),
+      );
+
+  static Widget regular12SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular12SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular12SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular12SecondaryDark(context: context),
+      );
+
+  static Widget regular12SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular12SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget regular12Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular12Accent(context: context),
+      );
+
+  static Widget regular12AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular12AccentButton(context: context),
+      );
+
+  static Widget regular12AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular12Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget regular12AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular12AccentLight(context: context),
+      );
+
+  static Widget regular12AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular12AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular12AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular12AccentDark(context: context),
+      );
+
+  static Widget regular12AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular12AccentDark(context: context),
       ),
     );
   }
@@ -7276,6 +9056,184 @@ class FCText {
     );
   }
 
+  static Widget regular14SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular14SecondaryLight(context: context),
+      );
+
+  static Widget regular14SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular14SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular14SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular14SecondaryDark(context: context),
+      );
+
+  static Widget regular14SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular14SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget regular14Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular14Accent(context: context),
+      );
+
+  static Widget regular14AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular14AccentButton(context: context),
+      );
+
+  static Widget regular14AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular14Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget regular14AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular14AccentLight(context: context),
+      );
+
+  static Widget regular14AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular14AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular14AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular14AccentDark(context: context),
+      );
+
+  static Widget regular14AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular14AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget regular14Grey({
     required BuildContext context,
     required String text,
@@ -7978,6 +9936,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.regular16Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget regular16SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular16SecondaryLight(context: context),
+      );
+
+  static Widget regular16SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular16SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular16SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular16SecondaryDark(context: context),
+      );
+
+  static Widget regular16SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular16SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget regular16Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular16Accent(context: context),
+      );
+
+  static Widget regular16AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular16AccentButton(context: context),
+      );
+
+  static Widget regular16AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular16Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget regular16AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular16AccentLight(context: context),
+      );
+
+  static Widget regular16AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular16AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular16AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular16AccentDark(context: context),
+      );
+
+  static Widget regular16AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular16AccentDark(context: context),
       ),
     );
   }
@@ -8688,6 +10824,184 @@ class FCText {
     );
   }
 
+  static Widget regular18SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular18SecondaryLight(context: context),
+      );
+
+  static Widget regular18SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular18SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular18SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular18SecondaryDark(context: context),
+      );
+
+  static Widget regular18SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular18SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget regular18Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular18Accent(context: context),
+      );
+
+  static Widget regular18AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular18AccentButton(context: context),
+      );
+
+  static Widget regular18AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular18Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget regular18AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular18AccentLight(context: context),
+      );
+
+  static Widget regular18AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular18AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular18AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular18AccentDark(context: context),
+      );
+
+  static Widget regular18AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular18AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget regular18Grey({
     required BuildContext context,
     required String text,
@@ -9390,6 +11704,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.regular20Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget regular20SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular20SecondaryLight(context: context),
+      );
+
+  static Widget regular20SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular20SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular20SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular20SecondaryDark(context: context),
+      );
+
+  static Widget regular20SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular20SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget regular20Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular20Accent(context: context),
+      );
+
+  static Widget regular20AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular20AccentButton(context: context),
+      );
+
+  static Widget regular20AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular20Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget regular20AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular20AccentLight(context: context),
+      );
+
+  static Widget regular20AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular20AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular20AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular20AccentDark(context: context),
+      );
+
+  static Widget regular20AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular20AccentDark(context: context),
       ),
     );
   }
@@ -10100,6 +12592,184 @@ class FCText {
     );
   }
 
+  static Widget regular28SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular28SecondaryLight(context: context),
+      );
+
+  static Widget regular28SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular28SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular28SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular28SecondaryDark(context: context),
+      );
+
+  static Widget regular28SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular28SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget regular28Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular28Accent(context: context),
+      );
+
+  static Widget regular28AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular28AccentButton(context: context),
+      );
+
+  static Widget regular28AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular28Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget regular28AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular28AccentLight(context: context),
+      );
+
+  static Widget regular28AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular28AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular28AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular28AccentDark(context: context),
+      );
+
+  static Widget regular28AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular28AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget regular28Grey({
     required BuildContext context,
     required String text,
@@ -10802,6 +13472,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.regular32Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget regular32SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular32SecondaryLight(context: context),
+      );
+
+  static Widget regular32SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular32SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular32SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular32SecondaryDark(context: context),
+      );
+
+  static Widget regular32SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular32SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget regular32Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular32Accent(context: context),
+      );
+
+  static Widget regular32AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular32AccentButton(context: context),
+      );
+
+  static Widget regular32AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular32Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget regular32AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular32AccentLight(context: context),
+      );
+
+  static Widget regular32AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular32AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget regular32AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular32AccentDark(context: context),
+      );
+
+  static Widget regular32AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.regular32AccentDark(context: context),
       ),
     );
   }
@@ -11513,6 +14361,184 @@ class FCText {
     );
   }
 
+  static Widget medium10SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium10SecondaryLight(context: context),
+      );
+
+  static Widget medium10SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium10SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium10SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium10SecondaryDark(context: context),
+      );
+
+  static Widget medium10SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium10SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget medium10Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium10Accent(context: context),
+      );
+
+  static Widget medium10AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium10AccentButton(context: context),
+      );
+
+  static Widget medium10AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium10Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget medium10AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium10AccentLight(context: context),
+      );
+
+  static Widget medium10AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium10AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium10AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium10AccentDark(context: context),
+      );
+
+  static Widget medium10AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium10AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget medium10Grey({
     required BuildContext context,
     required String text,
@@ -12215,6 +15241,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.medium12Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget medium12SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium12SecondaryLight(context: context),
+      );
+
+  static Widget medium12SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium12SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium12SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium12SecondaryDark(context: context),
+      );
+
+  static Widget medium12SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium12SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget medium12Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium12Accent(context: context),
+      );
+
+  static Widget medium12AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium12AccentButton(context: context),
+      );
+
+  static Widget medium12AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium12Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget medium12AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium12AccentLight(context: context),
+      );
+
+  static Widget medium12AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium12AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium12AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium12AccentDark(context: context),
+      );
+
+  static Widget medium12AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium12AccentDark(context: context),
       ),
     );
   }
@@ -12925,6 +16129,184 @@ class FCText {
     );
   }
 
+  static Widget medium14SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium14SecondaryLight(context: context),
+      );
+
+  static Widget medium14SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium14SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium14SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium14SecondaryDark(context: context),
+      );
+
+  static Widget medium14SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium14SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget medium14Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium14Accent(context: context),
+      );
+
+  static Widget medium14AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium14AccentButton(context: context),
+      );
+
+  static Widget medium14AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium14Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget medium14AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium14AccentLight(context: context),
+      );
+
+  static Widget medium14AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium14AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium14AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium14AccentDark(context: context),
+      );
+
+  static Widget medium14AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium14AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget medium14Grey({
     required BuildContext context,
     required String text,
@@ -13627,6 +17009,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.medium16Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget medium16SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium16SecondaryLight(context: context),
+      );
+
+  static Widget medium16SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium16SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium16SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium16SecondaryDark(context: context),
+      );
+
+  static Widget medium16SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium16SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget medium16Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium16Accent(context: context),
+      );
+
+  static Widget medium16AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium16AccentButton(context: context),
+      );
+
+  static Widget medium16AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium16Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget medium16AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium16AccentLight(context: context),
+      );
+
+  static Widget medium16AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium16AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium16AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium16AccentDark(context: context),
+      );
+
+  static Widget medium16AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium16AccentDark(context: context),
       ),
     );
   }
@@ -14337,6 +17897,184 @@ class FCText {
     );
   }
 
+  static Widget medium18SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium18SecondaryLight(context: context),
+      );
+
+  static Widget medium18SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium18SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium18SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium18SecondaryDark(context: context),
+      );
+
+  static Widget medium18SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium18SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget medium18Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium18Accent(context: context),
+      );
+
+  static Widget medium18AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium18AccentButton(context: context),
+      );
+
+  static Widget medium18AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium18Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget medium18AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium18AccentLight(context: context),
+      );
+
+  static Widget medium18AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium18AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium18AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium18AccentDark(context: context),
+      );
+
+  static Widget medium18AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium18AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget medium18Grey({
     required BuildContext context,
     required String text,
@@ -15039,6 +18777,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.medium20Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget medium20SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium20SecondaryLight(context: context),
+      );
+
+  static Widget medium20SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium20SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium20SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium20SecondaryDark(context: context),
+      );
+
+  static Widget medium20SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium20SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget medium20Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium20Accent(context: context),
+      );
+
+  static Widget medium20AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium20AccentButton(context: context),
+      );
+
+  static Widget medium20AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium20Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget medium20AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium20AccentLight(context: context),
+      );
+
+  static Widget medium20AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium20AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium20AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium20AccentDark(context: context),
+      );
+
+  static Widget medium20AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium20AccentDark(context: context),
       ),
     );
   }
@@ -15749,6 +19665,184 @@ class FCText {
     );
   }
 
+  static Widget medium28SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium28SecondaryLight(context: context),
+      );
+
+  static Widget medium28SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium28SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium28SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium28SecondaryDark(context: context),
+      );
+
+  static Widget medium28SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium28SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget medium28Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium28Accent(context: context),
+      );
+
+  static Widget medium28AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium28AccentButton(context: context),
+      );
+
+  static Widget medium28AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium28Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget medium28AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium28AccentLight(context: context),
+      );
+
+  static Widget medium28AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium28AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium28AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium28AccentDark(context: context),
+      );
+
+  static Widget medium28AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium28AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget medium28Grey({
     required BuildContext context,
     required String text,
@@ -16451,6 +20545,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.medium32Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget medium32SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium32SecondaryLight(context: context),
+      );
+
+  static Widget medium32SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium32SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium32SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium32SecondaryDark(context: context),
+      );
+
+  static Widget medium32SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium32SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget medium32Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium32Accent(context: context),
+      );
+
+  static Widget medium32AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium32AccentButton(context: context),
+      );
+
+  static Widget medium32AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium32Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget medium32AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium32AccentLight(context: context),
+      );
+
+  static Widget medium32AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium32AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget medium32AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium32AccentDark(context: context),
+      );
+
+  static Widget medium32AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.medium32AccentDark(context: context),
       ),
     );
   }
@@ -17162,6 +21434,184 @@ class FCText {
     );
   }
 
+  static Widget semiBold10SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold10SecondaryLight(context: context),
+      );
+
+  static Widget semiBold10SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold10SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold10SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold10SecondaryDark(context: context),
+      );
+
+  static Widget semiBold10SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold10SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold10Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold10Accent(context: context),
+      );
+
+  static Widget semiBold10AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold10AccentButton(context: context),
+      );
+
+  static Widget semiBold10AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold10Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold10AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold10AccentLight(context: context),
+      );
+
+  static Widget semiBold10AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold10AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold10AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold10AccentDark(context: context),
+      );
+
+  static Widget semiBold10AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold10AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget semiBold10Grey({
     required BuildContext context,
     required String text,
@@ -17864,6 +22314,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.semiBold12Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold12SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold12SecondaryLight(context: context),
+      );
+
+  static Widget semiBold12SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold12SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold12SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold12SecondaryDark(context: context),
+      );
+
+  static Widget semiBold12SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold12SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold12Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold12Accent(context: context),
+      );
+
+  static Widget semiBold12AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold12AccentButton(context: context),
+      );
+
+  static Widget semiBold12AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold12Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold12AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold12AccentLight(context: context),
+      );
+
+  static Widget semiBold12AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold12AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold12AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold12AccentDark(context: context),
+      );
+
+  static Widget semiBold12AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold12AccentDark(context: context),
       ),
     );
   }
@@ -18574,6 +23202,184 @@ class FCText {
     );
   }
 
+  static Widget semiBold14SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold14SecondaryLight(context: context),
+      );
+
+  static Widget semiBold14SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold14SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold14SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold14SecondaryDark(context: context),
+      );
+
+  static Widget semiBold14SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold14SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold14Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold14Accent(context: context),
+      );
+
+  static Widget semiBold14AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold14AccentButton(context: context),
+      );
+
+  static Widget semiBold14AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold14Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold14AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold14AccentLight(context: context),
+      );
+
+  static Widget semiBold14AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold14AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold14AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold14AccentDark(context: context),
+      );
+
+  static Widget semiBold14AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold14AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget semiBold14Grey({
     required BuildContext context,
     required String text,
@@ -19276,6 +24082,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.semiBold16Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold16SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold16SecondaryLight(context: context),
+      );
+
+  static Widget semiBold16SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold16SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold16SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold16SecondaryDark(context: context),
+      );
+
+  static Widget semiBold16SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold16SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold16Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold16Accent(context: context),
+      );
+
+  static Widget semiBold16AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold16AccentButton(context: context),
+      );
+
+  static Widget semiBold16AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold16Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold16AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold16AccentLight(context: context),
+      );
+
+  static Widget semiBold16AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold16AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold16AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold16AccentDark(context: context),
+      );
+
+  static Widget semiBold16AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold16AccentDark(context: context),
       ),
     );
   }
@@ -19986,6 +24970,184 @@ class FCText {
     );
   }
 
+  static Widget semiBold18SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold18SecondaryLight(context: context),
+      );
+
+  static Widget semiBold18SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold18SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold18SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold18SecondaryDark(context: context),
+      );
+
+  static Widget semiBold18SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold18SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold18Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold18Accent(context: context),
+      );
+
+  static Widget semiBold18AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold18AccentButton(context: context),
+      );
+
+  static Widget semiBold18AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold18Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold18AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold18AccentLight(context: context),
+      );
+
+  static Widget semiBold18AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold18AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold18AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold18AccentDark(context: context),
+      );
+
+  static Widget semiBold18AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold18AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget semiBold18Grey({
     required BuildContext context,
     required String text,
@@ -20688,6 +25850,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.semiBold20Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold20SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold20SecondaryLight(context: context),
+      );
+
+  static Widget semiBold20SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold20SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold20SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold20SecondaryDark(context: context),
+      );
+
+  static Widget semiBold20SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold20SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold20Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold20Accent(context: context),
+      );
+
+  static Widget semiBold20AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold20AccentButton(context: context),
+      );
+
+  static Widget semiBold20AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold20Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold20AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold20AccentLight(context: context),
+      );
+
+  static Widget semiBold20AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold20AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold20AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold20AccentDark(context: context),
+      );
+
+  static Widget semiBold20AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold20AccentDark(context: context),
       ),
     );
   }
@@ -21398,6 +26738,184 @@ class FCText {
     );
   }
 
+  static Widget semiBold28SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold28SecondaryLight(context: context),
+      );
+
+  static Widget semiBold28SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold28SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold28SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold28SecondaryDark(context: context),
+      );
+
+  static Widget semiBold28SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold28SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold28Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold28Accent(context: context),
+      );
+
+  static Widget semiBold28AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold28AccentButton(context: context),
+      );
+
+  static Widget semiBold28AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold28Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold28AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold28AccentLight(context: context),
+      );
+
+  static Widget semiBold28AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold28AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold28AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold28AccentDark(context: context),
+      );
+
+  static Widget semiBold28AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold28AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget semiBold28Grey({
     required BuildContext context,
     required String text,
@@ -22100,6 +27618,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.semiBold32Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold32SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold32SecondaryLight(context: context),
+      );
+
+  static Widget semiBold32SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold32SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold32SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold32SecondaryDark(context: context),
+      );
+
+  static Widget semiBold32SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold32SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold32Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold32Accent(context: context),
+      );
+
+  static Widget semiBold32AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold32AccentButton(context: context),
+      );
+
+  static Widget semiBold32AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold32Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold32AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold32AccentLight(context: context),
+      );
+
+  static Widget semiBold32AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold32AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget semiBold32AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold32AccentDark(context: context),
+      );
+
+  static Widget semiBold32AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.semiBold32AccentDark(context: context),
       ),
     );
   }
@@ -22811,6 +28507,184 @@ class FCText {
     );
   }
 
+  static Widget bold10SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold10SecondaryLight(context: context),
+      );
+
+  static Widget bold10SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold10SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold10SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold10SecondaryDark(context: context),
+      );
+
+  static Widget bold10SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold10SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget bold10Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold10Accent(context: context),
+      );
+
+  static Widget bold10AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold10AccentButton(context: context),
+      );
+
+  static Widget bold10AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold10Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget bold10AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold10AccentLight(context: context),
+      );
+
+  static Widget bold10AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold10AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold10AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold10AccentDark(context: context),
+      );
+
+  static Widget bold10AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold10AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget bold10Grey({
     required BuildContext context,
     required String text,
@@ -23513,6 +29387,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.bold12Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget bold12SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold12SecondaryLight(context: context),
+      );
+
+  static Widget bold12SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold12SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold12SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold12SecondaryDark(context: context),
+      );
+
+  static Widget bold12SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold12SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget bold12Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold12Accent(context: context),
+      );
+
+  static Widget bold12AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold12AccentButton(context: context),
+      );
+
+  static Widget bold12AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold12Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget bold12AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold12AccentLight(context: context),
+      );
+
+  static Widget bold12AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold12AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold12AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold12AccentDark(context: context),
+      );
+
+  static Widget bold12AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold12AccentDark(context: context),
       ),
     );
   }
@@ -24223,6 +30275,184 @@ class FCText {
     );
   }
 
+  static Widget bold14SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold14SecondaryLight(context: context),
+      );
+
+  static Widget bold14SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold14SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold14SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold14SecondaryDark(context: context),
+      );
+
+  static Widget bold14SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold14SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget bold14Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold14Accent(context: context),
+      );
+
+  static Widget bold14AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold14AccentButton(context: context),
+      );
+
+  static Widget bold14AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold14Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget bold14AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold14AccentLight(context: context),
+      );
+
+  static Widget bold14AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold14AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold14AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold14AccentDark(context: context),
+      );
+
+  static Widget bold14AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold14AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget bold14Grey({
     required BuildContext context,
     required String text,
@@ -24925,6 +31155,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.bold16Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget bold16SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold16SecondaryLight(context: context),
+      );
+
+  static Widget bold16SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold16SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold16SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold16SecondaryDark(context: context),
+      );
+
+  static Widget bold16SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold16SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget bold16Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold16Accent(context: context),
+      );
+
+  static Widget bold16AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold16AccentButton(context: context),
+      );
+
+  static Widget bold16AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold16Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget bold16AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold16AccentLight(context: context),
+      );
+
+  static Widget bold16AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold16AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold16AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold16AccentDark(context: context),
+      );
+
+  static Widget bold16AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold16AccentDark(context: context),
       ),
     );
   }
@@ -25635,6 +32043,184 @@ class FCText {
     );
   }
 
+  static Widget bold18SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold18SecondaryLight(context: context),
+      );
+
+  static Widget bold18SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold18SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold18SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold18SecondaryDark(context: context),
+      );
+
+  static Widget bold18SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold18SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget bold18Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold18Accent(context: context),
+      );
+
+  static Widget bold18AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold18AccentButton(context: context),
+      );
+
+  static Widget bold18AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold18Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget bold18AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold18AccentLight(context: context),
+      );
+
+  static Widget bold18AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold18AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold18AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold18AccentDark(context: context),
+      );
+
+  static Widget bold18AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold18AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget bold18Grey({
     required BuildContext context,
     required String text,
@@ -26337,6 +32923,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.bold20Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget bold20SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold20SecondaryLight(context: context),
+      );
+
+  static Widget bold20SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold20SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold20SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold20SecondaryDark(context: context),
+      );
+
+  static Widget bold20SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold20SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget bold20Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold20Accent(context: context),
+      );
+
+  static Widget bold20AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold20AccentButton(context: context),
+      );
+
+  static Widget bold20AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold20Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget bold20AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold20AccentLight(context: context),
+      );
+
+  static Widget bold20AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold20AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold20AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold20AccentDark(context: context),
+      );
+
+  static Widget bold20AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold20AccentDark(context: context),
       ),
     );
   }
@@ -27047,6 +33811,184 @@ class FCText {
     );
   }
 
+  static Widget bold28SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold28SecondaryLight(context: context),
+      );
+
+  static Widget bold28SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold28SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold28SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold28SecondaryDark(context: context),
+      );
+
+  static Widget bold28SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold28SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget bold28Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold28Accent(context: context),
+      );
+
+  static Widget bold28AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold28AccentButton(context: context),
+      );
+
+  static Widget bold28AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold28Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget bold28AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold28AccentLight(context: context),
+      );
+
+  static Widget bold28AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold28AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold28AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold28AccentDark(context: context),
+      );
+
+  static Widget bold28AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold28AccentDark(context: context),
+      ),
+    );
+  }
+
   static Widget bold28Grey({
     required BuildContext context,
     required String text,
@@ -27749,6 +34691,184 @@ class FCText {
         textAlign: align,
         overflow: overflow,
         style: FCTextStyle.bold32Secondary(context: context),
+      ),
+    );
+  }
+
+  static Widget bold32SecondaryLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold32SecondaryLight(context: context),
+      );
+
+  static Widget bold32SecondaryLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold32SecondaryLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold32SecondaryDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold32SecondaryDark(context: context),
+      );
+
+  static Widget bold32SecondaryDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold32SecondaryDark(context: context),
+      ),
+    );
+  }
+
+  static Widget bold32Accent({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold32Accent(context: context),
+      );
+
+  static Widget bold32AccentButton({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold32AccentButton(context: context),
+      );
+
+  static Widget bold32AccentGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold32Accent(context: context),
+      ),
+    );
+  }
+
+  static Widget bold32AccentLight({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold32AccentLight(context: context),
+      );
+
+  static Widget bold32AccentLightGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryLightGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold32AccentLight(context: context),
+      ),
+    );
+  }
+
+  static Widget bold32AccentDark({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) =>
+      Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold32AccentDark(context: context),
+      );
+
+  static Widget bold32AccentDarkGradient({
+    required BuildContext context,
+    required String text,
+    TextAlign? align,
+    TextOverflow? overflow,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+
+    return FCGradientMask(
+      gradient: theme.secondaryDarkGradient,
+      child: Text(
+        text,
+        textAlign: align,
+        overflow: overflow,
+        style: FCTextStyle.bold32AccentDark(context: context),
       ),
     );
   }

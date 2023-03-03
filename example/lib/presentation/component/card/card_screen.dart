@@ -27,6 +27,13 @@ class CardScreen extends StatelessWidget {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkCard(
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkCard(
             child: FCText.regular16WhiteAlways(
               context: context,
@@ -81,6 +88,13 @@ class CardScreen extends StatelessWidget {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentCard(
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+          ),
+          SizedBox(height: size.s16 / 2),
           FCBlackAlwaysCard(
             child: FCText.regular16WhiteAlways(
               context: context,
@@ -177,6 +191,13 @@ class CardScreen extends StatelessWidget {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightCard(
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightCard(
             child: FCText.regular16WhiteAlways(
               context: context,

@@ -202,6 +202,83 @@ class FCCircularIndicator {
     );
   }
 
+  static Widget smallAccent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicCircularIndicator(
+      color: theme.accent,
+      height: size.indicatorHeightSmall,
+    );
+  }
+
+  static Widget smallAccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicCircularIndicator(
+      color: theme.accentButton,
+      height: size.indicatorHeightSmall,
+    );
+  }
+
+  static Widget smallAccentGradient({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicGradientCircularIndicator(
+      gradient: theme.accentGradient,
+      height: size.indicatorHeightSmall,
+    );
+  }
+
+  static Widget smallAccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicCircularIndicator(
+      color: theme.accentLight,
+      height: size.indicatorHeightSmall,
+    );
+  }
+
+  static Widget smallAccentLightGradient({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicGradientCircularIndicator(
+      gradient: theme.accentLightGradient,
+      height: size.indicatorHeightSmall,
+    );
+  }
+
+  static Widget smallAccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicCircularIndicator(
+      color: theme.accentDark,
+      height: size.indicatorHeightSmall,
+    );
+  }
+
+  static Widget smallAccentDarkGradient({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicGradientCircularIndicator(
+      gradient: theme.accentDarkGradient,
+      height: size.indicatorHeightSmall,
+    );
+  }
+
   static Widget smallGrey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
@@ -731,6 +808,83 @@ class FCCircularIndicator {
     );
   }
 
+  static Widget accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicCircularIndicator(
+      color: theme.accent,
+      height: size.indicatorHeightDefault,
+    );
+  }
+
+  static Widget accentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicCircularIndicator(
+      color: theme.accentButton,
+      height: size.indicatorHeightDefault,
+    );
+  }
+
+  static Widget accentGradient({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicGradientCircularIndicator(
+      gradient: theme.accentGradient,
+      height: size.indicatorHeightDefault,
+    );
+  }
+
+  static Widget accentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicCircularIndicator(
+      color: theme.accentLight,
+      height: size.indicatorHeightDefault,
+    );
+  }
+
+  static Widget accentLightGradient({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicGradientCircularIndicator(
+      gradient: theme.accentLightGradient,
+      height: size.indicatorHeightDefault,
+    );
+  }
+
+  static Widget accentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicCircularIndicator(
+      color: theme.accentDark,
+      height: size.indicatorHeightDefault,
+    );
+  }
+
+  static Widget accentDarkGradient({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicGradientCircularIndicator(
+      gradient: theme.accentDarkGradient,
+      height: size.indicatorHeightDefault,
+    );
+  }
+
   static Widget grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
@@ -1256,6 +1410,83 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.secondaryDarkGradient,
+      height: size.indicatorHeightLarge,
+    );
+  }
+
+  static Widget largeAccent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicCircularIndicator(
+      color: theme.accent,
+      height: size.indicatorHeightLarge,
+    );
+  }
+
+  static Widget largeAccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicCircularIndicator(
+      color: theme.accentButton,
+      height: size.indicatorHeightLarge,
+    );
+  }
+
+  static Widget largeAccentGradient({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicGradientCircularIndicator(
+      gradient: theme.accentGradient,
+      height: size.indicatorHeightLarge,
+    );
+  }
+
+  static Widget largeAccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicCircularIndicator(
+      color: theme.accentLight,
+      height: size.indicatorHeightLarge,
+    );
+  }
+
+  static Widget largeAccentLightGradient({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicGradientCircularIndicator(
+      gradient: theme.accentLightGradient,
+      height: size.indicatorHeightLarge,
+    );
+  }
+
+  static Widget largeAccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicCircularIndicator(
+      color: theme.accentDark,
+      height: size.indicatorHeightLarge,
+    );
+  }
+
+  static Widget largeAccentDarkGradient({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return FCBasicGradientCircularIndicator(
+      gradient: theme.accentDarkGradient,
       height: size.indicatorHeightLarge,
     );
   }

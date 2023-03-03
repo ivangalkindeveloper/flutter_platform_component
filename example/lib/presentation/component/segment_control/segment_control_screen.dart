@@ -40,9 +40,29 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkSegmentControl<String>(
+            value: this._value,
+            items: const [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -62,7 +82,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -82,7 +102,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCGreyDarkSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -102,7 +122,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -122,7 +142,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCDangerDarkSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -142,7 +162,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -162,7 +182,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCWarningDarkSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -185,9 +205,29 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentSegmentControl<String>(
+            value: this._value,
+            items: const [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCBlackAlwaysSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -207,7 +247,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCBlackSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -227,7 +267,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCInfoSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -247,7 +287,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCSuccessSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -267,7 +307,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCGreySegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -287,7 +327,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCPrimarySegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -307,7 +347,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCDangerSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -327,7 +367,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCSecondarySegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -347,7 +387,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCWhiteAlwaysSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -367,7 +407,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCWhiteSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -387,7 +427,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCWarningSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -410,9 +450,29 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightSegmentControl<String>(
+            value: this._value,
+            items: const [
+              FCSegmentControlItem(
+                value: "First",
+                title: "First",
+              ),
+              FCSegmentControlItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCSegmentControlItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -432,7 +492,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCSuccessLightSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -452,7 +512,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCGreyLightSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -472,7 +532,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -492,7 +552,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCDangerLightSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -512,7 +572,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",
@@ -532,7 +592,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
           SizedBox(height: size.s16 / 2),
           FCWarningLightSegmentControl<String>(
             value: this._value,
-            items: [
+            items: const [
               FCSegmentControlItem(
                 value: "First",
                 title: "First",

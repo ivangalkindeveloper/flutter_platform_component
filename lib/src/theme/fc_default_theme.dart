@@ -50,6 +50,17 @@ class FCDefaultTheme implements IFCTheme {
     required this.secondaryDark,
     required this.secondaryDarkGradient,
 
+    // Accent
+    required this.accent,
+    required this.accentButton,
+    required this.accentGradient,
+    // Accent / Light
+    required this.accentLight,
+    required this.accentLightGradient,
+    // Accent / Dark
+    required this.accentDark,
+    required this.accentDarkGradient,
+
     // Grey
     required this.grey,
     required this.greyGradient,
@@ -186,6 +197,24 @@ class FCDefaultTheme implements IFCTheme {
   final Color secondaryDark;
   @override
   final Gradient secondaryDarkGradient;
+
+  // Accent
+  @override
+  final Color accent;
+  @override
+  final Color accentButton;
+  @override
+  final Gradient accentGradient;
+  // Accent / Light
+  @override
+  final Color accentLight;
+  @override
+  final Gradient accentLightGradient;
+  // Accent / Dark
+  @override
+  final Color accentDark;
+  @override
+  final Gradient accentDarkGradient;
 
   // Grey
   @override
@@ -332,6 +361,17 @@ class FCDefaultTheme implements IFCTheme {
     Color? secondaryDark,
     Gradient? secondaryDarkGradient,
 
+    // Secondary
+    Color? accent,
+    Color? accentButton,
+    Gradient? accentGradient,
+    // Secondary / Light
+    Color? accentLight,
+    Gradient? accentLightGradient,
+    // Secondary / Dark
+    Color? accentDark,
+    Gradient? accentDarkGradient,
+
     // Grey
     Color? grey,
     Gradient? greyGradient,
@@ -442,6 +482,17 @@ class FCDefaultTheme implements IFCTheme {
         // Secondary / Dark
         secondaryDark: secondaryDark ?? this.secondaryDark,
         secondaryDarkGradient: secondaryDarkGradient ?? this.secondaryDarkGradient,
+
+        // Accent
+        accent: accent ?? this.accent,
+        accentButton: accentButton ?? this.accentButton,
+        accentGradient: accentGradient ?? this.accentGradient,
+        // Accent / Light
+        accentLight: accentLight ?? this.accentLight,
+        accentLightGradient: accentLightGradient ?? this.accentLightGradient,
+        // Accent / Dark
+        accentDark: accentDark ?? this.accentDark,
+        accentDarkGradient: accentDarkGradient ?? this.accentDarkGradient,
 
         // Grey
         grey: grey ?? this.grey,
@@ -563,6 +614,19 @@ class FCDefaultTheme implements IFCTheme {
       secondaryDark: Color.lerp(this.secondaryDark, other.secondaryDark, t),
       secondaryDarkGradient:
           Gradient.lerp(this.secondaryDarkGradient, other.secondaryDarkGradient, t),
+
+      // Accent
+      accent: Color.lerp(this.accent, other.accent, t),
+      accentButton: Color.lerp(this.accentButton, other.accentButton, t),
+      accentGradient: Gradient.lerp(this.accentGradient, other.accentGradient, t),
+      // Accent / Light
+      accentLight: Color.lerp(this.accentLight, other.accentLight, t),
+      accentLightGradient:
+          Gradient.lerp(this.accentLightGradient, other.accentLightGradient, t),
+      // Accent / Dark
+      accentDark: Color.lerp(this.accentDark, other.accentDark, t),
+      accentDarkGradient:
+          Gradient.lerp(this.accentDarkGradient, other.accentDarkGradient, t),
 
       // Grey
       grey: Color.lerp(this.grey, other.grey, t),
@@ -722,6 +786,32 @@ class FCDefaultTheme implements IFCTheme {
         // Secondary / Dark
         secondaryDark: const Color(0xff0A84FF),
         secondaryDarkGradient: const LinearGradient(
+          colors: const [
+            Color(0xff0A84FF),
+            Color(0xff50A7FF),
+          ],
+        ),
+
+        // Accent
+        accent: const Color(0xff0A84FF),
+        accentButton: const Color(0xffFFFFFF),
+        accentGradient: const LinearGradient(
+          colors: const [
+            Color(0xff0A84FF),
+            Color(0xff50A7FF),
+          ],
+        ),
+        // Accent / Light
+        accentLight: const Color(0xff0A84FF),
+        accentLightGradient: const LinearGradient(
+          colors: const [
+            Color(0xff0A84FF),
+            Color(0xff50A7FF),
+          ],
+        ),
+        // Accent / Dark
+        accentDark: const Color(0xff0A84FF),
+        accentDarkGradient: const LinearGradient(
           colors: const [
             Color(0xff0A84FF),
             Color(0xff50A7FF),
@@ -951,6 +1041,32 @@ class FCDefaultTheme implements IFCTheme {
         // Secondary / Dark
         secondaryDark: const Color(0xff5856D6),
         secondaryDarkGradient: const LinearGradient(
+          colors: const [
+            Color(0xff5856D6),
+            Color(0xff5E5CE6),
+          ],
+        ),
+
+        // Accent
+        accent: const Color(0xff5856D6),
+        accentButton: const Color(0xffFFFFFF),
+        accentGradient: const LinearGradient(
+          colors: const [
+            Color(0xff5856D6),
+            Color(0xff5E5CE6),
+          ],
+        ),
+        // Accent / Light
+        accentLight: const Color(0xff5856D6),
+        accentLightGradient: const LinearGradient(
+          colors: const [
+            Color(0xff5856D6),
+            Color(0xff5E5CE6),
+          ],
+        ),
+        // Accent / Dark
+        accentDark: const Color(0xff5856D6),
+        accentDarkGradient: const LinearGradient(
           colors: const [
             Color(0xff5856D6),
             Color(0xff5E5CE6),

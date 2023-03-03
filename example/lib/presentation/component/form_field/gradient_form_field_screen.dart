@@ -39,6 +39,11 @@ class _GradientFormFieldScreenState extends State<GradientFormFieldScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkGradientFormField(
+            labelText: "Label",
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkGradientFormField(
             labelText: "Label",
             isDisabled: this._isDisabled,
@@ -74,6 +79,11 @@ class _GradientFormFieldScreenState extends State<GradientFormFieldScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentGradientFormField(
+            labelText: "Label",
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoGradientFormField(
             labelText: "Label",
             isDisabled: this._isDisabled,
@@ -109,6 +119,11 @@ class _GradientFormFieldScreenState extends State<GradientFormFieldScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightGradientFormField(
+            labelText: "Label",
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightGradientFormField(
             labelText: "Label",
             isDisabled: this._isDisabled,

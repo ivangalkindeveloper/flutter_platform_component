@@ -412,7 +412,12 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.toggle_screen),
             ),
-            //TODO Toogle Gradient
+            SizedBox(height: size.s16 / 2),
+            FCPrimaryButton(
+              title: "Gradient Toggle",
+              onPressed: () =>
+                  Navigator.pushNamed(context, NavigationService.gradient_toggle_screen),
+            ),
           ],
         ),
       ),

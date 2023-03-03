@@ -40,6 +40,11 @@ class _GradientCodeFieldScreenState extends State<GradientCodeFieldScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkGradientCodeField(
+            length: this._length,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
@@ -75,6 +80,11 @@ class _GradientCodeFieldScreenState extends State<GradientCodeFieldScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentGradientCodeField(
+            length: this._length,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
@@ -110,6 +120,11 @@ class _GradientCodeFieldScreenState extends State<GradientCodeFieldScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightGradientCodeField(
+            length: this._length,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,

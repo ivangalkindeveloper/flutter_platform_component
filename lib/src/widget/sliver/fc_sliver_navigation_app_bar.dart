@@ -62,7 +62,10 @@ class _FCSliverNavigationAppBarCupertino extends StatelessWidget {
       // transitionBetweenRoutes: false,
       backgroundColor: theme.white.withOpacity(0),
       border: const Border(
-        top: BorderSide(width: 0.0),
+        top: BorderSide(
+          width: 0.0,
+          color: Colors.transparent,
+        ),
       ),
       leading: this.prefix,
       largeTitle: Text(

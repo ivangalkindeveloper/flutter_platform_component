@@ -40,6 +40,11 @@ class _GradientPINFieldScreenState extends State<GradientPINFieldScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkGradientPINField(
+            length: this._length,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
@@ -75,6 +80,11 @@ class _GradientPINFieldScreenState extends State<GradientPINFieldScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentGradientPINField(
+            length: this._length,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
@@ -110,6 +120,11 @@ class _GradientPINFieldScreenState extends State<GradientPINFieldScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightGradientPINField(
+            length: this._length,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,

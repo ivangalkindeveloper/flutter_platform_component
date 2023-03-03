@@ -39,6 +39,15 @@ class _SelectCardScreenState extends State<SelectCardScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkSelectCard(
+            onPressed: () {},
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkSelectCard(
             onPressed: () {},
             child: FCText.regular16WhiteAlways(
@@ -107,6 +116,15 @@ class _SelectCardScreenState extends State<SelectCardScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentSelectCard(
+            onPressed: () {},
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCBlackAlwaysSelectCard(
             onPressed: () {},
             child: FCText.regular16WhiteAlways(
@@ -229,6 +247,15 @@ class _SelectCardScreenState extends State<SelectCardScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightSelectCard(
+            onPressed: () {},
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightSelectCard(
             onPressed: () {},
             child: FCText.regular16WhiteAlways(

@@ -51,6 +51,17 @@ abstract class IFCTheme {
   abstract final Color secondaryDark;
   abstract final Gradient secondaryDarkGradient;
 
+  // Accent
+  abstract final Color accent;
+  abstract final Color accentButton;
+  abstract final Gradient accentGradient;
+  // Accent / Light
+  abstract final Color accentLight;
+  abstract final Gradient accentLightGradient;
+  // Accent / Dark
+  abstract final Color accentDark;
+  abstract final Gradient accentDarkGradient;
+
   // Grey
   abstract final Color grey;
   abstract final Gradient greyGradient;

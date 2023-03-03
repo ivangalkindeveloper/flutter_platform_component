@@ -40,6 +40,12 @@ class _SwitchScreenState extends State<SwitchScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkSwitch(
+            value: this._value,
+            onChanged: (bool value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
@@ -81,6 +87,12 @@ class _SwitchScreenState extends State<SwitchScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentSwitch(
+            value: this._value,
+            onChanged: (bool value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCBlackAlwaysSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
@@ -158,6 +170,12 @@ class _SwitchScreenState extends State<SwitchScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightSwitch(
+            value: this._value,
+            onChanged: (bool value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),

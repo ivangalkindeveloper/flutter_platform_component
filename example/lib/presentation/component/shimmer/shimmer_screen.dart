@@ -27,6 +27,10 @@ class ShimmerScreen extends StatelessWidget {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkShimmer(
+            height: size.s16 * 2,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkShimmer(
             height: size.s16 * 2,
           ),
@@ -60,6 +64,10 @@ class ShimmerScreen extends StatelessWidget {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentShimmer(
+            height: size.s16 * 2,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoShimmer(
             height: size.s16 * 2,
           ),

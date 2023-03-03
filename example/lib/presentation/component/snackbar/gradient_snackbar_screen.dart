@@ -27,6 +27,10 @@ class GradientSnackbarScreen extends StatelessWidget {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkGradientSnackbar(
+            child: const SizedBox(),
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkGradientSnackbar(
             child: const SizedBox(),
           ),
@@ -60,6 +64,10 @@ class GradientSnackbarScreen extends StatelessWidget {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentGradientSnackbar(
+            child: const SizedBox(),
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoGradientSnackbar(
             child: const SizedBox(),
           ),
@@ -93,6 +101,10 @@ class GradientSnackbarScreen extends StatelessWidget {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightGradientSnackbar(
+            child: const SizedBox(),
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightGradientSnackbar(
             child: const SizedBox(),
           ),
@@ -126,6 +138,10 @@ class GradientSnackbarScreen extends StatelessWidget {
             text: "Outline",
           ),
           SizedBox(height: size.s16),
+          FCAccentGradientOutlineSnackbar(
+            child: const SizedBox(),
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoGradientOutlineSnackbar(
             child: const SizedBox(),
           ),

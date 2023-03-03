@@ -6,6 +6,7 @@ class FCPopUpModal extends StatelessWidget {
   const FCPopUpModal({
     super.key,
     this.backgroundColor,
+    this.isBar = true,
     this.barColor,
     this.barHeight,
     this.barWidth,
@@ -14,6 +15,7 @@ class FCPopUpModal extends StatelessWidget {
   });
 
   final Color? backgroundColor;
+  final bool isBar;
   final Color? barColor;
   final double? barHeight;
   final double? barWidth;
@@ -36,19 +38,25 @@ class FCPopUpModal extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            SizedBox(height: size.s16 / 2),
-            Container(
-              height: this.barHeight ?? size.s20 / 4,
-              width: this.barWidth ?? size.s32,
-              decoration: BoxDecoration(
-                color: theme.greyLight,
-                borderRadius: BorderRadius.circular(this.barHeight ?? size.s16 / 2),
+            if (this.isBar)
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  SizedBox(height: size.s16 / 2),
+                  Container(
+                    height: this.barHeight ?? size.s16 / 4,
+                    width: this.barWidth ?? size.s32,
+                    decoration: BoxDecoration(
+                      color: theme.greyLight,
+                      borderRadius: BorderRadius.circular(this.barHeight ?? size.s16 / 2),
+                    ),
+                  ),
+                ],
               ),
-            ),
             SafeArea(
               top: false,
               child: Padding(
-                padding: padding ?? EdgeInsets.all(size.s16),
+                padding: this.padding ?? EdgeInsets.all(size.s16),
                 child: this.child,
               ),
             ),

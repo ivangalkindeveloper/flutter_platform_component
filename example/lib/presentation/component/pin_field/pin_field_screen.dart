@@ -40,6 +40,11 @@ class _PINFieldScreenState extends State<PINFieldScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkPINField(
+            length: this._length,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkPINField(
             length: this._length,
             isDisabled: this._isDisabled,
@@ -75,6 +80,11 @@ class _PINFieldScreenState extends State<PINFieldScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentPINField(
+            length: this._length,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCBlackAlwaysPINField(
             length: this._length,
             isDisabled: this._isDisabled,
@@ -130,6 +140,11 @@ class _PINFieldScreenState extends State<PINFieldScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightPINField(
+            length: this._length,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightPINField(
             length: this._length,
             isDisabled: this._isDisabled,

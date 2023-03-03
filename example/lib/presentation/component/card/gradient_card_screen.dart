@@ -27,6 +27,13 @@ class GradientCardScreen extends StatelessWidget {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkGradientCard(
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkGradientCard(
             child: FCText.regular16WhiteAlways(
               context: context,
@@ -81,13 +88,20 @@ class GradientCardScreen extends StatelessWidget {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentGradientCard(
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoGradientCard(
             child: FCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
-          SizedBox(height: size.s16),
+          SizedBox(height: size.s16 / 2),
           FCSuccessGradientCard(
             child: FCText.regular16WhiteAlways(
               context: context,
@@ -135,6 +149,13 @@ class GradientCardScreen extends StatelessWidget {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightGradientCard(
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightGradientCard(
             child: FCText.regular16WhiteAlways(
               context: context,

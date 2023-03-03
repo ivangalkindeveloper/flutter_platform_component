@@ -1,6 +1,6 @@
 import 'package:example/presentation/config_section.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter/material.dart';
 
 class ScaffoldScreen extends StatelessWidget {
   const ScaffoldScreen({Key? key});
@@ -27,6 +27,24 @@ class ScaffoldScreen extends StatelessWidget {
               context: context,
               text: "Scaffold Body",
             ),
+          ),
+        ],
+      ),
+      bottomNavigationBar: FCBlurBottomNavigationBar(
+        index: 0,
+        onPressed: (int index) {},
+        items: [
+          FCBottomNavigationBarIconItem(
+            icon: Icons.account_circle_outlined,
+            label: "Bottom",
+          ),
+          FCBottomNavigationBarIconItem(
+            icon: Icons.all_out_rounded,
+            label: "Navigation",
+          ),
+          FCBottomNavigationBarIconItem(
+            icon: Icons.accessibility_new_sharp,
+            label: "Bar",
           ),
         ],
       ),

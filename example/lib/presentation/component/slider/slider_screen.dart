@@ -40,6 +40,12 @@ class _SliderScreenState extends State<SliderScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
@@ -81,6 +87,12 @@ class _SliderScreenState extends State<SliderScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCBlackAlwaysSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
@@ -146,6 +158,12 @@ class _SliderScreenState extends State<SliderScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightSlider(
+            value: this._value,
+            onChanged: (double value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),

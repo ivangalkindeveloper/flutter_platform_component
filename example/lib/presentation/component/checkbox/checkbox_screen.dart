@@ -40,6 +40,13 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkCheckbox(
+            value: this._isSelected,
+            onChanged: (bool value) =>
+                setState(() => this._isSelected = !this._isSelected),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
@@ -94,6 +101,13 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentCheckbox(
+            value: this._isSelected,
+            onChanged: (bool value) =>
+                setState(() => this._isSelected = !this._isSelected),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCBlackAlwaysCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
@@ -176,6 +190,13 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightCheckbox(
+            value: this._isSelected,
+            onChanged: (bool value) =>
+                setState(() => this._isSelected = !this._isSelected),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>

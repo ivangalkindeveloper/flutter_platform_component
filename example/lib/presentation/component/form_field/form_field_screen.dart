@@ -39,6 +39,11 @@ class _FormFieldScreenState extends State<FormFieldScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkFormField(
+            labelText: "Label",
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkFormField(
             labelText: "Label",
             isDisabled: this._isDisabled,
@@ -74,6 +79,11 @@ class _FormFieldScreenState extends State<FormFieldScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentFormField(
+            labelText: "Label",
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCBlackAlwaysFormField(
             labelText: "Label",
             isDisabled: this._isDisabled,
@@ -129,6 +139,11 @@ class _FormFieldScreenState extends State<FormFieldScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightFormField(
+            labelText: "Label",
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightFormField(
             labelText: "Label",
             isDisabled: this._isDisabled,

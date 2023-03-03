@@ -45,6 +45,13 @@ class _GradientButtonScreenState extends State<GradientButtonScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentGradientButton(
+            title: "Action",
+            onPressed: () => setState(() => this._isLoading = !this._isLoading),
+            isLoading: this._isLoading,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
@@ -99,6 +106,13 @@ class _GradientButtonScreenState extends State<GradientButtonScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightGradientButton(
+            title: "Action",
+            onPressed: () => setState(() => this._isLoading = !this._isLoading),
+            isLoading: this._isLoading,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
@@ -153,6 +167,13 @@ class _GradientButtonScreenState extends State<GradientButtonScreen> {
             text: "Outline",
           ),
           SizedBox(height: size.s16),
+          FCAccentOutlineGradientButton(
+            title: "Action",
+            onPressed: () => setState(() => this._isLoading = !this._isLoading),
+            isLoading: this._isLoading,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoOutlineGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),

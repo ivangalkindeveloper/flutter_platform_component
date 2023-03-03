@@ -43,32 +43,36 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
+              FCAccentDarkDotBadge(
+                child: const _Child(),
+                isShow: this._isShow,
+              ),
               FCInfoDarkDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCSuccessDarkDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCGreyDarkDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCPrimaryDarkDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCDangerDarkDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCSecondaryDarkDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCWarningDarkDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
             ],
@@ -83,48 +87,52 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
+              FCAccentDotBadge(
+                child: const _Child(),
+                isShow: this._isShow,
+              ),
               FCBlackAlwaysDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCBlackDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCInfoDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCSuccessDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCGreyDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCPrimaryDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCDangerDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCSecondaryDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCWhiteDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCWhiteAlwaysDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCWarningDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
             ],
@@ -139,32 +147,36 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
+              FCAccentLightDotBadge(
+                child: const _Child(),
+                isShow: this._isShow,
+              ),
               FCInfoLightDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCSuccessLightDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCGreyLightDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCPrimaryLightDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCDangerLightDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCSecondaryLightDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
               FCWarningLightDotBadge(
-                child: const _ChildWidget(),
+                child: const _Child(),
                 isShow: this._isShow,
               ),
             ],
@@ -175,8 +187,8 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
   }
 }
 
-class _ChildWidget extends StatelessWidget {
-  const _ChildWidget({Key? key}) : super(key: key);
+class _Child extends StatelessWidget {
+  const _Child({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

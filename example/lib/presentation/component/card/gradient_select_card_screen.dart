@@ -39,6 +39,15 @@ class _GradientSelectCardScreenState extends State<GradientSelectCardScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkGradientSelectCard(
+            onPressed: () {},
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkGradientSelectCard(
             onPressed: () {},
             child: FCText.regular16WhiteAlways(
@@ -107,6 +116,15 @@ class _GradientSelectCardScreenState extends State<GradientSelectCardScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentGradientSelectCard(
+            onPressed: () {},
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoGradientSelectCard(
             onPressed: () {},
             child: FCText.regular16WhiteAlways(
@@ -175,6 +193,15 @@ class _GradientSelectCardScreenState extends State<GradientSelectCardScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightGradientSelectCard(
+            onPressed: () {},
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightGradientSelectCard(
             onPressed: () {},
             child: FCText.regular16WhiteAlways(

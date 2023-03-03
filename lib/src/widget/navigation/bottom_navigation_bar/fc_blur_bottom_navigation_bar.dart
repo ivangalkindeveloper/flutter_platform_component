@@ -82,7 +82,10 @@ class _FCBlurBottomNavigationBarCupertino extends StatelessWidget {
           filter: this.blurFilter,
           child: CupertinoTabBar(
             border: const Border(
-              top: BorderSide(width: 0.0),
+              top: BorderSide(
+                width: 0.0,
+                color: Colors.transparent,
+              ),
             ),
             currentIndex: this.index,
             onTap: this.onPressed,

@@ -40,9 +40,29 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkGradientToggle<String>(
+            value: this._value,
+            items: const [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -62,7 +82,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -82,7 +102,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           SizedBox(height: size.s16 / 2),
           FCGreyDarkGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -102,7 +122,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -122,7 +142,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -142,7 +162,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           SizedBox(height: size.s16 / 2),
           FCWarningDarkGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -165,9 +185,29 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentGradientToggle<String>(
+            value: this._value,
+            items: const [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -187,7 +227,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           SizedBox(height: size.s16 / 2),
           FCSuccessGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -207,7 +247,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           SizedBox(height: size.s16 / 2),
           FCGreyGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -227,7 +267,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           SizedBox(height: size.s16 / 2),
           FCPrimaryGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -247,7 +287,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           SizedBox(height: size.s16 / 2),
           FCSecondaryGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -267,7 +307,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           SizedBox(height: size.s16 / 2),
           FCWarningGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -290,9 +330,29 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightGradientToggle<String>(
+            value: this._value,
+            items: const [
+              FCToggleItem(
+                value: "First",
+                title: "First",
+              ),
+              FCToggleItem(
+                value: "Second",
+                title: "Second",
+              ),
+              FCToggleItem(
+                value: "Third",
+                title: "Third",
+              ),
+            ],
+            onChanged: (String value) => setState(() => this._value = value),
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -312,7 +372,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           SizedBox(height: size.s16 / 2),
           FCSuccessLightGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -332,7 +392,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           SizedBox(height: size.s16 / 2),
           FCGreyLightGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -352,7 +412,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -372,7 +432,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",
@@ -392,7 +452,7 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
           SizedBox(height: size.s16 / 2),
           FCWarningLightGradientToggle<String>(
             value: this._value,
-            items: [
+            items: const [
               FCToggleItem(
                 value: "First",
                 title: "First",

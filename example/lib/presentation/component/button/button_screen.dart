@@ -45,6 +45,13 @@ class _ButtonScreenState extends State<ButtonScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentButton(
+            title: "Action",
+            onPressed: () => setState(() => this._isLoading = !this._isLoading),
+            isLoading: this._isLoading,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCBlackAlwaysButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
@@ -127,6 +134,13 @@ class _ButtonScreenState extends State<ButtonScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightButton(
+            title: "Action",
+            onPressed: () => setState(() => this._isLoading = !this._isLoading),
+            isLoading: this._isLoading,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
@@ -181,6 +195,13 @@ class _ButtonScreenState extends State<ButtonScreen> {
             text: "Outline",
           ),
           SizedBox(height: size.s16),
+          FCAccentOutlineButton(
+            title: "Action",
+            onPressed: () => setState(() => this._isLoading = !this._isLoading),
+            isLoading: this._isLoading,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCBlackAlwaysOutlineButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),

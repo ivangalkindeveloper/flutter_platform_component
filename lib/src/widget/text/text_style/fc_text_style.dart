@@ -173,6 +173,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle thin10Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin10AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin10AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin10AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
   static TextStyle thin10Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -546,6 +602,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin12Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin12AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin12AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin12AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
@@ -931,6 +1043,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle thin14Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin14AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin14AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin14AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
   static TextStyle thin14Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -1304,6 +1472,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin16Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin16AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin16AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin16AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
@@ -1689,6 +1913,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle thin18Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin18AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin18AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin18AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
   static TextStyle thin18Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -2062,6 +2342,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin20Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin20AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin20AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin20AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
@@ -2447,6 +2783,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle thin28Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin28AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin28AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin28AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
   static TextStyle thin28Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -2820,6 +3212,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin32Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin32AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin32AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightThin,
+      fontFamily: textStyle.fontFamilyThin,
+    );
+  }
+
+  static TextStyle thin32AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
@@ -3206,6 +3654,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle regular10Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular10AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular10AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular10AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
   static TextStyle regular10Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -3579,6 +4083,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular12Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular12AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular12AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular12AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
@@ -3964,6 +4524,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle regular14Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular14AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular14AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular14AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
   static TextStyle regular14Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -4337,6 +4953,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular16Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular16AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular16AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular16AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
@@ -4722,6 +5394,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle regular18Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular18AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular18AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular18AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
   static TextStyle regular18Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -5095,6 +5823,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular20Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular20AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular20AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular20AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
@@ -5480,6 +6264,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle regular28Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular28AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular28AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular28AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
   static TextStyle regular28Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -5853,6 +6693,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular32Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular32AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular32AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightRegular,
+      fontFamily: textStyle.fontFamilyRegular,
+    );
+  }
+
+  static TextStyle regular32AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
@@ -6239,6 +7135,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle medium10Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium10AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium10AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium10AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
   static TextStyle medium10Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -6612,6 +7564,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium12Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium12AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium12AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium12AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
@@ -6997,6 +8005,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle medium14Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium14AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium14AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium14AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
   static TextStyle medium14Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -7370,6 +8434,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium16Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium16AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium16AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium16AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
@@ -7755,6 +8875,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle medium18Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium18AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium18AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium18AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
   static TextStyle medium18Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -8128,6 +9304,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium20Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium20AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium20AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium20AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
@@ -8513,6 +9745,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle medium28Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium28AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium28AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium28AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
   static TextStyle medium28Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -8886,6 +10174,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium32Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium32AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium32AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightMedium,
+      fontFamily: textStyle.fontFamilyMedium,
+    );
+  }
+
+  static TextStyle medium32AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
@@ -9272,6 +10616,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle semiBold10Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold10AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold10AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold10AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
   static TextStyle semiBold10Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -9645,6 +11045,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold12Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold12AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold12AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold12AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
@@ -10030,6 +11486,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle semiBold14Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold14AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold14AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold14AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
   static TextStyle semiBold14Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -10403,6 +11915,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold16Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold16AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold16AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold16AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
@@ -10788,6 +12356,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle semiBold18Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold18AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold18AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold18AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
   static TextStyle semiBold18Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -11161,6 +12785,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold20Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold20AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold20AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold20AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
@@ -11546,6 +13226,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle semiBold28Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold28AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold28AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold28AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
   static TextStyle semiBold28Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -11919,6 +13655,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold32Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold32AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold32AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightSemiBold,
+      fontFamily: textStyle.fontFamilySemiBold,
+    );
+  }
+
+  static TextStyle semiBold32AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
@@ -12305,6 +14097,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle bold10Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold10AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold10AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold10AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s10,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
   static TextStyle bold10Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -12678,6 +14526,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold12Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold12AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold12AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s12,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold12AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
@@ -13063,6 +14967,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle bold14Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold14AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold14AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold14AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s14,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
   static TextStyle bold14Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -13436,6 +15396,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold16Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold16AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold16AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s16,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold16AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
@@ -13821,6 +15837,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle bold18Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold18AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold18AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold18AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s18,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
   static TextStyle bold18Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -14194,6 +16266,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold20Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold20AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold20AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s20,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold20AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
@@ -14579,6 +16707,62 @@ class FCTextStyle {
     );
   }
 
+  static TextStyle bold28Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold28AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold28AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold28AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s28,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
   static TextStyle bold28Grey({required BuildContext context}) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
@@ -14952,6 +17136,62 @@ class FCTextStyle {
 
     return TextStyle(
       color: theme.secondaryDark,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold32Accent({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold32AccentButton({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentButton,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold32AccentLight({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s32,
+      fontWeight: textStyle.fontWeightBold,
+      fontFamily: textStyle.fontFamilyBold,
+    );
+  }
+
+  static TextStyle bold32AccentDark({required BuildContext context}) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return TextStyle(
+      color: theme.accentDark,
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,

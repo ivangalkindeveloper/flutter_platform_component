@@ -64,13 +64,16 @@ class _FCBottomNavigationBarCupertino extends StatelessWidget {
 
     return CupertinoTabBar(
       border: const Border(
-        top: BorderSide(width: 0.0),
+        top: BorderSide(
+          width: 0,
+          color: Colors.transparent,
+        ),
       ),
       currentIndex: this.index,
       onTap: this.onPressed,
       items: this.items,
       backgroundColor: Colors.transparent,
-      inactiveColor: this.unselectedColor ?? theme.greyLight,
+      inactiveColor: this.unselectedColor ?? theme.grey,
       activeColor: this.selectedColor ?? theme.primary,
     );
   }
@@ -112,7 +115,7 @@ class _FCBottomNavigationBarMaterial extends StatelessWidget {
       onTap: this.onPressed,
       items: this.items,
       backgroundColor: Colors.transparent,
-      unselectedItemColor: this.unselectedColor ?? theme.greyLight,
+      unselectedItemColor: this.unselectedColor ?? theme.grey,
       selectedItemColor: this.selectedColor ?? theme.primary,
       unselectedLabelStyle: style?.copyWith(
             fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,

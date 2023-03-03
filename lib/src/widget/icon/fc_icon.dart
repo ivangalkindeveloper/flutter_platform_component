@@ -298,6 +298,111 @@ class FCIcon {
     );
   }
 
+  static Widget smallAccent({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconColor(
+      icon: icon,
+      size: size.iconHeightSmall,
+      color: theme.accent,
+    );
+  }
+
+  static Widget smallAccentButton({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconColor(
+      icon: icon,
+      size: size.iconHeightSmall,
+      color: theme.accentButton,
+    );
+  }
+
+  static Widget smallAccentGradient({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconGradient(
+      icon: icon,
+      size: size.iconHeightSmall,
+      gradient: theme.accentGradient,
+    );
+  }
+
+  static Widget smallAccentLight({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconColor(
+      icon: icon,
+      size: size.iconHeightSmall,
+      color: theme.accentLight,
+    );
+  }
+
+  static Widget smallAccentLightGradient({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconGradient(
+      icon: icon,
+      size: size.iconHeightSmall,
+      gradient: theme.accentLightGradient,
+    );
+  }
+
+  static Widget smallAccentDark({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconColor(
+      icon: icon,
+      size: size.iconHeightSmall,
+      color: theme.accentDark,
+    );
+  }
+
+  static Widget smallAccentDarkGradient({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconGradient(
+      icon: icon,
+      size: size.iconHeightSmall,
+      gradient: theme.accentDarkGradient,
+    );
+  }
+
   static Widget smallGrey({
     required BuildContext context,
     required IconData icon,
@@ -1019,6 +1124,111 @@ class FCIcon {
     );
   }
 
+  static Widget accent({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconColor(
+      icon: icon,
+      size: size.iconHeightDefault,
+      color: theme.accent,
+    );
+  }
+
+  static Widget accentButton({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconColor(
+      icon: icon,
+      size: size.iconHeightDefault,
+      color: theme.accentButton,
+    );
+  }
+
+  static Widget accentGradient({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconGradient(
+      icon: icon,
+      size: size.iconHeightDefault,
+      gradient: theme.accentGradient,
+    );
+  }
+
+  static Widget accentLight({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconColor(
+      icon: icon,
+      size: size.iconHeightDefault,
+      color: theme.accentLight,
+    );
+  }
+
+  static Widget accentLightGradient({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconGradient(
+      icon: icon,
+      size: size.iconHeightDefault,
+      gradient: theme.accentLightGradient,
+    );
+  }
+
+  static Widget accentDark({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconColor(
+      icon: icon,
+      size: size.iconHeightDefault,
+      color: theme.accentDark,
+    );
+  }
+
+  static Widget accentDarkGradient({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconGradient(
+      icon: icon,
+      size: size.iconHeightDefault,
+      gradient: theme.accentDarkGradient,
+    );
+  }
+
   static Widget grey({
     required BuildContext context,
     required IconData icon,
@@ -1737,6 +1947,111 @@ class FCIcon {
       icon: icon,
       size: size.iconHeightLarge,
       gradient: theme.secondaryLightGradient,
+    );
+  }
+
+  static Widget largeAccent({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconColor(
+      icon: icon,
+      size: size.iconHeightLarge,
+      color: theme.accent,
+    );
+  }
+
+  static Widget largeAccentButton({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconColor(
+      icon: icon,
+      size: size.iconHeightLarge,
+      color: theme.accentButton,
+    );
+  }
+
+  static Widget largeAccentGradient({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconGradient(
+      icon: icon,
+      size: size.iconHeightLarge,
+      gradient: theme.accentGradient,
+    );
+  }
+
+  static Widget largeAccentLight({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconColor(
+      icon: icon,
+      size: size.iconHeightLarge,
+      color: theme.accentLight,
+    );
+  }
+
+  static Widget largeAccentLightGradient({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconGradient(
+      icon: icon,
+      size: size.iconHeightLarge,
+      gradient: theme.accentLightGradient,
+    );
+  }
+
+  static Widget largeAccentDark({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconColor(
+      icon: icon,
+      size: size.iconHeightLarge,
+      color: theme.accentDark,
+    );
+  }
+
+  static Widget largeAccentDarkGradient({
+    required BuildContext context,
+    required IconData icon,
+  }) {
+    final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    return _iconGradient(
+      icon: icon,
+      size: size.iconHeightLarge,
+      gradient: theme.accentLightGradient,
     );
   }
 

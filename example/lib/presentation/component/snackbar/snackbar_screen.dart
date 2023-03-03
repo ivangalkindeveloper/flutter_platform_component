@@ -27,6 +27,10 @@ class SnackbarScreen extends StatelessWidget {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkSnackbar(
+            child: const SizedBox(),
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkSnackbar(
             child: const SizedBox(),
           ),
@@ -60,6 +64,10 @@ class SnackbarScreen extends StatelessWidget {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentSnackbar(
+            child: const SizedBox(),
+          ),
+          SizedBox(height: size.s16 / 2),
           FCBlackAlwaysSnackbar(
             child: const SizedBox(),
           ),
@@ -109,6 +117,10 @@ class SnackbarScreen extends StatelessWidget {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightSnackbar(
+            child: const SizedBox(),
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightSnackbar(
             child: const SizedBox(),
           ),

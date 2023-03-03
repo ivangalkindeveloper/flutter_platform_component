@@ -124,6 +124,7 @@ export 'src/widget/badge/basic/dot_badge/fc_basic_gradient_dot_badge.dart';
 // Badge / Custom / Counter Badge
 // Badge / Custom / Counter Badge / Default
 // Badge / Custom / Counter Badge / Default / Dark
+export 'src/widget/badge/custom/counter_badge/default/dark/fc_accent_dark_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/default/dark/fc_danger_dark_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/default/dark/fc_grey_dark_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/default/dark/fc_info_dark_counter_badge.dart';
@@ -132,6 +133,7 @@ export 'src/widget/badge/custom/counter_badge/default/dark/fc_secondary_dark_cou
 export 'src/widget/badge/custom/counter_badge/default/dark/fc_success_dark_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/default/dark/fc_warning_dark_counter_badge.dart';
 // Badge / Custom / Counter Badge / Default / Default
+export 'src/widget/badge/custom/counter_badge/default/default/fc_accent_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/default/default/fc_black_always_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/default/default/fc_black_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/default/default/fc_danger_counter_badge.dart';
@@ -144,6 +146,7 @@ export 'src/widget/badge/custom/counter_badge/default/default/fc_warning_counter
 export 'src/widget/badge/custom/counter_badge/default/default/fc_white_always_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/default/default/fc_white_counter_badge.dart';
 // Badge / Custom / Counter Badge / Default / Light
+export 'src/widget/badge/custom/counter_badge/default/light/fc_accent_light_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/default/light/fc_danger_light_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/default/light/fc_grey_light_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/default/light/fc_info_light_counter_badge.dart';
@@ -153,6 +156,7 @@ export 'src/widget/badge/custom/counter_badge/default/light/fc_success_light_cou
 export 'src/widget/badge/custom/counter_badge/default/light/fc_warning_light_counter_badge.dart';
 // Badge / Custom / Counter Badge / Gradient
 // Badge / Custom / Counter Badge / Gradient / Light
+export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_accent_dark_gradient_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_danger_dark_gradient_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_grey_dark_gradient_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_info_dark_gradient_counter_badge.dart';
@@ -161,6 +165,7 @@ export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_secondary_dark_gr
 export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_success_dark_gradient_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/gradient/dark/fc_warning_dark_gradient_counter_badge.dart';
 // Badge / Custom / Counter Badge / Gradient / Default
+export 'src/widget/badge/custom/counter_badge/gradient/default/fc_accent_gradient_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/gradient/default/fc_danger_gradient_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/gradient/default/fc_grey_gradient_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/gradient/default/fc_info_gradient_counter_badge.dart';
@@ -169,6 +174,7 @@ export 'src/widget/badge/custom/counter_badge/gradient/default/fc_secondary_grad
 export 'src/widget/badge/custom/counter_badge/gradient/default/fc_success_gradient_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/gradient/default/fc_warning_gradient_counter_badge.dart';
 // Badge / Custom / Counter Badge / Gradient / Light
+export 'src/widget/badge/custom/counter_badge/gradient/light/fc_accent_light_gradient_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/gradient/light/fc_danger_light_gradient_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/gradient/light/fc_grey_light_gradient_counter_badge.dart';
 export 'src/widget/badge/custom/counter_badge/gradient/light/fc_info_light_gradient_counter_badge.dart';
@@ -179,6 +185,7 @@ export 'src/widget/badge/custom/counter_badge/gradient/light/fc_warning_light_gr
 // Badge / Custom / Dot Badge
 // Badge / Custom / Dot Badge / Default
 // Badge / Custom / Dot Badge / Default / Dark
+export 'src/widget/badge/custom/dot_badge/default/dark/fc_accent_dark_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/default/dark/fc_danger_dark_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/default/dark/fc_grey_dark_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/default/dark/fc_info_dark_dot_badge.dart';
@@ -187,6 +194,7 @@ export 'src/widget/badge/custom/dot_badge/default/dark/fc_secondary_dark_dot_bad
 export 'src/widget/badge/custom/dot_badge/default/dark/fc_success_dark_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/default/dark/fc_warning_dark_dot_badge.dart';
 // Badge / Custom / Dot Badge / Default / Default
+export 'src/widget/badge/custom/dot_badge/default/default/fc_accent_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/default/default/fc_black_always_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/default/default/fc_black_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/default/default/fc_danger_dot_badge.dart';
@@ -199,6 +207,7 @@ export 'src/widget/badge/custom/dot_badge/default/default/fc_warning_dot_badge.d
 export 'src/widget/badge/custom/dot_badge/default/default/fc_white_always_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/default/default/fc_white_dot_badge.dart';
 // Badge / Custom / Dot Badge / Default / Light
+export 'src/widget/badge/custom/dot_badge/default/light/fc_accent_light_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/default/light/fc_danger_light_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/default/light/fc_grey_light_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/default/light/fc_info_light_dot_badge.dart';
@@ -208,6 +217,7 @@ export 'src/widget/badge/custom/dot_badge/default/light/fc_success_light_dot_bad
 export 'src/widget/badge/custom/dot_badge/default/light/fc_warning_light_dot_badge.dart';
 // Badge / Custom / Dot Badge / Gradient
 // Badge / Custom / Dot Badge / Gradient / Dark
+export 'src/widget/badge/custom/dot_badge/gradient/dark/fc_accent_dark_gradient_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/gradient/dark/fc_danger_dark_gradient_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/gradient/dark/fc_grey_dark_gradient_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/gradient/dark/fc_info_dark_gradient_dot_badge.dart';
@@ -216,6 +226,7 @@ export 'src/widget/badge/custom/dot_badge/gradient/dark/fc_secondary_dark_gradie
 export 'src/widget/badge/custom/dot_badge/gradient/dark/fc_success_dark_gradient_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/gradient/dark/fc_warning_dark_gradient_dot_badge.dart';
 // Badge / Custom / Dot Badge / Gradient / Default
+export 'src/widget/badge/custom/dot_badge/gradient/default/fc_accent_gradient_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/gradient/default/fc_danger_gradient_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/gradient/default/fc_grey_gradient_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/gradient/default/fc_info_gradient_dot_badge.dart';
@@ -224,6 +235,7 @@ export 'src/widget/badge/custom/dot_badge/gradient/default/fc_secondary_gradient
 export 'src/widget/badge/custom/dot_badge/gradient/default/fc_success_gradient_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/gradient/default/fc_warning_gradient_dot_badge.dart';
 // Badge / Custom / Dot Badge / Gradient / Light
+export 'src/widget/badge/custom/dot_badge/gradient/light/fc_accent_light_gradient_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/gradient/light/fc_danger_light_gradient_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/gradient/light/fc_grey_light_gradient_dot_badge.dart';
 export 'src/widget/badge/custom/dot_badge/gradient/light/fc_info_light_gradient_dot_badge.dart';
@@ -243,6 +255,7 @@ export 'src/widget/button/basic/fc_basic_icon_button.dart';
 // Button / Custom
 // Button / Custom / Default
 // Button / Custom / Default / Default
+export 'src/widget/button/custom/default/default/fc_accent_button.dart';
 export 'src/widget/button/custom/default/default/fc_black_always_button.dart';
 export 'src/widget/button/custom/default/default/fc_black_button.dart';
 export 'src/widget/button/custom/default/default/fc_danger_button.dart';
@@ -255,6 +268,7 @@ export 'src/widget/button/custom/default/default/fc_warning_button.dart';
 export 'src/widget/button/custom/default/default/fc_white_always_button.dart';
 export 'src/widget/button/custom/default/default/fc_white_button.dart';
 // Button / Custom / Default / Light
+export 'src/widget/button/custom/default/light/fc_accent_light_button.dart';
 export 'src/widget/button/custom/default/light/fc_danger_light_button.dart';
 export 'src/widget/button/custom/default/light/fc_grey_light_button.dart';
 export 'src/widget/button/custom/default/light/fc_info_light_button.dart';
@@ -263,6 +277,7 @@ export 'src/widget/button/custom/default/light/fc_secondary_light_button.dart';
 export 'src/widget/button/custom/default/light/fc_success_light_button.dart';
 export 'src/widget/button/custom/default/light/fc_warning_light_button.dart';
 // Button / Custom / Default / Outline
+export 'src/widget/button/custom/default/outline/fc_accent_outline_button.dart';
 export 'src/widget/button/custom/default/outline/fc_black_always_outline_button.dart';
 export 'src/widget/button/custom/default/outline/fc_black_outline_button.dart';
 export 'src/widget/button/custom/default/outline/fc_danger_outline_button.dart';
@@ -276,6 +291,7 @@ export 'src/widget/button/custom/default/outline/fc_white_always_outline_button.
 export 'src/widget/button/custom/default/outline/fc_white_outline_button.dart';
 // Button / Custom / Gradient
 // Button / Custom / Gradient / Default
+export 'src/widget/button/custom/gradient/default/fc_accent_gradient_button.dart';
 export 'src/widget/button/custom/gradient/default/fc_danger_gradient_button.dart';
 export 'src/widget/button/custom/gradient/default/fc_grey_gradient_button.dart';
 export 'src/widget/button/custom/gradient/default/fc_info_gradient_button.dart';
@@ -284,6 +300,7 @@ export 'src/widget/button/custom/gradient/default/fc_secondary_gradient_button.d
 export 'src/widget/button/custom/gradient/default/fc_success_gradient_button.dart';
 export 'src/widget/button/custom/gradient/default/fc_warning_gradient_button.dart';
 // Button / Custom / Gradient / Light
+export 'src/widget/button/custom/gradient/light/fc_accent_light_gradient_button.dart';
 export 'src/widget/button/custom/gradient/light/fc_danger_light_gradient_button.dart';
 export 'src/widget/button/custom/gradient/light/fc_grey_light_gradient_button.dart';
 export 'src/widget/button/custom/gradient/light/fc_info_light_gradient_button.dart';
@@ -292,6 +309,7 @@ export 'src/widget/button/custom/gradient/light/fc_secondary_light_gradient_butt
 export 'src/widget/button/custom/gradient/light/fc_success_light_gradient_button.dart';
 export 'src/widget/button/custom/gradient/light/fc_warning_light_gradient_button.dart';
 // Button / Custom / Gradient / Outline
+export 'src/widget/button/custom/gradient/outline/fc_accent_outline_gradient_button.dart';
 export 'src/widget/button/custom/gradient/outline/fc_danger_outline_gradient_button.dart';
 export 'src/widget/button/custom/gradient/outline/fc_grey_outline_gradient_button.dart';
 export 'src/widget/button/custom/gradient/outline/fc_info_outline_gradient_button.dart';
@@ -317,6 +335,7 @@ export 'src/widget/card/basic/select_card/fc_basic_gradient_select_card.dart';
 // Card / Custom / Card
 // Card / Custom / Card / Default
 // Card / Custom / Card / Default / Dark
+export 'src/widget/card/custom/card/default/dark/fc_accent_dark_card.dart';
 export 'src/widget/card/custom/card/default/dark/fc_danger_dark_card.dart';
 export 'src/widget/card/custom/card/default/dark/fc_grey_dark_card.dart';
 export 'src/widget/card/custom/card/default/dark/fc_info_dark_card.dart';
@@ -325,6 +344,7 @@ export 'src/widget/card/custom/card/default/dark/fc_secondary_dark_card.dart';
 export 'src/widget/card/custom/card/default/dark/fc_success_dark_card.dart';
 export 'src/widget/card/custom/card/default/dark/fc_warning_dark_card.dart';
 // Card / Custom / Card / Default / Default
+export 'src/widget/card/custom/card/default/default/fc_accent_card.dart';
 export 'src/widget/card/custom/card/default/default/fc_black_always_card.dart';
 export 'src/widget/card/custom/card/default/default/fc_black_card.dart';
 export 'src/widget/card/custom/card/default/default/fc_blur_card.dart';
@@ -339,6 +359,7 @@ export 'src/widget/card/custom/card/default/default/fc_warning_card.dart';
 export 'src/widget/card/custom/card/default/default/fc_white_always_card.dart';
 export 'src/widget/card/custom/card/default/default/fc_white_card.dart';
 // Card / Custom / Card / Default / Light
+export 'src/widget/card/custom/card/default/light/fc_accent_light_card.dart';
 export 'src/widget/card/custom/card/default/light/fc_danger_light_card.dart';
 export 'src/widget/card/custom/card/default/light/fc_grey_light_card.dart';
 export 'src/widget/card/custom/card/default/light/fc_info_light_card.dart';
@@ -348,6 +369,7 @@ export 'src/widget/card/custom/card/default/light/fc_success_light_card.dart';
 export 'src/widget/card/custom/card/default/light/fc_warning_light_card.dart';
 // Card / Custom / Card / Gradient
 // Card / Custom / Card / Gradient / Dark
+export 'src/widget/card/custom/card/gradient/dark/fc_accent_dark_gradient_card.dart';
 export 'src/widget/card/custom/card/gradient/dark/fc_danger_dark_gradient_card.dart';
 export 'src/widget/card/custom/card/gradient/dark/fc_grey_dark_gradient_card.dart';
 export 'src/widget/card/custom/card/gradient/dark/fc_info_dark_gradient_card.dart';
@@ -356,6 +378,7 @@ export 'src/widget/card/custom/card/gradient/dark/fc_secondary_dark_gradient_car
 export 'src/widget/card/custom/card/gradient/dark/fc_success_dark_gradient_card.dart';
 export 'src/widget/card/custom/card/gradient/dark/fc_warning_dark_gradient_card.dart';
 // Card / Custom / Card / Gradient / Default
+export 'src/widget/card/custom/card/gradient/default/fc_accent_gradient_card.dart';
 export 'src/widget/card/custom/card/gradient/default/fc_danger_gradient_card.dart';
 export 'src/widget/card/custom/card/gradient/default/fc_grey_gradient_card.dart';
 export 'src/widget/card/custom/card/gradient/default/fc_info_gradient_card.dart';
@@ -364,6 +387,7 @@ export 'src/widget/card/custom/card/gradient/default/fc_secondary_gradient_card.
 export 'src/widget/card/custom/card/gradient/default/fc_success_gradient_card.dart';
 export 'src/widget/card/custom/card/gradient/default/fc_warning_gradient_card.dart';
 // Card / Custom / Card / Gradient / Light
+export 'src/widget/card/custom/card/gradient/light/fc_accent_light_gradient_card.dart';
 export 'src/widget/card/custom/card/gradient/light/fc_danger_light_gradient_card.dart';
 export 'src/widget/card/custom/card/gradient/light/fc_grey_light_gradient_card.dart';
 export 'src/widget/card/custom/card/gradient/light/fc_info_light_gradient_card.dart';
@@ -374,6 +398,7 @@ export 'src/widget/card/custom/card/gradient/light/fc_warning_light_gradient_car
 // Card / Custom / Select Card
 // Card / Custom / Select Card / Default
 // Card / Custom / Select Card / Default / Dark
+export 'src/widget/card/custom/select_card/default/dark/fc_accent_dark_select_card.dart';
 export 'src/widget/card/custom/select_card/default/dark/fc_danger_dark_select_card.dart';
 export 'src/widget/card/custom/select_card/default/dark/fc_grey_dark_select_card.dart';
 export 'src/widget/card/custom/select_card/default/dark/fc_info_dark_select_card.dart';
@@ -382,6 +407,7 @@ export 'src/widget/card/custom/select_card/default/dark/fc_secondary_dark_select
 export 'src/widget/card/custom/select_card/default/dark/fc_success_dark_select_card.dart';
 export 'src/widget/card/custom/select_card/default/dark/fc_warning_dark_select_card.dart';
 // Card / Custom / Select Card / Default / Default
+export 'src/widget/card/custom/select_card/default/default/fc_accent_select_card.dart';
 export 'src/widget/card/custom/select_card/default/default/fc_black_always_select_card.dart';
 export 'src/widget/card/custom/select_card/default/default/fc_black_select_card.dart';
 export 'src/widget/card/custom/select_card/default/default/fc_blur_select_card.dart';
@@ -396,6 +422,7 @@ export 'src/widget/card/custom/select_card/default/default/fc_warning_select_car
 export 'src/widget/card/custom/select_card/default/default/fc_white_always_select_card.dart';
 export 'src/widget/card/custom/select_card/default/default/fc_white_select_card.dart';
 // Card / Custom / Select Card / Default / Light
+export 'src/widget/card/custom/select_card/default/light/fc_accent_light_select_card.dart';
 export 'src/widget/card/custom/select_card/default/light/fc_danger_light_select_card.dart';
 export 'src/widget/card/custom/select_card/default/light/fc_grey_light_select_card.dart';
 export 'src/widget/card/custom/select_card/default/light/fc_info_light_select_card.dart';
@@ -405,6 +432,7 @@ export 'src/widget/card/custom/select_card/default/light/fc_success_light_select
 export 'src/widget/card/custom/select_card/default/light/fc_warning_light_select_card.dart';
 // Card / Custom / Select Card / Gradient
 // Card / Custom / Select Card / Gradient / Dark
+export 'src/widget/card/custom/select_card/gradient/dark/fc_accent_dark_gradient_select_card.dart';
 export 'src/widget/card/custom/select_card/gradient/dark/fc_danger_dark_gradient_select_card.dart';
 export 'src/widget/card/custom/select_card/gradient/dark/fc_grey_dark_gradient_select_card.dart';
 export 'src/widget/card/custom/select_card/gradient/dark/fc_info_dark_gradient_select_card.dart';
@@ -413,6 +441,7 @@ export 'src/widget/card/custom/select_card/gradient/dark/fc_secondary_dark_gradi
 export 'src/widget/card/custom/select_card/gradient/dark/fc_success_dark_gradient_select_card.dart';
 export 'src/widget/card/custom/select_card/gradient/dark/fc_warning_dark_gradient_select_card.dart';
 // Card / Custom / Select Card / Gradient / Default
+export 'src/widget/card/custom/select_card/gradient/default/fc_accent_gradient_select_card.dart';
 export 'src/widget/card/custom/select_card/gradient/default/fc_danger_gradient_select_card.dart';
 export 'src/widget/card/custom/select_card/gradient/default/fc_grey_gradient_select_card.dart';
 export 'src/widget/card/custom/select_card/gradient/default/fc_info_gradient_select_card.dart';
@@ -421,6 +450,7 @@ export 'src/widget/card/custom/select_card/gradient/default/fc_secondary_gradien
 export 'src/widget/card/custom/select_card/gradient/default/fc_success_gradient_select_card.dart';
 export 'src/widget/card/custom/select_card/gradient/default/fc_warning_gradient_select_card.dart';
 // Card / Custom / Select Card / Gradient / Light
+export 'src/widget/card/custom/select_card/gradient/light/fc_accent_light_gradient_select_card.dart';
 export 'src/widget/card/custom/select_card/gradient/light/fc_danger_light_gradient_select_card.dart';
 export 'src/widget/card/custom/select_card/gradient/light/fc_grey_light_gradient_select_card.dart';
 export 'src/widget/card/custom/select_card/gradient/light/fc_info_light_gradient_select_card.dart';
@@ -434,6 +464,7 @@ export 'src/widget/card/custom/select_card/gradient/light/fc_warning_light_gradi
 export 'src/widget/checkbox/basic/fc_basic_checkbox.dart';
 // Checkbox / Custom
 // Checkbox / Custom / Dark
+export 'src/widget/checkbox/custom/dark/fc_accent_dark_checkbox.dart';
 export 'src/widget/checkbox/custom/dark/fc_danger_dark_checkbox.dart';
 export 'src/widget/checkbox/custom/dark/fc_grey_dark_checkbox.dart';
 export 'src/widget/checkbox/custom/dark/fc_info_dark_checkbox.dart';
@@ -442,6 +473,7 @@ export 'src/widget/checkbox/custom/dark/fc_secondary_dark_checkbox.dart';
 export 'src/widget/checkbox/custom/dark/fc_success_dark_checkbox.dart';
 export 'src/widget/checkbox/custom/dark/fc_warning_dark_checkbox.dart';
 // Checkbox / Custom / Default
+export 'src/widget/checkbox/custom/default/fc_accent_checkbox.dart';
 export 'src/widget/checkbox/custom/default/fc_black_always_checkbox.dart';
 export 'src/widget/checkbox/custom/default/fc_black_checkbox.dart';
 export 'src/widget/checkbox/custom/default/fc_danger_checkbox.dart';
@@ -454,6 +486,7 @@ export 'src/widget/checkbox/custom/default/fc_warning_checkbox.dart';
 export 'src/widget/checkbox/custom/default/fc_white_always_checkbox.dart';
 export 'src/widget/checkbox/custom/default/fc_white_checkbox.dart';
 // Checkbox / Custom / Light
+export 'src/widget/checkbox/custom/light/fc_accent_light_checkbox.dart';
 export 'src/widget/checkbox/custom/light/fc_danger_light_checkbox.dart';
 export 'src/widget/checkbox/custom/light/fc_grey_light_checkbox.dart';
 export 'src/widget/checkbox/custom/light/fc_info_light_checkbox.dart';
@@ -469,6 +502,7 @@ export 'src/widget/code_field/basic/fc_basic_gradient_code_field.dart';
 // Code Field / Custom
 // Code Field / Custom / Default
 // Code Field / Custom / Default / Dark
+export 'src/widget/code_field/custom/default/dark/fc_accent_dark_code_field.dart';
 export 'src/widget/code_field/custom/default/dark/fc_grey_dark_code_field.dart';
 export 'src/widget/code_field/custom/default/dark/fc_info_dark_code_field.dart';
 export 'src/widget/code_field/custom/default/dark/fc_primary_dark_code_field.dart';
@@ -476,6 +510,7 @@ export 'src/widget/code_field/custom/default/dark/fc_secondary_dark_code_field.d
 export 'src/widget/code_field/custom/default/dark/fc_success_dark_code_field.dart';
 export 'src/widget/code_field/custom/default/dark/fc_warning_dark_code_field.dart';
 // Code Field / Custom / Default / Default
+export 'src/widget/code_field/custom/default/default/fc_accent_code_field.dart';
 export 'src/widget/code_field/custom/default/default/fc_black_always_code_field.dart';
 export 'src/widget/code_field/custom/default/default/fc_black_code_field.dart';
 export 'src/widget/code_field/custom/default/default/fc_grey_code_field.dart';
@@ -487,6 +522,7 @@ export 'src/widget/code_field/custom/default/default/fc_warning_code_field.dart'
 export 'src/widget/code_field/custom/default/default/fc_white_always_code_field.dart';
 export 'src/widget/code_field/custom/default/default/fc_white_code_field.dart';
 // Code Field / Custom / Default / Light
+export 'src/widget/code_field/custom/default/light/fc_accent_light_code_field.dart';
 export 'src/widget/code_field/custom/default/light/fc_grey_light_code_field.dart';
 export 'src/widget/code_field/custom/default/light/fc_info_light_code_field.dart';
 export 'src/widget/code_field/custom/default/light/fc_primary_light_code_field.dart';
@@ -495,6 +531,7 @@ export 'src/widget/code_field/custom/default/light/fc_success_light_code_field.d
 export 'src/widget/code_field/custom/default/light/fc_warning_light_code_field.dart';
 // Code Field / Custom / Gradient
 // Code Field / Custom / Gradient / Dark
+export 'src/widget/code_field/custom/gradient/dark/fc_accent_dark_gradient_code_field.dart';
 export 'src/widget/code_field/custom/gradient/dark/fc_grey_dark_gradient_code_field.dart';
 export 'src/widget/code_field/custom/gradient/dark/fc_info_dark_gradient_code_field.dart';
 export 'src/widget/code_field/custom/gradient/dark/fc_primary_dark_gradient_code_field.dart';
@@ -502,6 +539,7 @@ export 'src/widget/code_field/custom/gradient/dark/fc_secondary_dark_gradient_co
 export 'src/widget/code_field/custom/gradient/dark/fc_success_dark_gradient_code_field.dart';
 export 'src/widget/code_field/custom/gradient/dark/fc_warning_dark_gradient_code_field.dart';
 // Code Field / Custom / Gradient / Default
+export 'src/widget/code_field/custom/gradient/default/fc_accent_gradient_code_field.dart';
 export 'src/widget/code_field/custom/gradient/default/fc_grey_gradient_code_field.dart';
 export 'src/widget/code_field/custom/gradient/default/fc_info_gradient_code_field.dart';
 export 'src/widget/code_field/custom/gradient/default/fc_primary_gradient_code_field.dart';
@@ -509,6 +547,7 @@ export 'src/widget/code_field/custom/gradient/default/fc_secondary_gradient_code
 export 'src/widget/code_field/custom/gradient/default/fc_success_gradient_code_field.dart';
 export 'src/widget/code_field/custom/gradient/default/fc_warning_gradient_code_field.dart';
 // Code Field / Custom / Gradient / Light
+export 'src/widget/code_field/custom/gradient/light/fc_accent_light_gradient_code_field.dart';
 export 'src/widget/code_field/custom/gradient/light/fc_grey_light_gradient_code_field.dart';
 export 'src/widget/code_field/custom/gradient/light/fc_info_light_gradient_code_field.dart';
 export 'src/widget/code_field/custom/gradient/light/fc_primary_light_gradient_code_field.dart';
@@ -534,6 +573,7 @@ export 'src/widget/divider/basic/fc_basic_gradient_divider.dart';
 // Divider / Custom
 // Divider / Custom / Default
 // Divider / Custom / Default / Dark
+export 'src/widget/divider/custom/default/dark/fc_accent_dark_divider.dart';
 export 'src/widget/divider/custom/default/dark/fc_danger_dark_divider.dart';
 export 'src/widget/divider/custom/default/dark/fc_grey_dark_divider.dart';
 export 'src/widget/divider/custom/default/dark/fc_info_dark_divider.dart';
@@ -542,6 +582,7 @@ export 'src/widget/divider/custom/default/dark/fc_secondary_dark_divider.dart';
 export 'src/widget/divider/custom/default/dark/fc_success_dark_divider.dart';
 export 'src/widget/divider/custom/default/dark/fc_warning_dark_divider.dart';
 // Divider / Custom / Default / Default
+export 'src/widget/divider/custom/default/default/fc_accent_divider.dart';
 export 'src/widget/divider/custom/default/default/fc_black_always_divider.dart';
 export 'src/widget/divider/custom/default/default/fc_black_divider.dart';
 export 'src/widget/divider/custom/default/default/fc_danger_divider.dart';
@@ -554,6 +595,7 @@ export 'src/widget/divider/custom/default/default/fc_warning_divider.dart';
 export 'src/widget/divider/custom/default/default/fc_white_always_divider.dart';
 export 'src/widget/divider/custom/default/default/fc_white_divider.dart';
 // Divider / Custom / Default / Light
+export 'src/widget/divider/custom/default/light/fc_accent_light_divider.dart';
 export 'src/widget/divider/custom/default/light/fc_danger_light_divider.dart';
 export 'src/widget/divider/custom/default/light/fc_grey_light_divider.dart';
 export 'src/widget/divider/custom/default/light/fc_info_light_divider.dart';
@@ -563,6 +605,7 @@ export 'src/widget/divider/custom/default/light/fc_success_light_divider.dart';
 export 'src/widget/divider/custom/default/light/fc_warning_light_divider.dart';
 // Divider / Custom / Gradient
 // Divider / Custom / Gradient / Dark
+export 'src/widget/divider/custom/gradient/dark/fc_accent_dark_gradient_divider.dart';
 export 'src/widget/divider/custom/gradient/dark/fc_danger_dark_gradient_divider.dart';
 export 'src/widget/divider/custom/gradient/dark/fc_grey_dark_gradient_divider.dart';
 export 'src/widget/divider/custom/gradient/dark/fc_info_dark_gradient_divider.dart';
@@ -571,6 +614,7 @@ export 'src/widget/divider/custom/gradient/dark/fc_secondary_dark_gradient_divid
 export 'src/widget/divider/custom/gradient/dark/fc_success_dark_gradient_divider.dart';
 export 'src/widget/divider/custom/gradient/dark/fc_warning_dark_gradient_divider.dart';
 // Divider / Custom / Gradient / Default
+export 'src/widget/divider/custom/gradient/default/fc_accent_gradient_divider.dart';
 export 'src/widget/divider/custom/gradient/default/fc_danger_gradient_divider.dart';
 export 'src/widget/divider/custom/gradient/default/fc_grey_gradient_divider.dart';
 export 'src/widget/divider/custom/gradient/default/fc_info_gradient_divider.dart';
@@ -579,6 +623,7 @@ export 'src/widget/divider/custom/gradient/default/fc_secondary_gradient_divider
 export 'src/widget/divider/custom/gradient/default/fc_success_gradient_divider.dart';
 export 'src/widget/divider/custom/gradient/default/fc_warning_gradient_divider.dart';
 // Divider / Custom / Gradient / Light
+export 'src/widget/divider/custom/gradient/light/fc_accent_light_gradient_divider.dart';
 export 'src/widget/divider/custom/gradient/light/fc_danger_light_gradient_divider.dart';
 export 'src/widget/divider/custom/gradient/light/fc_grey_light_gradient_divider.dart';
 export 'src/widget/divider/custom/gradient/light/fc_info_light_gradient_divider.dart';
@@ -605,6 +650,7 @@ export 'src/widget/form_field/basic/select_field/fc_basic_gradient_select_field.
 // Field / Custom / Form Field
 // Field / Custom / Form Field / Default
 // Field / Custom / Form Field / Default / Dark
+export 'src/widget/form_field/custom/form_field/default/dark/fc_accent_dark_form_field.dart';
 export 'src/widget/form_field/custom/form_field/default/dark/fc_grey_dark_form_field.dart';
 export 'src/widget/form_field/custom/form_field/default/dark/fc_info_dark_form_field.dart';
 export 'src/widget/form_field/custom/form_field/default/dark/fc_primary_dark_form_field.dart';
@@ -612,6 +658,7 @@ export 'src/widget/form_field/custom/form_field/default/dark/fc_secondary_dark_f
 export 'src/widget/form_field/custom/form_field/default/dark/fc_success_dark_form_field.dart';
 export 'src/widget/form_field/custom/form_field/default/dark/fc_warning_dark_form_field.dart';
 // Field / Custom / Form Field / Default / Default
+export 'src/widget/form_field/custom/form_field/default/default/fc_accent_form_field.dart';
 export 'src/widget/form_field/custom/form_field/default/default/fc_black_always_form_field.dart';
 export 'src/widget/form_field/custom/form_field/default/default/fc_black_form_field.dart';
 export 'src/widget/form_field/custom/form_field/default/default/fc_grey_form_field.dart';
@@ -623,6 +670,7 @@ export 'src/widget/form_field/custom/form_field/default/default/fc_warning_form_
 export 'src/widget/form_field/custom/form_field/default/default/fc_white_always_form_field.dart';
 export 'src/widget/form_field/custom/form_field/default/default/fc_white_form_field.dart';
 // Field / Custom / Form Field / Default / Light
+export 'src/widget/form_field/custom/form_field/default/light/fc_accent_light_form_field.dart';
 export 'src/widget/form_field/custom/form_field/default/light/fc_grey_light_form_field.dart';
 export 'src/widget/form_field/custom/form_field/default/light/fc_info_light_form_field.dart';
 export 'src/widget/form_field/custom/form_field/default/light/fc_primary_light_form_field.dart';
@@ -631,6 +679,7 @@ export 'src/widget/form_field/custom/form_field/default/light/fc_success_light_f
 export 'src/widget/form_field/custom/form_field/default/light/fc_warning_light_form_field.dart';
 // Field / Custom / Form Field / Gradient
 // Field / Custom / Form Field / Gradient / Dark
+export 'src/widget/form_field/custom/form_field/gradient/dark/fc_accent_dark_gradient_form_field.dart';
 export 'src/widget/form_field/custom/form_field/gradient/dark/fc_grey_dark_gradient_form_field.dart';
 export 'src/widget/form_field/custom/form_field/gradient/dark/fc_info_dark_gradient_form_field.dart';
 export 'src/widget/form_field/custom/form_field/gradient/dark/fc_primary_dark_gradient_form_field.dart';
@@ -638,6 +687,7 @@ export 'src/widget/form_field/custom/form_field/gradient/dark/fc_secondary_dark_
 export 'src/widget/form_field/custom/form_field/gradient/dark/fc_success_dark_gradient_form_field.dart';
 export 'src/widget/form_field/custom/form_field/gradient/dark/fc_warning_dark_gradient_form_field.dart';
 // Field / Custom / Form Field / Gradient / Default
+export 'src/widget/form_field/custom/form_field/gradient/default/fc_accent_gradient_form_field.dart';
 export 'src/widget/form_field/custom/form_field/gradient/default/fc_grey_gradient_form_field.dart';
 export 'src/widget/form_field/custom/form_field/gradient/default/fc_info_gradient_form_field.dart';
 export 'src/widget/form_field/custom/form_field/gradient/default/fc_primary_gradient_form_field.dart';
@@ -645,6 +695,7 @@ export 'src/widget/form_field/custom/form_field/gradient/default/fc_secondary_gr
 export 'src/widget/form_field/custom/form_field/gradient/default/fc_success_gradient_form_field.dart';
 export 'src/widget/form_field/custom/form_field/gradient/default/fc_warning_gradient_form_field.dart';
 // Field / Custom / Form Field / Gradient / Light
+export 'src/widget/form_field/custom/form_field/gradient/light/fc_accent_light_gradient_form_field.dart';
 export 'src/widget/form_field/custom/form_field/gradient/light/fc_grey_light_gradient_form_field.dart';
 export 'src/widget/form_field/custom/form_field/gradient/light/fc_info_light_gradient_form_field.dart';
 export 'src/widget/form_field/custom/form_field/gradient/light/fc_primary_light_gradient_form_field.dart';
@@ -663,6 +714,8 @@ export 'src/widget/global/fc_global.dart';
 // Gradient
 export 'src/widget/gradient/fc_gradient_mask.dart';
 export 'src/widget/gradient/fc_linear_gradient.dart';
+export 'src/widget/gradient/fc_radial_gradient.dart';
+export 'src/widget/gradient/fc_sweep_gradient.dart';
 
 // Icon
 export 'src/widget/icon/fc_icon.dart';
@@ -685,6 +738,7 @@ export 'src/widget/indicator/custom/circular_indicator/fc_circular_indicator.dar
 // Indicator / Custom / Page Indicator
 // Indicator / Custom / Page Indicator / Default
 // Indicator / Custom / Page Indicator / Default / Dark
+export 'src/widget/indicator/custom/page_indicator/default/dark/fc_accent_dark_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/default/dark/fc_danger_dark_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/default/dark/fc_info_dark_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/default/dark/fc_primary_dark_page_indicator.dart';
@@ -692,6 +746,7 @@ export 'src/widget/indicator/custom/page_indicator/default/dark/fc_secondary_dar
 export 'src/widget/indicator/custom/page_indicator/default/dark/fc_success_dark_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/default/dark/fc_warning_dark_page_indicator.dart';
 // Indicator / Custom / Page Indicator / Default / Default
+export 'src/widget/indicator/custom/page_indicator/default/default/fc_accent_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/default/default/fc_black_always_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/default/default/fc_black_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/default/default/fc_danger_page_indicator.dart';
@@ -704,6 +759,7 @@ export 'src/widget/indicator/custom/page_indicator/default/default/fc_warning_pa
 export 'src/widget/indicator/custom/page_indicator/default/default/fc_white_always_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/default/default/fc_white_page_indicator.dart';
 // Indicator / Custom / Page Indicator / Default / Light
+export 'src/widget/indicator/custom/page_indicator/default/light/fc_accent_light_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/default/light/fc_danger_light_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/default/light/fc_info_light_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/default/light/fc_primary_light_page_indicator.dart';
@@ -712,6 +768,7 @@ export 'src/widget/indicator/custom/page_indicator/default/light/fc_success_ligh
 export 'src/widget/indicator/custom/page_indicator/default/light/fc_warning_light_page_indicator.dart';
 // Indicator / Custom / Page Indicator / Gradient
 // Indicator / Custom / Page Indicator / Gradient / Dark
+export 'src/widget/indicator/custom/page_indicator/gradient/dark/fc_accent_dark_gradient_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/gradient/dark/fc_danger_dark_gradient_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/gradient/dark/fc_info_dark_gradient_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/gradient/dark/fc_primary_dark_gradient_page_indicator.dart';
@@ -719,6 +776,7 @@ export 'src/widget/indicator/custom/page_indicator/gradient/dark/fc_secondary_da
 export 'src/widget/indicator/custom/page_indicator/gradient/dark/fc_success_dark_gradient_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/gradient/dark/fc_warning_dark_gradient_page_indicator.dart';
 // Indicator / Custom / Page Indicator / Gradient / Default
+export 'src/widget/indicator/custom/page_indicator/gradient/default/fc_accent_gradient_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/gradient/default/fc_danger_gradient_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/gradient/default/fc_grey_gradient_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/gradient/default/fc_info_gradient_page_indicator.dart';
@@ -727,6 +785,7 @@ export 'src/widget/indicator/custom/page_indicator/gradient/default/fc_secondary
 export 'src/widget/indicator/custom/page_indicator/gradient/default/fc_success_gradient_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/gradient/default/fc_warning_gradient_page_indicator.dart';
 // Indicator / Custom / Page Indicator / Gradient / Light
+export 'src/widget/indicator/custom/page_indicator/gradient/light/fc_accent_light_gradient_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/gradient/light/fc_danger_light_gradient_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/gradient/light/fc_info_light_gradient_page_indicator.dart';
 export 'src/widget/indicator/custom/page_indicator/gradient/light/fc_primary_light_gradient_page_indicator.dart';
@@ -735,6 +794,7 @@ export 'src/widget/indicator/custom/page_indicator/gradient/light/fc_success_lig
 export 'src/widget/indicator/custom/page_indicator/gradient/light/fc_warning_light_gradient_page_indicator.dart';
 // Indicator / Custom / Progress Indicator
 // Indicator / Custom / Progress Indicator / Dark
+export 'src/widget/indicator/custom/progress_indicator/dark/fc_accent_dark_progress_indicator.dart';
 export 'src/widget/indicator/custom/progress_indicator/dark/fc_danger_dark_progress_indicator.dart';
 export 'src/widget/indicator/custom/progress_indicator/dark/fc_info_dark_progress_indicator.dart';
 export 'src/widget/indicator/custom/progress_indicator/dark/fc_primary_dark_progress_indicator.dart';
@@ -742,6 +802,7 @@ export 'src/widget/indicator/custom/progress_indicator/dark/fc_secondary_dark_pr
 export 'src/widget/indicator/custom/progress_indicator/dark/fc_success_dark_progress_indicator.dart';
 export 'src/widget/indicator/custom/progress_indicator/dark/fc_warning_dark_progress_indicator.dart';
 // Indicator / Custom / Progress Indicator / Default
+export 'src/widget/indicator/custom/progress_indicator/default/fc_accent_progress_indicator.dart';
 export 'src/widget/indicator/custom/progress_indicator/default/fc_black_always_progress_indicator.dart';
 export 'src/widget/indicator/custom/progress_indicator/default/fc_black_progress_indicator.dart';
 export 'src/widget/indicator/custom/progress_indicator/default/fc_danger_progress_indicator.dart';
@@ -754,6 +815,7 @@ export 'src/widget/indicator/custom/progress_indicator/default/fc_warning_progre
 export 'src/widget/indicator/custom/progress_indicator/default/fc_white_always_progress_indicator.dart';
 export 'src/widget/indicator/custom/progress_indicator/default/fc_white_progress_indicator.dart';
 // Indicator / Custom / Progress Indicator / Light
+export 'src/widget/indicator/custom/progress_indicator/light/fc_accent_light_progress_indicator.dart';
 export 'src/widget/indicator/custom/progress_indicator/light/fc_danger_light_progress_indicator.dart';
 export 'src/widget/indicator/custom/progress_indicator/light/fc_info_light_progress_indicator.dart';
 export 'src/widget/indicator/custom/progress_indicator/light/fc_primary_light_progress_indicator.dart';
@@ -762,6 +824,7 @@ export 'src/widget/indicator/custom/progress_indicator/light/fc_success_light_pr
 export 'src/widget/indicator/custom/progress_indicator/light/fc_warning_light_progress_indicator.dart';
 // Indicator / Custom / Story Indicator
 // Indicator / Custom / Story Indicator / Dark
+export 'src/widget/indicator/custom/story_indicator/dark/fc_accent_dark_story_indicator.dart';
 export 'src/widget/indicator/custom/story_indicator/dark/fc_danger_dark_story_indicator.dart';
 export 'src/widget/indicator/custom/story_indicator/dark/fc_info_dark_story_indicator.dart';
 export 'src/widget/indicator/custom/story_indicator/dark/fc_primary_dark_story_indicator.dart';
@@ -769,6 +832,7 @@ export 'src/widget/indicator/custom/story_indicator/dark/fc_secondary_dark_story
 export 'src/widget/indicator/custom/story_indicator/dark/fc_success_dark_story_indicator.dart';
 export 'src/widget/indicator/custom/story_indicator/dark/fc_warning_dark_story_indicator.dart';
 // Indicator / Custom / Story Indicator / Default
+export 'src/widget/indicator/custom/story_indicator/default/fc_accent_story_indicator.dart';
 export 'src/widget/indicator/custom/story_indicator/default/fc_black_always_story_indicator.dart';
 export 'src/widget/indicator/custom/story_indicator/default/fc_black_story_indicator.dart';
 export 'src/widget/indicator/custom/story_indicator/default/fc_danger_story_indicator.dart';
@@ -781,6 +845,7 @@ export 'src/widget/indicator/custom/story_indicator/default/fc_warning_story_ind
 export 'src/widget/indicator/custom/story_indicator/default/fc_white_always_story_indicator.dart';
 export 'src/widget/indicator/custom/story_indicator/default/fc_white_story_indicator.dart';
 // Indicator / Custom / Story Indicator / Light
+export 'src/widget/indicator/custom/story_indicator/light/fc_accent_light_story_indicator.dart';
 export 'src/widget/indicator/custom/story_indicator/light/fc_danger_light_story_indicator.dart';
 export 'src/widget/indicator/custom/story_indicator/light/fc_info_light_story_indicator.dart';
 export 'src/widget/indicator/custom/story_indicator/light/fc_primary_light_story_indicator.dart';
@@ -829,6 +894,7 @@ export 'src/widget/pin_field/basic/fc_basic_pin_field.dart';
 // PIN Field / Custom
 // PIN Field / Custom / Default
 // PIN Field / Custom / Default / Dark
+export 'src/widget/pin_field/custom/default/dark/fc_accent_dark_pin_field.dart';
 export 'src/widget/pin_field/custom/default/dark/fc_grey_dark_pin_field.dart';
 export 'src/widget/pin_field/custom/default/dark/fc_info_dark_pin_field.dart';
 export 'src/widget/pin_field/custom/default/dark/fc_primary_dark_pin_field.dart';
@@ -836,6 +902,7 @@ export 'src/widget/pin_field/custom/default/dark/fc_secondary_dark_pin_field.dar
 export 'src/widget/pin_field/custom/default/dark/fc_success_dark_pin_field.dart';
 export 'src/widget/pin_field/custom/default/dark/fc_warning_dark_pin_field.dart';
 // PIN Field / Custom / Default / Default
+export 'src/widget/pin_field/custom/default/default/fc_accent_pin_field.dart';
 export 'src/widget/pin_field/custom/default/default/fc_black_always_pin_field.dart';
 export 'src/widget/pin_field/custom/default/default/fc_black_pin_field.dart';
 export 'src/widget/pin_field/custom/default/default/fc_grey_pin_field.dart';
@@ -847,6 +914,7 @@ export 'src/widget/pin_field/custom/default/default/fc_warning_pin_field.dart';
 export 'src/widget/pin_field/custom/default/default/fc_white_always_pin_field.dart';
 export 'src/widget/pin_field/custom/default/default/fc_white_pin_field.dart';
 // PIN Field / Custom / Default / Light
+export 'src/widget/pin_field/custom/default/light/fc_accent_light_pin_field.dart';
 export 'src/widget/pin_field/custom/default/light/fc_grey_light_pin_field.dart';
 export 'src/widget/pin_field/custom/default/light/fc_info_light_pin_field.dart';
 export 'src/widget/pin_field/custom/default/light/fc_primary_light_pin_field.dart';
@@ -855,6 +923,7 @@ export 'src/widget/pin_field/custom/default/light/fc_success_light_pin_field.dar
 export 'src/widget/pin_field/custom/default/light/fc_warning_light_pin_field.dart';
 // PIN Field / Custom / Gradient
 // PIN Field / Custom / Gradient / Dark
+export 'src/widget/pin_field/custom/gradient/dark/fc_accent_dark_gradient_pin_field.dart';
 export 'src/widget/pin_field/custom/gradient/dark/fc_grey_dark_gradient_pin_field.dart';
 export 'src/widget/pin_field/custom/gradient/dark/fc_info_dark_gradient_pin_field.dart';
 export 'src/widget/pin_field/custom/gradient/dark/fc_primary_dark_gradient_pin_field.dart';
@@ -862,6 +931,7 @@ export 'src/widget/pin_field/custom/gradient/dark/fc_secondary_dark_gradient_pin
 export 'src/widget/pin_field/custom/gradient/dark/fc_success_dark_gradient_pin_field.dart';
 export 'src/widget/pin_field/custom/gradient/dark/fc_warning_dark_gradient_pin_field.dart';
 // PIN Field / Custom / Gradient / Default
+export 'src/widget/pin_field/custom/gradient/default/fc_accent_gradient_pin_field.dart';
 export 'src/widget/pin_field/custom/gradient/default/fc_grey_gradient_pin_field.dart';
 export 'src/widget/pin_field/custom/gradient/default/fc_info_gradient_pin_field.dart';
 export 'src/widget/pin_field/custom/gradient/default/fc_primary_gradient_pin_field.dart';
@@ -869,6 +939,7 @@ export 'src/widget/pin_field/custom/gradient/default/fc_secondary_gradient_pin_f
 export 'src/widget/pin_field/custom/gradient/default/fc_success_gradient_pin_field.dart';
 export 'src/widget/pin_field/custom/gradient/default/fc_warning_gradient_pin_field.dart';
 // PIN Field / Custom / Gradient / Light
+export 'src/widget/pin_field/custom/gradient/light/fc_accent_light_gradient_pin_field.dart';
 export 'src/widget/pin_field/custom/gradient/light/fc_grey_light_gradient_pin_field.dart';
 export 'src/widget/pin_field/custom/gradient/light/fc_info_light_gradient_pin_field.dart';
 export 'src/widget/pin_field/custom/gradient/light/fc_primary_light_gradient_pin_field.dart';
@@ -881,6 +952,7 @@ export 'src/widget/pin_field/custom/gradient/light/fc_warning_light_gradient_pin
 export 'src/widget/radio/basic/fc_basic_radio.dart';
 // Radio / Custom
 // Radio / Custom / Dark
+export 'src/widget/radio/custom/dark/fc_accent_dark_radio.dart';
 export 'src/widget/radio/custom/dark/fc_danger_dark_radio.dart';
 export 'src/widget/radio/custom/dark/fc_info_dark_radio.dart';
 export 'src/widget/radio/custom/dark/fc_primary_dark_radio.dart';
@@ -888,6 +960,7 @@ export 'src/widget/radio/custom/dark/fc_secondary_dark_radio.dart';
 export 'src/widget/radio/custom/dark/fc_success_dark_radio.dart';
 export 'src/widget/radio/custom/dark/fc_warning_dark_radio.dart';
 // Radio / Custom / Default
+export 'src/widget/radio/custom/default/fc_accent_radio.dart';
 export 'src/widget/radio/custom/default/fc_black_always_radio.dart';
 export 'src/widget/radio/custom/default/fc_black_radio.dart';
 export 'src/widget/radio/custom/default/fc_danger_radio.dart';
@@ -900,6 +973,7 @@ export 'src/widget/radio/custom/default/fc_warning_radio.dart';
 export 'src/widget/radio/custom/default/fc_white_always_radio.dart';
 export 'src/widget/radio/custom/default/fc_white_radio.dart';
 // Radio / Custom / Light
+export 'src/widget/radio/custom/light/fc_accent_light_radio.dart';
 export 'src/widget/radio/custom/light/fc_danger_light_radio.dart';
 export 'src/widget/radio/custom/light/fc_info_light_radio.dart';
 export 'src/widget/radio/custom/light/fc_primary_light_radio.dart';
@@ -921,6 +995,7 @@ export 'src/widget/segment_control/basic/fc_segment_control_item.dart';
 // Segment Control / Custom
 // Segment Control / Custom / Default
 // Segment Control / Custom / Default / Dark
+export 'src/widget/segment_control/custom/default/dark/fc_accent_dark_segment_control.dart';
 export 'src/widget/segment_control/custom/default/dark/fc_danger_dark_segment_control.dart';
 export 'src/widget/segment_control/custom/default/dark/fc_grey_dark_segment_control.dart';
 export 'src/widget/segment_control/custom/default/dark/fc_info_dark_segment_control.dart';
@@ -929,6 +1004,7 @@ export 'src/widget/segment_control/custom/default/dark/fc_secondary_dark_segment
 export 'src/widget/segment_control/custom/default/dark/fc_success_dark_segment_control.dart';
 export 'src/widget/segment_control/custom/default/dark/fc_warning_dark_segment_control.dart';
 // Segment Control / Custom / Default / Default
+export 'src/widget/segment_control/custom/default/default/fc_accent_segment_control.dart';
 export 'src/widget/segment_control/custom/default/default/fc_black_always_segment_control.dart';
 export 'src/widget/segment_control/custom/default/default/fc_black_segment_control.dart';
 export 'src/widget/segment_control/custom/default/default/fc_danger_segment_control.dart';
@@ -941,6 +1017,7 @@ export 'src/widget/segment_control/custom/default/default/fc_warning_segment_con
 export 'src/widget/segment_control/custom/default/default/fc_white_always_segment_control.dart';
 export 'src/widget/segment_control/custom/default/default/fc_white_segment_control.dart';
 // Segment Control / Custom / Default / Light
+export 'src/widget/segment_control/custom/default/light/fc_accent_light_segment_control.dart';
 export 'src/widget/segment_control/custom/default/light/fc_danger_light_segment_control.dart';
 export 'src/widget/segment_control/custom/default/light/fc_grey_light_segment_control.dart';
 export 'src/widget/segment_control/custom/default/light/fc_info_light_segment_control.dart';
@@ -950,6 +1027,7 @@ export 'src/widget/segment_control/custom/default/light/fc_success_light_segment
 export 'src/widget/segment_control/custom/default/light/fc_warning_light_segment_control.dart';
 // Segment Control / Custom / Gradient
 // Segment Control / Custom / Gradient / Dark
+export 'src/widget/segment_control/custom/gradient/dark/fc_accent_dark_gradient_segment_control.dart';
 export 'src/widget/segment_control/custom/gradient/dark/fc_danger_dark_gradient_segment_control.dart';
 export 'src/widget/segment_control/custom/gradient/dark/fc_grey_dark_gradient_segment_control.dart';
 export 'src/widget/segment_control/custom/gradient/dark/fc_info_dark_gradient_segment_control.dart';
@@ -958,6 +1036,7 @@ export 'src/widget/segment_control/custom/gradient/dark/fc_secondary_dark_gradie
 export 'src/widget/segment_control/custom/gradient/dark/fc_success_dark_gradient_segment_control.dart';
 export 'src/widget/segment_control/custom/gradient/dark/fc_warning_dark_gradient_segment_control.dart';
 // Segment Control / Custom / Gradient / Default
+export 'src/widget/segment_control/custom/gradient/default/fc_accent_gradient_segment_control.dart';
 export 'src/widget/segment_control/custom/gradient/default/fc_danger_gradient_segment_control.dart';
 export 'src/widget/segment_control/custom/gradient/default/fc_grey_gradient_segment_control.dart';
 export 'src/widget/segment_control/custom/gradient/default/fc_info_gradient_segment_control.dart';
@@ -966,6 +1045,7 @@ export 'src/widget/segment_control/custom/gradient/default/fc_secondary_gradient
 export 'src/widget/segment_control/custom/gradient/default/fc_success_gradient_segment_control.dart';
 export 'src/widget/segment_control/custom/gradient/default/fc_warning_gradient_segment_control.dart';
 // Segment Control / Custom / Gradient / Light
+export 'src/widget/segment_control/custom/gradient/light/fc_accent_light_gradient_segment_control.dart';
 export 'src/widget/segment_control/custom/gradient/light/fc_danger_light_gradient_segment_control.dart';
 export 'src/widget/segment_control/custom/gradient/light/fc_grey_light_gradient_segment_control.dart';
 export 'src/widget/segment_control/custom/gradient/light/fc_info_light_gradient_segment_control.dart';
@@ -981,6 +1061,7 @@ export 'src/widget/shimmer/basic/fc_basic_gradient_shimmer.dart';
 // Shimmer / Custom
 // Shimmer / Custom / Default
 // Shimmer / Custom / Default / Dark
+export 'src/widget/shimmer/custom/default/dark/fc_accent_dark_shimmer.dart';
 export 'src/widget/shimmer/custom/default/dark/fc_danger_dark_shimmer.dart';
 export 'src/widget/shimmer/custom/default/dark/fc_grey_dark_shimmer.dart';
 export 'src/widget/shimmer/custom/default/dark/fc_info_dark_shimmer.dart';
@@ -989,6 +1070,7 @@ export 'src/widget/shimmer/custom/default/dark/fc_secondary_dark_shimmer.dart';
 export 'src/widget/shimmer/custom/default/dark/fc_success_dark_shimmer.dart';
 export 'src/widget/shimmer/custom/default/dark/fc_warning_dark_shimmer.dart';
 // Shimmer / Custom / Default / Default
+export 'src/widget/shimmer/custom/default/default/fc_accent_shimmer.dart';
 export 'src/widget/shimmer/custom/default/default/fc_danger_shimmer.dart';
 export 'src/widget/shimmer/custom/default/default/fc_grey_shimmer.dart';
 export 'src/widget/shimmer/custom/default/default/fc_info_shimmer.dart';
@@ -998,6 +1080,7 @@ export 'src/widget/shimmer/custom/default/default/fc_success_shimmer.dart';
 export 'src/widget/shimmer/custom/default/default/fc_warning_shimmer.dart';
 // Shimmer / Custom / Gradient
 // Shimmer / Custom / Gradient / Dark
+export 'src/widget/shimmer/custom/gradient/dark/fc_accent_dark_gradient_shimmer.dart';
 export 'src/widget/shimmer/custom/gradient/dark/fc_danger_dark_gradient_shimmer.dart';
 export 'src/widget/shimmer/custom/gradient/dark/fc_grey_dark_gradient_shimmer.dart';
 export 'src/widget/shimmer/custom/gradient/dark/fc_info_dark_gradient_shimmer.dart';
@@ -1006,6 +1089,7 @@ export 'src/widget/shimmer/custom/gradient/dark/fc_secondary_dark_gradient_shimm
 export 'src/widget/shimmer/custom/gradient/dark/fc_success_dark_gradient_shimmer.dart';
 export 'src/widget/shimmer/custom/gradient/dark/fc_warning_dark_gradient_shimmer.dart';
 // Shimmer / Custom / Gradient / Default
+export 'src/widget/shimmer/custom/gradient/default/fc_accent_gradient_shimmer.dart';
 export 'src/widget/shimmer/custom/gradient/default/fc_danger_gradient_shimmer.dart';
 export 'src/widget/shimmer/custom/gradient/default/fc_grey_gradient_shimmer.dart';
 export 'src/widget/shimmer/custom/gradient/default/fc_info_gradient_shimmer.dart';
@@ -1019,6 +1103,7 @@ export 'src/widget/shimmer/custom/gradient/default/fc_warning_gradient_shimmer.d
 export 'src/widget/slider/basic/fc_basic_slider.dart';
 // Slider / Custom
 // Slider / Custom / Dark
+export 'src/widget/slider/custom/dark/fc_accent_dark_slider.dart';
 export 'src/widget/slider/custom/dark/fc_danger_dark_slider.dart';
 export 'src/widget/slider/custom/dark/fc_info_dark_slider.dart';
 export 'src/widget/slider/custom/dark/fc_primary_dark_slider.dart';
@@ -1026,6 +1111,7 @@ export 'src/widget/slider/custom/dark/fc_secondary_dark_slider.dart';
 export 'src/widget/slider/custom/dark/fc_success_dark_slider.dart';
 export 'src/widget/slider/custom/dark/fc_warning_dark_slider.dart';
 // Slider / Custom / Default
+export 'src/widget/slider/custom/default/fc_accent_slider.dart';
 export 'src/widget/slider/custom/default/fc_black_always_slider.dart';
 export 'src/widget/slider/custom/default/fc_black_slider.dart';
 export 'src/widget/slider/custom/default/fc_danger_slider.dart';
@@ -1037,6 +1123,7 @@ export 'src/widget/slider/custom/default/fc_warning_slider.dart';
 export 'src/widget/slider/custom/default/fc_white_always_slider.dart';
 export 'src/widget/slider/custom/default/fc_white_slider.dart';
 // Slider / Custom / Light
+export 'src/widget/slider/custom/light/fc_accent_light_slider.dart';
 export 'src/widget/slider/custom/light/fc_danger_light_slider.dart';
 export 'src/widget/slider/custom/light/fc_info_light_slider.dart';
 export 'src/widget/slider/custom/light/fc_primary_light_slider.dart';
@@ -1050,6 +1137,7 @@ export 'src/widget/sliding_segment_control/basic/fc_basic_sliding_segment_contro
 export 'src/widget/sliding_segment_control/basic/fc_sliding_segment_control_item.dart';
 // Sliding Segment Control / Custom
 // Sliding Segment Control / Custom / Dark
+export 'src/widget/sliding_segment_control/custom/dark/fc_accent_dark_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/dark/fc_danger_dark_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/dark/fc_grey_dark_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/dark/fc_info_dark_sliding_segment_control.dart';
@@ -1058,6 +1146,7 @@ export 'src/widget/sliding_segment_control/custom/dark/fc_secondary_dark_sliding
 export 'src/widget/sliding_segment_control/custom/dark/fc_success_dark_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/dark/fc_warning_dark_sliding_segment_control.dart';
 // Sliding Segment Control / Custom / Basic
+export 'src/widget/sliding_segment_control/custom/default/fc_accent_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/default/fc_black_always_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/default/fc_black_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/default/fc_danger_sliding_segment_control.dart';
@@ -1070,6 +1159,7 @@ export 'src/widget/sliding_segment_control/custom/default/fc_warning_sliding_seg
 export 'src/widget/sliding_segment_control/custom/default/fc_white_always_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/default/fc_white_sliding_segment_control.dart';
 // Sliding Segment Control / Custom / Light
+export 'src/widget/sliding_segment_control/custom/light/fc_accent_light_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/light/fc_danger_light_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/light/fc_info_light_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/light/fc_primary_light_sliding_segment_control.dart';
@@ -1087,6 +1177,7 @@ export 'src/widget/snackbar/basic/fc_basic_snackbar.dart';
 // Snackbar / Custom
 // Snackbar / Custom / Default
 // Snackbar / Custom / Default / Dark
+export 'src/widget/snackbar/custom/default/dark/fc_accent_dark_snackbar.dart';
 export 'src/widget/snackbar/custom/default/dark/fc_danger_dark_snackbar.dart';
 export 'src/widget/snackbar/custom/default/dark/fc_grey_dark_snackbar.dart';
 export 'src/widget/snackbar/custom/default/dark/fc_info_dark_snackbar.dart';
@@ -1095,6 +1186,7 @@ export 'src/widget/snackbar/custom/default/dark/fc_secondary_dark_snackbar.dart'
 export 'src/widget/snackbar/custom/default/dark/fc_success_dark_snackbar.dart';
 export 'src/widget/snackbar/custom/default/dark/fc_warning_dark_snackbar.dart';
 // Snackbar / Custom / Default / Default
+export 'src/widget/snackbar/custom/default/default/fc_accent_snackbar.dart';
 export 'src/widget/snackbar/custom/default/default/fc_black_always_snackbar.dart';
 export 'src/widget/snackbar/custom/default/default/fc_black_snackbar.dart';
 export 'src/widget/snackbar/custom/default/default/fc_danger_snackbar.dart';
@@ -1107,6 +1199,7 @@ export 'src/widget/snackbar/custom/default/default/fc_warning_snackbar.dart';
 export 'src/widget/snackbar/custom/default/default/fc_white_always_snackbar.dart';
 export 'src/widget/snackbar/custom/default/default/fc_white_snackbar.dart';
 // Snackbar / Custom / Default / Light
+export 'src/widget/snackbar/custom/default/light/fc_accent_light_snackbar.dart';
 export 'src/widget/snackbar/custom/default/light/fc_danger_light_snackbar.dart';
 export 'src/widget/snackbar/custom/default/light/fc_grey_light_snackbar.dart';
 export 'src/widget/snackbar/custom/default/light/fc_info_light_snackbar.dart';
@@ -1115,6 +1208,7 @@ export 'src/widget/snackbar/custom/default/light/fc_secondary_light_snackbar.dar
 export 'src/widget/snackbar/custom/default/light/fc_success_light_snackbar.dart';
 export 'src/widget/snackbar/custom/default/light/fc_warning_light_snackbar.dart';
 // Snackbar / Custom / Default / Outline
+export 'src/widget/snackbar/custom/default/outline/fc_accent_outline_snackbar.dart';
 export 'src/widget/snackbar/custom/default/outline/fc_danger_outline_snackbar.dart';
 export 'src/widget/snackbar/custom/default/outline/fc_grey_outline_snackbar.dart';
 export 'src/widget/snackbar/custom/default/outline/fc_info_outline_snackbar.dart';
@@ -1124,6 +1218,7 @@ export 'src/widget/snackbar/custom/default/outline/fc_success_outline_snackbar.d
 export 'src/widget/snackbar/custom/default/outline/fc_warning_outline_snackbar.dart';
 // Snackbar / Custom / Gradient
 // Snackbar / Custom / Gradient / Dark
+export 'src/widget/snackbar/custom/gradient/dark/fc_accent_dark_gradient_snackbar.dart';
 export 'src/widget/snackbar/custom/gradient/dark/fc_danger_dark_gradient_snackbar.dart';
 export 'src/widget/snackbar/custom/gradient/dark/fc_grey_dark_gradient_snackbar.dart';
 export 'src/widget/snackbar/custom/gradient/dark/fc_info_dark_gradient_snackbar.dart';
@@ -1132,6 +1227,7 @@ export 'src/widget/snackbar/custom/gradient/dark/fc_secondary_dark_gradient_snac
 export 'src/widget/snackbar/custom/gradient/dark/fc_success_dark_gradient_snackbar.dart';
 export 'src/widget/snackbar/custom/gradient/dark/fc_warning_dark_gradient_snackbar.dart';
 // Snackbar / Custom / Gradient / Default
+export 'src/widget/snackbar/custom/gradient/default/fc_accent_gradient_snackbar.dart';
 export 'src/widget/snackbar/custom/gradient/default/fc_danger_gradient_snackbar.dart';
 export 'src/widget/snackbar/custom/gradient/default/fc_grey_gradient_snackbar.dart';
 export 'src/widget/snackbar/custom/gradient/default/fc_info_gradient_snackbar.dart';
@@ -1140,6 +1236,7 @@ export 'src/widget/snackbar/custom/gradient/default/fc_secondary_gradient_snackb
 export 'src/widget/snackbar/custom/gradient/default/fc_success_gradient_snackbar.dart';
 export 'src/widget/snackbar/custom/gradient/default/fc_warning_gradient_snackbar.dart';
 // Snackbar / Custom / Gradient / Light
+export 'src/widget/snackbar/custom/gradient/light/fc_accent_light_gradient_snackbar.dart';
 export 'src/widget/snackbar/custom/gradient/light/fc_danger_light_gradient_snackbar.dart';
 export 'src/widget/snackbar/custom/gradient/light/fc_grey_light_gradient_snackbar.dart';
 export 'src/widget/snackbar/custom/gradient/light/fc_info_light_gradient_snackbar.dart';
@@ -1148,6 +1245,7 @@ export 'src/widget/snackbar/custom/gradient/light/fc_secondary_light_gradient_sn
 export 'src/widget/snackbar/custom/gradient/light/fc_success_light_gradient_snackbar.dart';
 export 'src/widget/snackbar/custom/gradient/light/fc_warning_light_gradient_snackbar.dart';
 // Snackbar / Custom / Gradient / Outline
+export 'src/widget/snackbar/custom/gradient/outline/fc_accent_gradient_outline_snackbar.dart';
 export 'src/widget/snackbar/custom/gradient/outline/fc_danger_gradient_outline_snackbar.dart';
 export 'src/widget/snackbar/custom/gradient/outline/fc_grey_gradient_outline_snackbar.dart';
 export 'src/widget/snackbar/custom/gradient/outline/fc_info_gradient_outline_snackbar.dart';
@@ -1161,6 +1259,7 @@ export 'src/widget/snackbar/custom/gradient/outline/fc_warning_gradient_outline_
 export 'src/widget/switch/basic/fc_basic_switch.dart';
 // Switch / Custom
 // Switch / Custom / Dark
+export 'src/widget/switch/custom/dark/fc_accent_dark_switch.dart';
 export 'src/widget/switch/custom/dark/fc_danger_dark_switch.dart';
 export 'src/widget/switch/custom/dark/fc_info_dark_switch.dart';
 export 'src/widget/switch/custom/dark/fc_primary_dark_switch.dart';
@@ -1168,6 +1267,7 @@ export 'src/widget/switch/custom/dark/fc_secondary_dark_switch.dart';
 export 'src/widget/switch/custom/dark/fc_success_dark_switch.dart';
 export 'src/widget/switch/custom/dark/fc_warning_dark_switch.dart';
 // Switch / Custom / Default
+export 'src/widget/switch/custom/default/fc_accent_switch.dart';
 export 'src/widget/switch/custom/default/fc_black_always_switch.dart';
 export 'src/widget/switch/custom/default/fc_black_switch.dart';
 export 'src/widget/switch/custom/default/fc_danger_switch.dart';
@@ -1180,6 +1280,7 @@ export 'src/widget/switch/custom/default/fc_warning_switch.dart';
 export 'src/widget/switch/custom/default/fc_white_always_switch.dart';
 export 'src/widget/switch/custom/default/fc_white_switch.dart';
 // Switch / Custom / Light
+export 'src/widget/switch/custom/light/fc_accent_light_switch.dart';
 export 'src/widget/switch/custom/light/fc_danger_light_switch.dart';
 export 'src/widget/switch/custom/light/fc_info_light_switch.dart';
 export 'src/widget/switch/custom/light/fc_primary_light_switch.dart';
@@ -1204,6 +1305,7 @@ export 'src/widget/toggle/basic/fc_toggle_item.dart';
 // Toogle / Custom
 // Toggle / Custom / Default
 // Toggle / Custom / Default / Dark
+export 'src/widget/toggle/custom/default/dark/fc_accent_dark_toggle.dart';
 export 'src/widget/toggle/custom/default/dark/fc_grey_dark_toggle.dart';
 export 'src/widget/toggle/custom/default/dark/fc_info_dark_toggle.dart';
 export 'src/widget/toggle/custom/default/dark/fc_primary_dark_toggle.dart';
@@ -1211,6 +1313,7 @@ export 'src/widget/toggle/custom/default/dark/fc_secondary_dark_toggle.dart';
 export 'src/widget/toggle/custom/default/dark/fc_success_dark_toggle.dart';
 export 'src/widget/toggle/custom/default/dark/fc_warning_dark_toggle.dart';
 // Toggle / Custom / Default / Default
+export 'src/widget/toggle/custom/default/default/fc_accent_toggle.dart';
 export 'src/widget/toggle/custom/default/default/fc_black_always_toggle.dart';
 export 'src/widget/toggle/custom/default/default/fc_black_toggle.dart';
 export 'src/widget/toggle/custom/default/default/fc_grey_toggle.dart';
@@ -1222,6 +1325,7 @@ export 'src/widget/toggle/custom/default/default/fc_warning_toggle.dart';
 export 'src/widget/toggle/custom/default/default/fc_white_always_toggle.dart';
 export 'src/widget/toggle/custom/default/default/fc_white_toggle.dart';
 // Toggle / Custom / Default / Light
+export 'src/widget/toggle/custom/default/light/fc_accent_light_toggle.dart';
 export 'src/widget/toggle/custom/default/light/fc_grey_light_toggle.dart';
 export 'src/widget/toggle/custom/default/light/fc_info_light_toggle.dart';
 export 'src/widget/toggle/custom/default/light/fc_primary_light_toggle.dart';
@@ -1230,6 +1334,7 @@ export 'src/widget/toggle/custom/default/light/fc_success_light_toggle.dart';
 export 'src/widget/toggle/custom/default/light/fc_warning_light_toggle.dart';
 // Toggle / Custom / Gradient
 // Toggle / Custom / Gradient / Dark
+export 'src/widget/toggle/custom/gradient/dark/fc_accent_dark_gradient_toggle.dart';
 export 'src/widget/toggle/custom/gradient/dark/fc_grey_dark_gradient_toggle.dart';
 export 'src/widget/toggle/custom/gradient/dark/fc_info_dark_gradient_toggle.dart';
 export 'src/widget/toggle/custom/gradient/dark/fc_primary_dark_gradient_toggle.dart';
@@ -1237,6 +1342,7 @@ export 'src/widget/toggle/custom/gradient/dark/fc_secondary_dark_gradient_toggle
 export 'src/widget/toggle/custom/gradient/dark/fc_success_dark_gradient_toggle.dart';
 export 'src/widget/toggle/custom/gradient/dark/fc_warning_dark_gradient_toggle.dart';
 // Toggle / Custom / Gradient / Default
+export 'src/widget/toggle/custom/gradient/default/fc_accent_gradient_toggle.dart';
 export 'src/widget/toggle/custom/gradient/default/fc_grey_gradient_toggle.dart';
 export 'src/widget/toggle/custom/gradient/default/fc_info_gradient_toggle.dart';
 export 'src/widget/toggle/custom/gradient/default/fc_primary_gradient_toggle.dart';
@@ -1244,6 +1350,7 @@ export 'src/widget/toggle/custom/gradient/default/fc_secondary_gradient_toggle.d
 export 'src/widget/toggle/custom/gradient/default/fc_success_gradient_toggle.dart';
 export 'src/widget/toggle/custom/gradient/default/fc_warning_gradient_toggle.dart';
 // Toggle / Custom / Gradient / Light
+export 'src/widget/toggle/custom/gradient/light/fc_accent_light_gradient_toggle.dart';
 export 'src/widget/toggle/custom/gradient/light/fc_grey_light_gradient_toggle.dart';
 export 'src/widget/toggle/custom/gradient/light/fc_info_light_gradient_toggle.dart';
 export 'src/widget/toggle/custom/gradient/light/fc_primary_light_gradient_toggle.dart';

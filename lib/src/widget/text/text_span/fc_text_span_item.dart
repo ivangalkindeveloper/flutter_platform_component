@@ -115,6 +115,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan thin10Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin10Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin10AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin10AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin10AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin10AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan thin10Grey({
     required BuildContext context,
     required String text,
@@ -388,6 +421,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.thin12SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin12Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin12Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin12AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin12AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin12AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin12AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -667,6 +733,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan thin14Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin14Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin14AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin14AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin14AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin14AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan thin14Grey({
     required BuildContext context,
     required String text,
@@ -940,6 +1039,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.thin16SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin16Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin16Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin16AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin16AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin16AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin16AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -1219,6 +1351,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan thin18Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin18Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin18AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin18AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin18AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin18AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan thin18Grey({
     required BuildContext context,
     required String text,
@@ -1492,6 +1657,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.thin20SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin20Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin20Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin20AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin20AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin20AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin20AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -1771,6 +1969,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan thin28Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin28Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin28AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin28AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin28AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin28AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan thin28Grey({
     required BuildContext context,
     required String text,
@@ -2044,6 +2275,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.thin32SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin32Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin32Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin32AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin32AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan thin32AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.thin32AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -2324,6 +2588,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan regular10Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular10Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular10AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular10AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular10AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular10AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan regular10Grey({
     required BuildContext context,
     required String text,
@@ -2597,6 +2894,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.regular12SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular12Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular12Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular12AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular12AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular12AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular12AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -2876,6 +3206,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan regular14Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular14Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular14AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular14AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular14AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular14AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan regular14Grey({
     required BuildContext context,
     required String text,
@@ -3149,6 +3512,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.regular16SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular16Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular16Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular16AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular16AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular16AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular16AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -3428,6 +3824,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan regular18Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular18Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular18AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular18AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular18AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular18AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan regular18Grey({
     required BuildContext context,
     required String text,
@@ -3701,6 +4130,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.regular20SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular20Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular20Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular20AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular20AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular20AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular20AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -3980,6 +4442,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan regular28Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular28Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular28AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular28AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular28AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular28AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan regular28Grey({
     required BuildContext context,
     required String text,
@@ -4253,6 +4748,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.regular32SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular32Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular32Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular32AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular32AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan regular32AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.regular32AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -4533,6 +5061,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan medium10Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium10Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium10AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium10AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium10AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium10AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan medium10Grey({
     required BuildContext context,
     required String text,
@@ -4806,6 +5367,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.medium12SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium12Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium12Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium12AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium12AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium12AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium12AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -5085,6 +5679,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan medium14Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium14Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium14AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium14AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium14AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium14AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan medium14Grey({
     required BuildContext context,
     required String text,
@@ -5358,6 +5985,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.medium16SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium16Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium16Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium16AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium16AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium16AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium16AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -5637,6 +6297,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan medium18Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium18Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium18AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium18AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium18AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium18AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan medium18Grey({
     required BuildContext context,
     required String text,
@@ -5910,6 +6603,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.medium20SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium20Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium20Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium20AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium20AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium20AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium20AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -6189,6 +6915,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan medium28Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium28Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium28AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium28AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium28AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium28AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan medium28Grey({
     required BuildContext context,
     required String text,
@@ -6462,6 +7221,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.medium32SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium32Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium32Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium32AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium32AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan medium32AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.medium32AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -6742,6 +7534,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan semiBold10Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold10Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold10AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold10AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold10AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold10AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan semiBold10Grey({
     required BuildContext context,
     required String text,
@@ -7015,6 +7840,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.semiBold12SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold12Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold12Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold12AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold12AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold12AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold12AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -7294,6 +8152,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan semiBold14Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold14Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold14AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold14AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold14AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold14AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan semiBold14Grey({
     required BuildContext context,
     required String text,
@@ -7567,6 +8458,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.semiBold16SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold16Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold16Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold16AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold16AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold16AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold16AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -7846,6 +8770,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan semiBold18Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold18Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold18AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold18AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold18AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold18AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan semiBold18Grey({
     required BuildContext context,
     required String text,
@@ -8119,6 +9076,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.semiBold20SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold20Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold20Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold20AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold20AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold20AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold20AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -8398,6 +9388,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan semiBold28Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold28Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold28AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold28AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold28AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold28AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan semiBold28Grey({
     required BuildContext context,
     required String text,
@@ -8671,6 +9694,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.semiBold32SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold32Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold32Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold32AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold32AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan semiBold32AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.semiBold32AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -8951,6 +10007,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan bold10Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold10Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold10AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold10AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold10AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold10AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan bold10Grey({
     required BuildContext context,
     required String text,
@@ -9224,6 +10313,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.bold12SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold12Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold12Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold12AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold12AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold12AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold12AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -9503,6 +10625,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan bold14Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold14Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold14AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold14AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold14AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold14AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan bold14Grey({
     required BuildContext context,
     required String text,
@@ -9776,6 +10931,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.bold16SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold16Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold16Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold16AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold16AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold16AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold16AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -10055,6 +11243,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan bold18Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold18Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold18AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold18AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold18AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold18AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan bold18Grey({
     required BuildContext context,
     required String text,
@@ -10328,6 +11549,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.bold20SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold20Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold20Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold20AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold20AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold20AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold20AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
@@ -10607,6 +11861,39 @@ class FCTextSpanItem {
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 
+  static InlineSpan bold28Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold28Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold28AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold28AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold28AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold28AccentDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
   static InlineSpan bold28Grey({
     required BuildContext context,
     required String text,
@@ -10880,6 +12167,39 @@ class FCTextSpanItem {
       TextSpan(
         text: text,
         style: FCTextStyle.bold32SecondaryDark(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold32Accent({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold32Accent(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold32AccentLight({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold32AccentLight(context: context),
+        recognizer: TapGestureRecognizer()..onTap = onPressed,
+      );
+
+  static InlineSpan bold32AccentDark({
+    required BuildContext context,
+    required String text,
+    VoidCallback? onPressed,
+  }) =>
+      TextSpan(
+        text: text,
+        style: FCTextStyle.bold32AccentDark(context: context),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
 

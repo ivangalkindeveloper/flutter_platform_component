@@ -40,6 +40,11 @@ class _CodeFieldScreenState extends State<CodeFieldScreen> {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
+          FCAccentDarkCodeField(
+            length: this._length,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoDarkCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
@@ -75,6 +80,11 @@ class _CodeFieldScreenState extends State<CodeFieldScreen> {
             text: "Default",
           ),
           SizedBox(height: size.s16),
+          FCAccentCodeField(
+            length: this._length,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCBlackAlwaysCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
@@ -130,6 +140,11 @@ class _CodeFieldScreenState extends State<CodeFieldScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
+          FCAccentLightCodeField(
+            length: this._length,
+            isDisabled: this._isDisabled,
+          ),
+          SizedBox(height: size.s16 / 2),
           FCInfoLightCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
