@@ -18,9 +18,6 @@ class App extends StatelessWidget {
       context: context,
       navigatorKey: _navigationService.navigatorKey,
       onGenerateRoute: _navigationService.onGenerateRoute,
-      supportedLocales: const [
-        Locale("en", "EN"),
-      ],
       home: const ComponentScreen(),
     );
   }

@@ -11,7 +11,7 @@ class ConfigListPlatform extends StatelessWidget {
     final IFCSize size = config.size;
 
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         Flexible(
           child: FCText.semiBold20Black(

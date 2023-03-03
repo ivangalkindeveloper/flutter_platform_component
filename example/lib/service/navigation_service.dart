@@ -29,6 +29,7 @@ import 'package:example/presentation/component/form_field/form_field_screen.dart
 import 'package:example/presentation/component/form_field/gradient_form_field_screen.dart';
 import 'package:example/presentation/component/form_field/gradient_select_field_screen.dart';
 import 'package:example/presentation/component/form_field/select_field_screen.dart';
+import 'package:example/presentation/component/gradient/gradient_screen.dart';
 import 'package:example/presentation/component/icon/icon_screen.dart';
 import 'package:example/presentation/component/indicator/circular_indicator_screen.dart';
 import 'package:example/presentation/component/indicator/gradient_page_indicator_screen.dart';
@@ -114,6 +115,8 @@ class NavigationService {
   static const String gradient_form_field_screen = "/gradient_form_field_screen";
   static const String select_field_screen = "/select_field_screen";
   static const String gradient_select_field_screen = "/gradient_select_field_screen";
+
+  static const String gradient_screen = "/gradient_screen";
 
   static const String icon_screen = "/icon_screen";
 
@@ -338,6 +341,12 @@ class NavigationService {
         return FCGlobal.pageRoute(
           context: navigatorKey.currentContext!,
           child: const GradientSelectFieldScreen(),
+        );
+
+      case gradient_screen:
+        return FCGlobal.pageRoute(
+          context: navigatorKey.currentContext!,
+          child: const GradientScreen(),
         );
 
       case icon_screen:

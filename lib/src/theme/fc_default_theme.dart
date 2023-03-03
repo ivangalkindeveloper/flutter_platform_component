@@ -741,80 +741,80 @@ class FCDefaultTheme implements IFCTheme {
         ),
 
         // Primary
-        primary: const Color(0xff007AFF),
+        primary: const Color(0xffA145F2),
         primaryButton: const Color(0xffFFFFFF),
         primaryGradient: const LinearGradient(
           colors: const [
-            Color(0xff007AFF),
-            Color(0xff0A84FF),
+            Color(0xffA145F2),
+            Color(0xffCB45F2),
           ],
         ),
         // Primary / Light
-        primaryLight: const Color(0xff007AFF),
+        primaryLight: const Color(0xffC28CF2),
         primaryLightGradient: const LinearGradient(
           colors: const [
-            Color(0xff007AFF),
-            Color(0xff0A84FF),
+            Color(0xffC28CF2),
+            Color(0xffEA8CF2),
           ],
         ),
         // Primary / Dark
-        primaryDark: const Color(0xff007AFF),
+        primaryDark: const Color(0xff7F11DF),
         primaryDarkGradient: const LinearGradient(
           colors: const [
-            Color(0xff007AFF),
-            Color(0xff0A84FF),
+            Color(0xff7F11DF),
+            Color(0xff7C3DAE),
           ],
         ),
 
         // Secondary
-        secondary: const Color(0xff0A84FF),
+        secondary: const Color(0xff5A45F2),
         secondaryButton: const Color(0xffFFFFFF),
         secondaryGradient: const LinearGradient(
           colors: const [
-            Color(0xff0A84FF),
-            Color(0xff50A7FF),
+            Color(0xff5A45F2),
+            Color(0xff2100FA),
           ],
         ),
         // Secondary / Light
-        secondaryLight: const Color(0xff0A84FF),
+        secondaryLight: const Color(0xff6B75FF),
         secondaryLightGradient: const LinearGradient(
           colors: const [
-            Color(0xff0A84FF),
-            Color(0xff50A7FF),
+            Color(0xff6B75FF),
+            Color(0xff8F96FE),
           ],
         ),
         // Secondary / Dark
-        secondaryDark: const Color(0xff0A84FF),
+        secondaryDark: const Color(0xff2330E1),
         secondaryDarkGradient: const LinearGradient(
           colors: const [
-            Color(0xff0A84FF),
-            Color(0xff50A7FF),
+            Color(0xff2330E1),
+            Color(0xff4B53B4),
           ],
         ),
 
         // Accent
-        accent: const Color(0xff0A84FF),
+        accent: const Color(0xffAEFF00),
         accentButton: const Color(0xffFFFFFF),
         accentGradient: const LinearGradient(
           colors: const [
-            Color(0xff0A84FF),
-            Color(0xff50A7FF),
+            Color(0xffAEFF00),
+            Color(0xffB0DF49),
           ],
         ),
         // Accent / Light
-        accentLight: const Color(0xff0A84FF),
+        accentLight: const Color(0xffD4EAA4),
         accentLightGradient: const LinearGradient(
           colors: const [
-            Color(0xff0A84FF),
-            Color(0xff50A7FF),
+            Color(0xffD4EAA4),
+            Color(0xffE4EFCD),
           ],
         ),
         // Accent / Dark
-        accentDark: const Color(0xff0A84FF),
+        accentDark: const Color(0xff95DD0E),
         accentDarkGradient: const LinearGradient(
           colors: const [
-            Color(0xff0A84FF),
-            Color(0xff50A7FF),
+            Color(0xff95DD0E),
+            Color(0xff88C026),
           ],
         ),
 
@@ -823,7 +823,7 @@ class FCDefaultTheme implements IFCTheme {
         greyGradient: const LinearGradient(
           colors: const [
             Color(0xff999999),
-            Color(0xffA5A5A5),
+            Color(0xffB0B0B0),
           ],
         ),
         // Grey / Light
@@ -835,61 +835,61 @@ class FCDefaultTheme implements IFCTheme {
           ],
         ),
         // Grey / Dark
-        greyDark: const Color(0xffE5E5EA),
+        greyDark: const Color(0xff969696),
         greyDarkGradient: const LinearGradient(
           colors: const [
-            Color(0xffE5E5EA),
-            Color(0xffDFDFE3),
+            Color(0xff969696),
+            Color(0xff858585),
           ],
         ),
 
         // Info
-        info: const Color(0xff5FCBFA),
+        info: const Color(0xff29B9FA),
         infoGradient: const LinearGradient(
+          colors: const [
+            Color(0xff29B9FA),
+            Color(0xff64D2FF),
+          ],
+        ),
+        // Info / Light
+        infoLight: const Color(0xff5FCBFA),
+        infoLightGradient: const LinearGradient(
           colors: const [
             Color(0xff5FCBFA),
             Color(0xff64D2FF),
           ],
         ),
-        // Info / Light
-        infoLight: const Color(0xff70D7FF),
-        infoLightGradient: const LinearGradient(
-          colors: const [
-            Color(0xff70D7FF),
-            Color(0xff84DDFF),
-          ],
-        ),
         // Info / Dark
-        infoDark: const Color(0xff70D7FF),
+        infoDark: const Color(0xff05A6EB),
         infoDarkGradient: const LinearGradient(
           colors: const [
-            Color(0xff70D7FF),
-            Color(0xff84DDFF),
+            Color(0xff05A6EB),
+            Color(0xff2693C9),
           ],
         ),
 
         // Success
-        success: const Color(0xff34C759),
+        success: const Color(0xff3FE970),
         successGradient: const LinearGradient(
           colors: const [
-            Color(0xff34C759),
+            Color(0xff3FE970),
             Color(0xff30D158),
           ],
         ),
         // Success / Light
-        successLight: const Color(0xff30DB5B),
+        successLight: const Color(0xff70F095),
         successLightGradient: const LinearGradient(
           colors: const [
-            Color(0xff30DB5B),
-            Color(0xff6DE68B),
+            Color(0xff70F095),
+            Color(0xff78DE97),
           ],
         ),
         // Success / Dark
-        successDark: const Color(0xff30DB5B),
+        successDark: const Color(0xff2AD561),
         successDarkGradient: const LinearGradient(
           colors: const [
-            Color(0xff30DB5B),
-            Color(0xff6DE68B),
+            Color(0xff2AD561),
+            Color(0xff3EB161),
           ],
         ),
 
@@ -898,23 +898,23 @@ class FCDefaultTheme implements IFCTheme {
         warningGradient: const LinearGradient(
           colors: const [
             Color(0xffFF9500),
-            Color(0xffFF9F0A),
+            Color(0xffFDA835),
           ],
         ),
         // Warning / Light
-        warningLight: const Color(0xffFFB340),
+        warningLight: const Color(0xffFEC577),
         warningLightGradient: const LinearGradient(
           colors: const [
-            Color(0xffFFB340),
-            Color(0xffFFC060),
+            Color(0xffFEC577),
+            Color(0xffEAC186),
           ],
         ),
         // Warning / Dark
-        warningDark: const Color(0xffFFB340),
+        warningDark: const Color(0xffF08C00),
         warningDarkGradient: const LinearGradient(
           colors: const [
-            Color(0xffFFB340),
-            Color(0xffFFC060),
+            Color(0xffF08C00),
+            Color(0xffDA8C16),
           ],
         ),
 
@@ -923,23 +923,23 @@ class FCDefaultTheme implements IFCTheme {
         dangerGradient: const LinearGradient(
           colors: const [
             Color(0xffFF3B30),
-            Color(0xffFF2D55),
+            Color(0xffDD3D36),
           ],
         ),
         // Danger / Light
-        dangerLight: const Color(0xffFF6961),
+        dangerLight: const Color(0xffFF5852),
         dangerLightGradient: const LinearGradient(
           colors: const [
-            Color(0xffFF6961),
-            Color(0xffFF6961),
+            Color(0xffFF5852),
+            Color(0xffE8726D),
           ],
         ),
         // Danger / Dark
-        dangerDark: const Color(0xffFF6961),
+        dangerDark: const Color(0xffEA211A),
         dangerDarkGradient: const LinearGradient(
           colors: const [
-            Color(0xffFF6961),
-            Color(0xffFF6961),
+            Color(0xffEA211A),
+            Color(0xffC3332C),
           ],
         ),
 
@@ -955,9 +955,9 @@ class FCDefaultTheme implements IFCTheme {
         barrierDialogMaterial: Colors.black54,
 
         // Gradient
-        linearGradientConfig: FCLinearGradientConfig(),
-        radialGradientConfig: FCRadialGradientConfig(),
-        sweepGradientConfig: FCSweepGradientConfig(),
+        linearGradientConfig: const FCLinearGradientConfig(),
+        radialGradientConfig: const FCRadialGradientConfig(),
+        sweepGradientConfig: const FCSweepGradientConfig(),
       );
 
   static IFCTheme get defaultDarkTheme => FCDefaultTheme(
@@ -996,172 +996,172 @@ class FCDefaultTheme implements IFCTheme {
         ),
 
         // Primary
-        primary: const Color(0xff0040DD),
+        primary: const Color(0xff7F11DF),
         primaryButton: const Color(0xffFFFFFF),
         primaryGradient: const LinearGradient(
           colors: const [
-            Color(0xff0040DD),
-            Color(0xff3634A3),
+            Color(0xff7F11DF),
+            Color(0xff7C3DAE),
           ],
         ),
         // Primary / Light
-        primaryLight: const Color(0xff0040DD),
+        primaryLight: const Color(0xffA145F2),
         primaryLightGradient: const LinearGradient(
           colors: const [
-            Color(0xff0040DD),
-            Color(0xff3634A3),
+            Color(0xffA145F2),
+            Color(0xffCB45F2),
           ],
         ),
         // Primary / Dark
-        primaryDark: const Color(0xff0040DD),
+        primaryDark: const Color(0xff783C96),
         primaryDarkGradient: const LinearGradient(
           colors: const [
-            Color(0xff0040DD),
-            Color(0xff3634A3),
+            Color(0xff783C96),
+            Color(0xff75299E),
           ],
         ),
 
         // Secondary
-        secondary: const Color(0xff5856D6),
+        secondary: const Color(0xff2330E1),
         secondaryButton: const Color(0xffFFFFFF),
         secondaryGradient: const LinearGradient(
           colors: const [
-            Color(0xff5856D6),
-            Color(0xff5E5CE6),
+            Color(0xff2330E1),
+            Color(0xff4B53B4),
           ],
         ),
         // Secondary / Light
-        secondaryLight: const Color(0xff5856D6),
+        secondaryLight: const Color(0xff5A45F2),
         secondaryLightGradient: const LinearGradient(
           colors: const [
-            Color(0xff5856D6),
-            Color(0xff5E5CE6),
+            Color(0xff5A45F2),
+            Color(0xff2100FA),
           ],
         ),
         // Secondary / Dark
-        secondaryDark: const Color(0xff5856D6),
+        secondaryDark: const Color(0xff3A458D),
         secondaryDarkGradient: const LinearGradient(
           colors: const [
-            Color(0xff5856D6),
-            Color(0xff5E5CE6),
+            Color(0xff3A458D),
+            Color(0xff66697A),
           ],
         ),
 
         // Accent
-        accent: const Color(0xff5856D6),
+        accent: const Color(0xff9ADB14),
         accentButton: const Color(0xffFFFFFF),
         accentGradient: const LinearGradient(
           colors: const [
-            Color(0xff5856D6),
-            Color(0xff5E5CE6),
+            Color(0xff9ADB14),
+            Color(0xff99D322),
           ],
         ),
         // Accent / Light
-        accentLight: const Color(0xff5856D6),
+        accentLight: const Color(0xffAEFF00),
         accentLightGradient: const LinearGradient(
           colors: const [
-            Color(0xff5856D6),
-            Color(0xff5E5CE6),
+            Color(0xffAEFF00),
+            Color(0xffB0DF49),
           ],
         ),
         // Accent / Dark
-        accentDark: const Color(0xff5856D6),
+        accentDark: const Color(0xff96B262),
         accentDarkGradient: const LinearGradient(
           colors: const [
-            Color(0xff5856D6),
-            Color(0xff5E5CE6),
+            Color(0xff96B262),
+            Color(0xff95A573),
           ],
         ),
 
         // Grey
-        grey: const Color(0xff999999),
+        grey: const Color(0xff969696),
         greyGradient: const LinearGradient(
           colors: const [
-            Color(0xff999999),
-            Color(0xffA5A5A5),
+            Color(0xff969696),
+            Color(0xff858585),
           ],
         ),
         // Grey / Light
-        greyLight: const Color(0xffE5E5EA),
+        greyLight: const Color(0xff999999),
         greyLightGradient: const LinearGradient(
           colors: const [
-            Color(0xffE5E5EA),
-            Color(0xffDFDFE3),
+            Color(0xff999999),
+            Color(0xffB0B0B0),
           ],
         ),
         // Grey / Dark
-        greyDark: const Color(0xffE5E5EA),
+        greyDark: const Color(0xff707070),
         greyDarkGradient: const LinearGradient(
           colors: const [
-            Color(0xffE5E5EA),
-            Color(0xffDFDFE3),
+            Color(0xff707070),
+            Color(0xff5E5E5E),
           ],
         ),
 
         // Info
-        info: const Color(0xff5FCBFA),
+        info: const Color(0xff05A6EB),
         infoGradient: const LinearGradient(
           colors: const [
-            Color(0xff5FCBFA),
-            Color(0xff64D2FF),
+            Color(0xff05A6EB),
+            Color(0xff2693C9),
           ],
         ),
         // Info / Light
-        infoLight: const Color(0xff70D7FF),
+        infoLight: const Color(0xff29B9FA),
         infoLightGradient: const LinearGradient(
           colors: const [
-            Color(0xff70D7FF),
-            Color(0xff84DDFF),
+            Color(0xff29B9FA),
+            Color(0xff64D2FF),
           ],
         ),
         // Info / Dark
-        infoDark: const Color(0xff70D7FF),
+        infoDark: const Color(0xff5575CE),
         infoDarkGradient: const LinearGradient(
           colors: const [
-            Color(0xff70D7FF),
-            Color(0xff84DDFF),
+            Color(0xff5575CE),
+            Color(0xff436ADB),
           ],
         ),
 
         // Success
-        success: const Color(0xff34C759),
+        success: const Color(0xff2AD561),
         successGradient: const LinearGradient(
           colors: const [
-            Color(0xff34C759),
-            Color(0xff30D158),
+            Color(0xff2AD561),
+            Color(0xff3EB161),
           ],
         ),
         // Success / Light
-        successLight: const Color(0xff30DB5B),
+        successLight: const Color(0xff3FE970),
         successLightGradient: const LinearGradient(
           colors: const [
-            Color(0xff30DB5B),
-            Color(0xff6DE68B),
+            Color(0xff3FE970),
+            Color(0xff30D158),
           ],
         ),
         // Success / Dark
-        successDark: const Color(0xff30DB5B),
+        successDark: const Color(0xff63B078),
         successDarkGradient: const LinearGradient(
           colors: const [
-            Color(0xff30DB5B),
-            Color(0xff6DE68B),
+            Color(0xff63B078),
+            Color(0xff8EB496),
           ],
         ),
 
         // Warning
-        warning: const Color(0xffFF9500),
+        warning: const Color(0xffF08C00),
         warningGradient: const LinearGradient(
           colors: const [
-            Color(0xffFF9500),
-            Color(0xffFF9F0A),
+            Color(0xffF08C00),
+            Color(0xffDA8C16),
           ],
         ),
         // Warning / Light
-        warningLight: const Color(0xffFFB340),
+        warningLight: const Color(0xffFF9500),
         warningLightGradient: const LinearGradient(
           colors: const [
-            Color(0xffFFB340),
-            Color(0xffFFC060),
+            Color(0xffFF9500),
+            Color(0xffFDA835),
           ],
         ),
         // Warning / Dark
@@ -1174,27 +1174,27 @@ class FCDefaultTheme implements IFCTheme {
         ),
 
         // Danger
-        danger: const Color(0xffFF3B30),
+        danger: const Color(0xffEA211A),
         dangerGradient: const LinearGradient(
           colors: const [
-            Color(0xffFF3B30),
-            Color(0xffFF2D55),
+            Color(0xffEA211A),
+            Color(0xffC3332C),
           ],
         ),
         // Danger / Light
-        dangerLight: const Color(0xffFF6961),
+        dangerLight: const Color(0xffFF3B30),
         dangerLightGradient: const LinearGradient(
           colors: const [
-            Color(0xffFF6961),
-            Color(0xffFF6961),
+            Color(0xffFF3B30),
+            Color(0xffDD3D36),
           ],
         ),
         // Danger / Dark
-        dangerDark: const Color(0xffFF6961),
+        dangerDark: const Color(0xff9A4742),
         dangerDarkGradient: const LinearGradient(
           colors: const [
-            Color(0xffFF6961),
-            Color(0xffFF6961),
+            Color(0xff9A4742),
+            Color(0xffB45A55),
           ],
         ),
 
@@ -1210,8 +1210,8 @@ class FCDefaultTheme implements IFCTheme {
         barrierDialogMaterial: Colors.black54,
 
         // Gradient
-        linearGradientConfig: FCLinearGradientConfig(),
-        radialGradientConfig: FCRadialGradientConfig(),
-        sweepGradientConfig: FCSweepGradientConfig(),
+        linearGradientConfig: const FCLinearGradientConfig(),
+        radialGradientConfig: const FCRadialGradientConfig(),
+        sweepGradientConfig: const FCSweepGradientConfig(),
       );
 }
