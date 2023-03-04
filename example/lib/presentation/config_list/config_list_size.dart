@@ -895,7 +895,7 @@ class ConfigListSize extends StatelessWidget {
             Flexible(
               child: FCText.medium18Black(
                 context: context,
-                text: size.iconHeightSmall.toString(),
+                text: size.heightIconSmall.toString(),
               ),
             ),
           ],
@@ -914,7 +914,7 @@ class ConfigListSize extends StatelessWidget {
             Flexible(
               child: FCText.medium18Black(
                 context: context,
-                text: size.iconHeightDefault.toString(),
+                text: size.heightIconDefault.toString(),
               ),
             ),
           ],
@@ -933,7 +933,7 @@ class ConfigListSize extends StatelessWidget {
             Flexible(
               child: FCText.medium18Black(
                 context: context,
-                text: size.iconHeightLarge.toString(),
+                text: size.heightIconLarge.toString(),
               ),
             ),
           ],
@@ -953,7 +953,7 @@ class ConfigListSize extends StatelessWidget {
             Flexible(
               child: FCText.medium18Black(
                 context: context,
-                text: size.indicatorHeightSmall.toString(),
+                text: size.heightIndicatorSmall.toString(),
               ),
             ),
           ],
@@ -972,7 +972,7 @@ class ConfigListSize extends StatelessWidget {
             Flexible(
               child: FCText.medium18Black(
                 context: context,
-                text: size.indicatorHeightDefault.toString(),
+                text: size.heightIndicatorDefault.toString(),
               ),
             ),
           ],
@@ -991,7 +991,7 @@ class ConfigListSize extends StatelessWidget {
             Flexible(
               child: FCText.medium18Black(
                 context: context,
-                text: size.indicatorHeightLarge.toString(),
+                text: size.heightIndicatorLarge.toString(),
               ),
             ),
           ],
@@ -1004,14 +1004,14 @@ class ConfigListSize extends StatelessWidget {
             Flexible(
               child: FCText.regular16Black(
                 context: context,
-                text: "Lower Date:",
+                text: "Date Minimum:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
               child: FCText.medium18Black(
                 context: context,
-                text: size.dateLower.toString(),
+                text: size.dateMinimum.toString(),
               ),
             ),
           ],
@@ -1023,7 +1023,7 @@ class ConfigListSize extends StatelessWidget {
             Flexible(
               child: FCText.regular16Black(
                 context: context,
-                text: "Initial Date:",
+                text: "Date Initial:",
               ),
             ),
             SizedBox(width: size.s16),
@@ -1042,14 +1042,14 @@ class ConfigListSize extends StatelessWidget {
             Flexible(
               child: FCText.regular16Black(
                 context: context,
-                text: "Upper Date:",
+                text: "Date Maximum:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
               child: FCText.medium18Black(
                 context: context,
-                text: size.dateUpper.toString(),
+                text: size.dateMaximum.toString(),
               ),
             ),
           ],

@@ -9,7 +9,7 @@ class FCWarningLightSlidingSegmentControl<T> extends StatelessWidget {
     required this.items,
     required this.onChanged,
     this.height,
-    this.iconHeight,
+    this.heightIcon,
     this.style,
     this.isDisabled = false,
     this.disabledColor,
@@ -19,7 +19,7 @@ class FCWarningLightSlidingSegmentControl<T> extends StatelessWidget {
   final List<FCSlidingSegmentControlItem<T>> items;
   final void Function(T) onChanged;
   final double? height;
-  final double? iconHeight;
+  final double? heightIcon;
   final TextStyle? style;
   final bool isDisabled;
   final Color? disabledColor;
@@ -38,7 +38,7 @@ class FCWarningLightSlidingSegmentControl<T> extends StatelessWidget {
       thumbColor: theme.warningLight,
       unselectedInternalColor: theme.black,
       selectedInternalColor: theme.white,
-      iconHeight: this.iconHeight,
+      heightIcon: this.heightIcon,
       style: this.style,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,

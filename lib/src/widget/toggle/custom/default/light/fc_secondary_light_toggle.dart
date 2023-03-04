@@ -10,7 +10,7 @@ class FCSecondaryLightToggle<T> extends StatelessWidget {
     required this.onChanged,
     this.height,
     this.horizontalInterval,
-    this.iconHeight,
+    this.heightIcon,
     this.style,
     this.isRequired = false,
     this.isDisabled = false,
@@ -22,7 +22,7 @@ class FCSecondaryLightToggle<T> extends StatelessWidget {
   final void Function(T) onChanged;
   final double? height;
   final double? horizontalInterval;
-  final double? iconHeight;
+  final double? heightIcon;
   final TextStyle? style;
   final bool isRequired;
   final bool isDisabled;
@@ -45,7 +45,7 @@ class FCSecondaryLightToggle<T> extends StatelessWidget {
       selectedInternalColor: theme.white,
       selectedSplashColor: theme.white,
       horizontalInterval: this.horizontalInterval,
-      iconHeight: this.iconHeight,
+      heightIcon: this.heightIcon,
       style: this.style,
       isRequired: this.isRequired,
       isDisabled: this.isDisabled,

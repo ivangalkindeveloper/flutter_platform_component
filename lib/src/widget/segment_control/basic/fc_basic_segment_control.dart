@@ -20,7 +20,7 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
     required this.selectedBorderColor,
     required this.selectedInternalColor,
     required this.selectedSplashColor,
-    this.iconHeight,
+    this.heightIcon,
     this.style,
     this.isDisabled = false,
     this.disabledColor,
@@ -38,7 +38,7 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
   final Color selectedBorderColor;
   final Color selectedInternalColor;
   final Color selectedSplashColor;
-  final double? iconHeight;
+  final double? heightIcon;
   final TextStyle? style;
   final bool isDisabled;
   final Color? disabledColor;
@@ -73,7 +73,7 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
                         selectedBorderColor: this.selectedBorderColor,
                         selectedInternalColor: this.selectedInternalColor,
                         selectedSplashColor: this.selectedSplashColor,
-                        iconHeight: this.iconHeight,
+                        heightIcon: this.heightIcon,
                         style: this.style,
                         onPressed: () => this.onChanged(item.value),
                         isSelected: item.value == this.value,
@@ -113,7 +113,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required this.selectedBorderColor,
     required this.selectedInternalColor,
     required this.selectedSplashColor,
-    required this.iconHeight,
+    required this.heightIcon,
     required this.style,
     required this.onPressed,
     required this.isSelected,
@@ -131,7 +131,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   final Color selectedBorderColor;
   final Color selectedInternalColor;
   final Color selectedSplashColor;
-  final double? iconHeight;
+  final double? heightIcon;
   final TextStyle? style;
   final VoidCallback onPressed;
   final bool isSelected;
@@ -286,7 +286,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
               if (this.item.prefixIcon != null)
                 Icon(
                   this.item.prefixIcon,
-                  size: this.iconHeight ?? size.iconHeightSmall,
+                  size: this.heightIcon ?? size.heightIconSmall,
                   color: this._internalColor(theme: theme),
                 ),
               if (this.item.prefixIcon != null) SizedBox(width: size.s16 / 2),
@@ -311,7 +311,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
               if (this.item.postfixIcon != null)
                 Icon(
                   this.item.postfixIcon,
-                  size: this.iconHeight ?? size.iconHeightSmall,
+                  size: this.heightIcon ?? size.heightIconSmall,
                   color: this._internalColor(theme: theme),
                 ),
               if (this.item.postfix != null) SizedBox(width: size.s16 / 2),

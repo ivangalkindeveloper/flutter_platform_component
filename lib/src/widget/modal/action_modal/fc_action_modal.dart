@@ -142,7 +142,7 @@ class _FCActionModalCupertino extends StatelessWidget {
             if (item.prefixIcon != null)
               Icon(
                 item.prefixIcon,
-                size: this.prefixIconHeight ?? size.iconHeightSmall,
+                size: this.prefixIconHeight ?? size.heightIconSmall,
                 color: this.prefixIconColor ?? theme.primary,
               ),
             if (item.prefixIcon != null) SizedBox(width: size.s16),
@@ -162,7 +162,7 @@ class _FCActionModalCupertino extends StatelessWidget {
             if (item.postfixIcon != null)
               Icon(
                 item.postfixIcon,
-                size: this.postfixIconHeight ?? size.iconHeightSmall,
+                size: this.postfixIconHeight ?? size.heightIconSmall,
                 color: this.postfixIconColor ?? theme.grey,
               ),
             if (item.postfix != null) SizedBox(width: size.s16),
@@ -335,7 +335,7 @@ class _FCActionModalMaterial extends StatelessWidget {
             if (item.prefixIcon != null)
               Icon(
                 item.prefixIcon,
-                size: this.prefixIconHeight ?? size.iconHeightSmall,
+                size: this.prefixIconHeight ?? size.heightIconSmall,
                 color: this.prefixIconColor ?? theme.primary,
               ),
             if (item.prefixIcon != null) SizedBox(width: size.s16),
@@ -355,7 +355,7 @@ class _FCActionModalMaterial extends StatelessWidget {
             if (item.postfixIcon != null)
               Icon(
                 item.postfixIcon,
-                size: this.postfixIconHeight ?? size.iconHeightSmall,
+                size: this.postfixIconHeight ?? size.heightIconSmall,
                 color: this.postfixIconColor ?? theme.grey,
               ),
             if (item.postfix != null) SizedBox(width: size.s16),

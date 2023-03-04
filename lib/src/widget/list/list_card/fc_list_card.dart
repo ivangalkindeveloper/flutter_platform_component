@@ -148,7 +148,7 @@ class FCListCard extends StatelessWidget {
                         if (item.prefixIcon != null)
                           Icon(
                             item.prefixIcon,
-                            size: this.prefixIconHeight ?? size.iconHeightDefault,
+                            size: this.prefixIconHeight ?? size.heightIconDefault,
                             color: this.prefixIconColor ?? theme.primary,
                           ),
                         if (item.prefixIcon != null) SizedBox(width: size.s16),
@@ -170,7 +170,7 @@ class FCListCard extends StatelessWidget {
                         if (item.postfixIcon != null)
                           Icon(
                             item.postfixIcon,
-                            size: this.postfixIconHeight ?? size.iconHeightDefault,
+                            size: this.postfixIconHeight ?? size.heightIconDefault,
                             color: this.postfixIconColor ?? theme.grey,
                           ),
                         if (item.postfix != null) SizedBox(width: size.s16),

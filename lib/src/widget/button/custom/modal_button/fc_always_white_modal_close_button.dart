@@ -63,10 +63,10 @@ class _FCAlwaysWhiteModalCloseButtonMaterial extends StatelessWidget {
     final IFCSize size = config.size;
 
     return SizedBox(
-      height: size.iconHeightLarge,
-      width: size.iconHeightLarge,
+      height: size.heightIconLarge,
+      width: size.heightIconLarge,
       child: IconButton(
-        iconSize: size.iconHeightLarge,
+        iconSize: size.heightIconLarge,
         onPressed: this.onPressed,
         padding: EdgeInsets.zero,
         icon: FCIcon.whiteAlways(

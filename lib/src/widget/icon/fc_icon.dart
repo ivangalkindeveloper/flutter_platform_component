@@ -38,7 +38,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.white,
     );
   }
@@ -53,7 +53,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.whiteAlways,
     );
   }
@@ -68,7 +68,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.black,
     );
   }
@@ -83,7 +83,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.blackAlways,
     );
   }
@@ -98,7 +98,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.primary,
     );
   }
@@ -113,7 +113,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.primaryButton,
     );
   }
@@ -128,7 +128,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.primaryGradient,
     );
   }
@@ -143,7 +143,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.primaryLight,
     );
   }
@@ -158,7 +158,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.primaryLightGradient,
     );
   }
@@ -173,7 +173,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.primaryDark,
     );
   }
@@ -188,7 +188,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.primaryDarkGradient,
     );
   }
@@ -203,7 +203,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.secondary,
     );
   }
@@ -218,7 +218,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.secondaryButton,
     );
   }
@@ -233,7 +233,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.secondaryGradient,
     );
   }
@@ -248,7 +248,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.secondaryLight,
     );
   }
@@ -263,7 +263,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.secondaryLightGradient,
     );
   }
@@ -278,7 +278,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.secondaryDark,
     );
   }
@@ -293,7 +293,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.secondaryDarkGradient,
     );
   }
@@ -308,7 +308,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.accent,
     );
   }
@@ -323,7 +323,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.accentButton,
     );
   }
@@ -338,7 +338,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.accentGradient,
     );
   }
@@ -353,7 +353,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.accentLight,
     );
   }
@@ -368,7 +368,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.accentLightGradient,
     );
   }
@@ -383,7 +383,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.accentDark,
     );
   }
@@ -398,7 +398,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.accentDarkGradient,
     );
   }
@@ -413,7 +413,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.grey,
     );
   }
@@ -428,7 +428,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.greyGradient,
     );
   }
@@ -443,7 +443,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.greyLight,
     );
   }
@@ -458,7 +458,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.greyLightGradient,
     );
   }
@@ -473,7 +473,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.greyDark,
     );
   }
@@ -488,7 +488,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.greyDarkGradient,
     );
   }
@@ -503,7 +503,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.info,
     );
   }
@@ -518,7 +518,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.infoGradient,
     );
   }
@@ -533,7 +533,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.infoLight,
     );
   }
@@ -548,7 +548,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.infoLightGradient,
     );
   }
@@ -563,7 +563,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.infoDark,
     );
   }
@@ -578,7 +578,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.infoDarkGradient,
     );
   }
@@ -593,7 +593,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.success,
     );
   }
@@ -608,7 +608,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.successGradient,
     );
   }
@@ -623,7 +623,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.successLight,
     );
   }
@@ -638,7 +638,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.successLightGradient,
     );
   }
@@ -653,7 +653,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.successDark,
     );
   }
@@ -668,7 +668,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.successDarkGradient,
     );
   }
@@ -683,7 +683,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.warning,
     );
   }
@@ -698,7 +698,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.warningGradient,
     );
   }
@@ -713,7 +713,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.warningLight,
     );
   }
@@ -728,7 +728,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.warningLightGradient,
     );
   }
@@ -743,7 +743,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.warningDark,
     );
   }
@@ -758,7 +758,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.warningDarkGradient,
     );
   }
@@ -773,7 +773,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.danger,
     );
   }
@@ -788,7 +788,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.dangerGradient,
     );
   }
@@ -803,7 +803,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.dangerLight,
     );
   }
@@ -818,7 +818,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.dangerLightGradient,
     );
   }
@@ -833,7 +833,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       color: theme.dangerDark,
     );
   }
@@ -848,7 +848,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightSmall,
+      size: size.heightIconSmall,
       gradient: theme.dangerDarkGradient,
     );
   }
@@ -864,7 +864,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.white,
     );
   }
@@ -879,7 +879,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.whiteAlways,
     );
   }
@@ -894,7 +894,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.black,
     );
   }
@@ -909,7 +909,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.blackAlways,
     );
   }
@@ -924,7 +924,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.primary,
     );
   }
@@ -939,7 +939,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.primaryButton,
     );
   }
@@ -954,7 +954,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.primaryGradient,
     );
   }
@@ -969,7 +969,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.primaryLight,
     );
   }
@@ -984,7 +984,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.primaryLightGradient,
     );
   }
@@ -999,7 +999,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.primaryDark,
     );
   }
@@ -1014,7 +1014,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.primaryDarkGradient,
     );
   }
@@ -1029,7 +1029,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.secondary,
     );
   }
@@ -1044,7 +1044,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.secondaryButton,
     );
   }
@@ -1059,7 +1059,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.secondaryGradient,
     );
   }
@@ -1074,7 +1074,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.secondaryLight,
     );
   }
@@ -1089,7 +1089,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.secondaryLightGradient,
     );
   }
@@ -1104,7 +1104,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.secondaryDark,
     );
   }
@@ -1119,7 +1119,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.secondaryDarkGradient,
     );
   }
@@ -1134,7 +1134,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.accent,
     );
   }
@@ -1149,7 +1149,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.accentButton,
     );
   }
@@ -1164,7 +1164,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.accentGradient,
     );
   }
@@ -1179,7 +1179,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.accentLight,
     );
   }
@@ -1194,7 +1194,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.accentLightGradient,
     );
   }
@@ -1209,7 +1209,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.accentDark,
     );
   }
@@ -1224,7 +1224,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.accentDarkGradient,
     );
   }
@@ -1239,7 +1239,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.grey,
     );
   }
@@ -1254,7 +1254,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.greyGradient,
     );
   }
@@ -1269,7 +1269,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.greyLight,
     );
   }
@@ -1284,7 +1284,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.greyLightGradient,
     );
   }
@@ -1299,7 +1299,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.greyDark,
     );
   }
@@ -1314,7 +1314,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.greyDarkGradient,
     );
   }
@@ -1329,7 +1329,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.info,
     );
   }
@@ -1344,7 +1344,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.infoGradient,
     );
   }
@@ -1359,7 +1359,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.infoLight,
     );
   }
@@ -1374,7 +1374,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.infoLightGradient,
     );
   }
@@ -1389,7 +1389,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.infoDark,
     );
   }
@@ -1404,7 +1404,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.infoDarkGradient,
     );
   }
@@ -1419,7 +1419,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.success,
     );
   }
@@ -1434,7 +1434,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.successGradient,
     );
   }
@@ -1449,7 +1449,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.successLight,
     );
   }
@@ -1464,7 +1464,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.successLightGradient,
     );
   }
@@ -1479,7 +1479,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.successDark,
     );
   }
@@ -1494,7 +1494,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.successDarkGradient,
     );
   }
@@ -1509,7 +1509,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.warning,
     );
   }
@@ -1524,7 +1524,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.warningGradient,
     );
   }
@@ -1539,7 +1539,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.warningLight,
     );
   }
@@ -1554,7 +1554,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.warningLightGradient,
     );
   }
@@ -1569,7 +1569,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.warningDark,
     );
   }
@@ -1584,7 +1584,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.warningDarkGradient,
     );
   }
@@ -1599,7 +1599,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.danger,
     );
   }
@@ -1614,7 +1614,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.dangerGradient,
     );
   }
@@ -1629,7 +1629,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.dangerLight,
     );
   }
@@ -1644,7 +1644,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.dangerLightGradient,
     );
   }
@@ -1659,7 +1659,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       color: theme.dangerDark,
     );
   }
@@ -1674,7 +1674,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightDefault,
+      size: size.heightIconDefault,
       gradient: theme.dangerDarkGradient,
     );
   }
@@ -1690,7 +1690,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.white,
     );
   }
@@ -1705,7 +1705,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.whiteAlways,
     );
   }
@@ -1720,7 +1720,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.black,
     );
   }
@@ -1735,7 +1735,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.blackAlways,
     );
   }
@@ -1750,7 +1750,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.primary,
     );
   }
@@ -1765,7 +1765,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.primaryButton,
     );
   }
@@ -1780,7 +1780,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.primaryGradient,
     );
   }
@@ -1795,7 +1795,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.primaryLight,
     );
   }
@@ -1810,7 +1810,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.primaryLightGradient,
     );
   }
@@ -1825,7 +1825,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.primaryDark,
     );
   }
@@ -1840,7 +1840,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.primaryLightGradient,
     );
   }
@@ -1855,7 +1855,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.secondary,
     );
   }
@@ -1870,7 +1870,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.secondaryButton,
     );
   }
@@ -1885,7 +1885,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.secondaryGradient,
     );
   }
@@ -1900,7 +1900,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.secondaryLight,
     );
   }
@@ -1915,7 +1915,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.secondaryLightGradient,
     );
   }
@@ -1930,7 +1930,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.secondaryDark,
     );
   }
@@ -1945,7 +1945,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.secondaryLightGradient,
     );
   }
@@ -1960,7 +1960,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.accent,
     );
   }
@@ -1975,7 +1975,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.accentButton,
     );
   }
@@ -1990,7 +1990,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.accentGradient,
     );
   }
@@ -2005,7 +2005,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.accentLight,
     );
   }
@@ -2020,7 +2020,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.accentLightGradient,
     );
   }
@@ -2035,7 +2035,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.accentDark,
     );
   }
@@ -2050,7 +2050,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.accentLightGradient,
     );
   }
@@ -2065,7 +2065,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.grey,
     );
   }
@@ -2080,7 +2080,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.greyGradient,
     );
   }
@@ -2095,7 +2095,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.greyLight,
     );
   }
@@ -2110,7 +2110,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.greyLightGradient,
     );
   }
@@ -2125,7 +2125,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.greyDark,
     );
   }
@@ -2140,7 +2140,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.greyLightGradient,
     );
   }
@@ -2155,7 +2155,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.info,
     );
   }
@@ -2170,7 +2170,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.infoGradient,
     );
   }
@@ -2185,7 +2185,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.infoLight,
     );
   }
@@ -2200,7 +2200,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.infoLightGradient,
     );
   }
@@ -2215,7 +2215,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.infoDark,
     );
   }
@@ -2230,7 +2230,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.infoDarkGradient,
     );
   }
@@ -2245,7 +2245,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.success,
     );
   }
@@ -2260,7 +2260,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.successGradient,
     );
   }
@@ -2275,7 +2275,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.successLight,
     );
   }
@@ -2290,7 +2290,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.successLightGradient,
     );
   }
@@ -2305,7 +2305,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.successDark,
     );
   }
@@ -2320,7 +2320,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.successDarkGradient,
     );
   }
@@ -2335,7 +2335,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.warning,
     );
   }
@@ -2350,7 +2350,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.warningGradient,
     );
   }
@@ -2365,7 +2365,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.warningLight,
     );
   }
@@ -2380,7 +2380,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.warningLightGradient,
     );
   }
@@ -2395,7 +2395,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.warningDark,
     );
   }
@@ -2410,7 +2410,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.warningDarkGradient,
     );
   }
@@ -2425,7 +2425,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.danger,
     );
   }
@@ -2440,7 +2440,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.dangerGradient,
     );
   }
@@ -2455,7 +2455,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.dangerLight,
     );
   }
@@ -2470,7 +2470,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.dangerLightGradient,
     );
   }
@@ -2485,7 +2485,7 @@ class FCIcon {
 
     return _iconColor(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       color: theme.dangerDark,
     );
   }
@@ -2500,7 +2500,7 @@ class FCIcon {
 
     return _iconGradient(
       icon: icon,
-      size: size.iconHeightLarge,
+      size: size.heightIconLarge,
       gradient: theme.dangerDarkGradient,
     );
   }

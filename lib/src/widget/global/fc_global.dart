@@ -181,9 +181,9 @@ class FCGlobal {
         return material.showDatePicker(
           locale: locale,
           context: context,
-          initialDate: dateRange.currentDate,
-          firstDate: dateRange.minimumDate,
-          lastDate: dateRange.maximumDate,
+          initialDate: dateRange.dateInitial,
+          firstDate: dateRange.dateMinimum,
+          lastDate: dateRange.dateMaximum,
           useRootNavigator: false,
           builder: (BuildContext context, Widget? dialog) => FCDatePicker(
             dateRange: dateRange,
@@ -196,9 +196,9 @@ class FCGlobal {
         return material.showDatePicker(
           locale: locale,
           context: context,
-          initialDate: dateRange.currentDate,
-          firstDate: dateRange.minimumDate,
-          lastDate: dateRange.maximumDate,
+          initialDate: dateRange.dateInitial,
+          firstDate: dateRange.dateMinimum,
+          lastDate: dateRange.dateMaximum,
           useRootNavigator: false,
           builder: (BuildContext context, Widget? dialog) => FCDatePicker(
             dateRange: dateRange,

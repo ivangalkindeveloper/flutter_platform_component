@@ -63,10 +63,10 @@ class _FCExpandedModalCloseButtonMaterial extends StatelessWidget {
     final IFCSize size = config.size;
 
     return SizedBox(
-      height: size.iconHeightDefault,
-      width: size.iconHeightDefault,
+      height: size.heightIconDefault,
+      width: size.heightIconDefault,
       child: IconButton(
-        iconSize: size.iconHeightLarge,
+        iconSize: size.heightIconLarge,
         onPressed: this.onPressed,
         padding: EdgeInsets.zero,
         icon: FCIcon.grey(

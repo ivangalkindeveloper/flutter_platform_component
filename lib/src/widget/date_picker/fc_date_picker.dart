@@ -60,9 +60,9 @@ class _FCDatePickerCupertino extends StatelessWidget {
         child: CupertinoDatePicker(
           mode: CupertinoDatePickerMode.date,
           use24hFormat: true,
-          initialDateTime: this.dateRange.currentDate,
-          minimumDate: this.dateRange.minimumDate,
-          maximumDate: this.dateRange.maximumDate,
+          initialDateTime: this.dateRange.dateInitial,
+          minimumDate: this.dateRange.dateMinimum,
+          maximumDate: this.dateRange.dateMaximum,
           onDateTimeChanged: this.onChanged,
         ),
       ),

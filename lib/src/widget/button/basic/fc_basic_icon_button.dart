@@ -50,13 +50,13 @@ class _FCBasicIconButtonCupertino extends StatelessWidget {
     final IFCSize size = config.size;
 
     return SizedBox(
-      height: size.iconHeightDefault,
-      width: size.iconHeightDefault,
+      height: size.heightIconDefault,
+      width: size.heightIconDefault,
       child: Stack(
         alignment: Alignment.center,
         children: [
           CupertinoButton(
-            minSize: size.iconHeightLarge,
+            minSize: size.heightIconLarge,
             onPressed: this.isDisabled ? () {} : this.onPressed,
             padding: EdgeInsets.zero,
             child: this.icon,
@@ -98,14 +98,14 @@ class _FCBasicIconButtonMaterial extends StatelessWidget {
     final IFCSize size = config.size;
 
     return SizedBox(
-      height: size.iconHeightDefault,
-      width: size.iconHeightDefault,
+      height: size.heightIconDefault,
+      width: size.heightIconDefault,
       child: Stack(
         alignment: Alignment.center,
         children: [
           IconButton(
             splashColor: this.splashColor,
-            iconSize: size.iconHeightLarge,
+            iconSize: size.heightIconLarge,
             onPressed: this.isDisabled ? () {} : this.onPressed,
             padding: EdgeInsets.zero,
             icon: this.icon,

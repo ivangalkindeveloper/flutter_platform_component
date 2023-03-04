@@ -11,7 +11,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.white,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -22,7 +22,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.whiteAlways,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -33,7 +33,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.black,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -44,7 +44,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.blackAlways,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -55,7 +55,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.primary,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -66,7 +66,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.primaryButton,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -77,7 +77,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.primaryGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -88,7 +88,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.primaryLight,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -99,7 +99,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.primaryLightGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -110,7 +110,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.primaryDark,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -121,7 +121,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.primaryDarkGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -132,7 +132,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.secondary,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -143,7 +143,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.secondaryButton,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -154,7 +154,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.secondaryGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -165,7 +165,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.secondaryLight,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -176,7 +176,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.secondaryLightGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -187,7 +187,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.secondaryDark,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -198,7 +198,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.secondaryDarkGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -209,7 +209,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.accent,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -220,7 +220,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.accentButton,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -231,7 +231,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.accentGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -242,7 +242,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.accentLight,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -253,7 +253,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.accentLightGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -264,7 +264,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.accentDark,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -275,7 +275,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.accentDarkGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -286,7 +286,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.grey,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -297,7 +297,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.greyGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -308,7 +308,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.greyLight,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -319,7 +319,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.greyLightGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -330,7 +330,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.greyDark,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -341,7 +341,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.greyDarkGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -352,7 +352,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.info,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -363,7 +363,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.infoGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -374,7 +374,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.infoLight,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -385,7 +385,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.infoLightGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -396,7 +396,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.infoDark,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -407,7 +407,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.infoDarkGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -418,7 +418,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.success,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -429,7 +429,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.successGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -440,7 +440,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.successLight,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -451,7 +451,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.successLightGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -462,7 +462,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.successDark,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -473,7 +473,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.successDarkGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -484,7 +484,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.warning,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -495,7 +495,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.warningGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -506,7 +506,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.warningLight,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -517,7 +517,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.warningLightGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -528,7 +528,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.warningDark,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -539,7 +539,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.warningDarkGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -550,7 +550,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.danger,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -561,7 +561,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.dangerGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -572,7 +572,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.dangerLight,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -583,7 +583,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.dangerLightGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -594,7 +594,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.dangerDark,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -605,7 +605,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.dangerDarkGradient,
-      height: size.indicatorHeightSmall,
+      height: size.heightIndicatorSmall,
     );
   }
 
@@ -617,7 +617,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.white,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -628,7 +628,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.whiteAlways,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -639,7 +639,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.black,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -650,7 +650,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.blackAlways,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -661,7 +661,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.primary,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -672,7 +672,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.primaryButton,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -683,7 +683,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.primaryGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -694,7 +694,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.primaryLight,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -705,7 +705,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.primaryLightGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -716,7 +716,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.primaryDark,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -727,7 +727,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.primaryDarkGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -738,7 +738,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.secondary,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -749,7 +749,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.secondaryButton,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -760,7 +760,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.secondaryGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -771,7 +771,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.secondaryLight,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -782,7 +782,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.secondaryLightGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -793,7 +793,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.secondaryDark,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -804,7 +804,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.secondaryDarkGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -815,7 +815,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.accent,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -826,7 +826,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.accentButton,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -837,7 +837,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.accentGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -848,7 +848,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.accentLight,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -859,7 +859,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.accentLightGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -870,7 +870,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.accentDark,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -881,7 +881,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.accentDarkGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -892,7 +892,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.grey,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -903,7 +903,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.greyGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -914,7 +914,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.greyLight,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -925,7 +925,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.greyLightGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -936,7 +936,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.greyDark,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -947,7 +947,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.greyDarkGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -958,7 +958,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.info,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -969,7 +969,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.infoGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -980,7 +980,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.infoLight,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -991,7 +991,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.infoLightGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1002,7 +1002,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.infoDark,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1013,7 +1013,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.infoDarkGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1024,7 +1024,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.success,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1035,7 +1035,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.successGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1046,7 +1046,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.successLight,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1057,7 +1057,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.successLightGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1068,7 +1068,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.successDark,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1079,7 +1079,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.successDarkGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1090,7 +1090,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.warning,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1101,7 +1101,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.warningGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1112,7 +1112,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.warningLight,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1123,7 +1123,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.warningLightGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1134,7 +1134,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.warningDark,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1145,7 +1145,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.warningDarkGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1156,7 +1156,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.danger,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1167,7 +1167,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.dangerGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1178,7 +1178,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.dangerLight,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1189,7 +1189,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.dangerLightGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1200,7 +1200,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.dangerDark,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1211,7 +1211,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.dangerDarkGradient,
-      height: size.indicatorHeightDefault,
+      height: size.heightIndicatorDefault,
     );
   }
 
@@ -1223,7 +1223,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.white,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1234,7 +1234,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.whiteAlways,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1245,7 +1245,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.black,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1256,7 +1256,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.blackAlways,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1267,7 +1267,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.primary,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1278,7 +1278,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.primaryButton,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1289,7 +1289,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.primaryGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1300,7 +1300,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.primaryLight,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1311,7 +1311,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.primaryLightGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1322,7 +1322,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.primaryDark,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1333,7 +1333,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.primaryDarkGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1344,7 +1344,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.secondary,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1355,7 +1355,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.secondaryButton,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1366,7 +1366,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.secondaryGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1377,7 +1377,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.secondaryLight,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1388,7 +1388,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.secondaryLightGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1399,7 +1399,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.secondaryDark,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1410,7 +1410,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.secondaryDarkGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1421,7 +1421,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.accent,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1432,7 +1432,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.accentButton,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1443,7 +1443,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.accentGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1454,7 +1454,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.accentLight,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1465,7 +1465,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.accentLightGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1476,7 +1476,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.accentDark,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1487,7 +1487,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.accentDarkGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1498,7 +1498,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.grey,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1509,7 +1509,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.greyGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1520,7 +1520,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.greyLight,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1531,7 +1531,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.greyLightGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1542,7 +1542,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.greyDark,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1553,7 +1553,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.greyDarkGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1564,7 +1564,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.info,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1575,7 +1575,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.infoGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1586,7 +1586,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.infoLight,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1597,7 +1597,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.infoLightGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1608,7 +1608,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.infoDark,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1619,7 +1619,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.infoDarkGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1630,7 +1630,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.success,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1641,7 +1641,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.successGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1652,7 +1652,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.successLight,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1663,7 +1663,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.successLightGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1674,7 +1674,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.successDark,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1685,7 +1685,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.successDarkGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1696,7 +1696,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.warning,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1707,7 +1707,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.warningGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1718,7 +1718,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.warningLight,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1729,7 +1729,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.warningLightGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1740,7 +1740,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.warningDark,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1751,7 +1751,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.warningDarkGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1762,7 +1762,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.danger,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1773,7 +1773,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.dangerGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1784,7 +1784,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.dangerLight,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1795,7 +1795,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.dangerLightGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1806,7 +1806,7 @@ class FCCircularIndicator {
 
     return FCBasicCircularIndicator(
       color: theme.dangerDark,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 
@@ -1817,7 +1817,7 @@ class FCCircularIndicator {
 
     return FCBasicGradientCircularIndicator(
       gradient: theme.dangerDarkGradient,
-      height: size.indicatorHeightLarge,
+      height: size.heightIndicatorLarge,
     );
   }
 }

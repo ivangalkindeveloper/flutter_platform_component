@@ -168,8 +168,8 @@ class _HomeScreenState extends State<HomeScreen> {
           position: badges.BadgePosition.topEnd(top: -12, end: -20),
           badgeContent: Text(
             'NEW',
-            style: TextStyle(
-                color: Colors.white, fontSize: 10, fontWeight: FontWeight.bold),
+            style:
+                TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.bold),
           ),
           child: Text(
             'music',
@@ -203,8 +203,7 @@ class _HomeScreenState extends State<HomeScreen> {
             badgeContent: Container(
               height: 3,
               width: 3,
-              decoration:
-                  BoxDecoration(shape: BoxShape.circle, color: Colors.white),
+              decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.white),
             ),
             child: Icon(Icons.settings),
           ),

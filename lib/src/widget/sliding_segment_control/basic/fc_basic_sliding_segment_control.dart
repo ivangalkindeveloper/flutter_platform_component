@@ -14,7 +14,7 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
     required this.thumbColor,
     required this.unselectedInternalColor,
     required this.selectedInternalColor,
-    this.iconHeight,
+    this.heightIcon,
     this.style,
     this.isDisabled = false,
     this.disabledColor,
@@ -28,7 +28,7 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
   final Color thumbColor;
   final Color unselectedInternalColor;
   final Color selectedInternalColor;
-  final double? iconHeight;
+  final double? heightIcon;
   final TextStyle? style;
   final bool isDisabled;
   final Color? disabledColor;
@@ -77,7 +77,7 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
                                 if (item.prefixIcon != null)
                                   Icon(
                                     item.prefixIcon,
-                                    size: this.iconHeight ?? size.iconHeightSmall,
+                                    size: this.heightIcon ?? size.heightIconSmall,
                                     color: this._internalColor(value: item.value),
                                   ),
                                 if (item.prefixIcon != null)
@@ -105,7 +105,7 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
                                 if (item.postfixIcon != null)
                                   Icon(
                                     item.postfixIcon,
-                                    size: this.iconHeight ?? size.iconHeightSmall,
+                                    size: this.heightIcon ?? size.heightIconSmall,
                                     color: this._internalColor(value: item.value),
                                   ),
                                 if (item.postfix != null) SizedBox(width: size.s16 / 2),

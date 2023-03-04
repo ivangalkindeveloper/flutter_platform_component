@@ -4,14 +4,14 @@ import 'package:flutter/widgets.dart';
 class FCDateRange {
   FCDateRange({
     required BuildContext context,
-    DateTime? minimumDate,
-    DateTime? currentDate,
-    DateTime? maximumDate,
-  })  : this.minimumDate = minimumDate ?? context.config.size.dateLower,
-        this.currentDate = currentDate ?? context.config.size.dateInitial,
-        this.maximumDate = maximumDate ?? context.config.size.dateUpper;
+    DateTime? dateMinimum,
+    DateTime? dateInitial,
+    DateTime? dateMaximum,
+  })  : this.dateMinimum = dateMinimum ?? context.config.size.dateMinimum,
+        this.dateInitial = dateInitial ?? context.config.size.dateInitial,
+        this.dateMaximum = dateMaximum ?? context.config.size.dateMaximum;
 
-  final DateTime minimumDate;
-  final DateTime currentDate;
-  final DateTime maximumDate;
+  final DateTime dateMinimum;
+  final DateTime dateInitial;
+  final DateTime dateMaximum;
 }

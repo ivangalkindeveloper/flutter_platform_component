@@ -22,10 +22,12 @@ class ScaffoldScreen extends StatelessWidget {
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
-          Center(
-            child: FCText.regular16Black(
-              context: context,
-              text: "Scaffold Body",
+          Expanded(
+            child: Center(
+              child: FCText.regular16Black(
+                context: context,
+                text: "Scaffold Body",
+              ),
             ),
           ),
         ],
@@ -39,11 +41,11 @@ class ScaffoldScreen extends StatelessWidget {
             label: "Bottom",
           ),
           FCBottomNavigationBarIconItem(
-            icon: Icons.all_out_rounded,
+            icon: Icons.accessibility_new_sharp,
             label: "Navigation",
           ),
           FCBottomNavigationBarIconItem(
-            icon: Icons.accessibility_new_sharp,
+            icon: Icons.all_out_rounded,
             label: "Bar",
           ),
         ],

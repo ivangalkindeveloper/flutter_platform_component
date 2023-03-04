@@ -18,7 +18,7 @@ class FCBasicGradientToggle<T> extends StatefulWidget {
     required this.selectedInternalGradient,
     required this.selectedSplashColor,
     this.horizontalInterval,
-    this.iconHeight,
+    this.heightIcon,
     this.style,
     this.isRequired = false,
     this.isDisabled = false,
@@ -36,7 +36,7 @@ class FCBasicGradientToggle<T> extends StatefulWidget {
   final Gradient selectedInternalGradient;
   final Color selectedSplashColor;
   final double? horizontalInterval;
-  final double? iconHeight;
+  final double? heightIcon;
   final TextStyle? style;
   final bool isRequired;
   final bool isDisabled;
@@ -131,7 +131,7 @@ class _FCBasicGradientToggleState extends State<FCBasicGradientToggle> {
                                   selectedInternalGradient:
                                       this.widget.selectedInternalGradient,
                                   selectedSplashColor: this.widget.selectedSplashColor,
-                                  iconHeight: this.widget.iconHeight,
+                                  heightIcon: this.widget.heightIcon,
                                   style: this.widget.style,
                                   isValidationError: this._isValidationError,
                                   onPressed: () {
@@ -182,7 +182,7 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
     required this.selectedBackgroundGradient,
     required this.selectedInternalGradient,
     required this.selectedSplashColor,
-    required this.iconHeight,
+    required this.heightIcon,
     required this.style,
     required this.isValidationError,
     required this.onPressed,
@@ -197,7 +197,7 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
   final Gradient selectedBackgroundGradient;
   final Gradient selectedInternalGradient;
   final Color selectedSplashColor;
-  final double? iconHeight;
+  final double? heightIcon;
   final TextStyle? style;
   final bool isValidationError;
   final VoidCallback onPressed;
@@ -258,7 +258,7 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
               gradient: this._internalGradient(theme: theme),
               child: Icon(
                 this.item.prefixIcon,
-                size: this.iconHeight ?? size.iconHeightSmall,
+                size: this.heightIcon ?? size.heightIconSmall,
                 color: theme.black,
               ),
             ),
@@ -287,7 +287,7 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
               gradient: this._internalGradient(theme: theme),
               child: Icon(
                 this.item.postfixIcon,
-                size: this.iconHeight ?? size.iconHeightSmall,
+                size: this.heightIcon ?? size.heightIconSmall,
                 color: theme.black,
               ),
             ),

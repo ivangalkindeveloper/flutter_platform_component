@@ -36,6 +36,14 @@ class FCDefaultSize implements IFCSize {
     required this.heightSlidingSegmentControl,
     // Height / Toggle
     required this.heightToggle,
+    // Height / Icon
+    required this.heightIconSmall,
+    required this.heightIconDefault,
+    required this.heightIconLarge,
+    // Height / Indicator
+    required this.heightIndicatorSmall,
+    required this.heightIndicatorDefault,
+    required this.heightIndicatorLarge,
 
     // BorderRadius
     // BorderRadius / Button
@@ -80,20 +88,10 @@ class FCDefaultSize implements IFCSize {
     required this.borderWidthSnackbarCupertino,
     required this.borderWidthSnackbarMaterial,
 
-    // Icon
-    required this.iconHeightSmall,
-    required this.iconHeightDefault,
-    required this.iconHeightLarge,
-
-    // Indicator
-    required this.indicatorHeightSmall,
-    required this.indicatorHeightDefault,
-    required this.indicatorHeightLarge,
-
     // DateTime
-    required this.dateLower,
+    required this.dateMinimum,
     required this.dateInitial,
-    required this.dateUpper,
+    required this.dateMaximum,
 
     // Duration
     // Duration / Default
@@ -167,6 +165,20 @@ class FCDefaultSize implements IFCSize {
   // Height / Toggle
   @override
   final double heightToggle;
+  // Height / Icon
+  @override
+  final double heightIconSmall;
+  @override
+  final double heightIconDefault;
+  @override
+  final double heightIconLarge;
+  // Height / Indicator
+  @override
+  final double heightIndicatorSmall;
+  @override
+  final double heightIndicatorDefault;
+  @override
+  final double heightIndicatorLarge;
 
   // BorderRadius
   // BorderRadius / Button
@@ -237,29 +249,13 @@ class FCDefaultSize implements IFCSize {
   @override
   final double borderWidthSnackbarMaterial;
 
-  // Icon
-  @override
-  final double iconHeightSmall;
-  @override
-  final double iconHeightDefault;
-  @override
-  final double iconHeightLarge;
-
-  // Indicator
-  @override
-  final double indicatorHeightSmall;
-  @override
-  final double indicatorHeightDefault;
-  @override
-  final double indicatorHeightLarge;
-
   // DateTime
   @override
-  final DateTime dateLower;
+  final DateTime dateMinimum;
   @override
   final DateTime dateInitial;
   @override
-  final DateTime dateUpper;
+  final DateTime dateMaximum;
 
   // Duration
   // Duration / Animation
@@ -324,6 +320,14 @@ class FCDefaultSize implements IFCSize {
     double? heightSlidingSegmentControl,
     // Height / Toggle
     double? heightToggle,
+    // Height / Icon
+    double? heightIconSmall,
+    double? heightIconDefault,
+    double? heightIconLarge,
+    // Height / Indicator
+    double? heightIndicatorSmall,
+    double? heightIndicatorDefault,
+    double? heightIndicatorLarge,
 
     // BorderRadius
     // BorderRadius / Button
@@ -368,20 +372,10 @@ class FCDefaultSize implements IFCSize {
     double? borderWidthSnackbarCupertino,
     double? borderWidthSnackbarMaterial,
 
-    // Icon
-    double? iconHeightSmall,
-    double? iconHeightDefault,
-    double? iconHeightLarge,
-
-    // Indicator
-    double? indicatorHeightSmall,
-    double? indicatorHeightDefault,
-    double? indicatorHeightLarge,
-
     // DateTime
-    DateTime? dateLower,
+    DateTime? dateMinimum,
     DateTime? dateInitial,
-    DateTime? dateUpper,
+    DateTime? dateMaximum,
 
     // Duration
     // Duration / Default
@@ -438,6 +432,14 @@ class FCDefaultSize implements IFCSize {
             heightSlidingSegmentControl ?? this.heightSlidingSegmentControl,
         // Height / Toggle
         heightToggle: heightToggle ?? this.heightToggle,
+        // Height / Icon
+        heightIconSmall: heightIconSmall ?? this.heightIconSmall,
+        heightIconDefault: heightIconDefault ?? this.heightIconDefault,
+        heightIconLarge: heightIconLarge ?? this.heightIconLarge,
+        // Height / Indicator
+        heightIndicatorSmall: heightIndicatorSmall ?? this.heightIndicatorSmall,
+        heightIndicatorDefault: heightIndicatorDefault ?? this.heightIndicatorDefault,
+        heightIndicatorLarge: heightIndicatorLarge ?? this.heightIndicatorLarge,
 
         // BorderRadius
         // BorderRadius / Button
@@ -507,20 +509,10 @@ class FCDefaultSize implements IFCSize {
         borderWidthSnackbarMaterial:
             borderWidthSnackbarMaterial ?? this.borderWidthSnackbarMaterial,
 
-        // Icon
-        iconHeightSmall: iconHeightSmall ?? this.iconHeightSmall,
-        iconHeightDefault: iconHeightDefault ?? this.iconHeightDefault,
-        iconHeightLarge: iconHeightLarge ?? this.iconHeightLarge,
-
-        // Indicator
-        indicatorHeightSmall: indicatorHeightSmall ?? this.indicatorHeightSmall,
-        indicatorHeightDefault: indicatorHeightDefault ?? this.indicatorHeightDefault,
-        indicatorHeightLarge: indicatorHeightLarge ?? this.indicatorHeightLarge,
-
         // DateTime
-        dateLower: dateLower ?? this.dateLower,
+        dateMinimum: dateMinimum ?? this.dateMinimum,
         dateInitial: dateInitial ?? this.dateInitial,
-        dateUpper: dateUpper ?? this.dateUpper,
+        dateMaximum: dateMaximum ?? this.dateMaximum,
 
         // Duration
         // Duration / Default
@@ -583,6 +575,14 @@ class FCDefaultSize implements IFCSize {
         heightSlidingSegmentControl: 36,
         // Height / Toggle
         heightToggle: 36,
+        // Height / Icon
+        heightIconSmall: 16,
+        heightIconDefault: 24,
+        heightIconLarge: 32,
+        // Height / Indicator
+        heightIndicatorSmall: 16,
+        heightIndicatorDefault: 24,
+        heightIndicatorLarge: 32,
 
         // BorderRadius
         // BorderRadius / Button
@@ -627,20 +627,10 @@ class FCDefaultSize implements IFCSize {
         borderWidthSnackbarCupertino: 1,
         borderWidthSnackbarMaterial: 1,
 
-        // Icon
-        iconHeightSmall: 16,
-        iconHeightDefault: 24,
-        iconHeightLarge: 32,
-
-        // Indicator
-        indicatorHeightSmall: 16,
-        indicatorHeightDefault: 24,
-        indicatorHeightLarge: 32,
-
         // DateTime
-        dateLower: DateTime(1900, 1, 1),
+        dateMinimum: DateTime(1900, 1, 1),
         dateInitial: DateTime(2000, 1, 1),
-        dateUpper: DateTime(2100, 1, 1),
+        dateMaximum: DateTime(2100, 1, 1),
 
         // Duration
         // Duration / Animation

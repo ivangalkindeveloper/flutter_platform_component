@@ -36,6 +36,14 @@ abstract class IFCSize {
   abstract final double heightSlidingSegmentControl;
   // Height / Toggle
   abstract final double heightToggle;
+  // Height / Icon
+  abstract final double heightIconSmall;
+  abstract final double heightIconDefault;
+  abstract final double heightIconLarge;
+  // Height / Indicator
+  abstract final double heightIndicatorSmall;
+  abstract final double heightIndicatorDefault;
+  abstract final double heightIndicatorLarge;
 
   // BorderRadius
   // BorderRadius / Button
@@ -80,20 +88,10 @@ abstract class IFCSize {
   abstract final double borderWidthSnackbarCupertino;
   abstract final double borderWidthSnackbarMaterial;
 
-  // Icon
-  abstract final double iconHeightSmall;
-  abstract final double iconHeightDefault;
-  abstract final double iconHeightLarge;
-
-  // Indicator
-  abstract final double indicatorHeightSmall;
-  abstract final double indicatorHeightDefault;
-  abstract final double indicatorHeightLarge;
-
   // DateTime
-  abstract final DateTime dateLower;
+  abstract final DateTime dateMinimum;
   abstract final DateTime dateInitial;
-  abstract final DateTime dateUpper;
+  abstract final DateTime dateMaximum;
 
   // Duration
   // Duration / Animation

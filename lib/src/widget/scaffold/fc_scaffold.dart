@@ -28,7 +28,6 @@ class FCScaffold extends FCPlatformWidget {
         );
 }
 
-//TODO Проверить с клавой
 class _FCScaffoldCupertino extends StatelessWidget {
   const _FCScaffoldCupertino({
     super.key,

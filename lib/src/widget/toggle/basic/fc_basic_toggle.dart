@@ -18,7 +18,7 @@ class FCBasicToggle<T> extends StatefulWidget {
     required this.selectedInternalColor,
     required this.selectedSplashColor,
     this.horizontalInterval,
-    this.iconHeight,
+    this.heightIcon,
     this.style,
     this.isRequired = false,
     this.isDisabled = false,
@@ -36,7 +36,7 @@ class FCBasicToggle<T> extends StatefulWidget {
   final Color selectedInternalColor;
   final Color selectedSplashColor;
   final double? horizontalInterval;
-  final double? iconHeight;
+  final double? heightIcon;
   final TextStyle? style;
   final bool isRequired;
   final bool isDisabled;
@@ -131,7 +131,7 @@ class _FCBasicToggleState extends State<FCBasicToggle> {
                                   selectedInternalColor:
                                       this.widget.selectedInternalColor,
                                   selectedSplashColor: this.widget.selectedSplashColor,
-                                  iconHeight: this.widget.iconHeight,
+                                  heightIcon: this.widget.heightIcon,
                                   style: this.widget.style,
                                   isValidationError: this._isValidationError,
                                   onPressed: () {
@@ -182,7 +182,7 @@ class _FCToggleButton<T> extends StatelessWidget {
     required this.selectedInternalColor,
     required this.unselectedSplashColor,
     required this.selectedSplashColor,
-    required this.iconHeight,
+    required this.heightIcon,
     required this.style,
     required this.isValidationError,
     required this.onPressed,
@@ -197,7 +197,7 @@ class _FCToggleButton<T> extends StatelessWidget {
   final Color selectedBackgroundColor;
   final Color selectedInternalColor;
   final Color selectedSplashColor;
-  final double? iconHeight;
+  final double? heightIcon;
   final TextStyle? style;
   final bool isValidationError;
   final VoidCallback onPressed;
@@ -246,7 +246,7 @@ class _FCToggleButton<T> extends StatelessWidget {
           if (this.item.prefixIcon != null)
             Icon(
               this.item.prefixIcon,
-              size: this.iconHeight ?? size.iconHeightSmall,
+              size: this.heightIcon ?? size.heightIconSmall,
               color: this._internalColor(theme: theme),
             ),
           if (this.item.prefixIcon != null) SizedBox(width: size.s16 / 2),
@@ -269,7 +269,7 @@ class _FCToggleButton<T> extends StatelessWidget {
           if (this.item.postfixIcon != null)
             Icon(
               this.item.postfixIcon,
-              size: this.iconHeight ?? size.iconHeightSmall,
+              size: this.heightIcon ?? size.heightIconSmall,
               color: this._internalColor(theme: theme),
             ),
           if (this.item.postfix != null) SizedBox(width: size.s16 / 2),
