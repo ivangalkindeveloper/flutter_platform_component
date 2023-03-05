@@ -16,6 +16,9 @@ class FCDefaultTextStyle implements IFCTextStyle {
     required this.fontFamilyMedium,
     required this.fontFamilySemiBold,
     required this.fontFamilyBold,
+
+    // Package
+    required this.package,
   });
 
   // FontWeight
@@ -42,6 +45,10 @@ class FCDefaultTextStyle implements IFCTextStyle {
   @override
   final String? fontFamilyBold;
 
+  // Package
+  @override
+  final String? package;
+
   @override
   IFCTextStyle copyWith({
     // FontWeight
@@ -57,6 +64,9 @@ class FCDefaultTextStyle implements IFCTextStyle {
     String? fontFamilyMedium,
     String? fontFamilySemiBold,
     String? fontFamilyBold,
+
+    // Package
+    String? package,
   }) =>
       FCDefaultTextStyle(
         // FontWeight
@@ -72,6 +82,9 @@ class FCDefaultTextStyle implements IFCTextStyle {
         fontFamilyMedium: fontFamilyMedium ?? this.fontFamilyMedium,
         fontFamilySemiBold: fontFamilySemiBold ?? this.fontFamilySemiBold,
         fontFamilyBold: fontFamilyBold ?? this.fontFamilyBold,
+
+        // Package
+        package: package ?? this.package,
       );
 
   static IFCTextStyle get defaultTextStyle => FCDefaultTextStyle(
@@ -88,5 +101,8 @@ class FCDefaultTextStyle implements IFCTextStyle {
         fontFamilyMedium: null,
         fontFamilySemiBold: null,
         fontFamilyBold: null,
+
+        // Package
+        package: null,
       );
 }

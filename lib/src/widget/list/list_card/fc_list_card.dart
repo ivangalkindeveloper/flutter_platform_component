@@ -123,14 +123,22 @@ class FCListCard extends StatelessWidget {
                           child: Text(
                             item.title,
                             textAlign: TextAlign.start,
-                            style: TextStyle(
-                              color: this.style?.color ?? theme.black,
-                              fontSize: this.style?.fontSize ?? size.s16,
-                              fontWeight:
-                                  this.style?.fontWeight ?? textStyle.fontWeightMedium,
-                              fontFamily:
-                                  this.style?.fontFamily ?? textStyle.fontFamilyMedium,
-                            ),
+                            style: this.style?.copyWith(
+                                      color: this.style?.color ?? theme.black,
+                                      fontSize: this.style?.fontSize ?? size.s16,
+                                      fontWeight: this.style?.fontWeight ??
+                                          textStyle.fontWeightMedium,
+                                      fontFamily: this.style?.fontFamily ??
+                                          textStyle.fontFamilyMedium,
+                                      package: textStyle.package,
+                                    ) ??
+                                TextStyle(
+                                  color: theme.black,
+                                  fontSize: size.s16,
+                                  fontWeight: textStyle.fontWeightMedium,
+                                  fontFamily: textStyle.fontFamilyMedium,
+                                  package: textStyle.package,
+                                ),
                           ),
                         ),
                         if (item.postfix != null) SizedBox(width: size.s16 / 2),

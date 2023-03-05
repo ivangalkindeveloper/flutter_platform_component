@@ -37,12 +37,14 @@ class FCBlackCounterBadge extends StatelessWidget {
             fontSize: style?.fontSize ?? size.s14,
             fontWeight: style?.fontWeight ?? textStyle.fontWeightRegular,
             fontFamily: style?.fontFamily ?? textStyle.fontFamilyRegular,
+            package: textStyle.package,
           ) ??
           TextStyle(
             color: context.config.theme.white,
             fontSize: size.s14,
             fontWeight: textStyle.fontWeightRegular,
             fontFamily: textStyle.fontFamilyRegular,
+            package: textStyle.package,
           ),
       position: this.position,
       child: this.child,

@@ -62,12 +62,14 @@ class _FCDialogCupertino extends StatelessWidget {
                   fontSize: this.titleStyle?.fontSize ?? size.s16,
                   fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
                   fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+                  package: textStyle.package,
                 ) ??
             TextStyle(
               color: theme.blackAlways,
               fontSize: size.s16,
               fontWeight: textStyle.fontWeightMedium,
               fontFamily: textStyle.fontFamilyMedium,
+              package: textStyle.package,
             ),
       ),
       content: Text(
@@ -77,12 +79,14 @@ class _FCDialogCupertino extends StatelessWidget {
                   fontSize: this.titleStyle?.fontSize ?? size.s14,
                   fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
                   fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+                  package: textStyle.package,
                 ) ??
             TextStyle(
               color: theme.blackAlways,
               fontSize: size.s14,
               fontWeight: textStyle.fontWeightRegular,
               fontFamily: textStyle.fontFamilyRegular,
+              package: textStyle.package,
             ),
       ),
       actions: this.items,
@@ -126,12 +130,14 @@ class _FCDialogMaterial extends StatelessWidget {
                   fontSize: this.titleStyle?.fontSize ?? size.s16,
                   fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
                   fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+                  package: textStyle.package,
                 ) ??
             TextStyle(
               color: theme.blackAlways,
               fontSize: size.s16,
               fontWeight: textStyle.fontWeightMedium,
               fontFamily: textStyle.fontFamilyMedium,
+              package: textStyle.package,
             ),
       ),
       content: Text(
@@ -141,12 +147,14 @@ class _FCDialogMaterial extends StatelessWidget {
                   fontSize: this.titleStyle?.fontSize ?? size.s14,
                   fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
                   fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+                  package: textStyle.package,
                 ) ??
             TextStyle(
               color: theme.blackAlways,
               fontSize: size.s14,
               fontWeight: textStyle.fontWeightRegular,
               fontFamily: textStyle.fontFamilyRegular,
+              package: textStyle.package,
             ),
       ),
       actions: this.items,

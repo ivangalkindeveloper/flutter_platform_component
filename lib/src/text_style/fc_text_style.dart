@@ -17,5 +17,8 @@ abstract class IFCTextStyle {
   abstract final String? fontFamilySemiBold;
   abstract final String? fontFamilyBold;
 
+  // Package
+  abstract final String? package;
+
   IFCTextStyle copyWith();
 }

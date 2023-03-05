@@ -32,6 +32,7 @@ class FCSecondaryGradientLabelButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientButton(
@@ -48,9 +49,11 @@ class FCSecondaryGradientLabelButton extends StatelessWidget {
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
                     color: this.style?.color ?? theme.secondary,
+                    package: textStyle.package,
                   ) ??
               TextStyle(
                 color: theme.secondary,
+                package: textStyle.package,
               ),
           postfix: this.postfix,
           isExpanded: this.isExpanded,

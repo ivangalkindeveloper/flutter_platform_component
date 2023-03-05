@@ -16,6 +16,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -30,6 +31,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -44,6 +46,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -58,6 +61,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -72,6 +76,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -86,6 +91,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -100,6 +106,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -114,6 +121,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -128,6 +136,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -142,6 +151,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -156,6 +166,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -170,6 +181,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -184,6 +196,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -198,6 +211,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -212,6 +226,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -226,6 +241,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -240,6 +256,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -254,6 +271,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -268,6 +286,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -282,6 +301,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -296,6 +316,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -310,6 +331,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -324,6 +346,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -338,6 +361,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -352,6 +376,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -366,6 +391,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -380,6 +406,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -394,6 +421,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -408,6 +436,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -422,6 +451,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -436,6 +466,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -451,6 +482,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -465,6 +497,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -479,6 +512,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -493,6 +527,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -507,6 +542,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -521,6 +557,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -535,6 +572,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -549,6 +587,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -563,6 +602,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -577,6 +617,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -591,6 +632,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -605,6 +647,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -619,6 +662,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -633,6 +677,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -647,6 +692,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -661,6 +707,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -675,6 +722,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -689,6 +737,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -703,6 +752,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -717,6 +767,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -731,6 +782,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -745,6 +797,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -759,6 +812,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -773,6 +827,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -787,6 +842,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -801,6 +857,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -815,6 +872,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -829,6 +887,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -843,6 +902,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -857,6 +917,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -871,6 +932,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -886,6 +948,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -900,6 +963,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -914,6 +978,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -928,6 +993,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -942,6 +1008,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -956,6 +1023,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -970,6 +1038,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -984,6 +1053,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -998,6 +1068,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1012,6 +1083,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1026,6 +1098,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1040,6 +1113,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1054,6 +1128,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1068,6 +1143,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1082,6 +1158,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1096,6 +1173,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1110,6 +1188,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1124,6 +1203,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1138,6 +1218,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1152,6 +1233,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1166,6 +1248,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1180,6 +1263,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1194,6 +1278,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1208,6 +1293,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1222,6 +1308,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1236,6 +1323,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1250,6 +1338,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1264,6 +1353,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1278,6 +1368,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1292,6 +1383,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1306,6 +1398,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1321,6 +1414,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1335,6 +1429,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1349,6 +1444,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1363,6 +1459,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1377,6 +1474,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1391,6 +1489,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1405,6 +1504,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1419,6 +1519,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1433,6 +1534,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1447,6 +1549,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1461,6 +1564,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1475,6 +1579,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1489,6 +1594,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1503,6 +1609,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1517,6 +1624,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1531,6 +1639,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1545,6 +1654,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1559,6 +1669,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1573,6 +1684,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1587,6 +1699,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1601,6 +1714,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1615,6 +1729,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1629,6 +1744,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1643,6 +1759,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1657,6 +1774,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1671,6 +1789,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1685,6 +1804,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1699,6 +1819,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1713,6 +1834,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1727,6 +1849,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1741,6 +1864,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1756,6 +1880,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1770,6 +1895,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1784,6 +1910,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1798,6 +1925,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1812,6 +1940,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1826,6 +1955,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1840,6 +1970,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1854,6 +1985,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1868,6 +2000,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1882,6 +2015,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1896,6 +2030,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1910,6 +2045,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1924,6 +2060,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1938,6 +2075,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1952,6 +2090,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1966,6 +2105,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1980,6 +2120,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -1994,6 +2135,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2008,6 +2150,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2022,6 +2165,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2036,6 +2180,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2050,6 +2195,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2064,6 +2210,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2078,6 +2225,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2092,6 +2240,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2106,6 +2255,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2120,6 +2270,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2134,6 +2285,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2148,6 +2300,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2162,6 +2315,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2176,6 +2330,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2191,6 +2346,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2205,6 +2361,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2219,6 +2376,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2233,6 +2391,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2247,6 +2406,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2261,6 +2421,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2275,6 +2436,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2289,6 +2451,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2303,6 +2466,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2317,6 +2481,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2331,6 +2496,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2345,6 +2511,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2359,6 +2526,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2373,6 +2541,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2387,6 +2556,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2401,6 +2571,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2415,6 +2586,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2429,6 +2601,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2443,6 +2616,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2457,6 +2631,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2471,6 +2646,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2485,6 +2661,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2499,6 +2676,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2513,6 +2691,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2527,6 +2706,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2541,6 +2721,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2555,6 +2736,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2569,6 +2751,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2583,6 +2766,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2597,6 +2781,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2611,6 +2796,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2626,6 +2812,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2640,6 +2827,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2654,6 +2842,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2668,6 +2857,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2682,6 +2872,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2696,6 +2887,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2710,6 +2902,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2724,6 +2917,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2738,6 +2932,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2752,6 +2947,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2766,6 +2962,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2780,6 +2977,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2794,6 +2992,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2808,6 +3007,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2822,6 +3022,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2836,6 +3037,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2850,6 +3052,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2864,6 +3067,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2878,6 +3082,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2892,6 +3097,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2906,6 +3112,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2920,6 +3127,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2934,6 +3142,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2948,6 +3157,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2962,6 +3172,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2976,6 +3187,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -2990,6 +3202,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3004,6 +3217,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3018,6 +3232,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3032,6 +3247,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3046,6 +3262,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3061,6 +3278,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3075,6 +3293,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3089,6 +3308,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3103,6 +3323,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3117,6 +3338,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3131,6 +3353,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3145,6 +3368,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3159,6 +3383,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3173,6 +3398,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3187,6 +3413,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3201,6 +3428,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3215,6 +3443,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3229,6 +3458,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3243,6 +3473,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3257,6 +3488,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3271,6 +3503,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3285,6 +3518,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3299,6 +3533,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3313,6 +3548,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3327,6 +3563,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3341,6 +3578,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3355,6 +3593,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3369,6 +3608,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3383,6 +3623,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3397,6 +3638,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3411,6 +3653,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3425,6 +3668,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3439,6 +3683,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3453,6 +3698,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3467,6 +3713,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3481,6 +3728,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightThin,
       fontFamily: textStyle.fontFamilyThin,
+      package: textStyle.package,
     );
   }
 
@@ -3497,6 +3745,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3511,6 +3760,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3525,6 +3775,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3539,6 +3790,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3553,6 +3805,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3567,6 +3820,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3581,6 +3835,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3595,6 +3850,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3609,6 +3865,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3623,6 +3880,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3637,6 +3895,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3651,6 +3910,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3665,6 +3925,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3679,6 +3940,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3693,6 +3955,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3707,6 +3970,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3721,6 +3985,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3735,6 +4000,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3749,6 +4015,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3763,6 +4030,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3777,6 +4045,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3791,6 +4060,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3805,6 +4075,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3819,6 +4090,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3833,6 +4105,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3847,6 +4120,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3861,6 +4135,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3875,6 +4150,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3889,6 +4165,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3903,6 +4180,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3917,6 +4195,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3932,6 +4211,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3946,6 +4226,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3960,6 +4241,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3974,6 +4256,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -3988,6 +4271,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4002,6 +4286,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4016,6 +4301,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4030,6 +4316,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4044,6 +4331,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4058,6 +4346,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4072,6 +4361,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4086,6 +4376,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4100,6 +4391,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4114,6 +4406,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4128,6 +4421,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4142,6 +4436,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4156,6 +4451,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4170,6 +4466,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4184,6 +4481,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4198,6 +4496,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4212,6 +4511,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4226,6 +4526,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4240,6 +4541,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4254,6 +4556,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4268,6 +4571,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4282,6 +4586,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4296,6 +4601,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4310,6 +4616,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4324,6 +4631,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4338,6 +4646,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4352,6 +4661,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4367,6 +4677,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4381,6 +4692,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4395,6 +4707,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4409,6 +4722,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4423,6 +4737,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4437,6 +4752,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4451,6 +4767,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4465,6 +4782,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4479,6 +4797,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4493,6 +4812,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4507,6 +4827,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4521,6 +4842,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4535,6 +4857,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4549,6 +4872,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4563,6 +4887,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4577,6 +4902,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4591,6 +4917,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4605,6 +4932,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4619,6 +4947,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4633,6 +4962,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4647,6 +4977,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4661,6 +4992,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4675,6 +5007,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4689,6 +5022,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4703,6 +5037,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4717,6 +5052,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4731,6 +5067,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4745,6 +5082,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4759,6 +5097,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4773,6 +5112,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4787,6 +5127,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4802,6 +5143,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4816,6 +5158,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4830,6 +5173,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4844,6 +5188,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4858,6 +5203,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4872,6 +5218,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4886,6 +5233,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4900,6 +5248,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4914,6 +5263,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4928,6 +5278,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4942,6 +5293,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4956,6 +5308,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4970,6 +5323,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4984,6 +5338,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -4998,6 +5353,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5012,6 +5368,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5026,6 +5383,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5040,6 +5398,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5054,6 +5413,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5068,6 +5428,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5082,6 +5443,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5096,6 +5458,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5110,6 +5473,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5124,6 +5488,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5138,6 +5503,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5152,6 +5518,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5166,6 +5533,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5180,6 +5548,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5194,6 +5563,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5208,6 +5578,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5222,6 +5593,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5237,6 +5609,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5251,6 +5624,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5265,6 +5639,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5279,6 +5654,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5293,6 +5669,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5307,6 +5684,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5321,6 +5699,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5335,6 +5714,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5349,6 +5729,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5363,6 +5744,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5377,6 +5759,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5391,6 +5774,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5405,6 +5789,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5419,6 +5804,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5433,6 +5819,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5447,6 +5834,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5461,6 +5849,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5475,6 +5864,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5489,6 +5879,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5503,6 +5894,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5517,6 +5909,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5531,6 +5924,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5545,6 +5939,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5559,6 +5954,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5573,6 +5969,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5587,6 +5984,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5601,6 +5999,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5615,6 +6014,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5629,6 +6029,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5643,6 +6044,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5657,6 +6059,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5672,6 +6075,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5686,6 +6090,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5700,6 +6105,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5714,6 +6120,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5728,6 +6135,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5742,6 +6150,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5756,6 +6165,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5770,6 +6180,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5784,6 +6195,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5798,6 +6210,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5812,6 +6225,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5826,6 +6240,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5840,6 +6255,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5854,6 +6270,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5868,6 +6285,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5882,6 +6300,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5896,6 +6315,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5910,6 +6330,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5924,6 +6345,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5938,6 +6360,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5952,6 +6375,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5966,6 +6390,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5980,6 +6405,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -5994,6 +6420,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6008,6 +6435,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6022,6 +6450,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6036,6 +6465,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6050,6 +6480,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6064,6 +6495,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6078,6 +6510,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6092,6 +6525,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6107,6 +6541,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6121,6 +6556,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6135,6 +6571,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6149,6 +6586,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6163,6 +6601,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6177,6 +6616,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6191,6 +6631,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6205,6 +6646,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6219,6 +6661,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6233,6 +6676,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6247,6 +6691,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6261,6 +6706,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6275,6 +6721,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6289,6 +6736,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6303,6 +6751,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6317,6 +6766,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6331,6 +6781,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6345,6 +6796,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6359,6 +6811,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6373,6 +6826,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6387,6 +6841,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6401,6 +6856,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6415,6 +6871,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6429,6 +6886,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6443,6 +6901,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6457,6 +6916,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6471,6 +6931,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6485,6 +6946,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6499,6 +6961,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6513,6 +6976,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6527,6 +6991,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6542,6 +7007,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6556,6 +7022,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6570,6 +7037,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6584,6 +7052,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6598,6 +7067,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6612,6 +7082,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6626,6 +7097,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6640,6 +7112,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6654,6 +7127,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6668,6 +7142,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6682,6 +7157,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6696,6 +7172,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6710,6 +7187,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6724,6 +7202,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6738,6 +7217,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6752,6 +7232,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6766,6 +7247,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6780,6 +7262,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6794,6 +7277,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6808,6 +7292,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6822,6 +7307,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6836,6 +7322,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6850,6 +7337,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6864,6 +7352,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6878,6 +7367,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6892,6 +7382,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6906,6 +7397,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6920,6 +7412,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6934,6 +7427,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6948,6 +7442,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6962,6 +7457,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightRegular,
       fontFamily: textStyle.fontFamilyRegular,
+      package: textStyle.package,
     );
   }
 
@@ -6978,6 +7474,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -6992,6 +7489,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7006,6 +7504,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7020,6 +7519,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7034,6 +7534,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7048,6 +7549,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7062,6 +7564,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7076,6 +7579,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7090,6 +7594,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7104,6 +7609,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7118,6 +7624,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7132,6 +7639,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7146,6 +7654,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7160,6 +7669,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7174,6 +7684,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7188,6 +7699,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7202,6 +7714,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7216,6 +7729,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7230,6 +7744,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7244,6 +7759,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7258,6 +7774,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7272,6 +7789,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7286,6 +7804,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7300,6 +7819,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7314,6 +7834,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7328,6 +7849,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7342,6 +7864,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7356,6 +7879,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7370,6 +7894,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7384,6 +7909,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7398,6 +7924,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7413,6 +7940,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7427,6 +7955,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7441,6 +7970,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7455,6 +7985,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7469,6 +8000,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7483,6 +8015,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7497,6 +8030,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7511,6 +8045,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7525,6 +8060,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7539,6 +8075,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7553,6 +8090,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7567,6 +8105,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7581,6 +8120,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7595,6 +8135,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7609,6 +8150,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7623,6 +8165,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7637,6 +8180,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7651,6 +8195,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7665,6 +8210,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7679,6 +8225,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7693,6 +8240,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7707,6 +8255,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7721,6 +8270,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7735,6 +8285,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7749,6 +8300,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7763,6 +8315,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7777,6 +8330,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7791,6 +8345,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7805,6 +8360,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7819,6 +8375,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7833,6 +8390,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7848,6 +8406,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7862,6 +8421,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7876,6 +8436,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7890,6 +8451,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7904,6 +8466,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7918,6 +8481,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7932,6 +8496,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7946,6 +8511,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7960,6 +8526,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7974,6 +8541,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -7988,6 +8556,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8002,6 +8571,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8016,6 +8586,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8030,6 +8601,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8044,6 +8616,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8058,6 +8631,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8072,6 +8646,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8086,6 +8661,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8100,6 +8676,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8114,6 +8691,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8128,6 +8706,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8142,6 +8721,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8156,6 +8736,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8170,6 +8751,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8184,6 +8766,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8198,6 +8781,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8212,6 +8796,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8226,6 +8811,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8240,6 +8826,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8254,6 +8841,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8268,6 +8856,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8283,6 +8872,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8297,6 +8887,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8311,6 +8902,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8325,6 +8917,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8339,6 +8932,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8353,6 +8947,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8367,6 +8962,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8381,6 +8977,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8395,6 +8992,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8409,6 +9007,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8423,6 +9022,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8437,6 +9037,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8451,6 +9052,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8465,6 +9067,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8479,6 +9082,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8493,6 +9097,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8507,6 +9112,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8521,6 +9127,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8535,6 +9142,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8549,6 +9157,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8563,6 +9172,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8577,6 +9187,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8591,6 +9202,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8605,6 +9217,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8619,6 +9232,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8633,6 +9247,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8647,6 +9262,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8661,6 +9277,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8675,6 +9292,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8689,6 +9307,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8703,6 +9322,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8718,6 +9338,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8732,6 +9353,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8746,6 +9368,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8760,6 +9383,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8774,6 +9398,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8788,6 +9413,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8802,6 +9428,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8816,6 +9443,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8830,6 +9458,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8844,6 +9473,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8858,6 +9488,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8872,6 +9503,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8886,6 +9518,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8900,6 +9533,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8914,6 +9548,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8928,6 +9563,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8942,6 +9578,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8956,6 +9593,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8970,6 +9608,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8984,6 +9623,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -8998,6 +9638,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9012,6 +9653,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9026,6 +9668,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9040,6 +9683,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9054,6 +9698,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9068,6 +9713,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9082,6 +9728,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9096,6 +9743,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9110,6 +9758,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9124,6 +9773,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9138,6 +9788,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9153,6 +9804,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9167,6 +9819,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9181,6 +9834,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9195,6 +9849,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9209,6 +9864,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9223,6 +9879,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9237,6 +9894,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9251,6 +9909,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9265,6 +9924,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9279,6 +9939,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9293,6 +9954,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9307,6 +9969,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9321,6 +9984,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9335,6 +9999,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9349,6 +10014,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9363,6 +10029,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9377,6 +10044,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9391,6 +10059,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9405,6 +10074,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9419,6 +10089,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9433,6 +10104,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9447,6 +10119,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9461,6 +10134,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9475,6 +10149,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9489,6 +10164,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9503,6 +10179,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9517,6 +10194,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9531,6 +10209,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9545,6 +10224,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9559,6 +10239,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9573,6 +10254,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9588,6 +10270,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9602,6 +10285,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9616,6 +10300,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9630,6 +10315,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9644,6 +10330,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9658,6 +10345,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9672,6 +10360,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9686,6 +10375,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9700,6 +10390,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9714,6 +10405,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9728,6 +10420,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9742,6 +10435,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9756,6 +10450,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9770,6 +10465,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9784,6 +10480,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9798,6 +10495,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9812,6 +10510,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9826,6 +10525,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9840,6 +10540,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9854,6 +10555,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9868,6 +10570,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9882,6 +10585,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9896,6 +10600,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9910,6 +10615,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9924,6 +10630,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9938,6 +10645,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9952,6 +10660,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9966,6 +10675,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9980,6 +10690,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -9994,6 +10705,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10008,6 +10720,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10023,6 +10736,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10037,6 +10751,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10051,6 +10766,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10065,6 +10781,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10079,6 +10796,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10093,6 +10811,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10107,6 +10826,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10121,6 +10841,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10135,6 +10856,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10149,6 +10871,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10163,6 +10886,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10177,6 +10901,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10191,6 +10916,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10205,6 +10931,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10219,6 +10946,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10233,6 +10961,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10247,6 +10976,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10261,6 +10991,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10275,6 +11006,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10289,6 +11021,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10303,6 +11036,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10317,6 +11051,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10331,6 +11066,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10345,6 +11081,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10359,6 +11096,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10373,6 +11111,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10387,6 +11126,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10401,6 +11141,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10415,6 +11156,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10429,6 +11171,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10443,6 +11186,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightMedium,
       fontFamily: textStyle.fontFamilyMedium,
+      package: textStyle.package,
     );
   }
 
@@ -10459,6 +11203,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10473,6 +11218,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10487,6 +11233,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10501,6 +11248,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10515,6 +11263,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10529,6 +11278,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10543,6 +11293,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10557,6 +11308,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10571,6 +11323,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10585,6 +11338,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10599,6 +11353,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10613,6 +11368,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10627,6 +11383,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10641,6 +11398,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10655,6 +11413,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10669,6 +11428,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10683,6 +11443,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10697,6 +11458,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10711,6 +11473,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10725,6 +11488,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10739,6 +11503,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10753,6 +11518,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10767,6 +11533,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10781,6 +11548,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10795,6 +11563,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10809,6 +11578,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10823,6 +11593,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10837,6 +11608,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10851,6 +11623,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10865,6 +11638,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10879,6 +11653,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10894,6 +11669,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10908,6 +11684,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10922,6 +11699,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10936,6 +11714,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10950,6 +11729,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10964,6 +11744,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10978,6 +11759,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -10992,6 +11774,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11006,6 +11789,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11020,6 +11804,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11034,6 +11819,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11048,6 +11834,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11062,6 +11849,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11076,6 +11864,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11090,6 +11879,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11104,6 +11894,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11118,6 +11909,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11132,6 +11924,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11146,6 +11939,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11160,6 +11954,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11174,6 +11969,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11188,6 +11984,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11202,6 +11999,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11216,6 +12014,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11230,6 +12029,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11244,6 +12044,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11258,6 +12059,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11272,6 +12074,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11286,6 +12089,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11300,6 +12104,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11314,6 +12119,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11329,6 +12135,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11343,6 +12150,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11357,6 +12165,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11371,6 +12180,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11385,6 +12195,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11399,6 +12210,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11413,6 +12225,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11427,6 +12240,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11441,6 +12255,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11455,6 +12270,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11469,6 +12285,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11483,6 +12300,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11497,6 +12315,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11511,6 +12330,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11525,6 +12345,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11539,6 +12360,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11553,6 +12375,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11567,6 +12390,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11581,6 +12405,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11595,6 +12420,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11609,6 +12435,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11623,6 +12450,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11637,6 +12465,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11651,6 +12480,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11665,6 +12495,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11679,6 +12510,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11693,6 +12525,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11707,6 +12540,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11721,6 +12555,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11735,6 +12570,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11749,6 +12585,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11764,6 +12601,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11778,6 +12616,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11792,6 +12631,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11806,6 +12646,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11820,6 +12661,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11834,6 +12676,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11848,6 +12691,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11862,6 +12706,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11876,6 +12721,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11890,6 +12736,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11904,6 +12751,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11918,6 +12766,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11932,6 +12781,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11946,6 +12796,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11960,6 +12811,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11974,6 +12826,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -11988,6 +12841,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12002,6 +12856,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12016,6 +12871,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12030,6 +12886,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12044,6 +12901,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12058,6 +12916,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12072,6 +12931,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12086,6 +12946,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12100,6 +12961,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12114,6 +12976,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12128,6 +12991,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12142,6 +13006,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12156,6 +13021,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12170,6 +13036,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12184,6 +13051,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12199,6 +13067,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12213,6 +13082,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12227,6 +13097,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12241,6 +13112,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12255,6 +13127,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12269,6 +13142,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12283,6 +13157,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12297,6 +13172,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12311,6 +13187,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12325,6 +13202,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12339,6 +13217,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12353,6 +13232,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12367,6 +13247,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12381,6 +13262,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12395,6 +13277,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12409,6 +13292,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12423,6 +13307,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12437,6 +13322,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12451,6 +13337,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12465,6 +13352,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12479,6 +13367,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12493,6 +13382,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12507,6 +13397,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12521,6 +13412,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12535,6 +13427,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12549,6 +13442,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12563,6 +13457,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12577,6 +13472,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12591,6 +13487,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12605,6 +13502,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12619,6 +13517,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12634,6 +13533,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12648,6 +13548,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12662,6 +13563,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12676,6 +13578,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12690,6 +13593,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12704,6 +13608,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12718,6 +13623,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12732,6 +13638,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12746,6 +13653,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12760,6 +13668,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12774,6 +13683,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12788,6 +13698,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12802,6 +13713,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12816,6 +13728,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12830,6 +13743,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12844,6 +13758,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12858,6 +13773,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12872,6 +13788,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12886,6 +13803,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12900,6 +13818,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12914,6 +13833,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12928,6 +13848,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12942,6 +13863,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12956,6 +13878,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12970,6 +13893,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12984,6 +13908,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -12998,6 +13923,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13012,6 +13938,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13026,6 +13953,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13040,6 +13968,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13054,6 +13983,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13069,6 +13999,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13083,6 +14014,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13097,6 +14029,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13111,6 +14044,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13125,6 +14059,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13139,6 +14074,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13153,6 +14089,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13167,6 +14104,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13181,6 +14119,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13195,6 +14134,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13209,6 +14149,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13223,6 +14164,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13237,6 +14179,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13251,6 +14194,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13265,6 +14209,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13279,6 +14224,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13293,6 +14239,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13307,6 +14254,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13321,6 +14269,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13335,6 +14284,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13349,6 +14299,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13363,6 +14314,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13377,6 +14329,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13391,6 +14344,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13405,6 +14359,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13419,6 +14374,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13433,6 +14389,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13447,6 +14404,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13461,6 +14419,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13475,6 +14434,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13489,6 +14449,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13504,6 +14465,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13518,6 +14480,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13532,6 +14495,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13546,6 +14510,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13560,6 +14525,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13574,6 +14540,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13588,6 +14555,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13602,6 +14570,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13616,6 +14585,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13630,6 +14600,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13644,6 +14615,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13658,6 +14630,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13672,6 +14645,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13686,6 +14660,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13700,6 +14675,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13714,6 +14690,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13728,6 +14705,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13742,6 +14720,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13756,6 +14735,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13770,6 +14750,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13784,6 +14765,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13798,6 +14780,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13812,6 +14795,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13826,6 +14810,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13840,6 +14825,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13854,6 +14840,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13868,6 +14855,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13882,6 +14870,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13896,6 +14885,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13910,6 +14900,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13924,6 +14915,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightSemiBold,
       fontFamily: textStyle.fontFamilySemiBold,
+      package: textStyle.package,
     );
   }
 
@@ -13940,6 +14932,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -13954,6 +14947,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -13968,6 +14962,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -13982,6 +14977,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -13996,6 +14992,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14010,6 +15007,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14024,6 +15022,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14038,6 +15037,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14052,6 +15052,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14066,6 +15067,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14080,6 +15082,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14094,6 +15097,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14108,6 +15112,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14122,6 +15127,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14136,6 +15142,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14150,6 +15157,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14164,6 +15172,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14178,6 +15187,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14192,6 +15202,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14206,6 +15217,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14220,6 +15232,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14234,6 +15247,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14248,6 +15262,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14262,6 +15277,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14276,6 +15292,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14290,6 +15307,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14304,6 +15322,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14318,6 +15337,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14332,6 +15352,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14346,6 +15367,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14360,6 +15382,7 @@ class FCTextStyle {
       fontSize: size.s10,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14375,6 +15398,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14389,6 +15413,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14403,6 +15428,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14417,6 +15443,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14431,6 +15458,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14445,6 +15473,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14459,6 +15488,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14473,6 +15503,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14487,6 +15518,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14501,6 +15533,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14515,6 +15548,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14529,6 +15563,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14543,6 +15578,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14557,6 +15593,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14571,6 +15608,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14585,6 +15623,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14599,6 +15638,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14613,6 +15653,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14627,6 +15668,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14641,6 +15683,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14655,6 +15698,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14669,6 +15713,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14683,6 +15728,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14697,6 +15743,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14711,6 +15758,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14725,6 +15773,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14739,6 +15788,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14753,6 +15803,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14767,6 +15818,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14781,6 +15833,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14795,6 +15848,7 @@ class FCTextStyle {
       fontSize: size.s12,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14810,6 +15864,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14824,6 +15879,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14838,6 +15894,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14852,6 +15909,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14866,6 +15924,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14880,6 +15939,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14894,6 +15954,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14908,6 +15969,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14922,6 +15984,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14936,6 +15999,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14950,6 +16014,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14964,6 +16029,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14978,6 +16044,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -14992,6 +16059,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15006,6 +16074,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15020,6 +16089,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15034,6 +16104,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15048,6 +16119,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15062,6 +16134,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15076,6 +16149,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15090,6 +16164,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15104,6 +16179,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15118,6 +16194,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15132,6 +16209,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15146,6 +16224,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15160,6 +16239,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15174,6 +16254,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15188,6 +16269,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15202,6 +16284,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15216,6 +16299,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15230,6 +16314,7 @@ class FCTextStyle {
       fontSize: size.s14,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15245,6 +16330,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15259,6 +16345,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15273,6 +16360,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15287,6 +16375,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15301,6 +16390,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15315,6 +16405,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15329,6 +16420,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15343,6 +16435,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15357,6 +16450,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15371,6 +16465,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15385,6 +16480,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15399,6 +16495,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15413,6 +16510,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15427,6 +16525,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15441,6 +16540,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15455,6 +16555,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15469,6 +16570,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15483,6 +16585,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15497,6 +16600,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15511,6 +16615,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15525,6 +16630,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15539,6 +16645,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15553,6 +16660,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15567,6 +16675,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15581,6 +16690,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15595,6 +16705,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15609,6 +16720,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15623,6 +16735,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15637,6 +16750,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15651,6 +16765,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15665,6 +16780,7 @@ class FCTextStyle {
       fontSize: size.s16,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15680,6 +16796,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15694,6 +16811,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15708,6 +16826,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15722,6 +16841,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15736,6 +16856,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15750,6 +16871,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15764,6 +16886,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15778,6 +16901,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15792,6 +16916,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15806,6 +16931,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15820,6 +16946,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15834,6 +16961,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15848,6 +16976,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15862,6 +16991,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15876,6 +17006,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15890,6 +17021,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15904,6 +17036,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15918,6 +17051,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15932,6 +17066,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15946,6 +17081,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15960,6 +17096,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15974,6 +17111,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -15988,6 +17126,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16002,6 +17141,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16016,6 +17156,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16030,6 +17171,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16044,6 +17186,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16058,6 +17201,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16072,6 +17216,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16086,6 +17231,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16100,6 +17246,7 @@ class FCTextStyle {
       fontSize: size.s18,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16115,6 +17262,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16129,6 +17277,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16143,6 +17292,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16157,6 +17307,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16171,6 +17322,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16185,6 +17337,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16199,6 +17352,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16213,6 +17367,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16227,6 +17382,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16241,6 +17397,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16255,6 +17412,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16269,6 +17427,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16283,6 +17442,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16297,6 +17457,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16311,6 +17472,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16325,6 +17487,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16339,6 +17502,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16353,6 +17517,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16367,6 +17532,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16381,6 +17547,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16395,6 +17562,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16409,6 +17577,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16423,6 +17592,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16437,6 +17607,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16451,6 +17622,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16465,6 +17637,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16479,6 +17652,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16493,6 +17667,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16507,6 +17682,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16521,6 +17697,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16535,6 +17712,7 @@ class FCTextStyle {
       fontSize: size.s20,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16550,6 +17728,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16564,6 +17743,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16578,6 +17758,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16592,6 +17773,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16606,6 +17788,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16620,6 +17803,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16634,6 +17818,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16648,6 +17833,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16662,6 +17848,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16676,6 +17863,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16690,6 +17878,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16704,6 +17893,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16718,6 +17908,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16732,6 +17923,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16746,6 +17938,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16760,6 +17953,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16774,6 +17968,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16788,6 +17983,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16802,6 +17998,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16816,6 +18013,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16830,6 +18028,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16844,6 +18043,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16858,6 +18058,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16872,6 +18073,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16886,6 +18088,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16900,6 +18103,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16914,6 +18118,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16928,6 +18133,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16942,6 +18148,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16956,6 +18163,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16970,6 +18178,7 @@ class FCTextStyle {
       fontSize: size.s28,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16985,6 +18194,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -16999,6 +18209,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17013,6 +18224,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17027,6 +18239,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17041,6 +18254,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17055,6 +18269,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17069,6 +18284,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17083,6 +18299,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17097,6 +18314,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17111,6 +18329,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17125,6 +18344,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17139,6 +18359,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17153,6 +18374,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17167,6 +18389,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17181,6 +18404,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17195,6 +18419,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17209,6 +18434,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17223,6 +18449,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17237,6 +18464,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17251,6 +18479,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17265,6 +18494,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17279,6 +18509,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17293,6 +18524,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17307,6 +18539,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17321,6 +18554,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17335,6 +18569,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17349,6 +18584,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17363,6 +18599,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17377,6 +18614,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17391,6 +18629,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 
@@ -17405,6 +18644,7 @@ class FCTextStyle {
       fontSize: size.s32,
       fontWeight: textStyle.fontWeightBold,
       fontFamily: textStyle.fontFamilyBold,
+      package: textStyle.package,
     );
   }
 }

@@ -56,11 +56,13 @@ class FCButtonRowChild extends StatelessWidget {
                               this.style?.fontWeight ?? textStyle.fontWeightRegular,
                           fontFamily:
                               this.style?.fontFamily ?? textStyle.fontFamilyRegular,
+                          package: textStyle.package,
                         ) ??
                     TextStyle(
                       fontSize: size.s16,
                       fontWeight: textStyle.fontWeightRegular,
                       fontFamily: textStyle.fontFamilyRegular,
+                      package: textStyle.package,
                     ),
               ),
             ),

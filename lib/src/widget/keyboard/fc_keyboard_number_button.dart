@@ -30,12 +30,20 @@ class FCKeyboardNumberButton extends StatelessWidget {
     return FCKeyboardButton(
       child: Text(
         this.number.toString(),
-        style: TextStyle(
-          color: this.style?.color ?? theme.black,
-          fontSize: this.style?.fontSize ?? size.s28,
-          fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
-          fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
-        ),
+        style: this.style?.copyWith(
+                  color: this.style?.color ?? theme.black,
+                  fontSize: this.style?.fontSize ?? size.s28,
+                  fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
+                  fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
+                  package: textStyle.package,
+                ) ??
+            TextStyle(
+              color: theme.black,
+              fontSize: size.s28,
+              fontWeight: textStyle.fontWeightMedium,
+              fontFamily: textStyle.fontFamilyMedium,
+              package: textStyle.package,
+            ),
       ),
       onPressed: this.onPressed,
       height: this.height,

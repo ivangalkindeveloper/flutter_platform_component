@@ -107,6 +107,7 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
   }
 
   PinTheme _item({
+    required IFCTextStyle textStyle,
     required Color backgroundColor,
     required TextStyle? style,
     Color? borderColor,
@@ -119,12 +120,14 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
               fontSize: style.fontSize ?? this._size.s20,
               fontWeight: style.fontWeight ?? this._textStyle.fontWeightMedium,
               fontFamily: style.fontFamily ?? this._textStyle.fontFamilyMedium,
+              package: textStyle.package,
             ) ??
             TextStyle(
               color: this._theme.black,
               fontSize: this._size.s20,
               fontWeight: this._textStyle.fontWeightMedium,
               fontFamily: this._textStyle.fontFamilyMedium,
+              package: textStyle.package,
             ),
         decoration: BoxDecoration(
           color: backgroundColor,
@@ -140,6 +143,9 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
 
   @override
   Widget build(BuildContext context) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+
     return Stack(
       children: [
         SlideTransition(
@@ -162,22 +168,27 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
               animationDuration: this._size.durationAnimationFast,
               animationCurve: Curves.easeInOut,
               defaultPinTheme: this._item(
+                textStyle: textStyle,
                 backgroundColor: this.widget.unfocusedBackgroundColor,
                 style: this.widget.style,
               ),
               focusedPinTheme: this._item(
+                textStyle: textStyle,
                 backgroundColor: this.widget.focusedBackgroundColor,
                 borderColor: this.widget.focusedBorderColor,
                 style: this.widget.style,
               ),
               submittedPinTheme: this._item(
+                textStyle: textStyle,
                 backgroundColor: this.widget.unfocusedBackgroundColor,
                 style: this.widget.style,
               ),
               errorPinTheme: this._item(
+                textStyle: textStyle,
                 backgroundColor: this._theme.dangerLight,
                 style: TextStyle(
                   color: this._theme.danger,
+                  package: textStyle.package,
                 ),
               ),
               forceErrorState: this._isError,

@@ -30,6 +30,7 @@ class FCWhiteButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
 
     return FCBasicButton(
@@ -46,9 +47,11 @@ class FCWhiteButton extends StatelessWidget {
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
                     color: this.style?.color ?? theme.black,
+                    package: textStyle.package,
                   ) ??
               TextStyle(
                 color: theme.black,
+                package: textStyle.package,
               ),
           postfix: this.postfix,
           isExpanded: this.isExpanded,

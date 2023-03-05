@@ -56,12 +56,14 @@ class _FCDialogItemCupertino extends StatelessWidget {
                   fontSize: this.style?.fontSize ?? size.s16,
                   fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
                   fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
+                  package: textStyle.package,
                 ) ??
             TextStyle(
               color: this.color,
               fontSize: size.s16,
               fontWeight: textStyle.fontWeightMedium,
               fontFamily: textStyle.fontFamilyMedium,
+              package: textStyle.package,
             ),
       ),
       textStyle: this.style?.copyWith(
@@ -69,12 +71,14 @@ class _FCDialogItemCupertino extends StatelessWidget {
                 fontSize: this.style?.fontSize ?? size.s16,
                 fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
                 fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
+                package: textStyle.package,
               ) ??
           TextStyle(
             color: this.color,
             fontSize: size.s16,
             fontWeight: textStyle.fontWeightMedium,
             fontFamily: textStyle.fontFamilyMedium,
+            package: textStyle.package,
           ),
       isDefaultAction: true,
       isDestructiveAction: true,
@@ -111,12 +115,14 @@ class _FCDialogItemMaterial extends StatelessWidget {
                   fontSize: this.style?.fontSize ?? size.s16,
                   fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
                   fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
+                  package: textStyle.package,
                 ) ??
             TextStyle(
               color: this.color,
               fontSize: size.s16,
               fontWeight: textStyle.fontWeightMedium,
               fontFamily: textStyle.fontFamilyMedium,
+              package: textStyle.package,
             ),
       ),
       style: TextButton.styleFrom(

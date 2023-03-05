@@ -75,12 +75,14 @@ class _FCActionModalCupertino extends StatelessWidget {
             fontSize: this.titleStyle?.fontSize ?? size.s16,
             fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
             fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+            package: textStyle.package,
           ) ??
       TextStyle(
         color: theme.black,
         fontSize: size.s16,
         fontWeight: textStyle.fontWeightRegular,
         fontFamily: textStyle.fontFamilyRegular,
+        package: textStyle.package,
       );
 
   TextStyle _descriptionStyle({
@@ -93,12 +95,14 @@ class _FCActionModalCupertino extends StatelessWidget {
             fontSize: this.descriptionStyle?.fontSize ?? size.s14,
             fontWeight: this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
             fontFamily: this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+            package: textStyle.package,
           ) ??
       TextStyle(
         color: theme.black,
         fontSize: size.s14,
         fontWeight: textStyle.fontWeightRegular,
         fontFamily: textStyle.fontFamilyRegular,
+        package: textStyle.package,
       );
 
   TextStyle _actionStyle({
@@ -114,12 +118,14 @@ class _FCActionModalCupertino extends StatelessWidget {
                 (isCancel ? textStyle.fontWeightMedium : textStyle.fontWeightRegular),
             fontFamily: this.itemStyle?.fontFamily ??
                 (isCancel ? textStyle.fontFamilyMedium : textStyle.fontFamilyRegular),
+            package: textStyle.package,
           ) ??
       TextStyle(
         color: theme.black,
         fontSize: size.s16,
         fontWeight: (isCancel ? textStyle.fontWeightMedium : textStyle.fontWeightRegular),
         fontFamily: (isCancel ? textStyle.fontFamilyMedium : textStyle.fontFamilyRegular),
+        package: textStyle.package,
       );
 
   Widget? _title({
@@ -264,12 +270,14 @@ class _FCActionModalMaterial extends StatelessWidget {
             fontSize: this.titleStyle?.fontSize ?? size.s16,
             fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
             fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+            package: textStyle.package,
           ) ??
       TextStyle(
         color: theme.black,
         fontSize: size.s16,
         fontWeight: textStyle.fontWeightRegular,
         fontFamily: textStyle.fontFamilyRegular,
+        package: textStyle.package,
       );
 
   TextStyle _descriptionStyle({
@@ -282,12 +290,14 @@ class _FCActionModalMaterial extends StatelessWidget {
             fontSize: this.descriptionStyle?.fontSize ?? size.s14,
             fontWeight: this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
             fontFamily: this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+            package: textStyle.package,
           ) ??
       TextStyle(
         color: theme.black,
         fontSize: size.s14,
         fontWeight: textStyle.fontWeightRegular,
         fontFamily: textStyle.fontFamilyRegular,
+        package: textStyle.package,
       );
 
   TextStyle _actionStyle({
@@ -301,12 +311,14 @@ class _FCActionModalMaterial extends StatelessWidget {
         fontSize: this.itemStyle?.fontSize ?? size.s16,
         fontWeight: this.itemStyle?.fontWeight ?? textStyle.fontWeightRegular,
         fontFamily: this.itemStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+        package: textStyle.package,
       ) ??
       TextStyle(
         color: theme.black,
         fontSize: size.s16,
         fontWeight: textStyle.fontWeightRegular,
         fontFamily: textStyle.fontFamilyRegular,
+        package: textStyle.package,
       );
 
   Widget _titleDescription({

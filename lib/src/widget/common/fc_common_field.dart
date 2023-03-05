@@ -73,12 +73,14 @@ class FCCommonField extends StatelessWidget {
             fontSize: this.textStyle?.fontSize ?? size.s16,
             fontWeight: this.textStyle?.fontWeight ?? textStyle.fontWeightRegular,
             fontFamily: this.textStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+            package: textStyle.package,
           ) ??
       TextStyle(
         color: theme.black,
         fontSize: size.s16,
         fontWeight: textStyle.fontWeightRegular,
         fontFamily: textStyle.fontFamilyRegular,
+        package: textStyle.package,
       );
 
   TextStyle _fieldLabelStyle({
@@ -91,12 +93,14 @@ class FCCommonField extends StatelessWidget {
             fontSize: this.labelStyle?.fontSize ?? size.s16,
             fontWeight: this.labelStyle?.fontWeight ?? textStyle.fontWeightRegular,
             fontFamily: this.labelStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+            package: textStyle.package,
           ) ??
       TextStyle(
         color: color,
         fontSize: size.s16,
         fontWeight: textStyle.fontWeightRegular,
         fontFamily: textStyle.fontFamilyRegular,
+        package: textStyle.package,
       );
 
   TextStyle _fieldPrefixStyle({
@@ -109,12 +113,14 @@ class FCCommonField extends StatelessWidget {
             fontSize: this.prefixStyle?.fontSize ?? size.s16,
             fontWeight: this.prefixStyle?.fontWeight ?? textStyle.fontWeightRegular,
             fontFamily: this.prefixStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+            package: textStyle.package,
           ) ??
       TextStyle(
         color: theme.black,
         fontSize: size.s16,
         fontWeight: textStyle.fontWeightRegular,
         fontFamily: textStyle.fontFamilyRegular,
+        package: textStyle.package,
       );
 
   TextStyle _fieldHintStyle({
@@ -127,12 +133,14 @@ class FCCommonField extends StatelessWidget {
             fontSize: this.hintStyle?.fontSize ?? size.s16,
             fontWeight: this.hintStyle?.fontWeight ?? textStyle.fontWeightRegular,
             fontFamily: this.hintStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+            package: textStyle.package,
           ) ??
       TextStyle(
         color: theme.greyLight,
         fontSize: size.s16,
         fontWeight: textStyle.fontWeightRegular,
         fontFamily: textStyle.fontFamilyRegular,
+        package: textStyle.package,
       );
 
   @override

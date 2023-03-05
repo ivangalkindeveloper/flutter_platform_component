@@ -68,6 +68,7 @@ class FCBasicBlurAppBar extends FCPlatformAppBar {
 
     if (title != null) {
       final FCConfig config = context.config;
+      final IFCTextStyle textStyle = config.textStyle;
       final IFCTheme theme = config.theme;
 
       return Text(
@@ -75,9 +76,11 @@ class FCBasicBlurAppBar extends FCPlatformAppBar {
         textAlign: TextAlign.center,
         style: style?.copyWith(
               color: style.color ?? theme.black,
+              package: textStyle.package,
             ) ??
             TextStyle(
               color: theme.black,
+              package: textStyle.package,
             ),
       );
     }

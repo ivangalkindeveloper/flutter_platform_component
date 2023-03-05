@@ -152,18 +152,22 @@ class _FCBlurBottomNavigationBarMaterial extends StatelessWidget {
             unselectedLabelStyle: style?.copyWith(
                   fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,
                   fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyRegular,
+                  package: textStyle.package,
                 ) ??
                 TextStyle(
                   fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,
                   fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyRegular,
+                  package: textStyle.package,
                 ),
             selectedLabelStyle: style?.copyWith(
                   fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,
                   fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyRegular,
+                  package: textStyle.package,
                 ) ??
                 TextStyle(
                   fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,
                   fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyRegular,
+                  package: textStyle.package,
                 ),
           ),
         ),

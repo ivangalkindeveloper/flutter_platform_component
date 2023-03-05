@@ -29,9 +29,11 @@ class FCWhiteAlwaysExpandedModalAppBar extends FCBasicAppBar {
           title: title,
           style: style?.copyWith(
                 color: style.color ?? context.config.theme.whiteAlways,
+                package: context.config.textStyle.package,
               ) ??
               TextStyle(
                 color: context.config.theme.whiteAlways,
+                package: context.config.textStyle.package,
               ),
           middle: middle,
           postfix: postfix,
