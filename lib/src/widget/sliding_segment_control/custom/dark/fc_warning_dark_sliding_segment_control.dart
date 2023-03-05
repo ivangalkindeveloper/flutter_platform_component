@@ -8,9 +8,9 @@ class FCWarningDarkSlidingSegmentControl<T> extends StatelessWidget {
     required this.value,
     required this.items,
     required this.onChanged,
+    this.unselectedStyle,
+    this.selectedStyle,
     this.height,
-    this.heightIcon,
-    this.style,
     this.isDisabled = false,
     this.disabledColor,
   });
@@ -18,9 +18,9 @@ class FCWarningDarkSlidingSegmentControl<T> extends StatelessWidget {
   final T value;
   final List<FCSlidingSegmentControlItem<T>> items;
   final void Function(T) onChanged;
+  final TextStyle? unselectedStyle;
+  final TextStyle? selectedStyle;
   final double? height;
-  final double? heightIcon;
-  final TextStyle? style;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -33,13 +33,13 @@ class FCWarningDarkSlidingSegmentControl<T> extends StatelessWidget {
       value: this.value,
       items: this.items,
       onChanged: this.onChanged,
-      height: this.height,
       backgroundColor: theme.grey,
       thumbColor: theme.warningDark,
       unselectedInternalColor: theme.black,
+      unselectedStyle: this.unselectedStyle,
       selectedInternalColor: theme.white,
-      heightIcon: this.heightIcon,
-      style: this.style,
+      selectedStyle: this.selectedStyle,
+      height: this.height,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

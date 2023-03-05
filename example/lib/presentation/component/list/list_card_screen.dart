@@ -35,10 +35,12 @@ class _ListCardScreenState extends State<ListCardScreen> {
           ),
           SizedBox(height: size.s16 * 2),
           FCListCard(
-            prefixIconColor: theme.primary,
             items: [
               FCListCardItem(
-                prefixIcon: Icons.account_circle_outlined,
+                prefix: FCIcon.primary(
+                  context: context,
+                  icon: Icons.account_circle_outlined,
+                ),
                 title: "Title 1",
                 onPressed: () {},
               ),

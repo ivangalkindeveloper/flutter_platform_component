@@ -1,3 +1,4 @@
+import 'package:flutter_component/src/widget/common/fc_button_row_child.dart';
 import 'package:flutter_component/src/exception/fc_exception.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
@@ -10,16 +11,16 @@ class FCBasicToggle<T> extends StatefulWidget {
     required this.value,
     required this.items,
     required this.onChanged,
-    this.height,
     this.unselectedBackgroundColor,
     this.unselectedInternalColor,
     this.unselectedSplashColor,
+    this.unselectedStyle,
     required this.selectedBackgroundColor,
     required this.selectedInternalColor,
     required this.selectedSplashColor,
+    this.selectedStyle,
+    this.height,
     this.horizontalInterval,
-    this.heightIcon,
-    this.style,
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
@@ -28,16 +29,16 @@ class FCBasicToggle<T> extends StatefulWidget {
   final T? value;
   final List<FCToggleItem<T>> items;
   final void Function(T) onChanged;
-  final double? height;
   final Color? unselectedBackgroundColor;
   final Color? unselectedInternalColor;
   final Color? unselectedSplashColor;
+  final TextStyle? unselectedStyle;
   final Color selectedBackgroundColor;
   final Color selectedInternalColor;
   final Color selectedSplashColor;
+  final TextStyle? selectedStyle;
+  final double? height;
   final double? horizontalInterval;
-  final double? heightIcon;
-  final TextStyle? style;
   final bool isRequired;
   final bool isDisabled;
   final Color? disabledColor;
@@ -119,20 +120,20 @@ class _FCBasicToggleState extends State<FCBasicToggle> {
                               Expanded(
                                 child: _FCToggleButton(
                                   item: item,
-                                  height: this.widget.height,
                                   unselectedBackgroundColor:
                                       this.widget.unselectedBackgroundColor,
                                   unselectedInternalColor:
                                       this.widget.unselectedInternalColor,
                                   unselectedSplashColor:
                                       this.widget.unselectedSplashColor,
+                                  unselectedStyle: this.widget.unselectedStyle,
                                   selectedBackgroundColor:
                                       this.widget.selectedBackgroundColor,
                                   selectedInternalColor:
                                       this.widget.selectedInternalColor,
                                   selectedSplashColor: this.widget.selectedSplashColor,
-                                  heightIcon: this.widget.heightIcon,
-                                  style: this.widget.style,
+                                  selectedStyle: this.widget.selectedStyle,
+                                  height: this.widget.height,
                                   isValidationError: this._isValidationError,
                                   onPressed: () {
                                     this._isValidationError = false;
@@ -175,30 +176,30 @@ class _FCToggleButton<T> extends StatelessWidget {
   const _FCToggleButton({
     super.key,
     required this.item,
-    required this.height,
     required this.unselectedBackgroundColor,
-    required this.selectedBackgroundColor,
     required this.unselectedInternalColor,
-    required this.selectedInternalColor,
     required this.unselectedSplashColor,
+    required this.unselectedStyle,
+    required this.selectedBackgroundColor,
+    required this.selectedInternalColor,
     required this.selectedSplashColor,
-    required this.heightIcon,
-    required this.style,
+    required this.selectedStyle,
+    required this.height,
     required this.isValidationError,
     required this.onPressed,
     required this.isSelected,
   });
 
   final FCToggleItem<T> item;
-  final double? height;
   final Color? unselectedBackgroundColor;
   final Color? unselectedInternalColor;
   final Color? unselectedSplashColor;
+  final TextStyle? unselectedStyle;
   final Color selectedBackgroundColor;
   final Color selectedInternalColor;
   final Color selectedSplashColor;
-  final double? heightIcon;
-  final TextStyle? style;
+  final TextStyle? selectedStyle;
+  final double? height;
   final bool isValidationError;
   final VoidCallback onPressed;
   final bool isSelected;
@@ -208,7 +209,7 @@ class _FCToggleButton<T> extends StatelessWidget {
 
     if (this.isSelected) return this.selectedBackgroundColor;
 
-    return this.unselectedBackgroundColor ?? theme.white;
+    return this.unselectedBackgroundColor ?? theme.backgroundComponent;
   }
 
   Color _internalColor({required IFCTheme theme}) {
@@ -222,13 +223,12 @@ class _FCToggleButton<T> extends StatelessWidget {
   Color _splashColor({required IFCTheme theme}) {
     if (this.isSelected) return this.selectedSplashColor;
 
-    return this.unselectedSplashColor ?? theme.white;
+    return this.unselectedSplashColor ?? theme.backgroundComponent;
   }
 
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
-    final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
@@ -237,45 +237,23 @@ class _FCToggleButton<T> extends StatelessWidget {
       splashColor: this._splashColor(theme: theme),
       height: this.height ?? size.heightToggle,
       borderRadius: config.borderRadiusToggle,
-      onPressed: this.onPressed,
-      child: Row(
+      child: FCButtonRowChild(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          if (this.item.prefix != null) this.item.prefix!,
-          if (this.item.prefix != null) SizedBox(width: size.s16 / 2),
-          if (this.item.prefixIcon != null)
-            Icon(
-              this.item.prefixIcon,
-              size: this.heightIcon ?? size.heightIconSmall,
-              color: this._internalColor(theme: theme),
-            ),
-          if (this.item.prefixIcon != null) SizedBox(width: size.s16 / 2),
-          Text(
-            item.title,
-            style: this.style?.copyWith(
-                      color: this.style?.color ?? this._internalColor(theme: theme),
-                      fontSize: this.style?.fontSize ?? size.s14,
-                      fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,
-                      fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyRegular,
-                    ) ??
-                TextStyle(
-                  color: this._internalColor(theme: theme),
-                  fontSize: size.s14,
-                  fontWeight: textStyle.fontWeightRegular,
-                  fontFamily: textStyle.fontFamilyRegular,
+        gradient: null,
+        prefix: this.item.prefix,
+        title: this.item.title,
+        textAlign: TextAlign.center,
+        style: this.isSelected
+            ? this.selectedStyle?.copyWith(
+                  color: this.selectedStyle?.color ?? this._internalColor(theme: theme),
+                )
+            : this.unselectedStyle?.copyWith(
+                  color: this.unselectedStyle?.color ?? this._internalColor(theme: theme),
                 ),
-          ),
-          if (this.item.postfixIcon != null) SizedBox(width: size.s16 / 2),
-          if (this.item.postfixIcon != null)
-            Icon(
-              this.item.postfixIcon,
-              size: this.heightIcon ?? size.heightIconSmall,
-              color: this._internalColor(theme: theme),
-            ),
-          if (this.item.postfix != null) SizedBox(width: size.s16 / 2),
-          if (this.item.postfix != null) this.item.postfix!,
-        ],
+        postfix: this.item.postfix,
+        isExpanded: true,
       ),
+      onPressed: this.onPressed,
     );
   }
 }

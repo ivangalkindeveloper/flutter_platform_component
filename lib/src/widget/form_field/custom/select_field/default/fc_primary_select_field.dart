@@ -7,7 +7,6 @@ class FCPrimarySelectField extends StatelessWidget {
     super.key,
     this.height,
     this.internalColor,
-    this.internalIconHeight,
     required this.title,
     //
     this.textStyle,
@@ -26,8 +25,6 @@ class FCPrimarySelectField extends StatelessWidget {
     this.maxLength = 128,
     this.validator,
     this.prefix,
-    this.prefixIcon,
-    this.postfixIcon,
     this.postfix,
     this.bottom,
     required this.onPressed,
@@ -38,7 +35,6 @@ class FCPrimarySelectField extends StatelessWidget {
 
   final double? height;
   final Color? internalColor;
-  final double? internalIconHeight;
   final String? title;
   //
   final TextStyle? textStyle;
@@ -57,8 +53,6 @@ class FCPrimarySelectField extends StatelessWidget {
   final int maxLength;
   final String? Function(String)? validator;
   final Widget? prefix;
-  final IconData? prefixIcon;
-  final IconData? postfixIcon;
   final Widget? postfix;
   final Widget? bottom;
   final VoidCallback onPressed;
@@ -76,7 +70,6 @@ class FCPrimarySelectField extends StatelessWidget {
       backgroundColor: theme.backgroundComponent,
       splashColor: theme.primary,
       internalColor: this.internalColor,
-      internalIconHeight: this.internalIconHeight,
       title: this.title,
       //
       textStyle: this.textStyle,
@@ -95,8 +88,6 @@ class FCPrimarySelectField extends StatelessWidget {
       maxLength: this.maxLength,
       validator: this.validator,
       prefix: this.prefix,
-      prefixIcon: this.prefixIcon,
-      postfixIcon: this.postfixIcon,
       postfix: this.postfix,
       bottom: this.bottom,
       onPressed: this.onPressed,

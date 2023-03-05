@@ -1,3 +1,4 @@
+import 'package:flutter_component/src/widget/common/fc_button_row_child.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/cupertino.dart';
@@ -11,8 +12,6 @@ class FCActionModal extends FCPlatformWidget {
     String? description,
     TextStyle? descriptionStyle,
     Widget? middle,
-    Color? prefixIconColor,
-    double? prefixIconHeight,
     TextStyle? itemStyle,
     Color? postfixIconColor,
     double? postfixIconHeight,
@@ -26,11 +25,7 @@ class FCActionModal extends FCPlatformWidget {
             description: description,
             descriptionStyle: descriptionStyle,
             middle: middle,
-            prefixIconColor: prefixIconColor,
-            prefixIconHeight: prefixIconHeight,
             itemStyle: itemStyle,
-            postfixIconColor: postfixIconColor,
-            postfixIconHeight: postfixIconHeight,
             items: items,
             cancelItem: cancelItem,
           ),
@@ -41,11 +36,7 @@ class FCActionModal extends FCPlatformWidget {
             description: description,
             descriptionStyle: descriptionStyle,
             middle: middle,
-            prefixIconColor: prefixIconColor,
-            prefixIconHeight: prefixIconHeight,
             itemStyle: itemStyle,
-            postfixIconColor: postfixIconColor,
-            postfixIconHeight: postfixIconHeight,
             items: items,
             cancelItem: cancelItem,
           ),
@@ -60,11 +51,7 @@ class _FCActionModalCupertino extends StatelessWidget {
     required this.description,
     required this.descriptionStyle,
     required this.middle,
-    required this.prefixIconColor,
-    required this.prefixIconHeight,
     required this.itemStyle,
-    required this.postfixIconColor,
-    required this.postfixIconHeight,
     required this.items,
     required this.cancelItem,
   });
@@ -74,13 +61,66 @@ class _FCActionModalCupertino extends StatelessWidget {
   final String? description;
   final TextStyle? descriptionStyle;
   final Widget? middle;
-  final Color? prefixIconColor;
-  final double? prefixIconHeight;
   final TextStyle? itemStyle;
-  final Color? postfixIconColor;
-  final double? postfixIconHeight;
   final List<FCActionModalItem> items;
   final FCActionModalItem? cancelItem;
+
+  TextStyle _titleStyle({
+    required IFCTextStyle textStyle,
+    required IFCTheme theme,
+    required IFCSize size,
+  }) =>
+      this.titleStyle?.copyWith(
+            color: this.titleStyle?.color ?? theme.black,
+            fontSize: this.titleStyle?.fontSize ?? size.s16,
+            fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
+            fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+          ) ??
+      TextStyle(
+        color: theme.black,
+        fontSize: size.s16,
+        fontWeight: textStyle.fontWeightRegular,
+        fontFamily: textStyle.fontFamilyRegular,
+      );
+
+  TextStyle _descriptionStyle({
+    required IFCTextStyle textStyle,
+    required IFCTheme theme,
+    required IFCSize size,
+  }) =>
+      this.descriptionStyle?.copyWith(
+            color: this.descriptionStyle?.color ?? theme.black,
+            fontSize: this.descriptionStyle?.fontSize ?? size.s14,
+            fontWeight: this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
+            fontFamily: this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+          ) ??
+      TextStyle(
+        color: theme.black,
+        fontSize: size.s14,
+        fontWeight: textStyle.fontWeightRegular,
+        fontFamily: textStyle.fontFamilyRegular,
+      );
+
+  TextStyle _actionStyle({
+    required IFCTextStyle textStyle,
+    required IFCTheme theme,
+    required IFCSize size,
+    required bool isCancel,
+  }) =>
+      this.itemStyle?.copyWith(
+            color: this.itemStyle?.color ?? theme.black,
+            fontSize: this.itemStyle?.fontSize ?? size.s16,
+            fontWeight: this.itemStyle?.fontWeight ??
+                (isCancel ? textStyle.fontWeightMedium : textStyle.fontWeightRegular),
+            fontFamily: this.itemStyle?.fontFamily ??
+                (isCancel ? textStyle.fontFamilyMedium : textStyle.fontFamilyRegular),
+          ) ??
+      TextStyle(
+        color: theme.black,
+        fontSize: size.s16,
+        fontWeight: (isCancel ? textStyle.fontWeightMedium : textStyle.fontWeightRegular),
+        fontFamily: (isCancel ? textStyle.fontFamilyMedium : textStyle.fontFamilyRegular),
+      );
 
   Widget? _title({
     required IFCTextStyle textStyle,
@@ -91,11 +131,10 @@ class _FCActionModalCupertino extends StatelessWidget {
       return Text(
         this.title!,
         textAlign: TextAlign.center,
-        style: TextStyle(
-          color: this.titleStyle?.color ?? theme.black,
-          fontSize: this.titleStyle?.fontSize ?? size.s16,
-          fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
-          fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+        style: this._titleStyle(
+          textStyle: textStyle,
+          theme: theme,
+          size: size,
         ),
       );
 
@@ -111,11 +150,10 @@ class _FCActionModalCupertino extends StatelessWidget {
       return Text(
         this.description!,
         textAlign: TextAlign.center,
-        style: TextStyle(
-          color: this.descriptionStyle?.color ?? theme.grey,
-          fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-          fontWeight: this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
-          fontFamily: this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+        style: this._descriptionStyle(
+          textStyle: textStyle,
+          theme: theme,
+          size: size,
         ),
       );
 
@@ -134,40 +172,20 @@ class _FCActionModalCupertino extends StatelessWidget {
       CupertinoActionSheetAction(
         isDefaultAction: item.isDefaultAction,
         isDestructiveAction: item.isDestructiveAction,
-        child: Row(
+        child: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            if (item.prefix != null) item.prefix!,
-            if (item.prefix != null) SizedBox(width: size.s16),
-            if (item.prefixIcon != null)
-              Icon(
-                item.prefixIcon,
-                size: this.prefixIconHeight ?? size.heightIconSmall,
-                color: this.prefixIconColor ?? theme.primary,
-              ),
-            if (item.prefixIcon != null) SizedBox(width: size.s16),
-            Text(
-              item.title,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: this.itemStyle?.color ?? theme.black,
-                fontSize: this.itemStyle?.fontSize ?? size.s16,
-                fontWeight: this.itemStyle?.fontWeight ??
-                    (isCancel ? textStyle.fontWeightMedium : textStyle.fontWeightRegular),
-                fontFamily: this.itemStyle?.fontFamily ??
-                    (isCancel ? textStyle.fontFamilyMedium : textStyle.fontFamilyRegular),
-              ),
-            ),
-            if (item.postfixIcon != null) SizedBox(width: size.s16),
-            if (item.postfixIcon != null)
-              Icon(
-                item.postfixIcon,
-                size: this.postfixIconHeight ?? size.heightIconSmall,
-                color: this.postfixIconColor ?? theme.grey,
-              ),
-            if (item.postfix != null) SizedBox(width: size.s16),
-            if (item.postfix != null) item.postfix!,
-          ],
+          gradient: null,
+          prefix: item.prefix,
+          title: title,
+          textAlign: TextAlign.center,
+          style: this._actionStyle(
+            textStyle: textStyle,
+            theme: theme,
+            size: size,
+            isCancel: isCancel,
+          ),
+          postfix: item.postfix,
+          isExpanded: false,
         ),
         onPressed: item.onPressed,
       );
@@ -222,11 +240,7 @@ class _FCActionModalMaterial extends StatelessWidget {
     required this.description,
     required this.descriptionStyle,
     required this.middle,
-    required this.prefixIconColor,
-    required this.prefixIconHeight,
     required this.itemStyle,
-    required this.postfixIconColor,
-    required this.postfixIconHeight,
     required this.items,
     required this.cancelItem,
   });
@@ -236,13 +250,64 @@ class _FCActionModalMaterial extends StatelessWidget {
   final String? description;
   final TextStyle? descriptionStyle;
   final Widget? middle;
-  final Color? prefixIconColor;
-  final double? prefixIconHeight;
   final TextStyle? itemStyle;
-  final Color? postfixIconColor;
-  final double? postfixIconHeight;
   final List<FCActionModalItem> items;
   final FCActionModalItem? cancelItem;
+
+  TextStyle _titleStyle({
+    required IFCTextStyle textStyle,
+    required IFCTheme theme,
+    required IFCSize size,
+  }) =>
+      this.titleStyle?.copyWith(
+            color: this.titleStyle?.color ?? theme.black,
+            fontSize: this.titleStyle?.fontSize ?? size.s16,
+            fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
+            fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+          ) ??
+      TextStyle(
+        color: theme.black,
+        fontSize: size.s16,
+        fontWeight: textStyle.fontWeightRegular,
+        fontFamily: textStyle.fontFamilyRegular,
+      );
+
+  TextStyle _descriptionStyle({
+    required IFCTextStyle textStyle,
+    required IFCTheme theme,
+    required IFCSize size,
+  }) =>
+      this.descriptionStyle?.copyWith(
+            color: this.descriptionStyle?.color ?? theme.black,
+            fontSize: this.descriptionStyle?.fontSize ?? size.s14,
+            fontWeight: this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
+            fontFamily: this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+          ) ??
+      TextStyle(
+        color: theme.black,
+        fontSize: size.s14,
+        fontWeight: textStyle.fontWeightRegular,
+        fontFamily: textStyle.fontFamilyRegular,
+      );
+
+  TextStyle _actionStyle({
+    required IFCTextStyle textStyle,
+    required IFCTheme theme,
+    required IFCSize size,
+    required FCActionModalItem item,
+  }) =>
+      itemStyle?.copyWith(
+        color: this.itemStyle?.color ?? theme.black,
+        fontSize: this.itemStyle?.fontSize ?? size.s16,
+        fontWeight: this.itemStyle?.fontWeight ?? textStyle.fontWeightRegular,
+        fontFamily: this.itemStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+      ) ??
+      TextStyle(
+        color: theme.black,
+        fontSize: size.s16,
+        fontWeight: textStyle.fontWeightRegular,
+        fontFamily: textStyle.fontFamilyRegular,
+      );
 
   Widget _titleDescription({
     required IFCTextStyle textStyle,
@@ -255,11 +320,10 @@ class _FCActionModalMaterial extends StatelessWidget {
           child: Text(
             this.title!,
             textAlign: TextAlign.center,
-            style: TextStyle(
-              color: this.titleStyle?.color ?? theme.black,
-              fontSize: this.titleStyle?.fontSize ?? size.s16,
-              fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+            style: this._titleStyle(
+              textStyle: textStyle,
+              theme: theme,
+              size: size,
             ),
           ),
         ),
@@ -267,13 +331,10 @@ class _FCActionModalMaterial extends StatelessWidget {
           child: Text(
             this.description!,
             textAlign: TextAlign.center,
-            style: TextStyle(
-              color: this.descriptionStyle?.color ?? theme.grey,
-              fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-              fontWeight:
-                  this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily:
-                  this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+            style: this._descriptionStyle(
+              textStyle: textStyle,
+              theme: theme,
+              size: size,
             ),
           ),
         ),
@@ -285,11 +346,10 @@ class _FCActionModalMaterial extends StatelessWidget {
           child: Text(
             this.title!,
             textAlign: TextAlign.center,
-            style: TextStyle(
-              color: this.titleStyle?.color ?? theme.black,
-              fontSize: this.titleStyle?.fontSize ?? size.s16,
-              fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+            style: this._titleStyle(
+              textStyle: textStyle,
+              theme: theme,
+              size: size,
             ),
           ),
         ),
@@ -301,13 +361,10 @@ class _FCActionModalMaterial extends StatelessWidget {
           child: Text(
             this.description!,
             textAlign: TextAlign.center,
-            style: TextStyle(
-              color: this.descriptionStyle?.color ?? theme.grey,
-              fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-              fontWeight:
-                  this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily:
-                  this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+            style: this._descriptionStyle(
+              textStyle: textStyle,
+              theme: theme,
+              size: size,
             ),
           ),
         ),
@@ -327,40 +384,20 @@ class _FCActionModalMaterial extends StatelessWidget {
           horizontal: size.s16,
           vertical: size.s16 / 4,
         ),
-        title: Row(
+        title: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            if (item.prefix != null) item.prefix!,
-            if (item.prefix != null) SizedBox(width: size.s16),
-            if (item.prefixIcon != null)
-              Icon(
-                item.prefixIcon,
-                size: this.prefixIconHeight ?? size.heightIconSmall,
-                color: this.prefixIconColor ?? theme.primary,
-              ),
-            if (item.prefixIcon != null) SizedBox(width: size.s16),
-            Expanded(
-              child: Text(
-                item.title,
-                textAlign: TextAlign.start,
-                style: TextStyle(
-                  color: this.itemStyle?.color ?? theme.black,
-                  fontSize: this.itemStyle?.fontSize ?? size.s16,
-                  fontWeight: this.itemStyle?.fontWeight ?? textStyle.fontWeightRegular,
-                  fontFamily: this.itemStyle?.fontFamily ?? textStyle.fontFamilyRegular,
-                ),
-              ),
-            ),
-            if (item.postfixIcon != null) SizedBox(width: size.s16),
-            if (item.postfixIcon != null)
-              Icon(
-                item.postfixIcon,
-                size: this.postfixIconHeight ?? size.heightIconSmall,
-                color: this.postfixIconColor ?? theme.grey,
-              ),
-            if (item.postfix != null) SizedBox(width: size.s16),
-            if (item.postfix != null) item.postfix!,
-          ],
+          gradient: null,
+          prefix: item.prefix,
+          title: title,
+          textAlign: TextAlign.start,
+          style: this._actionStyle(
+            textStyle: textStyle,
+            theme: theme,
+            size: size,
+            item: item,
+          ),
+          postfix: item.postfix,
+          isExpanded: false,
         ),
         onTap: item.onPressed,
       );

@@ -11,11 +11,7 @@ class FCListCard extends StatelessWidget {
     this.splashColor,
     this.borderRadius,
     this.padding,
-    this.prefixIconColor,
-    this.prefixIconHeight,
     this.style,
-    this.postfixIconColor,
-    this.postfixIconHeight,
     this.separatorColor,
     this.separatorHeight,
     this.separatorPadding,
@@ -28,11 +24,7 @@ class FCListCard extends StatelessWidget {
   final Color? splashColor;
   final BorderRadius? borderRadius;
   final EdgeInsets? padding;
-  final Color? prefixIconColor;
-  final double? prefixIconHeight;
   final TextStyle? style;
-  final Color? postfixIconColor;
-  final double? postfixIconHeight;
   final Color? separatorColor;
   final double? separatorHeight;
   final double? separatorPadding;
@@ -87,24 +79,6 @@ class FCListCard extends StatelessWidget {
     return Radius.zero;
   }
 
-  Widget _separator({
-    required FCConfig config,
-    required int index,
-  }) {
-    if ((index + 1) != this.items.length)
-      return Padding(
-        padding: EdgeInsets.symmetric(
-          horizontal: this.separatorPadding ?? config.size.s16,
-        ),
-        child: Divider(
-          color: this.separatorColor ?? config.theme.grey,
-          height: this.separatorHeight ?? 1,
-        ),
-      );
-
-    return const SizedBox();
-  }
-
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
@@ -144,15 +118,8 @@ class FCListCard extends StatelessWidget {
                     child: Row(
                       children: [
                         if (item.prefix != null) item.prefix!,
-                        if (item.prefix != null) SizedBox(width: size.s16),
-                        if (item.prefixIcon != null)
-                          Icon(
-                            item.prefixIcon,
-                            size: this.prefixIconHeight ?? size.heightIconDefault,
-                            color: this.prefixIconColor ?? theme.primary,
-                          ),
-                        if (item.prefixIcon != null) SizedBox(width: size.s16),
-                        Expanded(
+                        if (item.prefix != null) SizedBox(width: size.s16 / 2),
+                        Flexible(
                           child: Text(
                             item.title,
                             textAlign: TextAlign.start,
@@ -166,14 +133,7 @@ class FCListCard extends StatelessWidget {
                             ),
                           ),
                         ),
-                        if (item.postfixIcon != null) SizedBox(width: size.s16),
-                        if (item.postfixIcon != null)
-                          Icon(
-                            item.postfixIcon,
-                            size: this.postfixIconHeight ?? size.heightIconDefault,
-                            color: this.postfixIconColor ?? theme.grey,
-                          ),
-                        if (item.postfix != null) SizedBox(width: size.s16),
+                        if (item.postfix != null) SizedBox(width: size.s16 / 2),
                         if (item.postfix != null) item.postfix!,
                       ],
                     ),
@@ -181,10 +141,16 @@ class FCListCard extends StatelessWidget {
                     isDisabled: this.isDisabled,
                     disabledColor: this.disabledColor,
                   ),
-                  this._separator(
-                    config: config,
-                    index: index,
-                  ),
+                  if ((index + 1) != this.items.length)
+                    Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: this.separatorPadding ?? size.s16,
+                      ),
+                      child: Container(
+                        color: this.separatorColor ?? theme.grey,
+                        height: this.separatorHeight ?? size.s10 / 10,
+                      ),
+                    ),
                 ],
               ),
             ),

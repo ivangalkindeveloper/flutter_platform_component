@@ -9,7 +9,6 @@ class FCBasicGradientSelectField extends StatefulWidget {
     required this.backgroundGradient,
     required this.splashColor,
     this.internalGradient,
-    this.internalIconHeight,
     required this.title,
     //
     this.textStyle,
@@ -28,8 +27,6 @@ class FCBasicGradientSelectField extends StatefulWidget {
     this.maxLength = 128,
     this.validator,
     this.prefix,
-    this.prefixIcon,
-    this.postfixIcon,
     this.postfix,
     this.bottom,
     required this.onPressed,
@@ -42,7 +39,6 @@ class FCBasicGradientSelectField extends StatefulWidget {
   final Gradient backgroundGradient;
   final Color splashColor;
   final Gradient? internalGradient;
-  final double? internalIconHeight;
   final String? title;
   //
   final TextStyle? textStyle;
@@ -61,8 +57,6 @@ class FCBasicGradientSelectField extends StatefulWidget {
   final int maxLength;
   final String? Function(String)? validator;
   final Widget? prefix;
-  final IconData? prefixIcon;
-  final IconData? postfixIcon;
   final Widget? postfix;
   final Widget? bottom;
   final VoidCallback onPressed;
@@ -120,7 +114,6 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
           ],
         ),
         internalGradient: this.widget.internalGradient,
-        internalIconHeight: this.widget.internalIconHeight,
         controller: this._controller,
         //
         textStyle: this.widget.textStyle,
@@ -139,8 +132,6 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
         maxLength: this.widget.maxLength,
         validator: this.widget.validator,
         prefix: this.widget.prefix,
-        prefixIcon: this.widget.prefixIcon,
-        postfixIcon: this.widget.postfixIcon,
         postfix: this.widget.postfix,
         bottom: this.widget.bottom,
         isRequired: this.widget.isRequired,

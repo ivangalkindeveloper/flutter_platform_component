@@ -22,6 +22,7 @@ class FCBasicGradientButton extends FCPlatformWidget {
             key: key,
             backgroundGradient: backgroundGradient,
             borderGradient: borderGradient,
+            splashColor: splashColor,
             height: height,
             borderRadius: borderRadius,
             borderWidth: borderWidth,
@@ -53,6 +54,7 @@ class _FCBasicGradientButtonCupertino extends StatelessWidget {
     super.key,
     required this.backgroundGradient,
     required this.borderGradient,
+    required this.splashColor,
     required this.height,
     required this.borderRadius,
     required this.borderWidth,
@@ -65,6 +67,7 @@ class _FCBasicGradientButtonCupertino extends StatelessWidget {
 
   final Gradient? backgroundGradient;
   final Gradient? borderGradient;
+  final Color splashColor;
   final double? height;
   final BorderRadius? borderRadius;
   final double? borderWidth;
@@ -171,8 +174,10 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
     return Stack(
       children: [
         FCAnimatedContainer(
-          height: this.height ?? size.heightButton,
           padding: EdgeInsets.zero,
+          constraints: BoxConstraints(
+            minHeight: this.height ?? size.heightButton,
+          ),
           decoration: BoxDecoration(
             gradient: this.backgroundGradient,
             borderRadius: this.borderRadius ?? config.borderRadiusButton,

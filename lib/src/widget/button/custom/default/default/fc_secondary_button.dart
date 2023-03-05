@@ -1,3 +1,4 @@
+import 'package:flutter_component/src/widget/common/fc_button_row_child.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
@@ -6,22 +7,22 @@ class FCSecondaryButton extends StatelessWidget {
   const FCSecondaryButton({
     super.key,
     this.prefix,
-    this.prefixIcon,
-    required this.title,
-    this.postfixIcon,
+    this.title,
+    this.style,
     this.postfix,
     required this.onPressed,
+    this.isExpanded = false,
     this.isLoading = false,
     this.isDisabled = false,
     this.disabledColor,
   });
 
   final Widget? prefix;
-  final IconData? prefixIcon;
-  final String title;
-  final IconData? postfixIcon;
+  final String? title;
+  final TextStyle? style;
   final Widget? postfix;
   final VoidCallback onPressed;
+  final bool isExpanded;
   final bool isLoading;
   final bool isDisabled;
   final Color? disabledColor;
@@ -30,7 +31,6 @@ class FCSecondaryButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
 
     return FCBasicButton(
       backgroundColor: theme.secondary,
@@ -38,30 +38,20 @@ class FCSecondaryButton extends StatelessWidget {
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
         firstChild: FCCircularIndicator.secondaryButton(context: context),
-        secondChild: Row(
+        secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            if (this.prefix != null) this.prefix!,
-            if (this.prefix != null) SizedBox(width: size.s16),
-            if (this.prefixIcon != null)
-              FCIcon.secondaryButton(
-                context: context,
-                icon: this.prefixIcon!,
+          gradient: null,
+          prefix: this.prefix,
+          title: this.title,
+          textAlign: TextAlign.center,
+          style: this.style?.copyWith(
+                    color: this.style?.color ?? theme.secondaryButton,
+                  ) ??
+              TextStyle(
+                color: theme.secondaryButton,
               ),
-            if (this.prefixIcon != null) SizedBox(width: size.s16),
-            FCText.medium16SecondaryButton(
-              context: context,
-              text: this.title,
-            ),
-            if (this.postfixIcon != null) SizedBox(width: size.s16),
-            if (this.postfixIcon != null)
-              FCIcon.secondaryButton(
-                context: context,
-                icon: this.postfixIcon!,
-              ),
-            if (this.postfix != null) SizedBox(width: size.s16),
-            if (this.postfix != null) this.postfix!,
-          ],
+          postfix: this.postfix,
+          isExpanded: this.isExpanded,
         ),
       ),
       onPressed: this.isLoading ? () {} : this.onPressed,

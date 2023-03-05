@@ -1,3 +1,4 @@
+import 'package:flutter_component/src/widget/common/fc_button_row_child.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
@@ -6,24 +7,24 @@ class FCWarningLightGradientButton extends StatelessWidget {
   const FCWarningLightGradientButton({
     super.key,
     this.prefix,
-    this.prefixIcon,
-    required this.title,
-    this.postfixIcon,
+    this.title,
+    this.style,
     this.postfix,
     required this.onPressed,
     this.isFilled = false,
+    this.isExpanded = false,
     this.isLoading = false,
     this.isDisabled = false,
     this.disabledColor,
   });
 
   final Widget? prefix;
-  final IconData? prefixIcon;
-  final String title;
-  final IconData? postfixIcon;
+  final String? title;
+  final TextStyle? style;
   final Widget? postfix;
   final VoidCallback onPressed;
   final bool isFilled;
+  final bool isExpanded;
   final bool isLoading;
   final bool isDisabled;
   final Color? disabledColor;
@@ -32,7 +33,6 @@ class FCWarningLightGradientButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
 
     return FCBasicGradientButton(
       backgroundGradient: this.isFilled ? theme.warningLightGradient : null,
@@ -40,30 +40,20 @@ class FCWarningLightGradientButton extends StatelessWidget {
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
         firstChild: FCCircularIndicator.warning(context: context),
-        secondChild: Row(
+        secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            if (this.prefix != null) this.prefix!,
-            if (this.prefix != null) SizedBox(width: size.s16),
-            if (this.prefixIcon != null)
-              FCIcon.warningGradient(
-                context: context,
-                icon: this.prefixIcon!,
+          gradient: null,
+          prefix: this.prefix,
+          title: this.title,
+          textAlign: TextAlign.center,
+          style: this.style?.copyWith(
+                    color: this.style?.color ?? theme.warning,
+                  ) ??
+              TextStyle(
+                color: theme.warning,
               ),
-            if (this.prefixIcon != null) SizedBox(width: size.s16),
-            FCText.medium16WarningGradient(
-              context: context,
-              text: this.title,
-            ),
-            if (this.postfixIcon != null) SizedBox(width: size.s16),
-            if (this.postfixIcon != null)
-              FCIcon.warningGradient(
-                context: context,
-                icon: this.postfixIcon!,
-              ),
-            if (this.postfix != null) SizedBox(width: size.s16),
-            if (this.postfix != null) this.postfix!,
-          ],
+          postfix: this.postfix,
+          isExpanded: this.isExpanded,
         ),
       ),
       onPressed: this.isLoading ? () {} : this.onPressed,

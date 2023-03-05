@@ -1,3 +1,4 @@
+import 'package:flutter_component/src/widget/common/fc_button_row_child.dart';
 import 'package:flutter_component/src/exception/fc_exception.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
@@ -9,27 +10,27 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
     required this.value,
     required this.items,
     required this.onChanged,
-    this.height,
     required this.backgroundColor,
     required this.thumbColor,
     required this.unselectedInternalColor,
+    this.unselectedStyle,
     required this.selectedInternalColor,
-    this.heightIcon,
-    this.style,
+    this.selectedStyle,
+    this.height,
     this.isDisabled = false,
     this.disabledColor,
   });
 
-  final T value;
+  final T? value;
   final List<FCSlidingSegmentControlItem<T>> items;
   final void Function(T) onChanged;
-  final double? height;
   final Color backgroundColor;
   final Color thumbColor;
   final Color unselectedInternalColor;
+  final TextStyle? unselectedStyle;
   final Color selectedInternalColor;
-  final double? heightIcon;
-  final TextStyle? style;
+  final TextStyle? selectedStyle;
+  final double? height;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -46,7 +47,6 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
     if (this.items.length == 1) throw const FCItemsLengthException();
 
     final FCConfig config = context.config;
-    final IFCTextStyle textStyle = config.textStyle;
     final IFCSize size = config.size;
 
     return Row(
@@ -69,48 +69,23 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
                           item.value,
                           SizedBox(
                             height: this.height ?? size.heightSlidingSegmentControl,
-                            child: Row(
+                            child: FCButtonRowChild(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                if (item.prefix != null) item.prefix!,
-                                if (item.prefix != null) SizedBox(width: size.s16 / 2),
-                                if (item.prefixIcon != null)
-                                  Icon(
-                                    item.prefixIcon,
-                                    size: this.heightIcon ?? size.heightIconSmall,
-                                    color: this._internalColor(value: item.value),
-                                  ),
-                                if (item.prefixIcon != null)
-                                  SizedBox(width: size.s16 / 2),
-                                Text(
-                                  item.title,
-                                  style: this.style?.copyWith(
-                                            color: this.style?.color ??
-                                                this._internalColor(value: item.value),
-                                            fontSize: this.style?.fontSize ?? size.s16,
-                                            fontWeight: this.style?.fontWeight ??
-                                                textStyle.fontWeightMedium,
-                                            fontFamily: this.style?.fontFamily ??
-                                                textStyle.fontFamilyMedium,
-                                          ) ??
-                                      TextStyle(
-                                        color: this._internalColor(value: item.value),
-                                        fontSize: size.s16,
-                                        fontWeight: textStyle.fontWeightMedium,
-                                        fontFamily: textStyle.fontFamilyMedium,
+                              gradient: null,
+                              prefix: item.prefix,
+                              title: item.title,
+                              textAlign: TextAlign.center,
+                              style: this.value == item.value
+                                  ? this.selectedStyle?.copyWith(
+                                        color: this.selectedStyle?.color ??
+                                            this._internalColor(value: item.value),
+                                      )
+                                  : this.unselectedStyle?.copyWith(
+                                        color: this.unselectedStyle?.color ??
+                                            this._internalColor(value: item.value),
                                       ),
-                                ),
-                                if (item.postfixIcon != null)
-                                  SizedBox(width: size.s16 / 2),
-                                if (item.postfixIcon != null)
-                                  Icon(
-                                    item.postfixIcon,
-                                    size: this.heightIcon ?? size.heightIconSmall,
-                                    color: this._internalColor(value: item.value),
-                                  ),
-                                if (item.postfix != null) SizedBox(width: size.s16 / 2),
-                                if (item.postfix != null) item.postfix!,
-                              ],
+                              postfix: item.postfix,
+                              isExpanded: false,
                             ),
                           ),
                         ),

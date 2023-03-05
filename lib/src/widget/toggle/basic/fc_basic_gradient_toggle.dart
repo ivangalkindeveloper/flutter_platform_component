@@ -1,3 +1,4 @@
+import 'package:flutter_component/src/widget/common/fc_button_row_child.dart';
 import 'package:flutter_component/src/exception/fc_exception.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
@@ -10,16 +11,16 @@ class FCBasicGradientToggle<T> extends StatefulWidget {
     required this.value,
     required this.items,
     required this.onChanged,
-    this.height,
     this.unselectedBackgroundGradient,
     this.unselectedInternalGradient,
     this.unselectedSplashColor,
+    this.unselectedStyle,
     required this.selectedBackgroundGradient,
     required this.selectedInternalGradient,
     required this.selectedSplashColor,
+    this.selectedStyle,
+    this.height,
     this.horizontalInterval,
-    this.heightIcon,
-    this.style,
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
@@ -28,16 +29,16 @@ class FCBasicGradientToggle<T> extends StatefulWidget {
   final T? value;
   final List<FCToggleItem<T>> items;
   final void Function(T) onChanged;
-  final double? height;
   final Gradient? unselectedBackgroundGradient;
   final Gradient? unselectedInternalGradient;
   final Color? unselectedSplashColor;
+  final TextStyle? unselectedStyle;
   final Gradient selectedBackgroundGradient;
   final Gradient selectedInternalGradient;
   final Color selectedSplashColor;
+  final TextStyle? selectedStyle;
+  final double? height;
   final double? horizontalInterval;
-  final double? heightIcon;
-  final TextStyle? style;
   final bool isRequired;
   final bool isDisabled;
   final Color? disabledColor;
@@ -119,20 +120,20 @@ class _FCBasicGradientToggleState extends State<FCBasicGradientToggle> {
                               Expanded(
                                 child: _FCLinearGradientToggleButton(
                                   item: item,
-                                  height: this.widget.height,
                                   unselectedBackgroundGradient:
                                       this.widget.unselectedBackgroundGradient,
                                   unselectedInternalGradient:
                                       this.widget.unselectedInternalGradient,
                                   unselectedSplashColor:
                                       this.widget.unselectedSplashColor,
+                                  unselectedStyle: this.widget.unselectedStyle,
                                   selectedBackgroundGradient:
                                       this.widget.selectedBackgroundGradient,
                                   selectedInternalGradient:
                                       this.widget.selectedInternalGradient,
                                   selectedSplashColor: this.widget.selectedSplashColor,
-                                  heightIcon: this.widget.heightIcon,
-                                  style: this.widget.style,
+                                  selectedStyle: this.widget.selectedStyle,
+                                  height: this.widget.height,
                                   isValidationError: this._isValidationError,
                                   onPressed: () {
                                     this._isValidationError = false;
@@ -175,30 +176,30 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
   const _FCLinearGradientToggleButton({
     super.key,
     required this.item,
-    required this.height,
     required this.unselectedBackgroundGradient,
     required this.unselectedInternalGradient,
     required this.unselectedSplashColor,
+    required this.unselectedStyle,
     required this.selectedBackgroundGradient,
     required this.selectedInternalGradient,
     required this.selectedSplashColor,
-    required this.heightIcon,
-    required this.style,
+    required this.selectedStyle,
+    required this.height,
     required this.isValidationError,
     required this.onPressed,
     required this.isSelected,
   });
 
   final FCToggleItem<T> item;
-  final double? height;
   final Gradient? unselectedBackgroundGradient;
   final Gradient? unselectedInternalGradient;
   final Color? unselectedSplashColor;
+  final TextStyle? unselectedStyle;
   final Gradient selectedBackgroundGradient;
   final Gradient selectedInternalGradient;
   final Color selectedSplashColor;
-  final double? heightIcon;
-  final TextStyle? style;
+  final TextStyle? selectedStyle;
+  final double? height;
   final bool isValidationError;
   final VoidCallback onPressed;
   final bool isSelected;
@@ -215,8 +216,8 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
         FCLinearGradient(
           context: context,
           colors: [
-            theme.white,
-            theme.white,
+            theme.backgroundComponent,
+            theme.backgroundComponent,
           ],
         );
   }
@@ -232,13 +233,12 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
   Color _splashColor({required IFCTheme theme}) {
     if (this.isSelected) return this.selectedSplashColor;
 
-    return this.unselectedSplashColor ?? theme.white;
+    return this.unselectedSplashColor ?? theme.backgroundComponent;
   }
 
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
-    final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
@@ -247,54 +247,25 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
       splashColor: this._splashColor(theme: theme),
       height: this.height ?? size.heightToggle,
       borderRadius: config.borderRadiusToggle,
-      onPressed: this.onPressed,
-      child: Row(
+      child: FCButtonRowChild(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          if (this.item.prefix != null) this.item.prefix!,
-          if (this.item.prefix != null) SizedBox(width: size.s16 / 2),
-          if (this.item.prefixIcon != null)
-            FCGradientMask(
-              gradient: this._internalGradient(theme: theme),
-              child: Icon(
-                this.item.prefixIcon,
-                size: this.heightIcon ?? size.heightIconSmall,
-                color: theme.black,
-              ),
-            ),
-          if (this.item.prefixIcon != null) SizedBox(width: size.s16 / 2),
-          FCGradientMask(
-            gradient: this._internalGradient(theme: theme),
-            child: Text(
-              item.title,
-              style: this.style?.copyWith(
-                        color: this.style?.color ?? theme.black,
-                        fontSize: this.style?.fontSize ?? size.s14,
-                        fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,
-                        fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyRegular,
-                      ) ??
-                  TextStyle(
-                    color: theme.black,
-                    fontSize: size.s14,
-                    fontWeight: textStyle.fontWeightRegular,
-                    fontFamily: textStyle.fontFamilyRegular,
-                  ),
-            ),
-          ),
-          if (this.item.postfixIcon != null) SizedBox(width: size.s16 / 2),
-          if (this.item.postfixIcon != null)
-            FCGradientMask(
-              gradient: this._internalGradient(theme: theme),
-              child: Icon(
-                this.item.postfixIcon,
-                size: this.heightIcon ?? size.heightIconSmall,
-                color: theme.black,
-              ),
-            ),
-          if (this.item.postfix != null) SizedBox(width: size.s16 / 2),
-          if (this.item.postfix != null) this.item.postfix!,
-        ],
+        gradient: this._internalGradient(theme: theme),
+        prefix: this.item.prefix,
+        title: this.item.title,
+        textAlign: TextAlign.center,
+        style: this.isSelected
+            ? this.selectedStyle?.copyWith(
+                  color: this.selectedStyle?.color ??
+                      this._internalGradient(theme: theme).colors.first,
+                )
+            : this.unselectedStyle?.copyWith(
+                  color: this.unselectedStyle?.color ??
+                      this._internalGradient(theme: theme).colors.first,
+                ),
+        postfix: this.item.postfix,
+        isExpanded: true,
       ),
+      onPressed: this.onPressed,
     );
   }
 }

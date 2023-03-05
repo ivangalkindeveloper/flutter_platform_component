@@ -15,6 +15,7 @@ class FCBasicButton extends FCPlatformWidget {
     EdgeInsets? padding,
     required Widget child,
     required VoidCallback onPressed,
+    bool isExpanded = true,
     bool isDisabled = false,
     Color? disabledColor,
   }) : super(
@@ -22,12 +23,14 @@ class FCBasicButton extends FCPlatformWidget {
             key: key,
             backgroundColor: backgroundColor,
             borderColor: borderColor,
+            splashColor: splashColor,
             height: height,
             borderRadius: borderRadius,
             borderWidth: borderWidth,
             padding: padding,
             child: child,
             onPressed: onPressed,
+            isExpanded: isExpanded,
             isDisabled: isDisabled,
             disabledColor: disabledColor,
           ),
@@ -42,6 +45,7 @@ class FCBasicButton extends FCPlatformWidget {
             padding: padding,
             child: child,
             onPressed: onPressed,
+            isExpanded: isExpanded,
             isDisabled: isDisabled,
             disabledColor: disabledColor,
           ),
@@ -53,24 +57,28 @@ class _FCBasicButtonCupertino extends StatelessWidget {
     super.key,
     required this.backgroundColor,
     required this.borderColor,
+    required this.splashColor,
     required this.height,
     required this.borderRadius,
     required this.borderWidth,
     required this.padding,
     required this.child,
     required this.onPressed,
+    required this.isExpanded,
     required this.isDisabled,
     required this.disabledColor,
   });
 
   final Color? backgroundColor;
   final Color? borderColor;
+  final Color splashColor;
   final double? height;
   final BorderRadius? borderRadius;
   final double? borderWidth;
   final EdgeInsets? padding;
   final Widget child;
   final VoidCallback onPressed;
+  final bool isExpanded;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -133,6 +141,7 @@ class _FCBasicButtonMaterial extends StatelessWidget {
     required this.padding,
     required this.child,
     required this.onPressed,
+    required this.isExpanded,
     required this.isDisabled,
     required this.disabledColor,
   });
@@ -146,6 +155,7 @@ class _FCBasicButtonMaterial extends StatelessWidget {
   final EdgeInsets? padding;
   final Widget child;
   final VoidCallback onPressed;
+  final bool isExpanded;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -157,8 +167,10 @@ class _FCBasicButtonMaterial extends StatelessWidget {
     return Stack(
       children: [
         FCAnimatedContainer(
-          height: this.height ?? size.heightButton,
           padding: EdgeInsets.zero,
+          constraints: BoxConstraints(
+            minHeight: this.height ?? size.heightButton,
+          ),
           decoration: BoxDecoration(
             color: this.backgroundColor,
             borderRadius: this.borderRadius ?? config.borderRadiusButton,

@@ -8,9 +8,11 @@ class FCInfoGradientSegmentControl<T> extends StatelessWidget {
     required this.value,
     required this.items,
     required this.onChanged,
+    this.unselectedStyle,
+    this.selectedStyle,
     this.height,
-    this.heightIcon,
-    this.style,
+    this.borderRadius,
+    this.borderWidth,
     this.isDisabled = false,
     this.disabledColor,
   });
@@ -18,9 +20,11 @@ class FCInfoGradientSegmentControl<T> extends StatelessWidget {
   final T? value;
   final List<FCSegmentControlItem<T>> items;
   final void Function(T) onChanged;
+  final TextStyle? unselectedStyle;
+  final TextStyle? selectedStyle;
   final double? height;
-  final double? heightIcon;
-  final TextStyle? style;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -33,7 +37,6 @@ class FCInfoGradientSegmentControl<T> extends StatelessWidget {
       value: this.value,
       items: this.items,
       onChanged: this.onChanged,
-      height: this.height,
       unselectedBackgroundGradient: const LinearGradient(
         colors: [
           Colors.transparent,
@@ -41,14 +44,22 @@ class FCInfoGradientSegmentControl<T> extends StatelessWidget {
         ],
       ),
       unselectedBorderGradient: theme.infoGradient,
-      unselectedInternalColor: theme.info,
+      unselectedInternalGradient: theme.infoGradient,
       unselectedSplashColor: theme.info,
+      unselectedStyle: this.unselectedStyle,
       selectedBackgroundGradient: theme.infoGradient,
       selectedBorderGradient: theme.infoGradient,
-      selectedInternalColor: theme.white,
+      selectedInternalGradient: LinearGradient(
+        colors: [
+          theme.white,
+          theme.white,
+        ],
+      ),
       selectedSplashColor: theme.white,
-      heightIcon: this.heightIcon,
-      style: this.style,
+      selectedStyle: this.selectedStyle,
+      height: this.height,
+      borderRadius: this.borderRadius,
+      borderWidth: this.borderWidth,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

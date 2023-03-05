@@ -8,9 +8,11 @@ class FCAccentDarkSegmentControl<T> extends StatelessWidget {
     required this.value,
     required this.items,
     required this.onChanged,
+    this.unselectedStyle,
+    this.selectedStyle,
     this.height,
-    this.heightIcon,
-    this.style,
+    this.borderRadius,
+    this.borderWidth,
     this.isDisabled = false,
     this.disabledColor,
   });
@@ -18,9 +20,11 @@ class FCAccentDarkSegmentControl<T> extends StatelessWidget {
   final T? value;
   final List<FCSegmentControlItem<T>> items;
   final void Function(T) onChanged;
+  final TextStyle? unselectedStyle;
+  final TextStyle? selectedStyle;
   final double? height;
-  final double? heightIcon;
-  final TextStyle? style;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -33,17 +37,19 @@ class FCAccentDarkSegmentControl<T> extends StatelessWidget {
       value: this.value,
       items: this.items,
       onChanged: this.onChanged,
-      height: this.height,
       unselectedBackgroundColor: Colors.transparent,
       unselectedBorderColor: theme.accentDark,
       unselectedInternalColor: theme.accentDark,
       unselectedSplashColor: theme.accentDark,
+      unselectedStyle: this.unselectedStyle,
       selectedBackgroundColor: theme.accentDark,
       selectedBorderColor: theme.accentDark,
       selectedInternalColor: theme.white,
       selectedSplashColor: theme.white,
-      heightIcon: this.heightIcon,
-      style: this.style,
+      selectedStyle: this.selectedStyle,
+      height: this.height,
+      borderRadius: this.borderRadius,
+      borderWidth: this.borderWidth,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

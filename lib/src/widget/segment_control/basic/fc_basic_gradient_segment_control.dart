@@ -1,4 +1,5 @@
 import 'package:custom_rounded_rectangle_border/custom_rounded_rectangle_border.dart';
+import 'package:flutter_component/src/widget/common/fc_button_row_child.dart';
 import 'package:flutter_component/src/exception/fc_exception.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
@@ -11,17 +12,19 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
     required this.value,
     required this.items,
     required this.onChanged,
-    this.height,
     this.unselectedBackgroundGradient,
     this.unselectedBorderGradient,
-    this.unselectedInternalColor,
+    this.unselectedInternalGradient,
     this.unselectedSplashColor,
+    this.unselectedStyle,
     required this.selectedBackgroundGradient,
     required this.selectedBorderGradient,
-    required this.selectedInternalColor,
+    required this.selectedInternalGradient,
     required this.selectedSplashColor,
-    this.heightIcon,
-    this.style,
+    this.selectedStyle,
+    this.height,
+    this.borderRadius,
+    this.borderWidth,
     this.isDisabled = false,
     this.disabledColor,
   });
@@ -29,17 +32,19 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
   final T? value;
   final List<FCSegmentControlItem<T>> items;
   final void Function(T) onChanged;
-  final double? height;
   final Gradient? unselectedBackgroundGradient;
   final Gradient? unselectedBorderGradient;
-  final Color? unselectedInternalColor;
+  final Gradient? unselectedInternalGradient;
   final Color? unselectedSplashColor;
+  final TextStyle? unselectedStyle;
   final Gradient selectedBackgroundGradient;
   final Gradient selectedBorderGradient;
-  final Color selectedInternalColor;
+  final Gradient selectedInternalGradient;
   final Color selectedSplashColor;
-  final double? heightIcon;
-  final TextStyle? style;
+  final TextStyle? selectedStyle;
+  final double? height;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -64,17 +69,19 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
                         index: index,
                         item: item,
                         length: this.items.length,
-                        height: this.height,
                         unselectedBackgroundGradient: this.unselectedBackgroundGradient,
                         unselectedBorderGradient: this.unselectedBorderGradient,
-                        unselectedInternalColor: this.unselectedInternalColor,
+                        unselectedInternalGradient: this.unselectedInternalGradient,
                         unselectedSplashColor: this.unselectedSplashColor,
+                        unselectedStyle: this.unselectedStyle,
                         selectedBackgroundGradient: this.selectedBackgroundGradient,
                         selectedBorderGradient: this.selectedBorderGradient,
-                        selectedInternalColor: this.selectedInternalColor,
+                        selectedInternalGradient: this.selectedInternalGradient,
                         selectedSplashColor: this.selectedSplashColor,
-                        heightIcon: this.heightIcon,
-                        style: this.style,
+                        selectedStyle: this.selectedStyle,
+                        height: this.height,
+                        borderRadius: this.borderRadius,
+                        borderWidth: this.borderWidth,
                         onPressed: () => this.onChanged(item.value),
                         isSelected: item.value == this.value,
                       ),
@@ -87,7 +94,8 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
               child: this.isDisabled
                   ? FCComponentDisabledOverlay(
                       color: this.disabledColor,
-                      borderRadius: config.borderRadiusSegmentControl,
+                      borderRadius:
+                          this.borderRadius ?? config.borderRadiusSegmentControl,
                     )
                   : null,
             ),
@@ -104,17 +112,19 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required this.index,
     required this.item,
     required this.length,
-    required this.height,
     required this.unselectedBackgroundGradient,
     required this.unselectedBorderGradient,
-    required this.unselectedInternalColor,
+    required this.unselectedInternalGradient,
     required this.unselectedSplashColor,
+    required this.unselectedStyle,
     required this.selectedBackgroundGradient,
     required this.selectedBorderGradient,
-    required this.selectedInternalColor,
+    required this.selectedInternalGradient,
     required this.selectedSplashColor,
-    required this.heightIcon,
-    required this.style,
+    required this.selectedStyle,
+    required this.height,
+    required this.borderRadius,
+    required this.borderWidth,
     required this.onPressed,
     required this.isSelected,
   });
@@ -122,25 +132,37 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   final int index;
   final FCSegmentControlItem<T> item;
   final int length;
-  final double? height;
   final Gradient? unselectedBackgroundGradient;
   final Gradient? unselectedBorderGradient;
-  final Color? unselectedInternalColor;
+  final Gradient? unselectedInternalGradient;
   final Color? unselectedSplashColor;
+  final TextStyle? unselectedStyle;
   final Gradient selectedBackgroundGradient;
   final Gradient selectedBorderGradient;
-  final Color selectedInternalColor;
+  final Gradient selectedInternalGradient;
   final Color selectedSplashColor;
-  final double? heightIcon;
-  final TextStyle? style;
+  final TextStyle? selectedStyle;
+  final double? height;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   final VoidCallback onPressed;
   final bool isSelected;
+
+  BorderRadius _borderRadius({
+    required FCConfig config,
+  }) =>
+      this.borderRadius ?? config.borderRadiusSegmentControl;
+
+  double _borderWidth({
+    required FCConfig config,
+  }) =>
+      this.borderWidth ?? config.borderWidthSegmentControl;
 
   Radius _topLeftRadius({
     required FCConfig config,
     required int index,
   }) {
-    if (index == 0) return Radius.circular(config.borderRadiusSegmentControl.topLeft.x);
+    if (index == 0) return Radius.circular(this._borderRadius(config: config).topLeft.x);
 
     return Radius.zero;
   }
@@ -150,7 +172,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required int index,
   }) {
     if ((index + 1) == this.length)
-      return Radius.circular(config.borderRadiusSegmentControl.topRight.x);
+      return Radius.circular(this._borderRadius(config: config).topRight.x);
 
     return Radius.zero;
   }
@@ -160,7 +182,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required int index,
   }) {
     if (index == 0)
-      return Radius.circular(config.borderRadiusSegmentControl.bottomLeft.x);
+      return Radius.circular(this._borderRadius(config: config).bottomLeft.x);
 
     return Radius.zero;
   }
@@ -170,7 +192,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required int index,
   }) {
     if ((index + 1) == this.length)
-      return Radius.circular(config.borderRadiusSegmentControl.bottomRight.x);
+      return Radius.circular(this._borderRadius(config: config).bottomRight.x);
 
     return Radius.zero;
   }
@@ -179,7 +201,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required FCConfig config,
     required int index,
   }) {
-    if (index == 0) return config.borderWidthSegmentControl;
+    if (index == 0) return this._borderWidth(config: config);
 
     return 0;
   }
@@ -188,7 +210,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required FCConfig config,
     required int index,
   }) {
-    if ((index + 1) == this.length) return config.borderWidthSegmentControl;
+    if ((index + 1) == this.length) return this._borderWidth(config: config);
 
     return 0;
   }
@@ -219,14 +241,14 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     return this.selectedBorderGradient;
   }
 
-  Color _internalColor({
+  Gradient _internalGradient({
     required IFCTheme theme,
   }) {
-    if (this.isSelected) return this.selectedInternalColor;
+    if (this.isSelected) return this.selectedInternalGradient;
 
-    if (this.unselectedInternalColor != null) return this.unselectedInternalColor!;
+    if (this.unselectedInternalGradient != null) return this.unselectedInternalGradient!;
 
-    return this.selectedBorderGradient.colors.first;
+    return this.selectedBorderGradient;
   }
 
   Color _splashColor({
@@ -239,25 +261,9 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     return theme.white;
   }
 
-  Widget _separator({
-    required FCConfig config,
-    required int index,
-  }) {
-    if ((index + 1) != this.length)
-      return Container(
-        width: config.borderWidthSegmentControl,
-        decoration: BoxDecoration(
-          gradient: this.unselectedBorderGradient ?? this.selectedBorderGradient,
-        ),
-      );
-
-    return const SizedBox();
-  }
-
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
-    final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
@@ -285,47 +291,25 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
               index: this.index,
             ),
           ),
-          onPressed: this.onPressed,
-          child: Row(
+          child: FCButtonRowChild(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              if (this.item.prefix != null) this.item.prefix!,
-              if (this.item.prefix != null) SizedBox(width: size.s16 / 2),
-              if (this.item.prefixIcon != null)
-                Icon(
-                  this.item.prefixIcon,
-                  size: this.heightIcon ?? size.heightIconSmall,
-                  color: this._internalColor(theme: theme),
-                ),
-              if (this.item.prefixIcon != null) SizedBox(width: size.s16 / 2),
-              Text(
-                item.title,
-                style: this.style?.copyWith(
-                          color: this.style?.color ?? this._internalColor(theme: theme),
-                          fontSize: this.style?.fontSize ?? size.s16,
-                          fontWeight:
-                              this.style?.fontWeight ?? textStyle.fontWeightRegular,
-                          fontFamily:
-                              this.style?.fontFamily ?? textStyle.fontFamilyRegular,
-                        ) ??
-                    TextStyle(
-                      color: this._internalColor(theme: theme),
-                      fontSize: size.s16,
-                      fontWeight: textStyle.fontWeightRegular,
-                      fontFamily: textStyle.fontFamilyRegular,
+            gradient: this._internalGradient(theme: theme),
+            prefix: this.item.prefix,
+            title: this.item.title,
+            textAlign: TextAlign.center,
+            style: this.isSelected
+                ? this.selectedStyle?.copyWith(
+                      color: this.selectedStyle?.color ??
+                          this._internalGradient(theme: theme).colors.first,
+                    )
+                : this.unselectedStyle?.copyWith(
+                      color: this.unselectedStyle?.color ??
+                          this._internalGradient(theme: theme).colors.first,
                     ),
-              ),
-              if (this.item.postfixIcon != null) SizedBox(width: size.s16 / 2),
-              if (this.item.postfixIcon != null)
-                Icon(
-                  this.item.postfixIcon,
-                  size: this.heightIcon ?? size.heightIconSmall,
-                  color: this._internalColor(theme: theme),
-                ),
-              if (this.item.postfix != null) SizedBox(width: size.s16 / 2),
-              if (this.item.postfix != null) this.item.postfix!,
-            ],
+            postfix: this.item.postfix,
+            isExpanded: false,
           ),
+          onPressed: this.onPressed,
         ),
         IgnorePointer(
           child: FCGradientMask(
@@ -337,42 +321,42 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
                     decoration: ShapeDecoration(
                       shape: CustomRoundedRectangleBorder(
                         topSide: BorderSide(
-                          color: theme.black,
-                          width: config.borderWidthSegmentControl,
+                          color: this._borderGradient(theme: theme).colors.first,
+                          width: this._borderWidth(config: config),
                         ),
                         bottomSide: BorderSide(
-                          color: theme.black,
-                          width: config.borderWidthSegmentControl,
+                          color: this._borderGradient(theme: theme).colors.first,
+                          width: this._borderWidth(config: config),
                         ),
                         leftSide: BorderSide(
-                          color: theme.black,
+                          color: this._borderGradient(theme: theme).colors.first,
                           width: this._leftBorderWidth(
                             config: config,
                             index: index,
                           ),
                         ),
                         rightSide: BorderSide(
-                          color: theme.black,
+                          color: this._borderGradient(theme: theme).colors.first,
                           width: this._rightBorderWidth(
                             config: config,
                             index: index,
                           ),
                         ),
                         topLeftCornerSide: BorderSide(
-                          color: theme.black,
-                          width: config.borderWidthSegmentControl,
+                          color: this._borderGradient(theme: theme).colors.first,
+                          width: this._borderWidth(config: config),
                         ),
                         topRightCornerSide: BorderSide(
-                          color: theme.black,
-                          width: config.borderWidthSegmentControl,
+                          color: this._borderGradient(theme: theme).colors.first,
+                          width: this._borderWidth(config: config),
                         ),
                         bottomLeftCornerSide: BorderSide(
-                          color: theme.black,
-                          width: config.borderWidthSegmentControl,
+                          color: this._borderGradient(theme: theme).colors.first,
+                          width: this._borderWidth(config: config),
                         ),
                         bottomRightCornerSide: BorderSide(
-                          color: theme.black,
-                          width: config.borderWidthSegmentControl,
+                          color: this._borderGradient(theme: theme).colors.first,
+                          width: this._borderWidth(config: config),
                         ),
                         borderRadius: BorderRadius.only(
                           topLeft: this._topLeftRadius(
@@ -396,10 +380,14 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
                     ),
                   ),
                 ),
-                this._separator(
-                  config: config,
-                  index: index,
-                ),
+                if ((index + 1) != this.length)
+                  Container(
+                    width: this._borderWidth(config: config),
+                    decoration: BoxDecoration(
+                      gradient:
+                          this.unselectedBorderGradient ?? this.selectedBorderGradient,
+                    ),
+                  ),
               ],
             ),
           ),
