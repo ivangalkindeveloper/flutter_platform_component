@@ -11,6 +11,7 @@ class FCWhiteAlwaysScreenAppBar extends FCBasicAppBar {
     Color? backgroundColor,
     Widget? prefix,
     VoidCallback? onPressedBack,
+    bool isInverseBackIcon = false,
     String? title,
     TextStyle? style,
     Widget? middle,
@@ -25,6 +26,7 @@ class FCWhiteAlwaysScreenAppBar extends FCBasicAppBar {
             context: context,
             prefix: prefix,
             onPressedBack: onPressedBack,
+            isInverseBackIcon: isInverseBackIcon,
           ),
           title: title,
           style: style?.copyWith(
@@ -45,6 +47,7 @@ class FCWhiteAlwaysScreenAppBar extends FCBasicAppBar {
     required BuildContext context,
     required Widget? prefix,
     required VoidCallback? onPressedBack,
+    required bool isInverseBackIcon,
   }) {
     if (prefix != null) return prefix;
 
@@ -55,12 +58,15 @@ class FCWhiteAlwaysScreenAppBar extends FCBasicAppBar {
 
       return FCBasicIconButton(
         splashColor: theme.grey,
-        icon: FCIcon.whiteAlways(
-          context: context,
-          icon: FCPlatform.decompose<IconData, IconData, IconData>(
-            platform: platform,
-            cupertino: CupertinoIcons.back,
-            material: Icons.arrow_back,
+        icon: Transform.scale(
+          scaleX: isInverseBackIcon ? -1 : 1,
+          child: FCIcon.whiteAlways(
+            context: context,
+            icon: FCPlatform.decompose<IconData, IconData, IconData>(
+              platform: platform,
+              cupertino: CupertinoIcons.back,
+              material: Icons.arrow_back,
+            ),
           ),
         ),
         onPressed: onPressedBack,

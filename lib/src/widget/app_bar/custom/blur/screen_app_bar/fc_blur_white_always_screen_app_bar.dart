@@ -14,6 +14,7 @@ class FCBlurWhiteAlwaysScreenAppBar extends FCBasicBlurAppBar {
     ImageFilter? blurFilter,
     Widget? prefix,
     VoidCallback? onPressedBack,
+    bool isInverseBackIcon = false,
     String? title,
     TextStyle? style,
     Widget? middle,
@@ -30,6 +31,7 @@ class FCBlurWhiteAlwaysScreenAppBar extends FCBasicBlurAppBar {
             context: context,
             prefix: prefix,
             onPressedBack: onPressedBack,
+            isInverseBackIcon: isInverseBackIcon,
           ),
           title: title,
           style: style?.copyWith(
@@ -50,6 +52,7 @@ class FCBlurWhiteAlwaysScreenAppBar extends FCBasicBlurAppBar {
     required BuildContext context,
     required Widget? prefix,
     required VoidCallback? onPressedBack,
+    required bool isInverseBackIcon,
   }) {
     if (prefix != null) return prefix;
 
@@ -60,12 +63,15 @@ class FCBlurWhiteAlwaysScreenAppBar extends FCBasicBlurAppBar {
 
       return FCBasicIconButton(
         splashColor: theme.grey,
-        icon: FCIcon.whiteAlways(
-          context: context,
-          icon: FCPlatform.decompose<IconData, IconData, IconData>(
-            platform: platform,
-            cupertino: CupertinoIcons.back,
-            material: Icons.arrow_back,
+        icon: Transform.scale(
+          scaleX: isInverseBackIcon ? -1 : 1,
+          child: FCIcon.whiteAlways(
+            context: context,
+            icon: FCPlatform.decompose<IconData, IconData, IconData>(
+              platform: platform,
+              cupertino: CupertinoIcons.back,
+              material: Icons.arrow_back,
+            ),
           ),
         ),
         onPressed: onPressedBack,

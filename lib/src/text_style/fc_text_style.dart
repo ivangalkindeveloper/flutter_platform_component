@@ -4,11 +4,11 @@ abstract class IFCTextStyle {
   const IFCTextStyle();
 
   // FontWeight
-  abstract final FontWeight fontWeightThin;
-  abstract final FontWeight fontWeightRegular;
-  abstract final FontWeight fontWeightMedium;
-  abstract final FontWeight fontWeightSemiBold;
-  abstract final FontWeight fontWeightBold;
+  abstract final FontWeight? fontWeightThin;
+  abstract final FontWeight? fontWeightRegular;
+  abstract final FontWeight? fontWeightMedium;
+  abstract final FontWeight? fontWeightSemiBold;
+  abstract final FontWeight? fontWeightBold;
 
   // FontFamily
   abstract final String? fontFamilyThin;

@@ -179,6 +179,7 @@ class _FCAppBarMaterial extends StatelessWidget {
           actions: this.postfix != null
               ? [
                   Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       this.postfix!,
                     ],

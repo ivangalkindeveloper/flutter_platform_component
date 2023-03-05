@@ -23,15 +23,15 @@ class FCDefaultTextStyle implements IFCTextStyle {
 
   // FontWeight
   @override
-  final FontWeight fontWeightThin;
+  final FontWeight? fontWeightThin;
   @override
-  final FontWeight fontWeightRegular;
+  final FontWeight? fontWeightRegular;
   @override
-  final FontWeight fontWeightMedium;
+  final FontWeight? fontWeightMedium;
   @override
-  final FontWeight fontWeightSemiBold;
+  final FontWeight? fontWeightSemiBold;
   @override
-  final FontWeight fontWeightBold;
+  final FontWeight? fontWeightBold;
 
   // FontFamily
   @override
