@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCWarningLightGradientButton extends StatelessWidget {
-  const FCWarningLightGradientButton({
+class FCWarningGradientLabelButton extends StatelessWidget {
+  const FCWarningGradientLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -42,7 +42,7 @@ class FCWarningLightGradientButton extends StatelessWidget {
         firstChild: FCCircularIndicator.warning(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: null,
+          gradient: theme.warningGradient,
           prefix: this.prefix,
           title: this.title,
           textAlign: TextAlign.center,

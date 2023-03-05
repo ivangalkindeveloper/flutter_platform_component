@@ -268,14 +268,14 @@ export 'src/widget/button/custom/default/default/fc_warning_button.dart';
 export 'src/widget/button/custom/default/default/fc_white_always_button.dart';
 export 'src/widget/button/custom/default/default/fc_white_button.dart';
 // Button / Custom / Default / Light
-export 'src/widget/button/custom/default/light/fc_accent_light_button.dart';
-export 'src/widget/button/custom/default/light/fc_danger_light_button.dart';
-export 'src/widget/button/custom/default/light/fc_grey_light_button.dart';
-export 'src/widget/button/custom/default/light/fc_info_light_button.dart';
-export 'src/widget/button/custom/default/light/fc_primary_light_button.dart';
-export 'src/widget/button/custom/default/light/fc_secondary_light_button.dart';
-export 'src/widget/button/custom/default/light/fc_success_light_button.dart';
-export 'src/widget/button/custom/default/light/fc_warning_light_button.dart';
+export 'src/widget/button/custom/default/label/fc_accent_label_button.dart';
+export 'src/widget/button/custom/default/label/fc_danger_label_button.dart';
+export 'src/widget/button/custom/default/label/fc_grey_label_button.dart';
+export 'src/widget/button/custom/default/label/fc_info_label_button.dart';
+export 'src/widget/button/custom/default/label/fc_primary_label_button.dart';
+export 'src/widget/button/custom/default/label/fc_secondary_label_button.dart';
+export 'src/widget/button/custom/default/label/fc_success_label_button.dart';
+export 'src/widget/button/custom/default/label/fc_warning_label_button.dart';
 // Button / Custom / Default / Outline
 export 'src/widget/button/custom/default/outline/fc_accent_outline_button.dart';
 export 'src/widget/button/custom/default/outline/fc_black_always_outline_button.dart';
@@ -300,23 +300,23 @@ export 'src/widget/button/custom/gradient/default/fc_secondary_gradient_button.d
 export 'src/widget/button/custom/gradient/default/fc_success_gradient_button.dart';
 export 'src/widget/button/custom/gradient/default/fc_warning_gradient_button.dart';
 // Button / Custom / Gradient / Light
-export 'src/widget/button/custom/gradient/light/fc_accent_light_gradient_button.dart';
-export 'src/widget/button/custom/gradient/light/fc_danger_light_gradient_button.dart';
-export 'src/widget/button/custom/gradient/light/fc_grey_light_gradient_button.dart';
-export 'src/widget/button/custom/gradient/light/fc_info_light_gradient_button.dart';
-export 'src/widget/button/custom/gradient/light/fc_primary_light_gradient_button.dart';
-export 'src/widget/button/custom/gradient/light/fc_secondary_light_gradient_button.dart';
-export 'src/widget/button/custom/gradient/light/fc_success_light_gradient_button.dart';
-export 'src/widget/button/custom/gradient/light/fc_warning_light_gradient_button.dart';
+export 'src/widget/button/custom/gradient/light/fc_accent_gradient_label_button.dart';
+export 'src/widget/button/custom/gradient/light/fc_danger_gradient_label_button.dart';
+export 'src/widget/button/custom/gradient/light/fc_grey_gradient_label_button.dart';
+export 'src/widget/button/custom/gradient/light/fc_info_gradient_label_button.dart';
+export 'src/widget/button/custom/gradient/light/fc_primary_gradient_label_button.dart';
+export 'src/widget/button/custom/gradient/light/fc_secondary_gradient_label_button.dart';
+export 'src/widget/button/custom/gradient/light/fc_success_gradient_label_button.dart';
+export 'src/widget/button/custom/gradient/light/fc_warning_gradient_label_button.dart';
 // Button / Custom / Gradient / Outline
-export 'src/widget/button/custom/gradient/outline/fc_accent_outline_gradient_button.dart';
-export 'src/widget/button/custom/gradient/outline/fc_danger_outline_gradient_button.dart';
-export 'src/widget/button/custom/gradient/outline/fc_grey_outline_gradient_button.dart';
-export 'src/widget/button/custom/gradient/outline/fc_info_outline_gradient_button.dart';
-export 'src/widget/button/custom/gradient/outline/fc_primary_outline_gradient_button.dart';
-export 'src/widget/button/custom/gradient/outline/fc_secondary_outline_gradient_button.dart';
-export 'src/widget/button/custom/gradient/outline/fc_success_outline_gradient_button.dart';
-export 'src/widget/button/custom/gradient/outline/fc_warning_outline_gradient_button.dart';
+export 'src/widget/button/custom/gradient/outline/fc_accent_gradient_outline_button.dart';
+export 'src/widget/button/custom/gradient/outline/fc_danger_gradient_outline_button.dart';
+export 'src/widget/button/custom/gradient/outline/fc_grey_gradient_outline_button.dart';
+export 'src/widget/button/custom/gradient/outline/fc_info_gradient_outline_button.dart';
+export 'src/widget/button/custom/gradient/outline/fc_primary_gradient_outline_button.dart';
+export 'src/widget/button/custom/gradient/outline/fc_secondary_gradient_outline_button.dart';
+export 'src/widget/button/custom/gradient/outline/fc_success_gradient_outline_button.dart';
+export 'src/widget/button/custom/gradient/outline/fc_warning_gradient_outline_button.dart';
 // Button / Custom / Modal Button
 export 'src/widget/button/custom/modal_button/fc_always_white_modal_close_button.dart';
 export 'src/widget/button/custom/modal_button/fc_cupertino_modal_button.dart';

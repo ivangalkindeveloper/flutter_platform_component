@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCAccentLightGradientButton extends StatelessWidget {
-  const FCAccentLightGradientButton({
+class FCSuccessGradientLabelButton extends StatelessWidget {
+  const FCSuccessGradientLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -35,22 +35,22 @@ class FCAccentLightGradientButton extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientButton(
-      backgroundGradient: this.isFilled ? theme.accentLightGradient : null,
-      splashColor: theme.accent,
+      backgroundGradient: this.isFilled ? theme.successLightGradient : null,
+      splashColor: theme.success,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.accent(context: context),
+        firstChild: FCCircularIndicator.success(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: null,
+          gradient: theme.successGradient,
           prefix: this.prefix,
           title: this.title,
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.accent,
+                    color: this.style?.color ?? theme.success,
                   ) ??
               TextStyle(
-                color: theme.accent,
+                color: theme.success,
               ),
           postfix: this.postfix,
           isExpanded: this.isExpanded,

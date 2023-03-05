@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCWarningLightButton extends StatelessWidget {
-  const FCWarningLightButton({
+class FCSuccessLabelButton extends StatelessWidget {
+  const FCSuccessLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -35,11 +35,11 @@ class FCWarningLightButton extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicButton(
-      backgroundColor: this.isFilled ? theme.warningLight : null,
-      splashColor: theme.warning,
+      backgroundColor: this.isFilled ? theme.successLight : null,
+      splashColor: theme.success,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.warning(context: context),
+        firstChild: FCCircularIndicator.success(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: null,
@@ -47,10 +47,10 @@ class FCWarningLightButton extends StatelessWidget {
           title: this.title,
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.warning,
+                    color: this.style?.color ?? theme.success,
                   ) ??
               TextStyle(
-                color: theme.warning,
+                color: theme.success,
               ),
           postfix: this.postfix,
           isExpanded: this.isExpanded,

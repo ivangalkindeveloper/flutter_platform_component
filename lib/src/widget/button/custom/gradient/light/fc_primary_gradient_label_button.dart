@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCGreyOutlineGradientButton extends StatelessWidget {
-  const FCGreyOutlineGradientButton({
+class FCPrimaryGradientLabelButton extends StatelessWidget {
+  const FCPrimaryGradientLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -35,23 +35,22 @@ class FCGreyOutlineGradientButton extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientButton(
-      backgroundGradient: this.isFilled ? theme.greyLightGradient : null,
-      borderGradient: theme.greyGradient,
-      splashColor: theme.grey,
+      backgroundGradient: this.isFilled ? theme.primaryLightGradient : null,
+      splashColor: theme.primary,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.grey(context: context),
+        firstChild: FCCircularIndicator.primary(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: null,
+          gradient: theme.primaryGradient,
           prefix: this.prefix,
           title: this.title,
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.grey,
+                    color: this.style?.color ?? theme.primary,
                   ) ??
               TextStyle(
-                color: theme.grey,
+                color: theme.primary,
               ),
           postfix: this.postfix,
           isExpanded: this.isExpanded,

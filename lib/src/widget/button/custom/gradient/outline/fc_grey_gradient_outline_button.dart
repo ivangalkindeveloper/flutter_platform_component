@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCGreyLightGradientButton extends StatelessWidget {
-  const FCGreyLightGradientButton({
+class FCGreyGradientOutlineButton extends StatelessWidget {
+  const FCGreyGradientOutlineButton({
     super.key,
     this.prefix,
     this.title,
@@ -36,6 +36,7 @@ class FCGreyLightGradientButton extends StatelessWidget {
 
     return FCBasicGradientButton(
       backgroundGradient: this.isFilled ? theme.greyLightGradient : null,
+      borderGradient: theme.greyGradient,
       splashColor: theme.grey,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,

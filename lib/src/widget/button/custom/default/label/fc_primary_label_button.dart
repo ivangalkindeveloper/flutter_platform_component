@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCSuccessLightButton extends StatelessWidget {
-  const FCSuccessLightButton({
+class FCPrimaryLabelButton extends StatelessWidget {
+  const FCPrimaryLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -35,11 +35,11 @@ class FCSuccessLightButton extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicButton(
-      backgroundColor: this.isFilled ? theme.successLight : null,
-      splashColor: theme.success,
+      backgroundColor: this.isFilled ? theme.primaryLight : null,
+      splashColor: theme.primary,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.success(context: context),
+        firstChild: FCCircularIndicator.primary(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: null,
@@ -47,10 +47,10 @@ class FCSuccessLightButton extends StatelessWidget {
           title: this.title,
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.success,
+                    color: this.style?.color ?? theme.primary,
                   ) ??
               TextStyle(
-                color: theme.success,
+                color: theme.primary,
               ),
           postfix: this.postfix,
           isExpanded: this.isExpanded,

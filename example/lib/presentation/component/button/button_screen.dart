@@ -134,56 +134,56 @@ class _ButtonScreenState extends State<ButtonScreen> {
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightButton(
+          FCAccentLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightButton(
+          FCInfoLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightButton(
+          FCSuccessLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyLightButton(
+          FCGreyLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightButton(
+          FCPrimaryLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerLightButton(
+          FCDangerLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightButton(
+          FCSecondaryLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightButton(
+          FCWarningLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,

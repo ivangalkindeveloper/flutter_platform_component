@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCPrimaryLightGradientButton extends StatelessWidget {
-  const FCPrimaryLightGradientButton({
+class FCSecondaryGradientLabelButton extends StatelessWidget {
+  const FCSecondaryGradientLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -35,22 +35,22 @@ class FCPrimaryLightGradientButton extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientButton(
-      backgroundGradient: this.isFilled ? theme.primaryLightGradient : null,
-      splashColor: theme.primary,
+      backgroundGradient: this.isFilled ? theme.secondaryLightGradient : null,
+      splashColor: theme.secondary,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.primary(context: context),
+        firstChild: FCCircularIndicator.secondary(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: null,
+          gradient: theme.secondaryGradient,
           prefix: this.prefix,
           title: this.title,
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.primary,
+                    color: this.style?.color ?? theme.secondary,
                   ) ??
               TextStyle(
-                color: theme.primary,
+                color: theme.secondary,
               ),
           postfix: this.postfix,
           isExpanded: this.isExpanded,

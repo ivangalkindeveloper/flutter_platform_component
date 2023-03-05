@@ -16,7 +16,7 @@ class ConfigSection extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: FCPrimaryLightButton(
+              child: FCPrimaryLabelButton(
                 title: "iOS",
                 onPressed: () => config.changePlatform(
                   platform: TargetPlatform.iOS,
@@ -25,7 +25,7 @@ class ConfigSection extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             Expanded(
-              child: FCPrimaryLightButton(
+              child: FCPrimaryLabelButton(
                 title: "Android",
                 onPressed: () => config.changePlatform(
                   platform: TargetPlatform.android,
@@ -37,7 +37,7 @@ class ConfigSection extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: FCPrimaryLightButton(
+              child: FCPrimaryLabelButton(
                 title: "Light Theme",
                 onPressed: () {
                   final IFCTheme theme = FCDefaultTheme.defaultLightTheme;
@@ -48,7 +48,7 @@ class ConfigSection extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             Expanded(
-              child: FCPrimaryLightButton(
+              child: FCPrimaryLabelButton(
                 title: "Dark Theme",
                 onPressed: () {
                   final IFCTheme theme = FCDefaultTheme.defaultDarkTheme;

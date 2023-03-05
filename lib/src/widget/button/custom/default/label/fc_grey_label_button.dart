@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCAccentOutlineGradientButton extends StatelessWidget {
-  const FCAccentOutlineGradientButton({
+class FCGreyLabelButton extends StatelessWidget {
+  const FCGreyLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -34,13 +34,12 @@ class FCAccentOutlineGradientButton extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCBasicGradientButton(
-      backgroundGradient: this.isFilled ? theme.accentLightGradient : null,
-      borderGradient: theme.accentGradient,
-      splashColor: theme.accent,
+    return FCBasicButton(
+      backgroundColor: this.isFilled ? theme.greyLight : null,
+      splashColor: theme.grey,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.accent(context: context),
+        firstChild: FCCircularIndicator.grey(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: null,
@@ -48,10 +47,10 @@ class FCAccentOutlineGradientButton extends StatelessWidget {
           title: this.title,
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.accent,
+                    color: this.style?.color ?? theme.grey,
                   ) ??
               TextStyle(
-                color: theme.accent,
+                color: theme.grey,
               ),
           postfix: this.postfix,
           isExpanded: this.isExpanded,

@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCWarningOutlineGradientButton extends StatelessWidget {
-  const FCWarningOutlineGradientButton({
+class FCDangerLabelButton extends StatelessWidget {
+  const FCDangerLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -34,13 +34,12 @@ class FCWarningOutlineGradientButton extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCBasicGradientButton(
-      backgroundGradient: this.isFilled ? theme.warningLightGradient : null,
-      borderGradient: theme.warningGradient,
-      splashColor: theme.warning,
+    return FCBasicButton(
+      backgroundColor: this.isFilled ? theme.dangerLight : null,
+      splashColor: theme.danger,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.warning(context: context),
+        firstChild: FCCircularIndicator.danger(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: null,
@@ -48,10 +47,10 @@ class FCWarningOutlineGradientButton extends StatelessWidget {
           title: this.title,
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.warning,
+                    color: this.style?.color ?? theme.danger,
                   ) ??
               TextStyle(
-                color: theme.warning,
+                color: theme.danger,
               ),
           postfix: this.postfix,
           isExpanded: this.isExpanded,

@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCDangerLightGradientButton extends StatelessWidget {
-  const FCDangerLightGradientButton({
+class FCAccentGradientLabelButton extends StatelessWidget {
+  const FCAccentGradientLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -35,22 +35,22 @@ class FCDangerLightGradientButton extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientButton(
-      backgroundGradient: this.isFilled ? theme.dangerLightGradient : null,
-      splashColor: theme.danger,
+      backgroundGradient: this.isFilled ? theme.accentLightGradient : null,
+      splashColor: theme.accent,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.danger(context: context),
+        firstChild: FCCircularIndicator.accent(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: null,
+          gradient: theme.accentGradient,
           prefix: this.prefix,
           title: this.title,
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.danger,
+                    color: this.style?.color ?? theme.accent,
                   ) ??
               TextStyle(
-                color: theme.danger,
+                color: theme.accent,
               ),
           postfix: this.postfix,
           isExpanded: this.isExpanded,

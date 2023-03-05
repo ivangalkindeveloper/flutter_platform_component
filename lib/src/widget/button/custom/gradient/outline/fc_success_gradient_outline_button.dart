@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCSuccessOutlineGradientButton extends StatelessWidget {
-  const FCSuccessOutlineGradientButton({
+class FCSuccessGradientOutlineButton extends StatelessWidget {
+  const FCSuccessGradientOutlineButton({
     super.key,
     this.prefix,
     this.title,

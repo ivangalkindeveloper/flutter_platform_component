@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCGreyLightButton extends StatelessWidget {
-  const FCGreyLightButton({
+class FCDangerGradientLabelButton extends StatelessWidget {
+  const FCDangerGradientLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -34,23 +34,23 @@ class FCGreyLightButton extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCBasicButton(
-      backgroundColor: this.isFilled ? theme.greyLight : null,
-      splashColor: theme.grey,
+    return FCBasicGradientButton(
+      backgroundGradient: this.isFilled ? theme.dangerLightGradient : null,
+      splashColor: theme.danger,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.grey(context: context),
+        firstChild: FCCircularIndicator.danger(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: null,
+          gradient: theme.dangerGradient,
           prefix: this.prefix,
           title: this.title,
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.grey,
+                    color: this.style?.color ?? theme.danger,
                   ) ??
               TextStyle(
-                color: theme.grey,
+                color: theme.danger,
               ),
           postfix: this.postfix,
           isExpanded: this.isExpanded,

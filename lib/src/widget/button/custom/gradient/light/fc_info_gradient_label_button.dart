@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCInfoLightButton extends StatelessWidget {
-  const FCInfoLightButton({
+class FCInfoGradientLabelButton extends StatelessWidget {
+  const FCInfoGradientLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -34,15 +34,15 @@ class FCInfoLightButton extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCBasicButton(
-      backgroundColor: this.isFilled ? theme.infoLight : null,
+    return FCBasicGradientButton(
+      backgroundGradient: this.isFilled ? theme.infoLightGradient : null,
       splashColor: theme.info,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
         firstChild: FCCircularIndicator.info(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: null,
+          gradient: theme.infoGradient,
           prefix: this.prefix,
           title: this.title,
           textAlign: TextAlign.center,

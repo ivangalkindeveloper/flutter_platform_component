@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCPrimaryLightButton extends StatelessWidget {
-  const FCPrimaryLightButton({
+class FCInfoLabelButton extends StatelessWidget {
+  const FCInfoLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -35,11 +35,11 @@ class FCPrimaryLightButton extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicButton(
-      backgroundColor: this.isFilled ? theme.primaryLight : null,
-      splashColor: theme.primary,
+      backgroundColor: this.isFilled ? theme.infoLight : null,
+      splashColor: theme.info,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.primary(context: context),
+        firstChild: FCCircularIndicator.info(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: null,
@@ -47,10 +47,10 @@ class FCPrimaryLightButton extends StatelessWidget {
           title: this.title,
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.primary,
+                    color: this.style?.color ?? theme.info,
                   ) ??
               TextStyle(
-                color: theme.primary,
+                color: theme.info,
               ),
           postfix: this.postfix,
           isExpanded: this.isExpanded,

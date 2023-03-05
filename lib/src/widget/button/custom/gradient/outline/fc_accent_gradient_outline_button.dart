@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCSuccessLightGradientButton extends StatelessWidget {
-  const FCSuccessLightGradientButton({
+class FCAccentGradientOutlineButton extends StatelessWidget {
+  const FCAccentGradientOutlineButton({
     super.key,
     this.prefix,
     this.title,
@@ -35,11 +35,12 @@ class FCSuccessLightGradientButton extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientButton(
-      backgroundGradient: this.isFilled ? theme.successLightGradient : null,
-      splashColor: theme.success,
+      backgroundGradient: this.isFilled ? theme.accentLightGradient : null,
+      borderGradient: theme.accentGradient,
+      splashColor: theme.accent,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.success(context: context),
+        firstChild: FCCircularIndicator.accent(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: null,
@@ -47,10 +48,10 @@ class FCSuccessLightGradientButton extends StatelessWidget {
           title: this.title,
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.success,
+                    color: this.style?.color ?? theme.accent,
                   ) ??
               TextStyle(
-                color: theme.success,
+                color: theme.accent,
               ),
           postfix: this.postfix,
           isExpanded: this.isExpanded,

@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCSecondaryOutlineGradientButton extends StatelessWidget {
-  const FCSecondaryOutlineGradientButton({
+class FCSecondaryLabelButton extends StatelessWidget {
+  const FCSecondaryLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -34,9 +34,8 @@ class FCSecondaryOutlineGradientButton extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return FCBasicGradientButton(
-      backgroundGradient: this.isFilled ? theme.secondaryLightGradient : null,
-      borderGradient: theme.secondaryGradient,
+    return FCBasicButton(
+      backgroundColor: this.isFilled ? theme.secondaryLight : null,
       splashColor: theme.secondary,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
