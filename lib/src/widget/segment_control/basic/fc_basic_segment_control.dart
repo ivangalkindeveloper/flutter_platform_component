@@ -211,7 +211,6 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required int index,
   }) {
     if ((index + 1) == this.length) return this._borderWidth(config: config);
-    ;
 
     return 0;
   }
@@ -302,7 +301,6 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
                           this._internalColor(theme: theme),
                     ),
             postfix: this.item.postfix,
-            isExpanded: false,
           ),
           onPressed: this.onPressed,
         ),

@@ -33,7 +33,7 @@ class FCAccentLightSelectCard extends StatelessWidget {
 
     return FCBasicSelectCard(
       backgroundColor: theme.accentLight,
-      splashColor: theme.white,
+      splashColor: theme.accentButton,
       constraints: this.constraints,
       borderRadius: this.borderRadius,
       borderColor: this.borderColor,

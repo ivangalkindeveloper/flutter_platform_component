@@ -50,7 +50,7 @@ class FCScreenAppBar extends FCBasicAppBar {
       final IFCTheme theme = config.theme;
 
       return FCBasicIconButton(
-        splashColor: theme.greyLight,
+        splashColor: theme.grey,
         icon: Transform.scale(
           scaleX: isInverseBackIcon ? -1 : 1,
           child: FCIcon.black(

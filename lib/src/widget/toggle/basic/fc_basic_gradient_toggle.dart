@@ -263,7 +263,6 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
                       this._internalGradient(theme: theme).colors.first,
                 ),
         postfix: this.item.postfix,
-        isExpanded: true,
       ),
       onPressed: this.onPressed,
     );

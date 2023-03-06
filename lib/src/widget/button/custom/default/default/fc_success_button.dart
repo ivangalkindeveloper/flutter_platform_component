@@ -11,7 +11,6 @@ class FCSuccessButton extends StatelessWidget {
     this.style,
     this.postfix,
     required this.onPressed,
-    this.isExpanded = false,
     this.isLoading = false,
     this.isDisabled = false,
     this.disabledColor,
@@ -22,7 +21,6 @@ class FCSuccessButton extends StatelessWidget {
   final TextStyle? style;
   final Widget? postfix;
   final VoidCallback onPressed;
-  final bool isExpanded;
   final bool isLoading;
   final bool isDisabled;
   final Color? disabledColor;
@@ -35,7 +33,7 @@ class FCSuccessButton extends StatelessWidget {
 
     return FCBasicButton(
       backgroundColor: theme.success,
-      splashColor: theme.white,
+      splashColor: theme.whiteAlways,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
         firstChild: FCCircularIndicator.whiteAlways(context: context),
@@ -58,7 +56,6 @@ class FCSuccessButton extends StatelessWidget {
                 package: textStyle.package,
               ),
           postfix: this.postfix,
-          isExpanded: this.isExpanded,
         ),
       ),
       onPressed: this.isLoading ? () {} : this.onPressed,

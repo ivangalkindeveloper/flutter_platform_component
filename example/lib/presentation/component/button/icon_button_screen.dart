@@ -19,7 +19,7 @@ class _IconButtonScreenState extends State<IconButtonScreen> {
     final IFCSize size = config.size;
 
     return FCScaffold(
-      backgroundColor: theme.white,
+      backgroundColor: theme.backgroundScaffold,
       appBar: FCScreenAppBar(
         context: context,
         title: "Icon Button",
@@ -33,15 +33,17 @@ class _IconButtonScreenState extends State<IconButtonScreen> {
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
           ),
-          SizedBox(height: size.s16 * 2),
-          FCBasicIconButton(
-            splashColor: theme.primary,
-            icon: FCIcon.primary(
-              context: context,
-              icon: Icons.account_circle_outlined,
+          SizedBox(height: size.s16 * 4),
+          Center(
+            child: FCBasicIconButton(
+              splashColor: theme.primary,
+              icon: FCIcon.primary(
+                context: context,
+                icon: Icons.account_circle_outlined,
+              ),
+              onPressed: () {},
+              isDisabled: this._isDisabled,
             ),
-            onPressed: () {},
-            isDisabled: this._isDisabled,
           ),
         ],
       ),

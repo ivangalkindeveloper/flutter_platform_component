@@ -11,7 +11,6 @@ class FCSecondaryButton extends StatelessWidget {
     this.style,
     this.postfix,
     required this.onPressed,
-    this.isExpanded = false,
     this.isLoading = false,
     this.isDisabled = false,
     this.disabledColor,
@@ -22,7 +21,6 @@ class FCSecondaryButton extends StatelessWidget {
   final TextStyle? style;
   final Widget? postfix;
   final VoidCallback onPressed;
-  final bool isExpanded;
   final bool isLoading;
   final bool isDisabled;
   final Color? disabledColor;
@@ -35,7 +33,7 @@ class FCSecondaryButton extends StatelessWidget {
 
     return FCBasicButton(
       backgroundColor: theme.secondary,
-      splashColor: theme.white,
+      splashColor: theme.secondaryButton,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
         firstChild: FCCircularIndicator.secondaryButton(context: context),
@@ -58,7 +56,6 @@ class FCSecondaryButton extends StatelessWidget {
                 package: textStyle.package,
               ),
           postfix: this.postfix,
-          isExpanded: this.isExpanded,
         ),
       ),
       onPressed: this.isLoading ? () {} : this.onPressed,

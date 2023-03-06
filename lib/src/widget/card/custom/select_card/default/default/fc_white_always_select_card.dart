@@ -33,7 +33,7 @@ class FCWhiteAlwaysSelectCard extends StatelessWidget {
 
     return FCBasicSelectCard(
       backgroundColor: theme.whiteAlways,
-      splashColor: theme.primary,
+      splashColor: theme.blackAlways,
       constraints: this.constraints,
       borderRadius: this.borderRadius,
       borderColor: this.borderColor,

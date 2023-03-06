@@ -307,7 +307,6 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
                           this._internalGradient(theme: theme).colors.first,
                     ),
             postfix: this.item.postfix,
-            isExpanded: false,
           ),
           onPressed: this.onPressed,
         ),

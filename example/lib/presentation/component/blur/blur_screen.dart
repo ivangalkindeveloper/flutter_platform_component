@@ -12,7 +12,7 @@ class BlurScreen extends StatelessWidget {
     final IFCSize size = config.size;
 
     return FCScaffold(
-      backgroundColor: theme.white,
+      backgroundColor: theme.backgroundScaffold,
       appBar: FCScreenAppBar(
         context: context,
         title: "Blur",

@@ -33,7 +33,7 @@ class FCDangerLightGradientSelectCard extends StatelessWidget {
 
     return FCBasicGradientSelectCard(
       backgroundGradient: theme.dangerLightGradient,
-      splashColor: theme.white,
+      splashColor: theme.whiteAlways,
       constraints: this.constraints,
       borderRadius: this.borderRadius,
       borderGradient: this.borderGradient,

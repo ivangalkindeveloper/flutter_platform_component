@@ -12,7 +12,6 @@ class FCPrimaryLabelButton extends StatelessWidget {
     this.postfix,
     required this.onPressed,
     this.isFilled = false,
-    this.isExpanded = false,
     this.isLoading = false,
     this.isDisabled = false,
     this.disabledColor,
@@ -24,7 +23,6 @@ class FCPrimaryLabelButton extends StatelessWidget {
   final Widget? postfix;
   final VoidCallback onPressed;
   final bool isFilled;
-  final bool isExpanded;
   final bool isLoading;
   final bool isDisabled;
   final Color? disabledColor;
@@ -60,7 +58,6 @@ class FCPrimaryLabelButton extends StatelessWidget {
                 package: textStyle.package,
               ),
           postfix: this.postfix,
-          isExpanded: this.isExpanded,
         ),
       ),
       onPressed: this.isLoading ? () {} : this.onPressed,

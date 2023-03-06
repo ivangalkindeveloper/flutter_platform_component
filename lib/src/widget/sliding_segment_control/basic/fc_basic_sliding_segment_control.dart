@@ -85,7 +85,6 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
                                             this._internalColor(value: item.value),
                                       ),
                               postfix: item.postfix,
-                              isExpanded: false,
                             ),
                           ),
                         ),

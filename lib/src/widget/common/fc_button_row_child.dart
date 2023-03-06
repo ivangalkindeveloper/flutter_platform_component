@@ -12,7 +12,6 @@ class FCButtonRowChild extends StatelessWidget {
     required this.textAlign,
     required this.style,
     required this.postfix,
-    required this.isExpanded,
   }) : super(key: key);
 
   final MainAxisAlignment mainAxisAlignment;
@@ -22,7 +21,6 @@ class FCButtonRowChild extends StatelessWidget {
   final TextAlign textAlign;
   final TextStyle? style;
   final Widget? postfix;
-  final bool isExpanded;
 
   Widget _gradientWrapper({required Widget child}) {
     if (this.gradient != null)
@@ -41,7 +39,6 @@ class FCButtonRowChild extends StatelessWidget {
     final IFCSize size = config.size;
 
     return Row(
-      mainAxisSize: this.isExpanded ? MainAxisSize.max : MainAxisSize.min,
       mainAxisAlignment: this.mainAxisAlignment,
       children: [
         if (this.prefix != null) this.prefix!,

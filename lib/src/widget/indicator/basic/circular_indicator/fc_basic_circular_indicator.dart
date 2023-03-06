@@ -1,4 +1,5 @@
-import 'package:flutter_component/src/platform/fc_platform_widget.dart';
+import 'package:flutter_component/src/extension/fc_extension.dart';
+import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -56,12 +57,15 @@ class _FBasicCircularIndicatorMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final FCConfig config = context.config;
+    final IFCSize size = config.size;
+
     return SizedBox(
       height: this.height,
       width: this.height,
       child: CircularProgressIndicator(
         color: this.color,
-        strokeWidth: 2,
+        strokeWidth: size.s10 / 4,
       ),
     );
   }

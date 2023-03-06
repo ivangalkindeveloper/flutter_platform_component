@@ -33,7 +33,7 @@ class FCWarningDarkSelectCard extends StatelessWidget {
 
     return FCBasicSelectCard(
       backgroundColor: theme.warningDark,
-      splashColor: theme.white,
+      splashColor: theme.whiteAlways,
       constraints: this.constraints,
       borderRadius: this.borderRadius,
       borderColor: this.borderColor,

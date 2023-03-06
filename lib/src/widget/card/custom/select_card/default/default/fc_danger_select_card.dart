@@ -33,7 +33,7 @@ class FCDangerSelectCard extends StatelessWidget {
 
     return FCBasicSelectCard(
       backgroundColor: theme.danger,
-      splashColor: theme.white,
+      splashColor: theme.whiteAlways,
       constraints: this.constraints,
       borderRadius: this.borderRadius,
       borderColor: this.borderColor,

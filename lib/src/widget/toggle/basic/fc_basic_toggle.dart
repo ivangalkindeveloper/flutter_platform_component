@@ -251,7 +251,6 @@ class _FCToggleButton<T> extends StatelessWidget {
                   color: this.unselectedStyle?.color ?? this._internalColor(theme: theme),
                 ),
         postfix: this.item.postfix,
-        isExpanded: true,
       ),
       onPressed: this.onPressed,
     );

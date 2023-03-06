@@ -191,7 +191,6 @@ class _FCActionModalCupertino extends StatelessWidget {
             isCancel: isCancel,
           ),
           postfix: item.postfix,
-          isExpanded: false,
         ),
         onPressed: item.onPressed,
       );
@@ -409,7 +408,6 @@ class _FCActionModalMaterial extends StatelessWidget {
             item: item,
           ),
           postfix: item.postfix,
-          isExpanded: false,
         ),
         onTap: item.onPressed,
       );
