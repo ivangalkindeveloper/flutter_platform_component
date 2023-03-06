@@ -24,6 +24,16 @@ class FCButtonRowChild extends StatelessWidget {
   final Widget? postfix;
   final bool isExpanded;
 
+  Widget _gradientWrapper({required Widget child}) {
+    if (this.gradient != null)
+      return FCGradientMask(
+        gradient: this.gradient!,
+        child: child,
+      );
+
+    return child;
+  }
+
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
@@ -38,15 +48,8 @@ class FCButtonRowChild extends StatelessWidget {
         if (this.prefix != null && (this.title != null || this.postfix != null))
           SizedBox(width: size.s16 / 2),
         if (this.title != null)
-          FCGradientMask(
-            gradient: this.gradient ??
-                const LinearGradient(
-                  colors: [
-                    Colors.transparent,
-                    Colors.transparent,
-                  ],
-                ),
-            child: Flexible(
+          Flexible(
+            child: this._gradientWrapper(
               child: Text(
                 this.title!,
                 textAlign: this.textAlign,

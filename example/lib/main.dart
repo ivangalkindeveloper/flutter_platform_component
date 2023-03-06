@@ -3,14 +3,16 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:example/service/navigation_service.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const FlutterComponent(
-      child: const App(),
-    ));
+void main() => runApp(
+      FlutterComponent(
+        child: App(),
+      ),
+    );
 
 class App extends StatelessWidget {
-  const App({Key? key}) : super(key: key);
+  App({Key? key}) : super(key: key);
 
-  static final NavigationService _navigationService = NavigationService();
+  final INavigationService _navigationService = NavigationService();
 
   @override
   Widget build(BuildContext context) {

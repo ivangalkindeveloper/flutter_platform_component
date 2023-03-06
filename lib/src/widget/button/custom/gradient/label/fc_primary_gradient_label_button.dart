@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCSecondaryGradientLabelButton extends StatelessWidget {
-  const FCSecondaryGradientLabelButton({
+class FCPrimaryGradientLabelButton extends StatelessWidget {
+  const FCPrimaryGradientLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -36,23 +36,27 @@ class FCSecondaryGradientLabelButton extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientButton(
-      backgroundGradient: this.isFilled ? theme.secondaryLightGradient : null,
-      splashColor: theme.secondary,
+      backgroundGradient: this.isFilled ? theme.primaryLightGradient : null,
+      splashColor: theme.primary,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.secondary(context: context),
+        firstChild: FCCircularIndicator.primary(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: theme.secondaryGradient,
+          gradient: theme.primaryGradient,
           prefix: this.prefix,
           title: this.title,
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.secondary,
+                    color: this.style?.color ?? theme.primary,
+                    fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
+                    fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
                     package: textStyle.package,
                   ) ??
               TextStyle(
-                color: theme.secondary,
+                color: theme.primary,
+                fontWeight: textStyle.fontWeightMedium,
+                fontFamily: textStyle.fontFamilyMedium,
                 package: textStyle.package,
               ),
           postfix: this.postfix,

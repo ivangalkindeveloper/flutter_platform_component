@@ -17,6 +17,7 @@ class FCApp extends FCPlatformRouterWidget {
     Route<dynamic>? Function(RouteSettings)? onUnknownRoute,
     List<NavigatorObserver> navigatorObservers = const [],
     Widget Function(BuildContext, Widget?)? builder,
+    String title = '',
     String Function(BuildContext)? onGenerateTitle,
     //
     CupertinoThemeData? cupertinoThemeData,
@@ -29,12 +30,18 @@ class FCApp extends FCPlatformRouterWidget {
     Locale? Function(Locale?, Iterable<Locale>)? localeResolutionCallback,
     List<Locale> supportedLocales = const <Locale>[Locale('en', 'US')],
     //
+    bool debugShowMaterialGrid = false,
     bool showPerformanceOverlay = false,
     bool checkerboardRasterCacheImages = false,
     bool checkerboardOffscreenLayers = false,
     bool showSemanticsDebugger = false,
     bool debugShowCheckedModeBanner = true,
+    bool useInheritedMediaQuery = false,
+    //
+    Map<ShortcutActivator, Intent>? shortcuts,
+    Map<Type, Action<Intent>>? actions,
     String? restorationScopeId,
+    ScrollBehavior? scrollBehavior,
   }) : super(
           cupertino: CupertinoApp(
             key: key,
@@ -48,6 +55,7 @@ class FCApp extends FCPlatformRouterWidget {
             onUnknownRoute: onUnknownRoute,
             navigatorObservers: navigatorObservers,
             builder: builder,
+            title: title,
             onGenerateTitle: onGenerateTitle,
             //
             theme: cupertinoThemeData ?? context.config.theme.cupertinoThemeData,
@@ -61,12 +69,18 @@ class FCApp extends FCPlatformRouterWidget {
             localeListResolutionCallback: localeListResolutionCallback,
             localeResolutionCallback: localeResolutionCallback,
             supportedLocales: supportedLocales,
+            //
             showPerformanceOverlay: showPerformanceOverlay,
             checkerboardRasterCacheImages: checkerboardRasterCacheImages,
             checkerboardOffscreenLayers: checkerboardOffscreenLayers,
             showSemanticsDebugger: showSemanticsDebugger,
             debugShowCheckedModeBanner: debugShowCheckedModeBanner,
+            useInheritedMediaQuery: useInheritedMediaQuery,
+            //
+            shortcuts: shortcuts,
+            actions: actions,
             restorationScopeId: restorationScopeId,
+            scrollBehavior: scrollBehavior,
           ),
           material: MaterialApp(
             key: key,
@@ -80,6 +94,7 @@ class FCApp extends FCPlatformRouterWidget {
             onUnknownRoute: onUnknownRoute,
             navigatorObservers: navigatorObservers,
             builder: builder,
+            title: title,
             onGenerateTitle: onGenerateTitle,
             //
             themeMode: materialThemeMode ?? context.config.theme.materialThemeMode,
@@ -94,12 +109,19 @@ class FCApp extends FCPlatformRouterWidget {
             localeListResolutionCallback: localeListResolutionCallback,
             localeResolutionCallback: localeResolutionCallback,
             supportedLocales: supportedLocales,
+            //
+            debugShowMaterialGrid: debugShowMaterialGrid,
             showPerformanceOverlay: showPerformanceOverlay,
             checkerboardRasterCacheImages: checkerboardRasterCacheImages,
             checkerboardOffscreenLayers: checkerboardOffscreenLayers,
             showSemanticsDebugger: showSemanticsDebugger,
             debugShowCheckedModeBanner: debugShowCheckedModeBanner,
+            useInheritedMediaQuery: useInheritedMediaQuery,
+            //
+            shortcuts: shortcuts,
+            actions: actions,
             restorationScopeId: restorationScopeId,
+            scrollBehavior: scrollBehavior,
           ),
         );
 
@@ -112,6 +134,8 @@ class FCApp extends FCPlatformRouterWidget {
     RouterDelegate<Object>? routerDelegate,
     RouterConfig<Object>? routerConfig,
     BackButtonDispatcher? backButtonDispatcher,
+    Widget Function(BuildContext, Widget?)? builder,
+    String title = '',
     String Function(BuildContext)? onGenerateTitle,
     //
     CupertinoThemeData? cupertinoThemeData,
@@ -124,12 +148,18 @@ class FCApp extends FCPlatformRouterWidget {
     Locale? Function(Locale?, Iterable<Locale>)? localeResolutionCallback,
     List<Locale> supportedLocales = const <Locale>[Locale('en', 'US')],
     //
+    bool debugShowMaterialGrid = false,
     bool showPerformanceOverlay = false,
     bool checkerboardRasterCacheImages = false,
     bool checkerboardOffscreenLayers = false,
     bool showSemanticsDebugger = false,
     bool debugShowCheckedModeBanner = true,
+    bool useInheritedMediaQuery = false,
+    //
+    Map<ShortcutActivator, Intent>? shortcuts,
+    Map<Type, Action<Intent>>? actions,
     String? restorationScopeId,
+    ScrollBehavior? scrollBehavior,
   }) : super(
           cupertino: CupertinoApp.router(
             key: key,
@@ -139,6 +169,8 @@ class FCApp extends FCPlatformRouterWidget {
             routerDelegate: routerDelegate,
             routerConfig: routerConfig,
             backButtonDispatcher: backButtonDispatcher,
+            builder: builder,
+            title: title,
             onGenerateTitle: onGenerateTitle,
             //
             theme: cupertinoThemeData ?? context.config.theme.cupertinoThemeData,
@@ -152,12 +184,18 @@ class FCApp extends FCPlatformRouterWidget {
             localeListResolutionCallback: localeListResolutionCallback,
             localeResolutionCallback: localeResolutionCallback,
             supportedLocales: supportedLocales,
+            //
             showPerformanceOverlay: showPerformanceOverlay,
             checkerboardRasterCacheImages: checkerboardRasterCacheImages,
             checkerboardOffscreenLayers: checkerboardOffscreenLayers,
             showSemanticsDebugger: showSemanticsDebugger,
             debugShowCheckedModeBanner: debugShowCheckedModeBanner,
+            useInheritedMediaQuery: useInheritedMediaQuery,
+            //
+            shortcuts: shortcuts,
+            actions: actions,
             restorationScopeId: restorationScopeId,
+            scrollBehavior: scrollBehavior,
           ),
           material: MaterialApp.router(
             key: key,
@@ -167,6 +205,8 @@ class FCApp extends FCPlatformRouterWidget {
             routerDelegate: routerDelegate,
             routerConfig: routerConfig,
             backButtonDispatcher: backButtonDispatcher,
+            builder: builder,
+            title: title,
             onGenerateTitle: onGenerateTitle,
             //
             themeMode: materialThemeMode ?? context.config.theme.materialThemeMode,
@@ -181,12 +221,19 @@ class FCApp extends FCPlatformRouterWidget {
             localeListResolutionCallback: localeListResolutionCallback,
             localeResolutionCallback: localeResolutionCallback,
             supportedLocales: supportedLocales,
+            //
+            debugShowMaterialGrid: debugShowMaterialGrid,
             showPerformanceOverlay: showPerformanceOverlay,
             checkerboardRasterCacheImages: checkerboardRasterCacheImages,
             checkerboardOffscreenLayers: checkerboardOffscreenLayers,
             showSemanticsDebugger: showSemanticsDebugger,
             debugShowCheckedModeBanner: debugShowCheckedModeBanner,
+            useInheritedMediaQuery: useInheritedMediaQuery,
+            //
+            shortcuts: shortcuts,
+            actions: actions,
             restorationScopeId: restorationScopeId,
+            scrollBehavior: scrollBehavior,
           ),
         );
 

@@ -3,38 +3,50 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/widgets.dart';
 
-//TODO all properties
-
 class FCListView extends StatelessWidget {
   const FCListView({
     super.key,
-    this.controller,
     this.scrollDirection = Axis.vertical,
+    this.reverse = false,
+    this.controller,
+    this.primary,
     this.physics = const BouncingScrollPhysics(),
     this.shrinkWrap = false,
+    this.padding,
+    this.itemExtent,
+    this.prototypeItem,
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
-    this.dragStartBehavior = DragStartBehavior.start,
-    this.keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.onDrag,
-    this.padding,
+    this.cacheExtent,
     this.childrenAlignment = CrossAxisAlignment.start,
     required this.children,
+    this.semanticChildCount,
+    this.dragStartBehavior = DragStartBehavior.start,
+    this.keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.onDrag,
     this.restorationId,
+    this.clipBehavior = Clip.hardEdge,
   });
 
-  final ScrollController? controller;
   final Axis scrollDirection;
+  final bool reverse;
+  final ScrollController? controller;
+  final bool? primary;
   final ScrollPhysics physics;
   final bool shrinkWrap;
+  final EdgeInsets? padding;
+  final double? itemExtent;
+  final Widget? prototypeItem;
   final bool addAutomaticKeepAlives;
   final bool addRepaintBoundaries;
   final bool addSemanticIndexes;
-  final DragStartBehavior dragStartBehavior;
-  final ScrollViewKeyboardDismissBehavior keyboardDismissBehavior;
-  final EdgeInsets? padding;
+  final double? cacheExtent;
   final CrossAxisAlignment childrenAlignment;
   final List<Widget> children;
+  final int? semanticChildCount;
+  final DragStartBehavior dragStartBehavior;
+  final ScrollViewKeyboardDismissBehavior keyboardDismissBehavior;
+  final Clip clipBehavior;
   final String? restorationId;
 
   EdgeInsets _padding({required IFCSize size}) {
@@ -52,15 +64,18 @@ class FCListView extends StatelessWidget {
 
     return ListView(
       key: key,
-      controller: this.controller,
       scrollDirection: this.scrollDirection,
+      reverse: this.reverse,
+      controller: this.controller,
+      primary: this.primary,
       physics: this.physics,
       shrinkWrap: this.shrinkWrap,
+      itemExtent: this.itemExtent,
+      prototypeItem: this.prototypeItem,
       addAutomaticKeepAlives: this.addAutomaticKeepAlives,
       addRepaintBoundaries: this.addRepaintBoundaries,
       addSemanticIndexes: this.addSemanticIndexes,
-      dragStartBehavior: this.dragStartBehavior,
-      keyboardDismissBehavior: this.keyboardDismissBehavior,
+      cacheExtent: this.cacheExtent,
       children: [
         Padding(
           padding: this._padding(size: size),
@@ -71,97 +86,11 @@ class FCListView extends StatelessWidget {
           ),
         )
       ],
-      restorationId: restorationId,
+      semanticChildCount: this.semanticChildCount,
+      dragStartBehavior: this.dragStartBehavior,
+      keyboardDismissBehavior: this.keyboardDismissBehavior,
+      restorationId: this.restorationId,
+      clipBehavior: this.clipBehavior,
     );
   }
-
-  static ListView builder({
-    ScrollController? controller,
-    Axis scrollDirection = Axis.vertical,
-    ScrollPhysics physics = const BouncingScrollPhysics(),
-    bool shrinkWrap = false,
-    required NullableIndexedWidgetBuilder itemBuilder,
-    ChildIndexGetter? findChildIndexCallback,
-    int? itemCount,
-    bool addAutomaticKeepAlives = true,
-    bool addRepaintBoundaries = true,
-    bool addSemanticIndexes = true,
-    DragStartBehavior dragStartBehavior = DragStartBehavior.start,
-    ScrollViewKeyboardDismissBehavior keyboardDismissBehavior =
-        ScrollViewKeyboardDismissBehavior.onDrag,
-    String? restorationId,
-  }) =>
-      ListView.builder(
-        controller: controller,
-        scrollDirection: scrollDirection,
-        physics: physics,
-        shrinkWrap: shrinkWrap,
-        itemBuilder: itemBuilder,
-        findChildIndexCallback: findChildIndexCallback,
-        itemCount: itemCount,
-        addAutomaticKeepAlives: addAutomaticKeepAlives,
-        addRepaintBoundaries: addRepaintBoundaries,
-        addSemanticIndexes: addSemanticIndexes,
-        dragStartBehavior: dragStartBehavior,
-        keyboardDismissBehavior: keyboardDismissBehavior,
-        restorationId: restorationId,
-      );
-
-  static ListView separated({
-    ScrollController? controller,
-    Axis scrollDirection = Axis.vertical,
-    ScrollPhysics physics = const BouncingScrollPhysics(),
-    bool shrinkWrap = false,
-    required NullableIndexedWidgetBuilder itemBuilder,
-    ChildIndexGetter? findChildIndexCallback,
-    required Widget Function(BuildContext, int) separatorBuilder,
-    required int itemCount,
-    bool addAutomaticKeepAlives = true,
-    bool addRepaintBoundaries = true,
-    bool addSemanticIndexes = true,
-    DragStartBehavior dragStartBehavior = DragStartBehavior.start,
-    ScrollViewKeyboardDismissBehavior keyboardDismissBehavior =
-        ScrollViewKeyboardDismissBehavior.onDrag,
-    String? restorationId,
-  }) =>
-      ListView.separated(
-        controller: controller,
-        scrollDirection: scrollDirection,
-        physics: physics,
-        shrinkWrap: shrinkWrap,
-        itemBuilder: itemBuilder,
-        findChildIndexCallback: findChildIndexCallback,
-        separatorBuilder: separatorBuilder,
-        itemCount: itemCount,
-        addAutomaticKeepAlives: addAutomaticKeepAlives,
-        addRepaintBoundaries: addRepaintBoundaries,
-        addSemanticIndexes: addSemanticIndexes,
-        dragStartBehavior: dragStartBehavior,
-        keyboardDismissBehavior: keyboardDismissBehavior,
-        restorationId: restorationId,
-      );
-
-  static ListView custon({
-    ScrollController? controller,
-    Axis scrollDirection = Axis.vertical,
-    ScrollPhysics physics = const BouncingScrollPhysics(),
-    bool shrinkWrap = false,
-    Widget? prototypeItem,
-    required SliverChildDelegate childrenDelegate,
-    DragStartBehavior dragStartBehavior = DragStartBehavior.start,
-    ScrollViewKeyboardDismissBehavior keyboardDismissBehavior =
-        ScrollViewKeyboardDismissBehavior.onDrag,
-    String? restorationId,
-  }) =>
-      ListView.custom(
-        controller: controller,
-        scrollDirection: scrollDirection,
-        physics: physics,
-        shrinkWrap: shrinkWrap,
-        prototypeItem: prototypeItem,
-        childrenDelegate: childrenDelegate,
-        dragStartBehavior: dragStartBehavior,
-        keyboardDismissBehavior: keyboardDismissBehavior,
-        restorationId: restorationId,
-      );
 }

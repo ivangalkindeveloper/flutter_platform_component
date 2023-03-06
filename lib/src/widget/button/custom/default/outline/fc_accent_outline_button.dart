@@ -50,10 +50,14 @@ class FCAccentOutlineButton extends StatelessWidget {
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
                     color: this.style?.color ?? theme.accent,
+                    fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
+                    fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
                     package: textStyle.package,
                   ) ??
               TextStyle(
                 color: theme.accent,
+                fontWeight: textStyle.fontWeightMedium,
+                fontFamily: textStyle.fontFamilyMedium,
                 package: textStyle.package,
               ),
           postfix: this.postfix,

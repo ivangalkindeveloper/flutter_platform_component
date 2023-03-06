@@ -69,7 +69,13 @@ import 'package:example/presentation/component/toggle/toggle_screen.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class NavigationService {
+abstract class INavigationService {
+  abstract final GlobalKey<NavigatorState> navigatorKey;
+
+  Route<dynamic>? onGenerateRoute(RouteSettings settings);
+}
+
+class NavigationService implements INavigationService {
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
   static const String animated_container_screen = "/animated_container_screen";

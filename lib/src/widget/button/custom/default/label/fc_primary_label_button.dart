@@ -49,10 +49,14 @@ class FCPrimaryLabelButton extends StatelessWidget {
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
                     color: this.style?.color ?? theme.primary,
+                    fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
+                    fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
                     package: textStyle.package,
                   ) ??
               TextStyle(
                 color: theme.primary,
+                fontWeight: textStyle.fontWeightMedium,
+                fontFamily: textStyle.fontFamilyMedium,
                 package: textStyle.package,
               ),
           postfix: this.postfix,

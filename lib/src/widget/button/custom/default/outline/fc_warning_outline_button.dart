@@ -50,10 +50,14 @@ class FCWarningOutlineButton extends StatelessWidget {
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
                     color: this.style?.color ?? theme.warning,
+                    fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
+                    fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
                     package: textStyle.package,
                   ) ??
               TextStyle(
                 color: theme.warning,
+                fontWeight: textStyle.fontWeightMedium,
+                fontFamily: textStyle.fontFamilyMedium,
                 package: textStyle.package,
               ),
           postfix: this.postfix,

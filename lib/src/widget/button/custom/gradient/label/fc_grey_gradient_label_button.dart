@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCInfoGradientLabelButton extends StatelessWidget {
-  const FCInfoGradientLabelButton({
+class FCGreyGradientLabelButton extends StatelessWidget {
+  const FCGreyGradientLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -36,23 +36,27 @@ class FCInfoGradientLabelButton extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientButton(
-      backgroundGradient: this.isFilled ? theme.infoLightGradient : null,
-      splashColor: theme.info,
+      backgroundGradient: this.isFilled ? theme.greyLightGradient : null,
+      splashColor: theme.grey,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.info(context: context),
+        firstChild: FCCircularIndicator.grey(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: theme.infoGradient,
+          gradient: theme.greyGradient,
           prefix: this.prefix,
           title: this.title,
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.info,
+                    color: this.style?.color ?? theme.grey,
+                    fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
+                    fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
                     package: textStyle.package,
                   ) ??
               TextStyle(
-                color: theme.info,
+                color: theme.grey,
+                fontWeight: textStyle.fontWeightMedium,
+                fontFamily: textStyle.fontFamilyMedium,
                 package: textStyle.package,
               ),
           postfix: this.postfix,

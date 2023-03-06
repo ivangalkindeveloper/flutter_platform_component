@@ -3,8 +3,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCAccentGradientLabelButton extends StatelessWidget {
-  const FCAccentGradientLabelButton({
+class FCSecondaryGradientLabelButton extends StatelessWidget {
+  const FCSecondaryGradientLabelButton({
     super.key,
     this.prefix,
     this.title,
@@ -36,23 +36,27 @@ class FCAccentGradientLabelButton extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientButton(
-      backgroundGradient: this.isFilled ? theme.accentLightGradient : null,
-      splashColor: theme.accent,
+      backgroundGradient: this.isFilled ? theme.secondaryLightGradient : null,
+      splashColor: theme.secondary,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FCCircularIndicator.accent(context: context),
+        firstChild: FCCircularIndicator.secondary(context: context),
         secondChild: FCButtonRowChild(
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: theme.accentGradient,
+          gradient: theme.secondaryGradient,
           prefix: this.prefix,
           title: this.title,
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.accent,
+                    color: this.style?.color ?? theme.secondary,
+                    fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
+                    fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
                     package: textStyle.package,
                   ) ??
               TextStyle(
-                color: theme.accent,
+                color: theme.secondary,
+                fontWeight: textStyle.fontWeightMedium,
+                fontFamily: textStyle.fontFamilyMedium,
                 package: textStyle.package,
               ),
           postfix: this.postfix,

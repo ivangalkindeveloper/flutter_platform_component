@@ -47,10 +47,14 @@ class FCWhiteButton extends StatelessWidget {
           textAlign: TextAlign.center,
           style: this.style?.copyWith(
                     color: this.style?.color ?? theme.black,
+                    fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
+                    fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
                     package: textStyle.package,
                   ) ??
               TextStyle(
                 color: theme.black,
+                fontWeight: textStyle.fontWeightMedium,
+                fontFamily: textStyle.fontFamilyMedium,
                 package: textStyle.package,
               ),
           postfix: this.postfix,
