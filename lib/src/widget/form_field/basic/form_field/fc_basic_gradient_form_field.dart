@@ -150,15 +150,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
     return this.widget.backgroundGradient;
   }
 
-  Gradient _borderGradient({required BuildContext context}) {
-    if (this._focusNode.hasPrimaryFocus == false)
-      return const LinearGradient(
-        colors: [
-          Colors.transparent,
-          Colors.transparent,
-        ],
-      );
-
+  Gradient _borderGradient() {
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.dangerGradient;
 
@@ -254,138 +246,140 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
       children: [
         Stack(
           children: [
-            ConstrainedBox(
+            FCAnimatedFastContainer(
+              padding: EdgeInsets.symmetric(vertical: this._size.s16 / 4),
               constraints: BoxConstraints(
                 minHeight: this.widget.height ?? this._size.heightFormField,
               ),
-              child: FCAnimatedFastContainer(
-                decoration: BoxDecoration(
-                  gradient: this._backgroundGradient(),
-                  borderRadius: this._config.borderRadiusField,
-                ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Row(
-                      children: [
-                        this.widget.prefix ?? SizedBox(width: this._size.s16),
-                        if (this.widget.prefixIcon != null)
-                          Padding(
-                            padding: EdgeInsets.only(right: this._size.s16),
-                            child: FCGradientMask(
-                              gradient: this._internalGradient(),
-                              child: Icon(
-                                this.widget.prefixIcon,
-                                size: this.widget.internalIconHeight,
-                              ),
-                            ),
-                          ),
-                        Expanded(
-                          child: FCAnimatedFastContainer(
-                            padding: this._focusNode.hasPrimaryFocus ||
-                                    this._controller.text.isNotEmpty
-                                ? EdgeInsets.only(top: this._size.s10)
-                                : EdgeInsets.zero,
-                            child: FCCommonField(
-                              controller: this._controller,
-                              focusNode: this._focusNode,
-                              //
-                              textStyle: this.widget.textStyle,
-                              //
-                              labelText: this.widget.labelText,
-                              labelColor: this._labelColor(),
-                              labelStyle: this.widget.labelStyle,
-                              //
-                              prefixText: this.widget.prefixText,
-                              prefixStyle: this.widget.prefixStyle,
-                              //
-                              hintText: this.widget.hintText,
-                              hintStyle: this.widget.hintStyle,
-                              //
-                              textInputType: this.widget.textInputType,
-                              textCapitalization: this.widget.textCapitalization,
-                              textInputAction: this.widget.textInputAction,
-                              isAutofocus: this.widget.isAutofocus,
-                              maxLines: this.widget.maxLines,
-                              maxLength: this.widget.maxLength,
-                              onChanged: this._onChanged,
-                              onTap: this.widget.onTap,
-                              validator: this._validator,
-                              inputFormatters: [
-                                FCTextInputHandlerFormatter(
-                                  onNewValue: (String value) {
-                                    if (this.mounted == false) return null;
-
-                                    // Requidanger
-                                    if (this.widget.isRequired && value.isEmpty) {
-                                      this._haptic.error();
-                                      setState(() {
-                                        this._isAutoValidationError = false;
-                                        this._autoValidationText = "";
-                                        this._isValidationError = true;
-                                        this._validationText = "";
-                                      });
-                                      return;
-                                    }
-                                    // Auto validator
-                                    final String? _autoValidatorResult =
-                                        this.widget.autoValidator?.call(value);
-                                    if (_autoValidatorResult != null) {
-                                      this._haptic.error();
-                                      setState(() {
-                                        this._isAutoValidationError = true;
-                                        this._autoValidationText = _autoValidatorResult;
-                                      });
-                                      return;
-                                    }
-                                    // Default
-                                    setState(() {
-                                      this._isAutoValidationError = false;
-                                      this._autoValidationText = "";
-                                      this._isValidationError = false;
-                                      this._validationText = "";
-                                    });
-                                  },
-                                ),
-                                ...this.widget.inputFormatters ?? [],
-                              ],
-                              cursorColor: this.widget.focusedGradient.colors.first,
-                              isEnabled: true,
+              decoration: BoxDecoration(
+                gradient: this._backgroundGradient(),
+                borderRadius: this._config.borderRadiusField,
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Row(
+                    children: [
+                      this.widget.prefix ?? SizedBox(width: this._size.s16),
+                      if (this.widget.prefixIcon != null)
+                        Padding(
+                          padding: EdgeInsets.only(right: this._size.s16),
+                          child: FCGradientMask(
+                            gradient: this._internalGradient(),
+                            child: Icon(
+                              this.widget.prefixIcon,
+                              size: this.widget.internalIconHeight,
                             ),
                           ),
                         ),
-                        if (this.widget.postfixIcon != null)
-                          Padding(
-                            padding: EdgeInsets.only(left: this._size.s16),
-                            child: FCGradientMask(
-                              gradient: this._internalGradient(),
-                              child: Icon(
-                                this.widget.postfixIcon,
-                                size: this.widget.internalIconHeight,
+                      Expanded(
+                        child: FCAnimatedFastContainer(
+                          padding: this._focusNode.hasPrimaryFocus ||
+                                  this._controller.text.isNotEmpty
+                              ? EdgeInsets.only(top: (this._size.s12 / 2))
+                              : EdgeInsets.zero,
+                          child: FCCommonField(
+                            controller: this._controller,
+                            focusNode: this._focusNode,
+                            //
+                            textStyle: this.widget.textStyle,
+                            //
+                            labelText: this.widget.labelText,
+                            labelColor: this._labelColor(),
+                            labelStyle: this.widget.labelStyle,
+                            //
+                            prefixText: this.widget.prefixText,
+                            prefixStyle: this.widget.prefixStyle,
+                            //
+                            hintText: this.widget.hintText,
+                            hintStyle: this.widget.hintStyle,
+                            //
+                            textInputType: this.widget.textInputType,
+                            textCapitalization: this.widget.textCapitalization,
+                            textInputAction: this.widget.textInputAction,
+                            isAutofocus: this.widget.isAutofocus,
+                            maxLines: this.widget.maxLines,
+                            maxLength: this.widget.maxLength,
+                            onChanged: this._onChanged,
+                            onTap: this.widget.onTap,
+                            validator: this._validator,
+                            inputFormatters: [
+                              FCTextInputHandlerFormatter(
+                                onNewValue: (String value) {
+                                  if (this.mounted == false) return null;
+
+                                  // Requidanger
+                                  if (this.widget.isRequired && value.isEmpty) {
+                                    this._haptic.error();
+                                    setState(() {
+                                      this._isAutoValidationError = false;
+                                      this._autoValidationText = "";
+                                      this._isValidationError = true;
+                                      this._validationText = "";
+                                    });
+                                    return;
+                                  }
+                                  // Auto validator
+                                  final String? _autoValidatorResult =
+                                      this.widget.autoValidator?.call(value);
+                                  if (_autoValidatorResult != null) {
+                                    this._haptic.error();
+                                    setState(() {
+                                      this._isAutoValidationError = true;
+                                      this._autoValidationText = _autoValidatorResult;
+                                    });
+                                    return;
+                                  }
+                                  // Default
+                                  setState(() {
+                                    this._isAutoValidationError = false;
+                                    this._autoValidationText = "";
+                                    this._isValidationError = false;
+                                    this._validationText = "";
+                                  });
+                                },
                               ),
+                              ...this.widget.inputFormatters ?? [],
+                            ],
+                            cursorColor: this.widget.focusedGradient.colors.first,
+                            isEnabled: true,
+                          ),
+                        ),
+                      ),
+                      if (this.widget.postfixIcon != null)
+                        Padding(
+                          padding: EdgeInsets.only(left: this._size.s16),
+                          child: FCGradientMask(
+                            gradient: this._internalGradient(),
+                            child: Icon(
+                              this.widget.postfixIcon,
+                              size: this.widget.internalIconHeight,
                             ),
                           ),
-                        this.widget.postfix ?? SizedBox(width: this._size.s16),
-                      ],
-                    ),
-                    if (this.widget.bottom != null) this.widget.bottom!,
-                  ],
-                ),
+                        ),
+                      this.widget.postfix ?? SizedBox(width: this._size.s16),
+                    ],
+                  ),
+                  if (this.widget.bottom != null) this.widget.bottom!,
+                ],
               ),
             ),
             Positioned.fill(
               child: IgnorePointer(
-                child: FCGradientMask(
-                  gradient: this._borderGradient(context: context),
-                  child: FCAnimatedContainer(
-                    decoration: BoxDecoration(
-                      borderRadius: this._config.borderRadiusButton,
-                      border: Border.all(
-                        color: Colors.white,
-                        width: this._config.borderWidthButton,
+                child: FCAnimatedFastOpacity(
+                  condition: this._focusNode.hasPrimaryFocus,
+                  child: FCGradientMask(
+                    gradient: this._borderGradient(),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: this._config.borderRadiusButton,
+                        border: Border.all(
+                          color: Colors.black,
+                          width: this._config.borderWidthButton,
+                        ),
                       ),
+                      child: const SizedBox(),
                     ),
-                    child: const SizedBox(),
                   ),
                 ),
               ),
@@ -412,7 +406,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
             ),
             child: Row(
               children: [
-                Expanded(
+                Flexible(
                   child: FCText.regular14Danger(
                     context: context,
                     text: this._errorText(),

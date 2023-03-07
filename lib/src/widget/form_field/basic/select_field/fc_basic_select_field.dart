@@ -1,5 +1,5 @@
+import 'package:flutter_component/src/widget/common/fc_select_field_wrapper.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FCBasicSelectField extends StatefulWidget {
@@ -103,11 +103,11 @@ class _FCBasicSelectFieldState extends State<FCBasicSelectField> {
 
   @override
   Widget build(BuildContext context) {
-    return _FCSelectFieldWrapper(
+    return FCSelectFieldWrapper(
       context: context,
       splashColor: this.widget.splashColor,
-      isDisabled: this.widget.isDisabled,
       onPressed: this.widget.onPressed,
+      isDisabled: this.widget.isDisabled,
       child: FCBasicFormField(
         context: context,
         height: this.widget.height,
@@ -140,49 +140,4 @@ class _FCBasicSelectFieldState extends State<FCBasicSelectField> {
       ),
     );
   }
-}
-
-class _FCSelectFieldWrapper extends FCPlatformWidget {
-  _FCSelectFieldWrapper({
-    required BuildContext context,
-    required Color splashColor,
-    required VoidCallback onPressed,
-    required Widget child,
-    required bool isDisabled,
-  }) : super(
-          cupertino: CupertinoButton(
-            onPressed: onPressed,
-            padding: EdgeInsets.zero,
-            child: Stack(
-              children: [
-                child,
-                Positioned.fill(
-                  child: Container(
-                    color: Colors.transparent,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          material: Stack(
-            children: [
-              child,
-              Positioned.fill(
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    elevation: 0,
-                    foregroundColor: splashColor,
-                    backgroundColor: Colors.transparent,
-                    shadowColor: Colors.transparent,
-                    padding: EdgeInsets.zero,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: FCConfig.of(context).borderRadiusCard),
-                  ),
-                  onPressed: isDisabled ? () {} : onPressed,
-                  child: const SizedBox(),
-                ),
-              ),
-            ],
-          ),
-        );
 }

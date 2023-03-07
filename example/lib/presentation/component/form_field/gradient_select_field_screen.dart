@@ -37,7 +37,7 @@ class _GradientSelectFieldScreenState extends State<GradientSelectFieldScreen> {
           FCPrimaryGradientSelectField(
             title: "Title",
             labelText: "Label",
-            onPressed: () {},
+            onPressed: () => print("Hello"),
             isDisabled: this._isDisabled,
           ),
         ],

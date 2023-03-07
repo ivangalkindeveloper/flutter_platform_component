@@ -819,10 +819,10 @@ class FCDefaultTheme implements IFCTheme {
         ),
 
         // Grey
-        grey: const Color(0xff999999),
+        grey: const Color(0xffBABABA),
         greyGradient: const LinearGradient(
           colors: const [
-            Color(0xff999999),
+            Color(0xffBABABA),
             Color(0xffB0B0B0),
           ],
         ),

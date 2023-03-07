@@ -37,7 +37,7 @@ class _SelectFieldScreenState extends State<SelectFieldScreen> {
           FCPrimarySelectField(
             title: "Title",
             labelText: "Label",
-            onPressed: () {},
+            onPressed: () => print("Hello"),
             isDisabled: this._isDisabled,
           ),
         ],

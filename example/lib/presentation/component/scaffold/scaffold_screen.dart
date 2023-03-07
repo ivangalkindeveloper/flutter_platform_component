@@ -22,12 +22,10 @@ class ScaffoldScreen extends StatelessWidget {
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
-          Expanded(
-            child: Center(
-              child: FCText.regular16Black(
-                context: context,
-                text: "Scaffold Body",
-              ),
+          Center(
+            child: FCText.regular16Black(
+              context: context,
+              text: "Scaffold Body",
             ),
           ),
         ],

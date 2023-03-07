@@ -1,5 +1,5 @@
+import 'package:flutter_component/src/widget/common/fc_select_field_wrapper.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FCBasicGradientSelectField extends StatefulWidget {
@@ -70,8 +70,13 @@ class FCBasicGradientSelectField extends StatefulWidget {
 
 class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField> {
   // Controller
-  late final TextEditingController _controller =
-      TextEditingController(text: this.widget.title);
+  late final TextEditingController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    this._controller = TextEditingController(text: this.widget.title);
+  }
 
   @override
   void didUpdateWidget(FCBasicGradientSelectField oldWidget) {
@@ -98,7 +103,7 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
 
   @override
   Widget build(BuildContext context) {
-    return _FCLinearGradientSelectFieldWrapper(
+    return FCSelectFieldWrapper(
       context: context,
       splashColor: this.widget.splashColor,
       isDisabled: this.widget.isDisabled,
@@ -140,48 +145,4 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
       ),
     );
   }
-}
-
-class _FCLinearGradientSelectFieldWrapper extends FCPlatformWidget {
-  _FCLinearGradientSelectFieldWrapper({
-    required BuildContext context,
-    required Color splashColor,
-    required VoidCallback onPressed,
-    required Widget child,
-    required bool isDisabled,
-  }) : super(
-          cupertino: CupertinoButton(
-            onPressed: onPressed,
-            padding: EdgeInsets.zero,
-            child: Stack(
-              children: [
-                child,
-                Positioned.fill(
-                  child: Container(
-                    color: Colors.transparent,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          material: Stack(
-            children: [
-              child,
-              Positioned.fill(
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    elevation: 0,
-                    foregroundColor: splashColor,
-                    backgroundColor: Colors.transparent,
-                    shadowColor: Colors.transparent,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: FCConfig.of(context).borderRadiusCard),
-                  ),
-                  onPressed: isDisabled ? () {} : onPressed,
-                  child: const SizedBox(),
-                ),
-              ),
-            ],
-          ),
-        );
 }

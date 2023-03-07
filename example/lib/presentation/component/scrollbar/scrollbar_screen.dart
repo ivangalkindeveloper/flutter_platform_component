@@ -10,7 +10,7 @@ class ScrollbarScreen extends StatelessWidget {
         Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            FCPrimaryCard(
+            FCGreyLightCard(
               child: const SizedBox(),
             ),
             SizedBox(height: size.s16 / 2),

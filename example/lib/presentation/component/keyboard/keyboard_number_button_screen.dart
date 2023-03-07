@@ -26,6 +26,7 @@ class _KeyboardNumberButtonScreenState extends State<KeyboardNumberButtonScreen>
         onPressedBack: () => Navigator.pop(context),
       ),
       body: FCListView(
+        childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),

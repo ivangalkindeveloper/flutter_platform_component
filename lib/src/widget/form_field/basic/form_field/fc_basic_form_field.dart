@@ -151,7 +151,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
   }
 
   Color _borderColor() {
-    if (this._focusNode.hasPrimaryFocus == false) return Colors.transparent;
+    if (this._focusNode.hasPrimaryFocus == false) return this._backgroundColor();
 
     if (this._isValidationError || this._isAutoValidationError) return this._theme.danger;
 
@@ -246,124 +246,122 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
       children: [
         Stack(
           children: [
-            ConstrainedBox(
+            FCAnimatedFastContainer(
+              padding: EdgeInsets.symmetric(vertical: this._size.s16 / 4),
               constraints: BoxConstraints(
                 minHeight: this.widget.height ?? this._size.heightFormField,
               ),
-              child: FCAnimatedFastContainer(
-                padding: EdgeInsets.symmetric(vertical: this._size.s16 / 4),
-                decoration: BoxDecoration(
-                  color: this._backgroundColor(),
-                  borderRadius: this._config.borderRadiusField,
-                  border: Border.all(
-                    color: this._borderColor(),
-                    width: this._config.borderWidthField,
-                  ),
+              decoration: BoxDecoration(
+                color: this._backgroundColor(),
+                borderRadius: this._config.borderRadiusField,
+                border: Border.all(
+                  color: this._borderColor(),
+                  width: this._config.borderWidthField,
                 ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Row(
-                      children: [
-                        this.widget.prefix ?? SizedBox(width: this._size.s16),
-                        if (this.widget.prefixIcon != null)
-                          Padding(
-                            padding: EdgeInsets.only(right: this._size.s16),
-                            child: Icon(
-                              this.widget.prefixIcon,
-                              color: this._internalColor(),
-                              size: this.widget.internalIconHeight,
-                            ),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Row(
+                    children: [
+                      this.widget.prefix ?? SizedBox(width: this._size.s16),
+                      if (this.widget.prefixIcon != null)
+                        Padding(
+                          padding: EdgeInsets.only(right: this._size.s16),
+                          child: Icon(
+                            this.widget.prefixIcon,
+                            color: this._internalColor(),
+                            size: this.widget.internalIconHeight,
                           ),
-                        Expanded(
-                          child: FCAnimatedFastContainer(
-                            padding: this._focusNode.hasPrimaryFocus ||
-                                    this._controller.text.isNotEmpty
-                                ? EdgeInsets.only(top: (this._size.s10 / 2) + 1)
-                                : EdgeInsets.zero,
-                            child: FCCommonField(
-                              controller: this._controller,
-                              focusNode: this._focusNode,
-                              //
-                              textStyle: this.widget.textStyle,
-                              //
-                              labelText: this.widget.labelText,
-                              labelColor: this._labelColor(),
-                              labelStyle: this.widget.labelStyle,
-                              //
-                              prefixText: this.widget.prefixText,
-                              prefixStyle: this.widget.prefixStyle,
-                              //
-                              hintText: this.widget.hintText,
-                              hintStyle: this.widget.hintStyle,
-                              //
-                              textInputType: this.widget.textInputType,
-                              textCapitalization: this.widget.textCapitalization,
-                              textInputAction: this.widget.textInputAction,
-                              isAutofocus: this.widget.isAutofocus,
-                              maxLines: this.widget.maxLines,
-                              maxLength: this.widget.maxLength,
-                              onChanged: this._onChanged,
-                              onTap: this.widget.onTap,
-                              validator: this._validator,
-                              inputFormatters: [
-                                FCTextInputHandlerFormatter(
-                                  onNewValue: (String value) {
-                                    if (this.mounted == false) return null;
+                        ),
+                      Expanded(
+                        child: FCAnimatedFastContainer(
+                          padding: this._focusNode.hasPrimaryFocus ||
+                                  this._controller.text.isNotEmpty
+                              ? EdgeInsets.only(top: (this._size.s12 / 2))
+                              : EdgeInsets.zero,
+                          child: FCCommonField(
+                            controller: this._controller,
+                            focusNode: this._focusNode,
+                            //
+                            textStyle: this.widget.textStyle,
+                            //
+                            labelText: this.widget.labelText,
+                            labelColor: this._labelColor(),
+                            labelStyle: this.widget.labelStyle,
+                            //
+                            prefixText: this.widget.prefixText,
+                            prefixStyle: this.widget.prefixStyle,
+                            //
+                            hintText: this.widget.hintText,
+                            hintStyle: this.widget.hintStyle,
+                            //
+                            textInputType: this.widget.textInputType,
+                            textCapitalization: this.widget.textCapitalization,
+                            textInputAction: this.widget.textInputAction,
+                            isAutofocus: this.widget.isAutofocus,
+                            maxLines: this.widget.maxLines,
+                            maxLength: this.widget.maxLength,
+                            onChanged: this._onChanged,
+                            onTap: this.widget.onTap,
+                            validator: this._validator,
+                            inputFormatters: [
+                              FCTextInputHandlerFormatter(
+                                onNewValue: (String value) {
+                                  if (this.mounted == false) return null;
 
-                                    // Requidanger
-                                    if (this.widget.isRequired && value.isEmpty) {
-                                      this._haptic.error();
-                                      setState(() {
-                                        this._isAutoValidationError = false;
-                                        this._autoValidationText = "";
-                                        this._isValidationError = true;
-                                        this._validationText = "";
-                                      });
-                                      return;
-                                    }
-                                    // Auto validator
-                                    final String? _autoValidatorResult =
-                                        this.widget.autoValidator?.call(value);
-                                    if (_autoValidatorResult != null) {
-                                      this._haptic.error();
-                                      setState(() {
-                                        this._isAutoValidationError = true;
-                                        this._autoValidationText = _autoValidatorResult;
-                                      });
-                                      return;
-                                    }
-                                    // Default
+                                  // Requidanger
+                                  if (this.widget.isRequired && value.isEmpty) {
+                                    this._haptic.error();
                                     setState(() {
                                       this._isAutoValidationError = false;
                                       this._autoValidationText = "";
-                                      this._isValidationError = false;
+                                      this._isValidationError = true;
                                       this._validationText = "";
                                     });
-                                  },
-                                ),
-                                ...this.widget.inputFormatters ?? [],
-                              ],
-                              cursorColor: this.widget.focusedColor,
-                              isEnabled: true,
-                            ),
+                                    return;
+                                  }
+                                  // Auto validator
+                                  final String? _autoValidatorResult =
+                                      this.widget.autoValidator?.call(value);
+                                  if (_autoValidatorResult != null) {
+                                    this._haptic.error();
+                                    setState(() {
+                                      this._isAutoValidationError = true;
+                                      this._autoValidationText = _autoValidatorResult;
+                                    });
+                                    return;
+                                  }
+                                  // Default
+                                  setState(() {
+                                    this._isAutoValidationError = false;
+                                    this._autoValidationText = "";
+                                    this._isValidationError = false;
+                                    this._validationText = "";
+                                  });
+                                },
+                              ),
+                              ...this.widget.inputFormatters ?? [],
+                            ],
+                            cursorColor: this.widget.focusedColor,
+                            isEnabled: true,
                           ),
                         ),
-                        if (this.widget.postfixIcon != null)
-                          Padding(
-                            padding: EdgeInsets.only(left: this._size.s16),
-                            child: Icon(
-                              this.widget.postfixIcon,
-                              color: this._internalColor(),
-                              size: this.widget.internalIconHeight,
-                            ),
+                      ),
+                      if (this.widget.postfixIcon != null)
+                        Padding(
+                          padding: EdgeInsets.only(left: this._size.s16),
+                          child: Icon(
+                            this.widget.postfixIcon,
+                            color: this._internalColor(),
+                            size: this.widget.internalIconHeight,
                           ),
-                        this.widget.postfix ?? SizedBox(width: this._size.s16),
-                      ],
-                    ),
-                    if (this.widget.bottom != null) this.widget.bottom!,
-                  ],
-                ),
+                        ),
+                      this.widget.postfix ?? SizedBox(width: this._size.s16),
+                    ],
+                  ),
+                  if (this.widget.bottom != null) this.widget.bottom!,
+                ],
               ),
             ),
             Positioned.fill(
@@ -388,7 +386,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
             ),
             child: Row(
               children: [
-                Expanded(
+                Flexible(
                   child: FCText.regular14Danger(
                     context: context,
                     text: this._errorText(),

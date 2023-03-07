@@ -27,6 +27,7 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
         onPressedBack: () => Navigator.pop(context),
       ),
       body: FCListView(
+        childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),

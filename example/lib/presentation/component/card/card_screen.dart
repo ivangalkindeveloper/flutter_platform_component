@@ -21,7 +21,7 @@ class CardScreen extends StatelessWidget {
       body: FCListView(
         children: [
           const ConfigSection(),
-          SizedBox(height: size.s16 / 2),
+          SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Dark",

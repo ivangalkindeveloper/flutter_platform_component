@@ -26,6 +26,7 @@ class _IconButtonScreenState extends State<IconButtonScreen> {
         onPressedBack: () => Navigator.pop(context),
       ),
       body: FCListView(
+        childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
@@ -33,17 +34,15 @@ class _IconButtonScreenState extends State<IconButtonScreen> {
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
           ),
-          SizedBox(height: size.s16 * 4),
-          Center(
-            child: FCBasicIconButton(
-              splashColor: theme.primary,
-              icon: FCIcon.primary(
-                context: context,
-                icon: Icons.account_circle_outlined,
-              ),
-              onPressed: () {},
-              isDisabled: this._isDisabled,
+          SizedBox(height: size.s16 * 2),
+          FCBasicIconButton(
+            splashColor: theme.primary,
+            icon: FCIcon.primary(
+              context: context,
+              icon: Icons.account_circle_outlined,
             ),
+            onPressed: () {},
+            isDisabled: this._isDisabled,
           ),
         ],
       ),
