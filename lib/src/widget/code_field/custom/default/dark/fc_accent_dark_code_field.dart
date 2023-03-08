@@ -32,8 +32,8 @@ class FCAccentDarkCodeField extends StatelessWidget {
   final double? horizontalInterval;
   final bool isAutofocus;
   final bool isShowCursor;
-  final void Function(String?)? onChanged;
-  final void Function(String?)? onCompleted;
+  final void Function(String)? onChanged;
+  final void Function(String)? onCompleted;
   final bool isDisabled;
   final Color? disabledColor;
 

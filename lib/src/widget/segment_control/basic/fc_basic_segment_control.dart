@@ -23,6 +23,7 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
     required this.selectedSplashColor,
     this.selectedStyle,
     this.height,
+    this.padding,
     this.borderRadius,
     this.borderWidth,
     this.isDisabled = false,
@@ -43,6 +44,7 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
   final Color selectedSplashColor;
   final TextStyle? selectedStyle;
   final double? height;
+  final EdgeInsets? padding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
   final bool isDisabled;
@@ -80,9 +82,11 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
                         selectedSplashColor: this.selectedSplashColor,
                         selectedStyle: this.selectedStyle,
                         height: this.height,
+                        padding: this.padding,
                         borderRadius: this.borderRadius,
                         borderWidth: this.borderWidth,
-                        onPressed: () => this.onChanged(item.value),
+                        onPressed:
+                            this.isDisabled ? () {} : () => this.onChanged(item.value),
                         isSelected: item.value == this.value,
                       ),
                     ),
@@ -123,6 +127,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required this.selectedSplashColor,
     required this.selectedStyle,
     required this.height,
+    required this.padding,
     required this.borderRadius,
     required this.borderWidth,
     required this.onPressed,
@@ -143,6 +148,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   final Color selectedSplashColor;
   final TextStyle? selectedStyle;
   final double? height;
+  final EdgeInsets? padding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
   final VoidCallback onPressed;
@@ -261,51 +267,33 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
-    return Stack(
-      children: [
-        FCBasicButton(
-          backgroundColor: this._backgroundColor(theme: theme),
-          splashColor: this._splashColor(theme: theme),
-          height: this.height ?? size.heightSegmentControl,
-          borderRadius: BorderRadius.only(
-            topLeft: this._topLeftRadius(
-              config: config,
-              index: this.index,
-            ),
-            topRight: this._topRightRadius(
-              config: config,
-              index: this.index,
-            ),
-            bottomLeft: this._bottomLeftRadius(
-              config: config,
-              index: this.index,
-            ),
-            bottomRight: this._bottomRightRadius(
-              config: config,
-              index: this.index,
-            ),
-          ),
-          child: FCButtonRowChild(
-            mainAxisAlignment: MainAxisAlignment.center,
-            gradient: null,
-            prefix: this.item.prefix,
-            title: this.item.title,
-            textAlign: TextAlign.center,
-            style: this.isSelected
-                ? this.selectedStyle?.copyWith(
-                      color:
-                          this.selectedStyle?.color ?? this._internalColor(theme: theme),
-                    )
-                : this.unselectedStyle?.copyWith(
-                      color: this.unselectedStyle?.color ??
-                          this._internalColor(theme: theme),
-                    ),
-            postfix: this.item.postfix,
-          ),
-          onPressed: this.onPressed,
+    return FCBasicButton(
+      backgroundColor: this._backgroundColor(theme: theme),
+      splashColor: this._splashColor(theme: theme),
+      height: this.height ?? size.heightSegmentControl,
+      padding: EdgeInsets.zero,
+      borderRadius: BorderRadius.only(
+        topLeft: this._topLeftRadius(
+          config: config,
+          index: this.index,
         ),
-        IgnorePointer(
-          child: Row(
+        topRight: this._topRightRadius(
+          config: config,
+          index: this.index,
+        ),
+        bottomLeft: this._bottomLeftRadius(
+          config: config,
+          index: this.index,
+        ),
+        bottomRight: this._bottomRightRadius(
+          config: config,
+          index: this.index,
+        ),
+      ),
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          Row(
             children: [
               Expanded(
                 child: Container(
@@ -378,8 +366,39 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
                 ),
             ],
           ),
-        )
-      ],
+          Padding(
+            padding: this.padding ??
+                EdgeInsets.symmetric(
+                  horizontal: size.s16,
+                  vertical: size.s16 / 4,
+                ),
+            child: FCButtonRowChild(
+              mainAxisAlignment: MainAxisAlignment.center,
+              gradient: null,
+              prefix: this.item.prefix,
+              title: this.item.title,
+              textAlign: TextAlign.center,
+              style: this.isSelected
+                  ? this.selectedStyle?.copyWith(
+                            color: this.selectedStyle?.color ??
+                                this._internalColor(theme: theme),
+                          ) ??
+                      TextStyle(
+                        color: this._internalColor(theme: theme),
+                      )
+                  : this.unselectedStyle?.copyWith(
+                            color: this.unselectedStyle?.color ??
+                                this._internalColor(theme: theme),
+                          ) ??
+                      TextStyle(
+                        color: this._internalColor(theme: theme),
+                      ),
+              postfix: this.item.postfix,
+            ),
+          ),
+        ],
+      ),
+      onPressed: this.onPressed,
     );
   }
 }

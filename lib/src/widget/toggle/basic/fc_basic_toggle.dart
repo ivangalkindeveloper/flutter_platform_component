@@ -135,19 +135,21 @@ class _FCBasicToggleState extends State<FCBasicToggle> {
                                   selectedStyle: this.widget.selectedStyle,
                                   height: this.widget.height,
                                   isValidationError: this._isValidationError,
-                                  onPressed: () {
-                                    this._isValidationError = false;
-                                    setState(() => this._controller.text =
-                                        this.widget.value.toString());
-                                    this.widget.onChanged(item.value);
-                                  },
+                                  onPressed: this.widget.isDisabled
+                                      ? () {}
+                                      : () => setState(() {
+                                            this._isValidationError = false;
+                                            this._controller.text =
+                                                this.widget.value.toString();
+                                            this.widget.onChanged(item.value);
+                                          }),
                                   isSelected: item.value == this.widget.value,
                                 ),
                               ),
                               if ((index + 1) == this.widget.items.length)
                                 SizedBox(
-                                    width:
-                                        this.widget.horizontalInterval ?? size.s16 / 4),
+                                  width: this.widget.horizontalInterval ?? size.s16 / 4,
+                                ),
                             ],
                           ),
                         ),

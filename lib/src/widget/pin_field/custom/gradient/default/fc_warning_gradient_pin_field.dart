@@ -7,10 +7,10 @@ class FCWarningGradientPINField extends StatelessWidget {
   const FCWarningGradientPINField({
     super.key,
     required this.length,
-    this.itemHeight,
+    this.focusNode,
     this.controller,
     this.errorController,
-    this.focusNode,
+    this.height,
     this.horizontalInterval,
     this.isAutofocus = false,
     this.onChanged,
@@ -20,14 +20,14 @@ class FCWarningGradientPINField extends StatelessWidget {
   });
 
   final int length;
-  final double? itemHeight;
+  final FocusNode? focusNode;
   final TextEditingController? controller;
   final StreamController<bool?>? errorController;
-  final FocusNode? focusNode;
+  final double? height;
   final double? horizontalInterval;
   final bool isAutofocus;
-  final void Function(String?)? onChanged;
-  final void Function(String?)? onCompleted;
+  final void Function(String)? onChanged;
+  final void Function(String)? onCompleted;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -39,7 +39,7 @@ class FCWarningGradientPINField extends StatelessWidget {
     return FCBasicGradientPINField(
       context: context,
       length: this.length,
-      unfocusedBackgroundGradient: theme.greyLightGradient,
+      unfocusedBackgroundGradient: theme.greyGradient,
       focusedBackgroundGradient: FCLinearGradient(
         context: context,
         colors: [
@@ -49,10 +49,10 @@ class FCWarningGradientPINField extends StatelessWidget {
       ),
       focusedBorderColor: theme.warning,
       submittedBackgroundGradient: theme.warningGradient,
-      itemHeight: this.itemHeight,
+      focusNode: this.focusNode,
       controller: this.controller,
       errorController: this.errorController,
-      focusNode: this.focusNode,
+      height: this.height,
       horizontalInterval: this.horizontalInterval,
       isAutofocus: this.isAutofocus,
       onChanged: this.onChanged,

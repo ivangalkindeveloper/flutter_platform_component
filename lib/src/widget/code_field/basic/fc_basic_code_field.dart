@@ -41,8 +41,8 @@ class FCBasicCodeField extends StatefulWidget {
   final double? horizontalInterval;
   final bool isAutofocus;
   final bool isShowCursor;
-  final void Function(String?)? onChanged;
-  final void Function(String?)? onCompleted;
+  final void Function(String)? onChanged;
+  final void Function(String)? onCompleted;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -203,8 +203,8 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
                     this._size.s14,
                 width: this._size.s10 / 10,
               ),
-              onChanged: (String value) => this.widget.onChanged?.call(value),
-              onCompleted: (String value) => this.widget.onCompleted?.call(value),
+              onChanged: this.widget.isDisabled ? null : this.widget.onChanged,
+              onCompleted: this.widget.isDisabled ? null : this.widget.onCompleted,
               readOnly: this.widget.isDisabled,
               errorText: null,
               errorTextStyle: null,

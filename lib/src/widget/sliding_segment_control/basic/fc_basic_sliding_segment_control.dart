@@ -57,7 +57,7 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
               child: CupertinoSlidingSegmentedControl<T>(
                 groupValue: this.value,
                 onValueChanged: (T? value) {
-                  if (value == null) return;
+                  if (value == null || this.isDisabled) return;
 
                   this.onChanged(value);
                 },
@@ -77,12 +77,18 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
                               textAlign: TextAlign.center,
                               style: this.value == item.value
                                   ? this.selectedStyle?.copyWith(
-                                        color: this.selectedStyle?.color ??
-                                            this._internalColor(value: item.value),
+                                            color: this.selectedStyle?.color ??
+                                                this._internalColor(value: item.value),
+                                          ) ??
+                                      TextStyle(
+                                        color: this._internalColor(value: item.value),
                                       )
                                   : this.unselectedStyle?.copyWith(
-                                        color: this.unselectedStyle?.color ??
-                                            this._internalColor(value: item.value),
+                                            color: this.unselectedStyle?.color ??
+                                                this._internalColor(value: item.value),
+                                          ) ??
+                                      TextStyle(
+                                        color: this._internalColor(value: item.value),
                                       ),
                               postfix: item.postfix,
                             ),

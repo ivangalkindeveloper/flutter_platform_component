@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:pinput/pinput.dart';
 
 void main() {
@@ -16,8 +17,7 @@ void main() {
             color: Color.fromRGBO(30, 60, 87, 1),
           ),
         ),
-        body:
-            const FractionallySizedBox(widthFactor: 1, child: PinputExample()),
+        body: const FractionallySizedBox(widthFactor: 1, child: PinputExample()),
       ),
     ),
   );
@@ -63,31 +63,6 @@ class _PinputExampleState extends State<PinputExample> {
       ),
     );
 
-    // return TextField(
-    //   contextMenuBuilder: (_, EditableTextState editableTextState) {
-    //     print('HEHE');
-    //     return AdaptiveTextSelectionToolbar(
-    //       anchors: editableTextState.contextMenuAnchors,
-    //       children: editableTextState.contextMenuButtonItems.map((ContextMenuButtonItem buttonItem) {
-    //         return CupertinoButton(
-    //           borderRadius: null,
-    //           color: const Color(0xffaaaa00),
-    //           disabledColor: const Color(0xffaaaaff),
-    //           onPressed: buttonItem.onPressed,
-    //           padding: const EdgeInsets.all(10.0),
-    //           pressedOpacity: 0.7,
-    //           child: SizedBox(
-    //             width: 200.0,
-    //             child: Text(
-    //               CupertinoTextSelectionToolbarButton.getButtonLabel(context, buttonItem),
-    //             ),
-    //           ),
-    //         );
-    //       }).toList(),
-    //     );
-    //   },
-    // );
-
     /// Optionally you can use form to validate the Pinput
     return Form(
       key: formKey,
@@ -100,8 +75,7 @@ class _PinputExampleState extends State<PinputExample> {
             child: Pinput(
               controller: pinController,
               focusNode: focusNode,
-              androidSmsAutofillMethod:
-                  AndroidSmsAutofillMethod.smsUserConsentApi,
+              androidSmsAutofillMethod: AndroidSmsAutofillMethod.smsUserConsentApi,
               listenForMultipleSmsOnAndroid: true,
               defaultPinTheme: defaultPinTheme,
               validator: (value) {

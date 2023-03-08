@@ -11,6 +11,7 @@ class FCPrimaryGradientSegmentControl<T> extends StatelessWidget {
     this.unselectedStyle,
     this.selectedStyle,
     this.height,
+    this.padding,
     this.borderRadius,
     this.borderWidth,
     this.isDisabled = false,
@@ -23,6 +24,7 @@ class FCPrimaryGradientSegmentControl<T> extends StatelessWidget {
   final TextStyle? unselectedStyle;
   final TextStyle? selectedStyle;
   final double? height;
+  final EdgeInsets? padding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
   final bool isDisabled;
@@ -51,13 +53,14 @@ class FCPrimaryGradientSegmentControl<T> extends StatelessWidget {
       selectedBorderGradient: theme.primaryGradient,
       selectedInternalGradient: LinearGradient(
         colors: [
-          theme.white,
-          theme.white,
+          theme.primaryButton,
+          theme.primaryButton,
         ],
       ),
-      selectedSplashColor: theme.white,
+      selectedSplashColor: theme.primaryButton,
       selectedStyle: this.selectedStyle,
       height: this.height,
+      padding: this.padding,
       borderRadius: this.borderRadius,
       borderWidth: this.borderWidth,
       isDisabled: this.isDisabled,

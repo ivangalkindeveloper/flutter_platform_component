@@ -69,7 +69,7 @@ class FCInfoFormField extends StatelessWidget {
   final bool isAutofocus;
   final int maxLines;
   final int maxLength;
-  final void Function(String?)? onChanged;
+  final void Function(String)? onChanged;
   final void Function()? onTap;
   final String? Function(String)? autoValidator;
   final String? Function(String)? validator;

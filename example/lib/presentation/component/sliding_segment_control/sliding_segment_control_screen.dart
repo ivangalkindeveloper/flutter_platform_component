@@ -10,7 +10,21 @@ class SlidingSegmentControlScreen extends StatefulWidget {
 }
 
 class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScreen> {
-  String _action = "";
+  static const List<FCSlidingSegmentControlItem<String>> _items = [
+    FCSlidingSegmentControlItem(
+      value: "First",
+      title: "First",
+    ),
+    FCSlidingSegmentControlItem(
+      value: "Second",
+      title: "Second",
+    ),
+    FCSlidingSegmentControlItem(
+      value: "Third",
+      title: "Third",
+    ),
+  ];
+  String? _action;
   bool _isDisabled = false;
 
   @override
@@ -41,163 +55,59 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkSlidingSegmentControl<String>(
+          FCAccentDarkSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkSlidingSegmentControl<String>(
+          FCInfoDarkSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkSlidingSegmentControl<String>(
+          FCSuccessDarkSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkSlidingSegmentControl<String>(
+          FCGreyDarkSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkSlidingSegmentControl<String>(
+          FCPrimaryDarkSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerDarkSlidingSegmentControl<String>(
+          FCDangerDarkSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkSlidingSegmentControl<String>(
+          FCSecondaryDarkSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkSlidingSegmentControl<String>(
+          FCWarningDarkSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
@@ -206,243 +116,87 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentSlidingSegmentControl<String>(
+          FCAccentSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackAlwaysSlidingSegmentControl<String>(
+          FCBlackAlwaysSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackSlidingSegmentControl<String>(
+          FCBlackSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoSlidingSegmentControl<String>(
+          FCInfoSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessSlidingSegmentControl<String>(
+          FCSuccessSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreySlidingSegmentControl<String>(
+          FCGreySlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimarySlidingSegmentControl<String>(
+          FCPrimarySlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerSlidingSegmentControl<String>(
+          FCDangerSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondarySlidingSegmentControl<String>(
+          FCSecondarySlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteAlwaysSlidingSegmentControl<String>(
+          FCWhiteAlwaysSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteSlidingSegmentControl<String>(
+          FCWhiteSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningSlidingSegmentControl<String>(
+          FCWarningSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
@@ -451,143 +205,52 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightSlidingSegmentControl<String>(
+          FCAccentLightSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightSlidingSegmentControl<String>(
+          FCInfoLightSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightSlidingSegmentControl<String>(
+          FCSuccessLightSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightSlidingSegmentControl<String>(
+          FCPrimaryLightSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerLightSlidingSegmentControl<String>(
+          FCDangerLightSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightSlidingSegmentControl<String>(
+          FCSecondaryLightSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightSlidingSegmentControl<String>(
+          FCWarningLightSlidingSegmentControl<String?>(
             value: this._action,
-            items: const [
-              FCSlidingSegmentControlItem(
-                value: "First",
-                title: "First",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCSlidingSegmentControlItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
-            onChanged: (String value) => setState(() => this._action = value),
+            items: _items,
+            onChanged: (String? value) => setState(() => this._action = value),
             isDisabled: this._isDisabled,
           ),
         ],

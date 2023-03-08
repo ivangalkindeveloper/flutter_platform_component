@@ -27,27 +27,28 @@ class ActionModalScreen extends StatelessWidget {
             onPressed: () => FCGlobal.showPopUpModal(
               context: context,
               child: FCActionModal(
+                title: "Action Modal Title",
                 description: "Action Modal Description",
                 items: [
                   FCActionModalItem(
                     title: "Action 1",
-                    onPressed: () {},
+                    onPressed: () => Navigator.pop(context),
                   ),
                   FCActionModalItem(
-                    isDefaultAction: true,
                     title: "Action 2",
-                    onPressed: () {},
+                    onPressed: () => Navigator.pop(context),
+                    isDefaultAction: true,
                   ),
                   FCActionModalItem(
-                    isDestructiveAction: true,
                     title: "Action 3",
-                    onPressed: () {},
+                    onPressed: () => Navigator.pop(context),
+                    isDestructiveAction: true,
                   ),
                 ],
                 cancelItem: FCActionModalItem(
                   isDestructiveAction: true,
                   title: "Cancel",
-                  onPressed: () {},
+                  onPressed: () => Navigator.pop(context),
                 ),
               ),
             ),

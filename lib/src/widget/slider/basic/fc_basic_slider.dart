@@ -72,7 +72,7 @@ class _FCBasicSliderCupertino extends StatelessWidget {
       children: [
         CupertinoSlider(
           value: this.value,
-          onChanged: this.onChanged,
+          onChanged: this.isDisabled ? null : this.onChanged,
           activeColor: this.color,
           min: this.min,
           max: this.max,

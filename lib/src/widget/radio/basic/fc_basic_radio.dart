@@ -5,8 +5,8 @@ class FCBasicRadio<T> extends FCPlatformWidget {
   FCBasicRadio({
     super.key,
     required T value,
-    required T groupValue,
-    required void Function(T) onChanged,
+    required T? groupValue,
+    required void Function(T?) onChanged,
     required Color unselectedColor,
     required Color selectedColor,
     bool isToggleable = false,
@@ -52,8 +52,8 @@ class _FCBasicRadioCupertino<T> extends StatelessWidget {
   });
 
   final T value;
-  final T groupValue;
-  final void Function(T) onChanged;
+  final T? groupValue;
+  final void Function(T?) onChanged;
   final Color unselectedColor;
   final Color selectedColor;
   final bool isToggleable;
@@ -73,11 +73,7 @@ class _FCBasicRadioCupertino<T> extends StatelessWidget {
             child: Radio<T>(
               value: this.value,
               groupValue: this.groupValue,
-              onChanged: (T? value) {
-                if (value == null) return;
-
-                this.onChanged(value);
-              },
+              onChanged: this.isDisabled ? null : this.onChanged,
               activeColor: this.selectedColor,
               focusColor: Colors.transparent,
               hoverColor: Colors.transparent,
@@ -115,8 +111,8 @@ class _FCBasicRadioMaterial<T> extends StatelessWidget {
   });
 
   final T value;
-  final T groupValue;
-  final void Function(T) onChanged;
+  final T? groupValue;
+  final void Function(T?) onChanged;
   final Color unselectedColor;
   final Color selectedColor;
   final bool isToggleable;
@@ -136,11 +132,7 @@ class _FCBasicRadioMaterial<T> extends StatelessWidget {
             child: Radio<T>(
               value: this.value,
               groupValue: this.groupValue,
-              onChanged: (T? value) {
-                if (value == null) return;
-
-                this.onChanged(value);
-              },
+              onChanged: this.isDisabled ? null : this.onChanged,
               activeColor: this.selectedColor,
               toggleable: this.isToggleable,
             ),

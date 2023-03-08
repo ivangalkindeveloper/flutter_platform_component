@@ -12,10 +12,8 @@ class FCActionModal extends FCPlatformWidget {
     String? description,
     TextStyle? descriptionStyle,
     Widget? middle,
-    TextStyle? itemStyle,
-    Color? postfixIconColor,
-    double? postfixIconHeight,
     required List<FCActionModalItem> items,
+    TextStyle? itemStyle,
     FCActionModalItem? cancelItem,
   }) : super(
           cupertino: _FCActionModalCupertino(
@@ -25,8 +23,8 @@ class FCActionModal extends FCPlatformWidget {
             description: description,
             descriptionStyle: descriptionStyle,
             middle: middle,
-            itemStyle: itemStyle,
             items: items,
+            itemStyle: itemStyle,
             cancelItem: cancelItem,
           ),
           material: _FCActionModalMaterial(
@@ -36,8 +34,8 @@ class FCActionModal extends FCPlatformWidget {
             description: description,
             descriptionStyle: descriptionStyle,
             middle: middle,
-            itemStyle: itemStyle,
             items: items,
+            itemStyle: itemStyle,
             cancelItem: cancelItem,
           ),
         );
@@ -65,69 +63,6 @@ class _FCActionModalCupertino extends StatelessWidget {
   final List<FCActionModalItem> items;
   final FCActionModalItem? cancelItem;
 
-  TextStyle _titleStyle({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-  }) =>
-      this.titleStyle?.copyWith(
-            color: this.titleStyle?.color ?? theme.black,
-            fontSize: this.titleStyle?.fontSize ?? size.s16,
-            fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
-            fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
-            package: textStyle.package,
-          ) ??
-      TextStyle(
-        color: theme.black,
-        fontSize: size.s16,
-        fontWeight: textStyle.fontWeightRegular,
-        fontFamily: textStyle.fontFamilyRegular,
-        package: textStyle.package,
-      );
-
-  TextStyle _descriptionStyle({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-  }) =>
-      this.descriptionStyle?.copyWith(
-            color: this.descriptionStyle?.color ?? theme.black,
-            fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-            fontWeight: this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
-            fontFamily: this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
-            package: textStyle.package,
-          ) ??
-      TextStyle(
-        color: theme.black,
-        fontSize: size.s14,
-        fontWeight: textStyle.fontWeightRegular,
-        fontFamily: textStyle.fontFamilyRegular,
-        package: textStyle.package,
-      );
-
-  TextStyle _actionStyle({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-    required bool isCancel,
-  }) =>
-      this.itemStyle?.copyWith(
-            color: this.itemStyle?.color ?? theme.black,
-            fontSize: this.itemStyle?.fontSize ?? size.s16,
-            fontWeight: this.itemStyle?.fontWeight ??
-                (isCancel ? textStyle.fontWeightMedium : textStyle.fontWeightRegular),
-            fontFamily: this.itemStyle?.fontFamily ??
-                (isCancel ? textStyle.fontFamilyMedium : textStyle.fontFamilyRegular),
-            package: textStyle.package,
-          ) ??
-      TextStyle(
-        color: theme.black,
-        fontSize: size.s16,
-        fontWeight: (isCancel ? textStyle.fontWeightMedium : textStyle.fontWeightRegular),
-        fontFamily: (isCancel ? textStyle.fontFamilyMedium : textStyle.fontFamilyRegular),
-        package: textStyle.package,
-      );
-
   Widget? _title({
     required IFCTextStyle textStyle,
     required IFCTheme theme,
@@ -137,11 +72,7 @@ class _FCActionModalCupertino extends StatelessWidget {
       return Text(
         this.title!,
         textAlign: TextAlign.center,
-        style: this._titleStyle(
-          textStyle: textStyle,
-          theme: theme,
-          size: size,
-        ),
+        style: this.titleStyle,
       );
 
     return null;
@@ -152,47 +83,44 @@ class _FCActionModalCupertino extends StatelessWidget {
     required IFCTheme theme,
     required IFCSize size,
   }) {
+    if (this.middle != null) return this.middle;
+
     if (this.description != null)
       return Text(
         this.description!,
         textAlign: TextAlign.center,
-        style: this._descriptionStyle(
-          textStyle: textStyle,
-          theme: theme,
-          size: size,
-        ),
+        style: this.descriptionStyle,
       );
-
-    if (this.middle != null) return this.middle;
 
     return null;
   }
 
-  CupertinoActionSheetAction _action({
+  CupertinoActionSheetAction _item({
     required IFCTextStyle textStyle,
     required IFCTheme theme,
     required IFCSize size,
     required FCActionModalItem item,
-    required bool isCancel,
   }) =>
       CupertinoActionSheetAction(
-        isDefaultAction: item.isDefaultAction,
-        isDestructiveAction: item.isDestructiveAction,
-        child: FCButtonRowChild(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: null,
-          prefix: item.prefix,
-          title: title,
-          textAlign: TextAlign.center,
-          style: this._actionStyle(
-            textStyle: textStyle,
-            theme: theme,
-            size: size,
-            isCancel: isCancel,
-          ),
-          postfix: item.postfix,
+          children: [
+            if (item.prefix != null) item.prefix!,
+            if (item.prefix != null) SizedBox(width: size.s16 / 2),
+            Flexible(
+              child: Text(
+                item.title,
+                textAlign: TextAlign.center,
+                style: this.itemStyle,
+              ),
+            ),
+            if (item.postfix != null) SizedBox(width: size.s16 / 2),
+            if (item.postfix != null) item.postfix!,
+          ],
         ),
         onPressed: item.onPressed,
+        isDefaultAction: item.isDefaultAction,
+        isDestructiveAction: item.isDestructiveAction,
       );
 
   @override
@@ -202,37 +130,38 @@ class _FCActionModalCupertino extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
-    return CupertinoActionSheet(
-      title: this._title(
-        textStyle: textStyle,
-        theme: theme,
-        size: size,
-      ),
-      message: this._message(
-        textStyle: textStyle,
-        theme: theme,
-        size: size,
-      ),
-      actions: [
-        ...items.map(
-          (FCActionModalItem item) => this._action(
-            textStyle: textStyle,
-            theme: theme,
-            size: size,
-            item: item,
-            isCancel: false,
-          ),
+    return CupertinoTheme(
+      data: CupertinoTheme.of(context).copyWith(primaryColor: theme.primary),
+      child: CupertinoActionSheet(
+        title: this._title(
+          textStyle: textStyle,
+          theme: theme,
+          size: size,
         ),
-      ],
-      cancelButton: this.cancelItem != null
-          ? this._action(
+        message: this._message(
+          textStyle: textStyle,
+          theme: theme,
+          size: size,
+        ),
+        actions: [
+          ...items.map(
+            (FCActionModalItem item) => this._item(
               textStyle: textStyle,
               theme: theme,
               size: size,
-              item: cancelItem!,
-              isCancel: true,
-            )
-          : null,
+              item: item,
+            ),
+          ),
+        ],
+        cancelButton: this.cancelItem != null
+            ? this._item(
+                textStyle: textStyle,
+                theme: theme,
+                size: size,
+                item: cancelItem!,
+              )
+            : null,
+      ),
     );
   }
 }
@@ -299,7 +228,7 @@ class _FCActionModalMaterial extends StatelessWidget {
         package: textStyle.package,
       );
 
-  TextStyle _actionStyle({
+  TextStyle _itemStyle({
     required IFCTextStyle textStyle,
     required IFCTheme theme,
     required IFCSize size,
@@ -384,7 +313,7 @@ class _FCActionModalMaterial extends StatelessWidget {
     return const SizedBox();
   }
 
-  ListTile _action({
+  ListTile _item({
     required IFCTextStyle textStyle,
     required IFCTheme theme,
     required IFCSize size,
@@ -401,7 +330,7 @@ class _FCActionModalMaterial extends StatelessWidget {
           prefix: item.prefix,
           title: title,
           textAlign: TextAlign.start,
-          style: this._actionStyle(
+          style: this._itemStyle(
             textStyle: textStyle,
             theme: theme,
             size: size,
@@ -427,7 +356,7 @@ class _FCActionModalMaterial extends StatelessWidget {
           size: size,
         ),
         ...items.map(
-          (FCActionModalItem item) => this._action(
+          (FCActionModalItem item) => this._item(
             textStyle: textStyle,
             theme: theme,
             size: size,
@@ -435,7 +364,7 @@ class _FCActionModalMaterial extends StatelessWidget {
           ),
         ),
         if (this.cancelItem != null)
-          this._action(
+          this._item(
             textStyle: textStyle,
             theme: theme,
             size: size,

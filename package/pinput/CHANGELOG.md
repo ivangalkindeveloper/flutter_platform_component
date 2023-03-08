@@ -1,3 +1,20 @@
+#### 2.2.31 · 22/02/2023
+
+### Added:
+| Property                 | Meaning/Default |
+|--------------------------|:---------------:|
+| enableIMEPersonalizedLearning |      false      |
+
+Whether to enable that the IME update personalized data such as typing history and user dictionary data.
+This flag only affects Android. On iOS, there is no equivalent flag.
+
+#### 2.2.30 · 15/02/2023
+- Fixed "TapDownDetails not match the corresponding type" on Flutter's master channel - [issue](https://github.com/Tkko/Flutter_Pinput/issues/124)
+
+
+#### 2.2.30 · 15/02/2023
+- Fixed "TapDownDetails not match the corresponding type" on Flutter's master channel - [issue](https://github.com/Tkko/Flutter_Pinput/issues/124)
+
 #### 2.2.23 · 25/01/2023
 
 - Added correct SDK constraints

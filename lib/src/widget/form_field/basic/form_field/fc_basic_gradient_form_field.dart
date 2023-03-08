@@ -76,7 +76,7 @@ class FCBasicGradientFormField extends StatefulWidget {
   final bool isAutofocus;
   final int maxLines;
   final int maxLength;
-  final void Function(String?)? onChanged;
+  final void Function(String)? onChanged;
   final void Function()? onTap;
   final String? Function(String)? autoValidator;
   final String? Function(String)? validator;
@@ -174,10 +174,6 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
       return this.widget.internalGradient ?? this.widget.focusedGradient;
 
     return this.widget.internalGradient ?? this._theme.greyGradient;
-  }
-
-  void _onChanged(String? value) {
-    if (this.widget.onChanged != null && value != null) this.widget.onChanged!(value);
   }
 
   void _controllerListener() {
@@ -300,8 +296,9 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                             isAutofocus: this.widget.isAutofocus,
                             maxLines: this.widget.maxLines,
                             maxLength: this.widget.maxLength,
-                            onChanged: this._onChanged,
-                            onTap: this.widget.onTap,
+                            onChanged:
+                                this.widget.isDisabled ? null : this.widget.onChanged,
+                            onTap: this.widget.isDisabled ? null : this.widget.onTap,
                             validator: this._validator,
                             inputFormatters: [
                               FCTextInputHandlerFormatter(

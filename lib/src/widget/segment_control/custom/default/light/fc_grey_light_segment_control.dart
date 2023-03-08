@@ -11,6 +11,7 @@ class FCGreyLightSegmentControl<T> extends StatelessWidget {
     this.unselectedStyle,
     this.selectedStyle,
     this.height,
+    this.padding,
     this.borderRadius,
     this.borderWidth,
     this.isDisabled = false,
@@ -23,6 +24,7 @@ class FCGreyLightSegmentControl<T> extends StatelessWidget {
   final TextStyle? unselectedStyle;
   final TextStyle? selectedStyle;
   final double? height;
+  final EdgeInsets? padding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
   final bool isDisabled;
@@ -44,10 +46,11 @@ class FCGreyLightSegmentControl<T> extends StatelessWidget {
       unselectedStyle: this.unselectedStyle,
       selectedBackgroundColor: theme.greyLight,
       selectedBorderColor: theme.greyLight,
-      selectedInternalColor: theme.white,
-      selectedSplashColor: theme.white,
+      selectedInternalColor: theme.whiteAlways,
+      selectedSplashColor: theme.whiteAlways,
       selectedStyle: this.selectedStyle,
       height: this.height,
+      padding: this.padding,
       borderRadius: this.borderRadius,
       borderWidth: this.borderWidth,
       isDisabled: this.isDisabled,

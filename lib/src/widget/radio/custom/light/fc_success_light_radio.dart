@@ -14,8 +14,8 @@ class FCSuccessLightRadio<T> extends StatelessWidget {
   });
 
   final T value;
-  final T groupValue;
-  final void Function(T) onChanged;
+  final T? groupValue;
+  final void Function(T?) onChanged;
   final bool isToggleable;
   final bool isDisabled;
   final Color? disabledColor;

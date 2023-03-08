@@ -13,10 +13,10 @@ class FCBasicGradientPINField extends StatefulWidget {
     required this.focusedBackgroundGradient,
     required this.focusedBorderColor,
     required this.submittedBackgroundGradient,
-    this.itemHeight,
+    this.focusNode,
     this.controller,
     this.errorController,
-    this.focusNode,
+    this.height,
     this.horizontalInterval,
     this.isAutofocus = false,
     this.onChanged,
@@ -31,14 +31,14 @@ class FCBasicGradientPINField extends StatefulWidget {
   final Gradient focusedBackgroundGradient;
   final Color focusedBorderColor;
   final Gradient submittedBackgroundGradient;
-  final double? itemHeight;
+  final FocusNode? focusNode;
   final TextEditingController? controller;
   final StreamController<bool?>? errorController;
-  final FocusNode? focusNode;
+  final double? height;
   final double? horizontalInterval;
   final bool isAutofocus;
-  final void Function(String?)? onChanged;
-  final void Function(String?)? onCompleted;
+  final void Function(String)? onChanged;
+  final void Function(String)? onCompleted;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -105,7 +105,9 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
     Color? borderColor,
   }) =>
       PinTheme(
-        height: this.widget.itemHeight ?? this._size.s16 * 2,
+        constraints: BoxConstraints(
+          minWidth: this.widget.height ?? this._size.s16,
+        ),
         textStyle: const TextStyle(
           color: Colors.transparent,
         ),
@@ -158,12 +160,13 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
                 backgroundGradient: this._theme.dangerGradient,
               ),
               forceErrorState: this._isError,
-              separator:
-                  SizedBox(width: this.widget.horizontalInterval ?? this._size.s16 / 2),
+              separator: SizedBox(
+                width: this.widget.horizontalInterval ?? this._size.s16,
+              ),
               autofocus: this.widget.isAutofocus,
               showCursor: false,
-              onChanged: (String value) => this.widget.onChanged?.call(value),
-              onCompleted: (String value) => this.widget.onCompleted?.call(value),
+              onChanged: this.widget.isDisabled ? null : this.widget.onChanged,
+              onCompleted: this.widget.isDisabled ? null : this.widget.onCompleted,
               readOnly: this.widget.isDisabled,
               errorText: null,
               errorTextStyle: null,
@@ -176,7 +179,7 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
                 ? FCComponentDisabledOverlay(
                     color: this.widget.disabledColor,
                     borderRadius: BorderRadius.circular(
-                      this.widget.itemHeight ?? this._size.s16 * 2,
+                      this.widget.height ?? this._size.s16 * 2,
                     ),
                   )
                 : null,

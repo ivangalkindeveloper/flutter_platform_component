@@ -106,7 +106,7 @@ class _FCBasicSelectFieldState extends State<FCBasicSelectField> {
     return FCSelectFieldWrapper(
       context: context,
       splashColor: this.widget.splashColor,
-      onPressed: this.widget.onPressed,
+      onPressed: this.widget.isDisabled ? () {} : this.widget.onPressed,
       isDisabled: this.widget.isDisabled,
       child: FCBasicFormField(
         context: context,

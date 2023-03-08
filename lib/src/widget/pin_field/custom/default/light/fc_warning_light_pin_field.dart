@@ -7,10 +7,10 @@ class FCWarningLightPINField extends StatelessWidget {
   const FCWarningLightPINField({
     super.key,
     required this.length,
-    this.itemHeight,
+    this.focusNode,
     this.controller,
     this.errorController,
-    this.focusNode,
+    this.height,
     this.horizontalInterval,
     this.isAutofocus = false,
     this.onChanged,
@@ -20,14 +20,14 @@ class FCWarningLightPINField extends StatelessWidget {
   });
 
   final int length;
-  final double? itemHeight;
+  final FocusNode? focusNode;
   final TextEditingController? controller;
   final StreamController<bool?>? errorController;
-  final FocusNode? focusNode;
+  final double? height;
   final double? horizontalInterval;
   final bool isAutofocus;
-  final void Function(String?)? onChanged;
-  final void Function(String?)? onCompleted;
+  final void Function(String)? onChanged;
+  final void Function(String)? onCompleted;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -43,10 +43,10 @@ class FCWarningLightPINField extends StatelessWidget {
       focusedBackgroundColor: theme.backgroundComponent,
       focusedBorderColor: theme.warningLight,
       submittedBackgroundColor: theme.warningLight,
-      itemHeight: this.itemHeight,
+      focusNode: this.focusNode,
       controller: this.controller,
       errorController: this.errorController,
-      focusNode: this.focusNode,
+      height: this.height,
       horizontalInterval: this.horizontalInterval,
       isAutofocus: this.isAutofocus,
       onChanged: this.onChanged,

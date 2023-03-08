@@ -191,7 +191,7 @@ packages:
       path: "../package/pinput"
       relative: true
     source: path
-    version: "2.2.23"
+    version: "2.2.31"
   sky_engine:
     dependency: transitive
     description: flutter

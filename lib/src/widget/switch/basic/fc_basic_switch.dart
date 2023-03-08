@@ -61,7 +61,7 @@ class _FCBasicSwitchCupertino extends StatelessWidget {
       children: [
         CupertinoSwitch(
           value: this.value,
-          onChanged: this.onChanged,
+          onChanged: this.isDisabled ? null : this.onChanged,
           trackColor: this.unselectedColor,
           activeColor: this.selectedColor,
           thumbColor: theme.white,
@@ -104,7 +104,7 @@ class _FCBasicSwitchMaterial extends StatelessWidget {
       children: [
         Switch(
           value: this.value,
-          onChanged: this.onChanged,
+          onChanged: this.isDisabled ? null : this.onChanged,
           inactiveTrackColor: this.unselectedColor,
           activeColor: this.selectedColor,
         ),

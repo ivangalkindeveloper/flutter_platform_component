@@ -107,7 +107,7 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
       context: context,
       splashColor: this.widget.splashColor,
       isDisabled: this.widget.isDisabled,
-      onPressed: this.widget.onPressed,
+      onPressed: this.widget.isDisabled ? () {} : this.widget.onPressed,
       child: FCBasicGradientFormField(
         context: context,
         height: this.widget.height,

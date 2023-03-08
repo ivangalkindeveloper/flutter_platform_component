@@ -36,6 +36,7 @@ class FCButtonRowChild extends StatelessWidget {
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
     return Row(
@@ -51,6 +52,7 @@ class FCButtonRowChild extends StatelessWidget {
                 this.title!,
                 textAlign: this.textAlign,
                 style: this.style?.copyWith(
+                          color: this.style?.color ?? theme.black,
                           fontSize: this.style?.fontSize ?? size.s16,
                           fontWeight:
                               this.style?.fontWeight ?? textStyle.fontWeightRegular,
@@ -59,6 +61,7 @@ class FCButtonRowChild extends StatelessWidget {
                           package: textStyle.package,
                         ) ??
                     TextStyle(
+                      color: theme.black,
                       fontSize: size.s16,
                       fontWeight: textStyle.fontWeightRegular,
                       fontFamily: textStyle.fontFamilyRegular,

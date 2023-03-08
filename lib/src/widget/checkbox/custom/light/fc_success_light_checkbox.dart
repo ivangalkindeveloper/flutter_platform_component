@@ -11,7 +11,7 @@ class FCSuccessLightCheckbox extends StatelessWidget {
     this.disabledColor,
   });
 
-  final bool value;
+  final bool? value;
   final void Function(bool) onChanged;
   final bool isDisabled;
   final Color? disabledColor;
