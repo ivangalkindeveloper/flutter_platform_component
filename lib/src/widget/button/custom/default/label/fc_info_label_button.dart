@@ -40,6 +40,7 @@ class FCInfoLabelButton extends StatelessWidget {
         condition: this.isLoading,
         firstChild: FCCircularIndicator.info(context: context),
         secondChild: FCButtonRowChild(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: null,
           prefix: this.prefix,

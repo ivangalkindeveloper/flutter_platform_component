@@ -37,7 +37,7 @@ class FCSuccessSlidingSegmentControl<T> extends StatelessWidget {
       thumbColor: theme.success,
       unselectedInternalColor: theme.black,
       unselectedStyle: this.unselectedStyle,
-      selectedInternalColor: theme.white,
+      selectedInternalColor: theme.whiteAlways,
       selectedStyle: this.selectedStyle,
       height: this.height,
       isDisabled: this.isDisabled,

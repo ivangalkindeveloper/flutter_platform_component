@@ -42,6 +42,7 @@ class FCGreyLabelButton extends StatelessWidget {
         condition: this.isLoading,
         firstChild: FCCircularIndicator.grey(context: context),
         secondChild: FCButtonRowChild(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: null,
           prefix: this.prefix,

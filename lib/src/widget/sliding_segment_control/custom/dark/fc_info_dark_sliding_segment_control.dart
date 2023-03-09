@@ -37,7 +37,7 @@ class FCInfoDarkSlidingSegmentControl<T> extends StatelessWidget {
       thumbColor: theme.infoDark,
       unselectedInternalColor: theme.black,
       unselectedStyle: this.unselectedStyle,
-      selectedInternalColor: theme.white,
+      selectedInternalColor: theme.whiteAlways,
       selectedStyle: this.selectedStyle,
       height: this.height,
       isDisabled: this.isDisabled,

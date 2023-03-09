@@ -240,6 +240,7 @@ class _FCToggleButton<T> extends StatelessWidget {
       height: this.height ?? size.heightToggle,
       borderRadius: config.borderRadiusToggle,
       child: FCButtonRowChild(
+        mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,
         gradient: null,
         prefix: this.item.prefix,

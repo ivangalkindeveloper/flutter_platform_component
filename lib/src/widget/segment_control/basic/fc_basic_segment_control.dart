@@ -26,6 +26,7 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
     this.padding,
     this.borderRadius,
     this.borderWidth,
+    this.isExpanded = false,
     this.isDisabled = false,
     this.disabledColor,
   });
@@ -47,6 +48,7 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
   final EdgeInsets? padding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
+  final bool isExpanded;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -64,31 +66,32 @@ class FCBasicSegmentControl<T> extends StatelessWidget {
       child: Stack(
         children: [
           Row(
+            mainAxisSize: this.isExpanded ? MainAxisSize.max : MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ...this.items.mapIndexed(
-                    (int index, FCSegmentControlItem item) => Expanded(
-                      child: _FCSegmentControlButton(
-                        index: index,
-                        item: item,
-                        length: this.items.length,
-                        unselectedBackgroundColor: this.unselectedBackgroundColor,
-                        unselectedBorderColor: this.unselectedBorderColor,
-                        unselectedInternalColor: this.unselectedInternalColor,
-                        unselectedSplashColor: this.unselectedSplashColor,
-                        unselectedStyle: this.unselectedStyle,
-                        selectedBackgroundColor: this.selectedBackgroundColor,
-                        selectedBorderColor: this.selectedBorderColor,
-                        selectedInternalColor: this.selectedInternalColor,
-                        selectedSplashColor: this.selectedSplashColor,
-                        selectedStyle: this.selectedStyle,
-                        height: this.height,
-                        padding: this.padding,
-                        borderRadius: this.borderRadius,
-                        borderWidth: this.borderWidth,
-                        onPressed:
-                            this.isDisabled ? () {} : () => this.onChanged(item.value),
-                        isSelected: item.value == this.value,
-                      ),
+                    (int index, FCSegmentControlItem item) => _FCSegmentControlButton(
+                      index: index,
+                      item: item,
+                      length: this.items.length,
+                      unselectedBackgroundColor: this.unselectedBackgroundColor,
+                      unselectedBorderColor: this.unselectedBorderColor,
+                      unselectedInternalColor: this.unselectedInternalColor,
+                      unselectedSplashColor: this.unselectedSplashColor,
+                      unselectedStyle: this.unselectedStyle,
+                      selectedBackgroundColor: this.selectedBackgroundColor,
+                      selectedBorderColor: this.selectedBorderColor,
+                      selectedInternalColor: this.selectedInternalColor,
+                      selectedSplashColor: this.selectedSplashColor,
+                      selectedStyle: this.selectedStyle,
+                      height: this.height,
+                      padding: this.padding,
+                      borderRadius: this.borderRadius,
+                      borderWidth: this.borderWidth,
+                      isExpanded: this.isExpanded,
+                      onPressed:
+                          this.isDisabled ? () {} : () => this.onChanged(item.value),
+                      isSelected: item.value == this.value,
                     ),
                   ),
             ],
@@ -130,6 +133,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required this.padding,
     required this.borderRadius,
     required this.borderWidth,
+    required this.isExpanded,
     required this.onPressed,
     required this.isSelected,
   });
@@ -151,6 +155,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   final EdgeInsets? padding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
+  final bool isExpanded;
   final VoidCallback onPressed;
   final bool isSelected;
 
@@ -290,89 +295,79 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
           index: this.index,
         ),
       ),
-      child: Stack(
-        alignment: Alignment.center,
+      child: Row(
+        mainAxisSize: this.isExpanded ? MainAxisSize.max : MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Row(
-            children: [
-              Expanded(
-                child: Container(
-                  decoration: ShapeDecoration(
-                    shape: CustomRoundedRectangleBorder(
-                      topSide: BorderSide(
-                        color: this._borderColor(theme: theme),
-                        width: this._borderWidth(config: config),
-                      ),
-                      bottomSide: BorderSide(
-                        color: this._borderColor(theme: theme),
-                        width: this._borderWidth(config: config),
-                      ),
-                      leftSide: BorderSide(
-                        color: this._borderColor(theme: theme),
-                        width: this._leftBorderWidth(
-                          config: config,
-                          index: index,
-                        ),
-                      ),
-                      rightSide: BorderSide(
-                        color: this._borderColor(theme: theme),
-                        width: this._rightBorderWidth(
-                          config: config,
-                          index: index,
-                        ),
-                      ),
-                      topLeftCornerSide: BorderSide(
-                        color: this._borderColor(theme: theme),
-                        width: this._borderWidth(config: config),
-                      ),
-                      topRightCornerSide: BorderSide(
-                        color: this._borderColor(theme: theme),
-                        width: this._borderWidth(config: config),
-                      ),
-                      bottomLeftCornerSide: BorderSide(
-                        color: this._borderColor(theme: theme),
-                        width: this._borderWidth(config: config),
-                      ),
-                      bottomRightCornerSide: BorderSide(
-                        color: this._borderColor(theme: theme),
-                        width: this._borderWidth(config: config),
-                      ),
-                      borderRadius: BorderRadius.only(
-                        topLeft: this._topLeftRadius(
-                          config: config,
-                          index: this.index,
-                        ),
-                        topRight: this._topRightRadius(
-                          config: config,
-                          index: this.index,
-                        ),
-                        bottomLeft: this._bottomLeftRadius(
-                          config: config,
-                          index: this.index,
-                        ),
-                        bottomRight: this._bottomRightRadius(
-                          config: config,
-                          index: this.index,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              if ((index + 1) != this.length)
-                Container(
-                  width: this._borderWidth(config: config),
-                  color: this.unselectedBorderColor ?? this.selectedBorderColor,
-                ),
-            ],
-          ),
-          Padding(
+          Container(
+            height: this.height ?? size.heightSegmentControl,
             padding: this.padding ??
                 EdgeInsets.symmetric(
                   horizontal: size.s16,
                   vertical: size.s16 / 4,
                 ),
+            decoration: ShapeDecoration(
+              shape: CustomRoundedRectangleBorder(
+                topSide: BorderSide(
+                  color: this._borderColor(theme: theme),
+                  width: this._borderWidth(config: config),
+                ),
+                bottomSide: BorderSide(
+                  color: this._borderColor(theme: theme),
+                  width: this._borderWidth(config: config),
+                ),
+                leftSide: BorderSide(
+                  color: this._borderColor(theme: theme),
+                  width: this._leftBorderWidth(
+                    config: config,
+                    index: index,
+                  ),
+                ),
+                rightSide: BorderSide(
+                  color: this._borderColor(theme: theme),
+                  width: this._rightBorderWidth(
+                    config: config,
+                    index: index,
+                  ),
+                ),
+                topLeftCornerSide: BorderSide(
+                  color: this._borderColor(theme: theme),
+                  width: this._borderWidth(config: config),
+                ),
+                topRightCornerSide: BorderSide(
+                  color: this._borderColor(theme: theme),
+                  width: this._borderWidth(config: config),
+                ),
+                bottomLeftCornerSide: BorderSide(
+                  color: this._borderColor(theme: theme),
+                  width: this._borderWidth(config: config),
+                ),
+                bottomRightCornerSide: BorderSide(
+                  color: this._borderColor(theme: theme),
+                  width: this._borderWidth(config: config),
+                ),
+                borderRadius: BorderRadius.only(
+                  topLeft: this._topLeftRadius(
+                    config: config,
+                    index: this.index,
+                  ),
+                  topRight: this._topRightRadius(
+                    config: config,
+                    index: this.index,
+                  ),
+                  bottomLeft: this._bottomLeftRadius(
+                    config: config,
+                    index: this.index,
+                  ),
+                  bottomRight: this._bottomRightRadius(
+                    config: config,
+                    index: this.index,
+                  ),
+                ),
+              ),
+            ),
             child: FCButtonRowChild(
+              mainAxisSize: this.isExpanded ? MainAxisSize.max : MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
               gradient: null,
               prefix: this.item.prefix,
@@ -396,6 +391,11 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
               postfix: this.item.postfix,
             ),
           ),
+          if ((index + 1) != this.length)
+            Container(
+              width: this._borderWidth(config: config),
+              color: this.unselectedBorderColor ?? this.selectedBorderColor,
+            ),
         ],
       ),
       onPressed: this.onPressed,

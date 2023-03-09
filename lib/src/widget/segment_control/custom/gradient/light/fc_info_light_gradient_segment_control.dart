@@ -14,6 +14,7 @@ class FCInfoLightGradientSegmentControl<T> extends StatelessWidget {
     this.padding,
     this.borderRadius,
     this.borderWidth,
+    this.isExpanded = false,
     this.isDisabled = false,
     this.disabledColor,
   });
@@ -27,6 +28,7 @@ class FCInfoLightGradientSegmentControl<T> extends StatelessWidget {
   final EdgeInsets? padding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
+  final bool isExpanded;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -63,6 +65,7 @@ class FCInfoLightGradientSegmentControl<T> extends StatelessWidget {
       padding: this.padding,
       borderRadius: this.borderRadius,
       borderWidth: this.borderWidth,
+      isExpanded: this.isExpanded,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

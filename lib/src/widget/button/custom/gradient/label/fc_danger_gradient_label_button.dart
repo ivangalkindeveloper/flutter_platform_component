@@ -40,6 +40,7 @@ class FCDangerGradientLabelButton extends StatelessWidget {
         condition: this.isLoading,
         firstChild: FCCircularIndicator.danger(context: context),
         secondChild: FCButtonRowChild(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: theme.dangerGradient,
           prefix: this.prefix,

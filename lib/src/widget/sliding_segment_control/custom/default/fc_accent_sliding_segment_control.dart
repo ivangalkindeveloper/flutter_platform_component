@@ -37,7 +37,7 @@ class FCAccentSlidingSegmentControl<T> extends StatelessWidget {
       thumbColor: theme.accent,
       unselectedInternalColor: theme.black,
       unselectedStyle: this.unselectedStyle,
-      selectedInternalColor: theme.white,
+      selectedInternalColor: theme.accentButton,
       selectedStyle: this.selectedStyle,
       height: this.height,
       isDisabled: this.isDisabled,

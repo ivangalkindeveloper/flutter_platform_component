@@ -250,6 +250,7 @@ class _FCLinearGradientToggleButton<T> extends StatelessWidget {
       height: this.height ?? size.heightToggle,
       borderRadius: config.borderRadiusToggle,
       child: FCButtonRowChild(
+        mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,
         gradient: this._internalGradient(theme: theme),
         prefix: this.item.prefix,

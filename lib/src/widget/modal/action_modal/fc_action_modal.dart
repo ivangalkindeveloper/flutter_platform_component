@@ -325,6 +325,7 @@ class _FCActionModalMaterial extends StatelessWidget {
           vertical: size.s16 / 4,
         ),
         title: FCButtonRowChild(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
           gradient: null,
           prefix: item.prefix,

@@ -40,6 +40,7 @@ class FCAccentGradientLabelButton extends StatelessWidget {
         condition: this.isLoading,
         firstChild: FCCircularIndicator.accent(context: context),
         secondChild: FCButtonRowChild(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: theme.accentGradient,
           prefix: this.prefix,

@@ -40,6 +40,7 @@ class FCSuccessLabelButton extends StatelessWidget {
         condition: this.isLoading,
         firstChild: FCCircularIndicator.success(context: context),
         secondChild: FCButtonRowChild(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: null,
           prefix: this.prefix,

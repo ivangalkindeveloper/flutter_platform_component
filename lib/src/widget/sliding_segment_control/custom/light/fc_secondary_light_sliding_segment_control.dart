@@ -37,7 +37,7 @@ class FCSecondaryLightSlidingSegmentControl<T> extends StatelessWidget {
       thumbColor: theme.secondaryLight,
       unselectedInternalColor: theme.black,
       unselectedStyle: this.unselectedStyle,
-      selectedInternalColor: theme.white,
+      selectedInternalColor: theme.secondaryButton,
       selectedStyle: this.selectedStyle,
       height: this.height,
       isDisabled: this.isDisabled,

@@ -38,6 +38,7 @@ class FCAccentLightGradientButton extends StatelessWidget {
         condition: this.isLoading,
         firstChild: FCCircularIndicator.accentButton(context: context),
         secondChild: FCButtonRowChild(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: null,
           prefix: this.prefix,

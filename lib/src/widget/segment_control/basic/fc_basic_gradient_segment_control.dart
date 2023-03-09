@@ -26,6 +26,7 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
     this.padding,
     this.borderRadius,
     this.borderWidth,
+    this.isExpanded = false,
     this.isDisabled = false,
     this.disabledColor,
   });
@@ -47,6 +48,7 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
   final EdgeInsets? padding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
+  final bool isExpanded;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -64,31 +66,32 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
       child: Stack(
         children: [
           Row(
+            mainAxisSize: this.isExpanded ? MainAxisSize.max : MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ...this.items.mapIndexed(
-                    (int index, FCSegmentControlItem item) => Expanded(
-                      child: _FCSegmentControlButton(
-                        index: index,
-                        item: item,
-                        length: this.items.length,
-                        unselectedBackgroundGradient: this.unselectedBackgroundGradient,
-                        unselectedBorderGradient: this.unselectedBorderGradient,
-                        unselectedInternalGradient: this.unselectedInternalGradient,
-                        unselectedSplashColor: this.unselectedSplashColor,
-                        unselectedStyle: this.unselectedStyle,
-                        selectedBackgroundGradient: this.selectedBackgroundGradient,
-                        selectedBorderGradient: this.selectedBorderGradient,
-                        selectedInternalGradient: this.selectedInternalGradient,
-                        selectedSplashColor: this.selectedSplashColor,
-                        selectedStyle: this.selectedStyle,
-                        height: this.height,
-                        padding: this.padding,
-                        borderRadius: this.borderRadius,
-                        borderWidth: this.borderWidth,
-                        onPressed:
-                            this.isDisabled ? () {} : () => this.onChanged(item.value),
-                        isSelected: item.value == this.value,
-                      ),
+                    (int index, FCSegmentControlItem item) => _FCSegmentControlButton(
+                      index: index,
+                      item: item,
+                      length: this.items.length,
+                      unselectedBackgroundGradient: this.unselectedBackgroundGradient,
+                      unselectedBorderGradient: this.unselectedBorderGradient,
+                      unselectedInternalGradient: this.unselectedInternalGradient,
+                      unselectedSplashColor: this.unselectedSplashColor,
+                      unselectedStyle: this.unselectedStyle,
+                      selectedBackgroundGradient: this.selectedBackgroundGradient,
+                      selectedBorderGradient: this.selectedBorderGradient,
+                      selectedInternalGradient: this.selectedInternalGradient,
+                      selectedSplashColor: this.selectedSplashColor,
+                      selectedStyle: this.selectedStyle,
+                      height: this.height,
+                      padding: this.padding,
+                      borderRadius: this.borderRadius,
+                      borderWidth: this.borderWidth,
+                      isExpanded: this.isExpanded,
+                      onPressed:
+                          this.isDisabled ? () {} : () => this.onChanged(item.value),
+                      isSelected: item.value == this.value,
                     ),
                   ),
             ],
@@ -130,6 +133,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required this.padding,
     required this.borderRadius,
     required this.borderWidth,
+    required this.isExpanded,
     required this.onPressed,
     required this.isSelected,
   });
@@ -151,6 +155,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   final EdgeInsets? padding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
+  final bool isExpanded;
   final VoidCallback onPressed;
   final bool isSelected;
 
@@ -296,118 +301,123 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
           index: this.index,
         ),
       ),
-      child: Stack(
-        alignment: Alignment.center,
+      child: Row(
+        mainAxisSize: this.isExpanded ? MainAxisSize.max : MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          FCGradientMask(
-            gradient: this._borderGradient(theme: theme),
-            child: Row(
+          SizedBox(
+            height: this.height ?? size.heightSegmentControl,
+            child: Stack(
+              alignment: Alignment.center,
               children: [
-                Expanded(
-                  child: Container(
-                    decoration: ShapeDecoration(
-                      shape: CustomRoundedRectangleBorder(
-                        topSide: BorderSide(
-                          color: this._borderGradient(theme: theme).colors.first,
-                          width: this._borderWidth(config: config),
-                        ),
-                        bottomSide: BorderSide(
-                          color: this._borderGradient(theme: theme).colors.first,
-                          width: this._borderWidth(config: config),
-                        ),
-                        leftSide: BorderSide(
-                          color: this._borderGradient(theme: theme).colors.first,
-                          width: this._leftBorderWidth(
-                            config: config,
-                            index: index,
+                Positioned.fill(
+                  child: FCGradientMask(
+                    gradient: this._borderGradient(theme: theme),
+                    child: Container(
+                      decoration: ShapeDecoration(
+                        shape: CustomRoundedRectangleBorder(
+                          topSide: BorderSide(
+                            color: this._borderGradient(theme: theme).colors.first,
+                            width: this._borderWidth(config: config),
                           ),
-                        ),
-                        rightSide: BorderSide(
-                          color: this._borderGradient(theme: theme).colors.first,
-                          width: this._rightBorderWidth(
-                            config: config,
-                            index: index,
+                          bottomSide: BorderSide(
+                            color: this._borderGradient(theme: theme).colors.first,
+                            width: this._borderWidth(config: config),
                           ),
-                        ),
-                        topLeftCornerSide: BorderSide(
-                          color: this._borderGradient(theme: theme).colors.first,
-                          width: this._borderWidth(config: config),
-                        ),
-                        topRightCornerSide: BorderSide(
-                          color: this._borderGradient(theme: theme).colors.first,
-                          width: this._borderWidth(config: config),
-                        ),
-                        bottomLeftCornerSide: BorderSide(
-                          color: this._borderGradient(theme: theme).colors.first,
-                          width: this._borderWidth(config: config),
-                        ),
-                        bottomRightCornerSide: BorderSide(
-                          color: this._borderGradient(theme: theme).colors.first,
-                          width: this._borderWidth(config: config),
-                        ),
-                        borderRadius: BorderRadius.only(
-                          topLeft: this._topLeftRadius(
-                            config: config,
-                            index: this.index,
+                          leftSide: BorderSide(
+                            color: this._borderGradient(theme: theme).colors.first,
+                            width: this._leftBorderWidth(
+                              config: config,
+                              index: index,
+                            ),
                           ),
-                          topRight: this._topRightRadius(
-                            config: config,
-                            index: this.index,
+                          rightSide: BorderSide(
+                            color: this._borderGradient(theme: theme).colors.first,
+                            width: this._rightBorderWidth(
+                              config: config,
+                              index: index,
+                            ),
                           ),
-                          bottomLeft: this._bottomLeftRadius(
-                            config: config,
-                            index: this.index,
+                          topLeftCornerSide: BorderSide(
+                            color: this._borderGradient(theme: theme).colors.first,
+                            width: this._borderWidth(config: config),
                           ),
-                          bottomRight: this._bottomRightRadius(
-                            config: config,
-                            index: this.index,
+                          topRightCornerSide: BorderSide(
+                            color: this._borderGradient(theme: theme).colors.first,
+                            width: this._borderWidth(config: config),
+                          ),
+                          bottomLeftCornerSide: BorderSide(
+                            color: this._borderGradient(theme: theme).colors.first,
+                            width: this._borderWidth(config: config),
+                          ),
+                          bottomRightCornerSide: BorderSide(
+                            color: this._borderGradient(theme: theme).colors.first,
+                            width: this._borderWidth(config: config),
+                          ),
+                          borderRadius: BorderRadius.only(
+                            topLeft: this._topLeftRadius(
+                              config: config,
+                              index: this.index,
+                            ),
+                            topRight: this._topRightRadius(
+                              config: config,
+                              index: this.index,
+                            ),
+                            bottomLeft: this._bottomLeftRadius(
+                              config: config,
+                              index: this.index,
+                            ),
+                            bottomRight: this._bottomRightRadius(
+                              config: config,
+                              index: this.index,
+                            ),
                           ),
                         ),
                       ),
                     ),
                   ),
                 ),
-                if ((index + 1) != this.length)
-                  Container(
-                    width: this._borderWidth(config: config),
-                    decoration: BoxDecoration(
-                      gradient:
-                          this.unselectedBorderGradient ?? this.selectedBorderGradient,
-                    ),
+                Padding(
+                  padding: this.padding ??
+                      EdgeInsets.symmetric(
+                        horizontal: size.s16,
+                        vertical: size.s16 / 4,
+                      ),
+                  child: FCButtonRowChild(
+                    mainAxisSize: this.isExpanded ? MainAxisSize.max : MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    gradient: this._internalGradient(theme: theme),
+                    prefix: this.item.prefix,
+                    title: this.item.title,
+                    textAlign: TextAlign.center,
+                    style: this.isSelected
+                        ? this.selectedStyle?.copyWith(
+                                  color: this.selectedStyle?.color ??
+                                      this._internalGradient(theme: theme).colors.first,
+                                ) ??
+                            TextStyle(
+                              color: this._internalGradient(theme: theme).colors.first,
+                            )
+                        : this.unselectedStyle?.copyWith(
+                                  color: this.unselectedStyle?.color ??
+                                      this._internalGradient(theme: theme).colors.first,
+                                ) ??
+                            TextStyle(
+                              color: this._internalGradient(theme: theme).colors.first,
+                            ),
+                    postfix: this.item.postfix,
                   ),
+                ),
               ],
             ),
           ),
-          Padding(
-            padding: this.padding ??
-                EdgeInsets.symmetric(
-                  horizontal: size.s16,
-                  vertical: size.s16 / 4,
-                ),
-            child: FCButtonRowChild(
-              mainAxisAlignment: MainAxisAlignment.center,
-              gradient: this._internalGradient(theme: theme),
-              prefix: this.item.prefix,
-              title: this.item.title,
-              textAlign: TextAlign.center,
-              style: this.isSelected
-                  ? this.selectedStyle?.copyWith(
-                            color: this.selectedStyle?.color ??
-                                this._internalGradient(theme: theme).colors.first,
-                          ) ??
-                      TextStyle(
-                        color: this._internalGradient(theme: theme).colors.first,
-                      )
-                  : this.unselectedStyle?.copyWith(
-                            color: this.unselectedStyle?.color ??
-                                this._internalGradient(theme: theme).colors.first,
-                          ) ??
-                      TextStyle(
-                        color: this._internalGradient(theme: theme).colors.first,
-                      ),
-              postfix: this.item.postfix,
+          if ((index + 1) != this.length)
+            Container(
+              width: this._borderWidth(config: config),
+              decoration: BoxDecoration(
+                gradient: this.unselectedBorderGradient ?? this.selectedBorderGradient,
+              ),
             ),
-          ),
         ],
       ),
       onPressed: this.onPressed,

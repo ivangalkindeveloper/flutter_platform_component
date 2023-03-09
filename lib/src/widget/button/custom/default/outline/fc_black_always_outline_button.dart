@@ -40,6 +40,7 @@ class FCBlackAlwaysOutlineButton extends StatelessWidget {
         condition: this.isLoading,
         firstChild: FCCircularIndicator.blackAlways(context: context),
         secondChild: FCButtonRowChild(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: null,
           prefix: this.prefix,

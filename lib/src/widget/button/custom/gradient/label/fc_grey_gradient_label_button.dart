@@ -40,6 +40,7 @@ class FCGreyGradientLabelButton extends StatelessWidget {
         condition: this.isLoading,
         firstChild: FCCircularIndicator.grey(context: context),
         secondChild: FCButtonRowChild(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: theme.greyGradient,
           prefix: this.prefix,

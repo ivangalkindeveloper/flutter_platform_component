@@ -37,7 +37,7 @@ class FCWhiteSlidingSegmentControl<T> extends StatelessWidget {
       thumbColor: theme.white,
       unselectedInternalColor: theme.black,
       unselectedStyle: this.unselectedStyle,
-      selectedInternalColor: theme.white,
+      selectedInternalColor: theme.black,
       selectedStyle: this.selectedStyle,
       height: this.height,
       isDisabled: this.isDisabled,

@@ -41,6 +41,7 @@ class FCPrimaryOutlineButton extends StatelessWidget {
         condition: this.isLoading,
         firstChild: FCCircularIndicator.primary(context: context),
         secondChild: FCButtonRowChild(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: null,
           prefix: this.prefix,

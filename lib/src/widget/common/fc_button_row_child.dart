@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 class FCButtonRowChild extends StatelessWidget {
   const FCButtonRowChild({
     Key? key,
+    required this.mainAxisSize,
     required this.mainAxisAlignment,
     required this.gradient,
     required this.prefix,
@@ -14,6 +15,7 @@ class FCButtonRowChild extends StatelessWidget {
     required this.postfix,
   }) : super(key: key);
 
+  final MainAxisSize mainAxisSize;
   final MainAxisAlignment mainAxisAlignment;
   final Gradient? gradient;
   final Widget? prefix;
@@ -40,6 +42,7 @@ class FCButtonRowChild extends StatelessWidget {
     final IFCSize size = config.size;
 
     return Row(
+      mainAxisSize: this.mainAxisSize,
       mainAxisAlignment: this.mainAxisAlignment,
       children: [
         if (this.prefix != null) this.prefix!,

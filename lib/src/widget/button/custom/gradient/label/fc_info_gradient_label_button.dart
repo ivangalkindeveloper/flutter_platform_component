@@ -40,6 +40,7 @@ class FCInfoGradientLabelButton extends StatelessWidget {
         condition: this.isLoading,
         firstChild: FCCircularIndicator.info(context: context),
         secondChild: FCButtonRowChild(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: theme.infoGradient,
           prefix: this.prefix,

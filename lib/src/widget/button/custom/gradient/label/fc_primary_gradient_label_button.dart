@@ -40,6 +40,7 @@ class FCPrimaryGradientLabelButton extends StatelessWidget {
         condition: this.isLoading,
         firstChild: FCCircularIndicator.primary(context: context),
         secondChild: FCButtonRowChild(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: theme.primaryGradient,
           prefix: this.prefix,

@@ -37,7 +37,7 @@ class FCWarningLightSlidingSegmentControl<T> extends StatelessWidget {
       thumbColor: theme.warningLight,
       unselectedInternalColor: theme.black,
       unselectedStyle: this.unselectedStyle,
-      selectedInternalColor: theme.white,
+      selectedInternalColor: theme.whiteAlways,
       selectedStyle: this.selectedStyle,
       height: this.height,
       isDisabled: this.isDisabled,

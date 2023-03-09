@@ -412,6 +412,12 @@ class ComponentScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.text_screen),
             ),
+            SizedBox(height: size.s16 / 2),
+            FCPrimaryButton(
+              title: "Text Span",
+              onPressed: () =>
+                  Navigator.pushNamed(context, NavigationService.text_span_screen),
+            ),
             SizedBox(height: size.s16),
             FCPrimaryButton(
               title: "Toggle",

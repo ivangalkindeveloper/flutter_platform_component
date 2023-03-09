@@ -40,6 +40,7 @@ class FCWhiteAlwaysOutlineButton extends StatelessWidget {
         condition: this.isLoading,
         firstChild: FCCircularIndicator.whiteAlways(context: context),
         secondChild: FCButtonRowChild(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           gradient: null,
           prefix: this.prefix,

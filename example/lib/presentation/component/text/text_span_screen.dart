@@ -22,14 +22,20 @@ class TextSpanScreen extends StatelessWidget {
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
-          FCTextSpan(
-            children: [
-              FCTextSpanItem.thin10Info(context: context, text: "Thin 10 Info"),
-              FCTextSpanItem.regular16Black(context: context, text: "Regular 16 Black"),
-              FCTextSpanItem.medium18Success(context: context, text: "Medium 18 Success"),
-              FCTextSpanItem.semiBold20Grey(context: context, text: "Semibold 20 Grey"),
-              FCTextSpanItem.bold28Danger(context: context, text: "Bold 28 Danger"),
-            ],
+          Padding(
+            padding: EdgeInsets.all(size.s32),
+            child: FCTextSpan(
+              children: [
+                FCTextSpanItem.thin10Info(context: context, text: "Thin 10 Info "),
+                FCTextSpanItem.regular16Black(
+                    context: context, text: "Regular 16 Black "),
+                FCTextSpanItem.medium18Success(
+                    context: context, text: "Medium 18 Success "),
+                FCTextSpanItem.semiBold20Grey(
+                    context: context, text: "Semibold 20 Grey "),
+                FCTextSpanItem.bold28Danger(context: context, text: "Bold 28 Danger"),
+              ],
+            ),
           ),
         ],
       ),

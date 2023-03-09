@@ -49,66 +49,61 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
-    return Row(
+    return Stack(
       children: [
-        Stack(
-          children: [
-            Expanded(
-              child: CupertinoSlidingSegmentedControl<T>(
-                groupValue: this.value,
-                onValueChanged: (T? value) {
-                  if (value == null || this.isDisabled) return;
+        CupertinoSlidingSegmentedControl<T>(
+          groupValue: this.value,
+          onValueChanged: (T? value) {
+            if (value == null || this.isDisabled) return;
 
-                  this.onChanged(value);
-                },
-                backgroundColor: this.backgroundColor,
-                thumbColor: this.thumbColor,
-                children: Map.fromEntries(
-                  this.items.map(
-                        (FCSlidingSegmentControlItem item) => MapEntry(
-                          item.value,
-                          SizedBox(
-                            height: this.height ?? size.heightSlidingSegmentControl,
-                            child: FCButtonRowChild(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              gradient: null,
-                              prefix: item.prefix,
-                              title: item.title,
-                              textAlign: TextAlign.center,
-                              style: this.value == item.value
-                                  ? this.selectedStyle?.copyWith(
-                                            color: this.selectedStyle?.color ??
-                                                this._internalColor(value: item.value),
-                                          ) ??
-                                      TextStyle(
-                                        color: this._internalColor(value: item.value),
-                                      )
-                                  : this.unselectedStyle?.copyWith(
-                                            color: this.unselectedStyle?.color ??
-                                                this._internalColor(value: item.value),
-                                          ) ??
-                                      TextStyle(
-                                        color: this._internalColor(value: item.value),
-                                      ),
-                              postfix: item.postfix,
-                            ),
-                          ),
-                        ),
+            this.onChanged(value);
+          },
+          backgroundColor: this.backgroundColor,
+          thumbColor: this.thumbColor,
+          children: Map.fromEntries(
+            this.items.map(
+                  (FCSlidingSegmentControlItem item) => MapEntry(
+                    item.value,
+                    SizedBox(
+                      height: this.height ?? size.heightSlidingSegmentControl,
+                      child: FCButtonRowChild(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        gradient: null,
+                        prefix: item.prefix,
+                        title: item.title,
+                        textAlign: TextAlign.center,
+                        style: this.value == item.value
+                            ? this.selectedStyle?.copyWith(
+                                      color: this.selectedStyle?.color ??
+                                          this._internalColor(value: item.value),
+                                    ) ??
+                                TextStyle(
+                                  color: this._internalColor(value: item.value),
+                                )
+                            : this.unselectedStyle?.copyWith(
+                                      color: this.unselectedStyle?.color ??
+                                          this._internalColor(value: item.value),
+                                    ) ??
+                                TextStyle(
+                                  color: this._internalColor(value: item.value),
+                                ),
+                        postfix: item.postfix,
                       ),
+                    ),
+                  ),
                 ),
-              ),
-            ),
-            Positioned.fill(
-              child: FCAnimatedSwitcher(
-                child: this.isDisabled
-                    ? FCComponentDisabledOverlay(
-                        color: this.disabledColor,
-                        borderRadius: const BorderRadius.all(Radius.circular(8)),
-                      )
-                    : null,
-              ),
-            ),
-          ],
+          ),
+        ),
+        Positioned.fill(
+          child: FCAnimatedSwitcher(
+            child: this.isDisabled
+                ? FCComponentDisabledOverlay(
+                    color: this.disabledColor,
+                    borderRadius: const BorderRadius.all(Radius.circular(8)),
+                  )
+                : null,
+          ),
         ),
       ],
     );
