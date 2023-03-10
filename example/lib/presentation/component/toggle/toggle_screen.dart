@@ -10,6 +10,20 @@ class ToggleScreen extends StatefulWidget {
 }
 
 class _ToggleScreenState extends State<ToggleScreen> {
+  static const List<FCToggleItem<String>> _items = [
+    FCToggleItem(
+      value: "First",
+      title: "First",
+    ),
+    FCToggleItem(
+      value: "Second",
+      title: "Second",
+    ),
+    FCToggleItem(
+      value: "Third",
+      title: "Third",
+    ),
+  ];
   String _value = "";
   bool _isDisabled = false;
 
@@ -27,6 +41,7 @@ class _ToggleScreenState extends State<ToggleScreen> {
         onPressedBack: () => Navigator.pop(context),
       ),
       body: FCListView(
+        childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
@@ -42,140 +57,49 @@ class _ToggleScreenState extends State<ToggleScreen> {
           SizedBox(height: size.s16),
           FCAccentDarkToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoDarkToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyDarkToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningDarkToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
@@ -187,220 +111,77 @@ class _ToggleScreenState extends State<ToggleScreen> {
           SizedBox(height: size.s16),
           FCAccentToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCBlackAlwaysToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCBlackToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteAlwaysToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
@@ -412,140 +193,49 @@ class _ToggleScreenState extends State<ToggleScreen> {
           SizedBox(height: size.s16),
           FCAccentLightToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoLightToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessLightToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyLightToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningLightToggle<String>(
             value: this._value,
-            items: const [
-              FCToggleItem(
-                value: "First",
-                title: "First",
-              ),
-              FCToggleItem(
-                value: "Second",
-                title: "Second",
-              ),
-              FCToggleItem(
-                value: "Third",
-                title: "Third",
-              ),
-            ],
+            items: _items,
             onChanged: (String value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),

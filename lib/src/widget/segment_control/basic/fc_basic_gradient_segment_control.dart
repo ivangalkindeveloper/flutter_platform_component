@@ -26,7 +26,6 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
     this.padding,
     this.borderRadius,
     this.borderWidth,
-    this.isExpanded = false,
     this.isDisabled = false,
     this.disabledColor,
   });
@@ -48,7 +47,6 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
   final EdgeInsets? padding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
-  final bool isExpanded;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -66,8 +64,7 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
       child: Stack(
         children: [
           Row(
-            mainAxisSize: this.isExpanded ? MainAxisSize.max : MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
             children: [
               ...this.items.mapIndexed(
                     (int index, FCSegmentControlItem item) => _FCSegmentControlButton(
@@ -88,7 +85,6 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
                       padding: this.padding,
                       borderRadius: this.borderRadius,
                       borderWidth: this.borderWidth,
-                      isExpanded: this.isExpanded,
                       onPressed:
                           this.isDisabled ? () {} : () => this.onChanged(item.value),
                       isSelected: item.value == this.value,
@@ -133,7 +129,6 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required this.padding,
     required this.borderRadius,
     required this.borderWidth,
-    required this.isExpanded,
     required this.onPressed,
     required this.isSelected,
   });
@@ -155,7 +150,6 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   final EdgeInsets? padding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
-  final bool isExpanded;
   final VoidCallback onPressed;
   final bool isSelected;
 
@@ -302,8 +296,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
         ),
       ),
       child: Row(
-        mainAxisSize: this.isExpanded ? MainAxisSize.max : MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
         children: [
           SizedBox(
             height: this.height ?? size.heightSegmentControl,
@@ -384,7 +377,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
                         vertical: size.s16 / 4,
                       ),
                   child: FCButtonRowChild(
-                    mainAxisSize: this.isExpanded ? MainAxisSize.max : MainAxisSize.min,
+                    mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     gradient: this._internalGradient(theme: theme),
                     prefix: this.item.prefix,

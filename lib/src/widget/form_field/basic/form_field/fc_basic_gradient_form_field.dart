@@ -197,7 +197,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
   String? _validator(String? value) {
     if (value == null || this.mounted == false) return null;
 
-    // Requidanger
+    // Required
     if (this.widget.isRequired && value.isEmpty) {
       this._haptic.error();
       setState(() {
@@ -305,7 +305,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                                 onNewValue: (String value) {
                                   if (this.mounted == false) return null;
 
-                                  // Requidanger
+                                  // Required
                                   if (this.widget.isRequired && value.isEmpty) {
                                     this._haptic.error();
                                     setState(() {

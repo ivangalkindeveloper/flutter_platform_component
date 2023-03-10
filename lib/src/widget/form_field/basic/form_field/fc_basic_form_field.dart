@@ -197,7 +197,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
   String? _validator(String? value) {
     if (value == null || this.mounted == false) return null;
 
-    // Requidanger
+    // Required
     if (this.widget.isRequired && value.isEmpty) {
       this._haptic.error();
       setState(() {
@@ -307,7 +307,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
                                 onNewValue: (String value) {
                                   if (this.mounted == false) return null;
 
-                                  // Requidanger
+                                  // Required
                                   if (this.widget.isRequired && value.isEmpty) {
                                     this._haptic.error();
                                     setState(() {
