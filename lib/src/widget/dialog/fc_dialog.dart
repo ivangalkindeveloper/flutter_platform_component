@@ -1,8 +1,9 @@
-import 'package:flutter/cupertino.dart' show CupertinoAlertDialog, CupertinoDialogAction;
-import 'package:flutter/material.dart' show AlertDialog, TextButton;
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
+
+import 'package:flutter/cupertino.dart' show CupertinoAlertDialog, CupertinoDialogAction;
+import 'package:flutter/material.dart' show AlertDialog, TextButton;
 
 class FCDialog extends FCPlatformWidget {
   FCDialog({

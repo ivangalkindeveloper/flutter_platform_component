@@ -1,10 +1,11 @@
-import 'package:flutter/material.dart'
-    show BottomNavigationBar, BottomNavigationBarType, Colors;
 import 'package:flutter_component/src/extension/fc_extension.dart';
-import 'package:flutter/cupertino.dart' show CupertinoTabBar;
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:ui';
+
+import 'package:flutter/material.dart'
+    show BottomNavigationBar, BottomNavigationBarType, Colors;
+import 'package:flutter/cupertino.dart' show CupertinoTabBar;
 
 class FCBlurBottomNavigationBar extends FCPlatformWidget {
   FCBlurBottomNavigationBar({

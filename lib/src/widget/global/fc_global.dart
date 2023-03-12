@@ -1,3 +1,7 @@
+import 'package:flutter_component/src/extension/fc_extension.dart';
+import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter/widgets.dart';
+
 import 'package:flutter/material.dart' as material
     show
         MaterialPageRoute,
@@ -17,9 +21,6 @@ import 'package:modal_bottom_sheet/modal_bottom_sheet.dart' as bottomSheet
         showMaterialModalBottomSheet;
 import 'package:flutter/cupertino.dart' as cupertino
     show showCupertinoModalPopup, showCupertinoDialog;
-import 'package:flutter_component/src/extension/fc_extension.dart';
-import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/widgets.dart';
 
 class FCGlobal {
   static material.MaterialPageRoute pageRoute({

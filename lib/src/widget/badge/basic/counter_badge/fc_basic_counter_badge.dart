@@ -1,8 +1,9 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/material.dart' show Colors;
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/widgets.dart';
+
+import 'package:flutter/material.dart' show Colors;
 
 class FCBasicCounterBadge extends StatelessWidget {
   const FCBasicCounterBadge({

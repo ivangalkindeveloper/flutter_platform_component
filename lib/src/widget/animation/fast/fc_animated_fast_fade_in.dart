@@ -1,7 +1,8 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:animate_do/animate_do.dart' show FadeIn;
 import 'package:flutter/widgets.dart';
+
+import 'package:animate_do/animate_do.dart' show FadeIn;
 
 class FCAnimatedFastFadeIn extends StatelessWidget {
   const FCAnimatedFastFadeIn({

@@ -1,9 +1,10 @@
-import 'package:flutter/cupertino.dart'
-    show ObstructingPreferredSizeWidget, CupertinoPageScaffold;
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/material.dart' show Scaffold;
 import 'package:flutter/widgets.dart';
+
+import 'package:flutter/cupertino.dart'
+    show ObstructingPreferredSizeWidget, CupertinoPageScaffold;
+import 'package:flutter/material.dart' show Scaffold;
 
 class FCScaffold extends FCPlatformWidget {
   FCScaffold({

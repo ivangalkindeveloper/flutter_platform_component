@@ -1,8 +1,9 @@
-import 'package:flutter/cupertino.dart' show CupertinoSliverRefreshControl;
 import 'package:flutter_component/src/extension/fc_extension.dart';
-import 'package:flutter/material.dart' show RefreshIndicator;
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
+
+import 'package:flutter/cupertino.dart' show CupertinoSliverRefreshControl;
+import 'package:flutter/material.dart' show RefreshIndicator;
 
 class FCListRefresh extends FCPlatformWidget {
   FCListRefresh({

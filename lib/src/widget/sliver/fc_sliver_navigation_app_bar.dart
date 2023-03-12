@@ -1,9 +1,10 @@
-import 'package:flutter/cupertino.dart' show CupertinoSliverNavigationBar;
 import 'package:flutter_component/src/extension/fc_extension.dart';
-import 'package:flutter/material.dart' show SliverAppBar, Colors;
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+
+import 'package:flutter/cupertino.dart' show CupertinoSliverNavigationBar;
+import 'package:flutter/material.dart' show SliverAppBar, Colors;
 
 class FCSliverNavigationAppBar extends FCPlatformWidget {
   FCSliverNavigationAppBar({

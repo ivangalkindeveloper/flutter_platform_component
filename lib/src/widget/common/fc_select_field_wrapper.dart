@@ -1,7 +1,8 @@
-import 'package:flutter/material.dart' show ElevatedButton, Colors;
-import 'package:flutter/cupertino.dart' show CupertinoButton;
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
+
+import 'package:flutter/material.dart' show ElevatedButton, Colors;
+import 'package:flutter/cupertino.dart' show CupertinoButton;
 
 class FCSelectFieldWrapper extends FCPlatformWidget {
   FCSelectFieldWrapper({

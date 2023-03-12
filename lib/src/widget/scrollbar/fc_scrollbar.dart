@@ -1,7 +1,8 @@
 import 'package:flutter_component/src/platform/fc_platform_widget.dart';
+import 'package:flutter/widgets.dart';
+
 import 'package:flutter/cupertino.dart' show CupertinoScrollbar;
 import 'package:flutter/material.dart' show Scrollbar;
-import 'package:flutter/widgets.dart';
 
 class FCScrollbar extends FCPlatformWidget {
   FCScrollbar({

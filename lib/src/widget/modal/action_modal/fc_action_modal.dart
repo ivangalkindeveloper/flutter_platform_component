@@ -1,10 +1,11 @@
-import 'package:flutter/cupertino.dart'
-    show CupertinoActionSheetAction, CupertinoTheme, CupertinoActionSheet;
 import 'package:flutter_component/src/widget/common/fc_button_row_child.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/material.dart' show ListTile;
 import 'package:flutter/widgets.dart';
+
+import 'package:flutter/cupertino.dart'
+    show CupertinoActionSheetAction, CupertinoTheme, CupertinoActionSheet;
+import 'package:flutter/material.dart' show ListTile;
 
 class FCActionModal extends FCPlatformWidget {
   FCActionModal({

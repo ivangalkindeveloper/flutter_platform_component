@@ -1,3 +1,7 @@
+import 'package:flutter_component/src/extension/fc_extension.dart';
+import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter/widgets.dart';
+
 import 'package:flutter/cupertino.dart'
     show
         CupertinoTheme,
@@ -7,9 +11,6 @@ import 'package:flutter/cupertino.dart'
         CupertinoDatePicker,
         CupertinoDatePickerMode;
 import 'package:flutter/material.dart' show Theme, ColorScheme, DialogTheme;
-import 'package:flutter_component/src/extension/fc_extension.dart';
-import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/widgets.dart';
 
 class FCDatePicker extends FCPlatformWidget {
   FCDatePicker({

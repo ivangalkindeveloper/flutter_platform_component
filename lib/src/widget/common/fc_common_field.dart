@@ -1,9 +1,10 @@
-import 'package:flutter/material.dart'
-    show Material, TextFormField, Colors, InputDecoration, OutlineInputBorder;
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+
+import 'package:flutter/material.dart'
+    show Material, TextFormField, Colors, InputDecoration, OutlineInputBorder;
 
 class FCCommonField extends StatelessWidget {
   const FCCommonField({

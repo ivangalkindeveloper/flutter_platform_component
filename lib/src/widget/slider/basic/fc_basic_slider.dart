@@ -1,7 +1,8 @@
-import 'package:flutter/cupertino.dart' show CupertinoSlider;
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/material.dart' show Slider;
 import 'package:flutter/widgets.dart';
+
+import 'package:flutter/cupertino.dart' show CupertinoSlider;
+import 'package:flutter/material.dart' show Slider;
 
 class FCBasicSlider extends FCPlatformWidget {
   FCBasicSlider({

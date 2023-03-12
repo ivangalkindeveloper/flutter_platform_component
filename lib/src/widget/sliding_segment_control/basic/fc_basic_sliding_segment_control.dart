@@ -1,9 +1,10 @@
 import 'package:flutter_component/src/widget/common/fc_button_row_child.dart';
-import 'package:flutter/cupertino.dart' show CupertinoSlidingSegmentedControl;
 import 'package:flutter_component/src/exception/fc_exception.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
+
+import 'package:flutter/cupertino.dart' show CupertinoSlidingSegmentedControl;
 
 class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
   const FCBasicSlidingSegmentControl({
