@@ -8,12 +8,6 @@ class FCPlatformRouterWidget extends StatelessWidget {
     required this.material,
   });
 
-  const FCPlatformRouterWidget.router({
-    super.key,
-    required this.cupertino,
-    required this.material,
-  });
-
   final Widget cupertino;
   final Widget material;
 

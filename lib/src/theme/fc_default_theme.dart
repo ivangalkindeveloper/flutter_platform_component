@@ -7,9 +7,9 @@ import 'dart:ui';
 class FCDefaultTheme implements IFCTheme {
   const FCDefaultTheme({
     // System
+    required this.cupertinoThemeData,
     required this.materialThemeMode,
     required this.materialThemeData,
-    required this.cupertinoThemeData,
     required this.systemOverlayStyle,
 
     // White
@@ -130,11 +130,11 @@ class FCDefaultTheme implements IFCTheme {
 
   // System
   @override
+  final CupertinoThemeData cupertinoThemeData;
+  @override
   final ThemeMode materialThemeMode;
   @override
   final ThemeData materialThemeData;
-  @override
-  final CupertinoThemeData cupertinoThemeData;
   @override
   final SystemUiOverlayStyle systemOverlayStyle;
 
@@ -318,9 +318,9 @@ class FCDefaultTheme implements IFCTheme {
   @override
   FCDefaultTheme copyWith({
     // System
+    CupertinoThemeData? cupertinoThemeData,
     ThemeMode? materialThemeMode,
     ThemeData? materialThemeData,
-    CupertinoThemeData? cupertinoThemeData,
     SystemUiOverlayStyle? systemOverlayStyle,
 
     // White
@@ -440,9 +440,9 @@ class FCDefaultTheme implements IFCTheme {
   }) =>
       FCDefaultTheme(
         // System
+        cupertinoThemeData: cupertinoThemeData ?? this.cupertinoThemeData,
         materialThemeMode: materialThemeMode ?? this.materialThemeMode,
         materialThemeData: materialThemeData ?? this.materialThemeData,
-        cupertinoThemeData: cupertinoThemeData ?? this.cupertinoThemeData,
         systemOverlayStyle: systemOverlayStyle ?? this.systemOverlayStyle,
 
         // White
@@ -569,147 +569,146 @@ class FCDefaultTheme implements IFCTheme {
   IFCTheme lerp({
     required IFCTheme other,
     required double t,
-  }) {
-    return this.copyWith(
-      // White
-      white: Color.lerp(this.white, other.white, t),
-      whiteAlways: Color.lerp(this.whiteAlways, other.whiteAlways, t),
+  }) =>
+      this.copyWith(
+        // White
+        white: Color.lerp(this.white, other.white, t),
+        whiteAlways: Color.lerp(this.whiteAlways, other.whiteAlways, t),
 
-      // Black
-      black: Color.lerp(this.black, other.black, t),
-      blackAlways: Color.lerp(this.blackAlways, other.blackAlways, t),
+        // Black
+        black: Color.lerp(this.black, other.black, t),
+        blackAlways: Color.lerp(this.blackAlways, other.blackAlways, t),
 
-      // Background
-      backgroundScaffold:
-          Color.lerp(this.backgroundScaffold, other.backgroundScaffold, t),
-      backgroundComponent:
-          Color.lerp(this.backgroundComponent, other.backgroundComponent, t),
+        // Background
+        backgroundScaffold:
+            Color.lerp(this.backgroundScaffold, other.backgroundScaffold, t),
+        backgroundComponent:
+            Color.lerp(this.backgroundComponent, other.backgroundComponent, t),
 
-      // Blur
-      blur: Color.lerp(this.blur, other.blur, t),
+        // Blur
+        blur: Color.lerp(this.blur, other.blur, t),
 
-      // Primary
-      primary: Color.lerp(this.primary, other.primary, t),
-      primaryButton: Color.lerp(this.primaryButton, other.primaryButton, t),
-      primaryGradient: Gradient.lerp(this.primaryGradient, other.primaryGradient, t),
-      // Primary / Light
-      primaryLight: Color.lerp(this.primaryLight, other.primaryLight, t),
-      primaryLightGradient:
-          Gradient.lerp(this.primaryLightGradient, other.primaryLightGradient, t),
-      // Primary / Dark
-      primaryDark: Color.lerp(this.primaryDark, other.primaryDark, t),
-      primaryDarkGradient:
-          Gradient.lerp(this.primaryDarkGradient, other.primaryDarkGradient, t),
+        // Primary
+        primary: Color.lerp(this.primary, other.primary, t),
+        primaryButton: Color.lerp(this.primaryButton, other.primaryButton, t),
+        primaryGradient: Gradient.lerp(this.primaryGradient, other.primaryGradient, t),
+        // Primary / Light
+        primaryLight: Color.lerp(this.primaryLight, other.primaryLight, t),
+        primaryLightGradient:
+            Gradient.lerp(this.primaryLightGradient, other.primaryLightGradient, t),
+        // Primary / Dark
+        primaryDark: Color.lerp(this.primaryDark, other.primaryDark, t),
+        primaryDarkGradient:
+            Gradient.lerp(this.primaryDarkGradient, other.primaryDarkGradient, t),
 
-      // Secondary
-      secondary: Color.lerp(this.secondary, other.secondary, t),
-      secondaryButton: Color.lerp(this.secondaryButton, other.secondaryButton, t),
-      secondaryGradient:
-          Gradient.lerp(this.secondaryGradient, other.secondaryGradient, t),
-      // Secondary / Light
-      secondaryLight: Color.lerp(this.secondaryLight, other.secondaryLight, t),
-      secondaryLightGradient:
-          Gradient.lerp(this.secondaryLightGradient, other.secondaryLightGradient, t),
-      // Secondary / Dark
-      secondaryDark: Color.lerp(this.secondaryDark, other.secondaryDark, t),
-      secondaryDarkGradient:
-          Gradient.lerp(this.secondaryDarkGradient, other.secondaryDarkGradient, t),
+        // Secondary
+        secondary: Color.lerp(this.secondary, other.secondary, t),
+        secondaryButton: Color.lerp(this.secondaryButton, other.secondaryButton, t),
+        secondaryGradient:
+            Gradient.lerp(this.secondaryGradient, other.secondaryGradient, t),
+        // Secondary / Light
+        secondaryLight: Color.lerp(this.secondaryLight, other.secondaryLight, t),
+        secondaryLightGradient:
+            Gradient.lerp(this.secondaryLightGradient, other.secondaryLightGradient, t),
+        // Secondary / Dark
+        secondaryDark: Color.lerp(this.secondaryDark, other.secondaryDark, t),
+        secondaryDarkGradient:
+            Gradient.lerp(this.secondaryDarkGradient, other.secondaryDarkGradient, t),
 
-      // Accent
-      accent: Color.lerp(this.accent, other.accent, t),
-      accentButton: Color.lerp(this.accentButton, other.accentButton, t),
-      accentGradient: Gradient.lerp(this.accentGradient, other.accentGradient, t),
-      // Accent / Light
-      accentLight: Color.lerp(this.accentLight, other.accentLight, t),
-      accentLightGradient:
-          Gradient.lerp(this.accentLightGradient, other.accentLightGradient, t),
-      // Accent / Dark
-      accentDark: Color.lerp(this.accentDark, other.accentDark, t),
-      accentDarkGradient:
-          Gradient.lerp(this.accentDarkGradient, other.accentDarkGradient, t),
+        // Accent
+        accent: Color.lerp(this.accent, other.accent, t),
+        accentButton: Color.lerp(this.accentButton, other.accentButton, t),
+        accentGradient: Gradient.lerp(this.accentGradient, other.accentGradient, t),
+        // Accent / Light
+        accentLight: Color.lerp(this.accentLight, other.accentLight, t),
+        accentLightGradient:
+            Gradient.lerp(this.accentLightGradient, other.accentLightGradient, t),
+        // Accent / Dark
+        accentDark: Color.lerp(this.accentDark, other.accentDark, t),
+        accentDarkGradient:
+            Gradient.lerp(this.accentDarkGradient, other.accentDarkGradient, t),
 
-      // Grey
-      grey: Color.lerp(this.grey, other.grey, t),
-      greyGradient: Gradient.lerp(this.greyGradient, other.greyGradient, t),
-      // Grey / Light
-      greyLight: Color.lerp(this.greyLight, other.greyLight, t),
-      greyLightGradient:
-          Gradient.lerp(this.greyLightGradient, other.greyLightGradient, t),
-      // Grey / Dark
-      greyDark: Color.lerp(this.greyDark, other.greyDark, t),
-      greyDarkGradient: Gradient.lerp(this.greyDarkGradient, other.greyDarkGradient, t),
+        // Grey
+        grey: Color.lerp(this.grey, other.grey, t),
+        greyGradient: Gradient.lerp(this.greyGradient, other.greyGradient, t),
+        // Grey / Light
+        greyLight: Color.lerp(this.greyLight, other.greyLight, t),
+        greyLightGradient:
+            Gradient.lerp(this.greyLightGradient, other.greyLightGradient, t),
+        // Grey / Dark
+        greyDark: Color.lerp(this.greyDark, other.greyDark, t),
+        greyDarkGradient: Gradient.lerp(this.greyDarkGradient, other.greyDarkGradient, t),
 
-      // Info
-      info: Color.lerp(this.info, other.info, t),
-      infoGradient: Gradient.lerp(this.infoGradient, other.infoGradient, t),
-      // Info / Light
-      infoLight: Color.lerp(this.infoLight, other.infoLight, t),
-      infoLightGradient:
-          Gradient.lerp(this.infoLightGradient, other.infoLightGradient, t),
-      // Info / Dark
-      infoDark: Color.lerp(this.infoDark, other.infoDark, t),
-      infoDarkGradient: Gradient.lerp(this.infoDarkGradient, other.infoDarkGradient, t),
+        // Info
+        info: Color.lerp(this.info, other.info, t),
+        infoGradient: Gradient.lerp(this.infoGradient, other.infoGradient, t),
+        // Info / Light
+        infoLight: Color.lerp(this.infoLight, other.infoLight, t),
+        infoLightGradient:
+            Gradient.lerp(this.infoLightGradient, other.infoLightGradient, t),
+        // Info / Dark
+        infoDark: Color.lerp(this.infoDark, other.infoDark, t),
+        infoDarkGradient: Gradient.lerp(this.infoDarkGradient, other.infoDarkGradient, t),
 
-      // Success
-      success: Color.lerp(this.success, other.success, t),
-      successGradient: Gradient.lerp(this.successGradient, other.successGradient, t),
-      // Success / Light
-      successLight: Color.lerp(this.successLight, other.successLight, t),
-      successLightGradient:
-          Gradient.lerp(this.successLightGradient, other.successLightGradient, t),
-      // Success / Dark
-      successDark: Color.lerp(this.successDark, other.successDark, t),
-      successDarkGradient:
-          Gradient.lerp(this.successDarkGradient, other.successDarkGradient, t),
+        // Success
+        success: Color.lerp(this.success, other.success, t),
+        successGradient: Gradient.lerp(this.successGradient, other.successGradient, t),
+        // Success / Light
+        successLight: Color.lerp(this.successLight, other.successLight, t),
+        successLightGradient:
+            Gradient.lerp(this.successLightGradient, other.successLightGradient, t),
+        // Success / Dark
+        successDark: Color.lerp(this.successDark, other.successDark, t),
+        successDarkGradient:
+            Gradient.lerp(this.successDarkGradient, other.successDarkGradient, t),
 
-      // Warning
-      warning: Color.lerp(this.warning, other.warning, t),
-      warningGradient: Gradient.lerp(this.warningGradient, other.warningGradient, t),
-      // Warning / Light
-      warningLight: Color.lerp(this.warningLight, other.warningLight, t),
-      warningLightGradient:
-          Gradient.lerp(this.warningLightGradient, other.warningLightGradient, t),
-      // Warning / Dark
-      warningDark: Color.lerp(this.warningDark, other.warningDark, t),
-      warningDarkGradient:
-          Gradient.lerp(this.warningDarkGradient, other.warningDarkGradient, t),
+        // Warning
+        warning: Color.lerp(this.warning, other.warning, t),
+        warningGradient: Gradient.lerp(this.warningGradient, other.warningGradient, t),
+        // Warning / Light
+        warningLight: Color.lerp(this.warningLight, other.warningLight, t),
+        warningLightGradient:
+            Gradient.lerp(this.warningLightGradient, other.warningLightGradient, t),
+        // Warning / Dark
+        warningDark: Color.lerp(this.warningDark, other.warningDark, t),
+        warningDarkGradient:
+            Gradient.lerp(this.warningDarkGradient, other.warningDarkGradient, t),
 
-      // Danger
-      danger: Color.lerp(this.danger, other.danger, t),
-      dangerGradient: Gradient.lerp(this.dangerGradient, other.dangerGradient, t),
-      // Danger / Light
-      dangerLight: Color.lerp(this.dangerLight, other.dangerLight, t),
-      dangerLightGradient:
-          Gradient.lerp(this.dangerLightGradient, other.dangerLightGradient, t),
-      // Danger / Dark
-      dangerDark: Color.lerp(this.dangerDark, other.dangerDark, t),
-      dangerDarkGradient:
-          Gradient.lerp(this.dangerDarkGradient, other.dangerDarkGradient, t),
+        // Danger
+        danger: Color.lerp(this.danger, other.danger, t),
+        dangerGradient: Gradient.lerp(this.dangerGradient, other.dangerGradient, t),
+        // Danger / Light
+        dangerLight: Color.lerp(this.dangerLight, other.dangerLight, t),
+        dangerLightGradient:
+            Gradient.lerp(this.dangerLightGradient, other.dangerLightGradient, t),
+        // Danger / Dark
+        dangerDark: Color.lerp(this.dangerDark, other.dangerDark, t),
+        dangerDarkGradient:
+            Gradient.lerp(this.dangerDarkGradient, other.dangerDarkGradient, t),
 
-      // Barrier
-      // Barrier / Expanded Modal
-      barrierExpandedModalCupertino: Color.lerp(
-          this.barrierExpandedModalCupertino, other.barrierExpandedModalCupertino, t),
-      barrierExpandedModalMaterial: Color.lerp(
-          this.barrierExpandedModalMaterial, other.barrierExpandedModalMaterial, t),
-      // Barrier / Pop Up Modal
-      barrierPopUpModalCupertino: Color.lerp(
-          this.barrierPopUpModalCupertino, other.barrierPopUpModalCupertino, t),
-      barrierPopUpModalMaterial:
-          Color.lerp(this.barrierPopUpModalMaterial, other.barrierPopUpModalMaterial, t),
-      // Barrier / Dialog
-      barrierDialogCupertino:
-          Color.lerp(this.barrierDialogCupertino, other.barrierDialogCupertino, t),
-      barrierDialogMaterial:
-          Color.lerp(this.barrierDialogMaterial, other.barrierDialogMaterial, t),
-    );
-  }
+        // Barrier
+        // Barrier / Expanded Modal
+        barrierExpandedModalCupertino: Color.lerp(
+            this.barrierExpandedModalCupertino, other.barrierExpandedModalCupertino, t),
+        barrierExpandedModalMaterial: Color.lerp(
+            this.barrierExpandedModalMaterial, other.barrierExpandedModalMaterial, t),
+        // Barrier / Pop Up Modal
+        barrierPopUpModalCupertino: Color.lerp(
+            this.barrierPopUpModalCupertino, other.barrierPopUpModalCupertino, t),
+        barrierPopUpModalMaterial: Color.lerp(
+            this.barrierPopUpModalMaterial, other.barrierPopUpModalMaterial, t),
+        // Barrier / Dialog
+        barrierDialogCupertino:
+            Color.lerp(this.barrierDialogCupertino, other.barrierDialogCupertino, t),
+        barrierDialogMaterial:
+            Color.lerp(this.barrierDialogMaterial, other.barrierDialogMaterial, t),
+      );
 
   static IFCTheme get defaultLightTheme => FCDefaultTheme(
         // System
+        cupertinoThemeData: const CupertinoThemeData(),
         materialThemeMode: ThemeMode.light,
         materialThemeData: ThemeData.light(),
-        cupertinoThemeData: CupertinoThemeData(),
         systemOverlayStyle: const SystemUiOverlayStyle(
           systemNavigationBarColor: Color(0xffFFFFFF),
           systemNavigationBarDividerColor: Colors.transparent,
@@ -962,9 +961,9 @@ class FCDefaultTheme implements IFCTheme {
 
   static IFCTheme get defaultDarkTheme => FCDefaultTheme(
         // System
+        cupertinoThemeData: const CupertinoThemeData(),
         materialThemeMode: ThemeMode.dark,
         materialThemeData: ThemeData.dark(),
-        cupertinoThemeData: CupertinoThemeData(),
         systemOverlayStyle: const SystemUiOverlayStyle(
           systemNavigationBarColor: Color(0xff171717),
           systemNavigationBarDividerColor: Colors.transparent,

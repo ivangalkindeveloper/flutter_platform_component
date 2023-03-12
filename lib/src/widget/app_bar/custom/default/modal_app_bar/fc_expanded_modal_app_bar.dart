@@ -1,5 +1,4 @@
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
 
 class FCExpandedModalAppBar extends FCBasicAppBar {

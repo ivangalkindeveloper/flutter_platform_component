@@ -1,28 +1,55 @@
-import 'package:flutter_component/src/widget/common/fc_cupertino_navigator.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
 
 class FCNavigator extends FCPlatformWidget {
   FCNavigator({
     super.key,
-    required GlobalKey<NavigatorState> navigatorKey,
-    required Widget initialPage,
+    GlobalKey<NavigatorState>? navigatorKey,
+    List<Page<dynamic>> pages = const <Page<dynamic>>[],
+    bool Function(Route<dynamic>, dynamic)? onPopPage,
     String? initialRoute,
-    List<Route<dynamic>> Function(NavigatorState, String)? onGenerateInitialRoutes,
-    Route<dynamic>? Function(RouteSettings)? onGenerateRoute,
+    List<Route<dynamic>> Function(NavigatorState, String) onGenerateInitialRoutes =
+        Navigator.defaultGenerateInitialRoutes,
+    Route<dynamic>? Function(RouteSettings settings)? onGenerateRoute,
+    Route<dynamic>? Function(RouteSettings settings)? onUnknownRoute,
+    TransitionDelegate<dynamic> transitionDelegate =
+        const DefaultTransitionDelegate<dynamic>(),
+    bool reportsRouteUpdateToEngine = false,
+    Clip clipBehavior = Clip.hardEdge,
+    List<NavigatorObserver> observers = const <NavigatorObserver>[],
+    bool requestFocus = true,
+    String? restorationScopeId,
   }) : super(
           cupertino: FCCupertinoNavigator(
             key: key,
             navigatorKey: navigatorKey,
+            pages: pages,
+            onPopPage: onPopPage,
+            initialRoute: initialRoute,
             onGenerateInitialRoutes: onGenerateInitialRoutes,
             onGenerateRoute: onGenerateRoute,
-            builder: (BuildContext context) => initialPage,
+            onUnknownRoute: onUnknownRoute,
+            transitionDelegate: transitionDelegate,
+            reportsRouteUpdateToEngine: reportsRouteUpdateToEngine,
+            clipBehavior: clipBehavior,
+            observers: observers,
+            requestFocus: requestFocus,
+            restorationScopeId: restorationScopeId,
           ),
           material: Navigator(
             key: navigatorKey,
-            onGenerateRoute: onGenerateRoute,
+            pages: pages,
+            onPopPage: onPopPage,
             initialRoute: initialRoute,
+            onGenerateInitialRoutes: onGenerateInitialRoutes,
+            onGenerateRoute: onGenerateRoute,
+            onUnknownRoute: onUnknownRoute,
+            transitionDelegate: transitionDelegate,
+            reportsRouteUpdateToEngine: reportsRouteUpdateToEngine,
+            clipBehavior: clipBehavior,
+            observers: observers,
+            requestFocus: requestFocus,
+            restorationScopeId: restorationScopeId,
           ),
         );
 }

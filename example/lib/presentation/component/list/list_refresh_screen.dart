@@ -57,6 +57,71 @@ class _ListRefreshScreenState extends State<ListRefreshScreen> {
               FCGreyLightCard(
                 child: const SizedBox(),
               ),
+              //
+              SizedBox(height: size.s16 * 2),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16 * 2),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16 * 2),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16 * 2),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
+              SizedBox(height: size.s16),
+              FCGreyLightCard(
+                child: const SizedBox(),
+              ),
             ],
           ),
         ),

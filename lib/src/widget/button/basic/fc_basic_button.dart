@@ -1,7 +1,8 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
+import 'package:flutter/material.dart' show ElevatedButton, Colors;
+import 'package:flutter/cupertino.dart' show CupertinoButton;
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class FCBasicButton extends FCPlatformWidget {
   FCBasicButton({
@@ -170,6 +171,7 @@ class _FCBasicButtonMaterial extends StatelessWidget {
           padding: EdgeInsets.zero,
           constraints: BoxConstraints(
             minHeight: this.height ?? size.heightButton,
+            maxHeight: this.height ?? size.heightButton,
           ),
           decoration: BoxDecoration(
             color: this.backgroundColor,

@@ -39,7 +39,7 @@ import 'package:example/presentation/component/indicator/story_indicator_screen.
 import 'package:example/presentation/component/keyboard/keyboard_button_screen.dart';
 import 'package:example/presentation/component/keyboard/keyboard_number_button_screen.dart';
 import 'package:example/presentation/component/keyboard/keyboard_screen.dart';
-import 'package:example/presentation/component/list/list_card_screen.dart';
+import 'package:example/presentation/component/list/list_section_screen.dart';
 import 'package:example/presentation/component/list/list_refresh_screen.dart';
 import 'package:example/presentation/component/modal/action_modal_screen.dart';
 import 'package:example/presentation/component/modal/expanded_modal_screen.dart';
@@ -136,8 +136,8 @@ class NavigationService implements INavigationService {
   static const String keyboard_number_button_screen = "/keyboard_number_button_screen";
   static const String keyboard_screen = "/keyboard_screen";
 
-  static const String list_card_screen = "/list_card_screen";
   static const String list_refresh_screen = "/list_refresh_screen";
+  static const String list_section_screen = "/list_section_screen";
 
   static const String action_modal_screen = "/action_modal_screen";
   static const String expand_modal_screen = "/expand_modal_screen";
@@ -403,15 +403,15 @@ class NavigationService implements INavigationService {
           child: const KeyboardScreen(),
         );
 
-      case list_card_screen:
-        return FCGlobal.pageRoute(
-          context: navigatorKey.currentContext!,
-          child: const ListCardScreen(),
-        );
       case list_refresh_screen:
         return FCGlobal.pageRoute(
           context: navigatorKey.currentContext!,
           child: const ListRefreshScreen(),
+        );
+      case list_section_screen:
+        return FCGlobal.pageRoute(
+          context: navigatorKey.currentContext!,
+          child: const ListSectionScreen(),
         );
 
       case action_modal_screen:

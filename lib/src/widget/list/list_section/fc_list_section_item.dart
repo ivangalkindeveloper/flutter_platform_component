@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
-class FCListCardItem {
-  const FCListCardItem({
+class FCListSectionItem {
+  const FCListSectionItem({
     this.prefix,
     required this.title,
     this.postfix,

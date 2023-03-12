@@ -1,8 +1,8 @@
 import 'package:flutter_component/src/widget/common/fc_common_field.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
 
 class FCBasicGradientFormField extends StatefulWidget {
   const FCBasicGradientFormField({
@@ -369,9 +369,9 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                     gradient: this._borderGradient(),
                     child: Container(
                       decoration: BoxDecoration(
-                        borderRadius: this._config.borderRadiusButton,
+                        borderRadius: this._config.borderRadiusField,
                         border: Border.all(
-                          color: Colors.black,
+                          color: this._borderGradient().colors.first,
                           width: this._config.borderWidthButton,
                         ),
                       ),

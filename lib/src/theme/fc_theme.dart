@@ -8,9 +8,9 @@ abstract class IFCTheme {
   const IFCTheme();
 
   // System
+  abstract final CupertinoThemeData cupertinoThemeData;
   abstract final ThemeMode materialThemeMode;
   abstract final ThemeData materialThemeData;
-  abstract final CupertinoThemeData cupertinoThemeData;
   abstract final SystemUiOverlayStyle systemOverlayStyle;
 
   // White

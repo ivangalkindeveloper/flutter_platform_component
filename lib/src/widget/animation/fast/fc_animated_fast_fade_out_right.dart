@@ -1,6 +1,6 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
+import 'package:animate_do/animate_do.dart' show FadeOutRight;
 import 'package:flutter_component/flutter_component.dart';
-import 'package:animate_do/animate_do.dart';
 import 'package:flutter/widgets.dart';
 
 class FCAnimatedFastFadeOutRight extends StatelessWidget {

@@ -23,7 +23,7 @@ class DialogScreen extends StatelessWidget {
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
           FCPrimaryButton(
-            title: "Action",
+            title: "Open",
             onPressed: () => FCGlobal.showDialog(
               context: context,
               child: FCDialog(
@@ -31,12 +31,10 @@ class DialogScreen extends StatelessWidget {
                 description: "Description",
                 items: [
                   FCDialogItem(
-                    color: theme.primary,
                     title: "Cancel",
                     onPressed: () => Navigator.pop(context),
                   ),
                   FCDialogItem(
-                    color: theme.primary,
                     title: "Confirm",
                     onPressed: () => Navigator.pop(context),
                   ),

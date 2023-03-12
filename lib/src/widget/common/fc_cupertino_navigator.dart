@@ -6,25 +6,41 @@ class FCCupertinoNavigator extends StatefulWidget {
   /// Creates the content area for a tab in a [CupertinoTabScaffold].
   const FCCupertinoNavigator({
     super.key,
-    required this.builder,
-    required this.navigatorKey,
+    this.navigatorKey,
+    this.builder,
     this.defaultTitle,
     this.routes,
-    required this.onGenerateRoute,
-    this.onGenerateInitialRoutes,
+    //
+    this.pages = const <Page<dynamic>>[],
+    this.onPopPage,
+    this.initialRoute,
+    this.onGenerateInitialRoutes = Navigator.defaultGenerateInitialRoutes,
+    this.onGenerateRoute,
     this.onUnknownRoute,
-    this.navigatorObservers = const <NavigatorObserver>[],
+    this.transitionDelegate = const DefaultTransitionDelegate<dynamic>(),
+    this.reportsRouteUpdateToEngine = false,
+    this.clipBehavior = Clip.hardEdge,
+    this.observers = const <NavigatorObserver>[],
+    this.requestFocus = true,
     this.restorationScopeId,
   });
 
-  final WidgetBuilder builder;
-  final GlobalKey<NavigatorState> navigatorKey;
+  final GlobalKey<NavigatorState>? navigatorKey;
+  final WidgetBuilder? builder;
   final String? defaultTitle;
   final Map<String, WidgetBuilder>? routes;
+  //
+  final List<Page<dynamic>> pages;
+  final bool Function(Route<dynamic>, dynamic)? onPopPage;
+  final String? initialRoute;
+  final List<Route<dynamic>> Function(NavigatorState, String) onGenerateInitialRoutes;
   final RouteFactory? onGenerateRoute;
-  final List<Route<dynamic>> Function(NavigatorState, String)? onGenerateInitialRoutes;
   final RouteFactory? onUnknownRoute;
-  final List<NavigatorObserver> navigatorObservers;
+  final TransitionDelegate<dynamic> transitionDelegate;
+  final bool reportsRouteUpdateToEngine;
+  final Clip clipBehavior;
+  final List<NavigatorObserver> observers;
+  final bool requestFocus;
   final String? restorationScopeId;
 
   @override
@@ -46,13 +62,13 @@ class _FCCupertinoNavigatorState extends State<FCCupertinoNavigator> {
   void didUpdateWidget(FCCupertinoNavigator oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (widget.navigatorKey != oldWidget.navigatorKey ||
-        widget.navigatorObservers != oldWidget.navigatorObservers) {
+        widget.observers != oldWidget.observers) {
       _updateObservers();
     }
   }
 
   void _updateObservers() {
-    _navigatorObservers = List<NavigatorObserver>.of(widget.navigatorObservers)
+    _navigatorObservers = List<NavigatorObserver>.of(widget.observers)
       ..add(_heroController);
   }
 
@@ -60,11 +76,16 @@ class _FCCupertinoNavigatorState extends State<FCCupertinoNavigator> {
   Widget build(BuildContext context) {
     return Navigator(
       key: widget.navigatorKey,
+      onPopPage: widget.onPopPage,
+      initialRoute: widget.initialRoute,
+      onGenerateInitialRoutes: widget.onGenerateInitialRoutes,
       onGenerateRoute: _onGenerateRoute,
       onUnknownRoute: _onUnknownRoute,
-      onGenerateInitialRoutes:
-          widget.onGenerateInitialRoutes ?? Navigator.defaultGenerateInitialRoutes,
+      transitionDelegate: widget.transitionDelegate,
+      reportsRouteUpdateToEngine: widget.reportsRouteUpdateToEngine,
+      clipBehavior: widget.clipBehavior,
       observers: _navigatorObservers,
+      requestFocus: widget.requestFocus,
       restorationScopeId: widget.restorationScopeId,
     );
   }

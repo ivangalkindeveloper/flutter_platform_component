@@ -270,15 +270,15 @@ class ComponentScreen extends StatelessWidget {
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(
-              title: "List Card",
-              onPressed: () =>
-                  Navigator.pushNamed(context, NavigationService.list_card_screen),
-            ),
-            SizedBox(height: size.s16 / 2),
-            FCPrimaryButton(
               title: "List Refresh",
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.list_refresh_screen),
+            ),
+            SizedBox(height: size.s16 / 2),
+            FCPrimaryButton(
+              title: "List Section",
+              onPressed: () =>
+                  Navigator.pushNamed(context, NavigationService.list_section_screen),
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(

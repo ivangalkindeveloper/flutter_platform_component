@@ -1,7 +1,16 @@
+import 'package:flutter/material.dart'
+    show
+        MaterialApp,
+        ScaffoldMessenger,
+        ScaffoldMessengerState,
+        ThemeMode,
+        ThemeData,
+        DefaultMaterialLocalizations;
+import 'package:flutter/cupertino.dart'
+    show CupertinoApp, CupertinoThemeData, DefaultCupertinoLocalizations;
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class FCApp extends FCPlatformRouterWidget {
   FCApp({
@@ -9,6 +18,7 @@ class FCApp extends FCPlatformRouterWidget {
     required BuildContext context,
     //
     GlobalKey<NavigatorState>? navigatorKey,
+    GlobalKey<ScaffoldMessengerState>? scaffoldMessengerKey,
     Widget? home,
     Map<String, Widget Function(BuildContext)> routes = const <String, WidgetBuilder>{},
     String? initialRoute,
@@ -54,7 +64,10 @@ class FCApp extends FCPlatformRouterWidget {
             onGenerateInitialRoutes: onGenerateInitialRoutes,
             onUnknownRoute: onUnknownRoute,
             navigatorObservers: navigatorObservers,
-            builder: builder,
+            builder: _builder(
+              scaffoldMessengerKey: scaffoldMessengerKey,
+              builder: builder,
+            ),
             title: title,
             onGenerateTitle: onGenerateTitle,
             //
@@ -86,6 +99,7 @@ class FCApp extends FCPlatformRouterWidget {
             key: key,
             //
             navigatorKey: navigatorKey,
+            scaffoldMessengerKey: scaffoldMessengerKey,
             home: home,
             routes: routes,
             initialRoute: initialRoute,
@@ -129,6 +143,7 @@ class FCApp extends FCPlatformRouterWidget {
     super.key,
     required BuildContext context,
     //
+    GlobalKey<ScaffoldMessengerState>? scaffoldMessengerKey,
     RouteInformationProvider? routeInformationProvider,
     RouteInformationParser<Object>? routeInformationParser,
     RouterDelegate<Object>? routerDelegate,
@@ -169,7 +184,10 @@ class FCApp extends FCPlatformRouterWidget {
             routerDelegate: routerDelegate,
             routerConfig: routerConfig,
             backButtonDispatcher: backButtonDispatcher,
-            builder: builder,
+            builder: _builder(
+              scaffoldMessengerKey: scaffoldMessengerKey,
+              builder: builder,
+            ),
             title: title,
             onGenerateTitle: onGenerateTitle,
             //
@@ -200,6 +218,7 @@ class FCApp extends FCPlatformRouterWidget {
           material: MaterialApp.router(
             key: key,
             //
+            scaffoldMessengerKey: scaffoldMessengerKey,
             routeInformationProvider: routeInformationProvider,
             routeInformationParser: routeInformationParser,
             routerDelegate: routerDelegate,
@@ -237,10 +256,28 @@ class FCApp extends FCPlatformRouterWidget {
           ),
         );
 
-  static HeroController createCupertinoHeroController({required BuildContext context}) =>
+  static HeroController createHeroController({required BuildContext context}) =>
       FCPlatform.decomposeFromContext<HeroController, HeroController, HeroController>(
         context: context,
         cupertino: CupertinoApp.createCupertinoHeroController(),
         material: MaterialApp.createMaterialHeroController(),
       );
+
+  static Widget Function(BuildContext, Widget?) _builder({
+    required GlobalKey<ScaffoldMessengerState>? scaffoldMessengerKey,
+    required Widget Function(BuildContext, Widget?)? builder,
+  }) =>
+      (BuildContext context, Widget? child) {
+        final Widget Function(BuildContext, Widget?)? builderMethod = builder;
+        if (builderMethod != null) {
+          child = builderMethod(context, child);
+        }
+
+        if (child == null) return const SizedBox();
+
+        return ScaffoldMessenger(
+          key: scaffoldMessengerKey,
+          child: child,
+        );
+      };
 }

@@ -1,5 +1,7 @@
+import 'package:flutter/material.dart'
+    show Material, Radio, Theme, ThemeData, MaterialState, MaterialStateProperty, Colors;
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class FCBasicRadio<T> extends FCPlatformWidget {
   FCBasicRadio({

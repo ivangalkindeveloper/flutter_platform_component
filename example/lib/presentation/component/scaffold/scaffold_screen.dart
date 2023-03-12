@@ -22,6 +22,20 @@ class ScaffoldScreen extends StatelessWidget {
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
+          FCPrimaryButton(
+            title: "Snackbar",
+            onPressed: () => FCGlobal.showSnackBar(
+              context: context,
+              child: FCPrimarySnackbar(
+                child: FCText.regular16PrimaryButton(context: context, text: "Snackbar"),
+              ),
+            ),
+          ),
+          SizedBox(height: size.s16 * 2),
+          FCPrimaryFormField(
+            labelText: "Field",
+          ),
+          SizedBox(height: size.s16 * 2),
           Center(
             child: FCText.regular16Black(
               context: context,

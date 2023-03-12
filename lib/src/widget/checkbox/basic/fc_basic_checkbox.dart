@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart' show Material, Checkbox, Colors;
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class FCBasicCheckbox extends FCPlatformWidget {
   FCBasicCheckbox({

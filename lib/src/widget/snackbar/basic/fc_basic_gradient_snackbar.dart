@@ -1,6 +1,6 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class FCBasicGradientSnackbar extends StatelessWidget {
   const FCBasicGradientSnackbar({
@@ -73,7 +73,7 @@ class FCBasicGradientSnackbar extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: config.borderRadiusSnackbar,
                   border: Border.all(
-                    color: Colors.white,
+                    color: this.borderGradient!.colors.first,
                     width: config.borderWidthSnackbar,
                   ),
                 ),

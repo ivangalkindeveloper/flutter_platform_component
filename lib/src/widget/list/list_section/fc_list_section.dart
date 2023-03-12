@@ -1,10 +1,10 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:collection/collection.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
-class FCListCard extends StatelessWidget {
-  const FCListCard({
+class FCListSection extends StatelessWidget {
+  const FCListSection({
     super.key,
     required this.items,
     this.backroundColor,
@@ -19,7 +19,7 @@ class FCListCard extends StatelessWidget {
     this.disabledColor,
   });
 
-  final List<FCListCardItem> items;
+  final List<FCListSectionItem> items;
   final Color? backroundColor;
   final Color? splashColor;
   final BorderRadius? borderRadius;
@@ -90,7 +90,7 @@ class FCListCard extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         ...this.items.mapIndexed(
-              (int index, FCListCardItem item) => Column(
+              (int index, FCListSectionItem item) => Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   FCBasicSelectCard(

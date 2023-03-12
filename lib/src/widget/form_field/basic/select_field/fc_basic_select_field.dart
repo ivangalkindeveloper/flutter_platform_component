@@ -1,6 +1,8 @@
 import 'package:flutter_component/src/widget/common/fc_select_field_wrapper.dart';
+import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' show Colors;
+import 'package:flutter/widgets.dart';
 
 class FCBasicSelectField extends StatefulWidget {
   const FCBasicSelectField({
@@ -103,11 +105,13 @@ class _FCBasicSelectFieldState extends State<FCBasicSelectField> {
 
   @override
   Widget build(BuildContext context) {
+    final FCConfig config = context.config;
+
     return FCSelectFieldWrapper(
       context: context,
       splashColor: this.widget.splashColor,
-      onPressed: this.widget.isDisabled ? () {} : this.widget.onPressed,
-      isDisabled: this.widget.isDisabled,
+      borderRadius: config.borderRadiusField,
+      onPressed: this.widget.onPressed,
       child: FCBasicFormField(
         context: context,
         height: this.widget.height,
@@ -138,6 +142,7 @@ class _FCBasicSelectFieldState extends State<FCBasicSelectField> {
         isDisabled: this.widget.isDisabled,
         disabledColor: this.widget.disabledColor,
       ),
+      isDisabled: this.widget.isDisabled,
     );
   }
 }

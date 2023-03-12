@@ -2,14 +2,14 @@ import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/material.dart';
 
-class ListCardScreen extends StatefulWidget {
-  const ListCardScreen({Key? key});
+class ListSectionScreen extends StatefulWidget {
+  const ListSectionScreen({Key? key});
 
   @override
-  State<ListCardScreen> createState() => _ListCardScreenState();
+  State<ListSectionScreen> createState() => _ListSectionScreenState();
 }
 
-class _ListCardScreenState extends State<ListCardScreen> {
+class _ListSectionScreenState extends State<ListSectionScreen> {
   bool _isDisabled = false;
 
   @override
@@ -22,7 +22,7 @@ class _ListCardScreenState extends State<ListCardScreen> {
       backgroundColor: theme.backgroundScaffold,
       appBar: FCScreenAppBar(
         context: context,
-        title: "List Card",
+        title: "List Section",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: FCListView(
@@ -34,9 +34,9 @@ class _ListCardScreenState extends State<ListCardScreen> {
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
-          FCListCard(
+          FCListSection(
             items: [
-              FCListCardItem(
+              FCListSectionItem(
                 prefix: FCIcon.primary(
                   context: context,
                   icon: Icons.account_circle_outlined,
@@ -44,11 +44,12 @@ class _ListCardScreenState extends State<ListCardScreen> {
                 title: "Title 1",
                 onPressed: () {},
               ),
-              FCListCardItem(
+              FCListSectionItem(
                 title: "Title 2",
                 onPressed: () {},
               ),
             ],
+            isDisabled: this._isDisabled,
           ),
         ],
       ),

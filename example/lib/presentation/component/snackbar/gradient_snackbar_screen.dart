@@ -1,6 +1,6 @@
 import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 class GradientSnackbarScreen extends StatelessWidget {
   const GradientSnackbarScreen({Key? key});
@@ -28,35 +28,91 @@ class GradientSnackbarScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCAccentDarkGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoDarkGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyDarkGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerDarkGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningDarkGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -65,35 +121,91 @@ class GradientSnackbarScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCAccentGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -102,35 +214,91 @@ class GradientSnackbarScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCAccentLightGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoLightGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessLightGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyLightGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerLightGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningLightGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -139,35 +307,91 @@ class GradientSnackbarScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCAccentGradientOutlineSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoGradientOutlineSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessGradientOutlineSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyGradientOutlineSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryGradientOutlineSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerGradientOutlineSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryGradientSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningGradientOutlineSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
         ],
       ),

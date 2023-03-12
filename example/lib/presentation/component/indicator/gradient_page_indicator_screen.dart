@@ -27,6 +27,7 @@ class _GradientPageIndicatorScreenState extends State<GradientPageIndicatorScree
         onPressedBack: () => Navigator.pop(context),
       ),
       body: FCListView(
+        childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),

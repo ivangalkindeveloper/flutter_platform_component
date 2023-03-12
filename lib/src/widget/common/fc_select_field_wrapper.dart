@@ -1,12 +1,13 @@
-import 'package:flutter_component/src/extension/fc_extension.dart';
+import 'package:flutter/material.dart' show ElevatedButton, Colors;
+import 'package:flutter/cupertino.dart' show CupertinoButton;
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class FCSelectFieldWrapper extends FCPlatformWidget {
   FCSelectFieldWrapper({
     required BuildContext context,
     required Color splashColor,
+    required BorderRadius borderRadius,
     required VoidCallback onPressed,
     required Widget child,
     required bool isDisabled,
@@ -14,8 +15,9 @@ class FCSelectFieldWrapper extends FCPlatformWidget {
           cupertino: Stack(
             children: [
               CupertinoButton(
-                onPressed: isDisabled ? () {} : onPressed,
                 padding: EdgeInsets.zero,
+                borderRadius: borderRadius,
+                onPressed: isDisabled ? () {} : onPressed,
                 child: Stack(
                   children: [
                     child,
@@ -47,7 +49,8 @@ class FCSelectFieldWrapper extends FCPlatformWidget {
                     shadowColor: Colors.transparent,
                     padding: EdgeInsets.zero,
                     shape: RoundedRectangleBorder(
-                        borderRadius: context.config.borderRadiusCard),
+                      borderRadius: borderRadius,
+                    ),
                   ),
                   onPressed: isDisabled ? () {} : onPressed,
                   child: const SizedBox(),

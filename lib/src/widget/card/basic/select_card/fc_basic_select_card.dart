@@ -1,7 +1,8 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
+import 'package:flutter/material.dart' show ElevatedButton, Colors;
+import 'package:flutter/cupertino.dart' show CupertinoButton;
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class FCBasicSelectCard extends FCPlatformWidget {
   FCBasicSelectCard({
@@ -151,19 +152,23 @@ class _FCBasicSelectCardMaterial extends StatelessWidget {
           borderRadius: this.borderRadius ?? config.borderRadiusCard,
           borderColor: this.borderColor,
           borderWidth: this.borderWidth,
+          padding: this.padding ?? size.paddingCard,
+          child: this.child,
+        ),
+        Positioned.fill(
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
               elevation: 0,
               foregroundColor: this.splashColor,
               backgroundColor: Colors.transparent,
               shadowColor: Colors.transparent,
-              padding: this.padding ?? size.paddingCard,
+              padding: EdgeInsets.zero,
               shape: RoundedRectangleBorder(
                 borderRadius: this.borderRadius ?? config.borderRadiusCard,
               ),
             ),
-            onPressed: this.onPressed,
-            child: this.child,
+            onPressed: this.isDisabled ? () {} : this.onPressed,
+            child: const SizedBox(),
           ),
         ),
         Positioned.fill(

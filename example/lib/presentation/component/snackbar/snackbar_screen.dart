@@ -1,6 +1,6 @@
 import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 class SnackbarScreen extends StatelessWidget {
   const SnackbarScreen({Key? key});
@@ -28,35 +28,91 @@ class SnackbarScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCAccentDarkSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoDarkSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessDarkSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyDarkSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryDarkSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerDarkSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryDarkSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningDarkSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -65,51 +121,135 @@ class SnackbarScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCAccentSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCBlackAlwaysSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCBlackSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCGreySnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimarySnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondarySnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteAlwaysSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWhiteSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -118,35 +258,91 @@ class SnackbarScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCAccentLightSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCInfoLightSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessLightSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyLightSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryLightSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerLightSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryLightSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningLightSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
@@ -155,31 +351,80 @@ class SnackbarScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16),
           FCInfoOutlineSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSuccessOutlineSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCGreyOutlineSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryOutlineSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCDangerOutlineSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCSecondaryOutlineSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
           SizedBox(height: size.s16 / 2),
           FCWarningOutlineSnackbar(
-            child: const SizedBox(),
+            prefix: FCIcon.whiteAlways(
+              context: context,
+              icon: Icons.account_circle_outlined,
+            ),
+            child: FCText.regular16WhiteAlways(
+              context: context,
+              text: "Child",
+            ),
           ),
         ],
       ),
