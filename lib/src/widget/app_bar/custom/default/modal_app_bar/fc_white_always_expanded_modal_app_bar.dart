@@ -11,7 +11,7 @@ class FCWhiteAlwaysExpandedModalAppBar extends FCBasicAppBar {
     String? cupertinoLocale,
     VoidCallback? onPressedBack,
     String? title,
-    TextStyle? style,
+    TextStyle? titleStyle,
     Widget? middle,
     Widget? postfix,
     EdgeInsets? bottomPadding,
@@ -26,8 +26,8 @@ class FCWhiteAlwaysExpandedModalAppBar extends FCBasicAppBar {
             onPressedBack: onPressedBack,
           ),
           title: title,
-          style: style?.copyWith(
-                color: style.color ?? context.config.theme.whiteAlways,
+          titleStyle: titleStyle?.copyWith(
+                color: titleStyle.color ?? context.config.theme.whiteAlways,
                 package: context.config.textStyle.package,
               ) ??
               TextStyle(

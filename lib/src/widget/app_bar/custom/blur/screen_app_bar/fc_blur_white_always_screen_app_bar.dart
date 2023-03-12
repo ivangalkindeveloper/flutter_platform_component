@@ -1,9 +1,10 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
-import 'package:flutter/cupertino.dart' show CupertinoIcons;
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/material.dart' show Icons;
 import 'package:flutter/widgets.dart';
 import 'dart:ui';
+
+import 'package:flutter/cupertino.dart' show CupertinoIcons;
+import 'package:flutter/material.dart' show Icons;
 
 class FCBlurWhiteAlwaysScreenAppBar extends FCBasicBlurAppBar {
   FCBlurWhiteAlwaysScreenAppBar({

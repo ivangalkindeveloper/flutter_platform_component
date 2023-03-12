@@ -1,8 +1,9 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
-import 'package:flutter/cupertino.dart' show CupertinoIcons;
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/material.dart' show Icons;
 import 'package:flutter/widgets.dart';
+
+import 'package:flutter/cupertino.dart' show CupertinoIcons;
+import 'package:flutter/material.dart' show Icons;
 
 class FCScreenAppBar extends FCBasicAppBar {
   FCScreenAppBar({
@@ -14,7 +15,7 @@ class FCScreenAppBar extends FCBasicAppBar {
     VoidCallback? onPressedBack,
     bool isInverseBackIcon = false,
     String? title,
-    TextStyle? style,
+    TextStyle? titleStyle,
     Widget? middle,
     Widget? postfix,
     EdgeInsets? bottomPadding,
@@ -30,7 +31,7 @@ class FCScreenAppBar extends FCBasicAppBar {
             isInverseBackIcon: isInverseBackIcon,
           ),
           title: title,
-          style: style,
+          titleStyle: titleStyle,
           middle: middle,
           postfix: postfix,
           bottomPadding: bottomPadding,

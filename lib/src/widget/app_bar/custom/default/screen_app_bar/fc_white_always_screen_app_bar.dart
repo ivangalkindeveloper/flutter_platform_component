@@ -1,8 +1,9 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
-import 'package:flutter/cupertino.dart' show CupertinoIcons;
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/material.dart' show Icons;
 import 'package:flutter/widgets.dart';
+
+import 'package:flutter/cupertino.dart' show CupertinoIcons;
+import 'package:flutter/material.dart' show Icons;
 
 class FCWhiteAlwaysScreenAppBar extends FCBasicAppBar {
   FCWhiteAlwaysScreenAppBar({
@@ -14,7 +15,7 @@ class FCWhiteAlwaysScreenAppBar extends FCBasicAppBar {
     VoidCallback? onPressedBack,
     bool isInverseBackIcon = false,
     String? title,
-    TextStyle? style,
+    TextStyle? titleStyle,
     Widget? middle,
     Widget? postfix,
     EdgeInsets? bottomPadding,
@@ -30,8 +31,8 @@ class FCWhiteAlwaysScreenAppBar extends FCBasicAppBar {
             isInverseBackIcon: isInverseBackIcon,
           ),
           title: title,
-          style: style?.copyWith(
-                color: style.color ?? context.config.theme.whiteAlways,
+          titleStyle: titleStyle?.copyWith(
+                color: titleStyle.color ?? context.config.theme.whiteAlways,
                 package: context.config.textStyle.package,
               ) ??
               TextStyle(
