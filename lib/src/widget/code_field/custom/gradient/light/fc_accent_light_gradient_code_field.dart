@@ -7,33 +7,37 @@ class FCAccentLightGradientCodeField extends StatelessWidget {
   const FCAccentLightGradientCodeField({
     super.key,
     required this.length,
-    this.itemHeight,
-    this.itemWidth,
-    this.style,
     this.controller,
     this.errorController,
     this.focusNode,
+    this.itemHeight,
+    this.itemWidth,
+    this.itemStyle,
+    this.borderRadius,
+    this.borderWidth,
     this.horizontalInterval,
-    this.isAutofocus = false,
-    this.isShowCursor = false,
     this.onChanged,
     this.onCompleted,
+    this.isAutofocus = false,
+    this.isShowCursor = false,
     this.isDisabled = false,
     this.disabledColor,
   });
 
   final int length;
-  final double? itemHeight;
-  final double? itemWidth;
-  final TextStyle? style;
   final TextEditingController? controller;
   final StreamController<bool?>? errorController;
   final FocusNode? focusNode;
+  final double? itemHeight;
+  final double? itemWidth;
+  final TextStyle? itemStyle;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   final double? horizontalInterval;
-  final bool isAutofocus;
-  final bool isShowCursor;
   final void Function(String)? onChanged;
   final void Function(String)? onCompleted;
+  final bool isAutofocus;
+  final bool isShowCursor;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -45,6 +49,9 @@ class FCAccentLightGradientCodeField extends StatelessWidget {
     return FCBasicGradientCodeField(
       context: context,
       length: length,
+      controller: this.controller,
+      errorController: this.errorController,
+      focusNode: this.focusNode,
       unfocusedBackgroundGradient: FCLinearGradient(
         context: context,
         colors: [
@@ -62,15 +69,14 @@ class FCAccentLightGradientCodeField extends StatelessWidget {
       focusedBorderColor: theme.accentLight,
       itemHeight: this.itemHeight,
       itemWidth: this.itemWidth,
-      style: this.style,
-      controller: this.controller,
-      errorController: this.errorController,
-      focusNode: this.focusNode,
+      itemStyle: this.itemStyle,
+      borderRadius: this.borderRadius,
+      borderWidth: this.borderWidth,
       horizontalInterval: this.horizontalInterval,
-      isAutofocus: this.isAutofocus,
-      isShowCursor: this.isShowCursor,
       onChanged: this.onChanged,
       onCompleted: this.onCompleted,
+      isAutofocus: this.isAutofocus,
+      isShowCursor: this.isShowCursor,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

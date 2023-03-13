@@ -8,13 +8,15 @@ import 'package:flutter/material.dart' show Colors;
 class FCBasicGradientSelectField extends StatefulWidget {
   const FCBasicGradientSelectField({
     super.key,
-    this.height,
     required this.backgroundGradient,
     required this.splashColor,
     this.internalGradient,
-    required this.title,
+    this.height,
+    this.borderRadius,
+    this.borderWidth,
     //
-    this.textStyle,
+    required this.title,
+    this.titleStyle,
     //
     required this.labelText,
     this.labelColor,
@@ -38,13 +40,15 @@ class FCBasicGradientSelectField extends StatefulWidget {
     this.disabledColor,
   });
 
-  final double? height;
   final Gradient backgroundGradient;
   final Color splashColor;
   final Gradient? internalGradient;
-  final String? title;
+  final double? height;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   //
-  final TextStyle? textStyle;
+  final String? title;
+  final TextStyle? titleStyle;
   //
   final String labelText;
   final Color? labelColor;
@@ -124,9 +128,11 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
           ],
         ),
         internalGradient: this.widget.internalGradient,
+        borderRadius: this.widget.borderRadius,
+        borderWidth: this.widget.borderWidth,
         controller: this._controller,
         //
-        textStyle: this.widget.textStyle,
+        textStyle: this.widget.titleStyle,
         //
         labelText: this.widget.labelText,
         labelColor: this.widget.labelColor,

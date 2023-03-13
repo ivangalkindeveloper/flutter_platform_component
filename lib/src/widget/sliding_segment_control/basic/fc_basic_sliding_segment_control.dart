@@ -75,7 +75,7 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
                         prefix: item.prefix,
                         title: item.title,
                         textAlign: TextAlign.center,
-                        style: this.value == item.value
+                        titleStyle: this.value == item.value
                             ? this.selectedStyle?.copyWith(
                                       color: this.selectedStyle?.color ??
                                           this._internalColor(value: item.value),

@@ -117,7 +117,7 @@ class _FCActionModalCupertino extends StatelessWidget {
           prefix: item.prefix,
           title: item.title,
           textAlign: TextAlign.center,
-          style: this.itemStyle,
+          titleStyle: this.itemStyle,
           postfix: item.postfix,
         ),
         onPressed: item.onPressed,
@@ -341,7 +341,7 @@ class _FCActionModalMaterial extends StatelessWidget {
           prefix: item.prefix,
           title: item.title,
           textAlign: TextAlign.start,
-          style: this._itemStyle(
+          titleStyle: this._itemStyle(
             textStyle: textStyle,
             theme: theme,
             size: size,

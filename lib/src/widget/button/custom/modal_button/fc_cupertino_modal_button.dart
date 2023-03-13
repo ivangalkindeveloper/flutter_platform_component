@@ -1,8 +1,9 @@
-import 'package:flutter/cupertino.dart' show CupertinoButton, CupertinoColors;
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/material.dart' show Icons;
 import 'package:flutter/widgets.dart';
+
+import 'package:flutter/cupertino.dart' show CupertinoButton, CupertinoColors;
+import 'package:flutter/material.dart' show Icons;
 
 class FCCupertinoModalButton extends StatelessWidget {
   const FCCupertinoModalButton({

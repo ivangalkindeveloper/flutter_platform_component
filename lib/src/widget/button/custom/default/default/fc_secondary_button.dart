@@ -6,9 +6,12 @@ import 'package:flutter/widgets.dart';
 class FCSecondaryButton extends StatelessWidget {
   const FCSecondaryButton({
     super.key,
+    this.height,
+    this.borderRadius,
+    this.padding,
     this.prefix,
     this.title,
-    this.style,
+    this.titleStyle,
     this.postfix,
     required this.onPressed,
     this.isLoading = false,
@@ -16,9 +19,12 @@ class FCSecondaryButton extends StatelessWidget {
     this.disabledColor,
   });
 
+  final double? height;
+  final BorderRadius? borderRadius;
+  final EdgeInsets? padding;
   final Widget? prefix;
   final String? title;
-  final TextStyle? style;
+  final TextStyle? titleStyle;
   final Widget? postfix;
   final VoidCallback onPressed;
   final bool isLoading;
@@ -34,6 +40,9 @@ class FCSecondaryButton extends StatelessWidget {
     return FCBasicButton(
       backgroundColor: theme.secondary,
       splashColor: theme.secondaryButton,
+      height: this.height,
+      borderRadius: this.borderRadius,
+      padding: this.padding,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
         firstChild: FCCircularIndicator.secondaryButton(context: context),
@@ -44,10 +53,10 @@ class FCSecondaryButton extends StatelessWidget {
           prefix: this.prefix,
           title: this.title,
           textAlign: TextAlign.center,
-          style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.secondaryButton,
-                    fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
-                    fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
+          titleStyle: this.titleStyle?.copyWith(
+                    color: this.titleStyle?.color ?? theme.secondaryButton,
+                    fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+                    fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
                     package: textStyle.package,
                   ) ??
               TextStyle(

@@ -7,33 +7,37 @@ class FCInfoDarkCodeField extends StatelessWidget {
   const FCInfoDarkCodeField({
     super.key,
     required this.length,
-    this.itemHeight,
-    this.itemWidth,
-    this.style,
     this.controller,
     this.errorController,
     this.focusNode,
+    this.itemHeight,
+    this.itemWidth,
+    this.itemStyle,
+    this.borderRadius,
+    this.borderWidth,
     this.horizontalInterval,
-    this.isAutofocus = false,
-    this.isShowCursor = false,
     this.onChanged,
     this.onCompleted,
+    this.isAutofocus = false,
+    this.isShowCursor = false,
     this.isDisabled = false,
     this.disabledColor,
   });
 
   final int length;
-  final double? itemHeight;
-  final double? itemWidth;
-  final TextStyle? style;
   final TextEditingController? controller;
   final StreamController<bool?>? errorController;
   final FocusNode? focusNode;
+  final double? itemHeight;
+  final double? itemWidth;
+  final TextStyle? itemStyle;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   final double? horizontalInterval;
-  final bool isAutofocus;
-  final bool isShowCursor;
   final void Function(String)? onChanged;
   final void Function(String)? onCompleted;
+  final bool isAutofocus;
+  final bool isShowCursor;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -45,20 +49,22 @@ class FCInfoDarkCodeField extends StatelessWidget {
     return FCBasicCodeField(
       context: context,
       length: length,
+      controller: this.controller,
+      errorController: this.errorController,
+      focusNode: this.focusNode,
       unfocusedBackgroundColor: theme.backgroundComponent,
       focusedBackgroundColor: theme.backgroundComponent,
       focusedBorderColor: theme.infoDark,
       itemHeight: this.itemHeight,
       itemWidth: this.itemWidth,
-      style: this.style,
-      controller: this.controller,
-      errorController: this.errorController,
-      focusNode: this.focusNode,
+      itemStyle: this.itemStyle,
+      borderRadius: this.borderRadius,
+      borderWidth: this.borderWidth,
       horizontalInterval: this.horizontalInterval,
-      isAutofocus: this.isAutofocus,
-      isShowCursor: this.isShowCursor,
       onChanged: this.onChanged,
       onCompleted: this.onCompleted,
+      isAutofocus: this.isAutofocus,
+      isShowCursor: this.isShowCursor,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

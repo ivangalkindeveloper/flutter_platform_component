@@ -12,12 +12,12 @@ class NavigatorScreen extends StatelessWidget {
   Route<dynamic>? _onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
       case page_1:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const _Page1(),
         );
       case page_2:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const _Page2(),
         );

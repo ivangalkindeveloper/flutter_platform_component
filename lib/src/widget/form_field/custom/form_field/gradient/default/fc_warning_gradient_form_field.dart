@@ -1,20 +1,31 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
 
 class FCWarningGradientFormField extends StatelessWidget {
   const FCWarningGradientFormField({
     super.key,
-    this.height,
-    this.internalGradient,
-    this.internalIconHeight,
     this.controller,
     this.focusNode,
+    this.internalGradient,
+    this.internalIconHeight,
+    this.height,
+    this.borderRadius,
+    this.borderWidth,
+    //
+    this.textStyle,
+    //
     required this.labelText,
     this.labelColor,
+    this.labelStyle,
+    //
     this.prefixText,
+    this.prefixStyle,
+    //
     this.hintText,
+    this.hintStyle,
+    //
     this.textInputType = TextInputType.text,
     this.textCapitalization = TextCapitalization.none,
     this.textInputAction = TextInputAction.done,
@@ -36,15 +47,26 @@ class FCWarningGradientFormField extends StatelessWidget {
     this.disabledColor,
   });
 
-  final double? height;
-  final Gradient? internalGradient;
-  final double? internalIconHeight;
   final TextEditingController? controller;
   final FocusNode? focusNode;
+  final Gradient? internalGradient;
+  final double? internalIconHeight;
+  final double? height;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
+  //
+  final TextStyle? textStyle;
+  //
   final String labelText;
   final Color? labelColor;
+  final TextStyle? labelStyle;
+  //
   final String? prefixText;
+  final TextStyle? prefixStyle;
+  //
   final String? hintText;
+  final TextStyle? hintStyle;
+  //
   final TextInputType textInputType;
   final TextCapitalization textCapitalization;
   final TextInputAction textInputAction;
@@ -72,7 +94,9 @@ class FCWarningGradientFormField extends StatelessWidget {
 
     return FCBasicGradientFormField(
       context: context,
-      height: this.height,
+      controller: this.controller,
+      focusNode: this.focusNode,
+
       backgroundGradient: FCLinearGradient(
         context: context,
         colors: [
@@ -80,15 +104,25 @@ class FCWarningGradientFormField extends StatelessWidget {
           theme.backgroundComponent,
         ],
       ),
-      focusedGradient: theme.warningGradient,
+      focusedGradient: theme.accentDarkGradient,
       internalGradient: this.internalGradient,
       internalIconHeight: this.internalIconHeight,
-      controller: this.controller,
-      focusNode: this.focusNode,
+      height: this.height,
+      borderRadius: this.borderRadius,
+      borderWidth: this.borderWidth,
+      //
+      textStyle: this.textStyle,
+      //
       labelText: this.labelText,
       labelColor: this.labelColor,
+      labelStyle: this.labelStyle,
+      //
       prefixText: this.prefixText,
+      prefixStyle: this.prefixStyle,
+      //
       hintText: this.hintText,
+      hintStyle: this.hintStyle,
+      //
       textInputType: this.textInputType,
       textCapitalization: this.textCapitalization,
       textInputAction: this.textInputAction,

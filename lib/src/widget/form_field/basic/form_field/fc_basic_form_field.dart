@@ -8,13 +8,15 @@ class FCBasicFormField extends StatefulWidget {
   const FCBasicFormField({
     super.key,
     required this.context,
-    this.height,
+    this.controller,
+    this.focusNode,
     required this.backgroundColor,
     required this.focusedColor,
     this.internalColor,
     this.internalIconHeight,
-    this.controller,
-    this.focusNode,
+    this.height,
+    this.borderRadius,
+    this.borderWidth,
     //
     this.textStyle,
     //
@@ -50,13 +52,15 @@ class FCBasicFormField extends StatefulWidget {
   });
 
   final BuildContext context;
-  final double? height;
+  final TextEditingController? controller;
+  final FocusNode? focusNode;
   final Color backgroundColor;
   final Color focusedColor;
   final Color? internalColor;
   final double? internalIconHeight;
-  final TextEditingController? controller;
-  final FocusNode? focusNode;
+  final double? height;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   //
   final TextStyle? textStyle;
   //
@@ -249,10 +253,10 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
               ),
               decoration: BoxDecoration(
                 color: this._backgroundColor(),
-                borderRadius: this._config.borderRadiusField,
+                borderRadius: this.widget.borderRadius ?? this._config.borderRadiusField,
                 border: Border.all(
                   color: this._borderColor(),
-                  width: this._config.borderWidthField,
+                  width: this.widget.borderWidth ?? this._config.borderWidthField,
                 ),
               ),
               child: Column(
@@ -366,7 +370,8 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
                 child: this.widget.isDisabled
                     ? FCComponentDisabledOverlay(
                         color: this.widget.disabledColor,
-                        borderRadius: this._config.borderRadiusField,
+                        borderRadius:
+                            this.widget.borderRadius ?? this._config.borderRadiusField,
                       )
                     : null,
               ),

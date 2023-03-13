@@ -23,6 +23,7 @@ class FCBasicToggle<T> extends StatefulWidget {
     required this.selectedSplashColor,
     this.selectedStyle,
     this.height,
+    this.borderRadius,
     this.horizontalInterval,
     this.isRequired = false,
     this.isDisabled = false,
@@ -41,6 +42,7 @@ class FCBasicToggle<T> extends StatefulWidget {
   final Color selectedSplashColor;
   final TextStyle? selectedStyle;
   final double? height;
+  final BorderRadius? borderRadius;
   final double? horizontalInterval;
   final bool isRequired;
   final bool isDisabled;
@@ -147,6 +149,7 @@ class _FCBasicToggleState<T> extends State<FCBasicToggle<T>> {
                       selectedSplashColor: this.widget.selectedSplashColor,
                       selectedStyle: this.widget.selectedStyle,
                       height: this.widget.height,
+                      borderRadius: this.widget.borderRadius,
                       horizontalInterval: this.widget.horizontalInterval,
                       isValidationError: this._isValidationError,
                       onPressed: this.widget.isDisabled
@@ -166,7 +169,7 @@ class _FCBasicToggleState<T> extends State<FCBasicToggle<T>> {
               child: this.widget.isDisabled
                   ? FCComponentDisabledOverlay(
                       color: this.widget.disabledColor,
-                      borderRadius: config.borderRadiusToggle,
+                      borderRadius: this.widget.borderRadius ?? config.borderRadiusToggle,
                     )
                   : null,
             ),
@@ -192,6 +195,7 @@ class _FCToggleButton<T> extends StatelessWidget {
     required this.selectedSplashColor,
     required this.selectedStyle,
     required this.height,
+    required this.borderRadius,
     required this.horizontalInterval,
     required this.isValidationError,
     required this.onPressed,
@@ -210,6 +214,7 @@ class _FCToggleButton<T> extends StatelessWidget {
   final Color selectedSplashColor;
   final TextStyle? selectedStyle;
   final double? height;
+  final BorderRadius? borderRadius;
   final double? horizontalInterval;
   final bool isValidationError;
   final VoidCallback onPressed;
@@ -252,7 +257,7 @@ class _FCToggleButton<T> extends StatelessWidget {
         backgroundColor: this._backgroundColor(theme: theme),
         splashColor: this._splashColor(theme: theme),
         height: this.height ?? size.heightToggle,
-        borderRadius: config.borderRadiusToggle,
+        borderRadius: this.borderRadius ?? config.borderRadiusToggle,
         child: FCButtonRowChild(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -260,7 +265,7 @@ class _FCToggleButton<T> extends StatelessWidget {
           prefix: this.item.prefix,
           title: this.item.title,
           textAlign: TextAlign.center,
-          style: this.isSelected
+          titleStyle: this.isSelected
               ? this.selectedStyle?.copyWith(
                         color: this.selectedStyle?.color ??
                             this._internalColor(theme: theme),

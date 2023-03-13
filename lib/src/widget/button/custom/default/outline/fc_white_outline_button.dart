@@ -6,23 +6,27 @@ import 'package:flutter/widgets.dart';
 class FCWhiteOutlineButton extends StatelessWidget {
   const FCWhiteOutlineButton({
     super.key,
+    this.height,
+    this.borderRadius,
+    this.padding,
     this.prefix,
     this.title,
-    this.style,
+    this.titleStyle,
     this.postfix,
     required this.onPressed,
-    this.isFilled = false,
     this.isLoading = false,
     this.isDisabled = false,
     this.disabledColor,
   });
 
+  final double? height;
+  final BorderRadius? borderRadius;
+  final EdgeInsets? padding;
   final Widget? prefix;
   final String? title;
-  final TextStyle? style;
+  final TextStyle? titleStyle;
   final Widget? postfix;
   final VoidCallback onPressed;
-  final bool isFilled;
   final bool isLoading;
   final bool isDisabled;
   final Color? disabledColor;
@@ -36,6 +40,9 @@ class FCWhiteOutlineButton extends StatelessWidget {
     return FCBasicButton(
       borderColor: theme.white,
       splashColor: theme.white,
+      height: this.height,
+      borderRadius: this.borderRadius,
+      padding: this.padding,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
         firstChild: FCCircularIndicator.white(context: context),
@@ -46,10 +53,10 @@ class FCWhiteOutlineButton extends StatelessWidget {
           prefix: this.prefix,
           title: this.title,
           textAlign: TextAlign.center,
-          style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.white,
-                    fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
-                    fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
+          titleStyle: this.titleStyle?.copyWith(
+                    color: this.titleStyle?.color ?? theme.white,
+                    fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+                    fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
                     package: textStyle.package,
                   ) ??
               TextStyle(

@@ -184,372 +184,372 @@ class NavigationService implements INavigationService {
   Route<dynamic>? onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
       case animated_container_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const AnimatedContainerScreen(),
         );
       case animated_cross_fade_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const AnimatedCrossFadeScreen(),
         );
       case animated_fade_in_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const AnimatedFadeInScreen(),
         );
       case animated_fade_out_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const AnimatedFadeOutScreen(),
         );
       case animated_opacity_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const AnimatedOpacityScreen(),
         );
       case animated_opacity_stack_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const AnimatedOpacityStackScreen(),
         );
       case animated_switcher_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const AnimatedSwitcherScreen(),
         );
       case animated_transition_switcher_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const AnimatedTransitionSwitcherScreen(),
         );
 
       case app_bar_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const AppBarScreen(),
         );
 
       case counter_badge_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const CounterBadgeScreen(),
         );
       case gradient_counter_badge_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const GradientCounterBadgeScreen(),
         );
       case dot_badge_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const DotBadgeScreen(),
         );
       case gradient_dot_badge_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const GradientDotBadgeScreen(),
         );
 
       case blur_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const BlurScreen(),
         );
 
       case button_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const ButtonScreen(),
         );
       case gradient_button_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const GradientButtonScreen(),
         );
       case icon_button_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const IconButtonScreen(),
         );
       case modal_button_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const ModalButtonScreen(),
         );
 
       case card_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const CardScreen(),
         );
       case gradient_card_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const GradientCardScreen(),
         );
       case select_card_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const SelectCardScreen(),
         );
       case gradient_select_card_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const GradientSelectCardScreen(),
         );
 
       case checkbox_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const CheckboxScreen(),
         );
 
       case code_field_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const CodeFieldScreen(),
         );
       case gradient_code_field_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const GradientCodeFieldScreen(),
         );
 
       case date_picker_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const DatePickerScreen(),
         );
 
       case dialog_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const DialogScreen(),
         );
 
       case form_field_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const FormFieldScreen(),
         );
       case gradient_form_field_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const GradientFormFieldScreen(),
         );
       case select_field_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const SelectFieldScreen(),
         );
       case gradient_select_field_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const GradientSelectFieldScreen(),
         );
 
       case gradient_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const GradientScreen(),
         );
 
       case icon_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const IconScreen(),
         );
 
       case circular_indicator_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const CircularIndicatorScreen(),
         );
       case page_indicator_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const PageIndicatorScreen(),
         );
       case gradient_page_indicator_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const GradientPageIndicatorScreen(),
         );
       case progress_indicator_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const ProgressIndicatorScreen(),
         );
       case story_indicator_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const StoryIndicatorScreen(),
         );
 
       case keyboard_button_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const KeyboardButtonScreen(),
         );
       case keyboard_number_button_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const KeyboardNumberButtonScreen(),
         );
       case keyboard_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const KeyboardScreen(),
         );
 
       case list_refresh_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const ListRefreshScreen(),
         );
       case list_section_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const ListSectionScreen(),
         );
 
       case action_modal_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const ActionModalScreen(),
         );
       case expand_modal_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const ExpandedModalScreen(),
         );
       case pop_up_modal_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const PopUpModalScreen(),
         );
       case white_always_expand_modal_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const WhiteAlwaysExpandedModalScreen(),
         );
 
       case bottom_navigation_bar_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const BottomNavigationBarScreen(),
         );
       case navigator_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const NavigatorScreen(),
         );
 
       case pin_field_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const PINFieldScreen(),
         );
       case gradient_pin_field_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const GradientPINFieldScreen(),
         );
 
       case radio_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const RadioScreen(),
         );
 
       case scaffold_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const ScaffoldScreen(),
         );
 
       case scrollbar_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const ScrollbarScreen(),
         );
 
       case segment_control_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const SegmentControlScreen(),
         );
       case gradient_segment_control_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const GradientSegmentControlScreen(),
         );
 
       case shimmer_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const ShimmerScreen(),
         );
       case gradient_shimmer_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const GradientShimmerScreen(),
         );
 
       case slider_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const SliderScreen(),
         );
 
       case sliding_segment_control_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const SlidingSegmentControlScreen(),
         );
 
       case sliver_navigation_bar_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const SliverNavigationBarScreen(),
         );
 
       case snackbar_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const SnackbarScreen(),
         );
       case gradient_snackbar_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const GradientSnackbarScreen(),
         );
 
       case switch_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const SwitchScreen(),
         );
 
       case text_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const TextScreen(),
         );
       case text_span_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const TextSpanScreen(),
         );
 
       case toggle_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const ToggleScreen(),
         );
       case gradient_toggle_screen:
-        return FCGlobal.pageRoute(
+        return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const GradientToggleScreen(),
         );

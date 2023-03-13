@@ -7,27 +7,29 @@ class FCAccentDarkPINField extends StatelessWidget {
   const FCAccentDarkPINField({
     super.key,
     required this.length,
-    this.focusNode,
     this.controller,
     this.errorController,
+    this.focusNode,
     this.height,
+    this.borderWidth,
     this.horizontalInterval,
-    this.isAutofocus = false,
     this.onChanged,
     this.onCompleted,
+    this.isAutofocus = false,
     this.isDisabled = false,
     this.disabledColor,
   });
 
   final int length;
-  final FocusNode? focusNode;
   final TextEditingController? controller;
   final StreamController<bool?>? errorController;
+  final FocusNode? focusNode;
   final double? height;
+  final double? borderWidth;
   final double? horizontalInterval;
-  final bool isAutofocus;
   final void Function(String)? onChanged;
   final void Function(String)? onCompleted;
+  final bool isAutofocus;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -39,18 +41,19 @@ class FCAccentDarkPINField extends StatelessWidget {
     return FCBasicPINField(
       context: context,
       length: this.length,
+      controller: this.controller,
+      errorController: this.errorController,
+      focusNode: this.focusNode,
       unfocusedBackgroundColor: theme.greyDark,
       focusedBackgroundColor: theme.backgroundComponent,
       focusedBorderColor: theme.accentDark,
       submittedBackgroundColor: theme.accentDark,
-      focusNode: this.focusNode,
-      controller: this.controller,
-      errorController: this.errorController,
       height: this.height,
+      borderWidth: this.borderWidth,
       horizontalInterval: this.horizontalInterval,
-      isAutofocus: this.isAutofocus,
       onChanged: this.onChanged,
       onCompleted: this.onCompleted,
+      isAutofocus: this.isAutofocus,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

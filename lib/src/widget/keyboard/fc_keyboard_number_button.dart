@@ -6,16 +6,16 @@ class FCKeyboardNumberButton extends StatelessWidget {
   const FCKeyboardNumberButton({
     super.key,
     this.height,
-    this.style,
     required this.number,
+    this.numberStyle,
     required this.onPressed,
     this.isDisabled = false,
     this.disabledColor,
   });
 
   final double? height;
-  final TextStyle? style;
   final int number;
+  final TextStyle? numberStyle;
   final VoidCallback onPressed;
   final bool isDisabled;
   final Color? disabledColor;
@@ -30,11 +30,11 @@ class FCKeyboardNumberButton extends StatelessWidget {
     return FCKeyboardButton(
       child: Text(
         this.number.toString(),
-        style: this.style?.copyWith(
-                  color: this.style?.color ?? theme.black,
-                  fontSize: this.style?.fontSize ?? size.s28,
-                  fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
-                  fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
+        style: this.numberStyle?.copyWith(
+                  color: this.numberStyle?.color ?? theme.black,
+                  fontSize: this.numberStyle?.fontSize ?? size.s28,
+                  fontWeight: this.numberStyle?.fontWeight ?? textStyle.fontWeightMedium,
+                  fontFamily: this.numberStyle?.fontFamily ?? textStyle.fontFamilyMedium,
                   package: textStyle.package,
                 ) ??
             TextStyle(

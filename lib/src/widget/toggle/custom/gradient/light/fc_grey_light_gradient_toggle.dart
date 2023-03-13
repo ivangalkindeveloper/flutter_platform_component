@@ -11,6 +11,7 @@ class FCGreyLightGradientToggle<T> extends StatelessWidget {
     this.unselectedStyle,
     this.selectedStyle,
     this.height,
+    this.borderRadius,
     this.horizontalInterval,
     this.isRequired = false,
     this.isDisabled = false,
@@ -23,6 +24,7 @@ class FCGreyLightGradientToggle<T> extends StatelessWidget {
   final TextStyle? unselectedStyle;
   final TextStyle? selectedStyle;
   final double? height;
+  final BorderRadius? borderRadius;
   final double? horizontalInterval;
   final bool isRequired;
   final bool isDisabled;
@@ -58,6 +60,7 @@ class FCGreyLightGradientToggle<T> extends StatelessWidget {
       selectedSplashColor: theme.white,
       selectedStyle: this.selectedStyle,
       height: this.height,
+      borderRadius: this.borderRadius,
       horizontalInterval: this.horizontalInterval,
       isRequired: this.isRequired,
       isDisabled: this.isDisabled,

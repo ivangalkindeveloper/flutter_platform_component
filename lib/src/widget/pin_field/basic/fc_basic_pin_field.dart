@@ -11,36 +11,38 @@ class FCBasicPINField extends StatefulWidget {
     super.key,
     required this.context,
     required this.length,
+    this.controller,
+    this.errorController,
+    this.focusNode,
     required this.unfocusedBackgroundColor,
     required this.focusedBackgroundColor,
     required this.focusedBorderColor,
     required this.submittedBackgroundColor,
-    this.focusNode,
-    this.controller,
-    this.errorController,
     this.height,
+    this.borderWidth,
     this.horizontalInterval,
-    this.isAutofocus = false,
     this.onChanged,
     this.onCompleted,
+    this.isAutofocus = false,
     this.isDisabled = false,
     this.disabledColor,
   });
 
   final BuildContext context;
   final int length;
+  final TextEditingController? controller;
+  final StreamController<bool?>? errorController;
+  final FocusNode? focusNode;
   final Color unfocusedBackgroundColor;
   final Color focusedBackgroundColor;
   final Color focusedBorderColor;
   final Color submittedBackgroundColor;
-  final FocusNode? focusNode;
-  final TextEditingController? controller;
-  final StreamController<bool?>? errorController;
   final double? height;
+  final double? borderWidth;
   final double? horizontalInterval;
-  final bool isAutofocus;
   final void Function(String)? onChanged;
   final void Function(String)? onCompleted;
+  final bool isAutofocus;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -118,7 +120,7 @@ class _FCBasicPINFieldState extends State<FCBasicPINField> with TickerProviderSt
           border: borderColor != null
               ? Border.all(
                   color: borderColor,
-                  width: this._config.borderWidthField,
+                  width: this.widget.borderWidth ?? this._config.borderWidthField,
                 )
               : null,
         ),

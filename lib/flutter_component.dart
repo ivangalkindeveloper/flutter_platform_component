@@ -923,6 +923,8 @@ export 'src/widget/navigation/bottom_navigation_bar/fc_bottom_navigation_bar_ite
 export 'src/widget/navigation/bottom_navigation_bar/fc_bottom_navigation_bar.dart';
 // Navigation / Navigator
 export 'src/widget/navigation/navigator/fc_navigator.dart';
+// Navigation / Route
+export 'src/widget/navigation/route/fc_route.dart';
 
 // PIN Field
 // PIN Field / Basic

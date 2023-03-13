@@ -11,9 +11,9 @@ class FCDangerLightGradientSegmentControl<T> extends StatelessWidget {
     this.unselectedStyle,
     this.selectedStyle,
     this.height,
-    this.padding,
     this.borderRadius,
     this.borderWidth,
+    this.padding,
     this.isDisabled = false,
     this.disabledColor,
   });
@@ -24,9 +24,9 @@ class FCDangerLightGradientSegmentControl<T> extends StatelessWidget {
   final TextStyle? unselectedStyle;
   final TextStyle? selectedStyle;
   final double? height;
-  final EdgeInsets? padding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
+  final EdgeInsets? padding;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -60,9 +60,9 @@ class FCDangerLightGradientSegmentControl<T> extends StatelessWidget {
       selectedSplashColor: theme.whiteAlways,
       selectedStyle: this.selectedStyle,
       height: this.height,
-      padding: this.padding,
       borderRadius: this.borderRadius,
       borderWidth: this.borderWidth,
+      padding: this.padding,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

@@ -11,40 +11,44 @@ class FCBasicGradientCodeField extends StatefulWidget {
     super.key,
     required this.context,
     required this.length,
+    this.controller,
+    this.errorController,
+    this.focusNode,
     required this.unfocusedBackgroundGradient,
     required this.focusedBackgroundGradient,
     required this.focusedBorderColor,
     this.itemHeight,
     this.itemWidth,
-    this.style,
-    this.controller,
-    this.errorController,
-    this.focusNode,
+    this.itemStyle,
+    this.borderRadius,
+    this.borderWidth,
     this.horizontalInterval,
-    this.isAutofocus = false,
-    this.isShowCursor = false,
     this.onChanged,
     this.onCompleted,
+    this.isAutofocus = false,
+    this.isShowCursor = false,
     this.isDisabled = false,
     this.disabledColor,
   });
 
   final BuildContext context;
   final int length;
+  final TextEditingController? controller;
+  final StreamController<bool?>? errorController;
+  final FocusNode? focusNode;
   final Gradient unfocusedBackgroundGradient;
   final Gradient focusedBackgroundGradient;
   final Color focusedBorderColor;
   final double? itemHeight;
   final double? itemWidth;
-  final TextStyle? style;
-  final TextEditingController? controller;
-  final StreamController<bool?>? errorController;
-  final FocusNode? focusNode;
+  final TextStyle? itemStyle;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   final double? horizontalInterval;
-  final bool isAutofocus;
-  final bool isShowCursor;
   final void Function(String)? onChanged;
   final void Function(String)? onCompleted;
+  final bool isAutofocus;
+  final bool isShowCursor;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -111,17 +115,17 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
   PinTheme _item({
     required IFCTextStyle textStyle,
     required Gradient backgroundGradient,
-    required TextStyle? style,
+    required TextStyle? itemStyle,
     Color? borderColor,
   }) =>
       PinTheme(
         height: this.widget.itemHeight ?? this._size.heightCodeField,
-        width: this.widget.itemWidth ?? (this._size.heightCodeField * 0.7),
-        textStyle: style?.copyWith(
-              color: style.color ?? this._theme.black,
-              fontSize: style.fontSize ?? this._size.s20,
-              fontWeight: style.fontWeight ?? this._textStyle.fontWeightMedium,
-              fontFamily: style.fontFamily ?? this._textStyle.fontFamilyMedium,
+        width: this.widget.itemWidth ?? (this._size.heightCodeField * 0.75),
+        textStyle: itemStyle?.copyWith(
+              color: itemStyle.color ?? this._theme.black,
+              fontSize: itemStyle.fontSize ?? this._size.s20,
+              fontWeight: itemStyle.fontWeight ?? this._textStyle.fontWeightMedium,
+              fontFamily: itemStyle.fontFamily ?? this._textStyle.fontFamilyMedium,
               package: textStyle.package,
             ) ??
             TextStyle(
@@ -133,11 +137,11 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
             ),
         decoration: BoxDecoration(
           gradient: backgroundGradient,
-          borderRadius: this._config.borderRadiusField,
+          borderRadius: this.widget.borderRadius ?? this._config.borderRadiusField,
           border: borderColor != null
               ? Border.all(
                   color: borderColor,
-                  width: this._config.borderWidthField,
+                  width: this.widget.borderWidth ?? this._config.borderWidthField,
                 )
               : null,
         ),
@@ -172,23 +176,23 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
               defaultPinTheme: this._item(
                 textStyle: textStyle,
                 backgroundGradient: this.widget.unfocusedBackgroundGradient,
-                style: this.widget.style,
+                itemStyle: this.widget.itemStyle,
               ),
               focusedPinTheme: this._item(
                 textStyle: textStyle,
                 backgroundGradient: this.widget.focusedBackgroundGradient,
                 borderColor: this.widget.focusedBorderColor,
-                style: this.widget.style,
+                itemStyle: this.widget.itemStyle,
               ),
               submittedPinTheme: this._item(
                 textStyle: textStyle,
                 backgroundGradient: this.widget.unfocusedBackgroundGradient,
-                style: this.widget.style,
+                itemStyle: this.widget.itemStyle,
               ),
               errorPinTheme: this._item(
                 textStyle: textStyle,
                 backgroundGradient: this._theme.dangerLightGradient,
-                style: TextStyle(
+                itemStyle: TextStyle(
                   color: this._theme.danger,
                   package: textStyle.package,
                 ),
@@ -218,7 +222,8 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
             child: this.widget.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.widget.disabledColor,
-                    borderRadius: this._config.borderRadiusField,
+                    borderRadius:
+                        this.widget.borderRadius ?? this._config.borderRadiusField,
                   )
                 : null,
           ),

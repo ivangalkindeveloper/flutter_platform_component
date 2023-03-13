@@ -6,9 +6,12 @@ import 'package:flutter/widgets.dart';
 class FCAccentLightButton extends StatelessWidget {
   const FCAccentLightButton({
     super.key,
+    this.height,
+    this.borderRadius,
+    this.padding,
     this.prefix,
     this.title,
-    this.style,
+    this.titleStyle,
     this.postfix,
     required this.onPressed,
     this.isLoading = false,
@@ -16,9 +19,12 @@ class FCAccentLightButton extends StatelessWidget {
     this.disabledColor,
   });
 
+  final double? height;
+  final BorderRadius? borderRadius;
+  final EdgeInsets? padding;
   final Widget? prefix;
   final String? title;
-  final TextStyle? style;
+  final TextStyle? titleStyle;
   final Widget? postfix;
   final VoidCallback onPressed;
   final bool isLoading;
@@ -34,6 +40,9 @@ class FCAccentLightButton extends StatelessWidget {
     return FCBasicButton(
       backgroundColor: theme.accentLight,
       splashColor: theme.accentButton,
+      height: this.height,
+      borderRadius: this.borderRadius,
+      padding: this.padding,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
         firstChild: FCCircularIndicator.accentButton(context: context),
@@ -44,10 +53,10 @@ class FCAccentLightButton extends StatelessWidget {
           prefix: this.prefix,
           title: this.title,
           textAlign: TextAlign.center,
-          style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.accentButton,
-                    fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
-                    fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
+          titleStyle: this.titleStyle?.copyWith(
+                    color: this.titleStyle?.color ?? theme.accentButton,
+                    fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+                    fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
                     package: textStyle.package,
                   ) ??
               TextStyle(

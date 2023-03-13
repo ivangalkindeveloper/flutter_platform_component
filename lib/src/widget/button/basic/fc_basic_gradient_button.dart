@@ -9,10 +9,10 @@ class FCBasicGradientButton extends FCPlatformWidget {
   FCBasicGradientButton({
     super.key,
     Gradient? backgroundGradient,
-    Gradient? borderGradient,
     required Color splashColor,
     double? height,
     BorderRadius? borderRadius,
+    Gradient? borderGradient,
     double? borderWidth,
     EdgeInsets? padding,
     required Widget child,

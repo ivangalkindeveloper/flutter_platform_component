@@ -4,7 +4,6 @@ import 'package:flutter/widgets.dart';
 
 import 'package:flutter/material.dart' as material
     show
-        MaterialPageRoute,
         Colors,
         ScaffoldMessenger,
         ScaffoldMessengerState,
@@ -15,47 +14,11 @@ import 'package:flutter/material.dart' as material
         showDialog,
         showDatePicker;
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart' as bottomSheet
-    show
-        MaterialWithModalsPageRoute,
-        showCupertinoModalBottomSheet,
-        showMaterialModalBottomSheet;
+    show showCupertinoModalBottomSheet, showMaterialModalBottomSheet;
 import 'package:flutter/cupertino.dart' as cupertino
     show showCupertinoModalPopup, showCupertinoDialog;
 
 class FCGlobal {
-  static material.MaterialPageRoute pageRoute({
-    required BuildContext context,
-    required Widget child,
-  }) =>
-      FCPlatform.decomposeFromContext(
-        context: context,
-        cupertino: bottomSheet.MaterialWithModalsPageRoute(
-          builder: (BuildContext context) => child,
-        ),
-        material: material.MaterialPageRoute(
-          builder: (BuildContext context) => child,
-        ),
-      );
-
-  static PageRouteBuilder pageRouteFade({required Widget child}) => PageRouteBuilder(
-        pageBuilder: (
-          BuildContext context,
-          Animation primaryAnimation,
-          Animation secondaryAnimation,
-        ) =>
-            child,
-        transitionsBuilder: (
-          BuildContext context,
-          Animation<double> primaryAnimation,
-          Animation secondaryAnimation,
-          Widget page,
-        ) =>
-            FadeTransition(
-          opacity: primaryAnimation,
-          child: page,
-        ),
-      );
-
   static Future<T?> showExpandedModal<T>({
     required BuildContext context,
     required Widget child,

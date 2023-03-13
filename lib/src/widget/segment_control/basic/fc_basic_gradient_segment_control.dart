@@ -25,9 +25,9 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
     required this.selectedSplashColor,
     this.selectedStyle,
     this.height,
-    this.padding,
     this.borderRadius,
     this.borderWidth,
+    this.padding,
     this.isDisabled = false,
     this.disabledColor,
   });
@@ -46,9 +46,9 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
   final Color selectedSplashColor;
   final TextStyle? selectedStyle;
   final double? height;
-  final EdgeInsets? padding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
+  final EdgeInsets? padding;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -385,7 +385,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
                     prefix: this.item.prefix,
                     title: this.item.title,
                     textAlign: TextAlign.center,
-                    style: this.isSelected
+                    titleStyle: this.isSelected
                         ? this.selectedStyle?.copyWith(
                                   color: this.selectedStyle?.color ??
                                       this._internalGradient(theme: theme).colors.first,

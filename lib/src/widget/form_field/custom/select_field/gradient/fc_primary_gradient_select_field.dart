@@ -5,11 +5,13 @@ import 'package:flutter/widgets.dart';
 class FCPrimaryGradientSelectField extends StatelessWidget {
   const FCPrimaryGradientSelectField({
     super.key,
-    this.height,
     this.internalGradient,
-    required this.title,
+    this.height,
+    this.borderRadius,
+    this.borderWidth,
     //
-    this.textStyle,
+    required this.title,
+    this.titleStyle,
     //
     required this.labelText,
     this.labelColor,
@@ -33,11 +35,13 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
     this.disabledColor,
   });
 
-  final double? height;
   final Gradient? internalGradient;
-  final String? title;
+  final double? height;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   //
-  final TextStyle? textStyle;
+  final String? title;
+  final TextStyle? titleStyle;
   //
   final String labelText;
   final Color? labelColor;
@@ -66,7 +70,6 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientSelectField(
-      height: this.height,
       backgroundGradient: FCLinearGradient(
         context: context,
         colors: [
@@ -76,9 +79,12 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
       ),
       splashColor: theme.primary,
       internalGradient: this.internalGradient,
-      title: this.title,
+      height: this.height,
+      borderRadius: this.borderRadius,
+      borderWidth: this.borderWidth,
       //
-      textStyle: this.textStyle,
+      title: this.title,
+      titleStyle: this.titleStyle,
       //
       labelText: this.labelText,
       labelColor: this.labelColor,

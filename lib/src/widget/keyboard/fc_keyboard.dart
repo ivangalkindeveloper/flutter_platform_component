@@ -6,7 +6,7 @@ class FCKeyboard extends StatelessWidget {
   const FCKeyboard({
     super.key,
     this.height,
-    this.style,
+    this.numberStyle,
     this.horizontalInterval,
     this.verticalInterval,
     this.prefix,
@@ -17,7 +17,7 @@ class FCKeyboard extends StatelessWidget {
   });
 
   final double? height;
-  final TextStyle? style;
+  final TextStyle? numberStyle;
   final double? horizontalInterval;
   final double? verticalInterval;
   final Widget? prefix;
@@ -40,7 +40,7 @@ class FCKeyboard extends StatelessWidget {
             FCKeyboardNumberButton(
               number: 1,
               height: this.height,
-              style: this.style,
+              numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(1),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
@@ -49,7 +49,7 @@ class FCKeyboard extends StatelessWidget {
             FCKeyboardNumberButton(
               number: 2,
               height: this.height,
-              style: this.style,
+              numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(2),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
@@ -58,7 +58,7 @@ class FCKeyboard extends StatelessWidget {
             FCKeyboardNumberButton(
               number: 3,
               height: this.height,
-              style: this.style,
+              numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(3),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
@@ -72,7 +72,7 @@ class FCKeyboard extends StatelessWidget {
             FCKeyboardNumberButton(
               number: 4,
               height: this.height,
-              style: this.style,
+              numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(4),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
@@ -81,7 +81,7 @@ class FCKeyboard extends StatelessWidget {
             FCKeyboardNumberButton(
               number: 5,
               height: this.height,
-              style: this.style,
+              numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(5),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
@@ -90,7 +90,7 @@ class FCKeyboard extends StatelessWidget {
             FCKeyboardNumberButton(
               number: 6,
               height: this.height,
-              style: this.style,
+              numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(6),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
@@ -104,7 +104,7 @@ class FCKeyboard extends StatelessWidget {
             FCKeyboardNumberButton(
               number: 7,
               height: this.height,
-              style: this.style,
+              numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(7),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
@@ -113,7 +113,7 @@ class FCKeyboard extends StatelessWidget {
             FCKeyboardNumberButton(
               number: 8,
               height: this.height,
-              style: this.style,
+              numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(8),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
@@ -122,7 +122,7 @@ class FCKeyboard extends StatelessWidget {
             FCKeyboardNumberButton(
               number: 9,
               height: this.height,
-              style: this.style,
+              numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(9),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
@@ -141,7 +141,7 @@ class FCKeyboard extends StatelessWidget {
             FCKeyboardNumberButton(
               number: 0,
               height: this.height,
-              style: this.style,
+              numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(0),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,

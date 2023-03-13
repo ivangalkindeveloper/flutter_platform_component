@@ -11,7 +11,7 @@ class FCButtonRowChild extends StatelessWidget {
     required this.prefix,
     required this.title,
     required this.textAlign,
-    required this.style,
+    required this.titleStyle,
     required this.postfix,
   }) : super(key: key);
 
@@ -21,7 +21,7 @@ class FCButtonRowChild extends StatelessWidget {
   final Widget? prefix;
   final String? title;
   final TextAlign textAlign;
-  final TextStyle? style;
+  final TextStyle? titleStyle;
   final Widget? postfix;
 
   Widget _gradientWrapper({required Widget child}) {
@@ -54,13 +54,13 @@ class FCButtonRowChild extends StatelessWidget {
               child: Text(
                 this.title!,
                 textAlign: this.textAlign,
-                style: this.style?.copyWith(
-                          color: this.style?.color ?? theme.black,
-                          fontSize: this.style?.fontSize ?? size.s16,
+                style: this.titleStyle?.copyWith(
+                          color: this.titleStyle?.color ?? theme.black,
+                          fontSize: this.titleStyle?.fontSize ?? size.s16,
                           fontWeight:
-                              this.style?.fontWeight ?? textStyle.fontWeightRegular,
+                              this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
                           fontFamily:
-                              this.style?.fontFamily ?? textStyle.fontFamilyRegular,
+                              this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
                           package: textStyle.package,
                         ) ??
                     TextStyle(

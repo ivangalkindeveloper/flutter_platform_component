@@ -11,40 +11,44 @@ class FCBasicCodeField extends StatefulWidget {
     super.key,
     required this.context,
     required this.length,
+    this.controller,
+    this.errorController,
+    this.focusNode,
     required this.unfocusedBackgroundColor,
     required this.focusedBackgroundColor,
     required this.focusedBorderColor,
     this.itemHeight,
     this.itemWidth,
-    this.style,
-    this.controller,
-    this.errorController,
-    this.focusNode,
+    this.itemStyle,
+    this.borderRadius,
+    this.borderWidth,
     this.horizontalInterval,
-    this.isAutofocus = false,
-    this.isShowCursor = false,
     this.onChanged,
     this.onCompleted,
+    this.isAutofocus = false,
+    this.isShowCursor = false,
     this.isDisabled = false,
     this.disabledColor,
   });
 
   final BuildContext context;
   final int length;
+  final TextEditingController? controller;
+  final StreamController<bool?>? errorController;
+  final FocusNode? focusNode;
   final Color unfocusedBackgroundColor;
   final Color focusedBackgroundColor;
   final Color focusedBorderColor;
   final double? itemHeight;
   final double? itemWidth;
-  final TextStyle? style;
-  final TextEditingController? controller;
-  final StreamController<bool?>? errorController;
-  final FocusNode? focusNode;
+  final TextStyle? itemStyle;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   final double? horizontalInterval;
-  final bool isAutofocus;
-  final bool isShowCursor;
   final void Function(String)? onChanged;
   final void Function(String)? onCompleted;
+  final bool isAutofocus;
+  final bool isShowCursor;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -116,7 +120,7 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
   }) =>
       PinTheme(
         height: this.widget.itemHeight ?? this._size.heightCodeField,
-        width: this.widget.itemWidth ?? (this._size.heightCodeField * 0.7),
+        width: this.widget.itemWidth ?? (this._size.heightCodeField * 0.75),
         textStyle: style?.copyWith(
               color: style.color ?? this._theme.black,
               fontSize: style.fontSize ?? this._size.s20,
@@ -133,11 +137,11 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
             ),
         decoration: BoxDecoration(
           color: backgroundColor,
-          borderRadius: this._config.borderRadiusField,
+          borderRadius: this.widget.borderRadius ?? this._config.borderRadiusField,
           border: borderColor != null
               ? Border.all(
                   color: borderColor,
-                  width: this._config.borderWidthField,
+                  width: this.widget.borderWidth ?? this._config.borderWidthField,
                 )
               : null,
         ),
@@ -172,18 +176,18 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
               defaultPinTheme: this._item(
                 textStyle: textStyle,
                 backgroundColor: this.widget.unfocusedBackgroundColor,
-                style: this.widget.style,
+                style: this.widget.itemStyle,
               ),
               focusedPinTheme: this._item(
                 textStyle: textStyle,
                 backgroundColor: this.widget.focusedBackgroundColor,
                 borderColor: this.widget.focusedBorderColor,
-                style: this.widget.style,
+                style: this.widget.itemStyle,
               ),
               submittedPinTheme: this._item(
                 textStyle: textStyle,
                 backgroundColor: this.widget.unfocusedBackgroundColor,
-                style: this.widget.style,
+                style: this.widget.itemStyle,
               ),
               errorPinTheme: this._item(
                 textStyle: textStyle,
@@ -218,7 +222,8 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
             child: this.widget.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.widget.disabledColor,
-                    borderRadius: this._config.borderRadiusField,
+                    borderRadius:
+                        this.widget.borderRadius ?? this._config.borderRadiusField,
                   )
                 : null,
           ),

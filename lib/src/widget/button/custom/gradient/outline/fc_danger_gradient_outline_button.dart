@@ -6,9 +6,12 @@ import 'package:flutter/widgets.dart';
 class FCDangerGradientOutlineButton extends StatelessWidget {
   const FCDangerGradientOutlineButton({
     super.key,
+    this.height,
+    this.borderRadius,
+    this.padding,
     this.prefix,
     this.title,
-    this.style,
+    this.titleStyle,
     this.postfix,
     required this.onPressed,
     this.isFilled = false,
@@ -17,9 +20,12 @@ class FCDangerGradientOutlineButton extends StatelessWidget {
     this.disabledColor,
   });
 
+  final double? height;
+  final BorderRadius? borderRadius;
+  final EdgeInsets? padding;
   final Widget? prefix;
   final String? title;
-  final TextStyle? style;
+  final TextStyle? titleStyle;
   final Widget? postfix;
   final VoidCallback onPressed;
   final bool isFilled;
@@ -37,6 +43,9 @@ class FCDangerGradientOutlineButton extends StatelessWidget {
       backgroundGradient: this.isFilled ? theme.dangerLightGradient : null,
       borderGradient: theme.dangerGradient,
       splashColor: theme.danger,
+      height: this.height,
+      borderRadius: this.borderRadius,
+      padding: this.padding,
       child: FCAnimatedOpacityStack(
         condition: this.isLoading,
         firstChild: FCCircularIndicator.danger(context: context),
@@ -47,10 +56,10 @@ class FCDangerGradientOutlineButton extends StatelessWidget {
           prefix: this.prefix,
           title: this.title,
           textAlign: TextAlign.center,
-          style: this.style?.copyWith(
-                    color: this.style?.color ?? theme.danger,
-                    fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
-                    fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
+          titleStyle: this.titleStyle?.copyWith(
+                    color: this.titleStyle?.color ?? theme.danger,
+                    fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+                    fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
                     package: textStyle.package,
                   ) ??
               TextStyle(

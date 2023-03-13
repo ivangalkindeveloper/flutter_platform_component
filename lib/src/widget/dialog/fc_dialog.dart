@@ -9,6 +9,7 @@ class FCDialog extends FCPlatformWidget {
   FCDialog({
     super.key,
     Color? backgroundColor,
+    BorderRadius? borderRadius,
     required String title,
     TextStyle? titleStyle,
     String? description,
@@ -16,11 +17,11 @@ class FCDialog extends FCPlatformWidget {
     Widget? content,
     required List<FCDialogItem> items,
     TextStyle? itemStyle,
-    BorderRadius? borderRadius,
   }) : super(
           cupertino: _FCDialogCupertino(
             key: key,
             backgroundColor: backgroundColor,
+            borderRadius: borderRadius,
             title: title,
             titleStyle: titleStyle,
             description: description,
@@ -28,11 +29,11 @@ class FCDialog extends FCPlatformWidget {
             content: content,
             items: items,
             itemStyle: itemStyle,
-            borderRadius: borderRadius,
           ),
           material: _FCDialogMaterial(
             key: key,
             backgroundColor: backgroundColor,
+            borderRadius: borderRadius,
             title: title,
             titleStyle: titleStyle,
             description: description,
@@ -40,7 +41,6 @@ class FCDialog extends FCPlatformWidget {
             content: content,
             items: items,
             itemStyle: itemStyle,
-            borderRadius: borderRadius,
           ),
         );
 }
@@ -49,6 +49,7 @@ class _FCDialogCupertino extends StatelessWidget {
   const _FCDialogCupertino({
     super.key,
     required this.backgroundColor,
+    required this.borderRadius,
     required this.title,
     required this.titleStyle,
     required this.description,
@@ -56,10 +57,10 @@ class _FCDialogCupertino extends StatelessWidget {
     required this.content,
     required this.items,
     required this.itemStyle,
-    required this.borderRadius,
   });
 
   final Color? backgroundColor;
+  final BorderRadius? borderRadius;
   final String title;
   final TextStyle? titleStyle;
   final String? description;
@@ -67,7 +68,6 @@ class _FCDialogCupertino extends StatelessWidget {
   final Widget? content;
   final List<FCDialogItem> items;
   final TextStyle? itemStyle;
-  final BorderRadius? borderRadius;
 
   TextStyle _titleStyle({
     required IFCTextStyle textStyle,
@@ -213,6 +213,7 @@ class _FCDialogMaterial extends StatelessWidget {
   const _FCDialogMaterial({
     super.key,
     required this.backgroundColor,
+    required this.borderRadius,
     required this.title,
     required this.titleStyle,
     required this.description,
@@ -220,10 +221,10 @@ class _FCDialogMaterial extends StatelessWidget {
     required this.content,
     required this.items,
     required this.itemStyle,
-    required this.borderRadius,
   });
 
   final Color? backgroundColor;
+  final BorderRadius? borderRadius;
   final String title;
   final TextStyle? titleStyle;
   final String? description;
@@ -231,7 +232,6 @@ class _FCDialogMaterial extends StatelessWidget {
   final Widget? content;
   final List<FCDialogItem> items;
   final TextStyle? itemStyle;
-  final BorderRadius? borderRadius;
 
   TextStyle _titleStyle({
     required IFCTextStyle textStyle,

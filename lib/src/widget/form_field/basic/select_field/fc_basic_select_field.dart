@@ -8,13 +8,15 @@ import 'package:flutter/material.dart' show Colors;
 class FCBasicSelectField extends StatefulWidget {
   const FCBasicSelectField({
     super.key,
-    this.height,
     required this.backgroundColor,
     required this.splashColor,
     this.internalColor,
-    required this.title,
+    this.height,
+    this.borderRadius,
+    this.borderWidth,
     //
-    this.textStyle,
+    required this.title,
+    this.titleStyle,
     //
     required this.labelText,
     this.labelColor,
@@ -38,13 +40,15 @@ class FCBasicSelectField extends StatefulWidget {
     this.disabledColor,
   });
 
-  final double? height;
   final Color backgroundColor;
   final Color splashColor;
   final Color? internalColor;
-  final String? title;
+  final double? height;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   //
-  final TextStyle? textStyle;
+  final String? title;
+  final TextStyle? titleStyle;
   //
   final String labelText;
   final Color? labelColor;
@@ -119,9 +123,11 @@ class _FCBasicSelectFieldState extends State<FCBasicSelectField> {
         backgroundColor: this.widget.backgroundColor,
         focusedColor: Colors.transparent,
         internalColor: this.widget.internalColor,
+        borderRadius: this.widget.borderRadius,
+        borderWidth: this.widget.borderWidth,
         controller: this._controller,
         //
-        textStyle: this.widget.textStyle,
+        textStyle: this.widget.titleStyle,
         //
         labelText: this.widget.labelText,
         labelColor: this.widget.labelColor,

@@ -9,15 +9,14 @@ class FCBasicButton extends FCPlatformWidget {
   FCBasicButton({
     super.key,
     Color? backgroundColor,
-    Color? borderColor,
     required Color splashColor,
     double? height,
     BorderRadius? borderRadius,
+    Color? borderColor,
     double? borderWidth,
     EdgeInsets? padding,
     required Widget child,
     required VoidCallback onPressed,
-    bool isExpanded = true,
     bool isDisabled = false,
     Color? disabledColor,
   }) : super(
@@ -32,7 +31,6 @@ class FCBasicButton extends FCPlatformWidget {
             padding: padding,
             child: child,
             onPressed: onPressed,
-            isExpanded: isExpanded,
             isDisabled: isDisabled,
             disabledColor: disabledColor,
           ),
@@ -47,7 +45,6 @@ class FCBasicButton extends FCPlatformWidget {
             padding: padding,
             child: child,
             onPressed: onPressed,
-            isExpanded: isExpanded,
             isDisabled: isDisabled,
             disabledColor: disabledColor,
           ),
@@ -66,7 +63,6 @@ class _FCBasicButtonCupertino extends StatelessWidget {
     required this.padding,
     required this.child,
     required this.onPressed,
-    required this.isExpanded,
     required this.isDisabled,
     required this.disabledColor,
   });
@@ -80,7 +76,6 @@ class _FCBasicButtonCupertino extends StatelessWidget {
   final EdgeInsets? padding;
   final Widget child;
   final VoidCallback onPressed;
-  final bool isExpanded;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -143,7 +138,6 @@ class _FCBasicButtonMaterial extends StatelessWidget {
     required this.padding,
     required this.child,
     required this.onPressed,
-    required this.isExpanded,
     required this.isDisabled,
     required this.disabledColor,
   });
@@ -157,7 +151,6 @@ class _FCBasicButtonMaterial extends StatelessWidget {
   final EdgeInsets? padding;
   final Widget child;
   final VoidCallback onPressed;
-  final bool isExpanded;
   final bool isDisabled;
   final Color? disabledColor;
 

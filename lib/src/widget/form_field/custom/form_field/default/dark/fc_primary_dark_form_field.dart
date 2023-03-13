@@ -6,11 +6,13 @@ import 'package:flutter/widgets.dart';
 class FCPrimaryDarkFormField extends StatelessWidget {
   const FCPrimaryDarkFormField({
     super.key,
-    this.height,
-    this.internalColor,
-    this.internalIconHeight,
     this.controller,
     this.focusNode,
+    this.internalColor,
+    this.internalIconHeight,
+    this.height,
+    this.borderRadius,
+    this.borderWidth,
     //
     this.textStyle,
     //
@@ -45,11 +47,13 @@ class FCPrimaryDarkFormField extends StatelessWidget {
     this.disabledColor,
   });
 
-  final double? height;
-  final Color? internalColor;
-  final double? internalIconHeight;
   final TextEditingController? controller;
   final FocusNode? focusNode;
+  final Color? internalColor;
+  final double? internalIconHeight;
+  final double? height;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   //
   final TextStyle? textStyle;
   //
@@ -90,13 +94,15 @@ class FCPrimaryDarkFormField extends StatelessWidget {
 
     return FCBasicFormField(
       context: context,
-      height: this.height,
+      controller: this.controller,
+      focusNode: this.focusNode,
       backgroundColor: theme.backgroundComponent,
       focusedColor: theme.primaryDark,
       internalColor: this.internalColor,
       internalIconHeight: this.internalIconHeight,
-      controller: this.controller,
-      focusNode: this.focusNode,
+      height: this.height,
+      borderRadius: this.borderRadius,
+      borderWidth: this.borderWidth,
       //
       textStyle: this.textStyle,
       //

@@ -8,13 +8,15 @@ class FCBasicGradientFormField extends StatefulWidget {
   const FCBasicGradientFormField({
     super.key,
     required this.context,
-    this.height,
+    this.controller,
+    this.focusNode,
     required this.backgroundGradient,
     required this.focusedGradient,
     this.internalGradient,
     this.internalIconHeight,
-    this.controller,
-    this.focusNode,
+    this.height,
+    this.borderRadius,
+    this.borderWidth,
     //
     this.textStyle,
     //
@@ -50,13 +52,15 @@ class FCBasicGradientFormField extends StatefulWidget {
   });
 
   final BuildContext context;
-  final double? height;
+  final TextEditingController? controller;
+  final FocusNode? focusNode;
   final Gradient backgroundGradient;
   final Gradient focusedGradient;
   final Gradient? internalGradient;
   final double? internalIconHeight;
-  final TextEditingController? controller;
-  final FocusNode? focusNode;
+  final double? height;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   //
   final TextStyle? textStyle;
   //
@@ -249,7 +253,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
               ),
               decoration: BoxDecoration(
                 gradient: this._backgroundGradient(),
-                borderRadius: this._config.borderRadiusField,
+                borderRadius: this.widget.borderRadius ?? this._config.borderRadiusField,
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -369,10 +373,11 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                     gradient: this._borderGradient(),
                     child: Container(
                       decoration: BoxDecoration(
-                        borderRadius: this._config.borderRadiusField,
+                        borderRadius:
+                            this.widget.borderRadius ?? this._config.borderRadiusField,
                         border: Border.all(
                           color: this._borderGradient().colors.first,
-                          width: this._config.borderWidthButton,
+                          width: this.widget.borderWidth ?? this._config.borderWidthField,
                         ),
                       ),
                       child: const SizedBox(),
@@ -386,7 +391,8 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                 child: this.widget.isDisabled
                     ? FCComponentDisabledOverlay(
                         color: this.widget.disabledColor,
-                        borderRadius: this._config.borderRadiusField,
+                        borderRadius:
+                            this.widget.borderRadius ?? this._config.borderRadiusField,
                       )
                     : null,
               ),

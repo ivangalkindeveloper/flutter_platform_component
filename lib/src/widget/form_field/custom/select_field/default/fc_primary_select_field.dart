@@ -5,11 +5,13 @@ import 'package:flutter/widgets.dart';
 class FCPrimarySelectField extends StatelessWidget {
   const FCPrimarySelectField({
     super.key,
-    this.height,
     this.internalColor,
-    required this.title,
+    this.height,
+    this.borderRadius,
+    this.borderWidth,
     //
-    this.textStyle,
+    required this.title,
+    this.titleStyle,
     //
     required this.labelText,
     this.labelColor,
@@ -33,11 +35,13 @@ class FCPrimarySelectField extends StatelessWidget {
     this.disabledColor,
   });
 
-  final double? height;
   final Color? internalColor;
-  final String? title;
+  final double? height;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   //
-  final TextStyle? textStyle;
+  final String? title;
+  final TextStyle? titleStyle;
   //
   final String labelText;
   final Color? labelColor;
@@ -66,13 +70,15 @@ class FCPrimarySelectField extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicSelectField(
-      height: this.height,
       backgroundColor: theme.backgroundComponent,
       splashColor: theme.primary,
       internalColor: this.internalColor,
-      title: this.title,
+      height: this.height,
+      borderRadius: this.borderRadius,
+      borderWidth: this.borderWidth,
       //
-      textStyle: this.textStyle,
+      title: this.title,
+      titleStyle: this.titleStyle,
       //
       labelText: this.labelText,
       labelColor: this.labelColor,
