@@ -11,13 +11,16 @@ class FCBasicIconButton extends FCPlatformWidget {
     required Color splashColor,
     required Widget icon,
     required VoidCallback onPressed,
+    double? height,
     bool isDisabled = false,
     Color? disabledColor,
   }) : super(
           cupertino: _FCBasicIconButtonCupertino(
             key: key,
+            splashColor: splashColor,
             icon: icon,
             onPressed: onPressed,
+            height: height,
             isDisabled: isDisabled,
             disabledColor: disabledColor,
           ),
@@ -26,6 +29,7 @@ class FCBasicIconButton extends FCPlatformWidget {
             splashColor: splashColor,
             icon: icon,
             onPressed: onPressed,
+            height: height,
             isDisabled: isDisabled,
             disabledColor: disabledColor,
           ),
@@ -35,14 +39,18 @@ class FCBasicIconButton extends FCPlatformWidget {
 class _FCBasicIconButtonCupertino extends StatelessWidget {
   const _FCBasicIconButtonCupertino({
     super.key,
+    required this.splashColor,
     required this.icon,
     required this.onPressed,
+    required this.height,
     required this.isDisabled,
     required this.disabledColor,
   });
 
+  final Color splashColor;
   final Widget icon;
   final VoidCallback onPressed;
+  final double? height;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -51,15 +59,18 @@ class _FCBasicIconButtonCupertino extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
+    final double height = this.height ?? size.heightIconDefault;
+    final VoidCallback onPressed = this.isDisabled ? () {} : this.onPressed;
+
     return SizedBox(
-      height: size.heightIconDefault,
-      width: size.heightIconDefault,
+      height: height,
+      width: height,
       child: Stack(
         alignment: Alignment.center,
         children: [
           CupertinoButton(
-            minSize: size.heightIconLarge,
-            onPressed: this.isDisabled ? () {} : this.onPressed,
+            minSize: height,
+            onPressed: onPressed,
             padding: EdgeInsets.zero,
             child: this.icon,
           ),
@@ -68,6 +79,7 @@ class _FCBasicIconButtonCupertino extends StatelessWidget {
               child: this.isDisabled
                   ? FCComponentDisabledOverlay(
                       color: this.disabledColor,
+                      borderRadius: BorderRadius.circular(height),
                     )
                   : null,
             ),
@@ -84,6 +96,7 @@ class _FCBasicIconButtonMaterial extends StatelessWidget {
     required this.splashColor,
     required this.icon,
     required this.onPressed,
+    required this.height,
     required this.isDisabled,
     required this.disabledColor,
   });
@@ -91,6 +104,7 @@ class _FCBasicIconButtonMaterial extends StatelessWidget {
   final Color splashColor;
   final Widget icon;
   final VoidCallback onPressed;
+  final double? height;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -99,16 +113,19 @@ class _FCBasicIconButtonMaterial extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
+    final double height = this.height ?? size.heightIconDefault;
+    final VoidCallback onPressed = this.isDisabled ? () {} : this.onPressed;
+
     return SizedBox(
-      height: size.heightIconDefault,
-      width: size.heightIconDefault,
+      height: height,
+      width: height,
       child: Stack(
         alignment: Alignment.center,
         children: [
           IconButton(
             splashColor: this.splashColor,
             iconSize: size.heightIconLarge,
-            onPressed: this.isDisabled ? () {} : this.onPressed,
+            onPressed: onPressed,
             padding: EdgeInsets.zero,
             icon: this.icon,
           ),
@@ -117,6 +134,7 @@ class _FCBasicIconButtonMaterial extends StatelessWidget {
               child: this.isDisabled
                   ? FCComponentDisabledOverlay(
                       color: this.disabledColor,
+                      borderRadius: BorderRadius.circular(height),
                     )
                   : null,
             ),

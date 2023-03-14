@@ -5,6 +5,8 @@ import 'package:flutter/widgets.dart';
 class FCDangerLightGradientSnackbar extends StatelessWidget {
   const FCDangerLightGradientSnackbar({
     super.key,
+    this.borderRadius,
+    this.borderWidth,
     this.padding,
     this.mainAxisAlignment,
     this.prefix,
@@ -13,6 +15,8 @@ class FCDangerLightGradientSnackbar extends StatelessWidget {
     this.bottom,
   });
 
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   final EdgeInsets? padding;
   final MainAxisAlignment? mainAxisAlignment;
   final Widget? prefix;
@@ -27,6 +31,8 @@ class FCDangerLightGradientSnackbar extends StatelessWidget {
 
     return FCBasicGradientSnackbar(
       backgroundGradient: theme.dangerLightGradient,
+      borderRadius: this.borderRadius,
+      borderWidth: this.borderWidth,
       padding: this.padding,
       mainAxisAlignment: this.mainAxisAlignment,
       prefix: this.prefix,

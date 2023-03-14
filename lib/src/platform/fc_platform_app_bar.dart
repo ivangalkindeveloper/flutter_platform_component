@@ -1,9 +1,10 @@
-import 'package:flutter/cupertino.dart'
-    show kMinInteractiveDimensionCupertino, ObstructingPreferredSizeWidget;
 import 'package:flutter_component/src/extension/fc_extension.dart';
-import 'package:flutter/material.dart' show kToolbarHeight;
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
+
+import 'package:flutter/cupertino.dart'
+    show kMinInteractiveDimensionCupertino, ObstructingPreferredSizeWidget;
+import 'package:flutter/material.dart' show kToolbarHeight;
 
 class FCPlatformAppBar extends StatelessWidget implements ObstructingPreferredSizeWidget {
   const FCPlatformAppBar({
@@ -33,9 +34,12 @@ class FCPlatformAppBar extends StatelessWidget implements ObstructingPreferredSi
 
     return FCPlatform.decompose<Size, Size, Size>(
       platform: platform,
-      cupertino:
-          Size.fromHeight(kMinInteractiveDimensionCupertino + additionalPreferredHeight),
-      material: Size.fromHeight(kToolbarHeight + additionalPreferredHeight),
+      cupertino: Size.fromHeight(
+        kMinInteractiveDimensionCupertino + additionalPreferredHeight,
+      ),
+      material: Size.fromHeight(
+        kToolbarHeight + additionalPreferredHeight,
+      ),
     );
   }
 

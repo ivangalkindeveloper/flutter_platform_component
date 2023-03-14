@@ -12,6 +12,7 @@ class FCBasicGradientShimmer extends StatefulWidget {
     this.shape = BoxShape.rectangle,
     this.height,
     this.width,
+    this.borderRadius,
     this.duration,
     this.child,
   });
@@ -22,6 +23,7 @@ class FCBasicGradientShimmer extends StatefulWidget {
   final BoxShape shape;
   final double? height;
   final double? width;
+  final BorderRadius? borderRadius;
   final Duration? duration;
   final Widget? child;
 
@@ -33,8 +35,10 @@ class _FCBasicGradientShimmerState extends State<FCBasicGradientShimmer> {
   late final FCConfig _config;
   late final IFCSize _size;
 
-  late final StreamSubscription _highlightSubscription;
   bool _isHighlight = true;
+
+  // Subscription
+  late final StreamSubscription _highlightSubscription;
 
   @override
   void initState() {
@@ -42,6 +46,7 @@ class _FCBasicGradientShimmerState extends State<FCBasicGradientShimmer> {
     this._config = this.widget.context.config;
     this._size = this._config.size;
 
+    // Subscription
     this._highlightSubscription = Stream.periodic(
             this.widget.duration ?? this._size.durationShimmer,
             (int second) => second % 2 == 0)
@@ -50,23 +55,29 @@ class _FCBasicGradientShimmerState extends State<FCBasicGradientShimmer> {
 
   @override
   void dispose() {
+    // Subscription
     this._highlightSubscription.cancel();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
+    final Gradient gradient = this._isHighlight
+        ? this.widget.highlightGradient
+        : this.widget.backgroundGradient;
+    final BorderRadius borderRadius =
+        this.widget.borderRadius ?? this._config.borderRadiusCard;
+    final Widget child = this.widget.child ?? const SizedBox();
+
     return FCAnimatedContainer(
       height: this.widget.height,
       width: this.widget.width,
       decoration: BoxDecoration(
-        gradient: this._isHighlight
-            ? this.widget.highlightGradient
-            : this.widget.backgroundGradient,
-        borderRadius: this._config.borderRadiusCard,
+        gradient: gradient,
+        borderRadius: borderRadius,
         shape: this.widget.shape,
       ),
-      child: this.widget.child ?? const SizedBox(),
+      child: child,
     );
   }
 }

@@ -40,7 +40,7 @@ class FCWarningToggle<T> extends StatelessWidget {
       items: this.items,
       onChanged: this.onChanged,
       unselectedBackgroundColor: theme.backgroundComponent,
-      unselectedInternalColor: theme.grey,
+      unselectedInternalColor: theme.black,
       unselectedSplashColor: theme.warning,
       unselectedStyle: this.unselectedStyle,
       selectedBackgroundColor: theme.warning,

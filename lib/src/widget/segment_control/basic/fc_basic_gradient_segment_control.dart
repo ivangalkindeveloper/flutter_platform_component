@@ -61,37 +61,46 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
+    final double height = this.height ?? size.heightSegmentControl;
+    final BorderRadius borderRadius =
+        this.borderRadius ?? config.borderRadiusSegmentControl;
+
     return SizedBox(
-      height: this.height ?? size.heightSegmentControl,
+      height: height,
       child: Stack(
         children: [
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              ...this.items.mapIndexed(
-                    (int index, FCSegmentControlItem item) => _FCSegmentControlButton(
-                      index: index,
-                      item: item,
-                      length: this.items.length,
-                      unselectedBackgroundGradient: this.unselectedBackgroundGradient,
-                      unselectedBorderGradient: this.unselectedBorderGradient,
-                      unselectedInternalGradient: this.unselectedInternalGradient,
-                      unselectedSplashColor: this.unselectedSplashColor,
-                      unselectedStyle: this.unselectedStyle,
-                      selectedBackgroundGradient: this.selectedBackgroundGradient,
-                      selectedBorderGradient: this.selectedBorderGradient,
-                      selectedInternalGradient: this.selectedInternalGradient,
-                      selectedSplashColor: this.selectedSplashColor,
-                      selectedStyle: this.selectedStyle,
-                      height: this.height,
-                      padding: this.padding,
-                      borderRadius: this.borderRadius,
-                      borderWidth: this.borderWidth,
-                      onPressed:
-                          this.isDisabled ? () {} : () => this.onChanged(item.value),
-                      isSelected: item.value == this.value,
-                    ),
-                  ),
+              ...this.items.mapIndexed((
+                int index,
+                FCSegmentControlItem item,
+              ) {
+                final void Function() onPressed =
+                    this.isDisabled ? () {} : () => this.onChanged(item.value);
+
+                return _FCSegmentControlButton(
+                  index: index,
+                  item: item,
+                  length: this.items.length,
+                  unselectedBackgroundGradient: this.unselectedBackgroundGradient,
+                  unselectedBorderGradient: this.unselectedBorderGradient,
+                  unselectedInternalGradient: this.unselectedInternalGradient,
+                  unselectedSplashColor: this.unselectedSplashColor,
+                  unselectedStyle: this.unselectedStyle,
+                  selectedBackgroundGradient: this.selectedBackgroundGradient,
+                  selectedBorderGradient: this.selectedBorderGradient,
+                  selectedInternalGradient: this.selectedInternalGradient,
+                  selectedSplashColor: this.selectedSplashColor,
+                  selectedStyle: this.selectedStyle,
+                  height: height,
+                  padding: this.padding,
+                  borderRadius: borderRadius,
+                  borderWidth: this.borderWidth,
+                  onPressed: onPressed,
+                  isSelected: item.value == this.value,
+                );
+              }),
             ],
           ),
           Positioned.fill(
@@ -99,8 +108,7 @@ class FCBasicGradientSegmentControl<T> extends StatelessWidget {
               child: this.isDisabled
                   ? FCComponentDisabledOverlay(
                       color: this.disabledColor,
-                      borderRadius:
-                          this.borderRadius ?? config.borderRadiusSegmentControl,
+                      borderRadius: borderRadius,
                     )
                   : null,
             ),
@@ -148,79 +156,12 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   final Gradient selectedInternalGradient;
   final Color selectedSplashColor;
   final TextStyle? selectedStyle;
-  final double? height;
+  final double height;
   final EdgeInsets? padding;
-  final BorderRadius? borderRadius;
+  final BorderRadius borderRadius;
   final double? borderWidth;
   final VoidCallback onPressed;
   final bool isSelected;
-
-  BorderRadius _borderRadius({
-    required FCConfig config,
-  }) =>
-      this.borderRadius ?? config.borderRadiusSegmentControl;
-
-  double _borderWidth({
-    required FCConfig config,
-  }) =>
-      this.borderWidth ?? config.borderWidthSegmentControl;
-
-  Radius _topLeftRadius({
-    required FCConfig config,
-    required int index,
-  }) {
-    if (index == 0) return Radius.circular(this._borderRadius(config: config).topLeft.x);
-
-    return Radius.zero;
-  }
-
-  Radius _topRightRadius({
-    required FCConfig config,
-    required int index,
-  }) {
-    if ((index + 1) == this.length)
-      return Radius.circular(this._borderRadius(config: config).topRight.x);
-
-    return Radius.zero;
-  }
-
-  Radius _bottomLeftRadius({
-    required FCConfig config,
-    required int index,
-  }) {
-    if (index == 0)
-      return Radius.circular(this._borderRadius(config: config).bottomLeft.x);
-
-    return Radius.zero;
-  }
-
-  Radius _bottomRightRadius({
-    required FCConfig config,
-    required int index,
-  }) {
-    if ((index + 1) == this.length)
-      return Radius.circular(this._borderRadius(config: config).bottomRight.x);
-
-    return Radius.zero;
-  }
-
-  double _leftBorderWidth({
-    required FCConfig config,
-    required int index,
-  }) {
-    if (index == 0) return this._borderWidth(config: config);
-
-    return 0;
-  }
-
-  double _rightBorderWidth({
-    required FCConfig config,
-    required int index,
-  }) {
-    if ((index + 1) == this.length) return this._borderWidth(config: config);
-
-    return 0;
-  }
 
   Gradient _backgroundGradient({
     required IFCTheme theme,
@@ -265,7 +206,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
 
     if (this.unselectedSplashColor != null) return this.unselectedSplashColor!;
 
-    return theme.white;
+    return theme.whiteAlways;
   }
 
   @override
@@ -274,98 +215,104 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
+    final Gradient backgroundGradient = this._backgroundGradient(theme: theme);
+    final Color splashColor = this._splashColor(theme: theme);
+    final Gradient borderGradient = this._borderGradient(theme: theme);
+    final Gradient internalGradient = this._internalGradient(theme: theme);
+    final double borderWidth = this.borderWidth ?? config.borderWidthSegmentControl;
+    final double leftBorderWidth = index == 0 ? borderWidth : 0;
+    final double rightBorderWidth = (index + 1) == this.length ? borderWidth : 0;
+    final Radius topLeft =
+        index == 0 ? Radius.circular(this.borderRadius.topLeft.x) : Radius.zero;
+    final Radius topRight = (index + 1) == this.length
+        ? Radius.circular(this.borderRadius.topRight.x)
+        : Radius.zero;
+    final Radius bottomLeft =
+        index == 0 ? Radius.circular(this.borderRadius.bottomLeft.x) : Radius.zero;
+    final Radius bottomRight = (index + 1) == this.length
+        ? Radius.circular(this.borderRadius.bottomRight.x)
+        : Radius.zero;
+    final EdgeInsets padding = this.padding ??
+        EdgeInsets.symmetric(
+          horizontal: size.s16,
+          vertical: size.s16 / 4,
+        );
+    final TextStyle unselectedStyle = this.selectedStyle?.copyWith(
+              color: this.selectedStyle?.color ?? internalGradient.colors.first,
+            ) ??
+        TextStyle(
+          color: internalGradient.colors.first,
+        );
+    final TextStyle selectedColor = this.unselectedStyle?.copyWith(
+              color: this.unselectedStyle?.color ?? internalGradient.colors.first,
+            ) ??
+        TextStyle(
+          color: internalGradient.colors.first,
+        );
+    final TextStyle titleStyle = this.isSelected ? selectedColor : unselectedStyle;
+
     return FCBasicGradientButton(
-      backgroundGradient: this._backgroundGradient(theme: theme),
-      splashColor: this._splashColor(theme: theme),
-      height: this.height ?? size.heightSegmentControl,
+      backgroundGradient: backgroundGradient,
+      splashColor: splashColor,
+      height: this.height,
       padding: EdgeInsets.zero,
       borderRadius: BorderRadius.only(
-        topLeft: this._topLeftRadius(
-          config: config,
-          index: this.index,
-        ),
-        topRight: this._topRightRadius(
-          config: config,
-          index: this.index,
-        ),
-        bottomLeft: this._bottomLeftRadius(
-          config: config,
-          index: this.index,
-        ),
-        bottomRight: this._bottomRightRadius(
-          config: config,
-          index: this.index,
-        ),
+        topLeft: topLeft,
+        topRight: topRight,
+        bottomLeft: bottomLeft,
+        bottomRight: bottomRight,
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           SizedBox(
-            height: this.height ?? size.heightSegmentControl,
+            height: this.height,
             child: Stack(
               alignment: Alignment.center,
               children: [
                 Positioned.fill(
                   child: FCGradientMask(
-                    gradient: this._borderGradient(theme: theme),
+                    gradient: borderGradient,
                     child: Container(
                       decoration: ShapeDecoration(
                         shape: CustomRoundedRectangleBorder(
                           topSide: BorderSide(
-                            color: this._borderGradient(theme: theme).colors.first,
-                            width: this._borderWidth(config: config),
+                            color: borderGradient.colors.first,
+                            width: borderWidth,
                           ),
                           bottomSide: BorderSide(
-                            color: this._borderGradient(theme: theme).colors.first,
-                            width: this._borderWidth(config: config),
+                            color: borderGradient.colors.first,
+                            width: borderWidth,
                           ),
                           leftSide: BorderSide(
-                            color: this._borderGradient(theme: theme).colors.first,
-                            width: this._leftBorderWidth(
-                              config: config,
-                              index: index,
-                            ),
+                            color: borderGradient.colors.first,
+                            width: leftBorderWidth,
                           ),
                           rightSide: BorderSide(
-                            color: this._borderGradient(theme: theme).colors.first,
-                            width: this._rightBorderWidth(
-                              config: config,
-                              index: index,
-                            ),
+                            color: borderGradient.colors.first,
+                            width: rightBorderWidth,
                           ),
                           topLeftCornerSide: BorderSide(
-                            color: this._borderGradient(theme: theme).colors.first,
-                            width: this._borderWidth(config: config),
+                            color: borderGradient.colors.first,
+                            width: borderWidth,
                           ),
                           topRightCornerSide: BorderSide(
-                            color: this._borderGradient(theme: theme).colors.first,
-                            width: this._borderWidth(config: config),
+                            color: borderGradient.colors.first,
+                            width: borderWidth,
                           ),
                           bottomLeftCornerSide: BorderSide(
-                            color: this._borderGradient(theme: theme).colors.first,
-                            width: this._borderWidth(config: config),
+                            color: borderGradient.colors.first,
+                            width: borderWidth,
                           ),
                           bottomRightCornerSide: BorderSide(
-                            color: this._borderGradient(theme: theme).colors.first,
-                            width: this._borderWidth(config: config),
+                            color: borderGradient.colors.first,
+                            width: borderWidth,
                           ),
                           borderRadius: BorderRadius.only(
-                            topLeft: this._topLeftRadius(
-                              config: config,
-                              index: this.index,
-                            ),
-                            topRight: this._topRightRadius(
-                              config: config,
-                              index: this.index,
-                            ),
-                            bottomLeft: this._bottomLeftRadius(
-                              config: config,
-                              index: this.index,
-                            ),
-                            bottomRight: this._bottomRightRadius(
-                              config: config,
-                              index: this.index,
-                            ),
+                            topLeft: topLeft,
+                            topRight: topRight,
+                            bottomLeft: bottomLeft,
+                            bottomRight: bottomRight,
                           ),
                         ),
                       ),
@@ -373,33 +320,15 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: this.padding ??
-                      EdgeInsets.symmetric(
-                        horizontal: size.s16,
-                        vertical: size.s16 / 4,
-                      ),
+                  padding: padding,
                   child: FCButtonRowChild(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
-                    gradient: this._internalGradient(theme: theme),
+                    gradient: internalGradient,
                     prefix: this.item.prefix,
                     title: this.item.title,
                     textAlign: TextAlign.center,
-                    titleStyle: this.isSelected
-                        ? this.selectedStyle?.copyWith(
-                                  color: this.selectedStyle?.color ??
-                                      this._internalGradient(theme: theme).colors.first,
-                                ) ??
-                            TextStyle(
-                              color: this._internalGradient(theme: theme).colors.first,
-                            )
-                        : this.unselectedStyle?.copyWith(
-                                  color: this.unselectedStyle?.color ??
-                                      this._internalGradient(theme: theme).colors.first,
-                                ) ??
-                            TextStyle(
-                              color: this._internalGradient(theme: theme).colors.first,
-                            ),
+                    titleStyle: titleStyle,
                     postfix: this.item.postfix,
                   ),
                 ),
@@ -408,7 +337,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
           ),
           if ((index + 1) != this.length)
             Container(
-              width: this._borderWidth(config: config),
+              width: borderWidth,
               decoration: BoxDecoration(
                 gradient: this.unselectedBorderGradient ?? this.selectedBorderGradient,
               ),

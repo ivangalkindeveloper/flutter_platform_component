@@ -40,7 +40,7 @@ class FCAccentToggle<T> extends StatelessWidget {
       items: this.items,
       onChanged: this.onChanged,
       unselectedBackgroundColor: theme.backgroundComponent,
-      unselectedInternalColor: theme.grey,
+      unselectedInternalColor: theme.black,
       unselectedSplashColor: theme.accent,
       unselectedStyle: this.unselectedStyle,
       selectedBackgroundColor: theme.accent,

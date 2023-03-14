@@ -29,6 +29,13 @@ class FCBasicPageIndicator extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
+    final double height = this.height ?? size.s16 / 2;
+    final double width = this.index == index
+        ? (this.selectedWidth ?? size.s16)
+        : (this.unselectedWidth ?? size.s16 / 2);
+    final Color color = this.index == index ? this.selectedColor : this.unselectedColor;
+    final Duration duration = this.duration ?? size.durationPageIndicator;
+
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -37,16 +44,14 @@ class FCBasicPageIndicator extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               AnimatedContainer(
-                height: this.height ?? size.s16 / 2,
-                width: this.index == index
-                    ? (this.selectedWidth ?? size.s16)
-                    : (this.unselectedWidth ?? size.s16 / 2),
+                height: height,
+                width: width,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(size.s16),
-                  color: this.index == index ? this.selectedColor : this.unselectedColor,
+                  borderRadius: BorderRadius.circular(size.s32),
+                  color: color,
                 ),
-                duration: this.duration ?? size.durationPageIndicator,
+                duration: duration,
                 curve: Curves.easeInOut,
                 child: const SizedBox(),
               ),

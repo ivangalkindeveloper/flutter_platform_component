@@ -8,8 +8,6 @@ import 'package:flutter/material.dart' show AlertDialog, TextButton;
 class FCDialog extends FCPlatformWidget {
   FCDialog({
     super.key,
-    Color? backgroundColor,
-    BorderRadius? borderRadius,
     required String title,
     TextStyle? titleStyle,
     String? description,
@@ -17,11 +15,11 @@ class FCDialog extends FCPlatformWidget {
     Widget? content,
     required List<FCDialogItem> items,
     TextStyle? itemStyle,
+    Color? backgroundColor,
+    BorderRadius? borderRadius,
   }) : super(
           cupertino: _FCDialogCupertino(
             key: key,
-            backgroundColor: backgroundColor,
-            borderRadius: borderRadius,
             title: title,
             titleStyle: titleStyle,
             description: description,
@@ -29,11 +27,11 @@ class FCDialog extends FCPlatformWidget {
             content: content,
             items: items,
             itemStyle: itemStyle,
+            backgroundColor: backgroundColor,
+            borderRadius: borderRadius,
           ),
           material: _FCDialogMaterial(
             key: key,
-            backgroundColor: backgroundColor,
-            borderRadius: borderRadius,
             title: title,
             titleStyle: titleStyle,
             description: description,
@@ -41,6 +39,8 @@ class FCDialog extends FCPlatformWidget {
             content: content,
             items: items,
             itemStyle: itemStyle,
+            backgroundColor: backgroundColor,
+            borderRadius: borderRadius,
           ),
         );
 }
@@ -69,81 +69,15 @@ class _FCDialogCupertino extends StatelessWidget {
   final List<FCDialogItem> items;
   final TextStyle? itemStyle;
 
-  TextStyle _titleStyle({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-  }) =>
-      this.titleStyle?.copyWith(
-            color: this.titleStyle?.color ?? theme.blackAlways,
-            fontSize: this.titleStyle?.fontSize ?? size.s16,
-            fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
-            fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
-            package: textStyle.package,
-          ) ??
-      TextStyle(
-        color: theme.blackAlways,
-        fontSize: size.s16,
-        fontWeight: textStyle.fontWeightMedium,
-        fontFamily: textStyle.fontFamilyMedium,
-        package: textStyle.package,
-      );
-
-  TextStyle _descriptionStyle({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-  }) =>
-      this.descriptionStyle?.copyWith(
-            color: this.descriptionStyle?.color ?? theme.blackAlways,
-            fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-            fontWeight: this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
-            fontFamily: this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
-            package: textStyle.package,
-          ) ??
-      TextStyle(
-        color: theme.blackAlways,
-        fontSize: size.s14,
-        fontWeight: textStyle.fontWeightRegular,
-        fontFamily: textStyle.fontFamilyRegular,
-        package: textStyle.package,
-      );
-
-  TextStyle _itemStyle({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-  }) =>
-      this.itemStyle?.copyWith(
-            color: this.itemStyle?.color ?? theme.primary,
-            fontSize: this.itemStyle?.fontSize ?? size.s16,
-            fontWeight: this.itemStyle?.fontWeight ?? textStyle.fontWeightMedium,
-            fontFamily: this.itemStyle?.fontFamily ?? textStyle.fontFamilyMedium,
-            package: textStyle.package,
-          ) ??
-      TextStyle(
-        color: theme.primary,
-        fontSize: size.s16,
-        fontWeight: textStyle.fontWeightMedium,
-        fontFamily: textStyle.fontFamilyMedium,
-        package: textStyle.package,
-      );
-
   Widget? _content({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
+    required TextStyle descriptionStyle,
   }) {
     if (this.content != null) return this.content!;
 
     if (this.description != null)
       return Text(
         this.description!,
-        style: this._descriptionStyle(
-          textStyle: textStyle,
-          theme: theme,
-          size: size,
-        ),
+        style: descriptionStyle,
       );
 
     return null;
@@ -151,24 +85,14 @@ class _FCDialogCupertino extends StatelessWidget {
 
   CupertinoDialogAction _item({
     required FCDialogItem item,
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
+    required TextStyle itemStyle,
   }) =>
       CupertinoDialogAction(
         child: Text(
           item.title,
-          style: this._itemStyle(
-            textStyle: textStyle,
-            theme: theme,
-            size: size,
-          ),
+          style: itemStyle,
         ),
-        textStyle: this._itemStyle(
-          textStyle: textStyle,
-          theme: theme,
-          size: size,
-        ),
+        textStyle: itemStyle,
         isDefaultAction: item.isDefaultAction,
         isDestructiveAction: item.isDestructiveAction,
         onPressed: item.onPressed,
@@ -181,27 +105,64 @@ class _FCDialogCupertino extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
+    final TextStyle titleStyle = this.titleStyle?.copyWith(
+              color: this.titleStyle?.color ?? theme.blackAlways,
+              fontSize: this.titleStyle?.fontSize ?? size.s16,
+              fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.blackAlways,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightMedium,
+          fontFamily: textStyle.fontFamilyMedium,
+          package: textStyle.package,
+        );
+    final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
+              color: this.descriptionStyle?.color ?? theme.blackAlways,
+              fontSize: this.descriptionStyle?.fontSize ?? size.s14,
+              fontWeight:
+                  this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily:
+                  this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.blackAlways,
+          fontSize: size.s14,
+          fontWeight: textStyle.fontWeightRegular,
+          fontFamily: textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
+    final TextStyle itemStyle = this.itemStyle?.copyWith(
+              color: this.itemStyle?.color ?? theme.primary,
+              fontSize: this.itemStyle?.fontSize ?? size.s16,
+              fontWeight: this.itemStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily: this.itemStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.primary,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightMedium,
+          fontFamily: textStyle.fontFamilyMedium,
+          package: textStyle.package,
+        );
+
     return CupertinoAlertDialog(
       title: Text(
         this.title,
-        style: this._titleStyle(
-          textStyle: textStyle,
-          theme: theme,
-          size: size,
-        ),
+        style: titleStyle,
       ),
       content: this._content(
-        textStyle: textStyle,
-        theme: theme,
-        size: size,
+        descriptionStyle: descriptionStyle,
       ),
       actions: [
         ...this.items.map(
               (FCDialogItem item) => this._item(
                 item: item,
-                textStyle: textStyle,
-                theme: theme,
-                size: size,
+                itemStyle: itemStyle,
               ),
             ),
       ],
@@ -233,81 +194,15 @@ class _FCDialogMaterial extends StatelessWidget {
   final List<FCDialogItem> items;
   final TextStyle? itemStyle;
 
-  TextStyle _titleStyle({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-  }) =>
-      this.titleStyle?.copyWith(
-            color: this.titleStyle?.color ?? theme.black,
-            fontSize: this.titleStyle?.fontSize ?? size.s16,
-            fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
-            fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
-            package: textStyle.package,
-          ) ??
-      TextStyle(
-        color: theme.black,
-        fontSize: size.s16,
-        fontWeight: textStyle.fontWeightMedium,
-        fontFamily: textStyle.fontFamilyMedium,
-        package: textStyle.package,
-      );
-
-  TextStyle _descriptionStyle({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-  }) =>
-      this.descriptionStyle?.copyWith(
-            color: this.descriptionStyle?.color ?? theme.black,
-            fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-            fontWeight: this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
-            fontFamily: this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
-            package: textStyle.package,
-          ) ??
-      TextStyle(
-        color: theme.black,
-        fontSize: size.s14,
-        fontWeight: textStyle.fontWeightRegular,
-        fontFamily: textStyle.fontFamilyRegular,
-        package: textStyle.package,
-      );
-
-  TextStyle _itemStyle({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-  }) =>
-      this.itemStyle?.copyWith(
-            color: this.itemStyle?.color ?? theme.primary,
-            fontSize: this.itemStyle?.fontSize ?? size.s16,
-            fontWeight: this.itemStyle?.fontWeight ?? textStyle.fontWeightMedium,
-            fontFamily: this.itemStyle?.fontFamily ?? textStyle.fontFamilyMedium,
-            package: textStyle.package,
-          ) ??
-      TextStyle(
-        color: theme.primary,
-        fontSize: size.s16,
-        fontWeight: textStyle.fontWeightMedium,
-        fontFamily: textStyle.fontFamilyMedium,
-        package: textStyle.package,
-      );
-
   Widget? _content({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
+    required TextStyle descriptionStyle,
   }) {
     if (this.content != null) return this.content!;
 
     if (this.description != null)
       return Text(
         this.description!,
-        style: this._descriptionStyle(
-          textStyle: textStyle,
-          theme: theme,
-          size: size,
-        ),
+        style: descriptionStyle,
       );
 
     return null;
@@ -315,32 +210,23 @@ class _FCDialogMaterial extends StatelessWidget {
 
   TextButton _item({
     required FCDialogItem item,
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
+    required TextStyle itemStyle,
     required BorderRadius borderRadius,
-  }) {
-    final TextStyle style = this._itemStyle(
-      textStyle: textStyle,
-      theme: theme,
-      size: size,
-    );
-
-    return TextButton(
-      child: Text(
-        item.title,
-        style: style,
-      ),
-      style: TextButton.styleFrom(
-        elevation: 0,
-        foregroundColor: style.color,
-        shape: RoundedRectangleBorder(
-          borderRadius: borderRadius,
+  }) =>
+      TextButton(
+        child: Text(
+          item.title,
+          style: itemStyle,
         ),
-      ),
-      onPressed: item.onPressed,
-    );
-  }
+        style: TextButton.styleFrom(
+          elevation: 0,
+          foregroundColor: itemStyle.color,
+          shape: RoundedRectangleBorder(
+            borderRadius: borderRadius,
+          ),
+        ),
+        onPressed: item.onPressed,
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -349,33 +235,72 @@ class _FCDialogMaterial extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
+    final Color backgroundColor = this.backgroundColor ?? theme.backgroundScaffold;
+    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusDialog;
+    final TextStyle titleStyle = this.titleStyle?.copyWith(
+              color: this.titleStyle?.color ?? theme.black,
+              fontSize: this.titleStyle?.fontSize ?? size.s16,
+              fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.black,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightMedium,
+          fontFamily: textStyle.fontFamilyMedium,
+          package: textStyle.package,
+        );
+    final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
+              color: this.descriptionStyle?.color ?? theme.black,
+              fontSize: this.descriptionStyle?.fontSize ?? size.s14,
+              fontWeight:
+                  this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily:
+                  this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.black,
+          fontSize: size.s14,
+          fontWeight: textStyle.fontWeightRegular,
+          fontFamily: textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
+    final TextStyle itemStyle = this.itemStyle?.copyWith(
+              color: this.itemStyle?.color ?? theme.primary,
+              fontSize: this.itemStyle?.fontSize ?? size.s16,
+              fontWeight: this.itemStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily: this.itemStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.primary,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightMedium,
+          fontFamily: textStyle.fontFamilyMedium,
+          package: textStyle.package,
+        );
+
     return AlertDialog(
       elevation: 0,
-      backgroundColor: this.backgroundColor ?? theme.backgroundScaffold,
+      backgroundColor: backgroundColor,
       shape: RoundedRectangleBorder(
-        borderRadius: this.borderRadius ?? config.borderRadiusDialog,
+        borderRadius: borderRadius,
       ),
       title: Text(
         this.title,
-        style: this._titleStyle(
-          textStyle: textStyle,
-          theme: theme,
-          size: size,
-        ),
+        style: titleStyle,
       ),
       content: this._content(
-        textStyle: textStyle,
-        theme: theme,
-        size: size,
+        descriptionStyle: descriptionStyle,
       ),
       actions: [
         ...this.items.map(
               (FCDialogItem item) => this._item(
                 item: item,
-                textStyle: textStyle,
-                theme: theme,
-                size: size,
-                borderRadius: this.borderRadius ?? config.borderRadiusDialog,
+                itemStyle: itemStyle,
+                borderRadius: borderRadius,
               ),
             ),
       ],

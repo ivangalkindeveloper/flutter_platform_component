@@ -11,6 +11,7 @@ class FCActionModal extends FCPlatformWidget {
   FCActionModal({
     super.key,
     Color? backgroundColor,
+    Color? color,
     String? title,
     TextStyle? titleStyle,
     String? description,
@@ -23,6 +24,7 @@ class FCActionModal extends FCPlatformWidget {
           cupertino: _FCActionModalCupertino(
             key: key,
             backgroundColor: backgroundColor,
+            color: color,
             title: title,
             titleStyle: titleStyle,
             description: description,
@@ -35,6 +37,7 @@ class FCActionModal extends FCPlatformWidget {
           material: _FCActionModalMaterial(
             key: key,
             backgroundColor: backgroundColor,
+            color: color,
             title: title,
             titleStyle: titleStyle,
             description: description,
@@ -51,6 +54,7 @@ class _FCActionModalCupertino extends StatelessWidget {
   const _FCActionModalCupertino({
     super.key,
     required this.backgroundColor,
+    required this.color,
     required this.title,
     required this.titleStyle,
     required this.description,
@@ -62,6 +66,7 @@ class _FCActionModalCupertino extends StatelessWidget {
   });
 
   final Color? backgroundColor;
+  final Color? color;
   final String? title;
   final TextStyle? titleStyle;
   final String? description;
@@ -71,11 +76,7 @@ class _FCActionModalCupertino extends StatelessWidget {
   final List<FCActionModalItem> items;
   final FCActionModalItem? cancelItem;
 
-  Widget? _title({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-  }) {
+  Widget? _title() {
     if (this.title != null)
       return Text(
         this.title!,
@@ -86,11 +87,7 @@ class _FCActionModalCupertino extends StatelessWidget {
     return null;
   }
 
-  Widget? _content({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-  }) {
+  Widget? _content() {
     if (this.content != null) return this.content;
 
     if (this.description != null)
@@ -104,9 +101,6 @@ class _FCActionModalCupertino extends StatelessWidget {
   }
 
   CupertinoActionSheetAction _item({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
     required FCActionModalItem item,
   }) =>
       CupertinoActionSheetAction(
@@ -128,38 +122,28 @@ class _FCActionModalCupertino extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
-    final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+
+    final Color color = this.color ?? theme.primary;
+    final Widget? title = this._title();
+    final Widget? content = this._content();
 
     return CupertinoTheme(
-      data: CupertinoTheme.of(context).copyWith(primaryColor: theme.primary),
+      data: CupertinoTheme.of(context).copyWith(
+        primaryColor: color,
+      ),
       child: CupertinoActionSheet(
-        title: this._title(
-          textStyle: textStyle,
-          theme: theme,
-          size: size,
-        ),
-        message: this._content(
-          textStyle: textStyle,
-          theme: theme,
-          size: size,
-        ),
+        title: title,
+        message: content,
         actions: [
           ...items.map(
             (FCActionModalItem item) => this._item(
-              textStyle: textStyle,
-              theme: theme,
-              size: size,
               item: item,
             ),
           ),
         ],
         cancelButton: this.cancelItem != null
             ? this._item(
-                textStyle: textStyle,
-                theme: theme,
-                size: size,
                 item: cancelItem!,
               )
             : null,
@@ -172,6 +156,7 @@ class _FCActionModalMaterial extends StatelessWidget {
   const _FCActionModalMaterial({
     super.key,
     required this.backgroundColor,
+    required this.color,
     required this.title,
     required this.titleStyle,
     required this.description,
@@ -183,6 +168,7 @@ class _FCActionModalMaterial extends StatelessWidget {
   });
 
   final Color? backgroundColor;
+  final Color? color;
   final String? title;
   final TextStyle? titleStyle;
   final String? description;
@@ -192,144 +178,67 @@ class _FCActionModalMaterial extends StatelessWidget {
   final List<FCActionModalItem> items;
   final FCActionModalItem? cancelItem;
 
-  TextStyle _titleStyle({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-  }) =>
-      this.titleStyle?.copyWith(
-            color: this.titleStyle?.color ?? theme.black,
-            fontSize: this.titleStyle?.fontSize ?? size.s16,
-            fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
-            fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
-            package: textStyle.package,
-          ) ??
-      TextStyle(
-        color: theme.black,
-        fontSize: size.s16,
-        fontWeight: textStyle.fontWeightRegular,
-        fontFamily: textStyle.fontFamilyRegular,
-        package: textStyle.package,
-      );
-
-  TextStyle _descriptionStyle({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-  }) =>
-      this.descriptionStyle?.copyWith(
-            color: this.descriptionStyle?.color ?? theme.black,
-            fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-            fontWeight: this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
-            fontFamily: this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
-            package: textStyle.package,
-          ) ??
-      TextStyle(
-        color: theme.black,
-        fontSize: size.s14,
-        fontWeight: textStyle.fontWeightRegular,
-        fontFamily: textStyle.fontFamilyRegular,
-        package: textStyle.package,
-      );
-
-  TextStyle _itemStyle({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-    required FCActionModalItem item,
-  }) =>
-      itemStyle?.copyWith(
-        color: this.itemStyle?.color ?? theme.black,
-        fontSize: this.itemStyle?.fontSize ?? size.s16,
-        fontWeight: this.itemStyle?.fontWeight ?? textStyle.fontWeightRegular,
-        fontFamily: this.itemStyle?.fontFamily ?? textStyle.fontFamilyRegular,
-        package: textStyle.package,
-      ) ??
-      TextStyle(
-        color: theme.black,
-        fontSize: size.s16,
-        fontWeight: textStyle.fontWeightRegular,
-        fontFamily: textStyle.fontFamilyRegular,
-        package: textStyle.package,
-      );
-
-  Widget _content({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
+  Widget? _content({
+    required Color backgroundColor,
+    required TextStyle titleStyle,
+    required TextStyle descriptionStyle,
   }) {
     if (this.content != null) return this.content!;
 
     if (this.title != null && this.description != null)
       return ListTile(
-        tileColor: this.backgroundColor ?? theme.backgroundComponent,
+        tileColor: backgroundColor,
         title: Center(
           child: Text(
             this.title!,
             textAlign: TextAlign.center,
-            style: this._titleStyle(
-              textStyle: textStyle,
-              theme: theme,
-              size: size,
-            ),
+            style: titleStyle,
           ),
         ),
         subtitle: Center(
           child: Text(
             this.description!,
             textAlign: TextAlign.center,
-            style: this._descriptionStyle(
-              textStyle: textStyle,
-              theme: theme,
-              size: size,
-            ),
+            style: descriptionStyle,
           ),
         ),
       );
 
     if (this.title != null)
       return ListTile(
-        tileColor: this.backgroundColor ?? theme.backgroundComponent,
+        tileColor: backgroundColor,
         title: Center(
           child: Text(
             this.title!,
             textAlign: TextAlign.center,
-            style: this._titleStyle(
-              textStyle: textStyle,
-              theme: theme,
-              size: size,
-            ),
+            style: titleStyle,
           ),
         ),
       );
 
     if (this.description != null)
       return ListTile(
-        tileColor: this.backgroundColor ?? theme.backgroundComponent,
+        tileColor: backgroundColor,
         subtitle: Center(
           child: Text(
             this.description!,
             textAlign: TextAlign.center,
-            style: this._descriptionStyle(
-              textStyle: textStyle,
-              theme: theme,
-              size: size,
-            ),
+            style: descriptionStyle,
           ),
         ),
       );
 
-    return const SizedBox();
+    return null;
   }
 
   ListTile _item({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
     required IFCSize size,
+    required Color backgroundColor,
     required FCActionModalItem item,
+    required TextStyle itemStyle,
   }) =>
       ListTile(
-        tileColor: this.backgroundColor ?? theme.backgroundComponent,
+        tileColor: backgroundColor,
         contentPadding: EdgeInsets.symmetric(
           horizontal: size.s16,
           vertical: size.s10 / 4,
@@ -341,12 +250,7 @@ class _FCActionModalMaterial extends StatelessWidget {
           prefix: item.prefix,
           title: item.title,
           textAlign: TextAlign.start,
-          titleStyle: this._itemStyle(
-            textStyle: textStyle,
-            theme: theme,
-            size: size,
-            item: item,
-          ),
+          titleStyle: itemStyle,
           postfix: item.postfix,
         ),
         onTap: item.onPressed,
@@ -359,29 +263,76 @@ class _FCActionModalMaterial extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
+    final Color backgroundColor = this.backgroundColor ?? theme.backgroundComponent;
+    final TextStyle titleStyle = this.titleStyle?.copyWith(
+              color: this.titleStyle?.color ?? theme.black,
+              fontSize: this.titleStyle?.fontSize ?? size.s16,
+              fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.black,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightRegular,
+          fontFamily: textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
+    final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
+              color: this.descriptionStyle?.color ?? theme.black,
+              fontSize: this.descriptionStyle?.fontSize ?? size.s14,
+              fontWeight:
+                  this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily:
+                  this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.black,
+          fontSize: size.s14,
+          fontWeight: textStyle.fontWeightRegular,
+          fontFamily: textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
+    final TextStyle itemStyle = this.itemStyle?.copyWith(
+              color: this.itemStyle?.color ?? theme.black,
+              fontSize: this.itemStyle?.fontSize ?? size.s16,
+              fontWeight: this.itemStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily: this.itemStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.black,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightRegular,
+          fontFamily: textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
+    final Widget? content = this._content(
+      backgroundColor: backgroundColor,
+      titleStyle: titleStyle,
+      descriptionStyle: descriptionStyle,
+    );
+
     return SafeArea(
       top: false,
       child: Wrap(
         children: [
-          this._content(
-            textStyle: textStyle,
-            theme: theme,
-            size: size,
-          ),
+          if (content != null) content,
           ...items.map(
             (FCActionModalItem item) => this._item(
-              textStyle: textStyle,
-              theme: theme,
+              backgroundColor: backgroundColor,
               size: size,
               item: item,
+              itemStyle: itemStyle,
             ),
           ),
           if (this.cancelItem != null)
             this._item(
-              textStyle: textStyle,
-              theme: theme,
+              backgroundColor: backgroundColor,
               size: size,
               item: cancelItem!,
+              itemStyle: itemStyle,
             ),
         ],
       ),

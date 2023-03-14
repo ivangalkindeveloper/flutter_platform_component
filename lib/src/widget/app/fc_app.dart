@@ -13,7 +13,7 @@ import 'package:flutter/material.dart'
 import 'package:flutter/cupertino.dart'
     show CupertinoApp, CupertinoThemeData, DefaultCupertinoLocalizations;
 
-class FCApp extends FCPlatformRouterWidget {
+class FCApp extends FCPlatformWidget {
   FCApp({
     super.key,
     required BuildContext context,

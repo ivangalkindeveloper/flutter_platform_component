@@ -10,21 +10,21 @@ class FCBasicCounterBadge extends StatelessWidget {
     super.key,
     required this.color,
     required this.count,
-    this.isShow = true,
+    this.countStyle,
     this.position = FCBadgePosition.topEnd,
-    this.duration,
+    this.isShow = true,
     this.padding,
-    this.style,
+    this.duration,
     required this.child,
   });
 
   final Color color;
   final int count;
-  final bool isShow;
+  final TextStyle? countStyle;
   final FCBadgePosition position;
-  final Duration? duration;
+  final bool isShow;
   final EdgeInsets? padding;
-  final TextStyle? style;
+  final Duration? duration;
   final Widget child;
 
   bool _isShow() {
@@ -45,15 +45,38 @@ class FCBasicCounterBadge extends StatelessWidget {
     final IFCTextStyle textStyle = config.textStyle;
     final IFCSize size = config.size;
 
+    final Duration duration = this.duration ?? size.durationBadge;
+    final EdgeInsets padding = this.padding ??
+        EdgeInsets.symmetric(
+          vertical: size.s10 / 4,
+          horizontal: size.s10 / 2,
+        );
+    final bool isShow = this._isShow();
+    final String count = this._count();
+    final TextStyle countStyle = this.countStyle?.copyWith(
+              color: this.countStyle?.color ?? context.config.theme.whiteAlways,
+              fontSize: this.countStyle?.fontSize ?? size.s14,
+              fontWeight: this.countStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily: this.countStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: context.config.theme.whiteAlways,
+          fontSize: size.s14,
+          fontWeight: textStyle.fontWeightRegular,
+          fontFamily: textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
+
     return badges.Badge(
       position: this.position.packageMapForCounter,
       badgeAnimation: badges.BadgeAnimation.fade(
-        animationDuration: this.duration ?? size.durationBadge,
-        disappearanceFadeAnimationDuration: this.duration ?? size.durationBadge,
+        animationDuration: duration,
+        disappearanceFadeAnimationDuration: duration,
         curve: Curves.easeInOut,
         colorChangeAnimationCurve: Curves.easeInOut,
       ),
-      showBadge: this._isShow(),
+      showBadge: isShow,
       badgeStyle: badges.BadgeStyle(
         elevation: 0,
         badgeColor: Colors.transparent,
@@ -61,32 +84,15 @@ class FCBasicCounterBadge extends StatelessWidget {
       ),
       badgeContent: Container(
         alignment: Alignment.center,
-        padding: this.padding ??
-            EdgeInsets.symmetric(
-              vertical: size.s10 / 4,
-              horizontal: size.s10 / 2,
-            ),
+        padding: padding,
         decoration: BoxDecoration(
           color: this.color,
           borderRadius: BorderRadius.circular(size.s16 * 2),
         ),
         constraints: BoxConstraints(minWidth: size.s10 * 2),
         child: Text(
-          this._count(),
-          style: style?.copyWith(
-                color: style?.color ?? context.config.theme.whiteAlways,
-                fontSize: style?.fontSize ?? size.s14,
-                fontWeight: style?.fontWeight ?? textStyle.fontWeightRegular,
-                fontFamily: style?.fontFamily ?? textStyle.fontFamilyRegular,
-                package: textStyle.package,
-              ) ??
-              TextStyle(
-                color: context.config.theme.whiteAlways,
-                fontSize: size.s14,
-                fontWeight: textStyle.fontWeightRegular,
-                fontFamily: textStyle.fontFamilyRegular,
-                package: textStyle.package,
-              ),
+          count,
+          style: countStyle,
         ),
       ),
       child: this.child,

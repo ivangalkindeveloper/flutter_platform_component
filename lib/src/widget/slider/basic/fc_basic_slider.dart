@@ -70,11 +70,13 @@ class _FCBasicSliderCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final void Function(double)? onChanged = this.isDisabled ? null : this.onChanged;
+
     return Stack(
       children: [
         CupertinoSlider(
           value: this.value,
-          onChanged: this.isDisabled ? null : this.onChanged,
+          onChanged: onChanged,
           activeColor: this.color,
           min: this.min,
           max: this.max,
@@ -120,11 +122,13 @@ class _FCBasicSliderMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final void Function(double)? onChanged = this.isDisabled ? null : this.onChanged;
+
     return Stack(
       children: [
         Slider(
           value: this.value,
-          onChanged: this.isDisabled ? null : this.onChanged,
+          onChanged: onChanged,
           inactiveColor: this.backgroundColor,
           activeColor: this.color,
           min: this.min,

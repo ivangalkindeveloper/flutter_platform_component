@@ -10,10 +10,10 @@ class FCBasicPINField extends StatefulWidget {
   const FCBasicPINField({
     super.key,
     required this.context,
-    required this.length,
     this.controller,
     this.errorController,
     this.focusNode,
+    required this.length,
     required this.unfocusedBackgroundColor,
     required this.focusedBackgroundColor,
     required this.focusedBorderColor,
@@ -29,10 +29,10 @@ class FCBasicPINField extends StatefulWidget {
   });
 
   final BuildContext context;
-  final int length;
   final TextEditingController? controller;
   final StreamController<bool?>? errorController;
   final FocusNode? focusNode;
+  final int length;
   final Color unfocusedBackgroundColor;
   final Color focusedBackgroundColor;
   final Color focusedBorderColor;
@@ -56,7 +56,10 @@ class _FCBasicPINFieldState extends State<FCBasicPINField> with TickerProviderSt
   late final IFCTheme _theme;
   late final IFCSize _size;
 
+  // Controller
   late final AnimationController _animationController;
+
+  // Error
   late final StreamSubscription? _errorSubscription;
   bool _isError = false;
 
@@ -68,11 +71,14 @@ class _FCBasicPINFieldState extends State<FCBasicPINField> with TickerProviderSt
     this._theme = this._config.theme;
     this._size = this._config.size;
 
+    // Controller
     this._animationController = AnimationController(
       vsync: this,
       duration: this._size.durationAnimationSlow,
     );
     this._animationController.addStatusListener(this._controllerListener);
+
+    // Error
     this._errorSubscription = this.widget.errorController?.stream.listen((bool? isError) {
       if (this.mounted == false) return;
 
@@ -93,8 +99,11 @@ class _FCBasicPINFieldState extends State<FCBasicPINField> with TickerProviderSt
 
   @override
   void dispose() {
+    // Controller
     this._animationController.removeStatusListener(this._controllerListener);
     this._animationController.dispose();
+
+    // Error
     this._errorSubscription?.cancel();
     super.dispose();
   }
@@ -105,11 +114,13 @@ class _FCBasicPINFieldState extends State<FCBasicPINField> with TickerProviderSt
 
   PinTheme _item({
     required Color backgroundColor,
-    Color? borderColor,
+    required double height,
+    required double borderWidth,
+    required Color? borderColor,
   }) =>
       PinTheme(
         constraints: BoxConstraints(
-          minWidth: this.widget.height ?? this._size.s16,
+          minWidth: height,
         ),
         textStyle: TextStyle(
           color: Colors.transparent,
@@ -120,7 +131,7 @@ class _FCBasicPINFieldState extends State<FCBasicPINField> with TickerProviderSt
           border: borderColor != null
               ? Border.all(
                   color: borderColor,
-                  width: this.widget.borderWidth ?? this._config.borderWidthField,
+                  width: borderWidth,
                 )
               : null,
         ),
@@ -128,6 +139,14 @@ class _FCBasicPINFieldState extends State<FCBasicPINField> with TickerProviderSt
 
   @override
   Widget build(BuildContext context) {
+    final double height = this.widget.height ?? this._size.s16;
+    final double borderWidth = this.widget.borderWidth ?? this._config.borderWidthField;
+    final double horizontalInterval = this.widget.horizontalInterval ?? this._size.s16;
+    final void Function(String)? onChanged =
+        this.widget.isDisabled ? null : this.widget.onChanged;
+    final void Function(String)? onCompleted =
+        this.widget.isDisabled ? null : this.widget.onCompleted;
+
     return Stack(
       children: [
         SlideTransition(
@@ -151,25 +170,34 @@ class _FCBasicPINFieldState extends State<FCBasicPINField> with TickerProviderSt
               animationCurve: Curves.easeInOut,
               defaultPinTheme: this._item(
                 backgroundColor: this.widget.unfocusedBackgroundColor,
+                height: height,
+                borderWidth: borderWidth,
+                borderColor: null,
               ),
               focusedPinTheme: this._item(
                 backgroundColor: this.widget.focusedBackgroundColor,
+                height: height,
+                borderWidth: borderWidth,
                 borderColor: this.widget.focusedBorderColor,
               ),
               submittedPinTheme: this._item(
                 backgroundColor: this.widget.submittedBackgroundColor,
+                height: height,
+                borderWidth: borderWidth,
+                borderColor: null,
               ),
               errorPinTheme: this._item(
                 backgroundColor: this._theme.danger,
+                height: height,
+                borderWidth: borderWidth,
+                borderColor: null,
               ),
               forceErrorState: this._isError,
-              separator: SizedBox(
-                width: this.widget.horizontalInterval ?? this._size.s16,
-              ),
+              separator: SizedBox(width: horizontalInterval),
               autofocus: this.widget.isAutofocus,
               showCursor: false,
-              onChanged: this.widget.isDisabled ? null : this.widget.onChanged,
-              onCompleted: this.widget.isDisabled ? null : this.widget.onCompleted,
+              onChanged: onChanged,
+              onCompleted: onCompleted,
               readOnly: this.widget.isDisabled,
               errorText: null,
               errorTextStyle: null,
@@ -181,9 +209,7 @@ class _FCBasicPINFieldState extends State<FCBasicPINField> with TickerProviderSt
             child: this.widget.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.widget.disabledColor,
-                    borderRadius: BorderRadius.circular(
-                      this.widget.height ?? this._size.s16 * 2,
-                    ),
+                    borderRadius: BorderRadius.circular(height),
                   )
                 : null,
           ),

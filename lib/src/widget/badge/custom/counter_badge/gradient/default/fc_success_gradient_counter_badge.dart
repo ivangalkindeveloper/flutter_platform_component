@@ -6,18 +6,20 @@ class FCSuccessGradientCounterBadge extends StatelessWidget {
   const FCSuccessGradientCounterBadge({
     super.key,
     required this.count,
-    this.isShow = true,
+    this.countStyle,
     this.position = FCBadgePosition.topEnd,
+    this.isShow = true,
+    this.padding,
     this.duration,
-    this.style,
     required this.child,
   });
 
   final int count;
-  final bool isShow;
+  final TextStyle? countStyle;
   final FCBadgePosition position;
+  final bool isShow;
+  final EdgeInsets? padding;
   final Duration? duration;
-  final TextStyle? style;
   final Widget child;
 
   @override
@@ -28,10 +30,11 @@ class FCSuccessGradientCounterBadge extends StatelessWidget {
     return FCBasicGradientCounterBadge(
       gradient: theme.successGradient,
       count: this.count,
-      isShow: this.isShow,
+      countStyle: this.countStyle,
       position: this.position,
+      isShow: this.isShow,
+      padding: this.padding,
       duration: this.duration,
-      style: this.style,
       child: this.child,
     );
   }

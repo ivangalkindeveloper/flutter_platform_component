@@ -5,6 +5,8 @@ import 'package:flutter/widgets.dart';
 class FCGreyDarkGradientSnackbar extends StatelessWidget {
   const FCGreyDarkGradientSnackbar({
     super.key,
+    this.borderRadius,
+    this.borderWidth,
     this.padding,
     this.mainAxisAlignment,
     this.prefix,
@@ -13,6 +15,8 @@ class FCGreyDarkGradientSnackbar extends StatelessWidget {
     this.bottom,
   });
 
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   final EdgeInsets? padding;
   final MainAxisAlignment? mainAxisAlignment;
   final Widget? prefix;
@@ -27,6 +31,8 @@ class FCGreyDarkGradientSnackbar extends StatelessWidget {
 
     return FCBasicGradientSnackbar(
       backgroundGradient: theme.greyDarkGradient,
+      borderRadius: this.borderRadius,
+      borderWidth: this.borderWidth,
       padding: this.padding,
       mainAxisAlignment: this.mainAxisAlignment,
       prefix: this.prefix,

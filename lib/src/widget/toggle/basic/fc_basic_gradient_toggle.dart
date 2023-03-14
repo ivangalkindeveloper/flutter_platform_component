@@ -53,12 +53,16 @@ class FCBasicGradientToggle<T> extends StatefulWidget {
 }
 
 class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
+  // Controller
   late final TextEditingController _controller;
+
+  // Error
   bool _isValidationError = false;
 
   @override
   void initState() {
     super.initState();
+    // Controller
     this._controller = TextEditingController(
       text: this.widget.value != null ? this.widget.value.toString() : null,
     );
@@ -66,6 +70,7 @@ class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
 
   @override
   void dispose() {
+    // Controller
     this._controller.dispose();
     super.dispose();
   }
@@ -74,11 +79,13 @@ class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
     if (value == null || this.mounted == false) {
       return null;
     }
+
     // Required
     if (this.widget.isRequired && value.isEmpty) {
       setState(() => this._isValidationError = true);
       return "";
     }
+
     setState(() => this._isValidationError = false);
     return null;
   }
@@ -92,9 +99,14 @@ class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
+    final double height = this.widget.height ?? size.heightToggle;
+    final BorderRadius borderRadius =
+        this.widget.borderRadius ?? config.borderRadiusToggle;
+
     return SizedBox(
-      height: this.widget.height ?? size.heightToggle,
+      height: height,
       child: Stack(
+        alignment: Alignment.center,
         children: [
           SizedBox(
             height: 0,
@@ -134,34 +146,39 @@ class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              ...this.widget.items.mapIndexed(
-                    (int index, FCToggleItem item) => _FCGradientToggleButton(
-                      item: item,
-                      index: index,
-                      length: this.widget.items.length,
-                      unselectedBackgroundGradient:
-                          this.widget.unselectedBackgroundGradient,
-                      unselectedInternalGradient: this.widget.unselectedInternalGradient,
-                      unselectedSplashColor: this.widget.unselectedSplashColor,
-                      unselectedStyle: this.widget.unselectedStyle,
-                      selectedBackgroundGradient: this.widget.selectedBackgroundGradient,
-                      selectedInternalGradient: this.widget.selectedInternalGradient,
-                      selectedSplashColor: this.widget.selectedSplashColor,
-                      selectedStyle: this.widget.selectedStyle,
-                      height: this.widget.height,
-                      borderRadius: this.widget.borderRadius,
-                      horizontalInterval: this.widget.horizontalInterval,
-                      isValidationError: this._isValidationError,
-                      onPressed: this.widget.isDisabled
-                          ? () {}
-                          : () => setState(() {
-                                this._isValidationError = false;
-                                this._controller.text = this.widget.value.toString();
-                                this.widget.onChanged(item.value);
-                              }),
-                      isSelected: item.value == this.widget.value,
-                    ),
-                  ),
+              ...this.widget.items.mapIndexed((
+                int index,
+                FCToggleItem item,
+              ) {
+                final void Function() onPressed = this.widget.isDisabled
+                    ? () {}
+                    : () => setState(() {
+                          this._isValidationError = false;
+                          this._controller.text = this.widget.value.toString();
+                          this.widget.onChanged(item.value);
+                        });
+                final bool isSelected = item.value == this.widget.value;
+
+                return _FCGradientToggleButton(
+                  item: item,
+                  index: index,
+                  length: this.widget.items.length,
+                  unselectedBackgroundGradient: this.widget.unselectedBackgroundGradient,
+                  unselectedInternalGradient: this.widget.unselectedInternalGradient,
+                  unselectedSplashColor: this.widget.unselectedSplashColor,
+                  unselectedStyle: this.widget.unselectedStyle,
+                  selectedBackgroundGradient: this.widget.selectedBackgroundGradient,
+                  selectedInternalGradient: this.widget.selectedInternalGradient,
+                  selectedSplashColor: this.widget.selectedSplashColor,
+                  selectedStyle: this.widget.selectedStyle,
+                  height: height,
+                  borderRadius: borderRadius,
+                  horizontalInterval: this.widget.horizontalInterval,
+                  isValidationError: this._isValidationError,
+                  onPressed: onPressed,
+                  isSelected: isSelected,
+                );
+              }),
             ],
           ),
           Positioned.fill(
@@ -169,7 +186,7 @@ class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
               child: this.widget.isDisabled
                   ? FCComponentDisabledOverlay(
                       color: this.widget.disabledColor,
-                      borderRadius: this.widget.borderRadius ?? config.borderRadiusToggle,
+                      borderRadius: borderRadius,
                     )
                   : null,
             ),
@@ -255,41 +272,59 @@ class _FCGradientToggleButton<T> extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
+    final double indent =
+        ((index + 1) != this.length) ? (this.horizontalInterval ?? size.s16 / 4) : 0;
+    final Gradient backgroundGradient = this._backgroundGradient(
+      context: context,
+      theme: theme,
+    );
+    final Color splashColor = this._splashColor(theme: theme);
+    final Gradient internalGradient = this._internalGradient(theme: theme);
+    final TextStyle unselectedStyle = this.unselectedStyle?.copyWith(
+              color: this.unselectedStyle?.color ?? internalGradient.colors.first,
+              fontSize: this.unselectedStyle?.fontSize ?? size.s16,
+              fontWeight: this.unselectedStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily: this.unselectedStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+            ) ??
+        TextStyle(
+          color: internalGradient.colors.first,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightMedium,
+          fontFamily: textStyle.fontFamilyMedium,
+        );
+    final TextStyle selectedStyle = this.selectedStyle?.copyWith(
+              color: this.selectedStyle?.color ?? internalGradient.colors.first,
+              fontSize: this.selectedStyle?.fontSize ?? size.s16,
+              fontWeight: this.selectedStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily: this.selectedStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+            ) ??
+        TextStyle(
+          color: internalGradient.colors.first,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightMedium,
+          fontFamily: textStyle.fontFamilyMedium,
+        );
+    final TextStyle titleStyle = this.isSelected ? selectedStyle : unselectedStyle;
+
     return Padding(
-      padding: EdgeInsets.only(
-        left:
-            ((index + 1) != this.length) ? (this.horizontalInterval ?? size.s16 / 4) : 0,
-      ),
+      padding: EdgeInsets.only(left: indent),
       child: FCBasicGradientButton(
-        backgroundGradient: this._backgroundGradient(context: context, theme: theme),
-        splashColor: this._splashColor(theme: theme),
-        height: this.height ?? size.heightToggle,
-        borderRadius: this.borderRadius ?? config.borderRadiusToggle,
+        backgroundGradient: backgroundGradient,
+        splashColor: splashColor,
+        height: this.height,
+        borderRadius: this.borderRadius,
         child: FCButtonRowChild(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: this._internalGradient(theme: theme),
+          gradient: internalGradient,
           prefix: this.item.prefix,
           title: this.item.title,
           textAlign: TextAlign.center,
-          titleStyle: this.isSelected
-              ? this.selectedStyle?.copyWith(
-                        color: this.selectedStyle?.color ??
-                            this._internalGradient(theme: theme).colors.first,
-                      ) ??
-                  TextStyle(
-                    color: this._internalGradient(theme: theme).colors.first,
-                  )
-              : this.unselectedStyle?.copyWith(
-                        color: this.unselectedStyle?.color ??
-                            this._internalGradient(theme: theme).colors.first,
-                      ) ??
-                  TextStyle(
-                    color: this._internalGradient(theme: theme).colors.first,
-                  ),
+          titleStyle: titleStyle,
           postfix: this.item.postfix,
         ),
         onPressed: this.onPressed,

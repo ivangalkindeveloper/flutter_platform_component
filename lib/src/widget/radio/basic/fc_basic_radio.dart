@@ -65,6 +65,8 @@ class _FCBasicRadioCupertino<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final void Function(T?)? onChanged = this.isDisabled ? null : this.onChanged;
+
     return Material(
       color: Colors.transparent,
       child: Stack(
@@ -76,7 +78,7 @@ class _FCBasicRadioCupertino<T> extends StatelessWidget {
             child: Radio<T>(
               value: this.value,
               groupValue: this.groupValue,
-              onChanged: this.isDisabled ? null : this.onChanged,
+              onChanged: onChanged,
               activeColor: this.selectedColor,
               focusColor: Colors.transparent,
               hoverColor: Colors.transparent,
@@ -124,6 +126,8 @@ class _FCBasicRadioMaterial<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final void Function(T?)? onChanged = this.isDisabled ? null : this.onChanged;
+
     return Material(
       color: Colors.transparent,
       child: Stack(
@@ -135,7 +139,7 @@ class _FCBasicRadioMaterial<T> extends StatelessWidget {
             child: Radio<T>(
               value: this.value,
               groupValue: this.groupValue,
-              onChanged: this.isDisabled ? null : this.onChanged,
+              onChanged: onChanged,
               activeColor: this.selectedColor,
               toggleable: this.isToggleable,
             ),

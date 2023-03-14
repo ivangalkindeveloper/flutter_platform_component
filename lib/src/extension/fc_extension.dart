@@ -1,8 +1,9 @@
-import 'package:animations/animations.dart' show SharedAxisTransitionType;
-import 'package:badges/badges.dart' as badges show BadgePosition;
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:ui';
+
+import 'package:animations/animations.dart' show SharedAxisTransitionType;
+import 'package:badges/badges.dart' as badges show BadgePosition;
 
 extension FCBuildContextExtension on BuildContext {
   FCConfig get config => FCConfig.of(this);

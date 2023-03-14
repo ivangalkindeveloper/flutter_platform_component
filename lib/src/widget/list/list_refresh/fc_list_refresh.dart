@@ -77,7 +77,9 @@ class _FCListRefreshCupertino extends StatelessWidget {
           ),
           bottom: false,
         ),
-        SliverToBoxAdapter(child: this.child),
+        SliverToBoxAdapter(
+          child: this.child,
+        ),
       ],
     );
   }
@@ -110,19 +112,22 @@ class _FCListRefreshMaterial extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
+    final Color backgroundColor = this.backgroundColor ?? theme.white;
+    final Color color = this.color ?? theme.primary;
+
     return RefreshIndicator(
       onRefresh: () async {
         haptic.selection();
         await this.onRefresh();
       },
-      backgroundColor: this.backgroundColor ?? theme.white,
-      color: this.color ?? theme.primary,
+      backgroundColor: backgroundColor,
+      color: color,
       displacement: this.displacement,
       edgeOffset: this.edgeOffset,
       strokeWidth: size.s10 / 4,
       child: ListView(
         controller: this.controller,
-        physics: const BouncingScrollPhysics(),
+        physics: const AlwaysScrollableScrollPhysics(),
         keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         children: [
           this.child,

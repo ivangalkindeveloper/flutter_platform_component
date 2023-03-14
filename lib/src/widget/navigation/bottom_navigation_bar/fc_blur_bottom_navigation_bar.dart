@@ -11,38 +11,41 @@ class FCBlurBottomNavigationBar extends FCPlatformWidget {
   FCBlurBottomNavigationBar({
     super.key,
     required int index,
-    required ValueChanged<int> onPressed,
     required List<BottomNavigationBarItem> items,
+    required ValueChanged<int> onPressed,
     Color? blurColor,
     double? blurOpacity,
     ImageFilter? blurFilter,
     Color? unselectedColor,
+    TextStyle? unselectedStyle,
     Color? selectedColor,
-    TextStyle? style,
+    TextStyle? selectedStyle,
   }) : super(
           cupertino: _FCBlurBottomNavigationBarCupertino(
             key: key,
             index: index,
-            onPressed: onPressed,
             items: items,
+            onPressed: onPressed,
             blurColor: blurColor,
             blurOpacity: blurOpacity,
             blurFilter: blurFilter,
             unselectedColor: unselectedColor,
+            unselectedStyle: unselectedStyle,
             selectedColor: selectedColor,
-            style: style,
+            selectedStyle: selectedStyle,
           ),
           material: _FCBlurBottomNavigationBarMaterial(
             key: key,
             index: index,
-            onPressed: onPressed,
             items: items,
+            onPressed: onPressed,
             blurColor: blurColor,
             blurOpacity: blurOpacity,
             blurFilter: blurFilter,
             unselectedColor: unselectedColor,
+            unselectedStyle: unselectedStyle,
             selectedColor: selectedColor,
-            style: style,
+            selectedStyle: selectedStyle,
           ),
         );
 }
@@ -51,30 +54,35 @@ class _FCBlurBottomNavigationBarCupertino extends StatelessWidget {
   const _FCBlurBottomNavigationBarCupertino({
     super.key,
     required this.index,
-    required this.onPressed,
     required this.items,
+    required this.onPressed,
     required this.blurColor,
     required this.blurOpacity,
     required this.blurFilter,
     required this.unselectedColor,
+    required this.unselectedStyle,
     required this.selectedColor,
-    required this.style,
+    required this.selectedStyle,
   });
 
   final int index;
-  final ValueChanged<int> onPressed;
   final List<BottomNavigationBarItem> items;
+  final ValueChanged<int> onPressed;
   final Color? blurColor;
   final double? blurOpacity;
   final ImageFilter? blurFilter;
   final Color? unselectedColor;
+  final TextStyle? unselectedStyle;
   final Color? selectedColor;
-  final TextStyle? style;
+  final TextStyle? selectedStyle;
 
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
+
+    final Color unselectedColor = this.unselectedColor ?? theme.grey;
+    final Color selectedColor = this.selectedColor ?? theme.primary;
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -94,8 +102,8 @@ class _FCBlurBottomNavigationBarCupertino extends StatelessWidget {
             onTap: this.onPressed,
             items: this.items,
             backgroundColor: Colors.transparent,
-            inactiveColor: this.unselectedColor ?? theme.grey,
-            activeColor: this.selectedColor ?? theme.primary,
+            inactiveColor: unselectedColor,
+            activeColor: selectedColor,
           ),
         ),
       ],
@@ -107,31 +115,60 @@ class _FCBlurBottomNavigationBarMaterial extends StatelessWidget {
   const _FCBlurBottomNavigationBarMaterial({
     super.key,
     required this.index,
-    required this.onPressed,
     required this.items,
+    required this.onPressed,
     required this.blurColor,
     required this.blurOpacity,
     required this.blurFilter,
     required this.unselectedColor,
+    required this.unselectedStyle,
     required this.selectedColor,
-    required this.style,
+    required this.selectedStyle,
   });
 
   final int index;
-  final ValueChanged<int> onPressed;
   final List<BottomNavigationBarItem> items;
+  final ValueChanged<int> onPressed;
   final Color? blurColor;
   final double? blurOpacity;
   final ImageFilter? blurFilter;
   final Color? unselectedColor;
+  final TextStyle? unselectedStyle;
   final Color? selectedColor;
-  final TextStyle? style;
+  final TextStyle? selectedStyle;
 
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
+
+    final Color unselectedColor = this.unselectedColor ?? theme.grey;
+    final TextStyle unselectedStyle = this.unselectedStyle?.copyWith(
+              color: this.unselectedStyle?.color ?? unselectedColor,
+              fontWeight: this.unselectedStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily: this.unselectedStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: unselectedColor,
+          fontWeight: this.unselectedStyle?.fontWeight ?? textStyle.fontWeightRegular,
+          fontFamily: this.unselectedStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
+    final Color selectedColor = this.selectedColor ?? theme.primary;
+    final TextStyle selectedStyle = this.selectedStyle?.copyWith(
+              color: this.unselectedStyle?.color ?? selectedColor,
+              fontWeight: this.selectedStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily: this.selectedStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: selectedColor,
+          fontWeight: this.selectedStyle?.fontWeight ?? textStyle.fontWeightRegular,
+          fontFamily: this.selectedStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -147,31 +184,13 @@ class _FCBlurBottomNavigationBarMaterial extends StatelessWidget {
             showSelectedLabels: true,
             showUnselectedLabels: true,
             currentIndex: this.index,
-            onTap: this.onPressed,
             items: this.items,
+            onTap: this.onPressed,
             backgroundColor: Colors.transparent,
-            unselectedItemColor: this.unselectedColor ?? theme.grey,
-            selectedItemColor: this.selectedColor ?? theme.primary,
-            unselectedLabelStyle: style?.copyWith(
-                  fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,
-                  fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyRegular,
-                  package: textStyle.package,
-                ) ??
-                TextStyle(
-                  fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,
-                  fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyRegular,
-                  package: textStyle.package,
-                ),
-            selectedLabelStyle: style?.copyWith(
-                  fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,
-                  fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyRegular,
-                  package: textStyle.package,
-                ) ??
-                TextStyle(
-                  fontWeight: this.style?.fontWeight ?? textStyle.fontWeightRegular,
-                  fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyRegular,
-                  package: textStyle.package,
-                ),
+            unselectedItemColor: unselectedColor,
+            selectedItemColor: selectedColor,
+            unselectedLabelStyle: unselectedStyle,
+            selectedLabelStyle: selectedStyle,
           ),
         ),
       ],

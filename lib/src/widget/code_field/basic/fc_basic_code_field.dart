@@ -113,35 +113,25 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
   }
 
   PinTheme _item({
-    required IFCTextStyle textStyle,
     required Color backgroundColor,
-    required TextStyle? style,
-    Color? borderColor,
+    required double height,
+    required double width,
+    required BorderRadius borderRadius,
+    required double borderWidth,
+    required TextStyle itemStyle,
+    required Color? borderColor,
   }) =>
       PinTheme(
-        height: this.widget.itemHeight ?? this._size.heightCodeField,
-        width: this.widget.itemWidth ?? (this._size.heightCodeField * 0.75),
-        textStyle: style?.copyWith(
-              color: style.color ?? this._theme.black,
-              fontSize: style.fontSize ?? this._size.s20,
-              fontWeight: style.fontWeight ?? this._textStyle.fontWeightMedium,
-              fontFamily: style.fontFamily ?? this._textStyle.fontFamilyMedium,
-              package: textStyle.package,
-            ) ??
-            TextStyle(
-              color: this._theme.black,
-              fontSize: this._size.s20,
-              fontWeight: this._textStyle.fontWeightMedium,
-              fontFamily: this._textStyle.fontFamilyMedium,
-              package: textStyle.package,
-            ),
+        height: height,
+        width: width,
+        textStyle: itemStyle,
         decoration: BoxDecoration(
           color: backgroundColor,
-          borderRadius: this.widget.borderRadius ?? this._config.borderRadiusField,
+          borderRadius: borderRadius,
           border: borderColor != null
               ? Border.all(
                   color: borderColor,
-                  width: this.widget.borderWidth ?? this._config.borderWidthField,
+                  width: borderWidth,
                 )
               : null,
         ),
@@ -151,6 +141,36 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCTextStyle textStyle = config.textStyle;
+
+    final double itemHeight = this.widget.itemHeight ?? this._size.heightCodeField;
+    final double itemWidth = this.widget.itemWidth ?? (this._size.heightCodeField * 0.75);
+    final BorderRadius borderRadius =
+        this.widget.borderRadius ?? config.borderRadiusButton;
+    final double borderWidth = this.widget.borderWidth ?? this._config.borderWidthField;
+    final TextStyle itemStyle = this.widget.itemStyle?.copyWith(
+              color: this.widget.itemStyle?.color ?? this._theme.black,
+              fontSize: this.widget.itemStyle?.fontSize ?? this._size.s20,
+              fontWeight:
+                  this.widget.itemStyle?.fontWeight ?? this._textStyle.fontWeightMedium,
+              fontFamily:
+                  this.widget.itemStyle?.fontFamily ?? this._textStyle.fontFamilyMedium,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: this._theme.black,
+          fontSize: this._size.s20,
+          fontWeight: this._textStyle.fontWeightMedium,
+          fontFamily: this._textStyle.fontFamilyMedium,
+          package: textStyle.package,
+        );
+    final double horizontalInterval =
+        (this.widget.itemHeight ?? this._size.heightCodeField) - this._size.s14;
+    final double cursorHeight =
+        (this.widget.itemWidth ?? this._size.heightCodeField) - this._size.s14;
+    final void Function(String)? onChanged =
+        this.widget.isDisabled ? null : this.widget.onChanged;
+    final void Function(String)? onCompleted =
+        this.widget.isDisabled ? null : this.widget.onCompleted;
 
     return Stack(
       children: [
@@ -174,43 +194,55 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
               animationDuration: this._size.durationAnimationFast,
               animationCurve: Curves.easeInOut,
               defaultPinTheme: this._item(
-                textStyle: textStyle,
                 backgroundColor: this.widget.unfocusedBackgroundColor,
-                style: this.widget.itemStyle,
+                height: itemHeight,
+                width: itemWidth,
+                borderRadius: borderRadius,
+                borderWidth: borderWidth,
+                itemStyle: itemStyle,
+                borderColor: null,
               ),
               focusedPinTheme: this._item(
-                textStyle: textStyle,
                 backgroundColor: this.widget.focusedBackgroundColor,
+                height: itemHeight,
+                width: itemWidth,
+                borderRadius: borderRadius,
+                borderWidth: borderWidth,
+                itemStyle: itemStyle,
                 borderColor: this.widget.focusedBorderColor,
-                style: this.widget.itemStyle,
               ),
               submittedPinTheme: this._item(
-                textStyle: textStyle,
                 backgroundColor: this.widget.unfocusedBackgroundColor,
-                style: this.widget.itemStyle,
+                height: itemHeight,
+                width: itemWidth,
+                borderRadius: borderRadius,
+                borderWidth: borderWidth,
+                itemStyle: itemStyle,
+                borderColor: null,
               ),
               errorPinTheme: this._item(
-                textStyle: textStyle,
                 backgroundColor: this._theme.dangerLight,
-                style: TextStyle(
+                height: itemHeight,
+                width: itemWidth,
+                borderRadius: borderRadius,
+                borderWidth: borderWidth,
+                itemStyle: TextStyle(
                   color: this._theme.danger,
                   package: textStyle.package,
                 ),
+                borderColor: null,
               ),
               forceErrorState: this._isError,
-              separator: SizedBox(
-                width: this.widget.horizontalInterval ?? this._size.s16 / 2,
-              ),
+              separator: SizedBox(width: horizontalInterval),
               autofocus: this.widget.isAutofocus,
               showCursor: this.widget.isShowCursor,
               cursor: Container(
                 color: this.widget.focusedBorderColor,
-                height: (this.widget.itemWidth ?? this._size.heightCodeField) -
-                    this._size.s14,
+                height: cursorHeight,
                 width: this._size.s10 / 10,
               ),
-              onChanged: this.widget.isDisabled ? null : this.widget.onChanged,
-              onCompleted: this.widget.isDisabled ? null : this.widget.onCompleted,
+              onChanged: onChanged,
+              onCompleted: onCompleted,
               readOnly: this.widget.isDisabled,
               errorText: null,
               errorTextStyle: null,
@@ -222,8 +254,7 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
             child: this.widget.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.widget.disabledColor,
-                    borderRadius:
-                        this.widget.borderRadius ?? this._config.borderRadiusField,
+                    borderRadius: borderRadius,
                   )
                 : null,
           ),

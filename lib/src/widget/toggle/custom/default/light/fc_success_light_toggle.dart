@@ -40,7 +40,7 @@ class FCSuccessLightToggle<T> extends StatelessWidget {
       items: this.items,
       onChanged: this.onChanged,
       unselectedBackgroundColor: theme.backgroundComponent,
-      unselectedInternalColor: theme.greyLight,
+      unselectedInternalColor: theme.black,
       unselectedSplashColor: theme.successLight,
       unselectedStyle: this.unselectedStyle,
       selectedBackgroundColor: theme.successLight,

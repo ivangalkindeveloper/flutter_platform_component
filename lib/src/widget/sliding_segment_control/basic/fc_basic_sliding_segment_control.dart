@@ -36,8 +36,8 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
   final bool isDisabled;
   final Color? disabledColor;
 
-  Color _internalColor({required T value}) {
-    if (value == this.value) return this.selectedInternalColor;
+  Color _internalColor({required bool isSelected}) {
+    if (isSelected) return this.selectedInternalColor;
 
     return this.unselectedInternalColor;
   }
@@ -51,6 +51,8 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
+    final double height = this.height ?? size.heightSlidingSegmentControl;
+
     return Stack(
       children: [
         CupertinoSlidingSegmentedControl<T>(
@@ -63,38 +65,40 @@ class FCBasicSlidingSegmentControl<T> extends StatelessWidget {
           backgroundColor: this.backgroundColor,
           thumbColor: this.thumbColor,
           children: Map.fromEntries(
-            this.items.map(
-                  (FCSlidingSegmentControlItem item) => MapEntry(
-                    item.value,
-                    SizedBox(
-                      height: this.height ?? size.heightSlidingSegmentControl,
-                      child: FCButtonRowChild(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        gradient: null,
-                        prefix: item.prefix,
-                        title: item.title,
-                        textAlign: TextAlign.center,
-                        titleStyle: this.value == item.value
-                            ? this.selectedStyle?.copyWith(
-                                      color: this.selectedStyle?.color ??
-                                          this._internalColor(value: item.value),
-                                    ) ??
-                                TextStyle(
-                                  color: this._internalColor(value: item.value),
-                                )
-                            : this.unselectedStyle?.copyWith(
-                                      color: this.unselectedStyle?.color ??
-                                          this._internalColor(value: item.value),
-                                    ) ??
-                                TextStyle(
-                                  color: this._internalColor(value: item.value),
-                                ),
-                        postfix: item.postfix,
-                      ),
-                    ),
+            this.items.map((FCSlidingSegmentControlItem item) {
+              final bool isSelected = this.value == item.value;
+              final Color internalColor = this._internalColor(isSelected: isSelected);
+              final TextStyle unselectedStyle = this.unselectedStyle?.copyWith(
+                        color: this.unselectedStyle?.color ?? internalColor,
+                      ) ??
+                  TextStyle(
+                    color: internalColor,
+                  );
+              final TextStyle selectedStyle = this.selectedStyle?.copyWith(
+                        color: this.selectedStyle?.color ?? internalColor,
+                      ) ??
+                  TextStyle(
+                    color: internalColor,
+                  );
+              final TextStyle titleStyle = isSelected ? selectedStyle : unselectedStyle;
+
+              return MapEntry(
+                item.value,
+                SizedBox(
+                  height: height,
+                  child: FCButtonRowChild(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    gradient: null,
+                    prefix: item.prefix,
+                    title: item.title,
+                    textAlign: TextAlign.center,
+                    titleStyle: titleStyle,
+                    postfix: item.postfix,
                   ),
                 ),
+              );
+            }),
           ),
         ),
         Positioned.fill(

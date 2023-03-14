@@ -40,7 +40,7 @@ class FCPrimaryLightToggle<T> extends StatelessWidget {
       items: this.items,
       onChanged: this.onChanged,
       unselectedBackgroundColor: theme.backgroundComponent,
-      unselectedInternalColor: theme.greyLight,
+      unselectedInternalColor: theme.black,
       unselectedSplashColor: theme.primaryLight,
       unselectedStyle: this.unselectedStyle,
       selectedBackgroundColor: theme.primaryLight,

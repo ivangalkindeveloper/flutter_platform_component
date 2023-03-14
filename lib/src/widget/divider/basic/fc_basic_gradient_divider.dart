@@ -17,8 +17,10 @@ class FCBasicGradientDivider extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
+    final double height = this.height ?? (size.s10 / 10);
+
     return Container(
-      height: this.height ?? (size.s10 / 10),
+      height: height,
       decoration: BoxDecoration(
         gradient: this.gradient,
         borderRadius: BorderRadius.circular(this.height ?? (size.s10 / 10)),

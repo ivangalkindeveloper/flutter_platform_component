@@ -40,7 +40,7 @@ class FCGreyDarkToggle<T> extends StatelessWidget {
       items: this.items,
       onChanged: this.onChanged,
       unselectedBackgroundColor: theme.backgroundComponent,
-      unselectedInternalColor: theme.greyDark,
+      unselectedInternalColor: theme.black,
       unselectedSplashColor: theme.greyDark,
       unselectedStyle: this.unselectedStyle,
       selectedBackgroundColor: theme.greyDark,

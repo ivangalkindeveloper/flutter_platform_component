@@ -110,6 +110,9 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
   // FocusNode
   late final FocusNode _focusNode;
 
+  // Handler
+  late final FCTextInputHandlerFormatter _textInputHandlerFormatter;
+
   // Error
   bool _isAutoValidationError = false;
   String _autoValidationText = "";
@@ -131,6 +134,42 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
     // FocusNode
     this._focusNode = this.widget.focusNode ?? FocusNode();
     this._focusNode.addListener(this._focusNodeListener);
+
+    // Handler
+    this._textInputHandlerFormatter = FCTextInputHandlerFormatter(
+      onNewValue: (String value) {
+        if (this.mounted == false) return null;
+
+        // Required
+        if (this.widget.isRequired && value.isEmpty) {
+          this._haptic.error();
+          setState(() {
+            this._isAutoValidationError = false;
+            this._autoValidationText = "";
+            this._isValidationError = true;
+            this._validationText = "";
+          });
+          return;
+        }
+        // Auto validator
+        final String? _autoValidatorResult = this.widget.autoValidator?.call(value);
+        if (_autoValidatorResult != null) {
+          this._haptic.error();
+          setState(() {
+            this._isAutoValidationError = true;
+            this._autoValidationText = _autoValidatorResult;
+          });
+          return;
+        }
+        // Default
+        setState(() {
+          this._isAutoValidationError = false;
+          this._autoValidationText = "";
+          this._isValidationError = false;
+          this._validationText = "";
+        });
+      },
+    );
   }
 
   @override
@@ -240,6 +279,26 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
 
   @override
   Widget build(BuildContext context) {
+    final Gradient backgroundGradient = this._backgroundGradient();
+    final Gradient internalGradient = this._internalGradient();
+    final Color labelColor = this._labelColor();
+    final double height = this.widget.height ?? this._size.heightFormField;
+    final BorderRadius borderRadius =
+        this.widget.borderRadius ?? this._config.borderRadiusField;
+    final Gradient borderGradient = this._borderGradient();
+    final double borderWidth = this.widget.borderWidth ?? this._config.borderWidthField;
+    final double internalIconHeight =
+        this.widget.internalIconHeight ?? this._size.heightIconDefault;
+    final EdgeInsets internalPadding =
+        this._focusNode.hasPrimaryFocus || this._controller.text.isNotEmpty
+            ? EdgeInsets.only(top: (this._size.s12 / 2))
+            : EdgeInsets.zero;
+    final void Function(String)? onChanged =
+        this.widget.isDisabled ? null : this.widget.onChanged;
+    final void Function()? onTap = this.widget.isDisabled ? null : this.widget.onTap;
+    final String? Function(String?) validator = this._validator;
+    final String errorText = this._errorText();
+
     return Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -249,11 +308,11 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
             FCAnimatedFastContainer(
               padding: EdgeInsets.symmetric(vertical: this._size.s16 / 4),
               constraints: BoxConstraints(
-                minHeight: this.widget.height ?? this._size.heightFormField,
+                minHeight: height,
               ),
               decoration: BoxDecoration(
-                gradient: this._backgroundGradient(),
-                borderRadius: this.widget.borderRadius ?? this._config.borderRadiusField,
+                gradient: backgroundGradient,
+                borderRadius: borderRadius,
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -268,16 +327,13 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                             gradient: this._internalGradient(),
                             child: Icon(
                               this.widget.prefixIcon,
-                              size: this.widget.internalIconHeight,
+                              size: internalIconHeight,
                             ),
                           ),
                         ),
                       Expanded(
                         child: FCAnimatedFastContainer(
-                          padding: this._focusNode.hasPrimaryFocus ||
-                                  this._controller.text.isNotEmpty
-                              ? EdgeInsets.only(top: (this._size.s12 / 2))
-                              : EdgeInsets.zero,
+                          padding: internalPadding,
                           child: FCCommonField(
                             controller: this._controller,
                             focusNode: this._focusNode,
@@ -285,7 +341,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                             textStyle: this.widget.textStyle,
                             //
                             labelText: this.widget.labelText,
-                            labelColor: this._labelColor(),
+                            labelColor: labelColor,
                             labelStyle: this.widget.labelStyle,
                             //
                             prefixText: this.widget.prefixText,
@@ -300,46 +356,11 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                             isAutofocus: this.widget.isAutofocus,
                             maxLines: this.widget.maxLines,
                             maxLength: this.widget.maxLength,
-                            onChanged:
-                                this.widget.isDisabled ? null : this.widget.onChanged,
-                            onTap: this.widget.isDisabled ? null : this.widget.onTap,
-                            validator: this._validator,
+                            onChanged: onChanged,
+                            onTap: onTap,
+                            validator: validator,
                             inputFormatters: [
-                              FCTextInputHandlerFormatter(
-                                onNewValue: (String value) {
-                                  if (this.mounted == false) return null;
-
-                                  // Required
-                                  if (this.widget.isRequired && value.isEmpty) {
-                                    this._haptic.error();
-                                    setState(() {
-                                      this._isAutoValidationError = false;
-                                      this._autoValidationText = "";
-                                      this._isValidationError = true;
-                                      this._validationText = "";
-                                    });
-                                    return;
-                                  }
-                                  // Auto validator
-                                  final String? _autoValidatorResult =
-                                      this.widget.autoValidator?.call(value);
-                                  if (_autoValidatorResult != null) {
-                                    this._haptic.error();
-                                    setState(() {
-                                      this._isAutoValidationError = true;
-                                      this._autoValidationText = _autoValidatorResult;
-                                    });
-                                    return;
-                                  }
-                                  // Default
-                                  setState(() {
-                                    this._isAutoValidationError = false;
-                                    this._autoValidationText = "";
-                                    this._isValidationError = false;
-                                    this._validationText = "";
-                                  });
-                                },
-                              ),
+                              this._textInputHandlerFormatter,
                               ...this.widget.inputFormatters ?? [],
                             ],
                             cursorColor: this.widget.focusedGradient.colors.first,
@@ -351,10 +372,10 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                         Padding(
                           padding: EdgeInsets.only(left: this._size.s16),
                           child: FCGradientMask(
-                            gradient: this._internalGradient(),
+                            gradient: internalGradient,
                             child: Icon(
                               this.widget.postfixIcon,
-                              size: this.widget.internalIconHeight,
+                              size: internalIconHeight,
                             ),
                           ),
                         ),
@@ -370,14 +391,13 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                 child: FCAnimatedFastOpacity(
                   condition: this._focusNode.hasPrimaryFocus,
                   child: FCGradientMask(
-                    gradient: this._borderGradient(),
+                    gradient: borderGradient,
                     child: Container(
                       decoration: BoxDecoration(
-                        borderRadius:
-                            this.widget.borderRadius ?? this._config.borderRadiusField,
+                        borderRadius: borderRadius,
                         border: Border.all(
-                          color: this._borderGradient().colors.first,
-                          width: this.widget.borderWidth ?? this._config.borderWidthField,
+                          color: borderGradient.colors.first,
+                          width: borderWidth,
                         ),
                       ),
                       child: const SizedBox(),
@@ -391,8 +411,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                 child: this.widget.isDisabled
                     ? FCComponentDisabledOverlay(
                         color: this.widget.disabledColor,
-                        borderRadius:
-                            this.widget.borderRadius ?? this._config.borderRadiusField,
+                        borderRadius: borderRadius,
                       )
                     : null,
               ),
@@ -400,7 +419,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
           ],
         ),
         FCAnimatedCrossFade(
-          condition: this._errorText().isNotEmpty,
+          condition: errorText.isNotEmpty,
           firstChild: Padding(
             padding: EdgeInsets.only(
               top: this._size.s16 / 8,
@@ -412,7 +431,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
                 Flexible(
                   child: FCText.regular14Danger(
                     context: context,
-                    text: this._errorText(),
+                    text: errorText,
                   ),
                 ),
               ],

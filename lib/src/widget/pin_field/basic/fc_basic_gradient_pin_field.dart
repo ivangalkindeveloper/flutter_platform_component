@@ -10,10 +10,10 @@ class FCBasicGradientPINField extends StatefulWidget {
   const FCBasicGradientPINField({
     super.key,
     required this.context,
-    required this.length,
     this.controller,
     this.errorController,
     this.focusNode,
+    required this.length,
     required this.unfocusedBackgroundGradient,
     required this.focusedBackgroundGradient,
     required this.focusedBorderColor,
@@ -29,10 +29,10 @@ class FCBasicGradientPINField extends StatefulWidget {
   });
 
   final BuildContext context;
-  final int length;
   final TextEditingController? controller;
   final StreamController<bool?>? errorController;
   final FocusNode? focusNode;
+  final int length;
   final Gradient unfocusedBackgroundGradient;
   final Gradient focusedBackgroundGradient;
   final Color focusedBorderColor;
@@ -57,7 +57,10 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
   late final IFCTheme _theme;
   late final IFCSize _size;
 
+  // Controller
   late final AnimationController _animationController;
+
+  // Error
   late final StreamSubscription? _errorSubscription;
   bool _isError = false;
 
@@ -69,11 +72,14 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
     this._theme = this._config.theme;
     this._size = this._config.size;
 
+    // Controller
     this._animationController = AnimationController(
       vsync: this,
       duration: this._size.durationAnimationSlow,
     );
     this._animationController.addStatusListener(this._controllerListener);
+
+    // Error
     this._errorSubscription = this.widget.errorController?.stream.listen((bool? isError) {
       if (this.mounted == false) return;
 
@@ -94,8 +100,11 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
 
   @override
   void dispose() {
+    // Controller
     this._animationController.removeStatusListener(this._controllerListener);
     this._animationController.dispose();
+
+    // Error
     this._errorSubscription?.cancel();
     super.dispose();
   }
@@ -106,11 +115,13 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
 
   PinTheme _item({
     required Gradient backgroundGradient,
-    Color? borderColor,
+    required double height,
+    required double borderWidth,
+    required Color? borderColor,
   }) =>
       PinTheme(
         constraints: BoxConstraints(
-          minWidth: this.widget.height ?? this._size.s16,
+          minWidth: height,
         ),
         textStyle: const TextStyle(
           color: Colors.transparent,
@@ -121,7 +132,7 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
           border: borderColor != null
               ? Border.all(
                   color: borderColor,
-                  width: this.widget.borderWidth ?? this._config.borderWidthField,
+                  width: borderWidth,
                 )
               : null,
         ),
@@ -129,6 +140,14 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
 
   @override
   Widget build(BuildContext context) {
+    final double height = this.widget.height ?? this._size.s16;
+    final double borderWidth = this.widget.borderWidth ?? this._config.borderWidthField;
+    final double horizontalInterval = this.widget.horizontalInterval ?? this._size.s16;
+    final void Function(String)? onChanged =
+        this.widget.isDisabled ? null : this.widget.onChanged;
+    final void Function(String)? onCompleted =
+        this.widget.isDisabled ? null : this.widget.onCompleted;
+
     return Stack(
       children: [
         SlideTransition(
@@ -152,25 +171,34 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
               animationCurve: Curves.easeInOut,
               defaultPinTheme: this._item(
                 backgroundGradient: this.widget.unfocusedBackgroundGradient,
+                height: height,
+                borderWidth: borderWidth,
+                borderColor: null,
               ),
               focusedPinTheme: this._item(
                 backgroundGradient: this.widget.focusedBackgroundGradient,
+                height: height,
+                borderWidth: borderWidth,
                 borderColor: this.widget.focusedBorderColor,
               ),
               submittedPinTheme: this._item(
                 backgroundGradient: this.widget.submittedBackgroundGradient,
+                height: height,
+                borderWidth: borderWidth,
+                borderColor: null,
               ),
               errorPinTheme: this._item(
                 backgroundGradient: this._theme.dangerGradient,
+                height: height,
+                borderWidth: borderWidth,
+                borderColor: null,
               ),
               forceErrorState: this._isError,
-              separator: SizedBox(
-                width: this.widget.horizontalInterval ?? this._size.s16,
-              ),
+              separator: SizedBox(width: horizontalInterval),
               autofocus: this.widget.isAutofocus,
               showCursor: false,
-              onChanged: this.widget.isDisabled ? null : this.widget.onChanged,
-              onCompleted: this.widget.isDisabled ? null : this.widget.onCompleted,
+              onChanged: onChanged,
+              onCompleted: onCompleted,
               readOnly: this.widget.isDisabled,
               errorText: null,
               errorTextStyle: null,
@@ -182,9 +210,7 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
             child: this.widget.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.widget.disabledColor,
-                    borderRadius: BorderRadius.circular(
-                      this.widget.height ?? this._size.s16 * 2,
-                    ),
+                    borderRadius: BorderRadius.circular(height),
                   )
                 : null,
           ),

@@ -22,7 +22,7 @@ class FCBasicProgressIndicator extends StatelessWidget {
     final IFCSize size = config.size;
 
     return ClipRRect(
-      borderRadius: config.borderRadiusCard,
+      borderRadius: BorderRadius.circular(size.s32),
       child: LinearProgressIndicator(
         backgroundColor: this.backgroundColor,
         minHeight: size.s16 / 4,

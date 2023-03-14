@@ -6,6 +6,8 @@ class FCBasicGradientSnackbar extends StatelessWidget {
   const FCBasicGradientSnackbar({
     super.key,
     required this.backgroundGradient,
+    this.borderRadius,
+    this.borderWidth,
     this.borderGradient,
     this.padding,
     this.mainAxisAlignment,
@@ -16,6 +18,8 @@ class FCBasicGradientSnackbar extends StatelessWidget {
   });
 
   final Gradient backgroundGradient;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   final Gradient? borderGradient;
   final EdgeInsets? padding;
   final MainAxisAlignment? mainAxisAlignment;
@@ -29,23 +33,29 @@ class FCBasicGradientSnackbar extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
+    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusSnackbar;
+    final double borderWidth = this.borderWidth ?? config.borderWidthSnackbar;
+    final EdgeInsets padding = this.padding ??
+        EdgeInsets.symmetric(
+          vertical: size.s16 / 2,
+          horizontal: size.s16,
+        );
+    final MainAxisAlignment mainAxisAlignment =
+        this.mainAxisAlignment ?? MainAxisAlignment.start;
+
     return Stack(
       children: [
         FCAnimatedContainer(
           decoration: BoxDecoration(
             gradient: this.backgroundGradient,
-            borderRadius: config.borderRadiusSnackbar,
+            borderRadius: borderRadius,
           ),
-          padding: this.padding ??
-              EdgeInsets.symmetric(
-                vertical: size.s16 / 2,
-                horizontal: size.s16,
-              ),
+          padding: padding,
           child: Row(
             children: [
               Expanded(
                 child: Row(
-                  mainAxisAlignment: this.mainAxisAlignment ?? MainAxisAlignment.start,
+                  mainAxisAlignment: mainAxisAlignment,
                   children: [
                     if (this.prefix != null) this.prefix!,
                     if (this.prefix != null) SizedBox(width: size.s16),
@@ -71,10 +81,10 @@ class FCBasicGradientSnackbar extends StatelessWidget {
               gradient: this.borderGradient!,
               child: FCAnimatedContainer(
                 decoration: BoxDecoration(
-                  borderRadius: config.borderRadiusSnackbar,
+                  borderRadius: borderRadius,
                   border: Border.all(
                     color: this.borderGradient!.colors.first,
-                    width: config.borderWidthSnackbar,
+                    width: borderWidth,
                   ),
                 ),
                 child: const SizedBox(),

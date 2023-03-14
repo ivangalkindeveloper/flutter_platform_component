@@ -22,20 +22,25 @@ class FCGlobal {
   static Future<T?> showExpandedModal<T>({
     required BuildContext context,
     required Widget child,
+    Color? barrierColor,
+    BorderRadius? borderRadius,
   }) {
     final FCConfig config = context.config;
     final TargetPlatform platform = config.platform;
+
+    final Color methodBarrierColor = barrierColor ?? config.barrierColorExpandedModal;
+    final BorderRadius methodBorderRadius = borderRadius ?? config.borderRadiusModal;
 
     switch (platform) {
       case TargetPlatform.iOS:
         return bottomSheet.showCupertinoModalBottomSheet<T?>(
           context: context,
-          topRadius: config.borderRadiusModal.topLeft,
-          barrierColor: config.barrierColorExpandedModal,
-          backgroundColor: material.Colors.transparent,
           elevation: 0,
-          expand: true,
+          barrierColor: methodBarrierColor,
+          backgroundColor: material.Colors.transparent,
           transitionBackgroundColor: material.Colors.transparent,
+          topRadius: methodBorderRadius.topLeft,
+          expand: true,
           useRootNavigator: false,
           builder: (BuildContext context) => child,
         );
@@ -43,9 +48,9 @@ class FCGlobal {
       case TargetPlatform.android:
         return bottomSheet.showMaterialModalBottomSheet<T?>(
           context: context,
-          barrierColor: config.barrierColorExpandedModal,
-          backgroundColor: material.Colors.transparent,
           elevation: 0,
+          barrierColor: methodBarrierColor,
+          backgroundColor: material.Colors.transparent,
           expand: true,
           useRootNavigator: false,
           builder: (BuildContext context) => child,
@@ -54,9 +59,9 @@ class FCGlobal {
       default:
         return bottomSheet.showMaterialModalBottomSheet<T?>(
           context: context,
-          barrierColor: config.barrierColorExpandedModal,
-          backgroundColor: material.Colors.transparent,
           elevation: 0,
+          barrierColor: methodBarrierColor,
+          backgroundColor: material.Colors.transparent,
           expand: true,
           useRootNavigator: false,
           builder: (BuildContext context) => child,
@@ -67,16 +72,18 @@ class FCGlobal {
   static Future<T?> showPopUpModal<T>({
     required BuildContext context,
     required Widget child,
+    Color? barrierColor,
   }) {
     final FCConfig config = context.config;
     final TargetPlatform platform = config.platform;
+
+    final Color methodBarrierColor = barrierColor ?? config.barrierColorPopUpModal;
 
     switch (platform) {
       case TargetPlatform.iOS:
         return cupertino.showCupertinoModalPopup<T>(
           context: context,
-          barrierColor: config.barrierColorPopUpModal,
-          barrierDismissible: true,
+          barrierColor: methodBarrierColor,
           useRootNavigator: false,
           builder: (BuildContext context) => child,
         );
@@ -84,9 +91,9 @@ class FCGlobal {
       case TargetPlatform.android:
         return bottomSheet.showMaterialModalBottomSheet<T>(
           context: context,
-          barrierColor: config.barrierColorPopUpModal,
-          backgroundColor: material.Colors.transparent,
           elevation: 0,
+          barrierColor: methodBarrierColor,
+          backgroundColor: material.Colors.transparent,
           useRootNavigator: false,
           builder: (BuildContext context) => child,
         );
@@ -94,8 +101,9 @@ class FCGlobal {
       default:
         return bottomSheet.showMaterialModalBottomSheet<T>(
           context: context,
-          backgroundColor: material.Colors.transparent,
           elevation: 0,
+          barrierColor: methodBarrierColor,
+          backgroundColor: material.Colors.transparent,
           useRootNavigator: false,
           builder: (BuildContext context) => child,
         );
@@ -105,13 +113,15 @@ class FCGlobal {
   static Future<T?> showDialog<T>({
     required BuildContext context,
     required Widget child,
+    Color? barrierColor,
   }) {
     final FCConfig config = context.config;
     final TargetPlatform platform = config.platform;
     final IFCHaptic haptic = config.haptic;
 
-    haptic.warning();
+    final Color methodBarrierColor = barrierColor ?? config.barrierColorDialog;
 
+    haptic.selection();
     switch (platform) {
       case TargetPlatform.iOS:
         return cupertino.showCupertinoDialog<T>(
@@ -124,7 +134,7 @@ class FCGlobal {
       case TargetPlatform.android:
         return material.showDialog<T>(
           context: context,
-          barrierColor: config.barrierColorDialog,
+          barrierColor: methodBarrierColor,
           useRootNavigator: false,
           builder: (BuildContext context) => child,
         );
@@ -132,7 +142,7 @@ class FCGlobal {
       default:
         return material.showDialog<T>(
           context: context,
-          barrierColor: config.barrierColorDialog,
+          barrierColor: methodBarrierColor,
           useRootNavigator: false,
           builder: (BuildContext context) => child,
         );
@@ -141,49 +151,59 @@ class FCGlobal {
 
   static Future<DateTime?> showDateTimePicker({
     required BuildContext context,
-    required Locale locale,
     required FCDateRange dateRange,
     required Widget cupertinoModal,
+    Locale? materialDialogLocale,
+    Color? materialDialogBackgroundColor,
+    Color? materialDialogColor,
+    BorderRadius? materialDialogBorderRadius,
+    Color? barrierColor,
   }) {
     final FCConfig config = context.config;
     final TargetPlatform platform = config.platform;
+
+    final Color methodBarrierColor = barrierColor ?? config.barrierColorPopUpModal;
 
     switch (platform) {
       case TargetPlatform.iOS:
         return cupertino.showCupertinoModalPopup<DateTime?>(
           context: context,
-          barrierColor: config.barrierColorPopUpModal,
+          barrierColor: methodBarrierColor,
           useRootNavigator: false,
           builder: (BuildContext context) => cupertinoModal,
         );
 
       case TargetPlatform.android:
         return material.showDatePicker(
-          locale: locale,
           context: context,
+          locale: materialDialogLocale,
           initialDate: dateRange.dateInitial,
           firstDate: dateRange.dateMinimum,
           lastDate: dateRange.dateMaximum,
           useRootNavigator: false,
-          builder: (BuildContext context, Widget? dialog) => FCDatePicker(
+          builder: (BuildContext context, Widget? materialDialog) => FCDatePicker(
             dateRange: dateRange,
-            onChanged: (DateTime value) {},
-            materialDialog: dialog,
+            materialDialog: materialDialog,
+            materialDialogBackgroundColor: materialDialogBackgroundColor,
+            materialDialogColor: materialDialogColor,
+            materialDialogBorderRadius: materialDialogBorderRadius,
           ),
         );
 
       default:
         return material.showDatePicker(
-          locale: locale,
           context: context,
+          locale: materialDialogLocale,
           initialDate: dateRange.dateInitial,
           firstDate: dateRange.dateMinimum,
           lastDate: dateRange.dateMaximum,
           useRootNavigator: false,
-          builder: (BuildContext context, Widget? dialog) => FCDatePicker(
+          builder: (BuildContext context, Widget? materialDialog) => FCDatePicker(
             dateRange: dateRange,
-            onChanged: (DateTime value) {},
-            materialDialog: dialog,
+            materialDialog: materialDialog,
+            materialDialogBackgroundColor: materialDialogBackgroundColor,
+            materialDialogColor: materialDialogColor,
+            materialDialogBorderRadius: materialDialogBorderRadius,
           ),
         );
     }
@@ -198,12 +218,14 @@ class FCGlobal {
     Duration? duration,
   }) {
     final FCConfig config = context.config;
+    final IFCHaptic haptic = config.haptic;
     final IFCSize size = config.size;
 
     final material.ScaffoldMessengerState messenger =
         material.ScaffoldMessenger.of(context);
     messenger.hideCurrentSnackBar();
 
+    haptic.selection();
     return messenger.showSnackBar(
       material.SnackBar(
         elevation: 0,

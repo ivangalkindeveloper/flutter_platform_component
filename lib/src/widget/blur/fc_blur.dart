@@ -31,12 +31,16 @@ class FCBlur extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
+    final BorderRadius borderRadius = this.borderRadius ?? BorderRadius.zero;
+    final ImageFilter filter = this.filter ?? theme.blurFilter;
+    final double opacity = this.opacity ?? size.opacityBlur;
+
     return ClipRRect(
-      borderRadius: this.borderRadius ?? BorderRadius.zero,
+      borderRadius: borderRadius,
       child: BackdropFilter(
-        filter: this.filter ?? theme.blurFilter,
+        filter: filter,
         child: Container(
-          color: this._color(theme: theme).withOpacity(opacity ?? size.opacityBlur),
+          color: this._color(theme: theme).withOpacity(opacity),
           alignment: Alignment.center,
           child: this.child,
         ),

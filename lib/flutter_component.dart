@@ -20,7 +20,6 @@ export 'src/haptic/fc_haptic.dart';
 
 // Platform
 export 'src/platform/fc_platform_app_bar.dart';
-export 'src/platform/fc_platform_router_widget.dart';
 export 'src/platform/fc_platform_widget.dart';
 export 'src/platform/fc_platform.dart';
 
@@ -903,7 +902,7 @@ export 'src/widget/list/list_section/fc_list_section_item.dart';
 export 'src/widget/list/list_section/fc_list_section.dart';
 
 // Modal
-// Modal / Action Modal
+// Modal / Action Modal1§§
 export 'src/widget/modal/action_modal/fc_action_modal_item.dart';
 export 'src/widget/modal/action_modal/fc_action_modal.dart';
 // Modal / Modal

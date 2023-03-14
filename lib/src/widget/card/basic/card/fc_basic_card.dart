@@ -27,16 +27,20 @@ class FCBasicCard extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
+    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusCard;
+    final double borderWidth = this.borderWidth ?? config.borderWidthCard;
+    final EdgeInsets padding = this.padding ?? size.paddingCard;
+
     return FCAnimatedContainer(
-      padding: this.padding ?? size.paddingCard,
+      padding: padding,
       constraints: this.constraints,
       decoration: BoxDecoration(
         color: this.backgroundColor,
-        borderRadius: this.borderRadius ?? config.borderRadiusCard,
+        borderRadius: borderRadius,
         border: this.borderColor != null
             ? Border.all(
                 color: this.borderColor!,
-                width: this.borderWidth ?? config.borderWidthCard,
+                width: borderWidth,
               )
             : null,
       ),

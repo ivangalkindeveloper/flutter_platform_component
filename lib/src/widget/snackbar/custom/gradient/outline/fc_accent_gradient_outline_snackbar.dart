@@ -5,6 +5,8 @@ import 'package:flutter/widgets.dart';
 class FCAccentGradientOutlineSnackbar extends StatelessWidget {
   const FCAccentGradientOutlineSnackbar({
     super.key,
+    this.borderRadius,
+    this.borderWidth,
     this.padding,
     this.mainAxisAlignment,
     this.prefix,
@@ -13,6 +15,8 @@ class FCAccentGradientOutlineSnackbar extends StatelessWidget {
     this.bottom,
   });
 
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   final EdgeInsets? padding;
   final MainAxisAlignment? mainAxisAlignment;
   final Widget? prefix;
@@ -28,6 +32,8 @@ class FCAccentGradientOutlineSnackbar extends StatelessWidget {
     return FCBasicGradientSnackbar(
       backgroundGradient: theme.accentLightGradient,
       borderGradient: theme.accentGradient,
+      borderRadius: this.borderRadius,
+      borderWidth: this.borderWidth,
       padding: this.padding,
       mainAxisAlignment: this.mainAxisAlignment,
       prefix: this.prefix,

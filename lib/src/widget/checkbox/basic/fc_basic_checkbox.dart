@@ -86,6 +86,7 @@ class _FCBasicCheckboxCupertino extends StatelessWidget {
               child: this.isDisabled
                   ? FCComponentDisabledOverlay(
                       color: this.disabledColor,
+                      borderRadius: BorderRadius.circular(size.s32),
                     )
                   : null,
             ),
@@ -141,6 +142,7 @@ class _FCBasicCheckboxMaterial extends StatelessWidget {
             child: this.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.disabledColor,
+                    borderRadius: BorderRadius.circular(size.s32),
                   )
                 : null,
           ),

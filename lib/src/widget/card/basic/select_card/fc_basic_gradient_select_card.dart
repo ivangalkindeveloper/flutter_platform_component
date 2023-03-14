@@ -80,16 +80,19 @@ class _FCBasicGradientSelectCardCupertino extends StatelessWidget {
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
 
+    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusCard;
+    final VoidCallback onPressed = this.isDisabled ? () {} : this.onPressed;
+
     return Stack(
       children: [
         CupertinoButton(
-          onPressed: this.onPressed,
+          onPressed: onPressed,
           padding: EdgeInsets.zero,
-          borderRadius: this.borderRadius ?? config.borderRadiusCard,
+          borderRadius: borderRadius,
           child: FCBasicGradientCard(
             backgroundGradient: this.backgroundGradient,
             constraints: this.constraints,
-            borderRadius: this.borderRadius ?? config.borderRadiusCard,
+            borderRadius: this.borderRadius,
             borderGradient: this.borderGradient,
             borderWidth: this.borderWidth,
             padding: this.padding,
@@ -101,7 +104,7 @@ class _FCBasicGradientSelectCardCupertino extends StatelessWidget {
             child: this.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.disabledColor,
-                    borderRadius: this.borderRadius ?? config.borderRadiusCard,
+                    borderRadius: borderRadius,
                   )
                 : null,
           ),
@@ -142,17 +145,19 @@ class _FCBasicGradientSelectCardMaterial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
-    final IFCSize size = config.size;
+
+    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusCard;
+    final VoidCallback onPressed = this.isDisabled ? () {} : this.onPressed;
 
     return Stack(
       children: [
         FCBasicGradientCard(
           backgroundGradient: this.backgroundGradient,
           constraints: this.constraints,
-          borderRadius: this.borderRadius ?? config.borderRadiusCard,
+          borderRadius: this.borderRadius,
           borderGradient: this.borderGradient,
           borderWidth: this.borderWidth,
-          padding: this.padding ?? size.paddingCard,
+          padding: this.padding,
           child: this.child,
         ),
         Positioned.fill(
@@ -164,10 +169,10 @@ class _FCBasicGradientSelectCardMaterial extends StatelessWidget {
               shadowColor: Colors.transparent,
               padding: EdgeInsets.zero,
               shape: RoundedRectangleBorder(
-                borderRadius: this.borderRadius ?? config.borderRadiusCard,
+                borderRadius: borderRadius,
               ),
             ),
-            onPressed: this.isDisabled ? () {} : this.onPressed,
+            onPressed: onPressed,
             child: const SizedBox(),
           ),
         ),
@@ -176,7 +181,7 @@ class _FCBasicGradientSelectCardMaterial extends StatelessWidget {
             child: this.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.disabledColor,
-                    borderRadius: this.borderRadius ?? config.borderRadiusCard,
+                    borderRadius: borderRadius,
                   )
                 : null,
           ),

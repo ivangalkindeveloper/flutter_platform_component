@@ -34,7 +34,10 @@ class FCRoute {
         ),
       );
 
-  static PageRouteBuilder pageRouteFade({required Widget child}) => PageRouteBuilder(
+  static PageRouteBuilder pageRouteFade({
+    required Widget child,
+  }) =>
+      PageRouteBuilder(
         pageBuilder: (
           BuildContext context,
           Animation primaryAnimation,

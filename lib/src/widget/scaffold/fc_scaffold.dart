@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 import 'package:flutter/cupertino.dart'
     show ObstructingPreferredSizeWidget, CupertinoPageScaffold;
-import 'package:flutter/material.dart' show Scaffold;
+import 'package:flutter/material.dart' show Scaffold, Colors;
 
 class FCScaffold extends FCPlatformWidget {
   FCScaffold({
@@ -70,15 +70,17 @@ class _FCScaffoldCupertino extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
+    final Color backgroundColor = this.backgroundColor ?? theme.backgroundScaffold;
+
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
-        backgroundColor: this.backgroundColor ?? theme.backgroundComponent,
+        backgroundColor: Colors.transparent,
         resizeToAvoidBottomInset: this.resizeToAvoidBottomInset,
         extendBodyBehindAppBar: this.extendBodyBehindAppBar,
         extendBody: this.extendBody,
         body: CupertinoPageScaffold(
-          backgroundColor: this.backgroundColor ?? theme.backgroundComponent,
+          backgroundColor: backgroundColor,
           resizeToAvoidBottomInset: this.resizeToAvoidBottomInset,
           navigationBar: this.appBar,
           child: this.body,
@@ -117,10 +119,12 @@ class _FCScaffoldMaterial extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
+    final Color backgroundColor = this.backgroundColor ?? theme.backgroundScaffold;
+
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
-        backgroundColor: this.backgroundColor ?? theme.backgroundScaffold,
+        backgroundColor: backgroundColor,
         resizeToAvoidBottomInset: this.resizeToAvoidBottomInset,
         extendBodyBehindAppBar: this.extendBodyBehindAppBar,
         extendBody: this.extendBody,

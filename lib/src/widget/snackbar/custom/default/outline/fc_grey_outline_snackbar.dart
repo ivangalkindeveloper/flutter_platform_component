@@ -5,6 +5,8 @@ import 'package:flutter/widgets.dart';
 class FCGreyOutlineSnackbar extends StatelessWidget {
   const FCGreyOutlineSnackbar({
     super.key,
+    this.borderRadius,
+    this.borderWidth,
     this.padding,
     this.mainAxisAlignment,
     this.prefix,
@@ -13,6 +15,8 @@ class FCGreyOutlineSnackbar extends StatelessWidget {
     this.bottom,
   });
 
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
   final EdgeInsets? padding;
   final MainAxisAlignment? mainAxisAlignment;
   final Widget? prefix;
@@ -28,6 +32,8 @@ class FCGreyOutlineSnackbar extends StatelessWidget {
     return FCBasicSnackbar(
       backgroundColor: theme.greyLight,
       borderColor: theme.grey,
+      borderRadius: this.borderRadius,
+      borderWidth: this.borderWidth,
       padding: this.padding,
       mainAxisAlignment: this.mainAxisAlignment,
       prefix: this.prefix,

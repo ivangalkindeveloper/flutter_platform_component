@@ -27,7 +27,10 @@ class ScaffoldScreen extends StatelessWidget {
             onPressed: () => FCGlobal.showSnackBar(
               context: context,
               child: FCPrimarySnackbar(
-                child: FCText.regular16PrimaryButton(context: context, text: "Snackbar"),
+                child: FCText.regular16PrimaryButton(
+                  context: context,
+                  text: "Snackbar",
+                ),
               ),
             ),
           ),

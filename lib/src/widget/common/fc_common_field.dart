@@ -66,86 +66,6 @@ class FCCommonField extends StatelessWidget {
   final Color? cursorColor;
   final bool? isEnabled;
 
-  TextStyle _fieldStyle({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-  }) =>
-      this.textStyle?.copyWith(
-            color: this.textStyle?.color ?? theme.black,
-            fontSize: this.textStyle?.fontSize ?? size.s16,
-            fontWeight: this.textStyle?.fontWeight ?? textStyle.fontWeightRegular,
-            fontFamily: this.textStyle?.fontFamily ?? textStyle.fontFamilyRegular,
-            package: textStyle.package,
-          ) ??
-      TextStyle(
-        color: theme.black,
-        fontSize: size.s16,
-        fontWeight: textStyle.fontWeightRegular,
-        fontFamily: textStyle.fontFamilyRegular,
-        package: textStyle.package,
-      );
-
-  TextStyle _fieldLabelStyle({
-    required IFCTextStyle textStyle,
-    required IFCSize size,
-    required Color color,
-  }) =>
-      this.labelStyle?.copyWith(
-            color: color,
-            fontSize: this.labelStyle?.fontSize ?? size.s16,
-            fontWeight: this.labelStyle?.fontWeight ?? textStyle.fontWeightRegular,
-            fontFamily: this.labelStyle?.fontFamily ?? textStyle.fontFamilyRegular,
-            package: textStyle.package,
-          ) ??
-      TextStyle(
-        color: color,
-        fontSize: size.s16,
-        fontWeight: textStyle.fontWeightRegular,
-        fontFamily: textStyle.fontFamilyRegular,
-        package: textStyle.package,
-      );
-
-  TextStyle _fieldPrefixStyle({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-  }) =>
-      this.prefixStyle?.copyWith(
-            color: this.prefixStyle?.color ?? theme.black,
-            fontSize: this.prefixStyle?.fontSize ?? size.s16,
-            fontWeight: this.prefixStyle?.fontWeight ?? textStyle.fontWeightRegular,
-            fontFamily: this.prefixStyle?.fontFamily ?? textStyle.fontFamilyRegular,
-            package: textStyle.package,
-          ) ??
-      TextStyle(
-        color: theme.black,
-        fontSize: size.s16,
-        fontWeight: textStyle.fontWeightRegular,
-        fontFamily: textStyle.fontFamilyRegular,
-        package: textStyle.package,
-      );
-
-  TextStyle _fieldHintStyle({
-    required IFCTextStyle textStyle,
-    required IFCTheme theme,
-    required IFCSize size,
-  }) =>
-      this.hintStyle?.copyWith(
-            color: this.hintStyle?.color ?? theme.greyLight,
-            fontSize: this.hintStyle?.fontSize ?? size.s16,
-            fontWeight: this.hintStyle?.fontWeight ?? textStyle.fontWeightRegular,
-            fontFamily: this.hintStyle?.fontFamily ?? textStyle.fontFamilyRegular,
-            package: textStyle.package,
-          ) ??
-      TextStyle(
-        color: theme.greyLight,
-        fontSize: size.s16,
-        fontWeight: textStyle.fontWeightRegular,
-        fontFamily: textStyle.fontFamilyRegular,
-        package: textStyle.package,
-      );
-
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
@@ -153,22 +73,72 @@ class FCCommonField extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
+    final TextStyle fieldTextStyle = this.textStyle?.copyWith(
+              color: this.textStyle?.color ?? theme.black,
+              fontSize: this.textStyle?.fontSize ?? size.s16,
+              fontWeight: this.textStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily: this.textStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.black,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightRegular,
+          fontFamily: textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
+    final TextStyle fieldLabelStyle = this.labelStyle?.copyWith(
+              color: this.labelColor,
+              fontSize: this.labelStyle?.fontSize ?? size.s16,
+              fontWeight: this.labelStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily: this.labelStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: this.labelColor,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightRegular,
+          fontFamily: textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
+    final TextStyle fieldPrefixStyle = this.prefixStyle?.copyWith(
+              color: this.prefixStyle?.color ?? theme.black,
+              fontSize: this.prefixStyle?.fontSize ?? size.s16,
+              fontWeight: this.prefixStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily: this.prefixStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.black,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightRegular,
+          fontFamily: textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
+    final TextStyle fieldHintStyle = this.hintStyle?.copyWith(
+              color: this.hintStyle?.color ?? theme.greyLight,
+              fontSize: this.hintStyle?.fontSize ?? size.s16,
+              fontWeight: this.hintStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily: this.hintStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.greyLight,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightRegular,
+          fontFamily: textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
+    final String? hintText = this.hintText != null ? " ${this.hintText}" : null;
+
     return Material(
       color: Colors.transparent,
       child: DefaultTextStyle(
-        style: this._fieldStyle(
-          textStyle: textStyle,
-          theme: theme,
-          size: size,
-        ),
+        style: fieldTextStyle,
         child: TextFormField(
           controller: this.controller,
           focusNode: this.focusNode,
-          style: this._fieldStyle(
-            textStyle: textStyle,
-            theme: theme,
-            size: size,
-          ),
+          style: fieldTextStyle,
           decoration: InputDecoration(
             filled: true,
             fillColor: Colors.transparent,
@@ -178,23 +148,11 @@ class FCCommonField extends StatelessWidget {
               bottom: size.s14 / 4,
             ),
             labelText: this.labelText,
-            labelStyle: this._fieldLabelStyle(
-              textStyle: textStyle,
-              size: size,
-              color: this.labelColor,
-            ),
+            labelStyle: fieldLabelStyle,
             prefixText: this.prefixText,
-            prefixStyle: this._fieldPrefixStyle(
-              textStyle: textStyle,
-              theme: theme,
-              size: size,
-            ),
-            hintText: this.hintText != null ? " ${this.hintText}" : null,
-            hintStyle: this._fieldHintStyle(
-              textStyle: textStyle,
-              theme: theme,
-              size: size,
-            ),
+            prefixStyle: fieldPrefixStyle,
+            hintText: hintText,
+            hintStyle: fieldHintStyle,
             counterText: "",
             counterStyle: const TextStyle(height: 0),
             errorText: null,

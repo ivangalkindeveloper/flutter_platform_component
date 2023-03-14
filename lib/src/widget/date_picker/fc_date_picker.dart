@@ -15,40 +15,51 @@ import 'package:flutter/material.dart' show Theme, ColorScheme, DialogTheme;
 class FCDatePicker extends FCPlatformWidget {
   FCDatePicker({
     super.key,
-    required this.dateRange,
-    required this.onChanged,
-    this.materialDialog,
+    required FCDateRange dateRange,
+    void Function(DateTime)? cupertinoOnChanged,
+    Widget? materialDialog,
+    Color? materialDialogBackgroundColor,
+    Color? materialDialogColor,
+    BorderRadius? materialDialogBorderRadius,
   }) : super(
           cupertino: _FCDatePickerCupertino(
             key: key,
             dateRange: dateRange,
-            onChanged: onChanged,
+            cupertinoOnChanged: cupertinoOnChanged,
             materialDialog: materialDialog,
+            materialDialogBackgroundColor: materialDialogBackgroundColor,
+            materialDialogColor: materialDialogColor,
+            materialDialogBorderRadius: materialDialogBorderRadius,
           ),
           material: _FCDatePickerMaterial(
             key: key,
             dateRange: dateRange,
-            onChanged: onChanged,
+            cupertinoOnChanged: cupertinoOnChanged,
             materialDialog: materialDialog,
+            materialDialogBackgroundColor: materialDialogBackgroundColor,
+            materialDialogColor: materialDialogColor,
+            materialDialogBorderRadius: materialDialogBorderRadius,
           ),
         );
-
-  final FCDateRange dateRange;
-  final Function(DateTime) onChanged;
-  final Widget? materialDialog;
 }
 
 class _FCDatePickerCupertino extends StatelessWidget {
   const _FCDatePickerCupertino({
     super.key,
     required this.dateRange,
-    required this.onChanged,
+    required this.cupertinoOnChanged,
     required this.materialDialog,
+    required this.materialDialogBackgroundColor,
+    required this.materialDialogColor,
+    required this.materialDialogBorderRadius,
   });
 
   final FCDateRange dateRange;
-  final Function(DateTime) onChanged;
+  final void Function(DateTime)? cupertinoOnChanged;
   final Widget? materialDialog;
+  final Color? materialDialogBackgroundColor;
+  final Color? materialDialogColor;
+  final BorderRadius? materialDialogBorderRadius;
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +83,7 @@ class _FCDatePickerCupertino extends StatelessWidget {
           initialDateTime: this.dateRange.dateInitial,
           minimumDate: this.dateRange.dateMinimum,
           maximumDate: this.dateRange.dateMaximum,
-          onDateTimeChanged: this.onChanged,
+          onDateTimeChanged: this.cupertinoOnChanged ?? (DateTime value) {},
         ),
       ),
     );
@@ -83,29 +94,41 @@ class _FCDatePickerMaterial extends StatelessWidget {
   const _FCDatePickerMaterial({
     super.key,
     required this.dateRange,
-    required this.onChanged,
+    required this.cupertinoOnChanged,
     required this.materialDialog,
+    required this.materialDialogBackgroundColor,
+    required this.materialDialogColor,
+    required this.materialDialogBorderRadius,
   });
 
   final FCDateRange dateRange;
-  final Function(DateTime) onChanged;
+  final void Function(DateTime)? cupertinoOnChanged;
   final Widget? materialDialog;
+  final Color? materialDialogBackgroundColor;
+  final Color? materialDialogColor;
+  final BorderRadius? materialDialogBorderRadius;
 
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
+    final Color backgroundColor =
+        this.materialDialogBackgroundColor ?? theme.backgroundScaffold;
+    final Color color = this.materialDialogColor ?? theme.primary;
+    final BorderRadius borderRadius =
+        this.materialDialogBorderRadius ?? config.borderRadiusDialog;
+
     return Theme(
       data: theme.materialThemeData.copyWith(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: theme.primary,
+          seedColor: color,
         ),
         dialogTheme: DialogTheme(
           elevation: 0,
-          backgroundColor: theme.white,
+          backgroundColor: backgroundColor,
           shape: RoundedRectangleBorder(
-            borderRadius: config.borderRadiusDialog,
+            borderRadius: borderRadius,
           ),
           actionsPadding: EdgeInsets.zero,
         ),

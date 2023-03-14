@@ -46,7 +46,13 @@ class FCSuccessLightGradientToggle<T> extends StatelessWidget {
           theme.backgroundComponent,
         ],
       ),
-      unselectedInternalGradient: theme.greyLightGradient,
+      unselectedInternalGradient: FCLinearGradient(
+        context: context,
+        colors: [
+          theme.black,
+          theme.black,
+        ],
+      ),
       unselectedSplashColor: theme.successLight,
       unselectedStyle: this.unselectedStyle,
       selectedBackgroundGradient: theme.successLightGradient,

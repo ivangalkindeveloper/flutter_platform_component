@@ -29,6 +29,14 @@ class FCBasicGradientPageIndicator extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
+    final double height = this.height ?? size.s16 / 2;
+    final double width = this.index == index
+        ? (this.selectedWidth ?? size.s16)
+        : (this.unselectedWidth ?? size.s16 / 2);
+    final Gradient gradient =
+        this.index == index ? this.selectedGradident : this.unselectedGradident;
+    final Duration duration = this.duration ?? size.durationPageIndicator;
+
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -37,18 +45,14 @@ class FCBasicGradientPageIndicator extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               AnimatedContainer(
-                height: this.height ?? size.s16 / 2,
-                width: this.index == index
-                    ? (this.selectedWidth ?? size.s16)
-                    : (this.unselectedWidth ?? size.s16 / 2),
+                height: height,
+                width: width,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(size.s16),
-                  gradient: this.index == index
-                      ? this.selectedGradident
-                      : this.unselectedGradident,
+                  borderRadius: BorderRadius.circular(size.s32),
+                  gradient: gradient,
                 ),
-                duration: this.duration ?? size.durationPageIndicator,
+                duration: duration,
                 curve: Curves.easeInOut,
                 child: const SizedBox(),
               ),

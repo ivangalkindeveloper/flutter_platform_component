@@ -8,6 +8,7 @@ class FCAccentDarkGradientShimmer extends StatelessWidget {
     this.shape = BoxShape.rectangle,
     this.height,
     this.width,
+    this.borderRadius,
     this.duration,
     this.child,
   });
@@ -15,6 +16,7 @@ class FCAccentDarkGradientShimmer extends StatelessWidget {
   final BoxShape shape;
   final double? height;
   final double? width;
+  final BorderRadius? borderRadius;
   final Duration? duration;
   final Widget? child;
 
@@ -30,6 +32,7 @@ class FCAccentDarkGradientShimmer extends StatelessWidget {
       shape: this.shape,
       height: this.height,
       width: this.width,
+      borderRadius: this.borderRadius,
       duration: this.duration,
       child: this.child,
     );

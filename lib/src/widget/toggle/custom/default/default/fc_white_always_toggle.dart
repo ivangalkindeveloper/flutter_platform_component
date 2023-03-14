@@ -40,7 +40,7 @@ class FCWhiteAlwaysToggle<T> extends StatelessWidget {
       items: this.items,
       onChanged: this.onChanged,
       unselectedBackgroundColor: theme.backgroundComponent,
-      unselectedInternalColor: theme.grey,
+      unselectedInternalColor: theme.black,
       unselectedSplashColor: theme.whiteAlways,
       unselectedStyle: this.unselectedStyle,
       selectedBackgroundColor: theme.whiteAlways,

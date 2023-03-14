@@ -60,6 +60,10 @@ class _FCSliverNavigationAppBarCupertino extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
+    final TextStyle? style = this.style?.copyWith(
+          color: this.style?.color ?? theme.black,
+        );
+
     return CupertinoSliverNavigationBar(
       // transitionBetweenRoutes: false,
       backgroundColor: theme.white.withOpacity(0),
@@ -72,9 +76,7 @@ class _FCSliverNavigationAppBarCupertino extends StatelessWidget {
       leading: this.prefix,
       largeTitle: Text(
         this.title,
-        style: this.style?.copyWith(
-              color: this.style?.color ?? theme.black,
-            ),
+        style: style,
       ),
       trailing: this.postfix,
     );
@@ -106,6 +108,19 @@ class _FCSliverNavigationAppBarMaterial extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
+    final TextStyle style = this.style?.copyWith(
+              color: this.style?.color ?? theme.black,
+              fontWeight: this.style?.fontWeight ?? textStyle.fontWeightBold,
+              fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyBold,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.black,
+          fontWeight: textStyle.fontWeightBold,
+          fontFamily: textStyle.fontFamilyBold,
+          package: textStyle.package,
+        );
+
     return SliverAppBar.large(
       elevation: 0,
       backgroundColor: theme.white,
@@ -113,18 +128,7 @@ class _FCSliverNavigationAppBarMaterial extends StatelessWidget {
       leading: this.prefix,
       title: Text(
         this.title,
-        style: this.style?.copyWith(
-                  color: this.style?.color ?? theme.black,
-                  fontWeight: this.style?.fontWeight ?? textStyle.fontWeightBold,
-                  fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyBold,
-                  package: textStyle.package,
-                ) ??
-            TextStyle(
-              color: theme.black,
-              fontWeight: textStyle.fontWeightBold,
-              fontFamily: textStyle.fontFamilyBold,
-              package: textStyle.package,
-            ),
+        style: style,
       ),
       centerTitle: true,
       actions: this.postfix != null

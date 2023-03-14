@@ -40,7 +40,7 @@ class FCSecondaryLightToggle<T> extends StatelessWidget {
       items: this.items,
       onChanged: this.onChanged,
       unselectedBackgroundColor: theme.backgroundComponent,
-      unselectedInternalColor: theme.greyLight,
+      unselectedInternalColor: theme.black,
       unselectedSplashColor: theme.secondaryLight,
       unselectedStyle: this.unselectedStyle,
       selectedBackgroundColor: theme.secondaryLight,

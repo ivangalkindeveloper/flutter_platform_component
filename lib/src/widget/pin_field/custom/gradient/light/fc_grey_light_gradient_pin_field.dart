@@ -6,10 +6,10 @@ import 'dart:async';
 class FCGreyLightGradientPINField extends StatelessWidget {
   const FCGreyLightGradientPINField({
     super.key,
-    required this.length,
     this.controller,
     this.errorController,
     this.focusNode,
+    required this.length,
     this.height,
     this.borderWidth,
     this.horizontalInterval,
@@ -20,10 +20,10 @@ class FCGreyLightGradientPINField extends StatelessWidget {
     this.disabledColor,
   });
 
-  final int length;
   final TextEditingController? controller;
   final StreamController<bool?>? errorController;
   final FocusNode? focusNode;
+  final int length;
   final double? height;
   final double? borderWidth;
   final double? horizontalInterval;
@@ -40,10 +40,10 @@ class FCGreyLightGradientPINField extends StatelessWidget {
 
     return FCBasicGradientPINField(
       context: context,
-      length: this.length,
       controller: this.controller,
       errorController: this.errorController,
       focusNode: this.focusNode,
+      length: this.length,
       unfocusedBackgroundGradient: theme.greyLightGradient,
       focusedBackgroundGradient: FCLinearGradient(
         context: context,

@@ -46,7 +46,13 @@ class FCWarningDarkGradientToggle<T> extends StatelessWidget {
           theme.white,
         ],
       ),
-      unselectedInternalGradient: theme.greyDarkGradient,
+      unselectedInternalGradient: FCLinearGradient(
+        context: context,
+        colors: [
+          theme.black,
+          theme.black,
+        ],
+      ),
       unselectedSplashColor: theme.warningDark,
       unselectedStyle: this.unselectedStyle,
       selectedBackgroundGradient: theme.warningDarkGradient,

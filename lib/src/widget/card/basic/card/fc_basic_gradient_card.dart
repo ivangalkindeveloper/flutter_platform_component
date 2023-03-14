@@ -29,14 +29,18 @@ class FCBasicGradientCard extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
+    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusCard;
+    final double borderWidth = this.borderWidth ?? config.borderWidthCard;
+    final EdgeInsets padding = this.padding ?? size.paddingCard;
+
     return Stack(
       children: [
         FCAnimatedContainer(
-          padding: this.padding ?? size.paddingCard,
+          padding: padding,
           constraints: this.constraints,
           decoration: BoxDecoration(
             gradient: this.backgroundGradient,
-            borderRadius: this.borderRadius ?? config.borderRadiusCard,
+            borderRadius: borderRadius,
           ),
           child: this.child,
         ),
@@ -47,10 +51,10 @@ class FCBasicGradientCard extends StatelessWidget {
                 gradient: this.borderGradient!,
                 child: FCAnimatedContainer(
                   decoration: BoxDecoration(
-                    borderRadius: this.borderRadius ?? config.borderRadiusCard,
+                    borderRadius: borderRadius,
                     border: Border.all(
                       color: Colors.white,
-                      width: this.borderWidth ?? config.borderWidthCard,
+                      width: borderWidth,
                     ),
                   ),
                   child: const SizedBox(),

@@ -40,7 +40,7 @@ class FCInfoToggle<T> extends StatelessWidget {
       items: this.items,
       onChanged: this.onChanged,
       unselectedBackgroundColor: theme.backgroundComponent,
-      unselectedInternalColor: theme.grey,
+      unselectedInternalColor: theme.black,
       unselectedSplashColor: theme.info,
       unselectedStyle: this.unselectedStyle,
       selectedBackgroundColor: theme.info,

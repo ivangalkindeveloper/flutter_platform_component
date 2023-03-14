@@ -110,6 +110,9 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
   // FocusNode
   late final FocusNode _focusNode;
 
+  // Handler
+  late final FCTextInputHandlerFormatter _textInputHandlerFormatter;
+
   // Error
   bool _isAutoValidationError = false;
   String _autoValidationText = "";
@@ -131,6 +134,42 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
     // FocusNode
     this._focusNode = this.widget.focusNode ?? FocusNode();
     this._focusNode.addListener(this._focusNodeListener);
+
+    // Handler
+    this._textInputHandlerFormatter = FCTextInputHandlerFormatter(
+      onNewValue: (String value) {
+        if (this.mounted == false) return null;
+
+        // Required
+        if (this.widget.isRequired && value.isEmpty) {
+          this._haptic.error();
+          setState(() {
+            this._isAutoValidationError = false;
+            this._autoValidationText = "";
+            this._isValidationError = true;
+            this._validationText = "";
+          });
+          return;
+        }
+        // Auto validator
+        final String? _autoValidatorResult = this.widget.autoValidator?.call(value);
+        if (_autoValidatorResult != null) {
+          this._haptic.error();
+          setState(() {
+            this._isAutoValidationError = true;
+            this._autoValidationText = _autoValidatorResult;
+          });
+          return;
+        }
+        // Default
+        setState(() {
+          this._isAutoValidationError = false;
+          this._autoValidationText = "";
+          this._isValidationError = false;
+          this._validationText = "";
+        });
+      },
+    );
   }
 
   @override
@@ -240,6 +279,26 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
 
   @override
   Widget build(BuildContext context) {
+    final Color backgroundColor = this._backgroundColor();
+    final Color internalColor = this._internalColor();
+    final Color labelColor = this._labelColor();
+    final double height = this.widget.height ?? this._size.heightFormField;
+    final BorderRadius borderRadius =
+        this.widget.borderRadius ?? this._config.borderRadiusField;
+    final Color borderColor = this._borderColor();
+    final double borderWidth = this.widget.borderWidth ?? this._config.borderWidthField;
+    final double internalIconHeight =
+        this.widget.internalIconHeight ?? this._size.heightIconDefault;
+    final EdgeInsets internalPadding =
+        this._focusNode.hasPrimaryFocus || this._controller.text.isNotEmpty
+            ? EdgeInsets.only(top: (this._size.s12 / 2))
+            : EdgeInsets.zero;
+    final void Function(String)? onChanged =
+        this.widget.isDisabled ? null : this.widget.onChanged;
+    final void Function()? onTap = this.widget.isDisabled ? null : this.widget.onTap;
+    final String? Function(String?) validator = this._validator;
+    final String errorText = this._errorText();
+
     return Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -249,14 +308,14 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
             FCAnimatedFastContainer(
               padding: EdgeInsets.symmetric(vertical: this._size.s16 / 4),
               constraints: BoxConstraints(
-                minHeight: this.widget.height ?? this._size.heightFormField,
+                minHeight: height,
               ),
               decoration: BoxDecoration(
-                color: this._backgroundColor(),
-                borderRadius: this.widget.borderRadius ?? this._config.borderRadiusField,
+                color: backgroundColor,
+                borderRadius: borderRadius,
                 border: Border.all(
-                  color: this._borderColor(),
-                  width: this.widget.borderWidth ?? this._config.borderWidthField,
+                  color: borderColor,
+                  width: borderWidth,
                 ),
               ),
               child: Column(
@@ -270,16 +329,13 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
                           padding: EdgeInsets.only(right: this._size.s16),
                           child: Icon(
                             this.widget.prefixIcon,
-                            color: this._internalColor(),
-                            size: this.widget.internalIconHeight,
+                            color: internalColor,
+                            size: internalIconHeight,
                           ),
                         ),
                       Expanded(
                         child: FCAnimatedFastContainer(
-                          padding: this._focusNode.hasPrimaryFocus ||
-                                  this._controller.text.isNotEmpty
-                              ? EdgeInsets.only(top: (this._size.s12 / 2))
-                              : EdgeInsets.zero,
+                          padding: internalPadding,
                           child: FCCommonField(
                             controller: this._controller,
                             focusNode: this._focusNode,
@@ -287,7 +343,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
                             textStyle: this.widget.textStyle,
                             //
                             labelText: this.widget.labelText,
-                            labelColor: this._labelColor(),
+                            labelColor: labelColor,
                             labelStyle: this.widget.labelStyle,
                             //
                             prefixText: this.widget.prefixText,
@@ -302,46 +358,11 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
                             isAutofocus: this.widget.isAutofocus,
                             maxLines: this.widget.maxLines,
                             maxLength: this.widget.maxLength,
-                            onChanged:
-                                this.widget.isDisabled ? null : this.widget.onChanged,
-                            onTap: this.widget.isDisabled ? null : this.widget.onTap,
-                            validator: this._validator,
+                            onChanged: onChanged,
+                            onTap: onTap,
+                            validator: validator,
                             inputFormatters: [
-                              FCTextInputHandlerFormatter(
-                                onNewValue: (String value) {
-                                  if (this.mounted == false) return null;
-
-                                  // Required
-                                  if (this.widget.isRequired && value.isEmpty) {
-                                    this._haptic.error();
-                                    setState(() {
-                                      this._isAutoValidationError = false;
-                                      this._autoValidationText = "";
-                                      this._isValidationError = true;
-                                      this._validationText = "";
-                                    });
-                                    return;
-                                  }
-                                  // Auto validator
-                                  final String? _autoValidatorResult =
-                                      this.widget.autoValidator?.call(value);
-                                  if (_autoValidatorResult != null) {
-                                    this._haptic.error();
-                                    setState(() {
-                                      this._isAutoValidationError = true;
-                                      this._autoValidationText = _autoValidatorResult;
-                                    });
-                                    return;
-                                  }
-                                  // Default
-                                  setState(() {
-                                    this._isAutoValidationError = false;
-                                    this._autoValidationText = "";
-                                    this._isValidationError = false;
-                                    this._validationText = "";
-                                  });
-                                },
-                              ),
+                              this._textInputHandlerFormatter,
                               ...this.widget.inputFormatters ?? [],
                             ],
                             cursorColor: this.widget.focusedColor,
@@ -354,8 +375,8 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
                           padding: EdgeInsets.only(left: this._size.s16),
                           child: Icon(
                             this.widget.postfixIcon,
-                            color: this._internalColor(),
-                            size: this.widget.internalIconHeight,
+                            color: internalColor,
+                            size: internalIconHeight,
                           ),
                         ),
                       this.widget.postfix ?? SizedBox(width: this._size.s16),
@@ -370,8 +391,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
                 child: this.widget.isDisabled
                     ? FCComponentDisabledOverlay(
                         color: this.widget.disabledColor,
-                        borderRadius:
-                            this.widget.borderRadius ?? this._config.borderRadiusField,
+                        borderRadius: borderRadius,
                       )
                     : null,
               ),
@@ -379,7 +399,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
           ],
         ),
         FCAnimatedCrossFade(
-          condition: this._errorText().isNotEmpty,
+          condition: errorText.isNotEmpty,
           firstChild: Padding(
             padding: EdgeInsets.only(
               top: this._size.s16 / 8,
@@ -391,7 +411,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField> {
                 Flexible(
                   child: FCText.regular14Danger(
                     context: context,
-                    text: this._errorText(),
+                    text: errorText,
                   ),
                 ),
               ],

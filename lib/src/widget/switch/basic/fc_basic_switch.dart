@@ -48,7 +48,7 @@ class _FCBasicSwitchCupertino extends StatelessWidget {
   });
 
   final bool value;
-  final Function(bool) onChanged;
+  final void Function(bool) onChanged;
   final Color unselectedColor;
   final Color selectedColor;
   final bool isDisabled;
@@ -58,12 +58,15 @@ class _FCBasicSwitchCupertino extends StatelessWidget {
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    final void Function(bool)? onChanged = this.isDisabled ? null : this.onChanged;
 
     return Stack(
       children: [
         CupertinoSwitch(
           value: this.value,
-          onChanged: this.isDisabled ? null : this.onChanged,
+          onChanged: onChanged,
           trackColor: this.unselectedColor,
           activeColor: this.selectedColor,
           thumbColor: theme.white,
@@ -73,6 +76,7 @@ class _FCBasicSwitchCupertino extends StatelessWidget {
             child: this.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.disabledColor,
+                    borderRadius: BorderRadius.circular(size.s32),
                   )
                 : null,
           ),
@@ -102,11 +106,16 @@ class _FCBasicSwitchMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final FCConfig config = context.config;
+    final IFCSize size = config.size;
+
+    final void Function(bool)? onChanged = this.isDisabled ? null : this.onChanged;
+
     return Stack(
       children: [
         Switch(
           value: this.value,
-          onChanged: this.isDisabled ? null : this.onChanged,
+          onChanged: onChanged,
           inactiveTrackColor: this.unselectedColor,
           activeColor: this.selectedColor,
         ),
@@ -115,6 +124,7 @@ class _FCBasicSwitchMaterial extends StatelessWidget {
             child: this.isDisabled
                 ? FCComponentDisabledOverlay(
                     color: this.disabledColor,
+                    borderRadius: BorderRadius.circular(size.s32),
                   )
                 : null,
           ),

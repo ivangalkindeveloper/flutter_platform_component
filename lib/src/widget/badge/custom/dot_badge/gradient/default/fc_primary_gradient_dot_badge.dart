@@ -5,17 +5,17 @@ import 'package:flutter/widgets.dart';
 class FCPrimaryGradientDotBadge extends StatelessWidget {
   const FCPrimaryGradientDotBadge({
     super.key,
-    this.isShow = true,
     this.position = FCBadgePosition.topEnd,
-    this.duration,
+    this.isShow = true,
     this.height,
+    this.duration,
     required this.child,
   });
 
-  final bool isShow;
   final FCBadgePosition position;
-  final Duration? duration;
+  final bool isShow;
   final double? height;
+  final Duration? duration;
   final Widget child;
 
   @override
@@ -25,10 +25,10 @@ class FCPrimaryGradientDotBadge extends StatelessWidget {
 
     return FCBasicGradientDotBadge(
       gradient: theme.primaryGradient,
-      isShow: this.isShow,
       position: this.position,
-      duration: this.duration,
+      isShow: this.isShow,
       height: this.height,
+      duration: this.duration,
       child: this.child,
     );
   }
