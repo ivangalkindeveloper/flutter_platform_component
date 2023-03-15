@@ -26,7 +26,6 @@ class FCAccentGradientShimmer extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientShimmer(
-      context: context,
       backgroundGradient: theme.accentLightGradient,
       highlightGradient: theme.accentGradient,
       shape: this.shape,

@@ -82,12 +82,14 @@ class _FCBasicSelectFieldState extends State<FCBasicSelectField> {
   @override
   void initState() {
     super.initState();
+    // Controller
     this._controller = TextEditingController(text: this.widget.title);
   }
 
   @override
   void didUpdateWidget(FCBasicSelectField oldWidget) {
     super.didUpdateWidget(oldWidget);
+    // Controller
     Future.microtask(() {
       if (this.mounted && this.widget.title != oldWidget.title) {
         setState(() {
@@ -118,7 +120,6 @@ class _FCBasicSelectFieldState extends State<FCBasicSelectField> {
       borderRadius: config.borderRadiusField,
       onPressed: this.widget.onPressed,
       child: FCBasicFormField(
-        context: context,
         height: this.widget.height,
         backgroundColor: this.widget.backgroundColor,
         focusedColor: Colors.transparent,

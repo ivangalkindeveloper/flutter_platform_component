@@ -26,7 +26,6 @@ class FCAccentShimmer extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicShimmer(
-      context: context,
       backgroundColor: theme.accentLight,
       highlightColor: theme.accent,
       shape: this.shape,

@@ -39,7 +39,6 @@ class FCWarningLightPINField extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicPINField(
-      context: context,
       controller: this.controller,
       errorController: this.errorController,
       focusNode: this.focusNode,

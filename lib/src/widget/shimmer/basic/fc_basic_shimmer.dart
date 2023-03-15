@@ -1,4 +1,5 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
+import 'package:flutter_component/src/mixin/fc_mixin.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:async';
@@ -6,7 +7,6 @@ import 'dart:async';
 class FCBasicShimmer extends StatefulWidget {
   const FCBasicShimmer({
     super.key,
-    required this.context,
     required this.backgroundColor,
     required this.highlightColor,
     this.shape = BoxShape.rectangle,
@@ -17,7 +17,6 @@ class FCBasicShimmer extends StatefulWidget {
     this.child,
   });
 
-  final BuildContext context;
   final Color backgroundColor;
   final Color highlightColor;
   final BoxShape shape;
@@ -31,9 +30,10 @@ class FCBasicShimmer extends StatefulWidget {
   State<FCBasicShimmer> createState() => _FCBasicShimmerState();
 }
 
-class _FCBasicShimmerState extends State<FCBasicShimmer> {
-  late final FCConfig _config;
-  late final IFCSize _size;
+class _FCBasicShimmerState extends State<FCBasicShimmer>
+    with FCDidInitMixin<FCBasicShimmer> {
+  late FCConfig _config;
+  late IFCSize _size;
 
   bool _isHighlight = true;
 
@@ -41,16 +41,31 @@ class _FCBasicShimmerState extends State<FCBasicShimmer> {
   late final StreamSubscription _highlightSubscription;
 
   @override
-  void initState() {
-    super.initState();
-    this._config = this.widget.context.config;
+  void didChangeDependencies() {
+    this._config = context.config;
     this._size = this._config.size;
+    super.didChangeDependencies();
+  }
 
+  @override
+  void didInitState() {
     // Subscription
     this._highlightSubscription = Stream.periodic(
             this.widget.duration ?? this._size.durationShimmer,
             (int second) => second % 2 == 0)
         .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
+  }
+
+  @override
+  void didUpdateWidget(covariant FCBasicShimmer oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // Subscription
+    if (this.widget.duration != oldWidget.duration) {
+      this._highlightSubscription = Stream.periodic(
+              this.widget.duration ?? this._size.durationShimmer,
+              (int second) => second % 2 == 0)
+          .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
+    }
   }
 
   @override

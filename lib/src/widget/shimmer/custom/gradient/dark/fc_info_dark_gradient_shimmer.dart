@@ -26,7 +26,6 @@ class FCInfoDarkGradientShimmer extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientShimmer(
-      context: context,
       backgroundGradient: theme.infoGradient,
       highlightGradient: theme.infoDarkGradient,
       shape: this.shape,

@@ -1,5 +1,6 @@
 import 'package:flutter_component/src/widget/common/fc_common_field.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
+import 'package:flutter_component/src/mixin/fc_mixin.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -7,7 +8,6 @@ import 'package:flutter/widgets.dart';
 class FCBasicGradientFormField extends StatefulWidget {
   const FCBasicGradientFormField({
     super.key,
-    required this.context,
     this.controller,
     this.focusNode,
     required this.backgroundGradient,
@@ -51,7 +51,6 @@ class FCBasicGradientFormField extends StatefulWidget {
     this.disabledColor,
   });
 
-  final BuildContext context;
   final TextEditingController? controller;
   final FocusNode? focusNode;
   final Gradient backgroundGradient;
@@ -98,14 +97,15 @@ class FCBasicGradientFormField extends StatefulWidget {
   State<FCBasicGradientFormField> createState() => _FCBasicGradientFormFieldState();
 }
 
-class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
-  late final FCConfig _config;
-  late final IFCHaptic _haptic;
-  late final IFCTheme _theme;
+class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField>
+    with FCDidInitMixin<FCBasicGradientFormField> {
+  late FCConfig _config;
+  late IFCHaptic _haptic;
+  late IFCTheme _theme;
   late final IFCSize _size;
 
   // Controller
-  late final TextEditingController _controller;
+  late TextEditingController _controller;
 
   // FocusNode
   late final FocusNode _focusNode;
@@ -120,13 +120,16 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
   String _validationText = "";
 
   @override
-  void initState() {
-    super.initState();
-    this._config = this.widget.context.config;
+  void didChangeDependencies() {
+    this._config = context.config;
     this._haptic = this._config.haptic;
     this._theme = this._config.theme;
     this._size = this._config.size;
+    super.didChangeDependencies();
+  }
 
+  @override
+  void didInitState() {
     // Controller
     this._controller = this.widget.controller ?? TextEditingController();
     this._controller.addListener(this._controllerListener);
@@ -170,6 +173,15 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField> {
         });
       },
     );
+  }
+
+  @override
+  void didUpdateWidget(covariant FCBasicGradientFormField oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // Controller
+    if (this.widget.controller != null && oldWidget.controller == null) {
+      this._controller = this.widget.controller!;
+    }
   }
 
   @override

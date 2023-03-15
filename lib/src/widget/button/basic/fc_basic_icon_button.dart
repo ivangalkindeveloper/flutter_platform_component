@@ -8,7 +8,7 @@ import 'package:flutter/material.dart' show IconButton;
 class FCBasicIconButton extends FCPlatformWidget {
   FCBasicIconButton({
     super.key,
-    required Color splashColor,
+    Color? splashColor,
     required Widget icon,
     required VoidCallback onPressed,
     double? height,
@@ -47,7 +47,7 @@ class _FCBasicIconButtonCupertino extends StatelessWidget {
     required this.disabledColor,
   });
 
-  final Color splashColor;
+  final Color? splashColor;
   final Widget icon;
   final VoidCallback onPressed;
   final double? height;
@@ -101,7 +101,7 @@ class _FCBasicIconButtonMaterial extends StatelessWidget {
     required this.disabledColor,
   });
 
-  final Color splashColor;
+  final Color? splashColor;
   final Widget icon;
   final VoidCallback onPressed;
   final double? height;

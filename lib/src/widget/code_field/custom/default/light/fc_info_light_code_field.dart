@@ -6,10 +6,10 @@ import 'dart:async';
 class FCInfoLightCodeField extends StatelessWidget {
   const FCInfoLightCodeField({
     super.key,
-    required this.length,
     this.controller,
     this.errorController,
     this.focusNode,
+    required this.length,
     this.itemHeight,
     this.itemWidth,
     this.itemStyle,
@@ -24,10 +24,10 @@ class FCInfoLightCodeField extends StatelessWidget {
     this.disabledColor,
   });
 
-  final int length;
   final TextEditingController? controller;
   final StreamController<bool?>? errorController;
   final FocusNode? focusNode;
+  final int length;
   final double? itemHeight;
   final double? itemWidth;
   final TextStyle? itemStyle;
@@ -47,11 +47,10 @@ class FCInfoLightCodeField extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicCodeField(
-      context: context,
-      length: length,
       controller: this.controller,
       errorController: this.errorController,
       focusNode: this.focusNode,
+      length: length,
       unfocusedBackgroundColor: theme.backgroundComponent,
       focusedBackgroundColor: theme.backgroundComponent,
       focusedBorderColor: theme.infoLight,

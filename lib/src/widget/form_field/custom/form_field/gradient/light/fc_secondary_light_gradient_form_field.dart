@@ -93,7 +93,6 @@ class FCSecondaryLightGradientFormField extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientFormField(
-      context: context,
       controller: this.controller,
       focusNode: this.focusNode,
 

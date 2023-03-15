@@ -26,7 +26,6 @@ class FCInfoShimmer extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicShimmer(
-      context: context,
       backgroundColor: theme.infoLight,
       highlightColor: theme.info,
       shape: this.shape,

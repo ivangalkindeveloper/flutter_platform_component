@@ -1,4 +1,5 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
+import 'package:flutter_component/src/mixin/fc_mixin.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 import 'package:pinput/pinput.dart';
@@ -9,11 +10,10 @@ import 'package:flutter/material.dart' show Material, Colors;
 class FCBasicCodeField extends StatefulWidget {
   const FCBasicCodeField({
     super.key,
-    required this.context,
-    required this.length,
     this.controller,
     this.errorController,
     this.focusNode,
+    required this.length,
     required this.unfocusedBackgroundColor,
     required this.focusedBackgroundColor,
     required this.focusedBorderColor,
@@ -31,11 +31,10 @@ class FCBasicCodeField extends StatefulWidget {
     this.disabledColor,
   });
 
-  final BuildContext context;
-  final int length;
   final TextEditingController? controller;
   final StreamController<bool?>? errorController;
   final FocusNode? focusNode;
+  final int length;
   final Color unfocusedBackgroundColor;
   final Color focusedBackgroundColor;
   final Color focusedBorderColor;
@@ -57,31 +56,40 @@ class FCBasicCodeField extends StatefulWidget {
 }
 
 class _FCBasicCodeFieldState extends State<FCBasicCodeField>
-    with TickerProviderStateMixin {
-  late final FCConfig _config;
-  late final IFCTextStyle _textStyle;
-  late final IFCHaptic _haptic;
-  late final IFCTheme _theme;
-  late final IFCSize _size;
+    with TickerProviderStateMixin, FCDidInitMixin<FCBasicCodeField> {
+  late FCConfig _config;
+  late IFCTextStyle _textStyle;
+  late IFCHaptic _haptic;
+  late IFCTheme _theme;
+  late IFCSize _size;
 
-  late final AnimationController _animationController;
+  // Controller
+  late AnimationController _animationController;
+
+  // Error
   late final StreamSubscription? _errorSubscription;
   bool _isError = false;
 
   @override
-  void initState() {
-    super.initState();
-    this._config = this.widget.context.config;
+  void didChangeDependencies() {
+    this._config = context.config;
     this._textStyle = this._config.textStyle;
     this._haptic = this._config.haptic;
     this._theme = this._config.theme;
     this._size = this._config.size;
+    super.didChangeDependencies();
+  }
 
+  @override
+  void didInitState() {
+    // Controller
     this._animationController = AnimationController(
       vsync: this,
       duration: this._size.durationAnimationSlow,
     );
     this._animationController.addStatusListener(this._controllerListener);
+
+    // Error
     this._errorSubscription = this.widget.errorController?.stream.listen((bool? isError) {
       if (this.mounted == false) return;
 
@@ -94,16 +102,31 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
       this._animationController.forward();
       Future.delayed(this._size.durationAnimationDefault, () {
         this._haptic.error();
-        this.widget.errorController?.add(null);
         this.widget.controller?.clear();
+        this.widget.errorController?.add(null);
       });
     });
   }
 
   @override
+  void didUpdateWidget(covariant FCBasicCodeField oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // Controller
+    if (this._animationController.duration != this._size.durationAnimationSlow) {
+      this._animationController = AnimationController(
+        vsync: this,
+        duration: this._size.durationAnimationSlow,
+      );
+    }
+  }
+
+  @override
   void dispose() {
+    // Controller
     this._animationController.removeStatusListener(this._controllerListener);
     this._animationController.dispose();
+
+    // Error
     this._errorSubscription?.cancel();
     super.dispose();
   }
@@ -139,13 +162,11 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = context.config;
-    final IFCTextStyle textStyle = config.textStyle;
-
+    print("build");
     final double itemHeight = this.widget.itemHeight ?? this._size.heightCodeField;
     final double itemWidth = this.widget.itemWidth ?? (this._size.heightCodeField * 0.75);
     final BorderRadius borderRadius =
-        this.widget.borderRadius ?? config.borderRadiusButton;
+        this.widget.borderRadius ?? this._config.borderRadiusButton;
     final double borderWidth = this.widget.borderWidth ?? this._config.borderWidthField;
     final TextStyle itemStyle = this.widget.itemStyle?.copyWith(
               color: this.widget.itemStyle?.color ?? this._theme.black,
@@ -154,23 +175,24 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
                   this.widget.itemStyle?.fontWeight ?? this._textStyle.fontWeightMedium,
               fontFamily:
                   this.widget.itemStyle?.fontFamily ?? this._textStyle.fontFamilyMedium,
-              package: textStyle.package,
+              package: this._textStyle.package,
             ) ??
         TextStyle(
           color: this._theme.black,
           fontSize: this._size.s20,
           fontWeight: this._textStyle.fontWeightMedium,
           fontFamily: this._textStyle.fontFamilyMedium,
-          package: textStyle.package,
+          package: this._textStyle.package,
         );
     final double horizontalInterval =
         (this.widget.itemHeight ?? this._size.heightCodeField) - this._size.s14;
     final double cursorHeight =
         (this.widget.itemWidth ?? this._size.heightCodeField) - this._size.s14;
     final void Function(String)? onChanged =
-        this.widget.isDisabled ? null : this.widget.onChanged;
+        (this.widget.isDisabled || this._isError) ? null : this.widget.onChanged;
     final void Function(String)? onCompleted =
-        this.widget.isDisabled ? null : this.widget.onCompleted;
+        (this.widget.isDisabled || this._isError) ? null : this.widget.onCompleted;
+    final bool isReadOnly = this.widget.isDisabled || this._isError;
 
     return Stack(
       children: [
@@ -228,7 +250,7 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
                 borderWidth: borderWidth,
                 itemStyle: TextStyle(
                   color: this._theme.danger,
-                  package: textStyle.package,
+                  package: this._textStyle.package,
                 ),
                 borderColor: null,
               ),
@@ -243,7 +265,7 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
               ),
               onChanged: onChanged,
               onCompleted: onCompleted,
-              readOnly: this.widget.isDisabled,
+              readOnly: isReadOnly,
               errorText: null,
               errorTextStyle: null,
             ),

@@ -39,7 +39,6 @@ class FCAccentGradientPINField extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientPINField(
-      context: context,
       length: this.length,
       controller: this.controller,
       errorController: this.errorController,

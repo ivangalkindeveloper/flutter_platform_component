@@ -69,6 +69,23 @@ class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
   }
 
   @override
+  void didUpdateWidget(FCBasicGradientToggle<T> oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // Controller
+    Future.microtask(() {
+      if (this.mounted && this.widget.value != oldWidget.value) {
+        setState(() {
+          if (this.widget.value == null) {
+            this._controller.clear();
+          } else {
+            this._controller.text = this.widget.value!.toString();
+          }
+        });
+      }
+    });
+  }
+
+  @override
   void dispose() {
     // Controller
     this._controller.dispose();

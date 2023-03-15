@@ -26,7 +26,6 @@ class FCDangerShimmer extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicShimmer(
-      context: context,
       backgroundColor: theme.dangerLight,
       highlightColor: theme.danger,
       shape: this.shape,

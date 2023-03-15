@@ -39,7 +39,6 @@ class FCPrimaryLightGradientPINField extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicGradientPINField(
-      context: context,
       controller: this.controller,
       errorController: this.errorController,
       focusNode: this.focusNode,

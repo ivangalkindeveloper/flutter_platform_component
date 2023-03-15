@@ -93,7 +93,6 @@ class FCPrimaryLightFormField extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicFormField(
-      context: context,
       controller: this.controller,
       focusNode: this.focusNode,
       backgroundColor: theme.backgroundComponent,

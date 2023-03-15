@@ -902,7 +902,7 @@ export 'src/widget/list/list_section/fc_list_section_item.dart';
 export 'src/widget/list/list_section/fc_list_section.dart';
 
 // Modal
-// Modal / Action Modal1§§
+// Modal / Action Modal
 export 'src/widget/modal/action_modal/fc_action_modal_item.dart';
 export 'src/widget/modal/action_modal/fc_action_modal.dart';
 // Modal / Modal

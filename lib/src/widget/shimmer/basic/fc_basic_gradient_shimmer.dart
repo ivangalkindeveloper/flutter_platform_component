@@ -1,4 +1,5 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
+import 'package:flutter_component/src/mixin/fc_mixin.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:async';
@@ -6,7 +7,6 @@ import 'dart:async';
 class FCBasicGradientShimmer extends StatefulWidget {
   const FCBasicGradientShimmer({
     super.key,
-    required this.context,
     required this.backgroundGradient,
     required this.highlightGradient,
     this.shape = BoxShape.rectangle,
@@ -17,7 +17,6 @@ class FCBasicGradientShimmer extends StatefulWidget {
     this.child,
   });
 
-  final BuildContext context;
   final Gradient backgroundGradient;
   final Gradient highlightGradient;
   final BoxShape shape;
@@ -31,9 +30,10 @@ class FCBasicGradientShimmer extends StatefulWidget {
   State<FCBasicGradientShimmer> createState() => _FCBasicGradientShimmerState();
 }
 
-class _FCBasicGradientShimmerState extends State<FCBasicGradientShimmer> {
-  late final FCConfig _config;
-  late final IFCSize _size;
+class _FCBasicGradientShimmerState extends State<FCBasicGradientShimmer>
+    with FCDidInitMixin<FCBasicGradientShimmer> {
+  late FCConfig _config;
+  late IFCSize _size;
 
   bool _isHighlight = true;
 
@@ -41,16 +41,31 @@ class _FCBasicGradientShimmerState extends State<FCBasicGradientShimmer> {
   late final StreamSubscription _highlightSubscription;
 
   @override
-  void initState() {
-    super.initState();
-    this._config = this.widget.context.config;
+  void didChangeDependencies() {
+    this._config = context.config;
     this._size = this._config.size;
+    super.didChangeDependencies();
+  }
 
+  @override
+  void didInitState() {
     // Subscription
     this._highlightSubscription = Stream.periodic(
             this.widget.duration ?? this._size.durationShimmer,
             (int second) => second % 2 == 0)
         .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
+  }
+
+  @override
+  void didUpdateWidget(covariant FCBasicGradientShimmer oldWidget) {
+    // Subscription
+    super.didUpdateWidget(oldWidget);
+    if (this.widget.duration != oldWidget.duration) {
+      this._highlightSubscription = Stream.periodic(
+              this.widget.duration ?? this._size.durationShimmer,
+              (int second) => second % 2 == 0)
+          .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
+    }
   }
 
   @override

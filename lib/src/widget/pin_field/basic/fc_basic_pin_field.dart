@@ -1,4 +1,5 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
+import 'package:flutter_component/src/mixin/fc_mixin.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 import 'package:pinput/pinput.dart';
@@ -9,7 +10,6 @@ import 'package:flutter/material.dart' show Material, Colors;
 class FCBasicPINField extends StatefulWidget {
   const FCBasicPINField({
     super.key,
-    required this.context,
     this.controller,
     this.errorController,
     this.focusNode,
@@ -28,7 +28,6 @@ class FCBasicPINField extends StatefulWidget {
     this.disabledColor,
   });
 
-  final BuildContext context;
   final TextEditingController? controller;
   final StreamController<bool?>? errorController;
   final FocusNode? focusNode;
@@ -50,11 +49,12 @@ class FCBasicPINField extends StatefulWidget {
   State<FCBasicPINField> createState() => _FCBasicPINFieldState();
 }
 
-class _FCBasicPINFieldState extends State<FCBasicPINField> with TickerProviderStateMixin {
-  late final FCConfig _config;
-  late final IFCHaptic _haptic;
-  late final IFCTheme _theme;
-  late final IFCSize _size;
+class _FCBasicPINFieldState extends State<FCBasicPINField>
+    with TickerProviderStateMixin, FCDidInitMixin<FCBasicPINField> {
+  late FCConfig _config;
+  late IFCHaptic _haptic;
+  late IFCTheme _theme;
+  late IFCSize _size;
 
   // Controller
   late final AnimationController _animationController;
@@ -64,13 +64,16 @@ class _FCBasicPINFieldState extends State<FCBasicPINField> with TickerProviderSt
   bool _isError = false;
 
   @override
-  void initState() {
-    super.initState();
-    this._config = this.widget.context.config;
+  void didChangeDependencies() {
+    this._config = context.config;
     this._haptic = this._config.haptic;
     this._theme = this._config.theme;
     this._size = this._config.size;
+    super.didChangeDependencies();
+  }
 
+  @override
+  void didInitState() {
     // Controller
     this._animationController = AnimationController(
       vsync: this,
@@ -95,6 +98,18 @@ class _FCBasicPINFieldState extends State<FCBasicPINField> with TickerProviderSt
         this.widget.controller?.clear();
       });
     });
+  }
+
+  @override
+  void didUpdateWidget(covariant FCBasicPINField oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // Controller
+    if (this._animationController.duration != this._size.durationAnimationSlow) {
+      this._animationController = AnimationController(
+        vsync: this,
+        duration: this._size.durationAnimationSlow,
+      );
+    }
   }
 
   @override

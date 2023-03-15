@@ -26,7 +26,6 @@ class FCPrimaryShimmer extends StatelessWidget {
     final IFCTheme theme = config.theme;
 
     return FCBasicShimmer(
-      context: context,
       backgroundColor: theme.primaryLight,
       highlightColor: theme.primary,
       shape: this.shape,

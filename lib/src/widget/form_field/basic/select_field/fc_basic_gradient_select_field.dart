@@ -82,12 +82,14 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
   @override
   void initState() {
     super.initState();
+    // Controller
     this._controller = TextEditingController(text: this.widget.title);
   }
 
   @override
   void didUpdateWidget(FCBasicGradientSelectField oldWidget) {
     super.didUpdateWidget(oldWidget);
+    // Controller
     Future.microtask(() {
       if (this.mounted && this.widget.title != oldWidget.title) {
         setState(() {
@@ -118,7 +120,6 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
       borderRadius: config.borderRadiusField,
       onPressed: this.widget.onPressed,
       child: FCBasicGradientFormField(
-        context: context,
         height: this.widget.height,
         backgroundGradient: this.widget.backgroundGradient,
         focusedGradient: const LinearGradient(
