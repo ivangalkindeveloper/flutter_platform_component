@@ -11,6 +11,8 @@ class FCInfoFormField extends StatelessWidget {
     this.internalColor,
     this.internalIconHeight,
     this.height,
+    this.padding,
+    this.errorPadding,
     this.borderRadius,
     this.borderWidth,
     //
@@ -26,9 +28,13 @@ class FCInfoFormField extends StatelessWidget {
     this.hintText,
     this.hintStyle,
     //
+    this.errorStyle,
+    //
     this.textInputType = TextInputType.text,
     this.textCapitalization = TextCapitalization.none,
     this.textInputAction = TextInputAction.done,
+    this.obscuringCharacter = "•",
+    this.isObscuringText = false,
     this.isAutofocus = false,
     this.maxLines = 1,
     this.maxLength = 128,
@@ -52,6 +58,8 @@ class FCInfoFormField extends StatelessWidget {
   final Color? internalColor;
   final double? internalIconHeight;
   final double? height;
+  final EdgeInsets? padding;
+  final EdgeInsets? errorPadding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
   //
@@ -67,9 +75,13 @@ class FCInfoFormField extends StatelessWidget {
   final String? hintText;
   final TextStyle? hintStyle;
   //
+  final TextStyle? errorStyle;
+  //
   final TextInputType textInputType;
   final TextCapitalization textCapitalization;
   final TextInputAction textInputAction;
+  final String obscuringCharacter;
+  final bool isObscuringText;
   final bool isAutofocus;
   final int maxLines;
   final int maxLength;
@@ -100,6 +112,8 @@ class FCInfoFormField extends StatelessWidget {
       internalColor: this.internalColor,
       internalIconHeight: this.internalIconHeight,
       height: this.height,
+      padding: this.padding,
+      errorPadding: this.errorPadding,
       borderRadius: this.borderRadius,
       borderWidth: this.borderWidth,
       //
@@ -115,9 +129,13 @@ class FCInfoFormField extends StatelessWidget {
       hintText: this.hintText,
       hintStyle: this.hintStyle,
       //
+      errorStyle: this.errorStyle,
+      //
       textInputType: this.textInputType,
       textCapitalization: this.textCapitalization,
       textInputAction: this.textInputAction,
+      obscuringCharacter: this.obscuringCharacter,
+      isObscuringText: this.isObscuringText,
       isAutofocus: this.isAutofocus,
       maxLines: this.maxLines,
       maxLength: this.maxLength,

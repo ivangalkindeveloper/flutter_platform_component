@@ -15,6 +15,8 @@ class FCBasicGradientFormField extends StatefulWidget {
     this.internalGradient,
     this.internalIconHeight,
     this.height,
+    this.padding,
+    this.errorPadding,
     this.borderRadius,
     this.borderWidth,
     //
@@ -30,9 +32,13 @@ class FCBasicGradientFormField extends StatefulWidget {
     this.hintText,
     this.hintStyle,
     //
+    this.errorStyle,
+    //
     this.textInputType = TextInputType.text,
     this.textCapitalization = TextCapitalization.none,
     this.textInputAction = TextInputAction.done,
+    this.obscuringCharacter = "•",
+    this.isObscuringText = false,
     this.isAutofocus = false,
     this.maxLines = 1,
     this.maxLength = 128,
@@ -58,6 +64,8 @@ class FCBasicGradientFormField extends StatefulWidget {
   final Gradient? internalGradient;
   final double? internalIconHeight;
   final double? height;
+  final EdgeInsets? padding;
+  final EdgeInsets? errorPadding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
   //
@@ -73,9 +81,13 @@ class FCBasicGradientFormField extends StatefulWidget {
   final String? hintText;
   final TextStyle? hintStyle;
   //
+  final TextStyle? errorStyle;
+  //
   final TextInputType textInputType;
   final TextCapitalization textCapitalization;
   final TextInputAction textInputAction;
+  final String obscuringCharacter;
+  final bool isObscuringText;
   final bool isAutofocus;
   final int maxLines;
   final int maxLength;
@@ -100,6 +112,7 @@ class FCBasicGradientFormField extends StatefulWidget {
 class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField>
     with FCDidInitMixin<FCBasicGradientFormField> {
   late FCConfig _config;
+  late IFCTextStyle _textStyle;
   late IFCHaptic _haptic;
   late IFCTheme _theme;
   late final IFCSize _size;
@@ -122,6 +135,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField>
   @override
   void didChangeDependencies() {
     this._config = context.config;
+    this._textStyle = this._config.textStyle;
     this._haptic = this._config.haptic;
     this._theme = this._config.theme;
     this._size = this._config.size;
@@ -295,6 +309,10 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField>
     final Gradient internalGradient = this._internalGradient();
     final Color labelColor = this._labelColor();
     final double height = this.widget.height ?? this._size.heightFormField;
+    final double paddingTop = this.widget.padding?.top ?? this._size.s16 / 4;
+    final double paddingBottom = this.widget.padding?.bottom ?? this._size.s16 / 4;
+    final double paddingLeft = this.widget.padding?.left ?? this._size.s16;
+    final double paddingRight = this.widget.padding?.right ?? this._size.s16;
     final BorderRadius borderRadius =
         this.widget.borderRadius ?? this._config.borderRadiusField;
     final Gradient borderGradient = this._borderGradient();
@@ -310,6 +328,22 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField>
     final void Function()? onTap = this.widget.isDisabled ? null : this.widget.onTap;
     final String? Function(String?) validator = this._validator;
     final String errorText = this._errorText();
+    final TextStyle errorStyle = this.widget.errorStyle?.copyWith(
+              color: this.widget.errorStyle?.color ?? this._theme.danger,
+              fontSize: this.widget.errorStyle?.fontSize ?? this._size.s14,
+              fontWeight:
+                  this.widget.errorStyle?.fontWeight ?? this._textStyle.fontWeightRegular,
+              fontFamily:
+                  this.widget.errorStyle?.fontFamily ?? this._textStyle.fontFamilyRegular,
+              package: this._textStyle.package,
+            ) ??
+        TextStyle(
+          color: this._theme.danger,
+          fontSize: this._size.s14,
+          fontWeight: this._textStyle.fontWeightRegular,
+          fontFamily: this._textStyle.fontFamilyRegular,
+          package: this._textStyle.package,
+        );
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -318,7 +352,10 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField>
         Stack(
           children: [
             FCAnimatedFastContainer(
-              padding: EdgeInsets.symmetric(vertical: this._size.s16 / 4),
+              padding: EdgeInsets.only(
+                top: paddingTop,
+                bottom: paddingBottom,
+              ),
               constraints: BoxConstraints(
                 minHeight: height,
               ),
@@ -331,7 +368,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField>
                 children: [
                   Row(
                     children: [
-                      this.widget.prefix ?? SizedBox(width: this._size.s16),
+                      this.widget.prefix ?? SizedBox(width: paddingLeft),
                       if (this.widget.prefixIcon != null)
                         Padding(
                           padding: EdgeInsets.only(right: this._size.s16),
@@ -365,6 +402,8 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField>
                             textInputType: this.widget.textInputType,
                             textCapitalization: this.widget.textCapitalization,
                             textInputAction: this.widget.textInputAction,
+                            obscuringCharacter: this.widget.obscuringCharacter,
+                            isObscuringText: this.widget.isObscuringText,
                             isAutofocus: this.widget.isAutofocus,
                             maxLines: this.widget.maxLines,
                             maxLength: this.widget.maxLength,
@@ -391,7 +430,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField>
                             ),
                           ),
                         ),
-                      this.widget.postfix ?? SizedBox(width: this._size.s16),
+                      this.widget.postfix ?? SizedBox(width: paddingRight),
                     ],
                   ),
                   if (this.widget.bottom != null) this.widget.bottom!,
@@ -433,17 +472,19 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField>
         FCAnimatedCrossFade(
           condition: errorText.isNotEmpty,
           firstChild: Padding(
-            padding: EdgeInsets.only(
-              top: this._size.s16 / 8,
-              left: this._size.s16,
-              right: this._size.s16,
-            ),
+            padding: this.widget.errorPadding ??
+                EdgeInsets.only(
+                  top: this._size.s16 / 8,
+                  left: this._size.s16,
+                  right: this._size.s16,
+                ),
             child: Row(
               children: [
                 Flexible(
-                  child: FCText.regular14Danger(
-                    context: context,
-                    text: errorText,
+                  child: Text(
+                    errorText,
+                    textAlign: TextAlign.start,
+                    style: errorStyle,
                   ),
                 ),
               ],

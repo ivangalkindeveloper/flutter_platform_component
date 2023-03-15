@@ -161,6 +161,7 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
         this.widget.isDisabled ? null : this.widget.onChanged;
     final void Function(String)? onCompleted =
         this.widget.isDisabled ? null : this.widget.onCompleted;
+    final bool isReadOnly = this.widget.isDisabled || this._isError;
 
     return Stack(
       children: [
@@ -213,7 +214,7 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
               showCursor: false,
               onChanged: onChanged,
               onCompleted: onCompleted,
-              readOnly: this.widget.isDisabled,
+              readOnly: isReadOnly,
               errorText: null,
               errorTextStyle: null,
             ),

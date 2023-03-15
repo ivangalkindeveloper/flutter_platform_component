@@ -149,6 +149,8 @@ class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
               textInputType: null,
               textCapitalization: TextCapitalization.none,
               textInputAction: null,
+              obscuringCharacter: "•",
+              isObscuringText: false,
               isAutofocus: false,
               maxLines: 1,
               maxLength: 1,

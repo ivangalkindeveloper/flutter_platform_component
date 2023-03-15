@@ -27,6 +27,8 @@ class FCCommonField extends StatelessWidget {
     required this.textInputType,
     required this.textCapitalization,
     required this.textInputAction,
+    required this.obscuringCharacter,
+    required this.isObscuringText,
     required this.isAutofocus,
     required this.maxLines,
     required this.maxLength,
@@ -56,6 +58,8 @@ class FCCommonField extends StatelessWidget {
   final TextInputType? textInputType;
   final TextCapitalization textCapitalization;
   final TextInputAction? textInputAction;
+  final String obscuringCharacter;
+  final bool isObscuringText;
   final bool isAutofocus;
   final int? maxLines;
   final int? maxLength;
@@ -130,6 +134,8 @@ class FCCommonField extends StatelessWidget {
           package: textStyle.package,
         );
     final String? hintText = this.hintText != null ? " ${this.hintText}" : null;
+    final double cursorWidth = size.s10 / 10;
+    final double cursorHeight = (fieldTextStyle.fontSize ?? size.s16) * 1.25;
 
     return Material(
       color: Colors.transparent,
@@ -179,6 +185,8 @@ class FCCommonField extends StatelessWidget {
           keyboardType: this.textInputType,
           textCapitalization: this.textCapitalization,
           textInputAction: this.textInputAction,
+          obscuringCharacter: this.obscuringCharacter,
+          obscureText: this.isObscuringText,
           autofocus: this.isAutofocus,
           autocorrect: false,
           enableSuggestions: true,
@@ -190,8 +198,8 @@ class FCCommonField extends StatelessWidget {
           validator: this.validator,
           inputFormatters: this.inputFormatters,
           enabled: this.isEnabled,
-          cursorWidth: 1,
-          cursorHeight: size.s20,
+          cursorWidth: cursorWidth,
+          cursorHeight: cursorHeight,
           cursorColor: this.cursorColor,
           autovalidateMode: AutovalidateMode.disabled,
         ),
