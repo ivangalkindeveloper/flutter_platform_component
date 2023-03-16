@@ -292,6 +292,8 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   Color _borderColor({
     required IFCTheme theme,
   }) {
+    if (this.isValidationError) return theme.danger;
+
     if (this.isSelected) return this.selectedBorderColor;
 
     if (this.unselectedBorderColor != null) return this.unselectedBorderColor!;

@@ -59,7 +59,7 @@ class _FCCupertinoNavigatorState extends State<FCCupertinoNavigator> {
   }
 
   @override
-  void didUpdateWidget(FCCupertinoNavigator oldWidget) {
+  void didUpdateWidget(covariant FCCupertinoNavigator oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (widget.navigatorKey != oldWidget.navigatorKey ||
         widget.observers != oldWidget.observers) {

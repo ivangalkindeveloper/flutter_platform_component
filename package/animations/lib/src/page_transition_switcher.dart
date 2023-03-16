@@ -287,7 +287,7 @@ class _PageTransitionSwitcherState extends State<PageTransitionSwitcher>
   }
 
   @override
-  void didUpdateWidget(PageTransitionSwitcher oldWidget) {
+  void didUpdateWidget(covariant PageTransitionSwitcher oldWidget) {
     super.didUpdateWidget(oldWidget);
 
     // If the transition builder changed, then update all of the old

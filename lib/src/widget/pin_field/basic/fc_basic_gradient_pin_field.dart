@@ -1,5 +1,4 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
-import 'package:flutter_component/src/mixin/fc_mixin.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 import 'package:pinput/pinput.dart';
@@ -29,7 +28,7 @@ class FCBasicGradientPINField extends StatefulWidget {
   });
 
   final TextEditingController? controller;
-  final StreamController<bool?>? errorController;
+  final StreamController<bool>? errorController;
   final FocusNode? focusNode;
   final int length;
   final Gradient unfocusedBackgroundGradient;
@@ -57,7 +56,8 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
   late IFCSize _size;
 
   // Controller
-  late final AnimationController _animationController;
+  late TextEditingController _textEditingController;
+  late AnimationController _animationController;
 
   // Error
   late final StreamSubscription? _errorSubscription;
@@ -75,6 +75,7 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
   @override
   void didInitState() {
     // Controller
+    this._textEditingController = this.widget.controller ?? TextEditingController();
     this._animationController = AnimationController(
       vsync: this,
       duration: this._size.durationAnimationSlow,
@@ -82,10 +83,10 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
     this._animationController.addStatusListener(this._controllerListener);
 
     // Error
-    this._errorSubscription = this.widget.errorController?.stream.listen((bool? isError) {
+    this._errorSubscription = this.widget.errorController?.stream.listen((bool isError) {
       if (this.mounted == false) return;
 
-      if (isError == null) {
+      if (isError == false) {
         setState(() => this._isError = false);
         return;
       }
@@ -94,8 +95,8 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
       this._animationController.forward();
       Future.delayed(this._size.durationAnimationDefault, () {
         this._haptic.error();
-        this.widget.errorController?.add(null);
-        this.widget.controller?.clear();
+        this._textEditingController.clear();
+        this.widget.errorController?.add(false);
       });
     });
   }
@@ -104,17 +105,23 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
   void didUpdateWidget(covariant FCBasicGradientPINField oldWidget) {
     super.didUpdateWidget(oldWidget);
     // Controller
+    if (this.widget.controller != null &&
+        this._textEditingController != this.widget.controller)
+      this._textEditingController = this.widget.controller!;
     if (this._animationController.duration != this._size.durationAnimationSlow) {
+      this._animationController.removeStatusListener(this._controllerListener);
       this._animationController = AnimationController(
         vsync: this,
         duration: this._size.durationAnimationSlow,
       );
+      this._animationController.addStatusListener(this._controllerListener);
     }
   }
 
   @override
   void dispose() {
     // Controller
+    if (this.widget.controller == null) this._textEditingController.dispose();
     this._animationController.removeStatusListener(this._controllerListener);
     this._animationController.dispose();
 
@@ -179,7 +186,7 @@ class _FCBasicGradientPINFieldState extends State<FCBasicGradientPINField>
             color: Colors.transparent,
             child: Pinput(
               length: this.widget.length,
-              controller: this.widget.controller,
+              controller: this._textEditingController,
               focusNode: this.widget.focusNode,
               pinAnimationType: PinAnimationType.fade,
               animationDuration: this._size.durationAnimationFast,

@@ -21,7 +21,7 @@ class FCSecondaryDarkPINField extends StatelessWidget {
   });
 
   final TextEditingController? controller;
-  final StreamController<bool?>? errorController;
+  final StreamController<bool>? errorController;
   final FocusNode? focusNode;
   final int length;
   final double? height;

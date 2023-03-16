@@ -1,5 +1,4 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
-import 'package:flutter_component/src/mixin/fc_mixin.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:async';
@@ -57,10 +56,11 @@ class _FCBasicShimmerState extends State<FCBasicShimmer>
   }
 
   @override
-  void didUpdateWidget(covariant FCBasicShimmer oldWidget) {
+  void didUpdateWidget(covariant FCBasicShimmer oldWidget) async {
     super.didUpdateWidget(oldWidget);
     // Subscription
     if (this.widget.duration != oldWidget.duration) {
+      await this._highlightSubscription.cancel();
       this._highlightSubscription = Stream.periodic(
               this.widget.duration ?? this._size.durationShimmer,
               (int second) => second % 2 == 0)

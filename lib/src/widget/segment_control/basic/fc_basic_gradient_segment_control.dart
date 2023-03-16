@@ -299,6 +299,8 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   Gradient _borderGradient({
     required IFCTheme theme,
   }) {
+    if (this.isValidationError) return theme.dangerGradient;
+
     if (this.isSelected) return this.selectedBorderGradient;
 
     if (this.unselectedBorderGradient != null) return this.unselectedBorderGradient!;

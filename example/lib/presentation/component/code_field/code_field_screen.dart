@@ -1,6 +1,7 @@
 import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
+import 'dart:async';
 
 class CodeFieldScreen extends StatefulWidget {
   const CodeFieldScreen({Key? key});
@@ -10,8 +11,17 @@ class CodeFieldScreen extends StatefulWidget {
 }
 
 class _CodeFieldScreenState extends State<CodeFieldScreen> {
+  final StreamController<bool> _errorController = StreamController<bool>();
   final int _length = 6;
   bool _isDisabled = false;
+
+  void _onCompleted(String value) => this._errorController.add(true);
+
+  @override
+  void dispose() {
+    super.dispose();
+    this._errorController.close();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -112,7 +122,9 @@ class _CodeFieldScreenState extends State<CodeFieldScreen> {
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryCodeField(
+            errorController: this._errorController,
             length: this._length,
+            onCompleted: this._onCompleted,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),

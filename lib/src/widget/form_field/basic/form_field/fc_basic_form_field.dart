@@ -196,8 +196,17 @@ class _FCBasicFormFieldState extends State<FCBasicFormField>
   void didUpdateWidget(covariant FCBasicFormField oldWidget) {
     super.didUpdateWidget(oldWidget);
     // Controller
-    if (this.widget.controller != null && oldWidget.controller == null) {
+    if (this.widget.controller != null && this._controller != this.widget.controller) {
+      this._controller.removeListener(this._controllerListener);
       this._controller = this.widget.controller!;
+      this._controller.addListener(this._controllerListener);
+    }
+
+    // FocusNode
+    if (this.widget.focusNode != null && this._focusNode != this.widget.focusNode) {
+      this._focusNode.removeListener(this._focusNodeListener);
+      this._focusNode = this.widget.focusNode!;
+      this._focusNode.addListener(this._focusNodeListener);
     }
   }
 

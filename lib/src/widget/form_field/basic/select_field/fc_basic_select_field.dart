@@ -97,7 +97,7 @@ class _FCBasicSelectFieldState extends State<FCBasicSelectField> {
   }
 
   @override
-  void didUpdateWidget(FCBasicSelectField oldWidget) {
+  void didUpdateWidget(covariant FCBasicSelectField oldWidget) {
     super.didUpdateWidget(oldWidget);
     // Controller
     Future.microtask(() {

@@ -32,7 +32,7 @@ class FCBasicGradientCodeField extends StatefulWidget {
 
   final int length;
   final TextEditingController? controller;
-  final StreamController<bool?>? errorController;
+  final StreamController<bool>? errorController;
   final FocusNode? focusNode;
   final Gradient unfocusedBackgroundGradient;
   final Gradient focusedBackgroundGradient;
@@ -63,6 +63,7 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
   late IFCSize _size;
 
   // Controller
+  late TextEditingController _textEditingController;
   late AnimationController _animationController;
 
   // Error
@@ -82,6 +83,7 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
   @override
   void didInitState() {
     // Controller
+    this._textEditingController = this.widget.controller ?? TextEditingController();
     this._animationController = AnimationController(
       vsync: this,
       duration: this._size.durationAnimationSlow,
@@ -89,10 +91,10 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
     this._animationController.addStatusListener(this._controllerListener);
 
     // Error
-    this._errorSubscription = this.widget.errorController?.stream.listen((bool? isError) {
+    this._errorSubscription = this.widget.errorController?.stream.listen((bool isError) {
       if (this.mounted == false) return;
 
-      if (isError == null) {
+      if (isError == false) {
         setState(() => this._isError = false);
         return;
       }
@@ -101,8 +103,8 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
       this._animationController.forward();
       Future.delayed(_size.durationAnimationDefault, () {
         this._haptic.error();
-        this.widget.controller?.clear();
-        this.widget.errorController?.add(null);
+        this._textEditingController.clear();
+        this.widget.errorController?.add(false);
       });
     });
   }
@@ -111,11 +113,16 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
   void didUpdateWidget(covariant FCBasicGradientCodeField oldWidget) {
     super.didUpdateWidget(oldWidget);
     // Controller
+    if (this.widget.controller != null &&
+        this._textEditingController != this.widget.controller)
+      this._textEditingController = this.widget.controller!;
     if (this._animationController.duration != this._size.durationAnimationSlow) {
+      this._animationController.removeStatusListener(this._controllerListener);
       this._animationController = AnimationController(
         vsync: this,
         duration: this._size.durationAnimationSlow,
       );
+      this._animationController.addStatusListener(this._controllerListener);
     }
   }
 
@@ -161,13 +168,10 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = context.config;
-    final IFCTextStyle textStyle = config.textStyle;
-
     final double itemHeight = this.widget.itemHeight ?? this._size.heightCodeField;
     final double itemWidth = this.widget.itemWidth ?? (this._size.heightCodeField * 0.75);
     final BorderRadius borderRadius =
-        this.widget.borderRadius ?? config.borderRadiusButton;
+        this.widget.borderRadius ?? this._config.borderRadiusButton;
     final double borderWidth = this.widget.borderWidth ?? this._config.borderWidthField;
     final TextStyle itemStyle = this.widget.itemStyle?.copyWith(
               color: this.widget.itemStyle?.color ?? this._theme.black,
@@ -176,24 +180,23 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
                   this.widget.itemStyle?.fontWeight ?? this._textStyle.fontWeightMedium,
               fontFamily:
                   this.widget.itemStyle?.fontFamily ?? this._textStyle.fontFamilyMedium,
-              package: textStyle.package,
+              package: this._textStyle.package,
             ) ??
         TextStyle(
           color: this._theme.black,
           fontSize: this._size.s20,
           fontWeight: this._textStyle.fontWeightMedium,
           fontFamily: this._textStyle.fontFamilyMedium,
-          package: textStyle.package,
+          package: this._textStyle.package,
         );
     final double horizontalInterval =
-        (this.widget.itemHeight ?? this._size.heightCodeField) - this._size.s14;
+        this.widget.horizontalInterval ?? (this._size.s16 / 2);
     final double cursorHeight =
         (this.widget.itemWidth ?? this._size.heightCodeField) - this._size.s14;
-    final void Function(String)? onChanged =
-        (this.widget.isDisabled || this._isError) ? null : this.widget.onChanged;
-    final void Function(String)? onCompleted =
-        (this.widget.isDisabled || this._isError) ? null : this.widget.onCompleted;
     final bool isReadOnly = this.widget.isDisabled || this._isError;
+    final void Function(String)? onChanged = isReadOnly ? null : this.widget.onChanged;
+    final void Function(String)? onCompleted =
+        isReadOnly ? null : this.widget.onCompleted;
 
     return Stack(
       children: [
@@ -211,7 +214,7 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
             color: Colors.transparent,
             child: Pinput(
               length: this.widget.length,
-              controller: this.widget.controller,
+              controller: this._textEditingController,
               focusNode: this.widget.focusNode,
               pinAnimationType: PinAnimationType.fade,
               animationDuration: this._size.durationAnimationFast,
@@ -249,9 +252,8 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
                 width: itemWidth,
                 borderRadius: borderRadius,
                 borderWidth: borderWidth,
-                itemStyle: TextStyle(
-                  color: this._theme.danger,
-                  package: textStyle.package,
+                itemStyle: itemStyle.copyWith(
+                  color: this._theme.whiteAlways,
                 ),
                 borderColor: null,
               ),

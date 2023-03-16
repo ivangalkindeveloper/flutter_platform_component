@@ -1,6 +1,7 @@
 import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
+import 'dart:async';
 
 class GradientPINFieldScreen extends StatefulWidget {
   const GradientPINFieldScreen({Key? key});
@@ -10,8 +11,17 @@ class GradientPINFieldScreen extends StatefulWidget {
 }
 
 class _GradientPINFieldScreenState extends State<GradientPINFieldScreen> {
+  final StreamController<bool> _errorController = StreamController<bool>();
   final int _length = 4;
   bool _isDisabled = false;
+
+  void _onCompleted(String value) => this._errorController.add(true);
+
+  @override
+  void dispose() {
+    super.dispose();
+    this._errorController.close();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -102,7 +112,9 @@ class _GradientPINFieldScreenState extends State<GradientPINFieldScreen> {
           ),
           SizedBox(height: size.s16 / 2),
           FCPrimaryGradientPINField(
+            errorController: this._errorController,
             length: this._length,
+            onCompleted: this._onCompleted,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),

@@ -78,7 +78,7 @@ class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
   }
 
   @override
-  void didUpdateWidget(FCBasicGradientToggle<T> oldWidget) {
+  void didUpdateWidget(covariant FCBasicGradientToggle<T> oldWidget) {
     super.didUpdateWidget(oldWidget);
     // Controller
     Future.microtask(() {

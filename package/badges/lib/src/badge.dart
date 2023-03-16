@@ -257,7 +257,7 @@ class BadgeState extends State<Badge> with TickerProviderStateMixin {
   }
 
   @override
-  void didUpdateWidget(Badge oldWidget) {
+  void didUpdateWidget(covariant Badge oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (widget.badgeAnimation.toAnimate) {
       if (widget.badgeStyle.badgeColor != oldWidget.badgeStyle.badgeColor &&
