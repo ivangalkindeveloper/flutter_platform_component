@@ -18,6 +18,9 @@ export 'src/enum/fc_enum.dart';
 export 'src/haptic/fc_default_haptic.dart';
 export 'src/haptic/fc_haptic.dart';
 
+// Mixin
+export 'src/mixin/fc_mixin.dart';
+
 // Platform
 export 'src/platform/fc_platform_app_bar.dart';
 export 'src/platform/fc_platform_widget.dart';
@@ -591,9 +594,10 @@ export 'src/widget/code_field/custom/gradient/light/fc_success_light_gradient_co
 export 'src/widget/code_field/custom/gradient/light/fc_warning_light_gradient_code_field.dart';
 
 // Commom
-export 'src/widget/common/fc_component_disabled_overlay.dart';
-export 'src/widget/common/fc_cupertino_navigator.dart';
-export 'src/widget/common/fc_text_input_handler_formatter.dart';
+// Commom / Public
+export 'src/widget/common/public/fc_component_disabled_overlay.dart';
+export 'src/widget/common/public/fc_cupertino_navigator.dart';
+export 'src/widget/common/public/fc_text_input_handler_formatter.dart';
 
 // Date Picker
 export 'src/widget/date_picker/fc_date_picker.dart';

@@ -11,10 +11,10 @@ class FCPrimaryLightFormField extends StatelessWidget {
     this.internalColor,
     this.internalIconHeight,
     this.height,
-    this.padding,
-    this.errorPadding,
     this.borderRadius,
     this.borderWidth,
+    this.padding,
+    this.errorPadding,
     //
     this.textStyle,
     //
@@ -58,10 +58,10 @@ class FCPrimaryLightFormField extends StatelessWidget {
   final Color? internalColor;
   final double? internalIconHeight;
   final double? height;
-  final EdgeInsets? padding;
-  final EdgeInsets? errorPadding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
+  final EdgeInsets? padding;
+  final EdgeInsets? errorPadding;
   //
   final TextStyle? textStyle;
   //
@@ -112,10 +112,10 @@ class FCPrimaryLightFormField extends StatelessWidget {
       internalColor: this.internalColor,
       internalIconHeight: this.internalIconHeight,
       height: this.height,
-      padding: this.padding,
-      errorPadding: this.errorPadding,
       borderRadius: this.borderRadius,
       borderWidth: this.borderWidth,
+      padding: this.padding,
+      errorPadding: this.errorPadding,
       //
       textStyle: this.textStyle,
       //

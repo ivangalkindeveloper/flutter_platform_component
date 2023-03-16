@@ -1,4 +1,4 @@
-import 'package:flutter_component/src/widget/common/fc_common_field.dart';
+import 'package:flutter_component/src/widget/common/private/fc_common_field.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/src/mixin/fc_mixin.dart';
 import 'package:flutter_component/flutter_component.dart';
@@ -15,10 +15,10 @@ class FCBasicFormField extends StatefulWidget {
     this.internalColor,
     this.internalIconHeight,
     this.height,
-    this.padding,
-    this.errorPadding,
     this.borderRadius,
     this.borderWidth,
+    this.padding,
+    this.errorPadding,
     //
     this.textStyle,
     //
@@ -64,10 +64,10 @@ class FCBasicFormField extends StatefulWidget {
   final Color? internalColor;
   final double? internalIconHeight;
   final double? height;
-  final EdgeInsets? padding;
-  final EdgeInsets? errorPadding;
   final BorderRadius? borderRadius;
   final double? borderWidth;
+  final EdgeInsets? padding;
+  final EdgeInsets? errorPadding;
   //
   final TextStyle? textStyle;
   //

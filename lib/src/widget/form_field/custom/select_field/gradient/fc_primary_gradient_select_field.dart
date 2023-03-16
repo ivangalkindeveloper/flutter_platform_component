@@ -6,9 +6,12 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
   const FCPrimaryGradientSelectField({
     super.key,
     this.internalGradient,
+    this.internalIconHeight,
     this.height,
     this.borderRadius,
     this.borderWidth,
+    this.padding,
+    this.errorPadding,
     //
     required this.title,
     this.titleStyle,
@@ -23,6 +26,8 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
     this.hintText,
     this.hintStyle,
     //
+    this.errorStyle,
+    //
     this.maxLines = 1,
     this.maxLength = 128,
     this.validator,
@@ -36,9 +41,12 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
   });
 
   final Gradient? internalGradient;
+  final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
   final double? borderWidth;
+  final EdgeInsets? padding;
+  final EdgeInsets? errorPadding;
   //
   final String? title;
   final TextStyle? titleStyle;
@@ -52,6 +60,8 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
   //
   final String? hintText;
   final TextStyle? hintStyle;
+  //
+  final TextStyle? errorStyle;
   //
   final int maxLines;
   final int maxLength;
@@ -79,9 +89,12 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
       ),
       splashColor: theme.primary,
       internalGradient: this.internalGradient,
+      internalIconHeight: this.internalIconHeight,
       height: this.height,
       borderRadius: this.borderRadius,
       borderWidth: this.borderWidth,
+      padding: this.padding,
+      errorPadding: this.errorPadding,
       //
       title: this.title,
       titleStyle: this.titleStyle,
@@ -95,6 +108,8 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
       //
       hintText: this.hintText,
       hintStyle: this.hintStyle,
+      //
+      errorStyle: this.errorStyle,
       //
       maxLines: this.maxLines,
       maxLength: this.maxLength,

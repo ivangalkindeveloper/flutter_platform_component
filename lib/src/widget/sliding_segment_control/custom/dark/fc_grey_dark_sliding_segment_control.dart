@@ -11,6 +11,7 @@ class FCSuccessDarkSlidingSegmentControl<T> extends StatelessWidget {
     this.unselectedStyle,
     this.selectedStyle,
     this.height,
+    this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
   });
@@ -21,6 +22,7 @@ class FCSuccessDarkSlidingSegmentControl<T> extends StatelessWidget {
   final TextStyle? unselectedStyle;
   final TextStyle? selectedStyle;
   final double? height;
+  final bool isRequired;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -40,6 +42,7 @@ class FCSuccessDarkSlidingSegmentControl<T> extends StatelessWidget {
       selectedInternalColor: theme.whiteAlways,
       selectedStyle: this.selectedStyle,
       height: this.height,
+      isRequired: this.isRequired,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

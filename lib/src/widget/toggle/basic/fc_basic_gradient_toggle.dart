@@ -1,5 +1,5 @@
-import 'package:flutter_component/src/widget/common/fc_button_row_child.dart';
-import 'package:flutter_component/src/widget/common/fc_common_field.dart';
+import 'package:flutter_component/src/widget/common/private/fc_button_row_child.dart';
+import 'package:flutter_component/src/widget/common/private/fc_common_field.dart';
 import 'package:flutter_component/src/exception/fc_exception.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
@@ -53,6 +53,8 @@ class FCBasicGradientToggle<T> extends StatefulWidget {
 }
 
 class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
+  late IFCHaptic _haptic;
+
   // Controller
   late final TextEditingController _controller;
 
@@ -66,6 +68,13 @@ class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
     this._controller = TextEditingController(
       text: this.widget.value != null ? this.widget.value.toString() : null,
     );
+  }
+
+  @override
+  void didChangeDependencies() {
+    final FCConfig config = context.config;
+    this._haptic = config.haptic;
+    super.didChangeDependencies();
   }
 
   @override
@@ -93,16 +102,16 @@ class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
   }
 
   String? _validator(String? value) {
-    if (value == null || this.mounted == false) {
-      return null;
-    }
+    if (value == null || this.mounted == false) return null;
 
     // Required
     if (this.widget.isRequired && value.isEmpty) {
+      this._haptic.error();
       setState(() => this._isValidationError = true);
       return "";
     }
 
+    // Default
     setState(() => this._isValidationError = false);
     return null;
   }
@@ -274,7 +283,9 @@ class _FCGradientToggleButton<T> extends StatelessWidget {
         );
   }
 
-  Gradient _internalGradient({required IFCTheme theme}) {
+  Gradient _internalGradient({
+    required IFCTheme theme,
+  }) {
     if (this.isValidationError) return theme.dangerGradient;
 
     if (this.isSelected) return this.selectedInternalGradient;
@@ -282,7 +293,9 @@ class _FCGradientToggleButton<T> extends StatelessWidget {
     return this.unselectedInternalGradient ?? theme.greyGradient;
   }
 
-  Color _splashColor({required IFCTheme theme}) {
+  Color _splashColor({
+    required IFCTheme theme,
+  }) {
     if (this.isSelected) return this.selectedSplashColor;
 
     return this.unselectedSplashColor ?? theme.backgroundComponent;

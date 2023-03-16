@@ -1,5 +1,5 @@
-import 'package:flutter_component/src/widget/common/fc_button_row_child.dart';
-import 'package:flutter_component/src/widget/common/fc_common_field.dart';
+import 'package:flutter_component/src/widget/common/private/fc_button_row_child.dart';
+import 'package:flutter_component/src/widget/common/private/fc_common_field.dart';
 import 'package:flutter_component/src/exception/fc_exception.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
@@ -53,6 +53,8 @@ class FCBasicToggle<T> extends StatefulWidget {
 }
 
 class _FCBasicToggleState<T> extends State<FCBasicToggle<T>> {
+  late IFCHaptic _haptic;
+
   // Controller
   late final TextEditingController _controller;
 
@@ -69,7 +71,14 @@ class _FCBasicToggleState<T> extends State<FCBasicToggle<T>> {
   }
 
   @override
-  void didUpdateWidget(FCBasicToggle<T> oldWidget) {
+  void didChangeDependencies() {
+    final FCConfig config = context.config;
+    this._haptic = config.haptic;
+    super.didChangeDependencies();
+  }
+
+  @override
+  void didUpdateWidget(covariant FCBasicToggle<T> oldWidget) {
     super.didUpdateWidget(oldWidget);
     // Controller
     Future.microtask(() {
@@ -93,16 +102,16 @@ class _FCBasicToggleState<T> extends State<FCBasicToggle<T>> {
   }
 
   String? _validator(String? value) {
-    if (value == null || this.mounted == false) {
-      return null;
-    }
+    if (value == null || this.mounted == false) return null;
 
     // Required
     if (this.widget.isRequired && value.isEmpty) {
+      this._haptic.error();
       setState(() => this._isValidationError = true);
       return "";
     }
 
+    // Default
     setState(() => this._isValidationError = false);
     return null;
   }
@@ -256,7 +265,9 @@ class _FCToggleButton<T> extends StatelessWidget {
   final VoidCallback onPressed;
   final bool isSelected;
 
-  Color _backgroundColor({required IFCTheme theme}) {
+  Color _backgroundColor({
+    required IFCTheme theme,
+  }) {
     if (this.isValidationError) return theme.dangerLight;
 
     if (this.isSelected) return this.selectedBackgroundColor;
@@ -264,7 +275,9 @@ class _FCToggleButton<T> extends StatelessWidget {
     return this.unselectedBackgroundColor ?? theme.backgroundComponent;
   }
 
-  Color _internalColor({required IFCTheme theme}) {
+  Color _internalColor({
+    required IFCTheme theme,
+  }) {
     if (this.isValidationError) return theme.danger;
 
     if (this.isSelected) return this.selectedInternalColor;
@@ -272,7 +285,9 @@ class _FCToggleButton<T> extends StatelessWidget {
     return this.unselectedInternalColor ?? theme.black;
   }
 
-  Color _splashColor({required IFCTheme theme}) {
+  Color _splashColor({
+    required IFCTheme theme,
+  }) {
     if (this.isSelected) return this.selectedSplashColor;
 
     return this.unselectedSplashColor ?? theme.backgroundComponent;

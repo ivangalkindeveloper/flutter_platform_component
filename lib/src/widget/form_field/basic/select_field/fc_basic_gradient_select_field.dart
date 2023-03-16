@@ -1,4 +1,4 @@
-import 'package:flutter_component/src/widget/common/fc_select_field_wrapper.dart';
+import 'package:flutter_component/src/widget/common/private/fc_select_field_wrapper.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
@@ -11,9 +11,12 @@ class FCBasicGradientSelectField extends StatefulWidget {
     required this.backgroundGradient,
     required this.splashColor,
     this.internalGradient,
+    this.internalIconHeight,
     this.height,
     this.borderRadius,
     this.borderWidth,
+    this.padding,
+    this.errorPadding,
     //
     required this.title,
     this.titleStyle,
@@ -27,6 +30,8 @@ class FCBasicGradientSelectField extends StatefulWidget {
     //
     this.hintText,
     this.hintStyle,
+    //
+    this.errorStyle,
     //
     this.maxLines = 1,
     this.maxLength = 128,
@@ -43,9 +48,12 @@ class FCBasicGradientSelectField extends StatefulWidget {
   final Gradient backgroundGradient;
   final Color splashColor;
   final Gradient? internalGradient;
+  final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
   final double? borderWidth;
+  final EdgeInsets? padding;
+  final EdgeInsets? errorPadding;
   //
   final String? title;
   final TextStyle? titleStyle;
@@ -59,6 +67,8 @@ class FCBasicGradientSelectField extends StatefulWidget {
   //
   final String? hintText;
   final TextStyle? hintStyle;
+  //
+  final TextStyle? errorStyle;
   //
   final int maxLines;
   final int maxLength;
@@ -120,7 +130,8 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
       borderRadius: config.borderRadiusField,
       onPressed: this.widget.onPressed,
       child: FCBasicGradientFormField(
-        height: this.widget.height,
+        controller: this._controller,
+
         backgroundGradient: this.widget.backgroundGradient,
         focusedGradient: const LinearGradient(
           colors: [
@@ -129,9 +140,12 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
           ],
         ),
         internalGradient: this.widget.internalGradient,
+        internalIconHeight: this.widget.internalIconHeight,
+        height: this.widget.height,
         borderRadius: this.widget.borderRadius,
         borderWidth: this.widget.borderWidth,
-        controller: this._controller,
+        padding: this.widget.padding,
+        errorPadding: this.widget.errorPadding,
         //
         textStyle: this.widget.titleStyle,
         //
@@ -144,6 +158,8 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
         //
         hintText: this.widget.hintText,
         hintStyle: this.widget.hintStyle,
+        //
+        errorStyle: this.widget.errorStyle,
         //
         maxLines: this.widget.maxLines,
         maxLength: this.widget.maxLength,

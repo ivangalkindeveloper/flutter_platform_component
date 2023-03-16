@@ -14,6 +14,7 @@ class FCWarningDarkGradientSegmentControl<T> extends StatelessWidget {
     this.borderRadius,
     this.borderWidth,
     this.padding,
+    this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
   });
@@ -27,6 +28,7 @@ class FCWarningDarkGradientSegmentControl<T> extends StatelessWidget {
   final BorderRadius? borderRadius;
   final double? borderWidth;
   final EdgeInsets? padding;
+  final bool isRequired;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -63,6 +65,7 @@ class FCWarningDarkGradientSegmentControl<T> extends StatelessWidget {
       borderRadius: this.borderRadius,
       borderWidth: this.borderWidth,
       padding: this.padding,
+      isRequired: this.isRequired,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

@@ -13,6 +13,8 @@ class FCGreyLightGradientFormField extends StatelessWidget {
     this.height,
     this.borderRadius,
     this.borderWidth,
+    this.padding,
+    this.errorPadding,
     //
     this.textStyle,
     //
@@ -54,6 +56,8 @@ class FCGreyLightGradientFormField extends StatelessWidget {
   final double? height;
   final BorderRadius? borderRadius;
   final double? borderWidth;
+  final EdgeInsets? padding;
+  final EdgeInsets? errorPadding;
   //
   final TextStyle? textStyle;
   //
@@ -108,6 +112,8 @@ class FCGreyLightGradientFormField extends StatelessWidget {
       height: this.height,
       borderRadius: this.borderRadius,
       borderWidth: this.borderWidth,
+      padding: this.padding,
+      errorPadding: this.errorPadding,
       //
       textStyle: this.textStyle,
       //
