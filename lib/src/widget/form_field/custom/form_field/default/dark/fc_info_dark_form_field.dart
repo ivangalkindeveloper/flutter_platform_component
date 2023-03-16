@@ -107,7 +107,8 @@ class FCInfoDarkFormField extends StatelessWidget {
     return FCBasicFormField(
       controller: this.controller,
       focusNode: this.focusNode,
-      backgroundColor: theme.backgroundComponent,
+      unfocusedBackgroundColor: theme.backgroundComponent,
+      focusedBackgroundColor: theme.backgroundScaffold,
       focusedColor: theme.infoDark,
       internalColor: this.internalColor,
       internalIconHeight: this.internalIconHeight,

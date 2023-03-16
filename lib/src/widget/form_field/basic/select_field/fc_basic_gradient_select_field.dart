@@ -131,8 +131,8 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
       onPressed: this.widget.onPressed,
       child: FCBasicGradientFormField(
         controller: this._controller,
-
-        backgroundGradient: this.widget.backgroundGradient,
+        unfocusedBackgroundGradient: this.widget.backgroundGradient,
+        focusedBackgroundGradient: this.widget.backgroundGradient,
         focusedGradient: const LinearGradient(
           colors: [
             Colors.transparent,

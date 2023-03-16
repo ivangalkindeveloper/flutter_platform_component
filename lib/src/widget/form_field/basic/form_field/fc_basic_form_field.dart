@@ -1,6 +1,5 @@
 import 'package:flutter_component/src/widget/common/private/fc_common_field.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
-import 'package:flutter_component/src/mixin/fc_mixin.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -10,7 +9,8 @@ class FCBasicFormField extends StatefulWidget {
     super.key,
     this.controller,
     this.focusNode,
-    required this.backgroundColor,
+    required this.unfocusedBackgroundColor,
+    required this.focusedBackgroundColor,
     required this.focusedColor,
     this.internalColor,
     this.internalIconHeight,
@@ -59,7 +59,8 @@ class FCBasicFormField extends StatefulWidget {
 
   final TextEditingController? controller;
   final FocusNode? focusNode;
-  final Color backgroundColor;
+  final Color unfocusedBackgroundColor;
+  final Color focusedBackgroundColor;
   final Color focusedColor;
   final Color? internalColor;
   final double? internalIconHeight;
@@ -213,12 +214,12 @@ class _FCBasicFormFieldState extends State<FCBasicFormField>
   }
 
   Color _backgroundColor() {
-    if (this._focusNode.hasPrimaryFocus) return this.widget.backgroundColor;
+    if (this._focusNode.hasPrimaryFocus) return this.widget.focusedBackgroundColor;
 
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.dangerLight;
 
-    return this.widget.backgroundColor;
+    return this.widget.unfocusedBackgroundColor;
   }
 
   Color _borderColor() {

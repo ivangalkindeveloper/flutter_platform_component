@@ -131,7 +131,8 @@ class _FCBasicSelectFieldState extends State<FCBasicSelectField> {
       onPressed: this.widget.onPressed,
       child: FCBasicFormField(
         controller: this._controller,
-        backgroundColor: this.widget.backgroundColor,
+        unfocusedBackgroundColor: this.widget.backgroundColor,
+        focusedBackgroundColor: this.widget.backgroundColor,
         focusedColor: Colors.transparent,
         internalColor: this.widget.internalColor,
         internalIconHeight: this.widget.internalIconHeight,

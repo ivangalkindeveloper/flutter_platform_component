@@ -99,12 +99,18 @@ class FCWarningGradientFormField extends StatelessWidget {
     return FCBasicGradientFormField(
       controller: this.controller,
       focusNode: this.focusNode,
-
-      backgroundGradient: FCLinearGradient(
+      unfocusedBackgroundGradient: FCLinearGradient(
         context: context,
         colors: [
           theme.backgroundComponent,
           theme.backgroundComponent,
+        ],
+      ),
+      focusedBackgroundGradient: FCLinearGradient(
+        context: context,
+        colors: [
+          theme.backgroundScaffold,
+          theme.backgroundScaffold,
         ],
       ),
       focusedGradient: theme.accentDarkGradient,

@@ -1,6 +1,5 @@
 import 'package:flutter_component/src/widget/common/private/fc_common_field.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
-import 'package:flutter_component/src/mixin/fc_mixin.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -10,7 +9,8 @@ class FCBasicGradientFormField extends StatefulWidget {
     super.key,
     this.controller,
     this.focusNode,
-    required this.backgroundGradient,
+    required this.unfocusedBackgroundGradient,
+    required this.focusedBackgroundGradient,
     required this.focusedGradient,
     this.internalGradient,
     this.internalIconHeight,
@@ -59,7 +59,8 @@ class FCBasicGradientFormField extends StatefulWidget {
 
   final TextEditingController? controller;
   final FocusNode? focusNode;
-  final Gradient backgroundGradient;
+  final Gradient unfocusedBackgroundGradient;
+  final Gradient focusedBackgroundGradient;
   final Gradient focusedGradient;
   final Gradient? internalGradient;
   final double? internalIconHeight;
@@ -211,12 +212,12 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField>
   }
 
   Gradient _backgroundGradient() {
-    if (this._focusNode.hasPrimaryFocus) return this.widget.backgroundGradient;
+    if (this._focusNode.hasPrimaryFocus) return this.widget.unfocusedBackgroundGradient;
 
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.dangerLightGradient;
 
-    return this.widget.backgroundGradient;
+    return this.widget.focusedBackgroundGradient;
   }
 
   Gradient _borderGradient() {

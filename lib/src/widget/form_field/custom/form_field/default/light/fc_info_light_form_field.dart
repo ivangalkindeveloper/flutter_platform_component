@@ -107,7 +107,8 @@ class FCInfoLightFormField extends StatelessWidget {
     return FCBasicFormField(
       controller: this.controller,
       focusNode: this.focusNode,
-      backgroundColor: theme.backgroundComponent,
+      unfocusedBackgroundColor: theme.backgroundComponent,
+      focusedBackgroundColor: theme.backgroundScaffold,
       focusedColor: theme.infoLight,
       internalColor: this.internalColor,
       internalIconHeight: this.internalIconHeight,
