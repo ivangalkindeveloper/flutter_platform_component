@@ -1,6 +1,6 @@
 import 'package:example/presentation/config_list/config_list.dart';
-import 'package:example/service/navigation_service.dart';
 import 'package:flutter_component/flutter_component.dart';
+import 'package:example/service/navigation_service.dart';
 import 'package:flutter/material.dart';
 
 class ComponentScreen extends StatelessWidget {
@@ -174,12 +174,6 @@ class ComponentScreen extends StatelessWidget {
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(
-              title: "Date Picker",
-              onPressed: () =>
-                  Navigator.pushNamed(context, NavigationService.date_picker_screen),
-            ),
-            SizedBox(height: size.s16),
-            FCPrimaryButton(
               title: "Dialog",
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.dialog_screen),
@@ -315,6 +309,18 @@ class ComponentScreen extends StatelessWidget {
               title: "Navigator",
               onPressed: () =>
                   Navigator.pushNamed(context, NavigationService.navigator_screen),
+            ),
+            SizedBox(height: size.s16),
+            FCPrimaryButton(
+              title: "Date Picker",
+              onPressed: () =>
+                  Navigator.pushNamed(context, NavigationService.date_picker_screen),
+            ),
+            SizedBox(height: size.s16 / 2),
+            FCPrimaryButton(
+              title: "Time Picker",
+              onPressed: () =>
+                  Navigator.pushNamed(context, NavigationService.time_picker_screen),
             ),
             SizedBox(height: size.s16),
             FCPrimaryButton(

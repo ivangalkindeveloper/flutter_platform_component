@@ -24,7 +24,7 @@ class DialogScreen extends StatelessWidget {
           SizedBox(height: size.s16 / 2),
           FCPrimaryButton(
             title: "Open",
-            onPressed: () => FCGlobal.showDialog(
+            onPressed: () => showFCDialog(
               context: context,
               child: FCDialog(
                 title: "Title",

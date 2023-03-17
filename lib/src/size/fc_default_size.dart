@@ -1,6 +1,8 @@
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
+import 'package:flutter/material.dart' show TimeOfDay;
+
 class FCDefaultSize implements IFCSize {
   const FCDefaultSize({
     // Size
@@ -88,10 +90,13 @@ class FCDefaultSize implements IFCSize {
     required this.borderWidthSnackbarCupertino,
     required this.borderWidthSnackbarMaterial,
 
-    // DateTime
+    // Picker
+    // Picker / Date
     required this.dateMinimum,
     required this.dateInitial,
     required this.dateMaximum,
+    // Picker / Time
+    required this.timeInitial,
 
     // Duration
     // Duration / Default
@@ -249,13 +254,17 @@ class FCDefaultSize implements IFCSize {
   @override
   final double borderWidthSnackbarMaterial;
 
-  // DateTime
+  // Picker
+  // Picker / Date
   @override
   final DateTime dateMinimum;
   @override
   final DateTime dateInitial;
   @override
   final DateTime dateMaximum;
+  // Picker / Time
+  @override
+  final TimeOfDay timeInitial;
 
   // Duration
   // Duration / Animation
@@ -372,10 +381,13 @@ class FCDefaultSize implements IFCSize {
     double? borderWidthSnackbarCupertino,
     double? borderWidthSnackbarMaterial,
 
-    // DateTime
+    // Picker
+    // Picker / Date
     DateTime? dateMinimum,
     DateTime? dateInitial,
     DateTime? dateMaximum,
+    // Picker / Time
+    TimeOfDay? timeInitial,
 
     // Duration
     // Duration / Default
@@ -509,10 +521,13 @@ class FCDefaultSize implements IFCSize {
         borderWidthSnackbarMaterial:
             borderWidthSnackbarMaterial ?? this.borderWidthSnackbarMaterial,
 
-        // DateTime
+        // Picker
+        // Picker / Date
         dateMinimum: dateMinimum ?? this.dateMinimum,
         dateInitial: dateInitial ?? this.dateInitial,
         dateMaximum: dateMaximum ?? this.dateMaximum,
+        // Picker / Time
+        timeInitial: timeInitial ?? this.timeInitial,
 
         // Duration
         // Duration / Default
@@ -627,10 +642,13 @@ class FCDefaultSize implements IFCSize {
         borderWidthSnackbarCupertino: 1,
         borderWidthSnackbarMaterial: 1,
 
-        // DateTime
-        dateMinimum: DateTime(1900, 1, 1),
-        dateInitial: DateTime(2000, 1, 1),
-        dateMaximum: DateTime(2100, 1, 1),
+        // Picker
+        // Picker / Date
+        dateMinimum: DateTime(1900, 1, 1, 12, 00),
+        dateInitial: DateTime(2000, 1, 1, 12, 00),
+        dateMaximum: DateTime(2100, 1, 1, 12, 00),
+        // Picker / Time
+        timeInitial: TimeOfDay(hour: 12, minute: 00),
 
         // Duration
         // Duration / Animation

@@ -24,15 +24,11 @@ class DatePickerScreen extends StatelessWidget {
           SizedBox(height: size.s16 / 2),
           FCPrimaryButton(
             title: "Open",
-            onPressed: () => FCGlobal.showDateTimePicker(
+            onPressed: () => showFCDatePicker(
               context: context,
-              dateRange: FCDateRange(context: context),
-              cupertinoModal: FCPopUpModal(
+              cupertinoModalBuilder: (BuildContext context) => FCPopUpModal(
                 backgroundColor: theme.backgroundScaffold,
-                child: FCDatePicker(
-                  dateRange: FCDateRange(context: context),
-                  cupertinoOnChanged: (DateTime value) {},
-                ),
+                child: FCDatePicker(),
               ),
               materialDialogLocale: const Locale("en", "EN"),
             ),

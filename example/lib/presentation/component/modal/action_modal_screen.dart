@@ -24,7 +24,7 @@ class ActionModalScreen extends StatelessWidget {
           SizedBox(height: size.s16 / 2),
           FCPrimaryButton(
             title: "Open",
-            onPressed: () => FCGlobal.showPopUpModal(
+            onPressed: () => showFCPopUpModal(
               context: context,
               child: FCActionModal(
                 title: "Action Modal Title",

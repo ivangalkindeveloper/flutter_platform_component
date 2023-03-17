@@ -24,7 +24,7 @@ class WhiteAlwaysExpandedModalScreen extends StatelessWidget {
           SizedBox(height: size.s16 / 2),
           FCPrimaryButton(
             title: "Open",
-            onPressed: () => FCGlobal.showExpandedModal(
+            onPressed: () => showFCExpandedModal(
               context: context,
               child: FCWhiteAlwaysExpandedModal(
                 appBarTitle: "White Always Expanded Modal Title",

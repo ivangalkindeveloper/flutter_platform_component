@@ -23,7 +23,7 @@ import 'package:example/presentation/component/card/select_card_screen.dart';
 import 'package:example/presentation/component/checkbox/checkbox_screen.dart';
 import 'package:example/presentation/component/code_field/code_field_screen.dart';
 import 'package:example/presentation/component/code_field/gradient_code_field_screen.dart';
-import 'package:example/presentation/component/date_picker/date_picker_screen.dart';
+import 'package:example/presentation/component/picker/date_picker_screen.dart';
 import 'package:example/presentation/component/dialog/dialog_screen.dart';
 import 'package:example/presentation/component/form_field/form_field_screen.dart';
 import 'package:example/presentation/component/form_field/gradient_form_field_screen.dart';
@@ -47,6 +47,7 @@ import 'package:example/presentation/component/modal/pop_up_modal_screen.dart';
 import 'package:example/presentation/component/modal/white_always_expanded_modal_screen.dart';
 import 'package:example/presentation/component/navigation/bottom_navigation_bar_screen.dart';
 import 'package:example/presentation/component/navigation/navigator_screen.dart';
+import 'package:example/presentation/component/picker/time_picker_screen.dart';
 import 'package:example/presentation/component/pin_field/gradient_pin_field_screen.dart';
 import 'package:example/presentation/component/pin_field/pin_field_screen.dart';
 import 'package:example/presentation/component/radio/radio_screen.dart';
@@ -113,8 +114,6 @@ class NavigationService implements INavigationService {
   static const String code_field_screen = "/code_field_screen";
   static const String gradient_code_field_screen = "/gradient_code_field_screen";
 
-  static const String date_picker_screen = "/date_picker_screen";
-
   static const String dialog_screen = "/dialog_screen";
 
   static const String form_field_screen = "/form_field_screen";
@@ -147,6 +146,9 @@ class NavigationService implements INavigationService {
 
   static const String bottom_navigation_bar_screen = "/bottom_navigation_bar_screen";
   static const String navigator_screen = "/navigator_screen";
+
+  static const String date_picker_screen = "/date_picker_screen";
+  static const String time_picker_screen = "/time_picker_screen";
 
   static const String pin_field_screen = "/pin_field_screen";
   static const String gradient_pin_field_screen = "/gradient_pin_field_screen";
@@ -316,12 +318,6 @@ class NavigationService implements INavigationService {
           child: const GradientCodeFieldScreen(),
         );
 
-      case date_picker_screen:
-        return FCRoute.pageRouteFromContext(
-          context: navigatorKey.currentContext!,
-          child: const DatePickerScreen(),
-        );
-
       case dialog_screen:
         return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
@@ -444,6 +440,17 @@ class NavigationService implements INavigationService {
         return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const NavigatorScreen(),
+        );
+
+      case date_picker_screen:
+        return FCRoute.pageRouteFromContext(
+          context: navigatorKey.currentContext!,
+          child: const DatePickerScreen(),
+        );
+      case time_picker_screen:
+        return FCRoute.pageRouteFromContext(
+          context: navigatorKey.currentContext!,
+          child: const TimePickerScreen(),
         );
 
       case pin_field_screen:

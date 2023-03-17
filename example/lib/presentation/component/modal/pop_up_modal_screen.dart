@@ -24,7 +24,7 @@ class PopUpModalScreen extends StatelessWidget {
           SizedBox(height: size.s16 / 2),
           FCPrimaryButton(
             title: "Open",
-            onPressed: () => FCGlobal.showPopUpModal(
+            onPressed: () => showFCPopUpModal(
               context: context,
               child: FCPopUpModal(
                 backgroundColor: theme.white,

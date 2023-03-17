@@ -2,8 +2,8 @@ import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class ExpandedModalScreen extends StatelessWidget {
-  const ExpandedModalScreen({Key? key});
+class TimePickerScreen extends StatelessWidget {
+  const TimePickerScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class ExpandedModalScreen extends StatelessWidget {
       backgroundColor: theme.backgroundScaffold,
       appBar: FCScreenAppBar(
         context: context,
-        title: "Expanded Modal",
+        title: "Time Picker",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: FCListView(
@@ -24,17 +24,11 @@ class ExpandedModalScreen extends StatelessWidget {
           SizedBox(height: size.s16 / 2),
           FCPrimaryButton(
             title: "Open",
-            onPressed: () => showFCExpandedModal(
+            onPressed: () => showFCTimePicker(
               context: context,
-              child: FCExpandedModal(
-                appBarTitle: "Expanded Modal Title",
+              cupertinoModalBuilder: (BuildContext context) => FCPopUpModal(
                 backgroundColor: theme.backgroundScaffold,
-                body: Center(
-                  child: FCText.regular14Black(
-                    context: context,
-                    text: "Expanded Modal",
-                  ),
-                ),
+                child: FCTimePicker(),
               ),
             ),
           ),

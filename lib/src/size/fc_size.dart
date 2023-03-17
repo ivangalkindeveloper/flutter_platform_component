@@ -1,5 +1,7 @@
 import 'package:flutter/widgets.dart';
 
+import 'package:flutter/material.dart' show TimeOfDay;
+
 abstract class IFCSize {
   const IFCSize();
 
@@ -88,10 +90,13 @@ abstract class IFCSize {
   abstract final double borderWidthSnackbarCupertino;
   abstract final double borderWidthSnackbarMaterial;
 
-  // DateTime
+  // Picker
+  // Picker / Date
   abstract final DateTime dateMinimum;
   abstract final DateTime dateInitial;
   abstract final DateTime dateMaximum;
+  // Picker / Time
+  abstract final TimeOfDay timeInitial;
 
   // Duration
   // Duration / Animation

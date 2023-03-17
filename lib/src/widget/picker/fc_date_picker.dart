@@ -15,7 +15,9 @@ import 'package:flutter/material.dart' show Theme, ColorScheme, DialogTheme;
 class FCDatePicker extends FCPlatformWidget {
   FCDatePicker({
     super.key,
-    required FCDateRange dateRange,
+    FCDateRange? dateRange,
+    double? cupertinoHeight,
+    TextStyle? cupertinoStyle,
     void Function(DateTime)? cupertinoOnChanged,
     Widget? materialDialog,
     Color? materialDialogBackgroundColor,
@@ -25,6 +27,8 @@ class FCDatePicker extends FCPlatformWidget {
           cupertino: _FCDatePickerCupertino(
             key: key,
             dateRange: dateRange,
+            cupertinoHeight: cupertinoHeight,
+            cupertinoStyle: cupertinoStyle,
             cupertinoOnChanged: cupertinoOnChanged,
             materialDialog: materialDialog,
             materialDialogBackgroundColor: materialDialogBackgroundColor,
@@ -34,6 +38,8 @@ class FCDatePicker extends FCPlatformWidget {
           material: _FCDatePickerMaterial(
             key: key,
             dateRange: dateRange,
+            cupertinoHeight: cupertinoHeight,
+            cupertinoStyle: cupertinoStyle,
             cupertinoOnChanged: cupertinoOnChanged,
             materialDialog: materialDialog,
             materialDialogBackgroundColor: materialDialogBackgroundColor,
@@ -47,6 +53,8 @@ class _FCDatePickerCupertino extends StatelessWidget {
   const _FCDatePickerCupertino({
     super.key,
     required this.dateRange,
+    required this.cupertinoHeight,
+    required this.cupertinoStyle,
     required this.cupertinoOnChanged,
     required this.materialDialog,
     required this.materialDialogBackgroundColor,
@@ -54,7 +62,9 @@ class _FCDatePickerCupertino extends StatelessWidget {
     required this.materialDialogBorderRadius,
   });
 
-  final FCDateRange dateRange;
+  final FCDateRange? dateRange;
+  final double? cupertinoHeight;
+  final TextStyle? cupertinoStyle;
   final void Function(DateTime)? cupertinoOnChanged;
   final Widget? materialDialog;
   final Color? materialDialogBackgroundColor;
@@ -65,24 +75,29 @@ class _FCDatePickerCupertino extends StatelessWidget {
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    final double height =
+        this.cupertinoHeight ?? (MediaQuery.of(context).size.height / 4);
+    final TextStyle cupertinoStyle = this.cupertinoStyle ??
+        theme.cupertinoThemeData.textTheme.pickerTextStyle.copyWith(
+          color: CupertinoDynamicColor.maybeResolve(theme.black, context),
+        );
 
     return SizedBox(
-      height: MediaQuery.of(context).size.height / 4,
+      height: height,
       child: CupertinoTheme(
         data: CupertinoThemeData(
           textTheme: CupertinoTextThemeData(
-            dateTimePickerTextStyle:
-                theme.cupertinoThemeData.textTheme.pickerTextStyle.copyWith(
-              color: CupertinoDynamicColor.maybeResolve(theme.black, context),
-            ),
+            dateTimePickerTextStyle: cupertinoStyle,
           ),
         ),
         child: CupertinoDatePicker(
           mode: CupertinoDatePickerMode.date,
+          minimumDate: this.dateRange?.dateMinimum ?? size.dateMinimum,
+          initialDateTime: this.dateRange?.dateInitial ?? size.dateInitial,
+          maximumDate: this.dateRange?.dateMaximum ?? size.dateMaximum,
           use24hFormat: true,
-          initialDateTime: this.dateRange.dateInitial,
-          minimumDate: this.dateRange.dateMinimum,
-          maximumDate: this.dateRange.dateMaximum,
           onDateTimeChanged: this.cupertinoOnChanged ?? (DateTime value) {},
         ),
       ),
@@ -94,6 +109,8 @@ class _FCDatePickerMaterial extends StatelessWidget {
   const _FCDatePickerMaterial({
     super.key,
     required this.dateRange,
+    required this.cupertinoHeight,
+    required this.cupertinoStyle,
     required this.cupertinoOnChanged,
     required this.materialDialog,
     required this.materialDialogBackgroundColor,
@@ -101,7 +118,9 @@ class _FCDatePickerMaterial extends StatelessWidget {
     required this.materialDialogBorderRadius,
   });
 
-  final FCDateRange dateRange;
+  final FCDateRange? dateRange;
+  final double? cupertinoHeight;
+  final TextStyle? cupertinoStyle;
   final void Function(DateTime)? cupertinoOnChanged;
   final Widget? materialDialog;
   final Color? materialDialogBackgroundColor;
