@@ -3,17 +3,61 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
 
-class FCListSection extends StatelessWidget {
-  const FCListSection({
+import 'package:flutter/cupertino.dart' show CupertinoListSection, CupertinoListTile;
+
+class FCListSection extends FCPlatformWidget {
+  FCListSection({
+    super.key,
+    required List<FCListSectionItem> items,
+    Color? backroundColor,
+    Color? splashColor,
+    BorderRadius? borderRadius,
+    EdgeInsets? padding,
+    TextStyle? titleStyle,
+    TextStyle? descriptionStyle,
+    double? separatorPadding,
+    bool isDisabled = false,
+    Color? disabledColor,
+  }) : super(
+          cupertino: _FCListSectionCupertino(
+            key: key,
+            items: items,
+            backroundColor: backroundColor,
+            splashColor: splashColor,
+            borderRadius: borderRadius,
+            padding: padding,
+            titleStyle: titleStyle,
+            descriptionStyle: descriptionStyle,
+            separatorPadding: separatorPadding,
+            isDisabled: isDisabled,
+            disabledColor: disabledColor,
+          ),
+          material: _FCListSectionMaterial(
+            key: key,
+            items: items,
+            backroundColor: backroundColor,
+            splashColor: splashColor,
+            borderRadius: borderRadius,
+            padding: padding,
+            titleStyle: titleStyle,
+            descriptionStyle: descriptionStyle,
+            separatorPadding: separatorPadding,
+            isDisabled: isDisabled,
+            disabledColor: disabledColor,
+          ),
+        );
+}
+
+class _FCListSectionCupertino extends StatelessWidget {
+  const _FCListSectionCupertino({
     super.key,
     required this.items,
     this.backroundColor,
     this.splashColor,
     this.borderRadius,
     this.padding,
-    this.style,
-    this.separatorColor,
-    this.separatorHeight,
+    this.titleStyle,
+    this.descriptionStyle,
     this.separatorPadding,
     this.isDisabled = false,
     this.disabledColor,
@@ -24,9 +68,8 @@ class FCListSection extends StatelessWidget {
   final Color? splashColor;
   final BorderRadius? borderRadius;
   final EdgeInsets? padding;
-  final TextStyle? style;
-  final Color? separatorColor;
-  final double? separatorHeight;
+  final TextStyle? titleStyle;
+  final TextStyle? descriptionStyle;
   final double? separatorPadding;
   final bool isDisabled;
   final Color? disabledColor;
@@ -38,7 +81,150 @@ class FCListSection extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
+    final Color backgroundColor = this.backroundColor ?? theme.backgroundComponent;
     final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusCard;
+    final EdgeInsets padding = this.padding ??
+        EdgeInsets.symmetric(
+          vertical: size.s16 / 2,
+          horizontal: size.s16,
+        );
+    final TextStyle titleStyle = this.titleStyle?.copyWith(
+              color: this.titleStyle?.color ?? theme.black,
+              fontSize: this.titleStyle?.fontSize ?? size.s16,
+              fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.black,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightMedium,
+          fontFamily: textStyle.fontFamilyMedium,
+          package: textStyle.package,
+        );
+    final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
+              color: this.descriptionStyle?.color ?? theme.grey,
+              fontSize: this.descriptionStyle?.fontSize ?? size.s14,
+              fontWeight:
+                  this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily:
+                  this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.grey,
+          fontSize: size.s14,
+          fontWeight: textStyle.fontWeightRegular,
+          fontFamily: textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
+    final double separatorPadding = this.separatorPadding ?? size.s16;
+
+    return CupertinoListSection.insetGrouped(
+      margin: EdgeInsets.zero,
+      backgroundColor: backgroundColor,
+      dividerMargin: separatorPadding,
+      decoration: BoxDecoration(
+        borderRadius: borderRadius,
+      ),
+      children: [
+        ...this.items.map((FCListSectionItem item) {
+          final Widget? subtitle = item.description != null
+              ? Text(
+                  item.description!,
+                  style: descriptionStyle,
+                )
+              : null;
+
+          return CupertinoListTile(
+            padding: padding,
+            leading: item.prefix,
+            title: Text(
+              item.title,
+              style: titleStyle,
+            ),
+            subtitle: subtitle,
+            trailing: item.postfix,
+            onTap: item.onPressed,
+          );
+        }),
+      ],
+    );
+  }
+}
+
+class _FCListSectionMaterial extends StatelessWidget {
+  const _FCListSectionMaterial({
+    super.key,
+    required this.items,
+    this.backroundColor,
+    this.splashColor,
+    this.borderRadius,
+    this.padding,
+    this.titleStyle,
+    this.descriptionStyle,
+    this.separatorPadding,
+    this.isDisabled = false,
+    this.disabledColor,
+  });
+
+  final List<FCListSectionItem> items;
+  final Color? backroundColor;
+  final Color? splashColor;
+  final BorderRadius? borderRadius;
+  final EdgeInsets? padding;
+  final TextStyle? titleStyle;
+  final TextStyle? descriptionStyle;
+  final double? separatorPadding;
+  final bool isDisabled;
+  final Color? disabledColor;
+
+  @override
+  Widget build(BuildContext context) {
+    final FCConfig config = context.config;
+    final IFCTextStyle textStyle = config.textStyle;
+    final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
+
+    final Color backgroundColor = this.backroundColor ?? theme.backgroundComponent;
+    final Color splashColor = this.splashColor ?? theme.primary;
+    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusCard;
+    final EdgeInsets padding = this.padding ??
+        EdgeInsets.symmetric(
+          vertical: size.s16 / 2,
+          horizontal: size.s16,
+        );
+    final TextStyle titleStyle = this.titleStyle?.copyWith(
+              color: this.titleStyle?.color ?? theme.black,
+              fontSize: this.titleStyle?.fontSize ?? size.s16,
+              fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.black,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightMedium,
+          fontFamily: textStyle.fontFamilyMedium,
+          package: textStyle.package,
+        );
+    final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
+              color: this.descriptionStyle?.color ?? theme.grey,
+              fontSize: this.descriptionStyle?.fontSize ?? size.s14,
+              fontWeight:
+                  this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily:
+                  this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.grey,
+          fontSize: size.s14,
+          fontWeight: textStyle.fontWeightRegular,
+          fontFamily: textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
+    final double separatorPadding = this.separatorPadding ?? size.s16;
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -57,50 +243,58 @@ class FCListSection extends StatelessWidget {
           final Radius bottomRight = ((index + 1) == this.items.length)
               ? Radius.circular(borderRadius.bottomRight.x)
               : Radius.zero;
-          final TextStyle style = this.style?.copyWith(
-                    color: this.style?.color ?? theme.black,
-                    fontSize: this.style?.fontSize ?? size.s16,
-                    fontWeight: this.style?.fontWeight ?? textStyle.fontWeightMedium,
-                    fontFamily: this.style?.fontFamily ?? textStyle.fontFamilyMedium,
-                    package: textStyle.package,
-                  ) ??
-              TextStyle(
-                color: theme.black,
-                fontSize: size.s16,
-                fontWeight: textStyle.fontWeightMedium,
-                fontFamily: textStyle.fontFamilyMedium,
-                package: textStyle.package,
-              );
-          final double separatorHeight = this.separatorHeight ?? size.s10 / 10;
-          final double separatorPadding = this.separatorPadding ?? size.s16;
-          final Color separatorColor = this.separatorColor ?? theme.grey;
 
           return Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               FCBasicSelectCard(
-                backgroundColor: this.backroundColor ?? theme.white,
-                splashColor: this.splashColor ?? theme.primary,
+                backgroundColor: backgroundColor,
+                splashColor: splashColor,
                 borderRadius: BorderRadius.only(
                   topLeft: topLeft,
                   topRight: topRight,
                   bottomLeft: bottomLeft,
                   bottomRight: bottomRight,
                 ),
-                padding: this.padding ?? EdgeInsets.all(size.s16),
+                padding: padding,
                 child: Row(
                   children: [
                     if (item.prefix != null) item.prefix!,
-                    if (item.prefix != null) SizedBox(width: size.s16 / 2),
-                    Flexible(
-                      child: Text(
-                        item.title,
-                        textAlign: TextAlign.start,
-                        style: style,
+                    if (item.prefix != null) SizedBox(width: size.s16),
+                    Expanded(
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  item.title,
+                                  textAlign: TextAlign.start,
+                                  style: titleStyle,
+                                ),
+                              ),
+                              if (item.postfix != null) SizedBox(width: size.s16),
+                              if (item.postfix != null) item.postfix!,
+                            ],
+                          ),
+                          if (item.description != null)
+                            Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Flexible(
+                                  child: Text(
+                                    item.description!,
+                                    textAlign: TextAlign.start,
+                                    style: descriptionStyle,
+                                  ),
+                                ),
+                              ],
+                            ),
+                        ],
                       ),
                     ),
-                    if (item.postfix != null) SizedBox(width: size.s16 / 2),
-                    if (item.postfix != null) item.postfix!,
                   ],
                 ),
                 onPressed: item.onPressed,
@@ -108,14 +302,12 @@ class FCListSection extends StatelessWidget {
                 disabledColor: this.disabledColor,
               ),
               if ((index + 1) != this.items.length)
-                Padding(
-                  padding: EdgeInsets.symmetric(
+                Container(
+                  margin: EdgeInsets.symmetric(
                     horizontal: separatorPadding,
                   ),
-                  child: Container(
-                    color: separatorColor,
-                    height: separatorHeight,
-                  ),
+                  color: theme.grey,
+                  height: size.s10 / 10,
                 ),
             ],
           );

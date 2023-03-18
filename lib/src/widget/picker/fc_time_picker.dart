@@ -10,7 +10,7 @@ import 'package:flutter/cupertino.dart'
         CupertinoDynamicColor,
         CupertinoDatePicker,
         CupertinoDatePickerMode;
-import 'package:flutter/material.dart' show Theme, ColorScheme, DialogTheme, TimeOfDay;
+import 'package:flutter/material.dart' show Theme, ColorScheme, TimeOfDay;
 
 class FCTimePicker extends FCPlatformWidget {
   FCTimePicker({
