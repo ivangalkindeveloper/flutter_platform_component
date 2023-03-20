@@ -1,4 +1,4 @@
-import 'package:flutter_component/src/widget/common/private/fc_common_field.dart';
+import 'package:flutter_component/src/widget/helper/fc_common_field.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/services.dart';
@@ -9,6 +9,7 @@ class FCBasicGradientFormField extends StatefulWidget {
     super.key,
     this.controller,
     this.focusNode,
+    //
     required this.unfocusedBackgroundGradient,
     required this.focusedBackgroundGradient,
     required this.focusedGradient,
@@ -37,16 +38,41 @@ class FCBasicGradientFormField extends StatefulWidget {
     this.textInputType = TextInputType.text,
     this.textCapitalization = TextCapitalization.none,
     this.textInputAction = TextInputAction.done,
+    //
+    this.textAlign = TextAlign.start,
+    this.isAutofocus = false,
+    this.isShowCursor,
+    //
     this.obscuringCharacter = "•",
     this.isObscuringText = false,
-    this.isAutofocus = false,
+    //
+    this.isAutocorrect = false,
+    this.smartDashesType,
+    this.smartQuotesType,
+    this.isSuggestions = false,
+    this.maxLengthEnforcement,
+    //
     this.maxLines = 1,
     this.maxLength = 128,
+    //
     this.onChanged,
     this.onTap,
+    this.onEditingComplete,
+    this.onFieldSubmitted,
+    //
     this.autoValidator,
     this.validator,
     this.inputFormatters,
+    //
+    this.keyboardAppearance,
+    this.enableInteractiveSelection,
+    this.selectionControls,
+    this.buildCounter,
+    this.autofillHints,
+    //
+    this.enableIMEPersonalizedLearning = true,
+    this.contextMenuBuilder,
+    //
     this.prefix,
     this.prefixIcon,
     this.postfixIcon,
@@ -55,10 +81,12 @@ class FCBasicGradientFormField extends StatefulWidget {
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
+    this.restorationId,
   });
 
   final TextEditingController? controller;
   final FocusNode? focusNode;
+  //
   final Gradient unfocusedBackgroundGradient;
   final Gradient focusedBackgroundGradient;
   final Gradient focusedGradient;
@@ -87,16 +115,46 @@ class FCBasicGradientFormField extends StatefulWidget {
   final TextInputType textInputType;
   final TextCapitalization textCapitalization;
   final TextInputAction textInputAction;
+  //
+  final TextAlign textAlign;
+  final bool isAutofocus;
+  final bool? isShowCursor;
+  //
   final String obscuringCharacter;
   final bool isObscuringText;
-  final bool isAutofocus;
+  //
+  final bool isAutocorrect;
+  final SmartDashesType? smartDashesType;
+  final SmartQuotesType? smartQuotesType;
+  final bool isSuggestions;
+  final MaxLengthEnforcement? maxLengthEnforcement;
+  //
   final int maxLines;
   final int maxLength;
+  //
   final void Function(String)? onChanged;
   final void Function()? onTap;
+  final void Function()? onEditingComplete;
+  final void Function(String)? onFieldSubmitted;
+  //
   final String? Function(String)? autoValidator;
   final String? Function(String)? validator;
   final List<TextInputFormatter>? inputFormatters;
+  //
+  final Brightness? keyboardAppearance;
+  final bool? enableInteractiveSelection;
+  final TextSelectionControls? selectionControls;
+  final Widget? Function(
+    BuildContext, {
+    required int currentLength,
+    required bool isFocused,
+    required int? maxLength,
+  })? buildCounter;
+  final Iterable<String>? autofillHints;
+  //
+  final bool enableIMEPersonalizedLearning;
+  final Widget Function(BuildContext, EditableTextState)? contextMenuBuilder;
+  //
   final Widget? prefix;
   final IconData? prefixIcon;
   final IconData? postfixIcon;
@@ -105,6 +163,7 @@ class FCBasicGradientFormField extends StatefulWidget {
   final bool isRequired;
   final bool isDisabled;
   final Color? disabledColor;
+  final String? restorationId;
 
   @override
   State<FCBasicGradientFormField> createState() => _FCBasicGradientFormFieldState();
@@ -338,6 +397,10 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField>
     final void Function(String)? onChanged =
         this.widget.isDisabled ? null : this.widget.onChanged;
     final void Function()? onTap = this.widget.isDisabled ? null : this.widget.onTap;
+    final void Function()? onEditingComplete =
+        this.widget.isDisabled ? null : this.widget.onEditingComplete;
+    final void Function(String)? onFieldSubmitted =
+        this.widget.isDisabled ? null : this.widget.onFieldSubmitted;
     final String? Function(String?) validator = this._validator;
     final String errorText = this._errorText();
     final TextStyle errorStyle = this.widget.errorStyle?.copyWith(
@@ -414,20 +477,49 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField>
                             textInputType: this.widget.textInputType,
                             textCapitalization: this.widget.textCapitalization,
                             textInputAction: this.widget.textInputAction,
+                            //
+                            textAlign: this.widget.textAlign,
+                            isAutofocus: this.widget.isAutofocus,
+                            isReadOnly: this.widget.isDisabled,
+                            isShowCursor: this.widget.isShowCursor,
+                            //
                             obscuringCharacter: this.widget.obscuringCharacter,
                             isObscuringText: this.widget.isObscuringText,
-                            isAutofocus: this.widget.isAutofocus,
+                            //
+                            isAutocorrect: this.widget.isAutocorrect,
+                            smartDashesType: this.widget.smartDashesType,
+                            smartQuotesType: this.widget.smartQuotesType,
+                            isSuggestions: this.widget.isSuggestions,
+                            maxLengthEnforcement: this.widget.maxLengthEnforcement,
+                            //
                             maxLines: this.widget.maxLines,
                             maxLength: this.widget.maxLength,
+                            //
                             onChanged: onChanged,
                             onTap: onTap,
+                            onEditingComplete: onEditingComplete,
+                            onFieldSubmitted: onFieldSubmitted,
+                            //
                             validator: validator,
                             inputFormatters: [
                               this._textInputHandlerFormatter,
                               ...this.widget.inputFormatters ?? [],
                             ],
+                            isEnabled: this.widget.isDisabled,
+                            //
                             cursorColor: this.widget.focusedGradient.colors.first,
-                            isEnabled: true,
+                            //
+                            keyboardAppearance: this.widget.keyboardAppearance,
+                            enableInteractiveSelection:
+                                this.widget.enableInteractiveSelection,
+                            selectionControls: this.widget.selectionControls,
+                            buildCounter: this.widget.buildCounter,
+                            autofillHints: this.widget.autofillHints,
+                            //
+                            restorationId: this.widget.restorationId,
+                            enableIMEPersonalizedLearning:
+                                this.widget.enableIMEPersonalizedLearning,
+                            contextMenuBuilder: this.widget.contextMenuBuilder,
                           ),
                         ),
                       ),

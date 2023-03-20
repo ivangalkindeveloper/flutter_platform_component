@@ -1,10 +1,9 @@
-import 'package:example/presentation/config_list/config_list.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:example/service/navigation_service.dart';
 import 'package:flutter/material.dart';
 
-class ComponentScreen extends StatelessWidget {
-  const ComponentScreen({Key? key});
+class ComponentListWidget extends StatelessWidget {
+  const ComponentListWidget({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,8 +20,6 @@ class ComponentScreen extends StatelessWidget {
       body: FCScrollbar(
         child: FCListView(
           children: [
-            const ConfigList(),
-            SizedBox(height: size.s16),
             FCPrimaryButton(
               title: "Animated Container",
               onPressed: () => Navigator.pushNamed(

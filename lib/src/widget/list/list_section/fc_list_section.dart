@@ -123,10 +123,10 @@ class _FCListSectionCupertino extends StatelessWidget {
     return CupertinoListSection.insetGrouped(
       margin: EdgeInsets.zero,
       backgroundColor: backgroundColor,
-      dividerMargin: separatorPadding,
       decoration: BoxDecoration(
         borderRadius: borderRadius,
       ),
+      dividerMargin: separatorPadding,
       children: [
         ...this.items.map((FCListSectionItem item) {
           final Widget? subtitle = item.description != null

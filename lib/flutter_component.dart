@@ -594,10 +594,9 @@ export 'src/widget/code_field/custom/gradient/light/fc_success_light_gradient_co
 export 'src/widget/code_field/custom/gradient/light/fc_warning_light_gradient_code_field.dart';
 
 // Commom
-// Commom / Public
-export 'src/widget/common/public/fc_component_disabled_overlay.dart';
-export 'src/widget/common/public/fc_cupertino_navigator.dart';
-export 'src/widget/common/public/fc_text_input_handler_formatter.dart';
+export 'src/widget/common/fc_component_disabled_overlay.dart';
+export 'src/widget/common/fc_cupertino_navigator.dart';
+export 'src/widget/common/fc_text_input_handler_formatter.dart';
 
 // Dialog
 export 'src/widget/dialog/fc_dialog_item.dart';

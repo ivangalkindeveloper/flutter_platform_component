@@ -1,4 +1,4 @@
-import 'package:flutter_component/src/widget/common/private/fc_button_row_child.dart';
+import 'package:flutter_component/src/widget/helper/fc_button_row_child.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';

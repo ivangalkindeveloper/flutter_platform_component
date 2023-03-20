@@ -16,6 +16,7 @@ class FCPrimaryDarkGradientToggle<T> extends StatelessWidget {
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
+    this.restorationId,
   });
 
   final T? value;
@@ -29,6 +30,7 @@ class FCPrimaryDarkGradientToggle<T> extends StatelessWidget {
   final bool isRequired;
   final bool isDisabled;
   final Color? disabledColor;
+  final String? restorationId;
 
   @override
   Widget build(BuildContext context) {
@@ -71,6 +73,7 @@ class FCPrimaryDarkGradientToggle<T> extends StatelessWidget {
       isRequired: this.isRequired,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
+      restorationId: this.restorationId,
     );
   }
 }

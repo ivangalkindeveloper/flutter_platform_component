@@ -1,13 +1,14 @@
-import 'package:example/presentation/config_list/config_list_platform.dart';
-import 'package:example/presentation/config_list/config_list_text_style.dart';
-import 'package:example/presentation/config_list/config_list_theme.dart';
-import 'package:example/presentation/config_list/config_list_size.dart';
+import 'package:example/presentation/component_list/component_list_platform.dart';
+import 'package:example/presentation/component_list/component_list_text_style.dart';
+import 'package:example/presentation/component_list/component_list_theme.dart';
+import 'package:example/presentation/component_list/component_list_size.dart';
+import 'package:example/presentation/component_list/component_list_wdget.dart';
 import 'package:example/presentation/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class ConfigList extends StatelessWidget {
-  const ConfigList({Key? key});
+class ComponentList extends StatelessWidget {
+  const ComponentList({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +28,8 @@ class ConfigList extends StatelessWidget {
         const ConfigListSize(),
         SizedBox(height: size.s16),
         const ConfigListTextStyle(),
+        SizedBox(height: size.s16),
+        const ComponentListWidget(),
       ],
     );
   }

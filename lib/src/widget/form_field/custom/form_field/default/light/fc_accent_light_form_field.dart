@@ -8,6 +8,7 @@ class FCAccentLightFormField extends StatelessWidget {
     super.key,
     this.controller,
     this.focusNode,
+    //
     this.internalColor,
     this.internalIconHeight,
     this.height,
@@ -33,16 +34,41 @@ class FCAccentLightFormField extends StatelessWidget {
     this.textInputType = TextInputType.text,
     this.textCapitalization = TextCapitalization.none,
     this.textInputAction = TextInputAction.done,
+    //
+    this.textAlign = TextAlign.start,
+    this.isAutofocus = false,
+    this.isShowCursor,
+    //
     this.obscuringCharacter = "•",
     this.isObscuringText = false,
-    this.isAutofocus = false,
+    //
+    this.isAutocorrect = false,
+    this.smartDashesType,
+    this.smartQuotesType,
+    this.isSuggestions = false,
+    this.maxLengthEnforcement,
+    //
     this.maxLines = 1,
     this.maxLength = 128,
+    //
     this.onChanged,
     this.onTap,
+    this.onEditingComplete,
+    this.onFieldSubmitted,
+    //
     this.autoValidator,
     this.validator,
     this.inputFormatters,
+    //
+    this.keyboardAppearance,
+    this.enableInteractiveSelection,
+    this.selectionControls,
+    this.buildCounter,
+    this.autofillHints,
+    //
+    this.enableIMEPersonalizedLearning = true,
+    this.contextMenuBuilder,
+    //
     this.prefix,
     this.prefixIcon,
     this.postfixIcon,
@@ -51,10 +77,12 @@ class FCAccentLightFormField extends StatelessWidget {
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
+    this.restorationId,
   });
 
   final TextEditingController? controller;
   final FocusNode? focusNode;
+  //
   final Color? internalColor;
   final double? internalIconHeight;
   final double? height;
@@ -80,16 +108,46 @@ class FCAccentLightFormField extends StatelessWidget {
   final TextInputType textInputType;
   final TextCapitalization textCapitalization;
   final TextInputAction textInputAction;
+  //
+  final TextAlign textAlign;
+  final bool isAutofocus;
+  final bool? isShowCursor;
+  //
   final String obscuringCharacter;
   final bool isObscuringText;
-  final bool isAutofocus;
+  //
+  final bool isAutocorrect;
+  final SmartDashesType? smartDashesType;
+  final SmartQuotesType? smartQuotesType;
+  final bool isSuggestions;
+  final MaxLengthEnforcement? maxLengthEnforcement;
+  //
   final int maxLines;
   final int maxLength;
+  //
   final void Function(String)? onChanged;
   final void Function()? onTap;
+  final void Function()? onEditingComplete;
+  final void Function(String)? onFieldSubmitted;
+  //
   final String? Function(String)? autoValidator;
   final String? Function(String)? validator;
   final List<TextInputFormatter>? inputFormatters;
+  //
+  final Brightness? keyboardAppearance;
+  final bool? enableInteractiveSelection;
+  final TextSelectionControls? selectionControls;
+  final Widget? Function(
+    BuildContext, {
+    required int currentLength,
+    required bool isFocused,
+    required int? maxLength,
+  })? buildCounter;
+  final Iterable<String>? autofillHints;
+  //
+  final bool enableIMEPersonalizedLearning;
+  final Widget Function(BuildContext, EditableTextState)? contextMenuBuilder;
+  //
   final Widget? prefix;
   final IconData? prefixIcon;
   final IconData? postfixIcon;
@@ -98,6 +156,7 @@ class FCAccentLightFormField extends StatelessWidget {
   final bool isRequired;
   final bool isDisabled;
   final Color? disabledColor;
+  final String? restorationId;
 
   @override
   Widget build(BuildContext context) {
@@ -107,6 +166,7 @@ class FCAccentLightFormField extends StatelessWidget {
     return FCBasicFormField(
       controller: this.controller,
       focusNode: this.focusNode,
+      //
       unfocusedBackgroundColor: theme.backgroundComponent,
       focusedBackgroundColor: theme.backgroundScaffold,
       focusedColor: theme.accentLight,
@@ -135,16 +195,41 @@ class FCAccentLightFormField extends StatelessWidget {
       textInputType: this.textInputType,
       textCapitalization: this.textCapitalization,
       textInputAction: this.textInputAction,
+      //
+      textAlign: this.textAlign,
+      isAutofocus: this.isAutofocus,
+      isShowCursor: this.isShowCursor,
+      //
       obscuringCharacter: this.obscuringCharacter,
       isObscuringText: this.isObscuringText,
-      isAutofocus: this.isAutofocus,
+      //
+      isAutocorrect: this.isAutocorrect,
+      smartDashesType: this.smartDashesType,
+      smartQuotesType: this.smartQuotesType,
+      isSuggestions: this.isSuggestions,
+      maxLengthEnforcement: this.maxLengthEnforcement,
+      //
       maxLines: this.maxLines,
       maxLength: this.maxLength,
+      //
       onChanged: this.onChanged,
       onTap: this.onTap,
+      onEditingComplete: this.onEditingComplete,
+      onFieldSubmitted: this.onFieldSubmitted,
+      //
       autoValidator: this.autoValidator,
       validator: this.validator,
       inputFormatters: this.inputFormatters,
+      //
+      keyboardAppearance: this.keyboardAppearance,
+      enableInteractiveSelection: this.enableInteractiveSelection,
+      selectionControls: this.selectionControls,
+      buildCounter: this.buildCounter,
+      autofillHints: this.autofillHints,
+      //
+      enableIMEPersonalizedLearning: this.enableIMEPersonalizedLearning,
+      contextMenuBuilder: this.contextMenuBuilder,
+      //
       prefix: this.prefix,
       prefixIcon: this.prefixIcon,
       postfixIcon: this.postfixIcon,
@@ -153,6 +238,7 @@ class FCAccentLightFormField extends StatelessWidget {
       isRequired: this.isRequired,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
+      restorationId: this.restorationId,
     );
   }
 }

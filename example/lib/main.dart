@@ -1,4 +1,4 @@
-import 'package:example/presentation/component_list.dart';
+import 'package:example/presentation/component_list/component_list.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:example/service/navigation_service.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +20,7 @@ class App extends StatelessWidget {
       context: context,
       navigatorKey: _navigationService.navigatorKey,
       onGenerateRoute: _navigationService.onGenerateRoute,
-      home: const ComponentScreen(),
+      home: const ComponentList(),
     );
   }
 }

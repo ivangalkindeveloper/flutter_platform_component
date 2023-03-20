@@ -1,4 +1,4 @@
-import 'package:flutter_component/src/widget/common/private/fc_select_field_wrapper.dart';
+import 'package:flutter_component/src/widget/helper/fc_select_field_wrapper.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
@@ -35,7 +35,9 @@ class FCBasicGradientSelectField extends StatefulWidget {
     //
     this.maxLines = 1,
     this.maxLength = 128,
+    //
     this.validator,
+    //
     this.prefix,
     this.postfix,
     this.bottom,
@@ -43,6 +45,7 @@ class FCBasicGradientSelectField extends StatefulWidget {
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
+    this.restorationId,
   });
 
   final Gradient backgroundGradient;
@@ -72,7 +75,9 @@ class FCBasicGradientSelectField extends StatefulWidget {
   //
   final int maxLines;
   final int maxLength;
+  //
   final String? Function(String)? validator;
+  //
   final Widget? prefix;
   final Widget? postfix;
   final Widget? bottom;
@@ -80,6 +85,7 @@ class FCBasicGradientSelectField extends StatefulWidget {
   final bool isRequired;
   final bool isDisabled;
   final Color? disabledColor;
+  final String? restorationId;
 
   @override
   State<FCBasicGradientSelectField> createState() => _FCBasicGradientSelectFieldState();
@@ -123,14 +129,18 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
+    final BorderRadius borderRadius =
+        this.widget.borderRadius ?? config.borderRadiusField;
+    final double borderWidth = this.widget.borderWidth ?? config.borderWidthField;
 
     return FCSelectFieldWrapper(
       context: context,
       splashColor: this.widget.splashColor,
-      borderRadius: config.borderRadiusField,
+      borderRadius: borderRadius,
       onPressed: this.widget.onPressed,
       child: FCBasicGradientFormField(
         controller: this._controller,
+        //
         unfocusedBackgroundGradient: this.widget.backgroundGradient,
         focusedBackgroundGradient: this.widget.backgroundGradient,
         focusedGradient: const LinearGradient(
@@ -142,8 +152,8 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
         internalGradient: this.widget.internalGradient,
         internalIconHeight: this.widget.internalIconHeight,
         height: this.widget.height,
-        borderRadius: this.widget.borderRadius,
-        borderWidth: this.widget.borderWidth,
+        borderRadius: borderRadius,
+        borderWidth: borderWidth,
         padding: this.widget.padding,
         errorPadding: this.widget.errorPadding,
         //
@@ -163,13 +173,16 @@ class _FCBasicGradientSelectFieldState extends State<FCBasicGradientSelectField>
         //
         maxLines: this.widget.maxLines,
         maxLength: this.widget.maxLength,
+        //
         validator: this.widget.validator,
+        //
         prefix: this.widget.prefix,
         postfix: this.widget.postfix,
         bottom: this.widget.bottom,
         isRequired: this.widget.isRequired,
         isDisabled: this.widget.isDisabled,
         disabledColor: this.widget.disabledColor,
+        restorationId: this.widget.restorationId,
       ),
       isDisabled: this.widget.isDisabled,
     );

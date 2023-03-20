@@ -1,12 +1,11 @@
-import 'package:flutter_component/src/widget/common/private/fc_button_row_child.dart';
-import 'package:flutter_component/src/widget/common/private/fc_common_field.dart';
+import 'package:flutter_component/src/widget/helper/fc_button_row_child.dart';
+import 'package:flutter_component/src/widget/helper/fc_common_field.dart';
 import 'package:flutter_component/src/exception/fc_exception.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 import 'package:flutter/cupertino.dart' show CupertinoSlidingSegmentedControl;
-import 'package:flutter/material.dart' show Colors, TextCapitalization;
 
 class FCBasicSlidingSegmentControl<T> extends StatefulWidget {
   const FCBasicSlidingSegmentControl({
@@ -24,6 +23,7 @@ class FCBasicSlidingSegmentControl<T> extends StatefulWidget {
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
+    this.restorationId,
   });
 
   final T? value;
@@ -39,6 +39,7 @@ class FCBasicSlidingSegmentControl<T> extends StatefulWidget {
   final bool isRequired;
   final bool isDisabled;
   final Color? disabledColor;
+  final String? restorationId;
 
   @override
   State<FCBasicSlidingSegmentControl<T>> createState() =>
@@ -146,38 +147,10 @@ class _FCBasicSlidingSegmentControlState<T>
         SizedBox(
           height: 0,
           width: 0,
-          child: FCCommonField(
+          child: FCCommonField.hidden(
             controller: this._controller,
-            focusNode: null,
-            //
-            textStyle: const TextStyle(
-              fontSize: 0,
-            ),
-            //
-            labelText: "",
-            labelColor: Colors.transparent,
-            labelStyle: null,
-            //
-            prefixText: null,
-            prefixStyle: null,
-            //
-            hintText: null,
-            hintStyle: null,
-            //
-            textInputType: null,
-            textCapitalization: TextCapitalization.none,
-            textInputAction: null,
-            obscuringCharacter: "•",
-            isObscuringText: false,
-            isAutofocus: false,
-            maxLines: 1,
-            maxLength: 1,
-            onChanged: null,
-            onTap: null,
             validator: this._validator,
-            inputFormatters: null,
-            cursorColor: null,
-            isEnabled: null,
+            restorationId: this.widget.restorationId,
           ),
         ),
         CupertinoSlidingSegmentedControl<T>(
