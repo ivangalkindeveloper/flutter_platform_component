@@ -14,6 +14,7 @@ class FCDangerDarkSegmentControl<T> extends StatelessWidget {
     this.borderRadius,
     this.borderWidth,
     this.padding,
+    this.isExpanded = false,
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
@@ -29,6 +30,7 @@ class FCDangerDarkSegmentControl<T> extends StatelessWidget {
   final BorderRadius? borderRadius;
   final double? borderWidth;
   final EdgeInsets? padding;
+  final bool isExpanded;
   final bool isRequired;
   final bool isDisabled;
   final Color? disabledColor;
@@ -57,6 +59,7 @@ class FCDangerDarkSegmentControl<T> extends StatelessWidget {
       borderRadius: this.borderRadius,
       borderWidth: this.borderWidth,
       padding: this.padding,
+      isExpanded: this.isExpanded,
       isRequired: this.isRequired,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,

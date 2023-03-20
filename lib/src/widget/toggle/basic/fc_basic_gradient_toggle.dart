@@ -22,6 +22,8 @@ class FCBasicGradientToggle<T> extends StatefulWidget {
     this.selectedStyle,
     this.height,
     this.borderRadius,
+    this.padding,
+    this.isExpanded = false,
     this.horizontalInterval,
     this.isRequired = false,
     this.isDisabled = false,
@@ -42,6 +44,8 @@ class FCBasicGradientToggle<T> extends StatefulWidget {
   final TextStyle? selectedStyle;
   final double? height;
   final BorderRadius? borderRadius;
+  final EdgeInsets? padding;
+  final bool isExpanded;
   final double? horizontalInterval;
   final bool isRequired;
   final bool isDisabled;
@@ -116,6 +120,17 @@ class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
     return null;
   }
 
+  Widget _expandedWrapper({
+    required Widget child,
+  }) {
+    if (this.widget.isExpanded)
+      return Expanded(
+        child: child,
+      );
+
+    return child;
+  }
+
   @override
   Widget build(BuildContext context) {
     if (this.widget.items.isEmpty) throw const FCItemsEmptyException();
@@ -159,24 +174,27 @@ class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
                         });
                 final bool isSelected = item.value == this.widget.value;
 
-                return _FCGradientToggleButton(
-                  item: item,
-                  index: index,
-                  length: this.widget.items.length,
-                  unselectedBackgroundGradient: this.widget.unselectedBackgroundGradient,
-                  unselectedInternalGradient: this.widget.unselectedInternalGradient,
-                  unselectedSplashColor: this.widget.unselectedSplashColor,
-                  unselectedStyle: this.widget.unselectedStyle,
-                  selectedBackgroundGradient: this.widget.selectedBackgroundGradient,
-                  selectedInternalGradient: this.widget.selectedInternalGradient,
-                  selectedSplashColor: this.widget.selectedSplashColor,
-                  selectedStyle: this.widget.selectedStyle,
-                  height: height,
-                  borderRadius: borderRadius,
-                  horizontalInterval: this.widget.horizontalInterval,
-                  isValidationError: this._isValidationError,
-                  onPressed: onPressed,
-                  isSelected: isSelected,
+                return this._expandedWrapper(
+                  child: _FCGradientToggleButton(
+                    item: item,
+                    index: index,
+                    length: this.widget.items.length,
+                    unselectedBackgroundGradient:
+                        this.widget.unselectedBackgroundGradient,
+                    unselectedInternalGradient: this.widget.unselectedInternalGradient,
+                    unselectedSplashColor: this.widget.unselectedSplashColor,
+                    unselectedStyle: this.widget.unselectedStyle,
+                    selectedBackgroundGradient: this.widget.selectedBackgroundGradient,
+                    selectedInternalGradient: this.widget.selectedInternalGradient,
+                    selectedSplashColor: this.widget.selectedSplashColor,
+                    selectedStyle: this.widget.selectedStyle,
+                    height: height,
+                    borderRadius: borderRadius,
+                    horizontalInterval: this.widget.horizontalInterval,
+                    onPressed: onPressed,
+                    isSelected: isSelected,
+                    isValidationError: this._isValidationError,
+                  ),
                 );
               }),
             ],
@@ -214,9 +232,9 @@ class _FCGradientToggleButton<T> extends StatelessWidget {
     required this.height,
     required this.borderRadius,
     required this.horizontalInterval,
-    required this.isValidationError,
     required this.onPressed,
     required this.isSelected,
+    required this.isValidationError,
   });
 
   final int index;
@@ -233,9 +251,9 @@ class _FCGradientToggleButton<T> extends StatelessWidget {
   final double? height;
   final BorderRadius? borderRadius;
   final double? horizontalInterval;
-  final bool isValidationError;
   final VoidCallback onPressed;
   final bool isSelected;
+  final bool isValidationError;
 
   Gradient _backgroundGradient({
     required BuildContext context,

@@ -29,6 +29,7 @@ class FCBasicGradientSegmentControl<T> extends StatefulWidget {
     this.borderRadius,
     this.borderWidth,
     this.padding,
+    this.isExpanded = false,
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
@@ -52,6 +53,7 @@ class FCBasicGradientSegmentControl<T> extends StatefulWidget {
   final BorderRadius? borderRadius;
   final double? borderWidth;
   final EdgeInsets? padding;
+  final bool isExpanded;
   final bool isRequired;
   final bool isDisabled;
   final Color? disabledColor;
@@ -127,6 +129,17 @@ class _FCBasicGradientSegmentControlState<T>
     return null;
   }
 
+  Widget _expandedWrapper({
+    required Widget child,
+  }) {
+    if (this.widget.isExpanded)
+      return Expanded(
+        child: child,
+      );
+
+    return child;
+  }
+
   @override
   Widget build(BuildContext context) {
     if (this.widget.items.isEmpty) throw const FCItemsEmptyException();
@@ -165,27 +178,31 @@ class _FCBasicGradientSegmentControlState<T>
                     ? () {}
                     : () => this.widget.onChanged(item.value);
 
-                return _FCSegmentControlButton(
-                  index: index,
-                  item: item,
-                  length: this.widget.items.length,
-                  unselectedBackgroundGradient: this.widget.unselectedBackgroundGradient,
-                  unselectedBorderGradient: this.widget.unselectedBorderGradient,
-                  unselectedInternalGradient: this.widget.unselectedInternalGradient,
-                  unselectedSplashColor: this.widget.unselectedSplashColor,
-                  unselectedStyle: this.widget.unselectedStyle,
-                  selectedBackgroundGradient: this.widget.selectedBackgroundGradient,
-                  selectedBorderGradient: this.widget.selectedBorderGradient,
-                  selectedInternalGradient: this.widget.selectedInternalGradient,
-                  selectedSplashColor: this.widget.selectedSplashColor,
-                  selectedStyle: this.widget.selectedStyle,
-                  height: height,
-                  padding: this.widget.padding,
-                  borderRadius: borderRadius,
-                  borderWidth: this.widget.borderWidth,
-                  isValidationError: this._isValidationError,
-                  onPressed: onPressed,
-                  isSelected: item.value == this.widget.value,
+                return this._expandedWrapper(
+                  child: _FCSegmentControlButton(
+                    index: index,
+                    item: item,
+                    length: this.widget.items.length,
+                    unselectedBackgroundGradient:
+                        this.widget.unselectedBackgroundGradient,
+                    unselectedBorderGradient: this.widget.unselectedBorderGradient,
+                    unselectedInternalGradient: this.widget.unselectedInternalGradient,
+                    unselectedSplashColor: this.widget.unselectedSplashColor,
+                    unselectedStyle: this.widget.unselectedStyle,
+                    selectedBackgroundGradient: this.widget.selectedBackgroundGradient,
+                    selectedBorderGradient: this.widget.selectedBorderGradient,
+                    selectedInternalGradient: this.widget.selectedInternalGradient,
+                    selectedSplashColor: this.widget.selectedSplashColor,
+                    selectedStyle: this.widget.selectedStyle,
+                    height: height,
+                    borderRadius: borderRadius,
+                    borderWidth: this.widget.borderWidth,
+                    padding: this.widget.padding,
+                    isExpanded: this.widget.isExpanded,
+                    onPressed: onPressed,
+                    isSelected: item.value == this.widget.value,
+                    isValidationError: this._isValidationError,
+                  ),
                 );
               }),
             ],
@@ -223,12 +240,13 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required this.selectedSplashColor,
     required this.selectedStyle,
     required this.height,
-    required this.padding,
     required this.borderRadius,
     required this.borderWidth,
-    required this.isValidationError,
+    required this.padding,
+    required this.isExpanded,
     required this.onPressed,
     required this.isSelected,
+    required this.isValidationError,
   });
 
   final int index;
@@ -245,12 +263,13 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   final Color selectedSplashColor;
   final TextStyle? selectedStyle;
   final double height;
-  final EdgeInsets? padding;
   final BorderRadius borderRadius;
   final double? borderWidth;
-  final bool isValidationError;
+  final EdgeInsets? padding;
+  final bool isExpanded;
   final VoidCallback onPressed;
   final bool isSelected;
+  final bool isValidationError;
 
   Gradient _backgroundGradient({
     required IFCTheme theme,
@@ -302,6 +321,17 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     if (this.unselectedSplashColor != null) return this.unselectedSplashColor!;
 
     return theme.whiteAlways;
+  }
+
+  Widget _expandedWrapper({
+    required Widget child,
+  }) {
+    if (this.isExpanded)
+      return Expanded(
+        child: child,
+      );
+
+    return child;
   }
 
   @override
@@ -360,74 +390,76 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          SizedBox(
-            height: this.height,
-            child: Stack(
-              alignment: Alignment.center,
-              children: [
-                Positioned.fill(
-                  child: FCGradientMask(
-                    gradient: borderGradient,
-                    child: Container(
-                      decoration: ShapeDecoration(
-                        shape: CustomRoundedRectangleBorder(
-                          topSide: BorderSide(
-                            color: borderGradient.colors.first,
-                            width: borderWidth,
-                          ),
-                          bottomSide: BorderSide(
-                            color: borderGradient.colors.first,
-                            width: borderWidth,
-                          ),
-                          leftSide: BorderSide(
-                            color: borderGradient.colors.first,
-                            width: leftBorderWidth,
-                          ),
-                          rightSide: BorderSide(
-                            color: borderGradient.colors.first,
-                            width: rightBorderWidth,
-                          ),
-                          topLeftCornerSide: BorderSide(
-                            color: borderGradient.colors.first,
-                            width: borderWidth,
-                          ),
-                          topRightCornerSide: BorderSide(
-                            color: borderGradient.colors.first,
-                            width: borderWidth,
-                          ),
-                          bottomLeftCornerSide: BorderSide(
-                            color: borderGradient.colors.first,
-                            width: borderWidth,
-                          ),
-                          bottomRightCornerSide: BorderSide(
-                            color: borderGradient.colors.first,
-                            width: borderWidth,
-                          ),
-                          borderRadius: BorderRadius.only(
-                            topLeft: topLeft,
-                            topRight: topRight,
-                            bottomLeft: bottomLeft,
-                            bottomRight: bottomRight,
+          this._expandedWrapper(
+            child: SizedBox(
+              height: this.height,
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  Positioned.fill(
+                    child: FCGradientMask(
+                      gradient: borderGradient,
+                      child: Container(
+                        decoration: ShapeDecoration(
+                          shape: CustomRoundedRectangleBorder(
+                            topSide: BorderSide(
+                              color: borderGradient.colors.first,
+                              width: borderWidth,
+                            ),
+                            bottomSide: BorderSide(
+                              color: borderGradient.colors.first,
+                              width: borderWidth,
+                            ),
+                            leftSide: BorderSide(
+                              color: borderGradient.colors.first,
+                              width: leftBorderWidth,
+                            ),
+                            rightSide: BorderSide(
+                              color: borderGradient.colors.first,
+                              width: rightBorderWidth,
+                            ),
+                            topLeftCornerSide: BorderSide(
+                              color: borderGradient.colors.first,
+                              width: borderWidth,
+                            ),
+                            topRightCornerSide: BorderSide(
+                              color: borderGradient.colors.first,
+                              width: borderWidth,
+                            ),
+                            bottomLeftCornerSide: BorderSide(
+                              color: borderGradient.colors.first,
+                              width: borderWidth,
+                            ),
+                            bottomRightCornerSide: BorderSide(
+                              color: borderGradient.colors.first,
+                              width: borderWidth,
+                            ),
+                            borderRadius: BorderRadius.only(
+                              topLeft: topLeft,
+                              topRight: topRight,
+                              bottomLeft: bottomLeft,
+                              bottomRight: bottomRight,
+                            ),
                           ),
                         ),
                       ),
                     ),
                   ),
-                ),
-                Padding(
-                  padding: padding,
-                  child: FCButtonRowChild(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    gradient: internalGradient,
-                    prefix: this.item.prefix,
-                    title: this.item.title,
-                    textAlign: TextAlign.center,
-                    titleStyle: titleStyle,
-                    postfix: this.item.postfix,
+                  Padding(
+                    padding: padding,
+                    child: FCButtonRowChild(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      gradient: internalGradient,
+                      prefix: this.item.prefix,
+                      title: this.item.title,
+                      textAlign: TextAlign.center,
+                      titleStyle: titleStyle,
+                      postfix: this.item.postfix,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           if ((index + 1) != this.length)
