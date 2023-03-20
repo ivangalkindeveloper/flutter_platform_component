@@ -10,6 +10,7 @@ class ConfigListSize extends StatelessWidget {
     final IFCSize size = config.size;
 
     return Column(
+      mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         FCText.semiBold20Black(

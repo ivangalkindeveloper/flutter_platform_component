@@ -13,24 +13,32 @@ class ComponentList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = FCConfig.of(context);
+    final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        const ConfigSection(),
-        SizedBox(height: size.s16),
-        const ConfigListPlatform(),
-        SizedBox(height: size.s16),
-        const ConfigListTheme(),
-        SizedBox(height: size.s16),
-        const ConfigListSize(),
-        SizedBox(height: size.s16),
-        const ConfigListTextStyle(),
-        SizedBox(height: size.s16),
-        const ComponentListWidget(),
-      ],
+    return FCScaffold(
+      backgroundColor: theme.backgroundScaffold,
+      appBar: FCBasicAppBar(
+        context: context,
+        title: "Flutter Component",
+      ),
+      body: FCScrollbar(
+        child: FCListView(
+          children: [
+            const ConfigSection(),
+            SizedBox(height: size.s16),
+            const ConfigListPlatform(),
+            SizedBox(height: size.s16),
+            const ConfigListTheme(),
+            SizedBox(height: size.s16),
+            const ConfigListSize(),
+            SizedBox(height: size.s16),
+            const ConfigListTextStyle(),
+            SizedBox(height: size.s16),
+            const ComponentListWidget(),
+          ],
+        ),
+      ),
     );
   }
 }
