@@ -510,6 +510,13 @@ Toggle component with gradient colors, decomposed by platform.
 #### Toggle Item
 Toggle item for toggle component.
 
+## TODO
+1) Duplication of all colors in ready-made components for easy overwriting;\
+2) Elevation of components;\
+3) Refactoring circular indicators from static methods to widgets;\
+4) Refactoring icons from static methods to widgets;\
+5) Refactoring text widgets from static methods to widgets.
+
 ## Additional Information
 For more details see example project.\
 And feel free to open an issue if you find any bugs or errors or suggestions.

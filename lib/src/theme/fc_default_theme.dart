@@ -926,11 +926,11 @@ class FCDefaultTheme implements IFCTheme {
           ],
         ),
         // Danger / Light
-        dangerLight: const Color(0xffFF5852),
+        dangerLight: const Color(0xffFF9F9C),
         dangerLightGradient: const LinearGradient(
           colors: const [
-            Color(0xffFF5852),
-            Color(0xffE8726D),
+            Color(0xffFF9F9C),
+            Color(0xffDB8986),
           ],
         ),
         // Danger / Dark
