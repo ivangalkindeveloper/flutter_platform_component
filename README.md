@@ -1,5 +1,11 @@
-# Flutter Component
-📱 Ready-made component base using ready-made abstractions for quick use and decomposed by platform.
+<p align="center">
+  # Flutter Component
+  📱 Ready-made component base using ready-made abstractions for quick use and decomposed by platform.
+
+  | iOS | Android |
+  | :-: | :-----: |
+  |  ✅  |   ✅   |
+</p>
 
 ## Benefits
 The package works according to the principle - fill out one contract - get all ready-made platform components.
@@ -511,11 +517,12 @@ Toggle component with gradient colors, decomposed by platform.
 Toggle item for toggle component.
 
 ## TODO
-1) Duplication of all colors in ready-made components for easy overwriting;\
-2) Elevation of components;\
-3) Refactoring circular indicators from static methods to widgets;\
-4) Refactoring icons from static methods to widgets;\
-5) Refactoring text widgets from static methods to widgets.
+1) Duplication of all colors in ready-made components for easy overwriting;
+2) Elevation of components;
+3) Refactoring circular indicators from static methods to widgets;
+4) Refactoring icons from static methods to widgets;
+5) Refactoring text widgets from static methods to widgets;
+6) Support WEB.
 
 ## Additional Information
 For more details see example project.\
