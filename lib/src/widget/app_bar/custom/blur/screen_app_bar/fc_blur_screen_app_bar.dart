@@ -1,4 +1,3 @@
-import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:ui';
@@ -49,9 +48,6 @@ class FCBlurScreenAppBar extends FCBasicBlurAppBar {
     if (prefix != null) return prefix;
 
     if (onPressedBack != null) {
-      final FCConfig config = context.config;
-      final TargetPlatform platform = config.platform;
-
       final TextDirection textDirection = Directionality.of(context);
       final Matrix4 transform = textDirection == TextDirection.rtl
           ? (Matrix4.identity()..scale(-1.0, 1.0, 1.0))
@@ -64,8 +60,8 @@ class FCBlurScreenAppBar extends FCBasicBlurAppBar {
           transformHitTests: false,
           child: FCIcon.black(
             context: context,
-            icon: FCPlatform.decompose<IconData, IconData, IconData>(
-              platform: platform,
+            icon: FCPlatform.decomposeFromContext<IconData, IconData, IconData>(
+              context: context,
               cupertino: CupertinoIcons.back,
               material: Icons.arrow_back,
             ),

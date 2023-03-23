@@ -3,7 +3,7 @@ import 'package:example/presentation/component_list/component_list_text_style.da
 import 'package:example/presentation/component_list/component_list_theme.dart';
 import 'package:example/presentation/component_list/component_list_size.dart';
 import 'package:example/presentation/component_list/component_list_wdget.dart';
-import 'package:example/presentation/config_section.dart';
+import 'package:example/presentation/config/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 

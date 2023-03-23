@@ -5,26 +5,26 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart' show Icons, IconButton;
 import 'package:flutter/cupertino.dart' show CupertinoButton;
 
-class FCAlwaysWhiteModalCloseButton extends FCPlatformWidget {
-  FCAlwaysWhiteModalCloseButton({
+class FCWhiteAlwaysModalCloseButton extends FCPlatformWidget {
+  FCWhiteAlwaysModalCloseButton({
     super.key,
     required String cupertinoLocale,
     required VoidCallback onPressed,
   }) : super(
-          cupertino: _FCAlwaysWhiteModalCloseButtonCupertino(
+          cupertino: _FCWhiteAlwaysModalCloseButtonCupertino(
             key: key,
             cupertinoLocale: cupertinoLocale,
             onPressed: onPressed,
           ),
-          material: _FCAlwaysWhiteModalCloseButtonMaterial(
+          material: _FCWhiteAlwaysModalCloseButtonMaterial(
             key: key,
             onPressed: onPressed,
           ),
         );
 }
 
-class _FCAlwaysWhiteModalCloseButtonCupertino extends StatelessWidget {
-  const _FCAlwaysWhiteModalCloseButtonCupertino({
+class _FCWhiteAlwaysModalCloseButtonCupertino extends StatelessWidget {
+  const _FCWhiteAlwaysModalCloseButtonCupertino({
     super.key,
     required this.cupertinoLocale,
     required this.onPressed,
@@ -51,8 +51,8 @@ class _FCAlwaysWhiteModalCloseButtonCupertino extends StatelessWidget {
   }
 }
 
-class _FCAlwaysWhiteModalCloseButtonMaterial extends StatelessWidget {
-  const _FCAlwaysWhiteModalCloseButtonMaterial({
+class _FCWhiteAlwaysModalCloseButtonMaterial extends StatelessWidget {
+  const _FCWhiteAlwaysModalCloseButtonMaterial({
     super.key,
     required this.onPressed,
   });

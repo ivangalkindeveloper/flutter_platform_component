@@ -129,10 +129,10 @@ class _FCAppBarCupertino extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           CupertinoNavigationBar(
-            transitionBetweenRoutes: this.transitionBetweenRoutes,
             automaticallyImplyLeading: false,
             automaticallyImplyMiddle: false,
             brightness: theme.cupertinoThemeData.brightness,
+            transitionBetweenRoutes: this.transitionBetweenRoutes,
             backgroundColor: theme.white.withOpacity(0),
             border: Border.all(
               color: Colors.transparent,

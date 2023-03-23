@@ -4,14 +4,14 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class AppBarScreen extends StatefulWidget {
-  const AppBarScreen({Key? key});
+class BlurAppBarScreen extends StatefulWidget {
+  const BlurAppBarScreen({Key? key});
 
   @override
-  State<AppBarScreen> createState() => _AppBarScreenState();
+  State<BlurAppBarScreen> createState() => _BlurAppBarScreenState();
 }
 
-class _AppBarScreenState extends State<AppBarScreen> {
+class _BlurAppBarScreenState extends State<BlurAppBarScreen> {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = FCConfig.of(context);
@@ -22,33 +22,33 @@ class _AppBarScreenState extends State<AppBarScreen> {
       extendBodyBehindAppBar: true,
 
       // backgroundColor: theme.backgroundScaffold,
-      // appBar: FCExpandedModalAppBar(
+      // appBar: FCBlurExpandedModalAppBar(
       //   context: context,
       //   cupertinoLocale: "Back",
       //   onPressedBack: () => Navigator.pop(context),
-      //   title: "Expanded Modal",
+      //   title: "Blur Expanded Modal",
       // ),
 
       // backgroundColor: theme.black,
-      // appBar: FCWhiteAlwaysExpandedModalAppBar(
+      // appBar: FCBlurWhiteAlwaysExpandedModalAppBar(
       //   context: context,
       //   cupertinoLocale: "Back",
       //   onPressedBack: () => Navigator.pop(context),
-      //   title: "White Always Expanded Modal",
+      //   title: "Blur White Always Expanded Modal",
       // ),
 
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FCBlurScreenAppBar(
         context: context,
-        title: "Screen",
+        title: "Blur Screen",
         onPressedBack: () => Navigator.pop(context),
       ),
 
       // backgroundColor: theme.black,
-      // appBar: FCWhiteAlwaysScreenAppBar(
+      // appBar: FCBlurWhiteAlwaysScreenAppBar(
       //   context: context,
       //   onPressedBack: () => Navigator.pop(context),
-      //   title: "White Always Screen",
+      //   title: "Blur White Always Screen",
       // ),
       body: FCListView(
         children: [

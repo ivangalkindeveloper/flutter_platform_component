@@ -3,14 +3,15 @@ import 'package:example/presentation/helper/dummy_list.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/material.dart';
 
-class BottomNavigationBarScreen extends StatefulWidget {
-  const BottomNavigationBarScreen({Key? key});
+class BlurBottomNavigationBarScreen extends StatefulWidget {
+  const BlurBottomNavigationBarScreen({Key? key});
 
   @override
-  State<BottomNavigationBarScreen> createState() => _BottomNavigationBarScreenState();
+  State<BlurBottomNavigationBarScreen> createState() =>
+      _BlurBottomNavigationBarScreenState();
 }
 
-class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> {
+class _BlurBottomNavigationBarScreenState extends State<BlurBottomNavigationBarScreen> {
   int _index = 0;
 
   @override
@@ -26,7 +27,7 @@ class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> {
       backgroundColor: theme.backgroundScaffold,
       appBar: FCScreenAppBar(
         context: context,
-        title: "Bottom Navigation Bar",
+        title: "Blur Bottom Navigation Bar",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: FCListView(
@@ -36,7 +37,7 @@ class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> {
           const DummyList(),
         ],
       ),
-      bottomNavigationBar: FCBottomNavigationBar(
+      bottomNavigationBar: FCBlurBottomNavigationBar(
         index: this._index,
         onPressed: (int value) => setState(() => this._index = value),
         items: [

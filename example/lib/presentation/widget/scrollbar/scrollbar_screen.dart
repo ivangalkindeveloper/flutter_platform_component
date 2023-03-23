@@ -1,22 +1,10 @@
-import 'package:example/presentation/config_section.dart';
+import 'package:example/presentation/config/config_section.dart';
+import 'package:example/presentation/helper/dummy_list.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ScrollbarScreen extends StatelessWidget {
   const ScrollbarScreen({Key? key});
-
-  List<Widget> _children({required IFCSize size}) => List.filled(
-        16,
-        Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            FCGreyLightCard(
-              child: const SizedBox(),
-            ),
-            SizedBox(height: size.s16 / 2),
-          ],
-        ),
-      );
 
   @override
   Widget build(BuildContext context) {
@@ -32,11 +20,13 @@ class ScrollbarScreen extends StatelessWidget {
         onPressedBack: () => Navigator.pop(context),
       ),
       body: FCScrollbar(
-        child: FCListView(children: [
-          const ConfigSection(),
-          SizedBox(height: size.s16 * 2),
-          ...this._children(size: size),
-        ]),
+        child: FCListView(
+          children: [
+            const ConfigSection(),
+            SizedBox(height: size.s16 * 2),
+            const DummyList(),
+          ],
+        ),
       ),
     );
   }

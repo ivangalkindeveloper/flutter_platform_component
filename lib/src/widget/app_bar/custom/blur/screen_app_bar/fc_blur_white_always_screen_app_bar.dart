@@ -56,9 +56,6 @@ class FCBlurWhiteAlwaysScreenAppBar extends FCBasicBlurAppBar {
     if (prefix != null) return prefix;
 
     if (onPressedBack != null) {
-      final FCConfig config = context.config;
-      final TargetPlatform platform = config.platform;
-
       final TextDirection textDirection = Directionality.of(context);
       final Matrix4 transform = textDirection == TextDirection.rtl
           ? (Matrix4.identity()..scale(-1.0, 1.0, 1.0))
@@ -67,10 +64,12 @@ class FCBlurWhiteAlwaysScreenAppBar extends FCBasicBlurAppBar {
       return FCBasicIconButton(
         icon: Transform(
           transform: transform,
-          child: FCIcon.whiteAlways(
+          alignment: Alignment.center,
+          transformHitTests: false,
+          child: FCIcon.black(
             context: context,
-            icon: FCPlatform.decompose<IconData, IconData, IconData>(
-              platform: platform,
+            icon: FCPlatform.decomposeFromContext<IconData, IconData, IconData>(
+              context: context,
               cupertino: CupertinoIcons.back,
               material: Icons.arrow_back,
             ),

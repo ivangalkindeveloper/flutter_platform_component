@@ -1,4 +1,4 @@
-import 'package:example/presentation/config_section.dart';
+import 'package:example/presentation/config/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 

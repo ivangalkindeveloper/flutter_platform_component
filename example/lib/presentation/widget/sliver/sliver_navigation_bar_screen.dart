@@ -1,3 +1,5 @@
+import 'package:example/presentation/config/config_section.dart';
+import 'package:example/presentation/helper/dummy_list.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -15,7 +17,20 @@ class SliverNavigationBarScreen extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           FCSliverNavigationAppBar(
+            onPressedBack: () => Navigator.pop(context),
             title: "Title",
+          ),
+          SliverToBoxAdapter(
+            child: FCPadding(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const ConfigSection(),
+                  SizedBox(height: size.s16 * 2),
+                  DummyList(),
+                ],
+              ),
+            ),
           ),
         ],
       ),

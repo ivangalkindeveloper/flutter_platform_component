@@ -66,7 +66,7 @@ Future<DateTime?> showFCDatePicker({
   }
 }
 
-showFCTimePicker({
+Future<dynamic> showFCTimePicker({
   required BuildContext context,
   TimeOfDay? initialTime,
   required Widget Function(BuildContext) cupertinoModalBuilder,

@@ -103,15 +103,17 @@ class _FCAppBarCupertino extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
+    final Color backgroundColor = this.backgroundColor ?? theme.backgroundComponent;
+
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
         CupertinoNavigationBar(
-          transitionBetweenRoutes: this.transitionBetweenRoutes,
           automaticallyImplyLeading: false,
           automaticallyImplyMiddle: false,
           brightness: theme.cupertinoThemeData.brightness,
-          backgroundColor: this.backgroundColor ?? theme.white,
+          transitionBetweenRoutes: this.transitionBetweenRoutes,
+          backgroundColor: backgroundColor,
           border: Border.all(
             color: Colors.transparent,
             width: 0,
@@ -192,6 +194,8 @@ class _FCAppBarMaterial extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
+    final Color backgroundColor = this.backgroundColor ?? theme.backgroundComponent;
+
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -199,7 +203,7 @@ class _FCAppBarMaterial extends StatelessWidget {
           elevation: 0,
           automaticallyImplyLeading: false,
           systemOverlayStyle: theme.systemOverlayStyle,
-          backgroundColor: this.backgroundColor ?? theme.white,
+          backgroundColor: backgroundColor,
           leading: this.prefix,
           title: this._middle(
             textStyle: textStyle,

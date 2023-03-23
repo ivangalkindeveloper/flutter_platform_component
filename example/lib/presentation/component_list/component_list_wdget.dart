@@ -66,6 +66,12 @@ class ComponentListWidget extends StatelessWidget {
           title: "App Bar",
           onPressed: () => Navigator.pushNamed(context, NavigationService.app_bar_screen),
         ),
+        SizedBox(height: size.s16 / 2),
+        FCPrimaryButton(
+          title: "Blur App Bar",
+          onPressed: () =>
+              Navigator.pushNamed(context, NavigationService.blur_app_bar_screen),
+        ),
         SizedBox(height: size.s16),
         FCPrimaryButton(
           title: "Counter Badge",
@@ -285,9 +291,15 @@ class ComponentListWidget extends StatelessWidget {
         ),
         SizedBox(height: size.s16),
         FCPrimaryButton(
-          title: "Navigation Bar",
+          title: "Bottom Navigation Bar",
           onPressed: () => Navigator.pushNamed(
               context, NavigationService.bottom_navigation_bar_screen),
+        ),
+        SizedBox(height: size.s16 / 2),
+        FCPrimaryButton(
+          title: "Blur Bottom Navigation Bar",
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.blur_bottom_navigation_bar_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FCPrimaryButton(

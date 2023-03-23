@@ -70,6 +70,10 @@ class _FCBottomNavigationBarCupertino extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
+    final Color backgroundColor = this.backgroundColor ?? theme.backgroundComponent;
+    final Color unselectedColor = this.unselectedColor ?? theme.grey;
+    final Color selectedColor = this.selectedColor ?? theme.primary;
+
     return CupertinoTabBar(
       border: const Border(
         top: BorderSide(
@@ -80,9 +84,9 @@ class _FCBottomNavigationBarCupertino extends StatelessWidget {
       currentIndex: this.index,
       onTap: this.onPressed,
       items: this.items,
-      backgroundColor: Colors.transparent,
-      inactiveColor: this.unselectedColor ?? theme.grey,
-      activeColor: this.selectedColor ?? theme.primary,
+      backgroundColor: backgroundColor,
+      inactiveColor: unselectedColor,
+      activeColor: selectedColor,
     );
   }
 }
@@ -115,6 +119,7 @@ class _FCBottomNavigationBarMaterial extends StatelessWidget {
     final IFCTextStyle textStyle = config.textStyle;
     final IFCTheme theme = config.theme;
 
+    final Color backgroundColor = this.backgroundColor ?? theme.backgroundComponent;
     final Color unselectedColor = this.unselectedColor ?? theme.grey;
     final TextStyle unselectedStyle = this.unselectedStyle?.copyWith(
               color: this.unselectedStyle?.color ?? unselectedColor,
@@ -151,7 +156,7 @@ class _FCBottomNavigationBarMaterial extends StatelessWidget {
       currentIndex: this.index,
       items: this.items,
       onTap: this.onPressed,
-      backgroundColor: this.backgroundColor,
+      backgroundColor: backgroundColor,
       unselectedItemColor: unselectedColor,
       selectedItemColor: selectedColor,
       unselectedLabelStyle: unselectedStyle,

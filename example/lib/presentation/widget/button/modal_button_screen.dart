@@ -1,4 +1,4 @@
-import 'package:example/presentation/config_section.dart';
+import 'package:example/presentation/config/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -23,11 +23,6 @@ class ModalButtonScreen extends StatelessWidget {
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
-          FCAlwaysWhiteModalCloseButton(
-            cupertinoLocale: "Back",
-            onPressed: () {},
-          ),
-          SizedBox(height: size.s16 / 2),
           FCCupertinoModalButton(
             onPressed: () {},
           ),
@@ -38,6 +33,11 @@ class ModalButtonScreen extends StatelessWidget {
           ),
           SizedBox(height: size.s16 / 2),
           FCPopUpModalCloseButton(
+            onPressed: () {},
+          ),
+          SizedBox(height: size.s16 / 2),
+          FCWhiteAlwaysModalCloseButton(
+            cupertinoLocale: "Back",
             onPressed: () {},
           ),
         ],

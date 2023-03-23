@@ -1,7 +1,7 @@
 class FCConfigNullException implements Exception {
   const FCConfigNullException();
 
-  final String message = "FlutterComponent not initizalized";
+  final String message = "Main widget of Flutter Component is not initizalized";
 }
 
 class FCItemsEmptyException implements Exception {

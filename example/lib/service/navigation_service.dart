@@ -7,6 +7,7 @@ import 'package:example/presentation/widget/animation/animated_opacity_stack_scr
 import 'package:example/presentation/widget/animation/animated_switcher_screen.dart';
 import 'package:example/presentation/widget/animation/animated_transition_switcher_screen.dart';
 import 'package:example/presentation/widget/app_bar/app_bar_screen.dart';
+import 'package:example/presentation/widget/app_bar/blur_app_bar_screenda.dart';
 import 'package:example/presentation/widget/badge/counter_badge_screen.dart';
 import 'package:example/presentation/widget/badge/dot_badge_screen.dart';
 import 'package:example/presentation/widget/badge/gradient_counter_badge_screen.dart';
@@ -23,6 +24,7 @@ import 'package:example/presentation/widget/card/select_card_screen.dart';
 import 'package:example/presentation/widget/checkbox/checkbox_screen.dart';
 import 'package:example/presentation/widget/code_field/code_field_screen.dart';
 import 'package:example/presentation/widget/code_field/gradient_code_field_screen.dart';
+import 'package:example/presentation/widget/navigation/blur_bottom_navigation_bar_screen.dart';
 import 'package:example/presentation/widget/picker/date_picker_screen.dart';
 import 'package:example/presentation/widget/dialog/dialog_screen.dart';
 import 'package:example/presentation/widget/form_field/form_field_screen.dart';
@@ -90,6 +92,7 @@ class NavigationService implements INavigationService {
       "/animated_transition_switcher_screen";
 
   static const String app_bar_screen = "/app_bar_screen";
+  static const String blur_app_bar_screen = "/blur_app_bar_screen";
 
   static const String counter_badge_screen = "/counter_badge_screen";
   static const String gradient_counter_badge_screen =
@@ -145,6 +148,8 @@ class NavigationService implements INavigationService {
       "/white_always_expand_modal_screen";
 
   static const String bottom_navigation_bar_screen = "/bottom_navigation_bar_screen";
+  static const String blur_bottom_navigation_bar_screen =
+      "/blur_bottom_navigation_bar_screen";
   static const String navigator_screen = "/navigator_screen";
 
   static const String date_picker_screen = "/date_picker_screen";
@@ -230,6 +235,11 @@ class NavigationService implements INavigationService {
         return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const AppBarScreen(),
+        );
+      case blur_app_bar_screen:
+        return FCRoute.pageRouteFromContext(
+          context: navigatorKey.currentContext!,
+          child: const BlurAppBarScreen(),
         );
 
       case counter_badge_screen:
@@ -435,6 +445,11 @@ class NavigationService implements INavigationService {
         return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const BottomNavigationBarScreen(),
+        );
+      case blur_bottom_navigation_bar_screen:
+        return FCRoute.pageRouteFromContext(
+          context: navigatorKey.currentContext!,
+          child: const BlurBottomNavigationBarScreen(),
         );
       case navigator_screen:
         return FCRoute.pageRouteFromContext(
