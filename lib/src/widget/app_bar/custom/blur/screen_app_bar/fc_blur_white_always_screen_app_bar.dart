@@ -25,7 +25,7 @@ class FCBlurWhiteAlwaysScreenAppBar extends FCBasicBlurAppBar {
   }) : super(
           context: context,
           transitionBetweenRoutes: transitionBetweenRoutes,
-          blurColor: blurColor,
+          blurColor: blurColor ?? context.config.theme.blackAlways,
           blurOpacity: blurOpacity,
           blurFilter: blurFilter,
           prefix: _prefix(
@@ -66,7 +66,7 @@ class FCBlurWhiteAlwaysScreenAppBar extends FCBasicBlurAppBar {
           transform: transform,
           alignment: Alignment.center,
           transformHitTests: false,
-          child: FCIcon.black(
+          child: FCIcon.whiteAlways(
             context: context,
             icon: FCPlatform.decomposeFromContext<IconData, IconData, IconData>(
               context: context,

@@ -133,7 +133,7 @@ class _FCAppBarCupertino extends StatelessWidget {
             automaticallyImplyMiddle: false,
             brightness: theme.cupertinoThemeData.brightness,
             transitionBetweenRoutes: this.transitionBetweenRoutes,
-            backgroundColor: theme.white.withOpacity(0),
+            backgroundColor: theme.backgroundComponent.withOpacity(0),
             border: Border.all(
               color: Colors.transparent,
               width: 0,
@@ -198,7 +198,7 @@ class _FCAppBarMaterial extends StatelessWidget {
             elevation: 0,
             automaticallyImplyLeading: false,
             systemOverlayStyle: theme.systemOverlayStyle,
-            backgroundColor: theme.white.withOpacity(0),
+            backgroundColor: theme.backgroundComponent.withOpacity(0),
             leading: this.prefix,
             title: this.middle,
             centerTitle: true,

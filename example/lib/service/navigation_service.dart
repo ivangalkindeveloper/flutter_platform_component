@@ -7,7 +7,7 @@ import 'package:example/presentation/widget/animation/animated_opacity_stack_scr
 import 'package:example/presentation/widget/animation/animated_switcher_screen.dart';
 import 'package:example/presentation/widget/animation/animated_transition_switcher_screen.dart';
 import 'package:example/presentation/widget/app_bar/app_bar_screen.dart';
-import 'package:example/presentation/widget/app_bar/blur_app_bar_screenda.dart';
+import 'package:example/presentation/widget/app_bar/blur_app_bar_screen.dart';
 import 'package:example/presentation/widget/badge/counter_badge_screen.dart';
 import 'package:example/presentation/widget/badge/dot_badge_screen.dart';
 import 'package:example/presentation/widget/badge/gradient_counter_badge_screen.dart';

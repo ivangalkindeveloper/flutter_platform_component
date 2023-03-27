@@ -1,3 +1,7 @@
+// 📱 Ready-made component base using ready-made abstractions for quick use
+// and decomposed by platform.
+// Check README: https://github.com/ivangalkindeveloper/flutter_component/blob/master/README.md
+
 library flutter_component;
 
 export 'src/flutter_component.dart';

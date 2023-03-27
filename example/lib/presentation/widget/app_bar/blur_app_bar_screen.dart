@@ -21,13 +21,13 @@ class _BlurAppBarScreenState extends State<BlurAppBarScreen> {
     return FCScaffold(
       extendBodyBehindAppBar: true,
 
-      // backgroundColor: theme.backgroundScaffold,
-      // appBar: FCBlurExpandedModalAppBar(
-      //   context: context,
-      //   cupertinoLocale: "Back",
-      //   onPressedBack: () => Navigator.pop(context),
-      //   title: "Blur Expanded Modal",
-      // ),
+      backgroundColor: theme.backgroundScaffold,
+      appBar: FCBlurExpandedModalAppBar(
+        context: context,
+        cupertinoLocale: "Back",
+        onPressedBack: () => Navigator.pop(context),
+        title: "Blur Expanded Modal",
+      ),
 
       // backgroundColor: theme.black,
       // appBar: FCBlurWhiteAlwaysExpandedModalAppBar(
@@ -37,12 +37,12 @@ class _BlurAppBarScreenState extends State<BlurAppBarScreen> {
       //   title: "Blur White Always Expanded Modal",
       // ),
 
-      backgroundColor: theme.backgroundScaffold,
-      appBar: FCBlurScreenAppBar(
-        context: context,
-        title: "Blur Screen",
-        onPressedBack: () => Navigator.pop(context),
-      ),
+      // backgroundColor: theme.backgroundScaffold,
+      // appBar: FCBlurScreenAppBar(
+      //   context: context,
+      //   title: "Blur Screen",
+      //   onPressedBack: () => Navigator.pop(context),
+      // ),
 
       // backgroundColor: theme.black,
       // appBar: FCBlurWhiteAlwaysScreenAppBar(
@@ -50,6 +50,7 @@ class _BlurAppBarScreenState extends State<BlurAppBarScreen> {
       //   onPressedBack: () => Navigator.pop(context),
       //   title: "Blur White Always Screen",
       // ),
+
       body: FCListView(
         children: [
           const ConfigSection(),

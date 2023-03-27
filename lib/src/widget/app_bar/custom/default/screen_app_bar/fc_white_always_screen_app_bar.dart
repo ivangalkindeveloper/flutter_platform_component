@@ -22,7 +22,7 @@ class FCWhiteAlwaysScreenAppBar extends FCBasicAppBar {
   }) : super(
           context: context,
           transitionBetweenRoutes: transitionBetweenRoutes,
-          backgroundColor: backgroundColor,
+          backgroundColor: backgroundColor ?? context.config.theme.blackAlways,
           prefix: _prefix(
             context: context,
             prefix: prefix,
@@ -61,7 +61,7 @@ class FCWhiteAlwaysScreenAppBar extends FCBasicAppBar {
           transform: transform,
           alignment: Alignment.center,
           transformHitTests: false,
-          child: FCIcon.black(
+          child: FCIcon.whiteAlways(
             context: context,
             icon: FCPlatform.decomposeFromContext<IconData, IconData, IconData>(
               context: context,

@@ -3,9 +3,9 @@
   📱 Ready-made component base using ready-made abstractions for quick use and decomposed by platform.
 </p>
 <p align="center">
-  | iOS | Android |
-  | :-: | :-----: |
-  | ✅  |    ✅   |
+  | iOS (Cupertino) | Android (Material) |
+  | --------------- | ------------------ |
+  |       ✅        |        ✅          |
 </p>
 
 ## Getting Started
@@ -297,21 +297,29 @@ FCConfig.of(context).changeHaptic(haptic: Haptics());
 All animations durations are guided by slow, default and fast durations from the size config.
 #### Animated Container
 Standard AnimatedContainer widget.
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_container.gif)
 #### Animated Cross Fade
 Standard AnimatedCrossFade widget.
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_cross_fade.gif)
 #### Animated Fade In
 Fade-In from left, right, up and down animation widget.
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_fade_in.gif)
 #### Animated Fade Out
 Fade-Out from left, right, up and down animation widget.
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_fade_out.gif)
 #### Animated Opacity Stack
 Stack of two AnimatedOpacity widgets.\
 Needed when the widget should not adjust to the size of the first or second child.
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_opacity_stack.gif)
 #### Animated Opacity
 Standard AnimatedOpaicty widget.
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_opacity.gif)
 #### Animated Switcher
 Standard AnimatedSwitcher widget.
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_switcher.gif)
 #### Animated Transition Switcher
 Transition widget with great animation change of child.
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_transition_switcher.gif)
 
 ### App
 Main root widget of the application, decomposed by platform.
@@ -320,39 +328,39 @@ Main root widget of the application, decomposed by platform.
 #### App Bar
 Main app bar widget, decomposed by platform.
 Screen app bar:
-| iOS | Android |
-|:---:|:-------:|
-| | |
-White always app bar:
-| iOS | Android |
-|:---:|:-------:|
-| | |
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/screen_app_bar_material.gif) |
+White always screen app bar:
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_screen_app_bar_material.gif) |
 Expanded modal app bar:
-| iOS | Android |
-|:---:|:-------:|
-| | |
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/expanded_screen_app_bar_material.gif) |
 White always expanded modal app bar:
-| iOS | Android |
-|:---:|:-------:|
-| | |
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_expanded_screen_app_bar_material.gif) |
 #### Blur App Bar
 Main app bar widget wrapped in blur, decomposed by platform.
 Blur screen app bar:
-| iOS | Android |
-|:---:|:-------:|
-| | |
-Blur white always app bar:
-| iOS | Android |
-|:---:|:-------:|
-| | |
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_screen_app_bar_material.gif) |
+Blur white always screen app bar:
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_screen_app_bar_material.gif) |
 Blur expanded modal app bar:
-| iOS | Android |
-|:---:|:-------:|
-| | |
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_expanded_screen_app_bar_material.gif) |
 Blur white always expanded modal app bar:
-| iOS | Android |
-|:---:|:-------:|
-| | |
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_expanded_screen_app_bar_material.gif) |
 
 ### Badge
 #### Counter Badge
@@ -371,53 +379,53 @@ Blur component for creating blur effect for parent.
 #### Button
 Button component with solid background color, decomposed by platform.\
 Custom default button has loading properties.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 Custom buttons contains label buttons:
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 And also outlined buttons:
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### Gradient Button
 Button component with gradient background color, decomposed by platform.\
 Custom default button has loading properties.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 Custom buttons contains label buttons:
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 And also outlined buttons:
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### Icon Button
 Icon button component, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### Modal Button
 Dedicated decomposed buttons, separately for modal windows.
 Cupertino modal button:
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 Expanded modal close button:
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 Pop up modal button:
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 White always modal close button:
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 
 ### Card
@@ -427,19 +435,19 @@ Card component with solid background color.
 Card component with gradient background color.
 #### Select Card
 Clickable card component with solid background color.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### Gradient Select Card
 Clickable card component with gradient background color.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 
 ### Checkbox
 Checkbox component, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 
 ### Code Field
@@ -464,8 +472,8 @@ Default Padding widget are guided by size config.
 
 ### Dialog
 Dialog component, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 
 ### Form Field
@@ -473,23 +481,23 @@ Form field does not repeat the design accuracy of platform components, since pur
 The design of this field is suitable for most applications and is more suitable.
 #### Form Field
 Form field component with solid colors, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### Gradient Form Field
 Form field component with gradient colors, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### Select Field
 Clickable field component with solid colors, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### Gradient Select Field
 Clickable field component with gradient colors, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 
 ### Global
@@ -504,11 +512,11 @@ Static methods for opening modals:
 #### Picker
 Static methods for opening pickers:
 - showFCDatePicker;
-- showFCTimePicker;
+- showFCTimePicker.
 #### Snackbar
 Static methods for showing snackbars:
 - showFCSnackBar;
-- hideFCSnackBar;
+- hideFCSnackBar.
 
 ### Gradient
 #### Gradient mask
@@ -527,13 +535,13 @@ Class with icons in all theme colors.
 ### Indicator
 #### Circular Indicator
 Circular indicator component with solid color, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### Gradient Circular Indicator
 Circular indicator component with gradient color, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### Page Indicator
 Page indicator component with solid color, ideal for displaying the current page index of the carousel.
@@ -549,65 +557,65 @@ Story indicator component with solid color, needed to display the steps and the 
 Large widget that arranges keyboard buttons.
 #### Keyboard Button
 Button component of keyboard.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### Keyboard Number Button
 Button component of keyboard, specially for only numbers.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 
 ### List
 #### List Refresh
 List refresh component to display the loading of asynchronous behavior, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### List Section
 Card component, needed to display multiple rows of settings buttons, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 
 ### Modal
 #### Action Modal
 Action modal component for selecting a specific action, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### Expanded Modal
 Expanded modal window component to display large modal content.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### Small Modal
 Expanded modal window component to display small modal content.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 
 ### Navigation
 #### Bottom Navigation Bar
 ##### Bottom Navigation Bar
 Bottom navigation bar component, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 ##### Blur Bottom Navigation Bar
 Bottom navigation bar component wrapped in blur, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### Navigator
 Special navigator widget, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### Route
 Static routes methods, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 
 ### Picker
@@ -616,16 +624,16 @@ Not a simple component that decomposes the vision of a date picker.\
 There are different behaviors for different platforms:\
 Android - Wrapper for native date picker dialog.\
 iOS - Native date picker carousel.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 ### Time Picker
 Not a simple component that decomposes the vision of a time picker.\
 There are different behaviors for different platforms:\
 Android - Wrapper for native time picker dialog.\
 iOS - Native time picker carousel.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 
 ### PIN Field
@@ -636,8 +644,8 @@ PIN field component with gradient colors.
 
 ### Radio
 Radio component, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 
 ### Scaffold
@@ -660,8 +668,8 @@ Special component for loading animation with gradient color.
 
 ### Slider
 Slider component, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 
 ### Sliding Segment Control
@@ -670,20 +678,25 @@ Sliding Segment control component with solid colors.
 
 ### Sliver Navigation App Bar
 Ready-made sliver navigation app bar component, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 
 ### Snackbar
 #### Snackbar
-Snackbar component with solid colors.
+Snackbar component with solid colors:
+
+Custom buttons contains outlined snackbars:
+
 #### Gradient Snackbar
-Snackbar component with gradient colors.
+Snackbar component with gradient colors:
+
+Custom buttons contains outlined snackbars:
 
 ### Switch
 Switch component, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 
 ### Text
@@ -698,13 +711,13 @@ Ready-made shell widget for receiving text span items.
 One of the proposed visions of the segment control component.
 #### Toggle
 Toggle component with colid colors, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 #### Gradient Toggle
 Toggle component with gradient colors, decomposed by platform.
-| iOS | Android |
-|:---:|:-------:|
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
 | | |
 
 ## TODO

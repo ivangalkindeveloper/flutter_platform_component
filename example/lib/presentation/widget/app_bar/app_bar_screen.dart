@@ -21,13 +21,13 @@ class _AppBarScreenState extends State<AppBarScreen> {
     return FCScaffold(
       extendBodyBehindAppBar: true,
 
-      // backgroundColor: theme.backgroundScaffold,
-      // appBar: FCExpandedModalAppBar(
-      //   context: context,
-      //   cupertinoLocale: "Back",
-      //   onPressedBack: () => Navigator.pop(context),
-      //   title: "Expanded Modal",
-      // ),
+      backgroundColor: theme.backgroundScaffold,
+      appBar: FCExpandedModalAppBar(
+        context: context,
+        cupertinoLocale: "Back",
+        onPressedBack: () => Navigator.pop(context),
+        title: "Expanded Modal",
+      ),
 
       // backgroundColor: theme.black,
       // appBar: FCWhiteAlwaysExpandedModalAppBar(
@@ -37,12 +37,12 @@ class _AppBarScreenState extends State<AppBarScreen> {
       //   title: "White Always Expanded Modal",
       // ),
 
-      backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
-        context: context,
-        title: "Screen",
-        onPressedBack: () => Navigator.pop(context),
-      ),
+      // backgroundColor: theme.backgroundScaffold,
+      // appBar: FCScreenAppBar(
+      //   context: context,
+      //   title: "Screen",
+      //   onPressedBack: () => Navigator.pop(context),
+      // ),
 
       // backgroundColor: theme.black,
       // appBar: FCWhiteAlwaysScreenAppBar(
@@ -50,6 +50,7 @@ class _AppBarScreenState extends State<AppBarScreen> {
       //   onPressedBack: () => Navigator.pop(context),
       //   title: "White Always Screen",
       // ),
+
       body: FCListView(
         children: [
           const ConfigSection(),

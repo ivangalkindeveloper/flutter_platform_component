@@ -214,14 +214,14 @@ class _FCSliverNavigationAppBarMaterial extends StatelessWidget {
         textAlign: TextAlign.center,
         style: this.titleStyle?.copyWith(
                   color: titleStyle?.color ?? theme.black,
-                  fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightBold,
-                  fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyBold,
+                  fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+                  fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
                   package: textStyle.package,
                 ) ??
             TextStyle(
               color: theme.black,
-              fontWeight: textStyle.fontWeightBold,
-              fontFamily: textStyle.fontFamilyBold,
+              fontWeight: textStyle.fontWeightMedium,
+              fontFamily: textStyle.fontFamilyMedium,
               package: textStyle.package,
             ),
       );
