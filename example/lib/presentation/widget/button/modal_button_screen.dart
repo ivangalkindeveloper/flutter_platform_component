@@ -26,19 +26,24 @@ class ModalButtonScreen extends StatelessWidget {
           FCCupertinoModalButton(
             onPressed: () {},
           ),
-          SizedBox(height: size.s16 / 2),
+          SizedBox(height: size.s16 * 2),
           FCExpandedModalCloseButton(
             cupertinoLocale: "Back",
             onPressed: () {},
           ),
-          SizedBox(height: size.s16 / 2),
+          SizedBox(height: size.s16 * 2),
           FCPopUpModalCloseButton(
             onPressed: () {},
           ),
-          SizedBox(height: size.s16 / 2),
-          FCWhiteAlwaysModalCloseButton(
-            cupertinoLocale: "Back",
-            onPressed: () {},
+          SizedBox(height: size.s16 * 2),
+          Container(
+            height: size.s32 * 4,
+            width: size.s32 * 4,
+            color: theme.black,
+            child: FCWhiteAlwaysExpandedModalCloseButton(
+              cupertinoLocale: "Back",
+              onPressed: () {},
+            ),
           ),
         ],
       ),

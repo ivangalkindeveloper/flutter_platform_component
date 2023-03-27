@@ -48,7 +48,7 @@ class FCWhiteAlwaysExpandedModalAppBar extends FCBasicAppBar {
     if (prefix != null) return prefix;
 
     if (cupertinoLocale != null && onPressedBack != null)
-      return FCWhiteAlwaysModalCloseButton(
+      return FCWhiteAlwaysExpandedModalCloseButton(
         cupertinoLocale: cupertinoLocale,
         onPressed: onPressedBack,
       );

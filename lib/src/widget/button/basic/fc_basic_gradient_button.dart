@@ -218,17 +218,19 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
         ),
         if (this.borderGradient != null)
           Positioned.fill(
-            child: FCGradientMask(
-              gradient: this.borderGradient!,
-              child: FCAnimatedContainer(
-                decoration: BoxDecoration(
-                  borderRadius: borderRadius,
-                  border: Border.all(
-                    color: Colors.white,
-                    width: borderWidth,
+            child: IgnorePointer(
+              child: FCGradientMask(
+                gradient: this.borderGradient!,
+                child: FCAnimatedContainer(
+                  decoration: BoxDecoration(
+                    borderRadius: borderRadius,
+                    border: Border.all(
+                      color: Colors.white,
+                      width: borderWidth,
+                    ),
                   ),
+                  child: const SizedBox(),
                 ),
-                child: const SizedBox(),
               ),
             ),
           ),

@@ -22,10 +22,57 @@ class BlurScreen extends StatelessWidget {
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
-          FCBlur(
-            child: Container(
-              height: size.s32,
-              width: size.s32 * 2,
+          Padding(
+            padding: EdgeInsets.all(size.s16),
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                Column(
+                  children: [
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            height: size.s32 * 2,
+                            color: theme.primary,
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            height: size.s32 * 2,
+                            color: theme.info,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            height: size.s32 * 2,
+                            color: theme.warning,
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            height: size.s32 * 2,
+                            color: theme.danger,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Padding(
+                  padding: EdgeInsets.all(size.s16),
+                  child: FCBlurCard(
+                    child: Container(
+                      height: size.s32,
+                      width: size.s32,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
         ],

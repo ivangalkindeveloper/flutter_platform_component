@@ -360,7 +360,7 @@ export 'src/widget/button/custom/gradient/outline/fc_secondary_gradient_outline_
 export 'src/widget/button/custom/gradient/outline/fc_success_gradient_outline_button.dart';
 export 'src/widget/button/custom/gradient/outline/fc_warning_gradient_outline_button.dart';
 // Button / Custom / Modal Button
-export 'src/widget/button/custom/modal_button/fc_white_always_modal_close_button.dart';
+export 'src/widget/button/custom/modal_button/fc_white_always_expanded_modal_close_button.dart';
 export 'src/widget/button/custom/modal_button/fc_cupertino_modal_button.dart';
 export 'src/widget/button/custom/modal_button/fc_expanded_modal_close_button.dart';
 export 'src/widget/button/custom/modal_button/fc_pop_up_modal_close_button.dart';

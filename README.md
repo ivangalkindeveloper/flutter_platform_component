@@ -5,7 +5,7 @@
 <p align="center">
   | iOS (Cupertino) | Android (Material) |
   | --------------- | ------------------ |
-  |       ✅        |        ✅          |
+  | ✅ | ✅ |
 </p>
 
 ## Getting Started
@@ -326,114 +326,127 @@ Main root widget of the application, decomposed by platform.
 
 ### App Bar
 #### App Bar
-Main app bar widget, decomposed by platform.
-Screen app bar:
+Main app bar widget, decomposed by platform.\
+Custom components contains screen app bar:\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/screen_app_bar_material.gif) |
 
-White always screen app bar:
+Custom components white always screen app bar:\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_screen_app_bar_material.gif) |
 
-Expanded modal app bar:
+Custom components expanded modal app bar:\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/expanded_screen_app_bar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/expanded_modal_app_bar_material.gif) |
 
-White always expanded modal app bar:
+Custom components white always expanded modal app bar:\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_expanded_screen_app_bar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_expanded_modal_app_bar_material.gif) |
 
 #### Blur App Bar
-Main app bar widget wrapped in blur, decomposed by platform.
-Blur screen app bar:
+Main app bar widget wrapped in blur, decomposed by platform.\
+Blur screen app bar:\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_screen_app_bar_material.gif) |
 
-Blur white always screen app bar:
+Blur white always screen app bar:\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_screen_app_bar_material.gif) |
 
-Blur expanded modal app bar:
+Blur expanded modal app bar:\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_expanded_screen_app_bar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_expanded_modal_app_bar_material.gif) |
 
-Blur white always expanded modal app bar:
+Blur white always expanded modal app bar:\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_expanded_screen_app_bar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_expanded_modal_app_bar_material.gif) |
 
 ### Badge
 #### Counter Badge
-Badge content of notifications counter with solid background color.
+Badge content of notifications counter with solid background color.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/badge/counter/counter_badge.gif)
 #### Gradient Counter Badge
-Badge content of notifications counter with gradient background color.
+Badge content of notifications counter with gradient background color.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/badge/counter/gradient_counter_badge.gif)
 #### Dot Badge
-Badge content of dot container with solid background color.
+Badge content of dot container with solid background color.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/badge/dot/dot_badge.gif)
 #### Gradient Dot Badge
-Badge content of dot container with gradient background color.
+Badge content of dot container with gradient background color.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/badge/dot/gradient_dot_badge.gif)
 
 ### Blur
-Blur component for creating blur effect for parent.
+Blur component for creating blur effect for parent.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/blur/blur.gif)
 
 ### Button
 #### Button
 Button component with solid background color, decomposed by platform.\
-Custom default button has loading properties.
+Custom default button has loading properties.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
-Custom buttons contains label buttons:
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/default/default/button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/default/default/button_material.gif) |
+
+Custom buttons contains label buttons:\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
-And also outlined buttons:
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/default/label/label_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/default/label/label_button_material.gif) |
+
+And also outlined buttons:\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/defalt/outlined/outlined_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/default/outlined/outlined_button_material.gif) |
+
 #### Gradient Button
 Button component with gradient background color, decomposed by platform.\
-Custom default button has loading properties.
+Custom default button has loading properties.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
-Custom buttons contains label buttons:
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/gradient/default/gradient_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/gradient/default/gradient_button_material.gif) |
+
+Custom buttons contains label buttons:\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
-And also outlined buttons:
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/gradient/label/gradient_label_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/gradient/label/gradient_label_button_material.gif) |
+
+And also outlined buttons:\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/gradient/outlined/gradient_outlined_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/gradient/outlined/gradient_outlined_button_material.gif) |
+
 #### Icon Button
-Icon button component, decomposed by platform.
+Icon button component, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/icon/icon_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/icon/icon_button_material.gif) |
+
 #### Modal Button
-Dedicated decomposed buttons, separately for modal windows.
-Cupertino modal button:
+Dedicated decomposed buttons, separately for modals.\
+Cupertino modal button:\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/modal_button/modal_close_button_cupertino.gif)
+
+Expanded modal close button:\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
-Expanded modal close button:
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/modal_button/expanded_modal_close_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/modal_button/expanded_modal_close_button_material.gif) |
+
+Pop up modal button:\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
-Pop up modal button:
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/modal_button/pop_up_modal_close_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/modal_button/pop_up_modal_close_button_material.gif) |
+
+White always modal close button:\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
-White always modal close button:
-| iOS (Cupertino) | Android (Material) |
-| --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/modal_button/white_always_expanded_modal_close_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/modal_button/white_always_expanded_modal_close_button_material.gif) |
 
 ### Card
 #### Card
@@ -441,18 +454,18 @@ Card component with solid background color.
 #### Gradient Card
 Card component with gradient background color.
 #### Select Card
-Clickable card component with solid background color.
+Clickable card component with solid background color.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 #### Gradient Select Card
-Clickable card component with gradient background color.
+Clickable card component with gradient background color.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 
 ### Checkbox
-Checkbox component, decomposed by platform.
+Checkbox component, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
@@ -478,7 +491,7 @@ Default ListView widget are guided by size config.
 Default Padding widget are guided by size config.
 
 ### Dialog
-Dialog component, decomposed by platform.
+Dialog component, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
@@ -487,22 +500,22 @@ Dialog component, decomposed by platform.
 Form field does not repeat the design accuracy of platform components, since pure native fields are very rarely used in good productive projects.\
 The design of this field is suitable for most applications and is more suitable.
 #### Form Field
-Form field component with solid colors, decomposed by platform.
+Form field component with solid colors, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 #### Gradient Form Field
-Form field component with gradient colors, decomposed by platform.
+Form field component with gradient colors, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 #### Select Field
-Clickable field component with solid colors, decomposed by platform.
+Clickable field component with solid colors, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 #### Gradient Select Field
-Clickable field component with gradient colors, decomposed by platform.
+Clickable field component with gradient colors, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
@@ -541,12 +554,12 @@ Class with icons in all theme colors.
 
 ### Indicator
 #### Circular Indicator
-Circular indicator component with solid color, decomposed by platform.
+Circular indicator component with solid color, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 #### Gradient Circular Indicator
-Circular indicator component with gradient color, decomposed by platform.
+Circular indicator component with gradient color, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
@@ -563,41 +576,41 @@ Story indicator component with solid color, needed to display the steps and the 
 #### Keyboard
 Large widget that arranges keyboard buttons.
 #### Keyboard Button
-Button component of keyboard.
+Button component of keyboard.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 #### Keyboard Number Button
-Button component of keyboard, specially for only numbers.
+Button component of keyboard, specially for only numbers.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 
 ### List
 #### List Refresh
-List refresh component to display the loading of asynchronous behavior, decomposed by platform.
+List refresh component to display the loading of asynchronous behavior, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 #### List Section
-Card component, needed to display multiple rows of settings buttons, decomposed by platform.
+Card component, needed to display multiple rows of settings buttons, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 
 ### Modal
 #### Action Modal
-Action modal component for selecting a specific action, decomposed by platform.
+Action modal component for selecting a specific action, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 #### Expanded Modal
-Expanded modal window component to display large modal content.
+Expanded modal window component to display large modal content.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 #### Small Modal
-Expanded modal window component to display small modal content.
+Expanded modal window component to display small modal content.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
@@ -605,22 +618,22 @@ Expanded modal window component to display small modal content.
 ### Navigation
 #### Bottom Navigation Bar
 ##### Bottom Navigation Bar
-Bottom navigation bar component, decomposed by platform.
+Bottom navigation bar component, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 ##### Blur Bottom Navigation Bar
-Bottom navigation bar component wrapped in blur, decomposed by platform.
+Bottom navigation bar component wrapped in blur, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 #### Navigator
-Special navigator widget, decomposed by platform.
+Special navigator widget, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 #### Route
-Static routes methods, decomposed by platform.
+Static routes methods, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
@@ -630,7 +643,7 @@ Static routes methods, decomposed by platform.
 Not a simple component that decomposes the vision of a date picker.\
 There are different behaviors for different platforms:\
 Android - Wrapper for native date picker dialog.\
-iOS - Native date picker carousel.
+iOS - Native date picker carousel.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
@@ -638,7 +651,7 @@ iOS - Native date picker carousel.
 Not a simple component that decomposes the vision of a time picker.\
 There are different behaviors for different platforms:\
 Android - Wrapper for native time picker dialog.\
-iOS - Native time picker carousel.
+iOS - Native time picker carousel.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
@@ -650,7 +663,7 @@ PIN field component with solid colors.
 PIN field component with gradient colors.
 
 ### Radio
-Radio component, decomposed by platform.
+Radio component, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
@@ -674,17 +687,18 @@ Special component for loading animation with solid color.
 Special component for loading animation with gradient color.
 
 ### Slider
-Slider component, decomposed by platform.
+Slider component, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 
 ### Sliding Segment Control
 Sliding segment control compoennt does not have a direct analogue on android, therefore it does not have a decomposition for this platform.
+
 Sliding Segment control component with solid colors.
 
 ### Sliver Navigation App Bar
-Ready-made sliver navigation app bar component, decomposed by platform.
+Ready-made sliver navigation app bar component, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
@@ -701,7 +715,7 @@ Snackbar component with gradient colors:
 Custom buttons contains outlined snackbars:
 
 ### Switch
-Switch component, decomposed by platform.
+Switch component, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
@@ -717,12 +731,12 @@ Ready-made shell widget for receiving text span items.
 ### Toggle
 One of the proposed visions of the segment control component.
 #### Toggle
-Toggle component with colid colors, decomposed by platform.
+Toggle component with colid colors, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
 #### Gradient Toggle
-Toggle component with gradient colors, decomposed by platform.
+Toggle component with gradient colors, decomposed by platform.\
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | | |
