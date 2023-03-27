@@ -296,29 +296,29 @@ FCConfig.of(context).changeHaptic(haptic: Haptics());
 ### Animation
 All animations durations are guided by slow, default and fast durations from the size config.
 #### Animated Container
-Standard AnimatedContainer widget.
+Standard AnimatedContainer widget.\
 ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_container.gif)
 #### Animated Cross Fade
-Standard AnimatedCrossFade widget.
+Standard AnimatedCrossFade widget.\
 ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_cross_fade.gif)
 #### Animated Fade In
-Fade-In from left, right, up and down animation widget.
+Fade-In from left, right, up and down animation widget.\
 ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_fade_in.gif)
 #### Animated Fade Out
-Fade-Out from left, right, up and down animation widget.
+Fade-Out from left, right, up and down animation widget.\
 ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_fade_out.gif)
 #### Animated Opacity Stack
 Stack of two AnimatedOpacity widgets.\
-Needed when the widget should not adjust to the size of the first or second child.
+Needed when the widget should not adjust to the size of the first or second child.\
 ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_opacity_stack.gif)
 #### Animated Opacity
-Standard AnimatedOpaicty widget.
+Standard AnimatedOpaicty widget.\
 ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_opacity.gif)
 #### Animated Switcher
-Standard AnimatedSwitcher widget.
+Standard AnimatedSwitcher widget.\
 ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_switcher.gif)
 #### Animated Transition Switcher
-Transition widget with great animation change of child.
+Transition widget with great animation change of child.\
 ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_transition_switcher.gif)
 
 ### App
@@ -331,32 +331,39 @@ Screen app bar:
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/screen_app_bar_material.gif) |
+
 White always screen app bar:
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_screen_app_bar_material.gif) |
+
 Expanded modal app bar:
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/expanded_screen_app_bar_material.gif) |
+
 White always expanded modal app bar:
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_expanded_screen_app_bar_material.gif) |
+
 #### Blur App Bar
 Main app bar widget wrapped in blur, decomposed by platform.
 Blur screen app bar:
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_screen_app_bar_material.gif) |
+
 Blur white always screen app bar:
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_screen_app_bar_material.gif) |
+
 Blur expanded modal app bar:
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_expanded_screen_app_bar_material.gif) |
+
 Blur white always expanded modal app bar:
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
