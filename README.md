@@ -454,7 +454,7 @@ Card component with solid background color.\
 ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/card/default/card.png)
 #### Gradient Card
 Card component with gradient background color.\
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/card/default/gradient_card.gif)
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/card/default/gradient_card.png)
 #### Select Card
 Clickable card component with solid background color.
 | iOS (Cupertino) | Android (Material) |
@@ -505,20 +505,20 @@ Form field does not repeat the design accuracy of platform components, since pur
 The design of this field is suitable for most applications and is more suitable.
 #### Form Field
 Form field component with solid colors, decomposed by platform.\
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/form_field/form_field.gif)
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/form_field/form_field/form_field.gif)
 #### Gradient Form Field
 Form field component with gradient colors, decomposed by platform.\
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/form_field/gradient_form_field.gif)
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/form_field/form_field/gradient_form_field.gif)
 #### Select Field
 Clickable field component with solid colors, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/select_field_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/select_field/select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/select_field/select_field_material.gif) |
 #### Gradient Select Field
 Clickable field component with gradient colors, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/gradient_select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/gradient_select_field_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/select_field/gradient_select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/select_field/gradient_select_field_material.gif) |
 
 ### Global
 Classes that contains platform-decomposed functions to invoke the required interface behaviors.
@@ -543,13 +543,13 @@ Static methods for showing snackbars:
 Widget for overlaying a gradient mask.
 #### LinearGradient
 Standard LinearGradient widget are guided by theme config.\
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/gradient/linear_field.png)
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/gradient/linear_gradient.png)
 #### RadialGradient
 Standard RadialGradient widget are guided by theme config.\
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/gradient/radial_field.png)
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/gradient/radial_gradient.png)
 #### SweepGradient
 Standard SweepGradient widget are guided by theme config.\
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/gradient/sweep_field.png)
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/gradient/sweep_gradient.png)
 
 ### Icon
 All icons sizes are guided by small, default and large sizes from the size config.\
