@@ -317,7 +317,7 @@ class FCCommonField extends StatelessWidget {
         borderSide: BorderSide(color: Colors.transparent),
       ),
     );
-    final double cursorWidth = size.s10 / 10;
+    final double cursorWidth = size.s10 / 5;
     final double cursorHeight = (fieldTextStyle.fontSize ?? size.s16) * 1.25;
 
     return Material(

@@ -181,7 +181,7 @@ class FCAccentGradientFormField extends StatelessWidget {
           theme.backgroundScaffold,
         ],
       ),
-      focusedGradient: theme.accentDarkGradient,
+      focusedGradient: theme.accentGradient,
       internalGradient: this.internalGradient,
       internalIconHeight: this.internalIconHeight,
       height: this.height,

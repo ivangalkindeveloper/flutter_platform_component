@@ -30,9 +30,8 @@ class FCBasicPageIndicator extends StatelessWidget {
     final IFCSize size = config.size;
 
     final double height = this.height ?? size.s16 / 2;
-    final double width = this.index == index
-        ? (this.selectedWidth ?? size.s16)
-        : (this.unselectedWidth ?? size.s16 / 2);
+    final double unselectedWidth = this.unselectedWidth ?? size.s16 / 2;
+    final double selectedWidth = this.selectedWidth ?? size.s16;
     final Color color = this.index == index ? this.selectedColor : this.unselectedColor;
     final Duration duration = this.duration ?? size.durationPageIndicator;
 
@@ -45,7 +44,7 @@ class FCBasicPageIndicator extends StatelessWidget {
             children: [
               AnimatedContainer(
                 height: height,
-                width: width,
+                width: this.index == index ? selectedWidth : unselectedWidth,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(size.s32),

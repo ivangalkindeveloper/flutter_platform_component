@@ -70,7 +70,6 @@ class FCBasicFormField extends StatefulWidget {
     this.buildCounter,
     this.autofillHints,
     //
-
     this.enableIMEPersonalizedLearning = true,
     this.contextMenuBuilder,
     //
@@ -282,6 +281,26 @@ class _FCBasicFormFieldState extends State<FCBasicFormField>
     if (this.widget.focusNode == null) this._focusNode.dispose();
   }
 
+  void _controllerListener() {
+    if (this.mounted == false || this._focusNode.hasPrimaryFocus) return;
+
+    setState(() {
+      this._isAutoValidationError = false;
+      this._autoValidationText = "";
+      this._isValidationError = false;
+      this._validationText = "";
+    });
+  }
+
+  void _focusNodeListener() {
+    if (this.mounted == false) return;
+
+    setState(() {
+      this._isAutoValidationError = false;
+      this._autoValidationText = "";
+    });
+  }
+
   Color _backgroundColor() {
     if (this._focusNode.hasPrimaryFocus) return this.widget.focusedBackgroundColor;
 
@@ -315,24 +334,6 @@ class _FCBasicFormFieldState extends State<FCBasicFormField>
       return this.widget.internalColor ?? this.widget.focusedColor;
 
     return this.widget.internalColor ?? this._theme.grey;
-  }
-
-  void _controllerListener() {
-    if (this.mounted == false || this._focusNode.hasPrimaryFocus) return;
-
-    setState(() {
-      this._isAutoValidationError = false;
-      this._autoValidationText = "";
-    });
-  }
-
-  void _focusNodeListener() {
-    if (this.mounted == false) return;
-
-    setState(() {
-      this._isAutoValidationError = false;
-      this._autoValidationText = "";
-    });
   }
 
   String? _validator(String? value) {
@@ -404,6 +405,13 @@ class _FCBasicFormFieldState extends State<FCBasicFormField>
         this.widget.isDisabled ? null : this.widget.onFieldSubmitted;
     final String? Function(String?) validator = this._validator;
     final String errorText = this._errorText();
+    final EdgeInsets errorPadding = this.widget.errorPadding ??
+        this.widget.errorPadding ??
+        EdgeInsets.only(
+          top: this._size.s16 / 8,
+          left: this._size.s16,
+          right: this._size.s16,
+        );
     final TextStyle errorStyle = this.widget.errorStyle?.copyWith(
               color: this.widget.errorStyle?.color ?? this._theme.danger,
               fontSize: this.widget.errorStyle?.fontSize ?? this._size.s14,
@@ -427,119 +435,122 @@ class _FCBasicFormFieldState extends State<FCBasicFormField>
       children: [
         Stack(
           children: [
-            FCAnimatedFastContainer(
-              padding: EdgeInsets.only(
-                top: paddingTop,
-                bottom: paddingBottom,
-              ),
-              constraints: BoxConstraints(
-                minHeight: height,
-              ),
-              decoration: BoxDecoration(
-                color: backgroundColor,
-                borderRadius: borderRadius,
-                border: Border.all(
-                  color: borderColor,
-                  width: borderWidth,
+            GestureDetector(
+              onTap: this._focusNode.requestFocus,
+              child: FCAnimatedFastContainer(
+                padding: EdgeInsets.only(
+                  top: paddingTop,
+                  bottom: paddingBottom,
                 ),
-              ),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Row(
-                    children: [
-                      this.widget.prefix ?? SizedBox(width: paddingLeft),
-                      if (this.widget.prefixIcon != null)
-                        Padding(
-                          padding: EdgeInsets.only(right: this._size.s16),
-                          child: Icon(
-                            this.widget.prefixIcon,
-                            color: internalColor,
-                            size: internalIconHeight,
-                          ),
-                        ),
-                      Expanded(
-                        child: FCAnimatedFastContainer(
-                          padding: internalPadding,
-                          child: FCCommonField(
-                            controller: this._controller,
-                            focusNode: this._focusNode,
-                            //
-                            textStyle: this.widget.textStyle,
-                            //
-                            labelText: this.widget.labelText,
-                            labelColor: labelColor,
-                            labelStyle: this.widget.labelStyle,
-                            //
-                            prefixText: this.widget.prefixText,
-                            prefixStyle: this.widget.prefixStyle,
-                            //
-                            hintText: this.widget.hintText,
-                            hintStyle: this.widget.hintStyle,
-                            //
-                            textInputType: this.widget.textInputType,
-                            textCapitalization: this.widget.textCapitalization,
-                            textInputAction: this.widget.textInputAction,
-                            //
-                            textAlign: this.widget.textAlign,
-                            isAutofocus: this.widget.isAutofocus,
-                            isReadOnly: this.widget.isDisabled,
-                            isShowCursor: this.widget.isShowCursor,
-                            //
-                            obscuringCharacter: this.widget.obscuringCharacter,
-                            isObscuringText: this.widget.isObscuringText,
-                            //
-                            isAutocorrect: this.widget.isAutocorrect,
-                            smartDashesType: this.widget.smartDashesType,
-                            smartQuotesType: this.widget.smartQuotesType,
-                            isSuggestions: this.widget.isSuggestions,
-                            maxLengthEnforcement: this.widget.maxLengthEnforcement,
-                            //
-                            maxLines: this.widget.maxLines,
-                            maxLength: this.widget.maxLength,
-                            //
-                            onChanged: onChanged,
-                            onTap: onTap,
-                            onEditingComplete: onEditingComplete,
-                            onFieldSubmitted: onFieldSubmitted,
-                            //
-                            validator: validator,
-                            inputFormatters: [
-                              this._textInputHandlerFormatter,
-                              ...this.widget.inputFormatters ?? [],
-                            ],
-                            isEnabled: this.widget.isDisabled,
-                            //
-                            cursorColor: this.widget.focusedColor,
-                            //
-                            keyboardAppearance: this.widget.keyboardAppearance,
-                            enableInteractiveSelection:
-                                this.widget.enableInteractiveSelection,
-                            selectionControls: this.widget.selectionControls,
-                            buildCounter: this.widget.buildCounter,
-                            autofillHints: this.widget.autofillHints,
-                            //
-                            restorationId: this.widget.restorationId,
-                            enableIMEPersonalizedLearning:
-                                this.widget.enableIMEPersonalizedLearning,
-                            contextMenuBuilder: this.widget.contextMenuBuilder,
-                          ),
-                        ),
-                      ),
-                      if (this.widget.postfixIcon != null)
-                        Padding(
-                          padding: EdgeInsets.only(left: this._size.s16),
-                          child: Icon(
-                            this.widget.postfixIcon,
-                            color: internalColor,
-                            size: internalIconHeight,
-                          ),
-                        ),
-                      this.widget.postfix ?? SizedBox(width: paddingRight),
-                    ],
+                constraints: BoxConstraints(
+                  minHeight: height,
+                ),
+                decoration: BoxDecoration(
+                  color: backgroundColor,
+                  borderRadius: borderRadius,
+                  border: Border.all(
+                    color: borderColor,
+                    width: borderWidth,
                   ),
-                  if (this.widget.bottom != null) this.widget.bottom!,
-                ],
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Row(
+                      children: [
+                        this.widget.prefix ?? SizedBox(width: paddingLeft),
+                        if (this.widget.prefixIcon != null)
+                          Padding(
+                            padding: EdgeInsets.only(right: this._size.s16),
+                            child: Icon(
+                              this.widget.prefixIcon,
+                              color: internalColor,
+                              size: internalIconHeight,
+                            ),
+                          ),
+                        Expanded(
+                          child: FCAnimatedFastContainer(
+                            padding: internalPadding,
+                            child: FCCommonField(
+                              controller: this._controller,
+                              focusNode: this._focusNode,
+                              //
+                              textStyle: this.widget.textStyle,
+                              //
+                              labelText: this.widget.labelText,
+                              labelColor: labelColor,
+                              labelStyle: this.widget.labelStyle,
+                              //
+                              prefixText: this.widget.prefixText,
+                              prefixStyle: this.widget.prefixStyle,
+                              //
+                              hintText: this.widget.hintText,
+                              hintStyle: this.widget.hintStyle,
+                              //
+                              textInputType: this.widget.textInputType,
+                              textCapitalization: this.widget.textCapitalization,
+                              textInputAction: this.widget.textInputAction,
+                              //
+                              textAlign: this.widget.textAlign,
+                              isAutofocus: this.widget.isAutofocus,
+                              isReadOnly: this.widget.isDisabled,
+                              isShowCursor: this.widget.isShowCursor,
+                              //
+                              obscuringCharacter: this.widget.obscuringCharacter,
+                              isObscuringText: this.widget.isObscuringText,
+                              //
+                              isAutocorrect: this.widget.isAutocorrect,
+                              smartDashesType: this.widget.smartDashesType,
+                              smartQuotesType: this.widget.smartQuotesType,
+                              isSuggestions: this.widget.isSuggestions,
+                              maxLengthEnforcement: this.widget.maxLengthEnforcement,
+                              //
+                              maxLines: this.widget.maxLines,
+                              maxLength: this.widget.maxLength,
+                              //
+                              onChanged: onChanged,
+                              onTap: onTap,
+                              onEditingComplete: onEditingComplete,
+                              onFieldSubmitted: onFieldSubmitted,
+                              //
+                              validator: validator,
+                              inputFormatters: [
+                                this._textInputHandlerFormatter,
+                                ...this.widget.inputFormatters ?? [],
+                              ],
+                              isEnabled: !this.widget.isDisabled,
+                              //
+                              cursorColor: this.widget.focusedColor,
+                              //
+                              keyboardAppearance: this.widget.keyboardAppearance,
+                              enableInteractiveSelection:
+                                  this.widget.enableInteractiveSelection,
+                              selectionControls: this.widget.selectionControls,
+                              buildCounter: this.widget.buildCounter,
+                              autofillHints: this.widget.autofillHints,
+                              //
+                              restorationId: this.widget.restorationId,
+                              enableIMEPersonalizedLearning:
+                                  this.widget.enableIMEPersonalizedLearning,
+                              contextMenuBuilder: this.widget.contextMenuBuilder,
+                            ),
+                          ),
+                        ),
+                        if (this.widget.postfixIcon != null)
+                          Padding(
+                            padding: EdgeInsets.only(left: this._size.s16),
+                            child: Icon(
+                              this.widget.postfixIcon,
+                              color: internalColor,
+                              size: internalIconHeight,
+                            ),
+                          ),
+                        this.widget.postfix ?? SizedBox(width: paddingRight),
+                      ],
+                    ),
+                    if (this.widget.bottom != null) this.widget.bottom!,
+                  ],
+                ),
               ),
             ),
             Positioned.fill(
@@ -557,12 +568,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField>
         FCAnimatedCrossFade(
           condition: errorText.isNotEmpty,
           firstChild: Padding(
-            padding: this.widget.errorPadding ??
-                EdgeInsets.only(
-                  top: this._size.s16 / 8,
-                  left: this._size.s16,
-                  right: this._size.s16,
-                ),
+            padding: errorPadding,
             child: Row(
               children: [
                 Flexible(

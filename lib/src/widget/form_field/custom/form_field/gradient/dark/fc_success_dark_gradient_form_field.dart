@@ -181,7 +181,7 @@ class FCSuccessDarkGradientFormField extends StatelessWidget {
           theme.backgroundScaffold,
         ],
       ),
-      focusedGradient: theme.accentDarkGradient,
+      focusedGradient: theme.successDarkGradient,
       internalGradient: this.internalGradient,
       internalIconHeight: this.internalIconHeight,
       height: this.height,

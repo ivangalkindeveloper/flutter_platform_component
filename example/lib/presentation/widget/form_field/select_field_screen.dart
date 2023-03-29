@@ -15,7 +15,7 @@ class _SelectFieldScreenState extends State<SelectFieldScreen> {
   bool _isDisabled = false;
 
   String? _validator(String value) {
-    if (value != "Validator") return "Validator";
+    if (value == "Validator") return "Validator";
 
     return null;
   }
@@ -33,28 +33,32 @@ class _SelectFieldScreenState extends State<SelectFieldScreen> {
         title: "Select Field",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
-        children: [
-          const ConfigSection(),
-          SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
-            title: "validate",
-            onPressed: () => this._formKey.currentState?.validate(),
-          ),
-          SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
-            title: "isDisabled",
-            onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
-          ),
-          SizedBox(height: size.s16 * 2),
-          FCPrimarySelectField(
-            title: this._title,
-            labelText: "Label",
-            onPressed: () => setState(() => this._title = "Validator"),
-            validator: this._validator,
-            isDisabled: this._isDisabled,
-          ),
-        ],
+      body: Form(
+        key: this._formKey,
+        child: FCListView(
+          children: [
+            const ConfigSection(),
+            SizedBox(height: size.s16 / 2),
+            FCPrimaryButton(
+              title: "validate",
+              onPressed: () => this._formKey.currentState?.validate(),
+            ),
+            SizedBox(height: size.s16 / 2),
+            FCPrimaryButton(
+              title: "isDisabled",
+              onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+            ),
+            SizedBox(height: size.s16 * 2),
+            FCPrimarySelectField(
+              title: this._title,
+              labelText: "Label",
+              onPressed: () => setState(() => this._title = "Validator"),
+              validator: this._validator,
+              isRequired: true,
+              isDisabled: this._isDisabled,
+            ),
+          ],
+        ),
       ),
     );
   }

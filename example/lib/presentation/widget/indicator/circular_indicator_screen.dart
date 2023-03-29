@@ -62,6 +62,46 @@ class CircularIndicatorScreen extends StatelessWidget {
             ],
           ),
           SizedBox(height: size.s16 * 2),
+          Row(
+            children: [
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  FCText.regular16Black(
+                    context: context,
+                    text: "Small",
+                  ),
+                  SizedBox(height: size.s16),
+                  FCCircularIndicator.smallPrimaryGradient(context: context),
+                ],
+              ),
+              const Spacer(),
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  FCText.regular16Black(
+                    context: context,
+                    text: "Default",
+                  ),
+                  SizedBox(height: size.s16),
+                  FCCircularIndicator.primaryGradient(context: context),
+                ],
+              ),
+              const Spacer(),
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  FCText.regular16Black(
+                    context: context,
+                    text: "Large",
+                  ),
+                  SizedBox(height: size.s16),
+                  FCCircularIndicator.largePrimaryGradient(context: context),
+                ],
+              ),
+            ],
+          ),
+          SizedBox(height: size.s16 * 2),
           FCText.regular16Black(
             context: context,
             text: "Small",

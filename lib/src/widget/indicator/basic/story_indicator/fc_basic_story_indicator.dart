@@ -31,8 +31,6 @@ class FCBasicStoryIndicator extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
-    final double value = this._value(index: index);
-
     return Row(
       children: [
         for (int index = 0; index < this.length; index++)
@@ -43,7 +41,7 @@ class FCBasicStoryIndicator extends StatelessWidget {
                   child: FCBasicProgressIndicator(
                     backgroundColor: this.backgroundColor,
                     color: this.color,
-                    value: value,
+                    value: this._value(index: index),
                   ),
                 ),
                 if (index != (this.length - 1)) SizedBox(width: size.s16 / 4),

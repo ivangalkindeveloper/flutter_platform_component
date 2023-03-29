@@ -450,31 +450,35 @@ White always modal close button:
 
 ### Card
 #### Card
-Card component with solid background color.
+Card component with solid background color.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/card/default/card.png)
 #### Gradient Card
-Card component with gradient background color.
+Card component with gradient background color.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/card/default/gradient_card.gif)
 #### Select Card
 Clickable card component with solid background color.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/card/select/select_card_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/card/select/select_card_material.gif) |
 #### Gradient Select Card
 Clickable card component with gradient background color.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/card/select/gradient_select_card_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/card/select/gradient_select_card_material.gif) |
 
 ### Checkbox
 Checkbox component, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/checkbox/checkbox_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/checkbox/checkbox_material.gif) |
 
 ### Code Field
 #### Code Field
-Component field code, which is designed to display any typed SMS code with solid background color.
+Component field code, which is designed to display any typed SMS code with solid background color.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/code_field/code_field.gif)
 #### Gradient Code Field
-Component field code, which is designed to display any typed SMS code with solid gradient color.
+Component field code, which is designed to display any typed SMS code with solid gradient color.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/code_field/gradient_code_field.gif)
 
 ### Common
 #### Component Disabled Overlay
@@ -494,31 +498,27 @@ Default Padding widget are guided by size config.
 Dialog component, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/dialog/dialog_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/dialog/dialog_material.gif) |
 
 ### Form Field
 Form field does not repeat the design accuracy of platform components, since pure native fields are very rarely used in good productive projects.\
 The design of this field is suitable for most applications and is more suitable.
 #### Form Field
-Form field component with solid colors, decomposed by platform.
-| iOS (Cupertino) | Android (Material) |
-| --------------- | ------------------ |
-| | |
+Form field component with solid colors, decomposed by platform.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/form_field/form_field.gif)
 #### Gradient Form Field
-Form field component with gradient colors, decomposed by platform.
-| iOS (Cupertino) | Android (Material) |
-| --------------- | ------------------ |
-| | |
+Form field component with gradient colors, decomposed by platform.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/form_field/gradient_form_field.gif)
 #### Select Field
 Clickable field component with solid colors, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/select_field_material.gif) |
 #### Gradient Select Field
 Clickable field component with gradient colors, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/gradient_select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/gradient_select_field_material.gif) |
 
 ### Global
 Classes that contains platform-decomposed functions to invoke the required interface behaviors.
@@ -542,35 +542,43 @@ Static methods for showing snackbars:
 #### Gradient mask
 Widget for overlaying a gradient mask.
 #### LinearGradient
-Standard LinearGradient widget are guided by theme config.
+Standard LinearGradient widget are guided by theme config.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/gradient/linear_field.png)
 #### RadialGradient
-Standard RadialGradient widget are guided by theme config.
+Standard RadialGradient widget are guided by theme config.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/gradient/radial_field.png)
 #### SweepGradient
-Standard SweepGradient widget are guided by theme config.
+Standard SweepGradient widget are guided by theme config.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/gradient/sweep_field.png)
 
 ### Icon
-All icons sizes are guided by small, default and large sizes from the size config.
-Class with icons in all theme colors.
+All icons sizes are guided by small, default and large sizes from the size config.\
+Class with icons in all theme colors.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/icon/icon.png)
 
 ### Indicator
 #### Circular Indicator
 Circular indicator component with solid color, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/circular_indicator/circular_indicator_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/circular_indicator/circular_indicator_material.gif) |
 #### Gradient Circular Indicator
 Circular indicator component with gradient color, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/circular_indicator/gradient_circular_indicator_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/circular_indicator/gradient_circular_indicator_material.gif) |
 #### Page Indicator
-Page indicator component with solid color, ideal for displaying the current page index of the carousel.
+Page indicator component with solid color, ideal for displaying the current page index of the carousel.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/page_indicator/page_indicator.gif)
 #### Gradient Page Indicator
-Page indicator component with gradient color, ideal for displaying the current page index of the carousel.
+Page indicator component with gradient color, ideal for displaying the current page index of the carousel.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/page_indicator/gradient_page_indicator.gif)
 #### Progress Indicator
-Progress indicator component with solid color, needed to display the progress level.
+Progress indicator component with solid color, needed to display the progress level.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/progress_indicator/progress_indicator.gif)
 #### Story Indicator
-Story indicator component with solid color, needed to display the steps and the progress level.
+Story indicator component with solid color, needed to display the steps and the progress level.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/story_indicator/story_indicator.gif)
 
 ### Keyboard
 #### Keyboard

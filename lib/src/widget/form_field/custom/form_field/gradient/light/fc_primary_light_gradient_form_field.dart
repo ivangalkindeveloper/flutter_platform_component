@@ -181,7 +181,7 @@ class FCPrimaryLightGradientFormField extends StatelessWidget {
           theme.backgroundScaffold,
         ],
       ),
-      focusedGradient: theme.accentDarkGradient,
+      focusedGradient: theme.primaryLightGradient,
       internalGradient: this.internalGradient,
       internalIconHeight: this.internalIconHeight,
       height: this.height,

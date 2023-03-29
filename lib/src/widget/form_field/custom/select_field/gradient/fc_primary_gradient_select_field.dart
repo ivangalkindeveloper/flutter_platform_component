@@ -30,7 +30,9 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
     //
     this.maxLines = 1,
     this.maxLength = 128,
+    //
     this.validator,
+    //
     this.prefix,
     this.postfix,
     this.bottom,
@@ -65,7 +67,9 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
   //
   final int maxLines;
   final int maxLength;
+  //
   final String? Function(String)? validator;
+  //
   final Widget? prefix;
   final Widget? postfix;
   final Widget? bottom;
@@ -113,7 +117,9 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
       //
       maxLines: this.maxLines,
       maxLength: this.maxLength,
+      //
       validator: this.validator,
+      //
       prefix: this.prefix,
       postfix: this.postfix,
       bottom: this.bottom,

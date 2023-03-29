@@ -108,13 +108,11 @@ class _FCBasicSelectFieldState extends State<FCBasicSelectField> {
     // Controller
     Future.microtask(() {
       if (this.mounted && this.widget.title != oldWidget.title) {
-        setState(() {
-          if (this.widget.title == null) {
-            this._controller.clear();
-          } else {
-            this._controller.text = this.widget.title!;
-          }
-        });
+        if (this.widget.title == null) {
+          this._controller.clear();
+        } else {
+          this._controller.text = this.widget.title!;
+        }
       }
     });
   }

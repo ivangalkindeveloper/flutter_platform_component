@@ -15,7 +15,7 @@ class _GradientSelectFieldScreenState extends State<GradientSelectFieldScreen> {
   bool _isDisabled = false;
 
   String? _validator(String value) {
-    if (value != "Validator") return "Validator";
+    if (value == "Validator") return "Validator";
 
     return null;
   }
@@ -54,6 +54,7 @@ class _GradientSelectFieldScreenState extends State<GradientSelectFieldScreen> {
               labelText: "Label",
               onPressed: () => setState(() => this._title = "Validator"),
               validator: this._validator,
+              isRequired: true,
               isDisabled: this._isDisabled,
             ),
           ],
