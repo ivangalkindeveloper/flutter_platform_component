@@ -25,6 +25,8 @@ class ScrollbarScreen extends StatelessWidget {
             const ConfigSection(),
             SizedBox(height: size.s16 * 2),
             const DummyList(),
+            const DummyList(),
+            const DummyList(),
           ],
         ),
       ),

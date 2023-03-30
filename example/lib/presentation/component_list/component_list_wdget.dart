@@ -273,21 +273,33 @@ class ComponentListWidget extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 2),
         FCPrimaryButton(
-          title: "Expand Modal",
+          title: "Expanded Modal",
           onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.expand_modal_screen),
+              Navigator.pushNamed(context, NavigationService.expanded_modal_screen),
+        ),
+        SizedBox(height: size.s16 / 2),
+        FCPrimaryButton(
+          title: "Black Always Expanded Modal",
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.black_always_expand_modal_screen),
+        ),
+        SizedBox(height: size.s16 / 2),
+        FCPrimaryButton(
+          title: "Blur Expanded Modal",
+          onPressed: () =>
+              Navigator.pushNamed(context, NavigationService.blur_expanded_modal_screen),
+        ),
+        SizedBox(height: size.s16 / 2),
+        FCPrimaryButton(
+          title: "Blur Black Always Expanded Modal",
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.blur_black_always_expand_modal_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FCPrimaryButton(
           title: "Pop Up Modal",
           onPressed: () =>
               Navigator.pushNamed(context, NavigationService.pop_up_modal_screen),
-        ),
-        SizedBox(height: size.s16 / 2),
-        FCPrimaryButton(
-          title: "White Always Modal",
-          onPressed: () => Navigator.pushNamed(
-              context, NavigationService.white_always_expand_modal_screen),
         ),
         SizedBox(height: size.s16),
         FCPrimaryButton(

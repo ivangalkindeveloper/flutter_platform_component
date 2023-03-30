@@ -120,34 +120,48 @@ class _FCListSectionCupertino extends StatelessWidget {
         );
     final double separatorPadding = this.separatorPadding ?? size.s16;
 
-    return CupertinoListSection.insetGrouped(
-      margin: EdgeInsets.zero,
-      backgroundColor: backgroundColor,
-      decoration: BoxDecoration(
-        borderRadius: borderRadius,
-      ),
-      dividerMargin: separatorPadding,
+    return Stack(
       children: [
-        ...this.items.map((FCListSectionItem item) {
-          final Widget? subtitle = item.description != null
-              ? Text(
-                  item.description!,
-                  style: descriptionStyle,
-                )
-              : null;
+        CupertinoListSection.insetGrouped(
+          margin: EdgeInsets.zero,
+          backgroundColor: backgroundColor,
+          decoration: BoxDecoration(
+            borderRadius: borderRadius,
+          ),
+          dividerMargin: separatorPadding,
+          children: [
+            ...this.items.map((FCListSectionItem item) {
+              final Widget? subtitle = item.description != null
+                  ? Text(
+                      item.description!,
+                      style: descriptionStyle,
+                    )
+                  : null;
 
-          return CupertinoListTile(
-            padding: padding,
-            leading: item.prefix,
-            title: Text(
-              item.title,
-              style: titleStyle,
-            ),
-            subtitle: subtitle,
-            trailing: item.postfix,
-            onTap: item.onPressed,
-          );
-        }),
+              return CupertinoListTile(
+                padding: padding,
+                leading: item.prefix,
+                title: Text(
+                  item.title,
+                  style: titleStyle,
+                ),
+                subtitle: subtitle,
+                trailing: item.postfix,
+                onTap: item.onPressed,
+              );
+            }),
+          ],
+        ),
+        Positioned.fill(
+          child: FCAnimatedSwitcher(
+            child: this.isDisabled
+                ? FCComponentDisabledOverlay(
+                    color: this.disabledColor,
+                    borderRadius: BorderRadius.circular(10),
+                  )
+                : null,
+          ),
+        ),
       ],
     );
   }

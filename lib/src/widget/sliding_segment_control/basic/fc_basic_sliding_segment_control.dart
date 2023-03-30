@@ -80,13 +80,13 @@ class _FCBasicSlidingSegmentControlState<T>
     // Controller
     Future.microtask(() {
       if (this.mounted && this.widget.value != oldWidget.value) {
-        setState(() {
-          if (this.widget.value == null) {
-            this._controller.clear();
-          } else {
-            this._controller.text = this.widget.value!.toString();
-          }
-        });
+        if (this.widget.value == null) {
+          this._controller.clear();
+          if (this.widget.isRequired) this._isValidationError = true;
+        } else {
+          this._controller.text = this.widget.value!.toString();
+          this._isValidationError = false;
+        }
       }
     });
   }
@@ -158,11 +158,9 @@ class _FCBasicSlidingSegmentControlState<T>
           onValueChanged: (T? value) {
             if (value == null || this.widget.isDisabled) return;
 
-            setState(() {
-              this._isValidationError = false;
-              this._controller.text = this.widget.value.toString();
-              this.widget.onChanged(value);
-            });
+            setState(() => this._isValidationError = false);
+            this._controller.text = this.widget.value.toString();
+            this.widget.onChanged(value);
           },
           backgroundColor: backgroundColor,
           thumbColor: this.widget.thumbColor,

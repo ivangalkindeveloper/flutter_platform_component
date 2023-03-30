@@ -1,4 +1,3 @@
-import 'package:flutter_component/src/widget/helper/fc_button_row_child.dart';
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
@@ -101,18 +100,29 @@ class _FCActionModalCupertino extends StatelessWidget {
   }
 
   CupertinoActionSheetAction _item({
+    required IFCSize size,
     required FCActionModalItem item,
   }) =>
       CupertinoActionSheetAction(
-        child: FCButtonRowChild(
+        child: Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: null,
-          prefix: item.prefix,
-          title: item.title,
-          textAlign: TextAlign.center,
-          titleStyle: this.itemStyle,
-          postfix: item.postfix,
+          children: [
+            if (item.prefix != null) item.prefix!,
+            if (item.prefix != null && (this.title != null || item.postfix != null))
+              SizedBox(width: size.s16),
+            if (this.title != null)
+              Flexible(
+                child: Text(
+                  item.title,
+                  textAlign: TextAlign.center,
+                  style: this.itemStyle,
+                ),
+              ),
+            if (item.postfix != null && (item.prefix != null || this.title != null))
+              SizedBox(width: size.s16),
+            if (item.postfix != null) item.postfix!,
+          ],
         ),
         onPressed: item.onPressed,
         isDefaultAction: item.isDefaultAction,
@@ -123,6 +133,7 @@ class _FCActionModalCupertino extends StatelessWidget {
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
+    final IFCSize size = config.size;
 
     final Color color = this.color ?? theme.primary;
     final Widget? title = this._title();
@@ -138,12 +149,14 @@ class _FCActionModalCupertino extends StatelessWidget {
         actions: [
           ...items.map(
             (FCActionModalItem item) => this._item(
+              size: size,
               item: item,
             ),
           ),
         ],
         cancelButton: this.cancelItem != null
             ? this._item(
+                size: size,
                 item: cancelItem!,
               )
             : null,
@@ -232,6 +245,8 @@ class _FCActionModalMaterial extends StatelessWidget {
   }
 
   ListTile _item({
+    required IFCTextStyle textStyle,
+    required IFCTheme theme,
     required IFCSize size,
     required Color backgroundColor,
     required FCActionModalItem item,
@@ -243,16 +258,26 @@ class _FCActionModalMaterial extends StatelessWidget {
           horizontal: size.s16,
           vertical: size.s10 / 4,
         ),
-        title: FCButtonRowChild(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.start,
-          gradient: null,
-          prefix: item.prefix,
-          title: item.title,
+        leading: item.prefix,
+        title: Text(
+          item.title,
           textAlign: TextAlign.start,
-          titleStyle: itemStyle,
-          postfix: item.postfix,
+          style: this.titleStyle?.copyWith(
+                    color: this.titleStyle?.color ?? theme.black,
+                    fontSize: this.titleStyle?.fontSize ?? size.s16,
+                    fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+                    fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+                    package: textStyle.package,
+                  ) ??
+              TextStyle(
+                color: theme.black,
+                fontSize: size.s16,
+                fontWeight: textStyle.fontWeightMedium,
+                fontFamily: textStyle.fontFamilyMedium,
+                package: textStyle.package,
+              ),
         ),
+        trailing: item.postfix,
         onTap: item.onPressed,
       );
 
@@ -321,16 +346,20 @@ class _FCActionModalMaterial extends StatelessWidget {
           if (content != null) content,
           ...items.map(
             (FCActionModalItem item) => this._item(
-              backgroundColor: backgroundColor,
+              textStyle: textStyle,
+              theme: theme,
               size: size,
+              backgroundColor: backgroundColor,
               item: item,
               itemStyle: itemStyle,
             ),
           ),
           if (this.cancelItem != null)
             this._item(
-              backgroundColor: backgroundColor,
+              textStyle: textStyle,
+              theme: theme,
               size: size,
+              backgroundColor: backgroundColor,
               item: cancelItem!,
               itemStyle: itemStyle,
             ),

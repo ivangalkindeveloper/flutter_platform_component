@@ -93,9 +93,9 @@
     - [Progress Indicator](#progress-indicator)
     - [Story Indicator](#story-indicator)
   - [Keyboard](#keyboard)
-    - [Keyboard](#keyboard)
     - [Keyboard Button](#keyboard-button)
     - [Keyboard Number Button](#keyboard-number-button)
+    - [Keyboard](#keyboard)
   - [List](#list)
     - [List Refresh](#list-refresh)
     - [List Section](#list-section)
@@ -513,12 +513,12 @@ Form field component with gradient colors, decomposed by platform.\
 Clickable field component with solid colors, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/select_field/select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/select_field/select_field_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/form_field/select_field/select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/select_field/select_field_material.gif) |
 #### Gradient Select Field
 Clickable field component with gradient colors, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/select_field/gradient_select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/select_field/gradient_select_field_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/form_field/select_field/gradient_select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/select_field/select_field/gradient_select_field_material.gif) |
 
 ### Global
 Classes that contains platform-decomposed functions to invoke the required interface behaviors.
@@ -581,47 +581,63 @@ Story indicator component with solid color, needed to display the steps and the 
 ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/story_indicator/story_indicator.gif)
 
 ### Keyboard
-#### Keyboard
-Large widget that arranges keyboard buttons.
 #### Keyboard Button
 Button component of keyboard.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/keyboard/keyboard_button/keyboard_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/keyboard/keyboard_button/keyboard_button_material.gif) |
 #### Keyboard Number Button
 Button component of keyboard, specially for only numbers.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/keyboard/keyboard_number_button/keyboard_number_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/keyboard/keyboard_number_button/keyboard_number_button_material.gif) |
+#### Keyboard
+Large widget that arranges keyboard buttons.
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/keyboard/keyboard/keyboard_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/keyboard/keyboard/keyboard_material.gif) |
 
 ### List
 #### List Refresh
 List refresh component to display the loading of asynchronous behavior, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list_refresh/list_refresh_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list_refresh/list_refresh_material.gif) |
 #### List Section
 Card component, needed to display multiple rows of settings buttons, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list_section/list_section_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list_section/list_section_material.gif) |
 
 ### Modal
 #### Action Modal
 Action modal component for selecting a specific action, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/action_modal/action_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/action_modal/action_modal_material.gif) |
 #### Expanded Modal
-Expanded modal window component to display large modal content.
+Expanded modal scaffold component to display large modal content.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
-#### Small Modal
-Expanded modal window component to display small modal content.
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/default/expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/default/expanded_modal_material.gif) |
+Custom components contains expanded modal with always black background.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/default/black_always_expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/default/black_always_expanded_modal_material.gif) |
+#### Blur Expanded Modal
+Expanded modal scaffold component to display large modal content with blur app bar.
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/blur/blur_expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/blur/blur_expanded_modal_material.gif) |
+Custom components contains expanded modal with always black background with blur app bar.
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/blur/blur_black_always_expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/blur/blur_black_always_expanded_modal_material.gif) |
+#### Pop Up Modal
+Small modal window component to display small modal content.
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/pop_up_modal/pop_up_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/pop_up_modal/pop_up_modal_material.gif) |
 
 ### Navigation
 #### Bottom Navigation Bar
@@ -629,22 +645,22 @@ Expanded modal window component to display small modal content.
 Bottom navigation bar component, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/bottom_navigation_bar/bottom_navigation_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/bottom_navigation_bar/bottom_navigation_bar_material.gif) |
 ##### Blur Bottom Navigation Bar
 Bottom navigation bar component wrapped in blur, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/blur_bottom_navigation_bar/blur_bottom_navigation_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/blur_bottom_navigation_bar/blur_bottom_navigation_bar_material.gif) |
 #### Navigator
 Special navigator widget, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/navigator/navigator_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/navigator/navigator_material.gif) |
 #### Route
 Static routes methods, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/route/route_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/route/route_material.gif) |
 
 ### Picker
 ### Date Picker
@@ -654,7 +670,7 @@ Android - Wrapper for native date picker dialog.\
 iOS - Native date picker carousel.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/picker/date_picker/date_picker_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/picker/date_picker/date_picker_material.gif) |
 ### Time Picker
 Not a simple component that decomposes the vision of a time picker.\
 There are different behaviors for different platforms:\
@@ -662,25 +678,33 @@ Android - Wrapper for native time picker dialog.\
 iOS - Native time picker carousel.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/picker/time_picker/time_picker_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/picker/time_picker/time_picker_material.gif) |
 
 ### PIN Field
 #### PIN Field
-PIN field component with solid colors.
+PIN field component with solid colors.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/pin_field/pin_field.gif)
 #### Gradient PIN Field
 PIN field component with gradient colors.
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/pin_field/gradient_pin_field.gif)
 
 ### Radio
 Radio component, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/radio/radio_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/radio/radio_material.gif) |
 
 ### Scaffold
 Standard scaffold widget, decomposed by platform.
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/scaffold/scaffold_cupertino.png) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/scaffold/scaffold_material.png) |
 
 ### Scrollbar
 Scrollbar component, decomposed by platform.
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/scrollbar/scrollbar_cupertino.png) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/scrollbar/scrollbar_material.png) |
 
 ### Segment Control
 #### Segment Control
@@ -690,15 +714,17 @@ Segment control component with gradient colors, decomposed by platform.
 
 ### Shimmer
 #### Shimmer
-Special component for loading animation with solid color.
+Special component for loading animation with solid color.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/shimmer/shimmer.gif)
 #### Gradient Shimmer
 Special component for loading animation with gradient color.
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/shimmer/gradient_shimmer.gif)
 
 ### Slider
 Slider component, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/slider/slider_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/slider/slider_material.gif) |
 
 ### Sliding Segment Control
 Sliding segment control compoennt does not have a direct analogue on android, therefore it does not have a decomposition for this platform.
@@ -709,32 +735,35 @@ Sliding Segment control component with solid colors.
 Ready-made sliver navigation app bar component, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/sliver_navigation_app_bar/sliver_navigation_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/sliver_navigation_app_bar/sliver_navigation_app_bar_material.gif) |
 
 ### Snackbar
 #### Snackbar
-Snackbar component with solid colors:
-
-Custom buttons contains outlined snackbars:
-
+Snackbar component with solid colors.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/snackbar/snackbar.png)
+Custom buttons contains outlined snackbars.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/snackbar/outlined_snackbar.png)
 #### Gradient Snackbar
-Snackbar component with gradient colors:
-
-Custom buttons contains outlined snackbars:
+Snackbar component with gradient colors.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/snackbar/gradient_snackbar.png)
+Custom buttons contains outlined snackbars.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/snackbar/gradient_outlined_snackbar.png)
 
 ### Switch
 Switch component, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/switch/switch_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/switch/switch_material.gif) |
 
 ### Text
 #### Text
 Class that combines all text widgets for quick display.
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/text/text.png)
 #### Text Style
-Class that combines all text widgets for quick use.
+Class that combines all text widgets for quick use.\
 #### Text Span
 Ready-made shell widget for receiving text span items.
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/text/text_span.png)
 
 ### Toggle
 One of the proposed visions of the segment control component.

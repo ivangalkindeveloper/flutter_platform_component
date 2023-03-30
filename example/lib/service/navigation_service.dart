@@ -45,8 +45,10 @@ import 'package:example/presentation/widget/list/list_section_screen.dart';
 import 'package:example/presentation/widget/list/list_refresh_screen.dart';
 import 'package:example/presentation/widget/modal/action_modal_screen.dart';
 import 'package:example/presentation/widget/modal/expanded_modal_screen.dart';
+import 'package:example/presentation/widget/modal/blur_expanded_modal_screen.dart';
 import 'package:example/presentation/widget/modal/pop_up_modal_screen.dart';
-import 'package:example/presentation/widget/modal/white_always_expanded_modal_screen.dart';
+import 'package:example/presentation/widget/modal/black_always_expanded_modal_screen.dart';
+import 'package:example/presentation/widget/modal/blur_black_always_expanded_modal_screen.dart';
 import 'package:example/presentation/widget/navigation/bottom_navigation_bar_screen.dart';
 import 'package:example/presentation/widget/navigation/navigator_screen.dart';
 import 'package:example/presentation/widget/picker/time_picker_screen.dart';
@@ -61,7 +63,7 @@ import 'package:example/presentation/widget/shimmer/gradient_shimmer_screen.dart
 import 'package:example/presentation/widget/shimmer/shimmer_screen.dart';
 import 'package:example/presentation/widget/slider/slider_screen.dart';
 import 'package:example/presentation/widget/sliding_segment_control/sliding_segment_control_screen.dart';
-import 'package:example/presentation/widget/sliver/sliver_navigation_bar_screen.dart';
+import 'package:example/presentation/widget/sliver_navigation_app_bar/sliver_navigation_bar_screen.dart';
 import 'package:example/presentation/widget/snackbar/gradient_snackbar_screen.dart';
 import 'package:example/presentation/widget/snackbar/snackbar_screen.dart';
 import 'package:example/presentation/widget/switch/switch_screen.dart';
@@ -142,10 +144,13 @@ class NavigationService implements INavigationService {
   static const String list_section_screen = "/list_section_screen";
 
   static const String action_modal_screen = "/action_modal_screen";
-  static const String expand_modal_screen = "/expand_modal_screen";
+  static const String expanded_modal_screen = "/expanded_modal_screen";
+  static const String blur_expanded_modal_screen = "/blur_expanded_modal_screen";
   static const String pop_up_modal_screen = "/pop_up_modal_screen";
-  static const String white_always_expand_modal_screen =
-      "/white_always_expand_modal_screen";
+  static const String black_always_expand_modal_screen =
+      "/black_always_expand_modal_screen";
+  static const String blur_black_always_expand_modal_screen =
+      "/blur_black_always_expand_modal_screen";
 
   static const String bottom_navigation_bar_screen = "/bottom_navigation_bar_screen";
   static const String blur_bottom_navigation_bar_screen =
@@ -425,20 +430,30 @@ class NavigationService implements INavigationService {
           context: navigatorKey.currentContext!,
           child: const ActionModalScreen(),
         );
-      case expand_modal_screen:
+      case expanded_modal_screen:
         return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const ExpandedModalScreen(),
+        );
+      case blur_expanded_modal_screen:
+        return FCRoute.pageRouteFromContext(
+          context: navigatorKey.currentContext!,
+          child: const BlurExpandedModalScreen(),
         );
       case pop_up_modal_screen:
         return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const PopUpModalScreen(),
         );
-      case white_always_expand_modal_screen:
+      case black_always_expand_modal_screen:
         return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
-          child: const WhiteAlwaysExpandedModalScreen(),
+          child: const BlackAlwaysExpandedModalScreen(),
+        );
+      case blur_black_always_expand_modal_screen:
+        return FCRoute.pageRouteFromContext(
+          context: navigatorKey.currentContext!,
+          child: const BlurBlackAlwaysExpandedModalScreen(),
         );
 
       case bottom_navigation_bar_screen:

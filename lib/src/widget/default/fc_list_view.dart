@@ -10,7 +10,7 @@ class FCListView extends StatelessWidget {
     this.reverse = false,
     this.controller,
     this.primary,
-    this.physics = const BouncingScrollPhysics(),
+    this.physics = const AlwaysScrollableScrollPhysics(),
     this.shrinkWrap = false,
     this.padding,
     this.itemExtent,

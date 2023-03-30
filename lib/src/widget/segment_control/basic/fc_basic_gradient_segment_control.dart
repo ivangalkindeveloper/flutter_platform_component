@@ -96,13 +96,13 @@ class _FCBasicGradientSegmentControlState<T>
     // Controller
     Future.microtask(() {
       if (this.mounted && this.widget.value != oldWidget.value) {
-        setState(() {
-          if (this.widget.value == null) {
-            this._controller.clear();
-          } else {
-            this._controller.text = this.widget.value!.toString();
-          }
-        });
+        if (this.widget.value == null) {
+          this._controller.clear();
+          if (this.widget.isRequired) this._isValidationError = true;
+        } else {
+          this._controller.text = this.widget.value!.toString();
+          this._isValidationError = false;
+        }
       }
     });
   }
@@ -176,7 +176,11 @@ class _FCBasicGradientSegmentControlState<T>
               ) {
                 final void Function() onPressed = this.widget.isDisabled
                     ? () {}
-                    : () => this.widget.onChanged(item.value);
+                    : () {
+                        setState(() => this._isValidationError = false);
+                        this.widget.onChanged(item.value);
+                      };
+                final bool isSelected = this.widget.value == item.value;
 
                 return this._expandedWrapper(
                   child: _FCSegmentControlButton(
@@ -200,7 +204,7 @@ class _FCBasicGradientSegmentControlState<T>
                     padding: this.widget.padding,
                     isExpanded: this.widget.isExpanded,
                     onPressed: onPressed,
-                    isSelected: item.value == this.widget.value,
+                    isSelected: isSelected,
                     isValidationError: this._isValidationError,
                   ),
                 );
@@ -466,7 +470,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
             Container(
               width: borderWidth,
               decoration: BoxDecoration(
-                gradient: this.unselectedBorderGradient ?? this.selectedBorderGradient,
+                gradient: borderGradient,
               ),
             ),
         ],

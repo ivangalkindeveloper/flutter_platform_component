@@ -122,13 +122,11 @@ class _FCBasicSliderMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final void Function(double)? onChanged = this.isDisabled ? null : this.onChanged;
-
     return Stack(
       children: [
         Slider(
           value: this.value,
-          onChanged: onChanged,
+          onChanged: this.onChanged,
           inactiveColor: this.backgroundColor,
           activeColor: this.color,
           min: this.min,

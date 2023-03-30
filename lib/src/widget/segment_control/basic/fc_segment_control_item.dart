@@ -13,3 +13,8 @@ class FCSegmentControlItem<T> {
   final String? title;
   final Widget? postfix;
 }
+
+
+//TODO
+//prefixIcon
+//postfixIcon

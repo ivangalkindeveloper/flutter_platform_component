@@ -87,13 +87,13 @@ class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
     // Controller
     Future.microtask(() {
       if (this.mounted && this.widget.value != oldWidget.value) {
-        setState(() {
-          if (this.widget.value == null) {
-            this._controller.clear();
-          } else {
-            this._controller.text = this.widget.value!.toString();
-          }
-        });
+        if (this.widget.value == null) {
+          this._controller.clear();
+          if (this.widget.isRequired) this._isValidationError = true;
+        } else {
+          this._controller.text = this.widget.value!.toString();
+          this._isValidationError = false;
+        }
       }
     });
   }
@@ -167,11 +167,11 @@ class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
               ) {
                 final void Function() onPressed = this.widget.isDisabled
                     ? () {}
-                    : () => setState(() {
-                          this._isValidationError = false;
-                          this._controller.text = this.widget.value.toString();
-                          this.widget.onChanged(item.value);
-                        });
+                    : () {
+                        setState(() => this._isValidationError = false);
+                        this._controller.text = this.widget.value.toString();
+                        this.widget.onChanged(item.value);
+                      };
                 final bool isSelected = item.value == this.widget.value;
 
                 return this._expandedWrapper(

@@ -1,19 +1,16 @@
 import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
-import 'dart:ui';
 
-class FCBlurWhiteAlwaysExpandedModal extends StatelessWidget {
-  const FCBlurWhiteAlwaysExpandedModal({
+class FCBlackAlwaysExpandedModal extends StatelessWidget {
+  const FCBlackAlwaysExpandedModal({
     super.key,
-    this.appBarBlurColor,
-    this.appBarBlurOpacity,
-    this.appBarBlurFilter,
+    this.appBarBackgroundColor,
     this.appBarPrefix,
     this.appBarCupertinoLocale,
     this.onPressedBack,
     this.appBarTitle,
-    this.appBarStyle,
+    this.appBarTitleStyle,
     this.appBarMiddle,
     this.appBarProstfix,
     this.appBarBottomPadding,
@@ -23,14 +20,12 @@ class FCBlurWhiteAlwaysExpandedModal extends StatelessWidget {
   });
 
   // App Bar
-  final Color? appBarBlurColor;
-  final double? appBarBlurOpacity;
-  final ImageFilter? appBarBlurFilter;
+  final Color? appBarBackgroundColor;
   final Widget? appBarPrefix;
   final String? appBarCupertinoLocale;
   final VoidCallback? onPressedBack;
   final String? appBarTitle;
-  final TextStyle? appBarStyle;
+  final TextStyle? appBarTitleStyle;
   final Widget? appBarMiddle;
   final Widget? appBarProstfix;
   final EdgeInsets? appBarBottomPadding;
@@ -50,16 +45,14 @@ class FCBlurWhiteAlwaysExpandedModal extends StatelessWidget {
         topRight: config.borderRadiusModal.topRight,
       ),
       child: FCScaffold(
-        appBar: FCBlurWhiteAlwaysExpandedModalAppBar(
+        appBar: FCWhiteAlwaysExpandedModalAppBar(
           context: context,
-          blurColor: this.appBarBlurColor ?? theme.blackAlways,
-          blurOpacity: this.appBarBlurOpacity,
-          blurFilter: this.appBarBlurFilter,
+          backgroundColor: this.appBarBackgroundColor ?? theme.blackAlways,
           prefix: this.appBarPrefix,
           cupertinoLocale: this.appBarCupertinoLocale,
           onPressedBack: this.onPressedBack,
           title: this.appBarTitle,
-          style: this.appBarStyle,
+          titleStyle: this.appBarTitleStyle,
           middle: this.appBarMiddle,
           postfix: this.appBarProstfix,
           bottomPadding: this.appBarBottomPadding,

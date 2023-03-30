@@ -94,13 +94,13 @@ class _FCBasicSegmentControlState<T> extends State<FCBasicSegmentControl<T>> {
     // Controller
     Future.microtask(() {
       if (this.mounted && this.widget.value != oldWidget.value) {
-        setState(() {
-          if (this.widget.value == null) {
-            this._controller.clear();
-          } else {
-            this._controller.text = this.widget.value!.toString();
-          }
-        });
+        if (this.widget.value == null) {
+          this._controller.clear();
+          if (this.widget.isRequired) this._isValidationError = true;
+        } else {
+          this._controller.text = this.widget.value!.toString();
+          this._isValidationError = false;
+        }
       }
     });
   }
@@ -174,8 +174,11 @@ class _FCBasicSegmentControlState<T> extends State<FCBasicSegmentControl<T>> {
               ) {
                 final void Function() onPressed = this.widget.isDisabled
                     ? () {}
-                    : () => this.widget.onChanged(item.value);
-                final bool isSelected = item.value == this.widget.value;
+                    : () {
+                        setState(() => this._isValidationError = false);
+                        this.widget.onChanged(item.value);
+                      };
+                final bool isSelected = this.widget.value == item.value;
 
                 return this._expandedWrapper(
                   child: _FCSegmentControlButton(
@@ -443,7 +446,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
           if ((index + 1) != this.length)
             Container(
               width: borderWidth,
-              color: this.unselectedBorderColor ?? this.selectedBorderColor,
+              color: borderColor,
             ),
         ],
       ),

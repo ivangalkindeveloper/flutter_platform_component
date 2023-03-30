@@ -109,13 +109,11 @@ class _FCBasicSwitchMaterial extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
-    final void Function(bool)? onChanged = this.isDisabled ? null : this.onChanged;
-
     return Stack(
       children: [
         Switch(
           value: this.value,
-          onChanged: onChanged,
+          onChanged: this.onChanged,
           inactiveTrackColor: this.unselectedColor,
           activeColor: this.selectedColor,
         ),

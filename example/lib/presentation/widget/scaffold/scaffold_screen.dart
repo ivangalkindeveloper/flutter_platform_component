@@ -1,4 +1,3 @@
-import 'package:example/presentation/config/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/material.dart';
 
@@ -9,43 +8,20 @@ class ScaffoldScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final FCConfig config = FCConfig.of(context);
     final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
 
     return FCScaffold(
+      extendBody: true,
       backgroundColor: theme.backgroundScaffold,
       appBar: FCScreenAppBar(
         context: context,
         title: "Scaffold App Bar",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
-        children: [
-          const ConfigSection(),
-          SizedBox(height: size.s16 * 2),
-          FCPrimaryButton(
-            title: "Snackbar",
-            onPressed: () => showFCSnackBar(
-              context: context,
-              child: FCPrimarySnackbar(
-                child: FCText.regular16PrimaryButton(
-                  context: context,
-                  text: "Snackbar",
-                ),
-              ),
-            ),
-          ),
-          SizedBox(height: size.s16 * 2),
-          FCPrimaryFormField(
-            labelText: "Field",
-          ),
-          SizedBox(height: size.s16 * 2),
-          Center(
-            child: FCText.regular16Black(
-              context: context,
-              text: "Scaffold Body",
-            ),
-          ),
-        ],
+      body: Center(
+        child: FCText.medium18Black(
+          context: context,
+          text: "Scaffold Body",
+        ),
       ),
       bottomNavigationBar: FCBlurBottomNavigationBar(
         index: 0,

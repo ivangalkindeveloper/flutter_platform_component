@@ -1,6 +1,6 @@
 import 'package:example/presentation/config/config_section.dart';
 import 'package:flutter_component/flutter_component.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 class ActionModalScreen extends StatelessWidget {
   const ActionModalScreen({Key? key});
@@ -31,8 +31,16 @@ class ActionModalScreen extends StatelessWidget {
                 description: "Action Modal Description",
                 items: [
                   FCActionModalItem(
+                    prefix: FCIcon.primary(
+                      context: context,
+                      icon: Icons.share,
+                    ),
                     title: "Action 1",
                     onPressed: () => Navigator.pop(context),
+                    postfix: FCIcon.grey(
+                      context: context,
+                      icon: Icons.add,
+                    ),
                   ),
                   FCActionModalItem(
                     title: "Action 2",

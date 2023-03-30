@@ -47,7 +47,7 @@ class FCButtonRowChild extends StatelessWidget {
       children: [
         if (this.prefix != null) this.prefix!,
         if (this.prefix != null && (this.title != null || this.postfix != null))
-          SizedBox(width: size.s16 / 2),
+          SizedBox(width: size.s16),
         if (this.title != null)
           Flexible(
             child: this._gradientWrapper(
@@ -74,7 +74,7 @@ class FCButtonRowChild extends StatelessWidget {
             ),
           ),
         if (this.postfix != null && (this.prefix != null || this.title != null))
-          SizedBox(width: size.s16 / 2),
+          SizedBox(width: size.s16),
         if (this.postfix != null) this.postfix!,
       ],
     );

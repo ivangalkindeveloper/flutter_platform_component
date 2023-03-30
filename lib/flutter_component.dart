@@ -912,14 +912,15 @@ export 'src/widget/list/list_section/fc_list_section.dart';
 // Modal / Action Modal
 export 'src/widget/modal/action_modal/fc_action_modal_item.dart';
 export 'src/widget/modal/action_modal/fc_action_modal.dart';
-// Modal / Modal
-// Modal / Modal / Blur
-export 'src/widget/modal/modal/blur/fc_blur_expanded_modal.dart';
-export 'src/widget/modal/modal/blur/fc_blur_white_always_expanded_modal.dart';
-// Modal / Modal / Default
-export 'src/widget/modal/modal/default/fc_expanded_modal.dart';
-export 'src/widget/modal/modal/default/fc_pop_up_modal.dart';
-export 'src/widget/modal/modal/default/fc_white_always_expanded_modal.dart';
+// Modal / Expanded Modal
+// Modal / Expanded Modal / Blur
+export 'src/widget/modal/expanded_modal/blur/fc_blur_black_always_expanded_modal.dart';
+export 'src/widget/modal/expanded_modal/blur/fc_blur_expanded_modal.dart';
+// Modal / Expanded Modal / Default
+export 'src/widget/modal/expanded_modal/default/fc_black_always_expanded_modal.dart';
+export 'src/widget/modal/expanded_modal/default/fc_expanded_modal.dart';
+// Modal / Pop Up Modal
+export 'src/widget/modal/pop_up_modal/fc_pop_up_modal.dart';
 
 // Navigation
 // Navigation / Bottom Navigation Bar
@@ -1217,7 +1218,7 @@ export 'src/widget/sliding_segment_control/custom/light/fc_success_light_sliding
 export 'src/widget/sliding_segment_control/custom/light/fc_warning_light_sliding_segment_control.dart';
 
 // Sliver
-export 'src/widget/sliver/fc_sliver_navigation_app_bar.dart';
+export 'src/widget/sliver_navigation_app_bar/fc_sliver_navigation_app_bar.dart';
 
 // Snackbar
 // Snackbar / Basic

@@ -27,35 +27,35 @@ class GradientShimmerScreen extends StatelessWidget {
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkShimmer(
+          FCAccentDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkShimmer(
+          FCInfoDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkShimmer(
+          FCSuccessDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkShimmer(
+          FCGreyDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkShimmer(
+          FCPrimaryDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerDarkShimmer(
+          FCDangerDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkShimmer(
+          FCSecondaryDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkShimmer(
+          FCWarningDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16),
@@ -64,35 +64,35 @@ class GradientShimmerScreen extends StatelessWidget {
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentShimmer(
+          FCAccentGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoShimmer(
+          FCInfoGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessShimmer(
+          FCSuccessGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyShimmer(
+          FCGreyGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryShimmer(
+          FCPrimaryGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerShimmer(
+          FCDangerGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryShimmer(
+          FCSecondaryGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningShimmer(
+          FCWarningGradientShimmer(
             height: size.s16 * 2,
           ),
         ],

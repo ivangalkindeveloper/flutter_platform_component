@@ -3,8 +3,8 @@ import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:ui';
 
-class FCBlurExpandedModal extends StatelessWidget {
-  const FCBlurExpandedModal({
+class FCBlurBlackAlwaysExpandedModal extends StatelessWidget {
+  const FCBlurBlackAlwaysExpandedModal({
     super.key,
     this.appBarBlurColor,
     this.appBarBlurOpacity,
@@ -50,9 +50,9 @@ class FCBlurExpandedModal extends StatelessWidget {
         topRight: config.borderRadiusModal.topRight,
       ),
       child: FCScaffold(
-        appBar: FCBlurExpandedModalAppBar(
+        appBar: FCBlurWhiteAlwaysExpandedModalAppBar(
           context: context,
-          blurColor: this.appBarBlurColor,
+          blurColor: this.appBarBlurColor ?? theme.blackAlways,
           blurOpacity: this.appBarBlurOpacity,
           blurFilter: this.appBarBlurFilter,
           prefix: this.appBarPrefix,
@@ -65,7 +65,8 @@ class FCBlurExpandedModal extends StatelessWidget {
           bottomPadding: this.appBarBottomPadding,
           bottom: this.appBarBottom,
         ),
-        backgroundColor: this.backgroundColor ?? theme.backgroundScaffold,
+        backgroundColor: this.backgroundColor ?? theme.blackAlways,
+        extendBodyBehindAppBar: true,
         body: this.body,
       ),
     );

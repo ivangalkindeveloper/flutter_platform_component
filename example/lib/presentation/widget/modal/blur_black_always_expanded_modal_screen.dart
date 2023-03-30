@@ -1,9 +1,10 @@
 import 'package:example/presentation/config/config_section.dart';
+import 'package:example/presentation/helper/dummy_list.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class WhiteAlwaysExpandedModalScreen extends StatelessWidget {
-  const WhiteAlwaysExpandedModalScreen({Key? key});
+class BlurBlackAlwaysExpandedModalScreen extends StatelessWidget {
+  const BlurBlackAlwaysExpandedModalScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class WhiteAlwaysExpandedModalScreen extends StatelessWidget {
       backgroundColor: theme.backgroundScaffold,
       appBar: FCScreenAppBar(
         context: context,
-        title: "White Always Expanded Modal",
+        title: "Blur Black Always Expanded Modal",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: FCListView(
@@ -26,14 +27,16 @@ class WhiteAlwaysExpandedModalScreen extends StatelessWidget {
             title: "Open",
             onPressed: () => showFCExpandedModal(
               context: context,
-              child: FCWhiteAlwaysExpandedModal(
-                appBarTitle: "White Always Expanded Modal Title",
+              child: FCBlurBlackAlwaysExpandedModal(
+                onPressedBack: () => Navigator.pop(context),
+                appBarCupertinoLocale: "Back",
+                appBarTitle: "Blur Black Always Expanded Modal Title",
                 backgroundColor: theme.blackAlways,
-                body: Center(
-                  child: FCText.regular16WhiteAlways(
-                    context: context,
-                    text: "White Always Expanded Modal",
-                  ),
+                body: FCListView(
+                  children: [
+                    const DummyList(),
+                    const DummyList(),
+                  ],
                 ),
               ),
             ),

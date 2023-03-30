@@ -1,4 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
+import 'package:example/presentation/helper/dummy_list.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -27,13 +28,15 @@ class ExpandedModalScreen extends StatelessWidget {
             onPressed: () => showFCExpandedModal(
               context: context,
               child: FCExpandedModal(
+                onPressedBack: () => Navigator.pop(context),
+                appBarCupertinoLocale: "Back",
                 appBarTitle: "Expanded Modal Title",
                 backgroundColor: theme.backgroundScaffold,
-                body: Center(
-                  child: FCText.regular14Black(
-                    context: context,
-                    text: "Expanded Modal",
-                  ),
+                body: FCListView(
+                  children: [
+                    const DummyList(),
+                    const DummyList(),
+                  ],
                 ),
               ),
             ),
