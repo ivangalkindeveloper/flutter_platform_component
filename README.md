@@ -602,12 +602,12 @@ Large widget that arranges keyboard buttons.
 List refresh component to display the loading of asynchronous behavior, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list/list_refresh/list_refresh_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list_refresh/list/list_refresh_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list/list_refresh/list_refresh_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list/list_refresh/list_refresh_material.gif) |
 #### List Section
 Card component, needed to display multiple rows of settings buttons, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list/list_section/list_section_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list_section/list/list_section_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list/list_section/list_section_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list/list_section/list_section_material.gif) |
 
 ### Modal
 #### Action Modal
