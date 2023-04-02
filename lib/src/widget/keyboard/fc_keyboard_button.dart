@@ -8,6 +8,7 @@ import 'package:flutter/material.dart' show IconButton;
 class FCKeyboardButton extends FCPlatformWidget {
   FCKeyboardButton({
     super.key,
+    Color? splashColor,
     double? height,
     required Widget child,
     required VoidCallback onPressed,
@@ -16,6 +17,7 @@ class FCKeyboardButton extends FCPlatformWidget {
   }) : super(
           cupertino: _FCKeyboardButtonCupertino(
             key: key,
+            splashColor: splashColor,
             height: height,
             child: child,
             onPressed: onPressed,
@@ -24,6 +26,7 @@ class FCKeyboardButton extends FCPlatformWidget {
           ),
           material: _FCKeyboardButtonMaterial(
             key: key,
+            splashColor: splashColor,
             height: height,
             child: child,
             onPressed: onPressed,
@@ -36,6 +39,7 @@ class FCKeyboardButton extends FCPlatformWidget {
 class _FCKeyboardButtonCupertino extends StatelessWidget {
   const _FCKeyboardButtonCupertino({
     super.key,
+    required this.splashColor,
     required this.height,
     required this.child,
     required this.onPressed,
@@ -43,6 +47,7 @@ class _FCKeyboardButtonCupertino extends StatelessWidget {
     required this.disabledColor,
   });
 
+  final Color? splashColor;
   final double? height;
   final Widget child;
   final VoidCallback onPressed;
@@ -55,18 +60,23 @@ class _FCKeyboardButtonCupertino extends StatelessWidget {
     final IFCHaptic haptic = config.haptic;
     final IFCSize size = config.size;
 
+    final double height = this.height ?? size.heightKeyboardButton;
+    final VoidCallback onPressed = this.isDisabled
+        ? () {}
+        : () {
+            haptic.selection();
+            this.onPressed();
+          };
+
     return SizedBox(
-      height: this.height ?? size.heightKeyboardButton,
-      width: this.height ?? size.heightKeyboardButton,
+      height: height,
+      width: height,
       child: Stack(
         alignment: Alignment.center,
         children: [
           CupertinoButton(
-            minSize: this.height ?? size.heightKeyboardButton,
-            onPressed: () {
-              haptic.selection();
-              this.onPressed();
-            },
+            minSize: height,
+            onPressed: onPressed,
             padding: EdgeInsets.zero,
             child: this.child,
           ),
@@ -88,6 +98,7 @@ class _FCKeyboardButtonCupertino extends StatelessWidget {
 class _FCKeyboardButtonMaterial extends StatelessWidget {
   const _FCKeyboardButtonMaterial({
     super.key,
+    required this.splashColor,
     required this.height,
     required this.child,
     required this.onPressed,
@@ -95,6 +106,7 @@ class _FCKeyboardButtonMaterial extends StatelessWidget {
     required this.disabledColor,
   });
 
+  final Color? splashColor;
   final double? height;
   final Widget child;
   final VoidCallback onPressed;
@@ -104,21 +116,29 @@ class _FCKeyboardButtonMaterial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
     final IFCHaptic haptic = config.haptic;
     final IFCSize size = config.size;
 
+    final Color splashColor = this.splashColor ?? theme.greyLight;
+    final double height = this.height ?? size.heightKeyboardButton;
+    final VoidCallback onPressed = this.isDisabled
+        ? () {}
+        : () {
+            haptic.selection();
+            this.onPressed();
+          };
+
     return SizedBox(
-      height: this.height ?? size.heightKeyboardButton,
-      width: this.height ?? size.heightKeyboardButton,
+      height: height,
+      width: height,
       child: Stack(
         alignment: Alignment.center,
         children: [
           IconButton(
-            iconSize: this.height ?? size.heightKeyboardButton,
-            onPressed: () {
-              haptic.selection();
-              this.onPressed();
-            },
+            splashColor: splashColor,
+            iconSize: height,
+            onPressed: onPressed,
             padding: EdgeInsets.zero,
             icon: this.child,
           ),

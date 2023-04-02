@@ -7,7 +7,7 @@ import 'package:flutter/cupertino.dart' show showCupertinoModalPopup;
 
 Future<DateTime?> showFCDatePicker({
   required BuildContext context,
-  FCDateRange? dateRange,
+  FCDateTimeRange? dateTimeRange,
   required Widget Function(BuildContext) cupertinoModalBuilder,
   Locale? materialDialogLocale,
   Color? materialDialogBackgroundColor,
@@ -20,6 +20,9 @@ Future<DateTime?> showFCDatePicker({
   final IFCSize size = config.size;
 
   final Color methodBarrierColor = barrierColor ?? config.barrierColorPopUpModal;
+  final DateTime dateTimeMinimum = dateTimeRange?.dateTimeMinimum ?? size.dateTimeMinimum;
+  final DateTime dateTimeInitial = dateTimeRange?.dateTimeInitial ?? size.dateTimeInitial;
+  final DateTime dateTimeMaximum = dateTimeRange?.dateTimeMaximum ?? size.dateTimeMaximum;
 
   switch (platform) {
     case TargetPlatform.iOS:
@@ -34,12 +37,12 @@ Future<DateTime?> showFCDatePicker({
       return showDatePicker(
         context: context,
         useRootNavigator: false,
-        firstDate: dateRange?.dateMinimum ?? size.dateMinimum,
-        initialDate: dateRange?.dateInitial ?? size.dateInitial,
-        lastDate: dateRange?.dateMaximum ?? size.dateMaximum,
+        firstDate: dateTimeMinimum,
+        initialDate: dateTimeInitial,
+        lastDate: dateTimeMaximum,
         locale: materialDialogLocale,
         builder: (BuildContext context, Widget? materialDialog) => FCDatePicker(
-          dateRange: dateRange,
+          dateTimeRange: dateTimeRange,
           materialDialog: materialDialog,
           materialDialogBackgroundColor: materialDialogBackgroundColor,
           materialDialogColor: materialDialogColor,
@@ -51,12 +54,12 @@ Future<DateTime?> showFCDatePicker({
       return showDatePicker(
         context: context,
         useRootNavigator: false,
-        firstDate: dateRange?.dateMinimum ?? size.dateMinimum,
-        initialDate: dateRange?.dateInitial ?? size.dateInitial,
-        lastDate: dateRange?.dateMaximum ?? size.dateMaximum,
+        firstDate: dateTimeMinimum,
+        initialDate: dateTimeInitial,
+        lastDate: dateTimeMaximum,
         locale: materialDialogLocale,
         builder: (BuildContext context, Widget? materialDialog) => FCDatePicker(
-          dateRange: dateRange,
+          dateTimeRange: dateTimeRange,
           materialDialog: materialDialog,
           materialDialogBackgroundColor: materialDialogBackgroundColor,
           materialDialogColor: materialDialogColor,
@@ -68,7 +71,7 @@ Future<DateTime?> showFCDatePicker({
 
 Future<dynamic> showFCTimePicker({
   required BuildContext context,
-  TimeOfDay? initialTime,
+  FCTimeOfDayRange? timeOfDayRange,
   required Widget Function(BuildContext) cupertinoModalBuilder,
   Color? materialDialogBackgroundColor,
   Color? materialDialogColor,
@@ -80,6 +83,8 @@ Future<dynamic> showFCTimePicker({
   final IFCSize size = config.size;
 
   final Color methodBarrierColor = barrierColor ?? config.barrierColorPopUpModal;
+  final TimeOfDay timeOfDayInitial =
+      timeOfDayRange?.timeOfDayInitial ?? size.timeOfDayInitial;
 
   switch (platform) {
     case TargetPlatform.iOS:
@@ -94,9 +99,9 @@ Future<dynamic> showFCTimePicker({
       return showTimePicker(
         context: context,
         useRootNavigator: false,
-        initialTime: initialTime ?? size.timeInitial,
+        initialTime: timeOfDayInitial,
         builder: (BuildContext context, Widget? materialDialog) => FCTimePicker(
-          initialTime: initialTime,
+          timeOfDayRange: timeOfDayRange,
           materialDialog: materialDialog,
           materialDialogBackgroundColor: materialDialogBackgroundColor,
           materialDialogColor: materialDialogColor,
@@ -108,9 +113,9 @@ Future<dynamic> showFCTimePicker({
       return showTimePicker(
         context: context,
         useRootNavigator: false,
-        initialTime: initialTime ?? size.timeInitial,
+        initialTime: timeOfDayInitial,
         builder: (BuildContext context, Widget? materialDialog) => FCTimePicker(
-          initialTime: initialTime,
+          timeOfDayRange: timeOfDayRange,
           materialDialog: materialDialog,
           materialDialogBackgroundColor: materialDialogBackgroundColor,
           materialDialogColor: materialDialogColor,

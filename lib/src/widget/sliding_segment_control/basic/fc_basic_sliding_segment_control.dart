@@ -19,7 +19,10 @@ class FCBasicSlidingSegmentControl<T> extends StatefulWidget {
     this.unselectedStyle,
     required this.selectedInternalColor,
     this.selectedStyle,
+    this.internalIconHeight,
     this.height,
+    this.prefixIcon,
+    this.postfixIcon,
     this.isRequired = false,
     this.isDisabled = false,
     this.disabledColor,
@@ -35,7 +38,10 @@ class FCBasicSlidingSegmentControl<T> extends StatefulWidget {
   final TextStyle? unselectedStyle;
   final Color selectedInternalColor;
   final TextStyle? selectedStyle;
+  final double? internalIconHeight;
   final double? height;
+  final IconData? prefixIcon;
+  final IconData? postfixIcon;
   final bool isRequired;
   final bool isDisabled;
   final Color? disabledColor;
@@ -107,7 +113,7 @@ class _FCBasicSlidingSegmentControlState<T>
   Color _internalColor({
     required bool isSelected,
   }) {
-    if (this._isValidationError) return this._theme.whiteAlways;
+    if (this._isValidationError) return this._theme.danger;
 
     if (isSelected) return this.widget.selectedInternalColor;
 
@@ -168,6 +174,8 @@ class _FCBasicSlidingSegmentControlState<T>
             this.widget.items.map((FCSlidingSegmentControlItem item) {
               final bool isSelected = this.widget.value == item.value;
               final Color internalColor = this._internalColor(isSelected: isSelected);
+              final double internalIconHeight =
+                  this.widget.internalIconHeight ?? size.heightIconDefault;
               final TextStyle unselectedStyle = this.widget.unselectedStyle?.copyWith(
                         color: this.widget.unselectedStyle?.color ?? internalColor,
                       ) ??
@@ -189,11 +197,16 @@ class _FCBasicSlidingSegmentControlState<T>
                   child: FCButtonRowChild(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
-                    gradient: null,
+                    internalIconColor: internalColor,
+                    internalIconGradient: null,
+                    internalIconHeight: internalIconHeight,
                     prefix: item.prefix,
+                    prefixIcon: item.prefixIcon,
+                    titleGradient: null,
                     title: item.title,
                     textAlign: TextAlign.center,
                     titleStyle: titleStyle,
+                    postfixIcon: item.postfixIcon,
                     postfix: item.postfix,
                   ),
                 ),

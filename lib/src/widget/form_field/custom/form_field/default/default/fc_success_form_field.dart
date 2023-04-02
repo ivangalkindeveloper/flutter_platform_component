@@ -9,7 +9,7 @@ class FCSuccessFormField extends StatelessWidget {
     this.controller,
     this.focusNode,
     //
-    this.internalColor,
+    this.internalIconColor,
     this.internalIconHeight,
     this.height,
     this.borderRadius,
@@ -83,7 +83,7 @@ class FCSuccessFormField extends StatelessWidget {
   final TextEditingController? controller;
   final FocusNode? focusNode;
   //
-  final Color? internalColor;
+  final Color? internalIconColor;
   final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
@@ -170,7 +170,7 @@ class FCSuccessFormField extends StatelessWidget {
       unfocusedBackgroundColor: theme.backgroundComponent,
       focusedBackgroundColor: theme.backgroundScaffold,
       focusedColor: theme.success,
-      internalColor: this.internalColor,
+      internalIconColor: this.internalIconColor,
       internalIconHeight: this.internalIconHeight,
       height: this.height,
       borderRadius: this.borderRadius,

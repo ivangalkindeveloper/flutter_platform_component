@@ -9,7 +9,7 @@ class FCBasicGradientButton extends FCPlatformWidget {
   FCBasicGradientButton({
     super.key,
     Gradient? backgroundGradient,
-    required Color splashColor,
+    Color? splashColor,
     double? height,
     BorderRadius? borderRadius,
     Gradient? borderGradient,
@@ -69,7 +69,7 @@ class _FCBasicGradientButtonCupertino extends StatelessWidget {
 
   final Gradient? backgroundGradient;
   final Gradient? borderGradient;
-  final Color splashColor;
+  final Color? splashColor;
   final double? height;
   final BorderRadius? borderRadius;
   final double? borderWidth;
@@ -164,7 +164,7 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
 
   final Gradient? backgroundGradient;
   final Gradient? borderGradient;
-  final Color splashColor;
+  final Color? splashColor;
   final double? height;
   final BorderRadius? borderRadius;
   final double? borderWidth;
@@ -177,8 +177,10 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
+    final Color splashColor = this.splashColor ?? theme.grey;
     final double height = this.height ?? size.heightButton;
     final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusButton;
     final double borderWidth = this.borderWidth ?? config.borderWidthButton;
@@ -203,7 +205,7 @@ class _FCBasicGradientButtonMaterial extends StatelessWidget {
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
               elevation: 0,
-              foregroundColor: this.splashColor,
+              foregroundColor: splashColor,
               backgroundColor: Colors.transparent,
               shadowColor: Colors.transparent,
               fixedSize: Size.fromHeight(height),

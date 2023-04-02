@@ -5,6 +5,7 @@ import 'package:flutter/widgets.dart';
 class FCBlackAlwaysExpandedModal extends StatelessWidget {
   const FCBlackAlwaysExpandedModal({
     super.key,
+    // App Bar
     this.appBarBackgroundColor,
     this.appBarPrefix,
     this.appBarCupertinoLocale,
@@ -15,7 +16,10 @@ class FCBlackAlwaysExpandedModal extends StatelessWidget {
     this.appBarProstfix,
     this.appBarBottomPadding,
     this.appBarBottom,
+    // Scaffold
     this.backgroundColor,
+    this.resizeToAvoidBottomInset = true,
+    this.extendBodyBehindAppBar = false,
     required this.body,
   });
 
@@ -32,6 +36,8 @@ class FCBlackAlwaysExpandedModal extends StatelessWidget {
   final PreferredSizeWidget? appBarBottom;
   // Scaffold
   final Color? backgroundColor;
+  final bool resizeToAvoidBottomInset;
+  final bool extendBodyBehindAppBar;
   final Widget body;
 
   @override
@@ -39,27 +45,32 @@ class FCBlackAlwaysExpandedModal extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCTheme theme = config.theme;
 
-    return ClipRRect(
-      borderRadius: BorderRadius.only(
-        topLeft: config.borderRadiusModal.topLeft,
-        topRight: config.borderRadiusModal.topRight,
-      ),
-      child: FCScaffold(
-        appBar: FCWhiteAlwaysExpandedModalAppBar(
-          context: context,
-          backgroundColor: this.appBarBackgroundColor ?? theme.blackAlways,
-          prefix: this.appBarPrefix,
-          cupertinoLocale: this.appBarCupertinoLocale,
-          onPressedBack: this.onPressedBack,
-          title: this.appBarTitle,
-          titleStyle: this.appBarTitleStyle,
-          middle: this.appBarMiddle,
-          postfix: this.appBarProstfix,
-          bottomPadding: this.appBarBottomPadding,
-          bottom: this.appBarBottom,
+    return SafeArea(
+      bottom: false,
+      child: ClipRRect(
+        borderRadius: BorderRadius.only(
+          topLeft: config.borderRadiusModal.topLeft,
+          topRight: config.borderRadiusModal.topRight,
         ),
-        backgroundColor: this.backgroundColor ?? theme.blackAlways,
-        body: this.body,
+        child: FCScaffold(
+          backgroundColor: this.backgroundColor ?? theme.blackAlways,
+          resizeToAvoidBottomInset: this.resizeToAvoidBottomInset,
+          extendBodyBehindAppBar: this.extendBodyBehindAppBar,
+          appBar: FCWhiteAlwaysExpandedModalAppBar(
+            context: context,
+            backgroundColor: this.appBarBackgroundColor ?? theme.blackAlways,
+            prefix: this.appBarPrefix,
+            cupertinoLocale: this.appBarCupertinoLocale,
+            onPressedBack: this.onPressedBack,
+            title: this.appBarTitle,
+            titleStyle: this.appBarTitleStyle,
+            middle: this.appBarMiddle,
+            postfix: this.appBarProstfix,
+            bottomPadding: this.appBarBottomPadding,
+            bottom: this.appBarBottom,
+          ),
+          body: this.body,
+        ),
       ),
     );
   }

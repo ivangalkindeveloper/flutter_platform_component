@@ -9,7 +9,7 @@ class FCSecondaryLightFormField extends StatelessWidget {
     this.controller,
     this.focusNode,
     //
-    this.internalColor,
+    this.internalIconColor,
     this.internalIconHeight,
     this.height,
     this.borderRadius,
@@ -83,7 +83,7 @@ class FCSecondaryLightFormField extends StatelessWidget {
   final TextEditingController? controller;
   final FocusNode? focusNode;
   //
-  final Color? internalColor;
+  final Color? internalIconColor;
   final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
@@ -170,7 +170,7 @@ class FCSecondaryLightFormField extends StatelessWidget {
       unfocusedBackgroundColor: theme.backgroundComponent,
       focusedBackgroundColor: theme.backgroundScaffold,
       focusedColor: theme.secondaryLight,
-      internalColor: this.internalColor,
+      internalIconColor: this.internalIconColor,
       internalIconHeight: this.internalIconHeight,
       height: this.height,
       borderRadius: this.borderRadius,

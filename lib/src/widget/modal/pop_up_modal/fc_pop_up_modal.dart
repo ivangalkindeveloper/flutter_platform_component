@@ -28,39 +28,43 @@ class FCPopUpModal extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
-    return ClipRRect(
-      borderRadius: BorderRadius.only(
-        topLeft: config.borderRadiusModal.topLeft,
-        topRight: config.borderRadiusModal.topRight,
-      ),
-      child: Container(
-        color: this.backgroundColor ?? theme.backgroundScaffold,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            if (this.isBar)
-              Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  SizedBox(height: size.s16 / 2),
-                  Container(
-                    height: this.barHeight ?? size.s16 / 4,
-                    width: this.barWidth ?? size.s32,
-                    decoration: BoxDecoration(
-                      color: theme.greyLight,
-                      borderRadius: BorderRadius.circular(this.barHeight ?? size.s16 / 2),
+    return SafeArea(
+      bottom: false,
+      child: ClipRRect(
+        borderRadius: BorderRadius.only(
+          topLeft: config.borderRadiusModal.topLeft,
+          topRight: config.borderRadiusModal.topRight,
+        ),
+        child: Container(
+          color: this.backgroundColor ?? theme.backgroundScaffold,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              if (this.isBar)
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    SizedBox(height: size.s16 / 2),
+                    Container(
+                      height: this.barHeight ?? size.s16 / 4,
+                      width: this.barWidth ?? size.s32,
+                      decoration: BoxDecoration(
+                        color: theme.greyLight,
+                        borderRadius:
+                            BorderRadius.circular(this.barHeight ?? size.s16 / 2),
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
+              SafeArea(
+                top: false,
+                child: Padding(
+                  padding: this.padding ?? EdgeInsets.all(size.s16),
+                  child: this.child,
+                ),
               ),
-            SafeArea(
-              top: false,
-              child: Padding(
-                padding: this.padding ?? EdgeInsets.all(size.s16),
-                child: this.child,
-              ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

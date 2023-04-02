@@ -9,15 +9,19 @@ class FCExpandedModalCloseButton extends FCPlatformWidget {
   FCExpandedModalCloseButton({
     super.key,
     required String cupertinoLocale,
+    Color? splashColor,
     required VoidCallback onPressed,
   }) : super(
           cupertino: _FCExpandedModalCloseButtonCupertino(
             key: key,
             cupertinoLocale: cupertinoLocale,
+            splashColor: splashColor,
             onPressed: onPressed,
           ),
           material: _FCExpandedModalCloseButtonMaterial(
             key: key,
+            cupertinoLocale: cupertinoLocale,
+            splashColor: splashColor,
             onPressed: onPressed,
           ),
         );
@@ -27,10 +31,12 @@ class _FCExpandedModalCloseButtonCupertino extends StatelessWidget {
   const _FCExpandedModalCloseButtonCupertino({
     super.key,
     required this.cupertinoLocale,
+    required this.splashColor,
     required this.onPressed,
   });
 
   final String cupertinoLocale;
+  final Color? splashColor;
   final VoidCallback onPressed;
 
   @override
@@ -54,21 +60,29 @@ class _FCExpandedModalCloseButtonCupertino extends StatelessWidget {
 class _FCExpandedModalCloseButtonMaterial extends StatelessWidget {
   const _FCExpandedModalCloseButtonMaterial({
     super.key,
+    required this.cupertinoLocale,
+    required this.splashColor,
     required this.onPressed,
   });
 
+  final String cupertinoLocale;
+  final Color? splashColor;
   final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
+
+    final Color splashColor = this.splashColor ?? theme.greyLight;
 
     return SizedBox(
       height: size.heightIconDefault,
       width: size.heightIconDefault,
       child: IconButton(
-        iconSize: size.heightIconLarge,
+        splashColor: splashColor,
+        iconSize: size.heightIconDefault,
         onPressed: this.onPressed,
         padding: EdgeInsets.zero,
         icon: FCIcon.grey(

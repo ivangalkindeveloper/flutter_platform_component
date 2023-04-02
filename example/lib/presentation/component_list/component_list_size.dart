@@ -998,21 +998,22 @@ class ConfigListSize extends StatelessWidget {
           ],
         ),
         SizedBox(height: size.s16 / 2),
-        // DateTime
+        // Picker
+        // Picker / DateTime
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
               child: FCText.regular16Black(
                 context: context,
-                text: "Date Minimum:",
+                text: "DateTime Minimum:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
               child: FCText.medium18Black(
                 context: context,
-                text: size.dateMinimum.toString(),
+                text: size.dateTimeMinimum.toString(),
               ),
             ),
           ],
@@ -1024,14 +1025,14 @@ class ConfigListSize extends StatelessWidget {
             Flexible(
               child: FCText.regular16Black(
                 context: context,
-                text: "Date Initial:",
+                text: "DateTime Initial:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
               child: FCText.medium18Black(
                 context: context,
-                text: size.dateInitial.toString(),
+                text: size.dateTimeInitial.toString(),
               ),
             ),
           ],
@@ -1043,14 +1044,72 @@ class ConfigListSize extends StatelessWidget {
             Flexible(
               child: FCText.regular16Black(
                 context: context,
-                text: "Date Maximum:",
+                text: "DateTime Maximum:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
               child: FCText.medium18Black(
                 context: context,
-                text: size.dateMaximum.toString(),
+                text: size.dateTimeMaximum.toString(),
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        // Picker / TimeOfDay
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "TimeOfDay Minimum:",
+              ),
+            ),
+            SizedBox(width: size.s16),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.timeOfDayMinimum.toString(),
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "TimeOfDay Initial:",
+              ),
+            ),
+            SizedBox(width: size.s16),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.timeOfDayInitial.toString(),
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: size.s16 / 4),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Flexible(
+              child: FCText.regular16Black(
+                context: context,
+                text: "TimeOfDay Maximum:",
+              ),
+            ),
+            SizedBox(width: size.s16),
+            Flexible(
+              child: FCText.medium18Black(
+                context: context,
+                text: size.timeOfDayMaximum.toString(),
               ),
             ),
           ],

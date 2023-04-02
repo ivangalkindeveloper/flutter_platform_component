@@ -12,10 +12,11 @@ class FCPlatformWidget extends StatelessWidget {
   final Widget material;
 
   @override
-  Widget build(BuildContext context) =>
-      FCPlatform.decomposeFromContext<Widget, Widget, Widget>(
-        context: context,
-        cupertino: this.cupertino,
-        material: this.material,
-      );
+  Widget build(BuildContext context) {
+    return FCPlatform.decomposeFromContext<Widget, Widget, Widget>(
+      context: context,
+      cupertino: this.cupertino,
+      material: this.material,
+    );
+  }
 }

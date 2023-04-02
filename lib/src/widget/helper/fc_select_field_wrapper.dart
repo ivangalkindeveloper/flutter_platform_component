@@ -7,7 +7,7 @@ import 'package:flutter/cupertino.dart' show CupertinoButton;
 class FCSelectFieldWrapper extends FCPlatformWidget {
   FCSelectFieldWrapper({
     required BuildContext context,
-    required Color splashColor,
+    required Color? splashColor,
     required BorderRadius borderRadius,
     required VoidCallback onPressed,
     required Widget child,

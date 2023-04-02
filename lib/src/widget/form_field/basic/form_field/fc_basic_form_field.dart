@@ -13,7 +13,7 @@ class FCBasicFormField extends StatefulWidget {
     required this.unfocusedBackgroundColor,
     required this.focusedBackgroundColor,
     required this.focusedColor,
-    this.internalColor,
+    this.internalIconColor,
     this.internalIconHeight,
     this.height,
     this.borderRadius,
@@ -90,7 +90,7 @@ class FCBasicFormField extends StatefulWidget {
   final Color unfocusedBackgroundColor;
   final Color focusedBackgroundColor;
   final Color focusedColor;
-  final Color? internalColor;
+  final Color? internalIconColor;
   final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
@@ -327,13 +327,13 @@ class _FCBasicFormFieldState extends State<FCBasicFormField>
     return this.widget.labelColor ?? this._theme.grey;
   }
 
-  Color _internalColor() {
+  Color _internalIconColor() {
     if (this._isValidationError || this._isAutoValidationError) return this._theme.danger;
 
     if (this._focusNode.hasPrimaryFocus)
-      return this.widget.internalColor ?? this.widget.focusedColor;
+      return this.widget.internalIconColor ?? this.widget.focusedColor;
 
-    return this.widget.internalColor ?? this._theme.grey;
+    return this.widget.internalIconColor ?? this._theme.grey;
   }
 
   String? _validator(String? value) {
@@ -379,7 +379,6 @@ class _FCBasicFormFieldState extends State<FCBasicFormField>
   @override
   Widget build(BuildContext context) {
     final Color backgroundColor = this._backgroundColor();
-    final Color internalColor = this._internalColor();
     final Color labelColor = this._labelColor();
     final double height = this.widget.height ?? this._size.heightFormField;
     final double paddingTop = this.widget.padding?.top ?? this._size.s16 / 4;
@@ -390,6 +389,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField>
         this.widget.borderRadius ?? this._config.borderRadiusField;
     final Color borderColor = this._borderColor();
     final double borderWidth = this.widget.borderWidth ?? this._config.borderWidthField;
+    final Color internalIconColor = this._internalIconColor();
     final double internalIconHeight =
         this.widget.internalIconHeight ?? this._size.heightIconDefault;
     final EdgeInsets internalPadding =
@@ -464,7 +464,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField>
                             padding: EdgeInsets.only(right: this._size.s16),
                             child: Icon(
                               this.widget.prefixIcon,
-                              color: internalColor,
+                              color: internalIconColor,
                               size: internalIconHeight,
                             ),
                           ),
@@ -541,7 +541,7 @@ class _FCBasicFormFieldState extends State<FCBasicFormField>
                             padding: EdgeInsets.only(left: this._size.s16),
                             child: Icon(
                               this.widget.postfixIcon,
-                              color: internalColor,
+                              color: internalIconColor,
                               size: internalIconHeight,
                             ),
                           ),

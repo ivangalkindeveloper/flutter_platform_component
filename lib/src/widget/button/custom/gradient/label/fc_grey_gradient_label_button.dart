@@ -51,8 +51,12 @@ class FCGreyGradientLabelButton extends StatelessWidget {
         secondChild: FCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: theme.greyGradient,
+          internalIconColor: null,
+          internalIconGradient: null,
+          internalIconHeight: null,
           prefix: this.prefix,
+          prefixIcon: null,
+          titleGradient: theme.greyGradient,
           title: this.title,
           textAlign: TextAlign.center,
           titleStyle: this.titleStyle?.copyWith(
@@ -67,6 +71,7 @@ class FCGreyGradientLabelButton extends StatelessWidget {
                 fontFamily: textStyle.fontFamilyMedium,
                 package: textStyle.package,
               ),
+          postfixIcon: null,
           postfix: this.postfix,
         ),
       ),

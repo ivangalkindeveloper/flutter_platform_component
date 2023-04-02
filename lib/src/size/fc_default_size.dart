@@ -91,12 +91,14 @@ class FCDefaultSize implements IFCSize {
     required this.borderWidthSnackbarMaterial,
 
     // Picker
-    // Picker / Date
-    required this.dateMinimum,
-    required this.dateInitial,
-    required this.dateMaximum,
-    // Picker / Time
-    required this.timeInitial,
+    // Picker / DateTime
+    required this.dateTimeMinimum,
+    required this.dateTimeInitial,
+    required this.dateTimeMaximum,
+    // Picker / TimeOfDay
+    required this.timeOfDayMinimum,
+    required this.timeOfDayInitial,
+    required this.timeOfDayMaximum,
 
     // Duration
     // Duration / Default
@@ -255,16 +257,20 @@ class FCDefaultSize implements IFCSize {
   final double borderWidthSnackbarMaterial;
 
   // Picker
-  // Picker / Date
+  // Picker / DateTime
   @override
-  final DateTime dateMinimum;
+  final DateTime dateTimeMinimum;
   @override
-  final DateTime dateInitial;
+  final DateTime dateTimeInitial;
   @override
-  final DateTime dateMaximum;
-  // Picker / Time
+  final DateTime dateTimeMaximum;
+  // Picker / TimeOfDay
   @override
-  final TimeOfDay timeInitial;
+  final TimeOfDay timeOfDayMinimum;
+  @override
+  final TimeOfDay timeOfDayInitial;
+  @override
+  final TimeOfDay timeOfDayMaximum;
 
   // Duration
   // Duration / Animation
@@ -382,12 +388,14 @@ class FCDefaultSize implements IFCSize {
     double? borderWidthSnackbarMaterial,
 
     // Picker
-    // Picker / Date
-    DateTime? dateMinimum,
-    DateTime? dateInitial,
-    DateTime? dateMaximum,
-    // Picker / Time
-    TimeOfDay? timeInitial,
+    // Picker / DateTime
+    DateTime? dateTimeMinimum,
+    DateTime? dateTimeInitial,
+    DateTime? dateTimeMaximum,
+    // Picker / TimeOfDay
+    TimeOfDay? timeOfDayMinimum,
+    TimeOfDay? timeOfDayInitial,
+    TimeOfDay? timeOfDayMaximum,
 
     // Duration
     // Duration / Default
@@ -522,12 +530,14 @@ class FCDefaultSize implements IFCSize {
             borderWidthSnackbarMaterial ?? this.borderWidthSnackbarMaterial,
 
         // Picker
-        // Picker / Date
-        dateMinimum: dateMinimum ?? this.dateMinimum,
-        dateInitial: dateInitial ?? this.dateInitial,
-        dateMaximum: dateMaximum ?? this.dateMaximum,
-        // Picker / Time
-        timeInitial: timeInitial ?? this.timeInitial,
+        // Picker / DateTime
+        dateTimeMinimum: dateTimeMinimum ?? this.dateTimeMinimum,
+        dateTimeInitial: dateTimeInitial ?? this.dateTimeInitial,
+        dateTimeMaximum: dateTimeMaximum ?? this.dateTimeMaximum,
+        // Picker / TimeOfDay
+        timeOfDayMinimum: timeOfDayMinimum ?? this.timeOfDayMinimum,
+        timeOfDayInitial: timeOfDayInitial ?? this.timeOfDayInitial,
+        timeOfDayMaximum: timeOfDayMaximum ?? this.timeOfDayMaximum,
 
         // Duration
         // Duration / Default
@@ -643,12 +653,14 @@ class FCDefaultSize implements IFCSize {
         borderWidthSnackbarMaterial: 1,
 
         // Picker
-        // Picker / Date
-        dateMinimum: DateTime(1900, 1, 1, 12, 00),
-        dateInitial: DateTime(2000, 1, 1, 12, 00),
-        dateMaximum: DateTime(2100, 1, 1, 12, 00),
-        // Picker / Time
-        timeInitial: TimeOfDay(hour: 12, minute: 00),
+        // Picker / DateTime
+        dateTimeMinimum: DateTime(1900, 1, 1, 12, 00),
+        dateTimeInitial: DateTime(2000, 1, 1, 12, 00),
+        dateTimeMaximum: DateTime(2100, 1, 1, 12, 00),
+        // Picker / TimeOfDay
+        timeOfDayMinimum: TimeOfDay(hour: 00, minute: 00),
+        timeOfDayInitial: TimeOfDay(hour: 12, minute: 00),
+        timeOfDayMaximum: TimeOfDay(hour: 24, minute: 00),
 
         // Duration
         // Duration / Animation

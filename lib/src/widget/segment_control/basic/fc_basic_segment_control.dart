@@ -23,8 +23,9 @@ class FCBasicSegmentControl<T> extends StatefulWidget {
     required this.selectedBackgroundColor,
     required this.selectedBorderColor,
     required this.selectedInternalColor,
-    required this.selectedSplashColor,
+    this.selectedSplashColor,
     this.selectedStyle,
+    this.internalIconHeight,
     this.height,
     this.borderRadius,
     this.borderWidth,
@@ -47,8 +48,9 @@ class FCBasicSegmentControl<T> extends StatefulWidget {
   final Color selectedBackgroundColor;
   final Color selectedBorderColor;
   final Color selectedInternalColor;
-  final Color selectedSplashColor;
+  final Color? selectedSplashColor;
   final TextStyle? selectedStyle;
+  final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
   final double? borderWidth;
@@ -195,6 +197,7 @@ class _FCBasicSegmentControlState<T> extends State<FCBasicSegmentControl<T>> {
                     selectedInternalColor: this.widget.selectedInternalColor,
                     selectedSplashColor: this.widget.selectedSplashColor,
                     selectedStyle: this.widget.selectedStyle,
+                    internalIconHeight: this.widget.internalIconHeight,
                     height: height,
                     borderRadius: borderRadius,
                     borderWidth: this.widget.borderWidth,
@@ -240,6 +243,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required this.selectedInternalColor,
     required this.selectedSplashColor,
     required this.selectedStyle,
+    required this.internalIconHeight,
     required this.height,
     required this.borderRadius,
     required this.borderWidth,
@@ -261,8 +265,9 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   final Color selectedBackgroundColor;
   final Color selectedBorderColor;
   final Color selectedInternalColor;
-  final Color selectedSplashColor;
+  final Color? selectedSplashColor;
   final TextStyle? selectedStyle;
+  final double? internalIconHeight;
   final double height;
   final BorderRadius borderRadius;
   final double? borderWidth;
@@ -308,7 +313,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     return this.selectedBorderColor;
   }
 
-  Color _splashColor({
+  Color? _splashColor({
     required IFCTheme theme,
   }) {
     if (this.isSelected) return this.selectedSplashColor;
@@ -336,9 +341,10 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     final IFCSize size = config.size;
 
     final Color backgroundColor = this._backgroundColor(theme: theme);
-    final Color splashColor = this._splashColor(theme: theme);
+    final Color? splashColor = this._splashColor(theme: theme);
     final Color borderColor = this._borderColor(theme: theme);
     final Color internalColor = this._internalColor(theme: theme);
+    final double internalIconHeight = this.internalIconHeight ?? size.heightIconDefault;
     final double borderWidth = this.borderWidth ?? config.borderWidthSegmentControl;
     final double leftBorderWidth = index == 0 ? borderWidth : 0;
     final double rightBorderWidth = (index + 1) == this.length ? borderWidth : 0;
@@ -434,11 +440,16 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
               child: FCButtonRowChild(
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.center,
-                gradient: null,
+                internalIconColor: internalColor,
+                internalIconGradient: null,
+                internalIconHeight: internalIconHeight,
                 prefix: this.item.prefix,
+                prefixIcon: this.item.prefixIcon,
+                titleGradient: null,
                 title: this.item.title,
                 textAlign: TextAlign.center,
                 titleStyle: titleStyle,
+                postfixIcon: this.item.postfixIcon,
                 postfix: this.item.postfix,
               ),
             ),

@@ -1,5 +1,5 @@
-// 📱 Ready-made component base using ready-made abstractions for quick use
-// and decomposed by platform.
+// 📱 Ready-made component base using ready-made abstractions
+// for quick use and decomposed by platform.
 // Check README: https://github.com/ivangalkindeveloper/flutter_component/blob/master/README.md
 
 library flutter_component;
@@ -13,7 +13,16 @@ export 'src/config/fc_radial_gradient_config.dart';
 export 'src/config/fc_sweep_gradient_config.dart';
 
 // Data
-export 'src/data/fc_date_range.dart';
+export 'src/data/fc_action_modal_item.dart';
+export 'src/data/fc_bottom_navigation_bar_icon_item.dart';
+export 'src/data/fc_bottom_navigation_bar_item.dart';
+export 'src/data/fc_date_time_range.dart';
+export 'src/data/fc_dialog_item.dart';
+export 'src/data/fc_list_section_item.dart';
+export 'src/data/fc_segment_control_item.dart';
+export 'src/data/fc_sliding_segment_control_item.dart';
+export 'src/data/fc_time_of_day_range.dart';
+export 'src/data/fc_toggle_item.dart';
 
 // Enum
 export 'src/enum/fc_enum.dart';
@@ -603,7 +612,6 @@ export 'src/widget/common/fc_cupertino_navigator.dart';
 export 'src/widget/common/fc_text_input_handler_formatter.dart';
 
 // Dialog
-export 'src/widget/dialog/fc_dialog_item.dart';
 export 'src/widget/dialog/fc_dialog.dart';
 
 // Divider
@@ -744,9 +752,9 @@ export 'src/widget/form_field/custom/form_field/gradient/light/fc_success_light_
 export 'src/widget/form_field/custom/form_field/gradient/light/fc_warning_light_gradient_form_field.dart';
 // Field / Custom / Select Field
 // Field / Custom / Select Field / Default
-export 'src/widget/form_field/custom/select_field/default/fc_primary_select_field.dart';
+export 'src/widget/form_field/custom/select_field/default/fc_select_field.dart';
 // Field / Custom / Select Field / Gradient
-export 'src/widget/form_field/custom/select_field/gradient/fc_primary_gradient_select_field.dart';
+export 'src/widget/form_field/custom/select_field/gradient/fc_gradient_select_field.dart';
 
 // Global
 export 'src/widget/global/fc_dialog.dart';
@@ -905,12 +913,10 @@ export 'src/widget/keyboard/fc_keyboard.dart';
 // List / List Refresh
 export 'src/widget/list/list_refresh/fc_list_refresh.dart';
 // List / List Section
-export 'src/widget/list/list_section/fc_list_section_item.dart';
 export 'src/widget/list/list_section/fc_list_section.dart';
 
 // Modal
 // Modal / Action Modal
-export 'src/widget/modal/action_modal/fc_action_modal_item.dart';
 export 'src/widget/modal/action_modal/fc_action_modal.dart';
 // Modal / Expanded Modal
 // Modal / Expanded Modal / Blur
@@ -925,8 +931,6 @@ export 'src/widget/modal/pop_up_modal/fc_pop_up_modal.dart';
 // Navigation
 // Navigation / Bottom Navigation Bar
 export 'src/widget/navigation/bottom_navigation_bar/fc_blur_bottom_navigation_bar.dart';
-export 'src/widget/navigation/bottom_navigation_bar/fc_bottom_navigation_bar_icon_item.dart';
-export 'src/widget/navigation/bottom_navigation_bar/fc_bottom_navigation_bar_item.dart';
 export 'src/widget/navigation/bottom_navigation_bar/fc_bottom_navigation_bar.dart';
 // Navigation / Navigator
 export 'src/widget/navigation/navigator/fc_navigator.dart';
@@ -1041,7 +1045,6 @@ export 'src/widget/scrollbar/fc_scrollbar.dart';
 // Segment Control / Basic
 export 'src/widget/segment_control/basic/fc_basic_gradient_segment_control.dart';
 export 'src/widget/segment_control/basic/fc_basic_segment_control.dart';
-export 'src/widget/segment_control/basic/fc_segment_control_item.dart';
 // Segment Control / Custom
 // Segment Control / Custom / Default
 // Segment Control / Custom / Default / Dark
@@ -1184,7 +1187,6 @@ export 'src/widget/slider/custom/light/fc_warning_light_slider.dart';
 // Sliding Segment Control
 // Sliding Segment Control / Basic
 export 'src/widget/sliding_segment_control/basic/fc_basic_sliding_segment_control.dart';
-export 'src/widget/sliding_segment_control/basic/fc_sliding_segment_control_item.dart';
 // Sliding Segment Control / Custom
 // Sliding Segment Control / Custom / Dark
 export 'src/widget/sliding_segment_control/custom/dark/fc_accent_dark_sliding_segment_control.dart';
@@ -1217,7 +1219,7 @@ export 'src/widget/sliding_segment_control/custom/light/fc_secondary_light_slidi
 export 'src/widget/sliding_segment_control/custom/light/fc_success_light_sliding_segment_control.dart';
 export 'src/widget/sliding_segment_control/custom/light/fc_warning_light_sliding_segment_control.dart';
 
-// Sliver
+// Sliver Navigation App Bar
 export 'src/widget/sliver_navigation_app_bar/fc_sliver_navigation_app_bar.dart';
 
 // Snackbar
@@ -1351,7 +1353,6 @@ export 'src/widget/text/text_style/fc_text_style.dart';
 // Toggle / Basic
 export 'src/widget/toggle/basic/fc_basic_gradient_toggle.dart';
 export 'src/widget/toggle/basic/fc_basic_toggle.dart';
-export 'src/widget/toggle/basic/fc_toggle_item.dart';
 // Toogle / Custom
 // Toggle / Custom / Default
 // Toggle / Custom / Default / Dark

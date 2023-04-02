@@ -18,8 +18,9 @@ class FCBasicGradientToggle<T> extends StatefulWidget {
     this.unselectedStyle,
     required this.selectedBackgroundGradient,
     required this.selectedInternalGradient,
-    required this.selectedSplashColor,
+    this.selectedSplashColor,
     this.selectedStyle,
+    this.internalIconHeight,
     this.height,
     this.borderRadius,
     this.padding,
@@ -40,8 +41,9 @@ class FCBasicGradientToggle<T> extends StatefulWidget {
   final TextStyle? unselectedStyle;
   final Gradient selectedBackgroundGradient;
   final Gradient selectedInternalGradient;
-  final Color selectedSplashColor;
+  final Color? selectedSplashColor;
   final TextStyle? selectedStyle;
+  final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
   final EdgeInsets? padding;
@@ -188,6 +190,7 @@ class _FCBasicGradientToggleState<T> extends State<FCBasicGradientToggle<T>> {
                     selectedInternalGradient: this.widget.selectedInternalGradient,
                     selectedSplashColor: this.widget.selectedSplashColor,
                     selectedStyle: this.widget.selectedStyle,
+                    internalIconHeight: this.widget.internalIconHeight,
                     height: height,
                     borderRadius: borderRadius,
                     horizontalInterval: this.widget.horizontalInterval,
@@ -229,6 +232,7 @@ class _FCGradientToggleButton<T> extends StatelessWidget {
     required this.selectedInternalGradient,
     required this.selectedSplashColor,
     required this.selectedStyle,
+    required this.internalIconHeight,
     required this.height,
     required this.borderRadius,
     required this.horizontalInterval,
@@ -246,8 +250,9 @@ class _FCGradientToggleButton<T> extends StatelessWidget {
   final TextStyle? unselectedStyle;
   final Gradient selectedBackgroundGradient;
   final Gradient selectedInternalGradient;
-  final Color selectedSplashColor;
+  final Color? selectedSplashColor;
   final TextStyle? selectedStyle;
+  final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
   final double? horizontalInterval;
@@ -283,7 +288,7 @@ class _FCGradientToggleButton<T> extends StatelessWidget {
     return this.unselectedInternalGradient ?? theme.greyGradient;
   }
 
-  Color _splashColor({
+  Color? _splashColor({
     required IFCTheme theme,
   }) {
     if (this.isSelected) return this.selectedSplashColor;
@@ -304,8 +309,9 @@ class _FCGradientToggleButton<T> extends StatelessWidget {
       context: context,
       theme: theme,
     );
-    final Color splashColor = this._splashColor(theme: theme);
+    final Color? splashColor = this._splashColor(theme: theme);
     final Gradient internalGradient = this._internalGradient(theme: theme);
+    final double internalIconHeight = this.internalIconHeight ?? size.heightIconDefault;
     final TextStyle unselectedStyle = this.unselectedStyle?.copyWith(
               color: this.unselectedStyle?.color ?? internalGradient.colors.first,
               fontSize: this.unselectedStyle?.fontSize ?? size.s16,
@@ -333,7 +339,7 @@ class _FCGradientToggleButton<T> extends StatelessWidget {
     final TextStyle titleStyle = this.isSelected ? selectedStyle : unselectedStyle;
 
     return Padding(
-      padding: EdgeInsets.only(left: indent),
+      padding: EdgeInsets.only(right: indent),
       child: FCBasicGradientButton(
         backgroundGradient: backgroundGradient,
         splashColor: splashColor,
@@ -342,11 +348,16 @@ class _FCGradientToggleButton<T> extends StatelessWidget {
         child: FCButtonRowChild(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: internalGradient,
+          internalIconColor: null,
+          internalIconGradient: internalGradient,
+          internalIconHeight: internalIconHeight,
           prefix: this.item.prefix,
+          prefixIcon: this.item.prefixIcon,
+          titleGradient: null,
           title: this.item.title,
           textAlign: TextAlign.center,
           titleStyle: titleStyle,
+          postfixIcon: this.item.postfixIcon,
           postfix: this.item.postfix,
         ),
         onPressed: this.onPressed,

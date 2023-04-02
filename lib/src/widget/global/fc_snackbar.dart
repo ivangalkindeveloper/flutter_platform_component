@@ -22,19 +22,22 @@ ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showFCSnackBar({
   final IFCHaptic haptic = config.haptic;
   final IFCSize size = config.size;
 
-  final ScaffoldMessengerState messenger = ScaffoldMessenger.of(context);
-  messenger.hideCurrentSnackBar();
+  final ScaffoldMessengerState messengerState = ScaffoldMessenger.of(context);
+  final Duration methodDuration = duration ?? size.durationSnackbar;
+  final EdgeInsets methodPadding = padding ?? EdgeInsets.all(size.s16);
+
+  messengerState.hideCurrentSnackBar();
 
   haptic.selection();
-  return messenger.showSnackBar(
+  return messengerState.showSnackBar(
     SnackBar(
       elevation: 0,
       padding: EdgeInsets.zero,
       backgroundColor: Colors.transparent,
       dismissDirection: DismissDirection.none,
       behavior: SnackBarBehavior.floating,
-      duration: duration ?? size.durationSnackbar,
-      margin: padding ?? EdgeInsets.all(size.s16),
+      duration: methodDuration,
+      margin: methodPadding,
       content: child,
     ),
   );

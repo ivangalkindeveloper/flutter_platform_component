@@ -9,7 +9,7 @@ class FCBasicButton extends FCPlatformWidget {
   FCBasicButton({
     super.key,
     Color? backgroundColor,
-    required Color splashColor,
+    Color? splashColor,
     double? height,
     BorderRadius? borderRadius,
     Color? borderColor,
@@ -69,7 +69,7 @@ class _FCBasicButtonCupertino extends StatelessWidget {
 
   final Color? backgroundColor;
   final Color? borderColor;
-  final Color splashColor;
+  final Color? splashColor;
   final double? height;
   final BorderRadius? borderRadius;
   final double? borderWidth;
@@ -150,7 +150,7 @@ class _FCBasicButtonMaterial extends StatelessWidget {
 
   final Color? backgroundColor;
   final Color? borderColor;
-  final Color splashColor;
+  final Color? splashColor;
   final double? height;
   final BorderRadius? borderRadius;
   final double? borderWidth;
@@ -163,8 +163,10 @@ class _FCBasicButtonMaterial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
+    final Color splashColor = this.splashColor ?? theme.grey;
     final double height = this.height ?? size.heightButton;
     final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusButton;
     final double borderWidth = this.borderWidth ?? config.borderWidthButton;
@@ -196,7 +198,7 @@ class _FCBasicButtonMaterial extends StatelessWidget {
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
               elevation: 0,
-              foregroundColor: this.splashColor,
+              foregroundColor: splashColor,
               backgroundColor: Colors.transparent,
               shadowColor: Colors.transparent,
               fixedSize: Size.fromHeight(height),

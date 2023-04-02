@@ -49,7 +49,7 @@ class _SelectFieldScreenState extends State<SelectFieldScreen> {
               onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
             ),
             SizedBox(height: size.s16 * 2),
-            FCPrimarySelectField(
+            FCSelectField(
               title: this._title,
               labelText: "Label",
               onPressed: () => setState(() => this._title = "Validator"),

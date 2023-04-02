@@ -1,9 +1,9 @@
 abstract class IFCHaptic {
   void success();
 
-  void error();
-
   void warning();
+
+  void error();
 
   void selection();
 

@@ -15,10 +15,10 @@ import 'package:flutter/material.dart' show Theme, ColorScheme, TimeOfDay;
 class FCTimePicker extends FCPlatformWidget {
   FCTimePicker({
     super.key,
-    TimeOfDay? initialTime,
+    FCTimeOfDayRange? timeOfDayRange,
     double? cupertinoHeight,
     TextStyle? cupertinoStyle,
-    void Function(DateTime)? cupertinoOnChanged,
+    void Function(TimeOfDay)? cupertinoOnChanged,
     Widget? materialDialog,
     Color? materialDialogBackgroundColor,
     Color? materialDialogColor,
@@ -26,7 +26,7 @@ class FCTimePicker extends FCPlatformWidget {
   }) : super(
           cupertino: _FCDatePickerCupertino(
             key: key,
-            initialTime: initialTime,
+            timeOfDayRange: timeOfDayRange,
             cupertinoHeight: cupertinoHeight,
             cupertinoStyle: cupertinoStyle,
             cupertinoOnChanged: cupertinoOnChanged,
@@ -37,7 +37,7 @@ class FCTimePicker extends FCPlatformWidget {
           ),
           material: _FCDatePickerMaterial(
             key: key,
-            initialTime: initialTime,
+            timeOfDayRange: timeOfDayRange,
             cupertinoHeight: cupertinoHeight,
             cupertinoStyle: cupertinoStyle,
             cupertinoOnChanged: cupertinoOnChanged,
@@ -52,7 +52,7 @@ class FCTimePicker extends FCPlatformWidget {
 class _FCDatePickerCupertino extends StatelessWidget {
   const _FCDatePickerCupertino({
     super.key,
-    required this.initialTime,
+    required this.timeOfDayRange,
     required this.cupertinoHeight,
     required this.cupertinoStyle,
     required this.cupertinoOnChanged,
@@ -62,10 +62,10 @@ class _FCDatePickerCupertino extends StatelessWidget {
     required this.materialDialogBorderRadius,
   });
 
-  final TimeOfDay? initialTime;
+  final FCTimeOfDayRange? timeOfDayRange;
   final double? cupertinoHeight;
   final TextStyle? cupertinoStyle;
-  final void Function(DateTime)? cupertinoOnChanged;
+  final void Function(TimeOfDay)? cupertinoOnChanged;
   final Widget? materialDialog;
   final Color? materialDialogBackgroundColor;
   final Color? materialDialogColor;
@@ -83,12 +83,32 @@ class _FCDatePickerCupertino extends StatelessWidget {
         theme.cupertinoThemeData.textTheme.pickerTextStyle.copyWith(
           color: CupertinoDynamicColor.maybeResolve(theme.black, context),
         );
-    final DateTime initialDate = DateTime(
-      size.dateInitial.year,
-      size.dateInitial.month,
-      size.dateInitial.day,
-      this.initialTime?.hour ?? size.timeInitial.hour,
-      this.initialTime?.minute ?? size.timeInitial.minute,
+    final TimeOfDay timeOfDayMinimum =
+        timeOfDayRange?.timeOfDayMinimum ?? size.timeOfDayMinimum;
+    final TimeOfDay timeOfDayInitial =
+        timeOfDayRange?.timeOfDayInitial ?? size.timeOfDayInitial;
+    final TimeOfDay timeOfDayMaximum =
+        timeOfDayRange?.timeOfDayMaximum ?? size.timeOfDayMaximum;
+    final DateTime dateTimeMinimum = DateTime(
+      size.dateTimeInitial.year,
+      size.dateTimeInitial.month,
+      size.dateTimeInitial.day,
+      timeOfDayMinimum.hour,
+      timeOfDayMinimum.minute,
+    );
+    final DateTime dateTimeInitial = DateTime(
+      size.dateTimeInitial.year,
+      size.dateTimeInitial.month,
+      size.dateTimeInitial.day,
+      timeOfDayInitial.hour,
+      timeOfDayInitial.minute,
+    );
+    final DateTime dateTimeMaximum = DateTime(
+      size.dateTimeInitial.year,
+      size.dateTimeInitial.month,
+      size.dateTimeInitial.day,
+      timeOfDayMaximum.hour,
+      timeOfDayMaximum.minute,
     );
 
     return SizedBox(
@@ -102,10 +122,13 @@ class _FCDatePickerCupertino extends StatelessWidget {
         child: CupertinoDatePicker(
           mode: CupertinoDatePickerMode.time,
           use24hFormat: true,
-          minimumDate: size.dateMinimum,
-          initialDateTime: initialDate,
-          maximumDate: size.dateMaximum,
-          onDateTimeChanged: this.cupertinoOnChanged ?? (DateTime value) {},
+          minimumDate: dateTimeMinimum,
+          initialDateTime: dateTimeInitial,
+          maximumDate: dateTimeMaximum,
+          onDateTimeChanged: (DateTime value) => this.cupertinoOnChanged?.call(TimeOfDay(
+                hour: value.hour,
+                minute: value.minute,
+              )),
         ),
       ),
     );
@@ -115,7 +138,7 @@ class _FCDatePickerCupertino extends StatelessWidget {
 class _FCDatePickerMaterial extends StatelessWidget {
   const _FCDatePickerMaterial({
     super.key,
-    required this.initialTime,
+    required this.timeOfDayRange,
     required this.cupertinoHeight,
     required this.cupertinoStyle,
     required this.cupertinoOnChanged,
@@ -125,10 +148,10 @@ class _FCDatePickerMaterial extends StatelessWidget {
     required this.materialDialogBorderRadius,
   });
 
-  final TimeOfDay? initialTime;
+  final FCTimeOfDayRange? timeOfDayRange;
   final double? cupertinoHeight;
   final TextStyle? cupertinoStyle;
-  final void Function(DateTime)? cupertinoOnChanged;
+  final void Function(TimeOfDay)? cupertinoOnChanged;
   final Widget? materialDialog;
   final Color? materialDialogBackgroundColor;
   final Color? materialDialogColor;
@@ -144,6 +167,7 @@ class _FCDatePickerMaterial extends StatelessWidget {
     final Color color = this.materialDialogColor ?? theme.primary;
     final BorderRadius borderRadius =
         this.materialDialogBorderRadius ?? config.borderRadiusDialog;
+    final Widget materialDialog = this.materialDialog ?? const SizedBox();
 
     return Theme(
       data: theme.materialThemeData.copyWith(
@@ -157,7 +181,7 @@ class _FCDatePickerMaterial extends StatelessWidget {
           ),
         ),
       ),
-      child: this.materialDialog ?? const SizedBox(),
+      child: materialDialog,
     );
   }
 }

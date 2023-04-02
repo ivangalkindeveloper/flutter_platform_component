@@ -43,10 +43,6 @@ class _ListSectionScreenState extends State<ListSectionScreen> {
                 ),
                 title: "First tile",
                 description: "Description of first tile",
-                postfix: FCIcon.grey(
-                  context: context,
-                  icon: Icons.add,
-                ),
                 onPressed: () {},
               ),
               FCListSectionItem(

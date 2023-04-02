@@ -2,10 +2,10 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCPrimarySelectField extends StatelessWidget {
-  const FCPrimarySelectField({
+class FCSelectField extends StatelessWidget {
+  const FCSelectField({
     super.key,
-    this.internalColor,
+    this.internalIconColor,
     this.internalIconHeight,
     this.height,
     this.borderRadius,
@@ -42,7 +42,7 @@ class FCPrimarySelectField extends StatelessWidget {
     this.disabledColor,
   });
 
-  final Color? internalColor;
+  final Color? internalIconColor;
   final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
@@ -85,8 +85,8 @@ class FCPrimarySelectField extends StatelessWidget {
 
     return FCBasicSelectField(
       backgroundColor: theme.backgroundComponent,
-      splashColor: theme.primary,
-      internalColor: this.internalColor,
+      splashColor: theme.grey,
+      internalIconColor: this.internalIconColor,
       internalIconHeight: this.internalIconHeight,
       height: this.height,
       borderRadius: this.borderRadius,

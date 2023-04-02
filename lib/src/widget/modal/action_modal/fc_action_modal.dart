@@ -11,6 +11,7 @@ class FCActionModal extends FCPlatformWidget {
     super.key,
     Color? backgroundColor,
     Color? color,
+    Color? splashColor,
     String? title,
     TextStyle? titleStyle,
     String? description,
@@ -24,6 +25,7 @@ class FCActionModal extends FCPlatformWidget {
             key: key,
             backgroundColor: backgroundColor,
             color: color,
+            splashColor: splashColor,
             title: title,
             titleStyle: titleStyle,
             description: description,
@@ -37,6 +39,7 @@ class FCActionModal extends FCPlatformWidget {
             key: key,
             backgroundColor: backgroundColor,
             color: color,
+            splashColor: splashColor,
             title: title,
             titleStyle: titleStyle,
             description: description,
@@ -54,6 +57,7 @@ class _FCActionModalCupertino extends StatelessWidget {
     super.key,
     required this.backgroundColor,
     required this.color,
+    required this.splashColor,
     required this.title,
     required this.titleStyle,
     required this.description,
@@ -66,6 +70,7 @@ class _FCActionModalCupertino extends StatelessWidget {
 
   final Color? backgroundColor;
   final Color? color;
+  final Color? splashColor;
   final String? title;
   final TextStyle? titleStyle;
   final String? description;
@@ -170,6 +175,7 @@ class _FCActionModalMaterial extends StatelessWidget {
     super.key,
     required this.backgroundColor,
     required this.color,
+    required this.splashColor,
     required this.title,
     required this.titleStyle,
     required this.description,
@@ -182,6 +188,7 @@ class _FCActionModalMaterial extends StatelessWidget {
 
   final Color? backgroundColor;
   final Color? color;
+  final Color? splashColor;
   final String? title;
   final TextStyle? titleStyle;
   final String? description;
@@ -249,14 +256,16 @@ class _FCActionModalMaterial extends StatelessWidget {
     required IFCTheme theme,
     required IFCSize size,
     required Color backgroundColor,
+    required Color splashColor,
     required FCActionModalItem item,
     required TextStyle itemStyle,
   }) =>
       ListTile(
         tileColor: backgroundColor,
+        splashColor: splashColor,
         contentPadding: EdgeInsets.symmetric(
           horizontal: size.s16,
-          vertical: size.s10 / 4,
+          vertical: 0,
         ),
         leading: item.prefix,
         title: Text(
@@ -289,6 +298,7 @@ class _FCActionModalMaterial extends StatelessWidget {
     final IFCSize size = config.size;
 
     final Color backgroundColor = this.backgroundColor ?? theme.backgroundComponent;
+    final Color splashColor = this.splashColor ?? theme.greyLight;
     final TextStyle titleStyle = this.titleStyle?.copyWith(
               color: this.titleStyle?.color ?? theme.black,
               fontSize: this.titleStyle?.fontSize ?? size.s16,
@@ -350,6 +360,7 @@ class _FCActionModalMaterial extends StatelessWidget {
               theme: theme,
               size: size,
               backgroundColor: backgroundColor,
+              splashColor: splashColor,
               item: item,
               itemStyle: itemStyle,
             ),
@@ -360,6 +371,7 @@ class _FCActionModalMaterial extends StatelessWidget {
               theme: theme,
               size: size,
               backgroundColor: backgroundColor,
+              splashColor: splashColor,
               item: cancelItem!,
               itemStyle: itemStyle,
             ),

@@ -111,8 +111,10 @@ class _FCBasicIconButtonMaterial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
+    final Color splashColor = this.splashColor ?? theme.greyLight;
     final double height = this.height ?? size.heightIconDefault;
     final VoidCallback onPressed = this.isDisabled ? () {} : this.onPressed;
 
@@ -123,8 +125,8 @@ class _FCBasicIconButtonMaterial extends StatelessWidget {
         alignment: Alignment.center,
         children: [
           IconButton(
-            splashColor: this.splashColor,
-            iconSize: size.heightIconLarge,
+            splashColor: splashColor,
+            iconSize: size.heightIconDefault,
             onPressed: onPressed,
             padding: EdgeInsets.zero,
             icon: this.icon,

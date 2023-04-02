@@ -172,6 +172,11 @@ class ComponentListWidget extends StatelessWidget {
         ),
         SizedBox(height: size.s16),
         FCPrimaryButton(
+          title: "Divider",
+          onPressed: () => Navigator.pushNamed(context, NavigationService.divider_screen),
+        ),
+        SizedBox(height: size.s16),
+        FCPrimaryButton(
           title: "Form Field",
           onPressed: () =>
               Navigator.pushNamed(context, NavigationService.form_field_screen),

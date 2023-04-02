@@ -9,7 +9,7 @@ class FCBasicGradientSelectCard extends FCPlatformWidget {
   FCBasicGradientSelectCard({
     super.key,
     required Gradient backgroundGradient,
-    required Color splashColor,
+    Color? splashColor,
     BoxConstraints? constraints,
     BorderRadius? borderRadius,
     Gradient? borderGradient,
@@ -23,6 +23,7 @@ class FCBasicGradientSelectCard extends FCPlatformWidget {
           cupertino: _FCBasicGradientSelectCardCupertino(
             key: key,
             backgroundGradient: backgroundGradient,
+            splashColor: splashColor,
             constraints: constraints,
             borderRadius: borderRadius,
             borderGradient: borderGradient,
@@ -54,6 +55,7 @@ class _FCBasicGradientSelectCardCupertino extends StatelessWidget {
   const _FCBasicGradientSelectCardCupertino({
     super.key,
     required this.backgroundGradient,
+    required this.splashColor,
     required this.constraints,
     required this.borderRadius,
     required this.borderGradient,
@@ -66,6 +68,7 @@ class _FCBasicGradientSelectCardCupertino extends StatelessWidget {
   });
 
   final Gradient backgroundGradient;
+  final Color? splashColor;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Gradient? borderGradient;
@@ -131,7 +134,7 @@ class _FCBasicGradientSelectCardMaterial extends StatelessWidget {
   });
 
   final Gradient backgroundGradient;
-  final Color splashColor;
+  final Color? splashColor;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Gradient? borderGradient;
@@ -145,7 +148,9 @@ class _FCBasicGradientSelectCardMaterial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
 
+    final Color splashColor = this.splashColor ?? theme.grey;
     final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusCard;
     final VoidCallback onPressed = this.isDisabled ? () {} : this.onPressed;
 
@@ -157,24 +162,20 @@ class _FCBasicGradientSelectCardMaterial extends StatelessWidget {
           borderRadius: this.borderRadius,
           borderGradient: this.borderGradient,
           borderWidth: this.borderWidth,
-          padding: this.padding,
-          child: this.child,
-        ),
-        Positioned.fill(
+          padding: EdgeInsets.zero,
           child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              elevation: 0,
-              foregroundColor: this.splashColor,
-              backgroundColor: Colors.transparent,
-              shadowColor: Colors.transparent,
-              padding: EdgeInsets.zero,
-              shape: RoundedRectangleBorder(
-                borderRadius: borderRadius,
+              style: ElevatedButton.styleFrom(
+                elevation: 0,
+                foregroundColor: splashColor,
+                backgroundColor: Colors.transparent,
+                shadowColor: Colors.transparent,
+                padding: this.padding,
+                shape: RoundedRectangleBorder(
+                  borderRadius: borderRadius,
+                ),
               ),
-            ),
-            onPressed: onPressed,
-            child: const SizedBox(),
-          ),
+              onPressed: onPressed,
+              child: this.child),
         ),
         Positioned.fill(
           child: FCAnimatedSwitcher(

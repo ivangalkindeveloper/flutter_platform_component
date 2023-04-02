@@ -7,26 +7,26 @@ class FCDefaultHaptic implements IFCHaptic {
   }
 
   @override
-  Future<void> success() async => await this._vibrate(type: FeedbackType.success);
+  Future<void> success() => this._vibrate(type: FeedbackType.success);
 
   @override
-  Future<void> error() async => await this._vibrate(type: FeedbackType.error);
+  Future<void> warning() => this._vibrate(type: FeedbackType.warning);
 
   @override
-  Future<void> warning() async => await this._vibrate(type: FeedbackType.warning);
+  Future<void> error() => this._vibrate(type: FeedbackType.error);
 
   @override
-  Future<void> selection() async => await this._vibrate(type: FeedbackType.selection);
+  Future<void> selection() => this._vibrate(type: FeedbackType.selection);
 
   @override
-  Future<void> impact() async => await this._vibrate(type: FeedbackType.impact);
+  Future<void> impact() => this._vibrate(type: FeedbackType.impact);
 
   @override
-  Future<void> heavy() async => await this._vibrate(type: FeedbackType.heavy);
+  Future<void> heavy() => this._vibrate(type: FeedbackType.heavy);
 
   @override
-  Future<void> medium() async => await this._vibrate(type: FeedbackType.medium);
-  
+  Future<void> medium() => this._vibrate(type: FeedbackType.medium);
+
   @override
-  Future<void> light() async => await this._vibrate(type: FeedbackType.light);
+  Future<void> light() => this._vibrate(type: FeedbackType.light);
 }

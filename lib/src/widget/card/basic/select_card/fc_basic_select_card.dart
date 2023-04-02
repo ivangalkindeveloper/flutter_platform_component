@@ -9,7 +9,7 @@ class FCBasicSelectCard extends FCPlatformWidget {
   FCBasicSelectCard({
     super.key,
     required Color backgroundColor,
-    required Color splashColor,
+    Color? splashColor,
     BoxConstraints? constraints,
     BorderRadius? borderRadius,
     Color? borderColor,
@@ -23,6 +23,7 @@ class FCBasicSelectCard extends FCPlatformWidget {
           cupertino: _FCBasicSelectCardCupertino(
             key: key,
             backgroundColor: backgroundColor,
+            splashColor: splashColor,
             constraints: constraints,
             borderRadius: borderRadius,
             borderColor: borderColor,
@@ -54,6 +55,7 @@ class _FCBasicSelectCardCupertino extends StatelessWidget {
   const _FCBasicSelectCardCupertino({
     super.key,
     required this.backgroundColor,
+    required this.splashColor,
     required this.constraints,
     required this.borderRadius,
     required this.borderColor,
@@ -66,6 +68,7 @@ class _FCBasicSelectCardCupertino extends StatelessWidget {
   });
 
   final Color backgroundColor;
+  final Color? splashColor;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Color? borderColor;
@@ -131,7 +134,7 @@ class _FCBasicSelectCardMaterial extends StatelessWidget {
   });
 
   final Color backgroundColor;
-  final Color splashColor;
+  final Color? splashColor;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Color? borderColor;
@@ -145,7 +148,9 @@ class _FCBasicSelectCardMaterial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
 
+    final Color splashColor = this.splashColor ?? theme.grey;
     final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusCard;
     final VoidCallback onPressed = this.isDisabled ? () {} : this.onPressed;
 
@@ -157,23 +162,20 @@ class _FCBasicSelectCardMaterial extends StatelessWidget {
           borderRadius: this.borderRadius,
           borderColor: this.borderColor,
           borderWidth: this.borderWidth,
-          padding: this.padding,
-          child: this.child,
-        ),
-        Positioned.fill(
+          padding: EdgeInsets.zero,
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
               elevation: 0,
-              foregroundColor: this.splashColor,
+              foregroundColor: splashColor,
               backgroundColor: Colors.transparent,
               shadowColor: Colors.transparent,
-              padding: EdgeInsets.zero,
+              padding: this.padding,
               shape: RoundedRectangleBorder(
                 borderRadius: borderRadius,
               ),
             ),
             onPressed: onPressed,
-            child: const SizedBox(),
+            child: this.child,
           ),
         ),
         Positioned.fill(

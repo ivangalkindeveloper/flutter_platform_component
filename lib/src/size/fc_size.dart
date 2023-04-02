@@ -91,12 +91,14 @@ abstract class IFCSize {
   abstract final double borderWidthSnackbarMaterial;
 
   // Picker
-  // Picker / Date
-  abstract final DateTime dateMinimum;
-  abstract final DateTime dateInitial;
-  abstract final DateTime dateMaximum;
-  // Picker / Time
-  abstract final TimeOfDay timeInitial;
+  // Picker / DateTime
+  abstract final DateTime dateTimeMinimum;
+  abstract final DateTime dateTimeInitial;
+  abstract final DateTime dateTimeMaximum;
+  // Picker / TimeOfDay
+  abstract final TimeOfDay timeOfDayMinimum;
+  abstract final TimeOfDay timeOfDayInitial;
+  abstract final TimeOfDay timeOfDayMaximum;
 
   // Duration
   // Duration / Animation

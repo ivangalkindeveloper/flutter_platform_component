@@ -2,8 +2,8 @@ import 'package:flutter_component/src/extension/fc_extension.dart';
 import 'package:flutter_component/flutter_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FCPrimaryGradientSelectField extends StatelessWidget {
-  const FCPrimaryGradientSelectField({
+class FCGradientSelectField extends StatelessWidget {
+  const FCGradientSelectField({
     super.key,
     this.internalGradient,
     this.internalIconHeight,
@@ -91,7 +91,7 @@ class FCPrimaryGradientSelectField extends StatelessWidget {
           theme.backgroundComponent,
         ],
       ),
-      splashColor: theme.primary,
+      splashColor: theme.grey,
       internalGradient: this.internalGradient,
       internalIconHeight: this.internalIconHeight,
       height: this.height,

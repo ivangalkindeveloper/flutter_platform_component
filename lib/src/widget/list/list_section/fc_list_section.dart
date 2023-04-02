@@ -9,7 +9,7 @@ class FCListSection extends FCPlatformWidget {
   FCListSection({
     super.key,
     required List<FCListSectionItem> items,
-    Color? backroundColor,
+    Color? backgroundColor,
     Color? splashColor,
     BorderRadius? borderRadius,
     EdgeInsets? padding,
@@ -22,7 +22,7 @@ class FCListSection extends FCPlatformWidget {
           cupertino: _FCListSectionCupertino(
             key: key,
             items: items,
-            backroundColor: backroundColor,
+            backgroundColor: backgroundColor,
             splashColor: splashColor,
             borderRadius: borderRadius,
             padding: padding,
@@ -35,7 +35,7 @@ class FCListSection extends FCPlatformWidget {
           material: _FCListSectionMaterial(
             key: key,
             items: items,
-            backroundColor: backroundColor,
+            backgroundColor: backgroundColor,
             splashColor: splashColor,
             borderRadius: borderRadius,
             padding: padding,
@@ -52,7 +52,7 @@ class _FCListSectionCupertino extends StatelessWidget {
   const _FCListSectionCupertino({
     super.key,
     required this.items,
-    this.backroundColor,
+    this.backgroundColor,
     this.splashColor,
     this.borderRadius,
     this.padding,
@@ -64,7 +64,7 @@ class _FCListSectionCupertino extends StatelessWidget {
   });
 
   final List<FCListSectionItem> items;
-  final Color? backroundColor;
+  final Color? backgroundColor;
   final Color? splashColor;
   final BorderRadius? borderRadius;
   final EdgeInsets? padding;
@@ -81,7 +81,7 @@ class _FCListSectionCupertino extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
-    final Color backgroundColor = this.backroundColor ?? theme.backgroundComponent;
+    final Color backgroundColor = this.backgroundColor ?? theme.backgroundComponent;
     final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusCard;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
@@ -171,7 +171,7 @@ class _FCListSectionMaterial extends StatelessWidget {
   const _FCListSectionMaterial({
     super.key,
     required this.items,
-    this.backroundColor,
+    this.backgroundColor,
     this.splashColor,
     this.borderRadius,
     this.padding,
@@ -183,7 +183,7 @@ class _FCListSectionMaterial extends StatelessWidget {
   });
 
   final List<FCListSectionItem> items;
-  final Color? backroundColor;
+  final Color? backgroundColor;
   final Color? splashColor;
   final BorderRadius? borderRadius;
   final EdgeInsets? padding;
@@ -200,8 +200,7 @@ class _FCListSectionMaterial extends StatelessWidget {
     final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
 
-    final Color backgroundColor = this.backroundColor ?? theme.backgroundComponent;
-    final Color splashColor = this.splashColor ?? theme.primary;
+    final Color backgroundColor = this.backgroundColor ?? theme.backgroundComponent;
     final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusCard;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
@@ -263,7 +262,7 @@ class _FCListSectionMaterial extends StatelessWidget {
             children: [
               FCBasicSelectCard(
                 backgroundColor: backgroundColor,
-                splashColor: splashColor,
+                splashColor: this.splashColor,
                 borderRadius: BorderRadius.only(
                   topLeft: topLeft,
                   topRight: topRight,

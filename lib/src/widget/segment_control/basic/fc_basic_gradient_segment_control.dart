@@ -23,8 +23,9 @@ class FCBasicGradientSegmentControl<T> extends StatefulWidget {
     required this.selectedBackgroundGradient,
     required this.selectedBorderGradient,
     required this.selectedInternalGradient,
-    required this.selectedSplashColor,
+    this.selectedSplashColor,
     this.selectedStyle,
+    this.internalIconHeight,
     this.height,
     this.borderRadius,
     this.borderWidth,
@@ -47,8 +48,9 @@ class FCBasicGradientSegmentControl<T> extends StatefulWidget {
   final Gradient selectedBackgroundGradient;
   final Gradient selectedBorderGradient;
   final Gradient selectedInternalGradient;
-  final Color selectedSplashColor;
+  final Color? selectedSplashColor;
   final TextStyle? selectedStyle;
+  final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
   final double? borderWidth;
@@ -198,6 +200,7 @@ class _FCBasicGradientSegmentControlState<T>
                     selectedInternalGradient: this.widget.selectedInternalGradient,
                     selectedSplashColor: this.widget.selectedSplashColor,
                     selectedStyle: this.widget.selectedStyle,
+                    internalIconHeight: this.widget.internalIconHeight,
                     height: height,
                     borderRadius: borderRadius,
                     borderWidth: this.widget.borderWidth,
@@ -243,6 +246,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     required this.selectedInternalGradient,
     required this.selectedSplashColor,
     required this.selectedStyle,
+    required this.internalIconHeight,
     required this.height,
     required this.borderRadius,
     required this.borderWidth,
@@ -264,8 +268,9 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
   final Gradient selectedBackgroundGradient;
   final Gradient selectedBorderGradient;
   final Gradient selectedInternalGradient;
-  final Color selectedSplashColor;
+  final Color? selectedSplashColor;
   final TextStyle? selectedStyle;
+  final double? internalIconHeight;
   final double height;
   final BorderRadius borderRadius;
   final double? borderWidth;
@@ -317,7 +322,7 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     return this.selectedBorderGradient;
   }
 
-  Color _splashColor({
+  Color? _splashColor({
     required IFCTheme theme,
   }) {
     if (this.isSelected) return this.selectedSplashColor;
@@ -345,9 +350,10 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
     final IFCSize size = config.size;
 
     final Gradient backgroundGradient = this._backgroundGradient(theme: theme);
-    final Color splashColor = this._splashColor(theme: theme);
+    final Color? splashColor = this._splashColor(theme: theme);
     final Gradient borderGradient = this._borderGradient(theme: theme);
     final Gradient internalGradient = this._internalGradient(theme: theme);
+    final double internalIconHeight = this.internalIconHeight ?? size.heightIconDefault;
     final double borderWidth = this.borderWidth ?? config.borderWidthSegmentControl;
     final double leftBorderWidth = index == 0 ? borderWidth : 0;
     final double rightBorderWidth = (index + 1) == this.length ? borderWidth : 0;
@@ -454,11 +460,16 @@ class _FCSegmentControlButton<T> extends StatelessWidget {
                     child: FCButtonRowChild(
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.center,
-                      gradient: internalGradient,
+                      internalIconColor: null,
+                      internalIconGradient: internalGradient,
+                      internalIconHeight: internalIconHeight,
                       prefix: this.item.prefix,
+                      prefixIcon: this.item.prefixIcon,
+                      titleGradient: internalGradient,
                       title: this.item.title,
                       textAlign: TextAlign.center,
                       titleStyle: titleStyle,
+                      postfixIcon: this.item.postfixIcon,
                       postfix: this.item.postfix,
                     ),
                   ),

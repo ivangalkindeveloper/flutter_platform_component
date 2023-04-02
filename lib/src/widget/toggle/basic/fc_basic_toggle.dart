@@ -20,6 +20,7 @@ class FCBasicToggle<T> extends StatefulWidget {
     required this.selectedInternalColor,
     required this.selectedSplashColor,
     this.selectedStyle,
+    this.internalIconHeight,
     this.height,
     this.borderRadius,
     this.padding,
@@ -42,6 +43,7 @@ class FCBasicToggle<T> extends StatefulWidget {
   final Color selectedInternalColor;
   final Color selectedSplashColor;
   final TextStyle? selectedStyle;
+  final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
   final EdgeInsets? padding;
@@ -187,6 +189,7 @@ class _FCBasicToggleState<T> extends State<FCBasicToggle<T>> {
                     selectedInternalColor: this.widget.selectedInternalColor,
                     selectedSplashColor: this.widget.selectedSplashColor,
                     selectedStyle: this.widget.selectedStyle,
+                    internalIconHeight: this.widget.internalIconHeight,
                     height: height,
                     borderRadius: borderRadius,
                     horizontalInterval: this.widget.horizontalInterval,
@@ -228,6 +231,7 @@ class _FCToggleButton<T> extends StatelessWidget {
     required this.selectedInternalColor,
     required this.selectedSplashColor,
     required this.selectedStyle,
+    required this.internalIconHeight,
     required this.height,
     required this.borderRadius,
     required this.horizontalInterval,
@@ -247,6 +251,7 @@ class _FCToggleButton<T> extends StatelessWidget {
   final Color selectedInternalColor;
   final Color selectedSplashColor;
   final TextStyle? selectedStyle;
+  final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
   final double? horizontalInterval;
@@ -294,6 +299,7 @@ class _FCToggleButton<T> extends StatelessWidget {
     final Color backgroundColor = this._backgroundColor(theme: theme);
     final Color splashColor = this._splashColor(theme: theme);
     final Color internalColor = this._internalColor(theme: theme);
+    final double internalIconHeight = this.internalIconHeight ?? size.heightIconDefault;
     final TextStyle unselectedStyle = this.unselectedStyle?.copyWith(
               color: this.unselectedStyle?.color ?? internalColor,
               fontSize: this.unselectedStyle?.fontSize ?? size.s16,
@@ -321,7 +327,7 @@ class _FCToggleButton<T> extends StatelessWidget {
     final TextStyle titleStyle = this.isSelected ? selectedStyle : unselectedStyle;
 
     return Padding(
-      padding: EdgeInsets.only(left: indent),
+      padding: EdgeInsets.only(right: indent),
       child: FCBasicButton(
         backgroundColor: backgroundColor,
         splashColor: splashColor,
@@ -330,11 +336,16 @@ class _FCToggleButton<T> extends StatelessWidget {
         child: FCButtonRowChild(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
-          gradient: null,
+          internalIconColor: internalColor,
+          internalIconGradient: null,
+          internalIconHeight: internalIconHeight,
           prefix: this.item.prefix,
+          prefixIcon: this.item.prefixIcon,
+          titleGradient: null,
           title: this.item.title,
           textAlign: TextAlign.center,
           titleStyle: titleStyle,
+          postfixIcon: this.item.postfixIcon,
           postfix: this.item.postfix,
         ),
         onPressed: this.onPressed,

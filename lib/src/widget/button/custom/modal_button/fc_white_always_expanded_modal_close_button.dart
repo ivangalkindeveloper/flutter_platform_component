@@ -9,15 +9,19 @@ class FCWhiteAlwaysExpandedModalCloseButton extends FCPlatformWidget {
   FCWhiteAlwaysExpandedModalCloseButton({
     super.key,
     required String cupertinoLocale,
+    Color? splashColor,
     required VoidCallback onPressed,
   }) : super(
           cupertino: _FCWhiteAlwaysExpandedModalCloseButtonCupertino(
             key: key,
             cupertinoLocale: cupertinoLocale,
+            splashColor: splashColor,
             onPressed: onPressed,
           ),
           material: _FCWhiteAlwaysExpandedModalCloseButtonMaterial(
             key: key,
+            cupertinoLocale: cupertinoLocale,
+            splashColor: splashColor,
             onPressed: onPressed,
           ),
         );
@@ -27,10 +31,12 @@ class _FCWhiteAlwaysExpandedModalCloseButtonCupertino extends StatelessWidget {
   const _FCWhiteAlwaysExpandedModalCloseButtonCupertino({
     super.key,
     required this.cupertinoLocale,
+    required this.splashColor,
     required this.onPressed,
   });
 
   final String cupertinoLocale;
+  final Color? splashColor;
   final VoidCallback onPressed;
 
   @override
@@ -54,21 +60,29 @@ class _FCWhiteAlwaysExpandedModalCloseButtonCupertino extends StatelessWidget {
 class _FCWhiteAlwaysExpandedModalCloseButtonMaterial extends StatelessWidget {
   const _FCWhiteAlwaysExpandedModalCloseButtonMaterial({
     super.key,
+    required this.cupertinoLocale,
+    required this.splashColor,
     required this.onPressed,
   });
 
+  final String cupertinoLocale;
+  final Color? splashColor;
   final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
+    final IFCTheme theme = config.theme;
     final IFCSize size = config.size;
+
+    final Color splashColor = this.splashColor ?? theme.greyLight;
 
     return SizedBox(
       height: size.heightIconLarge,
       width: size.heightIconLarge,
       child: IconButton(
-        iconSize: size.heightIconLarge,
+        splashColor: splashColor,
+        iconSize: size.heightIconDefault,
         onPressed: this.onPressed,
         padding: EdgeInsets.zero,
         icon: FCIcon.whiteAlways(

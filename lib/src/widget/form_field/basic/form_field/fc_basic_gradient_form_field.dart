@@ -379,7 +379,6 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField>
   @override
   Widget build(BuildContext context) {
     final Gradient backgroundGradient = this._backgroundGradient();
-    final Gradient internalGradient = this._internalGradient();
     final Color labelColor = this._labelColor();
     final double height = this.widget.height ?? this._size.heightFormField;
     final double paddingTop = this.widget.padding?.top ?? this._size.s16 / 4;
@@ -390,6 +389,7 @@ class _FCBasicGradientFormFieldState extends State<FCBasicGradientFormField>
         this.widget.borderRadius ?? this._config.borderRadiusField;
     final Gradient borderGradient = this._borderGradient();
     final double borderWidth = this.widget.borderWidth ?? this._config.borderWidthField;
+    final Gradient internalGradient = this._internalGradient();
     final double internalIconHeight =
         this.widget.internalIconHeight ?? this._size.heightIconDefault;
     final EdgeInsets internalPadding =

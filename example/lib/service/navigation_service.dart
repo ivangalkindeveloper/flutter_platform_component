@@ -24,6 +24,7 @@ import 'package:example/presentation/widget/card/select_card_screen.dart';
 import 'package:example/presentation/widget/checkbox/checkbox_screen.dart';
 import 'package:example/presentation/widget/code_field/code_field_screen.dart';
 import 'package:example/presentation/widget/code_field/gradient_code_field_screen.dart';
+import 'package:example/presentation/widget/divider/divider_screen.dart';
 import 'package:example/presentation/widget/navigation/blur_bottom_navigation_bar_screen.dart';
 import 'package:example/presentation/widget/picker/date_picker_screen.dart';
 import 'package:example/presentation/widget/dialog/dialog_screen.dart';
@@ -120,6 +121,8 @@ class NavigationService implements INavigationService {
   static const String gradient_code_field_screen = "/gradient_code_field_screen";
 
   static const String dialog_screen = "/dialog_screen";
+
+  static const String divider_screen = "/divider_screen";
 
   static const String form_field_screen = "/form_field_screen";
   static const String gradient_form_field_screen = "/gradient_form_field_screen";
@@ -337,6 +340,12 @@ class NavigationService implements INavigationService {
         return FCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const DialogScreen(),
+        );
+
+      case divider_screen:
+        return FCRoute.pageRouteFromContext(
+          context: navigatorKey.currentContext!,
+          child: const DividerScreen(),
         );
 
       case form_field_screen:

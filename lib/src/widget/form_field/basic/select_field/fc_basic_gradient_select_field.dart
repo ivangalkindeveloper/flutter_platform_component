@@ -9,7 +9,7 @@ class FCBasicGradientSelectField extends StatefulWidget {
   const FCBasicGradientSelectField({
     super.key,
     required this.backgroundGradient,
-    required this.splashColor,
+    this.splashColor,
     this.internalGradient,
     this.internalIconHeight,
     this.height,
@@ -49,7 +49,7 @@ class FCBasicGradientSelectField extends StatefulWidget {
   });
 
   final Gradient backgroundGradient;
-  final Color splashColor;
+  final Color? splashColor;
   final Gradient? internalGradient;
   final double? internalIconHeight;
   final double? height;

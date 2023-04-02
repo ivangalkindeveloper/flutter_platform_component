@@ -69,6 +69,7 @@
     - [List View](#list-view)
     - [Padding](#padding)
   - [Dialog](#dialog)
+  - [Divider](#divider)
   - [Form Field](#form-field)
     - [Form Field](#form-field)
     - [Gradient Form Field](#gradient-form-field)
@@ -500,6 +501,10 @@ Dialog component, decomposed by platform.
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/dialog/dialog_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/dialog/dialog_material.gif) |
 
+### Divider
+Simple thin container for visual separation.
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/divider/divider.png)
+
 ### Form Field
 Form field does not repeat the design accuracy of platform components, since pure native fields are very rarely used in good productive projects.\
 The design of this field is suitable for most applications and is more suitable.
@@ -711,8 +716,14 @@ Scrollbar component, decomposed by platform.
 ### Segment Control
 #### Segment Control
 Segment control component with solid colors, decomposed by platform.
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/segment_control/segment_control_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/segment_control/segment_control_material.gif) |
 #### Gradient Segment Control
 Segment control component with gradient colors, decomposed by platform.
+| iOS (Cupertino) | Android (Material) |
+| --------------- | ------------------ |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/segment_control/gradient_segment_control_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/segment_control/gradient_segment_control_material.gif) |
 
 ### Shimmer
 #### Shimmer
@@ -730,8 +741,9 @@ Slider component, decomposed by platform.
 
 ### Sliding Segment Control
 Sliding segment control compoennt does not have a direct analogue on android, therefore it does not have a decomposition for this platform.
-
-Sliding Segment control component with solid colors.
+#### Sliding Segment Control
+Sliding Segment control component with solid colors.\
+![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/sliding_segment_control/sliding_segment_control.gif)
 
 ### Sliver Navigation App Bar
 Ready-made sliver navigation app bar component, decomposed by platform.
@@ -764,7 +776,7 @@ Switch component, decomposed by platform.
 Class that combines all text widgets for quick display.\
 ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/text/text.png)
 #### Text Style
-Class that combines all text widgets for quick use.\
+Class that combines all text widgets for quick use.
 #### Text Span
 Ready-made shell widget for receiving text span items.\
 ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/text/text_span.png)
@@ -775,12 +787,12 @@ One of the proposed visions of the segment control component.
 Toggle component with colid colors, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/toggle/toggle_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/toggle/toggle_material.gif) |
 #### Gradient Toggle
 Toggle component with gradient colors, decomposed by platform.
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| | |
+| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/toggle/gradient_toggle_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/toggle/gradient_toggle_material.gif) |
 
 ## TODO
 1) Duplication of all colors in ready-made components for easy overwriting;

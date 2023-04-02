@@ -5,6 +5,7 @@ import 'package:flutter/widgets.dart';
 class FCKeyboard extends StatelessWidget {
   const FCKeyboard({
     super.key,
+    this.splashColor,
     this.height,
     this.numberStyle,
     this.horizontalInterval,
@@ -16,6 +17,7 @@ class FCKeyboard extends StatelessWidget {
     this.disabledColor,
   });
 
+  final Color? splashColor;
   final double? height;
   final TextStyle? numberStyle;
   final double? horizontalInterval;
@@ -31,6 +33,10 @@ class FCKeyboard extends StatelessWidget {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
+    final double height = this.height ?? size.heightKeyboardButton;
+    final double horizontalInterval = this.horizontalInterval ?? size.s16 * 2;
+    final double verticalInterval = this.verticalInterval ?? 0;
+
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -38,26 +44,29 @@ class FCKeyboard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             FCKeyboardNumberButton(
-              number: 1,
+              splashColor: this.splashColor,
               height: this.height,
+              number: 1,
               numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(1),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
             ),
-            SizedBox(width: this.horizontalInterval ?? size.s16 * 2),
+            SizedBox(width: horizontalInterval),
             FCKeyboardNumberButton(
-              number: 2,
+              splashColor: this.splashColor,
               height: this.height,
+              number: 2,
               numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(2),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
             ),
-            SizedBox(width: this.horizontalInterval ?? size.s16 * 2),
+            SizedBox(width: horizontalInterval),
             FCKeyboardNumberButton(
-              number: 3,
+              splashColor: this.splashColor,
               height: this.height,
+              number: 3,
               numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(3),
               isDisabled: this.isDisabled,
@@ -65,31 +74,34 @@ class FCKeyboard extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(width: this.verticalInterval ?? 0),
+        SizedBox(width: verticalInterval),
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
             FCKeyboardNumberButton(
-              number: 4,
+              splashColor: this.splashColor,
               height: this.height,
+              number: 4,
               numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(4),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
             ),
-            SizedBox(width: this.horizontalInterval ?? size.s16 * 2),
+            SizedBox(width: horizontalInterval),
             FCKeyboardNumberButton(
-              number: 5,
+              splashColor: this.splashColor,
               height: this.height,
+              number: 5,
               numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(5),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
             ),
-            SizedBox(width: this.horizontalInterval ?? size.s16 * 2),
+            SizedBox(width: horizontalInterval),
             FCKeyboardNumberButton(
-              number: 6,
+              splashColor: this.splashColor,
               height: this.height,
+              number: 6,
               numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(6),
               isDisabled: this.isDisabled,
@@ -97,31 +109,34 @@ class FCKeyboard extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(width: this.verticalInterval ?? 0),
+        SizedBox(width: verticalInterval),
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
             FCKeyboardNumberButton(
-              number: 7,
+              splashColor: this.splashColor,
               height: this.height,
+              number: 7,
               numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(7),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
             ),
-            SizedBox(width: this.horizontalInterval ?? size.s16 * 2),
+            SizedBox(width: horizontalInterval),
             FCKeyboardNumberButton(
-              number: 8,
+              splashColor: this.splashColor,
               height: this.height,
+              number: 8,
               numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(8),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
             ),
-            SizedBox(width: this.horizontalInterval ?? size.s16 * 2),
+            SizedBox(width: horizontalInterval),
             FCKeyboardNumberButton(
-              number: 9,
+              splashColor: this.splashColor,
               height: this.height,
+              number: 9,
               numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(9),
               isDisabled: this.isDisabled,
@@ -129,27 +144,29 @@ class FCKeyboard extends StatelessWidget {
             ),
           ],
         ),
+        SizedBox(width: verticalInterval),
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
             SizedBox(
-              height: this.height ?? size.heightKeyboardButton,
-              width: this.height ?? size.heightKeyboardButton,
+              height: height,
+              width: height,
               child: this.prefix,
             ),
-            SizedBox(width: this.horizontalInterval ?? size.s16 * 2),
+            SizedBox(width: horizontalInterval),
             FCKeyboardNumberButton(
-              number: 0,
+              splashColor: this.splashColor,
               height: this.height,
+              number: 0,
               numberStyle: this.numberStyle,
               onPressed: () => this.onPressed(0),
               isDisabled: this.isDisabled,
               disabledColor: this.disabledColor,
             ),
-            SizedBox(width: this.horizontalInterval ?? size.s16 * 2),
+            SizedBox(width: horizontalInterval),
             SizedBox(
-              height: this.height ?? size.heightKeyboardButton,
-              width: this.height ?? size.heightKeyboardButton,
+              height: height,
+              width: height,
               child: this.postfix,
             ),
           ],

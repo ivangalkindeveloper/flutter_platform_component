@@ -9,8 +9,8 @@ class FCBasicSelectField extends StatefulWidget {
   const FCBasicSelectField({
     super.key,
     required this.backgroundColor,
-    required this.splashColor,
-    this.internalColor,
+    this.splashColor,
+    this.internalIconColor,
     this.internalIconHeight,
     this.height,
     this.borderRadius,
@@ -49,8 +49,8 @@ class FCBasicSelectField extends StatefulWidget {
   });
 
   final Color backgroundColor;
-  final Color splashColor;
-  final Color? internalColor;
+  final Color? splashColor;
+  final Color? internalIconColor;
   final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
@@ -142,7 +142,7 @@ class _FCBasicSelectFieldState extends State<FCBasicSelectField> {
         unfocusedBackgroundColor: this.widget.backgroundColor,
         focusedBackgroundColor: this.widget.backgroundColor,
         focusedColor: Colors.transparent,
-        internalColor: this.widget.internalColor,
+        internalIconColor: this.widget.internalIconColor,
         internalIconHeight: this.widget.internalIconHeight,
         height: this.widget.height,
         borderRadius: borderRadius,
