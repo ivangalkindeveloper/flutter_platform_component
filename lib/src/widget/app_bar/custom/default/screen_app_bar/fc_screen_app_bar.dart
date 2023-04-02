@@ -49,7 +49,7 @@ class FCScreenAppBar extends FCBasicAppBar {
           : Matrix4.identity();
 
       return FCBasicIconButton(
-        icon: Transform(
+        child: Transform(
           transform: transform,
           alignment: Alignment.center,
           transformHitTests: false,

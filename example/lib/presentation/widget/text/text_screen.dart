@@ -22,15 +22,30 @@ class TextScreen extends StatelessWidget {
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
-          FCText.thin10Info(context: context, text: "Thin 10 Info"),
+          FCText.thin10Info(
+            context: context,
+            text: "Thin 10 Info",
+          ),
           SizedBox(height: size.s16 / 2),
-          FCText.regular16Black(context: context, text: "Regular 16 Black"),
+          FCText.regular16Black(
+            context: context,
+            text: "Regular 16 Black",
+          ),
           SizedBox(height: size.s16 / 2),
-          FCText.medium18Success(context: context, text: "Medium 18 Success"),
+          FCText.medium18Success(
+            context: context,
+            text: "Medium 18 Success",
+          ),
           SizedBox(height: size.s16 / 2),
-          FCText.semiBold20Grey(context: context, text: "Semibold 20 Grey"),
+          FCText.semiBold20Grey(
+            context: context,
+            text: "Semibold 20 Grey",
+          ),
           SizedBox(height: size.s16 / 2),
-          FCText.bold28Danger(context: context, text: "Bold 28 Danger"),
+          FCText.bold28Danger(
+            context: context,
+            text: "Bold 28 Danger",
+          ),
         ],
       ),
     );

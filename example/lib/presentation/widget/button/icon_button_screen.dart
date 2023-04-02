@@ -36,11 +36,11 @@ class _IconButtonScreenState extends State<IconButtonScreen> {
           ),
           SizedBox(height: size.s16 * 2),
           FCBasicIconButton(
-            icon: FCIcon.primary(
+            onPressed: () {},
+            child: FCIcon.primary(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            onPressed: () {},
             isDisabled: this._isDisabled,
           ),
         ],

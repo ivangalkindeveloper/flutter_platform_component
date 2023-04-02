@@ -76,7 +76,7 @@ class _FCSliverNavigationAppBarCupertino extends StatelessWidget {
           : Matrix4.identity();
 
       return FCBasicIconButton(
-        icon: Transform(
+        child: Transform(
           transform: transform,
           alignment: Alignment.center,
           transformHitTests: false,
@@ -182,7 +182,7 @@ class _FCSliverNavigationAppBarMaterial extends StatelessWidget {
           : Matrix4.identity();
 
       return FCBasicIconButton(
-        icon: Transform(
+        child: Transform(
           transform: transform,
           alignment: Alignment.center,
           transformHitTests: false,

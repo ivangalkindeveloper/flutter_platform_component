@@ -54,7 +54,7 @@ class FCBlurScreenAppBar extends FCBasicBlurAppBar {
           : Matrix4.identity();
 
       return FCBasicIconButton(
-        icon: Transform(
+        child: Transform(
           transform: transform,
           alignment: Alignment.center,
           transformHitTests: false,

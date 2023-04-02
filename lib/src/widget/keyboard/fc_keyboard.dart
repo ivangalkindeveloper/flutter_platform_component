@@ -24,7 +24,7 @@ class FCKeyboard extends StatelessWidget {
   final double? verticalInterval;
   final Widget? prefix;
   final Widget? postfix;
-  final Function(int) onPressed;
+  final void Function(int) onPressed;
   final bool isDisabled;
   final Color? disabledColor;
 

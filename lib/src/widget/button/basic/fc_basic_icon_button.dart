@@ -9,27 +9,27 @@ class FCBasicIconButton extends FCPlatformWidget {
   FCBasicIconButton({
     super.key,
     Color? splashColor,
-    required Widget icon,
-    required VoidCallback onPressed,
     double? height,
+    required VoidCallback onPressed,
+    required Widget child,
     bool isDisabled = false,
     Color? disabledColor,
   }) : super(
           cupertino: _FCBasicIconButtonCupertino(
             key: key,
             splashColor: splashColor,
-            icon: icon,
-            onPressed: onPressed,
             height: height,
+            onPressed: onPressed,
+            child: child,
             isDisabled: isDisabled,
             disabledColor: disabledColor,
           ),
           material: _FCBasicIconButtonMaterial(
             key: key,
             splashColor: splashColor,
-            icon: icon,
-            onPressed: onPressed,
             height: height,
+            onPressed: onPressed,
+            child: child,
             isDisabled: isDisabled,
             disabledColor: disabledColor,
           ),
@@ -40,17 +40,17 @@ class _FCBasicIconButtonCupertino extends StatelessWidget {
   const _FCBasicIconButtonCupertino({
     super.key,
     required this.splashColor,
-    required this.icon,
-    required this.onPressed,
     required this.height,
+    required this.onPressed,
+    required this.child,
     required this.isDisabled,
     required this.disabledColor,
   });
 
   final Color? splashColor;
-  final Widget icon;
-  final VoidCallback onPressed;
   final double? height;
+  final VoidCallback onPressed;
+  final Widget child;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -72,7 +72,7 @@ class _FCBasicIconButtonCupertino extends StatelessWidget {
             minSize: height,
             onPressed: onPressed,
             padding: EdgeInsets.zero,
-            child: this.icon,
+            child: this.child,
           ),
           Positioned.fill(
             child: FCAnimatedSwitcher(
@@ -94,17 +94,17 @@ class _FCBasicIconButtonMaterial extends StatelessWidget {
   const _FCBasicIconButtonMaterial({
     super.key,
     required this.splashColor,
-    required this.icon,
-    required this.onPressed,
     required this.height,
+    required this.onPressed,
+    required this.child,
     required this.isDisabled,
     required this.disabledColor,
   });
 
   final Color? splashColor;
-  final Widget icon;
-  final VoidCallback onPressed;
   final double? height;
+  final VoidCallback onPressed;
+  final Widget child;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -129,7 +129,7 @@ class _FCBasicIconButtonMaterial extends StatelessWidget {
             iconSize: size.heightIconDefault,
             onPressed: onPressed,
             padding: EdgeInsets.zero,
-            icon: this.icon,
+            icon: this.child,
           ),
           Positioned.fill(
             child: FCAnimatedSwitcher(
