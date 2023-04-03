@@ -24,16 +24,30 @@ class FCBasicGradientPageIndicator extends StatelessWidget {
   final double? selectedWidth;
   final Duration? duration;
 
+  double _width({
+    required IFCSize size,
+    required int index,
+  }) {
+    final double unselectedWidth = this.unselectedWidth ?? size.s16 / 2;
+    final double selectedWidth = this.selectedWidth ?? size.s16;
+    final double width = this.index == index ? selectedWidth : unselectedWidth;
+    return width;
+  }
+
+  Gradient _gradient({
+    required int index,
+  }) {
+    final Gradient gradient =
+        this.index == index ? this.selectedGradident : this.unselectedGradident;
+    return gradient;
+  }
+
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
     final double height = this.height ?? size.s16 / 2;
-    final double unselectedWidth = this.unselectedWidth ?? size.s16 / 2;
-    final double selectedWidth = this.selectedWidth ?? size.s16;
-    final Gradient gradient =
-        this.index == index ? this.selectedGradident : this.unselectedGradident;
     final Duration duration = this.duration ?? size.durationPageIndicator;
 
     return Row(
@@ -45,11 +59,16 @@ class FCBasicGradientPageIndicator extends StatelessWidget {
             children: [
               AnimatedContainer(
                 height: height,
-                width: this.index == index ? selectedWidth : unselectedWidth,
+                width: this._width(
+                  size: size,
+                  index: index,
+                ),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(size.s32),
-                  gradient: gradient,
+                  gradient: this._gradient(
+                    index: index,
+                  ),
                 ),
                 duration: duration,
                 curve: Curves.easeInOut,

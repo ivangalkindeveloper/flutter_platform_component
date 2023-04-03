@@ -24,15 +24,29 @@ class FCBasicPageIndicator extends StatelessWidget {
   final double? selectedWidth;
   final Duration? duration;
 
+  double _width({
+    required IFCSize size,
+    required int index,
+  }) {
+    final double unselectedWidth = this.unselectedWidth ?? size.s16 / 2;
+    final double selectedWidth = this.selectedWidth ?? size.s16;
+    final double width = this.index == index ? selectedWidth : unselectedWidth;
+    return width;
+  }
+
+  Color _color({
+    required int index,
+  }) {
+    final Color color = this.index == index ? this.selectedColor : this.unselectedColor;
+    return color;
+  }
+
   @override
   Widget build(BuildContext context) {
     final FCConfig config = context.config;
     final IFCSize size = config.size;
 
     final double height = this.height ?? size.s16 / 2;
-    final double unselectedWidth = this.unselectedWidth ?? size.s16 / 2;
-    final double selectedWidth = this.selectedWidth ?? size.s16;
-    final Color color = this.index == index ? this.selectedColor : this.unselectedColor;
     final Duration duration = this.duration ?? size.durationPageIndicator;
 
     return Row(
@@ -44,11 +58,16 @@ class FCBasicPageIndicator extends StatelessWidget {
             children: [
               AnimatedContainer(
                 height: height,
-                width: this.index == index ? selectedWidth : unselectedWidth,
+                width: this._width(
+                  size: size,
+                  index: index,
+                ),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(size.s32),
-                  color: color,
+                  color: this._color(
+                    index: index,
+                  ),
                 ),
                 duration: duration,
                 curve: Curves.easeInOut,
