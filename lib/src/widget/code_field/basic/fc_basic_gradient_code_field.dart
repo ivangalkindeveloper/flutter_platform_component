@@ -253,7 +253,7 @@ class _FCBasicGradientCodeFieldState extends State<FCBasicGradientCodeField>
                 borderRadius: borderRadius,
                 borderWidth: borderWidth,
                 itemStyle: itemStyle.copyWith(
-                  color: this._theme.whiteAlways,
+                  color: this._theme.danger,
                 ),
                 borderColor: null,
               ),

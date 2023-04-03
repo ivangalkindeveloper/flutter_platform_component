@@ -254,7 +254,7 @@ class _FCBasicCodeFieldState extends State<FCBasicCodeField>
                 borderRadius: borderRadius,
                 borderWidth: borderWidth,
                 itemStyle: itemStyle.copyWith(
-                  color: this._theme.whiteAlways,
+                  color: this._theme.danger,
                 ),
                 borderColor: null,
               ),
