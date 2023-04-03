@@ -1,4 +1,4 @@
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class AnimatedTransitionSwitcherScreen extends StatefulWidget {
@@ -15,22 +15,22 @@ class _AnimatedTransitionSwitcherScreenState
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Animated Transition Switcher",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: SafeArea(
-        child: FCPadding(
+        child: FPCPadding(
           child: Column(
             children: [
-              FCPrimaryButton(
+              FPCPrimaryButton(
                 title: "Action",
                 onPressed: () => setState(() => this._action = !this._action),
               ),
@@ -40,7 +40,7 @@ class _AnimatedTransitionSwitcherScreenState
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      FCText.regular16Black(
+                      FPCText.regular16Black(
                         context: context,
                         text: "Horizontal",
                       ),
@@ -50,13 +50,13 @@ class _AnimatedTransitionSwitcherScreenState
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Slow",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedSlowTransitionSwitcher(
-                                type: FCTransitionType.horizontal,
+                              FPCAnimatedSlowTransitionSwitcher(
+                                type: FPCTransitionType.horizontal,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -77,13 +77,13 @@ class _AnimatedTransitionSwitcherScreenState
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Default",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedTransitionSwitcher(
-                                type: FCTransitionType.horizontal,
+                              FPCAnimatedTransitionSwitcher(
+                                type: FPCTransitionType.horizontal,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -104,13 +104,13 @@ class _AnimatedTransitionSwitcherScreenState
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Fast",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFastTransitionSwitcher(
-                                type: FCTransitionType.horizontal,
+                              FPCAnimatedFastTransitionSwitcher(
+                                type: FPCTransitionType.horizontal,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -130,7 +130,7 @@ class _AnimatedTransitionSwitcherScreenState
                         ],
                       ),
                       SizedBox(height: size.s16),
-                      FCText.regular16Black(
+                      FPCText.regular16Black(
                         context: context,
                         text: "Scaled",
                       ),
@@ -140,13 +140,13 @@ class _AnimatedTransitionSwitcherScreenState
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Slow",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedSlowTransitionSwitcher(
-                                type: FCTransitionType.scaled,
+                              FPCAnimatedSlowTransitionSwitcher(
+                                type: FPCTransitionType.scaled,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -167,13 +167,13 @@ class _AnimatedTransitionSwitcherScreenState
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Default",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedTransitionSwitcher(
-                                type: FCTransitionType.scaled,
+                              FPCAnimatedTransitionSwitcher(
+                                type: FPCTransitionType.scaled,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -194,13 +194,13 @@ class _AnimatedTransitionSwitcherScreenState
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Fast",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFastTransitionSwitcher(
-                                type: FCTransitionType.scaled,
+                              FPCAnimatedFastTransitionSwitcher(
+                                type: FPCTransitionType.scaled,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -220,7 +220,7 @@ class _AnimatedTransitionSwitcherScreenState
                         ],
                       ),
                       SizedBox(height: size.s16),
-                      FCText.regular16Black(
+                      FPCText.regular16Black(
                         context: context,
                         text: "Vertical",
                       ),
@@ -230,13 +230,13 @@ class _AnimatedTransitionSwitcherScreenState
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Slow",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedSlowTransitionSwitcher(
-                                type: FCTransitionType.vertical,
+                              FPCAnimatedSlowTransitionSwitcher(
+                                type: FPCTransitionType.vertical,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -257,13 +257,13 @@ class _AnimatedTransitionSwitcherScreenState
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Default",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedTransitionSwitcher(
-                                type: FCTransitionType.vertical,
+                              FPCAnimatedTransitionSwitcher(
+                                type: FPCTransitionType.vertical,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -284,13 +284,13 @@ class _AnimatedTransitionSwitcherScreenState
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Fast",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFastTransitionSwitcher(
-                                type: FCTransitionType.vertical,
+                              FPCAnimatedFastTransitionSwitcher(
+                                type: FPCTransitionType.vertical,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),

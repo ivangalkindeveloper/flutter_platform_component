@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientPageIndicatorScreen extends StatefulWidget {
@@ -15,23 +15,23 @@ class _GradientPageIndicatorScreenState extends State<GradientPageIndicatorScree
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Gradient Page Indicator",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "Index",
             onPressed: () => setState(() {
               if (this._index == 3) {
@@ -42,122 +42,122 @@ class _GradientPageIndicatorScreenState extends State<GradientPageIndicatorScree
             }),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.medium16Black(
+          FPCText.medium16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkGradientPageIndicator(
+          FPCAccentDarkGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCInfoDarkGradientPageIndicator(
+          FPCInfoDarkGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCSuccessDarkGradientPageIndicator(
+          FPCSuccessDarkGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCPrimaryDarkGradientPageIndicator(
+          FPCPrimaryDarkGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCDangerDarkGradientPageIndicator(
+          FPCDangerDarkGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCSecondaryDarkGradientPageIndicator(
+          FPCSecondaryDarkGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCWarningDarkGradientPageIndicator(
+          FPCWarningDarkGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentGradientPageIndicator(
+          FPCAccentGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCInfoGradientPageIndicator(
+          FPCInfoGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCSuccessGradientPageIndicator(
+          FPCSuccessGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCPrimaryGradientPageIndicator(
+          FPCPrimaryGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCDangerGradientPageIndicator(
+          FPCDangerGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCSecondaryGradientPageIndicator(
+          FPCSecondaryGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCWarningGradientPageIndicator(
+          FPCWarningGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightGradientPageIndicator(
+          FPCAccentLightGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCInfoLightGradientPageIndicator(
+          FPCInfoLightGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCSuccessLightGradientPageIndicator(
+          FPCSuccessLightGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCPrimaryLightGradientPageIndicator(
+          FPCPrimaryLightGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCDangerLightGradientPageIndicator(
+          FPCDangerLightGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCSecondaryLightGradientPageIndicator(
+          FPCSecondaryLightGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCWarningLightGradientPageIndicator(
+          FPCWarningLightGradientPageIndicator(
             length: this._length,
             index: this._index,
           ),

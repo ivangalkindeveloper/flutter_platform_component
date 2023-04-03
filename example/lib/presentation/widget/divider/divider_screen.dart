@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class DividerScreen extends StatelessWidget {
@@ -7,89 +7,89 @@ class DividerScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Divider",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          const FCAccentDarkDivider(),
+          const FPCAccentDarkDivider(),
           SizedBox(height: size.s16),
-          const FCInfoDarkDivider(),
+          const FPCInfoDarkDivider(),
           SizedBox(height: size.s16),
-          const FCSuccessDarkDivider(),
+          const FPCSuccessDarkDivider(),
           SizedBox(height: size.s16),
-          const FCPrimaryDarkDivider(),
+          const FPCPrimaryDarkDivider(),
           SizedBox(height: size.s16),
-          const FCDangerDarkDivider(),
+          const FPCDangerDarkDivider(),
           SizedBox(height: size.s16),
-          const FCSecondaryDarkDivider(),
+          const FPCSecondaryDarkDivider(),
           SizedBox(height: size.s16),
-          const FCWarningDarkDivider(),
+          const FPCWarningDarkDivider(),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          const FCAccentDivider(),
+          const FPCAccentDivider(),
           SizedBox(height: size.s16),
-          const FCBlackAlwaysDivider(),
+          const FPCBlackAlwaysDivider(),
           SizedBox(height: size.s16),
-          const FCBlackDivider(),
+          const FPCBlackDivider(),
           SizedBox(height: size.s16),
-          const FCInfoDivider(),
+          const FPCInfoDivider(),
           SizedBox(height: size.s16),
-          const FCInfoDivider(),
+          const FPCInfoDivider(),
           SizedBox(height: size.s16),
-          const FCSuccessDivider(),
+          const FPCSuccessDivider(),
           SizedBox(height: size.s16),
-          const FCGreyDivider(),
+          const FPCGreyDivider(),
           SizedBox(height: size.s16),
-          const FCPrimaryDivider(),
+          const FPCPrimaryDivider(),
           SizedBox(height: size.s16),
-          const FCDangerDivider(),
+          const FPCDangerDivider(),
           SizedBox(height: size.s16),
-          const FCSecondaryDivider(),
+          const FPCSecondaryDivider(),
           SizedBox(height: size.s16),
-          const FCWhiteAlwaysDivider(),
+          const FPCWhiteAlwaysDivider(),
           SizedBox(height: size.s16),
-          const FCWhiteDivider(),
+          const FPCWhiteDivider(),
           SizedBox(height: size.s16),
-          const FCWarningDivider(),
+          const FPCWarningDivider(),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          const FCAccentLightDivider(),
+          const FPCAccentLightDivider(),
           SizedBox(height: size.s16),
-          const FCInfoLightDivider(),
+          const FPCInfoLightDivider(),
           SizedBox(height: size.s16),
-          const FCSuccessLightDivider(),
+          const FPCSuccessLightDivider(),
           SizedBox(height: size.s16),
-          const FCPrimaryLightDivider(),
+          const FPCPrimaryLightDivider(),
           SizedBox(height: size.s16),
-          const FCDangerLightDivider(),
+          const FPCDangerLightDivider(),
           SizedBox(height: size.s16),
-          const FCSecondaryLightDivider(),
+          const FPCSecondaryLightDivider(),
           SizedBox(height: size.s16),
-          const FCWarningLightDivider(),
+          const FPCWarningLightDivider(),
         ],
       ),
     );

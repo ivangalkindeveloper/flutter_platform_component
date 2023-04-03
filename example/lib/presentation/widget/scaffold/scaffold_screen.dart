@@ -1,4 +1,4 @@
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/material.dart';
 
 class ScaffoldScreen extends StatelessWidget {
@@ -6,36 +6,36 @@ class ScaffoldScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
 
-    return FCScaffold(
+    return FPCScaffold(
       extendBody: true,
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Scaffold App Bar",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: Center(
-        child: FCText.medium18Black(
+        child: FPCText.medium18Black(
           context: context,
           text: "Scaffold Body",
         ),
       ),
-      bottomNavigationBar: FCBlurBottomNavigationBar(
+      bottomNavigationBar: FPCBlurBottomNavigationBar(
         index: 0,
         onPressed: (int index) {},
         items: [
-          FCBottomNavigationBarIconItem(
+          FPCBottomNavigationBarIconItem(
             icon: Icons.account_circle_outlined,
             label: "Bottom",
           ),
-          FCBottomNavigationBarIconItem(
+          FPCBottomNavigationBarIconItem(
             icon: Icons.accessibility_new_sharp,
             label: "Navigation",
           ),
-          FCBottomNavigationBarIconItem(
+          FPCBottomNavigationBarIconItem(
             icon: Icons.all_out_rounded,
             label: "Bar",
           ),

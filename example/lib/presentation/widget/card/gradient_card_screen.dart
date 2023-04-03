@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientCardScreen extends StatelessWidget {
@@ -7,199 +7,199 @@ class GradientCardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Gradient Card",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCAccentDarkGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCInfoDarkGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCSuccessDarkGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCGreyDarkGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCPrimaryDarkGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerDarkGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCDangerDarkGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCSecondaryDarkGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCWarningDarkGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCAccentGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCInfoGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCSuccessGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCGreyGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCPrimaryGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCDangerGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCSecondaryGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCWarningGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCAccentLightGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCInfoLightGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCSuccessLightGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyLightGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCGreyLightGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCPrimaryLightGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerLightGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCDangerLightGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCSecondaryLightGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightGradientCard(
-            child: FCText.regular16WhiteAlways(
+          FPCWarningLightGradientCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),

@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/material.dart';
 
 class GradientSnackbarScreen extends StatelessWidget {
@@ -7,388 +7,388 @@ class GradientSnackbarScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Gradient Snackbar",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCAccentDarkGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCInfoDarkGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSuccessDarkGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCGreyDarkGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCPrimaryDarkGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerDarkGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCDangerDarkGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSecondaryDarkGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCWarningDarkGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCAccentGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCInfoGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSuccessGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCGreyGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCPrimaryGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCDangerGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSecondaryGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCWarningGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCAccentLightGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCInfoLightGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSuccessLightGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyLightGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCGreyLightGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCPrimaryLightGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerLightGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCDangerLightGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSecondaryLightGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCWarningLightGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Outline",
           ),
           SizedBox(height: size.s16),
-          FCAccentGradientOutlineSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCAccentGradientOutlineSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoGradientOutlineSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCInfoGradientOutlineSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessGradientOutlineSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSuccessGradientOutlineSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyGradientOutlineSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCGreyGradientOutlineSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryGradientOutlineSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCPrimaryGradientOutlineSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerGradientOutlineSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCDangerGradientOutlineSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryGradientSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSecondaryGradientSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningGradientOutlineSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCWarningGradientOutlineSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),

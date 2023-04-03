@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientDotBadgeScreen extends StatefulWidget {
@@ -14,27 +14,27 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Gradient Dot Badge",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "isShow",
             onPressed: () => setState(() => this._isShow = !this._isShow),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
@@ -43,42 +43,42 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCAccentDarkGradientDotBadge(
+              FPCAccentDarkGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCInfoDarkGradientDotBadge(
+              FPCInfoDarkGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCSuccessDarkGradientDotBadge(
+              FPCSuccessDarkGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCGreyDarkGradientDotBadge(
+              FPCGreyDarkGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCPrimaryDarkGradientDotBadge(
+              FPCPrimaryDarkGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCDangerDarkGradientDotBadge(
+              FPCDangerDarkGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCSecondaryDarkGradientDotBadge(
+              FPCSecondaryDarkGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCWarningDarkGradientDotBadge(
+              FPCWarningDarkGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
             ],
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
@@ -87,42 +87,42 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCAccentGradientDotBadge(
+              FPCAccentGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCInfoGradientDotBadge(
+              FPCInfoGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCSuccessGradientDotBadge(
+              FPCSuccessGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCGreyGradientDotBadge(
+              FPCGreyGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCPrimaryGradientDotBadge(
+              FPCPrimaryGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCDangerGradientDotBadge(
+              FPCDangerGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCSecondaryGradientDotBadge(
+              FPCSecondaryGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCWarningGradientDotBadge(
+              FPCWarningGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
             ],
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
@@ -131,35 +131,35 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCAccentLightGradientDotBadge(
+              FPCAccentLightGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCInfoLightGradientDotBadge(
+              FPCInfoLightGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCSuccessLightGradientDotBadge(
+              FPCSuccessLightGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCGreyLightGradientDotBadge(
+              FPCGreyLightGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCPrimaryLightGradientDotBadge(
+              FPCPrimaryLightGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCDangerLightGradientDotBadge(
+              FPCDangerLightGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCSecondaryLightGradientDotBadge(
+              FPCSecondaryLightGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCWarningLightGradientDotBadge(
+              FPCWarningLightGradientDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
@@ -176,9 +176,9 @@ class _Child extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
     return Container(
       height: size.s32,

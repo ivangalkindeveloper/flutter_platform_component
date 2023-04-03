@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class CardScreen extends StatelessWidget {
@@ -7,241 +7,241 @@ class CardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Card",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkCard(
-            child: FCText.regular16WhiteAlways(
+          FPCAccentDarkCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkCard(
-            child: FCText.regular16WhiteAlways(
+          FPCInfoDarkCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkCard(
-            child: FCText.regular16WhiteAlways(
+          FPCSuccessDarkCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkCard(
-            child: FCText.regular16WhiteAlways(
+          FPCGreyDarkCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkCard(
-            child: FCText.regular16WhiteAlways(
+          FPCPrimaryDarkCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerDarkCard(
-            child: FCText.regular16WhiteAlways(
+          FPCDangerDarkCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkCard(
-            child: FCText.regular16WhiteAlways(
+          FPCSecondaryDarkCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkCard(
-            child: FCText.regular16WhiteAlways(
+          FPCWarningDarkCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentCard(
-            child: FCText.regular16WhiteAlways(
+          FPCAccentCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackAlwaysCard(
-            child: FCText.regular16WhiteAlways(
+          FPCBlackAlwaysCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackCard(
-            child: FCText.regular16WhiteAlways(
+          FPCBlackCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoCard(
-            child: FCText.regular16WhiteAlways(
+          FPCInfoCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlurCard(
-            child: FCText.regular16WhiteAlways(
+          FPCBlurCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessCard(
-            child: FCText.regular16WhiteAlways(
+          FPCSuccessCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyCard(
-            child: FCText.regular16WhiteAlways(
+          FPCGreyCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryCard(
-            child: FCText.regular16WhiteAlways(
+          FPCPrimaryCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerCard(
-            child: FCText.regular16WhiteAlways(
+          FPCDangerCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryCard(
-            child: FCText.regular16WhiteAlways(
+          FPCSecondaryCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCTransparentCard(
-            child: FCText.regular16WhiteAlways(
+          FPCTransparentCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteAlwaysCard(
-            child: FCText.regular16WhiteAlways(
+          FPCWhiteAlwaysCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteCard(
-            child: FCText.regular16WhiteAlways(
+          FPCWhiteCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningCard(
-            child: FCText.regular16WhiteAlways(
+          FPCWarningCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightCard(
-            child: FCText.regular16WhiteAlways(
+          FPCAccentLightCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightCard(
-            child: FCText.regular16WhiteAlways(
+          FPCInfoLightCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightCard(
-            child: FCText.regular16WhiteAlways(
+          FPCSuccessLightCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyLightCard(
-            child: FCText.regular16WhiteAlways(
+          FPCGreyLightCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightCard(
-            child: FCText.regular16WhiteAlways(
+          FPCPrimaryLightCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerLightCard(
-            child: FCText.regular16WhiteAlways(
+          FPCDangerLightCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightCard(
-            child: FCText.regular16WhiteAlways(
+          FPCSecondaryLightCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightCard(
-            child: FCText.regular16WhiteAlways(
+          FPCWarningLightCard(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),

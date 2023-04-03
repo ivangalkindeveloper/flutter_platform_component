@@ -1,4 +1,4 @@
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/material.dart';
 
 class ConfigListTheme extends StatelessWidget {
@@ -6,15 +6,15 @@ class ConfigListTheme extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
     return Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        FCText.semiBold20Black(
+        FPCText.semiBold20Black(
           context: context,
           text: "Theme:",
         ),
@@ -24,14 +24,14 @@ class ConfigListTheme extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "Material theme mode:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: theme.materialThemeMode.name,
               ),
@@ -42,7 +42,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "SystemNavigationBarColor:",
             ),
@@ -59,7 +59,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "SystemNavigationBarDividerColor:",
             ),
@@ -77,14 +77,14 @@ class ConfigListTheme extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "SystemNavigationBarIconBrightness:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text:
                     theme.systemOverlayStyle.systemNavigationBarIconBrightness.toString(),
@@ -97,14 +97,14 @@ class ConfigListTheme extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "SystemNavigationBarContrastEnforced:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: theme.systemOverlayStyle.systemNavigationBarContrastEnforced
                     .toString(),
@@ -116,7 +116,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "StatusBarColor:",
             ),
@@ -134,14 +134,14 @@ class ConfigListTheme extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "StatusBarBrightness:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: theme.systemOverlayStyle.statusBarBrightness.toString(),
               ),
@@ -153,14 +153,14 @@ class ConfigListTheme extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "StatusBarIconBrightness:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: theme.systemOverlayStyle.statusBarIconBrightness.toString(),
               ),
@@ -172,14 +172,14 @@ class ConfigListTheme extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "SystemStatusBarContrastEnforced:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: theme.systemOverlayStyle.systemStatusBarContrastEnforced.toString(),
               ),
@@ -191,7 +191,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "White:",
             ),
@@ -208,7 +208,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "White always:",
             ),
@@ -226,7 +226,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Black:",
             ),
@@ -243,7 +243,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Black always:",
             ),
@@ -261,7 +261,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Background Scaffold:",
             ),
@@ -278,7 +278,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Background Component:",
             ),
@@ -296,7 +296,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Blur:",
             ),
@@ -313,13 +313,13 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Blur Filter:",
             ),
             SizedBox(width: size.s16),
             Expanded(
-              child: FCBlur(
+              child: FPCBlur(
                 child: Container(
                   height: size.s16,
                   color: Colors.transparent,
@@ -333,7 +333,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Primary:",
             ),
@@ -350,7 +350,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Primary Button:",
             ),
@@ -367,7 +367,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Primary Gradient:",
             ),
@@ -387,7 +387,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Primary Light:",
             ),
@@ -404,7 +404,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Primary Light Gradient:",
             ),
@@ -424,7 +424,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Primary Dark:",
             ),
@@ -441,7 +441,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Primary Dark Gradient:",
             ),
@@ -461,7 +461,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Secondary:",
             ),
@@ -478,7 +478,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Secondary Button:",
             ),
@@ -495,7 +495,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Secondary Gradient:",
             ),
@@ -515,7 +515,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Secondary Light:",
             ),
@@ -532,7 +532,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Secondary Light Gradient:",
             ),
@@ -552,7 +552,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Secondary Dark:",
             ),
@@ -569,7 +569,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Secondary Dark Gradient:",
             ),
@@ -589,7 +589,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Grey:",
             ),
@@ -606,7 +606,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Grey Gradient:",
             ),
@@ -626,7 +626,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Grey Light:",
             ),
@@ -643,7 +643,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Grey Light Gradient:",
             ),
@@ -663,7 +663,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Grey Dark:",
             ),
@@ -680,7 +680,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Grey Dark Gradient:",
             ),
@@ -700,7 +700,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Info:",
             ),
@@ -717,7 +717,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Info Gradient:",
             ),
@@ -737,7 +737,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Info Light:",
             ),
@@ -754,7 +754,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Info Light Gradient:",
             ),
@@ -774,7 +774,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Info Dark:",
             ),
@@ -791,7 +791,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Info Dark Gradient:",
             ),
@@ -811,7 +811,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Success:",
             ),
@@ -828,7 +828,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Success Gradient:",
             ),
@@ -848,7 +848,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Success Light:",
             ),
@@ -865,7 +865,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Success Light Gradient:",
             ),
@@ -885,7 +885,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Success Dark:",
             ),
@@ -902,7 +902,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Success Dark Gradient:",
             ),
@@ -922,7 +922,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Warning:",
             ),
@@ -939,7 +939,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Warning Gradient:",
             ),
@@ -959,7 +959,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Warning Light:",
             ),
@@ -976,7 +976,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Warning Light Gradient:",
             ),
@@ -996,7 +996,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Warning Dark:",
             ),
@@ -1013,7 +1013,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Warning Dark Gradient:",
             ),
@@ -1033,7 +1033,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Danger:",
             ),
@@ -1050,7 +1050,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Danger Gradient:",
             ),
@@ -1070,7 +1070,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Danger Light:",
             ),
@@ -1087,7 +1087,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Danger Light Gradient:",
             ),
@@ -1107,7 +1107,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Danger Dark:",
             ),
@@ -1124,7 +1124,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Danger Dark Gradient:",
             ),
@@ -1145,7 +1145,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Barrier Expanded Modal Cupertino:",
             ),
@@ -1162,7 +1162,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Barrier Expanded Modal Material:",
             ),
@@ -1180,7 +1180,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Barrier Pop Up Modal Cupertino:",
             ),
@@ -1197,7 +1197,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Barrier Pop Up Modal Material:",
             ),
@@ -1215,7 +1215,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Barrier Dialog Cupertino:",
             ),
@@ -1232,7 +1232,7 @@ class ConfigListTheme extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Barrier Dialog Material:",
             ),

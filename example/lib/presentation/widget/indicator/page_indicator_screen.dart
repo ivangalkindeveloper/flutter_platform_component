@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class PageIndicatorScreen extends StatefulWidget {
@@ -15,23 +15,23 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Page Indicator",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "Index",
             onPressed: () => setState(() {
               if (this._index == 3) {
@@ -42,122 +42,122 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
             }),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.medium16Black(
+          FPCText.medium16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkPageIndicator(
+          FPCAccentDarkPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCInfoDarkPageIndicator(
+          FPCInfoDarkPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCSuccessDarkPageIndicator(
+          FPCSuccessDarkPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCPrimaryDarkPageIndicator(
+          FPCPrimaryDarkPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCDangerDarkPageIndicator(
+          FPCDangerDarkPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCSecondaryDarkPageIndicator(
+          FPCSecondaryDarkPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCWarningDarkPageIndicator(
+          FPCWarningDarkPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentPageIndicator(
+          FPCAccentPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCInfoPageIndicator(
+          FPCInfoPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCSuccessPageIndicator(
+          FPCSuccessPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCPrimaryPageIndicator(
+          FPCPrimaryPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCDangerPageIndicator(
+          FPCDangerPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCSecondaryPageIndicator(
+          FPCSecondaryPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCWarningPageIndicator(
+          FPCWarningPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightPageIndicator(
+          FPCAccentLightPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCInfoLightPageIndicator(
+          FPCInfoLightPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCSuccessLightPageIndicator(
+          FPCSuccessLightPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCPrimaryLightPageIndicator(
+          FPCPrimaryLightPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCDangerLightPageIndicator(
+          FPCDangerLightPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCSecondaryLightPageIndicator(
+          FPCSecondaryLightPageIndicator(
             length: this._length,
             index: this._index,
           ),
           SizedBox(height: size.s16),
-          FCWarningLightPageIndicator(
+          FPCWarningLightPageIndicator(
             length: this._length,
             index: this._index,
           ),

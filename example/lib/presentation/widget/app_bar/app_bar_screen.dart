@@ -1,6 +1,6 @@
 import 'package:example/presentation/config/config_section.dart';
 import 'package:example/presentation/helper/dummy_list.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -14,15 +14,15 @@ class AppBarScreen extends StatefulWidget {
 class _AppBarScreenState extends State<AppBarScreen> {
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       extendBodyBehindAppBar: true,
 
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCExpandedModalAppBar(
+      appBar: FPCExpandedModalAppBar(
         context: context,
         cupertinoLocale: "Back",
         onPressedBack: () => Navigator.pop(context),
@@ -30,7 +30,7 @@ class _AppBarScreenState extends State<AppBarScreen> {
       ),
 
       // backgroundColor: theme.black,
-      // appBar: FCWhiteAlwaysExpandedModalAppBar(
+      // appBar: FPCWhiteAlwaysExpandedModalAppBar(
       //   context: context,
       //   cupertinoLocale: "Back",
       //   onPressedBack: () => Navigator.pop(context),
@@ -38,20 +38,20 @@ class _AppBarScreenState extends State<AppBarScreen> {
       // ),
 
       // backgroundColor: theme.backgroundScaffold,
-      // appBar: FCScreenAppBar(
+      // appBar: FPCScreenAppBar(
       //   context: context,
       //   title: "Screen",
       //   onPressedBack: () => Navigator.pop(context),
       // ),
 
       // backgroundColor: theme.black,
-      // appBar: FCWhiteAlwaysScreenAppBar(
+      // appBar: FPCWhiteAlwaysScreenAppBar(
       //   context: context,
       //   onPressedBack: () => Navigator.pop(context),
       //   title: "White Always Screen",
       // ),
 
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),

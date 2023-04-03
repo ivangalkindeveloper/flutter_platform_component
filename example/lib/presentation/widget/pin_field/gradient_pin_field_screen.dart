@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:async';
 
@@ -25,145 +25,145 @@ class _GradientPINFieldScreenState extends State<GradientPINFieldScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Gradient PIN Field",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkGradientPINField(
+          FPCAccentDarkGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkGradientPINField(
+          FPCInfoDarkGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkGradientPINField(
+          FPCSuccessDarkGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkGradientPINField(
+          FPCGreyDarkGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkGradientPINField(
+          FPCPrimaryDarkGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkGradientPINField(
+          FPCSecondaryDarkGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkGradientPINField(
+          FPCWarningDarkGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentGradientPINField(
+          FPCAccentGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoGradientPINField(
+          FPCInfoGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessGradientPINField(
+          FPCSuccessGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyGradientPINField(
+          FPCGreyGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryGradientPINField(
+          FPCPrimaryGradientPINField(
             errorController: this._errorController,
             length: this._length,
             onCompleted: this._onCompleted,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryGradientPINField(
+          FPCSecondaryGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningGradientPINField(
+          FPCWarningGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightGradientPINField(
+          FPCAccentLightGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightGradientPINField(
+          FPCInfoLightGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightGradientPINField(
+          FPCSuccessLightGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyLightGradientPINField(
+          FPCGreyLightGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightGradientPINField(
+          FPCPrimaryLightGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightGradientPINField(
+          FPCSecondaryLightGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightGradientPINField(
+          FPCWarningLightGradientPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),

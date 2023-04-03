@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientCounterBadgeScreen extends StatefulWidget {
@@ -14,27 +14,27 @@ class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen>
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Gradient Counter Badge",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "Count",
             onPressed: () => setState(() => this._count++),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
@@ -43,42 +43,42 @@ class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen>
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCAccentDarkGradientCounterBadge(
+              FPCAccentDarkGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCInfoDarkGradientCounterBadge(
+              FPCInfoDarkGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCSuccessDarkGradientCounterBadge(
+              FPCSuccessDarkGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCGreyDarkGradientCounterBadge(
+              FPCGreyDarkGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCPrimaryDarkGradientCounterBadge(
+              FPCPrimaryDarkGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCDangerDarkGradientCounterBadge(
+              FPCDangerDarkGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCSecondaryDarkGradientCounterBadge(
+              FPCSecondaryDarkGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCWarningDarkGradientCounterBadge(
+              FPCWarningDarkGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
             ],
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
@@ -87,42 +87,42 @@ class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen>
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCAccentGradientCounterBadge(
+              FPCAccentGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCInfoGradientCounterBadge(
+              FPCInfoGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCSuccessGradientCounterBadge(
+              FPCSuccessGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCGreyGradientCounterBadge(
+              FPCGreyGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCPrimaryGradientCounterBadge(
+              FPCPrimaryGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCDangerGradientCounterBadge(
+              FPCDangerGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCSecondaryGradientCounterBadge(
+              FPCSecondaryGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCWarningGradientCounterBadge(
+              FPCWarningGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
             ],
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
@@ -131,35 +131,35 @@ class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen>
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCAccentLightGradientCounterBadge(
+              FPCAccentLightGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCInfoLightGradientCounterBadge(
+              FPCInfoLightGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCSuccessLightGradientCounterBadge(
+              FPCSuccessLightGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCGreyLightGradientCounterBadge(
+              FPCGreyLightGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCPrimaryLightGradientCounterBadge(
+              FPCPrimaryLightGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCDangerLightGradientCounterBadge(
+              FPCDangerLightGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCSecondaryLightGradientCounterBadge(
+              FPCSecondaryLightGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCWarningLightGradientCounterBadge(
+              FPCWarningLightGradientCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
@@ -176,9 +176,9 @@ class _Child extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
     return Container(
       height: size.s32,

@@ -1,4 +1,4 @@
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class AnimatedFadeOutScreen extends StatefulWidget {
@@ -13,22 +13,22 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Animated Fade Out",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: SafeArea(
-        child: FCPadding(
+        child: FPCPadding(
           child: Column(
             children: [
-              FCPrimaryButton(
+              FPCPrimaryButton(
                 title: "Action",
                 onPressed: () => setState(() => this._action = !this._action),
               ),
@@ -38,7 +38,7 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      FCText.regular16Black(
+                      FPCText.regular16Black(
                         context: context,
                         text: "Slow",
                       ),
@@ -48,12 +48,12 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Out",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedSlowFadeOut(
+                              FPCAnimatedSlowFadeOut(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -67,12 +67,12 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Out Up",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedSlowFadeOutUp(
+                              FPCAnimatedSlowFadeOutUp(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -86,12 +86,12 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Out Down",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedSlowFadeOutDown(
+                              FPCAnimatedSlowFadeOutDown(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -105,12 +105,12 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Out Left",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedSlowFadeOutLeft(
+                              FPCAnimatedSlowFadeOutLeft(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -124,12 +124,12 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Out Right",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedSlowFadeOutRight(
+                              FPCAnimatedSlowFadeOutRight(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -142,7 +142,7 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                         ],
                       ),
                       SizedBox(height: size.s16),
-                      FCText.regular16Black(
+                      FPCText.regular16Black(
                         context: context,
                         text: "Default",
                       ),
@@ -152,12 +152,12 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Out",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFadeOut(
+                              FPCAnimatedFadeOut(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -171,12 +171,12 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Out Up",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFadeOutUp(
+                              FPCAnimatedFadeOutUp(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -190,12 +190,12 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Out Down",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFadeOutDown(
+                              FPCAnimatedFadeOutDown(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -209,12 +209,12 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Out Left",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFadeOutLeft(
+                              FPCAnimatedFadeOutLeft(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -228,12 +228,12 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Out Right",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFadeOutRight(
+                              FPCAnimatedFadeOutRight(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -246,7 +246,7 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                         ],
                       ),
                       SizedBox(height: size.s16),
-                      FCText.regular16Black(
+                      FPCText.regular16Black(
                         context: context,
                         text: "Fast",
                       ),
@@ -256,12 +256,12 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Out",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFastFadeOut(
+                              FPCAnimatedFastFadeOut(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -275,12 +275,12 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Out Up",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFastFadeOutUp(
+                              FPCAnimatedFastFadeOutUp(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -294,12 +294,12 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Out Down",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFastFadeOutDown(
+                              FPCAnimatedFastFadeOutDown(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -313,12 +313,12 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Out Left",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFastFadeOutLeft(
+                              FPCAnimatedFastFadeOutLeft(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -332,12 +332,12 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "Out Right",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFastFadeOutRight(
+                              FPCAnimatedFastFadeOutRight(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,

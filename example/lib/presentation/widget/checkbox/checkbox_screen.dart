@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class CheckboxScreen extends StatefulWidget {
@@ -15,232 +15,232 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Checkbox",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkCheckbox(
+          FPCAccentDarkCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkCheckbox(
+          FPCInfoDarkCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkCheckbox(
+          FPCSuccessDarkCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkCheckbox(
+          FPCGreyDarkCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkCheckbox(
+          FPCPrimaryDarkCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerDarkCheckbox(
+          FPCDangerDarkCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkCheckbox(
+          FPCSecondaryDarkCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkCheckbox(
+          FPCWarningDarkCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentCheckbox(
+          FPCAccentCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackAlwaysCheckbox(
+          FPCBlackAlwaysCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackCheckbox(
+          FPCBlackCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoCheckbox(
+          FPCInfoCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessCheckbox(
+          FPCSuccessCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyCheckbox(
+          FPCGreyCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryCheckbox(
+          FPCPrimaryCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerCheckbox(
+          FPCDangerCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryCheckbox(
+          FPCSecondaryCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteAlwaysCheckbox(
+          FPCWhiteAlwaysCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteCheckbox(
+          FPCWhiteCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningCheckbox(
+          FPCWarningCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightCheckbox(
+          FPCAccentLightCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightCheckbox(
+          FPCInfoLightCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightCheckbox(
+          FPCSuccessLightCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyLightCheckbox(
+          FPCGreyLightCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightCheckbox(
+          FPCPrimaryLightCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerLightCheckbox(
+          FPCDangerLightCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightCheckbox(
+          FPCSecondaryLightCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightCheckbox(
+          FPCWarningLightCheckbox(
             value: this._isSelected,
             onChanged: (bool value) =>
                 setState(() => this._isSelected = !this._isSelected),

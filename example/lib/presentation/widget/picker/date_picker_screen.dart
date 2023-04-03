@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class DatePickerScreen extends StatelessWidget {
@@ -7,28 +7,28 @@ class DatePickerScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Date Picker",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "Open",
-            onPressed: () => showFCDatePicker(
+            onPressed: () => showFPCDatePicker(
               context: context,
-              cupertinoModalBuilder: (BuildContext context) => FCPopUpModal(
+              cupertinoModalBuilder: (BuildContext context) => FPCPopUpModal(
                 backgroundColor: theme.backgroundScaffold,
-                child: FCDatePicker(),
+                child: FPCDatePicker(),
               ),
               materialDialogLocale: const Locale("en", "EN"),
             ),

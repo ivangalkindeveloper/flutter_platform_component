@@ -4,7 +4,7 @@ import 'package:example/presentation/component_list/component_list_theme.dart';
 import 'package:example/presentation/component_list/component_list_size.dart';
 import 'package:example/presentation/component_list/component_list_wdget.dart';
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ComponentList extends StatelessWidget {
@@ -12,18 +12,18 @@ class ComponentList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCBasicAppBar(
+      appBar: FPCBasicAppBar(
         context: context,
         title: "Flutter Component",
       ),
-      body: FCScrollbar(
-        child: FCListView(
+      body: FPCScrollbar(
+        child: FPCListView(
           children: [
             const ConfigSection(),
             SizedBox(height: size.s16),

@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:async';
 
@@ -25,145 +25,145 @@ class _GradientCodeFieldScreenState extends State<GradientCodeFieldScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Gradient Code Field",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkGradientCodeField(
+          FPCAccentDarkGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkGradientCodeField(
+          FPCInfoDarkGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkGradientCodeField(
+          FPCSuccessDarkGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkGradientCodeField(
+          FPCGreyDarkGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkGradientCodeField(
+          FPCPrimaryDarkGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkGradientCodeField(
+          FPCSecondaryDarkGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkGradientCodeField(
+          FPCWarningDarkGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentGradientCodeField(
+          FPCAccentGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoGradientCodeField(
+          FPCInfoGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessGradientCodeField(
+          FPCSuccessGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyGradientCodeField(
+          FPCGreyGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryGradientCodeField(
+          FPCPrimaryGradientCodeField(
             errorController: this._errorController,
             length: this._length,
             onCompleted: this._onCompleted,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryGradientCodeField(
+          FPCSecondaryGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningGradientCodeField(
+          FPCWarningGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightGradientCodeField(
+          FPCAccentLightGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightGradientCodeField(
+          FPCInfoLightGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightGradientCodeField(
+          FPCSuccessLightGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyLightGradientCodeField(
+          FPCGreyLightGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightGradientCodeField(
+          FPCPrimaryLightGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightGradientCodeField(
+          FPCSecondaryLightGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightGradientCodeField(
+          FPCWarningLightGradientCodeField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),

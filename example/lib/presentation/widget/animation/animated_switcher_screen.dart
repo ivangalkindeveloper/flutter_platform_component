@@ -1,4 +1,4 @@
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class AnimatedSwitcherScreen extends StatefulWidget {
@@ -13,22 +13,22 @@ class _AnimatedSwitcherScreenState extends State<AnimatedSwitcherScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Animated Switcher",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: SafeArea(
-        child: FCPadding(
+        child: FPCPadding(
           child: Column(
             children: [
-              FCPrimaryButton(
+              FPCPrimaryButton(
                 title: "Action",
                 onPressed: () => setState(() => this._action = !this._action),
               ),
@@ -39,12 +39,12 @@ class _AnimatedSwitcherScreenState extends State<AnimatedSwitcherScreen> {
                       Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          FCText.regular16Black(
+                          FPCText.regular16Black(
                             context: context,
                             text: "Slow",
                           ),
                           SizedBox(height: size.s16),
-                          FCAnimatedSlowSwitcher(
+                          FPCAnimatedSlowSwitcher(
                             child: this._action
                                 ? Container(
                                     key: UniqueKey(),
@@ -65,12 +65,12 @@ class _AnimatedSwitcherScreenState extends State<AnimatedSwitcherScreen> {
                       Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          FCText.regular16Black(
+                          FPCText.regular16Black(
                             context: context,
                             text: "Default",
                           ),
                           SizedBox(height: size.s16),
-                          FCAnimatedSwitcher(
+                          FPCAnimatedSwitcher(
                             child: this._action
                                 ? Container(
                                     key: UniqueKey(),
@@ -91,12 +91,12 @@ class _AnimatedSwitcherScreenState extends State<AnimatedSwitcherScreen> {
                       Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          FCText.regular16Black(
+                          FPCText.regular16Black(
                             context: context,
                             text: "Fast",
                           ),
                           SizedBox(height: size.s16),
-                          FCAnimatedFastSwitcher(
+                          FPCAnimatedFastSwitcher(
                             child: this._action
                                 ? Container(
                                     key: UniqueKey(),

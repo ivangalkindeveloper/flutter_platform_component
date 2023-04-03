@@ -1,6 +1,6 @@
 import 'package:example/presentation/config/config_section.dart';
 import 'package:example/presentation/helper/dummy_list.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ScrollbarScreen extends StatelessWidget {
@@ -8,19 +8,19 @@ class ScrollbarScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Scrollbar",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCScrollbar(
-        child: FCListView(
+      body: FPCScrollbar(
+        child: FPCListView(
           children: [
             const ConfigSection(),
             SizedBox(height: size.s16 * 2),

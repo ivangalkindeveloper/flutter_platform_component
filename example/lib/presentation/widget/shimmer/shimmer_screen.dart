@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ShimmerScreen extends StatelessWidget {
@@ -7,92 +7,92 @@ class ShimmerScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Shimmer",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
-          FCText.medium16Black(
+          FPCText.medium16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkShimmer(
+          FPCAccentDarkShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkShimmer(
+          FPCInfoDarkShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkShimmer(
+          FPCSuccessDarkShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkShimmer(
+          FPCGreyDarkShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkShimmer(
+          FPCPrimaryDarkShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerDarkShimmer(
+          FPCDangerDarkShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkShimmer(
+          FPCSecondaryDarkShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkShimmer(
+          FPCWarningDarkShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentShimmer(
+          FPCAccentShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoShimmer(
+          FPCInfoShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessShimmer(
+          FPCSuccessShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyShimmer(
+          FPCGreyShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryShimmer(
+          FPCPrimaryShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerShimmer(
+          FPCDangerShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryShimmer(
+          FPCSecondaryShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningShimmer(
+          FPCWarningShimmer(
             height: size.s16 * 2,
           ),
         ],

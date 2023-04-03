@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class TextScreen extends StatelessWidget {
@@ -7,42 +7,42 @@ class TextScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Text",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
-          FCText.thin10Info(
+          FPCText.thin10Info(
             context: context,
             text: "Thin 10 Info",
           ),
           SizedBox(height: size.s16 / 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Regular 16 Black",
           ),
           SizedBox(height: size.s16 / 2),
-          FCText.medium18Success(
+          FPCText.medium18Success(
             context: context,
             text: "Medium 18 Success",
           ),
           SizedBox(height: size.s16 / 2),
-          FCText.semiBold20Grey(
+          FPCText.semiBold20Grey(
             context: context,
             text: "Semibold 20 Grey",
           ),
           SizedBox(height: size.s16 / 2),
-          FCText.bold28Danger(
+          FPCText.bold28Danger(
             context: context,
             text: "Bold 28 Danger",
           ),

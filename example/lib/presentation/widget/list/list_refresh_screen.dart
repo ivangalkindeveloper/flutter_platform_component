@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ListRefreshScreen extends StatefulWidget {
@@ -22,104 +22,104 @@ class _ListRefreshScreenState extends State<ListRefreshScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "List Refresh",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListRefresh(
+      body: FPCListRefresh(
         controller: this._controller,
         onRefresh: this._onRefresh,
-        child: FCPadding(
+        child: FPCPadding(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               const ConfigSection(),
               SizedBox(height: size.s16 * 2),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               //
               SizedBox(height: size.s16 * 2),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16 * 2),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16 * 2),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16 * 2),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16),
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
             ],

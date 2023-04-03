@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class SwitchScreen extends StatefulWidget {
@@ -15,199 +15,199 @@ class _SwitchScreenState extends State<SwitchScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Switch",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkSwitch(
+          FPCAccentDarkSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkSwitch(
+          FPCInfoDarkSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkSwitch(
+          FPCSuccessDarkSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkSwitch(
+          FPCPrimaryDarkSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerDarkSwitch(
+          FPCDangerDarkSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkSwitch(
+          FPCSecondaryDarkSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkSwitch(
+          FPCWarningDarkSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentSwitch(
+          FPCAccentSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackAlwaysSwitch(
+          FPCBlackAlwaysSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackSwitch(
+          FPCBlackSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoSwitch(
+          FPCInfoSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoSwitch(
+          FPCInfoSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessSwitch(
+          FPCSuccessSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreySwitch(
+          FPCGreySwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimarySwitch(
+          FPCPrimarySwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerSwitch(
+          FPCDangerSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondarySwitch(
+          FPCSecondarySwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteAlwaysSwitch(
+          FPCWhiteAlwaysSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteSwitch(
+          FPCWhiteSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningSwitch(
+          FPCWarningSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightSwitch(
+          FPCAccentLightSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightSwitch(
+          FPCInfoLightSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightSwitch(
+          FPCSuccessLightSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightSwitch(
+          FPCPrimaryLightSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerLightSwitch(
+          FPCDangerLightSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightSwitch(
+          FPCSecondaryLightSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightSwitch(
+          FPCWarningLightSwitch(
             value: this._value,
             onChanged: (bool value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,

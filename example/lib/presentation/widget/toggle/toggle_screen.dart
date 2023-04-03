@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ToggleScreen extends StatefulWidget {
@@ -11,16 +11,16 @@ class ToggleScreen extends StatefulWidget {
 
 class _ToggleScreenState extends State<ToggleScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-  static const List<FCToggleItem<String>> _items = [
-    FCToggleItem(
+  static const List<FPCToggleItem<String>> _items = [
+    FPCToggleItem(
       value: "First",
       title: "First",
     ),
-    FCToggleItem(
+    FPCToggleItem(
       value: "Second",
       title: "Second",
     ),
-    FCToggleItem(
+    FPCToggleItem(
       value: "Third",
       title: "Third",
     ),
@@ -30,136 +30,136 @@ class _ToggleScreenState extends State<ToggleScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Toggle",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: Form(
         key: this._formKey,
-        child: FCListView(
+        child: FPCListView(
           childrenAlignment: CrossAxisAlignment.center,
           children: [
             const ConfigSection(),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryButton(
+            FPCPrimaryButton(
               title: "validate",
               onPressed: () => this._formKey.currentState?.validate(),
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryButton(
+            FPCPrimaryButton(
               title: "isDisabled",
               onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
             ),
             SizedBox(height: size.s16 * 2),
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Dark",
             ),
             SizedBox(height: size.s16),
-            FCAccentDarkToggle<String>(
+            FPCAccentDarkToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCInfoDarkToggle<String>(
+            FPCInfoDarkToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSuccessDarkToggle<String>(
+            FPCSuccessDarkToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCGreyDarkToggle<String>(
+            FPCGreyDarkToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryDarkToggle<String>(
+            FPCPrimaryDarkToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSecondaryDarkToggle<String>(
+            FPCSecondaryDarkToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWarningDarkToggle<String>(
+            FPCWarningDarkToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 * 2),
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Default",
             ),
             SizedBox(height: size.s16),
-            FCAccentToggle<String>(
+            FPCAccentToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCBlackAlwaysToggle<String>(
+            FPCBlackAlwaysToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCBlackToggle<String>(
+            FPCBlackToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCInfoToggle<String>(
+            FPCInfoToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSuccessToggle<String>(
+            FPCSuccessToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCGreyToggle<String>(
+            FPCGreyToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryToggle<String>(
+            FPCPrimaryToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
@@ -167,82 +167,82 @@ class _ToggleScreenState extends State<ToggleScreen> {
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSecondaryToggle<String>(
+            FPCSecondaryToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWhiteAlwaysToggle<String>(
+            FPCWhiteAlwaysToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWhiteToggle<String>(
+            FPCWhiteToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWarningToggle<String>(
+            FPCWarningToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 * 2),
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Light",
             ),
             SizedBox(height: size.s16),
-            FCAccentLightToggle<String>(
+            FPCAccentLightToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCInfoLightToggle<String>(
+            FPCInfoLightToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSuccessLightToggle<String>(
+            FPCSuccessLightToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCGreyLightToggle<String>(
+            FPCGreyLightToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryLightToggle<String>(
+            FPCPrimaryLightToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSecondaryLightToggle<String>(
+            FPCSecondaryLightToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWarningLightToggle<String>(
+            FPCWarningLightToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),

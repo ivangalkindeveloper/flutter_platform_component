@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/material.dart';
 
 class IconScreen extends StatelessWidget {
@@ -7,18 +7,18 @@ class IconScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Icon",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
@@ -27,12 +27,12 @@ class IconScreen extends StatelessWidget {
               Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  FCText.regular16Black(
+                  FPCText.regular16Black(
                     context: context,
                     text: "Small",
                   ),
                   SizedBox(height: size.s16),
-                  FCIcon.smallPrimary(
+                  FPCIcon.smallPrimary(
                     context: context,
                     icon: Icons.account_circle_outlined,
                   ),
@@ -42,12 +42,12 @@ class IconScreen extends StatelessWidget {
               Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  FCText.regular16Black(
+                  FPCText.regular16Black(
                     context: context,
                     text: "Default",
                   ),
                   SizedBox(height: size.s16),
-                  FCIcon.primary(
+                  FPCIcon.primary(
                     context: context,
                     icon: Icons.account_circle_outlined,
                   ),
@@ -57,12 +57,12 @@ class IconScreen extends StatelessWidget {
               Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  FCText.regular16Black(
+                  FPCText.regular16Black(
                     context: context,
                     text: "Large",
                   ),
                   SizedBox(height: size.s16),
-                  FCIcon.largePrimary(
+                  FPCIcon.largePrimary(
                     context: context,
                     icon: Icons.account_circle_outlined,
                   ),
@@ -71,7 +71,7 @@ class IconScreen extends StatelessWidget {
             ],
           ),
           SizedBox(height: size.s16 * 4),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Small",
           ),
@@ -80,202 +80,202 @@ class IconScreen extends StatelessWidget {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCIcon.smallWhite(
+              FPCIcon.smallWhite(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallWhiteAlways(
+              FPCIcon.smallWhiteAlways(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallBlack(
+              FPCIcon.smallBlack(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallBlackAlways(
+              FPCIcon.smallBlackAlways(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallPrimary(
+              FPCIcon.smallPrimary(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallPrimaryButton(
+              FPCIcon.smallPrimaryButton(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallPrimaryGradient(
+              FPCIcon.smallPrimaryGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallPrimaryLight(
+              FPCIcon.smallPrimaryLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallPrimaryLightGradient(
+              FPCIcon.smallPrimaryLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallPrimaryDark(
+              FPCIcon.smallPrimaryDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallPrimaryDarkGradient(
+              FPCIcon.smallPrimaryDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallSecondary(
+              FPCIcon.smallSecondary(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallSecondaryButton(
+              FPCIcon.smallSecondaryButton(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallSecondaryGradient(
+              FPCIcon.smallSecondaryGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallSecondaryLight(
+              FPCIcon.smallSecondaryLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallSecondaryLightGradient(
+              FPCIcon.smallSecondaryLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallSecondaryDark(
+              FPCIcon.smallSecondaryDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallSecondaryDarkGradient(
+              FPCIcon.smallSecondaryDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallGrey(
+              FPCIcon.smallGrey(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallGreyGradient(
+              FPCIcon.smallGreyGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallGreyLight(
+              FPCIcon.smallGreyLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallGreyLightGradient(
+              FPCIcon.smallGreyLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallGreyDark(
+              FPCIcon.smallGreyDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallGreyDarkGradient(
+              FPCIcon.smallGreyDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallInfo(
+              FPCIcon.smallInfo(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallInfoGradient(
+              FPCIcon.smallInfoGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallInfoLight(
+              FPCIcon.smallInfoLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallInfoLightGradient(
+              FPCIcon.smallInfoLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallInfoDark(
+              FPCIcon.smallInfoDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallInfoDarkGradient(
+              FPCIcon.smallInfoDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallSuccess(
+              FPCIcon.smallSuccess(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallSuccessGradient(
+              FPCIcon.smallSuccessGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallSuccessLight(
+              FPCIcon.smallSuccessLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallSuccessLightGradient(
+              FPCIcon.smallSuccessLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallSuccessDark(
+              FPCIcon.smallSuccessDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallSuccessDarkGradient(
+              FPCIcon.smallSuccessDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallWarning(
+              FPCIcon.smallWarning(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallWarningGradient(
+              FPCIcon.smallWarningGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallWarningLight(
+              FPCIcon.smallWarningLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallWarningLightGradient(
+              FPCIcon.smallWarningLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallWarningDark(
+              FPCIcon.smallWarningDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallWarningDarkGradient(
+              FPCIcon.smallWarningDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallDanger(
+              FPCIcon.smallDanger(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallDangerGradient(
+              FPCIcon.smallDangerGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallDangerLight(
+              FPCIcon.smallDangerLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallDangerLightGradient(
+              FPCIcon.smallDangerLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallDangerDark(
+              FPCIcon.smallDangerDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.smallDangerDarkGradient(
+              FPCIcon.smallDangerDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
             ],
           ),
           SizedBox(height: size.s16),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
@@ -284,202 +284,202 @@ class IconScreen extends StatelessWidget {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCIcon.white(
+              FPCIcon.white(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.whiteAlways(
+              FPCIcon.whiteAlways(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.black(
+              FPCIcon.black(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.blackAlways(
+              FPCIcon.blackAlways(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.primary(
+              FPCIcon.primary(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.primaryButton(
+              FPCIcon.primaryButton(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.primaryGradient(
+              FPCIcon.primaryGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.primaryLight(
+              FPCIcon.primaryLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.primaryLightGradient(
+              FPCIcon.primaryLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.primaryDark(
+              FPCIcon.primaryDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.primaryDarkGradient(
+              FPCIcon.primaryDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.secondary(
+              FPCIcon.secondary(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.secondaryButton(
+              FPCIcon.secondaryButton(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.secondaryGradient(
+              FPCIcon.secondaryGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.secondaryLight(
+              FPCIcon.secondaryLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.secondaryLightGradient(
+              FPCIcon.secondaryLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.secondaryDark(
+              FPCIcon.secondaryDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.secondaryDarkGradient(
+              FPCIcon.secondaryDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.grey(
+              FPCIcon.grey(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.greyGradient(
+              FPCIcon.greyGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.greyLight(
+              FPCIcon.greyLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.greyLightGradient(
+              FPCIcon.greyLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.greyDark(
+              FPCIcon.greyDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.greyDarkGradient(
+              FPCIcon.greyDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.info(
+              FPCIcon.info(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.infoGradient(
+              FPCIcon.infoGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.infoLight(
+              FPCIcon.infoLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.infoLightGradient(
+              FPCIcon.infoLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.infoDark(
+              FPCIcon.infoDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.infoDarkGradient(
+              FPCIcon.infoDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.success(
+              FPCIcon.success(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.successGradient(
+              FPCIcon.successGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.successLight(
+              FPCIcon.successLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.successLightGradient(
+              FPCIcon.successLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.successDark(
+              FPCIcon.successDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.successDarkGradient(
+              FPCIcon.successDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.warning(
+              FPCIcon.warning(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.warningGradient(
+              FPCIcon.warningGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.warningLight(
+              FPCIcon.warningLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.warningLightGradient(
+              FPCIcon.warningLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.warningDark(
+              FPCIcon.warningDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.warningDarkGradient(
+              FPCIcon.warningDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.danger(
+              FPCIcon.danger(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.dangerGradient(
+              FPCIcon.dangerGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.dangerLight(
+              FPCIcon.dangerLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.dangerLightGradient(
+              FPCIcon.dangerLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.dangerDark(
+              FPCIcon.dangerDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.dangerDarkGradient(
+              FPCIcon.dangerDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
             ],
           ),
           SizedBox(height: size.s16),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Large",
           ),
@@ -488,195 +488,195 @@ class IconScreen extends StatelessWidget {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCIcon.largeWhite(
+              FPCIcon.largeWhite(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeWhiteAlways(
+              FPCIcon.largeWhiteAlways(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeBlack(
+              FPCIcon.largeBlack(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeBlackAlways(
+              FPCIcon.largeBlackAlways(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largePrimary(
+              FPCIcon.largePrimary(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largePrimaryButton(
+              FPCIcon.largePrimaryButton(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largePrimaryGradient(
+              FPCIcon.largePrimaryGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largePrimaryLight(
+              FPCIcon.largePrimaryLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largePrimaryLightGradient(
+              FPCIcon.largePrimaryLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largePrimaryDark(
+              FPCIcon.largePrimaryDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largePrimaryDarkGradient(
+              FPCIcon.largePrimaryDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeSecondary(
+              FPCIcon.largeSecondary(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeSecondaryButton(
+              FPCIcon.largeSecondaryButton(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeSecondaryGradient(
+              FPCIcon.largeSecondaryGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeSecondaryLight(
+              FPCIcon.largeSecondaryLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeSecondaryLightGradient(
+              FPCIcon.largeSecondaryLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeSecondaryDark(
+              FPCIcon.largeSecondaryDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeSecondaryDarkGradient(
+              FPCIcon.largeSecondaryDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeGrey(
+              FPCIcon.largeGrey(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeGreyGradient(
+              FPCIcon.largeGreyGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeGreyLight(
+              FPCIcon.largeGreyLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeGreyLightGradient(
+              FPCIcon.largeGreyLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeGreyDark(
+              FPCIcon.largeGreyDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeGreyDarkGradient(
+              FPCIcon.largeGreyDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeInfo(
+              FPCIcon.largeInfo(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeInfoGradient(
+              FPCIcon.largeInfoGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeInfoLight(
+              FPCIcon.largeInfoLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeInfoLightGradient(
+              FPCIcon.largeInfoLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeInfoDark(
+              FPCIcon.largeInfoDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeInfoDarkGradient(
+              FPCIcon.largeInfoDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeSuccess(
+              FPCIcon.largeSuccess(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeSuccessGradient(
+              FPCIcon.largeSuccessGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeSuccessLight(
+              FPCIcon.largeSuccessLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeSuccessLightGradient(
+              FPCIcon.largeSuccessLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeSuccessDark(
+              FPCIcon.largeSuccessDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeSuccessDarkGradient(
+              FPCIcon.largeSuccessDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeWarning(
+              FPCIcon.largeWarning(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeWarningGradient(
+              FPCIcon.largeWarningGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeWarningLight(
+              FPCIcon.largeWarningLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeWarningLightGradient(
+              FPCIcon.largeWarningLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeWarningDark(
+              FPCIcon.largeWarningDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeWarningDarkGradient(
+              FPCIcon.largeWarningDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeDanger(
+              FPCIcon.largeDanger(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeDangerGradient(
+              FPCIcon.largeDangerGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeDangerLight(
+              FPCIcon.largeDangerLight(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeDangerLightGradient(
+              FPCIcon.largeDangerLightGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeDangerDark(
+              FPCIcon.largeDangerDark(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FCIcon.largeDangerDarkGradient(
+              FPCIcon.largeDangerDarkGradient(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),

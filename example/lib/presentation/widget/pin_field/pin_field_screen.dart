@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:async';
 
@@ -25,165 +25,165 @@ class _PINFieldScreenState extends State<PINFieldScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "PIN Field",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkPINField(
+          FPCAccentDarkPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkPINField(
+          FPCInfoDarkPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkPINField(
+          FPCSuccessDarkPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkPINField(
+          FPCGreyDarkPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkPINField(
+          FPCPrimaryDarkPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkPINField(
+          FPCSecondaryDarkPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkPINField(
+          FPCWarningDarkPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentPINField(
+          FPCAccentPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackAlwaysPINField(
+          FPCBlackAlwaysPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackPINField(
+          FPCBlackPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoPINField(
+          FPCInfoPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessPINField(
+          FPCSuccessPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyPINField(
+          FPCGreyPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryPINField(
+          FPCPrimaryPINField(
             errorController: this._errorController,
             length: this._length,
             onCompleted: this._onCompleted,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryPINField(
+          FPCSecondaryPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteAlwaysPINField(
+          FPCWhiteAlwaysPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhitePINField(
+          FPCWhitePINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningPINField(
+          FPCWarningPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightPINField(
+          FPCAccentLightPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightPINField(
+          FPCInfoLightPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightPINField(
+          FPCSuccessLightPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyLightPINField(
+          FPCGreyLightPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightPINField(
+          FPCPrimaryLightPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightPINField(
+          FPCSecondaryLightPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightPINField(
+          FPCWarningLightPINField(
             length: this._length,
             isDisabled: this._isDisabled,
           ),

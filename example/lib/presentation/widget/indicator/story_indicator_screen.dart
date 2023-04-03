@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:async';
 
@@ -71,13 +71,13 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen>
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Story Indicator",
         onPressedBack: () => Navigator.pop(context),
@@ -92,181 +92,181 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen>
                 builder: (BuildContext context, AsyncSnapshot<double> snapshotValue) {
                   final double value = snapshotValue.data ?? 0;
 
-                  return FCListView(
+                  return FPCListView(
                     children: [
                       const ConfigSection(),
                       SizedBox(height: size.s16 / 2),
-                      FCPrimaryButton(
+                      FPCPrimaryButton(
                         title: "Start",
                         onPressed: this._startTimer,
                       ),
                       SizedBox(height: size.s16 * 2),
-                      FCText.regular16Black(
+                      FPCText.regular16Black(
                         context: context,
                         text: "Dark",
                       ),
                       SizedBox(height: size.s16),
-                      FCAccentDarkStoryIndicator(
+                      FPCAccentDarkStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCInfoDarkStoryIndicator(
+                      FPCInfoDarkStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCSuccessDarkStoryIndicator(
+                      FPCSuccessDarkStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCPrimaryDarkStoryIndicator(
+                      FPCPrimaryDarkStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCDangerDarkStoryIndicator(
+                      FPCDangerDarkStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCSecondaryDarkStoryIndicator(
+                      FPCSecondaryDarkStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCWarningDarkStoryIndicator(
+                      FPCWarningDarkStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16 * 2),
-                      FCText.regular16Black(
+                      FPCText.regular16Black(
                         context: context,
                         text: "Default",
                       ),
                       SizedBox(height: size.s16),
-                      FCAccentStoryIndicator(
+                      FPCAccentStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCBlackAlwaysStoryIndicator(
+                      FPCBlackAlwaysStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCBlackStoryIndicator(
+                      FPCBlackStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCInfoStoryIndicator(
+                      FPCInfoStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCSuccessStoryIndicator(
+                      FPCSuccessStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCGreyStoryIndicator(
+                      FPCGreyStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCPrimaryStoryIndicator(
+                      FPCPrimaryStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCDangerStoryIndicator(
+                      FPCDangerStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCSecondaryStoryIndicator(
+                      FPCSecondaryStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCWhiteAlwaysStoryIndicator(
+                      FPCWhiteAlwaysStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCWhiteStoryIndicator(
+                      FPCWhiteStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCWarningStoryIndicator(
+                      FPCWarningStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16 * 2),
-                      FCText.regular16Black(
+                      FPCText.regular16Black(
                         context: context,
                         text: "Light",
                       ),
                       SizedBox(height: size.s16),
-                      FCAccentLightStoryIndicator(
+                      FPCAccentLightStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCInfoLightStoryIndicator(
+                      FPCInfoLightStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCSuccessLightStoryIndicator(
+                      FPCSuccessLightStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCPrimaryLightStoryIndicator(
+                      FPCPrimaryLightStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCDangerLightStoryIndicator(
+                      FPCDangerLightStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCSecondaryLightStoryIndicator(
+                      FPCSecondaryLightStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,
                       ),
                       SizedBox(height: size.s16),
-                      FCWarningLightStoryIndicator(
+                      FPCWarningLightStoryIndicator(
                         length: this._length,
                         index: index,
                         value: value,

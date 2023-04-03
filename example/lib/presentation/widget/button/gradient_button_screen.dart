@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientButtonScreen extends StatefulWidget {
@@ -15,330 +15,330 @@ class _GradientButtonScreenState extends State<GradientButtonScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Gradient Button",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "isLoading",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkGradientButton(
+          FPCAccentDarkGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkGradientButton(
+          FPCInfoDarkGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkGradientButton(
+          FPCSuccessDarkGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkGradientButton(
+          FPCGreyDarkGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkGradientButton(
+          FPCPrimaryDarkGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerDarkGradientButton(
+          FPCDangerDarkGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkGradientButton(
+          FPCSecondaryDarkGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkGradientButton(
+          FPCWarningDarkGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentGradientButton(
+          FPCAccentGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoGradientButton(
+          FPCInfoGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessGradientButton(
+          FPCSuccessGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyGradientButton(
+          FPCGreyGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryGradientButton(
+          FPCPrimaryGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerGradientButton(
+          FPCDangerGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryGradientButton(
+          FPCSecondaryGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningGradientButton(
+          FPCWarningGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentGradientLabelButton(
+          FPCAccentGradientLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoGradientLabelButton(
+          FPCInfoGradientLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessGradientLabelButton(
+          FPCSuccessGradientLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyGradientLabelButton(
+          FPCGreyGradientLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryGradientLabelButton(
+          FPCPrimaryGradientLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerGradientLabelButton(
+          FPCDangerGradientLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryGradientLabelButton(
+          FPCSecondaryGradientLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningGradientLabelButton(
+          FPCWarningGradientLabelButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightGradientButton(
+          FPCAccentLightGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightGradientButton(
+          FPCInfoLightGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightGradientButton(
+          FPCSuccessLightGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyLightGradientButton(
+          FPCGreyLightGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightGradientButton(
+          FPCPrimaryLightGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerLightGradientButton(
+          FPCDangerLightGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightGradientButton(
+          FPCSecondaryLightGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightGradientButton(
+          FPCWarningLightGradientButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Outline",
           ),
           SizedBox(height: size.s16),
-          FCAccentGradientOutlineButton(
+          FPCAccentGradientOutlineButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoGradientOutlineButton(
+          FPCInfoGradientOutlineButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessGradientOutlineButton(
+          FPCSuccessGradientOutlineButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyGradientOutlineButton(
+          FPCGreyGradientOutlineButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryGradientOutlineButton(
+          FPCPrimaryGradientOutlineButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerGradientOutlineButton(
+          FPCDangerGradientOutlineButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryGradientOutlineButton(
+          FPCSecondaryGradientOutlineButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningGradientOutlineButton(
+          FPCWarningGradientOutlineButton(
             title: "Action",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),
             isLoading: this._isLoading,

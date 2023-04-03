@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class PopUpModalScreen extends StatelessWidget {
@@ -7,31 +7,31 @@ class PopUpModalScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Pop Up Modal",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "Open",
-            onPressed: () => showFCPopUpModal(
+            onPressed: () => showFPCPopUpModal(
               context: context,
-              child: FCPopUpModal(
+              child: FPCPopUpModal(
                 backgroundColor: theme.white,
                 child: Container(
                   height: size.s32 * 4,
                   child: Center(
-                    child: FCText.regular14Black(
+                    child: FPCText.regular14Black(
                       context: context,
                       text: "Small Modal",
                     ),

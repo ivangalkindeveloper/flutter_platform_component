@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class FormFieldScreen extends StatefulWidget {
@@ -27,109 +27,109 @@ class _FormFieldScreenState extends State<FormFieldScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Form Field",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: Form(
         key: this._formKey,
-        child: FCListView(
+        child: FPCListView(
           children: [
             const ConfigSection(),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryButton(
+            FPCPrimaryButton(
               title: "validate",
               onPressed: () => this._formKey.currentState?.validate(),
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryButton(
+            FPCPrimaryButton(
               title: "isDisabled",
               onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
             ),
             SizedBox(height: size.s16 * 2),
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Dark",
             ),
             SizedBox(height: size.s16),
-            FCAccentDarkFormField(
+            FPCAccentDarkFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCInfoDarkFormField(
+            FPCInfoDarkFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSuccessDarkFormField(
+            FPCSuccessDarkFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCGreyDarkFormField(
+            FPCGreyDarkFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryDarkFormField(
+            FPCPrimaryDarkFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSecondaryDarkFormField(
+            FPCSecondaryDarkFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWarningDarkFormField(
+            FPCWarningDarkFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 * 2),
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Default",
             ),
             SizedBox(height: size.s16),
-            FCAccentFormField(
+            FPCAccentFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCBlackAlwaysFormField(
+            FPCBlackAlwaysFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCBlackFormField(
+            FPCBlackFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCInfoFormField(
+            FPCInfoFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSuccessFormField(
+            FPCSuccessFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCGreyFormField(
+            FPCGreyFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryFormField(
+            FPCPrimaryFormField(
               labelText: "Label",
               autoValidator: this._autoValidator,
               validator: this._validator,
@@ -137,62 +137,62 @@ class _FormFieldScreenState extends State<FormFieldScreen> {
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSecondaryFormField(
+            FPCSecondaryFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWhiteAlwaysFormField(
+            FPCWhiteAlwaysFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWhiteFormField(
+            FPCWhiteFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWarningFormField(
+            FPCWarningFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 * 2),
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Light",
             ),
             SizedBox(height: size.s16),
-            FCAccentLightFormField(
+            FPCAccentLightFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCInfoLightFormField(
+            FPCInfoLightFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSuccessLightFormField(
+            FPCSuccessLightFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCGreyLightFormField(
+            FPCGreyLightFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryLightFormField(
+            FPCPrimaryLightFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSecondaryLightFormField(
+            FPCSecondaryLightFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWarningLightFormField(
+            FPCWarningLightFormField(
               labelText: "Label",
               isDisabled: this._isDisabled,
             ),

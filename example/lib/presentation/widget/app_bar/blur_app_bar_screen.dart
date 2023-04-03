@@ -1,6 +1,6 @@
 import 'package:example/presentation/config/config_section.dart';
 import 'package:example/presentation/helper/dummy_list.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -14,15 +14,15 @@ class BlurAppBarScreen extends StatefulWidget {
 class _BlurAppBarScreenState extends State<BlurAppBarScreen> {
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       extendBodyBehindAppBar: true,
 
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCBlurExpandedModalAppBar(
+      appBar: FPCBlurExpandedModalAppBar(
         context: context,
         cupertinoLocale: "Back",
         onPressedBack: () => Navigator.pop(context),
@@ -30,7 +30,7 @@ class _BlurAppBarScreenState extends State<BlurAppBarScreen> {
       ),
 
       // backgroundColor: theme.black,
-      // appBar: FCBlurWhiteAlwaysExpandedModalAppBar(
+      // appBar: FPCBlurWhiteAlwaysExpandedModalAppBar(
       //   context: context,
       //   cupertinoLocale: "Back",
       //   onPressedBack: () => Navigator.pop(context),
@@ -38,20 +38,20 @@ class _BlurAppBarScreenState extends State<BlurAppBarScreen> {
       // ),
 
       // backgroundColor: theme.backgroundScaffold,
-      // appBar: FCBlurScreenAppBar(
+      // appBar: FPCBlurScreenAppBar(
       //   context: context,
       //   title: "Blur Screen",
       //   onPressedBack: () => Navigator.pop(context),
       // ),
 
       // backgroundColor: theme.black,
-      // appBar: FCBlurWhiteAlwaysScreenAppBar(
+      // appBar: FPCBlurWhiteAlwaysScreenAppBar(
       //   context: context,
       //   onPressedBack: () => Navigator.pop(context),
       //   title: "Blur White Always Screen",
       // ),
 
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),

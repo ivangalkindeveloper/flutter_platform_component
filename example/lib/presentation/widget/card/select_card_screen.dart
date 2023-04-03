@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class SelectCardScreen extends StatefulWidget {
@@ -14,305 +14,305 @@ class _SelectCardScreenState extends State<SelectCardScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Select Card",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkSelectCard(
+          FPCAccentDarkSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkSelectCard(
+          FPCInfoDarkSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkSelectCard(
+          FPCSuccessDarkSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkSelectCard(
+          FPCGreyDarkSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkSelectCard(
+          FPCPrimaryDarkSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerDarkSelectCard(
+          FPCDangerDarkSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkSelectCard(
+          FPCSecondaryDarkSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkSelectCard(
+          FPCWarningDarkSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentSelectCard(
+          FPCAccentSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackAlwaysSelectCard(
+          FPCBlackAlwaysSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackSelectCard(
+          FPCBlackSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoSelectCard(
+          FPCInfoSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlurSelectCard(
+          FPCBlurSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessSelectCard(
+          FPCSuccessSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreySelectCard(
+          FPCGreySelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimarySelectCard(
+          FPCPrimarySelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerSelectCard(
+          FPCDangerSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondarySelectCard(
+          FPCSecondarySelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCTransparentSelectCard(
+          FPCTransparentSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteAlwaysSelectCard(
+          FPCWhiteAlwaysSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteSelectCard(
+          FPCWhiteSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningSelectCard(
+          FPCWarningSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightSelectCard(
+          FPCAccentLightSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightSelectCard(
+          FPCInfoLightSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightSelectCard(
+          FPCSuccessLightSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyLightSelectCard(
+          FPCGreyLightSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightSelectCard(
+          FPCPrimaryLightSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerLightSelectCard(
+          FPCDangerLightSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightSelectCard(
+          FPCSecondaryLightSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightSelectCard(
+          FPCWarningLightSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),

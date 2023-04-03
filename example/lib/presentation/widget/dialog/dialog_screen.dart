@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class DialogScreen extends StatelessWidget {
@@ -7,34 +7,34 @@ class DialogScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Dialog",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "Open",
-            onPressed: () => showFCDialog(
+            onPressed: () => showFPCDialog(
               context: context,
-              child: FCDialog(
+              child: FPCDialog(
                 title: "Title",
                 description: "Description",
                 items: [
-                  FCDialogItem(
+                  FPCDialogItem(
                     title: "Cancel",
                     onPressed: () => Navigator.pop(context),
                   ),
-                  FCDialogItem(
+                  FPCDialogItem(
                     title: "Confirm",
                     onPressed: () => Navigator.pop(context),
                   ),

@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class NavigatorScreen extends StatelessWidget {
@@ -12,12 +12,12 @@ class NavigatorScreen extends StatelessWidget {
   Route<dynamic>? _onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
       case page_1:
-        return FCRoute.pageRouteFromContext(
+        return FPCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const _Page1(),
         );
       case page_2:
-        return FCRoute.pageRouteFromContext(
+        return FPCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const _Page2(),
         );
@@ -28,12 +28,12 @@ class NavigatorScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Navigator",
         onPressedBack: () => Navigator.pop(context),
@@ -44,7 +44,7 @@ class NavigatorScreen extends StatelessWidget {
           children: [
             const ConfigSection(),
             Expanded(
-              child: FCNavigator(
+              child: FPCNavigator(
                 navigatorKey: navigatorKey,
                 initialRoute: page_1,
                 onGenerateRoute: _onGenerateRoute,
@@ -62,20 +62,20 @@ class _Page1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Page 1",
       ),
       body: Padding(
         padding: EdgeInsets.all(size.s16),
         child: Center(
-          child: FCPrimaryButton(
+          child: FPCPrimaryButton(
             title: "To Page 2",
             onPressed: () => Navigator.pushNamed(
               NavigatorScreen.navigatorKey.currentContext!,
@@ -93,18 +93,18 @@ class _Page2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Page 2",
         onPressedBack: () => Navigator.pop(NavigatorScreen.navigatorKey.currentContext!),
       ),
       body: Center(
-        child: FCText.regular16Black(
+        child: FPCText.regular16Black(
           context: context,
           text: "Page 2",
         ),

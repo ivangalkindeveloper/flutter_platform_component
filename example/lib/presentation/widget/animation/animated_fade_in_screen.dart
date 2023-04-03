@@ -1,4 +1,4 @@
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class AnimatedFadeInScreen extends StatefulWidget {
@@ -13,22 +13,22 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Animated Fade In",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: SafeArea(
-        child: FCPadding(
+        child: FPCPadding(
           child: Column(
             children: [
-              FCPrimaryButton(
+              FPCPrimaryButton(
                 title: "Action",
                 onPressed: () => setState(() => this._action = !this._action),
               ),
@@ -38,7 +38,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      FCText.regular16Black(
+                      FPCText.regular16Black(
                         context: context,
                         text: "Slow",
                       ),
@@ -48,12 +48,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "In",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedSlowFadeIn(
+                              FPCAnimatedSlowFadeIn(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -67,12 +67,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "In Up",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedSlowFadeInUp(
+                              FPCAnimatedSlowFadeInUp(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -86,12 +86,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "In Down",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedSlowFadeInDown(
+                              FPCAnimatedSlowFadeInDown(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -105,12 +105,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "In Left",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedSlowFadeInLeft(
+                              FPCAnimatedSlowFadeInLeft(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -124,12 +124,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "In Right",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedSlowFadeInRight(
+                              FPCAnimatedSlowFadeInRight(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -142,7 +142,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                         ],
                       ),
                       SizedBox(height: size.s16),
-                      FCText.regular16Black(
+                      FPCText.regular16Black(
                         context: context,
                         text: "Default",
                       ),
@@ -152,12 +152,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "In",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFadeIn(
+                              FPCAnimatedFadeIn(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -171,12 +171,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "In Up",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFadeInUp(
+                              FPCAnimatedFadeInUp(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -190,12 +190,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "In Down",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFadeInDown(
+                              FPCAnimatedFadeInDown(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -209,12 +209,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "In Left",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFadeInLeft(
+                              FPCAnimatedFadeInLeft(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -228,12 +228,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "In Right",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFadeInRight(
+                              FPCAnimatedFadeInRight(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -246,7 +246,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                         ],
                       ),
                       SizedBox(height: size.s16),
-                      FCText.regular16Black(
+                      FPCText.regular16Black(
                         context: context,
                         text: "Fast",
                       ),
@@ -256,12 +256,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "In",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFastFadeIn(
+                              FPCAnimatedFastFadeIn(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -275,12 +275,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "In Up",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFastFadeInUp(
+                              FPCAnimatedFastFadeInUp(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -294,12 +294,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "In Down",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFastFadeInDown(
+                              FPCAnimatedFastFadeInDown(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -313,12 +313,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "In Left",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFastFadeInLeft(
+                              FPCAnimatedFastFadeInLeft(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,
@@ -332,12 +332,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              FCText.regular16Black(
+                              FPCText.regular16Black(
                                 context: context,
                                 text: "In Right",
                               ),
                               SizedBox(height: size.s16),
-                              FCAnimatedFastFadeInRight(
+                              FPCAnimatedFastFadeInRight(
                                 isAnimate: _action,
                                 child: Container(
                                   height: size.s28 * 2,

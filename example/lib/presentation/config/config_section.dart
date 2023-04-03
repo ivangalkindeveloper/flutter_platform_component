@@ -1,4 +1,4 @@
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 
@@ -7,8 +7,8 @@ class ConfigSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCSize size = config.size;
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -16,7 +16,7 @@ class ConfigSection extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: FCPrimaryLabelButton(
+              child: FPCPrimaryLabelButton(
                 title: "iOS",
                 onPressed: () => config.changePlatform(
                   platform: TargetPlatform.iOS,
@@ -25,7 +25,7 @@ class ConfigSection extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             Expanded(
-              child: FCPrimaryLabelButton(
+              child: FPCPrimaryLabelButton(
                 title: "Android",
                 onPressed: () => config.changePlatform(
                   platform: TargetPlatform.android,
@@ -37,10 +37,10 @@ class ConfigSection extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: FCPrimaryLabelButton(
+              child: FPCPrimaryLabelButton(
                 title: "Light Theme",
                 onPressed: () {
-                  final IFCTheme theme = FCDefaultTheme.defaultLightTheme;
+                  final IFPCTheme theme = FPCDefaultTheme.defaultLightTheme;
                   SystemChrome.setSystemUIOverlayStyle(theme.systemOverlayStyle);
                   config.changeTheme(theme: theme);
                 },
@@ -48,10 +48,10 @@ class ConfigSection extends StatelessWidget {
             ),
             SizedBox(width: size.s16),
             Expanded(
-              child: FCPrimaryLabelButton(
+              child: FPCPrimaryLabelButton(
                 title: "Dark Theme",
                 onPressed: () {
-                  final IFCTheme theme = FCDefaultTheme.defaultDarkTheme;
+                  final IFPCTheme theme = FPCDefaultTheme.defaultDarkTheme;
                   SystemChrome.setSystemUIOverlayStyle(theme.systemOverlayStyle);
                   config.changeTheme(theme: theme);
                 },

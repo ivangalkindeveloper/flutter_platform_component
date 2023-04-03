@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientSelectCardScreen extends StatefulWidget {
@@ -14,251 +14,251 @@ class _GradientSelectCardScreenState extends State<GradientSelectCardScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Gradient Select Card",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkGradientSelectCard(
+          FPCAccentDarkGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkGradientSelectCard(
+          FPCInfoDarkGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkGradientSelectCard(
+          FPCSuccessDarkGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkGradientSelectCard(
+          FPCGreyDarkGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkGradientSelectCard(
+          FPCPrimaryDarkGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerDarkGradientSelectCard(
+          FPCDangerDarkGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkGradientSelectCard(
+          FPCSecondaryDarkGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkGradientSelectCard(
+          FPCWarningDarkGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentGradientSelectCard(
+          FPCAccentGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoGradientSelectCard(
+          FPCInfoGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessGradientSelectCard(
+          FPCSuccessGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyGradientSelectCard(
+          FPCGreyGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryGradientSelectCard(
+          FPCPrimaryGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerGradientSelectCard(
+          FPCDangerGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryGradientSelectCard(
+          FPCSecondaryGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningGradientSelectCard(
+          FPCWarningGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightGradientSelectCard(
+          FPCAccentLightGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightGradientSelectCard(
+          FPCInfoLightGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightGradientSelectCard(
+          FPCSuccessLightGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyLightGradientSelectCard(
+          FPCGreyLightGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightGradientSelectCard(
+          FPCPrimaryLightGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerLightGradientSelectCard(
+          FPCDangerLightGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightGradientSelectCard(
+          FPCSecondaryLightGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightGradientSelectCard(
+          FPCWarningLightGradientSelectCard(
             onPressed: () {},
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),

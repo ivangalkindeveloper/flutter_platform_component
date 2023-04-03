@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class DotBadgeScreen extends StatefulWidget {
@@ -14,27 +14,27 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Dot Badge",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "isShow",
             onPressed: () => setState(() => this._isShow = !this._isShow),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
@@ -43,42 +43,42 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCAccentDarkDotBadge(
+              FPCAccentDarkDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCInfoDarkDotBadge(
+              FPCInfoDarkDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCSuccessDarkDotBadge(
+              FPCSuccessDarkDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCGreyDarkDotBadge(
+              FPCGreyDarkDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCPrimaryDarkDotBadge(
+              FPCPrimaryDarkDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCDangerDarkDotBadge(
+              FPCDangerDarkDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCSecondaryDarkDotBadge(
+              FPCSecondaryDarkDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCWarningDarkDotBadge(
+              FPCWarningDarkDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
             ],
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
@@ -87,58 +87,58 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCAccentDotBadge(
+              FPCAccentDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCBlackAlwaysDotBadge(
+              FPCBlackAlwaysDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCBlackDotBadge(
+              FPCBlackDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCInfoDotBadge(
+              FPCInfoDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCSuccessDotBadge(
+              FPCSuccessDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCGreyDotBadge(
+              FPCGreyDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCPrimaryDotBadge(
+              FPCPrimaryDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCDangerDotBadge(
+              FPCDangerDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCSecondaryDotBadge(
+              FPCSecondaryDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCWhiteDotBadge(
+              FPCWhiteDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCWhiteAlwaysDotBadge(
+              FPCWhiteAlwaysDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCWarningDotBadge(
+              FPCWarningDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
             ],
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
@@ -147,35 +147,35 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCAccentLightDotBadge(
+              FPCAccentLightDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCInfoLightDotBadge(
+              FPCInfoLightDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCSuccessLightDotBadge(
+              FPCSuccessLightDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCGreyLightDotBadge(
+              FPCGreyLightDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCPrimaryLightDotBadge(
+              FPCPrimaryLightDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCDangerLightDotBadge(
+              FPCDangerLightDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCSecondaryLightDotBadge(
+              FPCSecondaryLightDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
-              FCWarningLightDotBadge(
+              FPCWarningLightDotBadge(
                 child: const _Child(),
                 isShow: this._isShow,
               ),
@@ -192,9 +192,9 @@ class _Child extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
     return Container(
       height: size.s32,

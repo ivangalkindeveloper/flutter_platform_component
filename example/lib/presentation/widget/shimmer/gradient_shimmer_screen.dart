@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientShimmerScreen extends StatelessWidget {
@@ -7,92 +7,92 @@ class GradientShimmerScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Gradient Shimmer",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
-          FCText.medium16Black(
+          FPCText.medium16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkGradientShimmer(
+          FPCAccentDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkGradientShimmer(
+          FPCInfoDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkGradientShimmer(
+          FPCSuccessDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkGradientShimmer(
+          FPCGreyDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkGradientShimmer(
+          FPCPrimaryDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerDarkGradientShimmer(
+          FPCDangerDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkGradientShimmer(
+          FPCSecondaryDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkGradientShimmer(
+          FPCWarningDarkGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentGradientShimmer(
+          FPCAccentGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoGradientShimmer(
+          FPCInfoGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessGradientShimmer(
+          FPCSuccessGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyGradientShimmer(
+          FPCGreyGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryGradientShimmer(
+          FPCPrimaryGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerGradientShimmer(
+          FPCDangerGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryGradientShimmer(
+          FPCSecondaryGradientShimmer(
             height: size.s16 * 2,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningGradientShimmer(
+          FPCWarningGradientShimmer(
             height: size.s16 * 2,
           ),
         ],

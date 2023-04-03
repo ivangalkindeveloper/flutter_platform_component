@@ -1,6 +1,6 @@
 import 'package:example/presentation/config/config_section.dart';
 import 'package:example/presentation/helper/dummy_list.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class SliverNavigationBarScreen extends StatelessWidget {
@@ -8,20 +8,20 @@ class SliverNavigationBarScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
       body: CustomScrollView(
         slivers: [
-          FCSliverNavigationAppBar(
+          FPCSliverNavigationAppBar(
             onPressedBack: () => Navigator.pop(context),
             title: "Title",
           ),
           SliverToBoxAdapter(
-            child: FCPadding(
+            child: FPCPadding(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [

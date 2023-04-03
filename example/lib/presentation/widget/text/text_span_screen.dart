@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class TextSpanScreen extends StatelessWidget {
@@ -7,42 +7,42 @@ class TextSpanScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Text Span",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
           Padding(
             padding: EdgeInsets.all(size.s32),
-            child: FCTextSpan(
+            child: FPCTextSpan(
               children: [
-                FCTextSpanItem.thin10Info(
+                FPCTextSpanItem.thin10Info(
                   context: context,
                   text: "Thin 10 Info ",
                 ),
-                FCTextSpanItem.regular16Black(
+                FPCTextSpanItem.regular16Black(
                   context: context,
                   text: "Regular 16 Black ",
                 ),
-                FCTextSpanItem.medium18Success(
+                FPCTextSpanItem.medium18Success(
                   context: context,
                   text: "Medium 18 Success ",
                 ),
-                FCTextSpanItem.semiBold20Grey(
+                FPCTextSpanItem.semiBold20Grey(
                   context: context,
                   text: "Semibold 20 Grey ",
                 ),
-                FCTextSpanItem.bold28Danger(
+                FPCTextSpanItem.bold28Danger(
                   context: context,
                   text: "Bold 28 Danger",
                 ),

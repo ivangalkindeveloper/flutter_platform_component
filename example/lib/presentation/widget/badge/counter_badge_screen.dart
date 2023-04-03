@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class CounterBadgeScreen extends StatefulWidget {
@@ -14,27 +14,27 @@ class _CounterBadgeScreenState extends State<CounterBadgeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Counter Badge",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "Count",
             onPressed: () => setState(() => this._count++),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
@@ -43,42 +43,42 @@ class _CounterBadgeScreenState extends State<CounterBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCAccentDarkCounterBadge(
+              FPCAccentDarkCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCInfoDarkCounterBadge(
+              FPCInfoDarkCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCSuccessDarkCounterBadge(
+              FPCSuccessDarkCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCGreyDarkCounterBadge(
+              FPCGreyDarkCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCPrimaryDarkCounterBadge(
+              FPCPrimaryDarkCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCDangerDarkCounterBadge(
+              FPCDangerDarkCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCSecondaryDarkCounterBadge(
+              FPCSecondaryDarkCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCWarningDarkCounterBadge(
+              FPCWarningDarkCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
             ],
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
@@ -87,58 +87,58 @@ class _CounterBadgeScreenState extends State<CounterBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCAccentCounterBadge(
+              FPCAccentCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCBlackAlwaysCounterBadge(
+              FPCBlackAlwaysCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCBlackCounterBadge(
+              FPCBlackCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCInfoCounterBadge(
+              FPCInfoCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCSuccessCounterBadge(
+              FPCSuccessCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCGreyCounterBadge(
+              FPCGreyCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCPrimaryCounterBadge(
+              FPCPrimaryCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCDangerCounterBadge(
+              FPCDangerCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCSecondaryCounterBadge(
+              FPCSecondaryCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCWhiteAlwaysCounterBadge(
+              FPCWhiteAlwaysCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCWhiteCounterBadge(
+              FPCWhiteCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCWarningCounterBadge(
+              FPCWarningCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
             ],
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
@@ -147,35 +147,35 @@ class _CounterBadgeScreenState extends State<CounterBadgeScreen> {
             spacing: size.s16,
             runSpacing: size.s16 / 2,
             children: [
-              FCAccentLightCounterBadge(
+              FPCAccentLightCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCInfoLightCounterBadge(
+              FPCInfoLightCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCSuccessLightCounterBadge(
+              FPCSuccessLightCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCGreyLightCounterBadge(
+              FPCGreyLightCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCPrimaryLightCounterBadge(
+              FPCPrimaryLightCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCDangerLightCounterBadge(
+              FPCDangerLightCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCSecondaryLightCounterBadge(
+              FPCSecondaryLightCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
-              FCWarningLightCounterBadge(
+              FPCWarningLightCounterBadge(
                 count: this._count,
                 child: const _Child(),
               ),
@@ -192,9 +192,9 @@ class _Child extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
     return Container(
       height: size.s32,

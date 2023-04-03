@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:async';
 
@@ -54,13 +54,13 @@ class _ProgressIndicatorScreenState extends State<ProgressIndicatorScreen>
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Progress Indicator",
         onPressedBack: () => Navigator.pop(context),
@@ -70,81 +70,81 @@ class _ProgressIndicatorScreenState extends State<ProgressIndicatorScreen>
           builder: (BuildContext context, AsyncSnapshot<double> snapshotValue) {
             final double value = snapshotValue.data ?? 0;
 
-            return FCListView(
+            return FPCListView(
               children: [
                 const ConfigSection(),
                 SizedBox(height: size.s16 / 2),
-                FCPrimaryButton(
+                FPCPrimaryButton(
                   title: "Start",
                   onPressed: this._startTimer,
                 ),
                 SizedBox(height: size.s16 * 2),
-                FCText.regular16Black(
+                FPCText.regular16Black(
                   context: context,
                   text: "Dark",
                 ),
                 SizedBox(height: size.s16),
-                FCAccentDarkProgressIndicator(value: value),
+                FPCAccentDarkProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCInfoDarkProgressIndicator(value: value),
+                FPCInfoDarkProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCSuccessDarkProgressIndicator(value: value),
+                FPCSuccessDarkProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCPrimaryDarkProgressIndicator(value: value),
+                FPCPrimaryDarkProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCDangerDarkProgressIndicator(value: value),
+                FPCDangerDarkProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCSecondaryDarkProgressIndicator(value: value),
+                FPCSecondaryDarkProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCWarningDarkProgressIndicator(value: value),
+                FPCWarningDarkProgressIndicator(value: value),
                 SizedBox(height: size.s16 * 2),
-                FCText.regular16Black(
+                FPCText.regular16Black(
                   context: context,
                   text: "Default",
                 ),
                 SizedBox(height: size.s16),
-                FCAccentProgressIndicator(value: value),
+                FPCAccentProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCBlackAlwaysProgressIndicator(value: value),
+                FPCBlackAlwaysProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCBlackProgressIndicator(value: value),
+                FPCBlackProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCInfoProgressIndicator(value: value),
+                FPCInfoProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCSuccessProgressIndicator(value: value),
+                FPCSuccessProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCGreyProgressIndicator(value: value),
+                FPCGreyProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCPrimaryProgressIndicator(value: value),
+                FPCPrimaryProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCDangerProgressIndicator(value: value),
+                FPCDangerProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCSecondaryProgressIndicator(value: value),
+                FPCSecondaryProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCWhiteAlwaysProgressIndicator(value: value),
+                FPCWhiteAlwaysProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCWhiteProgressIndicator(value: value),
+                FPCWhiteProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCWarningProgressIndicator(value: value),
+                FPCWarningProgressIndicator(value: value),
                 SizedBox(height: size.s16 * 2),
-                FCText.regular16Black(
+                FPCText.regular16Black(
                   context: context,
                   text: "Light",
                 ),
                 SizedBox(height: size.s16),
-                FCAccentLightProgressIndicator(value: value),
+                FPCAccentLightProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCInfoLightProgressIndicator(value: value),
+                FPCInfoLightProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCSuccessLightProgressIndicator(value: value),
+                FPCSuccessLightProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCPrimaryLightProgressIndicator(value: value),
+                FPCPrimaryLightProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCDangerLightProgressIndicator(value: value),
+                FPCDangerLightProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCSecondaryLightProgressIndicator(value: value),
+                FPCSecondaryLightProgressIndicator(value: value),
                 SizedBox(height: size.s16),
-                FCWarningLightProgressIndicator(value: value),
+                FPCWarningLightProgressIndicator(value: value),
               ],
             );
           }),

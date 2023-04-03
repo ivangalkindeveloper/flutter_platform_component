@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class SliderScreen extends StatefulWidget {
@@ -15,186 +15,186 @@ class _SliderScreenState extends State<SliderScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Slider",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkSlider(
+          FPCAccentDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkSlider(
+          FPCInfoDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkSlider(
+          FPCSuccessDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkSlider(
+          FPCPrimaryDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerDarkSlider(
+          FPCDangerDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkSlider(
+          FPCSecondaryDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkSlider(
+          FPCWarningDarkSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentSlider(
+          FPCAccentSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackAlwaysSlider(
+          FPCBlackAlwaysSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackSlider(
+          FPCBlackSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoSlider(
+          FPCInfoSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessSlider(
+          FPCSuccessSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimarySlider(
+          FPCPrimarySlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerSlider(
+          FPCDangerSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondarySlider(
+          FPCSecondarySlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteAlwaysSlider(
+          FPCWhiteAlwaysSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteSlider(
+          FPCWhiteSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningSlider(
+          FPCWarningSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightSlider(
+          FPCAccentLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightSlider(
+          FPCInfoLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightSlider(
+          FPCSuccessLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightSlider(
+          FPCPrimaryLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerLightSlider(
+          FPCDangerLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightSlider(
+          FPCSecondaryLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightSlider(
+          FPCWarningLightSlider(
             value: this._value,
             onChanged: (double value) => setState(() => this._value = value),
             isDisabled: this._isDisabled,

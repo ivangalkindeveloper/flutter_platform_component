@@ -1,4 +1,4 @@
-<h1 align="center">Flutter Component</h1>
+<h1 align="center">Flutter Platform Component</h1>
 
 <p align="center">
   📱 Ready-made component base using ready-made abstractions for quick use and decomposed by platform.
@@ -189,7 +189,7 @@ Express our gratitude to the authors of these dependencies.
 Initialize the main component widget at the root:
 ```dart
 void main() => runApp(
-      FlutterComponent( // Initialize the main component widget at the root of widget tree
+      FlutterPlatformComponent( // Initialize the main component widget at the root of widget tree
         platform: TargetPlatform.iOS,
         theme: LightTheme(),
         size: Sizes(),
@@ -204,17 +204,17 @@ class HomeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FCApp(
+    return FPCApp(
       context: context,
       home: const FirstScreen(),
     );
   }
 }
 ```
-All basic components strats with "FCBasic...".\
+All basic components strats with "FPCBasic...".\
 Usage basic components:
 ```dart
-FCBasicButton(
+FPCBasicButton(
   backgroundColor: theme.primary,
   splashColor: theme.whiteAlways,
   borderRadius: BorderRadius.circular(16),
@@ -222,10 +222,10 @@ FCBasicButton(
   onPressed: _next,
 ),
 ```
-All ready-made components strats with "FC...".\
+All ready-made components strats with "FPC...".\
 Usage ready-made components:
 ```dart
-FCPrimaryButton(
+FPCPrimaryButton(
   title: "Next", 
   onPressed: _next,
 ),
@@ -236,7 +236,7 @@ FCPrimaryButton(
 A standard config widget that exposes all of the package's abstract dependencies.\
 Get the current config in the widget tree:
 ```dart
-final FCConfig config = FCConfig.of(context);
+final FPCConfig config = FPCConfig.of(context);
 ```
 
 ### TargetPlatform
@@ -244,60 +244,60 @@ Standard enum from Dart Foundation.\
 The default value is [defaultTargetPlatform](https://api.flutter.dev/flutter/foundation/defaultTargetPlatform.html).\
 Get the actual platform in the widget tree:
 ```dart
-final TargetPlatform platform = FCConfig.of(context).platform;
+final TargetPlatform platform = FPCConfig.of(context).platform;
 ```
 The method allows you to change the current platform:
 ```dart
-FCConfig.of(context).changePlatform(platform: TargetPlatform.iOS);
+FPCConfig.of(context).changePlatform(platform: TargetPlatform.iOS);
 ```
 
 ### Theme
 An abstraction of a theme that all package components use.\
-The default value is [FCDefaultTheme.defaultLightTheme](https://github.com/ivangalkindeveloper/flutter_component/blob/master/lib/src/theme/fc_default_theme.dart#L707).\
-There is also a dark theme for example - [FCDefaultTheme.defaultDarkTheme](https://github.com/ivangalkindeveloper/flutter_component/blob/master/lib/src/theme/fc_default_theme.dart#L962).\
+The default value is [FPCDefaultTheme.defaultLightTheme](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/theme/FPC_default_theme.dart#L707).\
+There is also a dark theme for example - [FPCDefaultTheme.defaultDarkTheme](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/theme/FPC_default_theme.dart#L962).\
 Get the actual theme instance in the widget tree:
 ```dart
-final IFCTheme theme = FCConfig.of(context).theme;
+final IFPCTheme theme = FPCConfig.of(context).theme;
 ```
 The method allows you to change the current theme:
 ```dart
-FCConfig.of(context).changeTheme(theme: LightTheme());
+FPCConfig.of(context).changeTheme(theme: LightTheme());
 ```
 
 ### Size
 An abstraction of a sizes that all package components use.\
-The default value is [FCDefaultSize.defaultSize](https://github.com/ivangalkindeveloper/flutter_component/blob/master/lib/src/size/fc_default_size.dart#L554).\
+The default value is [FPCDefaultSize.defaultSize](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/size/FPC_default_size.dart#L554).\
 Get the actual sizes instance in the widget tree:
 ```dart
-final IFCSize size = FCConfig.of(context).size;
+final IFPCSize size = FPCConfig.of(context).size;
 ```
 The method allows you to change the current sizes:
 ```dart
-FCConfig.of(context).changeSize(size: Sizes());
+FPCConfig.of(context).changeSize(size: Sizes());
 ```
 
 ### Text Style
 An abstraction of a font weights and families that text components use.\
-The default value is [FCDefaultTextStyle.defaultTextStyle](https://github.com/ivangalkindeveloper/flutter_component/blob/master/lib/src/text_style/fc_default_text_style.dart#L90).\
+The default value is [FPCDefaultTextStyle.defaultTextStyle](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/text_style/FPC_default_text_style.dart#L90).\
 Get the actual text style instance in the widget tree:
 ```dart
-final IFCTextStyle textStyle = FCConfig.of(context).textStyle;
+final IFPCTextStyle textStyle = FPCConfig.of(context).textStyle;
 ```
 The method allows you to change the current text styles:
 ```dart
-FCConfig.of(context).changeTextStyle(textStyle: TextStyles());
+FPCConfig.of(context).changeTextStyle(textStyle: TextStyles());
 ```
 
 ### Haptic
 An abstraction of vibration functions.\
-The default value is [FCDefaultHaptic](https://github.com/ivangalkindeveloper/flutter_component/blob/master/lib/src/haptic/fc_default_haptic.dart).\
+The default value is [FPCDefaultHaptic](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/haptic/FPC_default_haptic.dart).\
 Get the actual vibration functions instance in the widget tree:
 ```dart
-final IFCHaptic haptic = FCConfig.of(context).haptic;
+final IFPCHaptic haptic = FPCConfig.of(context).haptic;
 ```
 The method allows you to change the current haptic vibration:
 ```dart
-FCConfig.of(context).changeHaptic(haptic: Haptics());
+FPCConfig.of(context).changeHaptic(haptic: Haptics());
 ```
 
 ## Components
@@ -306,79 +306,79 @@ All animations durations are guided by slow, default and fast durations from the
 #### Animated Container
 Standard AnimatedContainer widget.
 ```dart
-  FCAnimatedContainer(),
+  FPCAnimatedContainer(),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_container.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/animation/animated_container.gif)
 #### Animated Cross Fade
 Standard AnimatedCrossFade widget.
 ```dart
-  FCAnimatedCrossFade(
+  FPCAnimatedCrossFade(
     condition: condition,
     firstChild: FirstChild(),
     secondChild: SecondChild(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_cross_fade.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/animation/animated_cross_fade.gif)
 #### Animated Fade In
 Fade-In from left, right, up and down animation widget.
 ```dart
-  FCAnimatedFadeIn(
+  FPCAnimatedFadeIn(
     isAnimate: animate,
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_fade_in.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/animation/animated_fade_in.gif)
 #### Animated Fade Out
 Fade-Out from left, right, up and down animation widget.
 ```dart
-  FCAnimatedFadeOut(
+  FPCAnimatedFadeOut(
     isAnimate: animate,
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_fade_out.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/animation/animated_fade_out.gif)
 #### Animated Opacity Stack
 Stack of two AnimatedOpacity widgets.\
 Needed when the widget should not adjust to the size of the first or second child.
 ```dart
-  FCAnimatedOpacityStack(
+  FPCAnimatedOpacityStack(
     condition: condition,
     firstChild: FirstChild(),
     secondChild: SecondChild(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_opacity_stack.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/animation/animated_opacity_stack.gif)
 #### Animated Opacity
 Standard AnimatedOpaicty widget.
 ```dart
-  FCAnimatedOpacity(
+  FPCAnimatedOpacity(
     condition: condition,
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_opacity.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/animation/animated_opacity.gif)
 #### Animated Switcher
 Standard AnimatedSwitcher widget.
 ```dart
-  FCAnimatedSwitcher(
+  FPCAnimatedSwitcher(
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_switcher.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/animation/animated_switcher.gif)
 #### Animated Transition Switcher
 Transition widget with great animation change of child.
 ```dart
-  FCAnimatedTransitionSwitcher(
-    type: FCTransitionType.scaled,
+  FPCAnimatedTransitionSwitcher(
+    type: FPCTransitionType.scaled,
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/animation/animated_transition_switcher.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/animation/animated_transition_switcher.gif)
 
 ### App
 Main root widget of the application, decomposed by platform.
 ```dart
-  FCApp(
+  FPCApp(
     context: context,
   ),
 ```
@@ -388,321 +388,321 @@ Main root widget of the application, decomposed by platform.
 Main app bar widget, decomposed by platform.\
 Ready-made components contains screen app bar:
 ```dart
-  FCScreenAppBar(
+  FPCScreenAppBar(
     context: context,
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/screen_app_bar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/default/screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/default/screen_app_bar_material.gif) |
 
 Ready-made components white always screen app bar:
 ```dart
-  FCWhiteAlwaysScreenAppBar(
+  FPCWhiteAlwaysScreenAppBar(
     context: context,
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_screen_app_bar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/default/white_always_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/default/white_always_screen_app_bar_material.gif) |
 
 Ready-made components expanded modal app bar:
 ```dart
-  FCExpandedModalAppBar(
+  FPCExpandedModalAppBar(
     context: context,
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/expanded_modal_app_bar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/default/expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/default/expanded_modal_app_bar_material.gif) |
 
 Ready-made components white always expanded modal app bar:
 ```dart
-  FCWhiteAlwaysExpandedModalAppBar(
+  FPCWhiteAlwaysExpandedModalAppBar(
     context: context,
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/default/white_always_expanded_modal_app_bar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/default/white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/default/white_always_expanded_modal_app_bar_material.gif) |
 
 #### Blur App Bar
 Main app bar widget wrapped in blur, decomposed by platform.\
 Blur screen app bar:
 ```dart
-  FCBlurScreenAppBar(
+  FPCBlurScreenAppBar(
     context: context,
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_screen_app_bar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/blur/blur_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/blur/blur_screen_app_bar_material.gif) |
 
 Blur white always screen app bar:
 ```dart
-  FCBlurWhiteAlwaysScreenAppBar(
+  FPCBlurWhiteAlwaysScreenAppBar(
     context: context,
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_screen_app_bar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/blur/blur_white_always_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/blur/blur_white_always_screen_app_bar_material.gif) |
 
 Blur expanded modal app bar:
 ```dart
-  FCBlurExpandedModalAppBar(
+  FPCBlurExpandedModalAppBar(
     context: context,
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_expanded_modal_app_bar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/blur/blur_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/blur/blur_expanded_modal_app_bar_material.gif) |
 
 Blur white always expanded modal app bar:
 ```dart
-  FCBlurWhiteAlwaysExpandedModalAppBar(
+  FPCBlurWhiteAlwaysExpandedModalAppBar(
     context: context,
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/app_bar/blur/blur_white_always_expanded_modal_app_bar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/blur/blur_white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/app_bar/blur/blur_white_always_expanded_modal_app_bar_material.gif) |
 
 ### Badge
 #### Counter Badge
 Badge content of notifications counter with solid background color.
 ```dart
-  FCPrimaryCounterBadge(
+  FPCPrimaryCounterBadge(
     count: count,
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/badge/counter/counter_badge.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/badge/counter/counter_badge.gif)
 #### Gradient Counter Badge
 Badge content of notifications counter with gradient background color.
 ```dart
-  FCPrimaryGradientCounterBadge(
+  FPCPrimaryGradientCounterBadge(
     count: count,
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/badge/counter/gradient_counter_badge.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/badge/counter/gradient_counter_badge.gif)
 #### Dot Badge
 Badge content of dot container with solid background color.
 ```dart
-  FCPrimaryDotBadge(
+  FPCPrimaryDotBadge(
     isShow: isShow,
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/badge/dot/dot_badge.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/badge/dot/dot_badge.gif)
 #### Gradient Dot Badge
 Badge content of dot container with gradient background color.
 ```dart
-  FCPrimaryGradientDotBadge(
+  FPCPrimaryGradientDotBadge(
     isShow: isShow,
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/badge/dot/gradient_dot_badge.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/badge/dot/gradient_dot_badge.gif)
 
 ### Blur
 Blur component for creating blur effect for parent.
 ```dart
-  FCBlur(
+  FPCBlur(
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/blur/blur.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/blur/blur.png)
 
 ### Button
 #### Button
 Button component with solid background color, decomposed by platform.\
 Ready-made default button has loading properties.
 ```dart
-  FCPrimaryButton(
+  FPCPrimaryButton(
     onPressed: () {},
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/default/default/button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/default/default/button_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/default/default/button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/default/default/button_material.gif) |
 
 Ready-made buttons contains label buttons:
 ```dart
-  FCPrimaryLabelButton(
+  FPCPrimaryLabelButton(
     onPressed: () {},
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/default/label/label_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/default/label/label_button_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/default/label/label_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/default/label/label_button_material.gif) |
 
 And also outline buttons:
 ```dart
-  FCPrimaryOutlineButton(
+  FPCPrimaryOutlineButton(
     onPressed: () {},
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/default/outlined/outlined_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/default/outlined/outlined_button_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/default/outlined/outlined_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/default/outlined/outlined_button_material.gif) |
 
 #### Gradient Button
 Button component with gradient background color, decomposed by platform.\
 Ready-made default button has loading properties.
 ```dart
-  FCPrimaryGradientButton(
+  FPCPrimaryGradientButton(
     onPressed: () {},
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/gradient/default/gradient_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/gradient/default/gradient_button_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/gradient/default/gradient_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/gradient/default/gradient_button_material.gif) |
 
 Ready-made buttons contains label buttons:
 ```dart
-  FCPrimaryGradientLabelButton(
+  FPCPrimaryGradientLabelButton(
     onPressed: () {},
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/gradient/label/gradient_label_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/gradient/label/gradient_label_button_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/gradient/label/gradient_label_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/gradient/label/gradient_label_button_material.gif) |
 
 And also outline buttons:
 ```dart
-  FCPrimaryGradientOutlineButton(
+  FPCPrimaryGradientOutlineButton(
     onPressed: () {},
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/gradient/outlined/gradient_outlined_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/gradient/outlined/gradient_outlined_button_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/gradient/outlined/gradient_outlined_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/gradient/outlined/gradient_outlined_button_material.gif) |
 
 #### Icon Button
 Icon button component, decomposed by platform.
 ```dart
-  FCBasicIconButton(
+  FPCBasicIconButton(
     onPressed: () {},
     child: Child(),
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/icon/icon_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/icon/icon_button_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/icon/icon_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/icon/icon_button_material.gif) |
 
 #### Modal Button
 Dedicated decomposed buttons, separately for modals.\
 Cupertino modal button:
 ```dart
-  FCCupertinoModalButton(
+  FPCCupertinoModalButton(
     onPressed: () {},
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/modal/modal_close_button_cupertino.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/modal/modal_close_button_cupertino.gif)
 
 Expanded modal close button:
 ```dart
-  FCExpandedModalCloseButton(
+  FPCExpandedModalCloseButton(
     cupertinoLocale: "Back",
     onPressed: () {},
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/modal/expanded_modal_close_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/modal/expanded_modal_close_button_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/modal/expanded_modal_close_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/modal/expanded_modal_close_button_material.gif) |
 
 Pop up modal button:
 ```dart
-  FCPopUpModalCloseButton(
+  FPCPopUpModalCloseButton(
     onPressed: () {},
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/modal/pop_up_modal_close_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/modal/pop_up_modal_close_button_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/modal/pop_up_modal_close_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/modal/pop_up_modal_close_button_material.gif) |
 
 White always modal close button:
 ```dart
-  FCWhiteAlwaysExpandedModalCloseButton(
+  FPCWhiteAlwaysExpandedModalCloseButton(
     cupertinoLocale: "Back",
     onPressed: () {},
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/modal/white_always_expanded_modal_close_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/button/modal/white_always_expanded_modal_close_button_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/modal/white_always_expanded_modal_close_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/button/modal/white_always_expanded_modal_close_button_material.gif) |
 
 ### Card
 #### Card
 Card component with solid background color.
 ```dart
-  FCPrimaryCard(
+  FPCPrimaryCard(
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/card/default/card.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/card/default/card.png)
 #### Gradient Card
 Card component with gradient background color.
 ```dart
-  FCPrimaryGradientCard(
+  FPCPrimaryGradientCard(
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/card/default/gradient_card.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/card/default/gradient_card.png)
 #### Select Card
 Clickable card component with solid background color.
 ```dart
-  FCPrimarySelectCard(
+  FPCPrimarySelectCard(
     onPressed: () {},
     child: Child(),
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/card/select/select_card_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/card/select/select_card_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/card/select/select_card_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/card/select/select_card_material.gif) |
 #### Gradient Select Card
 Clickable card component with gradient background color.
 ```dart
-  FCPrimaryGradientSelectCard(
+  FPCPrimaryGradientSelectCard(
     onPressed: () {},
     child: Child(),
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/card/select/gradient_select_card_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/card/select/gradient_select_card_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/card/select/gradient_select_card_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/card/select/gradient_select_card_material.gif) |
 
 ### Checkbox
 Checkbox component, decomposed by platform.
 ```dart
-  FCPrimaryCheckbox(
+  FPCPrimaryCheckbox(
     value: value,
     onChanged: (bool value) {},
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/checkbox/checkbox_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/checkbox/checkbox_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/checkbox/checkbox_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/checkbox/checkbox_material.gif) |
 
 ### Code Field
 #### Code Field
 Component field code, which is designed to display any typed SMS code with solid background color.
 ```dart
-  FCPrimaryCodeField(
+  FPCPrimaryCodeField(
     length: length,
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/code_field/code_field.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/code_field/code_field.gif)
 #### Gradient Code Field
 Component field code, which is designed to display any typed SMS code with solid gradient color.
 ```dart
-  FCPrimaryGradientCodeField(
+  FPCPrimaryGradientCodeField(
     length: length,
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/code_field/gradient_code_field.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/code_field/gradient_code_field.gif)
 
 ### Common
 #### Component Disabled Overlay
@@ -721,14 +721,14 @@ Default Padding widget are guided by size config.
 ### Dialog
 Dialog component, decomposed by platform.
 ```dart
-  FCDialog(
+  FPCDialog(
     title: "Title",
     items: [
-      FCDialogItem(
+      FPCDialogItem(
         title: "First Item",
         onPressed: () {},
       ),
-      FCDialogItem(
+      FPCDialogItem(
         title: "Second Item",
         onPressed: () {},
       ),
@@ -737,14 +737,14 @@ Dialog component, decomposed by platform.
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/dialog/dialog_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/dialog/dialog_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/dialog/dialog_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/dialog/dialog_material.gif) |
 
 ### Divider
 Simple thin container for visual separation.
 ```dart
-  FCPrimaryDivider(),
+  FPCPrimaryDivider(),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/divider/divider.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/divider/divider.png)
 
 ### Form Field
 Form field does not repeat the design accuracy of platform components, since pure native fields are very rarely used in good productive projects.\
@@ -752,48 +752,48 @@ The design of this field is suitable for most applications and is more suitable.
 #### Form Field
 Form field component with solid colors.
 ```dart
-  FCPrimaryFormField(
+  FPCPrimaryFormField(
     labelText: "Label",
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/form_field/form_field/form_field.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/form_field/form_field/form_field.gif)
 #### Gradient Form Field
 Form field component with gradient colors.
 ```dart
-  FCPrimaryGradientFormField(
+  FPCPrimaryGradientFormField(
     labelText: "Label",
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/form_field/form_field/gradient_form_field.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/form_field/form_field/gradient_form_field.gif)
 #### Select Field
 Clickable field component with solid colors, decomposed by platform.
 ```dart
-  FCSelectField(
+  FPCSelectField(
     title: "Title",
     labelText: "Label",
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/form_field/select_field/select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/form_field/select_field/select_field_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/form_field/select_field/select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/form_field/select_field/select_field_material.gif) |
 #### Gradient Select Field
 Clickable field component with gradient colors, decomposed by platform.
 ```dart
-  FCGradientSelectField(
+  FPCGradientSelectField(
     title: "Title",
     labelText: "Label",
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/form_field/select_field/gradient_select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/form_field/select_field/gradient_select_field_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/form_field/select_field/gradient_select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/form_field/select_field/gradient_select_field_material.gif) |
 
 ### Global
 Classes that contains platform-decomposed functions to invoke the required interface behaviors.
 #### Dialog
 Static methods for opening dialogs:
 ```dart
-  showFCDialog(
+  showFPCDialog(
     context: context,
     child: Child(),
   );
@@ -801,13 +801,13 @@ Static methods for opening dialogs:
 #### Modal
 Static methods for opening modals:
 ```dart
-  showFCExpandedModal(
+  showFPCExpandedModal(
     context: context,
     child: Child(),
   );
 ```
 ```dart
-  showFCPopUpModal(
+  showFPCPopUpModal(
     context: context,
     child: Child(),
   );
@@ -815,13 +815,13 @@ Static methods for opening modals:
 #### Picker
 Static methods for opening pickers:
 ```dart
-  showFCDatePicker(
+  showFPCDatePicker(
     context: context,
     cupertinoModalBuilder: (BuildContext context) => CupertinoModalBuilder(),
   );
 ```
 ```dart
-  showFCTimePicker(
+  showFPCTimePicker(
     context: context,
     cupertinoModalBuilder: (BuildContext context) => CupertinoModalBuilder(),
   );
@@ -829,13 +829,13 @@ Static methods for opening pickers:
 #### Snackbar
 Static methods for showing snackbars:
 ```dart
-  showFCSnackBar(
+  showFPCSnackBar(
     context: context,
     child: Child(),
   );
 ```
 ```dart
-  showFCSnackBar(
+  showFPCSnackBar(
     context: context,
   );
 ```
@@ -844,7 +844,7 @@ Static methods for showing snackbars:
 #### Gradient mask
 Widget for overlaying a gradient mask.
 ```dart
-  FCGradientMask(
+  FPCGradientMask(
     contgradientext: Gradient(),
     child: Child(),
   ),
@@ -852,7 +852,7 @@ Widget for overlaying a gradient mask.
 #### LinearGradient
 Standard LinearGradient widget are guided by theme config.
 ```dart
-  FCLinearGradient(
+  FPCLinearGradient(
     context: context,
     colors: [
       FirstColor(),
@@ -860,11 +860,11 @@ Standard LinearGradient widget are guided by theme config.
     ],
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/gradient/linear_gradient.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/gradient/linear_gradient.png)
 #### RadialGradient
 Standard RadialGradient widget are guided by theme config.
 ```dart
-  FCRadialGradient(
+  FPCRadialGradient(
     context: context,
     colors: [
       FirstColor(),
@@ -872,11 +872,11 @@ Standard RadialGradient widget are guided by theme config.
     ],
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/gradient/radial_gradient.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/gradient/radial_gradient.png)
 #### SweepGradient
 Standard SweepGradient widget are guided by theme config.
 ```dart
-  FCSweepGradient(
+  FPCSweepGradient(
     context: context,
     colors: [
       FirstColor(),
@@ -884,116 +884,116 @@ Standard SweepGradient widget are guided by theme config.
     ],
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/gradient/sweep_gradient.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/gradient/sweep_gradient.png)
 
 ### Icon
 All icons sizes are guided by small, default and large sizes from the size config.\
 Class with icons in all theme colors.
 ```dart
-  FCIcon.primary(
+  FPCIcon.primary(
     context: context,
     icon: Icon(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/icon/icon.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/icon/icon.png)
 
 ### Indicator
 #### Circular Indicator
 Circular indicator component with solid color, decomposed by platform.
 ```dart
-  FCCircularIndicator.primary(
+  FPCCircularIndicator.primary(
     context: context,
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/circular_indicator/circular_indicator_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/circular_indicator/circular_indicator_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/indicator/circular_indicator/circular_indicator_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/indicator/circular_indicator/circular_indicator_material.gif) |
 #### Gradient Circular Indicator
 Circular indicator component with gradient color, decomposed by platform.
 ```dart
-  FCCircularIndicator.primaryGradient(
+  FPCCircularIndicator.primaryGradient(
     context: context,
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/circular_indicator/gradient_circular_indicator_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/circular_indicator/gradient_circular_indicator_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/indicator/circular_indicator/gradient_circular_indicator_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/indicator/circular_indicator/gradient_circular_indicator_material.gif) |
 #### Page Indicator
 Page indicator component with solid color, ideal for displaying the current page index of the carousel.
 ```dart
-  FCPrimaryPageIndicator(
+  FPCPrimaryPageIndicator(
     length: length,
     index: index,
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/page_indicator/page_indicator.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/indicator/page_indicator/page_indicator.gif)
 #### Gradient Page Indicator
 Page indicator component with gradient color, ideal for displaying the current page index of the carousel.
 ```dart
-  FCPrimaryGradientPageIndicator(
+  FPCPrimaryGradientPageIndicator(
     length: length,
     index: index,
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/page_indicator/gradient_page_indicator.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/indicator/page_indicator/gradient_page_indicator.gif)
 #### Progress Indicator
 Progress indicator component with solid color, needed to display the progress level.
 ```dart
-  FCPrimaryProgressIndicator(
+  FPCPrimaryProgressIndicator(
     value: value,
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/progress_indicator/progress_indicator.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/indicator/progress_indicator/progress_indicator.gif)
 #### Story Indicator
 Story indicator component with solid color, needed to display the steps and the progress level.
 ```dart
-  FCPrimaryStoryIndicator(
+  FPCPrimaryStoryIndicator(
     length: length,
     index: index,
     value: value,
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/indicator/story_indicator/story_indicator.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/indicator/story_indicator/story_indicator.gif)
 
 ### Keyboard
 #### Keyboard Button
 Button component of keyboard.
 ```dart
-  FCKeyboardButton(
+  FPCKeyboardButton(
     child: Child(),
     onPressed: () {},
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/keyboard/keyboard_button/keyboard_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/keyboard/keyboard_button/keyboard_button_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/keyboard/keyboard_button/keyboard_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/keyboard/keyboard_button/keyboard_button_material.gif) |
 #### Keyboard Number Button
 Button component of keyboard, specially for only numbers.
 ```dart
-  FCKeyboardNumberButton(
+  FPCKeyboardNumberButton(
     number: 1,
     onPressed: () {},
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/keyboard/keyboard_number_button/keyboard_number_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/keyboard/keyboard_number_button/keyboard_number_button_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/keyboard/keyboard_number_button/keyboard_number_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/keyboard/keyboard_number_button/keyboard_number_button_material.gif) |
 #### Keyboard
 Large widget that arranges keyboard buttons.
 ```dart
-  FCKeyboard(
+  FPCKeyboard(
     onPressed: (int value) {},
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/keyboard/keyboard/keyboard_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/keyboard/keyboard/keyboard_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/keyboard/keyboard/keyboard_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/keyboard/keyboard/keyboard_material.gif) |
 
 ### List
 #### List Refresh
 List refresh component to display the loading of asynchronous behavior, decomposed by platform.
 ```dart
-  FCListRefresh(
+  FPCListRefresh(
     controller: controller,
     onRefresh: onRefresh,
     child: Child(),
@@ -1001,17 +1001,17 @@ List refresh component to display the loading of asynchronous behavior, decompos
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list/list_refresh/list_refresh_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list/list_refresh/list_refresh_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/list/list_refresh/list_refresh_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/list/list_refresh/list_refresh_material.gif) |
 #### List Section
 Card component, needed to display multiple rows of settings buttons, decomposed by platform.
 ```dart
-  FCListSection(
+  FPCListSection(
     items: [
-      FCListSectionItem(
+      FPCListSectionItem(
         title: "First Item",
         onPressed: () {},
       ),
-      FCListSectionItem(
+      FPCListSectionItem(
         title: "Second Item",
         onPressed: () {},
       ),
@@ -1020,19 +1020,19 @@ Card component, needed to display multiple rows of settings buttons, decomposed 
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list/list_section/list_section_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/list/list_section/list_section_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/list/list_section/list_section_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/list/list_section/list_section_material.gif) |
 
 ### Modal
 #### Action Modal
 Action modal component for selecting a specific action, decomposed by platform.
 ```dart
-  FCActionModal(
+  FPCActionModal(
     items: [
-      FCActionModalItem(
+      FPCActionModalItem(
         title: "First Action",
         onPressed: () {},
       ),
-      FCActionModalItem(
+      FPCActionModalItem(
         title: "Second Action",
         onPressed: () {},
       ),
@@ -1041,72 +1041,72 @@ Action modal component for selecting a specific action, decomposed by platform.
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/action_modal/action_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/action_modal/action_modal_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/modal/action_modal/action_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/modal/action_modal/action_modal_material.gif) |
 #### Expanded Modal
 Expanded modal scaffold component to display large modal content.
 ```dart
-  FCExpandedModal(
+  FPCExpandedModal(
     body: Child(),
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/default/expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/default/expanded_modal_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/modal/expanded_modal/default/expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/modal/expanded_modal/default/expanded_modal_material.gif) |
 
 Ready-made components contains expanded modal with always black background.
 ```dart
-  FCBlackAlwaysExpandedModal(
+  FPCBlackAlwaysExpandedModal(
     body: Child(),
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/default/black_always_expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/default/black_always_expanded_modal_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/modal/expanded_modal/default/black_always_expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/modal/expanded_modal/default/black_always_expanded_modal_material.gif) |
 #### Blur Expanded Modal
 Expanded modal scaffold component to display large modal content with blur app bar.
 ```dart
-  FCBlurExpandedModal(
+  FPCBlurExpandedModal(
     body: Child(),
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/blur/blur_expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/blur/blur_expanded_modal_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/modal/expanded_modal/blur/blur_expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/modal/expanded_modal/blur/blur_expanded_modal_material.gif) |
 
 Ready-made components contains expanded modal with always black background with blur app bar.
 ```dart
-  FCBlurBlackAlwaysExpandedModal(
+  FPCBlurBlackAlwaysExpandedModal(
     body: Child(),
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/blur/blur_black_always_expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/expanded_modal/blur/blur_black_always_expanded_modal_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/modal/expanded_modal/blur/blur_black_always_expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/modal/expanded_modal/blur/blur_black_always_expanded_modal_material.gif) |
 #### Pop Up Modal
 Small modal window component to display small modal content.
 ```dart
-  FCPopUpModal(
+  FPCPopUpModal(
     body: Child(),
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/pop_up_modal/pop_up_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/modal/pop_up_modal/pop_up_modal_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/modal/pop_up_modal/pop_up_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/modal/pop_up_modal/pop_up_modal_material.gif) |
 
 ### Navigation
 #### Bottom Navigation Bar
 ##### Bottom Navigation Bar
 Bottom navigation bar component, decomposed by platform.
 ```dart
-  FCBottomNavigationBar(
+  FPCBottomNavigationBar(
     index: index,
     onPressed: (int value) {},
     items: [
-      FCBottomNavigationBarIconItem(
+      FPCBottomNavigationBarIconItem(
         icon: Icon(),
         label: "First Item",
       ),
-      FCBottomNavigationBarWidgetItem(
+      FPCBottomNavigationBarWidgetItem(
         child: Child(),
         label: "Second Item",
       ),
@@ -1115,19 +1115,19 @@ Bottom navigation bar component, decomposed by platform.
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/bottom_navigation_bar/bottom_navigation_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/bottom_navigation_bar/bottom_navigation_bar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/navigation/bottom_navigation_bar/bottom_navigation_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/navigation/bottom_navigation_bar/bottom_navigation_bar_material.gif) |
 ##### Blur Bottom Navigation Bar
 Bottom navigation bar component wrapped in blur, decomposed by platform.
 ```dart
-  FCBlurBottomNavigationBar(
+  FPCBlurBottomNavigationBar(
     index: index,
     onPressed: (int value) {},
     items: [
-      FCBottomNavigationBarIconItem(
+      FPCBottomNavigationBarIconItem(
         icon: Icon(),
         label: "First Item",
       ),
-      FCBottomNavigationBarWidgetItem(
+      FPCBottomNavigationBarWidgetItem(
         child: Child(),
         label: "Second Item",
       ),
@@ -1136,37 +1136,37 @@ Bottom navigation bar component wrapped in blur, decomposed by platform.
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/blur_bottom_navigation_bar/blur_bottom_navigation_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/blur_bottom_navigation_bar/blur_bottom_navigation_bar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/navigation/blur_bottom_navigation_bar/blur_bottom_navigation_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/navigation/blur_bottom_navigation_bar/blur_bottom_navigation_bar_material.gif) |
 #### Navigator
 Special navigator widget, decomposed by platform.
 ```dart
-  FCNavigator(),
+  FPCNavigator(),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/navigator/navigator_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/navigator/navigator_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/navigation/navigator/navigator_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/navigation/navigator/navigator_material.gif) |
 #### Route
 Static routes methods, decomposed by platform.
 ```dart
-  FCRoute.pageRoute(
+  FPCRoute.pageRoute(
     platform: platform,
     child: Child(),
   ),
 ```
 ```dart
-  FCRoute.pageRouteFromContext(
+  FPCRoute.pageRouteFromContext(
     context: context,
     child: Child(),
   ),
 ```
 ```dart
-  FCRoute.pageRouteFade(
+  FPCRoute.pageRouteFade(
     child: Child(),
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/route/route_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/navigation/route/route_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/navigation/route/route_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/navigation/route/route_material.gif) |
 
 ### Picker
 ### Date Picker
@@ -1175,45 +1175,45 @@ There are different behaviors for different platforms:\
 Android - Wrapper for native date picker dialog.\
 iOS - Native date picker carousel.
 ```dart
-  FCDatePicker(),
+  FPCDatePicker(),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/picker/date_picker/date_picker_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/picker/date_picker/date_picker_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/picker/date_picker/date_picker_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/picker/date_picker/date_picker_material.gif) |
 ### Time Picker
 Not a simple component that decomposes the vision of a time picker.\
 There are different behaviors for different platforms:\
 Android - Wrapper for native time picker dialog.\
 iOS - Native time picker carousel.
 ```dart
-  FCTimePicker(),
+  FPCTimePicker(),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/picker/time_picker/time_picker_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/picker/time_picker/time_picker_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/picker/time_picker/time_picker_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/picker/time_picker/time_picker_material.gif) |
 
 ### PIN Field
 #### PIN Field
 PIN field component with solid colors.
 ```dart
-  FCPrimaryPINField(
+  FPCPrimaryPINField(
     length: length,
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/pin_field/pin_field.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/pin_field/pin_field.gif)
 #### Gradient PIN Field
 PIN field component with gradient colors.
 ```dart
-  FCPrimaryGradientPINField(
+  FPCPrimaryGradientPINField(
     length: length,
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/pin_field/gradient_pin_field.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/pin_field/gradient_pin_field.gif)
 
 ### Radio
 Radio component, decomposed by platform.
 ```dart
-  FCPrimaryRadio<String>(
+  FPCPrimaryRadio<String>(
     value: value,
     groupValue: groupValue,
     onChanged: (String value) {},
@@ -1221,43 +1221,43 @@ Radio component, decomposed by platform.
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/radio/radio_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/radio/radio_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/radio/radio_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/radio/radio_material.gif) |
 
 ### Scaffold
 Standard scaffold widget, decomposed by platform.
 ```dart
-  FCScaffold(
+  FPCScaffold(
     body: Child(),
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/scaffold/scaffold_cupertino.png) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/scaffold/scaffold_material.png) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/scaffold/scaffold_cupertino.png) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/scaffold/scaffold_material.png) |
 
 ### Scrollbar
 Scrollbar component, decomposed by platform.
 ```dart
-  FCScrollbar(
+  FPCScrollbar(
     body: Child(),
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/scrollbar/scrollbar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/scrollbar/scrollbar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/scrollbar/scrollbar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/scrollbar/scrollbar_material.gif) |
 
 ### Segment Control
 #### Segment Control
 Segment control component with solid colors, decomposed by platform.
 ```dart
-  FCPrimarySegmentControl<String>(
+  FPCPrimarySegmentControl<String>(
     value: value,
     onChanged: (String value) {},
     items: [
-      FCSegmentControlItem(
+      FPCSegmentControlItem(
         value: "First Item",
         title: "First Item",
       ),
-      FCSegmentControlItem(
+      FPCSegmentControlItem(
         value: "Second Item",
         title: "Second Item",
       ),
@@ -1266,19 +1266,19 @@ Segment control component with solid colors, decomposed by platform.
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/segment_control/segment_control_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/segment_control/segment_control_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/segment_control/segment_control_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/segment_control/segment_control_material.gif) |
 #### Gradient Segment Control
 Segment control component with gradient colors, decomposed by platform.
 ```dart
-  FCPrimaryGradientSegmentControl<String>(
+  FPCPrimaryGradientSegmentControl<String>(
     value: value,
     onChanged: (String value) {},
     items: [
-      FCSegmentControlItem(
+      FPCSegmentControlItem(
         value: "First Item",
         title: "First Item",
       ),
-      FCSegmentControlItem(
+      FPCSegmentControlItem(
         value: "Second Item",
         title: "Second Item",
       ),
@@ -1287,138 +1287,138 @@ Segment control component with gradient colors, decomposed by platform.
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/segment_control/gradient_segment_control_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/segment_control/gradient_segment_control_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/segment_control/gradient_segment_control_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/segment_control/gradient_segment_control_material.gif) |
 
 ### Shimmer
 #### Shimmer
 Special component for loading animation with solid color.
 ```dart
-  FCGreyShimmer(),
+  FPCGreyShimmer(),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/shimmer/shimmer.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/shimmer/shimmer.gif)
 #### Gradient Shimmer
 Special component for loading animation with gradient color.
 ```dart
-  FCGreyGradientShimmer(),
+  FPCGreyGradientShimmer(),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/shimmer/gradient_shimmer.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/shimmer/gradient_shimmer.gif)
 
 ### Slider
 Slider component, decomposed by platform.
 ```dart
-  FCPrimarySlider(
+  FPCPrimarySlider(
     value: value,
     onChanged: (double value) {},
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/slider/slider_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/slider/slider_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/slider/slider_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/slider/slider_material.gif) |
 
 ### Sliding Segment Control
 Sliding segment control compoennt does not have a direct analogue on android, therefore it does not have a decomposition for this platform.
 #### Sliding Segment Control
 Sliding Segment control component with solid colors.
 ```dart
-  FCPrimarySlidingSegmentControl<String>(
+  FPCPrimarySlidingSegmentControl<String>(
     value: value,
     onChanged: (String value) {},
     items: [
-      FCSlidingSegmentControlItem(
+      FPCSlidingSegmentControlItem(
         value: "First Item",
         title: "First Item",
       ),
-      FCSlidingSegmentControlItem(
+      FPCSlidingSegmentControlItem(
         value: "Second Item",
         title: "Second Item",
       ),
     ],
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/sliding_segment_control/sliding_segment_control.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/sliding_segment_control/sliding_segment_control.gif)
 
 ### Sliver Navigation App Bar
 Ready-made sliver navigation app bar component, decomposed by platform.
 ```dart
-  FCSliverNavigationAppBar(),
+  FPCSliverNavigationAppBar(),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/sliver_navigation_app_bar/sliver_navigation_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/sliver_navigation_app_bar/sliver_navigation_app_bar_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/sliver_navigation_app_bar/sliver_navigation_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/sliver_navigation_app_bar/sliver_navigation_app_bar_material.gif) |
 
 ### Snackbar
 #### Snackbar
 Snackbar component with solid colors.
 ```dart
-  FCPrimarySnackbar(
+  FPCPrimarySnackbar(
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/snackbar/snackbar.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/snackbar/snackbar.png)
 
 Ready-made buttons contains outlined snackbars.
 ```dart
-  FCPrimaryOutlineSnackbar(
+  FPCPrimaryOutlineSnackbar(
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/snackbar/outlined_snackbar.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/snackbar/outlined_snackbar.png)
 #### Gradient Snackbar
 Snackbar component with gradient colors.
 ```dart
-  FCPrimaryGradientSnackbar(
+  FPCPrimaryGradientSnackbar(
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/snackbar/gradient_snackbar.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/snackbar/gradient_snackbar.png)
 
 Ready-made buttons contains outlined snackbars.
 ```dart
-  FCPrimaryGradientOutlineSnackbar(
+  FPCPrimaryGradientOutlineSnackbar(
     child: Child(),
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/snackbar/gradient_outlined_snackbar.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/snackbar/gradient_outlined_snackbar.png)
 
 ### Switch
 Switch component, decomposed by platform.
 ```dart
-  FCPrimarySwitch(
+  FPCPrimarySwitch(
     value: value,
     onChanged: (bool value) {},
   ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/switch/switch_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/switch/switch_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/switch/switch_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/switch/switch_material.gif) |
 
 ### Text
 #### Text
 Class that combines all text widgets for quick display.
 ```dart
-  FCText.regular16Black(
+  FPCText.regular16Black(
     context: context,
     text: "Text",
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/text/text.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/text/text.png)
 #### Text Span
 Ready-made shell widget for receiving text span items.
 ```dart
-  FCTextSpan(
+  FPCTextSpan(
     children: [
-      FCTextSpanItem.regular16Black(
+      FPCTextSpanItem.regular16Black(
         context: context,
         text: "First Item",
       ),
-      FCTextSpanItem.regular16Black(
+      FPCTextSpanItem.regular16Black(
         context: context,
         text: "Second Item",
       ),
     ],
   ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/text/text_span.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/text/text_span.png)
 #### Text Style
 Class that combines all text widgets for quick use.
 
@@ -1427,15 +1427,15 @@ One of the proposed visions of the segment control component.
 #### Toggle
 Toggle component with colid colors, decomposed by platform.
 ```dart
-  FCPrimaryToggle<String>(
+  FPCPrimaryToggle<String>(
     value: value,
     onChanged: (double value) {},
     items: [
-      FCToggleItem(
+      FPCToggleItem(
         value: "First Item",
         title: "First Item",
       ),
-      FCToggleItem(
+      FPCToggleItem(
         value: "Second Item",
         title: "Second Item",
       ),
@@ -1444,19 +1444,19 @@ Toggle component with colid colors, decomposed by platform.
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/toggle/toggle_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/toggle/toggle_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/toggle/toggle_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/toggle/toggle_material.gif) |
 #### Gradient Toggle
 Toggle component with gradient colors, decomposed by platform.
 ```dart
-  FCPrimaryGradientToggle<String>(
+  FPCPrimaryGradientToggle<String>(
     value: value,
     onChanged: (double value) {},
     items: [
-      FCToggleItem(
+      FPCToggleItem(
         value: "First Item",
         title: "First Item",
       ),
-      FCToggleItem(
+      FPCToggleItem(
         value: "Second Item",
         title: "Second Item",
       ),
@@ -1465,7 +1465,7 @@ Toggle component with gradient colors, decomposed by platform.
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/toggle/gradient_toggle_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/toggle/gradient_toggle_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/toggle/gradient_toggle_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/toggle/gradient_toggle_material.gif) |
 
 ## TODO
 1) Duplication of all colors in ready-made components for easy overwriting;

@@ -1,10 +1,10 @@
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:example/presentation/component_list/component_list.dart';
-import 'package:flutter_component/flutter_component.dart';
 import 'package:example/service/navigation_service.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(
-      FlutterComponent(
+      FlutterPlatformComponent(
         child: App(),
       ),
     );
@@ -16,12 +16,12 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FCApp(
+    return FPCApp(
       context: context,
       navigatorKey: _navigationService.navigatorKey,
       onGenerateRoute: _navigationService.onGenerateRoute,
       onGenerateInitialRoutes: (String route) => [
-        FCRoute.pageRouteFromContext(context: context, child: const ComponentList()),
+        FPCRoute.pageRouteFromContext(context: context, child: const ComponentList()),
       ],
     );
   }

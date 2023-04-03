@@ -1,4 +1,4 @@
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class AnimatedCrossFadeScreen extends StatefulWidget {
@@ -13,22 +13,22 @@ class _AnimatedCrossFadeScreenState extends State<AnimatedCrossFadeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Animated Cross Fade",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: SafeArea(
-        child: FCPadding(
+        child: FPCPadding(
           child: Column(
             children: [
-              FCPrimaryButton(
+              FPCPrimaryButton(
                 title: "Action",
                 onPressed: () => setState(() => this._action = !this._action),
               ),
@@ -39,12 +39,12 @@ class _AnimatedCrossFadeScreenState extends State<AnimatedCrossFadeScreen> {
                       Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          FCText.regular16Black(
+                          FPCText.regular16Black(
                             context: context,
                             text: "Slow",
                           ),
                           SizedBox(height: size.s16),
-                          FCAnimatedSlowCrossFade(
+                          FPCAnimatedSlowCrossFade(
                             condition: this._action,
                             firstChild: Container(
                               height: size.s28 * 2,
@@ -63,12 +63,12 @@ class _AnimatedCrossFadeScreenState extends State<AnimatedCrossFadeScreen> {
                       Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          FCText.regular16Black(
+                          FPCText.regular16Black(
                             context: context,
                             text: "Default",
                           ),
                           SizedBox(height: size.s16),
-                          FCAnimatedCrossFade(
+                          FPCAnimatedCrossFade(
                             condition: this._action,
                             firstChild: Container(
                               height: size.s28 * 2,
@@ -87,12 +87,12 @@ class _AnimatedCrossFadeScreenState extends State<AnimatedCrossFadeScreen> {
                       Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          FCText.regular16Black(
+                          FPCText.regular16Black(
                             context: context,
                             text: "Fast",
                           ),
                           SizedBox(height: size.s16),
-                          FCAnimatedFastCrossFade(
+                          FPCAnimatedFastCrossFade(
                             condition: this._action,
                             firstChild: Container(
                               height: size.s28 * 2,

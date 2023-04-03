@@ -1,4 +1,4 @@
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/material.dart';
 
 class DummyList extends StatelessWidget {
@@ -6,8 +6,8 @@ class DummyList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCSize size = config.size;
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -17,7 +17,7 @@ class DummyList extends StatelessWidget {
           Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              FCGreyLightCard(
+              FPCGreyLightCard(
                 child: const SizedBox(),
               ),
               SizedBox(height: size.s16 / 2),

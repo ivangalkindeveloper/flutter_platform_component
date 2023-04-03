@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class SegmentControlScreen extends StatefulWidget {
@@ -11,16 +11,16 @@ class SegmentControlScreen extends StatefulWidget {
 
 class _SegmentControlScreenState extends State<SegmentControlScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-  static const List<FCSegmentControlItem<String>> _items = [
-    FCSegmentControlItem(
+  static const List<FPCSegmentControlItem<String>> _items = [
+    FPCSegmentControlItem(
       value: "First",
       title: "First",
     ),
-    FCSegmentControlItem(
+    FPCSegmentControlItem(
       value: "Second",
       title: "Second",
     ),
-    FCSegmentControlItem(
+    FPCSegmentControlItem(
       value: "Third",
       title: "Third",
     ),
@@ -30,143 +30,143 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Segment Control",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: Form(
         key: this._formKey,
-        child: FCListView(
+        child: FPCListView(
           childrenAlignment: CrossAxisAlignment.center,
           children: [
             const ConfigSection(),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryButton(
+            FPCPrimaryButton(
               title: "validate",
               onPressed: () => this._formKey.currentState?.validate(),
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryButton(
+            FPCPrimaryButton(
               title: "isDisabled",
               onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
             ),
             SizedBox(height: size.s16 * 2),
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Dark",
             ),
             SizedBox(height: size.s16),
-            FCAccentDarkSegmentControl<String>(
+            FPCAccentDarkSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCInfoDarkSegmentControl<String>(
+            FPCInfoDarkSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSuccessDarkSegmentControl<String>(
+            FPCSuccessDarkSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCGreyDarkSegmentControl<String>(
+            FPCGreyDarkSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryDarkSegmentControl<String>(
+            FPCPrimaryDarkSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCDangerDarkSegmentControl<String>(
+            FPCDangerDarkSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSecondaryDarkSegmentControl<String>(
+            FPCSecondaryDarkSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWarningDarkSegmentControl<String>(
+            FPCWarningDarkSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 * 2),
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Default",
             ),
             SizedBox(height: size.s16),
-            FCAccentSegmentControl<String>(
+            FPCAccentSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCBlackAlwaysSegmentControl<String>(
+            FPCBlackAlwaysSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCBlackSegmentControl<String>(
+            FPCBlackSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCInfoSegmentControl<String>(
+            FPCInfoSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSuccessSegmentControl<String>(
+            FPCSuccessSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCGreySegmentControl<String>(
+            FPCGreySegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimarySegmentControl<String>(
+            FPCPrimarySegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
@@ -174,96 +174,96 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCDangerSegmentControl<String>(
+            FPCDangerSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSecondarySegmentControl<String>(
+            FPCSecondarySegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWhiteAlwaysSegmentControl<String>(
+            FPCWhiteAlwaysSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWhiteSegmentControl<String>(
+            FPCWhiteSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWarningSegmentControl<String>(
+            FPCWarningSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 * 2),
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Light",
             ),
             SizedBox(height: size.s16),
-            FCAccentLightSegmentControl<String>(
+            FPCAccentLightSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCInfoLightSegmentControl<String>(
+            FPCInfoLightSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSuccessLightSegmentControl<String>(
+            FPCSuccessLightSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCGreyLightSegmentControl<String>(
+            FPCGreyLightSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryLightSegmentControl<String>(
+            FPCPrimaryLightSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCDangerLightSegmentControl<String>(
+            FPCDangerLightSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSecondaryLightSegmentControl<String>(
+            FPCSecondaryLightSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWarningLightSegmentControl<String>(
+            FPCWarningLightSegmentControl<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),

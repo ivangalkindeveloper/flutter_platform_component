@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class ModalButtonScreen extends StatelessWidget {
@@ -7,32 +7,32 @@ class ModalButtonScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Modal Button",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
-          FCCupertinoModalButton(
+          FPCCupertinoModalButton(
             onPressed: () {},
           ),
           SizedBox(height: size.s16 * 2),
-          FCExpandedModalCloseButton(
+          FPCExpandedModalCloseButton(
             cupertinoLocale: "Back",
             onPressed: () {},
           ),
           SizedBox(height: size.s16 * 2),
-          FCPopUpModalCloseButton(
+          FPCPopUpModalCloseButton(
             onPressed: () {},
           ),
           SizedBox(height: size.s16 * 2),
@@ -40,7 +40,7 @@ class ModalButtonScreen extends StatelessWidget {
             height: size.s32 * 4,
             width: size.s32 * 4,
             color: theme.black,
-            child: FCWhiteAlwaysExpandedModalCloseButton(
+            child: FPCWhiteAlwaysExpandedModalCloseButton(
               cupertinoLocale: "Back",
               onPressed: () {},
             ),

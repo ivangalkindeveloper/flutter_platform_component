@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class RadioScreen extends StatefulWidget {
@@ -15,33 +15,33 @@ class _RadioScreenState extends State<RadioScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Radio",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryButton(
+          FPCPrimaryButton(
             title: "isDisabled",
             onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkRadio<bool>(
+          FPCAccentDarkRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -49,7 +49,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkRadio<bool>(
+          FPCInfoDarkRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -57,7 +57,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkRadio<bool>(
+          FPCSuccessDarkRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -65,7 +65,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkRadio<bool>(
+          FPCPrimaryDarkRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -73,7 +73,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerDarkRadio<bool>(
+          FPCDangerDarkRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -81,7 +81,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkRadio<bool>(
+          FPCSecondaryDarkRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -89,7 +89,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkRadio<bool>(
+          FPCWarningDarkRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -97,12 +97,12 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentRadio<bool>(
+          FPCAccentRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -110,7 +110,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackAlwaysRadio<bool>(
+          FPCBlackAlwaysRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -118,7 +118,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackRadio<bool>(
+          FPCBlackRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -126,7 +126,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoRadio<bool>(
+          FPCInfoRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -134,7 +134,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessRadio<bool>(
+          FPCSuccessRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -142,7 +142,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessRadio<bool>(
+          FPCSuccessRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -150,7 +150,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyRadio<bool>(
+          FPCGreyRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -158,7 +158,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryRadio<bool>(
+          FPCPrimaryRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -166,7 +166,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerRadio<bool>(
+          FPCDangerRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -174,7 +174,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryRadio<bool>(
+          FPCSecondaryRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -182,7 +182,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteAlwaysRadio<bool>(
+          FPCWhiteAlwaysRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -190,7 +190,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteRadio<bool>(
+          FPCWhiteRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -198,7 +198,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningRadio<bool>(
+          FPCWarningRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -206,12 +206,12 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightRadio<bool>(
+          FPCAccentLightRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -219,7 +219,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightRadio<bool>(
+          FPCInfoLightRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -227,7 +227,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightRadio<bool>(
+          FPCSuccessLightRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -235,7 +235,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightRadio<bool>(
+          FPCPrimaryLightRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -243,7 +243,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerLightRadio<bool>(
+          FPCDangerLightRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -251,7 +251,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightRadio<bool>(
+          FPCSecondaryLightRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),
@@ -259,7 +259,7 @@ class _RadioScreenState extends State<RadioScreen> {
             isDisabled: this._isDisabled,
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightRadio<bool>(
+          FPCWarningLightRadio<bool>(
             value: true,
             groupValue: this._value,
             onChanged: (bool? value) => setState(() => this._value = value),

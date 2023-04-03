@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/material.dart';
 
 class SnackbarScreen extends StatelessWidget {
@@ -7,421 +7,421 @@ class SnackbarScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Snackbar",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FCListView(
+      body: FPCListView(
         children: [
           const ConfigSection(),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Dark",
           ),
           SizedBox(height: size.s16),
-          FCAccentDarkSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCAccentDarkSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoDarkSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCInfoDarkSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessDarkSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSuccessDarkSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyDarkSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCGreyDarkSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryDarkSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCPrimaryDarkSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerDarkSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCDangerDarkSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryDarkSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSecondaryDarkSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningDarkSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCWarningDarkSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Default",
           ),
           SizedBox(height: size.s16),
-          FCAccentSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCAccentSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackAlwaysSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCBlackAlwaysSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCBlackSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCBlackSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCInfoSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSuccessSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreySnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCGreySnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimarySnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCPrimarySnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCDangerSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondarySnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSecondarySnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteAlwaysSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCWhiteAlwaysSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWhiteSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCWhiteSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCWarningSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Light",
           ),
           SizedBox(height: size.s16),
-          FCAccentLightSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCAccentLightSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCInfoLightSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCInfoLightSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessLightSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSuccessLightSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyLightSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCGreyLightSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryLightSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCPrimaryLightSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerLightSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCDangerLightSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryLightSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSecondaryLightSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningLightSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCWarningLightSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 * 2),
-          FCText.regular16Black(
+          FPCText.regular16Black(
             context: context,
             text: "Outline",
           ),
           SizedBox(height: size.s16),
-          FCInfoOutlineSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCInfoOutlineSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSuccessOutlineSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSuccessOutlineSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCGreyOutlineSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCGreyOutlineSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCPrimaryOutlineSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCPrimaryOutlineSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCDangerOutlineSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCDangerOutlineSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCSecondaryOutlineSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCSecondaryOutlineSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),
           ),
           SizedBox(height: size.s16 / 2),
-          FCWarningOutlineSnackbar(
-            prefix: FCIcon.whiteAlways(
+          FPCWarningOutlineSnackbar(
+            prefix: FPCIcon.whiteAlways(
               context: context,
               icon: Icons.account_circle_outlined,
             ),
-            child: FCText.regular16WhiteAlways(
+            child: FPCText.regular16WhiteAlways(
               context: context,
               text: "Child",
             ),

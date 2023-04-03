@@ -1,4 +1,4 @@
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/material.dart';
 
 class ConfigListTextStyle extends StatelessWidget {
@@ -6,15 +6,15 @@ class ConfigListTextStyle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTextStyle textStyle = config.textStyle;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTextStyle textStyle = config.textStyle;
+    final IFPCSize size = config.size;
 
     return Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        FCText.semiBold20Black(
+        FPCText.semiBold20Black(
           context: context,
           text: "Text Style:",
         ),
@@ -24,14 +24,14 @@ class ConfigListTextStyle extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "Font Weight Thin:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.medium18Black(
+              child: FPCText.medium18Black(
                 context: context,
                 text: textStyle.fontWeightThin.toString(),
               ),
@@ -43,14 +43,14 @@ class ConfigListTextStyle extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "Font Weight Regular:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.medium18Black(
+              child: FPCText.medium18Black(
                 context: context,
                 text: textStyle.fontWeightRegular.toString(),
               ),
@@ -62,14 +62,14 @@ class ConfigListTextStyle extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "Font Weight Medium:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.medium18Black(
+              child: FPCText.medium18Black(
                 context: context,
                 text: textStyle.fontWeightMedium.toString(),
               ),
@@ -81,14 +81,14 @@ class ConfigListTextStyle extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "Font Weight SemiBold:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.medium18Black(
+              child: FPCText.medium18Black(
                 context: context,
                 text: textStyle.fontWeightSemiBold.toString(),
               ),
@@ -100,14 +100,14 @@ class ConfigListTextStyle extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "Font Weight Bold:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.medium18Black(
+              child: FPCText.medium18Black(
                 context: context,
                 text: textStyle.fontWeightBold.toString(),
               ),
@@ -120,14 +120,14 @@ class ConfigListTextStyle extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "Font Family Thin:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.medium18Black(
+              child: FPCText.medium18Black(
                 context: context,
                 text: textStyle.fontFamilyThin.toString(),
               ),
@@ -139,14 +139,14 @@ class ConfigListTextStyle extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "Font Family Regular:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.medium18Black(
+              child: FPCText.medium18Black(
                 context: context,
                 text: textStyle.fontFamilyRegular.toString(),
               ),
@@ -158,14 +158,14 @@ class ConfigListTextStyle extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "Font Family Medium:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.medium18Black(
+              child: FPCText.medium18Black(
                 context: context,
                 text: textStyle.fontFamilyMedium.toString(),
               ),
@@ -177,14 +177,14 @@ class ConfigListTextStyle extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "Font Family SemiBold:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.medium18Black(
+              child: FPCText.medium18Black(
                 context: context,
                 text: textStyle.fontFamilySemiBold.toString(),
               ),
@@ -196,14 +196,14 @@ class ConfigListTextStyle extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Flexible(
-              child: FCText.regular16Black(
+              child: FPCText.regular16Black(
                 context: context,
                 text: "Font Family Bold:",
               ),
             ),
             SizedBox(width: size.s16),
             Flexible(
-              child: FCText.medium18Black(
+              child: FPCText.medium18Black(
                 context: context,
                 text: textStyle.fontFamilyBold.toString(),
               ),

@@ -1,5 +1,5 @@
 import 'package:example/presentation/config/config_section.dart';
-import 'package:flutter_component/flutter_component.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class GradientToggleScreen extends StatefulWidget {
@@ -11,16 +11,16 @@ class GradientToggleScreen extends StatefulWidget {
 
 class _GradientToggleScreenState extends State<GradientToggleScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-  static const List<FCToggleItem<String>> _items = [
-    FCToggleItem(
+  static const List<FPCToggleItem<String>> _items = [
+    FPCToggleItem(
       value: "First",
       title: "First",
     ),
-    FCToggleItem(
+    FPCToggleItem(
       value: "Second",
       title: "Second",
     ),
-    FCToggleItem(
+    FPCToggleItem(
       value: "Third",
       title: "Third",
     ),
@@ -30,122 +30,122 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final FCConfig config = FCConfig.of(context);
-    final IFCTheme theme = config.theme;
-    final IFCSize size = config.size;
+    final FPCConfig config = FPCConfig.of(context);
+    final IFPCTheme theme = config.theme;
+    final IFPCSize size = config.size;
 
-    return FCScaffold(
+    return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FCScreenAppBar(
+      appBar: FPCScreenAppBar(
         context: context,
         title: "Gradient Toggle",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: Form(
         key: this._formKey,
-        child: FCListView(
+        child: FPCListView(
           childrenAlignment: CrossAxisAlignment.center,
           children: [
             const ConfigSection(),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryButton(
+            FPCPrimaryButton(
               title: "validate",
               onPressed: () => this._formKey.currentState?.validate(),
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryButton(
+            FPCPrimaryButton(
               title: "isDisabled",
               onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
             ),
             SizedBox(height: size.s16 * 2),
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Dark",
             ),
             SizedBox(height: size.s16),
-            FCAccentDarkGradientToggle<String>(
+            FPCAccentDarkGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCInfoDarkGradientToggle<String>(
+            FPCInfoDarkGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSuccessDarkGradientToggle<String>(
+            FPCSuccessDarkGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCGreyDarkGradientToggle<String>(
+            FPCGreyDarkGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryDarkGradientToggle<String>(
+            FPCPrimaryDarkGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSecondaryDarkGradientToggle<String>(
+            FPCSecondaryDarkGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWarningDarkGradientToggle<String>(
+            FPCWarningDarkGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 * 2),
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Default",
             ),
             SizedBox(height: size.s16),
-            FCAccentGradientToggle<String>(
+            FPCAccentGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCInfoGradientToggle<String>(
+            FPCInfoGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSuccessGradientToggle<String>(
+            FPCSuccessGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCGreyGradientToggle<String>(
+            FPCGreyGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryGradientToggle<String>(
+            FPCPrimaryGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
@@ -153,68 +153,68 @@ class _GradientToggleScreenState extends State<GradientToggleScreen> {
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSecondaryGradientToggle<String>(
+            FPCSecondaryGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWarningGradientToggle<String>(
+            FPCWarningGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 * 2),
-            FCText.regular16Black(
+            FPCText.regular16Black(
               context: context,
               text: "Light",
             ),
             SizedBox(height: size.s16),
-            FCAccentLightGradientToggle<String>(
+            FPCAccentLightGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCInfoLightGradientToggle<String>(
+            FPCInfoLightGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSuccessLightGradientToggle<String>(
+            FPCSuccessLightGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCGreyLightGradientToggle<String>(
+            FPCGreyLightGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCPrimaryLightGradientToggle<String>(
+            FPCPrimaryLightGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCSecondaryLightGradientToggle<String>(
+            FPCSecondaryLightGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
-            FCWarningLightGradientToggle<String>(
+            FPCWarningLightGradientToggle<String>(
               value: this._value,
               items: _items,
               onChanged: (String value) => setState(() => this._value = value),
