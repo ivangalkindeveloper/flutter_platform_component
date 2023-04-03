@@ -129,11 +129,12 @@
   - [Sliding Segment Control](#sliding-segment-control)
   - [Sliver Navigation App Bar](#sliver-navigation-app-bar)
   - [Snackbar](#snackbar)
+    - [Snackbar](#snackbar)
     - [Gradient Snackbar](#gradient-snackbar)
   - [Text](#text)
     - [Text](#text)
-    - [Text Style](#text-style)
     - [Text Span](#text-span)
+    - [Text Style](#text-style)
   - [Toggle](#toggle)
     - [Toggle](#toggle)
     - [Gradient Toggle](#gradient-toggle)
@@ -149,6 +150,8 @@ Extension themes along with the ThemeData class are very good when you use widge
 In case you want to get the correct behavior of widgets for the platform, you must fill in Theme and CupertinoTheme and each time remember to separate these colors in the widgets you use.\
 Theme Extension works in the same way as this package.\
 In the case of this package - it is necessary to fill in only one contract of the theme used.
+### Basic entities
+In addition to the theme, there are other basic entities that are managed identically to the theme - sizes, text styles and haptics.
 ### Color scheme
 The color scheme was created in terms of the convenience of designers (primary, secondary and accent colors).\
 In the scheme by name, permanent colors and tint colors are created (note - primaryLight and primaryDark).
@@ -156,10 +159,11 @@ In the scheme by name, permanent colors and tint colors are created (note - prim
 Ready-made components get rid of a lot of boilerplate code.
 ### Unified API
 All component property names are unified, for example, you will never see "background" and "backgroundColor".
+### Validation
+Form fields have not only normal validation, but also separate auto-validation, which can be used for messages during the characters entered in the field.\
+Segment control, Gradient segment control, sliding segment control, toggle, gradient toggle components also have a validation function (IsRequired flag) and can be placed at the root of the Form widget.
 ### Disabled components
 Every component that can be clicked has the property to be disabled implemented.
-### Basic entities
-In addition to the theme, there are other basic entities that are managed identically to the theme - sizes, text styles and haptics.
 
 ## Design
 Components follow the following design paradigm:
@@ -1397,8 +1401,6 @@ Class that combines all text widgets for quick display.
   ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/text/text.png)
-#### Text Style
-Class that combines all text widgets for quick use.
 #### Text Span
 Ready-made shell widget for receiving text span items.
 ```dart
@@ -1416,6 +1418,8 @@ Ready-made shell widget for receiving text span items.
   ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_component/blob/master/images/text/text_span.png)
+#### Text Style
+Class that combines all text widgets for quick use.
 
 ### Toggle
 One of the proposed visions of the segment control component.

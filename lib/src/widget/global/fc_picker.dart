@@ -69,7 +69,7 @@ Future<DateTime?> showFCDatePicker({
   }
 }
 
-Future<dynamic> showFCTimePicker({
+Future<TimeOfDay?> showFCTimePicker({
   required BuildContext context,
   FCTimeOfDayRange? timeOfDayRange,
   required Widget Function(BuildContext) cupertinoModalBuilder,
@@ -88,7 +88,7 @@ Future<dynamic> showFCTimePicker({
 
   switch (platform) {
     case TargetPlatform.iOS:
-      return showCupertinoModalPopup<DateTime?>(
+      return showCupertinoModalPopup<TimeOfDay?>(
         context: context,
         useRootNavigator: false,
         barrierColor: methodBarrierColor,
