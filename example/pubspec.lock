@@ -4,16 +4,18 @@ packages:
   animate_do:
     dependency: transitive
     description:
-      path: "../package/animate_do"
-      relative: true
-    source: path
+      name: animate_do
+      sha256: "9aeacc1a7238f971c039bdf45d13c628be554a242e0251c4ddda09d19a1a923f"
+      url: "https://pub.dev"
+    source: hosted
     version: "3.0.2"
   animations:
     dependency: transitive
     description:
-      path: "../package/animations"
-      relative: true
-    source: path
+      name: animations
+      sha256: fe8a6bdca435f718bb1dc8a11661b2c22504c6da40ef934cee8327ed77934164
+      url: "https://pub.dev"
+    source: hosted
     version: "2.0.7"
   async:
     dependency: transitive
@@ -26,9 +28,10 @@ packages:
   badges:
     dependency: transitive
     description:
-      path: "../package/badges"
-      relative: true
-    source: path
+      name: badges
+      sha256: "461031a60efbb95276f52107f63d5d45008b5ca1eb7f8ca440cadda9ec2143b0"
+      url: "https://pub.dev"
+    source: hosted
     version: "3.0.2"
   boolean_selector:
     dependency: transitive
@@ -73,9 +76,10 @@ packages:
   custom_rounded_rectangle_border:
     dependency: transitive
     description:
-      path: "../package/custom_rounded_rectangle_border"
-      relative: true
-    source: path
+      name: custom_rounded_rectangle_border
+      sha256: "57b7af53da4e8bf4afa5a8393c446e953a81c23dd309f4341cfc38d19ff6f062"
+      url: "https://pub.dev"
+    source: hosted
     version: "0.2.0-nullsafety.0"
   custom_sliding_segmented_control:
     dependency: "direct main"
@@ -121,9 +125,10 @@ packages:
   flutter_vibrate:
     dependency: transitive
     description:
-      path: "../package/flutter_vibrate"
-      relative: true
-    source: path
+      name: flutter_vibrate
+      sha256: "9cc9b32cf52c90dd34c1cf396ed40010b2c74e69adbb0ff16005afa900971ad8"
+      url: "https://pub.dev"
+    source: hosted
     version: "1.3.0"
   flutter_web_plugins:
     dependency: transitive
@@ -173,9 +178,10 @@ packages:
   modal_bottom_sheet:
     dependency: transitive
     description:
-      path: "../package/modal_bottom_sheet"
-      relative: true
-    source: path
+      name: modal_bottom_sheet
+      sha256: "3bba63c62d35c931bce7f8ae23a47f9a05836d8cb3c11122ada64e0b2f3d718f"
+      url: "https://pub.dev"
+    source: hosted
     version: "3.0.0-pre"
   path:
     dependency: transitive
@@ -188,9 +194,10 @@ packages:
   pinput:
     dependency: transitive
     description:
-      path: "../package/pinput"
-      relative: true
-    source: path
+      name: pinput
+      sha256: "1773743c188cdd2f8d0398ea708ec72645bb41ac9311755c4f7bb03a4184bdcf"
+      url: "https://pub.dev"
+    source: hosted
     version: "2.2.31"
   sky_engine:
     dependency: transitive

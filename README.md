@@ -173,8 +173,8 @@ Components follow the following design paradigm:
 4) Component change the color of the disabled component, if it only has not background color;
 5) The design of cross-platform components and their behavior are not mix.
 
-## Forks
-The package uses a fork of the following packages:\
+## Dependencies
+The package uses a fork of the following dependencies:\
 [animate_do](https://pub.dev/packages/animate_do) - fade animations.\
 [animations](https://pub.dev/packages/animations) - transitional animations.\
 [badges](https://pub.dev/packages/badges) - badges.\
