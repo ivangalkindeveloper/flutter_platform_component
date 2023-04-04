@@ -50,7 +50,7 @@ class FPCDefaultTextStyle implements IFPCTextStyle {
   final String? package;
 
   @override
-  IFPCTextStyle copyWith({
+  FPCDefaultTextStyle copyWith({
     // FontWeight
     FontWeight? fontWeightThin,
     FontWeight? fontWeightRegular,
@@ -87,7 +87,7 @@ class FPCDefaultTextStyle implements IFPCTextStyle {
         package: package ?? this.package,
       );
 
-  static IFPCTextStyle get defaultTextStyle => FPCDefaultTextStyle(
+  static FPCDefaultTextStyle get defaultTextStyle => FPCDefaultTextStyle(
         // FontWeight
         fontWeightThin: FontWeight.w300,
         fontWeightRegular: FontWeight.w400,
