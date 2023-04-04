@@ -566,7 +566,7 @@ class FPCDefaultTheme implements IFPCTheme {
       );
 
   @override
-  IFPCTheme lerp({
+  FPCDefaultTheme lerp({
     required IFPCTheme other,
     required double t,
   }) =>
@@ -704,7 +704,7 @@ class FPCDefaultTheme implements IFPCTheme {
             Color.lerp(this.barrierDialogMaterial, other.barrierDialogMaterial, t),
       );
 
-  static IFPCTheme get defaultLightTheme => FPCDefaultTheme(
+  static FPCDefaultTheme get defaultLightTheme => FPCDefaultTheme(
         // System
         cupertinoThemeData: const CupertinoThemeData(),
         materialThemeMode: ThemeMode.light,
@@ -959,7 +959,7 @@ class FPCDefaultTheme implements IFPCTheme {
         sweepGradientConfig: const FPCSweepGradientConfig(),
       );
 
-  static IFPCTheme get defaultDarkTheme => FPCDefaultTheme(
+  static FPCDefaultTheme get defaultDarkTheme => FPCDefaultTheme(
         // System
         cupertinoThemeData: const CupertinoThemeData(),
         materialThemeMode: ThemeMode.dark,

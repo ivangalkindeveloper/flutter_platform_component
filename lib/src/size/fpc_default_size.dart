@@ -301,7 +301,7 @@ class FPCDefaultSize implements IFPCSize {
   @override
   final double opacityDisabled;
 
-  IFPCSize copyWith({
+  FPCDefaultSize copyWith({
     // Size
     double? s10,
     double? s12,
@@ -561,7 +561,7 @@ class FPCDefaultSize implements IFPCSize {
         opacityDisabled: opacityDisabled ?? this.opacityDisabled,
       );
 
-  static IFPCSize get defaultSize => FPCDefaultSize(
+  static FPCDefaultSize get defaultSize => FPCDefaultSize(
         // Size
         s10: 10,
         s12: 12,
