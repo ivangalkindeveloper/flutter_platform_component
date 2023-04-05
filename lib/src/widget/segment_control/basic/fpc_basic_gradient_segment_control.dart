@@ -1,6 +1,6 @@
 import 'package:custom_rounded_rectangle_border/custom_rounded_rectangle_border.dart';
 import 'package:flutter_platform_component/src/widget/helper/fpc_button_row_child.dart';
-import 'package:flutter_platform_component/src/widget/helper/fpc_common_field.dart';
+import 'package:flutter_platform_component/src/widget/helper/fpc_field.dart';
 import 'package:flutter_platform_component/src/exception/fpc_exception.dart';
 import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
@@ -163,7 +163,7 @@ class _FPCBasicGradientSegmentControlState<T>
           SizedBox(
             height: 0,
             width: 0,
-            child: FPCCommonField.hidden(
+            child: FPCField.hidden(
               controller: this._controller,
               validator: this._validator,
               restorationId: this.widget.restorationId,
@@ -191,13 +191,17 @@ class _FPCBasicGradientSegmentControlState<T>
                     length: this.widget.items.length,
                     unselectedBackgroundGradient:
                         this.widget.unselectedBackgroundGradient,
-                    unselectedBorderGradient: this.widget.unselectedBorderGradient,
-                    unselectedInternalGradient: this.widget.unselectedInternalGradient,
+                    unselectedBorderGradient:
+                        this.widget.unselectedBorderGradient,
+                    unselectedInternalGradient:
+                        this.widget.unselectedInternalGradient,
                     unselectedSplashColor: this.widget.unselectedSplashColor,
                     unselectedStyle: this.widget.unselectedStyle,
-                    selectedBackgroundGradient: this.widget.selectedBackgroundGradient,
+                    selectedBackgroundGradient:
+                        this.widget.selectedBackgroundGradient,
                     selectedBorderGradient: this.widget.selectedBorderGradient,
-                    selectedInternalGradient: this.widget.selectedInternalGradient,
+                    selectedInternalGradient:
+                        this.widget.selectedInternalGradient,
                     selectedSplashColor: this.widget.selectedSplashColor,
                     selectedStyle: this.widget.selectedStyle,
                     internalIconHeight: this.widget.internalIconHeight,
@@ -305,7 +309,8 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
 
     if (this.isSelected) return this.selectedBorderGradient;
 
-    if (this.unselectedBorderGradient != null) return this.unselectedBorderGradient!;
+    if (this.unselectedBorderGradient != null)
+      return this.unselectedBorderGradient!;
 
     return this.selectedBorderGradient;
   }
@@ -317,7 +322,8 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
 
     if (this.isSelected) return this.selectedInternalGradient;
 
-    if (this.unselectedInternalGradient != null) return this.unselectedInternalGradient!;
+    if (this.unselectedInternalGradient != null)
+      return this.unselectedInternalGradient!;
 
     return this.selectedBorderGradient;
   }
@@ -353,17 +359,21 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
     final Color? splashColor = this._splashColor(theme: theme);
     final Gradient borderGradient = this._borderGradient(theme: theme);
     final Gradient internalGradient = this._internalGradient(theme: theme);
-    final double internalIconHeight = this.internalIconHeight ?? size.heightIconDefault;
-    final double borderWidth = this.borderWidth ?? config.borderWidthSegmentControl;
+    final double internalIconHeight =
+        this.internalIconHeight ?? size.heightIconDefault;
+    final double borderWidth =
+        this.borderWidth ?? config.borderWidthSegmentControl;
     final double leftBorderWidth = index == 0 ? borderWidth : 0;
-    final double rightBorderWidth = (index + 1) == this.length ? borderWidth : 0;
+    final double rightBorderWidth =
+        (index + 1) == this.length ? borderWidth : 0;
     final Radius topLeft =
         index == 0 ? Radius.circular(this.borderRadius.topLeft.x) : Radius.zero;
     final Radius topRight = (index + 1) == this.length
         ? Radius.circular(this.borderRadius.topRight.x)
         : Radius.zero;
-    final Radius bottomLeft =
-        index == 0 ? Radius.circular(this.borderRadius.bottomLeft.x) : Radius.zero;
+    final Radius bottomLeft = index == 0
+        ? Radius.circular(this.borderRadius.bottomLeft.x)
+        : Radius.zero;
     final Radius bottomRight = (index + 1) == this.length
         ? Radius.circular(this.borderRadius.bottomRight.x)
         : Radius.zero;
@@ -379,12 +389,14 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
           color: internalGradient.colors.first,
         );
     final TextStyle selectedColor = this.unselectedStyle?.copyWith(
-              color: this.unselectedStyle?.color ?? internalGradient.colors.first,
+              color:
+                  this.unselectedStyle?.color ?? internalGradient.colors.first,
             ) ??
         TextStyle(
           color: internalGradient.colors.first,
         );
-    final TextStyle titleStyle = this.isSelected ? selectedColor : unselectedStyle;
+    final TextStyle titleStyle =
+        this.isSelected ? selectedColor : unselectedStyle;
 
     return FPCBasicGradientButton(
       backgroundGradient: backgroundGradient,

@@ -8,8 +8,8 @@ class FPCNavigator extends FPCPlatformWidget {
     List<Page<dynamic>> pages = const <Page<dynamic>>[],
     bool Function(Route<dynamic>, dynamic)? onPopPage,
     String? initialRoute,
-    List<Route<dynamic>> Function(NavigatorState, String) onGenerateInitialRoutes =
-        Navigator.defaultGenerateInitialRoutes,
+    List<Route<dynamic>> Function(NavigatorState, String)
+        onGenerateInitialRoutes = Navigator.defaultGenerateInitialRoutes,
     Route<dynamic>? Function(RouteSettings settings)? onGenerateRoute,
     Route<dynamic>? Function(RouteSettings settings)? onUnknownRoute,
     TransitionDelegate<dynamic> transitionDelegate =

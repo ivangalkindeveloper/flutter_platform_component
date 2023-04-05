@@ -50,8 +50,8 @@ class FPCPopUpModal extends StatelessWidget {
                       width: this.barWidth ?? size.s32,
                       decoration: BoxDecoration(
                         color: theme.greyLight,
-                        borderRadius:
-                            BorderRadius.circular(this.barHeight ?? size.s16 / 2),
+                        borderRadius: BorderRadius.circular(
+                            this.barHeight ?? size.s16 / 2),
                       ),
                     ),
                   ],

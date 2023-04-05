@@ -16,8 +16,10 @@ Future<T?> showFPCExpandedModal<T>({
   final FPCConfig config = context.config;
   final TargetPlatform platform = config.platform;
 
-  final Color methodBarrierColor = barrierColor ?? config.barrierColorExpandedModal;
-  final BorderRadius methodBorderRadius = borderRadius ?? config.borderRadiusModal;
+  final Color methodBarrierColor =
+      barrierColor ?? config.barrierColorExpandedModal;
+  final BorderRadius methodBorderRadius =
+      borderRadius ?? config.borderRadiusModal;
 
   switch (platform) {
     case TargetPlatform.iOS:
@@ -65,7 +67,8 @@ Future<T?> showFPCPopUpModal<T>({
   final FPCConfig config = context.config;
   final TargetPlatform platform = config.platform;
 
-  final Color methodBarrierColor = barrierColor ?? config.barrierColorPopUpModal;
+  final Color methodBarrierColor =
+      barrierColor ?? config.barrierColorPopUpModal;
 
   switch (platform) {
     case TargetPlatform.iOS:

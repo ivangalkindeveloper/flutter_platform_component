@@ -33,7 +33,8 @@ class FPCBasicSnackbar extends StatelessWidget {
     final FPCConfig config = context.config;
     final IFPCSize size = config.size;
 
-    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusSnackbar;
+    final BorderRadius borderRadius =
+        this.borderRadius ?? config.borderRadiusSnackbar;
     final double borderWidth = this.borderWidth ?? config.borderWidthSnackbar;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(

@@ -3,7 +3,8 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:flutter/cupertino.dart' show CupertinoListSection, CupertinoListTile;
+import 'package:flutter/cupertino.dart'
+    show CupertinoListSection, CupertinoListTile;
 
 class FPCListSection extends FPCPlatformWidget {
   FPCListSection({
@@ -81,8 +82,10 @@ class _FPCListSectionCupertino extends StatelessWidget {
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
-    final Color backgroundColor = this.backgroundColor ?? theme.backgroundComponent;
-    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusCard;
+    final Color backgroundColor =
+        this.backgroundColor ?? theme.backgroundComponent;
+    final BorderRadius borderRadius =
+        this.borderRadius ?? config.borderRadiusCard;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
           vertical: size.s16 / 2,
@@ -91,8 +94,10 @@ class _FPCListSectionCupertino extends StatelessWidget {
     final TextStyle titleStyle = this.titleStyle?.copyWith(
               color: this.titleStyle?.color ?? theme.black,
               fontSize: this.titleStyle?.fontSize ?? size.s16,
-              fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
-              fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              fontWeight:
+                  this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily:
+                  this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
               package: textStyle.package,
             ) ??
         TextStyle(
@@ -105,10 +110,10 @@ class _FPCListSectionCupertino extends StatelessWidget {
     final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
               color: this.descriptionStyle?.color ?? theme.grey,
               fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-              fontWeight:
-                  this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily:
-                  this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              fontWeight: this.descriptionStyle?.fontWeight ??
+                  textStyle.fontWeightRegular,
+              fontFamily: this.descriptionStyle?.fontFamily ??
+                  textStyle.fontFamilyRegular,
               package: textStyle.package,
             ) ??
         TextStyle(
@@ -200,8 +205,10 @@ class _FPCListSectionMaterial extends StatelessWidget {
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
-    final Color backgroundColor = this.backgroundColor ?? theme.backgroundComponent;
-    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusCard;
+    final Color backgroundColor =
+        this.backgroundColor ?? theme.backgroundComponent;
+    final BorderRadius borderRadius =
+        this.borderRadius ?? config.borderRadiusCard;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
           vertical: size.s16 / 2,
@@ -210,8 +217,10 @@ class _FPCListSectionMaterial extends StatelessWidget {
     final TextStyle titleStyle = this.titleStyle?.copyWith(
               color: this.titleStyle?.color ?? theme.black,
               fontSize: this.titleStyle?.fontSize ?? size.s16,
-              fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
-              fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              fontWeight:
+                  this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily:
+                  this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
               package: textStyle.package,
             ) ??
         TextStyle(
@@ -224,10 +233,10 @@ class _FPCListSectionMaterial extends StatelessWidget {
     final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
               color: this.descriptionStyle?.color ?? theme.grey,
               fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-              fontWeight:
-                  this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily:
-                  this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              fontWeight: this.descriptionStyle?.fontWeight ??
+                  textStyle.fontWeightRegular,
+              fontFamily: this.descriptionStyle?.fontFamily ??
+                  textStyle.fontFamilyRegular,
               package: textStyle.package,
             ) ??
         TextStyle(
@@ -246,10 +255,12 @@ class _FPCListSectionMaterial extends StatelessWidget {
           int index,
           FPCListSectionItem item,
         ) {
-          final Radius topLeft =
-              (index == 0) ? Radius.circular(borderRadius.topLeft.x) : Radius.zero;
-          final Radius topRight =
-              (index == 0) ? Radius.circular(borderRadius.topRight.x) : Radius.zero;
+          final Radius topLeft = (index == 0)
+              ? Radius.circular(borderRadius.topLeft.x)
+              : Radius.zero;
+          final Radius topRight = (index == 0)
+              ? Radius.circular(borderRadius.topRight.x)
+              : Radius.zero;
           final Radius bottomLeft = ((index + 1) == this.items.length)
               ? Radius.circular(borderRadius.bottomLeft.x)
               : Radius.zero;
@@ -288,7 +299,8 @@ class _FPCListSectionMaterial extends StatelessWidget {
                                   style: titleStyle,
                                 ),
                               ),
-                              if (item.postfix != null) SizedBox(width: size.s16),
+                              if (item.postfix != null)
+                                SizedBox(width: size.s16),
                               if (item.postfix != null) item.postfix!,
                             ],
                           ),

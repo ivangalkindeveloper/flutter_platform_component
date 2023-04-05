@@ -5,7 +5,8 @@ class AnimatedContainerScreen extends StatefulWidget {
   const AnimatedContainerScreen({Key? key});
 
   @override
-  State<AnimatedContainerScreen> createState() => _AnimatedContainerScreenState();
+  State<AnimatedContainerScreen> createState() =>
+      _AnimatedContainerScreenState();
 }
 
 class _AnimatedContainerScreenState extends State<AnimatedContainerScreen> {

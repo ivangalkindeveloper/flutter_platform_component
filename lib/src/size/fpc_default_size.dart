@@ -458,7 +458,8 @@ class FPCDefaultSize implements IFPCSize {
         heightIconLarge: heightIconLarge ?? this.heightIconLarge,
         // Height / Indicator
         heightIndicatorSmall: heightIndicatorSmall ?? this.heightIndicatorSmall,
-        heightIndicatorDefault: heightIndicatorDefault ?? this.heightIndicatorDefault,
+        heightIndicatorDefault:
+            heightIndicatorDefault ?? this.heightIndicatorDefault,
         heightIndicatorLarge: heightIndicatorLarge ?? this.heightIndicatorLarge,
 
         // BorderRadius
@@ -488,10 +489,12 @@ class FPCDefaultSize implements IFPCSize {
         borderRadiusModalMaterial:
             borderRadiusModalMaterial ?? this.borderRadiusModalMaterial,
         // BorderRadius / Segment Control
-        borderRadiusSegmentControlCupertino: borderRadiusSegmentControlCupertino ??
-            this.borderRadiusSegmentControlCupertino,
+        borderRadiusSegmentControlCupertino:
+            borderRadiusSegmentControlCupertino ??
+                this.borderRadiusSegmentControlCupertino,
         borderRadiusSegmentControlMaterial:
-            borderRadiusSegmentControlMaterial ?? this.borderRadiusSegmentControlMaterial,
+            borderRadiusSegmentControlMaterial ??
+                this.borderRadiusSegmentControlMaterial,
         // BorderRadius / Snackbar
         borderRadiusSnackbarCupertino:
             borderRadiusSnackbarCupertino ?? this.borderRadiusSnackbarCupertino,
@@ -512,7 +515,8 @@ class FPCDefaultSize implements IFPCSize {
         // BorderWidth / Card
         borderWidthCardCupertino:
             borderWidthCardCupertino ?? this.borderWidthCardCupertino,
-        borderWidthCardMaterial: borderWidthCardMaterial ?? this.borderWidthCardMaterial,
+        borderWidthCardMaterial:
+            borderWidthCardMaterial ?? this.borderWidthCardMaterial,
         // BorderWidth / Field
         borderWidthFieldCupertino:
             borderWidthFieldCupertino ?? this.borderWidthFieldCupertino,
@@ -520,9 +524,10 @@ class FPCDefaultSize implements IFPCSize {
             borderWidthFieldMaterial ?? this.borderWidthFieldMaterial,
         // BorderWidth / Segment Control
         borderWidthSegmentControlCupertino:
-            borderWidthSegmentControlCupertino ?? this.borderWidthSegmentControlCupertino,
-        borderWidthSegmentControlMaterial:
-            borderWidthSegmentControlMaterial ?? this.borderWidthSegmentControlMaterial,
+            borderWidthSegmentControlCupertino ??
+                this.borderWidthSegmentControlCupertino,
+        borderWidthSegmentControlMaterial: borderWidthSegmentControlMaterial ??
+            this.borderWidthSegmentControlMaterial,
         // BorderWidth / Snackbar
         borderWidthSnackbarCupertino:
             borderWidthSnackbarCupertino ?? this.borderWidthSnackbarCupertino,
@@ -541,14 +546,17 @@ class FPCDefaultSize implements IFPCSize {
 
         // Duration
         // Duration / Default
-        durationAnimationFast: durationAnimationFast ?? this.durationAnimationFast,
+        durationAnimationFast:
+            durationAnimationFast ?? this.durationAnimationFast,
         durationAnimationDefault:
             durationAnimationDefault ?? this.durationAnimationDefault,
-        durationAnimationSlow: durationAnimationSlow ?? this.durationAnimationSlow,
+        durationAnimationSlow:
+            durationAnimationSlow ?? this.durationAnimationSlow,
         // Duration / Badge
         durationBadge: durationBadge ?? this.durationBadge,
         // Duration / Page Indicator
-        durationPageIndicator: durationPageIndicator ?? this.durationPageIndicator,
+        durationPageIndicator:
+            durationPageIndicator ?? this.durationPageIndicator,
         // Duration / Shimmer
         durationShimmer: durationShimmer ?? this.durationShimmer,
         // Duration / Snackbar

@@ -126,7 +126,8 @@ class CircularIndicatorScreen extends StatelessWidget {
               FPCCircularIndicator.smallSecondaryButton(context: context),
               FPCCircularIndicator.smallSecondaryGradient(context: context),
               FPCCircularIndicator.smallSecondaryLight(context: context),
-              FPCCircularIndicator.smallSecondaryLightGradient(context: context),
+              FPCCircularIndicator.smallSecondaryLightGradient(
+                  context: context),
               FPCCircularIndicator.smallSecondaryDark(context: context),
               FPCCircularIndicator.smallSecondaryDarkGradient(context: context),
               FPCCircularIndicator.smallGrey(context: context),
@@ -246,7 +247,8 @@ class CircularIndicatorScreen extends StatelessWidget {
               FPCCircularIndicator.largeSecondaryButton(context: context),
               FPCCircularIndicator.largeSecondaryGradient(context: context),
               FPCCircularIndicator.largeSecondaryLight(context: context),
-              FPCCircularIndicator.largeSecondaryLightGradient(context: context),
+              FPCCircularIndicator.largeSecondaryLightGradient(
+                  context: context),
               FPCCircularIndicator.largeSecondaryDark(context: context),
               FPCCircularIndicator.largeSecondaryDarkGradient(context: context),
               FPCCircularIndicator.largeGrey(context: context),

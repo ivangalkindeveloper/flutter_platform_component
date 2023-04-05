@@ -103,7 +103,8 @@ class _FPCAppBarCupertino extends StatelessWidget {
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
-    final Color backgroundColor = this.backgroundColor ?? theme.backgroundComponent;
+    final Color backgroundColor =
+        this.backgroundColor ?? theme.backgroundComponent;
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -194,7 +195,8 @@ class _FPCAppBarMaterial extends StatelessWidget {
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
-    final Color backgroundColor = this.backgroundColor ?? theme.backgroundComponent;
+    final Color backgroundColor =
+        this.backgroundColor ?? theme.backgroundComponent;
 
     return Column(
       mainAxisSize: MainAxisSize.min,

@@ -18,7 +18,8 @@ class _ListRefreshScreenState extends State<ListRefreshScreen> {
     super.dispose();
   }
 
-  Future<void> _onRefresh() async => await Future.delayed(const Duration(seconds: 2));
+  Future<void> _onRefresh() async =>
+      await Future.delayed(const Duration(seconds: 2));
 
   @override
   Widget build(BuildContext context) {

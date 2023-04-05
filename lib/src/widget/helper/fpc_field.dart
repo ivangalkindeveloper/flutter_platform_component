@@ -12,8 +12,8 @@ import 'package:flutter/material.dart'
         OutlineInputBorder,
         AdaptiveTextSelectionToolbar;
 
-class FPCCommonField extends StatelessWidget {
-  const FPCCommonField({
+class FPCField extends StatelessWidget {
+  const FPCField({
     super.key,
     required this.controller,
     required this.focusNode,
@@ -135,12 +135,12 @@ class FPCCommonField extends StatelessWidget {
   final bool enableIMEPersonalizedLearning;
   final Widget Function(BuildContext, EditableTextState)? contextMenuBuilder;
 
-  factory FPCCommonField.hidden({
+  factory FPCField.hidden({
     required TextEditingController controller,
     required String? Function(String?) validator,
     required String? restorationId,
   }) =>
-      FPCCommonField(
+      FPCField(
         controller: controller,
         focusNode: null,
         //
@@ -219,8 +219,10 @@ class FPCCommonField extends StatelessWidget {
     final TextStyle fieldTextStyle = this.textStyle?.copyWith(
               color: this.textStyle?.color ?? theme.black,
               fontSize: this.textStyle?.fontSize ?? size.s16,
-              fontWeight: this.textStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily: this.textStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              fontWeight:
+                  this.textStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily:
+                  this.textStyle?.fontFamily ?? textStyle.fontFamilyRegular,
               package: textStyle.package,
             ) ??
         TextStyle(
@@ -233,8 +235,10 @@ class FPCCommonField extends StatelessWidget {
     final TextStyle fieldLabelStyle = this.labelStyle?.copyWith(
               color: this.labelColor,
               fontSize: this.labelStyle?.fontSize ?? size.s16,
-              fontWeight: this.labelStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily: this.labelStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              fontWeight:
+                  this.labelStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily:
+                  this.labelStyle?.fontFamily ?? textStyle.fontFamilyRegular,
               package: textStyle.package,
             ) ??
         TextStyle(
@@ -247,8 +251,10 @@ class FPCCommonField extends StatelessWidget {
     final TextStyle fieldPrefixStyle = this.prefixStyle?.copyWith(
               color: this.prefixStyle?.color ?? theme.black,
               fontSize: this.prefixStyle?.fontSize ?? size.s16,
-              fontWeight: this.prefixStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily: this.prefixStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              fontWeight:
+                  this.prefixStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily:
+                  this.prefixStyle?.fontFamily ?? textStyle.fontFamilyRegular,
               package: textStyle.package,
             ) ??
         TextStyle(
@@ -261,8 +267,10 @@ class FPCCommonField extends StatelessWidget {
     final TextStyle fieldHintStyle = this.hintStyle?.copyWith(
               color: this.hintStyle?.color ?? theme.greyLight,
               fontSize: this.hintStyle?.fontSize ?? size.s16,
-              fontWeight: this.hintStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily: this.hintStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              fontWeight:
+                  this.hintStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily:
+                  this.hintStyle?.fontFamily ?? textStyle.fontFamilyRegular,
               package: textStyle.package,
             ) ??
         TextStyle(
@@ -274,6 +282,8 @@ class FPCCommonField extends StatelessWidget {
         );
     final String? hintText = this.hintText != null ? " ${this.hintText}" : null;
     final InputDecoration decoration = InputDecoration(
+      alignLabelWithHint: false,
+      //
       labelText: this.labelText,
       labelStyle: fieldLabelStyle,
       //
@@ -316,9 +326,10 @@ class FPCCommonField extends StatelessWidget {
       border: const OutlineInputBorder(
         borderSide: BorderSide(color: Colors.transparent),
       ),
+      hoverColor: Colors.transparent,
     );
     final double cursorWidth = size.s10 / 5;
-    final double cursorHeight = (fieldTextStyle.fontSize ?? size.s16) * 1.25;
+    final double cursorHeight = (fieldTextStyle.fontSize ?? size.s16) * 1.1;
 
     return Material(
       color: Colors.transparent,
@@ -374,7 +385,8 @@ class FPCCommonField extends StatelessWidget {
           //
           restorationId: this.restorationId,
           enableIMEPersonalizedLearning: this.enableIMEPersonalizedLearning,
-          contextMenuBuilder: this.contextMenuBuilder ?? this._defaultContextMenuBuilder,
+          contextMenuBuilder:
+              this.contextMenuBuilder ?? this._defaultContextMenuBuilder,
         ),
       ),
     );

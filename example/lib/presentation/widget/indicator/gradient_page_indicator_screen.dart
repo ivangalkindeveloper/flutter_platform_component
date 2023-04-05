@@ -6,10 +6,12 @@ class GradientPageIndicatorScreen extends StatefulWidget {
   const GradientPageIndicatorScreen({Key? key});
 
   @override
-  State<GradientPageIndicatorScreen> createState() => _GradientPageIndicatorScreenState();
+  State<GradientPageIndicatorScreen> createState() =>
+      _GradientPageIndicatorScreenState();
 }
 
-class _GradientPageIndicatorScreenState extends State<GradientPageIndicatorScreen> {
+class _GradientPageIndicatorScreenState
+    extends State<GradientPageIndicatorScreen> {
   final int _length = 4;
   int _index = 0;
 

@@ -1,3 +1,6 @@
+## 1.0.3
+* Fixes for mouse behaviors and formatting.
+
 ## 1.0.2
 * Fix implementations of entities.
 

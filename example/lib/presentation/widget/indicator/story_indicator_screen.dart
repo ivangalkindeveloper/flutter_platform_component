@@ -39,7 +39,8 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen>
     super.dispose();
   }
 
-  void _timerControllerListener() => this._value$.add(this._timerController.value);
+  void _timerControllerListener() =>
+      this._value$.add(this._timerController.value);
 
   void _startTimer() {
     this._timerController.reset();
@@ -53,7 +54,8 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen>
     this._timerSubscription = this._timer$().listen(null);
   }
 
-  Stream<void> _timer$() => Stream.periodic(const Duration(seconds: 4), (int second) {
+  Stream<void> _timer$() =>
+      Stream.periodic(const Duration(seconds: 4), (int second) {
         this._timerController.reset();
         this._timerController.forward();
 
@@ -89,7 +91,8 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen>
 
             return StreamBuilder<double>(
                 stream: this._value$.stream,
-                builder: (BuildContext context, AsyncSnapshot<double> snapshotValue) {
+                builder: (BuildContext context,
+                    AsyncSnapshot<double> snapshotValue) {
                   final double value = snapshotValue.data ?? 0;
 
                   return FPCListView(

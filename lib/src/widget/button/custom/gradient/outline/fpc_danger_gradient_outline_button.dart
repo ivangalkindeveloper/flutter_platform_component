@@ -62,8 +62,10 @@ class FPCDangerGradientOutlineButton extends StatelessWidget {
           textAlign: TextAlign.center,
           titleStyle: this.titleStyle?.copyWith(
                     color: this.titleStyle?.color ?? theme.danger,
-                    fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
-                    fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+                    fontWeight: this.titleStyle?.fontWeight ??
+                        textStyle.fontWeightMedium,
+                    fontFamily: this.titleStyle?.fontFamily ??
+                        textStyle.fontFamilyMedium,
                     package: textStyle.package,
                   ) ??
               TextStyle(

@@ -60,7 +60,8 @@ class _FPCBasicSwitchCupertino extends StatelessWidget {
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
-    final void Function(bool)? onChanged = this.isDisabled ? null : this.onChanged;
+    final void Function(bool)? onChanged =
+        this.isDisabled ? null : this.onChanged;
 
     return Stack(
       children: [

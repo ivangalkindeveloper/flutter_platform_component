@@ -7,9 +7,12 @@ class FPCDateTimeRange {
     DateTime? dateMinimum,
     DateTime? dateInitial,
     DateTime? dateMaximum,
-  })  : this.dateTimeMinimum = dateMinimum ?? context.config.size.dateTimeMinimum,
-        this.dateTimeInitial = dateInitial ?? context.config.size.dateTimeInitial,
-        this.dateTimeMaximum = dateMaximum ?? context.config.size.dateTimeMaximum;
+  })  : this.dateTimeMinimum =
+            dateMinimum ?? context.config.size.dateTimeMinimum,
+        this.dateTimeInitial =
+            dateInitial ?? context.config.size.dateTimeInitial,
+        this.dateTimeMaximum =
+            dateMaximum ?? context.config.size.dateTimeMaximum;
 
   final DateTime dateTimeMinimum;
   final DateTime dateTimeInitial;

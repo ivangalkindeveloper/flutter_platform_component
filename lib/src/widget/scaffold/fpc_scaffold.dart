@@ -70,7 +70,8 @@ class _FPCScaffoldCupertino extends StatelessWidget {
     final FPCConfig config = context.config;
     final IFPCTheme theme = config.theme;
 
-    final Color backgroundColor = this.backgroundColor ?? theme.backgroundScaffold;
+    final Color backgroundColor =
+        this.backgroundColor ?? theme.backgroundScaffold;
 
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
@@ -119,7 +120,8 @@ class _FPCScaffoldMaterial extends StatelessWidget {
     final FPCConfig config = context.config;
     final IFPCTheme theme = config.theme;
 
-    final Color backgroundColor = this.backgroundColor ?? theme.backgroundScaffold;
+    final Color backgroundColor =
+        this.backgroundColor ?? theme.backgroundScaffold;
 
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),

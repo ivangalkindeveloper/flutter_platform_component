@@ -7,7 +7,8 @@ class GradientCodeFieldScreen extends StatefulWidget {
   const GradientCodeFieldScreen({Key? key});
 
   @override
-  State<GradientCodeFieldScreen> createState() => _GradientCodeFieldScreenState();
+  State<GradientCodeFieldScreen> createState() =>
+      _GradientCodeFieldScreenState();
 }
 
 class _GradientCodeFieldScreenState extends State<GradientCodeFieldScreen> {
@@ -43,7 +44,8 @@ class _GradientCodeFieldScreenState extends State<GradientCodeFieldScreen> {
           SizedBox(height: size.s16 / 2),
           FPCPrimaryButton(
             title: "isDisabled",
-            onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+            onPressed: () =>
+                setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
           FPCText.regular16Black(

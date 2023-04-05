@@ -88,10 +88,12 @@ class FPCBasicGradientSelectField extends StatefulWidget {
   final String? restorationId;
 
   @override
-  State<FPCBasicGradientSelectField> createState() => _FPCBasicGradientSelectFieldState();
+  State<FPCBasicGradientSelectField> createState() =>
+      _FPCBasicGradientSelectFieldState();
 }
 
-class _FPCBasicGradientSelectFieldState extends State<FPCBasicGradientSelectField> {
+class _FPCBasicGradientSelectFieldState
+    extends State<FPCBasicGradientSelectField> {
   // Controller
   late final TextEditingController _controller;
 
@@ -129,7 +131,8 @@ class _FPCBasicGradientSelectFieldState extends State<FPCBasicGradientSelectFiel
     final FPCConfig config = context.config;
     final BorderRadius borderRadius =
         this.widget.borderRadius ?? config.borderRadiusField;
-    final double borderWidth = this.widget.borderWidth ?? config.borderWidthField;
+    final double borderWidth =
+        this.widget.borderWidth ?? config.borderWidthField;
 
     return FPCSelectFieldWrapper(
       context: context,

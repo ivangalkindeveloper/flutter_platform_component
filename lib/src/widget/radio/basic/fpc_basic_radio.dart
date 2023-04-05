@@ -2,7 +2,14 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 import 'package:flutter/material.dart'
-    show Material, Radio, Theme, ThemeData, MaterialState, MaterialStateProperty, Colors;
+    show
+        Material,
+        Radio,
+        Theme,
+        ThemeData,
+        MaterialState,
+        MaterialStateProperty,
+        Colors;
 
 class FPCBasicRadio<T> extends FPCPlatformWidget {
   FPCBasicRadio({
@@ -65,7 +72,8 @@ class _FPCBasicRadioCupertino<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final void Function(T?)? onChanged = this.isDisabled ? null : this.onChanged;
+    final void Function(T?)? onChanged =
+        this.isDisabled ? null : this.onChanged;
 
     return Material(
       color: Colors.transparent,
@@ -126,7 +134,8 @@ class _FPCBasicRadioMaterial<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final void Function(T?)? onChanged = this.isDisabled ? null : this.onChanged;
+    final void Function(T?)? onChanged =
+        this.isDisabled ? null : this.onChanged;
 
     return Material(
       color: Colors.transparent,

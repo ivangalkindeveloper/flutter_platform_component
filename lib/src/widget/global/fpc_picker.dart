@@ -2,7 +2,8 @@ import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:flutter/material.dart' show showDatePicker, showTimePicker, TimeOfDay;
+import 'package:flutter/material.dart'
+    show showDatePicker, showTimePicker, TimeOfDay;
 import 'package:flutter/cupertino.dart' show showCupertinoModalPopup;
 
 Future<DateTime?> showFPCDatePicker({
@@ -19,10 +20,14 @@ Future<DateTime?> showFPCDatePicker({
   final TargetPlatform platform = config.platform;
   final IFPCSize size = config.size;
 
-  final Color methodBarrierColor = barrierColor ?? config.barrierColorPopUpModal;
-  final DateTime dateTimeMinimum = dateTimeRange?.dateTimeMinimum ?? size.dateTimeMinimum;
-  final DateTime dateTimeInitial = dateTimeRange?.dateTimeInitial ?? size.dateTimeInitial;
-  final DateTime dateTimeMaximum = dateTimeRange?.dateTimeMaximum ?? size.dateTimeMaximum;
+  final Color methodBarrierColor =
+      barrierColor ?? config.barrierColorPopUpModal;
+  final DateTime dateTimeMinimum =
+      dateTimeRange?.dateTimeMinimum ?? size.dateTimeMinimum;
+  final DateTime dateTimeInitial =
+      dateTimeRange?.dateTimeInitial ?? size.dateTimeInitial;
+  final DateTime dateTimeMaximum =
+      dateTimeRange?.dateTimeMaximum ?? size.dateTimeMaximum;
 
   switch (platform) {
     case TargetPlatform.iOS:
@@ -41,7 +46,8 @@ Future<DateTime?> showFPCDatePicker({
         initialDate: dateTimeInitial,
         lastDate: dateTimeMaximum,
         locale: materialDialogLocale,
-        builder: (BuildContext context, Widget? materialDialog) => FPCDatePicker(
+        builder: (BuildContext context, Widget? materialDialog) =>
+            FPCDatePicker(
           dateTimeRange: dateTimeRange,
           materialDialog: materialDialog,
           materialDialogBackgroundColor: materialDialogBackgroundColor,
@@ -58,7 +64,8 @@ Future<DateTime?> showFPCDatePicker({
         initialDate: dateTimeInitial,
         lastDate: dateTimeMaximum,
         locale: materialDialogLocale,
-        builder: (BuildContext context, Widget? materialDialog) => FPCDatePicker(
+        builder: (BuildContext context, Widget? materialDialog) =>
+            FPCDatePicker(
           dateTimeRange: dateTimeRange,
           materialDialog: materialDialog,
           materialDialogBackgroundColor: materialDialogBackgroundColor,
@@ -82,7 +89,8 @@ Future<TimeOfDay?> showFPCTimePicker({
   final TargetPlatform platform = config.platform;
   final IFPCSize size = config.size;
 
-  final Color methodBarrierColor = barrierColor ?? config.barrierColorPopUpModal;
+  final Color methodBarrierColor =
+      barrierColor ?? config.barrierColorPopUpModal;
   final TimeOfDay timeOfDayInitial =
       timeOfDayRange?.timeOfDayInitial ?? size.timeOfDayInitial;
 
@@ -100,7 +108,8 @@ Future<TimeOfDay?> showFPCTimePicker({
         context: context,
         useRootNavigator: false,
         initialTime: timeOfDayInitial,
-        builder: (BuildContext context, Widget? materialDialog) => FPCTimePicker(
+        builder: (BuildContext context, Widget? materialDialog) =>
+            FPCTimePicker(
           timeOfDayRange: timeOfDayRange,
           materialDialog: materialDialog,
           materialDialogBackgroundColor: materialDialogBackgroundColor,
@@ -114,7 +123,8 @@ Future<TimeOfDay?> showFPCTimePicker({
         context: context,
         useRootNavigator: false,
         initialTime: timeOfDayInitial,
-        builder: (BuildContext context, Widget? materialDialog) => FPCTimePicker(
+        builder: (BuildContext context, Widget? materialDialog) =>
+            FPCTimePicker(
           timeOfDayRange: timeOfDayRange,
           materialDialog: materialDialog,
           materialDialogBackgroundColor: materialDialogBackgroundColor,

@@ -86,8 +86,8 @@ class ConfigListTheme extends StatelessWidget {
             Flexible(
               child: FPCText.regular16Black(
                 context: context,
-                text:
-                    theme.systemOverlayStyle.systemNavigationBarIconBrightness.toString(),
+                text: theme.systemOverlayStyle.systemNavigationBarIconBrightness
+                    .toString(),
               ),
             ),
           ],
@@ -106,7 +106,8 @@ class ConfigListTheme extends StatelessWidget {
             Flexible(
               child: FPCText.regular16Black(
                 context: context,
-                text: theme.systemOverlayStyle.systemNavigationBarContrastEnforced
+                text: theme
+                    .systemOverlayStyle.systemNavigationBarContrastEnforced
                     .toString(),
               ),
             ),
@@ -162,7 +163,8 @@ class ConfigListTheme extends StatelessWidget {
             Flexible(
               child: FPCText.regular16Black(
                 context: context,
-                text: theme.systemOverlayStyle.statusBarIconBrightness.toString(),
+                text:
+                    theme.systemOverlayStyle.statusBarIconBrightness.toString(),
               ),
             ),
           ],
@@ -181,7 +183,8 @@ class ConfigListTheme extends StatelessWidget {
             Flexible(
               child: FPCText.regular16Black(
                 context: context,
-                text: theme.systemOverlayStyle.systemStatusBarContrastEnforced.toString(),
+                text: theme.systemOverlayStyle.systemStatusBarContrastEnforced
+                    .toString(),
               ),
             ),
           ],

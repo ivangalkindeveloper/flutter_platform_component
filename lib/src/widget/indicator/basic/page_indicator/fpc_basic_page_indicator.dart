@@ -37,7 +37,8 @@ class FPCBasicPageIndicator extends StatelessWidget {
   Color _color({
     required int index,
   }) {
-    final Color color = this.index == index ? this.selectedColor : this.unselectedColor;
+    final Color color =
+        this.index == index ? this.selectedColor : this.unselectedColor;
     return color;
   }
 

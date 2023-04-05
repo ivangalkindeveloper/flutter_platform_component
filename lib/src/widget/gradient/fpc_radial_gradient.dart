@@ -16,11 +16,13 @@ class FPCRadialGradient extends RadialGradient {
           center: center ?? context.config.theme.radialGradientConfig.center,
           radius: radius ?? context.config.theme.radialGradientConfig.radius,
           stops: stops ?? context.config.theme.radialGradientConfig.stops,
-          tileMode: tileMode ?? context.config.theme.radialGradientConfig.tileMode,
+          tileMode:
+              tileMode ?? context.config.theme.radialGradientConfig.tileMode,
           focal: focal ?? context.config.theme.radialGradientConfig.focal,
-          focalRadius:
-              focalRadius ?? context.config.theme.radialGradientConfig.focalRadius,
-          transform: transform ?? context.config.theme.radialGradientConfig.transform,
+          focalRadius: focalRadius ??
+              context.config.theme.radialGradientConfig.focalRadius,
+          transform:
+              transform ?? context.config.theme.radialGradientConfig.transform,
           colors: colors,
         );
 }

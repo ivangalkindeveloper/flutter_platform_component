@@ -56,8 +56,10 @@ class FPCBasicCounterBadge extends StatelessWidget {
     final TextStyle countStyle = this.countStyle?.copyWith(
               color: this.countStyle?.color ?? context.config.theme.whiteAlways,
               fontSize: this.countStyle?.fontSize ?? size.s14,
-              fontWeight: this.countStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily: this.countStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              fontWeight:
+                  this.countStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily:
+                  this.countStyle?.fontFamily ?? textStyle.fontFamilyRegular,
               package: textStyle.package,
             ) ??
         TextStyle(

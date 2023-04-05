@@ -2,7 +2,8 @@ import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:flutter/cupertino.dart' show CupertinoSliverNavigationBar, CupertinoIcons;
+import 'package:flutter/cupertino.dart'
+    show CupertinoSliverNavigationBar, CupertinoIcons;
 import 'package:flutter/material.dart' show SliverAppBar, Colors, Icons;
 
 class FPCSliverNavigationAppBar extends FPCPlatformWidget {
@@ -82,7 +83,8 @@ class _FPCSliverNavigationAppBarCupertino extends StatelessWidget {
           transformHitTests: false,
           child: FPCIcon.black(
             context: context,
-            icon: FPCPlatform.decomposeFromContext<IconData, IconData, IconData>(
+            icon:
+                FPCPlatform.decomposeFromContext<IconData, IconData, IconData>(
               context: context,
               cupertino: CupertinoIcons.back,
               material: Icons.arrow_back,
@@ -188,7 +190,8 @@ class _FPCSliverNavigationAppBarMaterial extends StatelessWidget {
           transformHitTests: false,
           child: FPCIcon.black(
             context: context,
-            icon: FPCPlatform.decomposeFromContext<IconData, IconData, IconData>(
+            icon:
+                FPCPlatform.decomposeFromContext<IconData, IconData, IconData>(
               context: context,
               cupertino: CupertinoIcons.back,
               material: Icons.arrow_back,
@@ -214,8 +217,10 @@ class _FPCSliverNavigationAppBarMaterial extends StatelessWidget {
         textAlign: TextAlign.center,
         style: this.titleStyle?.copyWith(
                   color: titleStyle?.color ?? theme.black,
-                  fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
-                  fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+                  fontWeight:
+                      this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+                  fontFamily:
+                      this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
                   package: textStyle.package,
                 ) ??
             TextStyle(
@@ -237,7 +242,8 @@ class _FPCSliverNavigationAppBarMaterial extends StatelessWidget {
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
-    final Color backgroundColor = this.backgroundColor ?? theme.backgroundComponent;
+    final Color backgroundColor =
+        this.backgroundColor ?? theme.backgroundComponent;
 
     return SliverAppBar.large(
       elevation: 0,

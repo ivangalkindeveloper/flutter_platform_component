@@ -6,7 +6,8 @@ class GradientSelectCardScreen extends StatefulWidget {
   const GradientSelectCardScreen({Key? key});
 
   @override
-  State<GradientSelectCardScreen> createState() => _GradientSelectCardScreenState();
+  State<GradientSelectCardScreen> createState() =>
+      _GradientSelectCardScreenState();
 }
 
 class _GradientSelectCardScreenState extends State<GradientSelectCardScreen> {
@@ -31,7 +32,8 @@ class _GradientSelectCardScreenState extends State<GradientSelectCardScreen> {
           SizedBox(height: size.s16 / 2),
           FPCPrimaryButton(
             title: "isDisabled",
-            onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+            onPressed: () =>
+                setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
           FPCText.regular16Black(

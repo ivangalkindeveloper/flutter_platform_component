@@ -14,8 +14,10 @@ class FPCLinearGradient extends LinearGradient {
           begin: begin ?? context.config.theme.linearGradientConfig.begin,
           end: end ?? context.config.theme.linearGradientConfig.end,
           stops: stops ?? context.config.theme.linearGradientConfig.stops,
-          tileMode: tileMode ?? context.config.theme.linearGradientConfig.tileMode,
-          transform: transform ?? context.config.theme.linearGradientConfig.transform,
+          tileMode:
+              tileMode ?? context.config.theme.linearGradientConfig.tileMode,
+          transform:
+              transform ?? context.config.theme.linearGradientConfig.transform,
           colors: colors,
         );
 }

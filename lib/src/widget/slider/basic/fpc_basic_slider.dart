@@ -70,7 +70,8 @@ class _FPCBasicSliderCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final void Function(double)? onChanged = this.isDisabled ? null : this.onChanged;
+    final void Function(double)? onChanged =
+        this.isDisabled ? null : this.onChanged;
 
     return Stack(
       children: [

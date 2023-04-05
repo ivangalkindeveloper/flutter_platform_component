@@ -6,10 +6,12 @@ class SlidingSegmentControlScreen extends StatefulWidget {
   const SlidingSegmentControlScreen({Key? key});
 
   @override
-  State<SlidingSegmentControlScreen> createState() => _SlidingSegmentControlScreenState();
+  State<SlidingSegmentControlScreen> createState() =>
+      _SlidingSegmentControlScreenState();
 }
 
-class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScreen> {
+class _SlidingSegmentControlScreenState
+    extends State<SlidingSegmentControlScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   static const List<FPCSlidingSegmentControlItem<String>> _items = [
     FPCSlidingSegmentControlItem(
@@ -55,7 +57,8 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             SizedBox(height: size.s16 / 2),
             FPCPrimaryButton(
               title: "isDisabled",
-              onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+              onPressed: () =>
+                  setState(() => this._isDisabled = !this._isDisabled),
             ),
             SizedBox(height: size.s16 * 2),
             FPCText.regular16Black(
@@ -66,56 +69,64 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             FPCAccentDarkSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCInfoDarkSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCSuccessDarkSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCGreyDarkSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCPrimaryDarkSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCDangerDarkSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCSecondaryDarkSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCWarningDarkSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 * 2),
@@ -127,49 +138,56 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             FPCAccentSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCBlackAlwaysSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCBlackSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCInfoSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCSuccessSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCGreySlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCPrimarySlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isRequired: true,
               isDisabled: this._isDisabled,
             ),
@@ -177,35 +195,40 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             FPCDangerSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCSecondarySlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCWhiteAlwaysSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCWhiteSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCWarningSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 * 2),
@@ -217,49 +240,56 @@ class _SlidingSegmentControlScreenState extends State<SlidingSegmentControlScree
             FPCAccentLightSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCInfoLightSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCSuccessLightSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCPrimaryLightSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCDangerLightSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCSecondaryLightSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
             SizedBox(height: size.s16 / 2),
             FPCWarningLightSlidingSegmentControl<String?>(
               value: this._action,
               items: _items,
-              onChanged: (String? value) => setState(() => this._action = value),
+              onChanged: (String? value) =>
+                  setState(() => this._action = value),
               isDisabled: this._isDisabled,
             ),
           ],

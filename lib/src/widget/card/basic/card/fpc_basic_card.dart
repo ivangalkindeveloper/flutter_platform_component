@@ -27,7 +27,8 @@ class FPCBasicCard extends StatelessWidget {
     final FPCConfig config = context.config;
     final IFPCSize size = config.size;
 
-    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusCard;
+    final BorderRadius borderRadius =
+        this.borderRadius ?? config.borderRadiusCard;
     final double borderWidth = this.borderWidth ?? config.borderWidthCard;
     final EdgeInsets padding = this.padding ?? size.paddingCard;
 

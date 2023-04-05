@@ -83,7 +83,8 @@ class _FPCBasicGradientSelectCardCupertino extends StatelessWidget {
   Widget build(BuildContext context) {
     final FPCConfig config = context.config;
 
-    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusCard;
+    final BorderRadius borderRadius =
+        this.borderRadius ?? config.borderRadiusCard;
     final VoidCallback onPressed = this.isDisabled ? () {} : this.onPressed;
 
     return Stack(
@@ -151,7 +152,8 @@ class _FPCBasicGradientSelectCardMaterial extends StatelessWidget {
     final IFPCTheme theme = config.theme;
 
     final Color splashColor = this.splashColor ?? theme.grey;
-    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusCard;
+    final BorderRadius borderRadius =
+        this.borderRadius ?? config.borderRadiusCard;
     final VoidCallback onPressed = this.isDisabled ? () {} : this.onPressed;
 
     return Stack(

@@ -33,7 +33,8 @@ class FPCCupertinoNavigator extends StatefulWidget {
   final List<Page<dynamic>> pages;
   final bool Function(Route<dynamic>, dynamic)? onPopPage;
   final String? initialRoute;
-  final List<Route<dynamic>> Function(NavigatorState, String) onGenerateInitialRoutes;
+  final List<Route<dynamic>> Function(NavigatorState, String)
+      onGenerateInitialRoutes;
   final RouteFactory? onGenerateRoute;
   final RouteFactory? onUnknownRoute;
   final TransitionDelegate<dynamic> transitionDelegate;

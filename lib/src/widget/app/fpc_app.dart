@@ -21,7 +21,8 @@ class FPCApp extends FPCPlatformWidget {
     GlobalKey<NavigatorState>? navigatorKey,
     GlobalKey<ScaffoldMessengerState>? scaffoldMessengerKey,
     Widget? home,
-    Map<String, Widget Function(BuildContext)> routes = const <String, WidgetBuilder>{},
+    Map<String, Widget Function(BuildContext)> routes =
+        const <String, WidgetBuilder>{},
     String? initialRoute,
     Route<dynamic>? Function(RouteSettings)? onGenerateRoute,
     List<Route<dynamic>> Function(String)? onGenerateInitialRoutes,
@@ -37,7 +38,8 @@ class FPCApp extends FPCPlatformWidget {
     //
     Locale? locale,
     List<LocalizationsDelegate<dynamic>> localizationsDelegates = const [],
-    Locale? Function(List<Locale>?, Iterable<Locale>)? localeListResolutionCallback,
+    Locale? Function(List<Locale>?, Iterable<Locale>)?
+        localeListResolutionCallback,
     Locale? Function(Locale?, Iterable<Locale>)? localeResolutionCallback,
     List<Locale> supportedLocales = const <Locale>[Locale('en', 'US')],
     //
@@ -72,7 +74,8 @@ class FPCApp extends FPCPlatformWidget {
             title: title,
             onGenerateTitle: onGenerateTitle,
             //
-            theme: cupertinoThemeData ?? context.config.theme.cupertinoThemeData,
+            theme:
+                cupertinoThemeData ?? context.config.theme.cupertinoThemeData,
             locale: locale,
             localizationsDelegates: [
               DefaultWidgetsLocalizations.delegate,
@@ -112,7 +115,8 @@ class FPCApp extends FPCPlatformWidget {
             title: title,
             onGenerateTitle: onGenerateTitle,
             //
-            themeMode: materialThemeMode ?? context.config.theme.materialThemeMode,
+            themeMode:
+                materialThemeMode ?? context.config.theme.materialThemeMode,
             theme: materialThemeData ?? context.config.theme.materialThemeData,
             locale: locale,
             localizationsDelegates: [
@@ -160,7 +164,8 @@ class FPCApp extends FPCPlatformWidget {
     //
     Locale? locale,
     List<LocalizationsDelegate<dynamic>> localizationsDelegates = const [],
-    Locale? Function(List<Locale>?, Iterable<Locale>)? localeListResolutionCallback,
+    Locale? Function(List<Locale>?, Iterable<Locale>)?
+        localeListResolutionCallback,
     Locale? Function(Locale?, Iterable<Locale>)? localeResolutionCallback,
     List<Locale> supportedLocales = const <Locale>[Locale('en', 'US')],
     //
@@ -192,7 +197,8 @@ class FPCApp extends FPCPlatformWidget {
             title: title,
             onGenerateTitle: onGenerateTitle,
             //
-            theme: cupertinoThemeData ?? context.config.theme.cupertinoThemeData,
+            theme:
+                cupertinoThemeData ?? context.config.theme.cupertinoThemeData,
             locale: locale,
             localizationsDelegates: [
               DefaultWidgetsLocalizations.delegate,
@@ -229,7 +235,8 @@ class FPCApp extends FPCPlatformWidget {
             title: title,
             onGenerateTitle: onGenerateTitle,
             //
-            themeMode: materialThemeMode ?? context.config.theme.materialThemeMode,
+            themeMode:
+                materialThemeMode ?? context.config.theme.materialThemeMode,
             theme: materialThemeData ?? context.config.theme.materialThemeData,
             locale: locale,
             localizationsDelegates: [
@@ -258,7 +265,8 @@ class FPCApp extends FPCPlatformWidget {
         );
 
   static HeroController createHeroController({required BuildContext context}) =>
-      FPCPlatform.decomposeFromContext<HeroController, HeroController, HeroController>(
+      FPCPlatform.decomposeFromContext<HeroController, HeroController,
+          HeroController>(
         context: context,
         cupertino: CupertinoApp.createCupertinoHeroController(),
         material: MaterialApp.createMaterialHeroController(),

@@ -146,27 +146,35 @@ class _FPCBlurBottomNavigationBarMaterial extends StatelessWidget {
     final Color unselectedColor = this.unselectedColor ?? theme.grey;
     final TextStyle unselectedStyle = this.unselectedStyle?.copyWith(
               color: this.unselectedStyle?.color ?? unselectedColor,
-              fontWeight: this.unselectedStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily: this.unselectedStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              fontWeight: this.unselectedStyle?.fontWeight ??
+                  textStyle.fontWeightRegular,
+              fontFamily: this.unselectedStyle?.fontFamily ??
+                  textStyle.fontFamilyRegular,
               package: textStyle.package,
             ) ??
         TextStyle(
           color: unselectedColor,
-          fontWeight: this.unselectedStyle?.fontWeight ?? textStyle.fontWeightRegular,
-          fontFamily: this.unselectedStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+          fontWeight:
+              this.unselectedStyle?.fontWeight ?? textStyle.fontWeightRegular,
+          fontFamily:
+              this.unselectedStyle?.fontFamily ?? textStyle.fontFamilyRegular,
           package: textStyle.package,
         );
     final Color selectedColor = this.selectedColor ?? theme.primary;
     final TextStyle selectedStyle = this.selectedStyle?.copyWith(
               color: this.unselectedStyle?.color ?? selectedColor,
-              fontWeight: this.selectedStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily: this.selectedStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              fontWeight:
+                  this.selectedStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily:
+                  this.selectedStyle?.fontFamily ?? textStyle.fontFamilyRegular,
               package: textStyle.package,
             ) ??
         TextStyle(
           color: selectedColor,
-          fontWeight: this.selectedStyle?.fontWeight ?? textStyle.fontWeightRegular,
-          fontFamily: this.selectedStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+          fontWeight:
+              this.selectedStyle?.fontWeight ?? textStyle.fontWeightRegular,
+          fontFamily:
+              this.selectedStyle?.fontFamily ?? textStyle.fontFamilyRegular,
           package: textStyle.package,
         );
 

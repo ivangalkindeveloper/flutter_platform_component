@@ -129,7 +129,8 @@ class _FPCBasicSelectFieldState extends State<FPCBasicSelectField> {
     final FPCConfig config = context.config;
     final BorderRadius borderRadius =
         this.widget.borderRadius ?? config.borderRadiusField;
-    final double borderWidth = this.widget.borderWidth ?? config.borderWidthField;
+    final double borderWidth =
+        this.widget.borderWidth ?? config.borderWidthField;
 
     return FPCSelectFieldWrapper(
       context: context,

@@ -5,7 +5,8 @@ import 'package:flutter/widgets.dart';
 class NavigatorScreen extends StatelessWidget {
   const NavigatorScreen({Key? key});
 
-  static final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+  static final GlobalKey<NavigatorState> navigatorKey =
+      GlobalKey<NavigatorState>();
   static const String page_1 = "/page_1";
   static const String page_2 = "/page_2";
 
@@ -101,7 +102,8 @@ class _Page2 extends StatelessWidget {
       appBar: FPCScreenAppBar(
         context: context,
         title: "Page 2",
-        onPressedBack: () => Navigator.pop(NavigatorScreen.navigatorKey.currentContext!),
+        onPressedBack: () =>
+            Navigator.pop(NavigatorScreen.navigatorKey.currentContext!),
       ),
       body: Center(
         child: FPCText.regular16Black(

@@ -50,9 +50,10 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
   void didInitState() {
     // Subscription
     this._highlightSubscription = Stream.periodic(
-            this.widget.duration ?? this._size.durationShimmer,
-            (int second) => second % 2 == 0)
-        .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
+        this.widget.duration ?? this._size.durationShimmer,
+        (int second) =>
+            second % 2 == 0).listen(
+        (bool isHighLight) => setState(() => this._isHighlight = isHighLight));
   }
 
   @override
@@ -64,7 +65,8 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
       this._highlightSubscription = Stream.periodic(
               this.widget.duration ?? this._size.durationShimmer,
               (int second) => second % 2 == 0)
-          .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
+          .listen((bool isHighLight) =>
+              setState(() => this._isHighlight = isHighLight));
     }
   }
 
@@ -77,8 +79,9 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
 
   @override
   Widget build(BuildContext context) {
-    final Color color =
-        this._isHighlight ? this.widget.highlightColor : this.widget.backgroundColor;
+    final Color color = this._isHighlight
+        ? this.widget.highlightColor
+        : this.widget.backgroundColor;
     final BorderRadius borderRadius =
         this.widget.borderRadius ?? this._config.borderRadiusCard;
     final Widget child = this.widget.child ?? const SizedBox();

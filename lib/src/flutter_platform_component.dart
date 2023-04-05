@@ -21,7 +21,8 @@ class FlutterPlatformComponent extends StatefulWidget {
   final Widget child;
 
   @override
-  State<FlutterPlatformComponent> createState() => _FlutterPlatformComponentState();
+  State<FlutterPlatformComponent> createState() =>
+      _FlutterPlatformComponentState();
 }
 
 class _FlutterPlatformComponentState extends State<FlutterPlatformComponent> {
@@ -37,21 +38,24 @@ class _FlutterPlatformComponentState extends State<FlutterPlatformComponent> {
     this.platform = this.widget.platform ?? defaultTargetPlatform;
     this.theme = this.widget.theme ?? FPCDefaultTheme.defaultLightTheme;
     this.size = this.widget.size ?? FPCDefaultSize.defaultSize;
-    this.textStyle = this.widget.textStyle ?? FPCDefaultTextStyle.defaultTextStyle;
+    this.textStyle =
+        this.widget.textStyle ?? FPCDefaultTextStyle.defaultTextStyle;
     this.haptic = this.widget.haptic ?? FPCDefaultHaptic();
   }
 
   void changePlatform({required TargetPlatform platform}) =>
       setState(() => this.platform = platform);
 
-  void changeTheme({required IFPCTheme theme}) => setState(() => this.theme = theme);
+  void changeTheme({required IFPCTheme theme}) =>
+      setState(() => this.theme = theme);
 
   void changeSize({required IFPCSize size}) => setState(() => this.size = size);
 
   void changeTextStyle({required IFPCTextStyle textStyle}) =>
       setState(() => this.textStyle = textStyle);
 
-  void changeHaptic({required IFPCHaptic haptic}) => setState(() => this.haptic = haptic);
+  void changeHaptic({required IFPCHaptic haptic}) =>
+      setState(() => this.haptic = haptic);
 
   @override
   Widget build(BuildContext context) => FPCConfig(

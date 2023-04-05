@@ -6,10 +6,12 @@ class KeyboardNumberButtonScreen extends StatefulWidget {
   const KeyboardNumberButtonScreen({Key? key});
 
   @override
-  State<KeyboardNumberButtonScreen> createState() => _KeyboardNumberButtonScreenState();
+  State<KeyboardNumberButtonScreen> createState() =>
+      _KeyboardNumberButtonScreenState();
 }
 
-class _KeyboardNumberButtonScreenState extends State<KeyboardNumberButtonScreen> {
+class _KeyboardNumberButtonScreenState
+    extends State<KeyboardNumberButtonScreen> {
   bool _isDisabled = false;
 
   @override
@@ -32,7 +34,8 @@ class _KeyboardNumberButtonScreenState extends State<KeyboardNumberButtonScreen>
           SizedBox(height: size.s16 / 2),
           FPCPrimaryButton(
             title: "isDisabled",
-            onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+            onPressed: () =>
+                setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
           FPCKeyboardNumberButton(

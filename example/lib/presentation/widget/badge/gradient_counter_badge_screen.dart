@@ -6,10 +6,12 @@ class GradientCounterBadgeScreen extends StatefulWidget {
   const GradientCounterBadgeScreen({Key? key});
 
   @override
-  State<GradientCounterBadgeScreen> createState() => _GradientCounterBadgeScreenState();
+  State<GradientCounterBadgeScreen> createState() =>
+      _GradientCounterBadgeScreenState();
 }
 
-class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen> {
+class _GradientCounterBadgeScreenState
+    extends State<GradientCounterBadgeScreen> {
   int _count = 0;
 
   @override

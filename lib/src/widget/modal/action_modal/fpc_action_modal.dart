@@ -114,7 +114,8 @@ class _FPCActionModalCupertino extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             if (item.prefix != null) item.prefix!,
-            if (item.prefix != null && (this.title != null || item.postfix != null))
+            if (item.prefix != null &&
+                (this.title != null || item.postfix != null))
               SizedBox(width: size.s16),
             if (this.title != null)
               Flexible(
@@ -124,7 +125,8 @@ class _FPCActionModalCupertino extends StatelessWidget {
                   style: this.itemStyle,
                 ),
               ),
-            if (item.postfix != null && (item.prefix != null || this.title != null))
+            if (item.postfix != null &&
+                (item.prefix != null || this.title != null))
               SizedBox(width: size.s16),
             if (item.postfix != null) item.postfix!,
           ],
@@ -274,8 +276,10 @@ class _FPCActionModalMaterial extends StatelessWidget {
           style: this.titleStyle?.copyWith(
                     color: this.titleStyle?.color ?? theme.black,
                     fontSize: this.titleStyle?.fontSize ?? size.s16,
-                    fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
-                    fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+                    fontWeight: this.titleStyle?.fontWeight ??
+                        textStyle.fontWeightMedium,
+                    fontFamily: this.titleStyle?.fontFamily ??
+                        textStyle.fontFamilyMedium,
                     package: textStyle.package,
                   ) ??
               TextStyle(
@@ -297,13 +301,16 @@ class _FPCActionModalMaterial extends StatelessWidget {
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
-    final Color backgroundColor = this.backgroundColor ?? theme.backgroundComponent;
+    final Color backgroundColor =
+        this.backgroundColor ?? theme.backgroundComponent;
     final Color splashColor = this.splashColor ?? theme.greyLight;
     final TextStyle titleStyle = this.titleStyle?.copyWith(
               color: this.titleStyle?.color ?? theme.black,
               fontSize: this.titleStyle?.fontSize ?? size.s16,
-              fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              fontWeight:
+                  this.titleStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily:
+                  this.titleStyle?.fontFamily ?? textStyle.fontFamilyRegular,
               package: textStyle.package,
             ) ??
         TextStyle(
@@ -316,10 +323,10 @@ class _FPCActionModalMaterial extends StatelessWidget {
     final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
               color: this.descriptionStyle?.color ?? theme.black,
               fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-              fontWeight:
-                  this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily:
-                  this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              fontWeight: this.descriptionStyle?.fontWeight ??
+                  textStyle.fontWeightRegular,
+              fontFamily: this.descriptionStyle?.fontFamily ??
+                  textStyle.fontFamilyRegular,
               package: textStyle.package,
             ) ??
         TextStyle(
@@ -332,8 +339,10 @@ class _FPCActionModalMaterial extends StatelessWidget {
     final TextStyle itemStyle = this.itemStyle?.copyWith(
               color: this.itemStyle?.color ?? theme.black,
               fontSize: this.itemStyle?.fontSize ?? size.s16,
-              fontWeight: this.itemStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily: this.itemStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              fontWeight:
+                  this.itemStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily:
+                  this.itemStyle?.fontFamily ?? textStyle.fontFamilyRegular,
               package: textStyle.package,
             ) ??
         TextStyle(

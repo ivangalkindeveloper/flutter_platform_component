@@ -68,7 +68,8 @@ class FPCBlurWhiteAlwaysScreenAppBar extends FPCBasicBlurAppBar {
           transformHitTests: false,
           child: FPCIcon.whiteAlways(
             context: context,
-            icon: FPCPlatform.decomposeFromContext<IconData, IconData, IconData>(
+            icon:
+                FPCPlatform.decomposeFromContext<IconData, IconData, IconData>(
               context: context,
               cupertino: CupertinoIcons.back,
               material: Icons.arrow_back,

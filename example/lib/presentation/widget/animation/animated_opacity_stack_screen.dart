@@ -5,10 +5,12 @@ class AnimatedOpacityStackScreen extends StatefulWidget {
   const AnimatedOpacityStackScreen({Key? key});
 
   @override
-  State<AnimatedOpacityStackScreen> createState() => _AnimatedOpacityStackScreenState();
+  State<AnimatedOpacityStackScreen> createState() =>
+      _AnimatedOpacityStackScreenState();
 }
 
-class _AnimatedOpacityStackScreenState extends State<AnimatedOpacityStackScreen> {
+class _AnimatedOpacityStackScreenState
+    extends State<AnimatedOpacityStackScreen> {
   bool _action = false;
 
   @override

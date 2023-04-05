@@ -85,7 +85,8 @@ class _FPCBasicButtonCupertino extends StatelessWidget {
     final IFPCSize size = config.size;
 
     final double height = this.height ?? size.heightButton;
-    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusButton;
+    final BorderRadius borderRadius =
+        this.borderRadius ?? config.borderRadiusButton;
     final double borderWidth = this.borderWidth ?? config.borderWidthButton;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
@@ -168,7 +169,8 @@ class _FPCBasicButtonMaterial extends StatelessWidget {
 
     final Color splashColor = this.splashColor ?? theme.grey;
     final double height = this.height ?? size.heightButton;
-    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusButton;
+    final BorderRadius borderRadius =
+        this.borderRadius ?? config.borderRadiusButton;
     final double borderWidth = this.borderWidth ?? config.borderWidthButton;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(

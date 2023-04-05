@@ -2,7 +2,8 @@ import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:flutter/cupertino.dart' show CupertinoAlertDialog, CupertinoDialogAction;
+import 'package:flutter/cupertino.dart'
+    show CupertinoAlertDialog, CupertinoDialogAction;
 import 'package:flutter/material.dart' show AlertDialog, TextButton;
 
 class FPCDialog extends FPCPlatformWidget {
@@ -108,8 +109,10 @@ class _FPCDialogCupertino extends StatelessWidget {
     final TextStyle titleStyle = this.titleStyle?.copyWith(
               color: this.titleStyle?.color ?? theme.blackAlways,
               fontSize: this.titleStyle?.fontSize ?? size.s16,
-              fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
-              fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              fontWeight:
+                  this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily:
+                  this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
               package: textStyle.package,
             ) ??
         TextStyle(
@@ -122,10 +125,10 @@ class _FPCDialogCupertino extends StatelessWidget {
     final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
               color: this.descriptionStyle?.color ?? theme.blackAlways,
               fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-              fontWeight:
-                  this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily:
-                  this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              fontWeight: this.descriptionStyle?.fontWeight ??
+                  textStyle.fontWeightRegular,
+              fontFamily: this.descriptionStyle?.fontFamily ??
+                  textStyle.fontFamilyRegular,
               package: textStyle.package,
             ) ??
         TextStyle(
@@ -138,8 +141,10 @@ class _FPCDialogCupertino extends StatelessWidget {
     final TextStyle itemStyle = this.itemStyle?.copyWith(
               color: this.itemStyle?.color ?? theme.primary,
               fontSize: this.itemStyle?.fontSize ?? size.s16,
-              fontWeight: this.itemStyle?.fontWeight ?? textStyle.fontWeightMedium,
-              fontFamily: this.itemStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              fontWeight:
+                  this.itemStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily:
+                  this.itemStyle?.fontFamily ?? textStyle.fontFamilyMedium,
               package: textStyle.package,
             ) ??
         TextStyle(
@@ -235,13 +240,17 @@ class _FPCDialogMaterial extends StatelessWidget {
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
-    final Color backgroundColor = this.backgroundColor ?? theme.backgroundScaffold;
-    final BorderRadius borderRadius = this.borderRadius ?? config.borderRadiusDialog;
+    final Color backgroundColor =
+        this.backgroundColor ?? theme.backgroundScaffold;
+    final BorderRadius borderRadius =
+        this.borderRadius ?? config.borderRadiusDialog;
     final TextStyle titleStyle = this.titleStyle?.copyWith(
               color: this.titleStyle?.color ?? theme.black,
               fontSize: this.titleStyle?.fontSize ?? size.s16,
-              fontWeight: this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
-              fontFamily: this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              fontWeight:
+                  this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily:
+                  this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
               package: textStyle.package,
             ) ??
         TextStyle(
@@ -254,10 +263,10 @@ class _FPCDialogMaterial extends StatelessWidget {
     final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
               color: this.descriptionStyle?.color ?? theme.black,
               fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-              fontWeight:
-                  this.descriptionStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily:
-                  this.descriptionStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              fontWeight: this.descriptionStyle?.fontWeight ??
+                  textStyle.fontWeightRegular,
+              fontFamily: this.descriptionStyle?.fontFamily ??
+                  textStyle.fontFamilyRegular,
               package: textStyle.package,
             ) ??
         TextStyle(
@@ -270,8 +279,10 @@ class _FPCDialogMaterial extends StatelessWidget {
     final TextStyle itemStyle = this.itemStyle?.copyWith(
               color: this.itemStyle?.color ?? theme.primary,
               fontSize: this.itemStyle?.fontSize ?? size.s16,
-              fontWeight: this.itemStyle?.fontWeight ?? textStyle.fontWeightMedium,
-              fontFamily: this.itemStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              fontWeight:
+                  this.itemStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily:
+                  this.itemStyle?.fontFamily ?? textStyle.fontFamilyMedium,
               package: textStyle.package,
             ) ??
         TextStyle(

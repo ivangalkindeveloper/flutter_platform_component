@@ -43,7 +43,8 @@ class _GradientPINFieldScreenState extends State<GradientPINFieldScreen> {
           SizedBox(height: size.s16 / 2),
           FPCPrimaryButton(
             title: "isDisabled",
-            onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+            onPressed: () =>
+                setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
           FPCText.regular16Black(

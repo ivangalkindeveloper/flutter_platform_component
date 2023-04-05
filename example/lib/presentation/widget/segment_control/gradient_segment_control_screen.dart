@@ -10,7 +10,8 @@ class GradientSegmentControlScreen extends StatefulWidget {
       _GradientSegmentControlScreenState();
 }
 
-class _GradientSegmentControlScreenState extends State<GradientSegmentControlScreen> {
+class _GradientSegmentControlScreenState
+    extends State<GradientSegmentControlScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   static const List<FPCSegmentControlItem<String>> _items = [
     FPCSegmentControlItem(
@@ -56,7 +57,8 @@ class _GradientSegmentControlScreenState extends State<GradientSegmentControlScr
             SizedBox(height: size.s16 / 2),
             FPCPrimaryButton(
               title: "isDisabled",
-              onPressed: () => setState(() => this._isDisabled = !this._isDisabled),
+              onPressed: () =>
+                  setState(() => this._isDisabled = !this._isDisabled),
             ),
             SizedBox(height: size.s16 * 2),
             FPCText.regular16Black(

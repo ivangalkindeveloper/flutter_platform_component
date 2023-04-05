@@ -4,7 +4,7 @@
 # This file should be version controlled.
 
 version:
-  revision: 135454af32477f815a7525073027a3ff9eff1bfd
+  revision: 62bd79521d8d007524e351747471ba66696fc2d4
   channel: stable
 
 project_type: app
@@ -13,18 +13,18 @@ project_type: app
 migration:
   platforms:
     - platform: root
-      create_revision: 135454af32477f815a7525073027a3ff9eff1bfd
-      base_revision: 135454af32477f815a7525073027a3ff9eff1bfd
-    - platform: ios
-      create_revision: 135454af32477f815a7525073027a3ff9eff1bfd
-      base_revision: 135454af32477f815a7525073027a3ff9eff1bfd
+      create_revision: 62bd79521d8d007524e351747471ba66696fc2d4
+      base_revision: 62bd79521d8d007524e351747471ba66696fc2d4
+    - platform: web
+      create_revision: 62bd79521d8d007524e351747471ba66696fc2d4
+      base_revision: 62bd79521d8d007524e351747471ba66696fc2d4
 
   # User provided section
 
   # List of Local paths (relative to this file) that should be
-  # ignodanger by the migrate tool.
+  # ignored by the migrate tool.
   #
-  # Files that are not part of the templates will be ignodanger by default.
+  # Files that are not part of the templates will be ignored by default.
   unmanaged_files:
     - 'lib/main.dart'
     - 'ios/Runner.xcodeproj/project.pbxproj'

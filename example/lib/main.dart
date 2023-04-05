@@ -21,7 +21,8 @@ class App extends StatelessWidget {
       navigatorKey: _navigationService.navigatorKey,
       onGenerateRoute: _navigationService.onGenerateRoute,
       onGenerateInitialRoutes: (String route) => [
-        FPCRoute.pageRouteFromContext(context: context, child: const ComponentList()),
+        FPCRoute.pageRouteFromContext(
+            context: context, child: const ComponentList()),
       ],
     );
   }

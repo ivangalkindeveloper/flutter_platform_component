@@ -89,7 +89,8 @@ class _FPCDatePickerCupertino extends StatelessWidget {
         dateTimeRange?.dateTimeInitial ?? size.dateTimeInitial;
     final DateTime dateTimeMaximum =
         dateTimeRange?.dateTimeMaximum ?? size.dateTimeMaximum;
-    void Function(DateTime)? onChanged = this.cupertinoOnChanged ?? (DateTime value) {};
+    void Function(DateTime)? onChanged =
+        this.cupertinoOnChanged ?? (DateTime value) {};
 
     return SizedBox(
       height: height,

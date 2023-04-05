@@ -41,7 +41,8 @@ class ConfigSection extends StatelessWidget {
                 title: "Light Theme",
                 onPressed: () {
                   final IFPCTheme theme = FPCDefaultTheme.defaultLightTheme;
-                  SystemChrome.setSystemUIOverlayStyle(theme.systemOverlayStyle);
+                  SystemChrome.setSystemUIOverlayStyle(
+                      theme.systemOverlayStyle);
                   config.changeTheme(theme: theme);
                 },
               ),
@@ -52,7 +53,8 @@ class ConfigSection extends StatelessWidget {
                 title: "Dark Theme",
                 onPressed: () {
                   final IFPCTheme theme = FPCDefaultTheme.defaultDarkTheme;
-                  SystemChrome.setSystemUIOverlayStyle(theme.systemOverlayStyle);
+                  SystemChrome.setSystemUIOverlayStyle(
+                      theme.systemOverlayStyle);
                   config.changeTheme(theme: theme);
                 },
               ),

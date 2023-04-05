@@ -7,7 +7,8 @@ class ProgressIndicatorScreen extends StatefulWidget {
   const ProgressIndicatorScreen({Key? key});
 
   @override
-  State<ProgressIndicatorScreen> createState() => _ProgressIndicatorScreenState();
+  State<ProgressIndicatorScreen> createState() =>
+      _ProgressIndicatorScreenState();
 }
 
 class _ProgressIndicatorScreenState extends State<ProgressIndicatorScreen>
@@ -35,7 +36,8 @@ class _ProgressIndicatorScreenState extends State<ProgressIndicatorScreen>
     super.dispose();
   }
 
-  void _timerControllerListener() => this._value$.add(this._timerController.value);
+  void _timerControllerListener() =>
+      this._value$.add(this._timerController.value);
 
   void _startTimer() {
     this._timerController.reset();
@@ -45,7 +47,8 @@ class _ProgressIndicatorScreenState extends State<ProgressIndicatorScreen>
     this._timerSubscription = this._timer$().listen(null);
   }
 
-  Stream<void> _timer$() => Stream.periodic(const Duration(seconds: 4), (int second) {
+  Stream<void> _timer$() =>
+      Stream.periodic(const Duration(seconds: 4), (int second) {
         this._timerController.reset();
         this._timerController.forward();
 

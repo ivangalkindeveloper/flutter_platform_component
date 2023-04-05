@@ -7,9 +7,12 @@ class FPCTimeOfDayRange {
     TimeOfDay? timeMinimum,
     TimeOfDay? timeInitial,
     TimeOfDay? timeMaximum,
-  })  : this.timeOfDayMinimum = timeMinimum ?? context.config.size.timeOfDayMinimum,
-        this.timeOfDayInitial = timeInitial ?? context.config.size.timeOfDayInitial,
-        this.timeOfDayMaximum = timeMaximum ?? context.config.size.timeOfDayMaximum;
+  })  : this.timeOfDayMinimum =
+            timeMinimum ?? context.config.size.timeOfDayMinimum,
+        this.timeOfDayInitial =
+            timeInitial ?? context.config.size.timeOfDayInitial,
+        this.timeOfDayMaximum =
+            timeMaximum ?? context.config.size.timeOfDayMaximum;
 
   final TimeOfDay timeOfDayMinimum;
   final TimeOfDay timeOfDayInitial;

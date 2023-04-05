@@ -32,7 +32,8 @@ class FPCWhiteAlwaysCounterBadge extends StatelessWidget {
       color: theme.whiteAlways,
       count: this.count,
       countStyle: this.countStyle?.copyWith(
-                color: this.countStyle?.color ?? context.config.theme.blackAlways,
+                color:
+                    this.countStyle?.color ?? context.config.theme.blackAlways,
                 package: textStyle.package,
               ) ??
           TextStyle(

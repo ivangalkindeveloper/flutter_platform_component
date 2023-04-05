@@ -125,10 +125,11 @@ class _FPCDatePickerCupertino extends StatelessWidget {
           minimumDate: dateTimeMinimum,
           initialDateTime: dateTimeInitial,
           maximumDate: dateTimeMaximum,
-          onDateTimeChanged: (DateTime value) => this.cupertinoOnChanged?.call(TimeOfDay(
-                hour: value.hour,
-                minute: value.minute,
-              )),
+          onDateTimeChanged: (DateTime value) =>
+              this.cupertinoOnChanged?.call(TimeOfDay(
+                    hour: value.hour,
+                    minute: value.minute,
+                  )),
         ),
       ),
     );

@@ -55,7 +55,8 @@ class FPCScreenAppBar extends FPCBasicAppBar {
           transformHitTests: false,
           child: FPCIcon.black(
             context: context,
-            icon: FPCPlatform.decomposeFromContext<IconData, IconData, IconData>(
+            icon:
+                FPCPlatform.decomposeFromContext<IconData, IconData, IconData>(
               context: context,
               cupertino: CupertinoIcons.back,
               material: Icons.arrow_back,

@@ -31,14 +31,16 @@ class FPCConfig extends InheritedWidget {
 
   // Barrier
   // Barrier / Expanded Modal
-  Color get barrierColorExpandedModal => FPCPlatform.decompose<Color, Color, Color>(
+  Color get barrierColorExpandedModal =>
+      FPCPlatform.decompose<Color, Color, Color>(
         platform: this.platform,
         cupertino: this.theme.barrierExpandedModalCupertino,
         material: this.theme.barrierExpandedModalMaterial,
       );
 
   // Barrier / Pop Up Modal
-  Color get barrierColorPopUpModal => FPCPlatform.decompose<Color, Color, Color>(
+  Color get barrierColorPopUpModal =>
+      FPCPlatform.decompose<Color, Color, Color>(
         platform: this.platform,
         cupertino: this.theme.barrierPopUpModalCupertino,
         material: this.theme.barrierPopUpModalMaterial,
@@ -139,21 +141,24 @@ class FPCConfig extends InheritedWidget {
       );
 
   // BorderWidth / Segment Control
-  double get borderWidthSegmentControl => FPCPlatform.decompose<double, double, double>(
+  double get borderWidthSegmentControl =>
+      FPCPlatform.decompose<double, double, double>(
         platform: this.platform,
         cupertino: this.size.borderWidthSegmentControlCupertino,
         material: this.size.borderWidthSegmentControlMaterial,
       );
 
   // BorderWidth / Snackbar
-  double get borderWidthSnackbar => FPCPlatform.decompose<double, double, double>(
+  double get borderWidthSnackbar =>
+      FPCPlatform.decompose<double, double, double>(
         platform: this.platform,
         cupertino: this.size.borderWidthSnackbarCupertino,
         material: this.size.borderWidthSnackbarMaterial,
       );
 
   static FPCConfig of(BuildContext context) {
-    final FPCConfig? config = context.dependOnInheritedWidgetOfExactType<FPCConfig>();
+    final FPCConfig? config =
+        context.dependOnInheritedWidgetOfExactType<FPCConfig>();
     if (config == null) throw const FPCConfigNullException();
 
     return config;

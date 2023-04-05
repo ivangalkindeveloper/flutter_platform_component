@@ -1,5 +1,5 @@
 import 'package:flutter_platform_component/src/widget/helper/fpc_button_row_child.dart';
-import 'package:flutter_platform_component/src/widget/helper/fpc_common_field.dart';
+import 'package:flutter_platform_component/src/widget/helper/fpc_field.dart';
 import 'package:flutter_platform_component/src/exception/fpc_exception.dart';
 import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
@@ -145,7 +145,8 @@ class _FPCBasicSlidingSegmentControlState<T>
     final IFPCSize size = config.size;
 
     final Color backgroundColor = this._backgroundColor();
-    final double height = this.widget.height ?? size.heightSlidingSegmentControl;
+    final double height =
+        this.widget.height ?? size.heightSlidingSegmentControl;
 
     return Stack(
       alignment: Alignment.center,
@@ -153,7 +154,7 @@ class _FPCBasicSlidingSegmentControlState<T>
         SizedBox(
           height: 0,
           width: 0,
-          child: FPCCommonField.hidden(
+          child: FPCField.hidden(
             controller: this._controller,
             validator: this._validator,
             restorationId: this.widget.restorationId,
@@ -173,22 +174,28 @@ class _FPCBasicSlidingSegmentControlState<T>
           children: Map.fromEntries(
             this.widget.items.map((FPCSlidingSegmentControlItem item) {
               final bool isSelected = this.widget.value == item.value;
-              final Color internalColor = this._internalColor(isSelected: isSelected);
+              final Color internalColor =
+                  this._internalColor(isSelected: isSelected);
               final double internalIconHeight =
                   this.widget.internalIconHeight ?? size.heightIconDefault;
-              final TextStyle unselectedStyle = this.widget.unselectedStyle?.copyWith(
-                        color: this.widget.unselectedStyle?.color ?? internalColor,
-                      ) ??
-                  TextStyle(
-                    color: internalColor,
-                  );
-              final TextStyle selectedStyle = this.widget.selectedStyle?.copyWith(
-                        color: this.widget.selectedStyle?.color ?? internalColor,
-                      ) ??
-                  TextStyle(
-                    color: internalColor,
-                  );
-              final TextStyle titleStyle = isSelected ? selectedStyle : unselectedStyle;
+              final TextStyle unselectedStyle =
+                  this.widget.unselectedStyle?.copyWith(
+                            color: this.widget.unselectedStyle?.color ??
+                                internalColor,
+                          ) ??
+                      TextStyle(
+                        color: internalColor,
+                      );
+              final TextStyle selectedStyle =
+                  this.widget.selectedStyle?.copyWith(
+                            color: this.widget.selectedStyle?.color ??
+                                internalColor,
+                          ) ??
+                      TextStyle(
+                        color: internalColor,
+                      );
+              final TextStyle titleStyle =
+                  isSelected ? selectedStyle : unselectedStyle;
 
               return MapEntry(
                 item.value,

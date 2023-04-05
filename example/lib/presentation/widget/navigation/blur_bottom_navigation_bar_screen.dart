@@ -11,7 +11,8 @@ class BlurBottomNavigationBarScreen extends StatefulWidget {
       _BlurBottomNavigationBarScreenState();
 }
 
-class _BlurBottomNavigationBarScreenState extends State<BlurBottomNavigationBarScreen> {
+class _BlurBottomNavigationBarScreenState
+    extends State<BlurBottomNavigationBarScreen> {
   int _index = 0;
 
   @override
