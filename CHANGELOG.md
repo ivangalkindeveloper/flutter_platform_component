@@ -1,3 +1,6 @@
+## 1.0.4
+* ColorButton > ColorInternal.
+
 ## 1.0.3
 * Fixes for mouse behaviors and formatting.
 
