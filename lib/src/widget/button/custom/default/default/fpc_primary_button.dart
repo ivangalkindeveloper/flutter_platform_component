@@ -39,13 +39,13 @@ class FPCPrimaryButton extends StatelessWidget {
 
     return FPCBasicButton(
       backgroundColor: theme.primary,
-      splashColor: theme.primaryButton,
+      splashColor: theme.primaryInternal,
       height: this.height,
       borderRadius: this.borderRadius,
       padding: this.padding,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.primaryButton(context: context),
+        firstChild: FPCCircularIndicator.primaryInternal(context: context),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -58,7 +58,7 @@ class FPCPrimaryButton extends StatelessWidget {
           title: this.title,
           textAlign: TextAlign.center,
           titleStyle: this.titleStyle?.copyWith(
-                    color: this.titleStyle?.color ?? theme.primaryButton,
+                    color: this.titleStyle?.color ?? theme.primaryInternal,
                     fontWeight: this.titleStyle?.fontWeight ??
                         textStyle.fontWeightMedium,
                     fontFamily: this.titleStyle?.fontFamily ??
@@ -66,7 +66,7 @@ class FPCPrimaryButton extends StatelessWidget {
                     package: textStyle.package,
                   ) ??
               TextStyle(
-                color: theme.primaryButton,
+                color: theme.primaryInternal,
                 fontWeight: textStyle.fontWeightMedium,
                 fontFamily: textStyle.fontFamilyMedium,
                 package: textStyle.package,

@@ -59,11 +59,11 @@ class FPCAccentLightGradientSegmentControl<T> extends StatelessWidget {
       selectedBorderGradient: theme.accentLightGradient,
       selectedInternalGradient: LinearGradient(
         colors: [
-          theme.accentButton,
-          theme.accentButton,
+          theme.accentInternal,
+          theme.accentInternal,
         ],
       ),
-      selectedSplashColor: theme.accentButton,
+      selectedSplashColor: theme.accentInternal,
       selectedStyle: this.selectedStyle,
       height: this.height,
       borderRadius: this.borderRadius,

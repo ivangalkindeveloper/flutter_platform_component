@@ -39,13 +39,13 @@ class FPCAccentDarkButton extends StatelessWidget {
 
     return FPCBasicButton(
       backgroundColor: theme.accentDark,
-      splashColor: theme.accentButton,
+      splashColor: theme.accentInternal,
       height: this.height,
       borderRadius: this.borderRadius,
       padding: this.padding,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.accentButton(context: context),
+        firstChild: FPCCircularIndicator.accentInternal(context: context),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -58,7 +58,7 @@ class FPCAccentDarkButton extends StatelessWidget {
           title: this.title,
           textAlign: TextAlign.center,
           titleStyle: this.titleStyle?.copyWith(
-                    color: this.titleStyle?.color ?? theme.accentButton,
+                    color: this.titleStyle?.color ?? theme.accentInternal,
                     fontWeight: this.titleStyle?.fontWeight ??
                         textStyle.fontWeightMedium,
                     fontFamily: this.titleStyle?.fontFamily ??
@@ -66,7 +66,7 @@ class FPCAccentDarkButton extends StatelessWidget {
                     package: textStyle.package,
                   ) ??
               TextStyle(
-                color: theme.accentButton,
+                color: theme.accentInternal,
                 fontWeight: textStyle.fontWeightMedium,
                 fontFamily: textStyle.fontFamilyMedium,
                 package: textStyle.package,

@@ -30,7 +30,7 @@ class FPCDefaultTheme implements IFPCTheme {
 
     // Primary
     required this.primary,
-    required this.primaryButton,
+    required this.primaryInternal,
     required this.primaryGradient,
     // Primary / Light
     required this.primaryLight,
@@ -41,7 +41,7 @@ class FPCDefaultTheme implements IFPCTheme {
 
     // Secondary
     required this.secondary,
-    required this.secondaryButton,
+    required this.secondaryInternal,
     required this.secondaryGradient,
     // Secondary / Light
     required this.secondaryLight,
@@ -52,7 +52,7 @@ class FPCDefaultTheme implements IFPCTheme {
 
     // Accent
     required this.accent,
-    required this.accentButton,
+    required this.accentInternal,
     required this.accentGradient,
     // Accent / Light
     required this.accentLight,
@@ -166,7 +166,7 @@ class FPCDefaultTheme implements IFPCTheme {
   @override
   final Color primary;
   @override
-  final Color primaryButton;
+  final Color primaryInternal;
   @override
   final Gradient primaryGradient;
   // Primary / Light
@@ -184,7 +184,7 @@ class FPCDefaultTheme implements IFPCTheme {
   @override
   final Color secondary;
   @override
-  final Color secondaryButton;
+  final Color secondaryInternal;
   @override
   final Gradient secondaryGradient;
   // Secondary / Light
@@ -202,7 +202,7 @@ class FPCDefaultTheme implements IFPCTheme {
   @override
   final Color accent;
   @override
-  final Color accentButton;
+  final Color accentInternal;
   @override
   final Gradient accentGradient;
   // Accent / Light
@@ -341,7 +341,7 @@ class FPCDefaultTheme implements IFPCTheme {
 
     // Primary
     Color? primary,
-    Color? primaryButton,
+    Color? primaryInternal,
     Gradient? primaryGradient,
     // Primary / Light
     Color? primaryLight,
@@ -352,7 +352,7 @@ class FPCDefaultTheme implements IFPCTheme {
 
     // Secondary
     Color? secondary,
-    Color? secondaryButton,
+    Color? secondaryInternal,
     Gradient? secondaryGradient,
     // Secondary / Light
     Color? secondaryLight,
@@ -363,7 +363,7 @@ class FPCDefaultTheme implements IFPCTheme {
 
     // Secondary
     Color? accent,
-    Color? accentButton,
+    Color? accentInternal,
     Gradient? accentGradient,
     // Secondary / Light
     Color? accentLight,
@@ -463,7 +463,7 @@ class FPCDefaultTheme implements IFPCTheme {
 
         // Primary
         primary: primary ?? this.primary,
-        primaryButton: primaryButton ?? this.primaryButton,
+        primaryInternal: primaryInternal ?? this.primaryInternal,
         primaryGradient: primaryGradient ?? this.primaryGradient,
         // Primary / Light
         primaryLight: primaryLight ?? this.primaryLight,
@@ -474,7 +474,7 @@ class FPCDefaultTheme implements IFPCTheme {
 
         // Secondary
         secondary: secondary ?? this.secondary,
-        secondaryButton: secondaryButton ?? this.secondaryButton,
+        secondaryInternal: secondaryInternal ?? this.secondaryInternal,
         secondaryGradient: secondaryGradient ?? this.secondaryGradient,
         // Secondary / Light
         secondaryLight: secondaryLight ?? this.secondaryLight,
@@ -487,7 +487,7 @@ class FPCDefaultTheme implements IFPCTheme {
 
         // Accent
         accent: accent ?? this.accent,
-        accentButton: accentButton ?? this.accentButton,
+        accentInternal: accentInternal ?? this.accentInternal,
         accentGradient: accentGradient ?? this.accentGradient,
         // Accent / Light
         accentLight: accentLight ?? this.accentLight,
@@ -594,7 +594,8 @@ class FPCDefaultTheme implements IFPCTheme {
 
         // Primary
         primary: Color.lerp(this.primary, other.primary, t),
-        primaryButton: Color.lerp(this.primaryButton, other.primaryButton, t),
+        primaryInternal:
+            Color.lerp(this.primaryInternal, other.primaryInternal, t),
         primaryGradient:
             Gradient.lerp(this.primaryGradient, other.primaryGradient, t),
         // Primary / Light
@@ -608,8 +609,8 @@ class FPCDefaultTheme implements IFPCTheme {
 
         // Secondary
         secondary: Color.lerp(this.secondary, other.secondary, t),
-        secondaryButton:
-            Color.lerp(this.secondaryButton, other.secondaryButton, t),
+        secondaryInternal:
+            Color.lerp(this.secondaryInternal, other.secondaryInternal, t),
         secondaryGradient:
             Gradient.lerp(this.secondaryGradient, other.secondaryGradient, t),
         // Secondary / Light
@@ -624,7 +625,8 @@ class FPCDefaultTheme implements IFPCTheme {
 
         // Accent
         accent: Color.lerp(this.accent, other.accent, t),
-        accentButton: Color.lerp(this.accentButton, other.accentButton, t),
+        accentInternal:
+            Color.lerp(this.accentInternal, other.accentInternal, t),
         accentGradient:
             Gradient.lerp(this.accentGradient, other.accentGradient, t),
         // Accent / Light
@@ -758,7 +760,7 @@ class FPCDefaultTheme implements IFPCTheme {
 
         // Primary
         primary: const Color(0xffA145F2),
-        primaryButton: const Color(0xffFFFFFF),
+        primaryInternal: const Color(0xffFFFFFF),
         primaryGradient: const LinearGradient(
           colors: const [
             Color(0xffA145F2),
@@ -784,7 +786,7 @@ class FPCDefaultTheme implements IFPCTheme {
 
         // Secondary
         secondary: const Color(0xff5A45F2),
-        secondaryButton: const Color(0xffFFFFFF),
+        secondaryInternal: const Color(0xffFFFFFF),
         secondaryGradient: const LinearGradient(
           colors: const [
             Color(0xff5A45F2),
@@ -810,7 +812,7 @@ class FPCDefaultTheme implements IFPCTheme {
 
         // Accent
         accent: const Color(0xffAEFF00),
-        accentButton: const Color(0xffFFFFFF),
+        accentInternal: const Color(0xffFFFFFF),
         accentGradient: const LinearGradient(
           colors: const [
             Color(0xffAEFF00),
@@ -1013,7 +1015,7 @@ class FPCDefaultTheme implements IFPCTheme {
 
         // Primary
         primary: const Color(0xff7F11DF),
-        primaryButton: const Color(0xffFFFFFF),
+        primaryInternal: const Color(0xffFFFFFF),
         primaryGradient: const LinearGradient(
           colors: const [
             Color(0xff7F11DF),
@@ -1039,7 +1041,7 @@ class FPCDefaultTheme implements IFPCTheme {
 
         // Secondary
         secondary: const Color(0xff2330E1),
-        secondaryButton: const Color(0xffFFFFFF),
+        secondaryInternal: const Color(0xffFFFFFF),
         secondaryGradient: const LinearGradient(
           colors: const [
             Color(0xff2330E1),
@@ -1065,7 +1067,7 @@ class FPCDefaultTheme implements IFPCTheme {
 
         // Accent
         accent: const Color(0xff9ADB14),
-        accentButton: const Color(0xffFFFFFF),
+        accentInternal: const Color(0xffFFFFFF),
         accentGradient: const LinearGradient(
           colors: const [
             Color(0xff9ADB14),

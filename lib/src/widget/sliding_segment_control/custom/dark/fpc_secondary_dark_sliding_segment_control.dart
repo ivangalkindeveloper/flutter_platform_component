@@ -41,7 +41,7 @@ class FPCSecondaryDarkSlidingSegmentControl<T> extends StatelessWidget {
       thumbColor: theme.secondaryDark,
       unselectedInternalColor: theme.black,
       unselectedStyle: this.unselectedStyle,
-      selectedInternalColor: theme.secondaryButton,
+      selectedInternalColor: theme.secondaryInternal,
       selectedStyle: this.selectedStyle,
       height: this.height,
       isRequired: this.isRequired,

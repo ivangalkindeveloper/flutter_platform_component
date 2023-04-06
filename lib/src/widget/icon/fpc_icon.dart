@@ -103,7 +103,7 @@ class FPCIcon {
     );
   }
 
-  static Widget smallPrimaryButton({
+  static Widget smallPrimaryInternal({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -114,7 +114,7 @@ class FPCIcon {
     return _iconColor(
       icon: icon,
       size: size.heightIconSmall,
-      color: theme.primaryButton,
+      color: theme.primaryInternal,
     );
   }
 
@@ -208,7 +208,7 @@ class FPCIcon {
     );
   }
 
-  static Widget smallSecondaryButton({
+  static Widget smallSecondaryInternal({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -219,7 +219,7 @@ class FPCIcon {
     return _iconColor(
       icon: icon,
       size: size.heightIconSmall,
-      color: theme.secondaryButton,
+      color: theme.secondaryInternal,
     );
   }
 
@@ -313,7 +313,7 @@ class FPCIcon {
     );
   }
 
-  static Widget smallAccentButton({
+  static Widget smallAccentInternal({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -324,7 +324,7 @@ class FPCIcon {
     return _iconColor(
       icon: icon,
       size: size.heightIconSmall,
-      color: theme.accentButton,
+      color: theme.accentInternal,
     );
   }
 
@@ -929,7 +929,7 @@ class FPCIcon {
     );
   }
 
-  static Widget primaryButton({
+  static Widget primaryInternal({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -940,7 +940,7 @@ class FPCIcon {
     return _iconColor(
       icon: icon,
       size: size.heightIconDefault,
-      color: theme.primaryButton,
+      color: theme.primaryInternal,
     );
   }
 
@@ -1034,7 +1034,7 @@ class FPCIcon {
     );
   }
 
-  static Widget secondaryButton({
+  static Widget secondaryInternal({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1045,7 +1045,7 @@ class FPCIcon {
     return _iconColor(
       icon: icon,
       size: size.heightIconDefault,
-      color: theme.secondaryButton,
+      color: theme.secondaryInternal,
     );
   }
 
@@ -1139,7 +1139,7 @@ class FPCIcon {
     );
   }
 
-  static Widget accentButton({
+  static Widget accentInternal({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1150,7 +1150,7 @@ class FPCIcon {
     return _iconColor(
       icon: icon,
       size: size.heightIconDefault,
-      color: theme.accentButton,
+      color: theme.accentInternal,
     );
   }
 
@@ -1755,7 +1755,7 @@ class FPCIcon {
     );
   }
 
-  static Widget largePrimaryButton({
+  static Widget largePrimaryInternal({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1766,7 +1766,7 @@ class FPCIcon {
     return _iconColor(
       icon: icon,
       size: size.heightIconLarge,
-      color: theme.primaryButton,
+      color: theme.primaryInternal,
     );
   }
 
@@ -1860,7 +1860,7 @@ class FPCIcon {
     );
   }
 
-  static Widget largeSecondaryButton({
+  static Widget largeSecondaryInternal({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1871,7 +1871,7 @@ class FPCIcon {
     return _iconColor(
       icon: icon,
       size: size.heightIconLarge,
-      color: theme.secondaryButton,
+      color: theme.secondaryInternal,
     );
   }
 
@@ -1965,7 +1965,7 @@ class FPCIcon {
     );
   }
 
-  static Widget largeAccentButton({
+  static Widget largeAccentInternal({
     required BuildContext context,
     required IconData icon,
   }) {
@@ -1976,7 +1976,7 @@ class FPCIcon {
     return _iconColor(
       icon: icon,
       size: size.heightIconLarge,
-      color: theme.accentButton,
+      color: theme.accentInternal,
     );
   }
 

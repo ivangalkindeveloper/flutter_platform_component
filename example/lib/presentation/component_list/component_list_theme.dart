@@ -355,13 +355,13 @@ class ConfigListTheme extends StatelessWidget {
           children: [
             FPCText.regular16Black(
               context: context,
-              text: "Primary Button:",
+              text: "Primary Internal:",
             ),
             SizedBox(width: size.s16),
             Expanded(
               child: Container(
                 height: size.s16,
-                color: theme.primaryButton,
+                color: theme.primaryInternal,
               ),
             ),
           ],
@@ -489,7 +489,7 @@ class ConfigListTheme extends StatelessWidget {
             Expanded(
               child: Container(
                 height: size.s16,
-                color: theme.secondaryButton,
+                color: theme.secondaryInternal,
               ),
             ),
           ],

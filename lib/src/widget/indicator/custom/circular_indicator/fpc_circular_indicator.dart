@@ -59,13 +59,13 @@ class FPCCircularIndicator {
     );
   }
 
-  static Widget smallPrimaryButton({required BuildContext context}) {
+  static Widget smallPrimaryInternal({required BuildContext context}) {
     final FPCConfig config = context.config;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
     return FPCBasicCircularIndicator(
-      color: theme.primaryButton,
+      color: theme.primaryInternal,
       height: size.heightIndicatorSmall,
     );
   }
@@ -136,13 +136,13 @@ class FPCCircularIndicator {
     );
   }
 
-  static Widget smallSecondaryButton({required BuildContext context}) {
+  static Widget smallSecondaryInternal({required BuildContext context}) {
     final FPCConfig config = context.config;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
     return FPCBasicCircularIndicator(
-      color: theme.secondaryButton,
+      color: theme.secondaryInternal,
       height: size.heightIndicatorSmall,
     );
   }
@@ -213,13 +213,13 @@ class FPCCircularIndicator {
     );
   }
 
-  static Widget smallAccentButton({required BuildContext context}) {
+  static Widget smallAccentInternal({required BuildContext context}) {
     final FPCConfig config = context.config;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
     return FPCBasicCircularIndicator(
-      color: theme.accentButton,
+      color: theme.accentInternal,
       height: size.heightIndicatorSmall,
     );
   }
@@ -665,13 +665,13 @@ class FPCCircularIndicator {
     );
   }
 
-  static Widget primaryButton({required BuildContext context}) {
+  static Widget primaryInternal({required BuildContext context}) {
     final FPCConfig config = context.config;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
     return FPCBasicCircularIndicator(
-      color: theme.primaryButton,
+      color: theme.primaryInternal,
       height: size.heightIndicatorDefault,
     );
   }
@@ -742,13 +742,13 @@ class FPCCircularIndicator {
     );
   }
 
-  static Widget secondaryButton({required BuildContext context}) {
+  static Widget secondaryInternal({required BuildContext context}) {
     final FPCConfig config = context.config;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
     return FPCBasicCircularIndicator(
-      color: theme.secondaryButton,
+      color: theme.secondaryInternal,
       height: size.heightIndicatorDefault,
     );
   }
@@ -819,13 +819,13 @@ class FPCCircularIndicator {
     );
   }
 
-  static Widget accentButton({required BuildContext context}) {
+  static Widget accentInternal({required BuildContext context}) {
     final FPCConfig config = context.config;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
     return FPCBasicCircularIndicator(
-      color: theme.accentButton,
+      color: theme.accentInternal,
       height: size.heightIndicatorDefault,
     );
   }
@@ -1271,13 +1271,13 @@ class FPCCircularIndicator {
     );
   }
 
-  static Widget largePrimaryButton({required BuildContext context}) {
+  static Widget largePrimaryInternal({required BuildContext context}) {
     final FPCConfig config = context.config;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
     return FPCBasicCircularIndicator(
-      color: theme.primaryButton,
+      color: theme.primaryInternal,
       height: size.heightIndicatorLarge,
     );
   }
@@ -1348,13 +1348,13 @@ class FPCCircularIndicator {
     );
   }
 
-  static Widget largeSecondaryButton({required BuildContext context}) {
+  static Widget largeSecondaryInternal({required BuildContext context}) {
     final FPCConfig config = context.config;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
     return FPCBasicCircularIndicator(
-      color: theme.secondaryButton,
+      color: theme.secondaryInternal,
       height: size.heightIndicatorLarge,
     );
   }
@@ -1425,13 +1425,13 @@ class FPCCircularIndicator {
     );
   }
 
-  static Widget largeAccentButton({required BuildContext context}) {
+  static Widget largeAccentInternal({required BuildContext context}) {
     final FPCConfig config = context.config;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
     return FPCBasicCircularIndicator(
-      color: theme.accentButton,
+      color: theme.accentInternal,
       height: size.heightIndicatorLarge,
     );
   }

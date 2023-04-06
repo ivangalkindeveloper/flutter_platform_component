@@ -33,7 +33,7 @@ class FPCSecondaryDarkSelectCard extends StatelessWidget {
 
     return FPCBasicSelectCard(
       backgroundColor: theme.secondaryDark,
-      splashColor: theme.secondaryButton,
+      splashColor: theme.secondaryInternal,
       constraints: this.constraints,
       borderRadius: this.borderRadius,
       borderColor: this.borderColor,

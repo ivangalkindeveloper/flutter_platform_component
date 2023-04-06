@@ -100,7 +100,7 @@ class IconScreen extends StatelessWidget {
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FPCIcon.smallPrimaryButton(
+              FPCIcon.smallPrimaryInternal(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
@@ -128,7 +128,7 @@ class IconScreen extends StatelessWidget {
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FPCIcon.smallSecondaryButton(
+              FPCIcon.smallSecondaryInternal(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
@@ -304,7 +304,7 @@ class IconScreen extends StatelessWidget {
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FPCIcon.primaryButton(
+              FPCIcon.primaryInternal(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
@@ -332,7 +332,7 @@ class IconScreen extends StatelessWidget {
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FPCIcon.secondaryButton(
+              FPCIcon.secondaryInternal(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
@@ -508,7 +508,7 @@ class IconScreen extends StatelessWidget {
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FPCIcon.largePrimaryButton(
+              FPCIcon.largePrimaryInternal(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
@@ -536,7 +536,7 @@ class IconScreen extends StatelessWidget {
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),
-              FPCIcon.largeSecondaryButton(
+              FPCIcon.largeSecondaryInternal(
                 context: context,
                 icon: Icons.account_circle_outlined,
               ),

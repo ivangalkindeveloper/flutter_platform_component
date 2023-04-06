@@ -31,7 +31,7 @@ abstract class IFPCTheme {
 
   // Primary
   abstract final Color primary;
-  abstract final Color primaryButton;
+  abstract final Color primaryInternal;
   abstract final Gradient primaryGradient;
   // Primary / Light
   abstract final Color primaryLight;
@@ -42,7 +42,7 @@ abstract class IFPCTheme {
 
   // Secondary
   abstract final Color secondary;
-  abstract final Color secondaryButton;
+  abstract final Color secondaryInternal;
   abstract final Gradient secondaryGradient;
   // Secondary / Light
   abstract final Color secondaryLight;
@@ -53,7 +53,7 @@ abstract class IFPCTheme {
 
   // Accent
   abstract final Color accent;
-  abstract final Color accentButton;
+  abstract final Color accentInternal;
   abstract final Gradient accentGradient;
   // Accent / Light
   abstract final Color accentLight;

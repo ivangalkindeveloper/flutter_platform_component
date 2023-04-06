@@ -33,7 +33,7 @@ class FPCPrimaryGradientSelectCard extends StatelessWidget {
 
     return FPCBasicGradientSelectCard(
       backgroundGradient: theme.primaryGradient,
-      splashColor: theme.primaryButton,
+      splashColor: theme.primaryInternal,
       constraints: this.constraints,
       borderRadius: this.borderRadius,
       borderGradient: this.borderGradient,

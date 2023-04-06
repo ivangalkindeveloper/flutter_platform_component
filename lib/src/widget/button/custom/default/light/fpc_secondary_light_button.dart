@@ -39,13 +39,13 @@ class FPCSecondaryLightButton extends StatelessWidget {
 
     return FPCBasicButton(
       backgroundColor: theme.secondaryLight,
-      splashColor: theme.secondaryButton,
+      splashColor: theme.secondaryInternal,
       height: this.height,
       borderRadius: this.borderRadius,
       padding: this.padding,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.secondaryButton(context: context),
+        firstChild: FPCCircularIndicator.secondaryInternal(context: context),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -58,7 +58,7 @@ class FPCSecondaryLightButton extends StatelessWidget {
           title: this.title,
           textAlign: TextAlign.center,
           titleStyle: this.titleStyle?.copyWith(
-                    color: this.titleStyle?.color ?? theme.secondaryButton,
+                    color: this.titleStyle?.color ?? theme.secondaryInternal,
                     fontWeight: this.titleStyle?.fontWeight ??
                         textStyle.fontWeightMedium,
                     fontFamily: this.titleStyle?.fontFamily ??
@@ -66,7 +66,7 @@ class FPCSecondaryLightButton extends StatelessWidget {
                     package: textStyle.package,
                   ) ??
               TextStyle(
-                color: theme.secondaryButton,
+                color: theme.secondaryInternal,
                 fontWeight: textStyle.fontWeightMedium,
                 fontFamily: textStyle.fontFamilyMedium,
                 package: textStyle.package,

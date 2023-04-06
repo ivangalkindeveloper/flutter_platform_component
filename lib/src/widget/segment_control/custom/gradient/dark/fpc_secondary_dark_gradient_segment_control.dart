@@ -59,11 +59,11 @@ class FPCSecondaryDarkGradientSegmentControl<T> extends StatelessWidget {
       selectedBorderGradient: theme.secondaryDarkGradient,
       selectedInternalGradient: LinearGradient(
         colors: [
-          theme.secondaryButton,
-          theme.secondaryButton,
+          theme.secondaryInternal,
+          theme.secondaryInternal,
         ],
       ),
-      selectedSplashColor: theme.secondaryButton,
+      selectedSplashColor: theme.secondaryInternal,
       selectedStyle: this.selectedStyle,
       height: this.height,
       borderRadius: this.borderRadius,

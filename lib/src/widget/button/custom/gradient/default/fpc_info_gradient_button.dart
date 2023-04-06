@@ -45,7 +45,7 @@ class FPCInfoGradientButton extends StatelessWidget {
       padding: this.padding,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.accentButton(context: context),
+        firstChild: FPCCircularIndicator.accentInternal(context: context),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

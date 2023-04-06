@@ -33,7 +33,7 @@ class FPCAccentLightGradientSelectCard extends StatelessWidget {
 
     return FPCBasicGradientSelectCard(
       backgroundGradient: theme.accentLightGradient,
-      splashColor: theme.accentButton,
+      splashColor: theme.accentInternal,
       constraints: this.constraints,
       borderRadius: this.borderRadius,
       borderGradient: this.borderGradient,
