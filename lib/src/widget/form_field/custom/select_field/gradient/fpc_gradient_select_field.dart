@@ -5,7 +5,7 @@ import 'package:flutter/widgets.dart';
 class FPCGradientSelectField extends StatelessWidget {
   const FPCGradientSelectField({
     super.key,
-    this.internalGradient,
+    this.internalIconGradient,
     this.internalIconHeight,
     this.height,
     this.borderRadius,
@@ -42,7 +42,7 @@ class FPCGradientSelectField extends StatelessWidget {
     this.disabledColor,
   });
 
-  final Gradient? internalGradient;
+  final Gradient? internalIconGradient;
   final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
@@ -92,7 +92,7 @@ class FPCGradientSelectField extends StatelessWidget {
         ],
       ),
       splashColor: theme.grey,
-      internalGradient: this.internalGradient,
+      internalIconGradient: this.internalIconGradient,
       internalIconHeight: this.internalIconHeight,
       height: this.height,
       borderRadius: this.borderRadius,

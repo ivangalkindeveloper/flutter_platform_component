@@ -1,3 +1,6 @@
+## 1.0.5
+* Fixes form fields.
+
 ## 1.0.4
 * ColorButton > ColorInternal.
 

@@ -13,7 +13,7 @@ class FPCBasicGradientFormField extends StatefulWidget {
     required this.unfocusedBackgroundGradient,
     required this.focusedBackgroundGradient,
     required this.focusedGradient,
-    this.internalGradient,
+    this.internalIconGradient,
     this.internalIconHeight,
     this.height,
     this.borderRadius,
@@ -90,7 +90,7 @@ class FPCBasicGradientFormField extends StatefulWidget {
   final Gradient unfocusedBackgroundGradient;
   final Gradient focusedBackgroundGradient;
   final Gradient focusedGradient;
-  final Gradient? internalGradient;
+  final Gradient? internalIconGradient;
   final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
@@ -262,6 +262,11 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
       this._controller.removeListener(this._controllerListener);
       this._controller = this.widget.controller!;
       this._controller.addListener(this._controllerListener);
+
+      this._isAutoValidationError = false;
+      this._autoValidationText = "";
+      this._isValidationError = false;
+      this._validationText = "";
     }
 
     // FocusNode
@@ -307,12 +312,12 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
 
   Gradient _backgroundGradient() {
     if (this._focusNode.hasPrimaryFocus)
-      return this.widget.unfocusedBackgroundGradient;
+      return this.widget.focusedBackgroundGradient;
 
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.dangerLightGradient;
 
-    return this.widget.focusedBackgroundGradient;
+    return this.widget.unfocusedBackgroundGradient;
   }
 
   Gradient _borderGradient() {
@@ -323,23 +328,23 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
   }
 
   Color _labelColor() {
-    if (this._isValidationError || this._isAutoValidationError)
-      return this._theme.danger;
-
     if (this._focusNode.hasPrimaryFocus)
       return this.widget.labelColor ?? this.widget.focusedGradient.colors.first;
+
+    if (this._isValidationError || this._isAutoValidationError)
+      return this._theme.danger;
 
     return this.widget.labelColor ?? this._theme.grey;
   }
 
-  Gradient _internalGradient() {
+  Gradient _internalIconGradient() {
+    if (this._focusNode.hasPrimaryFocus)
+      return this.widget.internalIconGradient ?? this.widget.focusedGradient;
+
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.dangerGradient;
 
-    if (this._focusNode.hasPrimaryFocus)
-      return this.widget.internalGradient ?? this.widget.focusedGradient;
-
-    return this.widget.internalGradient ?? this._theme.greyGradient;
+    return this.widget.internalIconGradient ?? this._theme.greyGradient;
   }
 
   String? _validator(String? value) {
@@ -397,7 +402,7 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
     final Gradient borderGradient = this._borderGradient();
     final double borderWidth =
         this.widget.borderWidth ?? this._config.borderWidthField;
-    final Gradient internalGradient = this._internalGradient();
+    final Gradient internalIconGradient = this._internalIconGradient();
     final double internalIconHeight =
         this.widget.internalIconHeight ?? this._size.heightIconDefault;
     final EdgeInsets internalPadding =
@@ -468,7 +473,7 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
                           Padding(
                             padding: EdgeInsets.only(right: this._size.s16),
                             child: FPCGradientMask(
-                              gradient: this._internalGradient(),
+                              gradient: internalIconGradient,
                               child: Icon(
                                 this.widget.prefixIcon,
                                 size: internalIconHeight,
@@ -553,7 +558,7 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
                           Padding(
                             padding: EdgeInsets.only(left: this._size.s16),
                             child: FPCGradientMask(
-                              gradient: internalGradient,
+                              gradient: internalIconGradient,
                               child: Icon(
                                 this.widget.postfixIcon,
                                 size: internalIconHeight,

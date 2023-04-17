@@ -9,7 +9,7 @@ class FPCInfoDarkGradientFormField extends StatelessWidget {
     this.controller,
     this.focusNode,
     //
-    this.internalGradient,
+    this.internalIconGradient,
     this.internalIconHeight,
     this.height,
     this.borderRadius,
@@ -83,7 +83,7 @@ class FPCInfoDarkGradientFormField extends StatelessWidget {
   final TextEditingController? controller;
   final FocusNode? focusNode;
   //
-  final Gradient? internalGradient;
+  final Gradient? internalIconGradient;
   final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
@@ -182,7 +182,7 @@ class FPCInfoDarkGradientFormField extends StatelessWidget {
         ],
       ),
       focusedGradient: theme.infoDarkGradient,
-      internalGradient: this.internalGradient,
+      internalIconGradient: this.internalIconGradient,
       internalIconHeight: this.internalIconHeight,
       height: this.height,
       borderRadius: this.borderRadius,

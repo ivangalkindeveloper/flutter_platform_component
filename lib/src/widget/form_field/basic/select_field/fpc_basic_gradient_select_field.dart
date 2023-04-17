@@ -10,7 +10,7 @@ class FPCBasicGradientSelectField extends StatefulWidget {
     super.key,
     required this.backgroundGradient,
     this.splashColor,
-    this.internalGradient,
+    this.internalIconGradient,
     this.internalIconHeight,
     this.height,
     this.borderRadius,
@@ -50,7 +50,7 @@ class FPCBasicGradientSelectField extends StatefulWidget {
 
   final Gradient backgroundGradient;
   final Color? splashColor;
-  final Gradient? internalGradient;
+  final Gradient? internalIconGradient;
   final double? internalIconHeight;
   final double? height;
   final BorderRadius? borderRadius;
@@ -150,7 +150,7 @@ class _FPCBasicGradientSelectFieldState
             Colors.transparent,
           ],
         ),
-        internalGradient: this.widget.internalGradient,
+        internalIconGradient: this.widget.internalIconGradient,
         internalIconHeight: this.widget.internalIconHeight,
         height: this.widget.height,
         borderRadius: borderRadius,

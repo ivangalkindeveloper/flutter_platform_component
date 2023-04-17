@@ -261,6 +261,11 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
       this._controller.removeListener(this._controllerListener);
       this._controller = this.widget.controller!;
       this._controller.addListener(this._controllerListener);
+
+      this._isAutoValidationError = false;
+      this._autoValidationText = "";
+      this._isValidationError = false;
+      this._validationText = "";
     }
 
     // FocusNode
@@ -315,31 +320,30 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
   }
 
   Color _borderColor() {
-    if (this._focusNode.hasPrimaryFocus == false)
-      return this._backgroundColor();
+    if (this._focusNode.hasPrimaryFocus) return this.widget.focusedColor;
 
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.danger;
 
-    return this.widget.focusedColor;
+    return this.widget.unfocusedBackgroundColor;
   }
 
   Color _labelColor() {
-    if (this._isValidationError || this._isAutoValidationError)
-      return this._theme.danger;
-
     if (this._focusNode.hasPrimaryFocus)
       return this.widget.labelColor ?? this.widget.focusedColor;
+
+    if (this._isValidationError || this._isAutoValidationError)
+      return this._theme.danger;
 
     return this.widget.labelColor ?? this._theme.grey;
   }
 
   Color _internalIconColor() {
-    if (this._isValidationError || this._isAutoValidationError)
-      return this._theme.danger;
-
     if (this._focusNode.hasPrimaryFocus)
       return this.widget.internalIconColor ?? this.widget.focusedColor;
+
+    if (this._isValidationError || this._isAutoValidationError)
+      return this._theme.danger;
 
     return this.widget.internalIconColor ?? this._theme.grey;
   }

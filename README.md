@@ -1,7 +1,7 @@
 <h1 align="center">Flutter Platform Component</h1>
 
 <p align="center">
-  📱 Ready-made component base using ready-made abstractions for quick use and decomposed by platform.
+  📱 Ready-made inherited component base using ready-made abstractions for quick use and decomposed by platform.
 </p>
 
 | iOS (Cupertino) | Android (Material) |
@@ -143,7 +143,7 @@
 - [Additional Information](#additional-information)
 
 ## Benefits
-The package works according to the principle: fill out one contract - get all ready-made platform components.
+The package works according to the principle: fill out one contract - get all ready-made inherited platform components.
 ### Platform decomposition
 Components are separated by platform by style and behavior.
 ### One theme contract
