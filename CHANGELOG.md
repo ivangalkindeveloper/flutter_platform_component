@@ -1,3 +1,6 @@
+## 1.0.7
+* Small fixes.
+
 ## 1.0.6
 * Fixes form fields and haptic.
 

@@ -1,12 +1,17 @@
 <h1 align="center">Flutter Platform Component</h1>
 
-<p align="center">
-  📱 Ready-made inherited component base using ready-made abstractions for quick use and decomposed by platform.
-</p>
+<div align="center">
 
-| iOS (Cupertino) | Android (Material) |
-| :-------------: | :----------------: |
-|        ✅       |         ✅         |
+  📱 Ready-made inherited component base using ready-made abstractions for quick use and decomposed by platform.
+
+  | iOS (Cupertino) | Android (Material) |
+  | :-------------: | :----------------: |
+  |        ✅       |         ✅         |
+
+  <a href="">![Pub Likes](https://img.shields.io/pub/likes/flutter_platform_component?color=success)</a>
+  <a href="">![Pub Version](https://img.shields.io/pub/v/flutter_platform_component?color=important)</a>
+  
+</div>
 
 ## Getting Started
 - [Benefits](#benefits)

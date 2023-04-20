@@ -305,13 +305,6 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
   }
 
   Gradient _borderGradient() {
-    if (this._focusNode.hasPrimaryFocus == false) {
-      if (this._isValidationError || this._isAutoValidationError)
-        return this._theme.dangerLightGradient;
-
-      return this.widget.unfocusedBackgroundGradient;
-    }
-
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.dangerGradient;
 
