@@ -206,7 +206,6 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
   void didInitState() {
     // Controller
     this._controller = this.widget.controller ?? TextEditingController();
-    this._controller.addListener(this._controllerListener);
 
     // FocusNode
     this._focusNode = this.widget.focusNode ?? FocusNode();
@@ -229,7 +228,7 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
           return;
         }
 
-        // Auto validator
+        // Auto Validator
         final String? _autoValidatorResult =
             this.widget.autoValidator?.call(value);
         if (_autoValidatorResult != null) {
@@ -258,9 +257,7 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
     // Controller
     if (this.widget.controller != null &&
         this._controller != this.widget.controller) {
-      this._controller.removeListener(this._controllerListener);
       this._controller = this.widget.controller!;
-      this._controller.addListener(this._controllerListener);
 
       this._isAutoValidationError = false;
       this._autoValidationText = "";
@@ -281,23 +278,11 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
   void dispose() {
     super.dispose();
     // Controller
-    this._controller.removeListener(this._controllerListener);
     if (this.widget.controller == null) this._controller.dispose();
 
     // FocusNode
     this._focusNode.removeListener(this._focusNodeListener);
     if (this.widget.focusNode == null) this._focusNode.dispose();
-  }
-
-  void _controllerListener() {
-    if (this.mounted == false || this._focusNode.hasPrimaryFocus) return;
-
-    setState(() {
-      this._isAutoValidationError = false;
-      this._autoValidationText = "";
-      this._isValidationError = false;
-      this._validationText = "";
-    });
   }
 
   void _focusNodeListener() {
@@ -320,30 +305,35 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
   }
 
   Color _borderColor() {
-    if (this._focusNode.hasPrimaryFocus) return this.widget.focusedColor;
+    if (this._focusNode.hasPrimaryFocus == false) {
+      if (this._isValidationError || this._isAutoValidationError)
+        return this._theme.dangerLight;
+
+      return this.widget.unfocusedBackgroundColor;
+    }
 
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.danger;
 
-    return this.widget.unfocusedBackgroundColor;
+    return this.widget.focusedColor;
   }
 
   Color _labelColor() {
-    if (this._focusNode.hasPrimaryFocus)
-      return this.widget.labelColor ?? this.widget.focusedColor;
-
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.danger;
+
+    if (this._focusNode.hasPrimaryFocus)
+      return this.widget.labelColor ?? this.widget.focusedColor;
 
     return this.widget.labelColor ?? this._theme.grey;
   }
 
   Color _internalIconColor() {
-    if (this._focusNode.hasPrimaryFocus)
-      return this.widget.internalIconColor ?? this.widget.focusedColor;
-
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.danger;
+
+    if (this._focusNode.hasPrimaryFocus)
+      return this.widget.internalIconColor ?? this.widget.focusedColor;
 
     return this.widget.internalIconColor ?? this._theme.grey;
   }

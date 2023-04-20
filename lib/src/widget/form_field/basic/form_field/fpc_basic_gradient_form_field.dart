@@ -207,8 +207,6 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
   void didInitState() {
     // Controller
     this._controller = this.widget.controller ?? TextEditingController();
-    this._controller.addListener(this._controllerListener);
-
     // FocusNode
     this._focusNode = this.widget.focusNode ?? FocusNode();
     this._focusNode.addListener(this._focusNodeListener);
@@ -230,7 +228,7 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
           return;
         }
 
-        // Auto validator
+        // Auto Validator
         final String? _autoValidatorResult =
             this.widget.autoValidator?.call(value);
         if (_autoValidatorResult != null) {
@@ -259,9 +257,7 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
     // Controller
     if (this.widget.controller != null &&
         this._controller != this.widget.controller) {
-      this._controller.removeListener(this._controllerListener);
       this._controller = this.widget.controller!;
-      this._controller.addListener(this._controllerListener);
 
       this._isAutoValidationError = false;
       this._autoValidationText = "";
@@ -282,23 +278,11 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
   void dispose() {
     super.dispose();
     // Controller
-    this._controller.removeListener(this._controllerListener);
     if (this.widget.controller == null) this._controller.dispose();
 
     // FocusNode
     this._focusNode.removeListener(this._focusNodeListener);
     if (this.widget.focusNode == null) this._focusNode.dispose();
-  }
-
-  void _controllerListener() {
-    if (this.mounted == false || this._focusNode.hasPrimaryFocus) return;
-
-    setState(() {
-      this._isAutoValidationError = false;
-      this._autoValidationText = "";
-      this._isValidationError = false;
-      this._validationText = "";
-    });
   }
 
   void _focusNodeListener() {
@@ -321,6 +305,13 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
   }
 
   Gradient _borderGradient() {
+    if (this._focusNode.hasPrimaryFocus == false) {
+      if (this._isValidationError || this._isAutoValidationError)
+        return this._theme.dangerLightGradient;
+
+      return this.widget.unfocusedBackgroundGradient;
+    }
+
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.dangerGradient;
 
@@ -328,21 +319,21 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
   }
 
   Color _labelColor() {
-    if (this._focusNode.hasPrimaryFocus)
-      return this.widget.labelColor ?? this.widget.focusedGradient.colors.first;
-
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.danger;
+
+    if (this._focusNode.hasPrimaryFocus)
+      return this.widget.labelColor ?? this.widget.focusedGradient.colors.first;
 
     return this.widget.labelColor ?? this._theme.grey;
   }
 
   Gradient _internalIconGradient() {
-    if (this._focusNode.hasPrimaryFocus)
-      return this.widget.internalIconGradient ?? this.widget.focusedGradient;
-
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.dangerGradient;
+
+    if (this._focusNode.hasPrimaryFocus)
+      return this.widget.internalIconGradient ?? this.widget.focusedGradient;
 
     return this.widget.internalIconGradient ?? this._theme.greyGradient;
   }
