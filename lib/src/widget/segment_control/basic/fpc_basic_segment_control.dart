@@ -1,5 +1,5 @@
-import 'package:custom_rounded_rectangle_border/custom_rounded_rectangle_border.dart';
 import 'package:flutter_platform_component/src/widget/helper/fpc_button_row_child.dart';
+import 'package:custom_rounded_rectangle_border/custom_rounded_rectangle_border.dart';
 import 'package:flutter_platform_component/src/widget/helper/fpc_field.dart';
 import 'package:flutter_platform_component/src/exception/fpc_exception.dart';
 import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
@@ -80,7 +80,7 @@ class _FPCBasicSegmentControlState<T> extends State<FPCBasicSegmentControl<T>> {
     super.initState();
     // Controller
     this._controller = TextEditingController(
-      text: this.widget.value != null ? this.widget.value.toString() : null,
+      text: this.widget.value?.toString(),
     );
   }
 

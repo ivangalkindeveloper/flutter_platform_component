@@ -1,3 +1,6 @@
+## 1.0.8
+* Select field fixes.
+
 ## 1.0.7
 * Small fixes.
 

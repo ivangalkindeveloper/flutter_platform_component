@@ -111,9 +111,9 @@ class _FPCBasicGradientSelectFieldState
     Future.microtask(() {
       if (this.mounted && this.widget.title != oldWidget.title) {
         if (this.widget.title == null) {
-          this._controller.clear();
+          setState(() => this._controller.clear());
         } else {
-          this._controller.text = this.widget.title!;
+          setState(() => this._controller.text = this.widget.title!);
         }
       }
     });
