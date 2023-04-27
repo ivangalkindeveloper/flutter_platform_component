@@ -182,11 +182,8 @@ class _FPCBasicButtonMaterial extends StatelessWidget {
     return Stack(
       children: [
         FPCAnimatedContainer(
+          height: height,
           padding: EdgeInsets.zero,
-          constraints: BoxConstraints(
-            minHeight: height,
-            maxHeight: height,
-          ),
           decoration: BoxDecoration(
             color: this.backgroundColor,
             borderRadius: borderRadius,

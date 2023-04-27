@@ -196,10 +196,8 @@ class _FPCBasicGradientButtonMaterial extends StatelessWidget {
     return Stack(
       children: [
         FPCAnimatedContainer(
+          height: height,
           padding: EdgeInsets.zero,
-          constraints: BoxConstraints(
-            minHeight: height,
-          ),
           decoration: BoxDecoration(
             gradient: this.backgroundGradient,
             borderRadius: borderRadius,
