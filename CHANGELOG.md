@@ -1,3 +1,6 @@
+## 1.1.2
+* Fix readme.
+
 ## 1.1.1
 * Fix readme.
 * Fix platform utils.
