@@ -25,7 +25,7 @@ export 'src/data/fpc_time_of_day_range.dart';
 export 'src/data/fpc_toggle_item.dart';
 
 // DateTime
-export 'src/date_time/fpc_dafault_date_time.dart';
+export 'src/date_time/fpc_default_date_time.dart';
 export 'src/date_time/fpc_date_time.dart';
 
 // Duration

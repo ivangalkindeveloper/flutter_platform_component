@@ -1,7 +1,11 @@
+## 1.1.1
+* Fix readme.
+* Fix platform utils.
+
 ## 1.1.0
 * Fix entities classes.
-* FPCDateTime, FPCDuration, FPCTimeOfDay.
-* FPCTextFormField as helper field and fix bug with errorText.
+* IFPCDateTime, IFPCDuration, IFPCTimeOfDay.
+* Adding FPCTextFormField as helper field for fix bug with errorText.
 
 ## 1.0.9
 * Button fixes.

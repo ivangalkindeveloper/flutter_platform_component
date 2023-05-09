@@ -1,5 +1,6 @@
 import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 
 class FPCPlatformUtil {
@@ -35,4 +36,9 @@ class FPCPlatformUtil {
         return material;
     }
   }
+
+  static bool get isMobile => [
+        TargetPlatform.iOS,
+        TargetPlatform.android,
+      ].contains(defaultTargetPlatform);
 }

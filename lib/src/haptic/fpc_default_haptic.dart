@@ -1,12 +1,11 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter_vibrate/flutter_vibrate.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 
 class FPCDefaultHaptic implements IFPCHaptic {
   const FPCDefaultHaptic();
 
   Future<void> _vibrate({required FeedbackType type}) async {
-    if (kIsWeb == false && await Vibrate.canVibrate) {
+    if (FPCPlatformUtil.isMobile && await Vibrate.canVibrate) {
       Vibrate.feedback(type);
     }
   }

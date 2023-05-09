@@ -1,6 +1,6 @@
 name: flutter_platform_component
 description: Ready-made inherited component base using ready-made abstractions for quick use and decomposed by platform.
-version: 1.1.0
+version: 1.1.1
 repository: https://github.com/ivangalkindeveloper/flutter_platform_component
 # homepage: https://www.example.com
 
@@ -14,7 +14,6 @@ dependencies:
   animate_do: 3.0.2
   animations: 2.0.7
   badges: 3.1.1
-  collection: 1.17.0
   flutter_vibrate: 1.3.0
   modal_bottom_sheet: 3.0.0-pre
   pinput: 2.2.31

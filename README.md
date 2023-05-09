@@ -13,7 +13,7 @@
 </div>
 
 <div align="center">
-<a href="https://www.buymeacoffee.com/ivangalkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="30px" width= "128px"></a>
+<a href="https://www.buymeacoffee.com/ivangalkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="32px" width= "128px"></a>
 </div>
 
 ## Getting Started
@@ -28,7 +28,7 @@
   - [Disabled components](#disabled-components)
 - [Design](#design)
 - [Dependencies](#dependencies)
-- [Usage](#usage)d
+- [Usage](#usage)
 - [Main entites](#main-entities)
   - [Config](#config)
   - [Platform](#platform)
@@ -327,7 +327,7 @@ FPCConfig.of(context).changeDateTime(haptic: DateTimes());
 
 ### Time Of Day
 An abstraction of TimeOfDay pickers.\
-The default value is [FPCDefaultTimeOfDay();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/date_time/fpc_default_time_of_day.dart).\
+The default value is [FPCDefaultTimeOfDay();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/time_of_day/fpc_default_time_of_day.dart).\
 Get the actual time of day instance in the widget tree:
 ```dart
 final IFPCTimeOfDay timeOfDay = FPCConfig.of(context).timeOfDay;
