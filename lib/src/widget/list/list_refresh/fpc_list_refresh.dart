@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -61,7 +60,7 @@ class _FPCListRefreshCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCHaptic haptic = config.haptic;
 
     return CustomScrollView(
@@ -107,7 +106,7 @@ class _FPCListRefreshMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCHaptic haptic = config.haptic;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;

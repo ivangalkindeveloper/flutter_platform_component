@@ -1,5 +1,5 @@
 import 'package:flutter_platform_component/src/widget/helper/fpc_select_field_wrapper.dart';
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
+
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -128,7 +128,7 @@ class _FPCBasicGradientSelectFieldState
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final BorderRadius borderRadius =
         this.widget.borderRadius ?? config.borderRadiusField;
     final double borderWidth =

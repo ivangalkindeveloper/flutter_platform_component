@@ -1,7 +1,7 @@
 import 'package:flutter_platform_component/src/widget/helper/fpc_button_row_child.dart';
 import 'package:flutter_platform_component/src/widget/helper/fpc_field.dart';
 import 'package:flutter_platform_component/src/exception/fpc_exception.dart';
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
+
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
@@ -79,7 +79,7 @@ class _FPCBasicGradientToggleState<T> extends State<FPCBasicGradientToggle<T>> {
 
   @override
   void didChangeDependencies() {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     this._haptic = config.haptic;
     super.didChangeDependencies();
   }
@@ -142,7 +142,7 @@ class _FPCBasicGradientToggleState<T> extends State<FPCBasicGradientToggle<T>> {
 
     if (this.widget.items.length == 1) throw const FPCItemsLengthException();
 
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCSize size = config.size;
 
     final double height = this.widget.height ?? size.heightToggle;
@@ -314,7 +314,7 @@ class _FPCGradientToggleButton<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTextStyle textStyle = config.textStyle;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;

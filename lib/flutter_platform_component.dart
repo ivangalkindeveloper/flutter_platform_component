@@ -35,6 +35,9 @@ export 'src/duration/fpc_duration.dart';
 // Enum
 export 'src/enum/fpc_enum.dart';
 
+// Extension
+export 'src/extension/fpc_extension.dart';
+
 // Haptic
 export 'src/haptic/fpc_default_haptic.dart';
 export 'src/haptic/fpc_haptic.dart';

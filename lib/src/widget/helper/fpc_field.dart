@@ -1,5 +1,5 @@
 import 'package:flutter_platform_component/src/widget/helper/fpc_text_form_field.dart';
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
+
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -211,7 +211,7 @@ class FPCField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTextStyle textStyle = config.textStyle;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;

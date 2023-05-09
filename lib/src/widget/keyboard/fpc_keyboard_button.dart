@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -56,7 +55,7 @@ class _FPCKeyboardButtonCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCHaptic haptic = config.haptic;
     final IFPCSize size = config.size;
 
@@ -115,7 +114,7 @@ class _FPCKeyboardButtonMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCHaptic haptic = config.haptic;
     final IFPCSize size = config.size;

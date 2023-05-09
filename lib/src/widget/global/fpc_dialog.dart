@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -10,7 +9,7 @@ Future<T?> showFPCDialog<T>({
   required Widget child,
   Color? barrierColor,
 }) {
-  final FPCConfig config = context.config;
+  final FPCConfig config = context.componentConfig;
   final FPCPlatform platform = config.platform;
   final IFPCHaptic haptic = config.haptic;
 

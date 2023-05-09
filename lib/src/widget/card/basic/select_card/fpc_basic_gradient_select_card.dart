@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -81,7 +80,7 @@ class _FPCBasicGradientSelectCardCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
 
     final BorderRadius borderRadius =
         this.borderRadius ?? config.borderRadiusCard;
@@ -148,7 +147,7 @@ class _FPCBasicGradientSelectCardMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
 
     final Color splashColor = this.splashColor ?? theme.grey;

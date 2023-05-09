@@ -22,7 +22,7 @@ extension FPCPlatformListExtension on List<FPCPlatform> {
 }
 
 extension FPCBuildContextExtension on BuildContext {
-  FPCConfig get config => FPCConfig.of(this);
+  FPCConfig get componentConfig => FPCConfig.of(this);
 }
 
 extension FPCTransitionTypeListExtension on List<FPCTransitionType> {

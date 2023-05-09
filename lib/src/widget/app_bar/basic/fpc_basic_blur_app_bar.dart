@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:ui';
@@ -71,7 +70,7 @@ class FPCBasicBlurAppBar extends FPCPlatformAppBar {
     }
 
     if (title != null) {
-      final FPCConfig config = context.config;
+      final FPCConfig config = context.componentConfig;
       final IFPCTextStyle textStyle = config.textStyle;
       final IFPCTheme theme = config.theme;
 
@@ -119,7 +118,7 @@ class _FPCAppBarCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -185,7 +184,7 @@ class _FPCAppBarMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 

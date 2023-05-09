@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -24,7 +23,7 @@ class FPCWhiteAlwaysCounterBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTextStyle textStyle = config.textStyle;
     final IFPCTheme theme = config.theme;
 
@@ -32,12 +31,12 @@ class FPCWhiteAlwaysCounterBadge extends StatelessWidget {
       color: theme.whiteAlways,
       count: this.count,
       countStyle: this.countStyle?.copyWith(
-                color:
-                    this.countStyle?.color ?? context.config.theme.blackAlways,
+                color: this.countStyle?.color ??
+                    context.componentConfig.theme.blackAlways,
                 package: textStyle.package,
               ) ??
           TextStyle(
-            color: context.config.theme.blackAlways,
+            color: context.componentConfig.theme.blackAlways,
             package: textStyle.package,
           ),
       position: this.position,

@@ -1,3 +1,6 @@
+## 1.1.3
+* Fix available extensions.
+
 ## 1.1.2
 * Fix readme.
 

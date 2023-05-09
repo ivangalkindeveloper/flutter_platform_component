@@ -1,11 +1,10 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class FPCCircularIndicator {
   // Small
   static Widget smallWhite({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -16,7 +15,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallWhiteAlways({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -27,7 +26,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallBlack({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -38,7 +37,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallBlackAlways({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -49,7 +48,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallPrimary({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -60,7 +59,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallPrimaryInternal({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -71,7 +70,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallPrimaryGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -82,7 +81,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallPrimaryLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -93,7 +92,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallPrimaryLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -104,7 +103,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallPrimaryDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -115,7 +114,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallPrimaryDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -126,7 +125,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallSecondary({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -137,7 +136,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallSecondaryInternal({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -148,7 +147,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallSecondaryGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -159,7 +158,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallSecondaryLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -170,7 +169,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallSecondaryLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -181,7 +180,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallSecondaryDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -192,7 +191,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallSecondaryDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -203,7 +202,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallAccent({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -214,7 +213,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallAccentInternal({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -225,7 +224,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallAccentGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -236,7 +235,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallAccentLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -247,7 +246,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallAccentLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -258,7 +257,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallAccentDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -269,7 +268,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallAccentDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -280,7 +279,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallGrey({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -291,7 +290,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallGreyGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -302,7 +301,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallGreyLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -313,7 +312,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallGreyLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -324,7 +323,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallGreyDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -335,7 +334,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallGreyDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -346,7 +345,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallInfo({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -357,7 +356,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallInfoGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -368,7 +367,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallInfoLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -379,7 +378,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallInfoLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -390,7 +389,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallInfoDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -401,7 +400,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallInfoDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -412,7 +411,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallSuccess({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -423,7 +422,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallSuccessGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -434,7 +433,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallSuccessLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -445,7 +444,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallSuccessLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -456,7 +455,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallSuccessDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -467,7 +466,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallSuccessDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -478,7 +477,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallWarning({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -489,7 +488,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallWarningGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -500,7 +499,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallWarningLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -511,7 +510,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallWarningLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -522,7 +521,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallWarningDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -533,7 +532,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallWarningDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -544,7 +543,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallDanger({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -555,7 +554,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallDangerGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -566,7 +565,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallDangerLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -577,7 +576,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallDangerLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -588,7 +587,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallDangerDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -599,7 +598,7 @@ class FPCCircularIndicator {
   }
 
   static Widget smallDangerDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -611,7 +610,7 @@ class FPCCircularIndicator {
 
   // Default
   static Widget white({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -622,7 +621,7 @@ class FPCCircularIndicator {
   }
 
   static Widget whiteAlways({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -633,7 +632,7 @@ class FPCCircularIndicator {
   }
 
   static Widget black({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -644,7 +643,7 @@ class FPCCircularIndicator {
   }
 
   static Widget blackAlways({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -655,7 +654,7 @@ class FPCCircularIndicator {
   }
 
   static Widget primary({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -666,7 +665,7 @@ class FPCCircularIndicator {
   }
 
   static Widget primaryInternal({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -677,7 +676,7 @@ class FPCCircularIndicator {
   }
 
   static Widget primaryGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -688,7 +687,7 @@ class FPCCircularIndicator {
   }
 
   static Widget primaryLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -699,7 +698,7 @@ class FPCCircularIndicator {
   }
 
   static Widget primaryLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -710,7 +709,7 @@ class FPCCircularIndicator {
   }
 
   static Widget primaryDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -721,7 +720,7 @@ class FPCCircularIndicator {
   }
 
   static Widget primaryDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -732,7 +731,7 @@ class FPCCircularIndicator {
   }
 
   static Widget secondary({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -743,7 +742,7 @@ class FPCCircularIndicator {
   }
 
   static Widget secondaryInternal({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -754,7 +753,7 @@ class FPCCircularIndicator {
   }
 
   static Widget secondaryGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -765,7 +764,7 @@ class FPCCircularIndicator {
   }
 
   static Widget secondaryLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -776,7 +775,7 @@ class FPCCircularIndicator {
   }
 
   static Widget secondaryLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -787,7 +786,7 @@ class FPCCircularIndicator {
   }
 
   static Widget secondaryDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -798,7 +797,7 @@ class FPCCircularIndicator {
   }
 
   static Widget secondaryDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -809,7 +808,7 @@ class FPCCircularIndicator {
   }
 
   static Widget accent({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -820,7 +819,7 @@ class FPCCircularIndicator {
   }
 
   static Widget accentInternal({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -831,7 +830,7 @@ class FPCCircularIndicator {
   }
 
   static Widget accentGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -842,7 +841,7 @@ class FPCCircularIndicator {
   }
 
   static Widget accentLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -853,7 +852,7 @@ class FPCCircularIndicator {
   }
 
   static Widget accentLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -864,7 +863,7 @@ class FPCCircularIndicator {
   }
 
   static Widget accentDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -875,7 +874,7 @@ class FPCCircularIndicator {
   }
 
   static Widget accentDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -886,7 +885,7 @@ class FPCCircularIndicator {
   }
 
   static Widget grey({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -897,7 +896,7 @@ class FPCCircularIndicator {
   }
 
   static Widget greyGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -908,7 +907,7 @@ class FPCCircularIndicator {
   }
 
   static Widget greyLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -919,7 +918,7 @@ class FPCCircularIndicator {
   }
 
   static Widget greyLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -930,7 +929,7 @@ class FPCCircularIndicator {
   }
 
   static Widget greyDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -941,7 +940,7 @@ class FPCCircularIndicator {
   }
 
   static Widget greyDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -952,7 +951,7 @@ class FPCCircularIndicator {
   }
 
   static Widget info({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -963,7 +962,7 @@ class FPCCircularIndicator {
   }
 
   static Widget infoGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -974,7 +973,7 @@ class FPCCircularIndicator {
   }
 
   static Widget infoLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -985,7 +984,7 @@ class FPCCircularIndicator {
   }
 
   static Widget infoLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -996,7 +995,7 @@ class FPCCircularIndicator {
   }
 
   static Widget infoDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1007,7 +1006,7 @@ class FPCCircularIndicator {
   }
 
   static Widget infoDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1018,7 +1017,7 @@ class FPCCircularIndicator {
   }
 
   static Widget success({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1029,7 +1028,7 @@ class FPCCircularIndicator {
   }
 
   static Widget successGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1040,7 +1039,7 @@ class FPCCircularIndicator {
   }
 
   static Widget successLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1051,7 +1050,7 @@ class FPCCircularIndicator {
   }
 
   static Widget successLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1062,7 +1061,7 @@ class FPCCircularIndicator {
   }
 
   static Widget successDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1073,7 +1072,7 @@ class FPCCircularIndicator {
   }
 
   static Widget successDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1084,7 +1083,7 @@ class FPCCircularIndicator {
   }
 
   static Widget warning({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1095,7 +1094,7 @@ class FPCCircularIndicator {
   }
 
   static Widget warningGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1106,7 +1105,7 @@ class FPCCircularIndicator {
   }
 
   static Widget warningLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1117,7 +1116,7 @@ class FPCCircularIndicator {
   }
 
   static Widget warningLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1128,7 +1127,7 @@ class FPCCircularIndicator {
   }
 
   static Widget warningDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1139,7 +1138,7 @@ class FPCCircularIndicator {
   }
 
   static Widget warningDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1150,7 +1149,7 @@ class FPCCircularIndicator {
   }
 
   static Widget danger({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1161,7 +1160,7 @@ class FPCCircularIndicator {
   }
 
   static Widget dangerGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1172,7 +1171,7 @@ class FPCCircularIndicator {
   }
 
   static Widget dangerLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1183,7 +1182,7 @@ class FPCCircularIndicator {
   }
 
   static Widget dangerLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1194,7 +1193,7 @@ class FPCCircularIndicator {
   }
 
   static Widget dangerDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1205,7 +1204,7 @@ class FPCCircularIndicator {
   }
 
   static Widget dangerDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1217,7 +1216,7 @@ class FPCCircularIndicator {
 
   // Large
   static Widget largeWhite({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1228,7 +1227,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeWhiteAlways({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1239,7 +1238,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeBlack({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1250,7 +1249,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeBlackAlways({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1261,7 +1260,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largePrimary({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1272,7 +1271,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largePrimaryInternal({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1283,7 +1282,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largePrimaryGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1294,7 +1293,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largePrimaryLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1305,7 +1304,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largePrimaryLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1316,7 +1315,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largePrimaryDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1327,7 +1326,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largePrimaryDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1338,7 +1337,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeSecondary({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1349,7 +1348,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeSecondaryInternal({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1360,7 +1359,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeSecondaryGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1371,7 +1370,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeSecondaryLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1382,7 +1381,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeSecondaryLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1393,7 +1392,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeSecondaryDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1404,7 +1403,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeSecondaryDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1415,7 +1414,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeAccent({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1426,7 +1425,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeAccentInternal({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1437,7 +1436,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeAccentGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1448,7 +1447,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeAccentLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1459,7 +1458,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeAccentLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1470,7 +1469,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeAccentDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1481,7 +1480,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeAccentDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1492,7 +1491,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeGrey({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1503,7 +1502,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeGreyGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1514,7 +1513,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeGreyLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1525,7 +1524,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeGreyLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1536,7 +1535,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeGreyDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1547,7 +1546,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeGreyDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1558,7 +1557,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeInfo({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1569,7 +1568,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeInfoGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1580,7 +1579,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeInfoLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1591,7 +1590,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeInfoLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1602,7 +1601,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeInfoDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1613,7 +1612,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeInfoDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1624,7 +1623,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeSuccess({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1635,7 +1634,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeSuccessGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1646,7 +1645,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeSuccessLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1657,7 +1656,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeSuccessLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1668,7 +1667,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeSuccessDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1679,7 +1678,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeSuccessDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1690,7 +1689,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeWarning({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1701,7 +1700,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeWarningGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1712,7 +1711,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeWarningLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1723,7 +1722,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeWarningLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1734,7 +1733,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeWarningDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1745,7 +1744,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeWarningDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1756,7 +1755,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeDanger({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1767,7 +1766,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeDangerGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1778,7 +1777,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeDangerLight({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1789,7 +1788,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeDangerLightGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1800,7 +1799,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeDangerDark({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1811,7 +1810,7 @@ class FPCCircularIndicator {
   }
 
   static Widget largeDangerDarkGradient({required BuildContext context}) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 

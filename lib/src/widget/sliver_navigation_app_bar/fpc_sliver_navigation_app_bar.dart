@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -127,7 +126,7 @@ class _FPCSliverNavigationAppBarCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTextStyle textStyle = config.textStyle;
     final IFPCTheme theme = config.theme;
 
@@ -245,7 +244,7 @@ class _FPCSliverNavigationAppBarMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTextStyle textStyle = config.textStyle;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;

@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -67,7 +66,7 @@ class _FPCBottomNavigationBarCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
 
     final Color backgroundColor =
@@ -116,7 +115,7 @@ class _FPCBottomNavigationBarMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTextStyle textStyle = config.textStyle;
     final IFPCTheme theme = config.theme;
 

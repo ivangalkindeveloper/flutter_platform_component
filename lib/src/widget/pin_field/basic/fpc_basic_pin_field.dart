@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 import 'package:pinput/pinput.dart';
@@ -66,7 +65,7 @@ class _FPCBasicPINFieldState extends State<FPCBasicPINField>
 
   @override
   void didChangeDependencies() {
-    this._config = context.config;
+    this._config = context.componentConfig;
     this._duration = this._config.duration;
     this._haptic = this._config.haptic;
     this._theme = this._config.theme;

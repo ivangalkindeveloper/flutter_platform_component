@@ -1,4 +1,4 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class FPCSweepGradient extends SweepGradient {
@@ -12,16 +12,18 @@ class FPCSweepGradient extends SweepGradient {
     GradientTransform? transform,
     required List<Color> colors,
   }) : super(
-          center: center ?? context.config.theme.sweepGradientConfig.center,
-          startAngle:
-              startAngle ?? context.config.theme.sweepGradientConfig.startAngle,
-          endAngle:
-              endAngle ?? context.config.theme.sweepGradientConfig.endAngle,
-          stops: stops ?? context.config.theme.sweepGradientConfig.stops,
-          tileMode:
-              tileMode ?? context.config.theme.sweepGradientConfig.tileMode,
-          transform:
-              transform ?? context.config.theme.sweepGradientConfig.transform,
+          center: center ??
+              context.componentConfig.theme.sweepGradientConfig.center,
+          startAngle: startAngle ??
+              context.componentConfig.theme.sweepGradientConfig.startAngle,
+          endAngle: endAngle ??
+              context.componentConfig.theme.sweepGradientConfig.endAngle,
+          stops:
+              stops ?? context.componentConfig.theme.sweepGradientConfig.stops,
+          tileMode: tileMode ??
+              context.componentConfig.theme.sweepGradientConfig.tileMode,
+          transform: transform ??
+              context.componentConfig.theme.sweepGradientConfig.transform,
           colors: colors,
         );
 }

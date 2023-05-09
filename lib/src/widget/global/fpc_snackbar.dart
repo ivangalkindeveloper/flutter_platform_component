@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -18,7 +17,7 @@ ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showFPCSnackBar({
   EdgeInsets? padding,
   Duration? duration,
 }) {
-  final FPCConfig config = context.config;
+  final FPCConfig config = context.componentConfig;
   final IFPCDuration durationConfig = config.duration;
   final IFPCHaptic haptic = config.haptic;
   final IFPCSize size = config.size;

@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -19,7 +18,8 @@ class FPCWhiteAlwaysExpandedModalAppBar extends FPCBasicAppBar {
   }) : super(
           context: context,
           transitionBetweenRoutes: false,
-          backgroundColor: backgroundColor ?? context.config.theme.blackAlways,
+          backgroundColor:
+              backgroundColor ?? context.componentConfig.theme.blackAlways,
           prefix: _prefix(
             prefix: prefix,
             cupertinoLocale: cupertinoLocale,
@@ -27,12 +27,13 @@ class FPCWhiteAlwaysExpandedModalAppBar extends FPCBasicAppBar {
           ),
           title: title,
           titleStyle: titleStyle?.copyWith(
-                color: titleStyle.color ?? context.config.theme.whiteAlways,
-                package: context.config.textStyle.package,
+                color: titleStyle.color ??
+                    context.componentConfig.theme.whiteAlways,
+                package: context.componentConfig.textStyle.package,
               ) ??
               TextStyle(
-                color: context.config.theme.whiteAlways,
-                package: context.config.textStyle.package,
+                color: context.componentConfig.theme.whiteAlways,
+                package: context.componentConfig.textStyle.package,
               ),
           middle: middle,
           postfix: postfix,

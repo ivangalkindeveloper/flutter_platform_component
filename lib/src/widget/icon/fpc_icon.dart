@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -32,7 +31,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -47,7 +46,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -62,7 +61,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -77,7 +76,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -92,7 +91,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -107,7 +106,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -122,7 +121,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -137,7 +136,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -152,7 +151,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -167,7 +166,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -182,7 +181,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -197,7 +196,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -212,7 +211,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -227,7 +226,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -242,7 +241,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -257,7 +256,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -272,7 +271,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -287,7 +286,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -302,7 +301,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -317,7 +316,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -332,7 +331,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -347,7 +346,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -362,7 +361,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -377,7 +376,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -392,7 +391,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -407,7 +406,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -422,7 +421,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -437,7 +436,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -452,7 +451,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -467,7 +466,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -482,7 +481,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -497,7 +496,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -512,7 +511,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -527,7 +526,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -542,7 +541,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -557,7 +556,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -572,7 +571,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -587,7 +586,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -602,7 +601,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -617,7 +616,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -632,7 +631,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -647,7 +646,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -662,7 +661,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -677,7 +676,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -692,7 +691,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -707,7 +706,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -722,7 +721,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -737,7 +736,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -752,7 +751,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -767,7 +766,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -782,7 +781,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -797,7 +796,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -812,7 +811,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -827,7 +826,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -842,7 +841,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -858,7 +857,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -873,7 +872,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -888,7 +887,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -903,7 +902,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -918,7 +917,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -933,7 +932,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -948,7 +947,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -963,7 +962,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -978,7 +977,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -993,7 +992,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1008,7 +1007,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1023,7 +1022,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1038,7 +1037,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1053,7 +1052,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1068,7 +1067,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1083,7 +1082,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1098,7 +1097,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1113,7 +1112,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1128,7 +1127,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1143,7 +1142,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1158,7 +1157,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1173,7 +1172,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1188,7 +1187,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1203,7 +1202,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1218,7 +1217,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1233,7 +1232,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1248,7 +1247,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1263,7 +1262,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1278,7 +1277,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1293,7 +1292,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1308,7 +1307,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1323,7 +1322,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1338,7 +1337,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1353,7 +1352,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1368,7 +1367,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1383,7 +1382,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1398,7 +1397,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1413,7 +1412,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1428,7 +1427,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1443,7 +1442,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1458,7 +1457,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1473,7 +1472,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1488,7 +1487,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1503,7 +1502,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1518,7 +1517,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1533,7 +1532,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1548,7 +1547,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1563,7 +1562,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1578,7 +1577,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1593,7 +1592,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1608,7 +1607,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1623,7 +1622,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1638,7 +1637,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1653,7 +1652,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1668,7 +1667,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1684,7 +1683,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1699,7 +1698,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1714,7 +1713,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1729,7 +1728,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1744,7 +1743,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1759,7 +1758,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1774,7 +1773,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1789,7 +1788,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1804,7 +1803,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1819,7 +1818,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1834,7 +1833,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1849,7 +1848,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1864,7 +1863,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1879,7 +1878,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1894,7 +1893,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1909,7 +1908,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1924,7 +1923,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1939,7 +1938,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1954,7 +1953,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1969,7 +1968,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1984,7 +1983,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -1999,7 +1998,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2014,7 +2013,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2029,7 +2028,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2044,7 +2043,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2059,7 +2058,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2074,7 +2073,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2089,7 +2088,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2104,7 +2103,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2119,7 +2118,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2134,7 +2133,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2149,7 +2148,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2164,7 +2163,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2179,7 +2178,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2194,7 +2193,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2209,7 +2208,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2224,7 +2223,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2239,7 +2238,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2254,7 +2253,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2269,7 +2268,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2284,7 +2283,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2299,7 +2298,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2314,7 +2313,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2329,7 +2328,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2344,7 +2343,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2359,7 +2358,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2374,7 +2373,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2389,7 +2388,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2404,7 +2403,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2419,7 +2418,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2434,7 +2433,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2449,7 +2448,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2464,7 +2463,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2479,7 +2478,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 
@@ -2494,7 +2493,7 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCTheme theme = config.theme;
     final IFPCSize size = config.size;
 

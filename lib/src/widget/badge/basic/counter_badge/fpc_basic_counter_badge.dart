@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/widgets.dart';
@@ -45,7 +44,7 @@ class FPCBasicCounterBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCDuration duration = config.duration;
     final IFPCSize size = config.size;
     final IFPCTextStyle textStyle = config.textStyle;
@@ -59,7 +58,8 @@ class FPCBasicCounterBadge extends StatelessWidget {
     final bool isShow = this._isShow();
     final String count = this._count();
     final TextStyle countStyle = this.countStyle?.copyWith(
-              color: this.countStyle?.color ?? context.config.theme.whiteAlways,
+              color: this.countStyle?.color ??
+                  context.componentConfig.theme.whiteAlways,
               fontSize: this.countStyle?.fontSize ?? size.s14,
               fontWeight:
                   this.countStyle?.fontWeight ?? textStyle.fontWeightRegular,
@@ -68,7 +68,7 @@ class FPCBasicCounterBadge extends StatelessWidget {
               package: textStyle.package,
             ) ??
         TextStyle(
-          color: context.config.theme.whiteAlways,
+          color: context.componentConfig.theme.whiteAlways,
           fontSize: size.s14,
           fontWeight: textStyle.fontWeightRegular,
           fontFamily: textStyle.fontFamilyRegular,

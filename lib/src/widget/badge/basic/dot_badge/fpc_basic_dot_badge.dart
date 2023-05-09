@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/widgets.dart';
@@ -25,7 +24,7 @@ class FPCBasicDotBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.config;
+    final FPCConfig config = context.componentConfig;
     final IFPCDuration duration = config.duration;
     final IFPCSize size = config.size;
 

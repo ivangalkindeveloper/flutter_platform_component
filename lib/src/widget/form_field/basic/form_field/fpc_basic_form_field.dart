@@ -1,5 +1,5 @@
 import 'package:flutter_platform_component/src/widget/helper/fpc_field.dart';
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
+
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -194,7 +194,7 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
 
   @override
   void didChangeDependencies() {
-    this._config = context.config;
+    this._config = context.componentConfig;
     this._textStyle = this._config.textStyle;
     this._haptic = this._config.haptic;
     this._theme = this._config.theme;

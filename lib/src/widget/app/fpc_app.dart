@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
@@ -74,8 +73,8 @@ class FPCApp extends FPCPlatformWidget {
             title: title,
             onGenerateTitle: onGenerateTitle,
             //
-            theme:
-                cupertinoThemeData ?? context.config.theme.cupertinoThemeData,
+            theme: cupertinoThemeData ??
+                context.componentConfig.theme.cupertinoThemeData,
             locale: locale,
             localizationsDelegates: [
               DefaultWidgetsLocalizations.delegate,
@@ -115,9 +114,10 @@ class FPCApp extends FPCPlatformWidget {
             title: title,
             onGenerateTitle: onGenerateTitle,
             //
-            themeMode:
-                materialThemeMode ?? context.config.theme.materialThemeMode,
-            theme: materialThemeData ?? context.config.theme.materialThemeData,
+            themeMode: materialThemeMode ??
+                context.componentConfig.theme.materialThemeMode,
+            theme: materialThemeData ??
+                context.componentConfig.theme.materialThemeData,
             locale: locale,
             localizationsDelegates: [
               DefaultWidgetsLocalizations.delegate,
@@ -197,8 +197,8 @@ class FPCApp extends FPCPlatformWidget {
             title: title,
             onGenerateTitle: onGenerateTitle,
             //
-            theme:
-                cupertinoThemeData ?? context.config.theme.cupertinoThemeData,
+            theme: cupertinoThemeData ??
+                context.componentConfig.theme.cupertinoThemeData,
             locale: locale,
             localizationsDelegates: [
               DefaultWidgetsLocalizations.delegate,
@@ -235,9 +235,10 @@ class FPCApp extends FPCPlatformWidget {
             title: title,
             onGenerateTitle: onGenerateTitle,
             //
-            themeMode:
-                materialThemeMode ?? context.config.theme.materialThemeMode,
-            theme: materialThemeData ?? context.config.theme.materialThemeData,
+            themeMode: materialThemeMode ??
+                context.componentConfig.theme.materialThemeMode,
+            theme: materialThemeData ??
+                context.componentConfig.theme.materialThemeData,
             locale: locale,
             localizationsDelegates: [
               DefaultWidgetsLocalizations.delegate,

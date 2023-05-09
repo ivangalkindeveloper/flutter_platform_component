@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:async';
@@ -41,7 +40,7 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
 
   @override
   void didChangeDependencies() {
-    this._config = context.config;
+    this._config = context.componentConfig;
     this._duration = this._config.duration;
     super.didChangeDependencies();
   }

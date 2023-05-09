@@ -1,4 +1,4 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class FPCRadialGradient extends RadialGradient {
@@ -13,16 +13,20 @@ class FPCRadialGradient extends RadialGradient {
     GradientTransform? transform,
     required List<Color> colors,
   }) : super(
-          center: center ?? context.config.theme.radialGradientConfig.center,
-          radius: radius ?? context.config.theme.radialGradientConfig.radius,
-          stops: stops ?? context.config.theme.radialGradientConfig.stops,
-          tileMode:
-              tileMode ?? context.config.theme.radialGradientConfig.tileMode,
-          focal: focal ?? context.config.theme.radialGradientConfig.focal,
+          center: center ??
+              context.componentConfig.theme.radialGradientConfig.center,
+          radius: radius ??
+              context.componentConfig.theme.radialGradientConfig.radius,
+          stops:
+              stops ?? context.componentConfig.theme.radialGradientConfig.stops,
+          tileMode: tileMode ??
+              context.componentConfig.theme.radialGradientConfig.tileMode,
+          focal:
+              focal ?? context.componentConfig.theme.radialGradientConfig.focal,
           focalRadius: focalRadius ??
-              context.config.theme.radialGradientConfig.focalRadius,
-          transform:
-              transform ?? context.config.theme.radialGradientConfig.transform,
+              context.componentConfig.theme.radialGradientConfig.focalRadius,
+          transform: transform ??
+              context.componentConfig.theme.radialGradientConfig.transform,
           colors: colors,
         );
 }

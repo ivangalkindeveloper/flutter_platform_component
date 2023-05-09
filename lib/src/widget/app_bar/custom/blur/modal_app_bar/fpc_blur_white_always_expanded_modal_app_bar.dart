@@ -1,4 +1,3 @@
-import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:ui';
@@ -22,7 +21,7 @@ class FPCBlurWhiteAlwaysExpandedModalAppBar extends FPCBasicBlurAppBar {
   }) : super(
           context: context,
           transitionBetweenRoutes: false,
-          blurColor: blurColor ?? context.config.theme.blackAlways,
+          blurColor: blurColor ?? context.componentConfig.theme.blackAlways,
           blurOpacity: blurOpacity,
           blurFilter: blurFilter,
           prefix: _prefix(
@@ -32,12 +31,12 @@ class FPCBlurWhiteAlwaysExpandedModalAppBar extends FPCBasicBlurAppBar {
           ),
           title: title,
           style: style?.copyWith(
-                color: style.color ?? context.config.theme.whiteAlways,
-                package: context.config.textStyle.package,
+                color: style.color ?? context.componentConfig.theme.whiteAlways,
+                package: context.componentConfig.textStyle.package,
               ) ??
               TextStyle(
-                color: context.config.theme.whiteAlways,
-                package: context.config.textStyle.package,
+                color: context.componentConfig.theme.whiteAlways,
+                package: context.componentConfig.textStyle.package,
               ),
           middle: middle,
           postfix: postfix,
