@@ -1,12 +1,34 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
-import 'dart:ui';
 
 import 'package:animations/animations.dart' show SharedAxisTransitionType;
 import 'package:badges/badges.dart' as badges show BadgePosition;
 
+extension FPCPlatformListExtension on List<FPCPlatform> {
+  FPCPlatform? fromString(String name) =>
+      FPCPlatform.values.firstWhereOrNull((element) => element.name == name);
+
+  FPCPlatform fromTargetPlatform(TargetPlatform platform) {
+    switch (platform) {
+      case TargetPlatform.iOS:
+        return FPCPlatform.iOS;
+      case TargetPlatform.android:
+        return FPCPlatform.Android;
+      default:
+        return FPCPlatform.Android;
+    }
+  }
+}
+
 extension FPCBuildContextExtension on BuildContext {
   FPCConfig get config => FPCConfig.of(this);
+}
+
+extension FPCTransitionTypeListExtension on List<FPCTransitionType> {
+  SharedAxisTransitionType? fromString(String name) =>
+      SharedAxisTransitionType.values
+          .firstWhereOrNull((element) => element.name == name);
 }
 
 extension FPCTransitionTypeExtension on FPCTransitionType {
@@ -22,7 +44,15 @@ extension FPCTransitionTypeExtension on FPCTransitionType {
   }
 }
 
+extension FPCBadgePositionListExtension on List<FPCBadgePosition> {
+  FPCBadgePosition? fromString(String name) => FPCBadgePosition.values
+      .firstWhereOrNull((element) => element.name == name);
+}
+
 extension FPCBadgePositionExtension on FPCBadgePosition {
+  FPCBadgePosition? fromString(String name) => FPCBadgePosition.values
+      .firstWhereOrNull((element) => element.name == name);
+
   badges.BadgePosition get packageMapForCounter {
     switch (this) {
       case FPCBadgePosition.center:
@@ -64,63 +94,4 @@ extension FPCBadgePositionExtension on FPCBadgePosition {
         );
     }
   }
-}
-
-extension TextStyleExtension on TextStyle {
-  copyWith({
-    bool inherit = true,
-    Color? color,
-    Color? backgroundColor,
-    double? fontSize,
-    FontWeight? fontWeight,
-    FontStyle? fontStyle,
-    double? letterSpacing,
-    double? wordSpacing,
-    TextBaseline? textBaseline,
-    double? height,
-    TextLeadingDistribution? leadingDistribution,
-    Locale? locale,
-    Paint? foreground,
-    Paint? background,
-    List<Shadow>? shadows,
-    List<FontFeature>? fontFeatures,
-    List<FontVariation>? fontVariations,
-    TextDecoration? decoration,
-    Color? decorationColor,
-    TextDecorationStyle? decorationStyle,
-    double? decorationThickness,
-    String? debugLabel,
-    String? fontFamily,
-    List<String>? fontFamilyFallback,
-    String? package,
-    TextOverflow? overflow,
-  }) =>
-      TextStyle(
-        inherit: inherit,
-        color: color ?? this.color,
-        backgroundColor: backgroundColor ?? this.backgroundColor,
-        fontSize: fontSize ?? this.fontSize,
-        fontWeight: fontWeight ?? this.fontWeight,
-        fontStyle: fontStyle ?? this.fontStyle,
-        letterSpacing: letterSpacing ?? this.letterSpacing,
-        wordSpacing: wordSpacing ?? this.wordSpacing,
-        textBaseline: textBaseline ?? this.textBaseline,
-        height: height ?? this.height,
-        leadingDistribution: leadingDistribution ?? this.leadingDistribution,
-        locale: locale ?? this.locale,
-        foreground: foreground ?? this.foreground,
-        background: background ?? this.background,
-        shadows: shadows ?? this.shadows,
-        fontFeatures: fontFeatures ?? this.fontFeatures,
-        fontVariations: fontVariations ?? this.fontVariations,
-        decoration: decoration ?? this.decoration,
-        decorationColor: decorationColor ?? this.decorationColor,
-        decorationStyle: decorationStyle ?? this.decorationStyle,
-        decorationThickness: decorationThickness ?? this.decorationThickness,
-        debugLabel: debugLabel ?? this.debugLabel,
-        fontFamily: fontFamily ?? this.fontFamily,
-        fontFamilyFallback: fontFamilyFallback ?? this.fontFamilyFallback,
-        package: package,
-        overflow: overflow ?? this.overflow,
-      );
 }

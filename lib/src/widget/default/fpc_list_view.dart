@@ -50,9 +50,13 @@ class FPCListView extends StatelessWidget {
   final String? restorationId;
 
   EdgeInsets _padding({required IFPCSize size}) {
-    if (this.padding != null) return this.padding!;
+    if (this.padding != null) {
+      return this.padding!;
+    }
 
-    if (this.scrollDirection == Axis.horizontal) return size.paddingDefault;
+    if (this.scrollDirection == Axis.horizontal) {
+      return size.paddingDefault;
+    }
 
     return size.paddingListView;
   }

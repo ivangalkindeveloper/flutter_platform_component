@@ -26,16 +26,17 @@ class FPCBasicDotBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FPCConfig config = context.config;
+    final IFPCDuration duration = config.duration;
     final IFPCSize size = config.size;
 
-    final Duration duration = this.duration ?? size.durationBadge;
+    final Duration durationBadge = this.duration ?? duration.badge;
     final double height = this.height ?? size.s10;
 
     return badges.Badge(
       position: this.position.packageMapForDot,
       badgeAnimation: badges.BadgeAnimation.fade(
-        animationDuration: duration,
-        disappearanceFadeAnimationDuration: duration,
+        animationDuration: durationBadge,
+        disappearanceFadeAnimationDuration: durationBadge,
         curve: Curves.easeInOut,
         colorChangeAnimationCurve: Curves.easeInOut,
       ),

@@ -214,7 +214,9 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
     // Handler
     this._textInputHandlerFormatter = FPCTextInputHandlerFormatter(
       onNewValue: (String value) {
-        if (this.mounted == false) return null;
+        if (this.mounted == false) {
+          return null;
+        }
 
         // Required
         if (this.widget.isRequired && value.isEmpty) {
@@ -286,7 +288,9 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
   }
 
   void _focusNodeListener() {
-    if (this.mounted == false) return;
+    if (this.mounted == false) {
+      return;
+    }
 
     setState(() {
       this._isAutoValidationError = false;
@@ -295,8 +299,9 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
   }
 
   Color _backgroundColor() {
-    if (this._focusNode.hasPrimaryFocus)
+    if (this._focusNode.hasPrimaryFocus) {
       return this.widget.focusedBackgroundColor;
+    }
 
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.dangerLight;
@@ -312,15 +317,17 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
       return this.widget.unfocusedBackgroundColor;
     }
 
-    if (this._isValidationError || this._isAutoValidationError)
+    if (this._isValidationError || this._isAutoValidationError) {
       return this._theme.danger;
+    }
 
     return this.widget.focusedColor;
   }
 
   Color _labelColor() {
-    if (this._isValidationError || this._isAutoValidationError)
+    if (this._isValidationError || this._isAutoValidationError) {
       return this._theme.danger;
+    }
 
     if (this._focusNode.hasPrimaryFocus)
       return this.widget.labelColor ?? this.widget.focusedColor;
@@ -329,8 +336,9 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
   }
 
   Color _internalIconColor() {
-    if (this._isValidationError || this._isAutoValidationError)
+    if (this._isValidationError || this._isAutoValidationError) {
       return this._theme.danger;
+    }
 
     if (this._focusNode.hasPrimaryFocus)
       return this.widget.internalIconColor ?? this.widget.focusedColor;
@@ -339,7 +347,9 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
   }
 
   String? _validator(String? value) {
-    if (value == null || this.mounted == false) return null;
+    if (value == null || this.mounted == false) {
+      return null;
+    }
 
     // Required
     if (this.widget.isRequired && value.isEmpty) {
@@ -371,9 +381,13 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
   }
 
   String _errorText() {
-    if (this._autoValidationText.isNotEmpty) return this._autoValidationText;
+    if (this._autoValidationText.isNotEmpty) {
+      return this._autoValidationText;
+    }
 
-    if (this._validationText.isNotEmpty) return this._validationText;
+    if (this._validationText.isNotEmpty) {
+      return this._validationText;
+    }
 
     return "";
   }

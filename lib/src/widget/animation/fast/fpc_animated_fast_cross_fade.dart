@@ -17,15 +17,15 @@ class FPCAnimatedFastCrossFade extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FPCConfig config = context.config;
-    final IFPCSize size = config.size;
+    final IFPCDuration duration = config.duration;
 
     return AnimatedCrossFade(
       crossFadeState:
           this.condition ? CrossFadeState.showFirst : CrossFadeState.showSecond,
-      duration: size.durationAnimationFast,
+      duration: duration.animationFast,
       firstCurve: Curves.easeInOut,
       firstChild: this.firstChild,
-      reverseDuration: size.durationAnimationFast,
+      reverseDuration: duration.animationFast,
       secondCurve: Curves.easeInOut,
       secondChild: this.secondChild,
       sizeCurve: Curves.easeInOut,

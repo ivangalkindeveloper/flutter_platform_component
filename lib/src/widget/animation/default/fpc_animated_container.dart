@@ -23,7 +23,7 @@ class FPCAnimatedContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FPCConfig config = context.config;
-    final IFPCSize size = config.size;
+    final IFPCDuration duration = config.duration;
 
     return AnimatedContainer(
       height: this.height,
@@ -32,7 +32,7 @@ class FPCAnimatedContainer extends StatelessWidget {
       constraints: this.constraints,
       decoration: this.decoration,
       padding: this.padding,
-      duration: size.durationAnimationDefault,
+      duration: duration.animationDefault,
       curve: Curves.easeInOut,
       child: this.child,
     );

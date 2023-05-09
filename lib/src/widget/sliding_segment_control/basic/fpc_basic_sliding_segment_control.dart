@@ -105,7 +105,9 @@ class _FPCBasicSlidingSegmentControlState<T>
   }
 
   Color _backgroundColor() {
-    if (this._isValidationError) return this._theme.dangerLight;
+    if (this._isValidationError) {
+      return this._theme.dangerLight;
+    }
 
     return this.widget.backgroundColor;
   }
@@ -113,15 +115,21 @@ class _FPCBasicSlidingSegmentControlState<T>
   Color _internalColor({
     required bool isSelected,
   }) {
-    if (this._isValidationError) return this._theme.danger;
+    if (this._isValidationError) {
+      return this._theme.danger;
+    }
 
-    if (isSelected) return this.widget.selectedInternalColor;
+    if (isSelected) {
+      return this.widget.selectedInternalColor;
+    }
 
     return this.widget.unselectedInternalColor;
   }
 
   String? _validator(String? value) {
-    if (value == null || this.mounted == false) return null;
+    if (value == null || this.mounted == false) {
+      return null;
+    }
 
     // Required
     if (this.widget.isRequired && value.isEmpty) {
@@ -163,7 +171,9 @@ class _FPCBasicSlidingSegmentControlState<T>
         CupertinoSlidingSegmentedControl<T>(
           groupValue: this.widget.value,
           onValueChanged: (T? value) {
-            if (value == null || this.widget.isDisabled) return;
+            if (value == null || this.widget.isDisabled) {
+              return;
+            }
 
             setState(() => this._isValidationError = false);
             this._controller.text = this.widget.value.toString();

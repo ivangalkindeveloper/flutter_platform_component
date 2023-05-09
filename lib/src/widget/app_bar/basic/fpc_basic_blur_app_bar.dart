@@ -66,7 +66,9 @@ class FPCBasicBlurAppBar extends FPCPlatformAppBar {
     required TextStyle? style,
     required Widget? middle,
   }) {
-    if (middle != null) return middle;
+    if (middle != null) {
+      return middle;
+    }
 
     if (title != null) {
       final FPCConfig config = context.config;

@@ -19,11 +19,12 @@ ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showFPCSnackBar({
   Duration? duration,
 }) {
   final FPCConfig config = context.config;
+  final IFPCDuration durationConfig = config.duration;
   final IFPCHaptic haptic = config.haptic;
   final IFPCSize size = config.size;
 
   final ScaffoldMessengerState messengerState = ScaffoldMessenger.of(context);
-  final Duration methodDuration = duration ?? size.durationSnackbar;
+  final Duration durationMethod = duration ?? durationConfig.snackbar;
   final EdgeInsets methodPadding = padding ?? EdgeInsets.all(size.s16);
 
   messengerState.hideCurrentSnackBar();
@@ -36,7 +37,7 @@ ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showFPCSnackBar({
       backgroundColor: Colors.transparent,
       dismissDirection: DismissDirection.none,
       behavior: SnackBarBehavior.floating,
-      duration: methodDuration,
+      duration: durationMethod,
       margin: methodPadding,
       content: child,
     ),

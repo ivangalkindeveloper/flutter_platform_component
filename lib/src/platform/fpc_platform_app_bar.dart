@@ -27,14 +27,14 @@ class FPCPlatformAppBar extends StatelessWidget
   @override
   Size get preferredSize {
     final FPCConfig config = context.config;
-    final TargetPlatform platform = config.platform;
+    final FPCPlatform platform = config.platform;
     final IFPCSize size = config.size;
 
     final double additionalPreferredHeight = this.bottom != null
         ? (this.bottom!.preferredSize.height + size.s16 / 2)
         : 0;
 
-    return FPCPlatform.decompose<Size, Size, Size>(
+    return FPCPlatformUtil.decompose<Size, Size, Size>(
       platform: platform,
       cupertino: Size.fromHeight(
         kMinInteractiveDimensionCupertino + additionalPreferredHeight,
@@ -47,7 +47,7 @@ class FPCPlatformAppBar extends StatelessWidget
 
   @override
   Widget build(BuildContext context) {
-    return FPCPlatform.decomposeFromContext<Widget, Widget, Widget>(
+    return FPCPlatformUtil.decomposeFromContext<Widget, Widget, Widget>(
       context: context,
       cupertino: this.cupertino,
       material: this.material,

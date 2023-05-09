@@ -1,4 +1,6 @@
 abstract class IFPCHaptic {
+  const IFPCHaptic();
+
   void success();
 
   void warning();

@@ -7,7 +7,7 @@ import 'dart:ui';
 abstract class IFPCTheme {
   const IFPCTheme();
 
-  // System
+  // Framework
   abstract final CupertinoThemeData cupertinoThemeData;
   abstract final ThemeMode materialThemeMode;
   abstract final ThemeData materialThemeData;

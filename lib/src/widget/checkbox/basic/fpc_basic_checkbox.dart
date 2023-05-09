@@ -66,7 +66,9 @@ class _FPCBasicCheckboxCupertino extends StatelessWidget {
           Checkbox(
             value: this.value,
             onChanged: (bool? value) {
-              if (value == null || this.isDisabled) return;
+              if (value == null || this.isDisabled) {
+                return;
+              }
 
               this.onChanged(value);
             },
@@ -126,7 +128,9 @@ class _FPCBasicCheckboxMaterial extends StatelessWidget {
         Checkbox(
           value: this.value,
           onChanged: (bool? value) {
-            if (value == null || this.isDisabled) return;
+            if (value == null || this.isDisabled) {
+              return;
+            }
 
             this.onChanged(value);
           },

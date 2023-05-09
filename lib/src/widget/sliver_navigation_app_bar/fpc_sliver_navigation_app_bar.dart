@@ -68,7 +68,9 @@ class _FPCSliverNavigationAppBarCupertino extends StatelessWidget {
   Widget? _prefix({
     required BuildContext context,
   }) {
-    if (this.prefix != null) return this.prefix;
+    if (this.prefix != null) {
+      return this.prefix;
+    }
 
     if (this.onPressedBack != null) {
       final TextDirection textDirection = Directionality.of(context);
@@ -83,8 +85,8 @@ class _FPCSliverNavigationAppBarCupertino extends StatelessWidget {
           transformHitTests: false,
           child: FPCIcon.black(
             context: context,
-            icon:
-                FPCPlatform.decomposeFromContext<IconData, IconData, IconData>(
+            icon: FPCPlatformUtil.decomposeFromContext<IconData, IconData,
+                IconData>(
               context: context,
               cupertino: CupertinoIcons.back,
               material: Icons.arrow_back,
@@ -102,7 +104,9 @@ class _FPCSliverNavigationAppBarCupertino extends StatelessWidget {
     required IFPCTextStyle textStyle,
     required IFPCTheme theme,
   }) {
-    if (this.middle != null) return this.middle;
+    if (this.middle != null) {
+      return this.middle;
+    }
 
     if (this.title != null) {
       return Text(
@@ -175,7 +179,9 @@ class _FPCSliverNavigationAppBarMaterial extends StatelessWidget {
   Widget? _prefix({
     required BuildContext context,
   }) {
-    if (this.prefix != null) return this.prefix;
+    if (this.prefix != null) {
+      return this.prefix;
+    }
 
     if (this.onPressedBack != null) {
       final TextDirection textDirection = Directionality.of(context);
@@ -190,8 +196,8 @@ class _FPCSliverNavigationAppBarMaterial extends StatelessWidget {
           transformHitTests: false,
           child: FPCIcon.black(
             context: context,
-            icon:
-                FPCPlatform.decomposeFromContext<IconData, IconData, IconData>(
+            icon: FPCPlatformUtil.decomposeFromContext<IconData, IconData,
+                IconData>(
               context: context,
               cupertino: CupertinoIcons.back,
               material: Icons.arrow_back,
@@ -209,7 +215,9 @@ class _FPCSliverNavigationAppBarMaterial extends StatelessWidget {
     required IFPCTextStyle textStyle,
     required IFPCTheme theme,
   }) {
-    if (this.middle != null) return this.middle;
+    if (this.middle != null) {
+      return this.middle;
+    }
 
     if (this.title != null) {
       return Text(

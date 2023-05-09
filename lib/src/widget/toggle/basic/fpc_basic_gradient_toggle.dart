@@ -109,7 +109,9 @@ class _FPCBasicGradientToggleState<T> extends State<FPCBasicGradientToggle<T>> {
   }
 
   String? _validator(String? value) {
-    if (value == null || this.mounted == false) return null;
+    if (value == null || this.mounted == false) {
+      return null;
+    }
 
     // Required
     if (this.widget.isRequired && value.isEmpty) {
@@ -268,9 +270,13 @@ class _FPCGradientToggleButton<T> extends StatelessWidget {
     required BuildContext context,
     required IFPCTheme theme,
   }) {
-    if (this.isValidationError) return theme.dangerLightGradient;
+    if (this.isValidationError) {
+      return theme.dangerLightGradient;
+    }
 
-    if (this.isSelected) return this.selectedBackgroundGradient;
+    if (this.isSelected) {
+      return this.selectedBackgroundGradient;
+    }
 
     return this.unselectedBackgroundGradient ??
         FPCLinearGradient(
@@ -285,9 +291,13 @@ class _FPCGradientToggleButton<T> extends StatelessWidget {
   Gradient _internalGradient({
     required IFPCTheme theme,
   }) {
-    if (this.isValidationError) return theme.dangerGradient;
+    if (this.isValidationError) {
+      return theme.dangerGradient;
+    }
 
-    if (this.isSelected) return this.selectedInternalGradient;
+    if (this.isSelected) {
+      return this.selectedInternalGradient;
+    }
 
     return this.unselectedInternalGradient ?? theme.greyGradient;
   }
@@ -295,7 +305,9 @@ class _FPCGradientToggleButton<T> extends StatelessWidget {
   Color? _splashColor({
     required IFPCTheme theme,
   }) {
-    if (this.isSelected) return this.selectedSplashColor;
+    if (this.isSelected) {
+      return this.selectedSplashColor;
+    }
 
     return this.unselectedSplashColor ?? theme.backgroundComponent;
   }

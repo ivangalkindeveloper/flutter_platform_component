@@ -74,8 +74,9 @@ class _FPCDatePickerCupertino extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FPCConfig config = context.config;
+    final IFPCTimeOfDay timeOfDay = config.timeOfDay;
+    final IFPCDateTime dateTime = config.dateTime;
     final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
 
     final double height =
         this.cupertinoHeight ?? (MediaQuery.of(context).size.height / 4);
@@ -84,29 +85,29 @@ class _FPCDatePickerCupertino extends StatelessWidget {
           color: CupertinoDynamicColor.maybeResolve(theme.black, context),
         );
     final TimeOfDay timeOfDayMinimum =
-        timeOfDayRange?.timeOfDayMinimum ?? size.timeOfDayMinimum;
+        timeOfDayRange?.minimum ?? timeOfDay.minimum;
     final TimeOfDay timeOfDayInitial =
-        timeOfDayRange?.timeOfDayInitial ?? size.timeOfDayInitial;
+        timeOfDayRange?.initial ?? timeOfDay.initial;
     final TimeOfDay timeOfDayMaximum =
-        timeOfDayRange?.timeOfDayMaximum ?? size.timeOfDayMaximum;
+        timeOfDayRange?.maximum ?? timeOfDay.maximum;
     final DateTime dateTimeMinimum = DateTime(
-      size.dateTimeInitial.year,
-      size.dateTimeInitial.month,
-      size.dateTimeInitial.day,
+      dateTime.initial.year,
+      dateTime.initial.month,
+      dateTime.initial.day,
       timeOfDayMinimum.hour,
       timeOfDayMinimum.minute,
     );
     final DateTime dateTimeInitial = DateTime(
-      size.dateTimeInitial.year,
-      size.dateTimeInitial.month,
-      size.dateTimeInitial.day,
+      dateTime.initial.year,
+      dateTime.initial.month,
+      dateTime.initial.day,
       timeOfDayInitial.hour,
       timeOfDayInitial.minute,
     );
     final DateTime dateTimeMaximum = DateTime(
-      size.dateTimeInitial.year,
-      size.dateTimeInitial.month,
-      size.dateTimeInitial.day,
+      dateTime.initial.year,
+      dateTime.initial.month,
+      dateTime.initial.day,
       timeOfDayMaximum.hour,
       timeOfDayMaximum.minute,
     );

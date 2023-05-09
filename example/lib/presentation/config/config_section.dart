@@ -19,7 +19,7 @@ class ConfigSection extends StatelessWidget {
               child: FPCPrimaryLabelButton(
                 title: "iOS",
                 onPressed: () => config.changePlatform(
-                  platform: TargetPlatform.iOS,
+                  platform: FPCPlatform.iOS,
                 ),
               ),
             ),
@@ -28,7 +28,7 @@ class ConfigSection extends StatelessWidget {
               child: FPCPrimaryLabelButton(
                 title: "Android",
                 onPressed: () => config.changePlatform(
-                  platform: TargetPlatform.android,
+                  platform: FPCPlatform.Android,
                 ),
               ),
             ),
@@ -40,7 +40,7 @@ class ConfigSection extends StatelessWidget {
               child: FPCPrimaryLabelButton(
                 title: "Light Theme",
                 onPressed: () {
-                  final IFPCTheme theme = FPCDefaultTheme.defaultLightTheme;
+                  final IFPCTheme theme = FPCDefaultLightTheme();
                   SystemChrome.setSystemUIOverlayStyle(
                       theme.systemOverlayStyle);
                   config.changeTheme(theme: theme);
@@ -52,7 +52,7 @@ class ConfigSection extends StatelessWidget {
               child: FPCPrimaryLabelButton(
                 title: "Dark Theme",
                 onPressed: () {
-                  final IFPCTheme theme = FPCDefaultTheme.defaultDarkTheme;
+                  final IFPCTheme theme = FPCDefaultDarkTheme();
                   SystemChrome.setSystemUIOverlayStyle(
                       theme.systemOverlayStyle);
                   config.changeTheme(theme: theme);

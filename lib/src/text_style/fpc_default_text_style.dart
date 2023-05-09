@@ -1,25 +1,41 @@
 import 'package:flutter_platform_component/src/text_style/fpc_text_style.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCDefaultTextStyle implements IFPCTextStyle {
+class FPCDefaultTextStyle extends IFPCTextStyle {
   const FPCDefaultTextStyle({
     // FontWeight
-    required this.fontWeightThin,
-    required this.fontWeightRegular,
-    required this.fontWeightMedium,
-    required this.fontWeightSemiBold,
-    required this.fontWeightBold,
+    FontWeight? fontWeightThin,
+    FontWeight? fontWeightRegular,
+    FontWeight? fontWeightMedium,
+    FontWeight? fontWeightSemiBold,
+    FontWeight? fontWeightBold,
 
     // FontFamily
-    required this.fontFamilyThin,
-    required this.fontFamilyRegular,
-    required this.fontFamilyMedium,
-    required this.fontFamilySemiBold,
-    required this.fontFamilyBold,
+    String? fontFamilyThin,
+    String? fontFamilyRegular,
+    String? fontFamilyMedium,
+    String? fontFamilySemiBold,
+    String? fontFamilyBold,
 
     // Package
-    required this.package,
-  });
+    String? package,
+  })  :
+        // FontWeight
+        this.fontWeightThin = fontWeightThin ?? FontWeight.w300,
+        this.fontWeightRegular = fontWeightRegular ?? FontWeight.w400,
+        this.fontWeightMedium = fontWeightMedium ?? FontWeight.w600,
+        this.fontWeightSemiBold = fontWeightSemiBold ?? FontWeight.w700,
+        this.fontWeightBold = fontWeightBold ?? FontWeight.w800,
+
+        // FontFamily
+        this.fontFamilyThin = fontFamilyThin,
+        this.fontFamilyRegular = fontFamilyRegular,
+        this.fontFamilyMedium = fontFamilyMedium,
+        this.fontFamilySemiBold = fontFamilySemiBold,
+        this.fontFamilyBold = fontFamilyBold,
+
+        // Package
+        this.package = package;
 
   // FontWeight
   @override
@@ -85,24 +101,5 @@ class FPCDefaultTextStyle implements IFPCTextStyle {
 
         // Package
         package: package ?? this.package,
-      );
-
-  static FPCDefaultTextStyle get defaultTextStyle => FPCDefaultTextStyle(
-        // FontWeight
-        fontWeightThin: FontWeight.w300,
-        fontWeightRegular: FontWeight.w400,
-        fontWeightMedium: FontWeight.w600,
-        fontWeightSemiBold: FontWeight.w700,
-        fontWeightBold: FontWeight.w800,
-
-        // FontFamily
-        fontFamilyThin: null,
-        fontFamilyRegular: null,
-        fontFamilyMedium: null,
-        fontFamilySemiBold: null,
-        fontFamilyBold: null,
-
-        // Package
-        package: null,
       );
 }

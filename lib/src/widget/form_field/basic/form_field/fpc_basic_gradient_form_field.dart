@@ -214,7 +214,9 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
     // Handler
     this._textInputHandlerFormatter = FPCTextInputHandlerFormatter(
       onNewValue: (String value) {
-        if (this.mounted == false) return null;
+        if (this.mounted == false) {
+          return null;
+        }
 
         // Required
         if (this.widget.isRequired && value.isEmpty) {
@@ -286,7 +288,9 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
   }
 
   void _focusNodeListener() {
-    if (this.mounted == false) return;
+    if (this.mounted == false) {
+      return;
+    }
 
     setState(() {
       this._isAutoValidationError = false;
@@ -295,8 +299,9 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
   }
 
   Gradient _backgroundGradient() {
-    if (this._focusNode.hasPrimaryFocus)
+    if (this._focusNode.hasPrimaryFocus) {
       return this.widget.focusedBackgroundGradient;
+    }
 
     if (this._isValidationError || this._isAutoValidationError)
       return this._theme.dangerLightGradient;
@@ -312,8 +317,9 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
   }
 
   Color _labelColor() {
-    if (this._isValidationError || this._isAutoValidationError)
+    if (this._isValidationError || this._isAutoValidationError) {
       return this._theme.danger;
+    }
 
     if (this._focusNode.hasPrimaryFocus)
       return this.widget.labelColor ?? this.widget.focusedGradient.colors.first;
@@ -332,7 +338,9 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
   }
 
   String? _validator(String? value) {
-    if (value == null || this.mounted == false) return null;
+    if (value == null || this.mounted == false) {
+      return null;
+    }
 
     // Required
     if (this.widget.isRequired && value.isEmpty) {
@@ -364,9 +372,13 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
   }
 
   String _errorText() {
-    if (this._autoValidationText.isNotEmpty) return this._autoValidationText;
+    if (this._autoValidationText.isNotEmpty) {
+      return this._autoValidationText;
+    }
 
-    if (this._validationText.isNotEmpty) return this._validationText;
+    if (this._validationText.isNotEmpty) {
+      return this._validationText;
+    }
 
     return "";
   }

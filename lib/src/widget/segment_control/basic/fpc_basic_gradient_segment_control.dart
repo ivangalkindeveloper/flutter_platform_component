@@ -1,5 +1,5 @@
+import 'package:flutter_platform_component/src/widget/helper/fpc_custom_rounded_rectangle_border.dart';
 import 'package:flutter_platform_component/src/widget/helper/fpc_button_row_child.dart';
-import 'package:custom_rounded_rectangle_border/custom_rounded_rectangle_border.dart';
 import 'package:flutter_platform_component/src/widget/helper/fpc_field.dart';
 import 'package:flutter_platform_component/src/exception/fpc_exception.dart';
 import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
@@ -117,7 +117,9 @@ class _FPCBasicGradientSegmentControlState<T>
   }
 
   String? _validator(String? value) {
-    if (value == null || this.mounted == false) return null;
+    if (value == null || this.mounted == false) {
+      return null;
+    }
 
     // Required
     if (this.widget.isRequired && value.isEmpty) {
@@ -287,9 +289,13 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
   Gradient _backgroundGradient({
     required IFPCTheme theme,
   }) {
-    if (this.isValidationError) return theme.dangerLightGradient;
+    if (this.isValidationError) {
+      return theme.dangerLightGradient;
+    }
 
-    if (this.isSelected) return this.selectedBackgroundGradient;
+    if (this.isSelected) {
+      return this.selectedBackgroundGradient;
+    }
 
     if (this.unselectedBackgroundGradient != null)
       return this.unselectedBackgroundGradient!;
@@ -305,12 +311,17 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
   Gradient _borderGradient({
     required IFPCTheme theme,
   }) {
-    if (this.isValidationError) return theme.dangerGradient;
+    if (this.isValidationError) {
+      return theme.dangerGradient;
+    }
 
-    if (this.isSelected) return this.selectedBorderGradient;
+    if (this.isSelected) {
+      return this.selectedBorderGradient;
+    }
 
-    if (this.unselectedBorderGradient != null)
+    if (this.unselectedBorderGradient != null) {
       return this.unselectedBorderGradient!;
+    }
 
     return this.selectedBorderGradient;
   }
@@ -318,12 +329,17 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
   Gradient _internalGradient({
     required IFPCTheme theme,
   }) {
-    if (this.isValidationError) return theme.dangerGradient;
+    if (this.isValidationError) {
+      return theme.dangerGradient;
+    }
 
-    if (this.isSelected) return this.selectedInternalGradient;
+    if (this.isSelected) {
+      return this.selectedInternalGradient;
+    }
 
-    if (this.unselectedInternalGradient != null)
+    if (this.unselectedInternalGradient != null) {
       return this.unselectedInternalGradient!;
+    }
 
     return this.selectedBorderGradient;
   }
@@ -331,9 +347,13 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
   Color? _splashColor({
     required IFPCTheme theme,
   }) {
-    if (this.isSelected) return this.selectedSplashColor;
+    if (this.isSelected) {
+      return this.selectedSplashColor;
+    }
 
-    if (this.unselectedSplashColor != null) return this.unselectedSplashColor!;
+    if (this.unselectedSplashColor != null) {
+      return this.unselectedSplashColor!;
+    }
 
     return theme.whiteAlways;
   }
@@ -423,7 +443,7 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
                       gradient: borderGradient,
                       child: Container(
                         decoration: ShapeDecoration(
-                          shape: CustomRoundedRectangleBorder(
+                          shape: FPCCustomRoundedRectangleBorder(
                             topSide: BorderSide(
                               color: borderGradient.colors.first,
                               width: borderWidth,

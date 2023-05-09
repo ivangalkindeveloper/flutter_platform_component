@@ -13,7 +13,9 @@ class FPCComponentDisabledOverlay extends StatelessWidget {
   final BorderRadius? borderRadius;
 
   Color _color({required IFPCTheme theme}) {
-    if (this.color != null) return this.color!;
+    if (this.color != null) {
+      return this.color!;
+    }
 
     return theme.backgroundScaffold;
   }

@@ -1,5 +1,5 @@
+import 'package:flutter_platform_component/src/widget/helper/fpc_custom_rounded_rectangle_border.dart';
 import 'package:flutter_platform_component/src/widget/helper/fpc_button_row_child.dart';
-import 'package:custom_rounded_rectangle_border/custom_rounded_rectangle_border.dart';
 import 'package:flutter_platform_component/src/widget/helper/fpc_field.dart';
 import 'package:flutter_platform_component/src/exception/fpc_exception.dart';
 import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
@@ -116,7 +116,9 @@ class _FPCBasicSegmentControlState<T> extends State<FPCBasicSegmentControl<T>> {
   }
 
   String? _validator(String? value) {
-    if (value == null || this.mounted == false) return null;
+    if (value == null || this.mounted == false) {
+      return null;
+    }
 
     // Required
     if (this.widget.isRequired && value.isEmpty) {
@@ -284,12 +286,17 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
   Color _backgroundColor({
     required IFPCTheme theme,
   }) {
-    if (this.isValidationError) return theme.dangerLight;
+    if (this.isValidationError) {
+      return theme.dangerLight;
+    }
 
-    if (this.isSelected) return this.selectedBackgroundColor;
+    if (this.isSelected) {
+      return this.selectedBackgroundColor;
+    }
 
-    if (this.unselectedBackgroundColor != null)
+    if (this.unselectedBackgroundColor != null) {
       return this.unselectedBackgroundColor!;
+    }
 
     return Colors.transparent;
   }
@@ -297,11 +304,17 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
   Color _borderColor({
     required IFPCTheme theme,
   }) {
-    if (this.isValidationError) return theme.danger;
+    if (this.isValidationError) {
+      return theme.danger;
+    }
 
-    if (this.isSelected) return this.selectedBorderColor;
+    if (this.isSelected) {
+      return this.selectedBorderColor;
+    }
 
-    if (this.unselectedBorderColor != null) return this.unselectedBorderColor!;
+    if (this.unselectedBorderColor != null) {
+      return this.unselectedBorderColor!;
+    }
 
     return this.selectedBorderColor;
   }
@@ -309,12 +322,17 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
   Color _internalColor({
     required IFPCTheme theme,
   }) {
-    if (this.isValidationError) return theme.danger;
+    if (this.isValidationError) {
+      return theme.danger;
+    }
 
-    if (this.isSelected) return this.selectedInternalColor;
+    if (this.isSelected) {
+      return this.selectedInternalColor;
+    }
 
-    if (this.unselectedInternalColor != null)
+    if (this.unselectedInternalColor != null) {
       return this.unselectedInternalColor!;
+    }
 
     return this.selectedBorderColor;
   }
@@ -322,9 +340,13 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
   Color? _splashColor({
     required IFPCTheme theme,
   }) {
-    if (this.isSelected) return this.selectedSplashColor;
+    if (this.isSelected) {
+      return this.selectedSplashColor;
+    }
 
-    if (this.unselectedSplashColor != null) return this.unselectedSplashColor!;
+    if (this.unselectedSplashColor != null) {
+      return this.unselectedSplashColor!;
+    }
 
     return theme.whiteAlways;
   }
@@ -407,7 +429,7 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
               height: this.height,
               padding: padding,
               decoration: ShapeDecoration(
-                shape: CustomRoundedRectangleBorder(
+                shape: FPCCustomRoundedRectangleBorder(
                   topSide: BorderSide(
                     color: borderColor,
                     width: borderWidth,

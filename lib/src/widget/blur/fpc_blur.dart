@@ -20,7 +20,9 @@ class FPCBlur extends StatelessWidget {
   final Widget child;
 
   Color _color({required IFPCTheme theme}) {
-    if (this.color != null) return this.color!;
+    if (this.color != null) {
+      return this.color!;
+    }
 
     return theme.blur;
   }

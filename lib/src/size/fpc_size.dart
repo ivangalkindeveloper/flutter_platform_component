@@ -1,7 +1,5 @@
 import 'package:flutter/widgets.dart';
 
-import 'package:flutter/material.dart' show TimeOfDay;
-
 abstract class IFPCSize {
   const IFPCSize();
 
@@ -89,30 +87,6 @@ abstract class IFPCSize {
   // BorderWidth / Snackbar
   abstract final double borderWidthSnackbarCupertino;
   abstract final double borderWidthSnackbarMaterial;
-
-  // Picker
-  // Picker / DateTime
-  abstract final DateTime dateTimeMinimum;
-  abstract final DateTime dateTimeInitial;
-  abstract final DateTime dateTimeMaximum;
-  // Picker / TimeOfDay
-  abstract final TimeOfDay timeOfDayMinimum;
-  abstract final TimeOfDay timeOfDayInitial;
-  abstract final TimeOfDay timeOfDayMaximum;
-
-  // Duration
-  // Duration / Animation
-  abstract final Duration durationAnimationFast;
-  abstract final Duration durationAnimationDefault;
-  abstract final Duration durationAnimationSlow;
-  // Duration / Badge
-  abstract final Duration durationBadge;
-  // Duration / Page Indicator
-  abstract final Duration durationPageIndicator;
-  // Duration / Shimmer
-  abstract final Duration durationShimmer;
-  // Duration / Snackbar
-  abstract final Duration durationSnackbar;
 
   // Opacity
   // Opacity / Blur

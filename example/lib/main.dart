@@ -5,21 +5,23 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(
       FlutterPlatformComponent(
-        child: App(),
+        child: const App(),
       ),
     );
 
 class App extends StatelessWidget {
-  App({Key? key}) : super(key: key);
-
-  final INavigationService _navigationService = NavigationService();
+  const App({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final INavigationService navigationService = NavigationService();
+
     return FPCApp(
       context: context,
-      navigatorKey: _navigationService.navigatorKey,
-      onGenerateRoute: _navigationService.onGenerateRoute,
+      navigatorKey: navigationService.navigatorKey,
+      onGenerateRoute: navigationService.onGenerateRoute,
       onGenerateInitialRoutes: (String route) => [
         FPCRoute.pageRouteFromContext(
           context: context,

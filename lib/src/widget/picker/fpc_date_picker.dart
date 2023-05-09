@@ -74,8 +74,8 @@ class _FPCDatePickerCupertino extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FPCConfig config = context.config;
+    final IFPCDateTime dateTime = config.dateTime;
     final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
 
     final double height =
         this.cupertinoHeight ?? (MediaQuery.of(context).size.height / 4);
@@ -83,12 +83,9 @@ class _FPCDatePickerCupertino extends StatelessWidget {
         theme.cupertinoThemeData.textTheme.pickerTextStyle.copyWith(
           color: CupertinoDynamicColor.maybeResolve(theme.black, context),
         );
-    final DateTime dateTimeMinimum =
-        dateTimeRange?.dateTimeMinimum ?? size.dateTimeMinimum;
-    final DateTime dateTimeInitial =
-        dateTimeRange?.dateTimeInitial ?? size.dateTimeInitial;
-    final DateTime dateTimeMaximum =
-        dateTimeRange?.dateTimeMaximum ?? size.dateTimeMaximum;
+    final DateTime dateTimeMinimum = dateTimeRange?.minimum ?? dateTime.minimum;
+    final DateTime dateTimeInitial = dateTimeRange?.initial ?? dateTime.initial;
+    final DateTime dateTimeMaximum = dateTimeRange?.maximum ?? dateTime.maximum;
     void Function(DateTime)? onChanged =
         this.cupertinoOnChanged ?? (DateTime value) {};
 

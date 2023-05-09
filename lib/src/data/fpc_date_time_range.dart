@@ -4,17 +4,14 @@ import 'package:flutter/widgets.dart';
 class FPCDateTimeRange {
   FPCDateTimeRange({
     required BuildContext context,
-    DateTime? dateMinimum,
-    DateTime? dateInitial,
-    DateTime? dateMaximum,
-  })  : this.dateTimeMinimum =
-            dateMinimum ?? context.config.size.dateTimeMinimum,
-        this.dateTimeInitial =
-            dateInitial ?? context.config.size.dateTimeInitial,
-        this.dateTimeMaximum =
-            dateMaximum ?? context.config.size.dateTimeMaximum;
+    DateTime? minimum,
+    DateTime? initial,
+    DateTime? maximum,
+  })  : this.minimum = minimum ?? context.config.dateTime.minimum,
+        this.initial = initial ?? context.config.dateTime.initial,
+        this.maximum = maximum ?? context.config.dateTime.maximum;
 
-  final DateTime dateTimeMinimum;
-  final DateTime dateTimeInitial;
-  final DateTime dateTimeMaximum;
+  final DateTime minimum;
+  final DateTime initial;
+  final DateTime maximum;
 }

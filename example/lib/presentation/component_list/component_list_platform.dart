@@ -7,7 +7,7 @@ class ConfigListPlatform extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FPCConfig config = FPCConfig.of(context);
-    final TargetPlatform platform = config.platform;
+    final FPCPlatform platform = config.platform;
     final IFPCSize size = config.size;
 
     return Row(

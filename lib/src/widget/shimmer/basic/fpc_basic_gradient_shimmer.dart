@@ -33,7 +33,7 @@ class FPCBasicGradientShimmer extends StatefulWidget {
 class _FPCBasicGradientShimmerState extends State<FPCBasicGradientShimmer>
     with FPCDidInitMixin<FPCBasicGradientShimmer> {
   late FPCConfig _config;
-  late IFPCSize _size;
+  late IFPCDuration _duration;
 
   bool _isHighlight = true;
 
@@ -43,7 +43,7 @@ class _FPCBasicGradientShimmerState extends State<FPCBasicGradientShimmer>
   @override
   void didChangeDependencies() {
     this._config = context.config;
-    this._size = this._config.size;
+    this._duration = this._config.duration;
     super.didChangeDependencies();
   }
 
@@ -51,7 +51,7 @@ class _FPCBasicGradientShimmerState extends State<FPCBasicGradientShimmer>
   void didInitState() {
     // Subscription
     this._highlightSubscription = Stream.periodic(
-        this.widget.duration ?? this._size.durationShimmer,
+        this.widget.duration ?? this._duration.shimmer,
         (int second) =>
             second % 2 == 0).listen(
         (bool isHighLight) => setState(() => this._isHighlight = isHighLight));
@@ -64,7 +64,7 @@ class _FPCBasicGradientShimmerState extends State<FPCBasicGradientShimmer>
     if (this.widget.duration != oldWidget.duration) {
       await this._highlightSubscription.cancel();
       this._highlightSubscription = Stream.periodic(
-              this.widget.duration ?? this._size.durationShimmer,
+              this.widget.duration ?? this._duration.shimmer,
               (int second) => second % 2 == 0)
           .listen((bool isHighLight) =>
               setState(() => this._isHighlight = isHighLight));

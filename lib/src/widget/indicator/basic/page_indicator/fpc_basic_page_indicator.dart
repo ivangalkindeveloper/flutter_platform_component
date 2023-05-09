@@ -45,10 +45,11 @@ class FPCBasicPageIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FPCConfig config = context.config;
+    final IFPCDuration duration = config.duration;
     final IFPCSize size = config.size;
 
     final double height = this.height ?? size.s16 / 2;
-    final Duration duration = this.duration ?? size.durationPageIndicator;
+    final Duration durationBuild = this.duration ?? duration.pageIndicator;
 
     return Row(
       mainAxisSize: MainAxisSize.min,
@@ -70,7 +71,7 @@ class FPCBasicPageIndicator extends StatelessWidget {
                     index: index,
                   ),
                 ),
-                duration: duration,
+                duration: durationBuild,
                 curve: Curves.easeInOut,
                 child: const SizedBox(),
               ),

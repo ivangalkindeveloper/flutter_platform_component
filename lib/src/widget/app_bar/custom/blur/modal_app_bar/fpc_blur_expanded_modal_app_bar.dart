@@ -42,7 +42,9 @@ class FPCBlurExpandedModalAppBar extends FPCBasicBlurAppBar {
     required String? cupertinoLocale,
     required VoidCallback? onPressedBack,
   }) {
-    if (prefix != null) return prefix;
+    if (prefix != null) {
+      return prefix;
+    }
 
     if (cupertinoLocale != null && onPressedBack != null)
       return FPCExpandedModalCloseButton(

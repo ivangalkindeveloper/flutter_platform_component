@@ -21,11 +21,12 @@ class FPCAnimatedFastFadeOutDown extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FPCConfig config = context.config;
+    final IFPCDuration duration = config.duration;
     final IFPCSize size = config.size;
 
     return FadeOutDown(
       child: child,
-      duration: size.durationAnimationFast,
+      duration: duration.animationFast,
       controller: this.onCreated,
       animate: this.isAnimate,
       from: this.from ?? size.s16 * 4,

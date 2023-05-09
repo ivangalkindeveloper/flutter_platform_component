@@ -19,11 +19,11 @@ class FPCAnimatedFadeOut extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FPCConfig config = context.config;
-    final IFPCSize size = config.size;
+    final IFPCDuration duration = config.duration;
 
     return FadeOut(
       child: child,
-      duration: size.durationAnimationDefault,
+      duration: duration.animationDefault,
       controller: this.onCreated,
       animate: this.isAnimate,
     );

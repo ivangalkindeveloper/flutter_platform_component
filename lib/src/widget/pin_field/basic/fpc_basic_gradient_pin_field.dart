@@ -52,6 +52,7 @@ class FPCBasicGradientPINField extends StatefulWidget {
 class _FPCBasicGradientPINFieldState extends State<FPCBasicGradientPINField>
     with TickerProviderStateMixin, FPCDidInitMixin<FPCBasicGradientPINField> {
   late FPCConfig _config;
+  late IFPCDuration _duration;
   late IFPCHaptic _haptic;
   late IFPCTheme _theme;
   late IFPCSize _size;
@@ -67,6 +68,7 @@ class _FPCBasicGradientPINFieldState extends State<FPCBasicGradientPINField>
   @override
   void didChangeDependencies() {
     this._config = context.config;
+    this._duration = this._config.duration;
     this._haptic = this._config.haptic;
     this._theme = this._config.theme;
     this._size = this._config.size;
@@ -80,14 +82,16 @@ class _FPCBasicGradientPINFieldState extends State<FPCBasicGradientPINField>
         this.widget.controller ?? TextEditingController();
     this._animationController = AnimationController(
       vsync: this,
-      duration: this._size.durationAnimationSlow,
+      duration: this._duration.animationSlow,
     );
     this._animationController.addStatusListener(this._controllerListener);
 
     // Error
     this._errorSubscription =
         this.widget.errorController?.stream.listen((bool isError) {
-      if (this.mounted == false) return;
+      if (this.mounted == false) {
+        return;
+      }
 
       if (isError == false) {
         setState(() => this._isError = false);
@@ -96,7 +100,7 @@ class _FPCBasicGradientPINFieldState extends State<FPCBasicGradientPINField>
 
       setState(() => this._isError = true);
       this._animationController.forward();
-      Future.delayed(this._size.durationAnimationDefault, () {
+      Future.delayed(this._duration.animationDefault, () {
         this._haptic.error();
         this._textEditingController.clear();
         this.widget.errorController?.add(false);
@@ -111,12 +115,11 @@ class _FPCBasicGradientPINFieldState extends State<FPCBasicGradientPINField>
     if (this.widget.controller != null &&
         this._textEditingController != this.widget.controller)
       this._textEditingController = this.widget.controller!;
-    if (this._animationController.duration !=
-        this._size.durationAnimationSlow) {
+    if (this._animationController.duration != this._duration.animationSlow) {
       this._animationController.removeStatusListener(this._controllerListener);
       this._animationController = AnimationController(
         vsync: this,
-        duration: this._size.durationAnimationSlow,
+        duration: this._duration.animationSlow,
       );
       this._animationController.addStatusListener(this._controllerListener);
     }
@@ -196,7 +199,7 @@ class _FPCBasicGradientPINFieldState extends State<FPCBasicGradientPINField>
               controller: this._textEditingController,
               focusNode: this.widget.focusNode,
               pinAnimationType: PinAnimationType.fade,
-              animationDuration: this._size.durationAnimationFast,
+              animationDuration: this._duration.animationFast,
               animationCurve: Curves.easeInOut,
               defaultPinTheme: this._item(
                 backgroundGradient: this.widget.unfocusedBackgroundGradient,

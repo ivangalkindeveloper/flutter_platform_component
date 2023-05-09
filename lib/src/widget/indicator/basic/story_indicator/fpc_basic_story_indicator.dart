@@ -19,9 +19,13 @@ class FPCBasicStoryIndicator extends StatelessWidget {
   final double value;
 
   double _value({required int index}) {
-    if (index < this.index) return 1;
+    if (index < this.index) {
+      return 1;
+    }
 
-    if (index == this.index) return this.value;
+    if (index == this.index) {
+      return this.value;
+    }
 
     return 0;
   }

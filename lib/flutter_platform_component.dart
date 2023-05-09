@@ -1,6 +1,6 @@
-// 📱 Ready-made component base using ready-made abstractions
-// for quick use and decomposed by platform.
-// Check README: https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/README.md
+//  📱 Ready-made inherited component base using ready-made abstractions
+//  for quick use and decomposed by platform.
+//  Check README: https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/README.md
 
 library flutter_platform_component;
 
@@ -24,6 +24,14 @@ export 'src/data/fpc_sliding_segment_control_item.dart';
 export 'src/data/fpc_time_of_day_range.dart';
 export 'src/data/fpc_toggle_item.dart';
 
+// DateTime
+export 'src/date_time/fpc_dafault_date_time.dart';
+export 'src/date_time/fpc_date_time.dart';
+
+// Duration
+export 'src/duration/fpc_default_duration.dart';
+export 'src/duration/fpc_duration.dart';
+
 // Enum
 export 'src/enum/fpc_enum.dart';
 
@@ -36,8 +44,8 @@ export 'src/mixin/fpc_mixin.dart';
 
 // Platform
 export 'src/platform/fpc_platform_app_bar.dart';
+export 'src/platform/fpc_platform_util.dart';
 export 'src/platform/fpc_platform_widget.dart';
-export 'src/platform/fpc_platform.dart';
 
 // Size
 export 'src/size/fpc_default_size.dart';
@@ -48,8 +56,13 @@ export 'src/text_style/fpc_default_text_style.dart';
 export 'src/text_style/fpc_text_style.dart';
 
 // Theme
-export 'src/theme/fpc_default_theme.dart';
+export 'src/theme/fpc_default_dark_theme.dart';
+export 'src/theme/fpc_default_light_theme.dart';
 export 'src/theme/fpc_theme.dart';
+
+// TimeOfDay
+export 'src/time_of_day/fpc_default_time_of_day.dart';
+export 'src/time_of_day/fpc_time_of_day.dart';
 
 // Animation
 // Animation / Default

@@ -1,125 +1,215 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:flutter/material.dart' show TimeOfDay;
-
 class FPCDefaultSize implements IFPCSize {
   const FPCDefaultSize({
     // Size
-    required this.s10,
-    required this.s12,
-    required this.s14,
-    required this.s16,
-    required this.s18,
-    required this.s20,
-    required this.s28,
-    required this.s32,
+    double? s10,
+    double? s12,
+    double? s14,
+    double? s16,
+    double? s18,
+    double? s20,
+    double? s28,
+    double? s32,
 
     // Padding
     // Padding / Padding
-    required this.paddingDefault,
+    EdgeInsets? paddingDefault,
     // Padding / Card
-    required this.paddingCard,
+    EdgeInsets? paddingCard,
     // Padding / List View
-    required this.paddingListView,
+    EdgeInsets? paddingListView,
 
     // Height
     // Height / Button
-    required this.heightButton,
+    double? heightButton,
     // Height / Code Field
-    required this.heightCodeField,
+    double? heightCodeField,
     // Height / Form Field
-    required this.heightFormField,
+    double? heightFormField,
     // Height / Keyboard Button
-    required this.heightKeyboardButton,
+    double? heightKeyboardButton,
     // Height / Segment Control
-    required this.heightSegmentControl,
+    double? heightSegmentControl,
     // Height / Sliding Segment Control
-    required this.heightSlidingSegmentControl,
+    double? heightSlidingSegmentControl,
     // Height / Toggle
-    required this.heightToggle,
+    double? heightToggle,
     // Height / Icon
-    required this.heightIconSmall,
-    required this.heightIconDefault,
-    required this.heightIconLarge,
+    double? heightIconSmall,
+    double? heightIconDefault,
+    double? heightIconLarge,
     // Height / Indicator
-    required this.heightIndicatorSmall,
-    required this.heightIndicatorDefault,
-    required this.heightIndicatorLarge,
+    double? heightIndicatorSmall,
+    double? heightIndicatorDefault,
+    double? heightIndicatorLarge,
 
     // BorderRadius
     // BorderRadius / Button
-    required this.borderRadiusButtonCupertino,
-    required this.borderRadiusButtonMaterial,
+    BorderRadius? borderRadiusButtonCupertino,
+    BorderRadius? borderRadiusButtonMaterial,
     // BorderRadius / Card
-    required this.borderRadiusCardCupertino,
-    required this.borderRadiusCardMaterial,
+    BorderRadius? borderRadiusCardCupertino,
+    BorderRadius? borderRadiusCardMaterial,
     // BorderRadius / Dialog
-    required this.borderRadiusDialogCupertino,
-    required this.borderRadiusDialogMaterial,
+    BorderRadius? borderRadiusDialogCupertino,
+    BorderRadius? borderRadiusDialogMaterial,
     // BorderRadius / Field
-    required this.borderRadiusFieldCupertino,
-    required this.borderRadiusFieldMaterial,
+    BorderRadius? borderRadiusFieldCupertino,
+    BorderRadius? borderRadiusFieldMaterial,
     // BorderRadius / Modal
-    required this.borderRadiusModalCupertino,
-    required this.borderRadiusModalMaterial,
+    BorderRadius? borderRadiusModalCupertino,
+    BorderRadius? borderRadiusModalMaterial,
     // BorderRadius / Segment Control
-    required this.borderRadiusSegmentControlCupertino,
-    required this.borderRadiusSegmentControlMaterial,
+    BorderRadius? borderRadiusSegmentControlCupertino,
+    BorderRadius? borderRadiusSegmentControlMaterial,
     // BorderRadius / Snackbar
-    required this.borderRadiusSnackbarCupertino,
-    required this.borderRadiusSnackbarMaterial,
+    BorderRadius? borderRadiusSnackbarCupertino,
+    BorderRadius? borderRadiusSnackbarMaterial,
     // BorderRadius / Toggle
-    required this.borderRadiusToggleCupertino,
-    required this.borderRadiusToggleMaterial,
+    BorderRadius? borderRadiusToggleCupertino,
+    BorderRadius? borderRadiusToggleMaterial,
 
     // BorderWidth
     // BorderWidth / Button
-    required this.borderWidthButtonCupertino,
-    required this.borderWidthButtonMaterial,
+    double? borderWidthButtonCupertino,
+    double? borderWidthButtonMaterial,
     // BorderWidth / Card
-    required this.borderWidthCardCupertino,
-    required this.borderWidthCardMaterial,
+    double? borderWidthCardCupertino,
+    double? borderWidthCardMaterial,
     // BorderWidth / Field
-    required this.borderWidthFieldCupertino,
-    required this.borderWidthFieldMaterial,
+    double? borderWidthFieldCupertino,
+    double? borderWidthFieldMaterial,
     // BorderWidth / Segment Control
-    required this.borderWidthSegmentControlCupertino,
-    required this.borderWidthSegmentControlMaterial,
+    double? borderWidthSegmentControlCupertino,
+    double? borderWidthSegmentControlMaterial,
     // BorderWidth / Snackbar
-    required this.borderWidthSnackbarCupertino,
-    required this.borderWidthSnackbarMaterial,
-
-    // Picker
-    // Picker / DateTime
-    required this.dateTimeMinimum,
-    required this.dateTimeInitial,
-    required this.dateTimeMaximum,
-    // Picker / TimeOfDay
-    required this.timeOfDayMinimum,
-    required this.timeOfDayInitial,
-    required this.timeOfDayMaximum,
-
-    // Duration
-    // Duration / Default
-    required this.durationAnimationFast,
-    required this.durationAnimationDefault,
-    required this.durationAnimationSlow,
-    // Duration / Badge
-    required this.durationBadge,
-    // Duration / Page Indicator
-    required this.durationPageIndicator,
-    // Duration / Shimmer
-    required this.durationShimmer,
-    // Duration / Snackbar
-    required this.durationSnackbar,
+    double? borderWidthSnackbarCupertino,
+    double? borderWidthSnackbarMaterial,
 
     // Opacity
     // Opacity / Blur
-    required this.opacityBlur,
+    double? opacityBlur,
     // Opacity / Disabled
-    required this.opacityDisabled,
-  });
+    double? opacityDisabled,
+  })  :
+        // Size
+        this.s10 = s10 ?? 10,
+        this.s12 = s12 ?? 12,
+        this.s14 = s14 ?? 14,
+        this.s16 = s16 ?? 16,
+        this.s18 = s18 ?? 18,
+        this.s20 = s20 ?? 20,
+        this.s28 = s28 ?? 28,
+        this.s32 = s32 ?? 32,
+
+        // Padding
+        // Padding / Padding
+        this.paddingDefault = paddingDefault ?? const EdgeInsets.all(16),
+        // Padding / Card
+        this.paddingCard = paddingCard ?? const EdgeInsets.all(16),
+        // Padding / List View
+        this.paddingListView = paddingListView ??
+            const EdgeInsets.only(
+              top: 16,
+              left: 16,
+              right: 16,
+              bottom: 96,
+            ),
+
+        // Height
+        // Height / Button
+        this.heightButton = heightButton ?? 48,
+        // Height / Code Field
+        this.heightCodeField = heightCodeField ?? 48,
+        // Height / Form Field
+        this.heightFormField = heightFormField ?? 48,
+        // Height / Keyboard Button
+        this.heightKeyboardButton = heightKeyboardButton ?? 72,
+        // Height / Segment Control
+        this.heightSegmentControl = heightSegmentControl ?? 36,
+        // Height / Sliding Segment Control
+        this.heightSlidingSegmentControl = heightSlidingSegmentControl ?? 36,
+        // Height / Toggle
+        this.heightToggle = heightToggle ?? 36,
+        // Height / Icon
+        this.heightIconSmall = heightIconSmall ?? 16,
+        this.heightIconDefault = heightIconDefault ?? 24,
+        this.heightIconLarge = heightIconLarge ?? 32,
+        // Height / Indicator
+        this.heightIndicatorSmall = heightIndicatorSmall ?? 16,
+        this.heightIndicatorDefault = heightIndicatorDefault ?? 24,
+        this.heightIndicatorLarge = heightIndicatorLarge ?? 32,
+
+        // BorderRadius
+        // BorderRadius / Button
+        this.borderRadiusButtonCupertino = borderRadiusButtonCupertino ??
+            const BorderRadius.all(Radius.circular(8)),
+        this.borderRadiusButtonMaterial = borderRadiusButtonMaterial ??
+            const BorderRadius.all(Radius.circular(4)),
+        // BorderRadius / Card
+        this.borderRadiusCardCupertino = borderRadiusCardCupertino ??
+            const BorderRadius.all(Radius.circular(8)),
+        this.borderRadiusCardMaterial = borderRadiusCardMaterial ??
+            const BorderRadius.all(Radius.circular(4)),
+        // BorderRadius / Dialog
+        this.borderRadiusDialogCupertino = borderRadiusDialogCupertino ??
+            const BorderRadius.all(Radius.circular(8)),
+        this.borderRadiusDialogMaterial = borderRadiusDialogMaterial ??
+            const BorderRadius.all(Radius.circular(16)),
+        // BorderRadius / Field
+        this.borderRadiusFieldCupertino = borderRadiusFieldCupertino ??
+            const BorderRadius.all(Radius.circular(8)),
+        this.borderRadiusFieldMaterial = borderRadiusFieldMaterial ??
+            const BorderRadius.all(Radius.circular(4)),
+        // BorderRadius / Modal
+        this.borderRadiusModalCupertino = borderRadiusModalCupertino ??
+            const BorderRadius.all(Radius.circular(12)),
+        this.borderRadiusModalMaterial = borderRadiusModalMaterial ??
+            const BorderRadius.all(Radius.circular(16)),
+        // BorderRadius / Segment Control
+        this.borderRadiusSegmentControlCupertino =
+            borderRadiusSegmentControlCupertino ??
+                const BorderRadius.all(Radius.circular(16)),
+        this.borderRadiusSegmentControlMaterial =
+            borderRadiusSegmentControlMaterial ??
+                const BorderRadius.all(Radius.circular(16)),
+        // BorderRadius / Snackbar
+        this.borderRadiusSnackbarCupertino = borderRadiusSnackbarCupertino ??
+            const BorderRadius.all(Radius.circular(8)),
+        this.borderRadiusSnackbarMaterial = borderRadiusSnackbarMaterial ??
+            const BorderRadius.all(Radius.circular(4)),
+        // BorderRadius / Toggle
+        this.borderRadiusToggleCupertino = borderRadiusToggleCupertino ??
+            const BorderRadius.all(Radius.circular(8)),
+        this.borderRadiusToggleMaterial = borderRadiusToggleMaterial ??
+            const BorderRadius.all(Radius.circular(4)),
+
+        // BorderWidth
+        // BorderWidth / Button
+        this.borderWidthButtonCupertino = borderWidthButtonCupertino ?? 1,
+        this.borderWidthButtonMaterial = borderWidthButtonMaterial ?? 1,
+        // BorderWidth / Card
+        this.borderWidthCardCupertino = borderWidthCardCupertino ?? 1,
+        this.borderWidthCardMaterial = borderWidthCardMaterial ?? 1,
+        // BorderWidth / Field
+        this.borderWidthFieldCupertino = borderWidthFieldCupertino ?? 1,
+        this.borderWidthFieldMaterial = borderWidthFieldMaterial ?? 1,
+        // BorderWidth / Segment Control
+        this.borderWidthSegmentControlCupertino =
+            borderWidthSegmentControlCupertino ?? 1,
+        this.borderWidthSegmentControlMaterial =
+            borderWidthSegmentControlMaterial ?? 1,
+        // BorderWidth / Snackbar
+        this.borderWidthSnackbarCupertino = borderWidthSnackbarCupertino ?? 1,
+        this.borderWidthSnackbarMaterial = borderWidthSnackbarMaterial ?? 1,
+
+        // Opacity
+        // Opacity / Blur
+        this.opacityBlur = opacityBlur ?? 0.6,
+        // Opacity / Disabled
+        this.opacityDisabled = opacityDisabled ?? 0.6;
 
   // Size
   @override
@@ -256,43 +346,6 @@ class FPCDefaultSize implements IFPCSize {
   @override
   final double borderWidthSnackbarMaterial;
 
-  // Picker
-  // Picker / DateTime
-  @override
-  final DateTime dateTimeMinimum;
-  @override
-  final DateTime dateTimeInitial;
-  @override
-  final DateTime dateTimeMaximum;
-  // Picker / TimeOfDay
-  @override
-  final TimeOfDay timeOfDayMinimum;
-  @override
-  final TimeOfDay timeOfDayInitial;
-  @override
-  final TimeOfDay timeOfDayMaximum;
-
-  // Duration
-  // Duration / Animation
-  @override
-  final Duration durationAnimationFast;
-  @override
-  final Duration durationAnimationDefault;
-  @override
-  final Duration durationAnimationSlow;
-  // Duration / Badge
-  @override
-  final Duration durationBadge;
-  // Duration / Page Indicator
-  @override
-  final Duration durationPageIndicator;
-  // Duration / Shimmer
-  @override
-  final Duration durationShimmer;
-  // Duration / Snackbar
-  @override
-  final Duration durationSnackbar;
-
   // Opacity
   // Opacity / Blur
   @override
@@ -386,30 +439,6 @@ class FPCDefaultSize implements IFPCSize {
     // BorderWidth / Snackbar
     double? borderWidthSnackbarCupertino,
     double? borderWidthSnackbarMaterial,
-
-    // Picker
-    // Picker / DateTime
-    DateTime? dateTimeMinimum,
-    DateTime? dateTimeInitial,
-    DateTime? dateTimeMaximum,
-    // Picker / TimeOfDay
-    TimeOfDay? timeOfDayMinimum,
-    TimeOfDay? timeOfDayInitial,
-    TimeOfDay? timeOfDayMaximum,
-
-    // Duration
-    // Duration / Default
-    Duration? durationAnimationFast,
-    Duration? durationAnimationDefault,
-    Duration? durationAnimationSlow,
-    // Duration / Badge
-    Duration? durationBadge,
-    // Duration / Page Indicator
-    Duration? durationPageIndicator,
-    // Duration / Shimmer
-    Duration? durationShimmer,
-    // Duration / Snackbar
-    Duration? durationSnackbar,
 
     // Opacity
     // Opacity / Blur
@@ -534,160 +563,10 @@ class FPCDefaultSize implements IFPCSize {
         borderWidthSnackbarMaterial:
             borderWidthSnackbarMaterial ?? this.borderWidthSnackbarMaterial,
 
-        // Picker
-        // Picker / DateTime
-        dateTimeMinimum: dateTimeMinimum ?? this.dateTimeMinimum,
-        dateTimeInitial: dateTimeInitial ?? this.dateTimeInitial,
-        dateTimeMaximum: dateTimeMaximum ?? this.dateTimeMaximum,
-        // Picker / TimeOfDay
-        timeOfDayMinimum: timeOfDayMinimum ?? this.timeOfDayMinimum,
-        timeOfDayInitial: timeOfDayInitial ?? this.timeOfDayInitial,
-        timeOfDayMaximum: timeOfDayMaximum ?? this.timeOfDayMaximum,
-
-        // Duration
-        // Duration / Default
-        durationAnimationFast:
-            durationAnimationFast ?? this.durationAnimationFast,
-        durationAnimationDefault:
-            durationAnimationDefault ?? this.durationAnimationDefault,
-        durationAnimationSlow:
-            durationAnimationSlow ?? this.durationAnimationSlow,
-        // Duration / Badge
-        durationBadge: durationBadge ?? this.durationBadge,
-        // Duration / Page Indicator
-        durationPageIndicator:
-            durationPageIndicator ?? this.durationPageIndicator,
-        // Duration / Shimmer
-        durationShimmer: durationShimmer ?? this.durationShimmer,
-        // Duration / Snackbar
-        durationSnackbar: durationSnackbar ?? this.durationSnackbar,
-
         // Opacity
         // Opacity / Blur
         opacityBlur: opacityBlur ?? this.opacityBlur,
         // Opacity / Disabled
         opacityDisabled: opacityDisabled ?? this.opacityDisabled,
-      );
-
-  static FPCDefaultSize get defaultSize => FPCDefaultSize(
-        // Size
-        s10: 10,
-        s12: 12,
-        s14: 14,
-        s16: 16,
-        s18: 18,
-        s20: 20,
-        s28: 28,
-        s32: 32,
-
-        // Padding
-        // Padding / Padding
-        paddingDefault: const EdgeInsets.all(16),
-        // Padding / Card
-        paddingCard: const EdgeInsets.all(16),
-        // Padding / List View
-        paddingListView: const EdgeInsets.only(
-          top: 16,
-          left: 16,
-          right: 16,
-          bottom: 96,
-        ),
-
-        // Height
-        // Height / Button
-        heightButton: 48,
-        // Height / Code Field
-        heightCodeField: 48,
-        // Height / Form Field
-        heightFormField: 48,
-        // Height / Keyboard Button
-        heightKeyboardButton: 72,
-        // Height / Segment Control
-        heightSegmentControl: 36,
-        // Height / Sliding Segment Control
-        heightSlidingSegmentControl: 36,
-        // Height / Toggle
-        heightToggle: 36,
-        // Height / Icon
-        heightIconSmall: 16,
-        heightIconDefault: 24,
-        heightIconLarge: 32,
-        // Height / Indicator
-        heightIndicatorSmall: 16,
-        heightIndicatorDefault: 24,
-        heightIndicatorLarge: 32,
-
-        // BorderRadius
-        // BorderRadius / Button
-        borderRadiusButtonCupertino: BorderRadius.circular(8),
-        borderRadiusButtonMaterial: BorderRadius.circular(4),
-        // BorderRadius / Card
-        borderRadiusCardCupertino: BorderRadius.circular(8),
-        borderRadiusCardMaterial: BorderRadius.circular(4),
-        // BorderRadius / Dialog
-        borderRadiusDialogCupertino: BorderRadius.circular(8),
-        borderRadiusDialogMaterial: BorderRadius.circular(16),
-        // BorderRadius / Field
-        borderRadiusFieldCupertino: BorderRadius.circular(8),
-        borderRadiusFieldMaterial: BorderRadius.circular(4),
-        // BorderRadius / Modal
-        borderRadiusModalCupertino: BorderRadius.circular(12),
-        borderRadiusModalMaterial: BorderRadius.circular(16),
-        // BorderRadius / Segment Control
-        borderRadiusSegmentControlCupertino: BorderRadius.circular(16),
-        borderRadiusSegmentControlMaterial: BorderRadius.circular(16),
-        // BorderRadius / Snackbar
-        borderRadiusSnackbarCupertino: BorderRadius.circular(8),
-        borderRadiusSnackbarMaterial: BorderRadius.circular(4),
-        // BorderRadius / Toggle
-        borderRadiusToggleCupertino: BorderRadius.circular(8),
-        borderRadiusToggleMaterial: BorderRadius.circular(4),
-
-        // BorderWidth
-        // BorderWidth / Button
-        borderWidthButtonCupertino: 1,
-        borderWidthButtonMaterial: 1,
-        // BorderWidth / Card
-        borderWidthCardCupertino: 1,
-        borderWidthCardMaterial: 1,
-        // BorderWidth / Field
-        borderWidthFieldCupertino: 1,
-        borderWidthFieldMaterial: 1,
-        // BorderWidth / Segment Control
-        borderWidthSegmentControlCupertino: 1,
-        borderWidthSegmentControlMaterial: 1,
-        // BorderWidth / Snackbar
-        borderWidthSnackbarCupertino: 1,
-        borderWidthSnackbarMaterial: 1,
-
-        // Picker
-        // Picker / DateTime
-        dateTimeMinimum: DateTime(1900, 1, 1, 12, 00),
-        dateTimeInitial: DateTime(2000, 1, 1, 12, 00),
-        dateTimeMaximum: DateTime(2100, 1, 1, 12, 00),
-        // Picker / TimeOfDay
-        timeOfDayMinimum: TimeOfDay(hour: 00, minute: 00),
-        timeOfDayInitial: TimeOfDay(hour: 12, minute: 00),
-        timeOfDayMaximum: TimeOfDay(hour: 24, minute: 00),
-
-        // Duration
-        // Duration / Animation
-        durationAnimationFast: const Duration(milliseconds: 160),
-        durationAnimationDefault: const Duration(milliseconds: 320),
-        durationAnimationSlow: const Duration(milliseconds: 640),
-        // Duration / Badge
-        durationBadge: const Duration(milliseconds: 320),
-        // Duration / Page Indicator
-        durationPageIndicator: const Duration(milliseconds: 320),
-        // Duration / Shimmer
-        durationShimmer: const Duration(seconds: 1),
-        // Duration / Snackbar
-        durationSnackbar: const Duration(seconds: 4),
-
-        // Opacity
-        // Opacity / Blur
-        opacityBlur: 0.6,
-        // Opacity / Disabled
-        opacityDisabled: 0.6,
       );
 }

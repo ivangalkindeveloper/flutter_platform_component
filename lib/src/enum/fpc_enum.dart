@@ -1,3 +1,8 @@
+enum FPCPlatform {
+  iOS,
+  Android,
+}
+
 enum FPCBadgePosition {
   center,
   topStart,

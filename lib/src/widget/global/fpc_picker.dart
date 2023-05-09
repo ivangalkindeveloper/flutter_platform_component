@@ -17,28 +17,25 @@ Future<DateTime?> showFPCDatePicker({
   Color? barrierColor,
 }) {
   final FPCConfig config = context.config;
-  final TargetPlatform platform = config.platform;
-  final IFPCSize size = config.size;
+  final FPCPlatform platform = config.platform;
+  final IFPCDateTime dateTime = config.dateTime;
 
-  final Color methodBarrierColor =
+  final Color barrierColorMethod =
       barrierColor ?? config.barrierColorPopUpModal;
-  final DateTime dateTimeMinimum =
-      dateTimeRange?.dateTimeMinimum ?? size.dateTimeMinimum;
-  final DateTime dateTimeInitial =
-      dateTimeRange?.dateTimeInitial ?? size.dateTimeInitial;
-  final DateTime dateTimeMaximum =
-      dateTimeRange?.dateTimeMaximum ?? size.dateTimeMaximum;
+  final DateTime dateTimeMinimum = dateTimeRange?.minimum ?? dateTime.minimum;
+  final DateTime dateTimeInitial = dateTimeRange?.initial ?? dateTime.initial;
+  final DateTime dateTimeMaximum = dateTimeRange?.maximum ?? dateTime.maximum;
 
   switch (platform) {
-    case TargetPlatform.iOS:
+    case FPCPlatform.iOS:
       return showCupertinoModalPopup<DateTime?>(
         context: context,
         useRootNavigator: false,
-        barrierColor: methodBarrierColor,
+        barrierColor: barrierColorMethod,
         builder: cupertinoModalBuilder,
       );
 
-    case TargetPlatform.android:
+    case FPCPlatform.Android:
       return showDatePicker(
         context: context,
         useRootNavigator: false,
@@ -86,24 +83,25 @@ Future<TimeOfDay?> showFPCTimePicker({
   Color? barrierColor,
 }) {
   final FPCConfig config = context.config;
-  final TargetPlatform platform = config.platform;
-  final IFPCSize size = config.size;
+  final IFPCTimeOfDay timeOfDay = config.timeOfDay;
+  final FPCPlatform platform = config.platform;
 
-  final Color methodBarrierColor =
+  final Color barrierColorMethod =
       barrierColor ?? config.barrierColorPopUpModal;
+
   final TimeOfDay timeOfDayInitial =
-      timeOfDayRange?.timeOfDayInitial ?? size.timeOfDayInitial;
+      timeOfDayRange?.initial ?? timeOfDay.initial;
 
   switch (platform) {
-    case TargetPlatform.iOS:
+    case FPCPlatform.iOS:
       return showCupertinoModalPopup<TimeOfDay?>(
         context: context,
         useRootNavigator: false,
-        barrierColor: methodBarrierColor,
+        barrierColor: barrierColorMethod,
         builder: cupertinoModalBuilder,
       );
 
-    case TargetPlatform.android:
+    case FPCPlatform.Android:
       return showTimePicker(
         context: context,
         useRootNavigator: false,

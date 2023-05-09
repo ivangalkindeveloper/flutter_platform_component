@@ -19,11 +19,11 @@ class FPCAnimatedSlowFadeIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FPCConfig config = context.config;
-    final IFPCSize size = config.size;
+    final IFPCDuration duration = config.duration;
 
     return FadeIn(
       child: child,
-      duration: size.durationAnimationSlow,
+      duration: duration.animationSlow,
       controller: this.onCreated,
       animate: this.isAnimate,
     );

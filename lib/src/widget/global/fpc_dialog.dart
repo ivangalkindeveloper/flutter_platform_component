@@ -11,14 +11,14 @@ Future<T?> showFPCDialog<T>({
   Color? barrierColor,
 }) {
   final FPCConfig config = context.config;
-  final TargetPlatform platform = config.platform;
+  final FPCPlatform platform = config.platform;
   final IFPCHaptic haptic = config.haptic;
 
   final Color methodBarrierColor = barrierColor ?? config.barrierColorDialog;
 
   haptic.selection();
   switch (platform) {
-    case TargetPlatform.iOS:
+    case FPCPlatform.iOS:
       return showCupertinoDialog<T>(
         context: context,
         useRootNavigator: false,
@@ -26,7 +26,7 @@ Future<T?> showFPCDialog<T>({
         builder: (BuildContext context) => child,
       );
 
-    case TargetPlatform.android:
+    case FPCPlatform.Android:
       return showDialog<T>(
         context: context,
         useRootNavigator: false,

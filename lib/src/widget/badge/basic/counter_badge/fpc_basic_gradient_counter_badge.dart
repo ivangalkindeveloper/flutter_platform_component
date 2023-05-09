@@ -28,13 +28,17 @@ class FPCBasicGradientCounterBadge extends StatelessWidget {
   final Widget child;
 
   bool _isShow() {
-    if (this.count < 1) return false;
+    if (this.count < 1) {
+      return false;
+    }
 
     return this.isShow;
   }
 
   String _count() {
-    if (this.count < 100) return count.toString();
+    if (this.count < 100) {
+      return count.toString();
+    }
 
     return "99+";
   }
@@ -42,10 +46,11 @@ class FPCBasicGradientCounterBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FPCConfig config = context.config;
-    final IFPCTextStyle textStyle = config.textStyle;
+    final IFPCDuration duration = config.duration;
     final IFPCSize size = config.size;
+    final IFPCTextStyle textStyle = config.textStyle;
 
-    final Duration duration = this.duration ?? size.durationBadge;
+    final Duration durationBadge = this.duration ?? duration.badge;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
           vertical: size.s10 / 4,
@@ -73,8 +78,8 @@ class FPCBasicGradientCounterBadge extends StatelessWidget {
     return badges.Badge(
       position: this.position.packageMapForCounter,
       badgeAnimation: badges.BadgeAnimation.fade(
-        animationDuration: duration,
-        disappearanceFadeAnimationDuration: duration,
+        animationDuration: durationBadge,
+        disappearanceFadeAnimationDuration: durationBadge,
         curve: Curves.easeInOut,
         colorChangeAnimationCurve: Curves.easeInOut,
       ),

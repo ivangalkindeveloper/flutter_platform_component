@@ -73,7 +73,9 @@ class _FPCDialogCupertino extends StatelessWidget {
   Widget? _content({
     required TextStyle descriptionStyle,
   }) {
-    if (this.content != null) return this.content!;
+    if (this.content != null) {
+      return this.content!;
+    }
 
     if (this.description != null)
       return Text(
@@ -202,7 +204,9 @@ class _FPCDialogMaterial extends StatelessWidget {
   Widget? _content({
     required TextStyle descriptionStyle,
   }) {
-    if (this.content != null) return this.content!;
+    if (this.content != null) {
+      return this.content!;
+    }
 
     if (this.description != null)
       return Text(

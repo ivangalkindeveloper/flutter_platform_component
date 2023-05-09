@@ -2,16 +2,16 @@ import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCPlatform {
+class FPCPlatformUtil {
   static T decompose<T, Cupertino extends T, Material extends T>({
-    required TargetPlatform platform,
+    required FPCPlatform platform,
     required Cupertino cupertino,
     required Material material,
   }) {
     switch (platform) {
-      case TargetPlatform.iOS:
+      case FPCPlatform.iOS:
         return cupertino;
-      case TargetPlatform.android:
+      case FPCPlatform.Android:
         return material;
       default:
         return material;
@@ -24,12 +24,12 @@ class FPCPlatform {
     required Material material,
   }) {
     final FPCConfig config = context.config;
-    final TargetPlatform platform = config.platform;
+    final FPCPlatform platform = config.platform;
 
     switch (platform) {
-      case TargetPlatform.iOS:
+      case FPCPlatform.iOS:
         return cupertino;
-      case TargetPlatform.android:
+      case FPCPlatform.Android:
         return material;
       default:
         return material;

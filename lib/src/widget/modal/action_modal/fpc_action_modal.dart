@@ -92,7 +92,9 @@ class _FPCActionModalCupertino extends StatelessWidget {
   }
 
   Widget? _content() {
-    if (this.content != null) return this.content;
+    if (this.content != null) {
+      return this.content;
+    }
 
     if (this.description != null)
       return Text(
@@ -205,7 +207,9 @@ class _FPCActionModalMaterial extends StatelessWidget {
     required TextStyle titleStyle,
     required TextStyle descriptionStyle,
   }) {
-    if (this.content != null) return this.content!;
+    if (this.content != null) {
+      return this.content!;
+    }
 
     if (this.title != null && this.description != null)
       return ListTile(

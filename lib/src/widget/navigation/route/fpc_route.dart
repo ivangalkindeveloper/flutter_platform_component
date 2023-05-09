@@ -7,10 +7,10 @@ import 'package:flutter/material.dart' show MaterialPageRoute;
 
 class FPCRoute {
   static MaterialPageRoute pageRoute({
-    required TargetPlatform platform,
+    required FPCPlatform platform,
     required Widget child,
   }) =>
-      FPCPlatform.decompose(
+      FPCPlatformUtil.decompose(
         platform: platform,
         cupertino: MaterialWithModalsPageRoute(
           builder: (BuildContext context) => child,
@@ -24,7 +24,7 @@ class FPCRoute {
     required BuildContext context,
     required Widget child,
   }) =>
-      FPCPlatform.decomposeFromContext(
+      FPCPlatformUtil.decomposeFromContext(
         context: context,
         cupertino: MaterialWithModalsPageRoute(
           builder: (BuildContext context) => child,

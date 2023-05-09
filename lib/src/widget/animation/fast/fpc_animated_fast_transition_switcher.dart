@@ -18,10 +18,10 @@ class FPCAnimatedFastTransitionSwitcher extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FPCConfig config = context.config;
-    final IFPCSize size = config.size;
+    final IFPCDuration duration = config.duration;
 
     return PageTransitionSwitcher(
-      duration: size.durationAnimationFast,
+      duration: duration.animationFast,
       reverse: this.isReverse,
       transitionBuilder: (
         Widget childWidget,

@@ -40,7 +40,9 @@ class FPCScreenAppBar extends FPCBasicAppBar {
     required Widget? prefix,
     required VoidCallback? onPressedBack,
   }) {
-    if (prefix != null) return prefix;
+    if (prefix != null) {
+      return prefix;
+    }
 
     if (onPressedBack != null) {
       final TextDirection textDirection = Directionality.of(context);
@@ -55,8 +57,8 @@ class FPCScreenAppBar extends FPCBasicAppBar {
           transformHitTests: false,
           child: FPCIcon.black(
             context: context,
-            icon:
-                FPCPlatform.decomposeFromContext<IconData, IconData, IconData>(
+            icon: FPCPlatformUtil.decomposeFromContext<IconData, IconData,
+                IconData>(
               context: context,
               cupertino: CupertinoIcons.back,
               material: Icons.arrow_back,

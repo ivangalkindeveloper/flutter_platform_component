@@ -5,34 +5,46 @@ import 'package:flutter/widgets.dart';
 class FPCConfig extends InheritedWidget {
   const FPCConfig({
     super.key,
-    required this.platform,
     required this.textStyle,
-    required this.haptic,
-    required this.theme,
-    required this.size,
-    required this.changePlatform,
-    required this.changeTheme,
-    required this.changeSize,
     required this.changeTextStyle,
+    required this.timeOfDay,
+    required this.changeTimeOfDay,
+    required this.dateTime,
+    required this.changeDateTime,
+    required this.duration,
+    required this.changeDuration,
+    required this.platform,
+    required this.changePlatform,
+    required this.haptic,
     required this.changeHaptic,
+    required this.theme,
+    required this.changeTheme,
+    required this.size,
+    required this.changeSize,
     required super.child,
   });
 
-  final TargetPlatform platform;
-  final IFPCTheme theme;
-  final IFPCSize size;
   final IFPCTextStyle textStyle;
-  final IFPCHaptic haptic;
-  final void Function({required TargetPlatform platform}) changePlatform;
-  final void Function({required IFPCTheme theme}) changeTheme;
-  final void Function({required IFPCSize size}) changeSize;
   final void Function({required IFPCTextStyle textStyle}) changeTextStyle;
+  final IFPCTimeOfDay timeOfDay;
+  final void Function({required IFPCTimeOfDay timeOfDay}) changeTimeOfDay;
+  final IFPCDateTime dateTime;
+  final void Function({required IFPCDateTime dateTime}) changeDateTime;
+  final IFPCDuration duration;
+  final void Function({required IFPCDuration duration}) changeDuration;
+  final FPCPlatform platform;
+  final void Function({required FPCPlatform platform}) changePlatform;
+  final IFPCHaptic haptic;
   final void Function({required IFPCHaptic haptic}) changeHaptic;
+  final IFPCTheme theme;
+  final void Function({required IFPCTheme theme}) changeTheme;
+  final IFPCSize size;
+  final void Function({required IFPCSize size}) changeSize;
 
   // Barrier
   // Barrier / Expanded Modal
   Color get barrierColorExpandedModal =>
-      FPCPlatform.decompose<Color, Color, Color>(
+      FPCPlatformUtil.decompose<Color, Color, Color>(
         platform: this.platform,
         cupertino: this.theme.barrierExpandedModalCupertino,
         material: this.theme.barrierExpandedModalMaterial,
@@ -40,14 +52,15 @@ class FPCConfig extends InheritedWidget {
 
   // Barrier / Pop Up Modal
   Color get barrierColorPopUpModal =>
-      FPCPlatform.decompose<Color, Color, Color>(
+      FPCPlatformUtil.decompose<Color, Color, Color>(
         platform: this.platform,
         cupertino: this.theme.barrierPopUpModalCupertino,
         material: this.theme.barrierPopUpModalMaterial,
       );
 
   // Barrier / Dialog
-  Color get barrierColorDialog => FPCPlatform.decompose<Color, Color, Color>(
+  Color get barrierColorDialog =>
+      FPCPlatformUtil.decompose<Color, Color, Color>(
         platform: this.platform,
         cupertino: this.theme.barrierDialogCupertino,
         material: this.theme.barrierDialogMaterial,
@@ -56,7 +69,7 @@ class FPCConfig extends InheritedWidget {
   // BorderRadius
   // BorderRadius / Button
   BorderRadius get borderRadiusButton =>
-      FPCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+      FPCPlatformUtil.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
         cupertino: this.size.borderRadiusButtonCupertino,
         material: this.size.borderRadiusButtonMaterial,
@@ -64,7 +77,7 @@ class FPCConfig extends InheritedWidget {
 
   // BorderRadius / Card
   BorderRadius get borderRadiusCard =>
-      FPCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+      FPCPlatformUtil.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
         cupertino: this.size.borderRadiusCardCupertino,
         material: this.size.borderRadiusCardMaterial,
@@ -72,7 +85,7 @@ class FPCConfig extends InheritedWidget {
 
   // BorderRadius / Dialog
   BorderRadius get borderRadiusDialog =>
-      FPCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+      FPCPlatformUtil.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
         cupertino: this.size.borderRadiusDialogCupertino,
         material: this.size.borderRadiusDialogMaterial,
@@ -80,7 +93,7 @@ class FPCConfig extends InheritedWidget {
 
   // BorderRadius / Field
   BorderRadius get borderRadiusField =>
-      FPCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+      FPCPlatformUtil.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
         cupertino: this.size.borderRadiusFieldCupertino,
         material: this.size.borderRadiusFieldMaterial,
@@ -88,7 +101,7 @@ class FPCConfig extends InheritedWidget {
 
   // BorderRadius / Modal
   BorderRadius get borderRadiusModal =>
-      FPCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+      FPCPlatformUtil.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
         cupertino: this.size.borderRadiusModalCupertino,
         material: this.size.borderRadiusModalMaterial,
@@ -96,7 +109,7 @@ class FPCConfig extends InheritedWidget {
 
   // BorderRadius / Segment Control
   BorderRadius get borderRadiusSegmentControl =>
-      FPCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+      FPCPlatformUtil.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
         cupertino: this.size.borderRadiusSegmentControlCupertino,
         material: this.size.borderRadiusSegmentControlMaterial,
@@ -104,7 +117,7 @@ class FPCConfig extends InheritedWidget {
 
   // BorderRadius / Snackbar
   BorderRadius get borderRadiusSnackbar =>
-      FPCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+      FPCPlatformUtil.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
         cupertino: this.size.borderRadiusSnackbarCupertino,
         material: this.size.borderRadiusSnackbarMaterial,
@@ -112,7 +125,7 @@ class FPCConfig extends InheritedWidget {
 
   // BorderRadius / Toggle
   BorderRadius get borderRadiusToggle =>
-      FPCPlatform.decompose<BorderRadius, BorderRadius, BorderRadius>(
+      FPCPlatformUtil.decompose<BorderRadius, BorderRadius, BorderRadius>(
         platform: this.platform,
         cupertino: this.size.borderRadiusToggleCupertino,
         material: this.size.borderRadiusToggleMaterial,
@@ -120,21 +133,24 @@ class FPCConfig extends InheritedWidget {
 
   // BorderWidth
   // BorderWidth / Button
-  double get borderWidthButton => FPCPlatform.decompose<double, double, double>(
+  double get borderWidthButton =>
+      FPCPlatformUtil.decompose<double, double, double>(
         platform: this.platform,
         cupertino: this.size.borderWidthButtonCupertino,
         material: this.size.borderWidthButtonMaterial,
       );
 
   // BorderWidth / Card
-  double get borderWidthCard => FPCPlatform.decompose<double, double, double>(
+  double get borderWidthCard =>
+      FPCPlatformUtil.decompose<double, double, double>(
         platform: this.platform,
         cupertino: this.size.borderWidthCardCupertino,
         material: this.size.borderWidthCardMaterial,
       );
 
   // BorderWidth / Field
-  double get borderWidthField => FPCPlatform.decompose<double, double, double>(
+  double get borderWidthField =>
+      FPCPlatformUtil.decompose<double, double, double>(
         platform: this.platform,
         cupertino: this.size.borderWidthFieldCupertino,
         material: this.size.borderWidthFieldMaterial,
@@ -142,7 +158,7 @@ class FPCConfig extends InheritedWidget {
 
   // BorderWidth / Segment Control
   double get borderWidthSegmentControl =>
-      FPCPlatform.decompose<double, double, double>(
+      FPCPlatformUtil.decompose<double, double, double>(
         platform: this.platform,
         cupertino: this.size.borderWidthSegmentControlCupertino,
         material: this.size.borderWidthSegmentControlMaterial,
@@ -150,7 +166,7 @@ class FPCConfig extends InheritedWidget {
 
   // BorderWidth / Snackbar
   double get borderWidthSnackbar =>
-      FPCPlatform.decompose<double, double, double>(
+      FPCPlatformUtil.decompose<double, double, double>(
         platform: this.platform,
         cupertino: this.size.borderWidthSnackbarCupertino,
         material: this.size.borderWidthSnackbarMaterial,
@@ -159,7 +175,9 @@ class FPCConfig extends InheritedWidget {
   static FPCConfig of(BuildContext context) {
     final FPCConfig? config =
         context.dependOnInheritedWidgetOfExactType<FPCConfig>();
-    if (config == null) throw const FPCConfigNullException();
+    if (config == null) {
+      throw const FPCConfigNullException();
+    }
 
     return config;
   }
@@ -168,6 +186,9 @@ class FPCConfig extends InheritedWidget {
   bool updateShouldNotify(FPCConfig oldWidget) =>
       oldWidget.platform != this.platform ||
       oldWidget.textStyle != this.textStyle ||
+      oldWidget.timeOfDay != this.timeOfDay ||
+      oldWidget.dateTime != this.dateTime ||
+      oldWidget.duration != this.duration ||
       oldWidget.haptic != this.haptic ||
       oldWidget.theme != this.theme ||
       oldWidget.size != this.size;

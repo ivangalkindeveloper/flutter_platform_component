@@ -265,7 +265,7 @@ class FPCApp extends FPCPlatformWidget {
         );
 
   static HeroController createHeroController({required BuildContext context}) =>
-      FPCPlatform.decomposeFromContext<HeroController, HeroController,
+      FPCPlatformUtil.decomposeFromContext<HeroController, HeroController,
           HeroController>(
         context: context,
         cupertino: CupertinoApp.createCupertinoHeroController(),
@@ -282,7 +282,9 @@ class FPCApp extends FPCPlatformWidget {
           child = builderMethod(context, child);
         }
 
-        if (child == null) return const SizedBox();
+        if (child == null) {
+          return const SizedBox();
+        }
 
         return ScaffoldMessenger(
           key: scaffoldMessengerKey,

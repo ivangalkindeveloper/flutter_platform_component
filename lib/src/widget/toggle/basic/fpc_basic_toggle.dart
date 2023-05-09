@@ -108,7 +108,9 @@ class _FPCBasicToggleState<T> extends State<FPCBasicToggle<T>> {
   }
 
   String? _validator(String? value) {
-    if (value == null || this.mounted == false) return null;
+    if (value == null || this.mounted == false) {
+      return null;
+    }
 
     // Required
     if (this.widget.isRequired && value.isEmpty) {
@@ -265,9 +267,13 @@ class _FPCToggleButton<T> extends StatelessWidget {
   Color _backgroundColor({
     required IFPCTheme theme,
   }) {
-    if (this.isValidationError) return theme.dangerLight;
+    if (this.isValidationError) {
+      return theme.dangerLight;
+    }
 
-    if (this.isSelected) return this.selectedBackgroundColor;
+    if (this.isSelected) {
+      return this.selectedBackgroundColor;
+    }
 
     return this.unselectedBackgroundColor ?? theme.backgroundComponent;
   }
@@ -275,9 +281,13 @@ class _FPCToggleButton<T> extends StatelessWidget {
   Color _internalColor({
     required IFPCTheme theme,
   }) {
-    if (this.isValidationError) return theme.danger;
+    if (this.isValidationError) {
+      return theme.danger;
+    }
 
-    if (this.isSelected) return this.selectedInternalColor;
+    if (this.isSelected) {
+      return this.selectedInternalColor;
+    }
 
     return this.unselectedInternalColor ?? theme.black;
   }
@@ -285,7 +295,9 @@ class _FPCToggleButton<T> extends StatelessWidget {
   Color _splashColor({
     required IFPCTheme theme,
   }) {
-    if (this.isSelected) return this.selectedSplashColor;
+    if (this.isSelected) {
+      return this.selectedSplashColor;
+    }
 
     return this.unselectedSplashColor ?? theme.backgroundComponent;
   }

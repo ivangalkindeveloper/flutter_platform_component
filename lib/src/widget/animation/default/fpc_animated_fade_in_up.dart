@@ -21,11 +21,12 @@ class FPCAnimatedFadeInUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FPCConfig config = context.config;
+    final IFPCDuration duration = config.duration;
     final IFPCSize size = config.size;
 
     return FadeInUp(
       child: child,
-      duration: size.durationAnimationDefault,
+      duration: duration.animationDefault,
       controller: this.onCreated,
       animate: this.isAnimate,
       from: this.from ?? size.s16 * 4,

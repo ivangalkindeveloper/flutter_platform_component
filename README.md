@@ -1,7 +1,6 @@
 <h1 align="center">Flutter Platform Component</h1>
 
 <div align="center">
-
   📱 Ready-made inherited component base using ready-made abstractions for quick use and decomposed by platform.
 
   | iOS (Cupertino) | Android (Material) |
@@ -10,7 +9,11 @@
 
   <a href="">![Pub Likes](https://img.shields.io/pub/likes/flutter_platform_component?color=success)</a>
   <a href="">![Pub Version](https://img.shields.io/pub/v/flutter_platform_component?color=important)</a>
-  
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
+</div>
+
+<div align="center">
+<a href="https://www.buymeacoffee.com/ivangalkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="30px" width= "128px"></a>
 </div>
 
 ## Getting Started
@@ -25,13 +28,16 @@
   - [Disabled components](#disabled-components)
 - [Design](#design)
 - [Dependencies](#dependencies)
-- [Usage](#usage)
+- [Usage](#usage)d
 - [Main entites](#main-entities)
   - [Config](#config)
-  - [TargetPlatform](#targetPlatform)
+  - [Platform](#platform)
   - [Theme](#theme)
   - [Size](#size)
   - [Text Style](#text-style)
+  - [Duration](#duration)
+  - [Date Time](#date-time)
+  - [Time Of Day](#time-of-day)
   - [Haptic](#haptic)
 - [Components](#components)
   - [Animation](#animation)
@@ -184,7 +190,6 @@ The package uses a fork of the following dependencies:\
 [animate_do](https://pub.dev/packages/animate_do) - fade animations.\
 [animations](https://pub.dev/packages/animations) - transitional animations.\
 [badges](https://pub.dev/packages/badges) - badges.\
-[custom_rounded_rectangle_border](https://pub.dev/packages/custom_rounded_rectangle_border) - additional class for segment control component.\
 [flutter_vibrate](https://pub.dev/packages/flutter_vibrate) - all vibrations.\
 [modal_bottom_sheet](https://pub.dev/packages/modal_bottom_sheet) - transitions that support modal animations and modal windows appearance method.\
 [pinput](https://pub.dev/packages/pinput) - code fields and PIN fields.\
@@ -195,23 +200,26 @@ Initialize the main component widget at the root:
 ```dart
 void main() => runApp(
       FlutterPlatformComponent( // Initialize the main component widget at the root of widget tree
-        platform: TargetPlatform.iOS,
+        textStyle: const TextStyles(),
+        timeOfDay: TimesOfDay(),
+        dateTime: DateTimes(),
+        duration: const Durations(),
+        platform: FPCPlatform.iOS,
+        haptic: const Haptics(),
         theme: LightTheme(),
-        size: Sizes(),
-        textStyle: TextStyles(),
-        haptic: Haptics(),
-        child: const HomeWidget(),
+        size: const Sizes(),
+        child: const Application(),
       ),
     );
 
-class HomeWidget extends StatelessWidget {
-  const HomeWidget({Key? key});
+class Application extends StatelessWidget {
+  const Application({super.key});
 
   @override
   Widget build(BuildContext context) {
     return FPCApp(
       context: context,
-      home: const FirstScreen(),
+      home: const HomeScreen(),
     );
   }
 }
@@ -244,34 +252,34 @@ Get the current config in the widget tree:
 final FPCConfig config = FPCConfig.of(context);
 ```
 
-### TargetPlatform
-Standard enum from Dart Foundation.\
-The default value is [defaultTargetPlatform](https://api.flutter.dev/flutter/foundation/defaultTargetPlatform.html).\
+### Platform
+Enum that all package components use.\
+The default value is extension from defaultTargetPlatform [FPCPlatform.values.fromTargetPlatform(defaultTargetPlatform);](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/enum/fpc_enum.dart).\
 Get the actual platform in the widget tree:
 ```dart
-final TargetPlatform platform = FPCConfig.of(context).platform;
+final FPCPlatform platform = FPCConfig.of(context).platform;
 ```
 The method allows you to change the current platform:
 ```dart
-FPCConfig.of(context).changePlatform(platform: TargetPlatform.iOS);
+FPCConfig.of(context).changePlatform(platform: FPCPlatform.Android);
 ```
 
 ### Theme
 An abstraction of a theme that all package components use.\
-The default value is [FPCDefaultTheme.defaultLightTheme](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/theme/FPC_default_theme.dart#L707).\
-There is also a dark theme for example - [FPCDefaultTheme.defaultDarkTheme](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/theme/FPC_default_theme.dart#L962).\
+The default value is [FPCDefaultLightTheme();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/theme/fpc_default_light_theme.dart).\
+There is also a dark theme for example - [FPCDefaultDarkTheme();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/theme/fpc_default_dark_theme.dart).\
 Get the actual theme instance in the widget tree:
 ```dart
 final IFPCTheme theme = FPCConfig.of(context).theme;
 ```
 The method allows you to change the current theme:
 ```dart
-FPCConfig.of(context).changeTheme(theme: LightTheme());
+FPCConfig.of(context).changeTheme(theme: DarkTheme());
 ```
 
 ### Size
 An abstraction of a sizes that all package components use.\
-The default value is [FPCDefaultSize.defaultSize](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/size/FPC_default_size.dart#L554).\
+The default value is [FPCDefaultSize();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/size/fpc_default_size.dart).\
 Get the actual sizes instance in the widget tree:
 ```dart
 final IFPCSize size = FPCConfig.of(context).size;
@@ -283,7 +291,7 @@ FPCConfig.of(context).changeSize(size: Sizes());
 
 ### Text Style
 An abstraction of a font weights and families that text components use.\
-The default value is [FPCDefaultTextStyle.defaultTextStyle](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/text_style/FPC_default_text_style.dart#L90).\
+The default value is [FPCDefaultTextStyle();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/text_style/fpc_default_text_style.dart).\
 Get the actual text style instance in the widget tree:
 ```dart
 final IFPCTextStyle textStyle = FPCConfig.of(context).textStyle;
@@ -293,9 +301,45 @@ The method allows you to change the current text styles:
 FPCConfig.of(context).changeTextStyle(textStyle: TextStyles());
 ```
 
+### Duration
+An abstraction of animation widgets.\
+The default value is [FPCDefaultDuration();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/duration/fpc_default_duration.dart).\
+Get the actual duration instance in the widget tree:
+```dart
+final IFPCDuration duration = FPCConfig.of(context).duration;
+```
+The method allows you to change the current durations:
+```dart
+FPCConfig.of(context).changeDuration(haptic: Durations());
+```
+
+### Date Time
+An abstraction of DateTime pickers.\
+The default value is [FPCDefaultDateTime();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/date_time/fpc_default_date_time.dart).\
+Get the actual date time instance in the widget tree:
+```dart
+final IFPCDateTime dateTime = FPCConfig.of(context).dateTime;
+```
+The method allows you to change the current date times:
+```dart
+FPCConfig.of(context).changeDateTime(haptic: DateTimes());
+```
+
+### Time Of Day
+An abstraction of TimeOfDay pickers.\
+The default value is [FPCDefaultTimeOfDay();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/date_time/fpc_default_time_of_day.dart).\
+Get the actual time of day instance in the widget tree:
+```dart
+final IFPCTimeOfDay timeOfDay = FPCConfig.of(context).timeOfDay;
+```
+The method allows you to change the current times of day:
+```dart
+FPCConfig.of(context).changeTimeOfDay(haptic: TimesOfDay());
+```
+
 ### Haptic
 An abstraction of vibration functions.\
-The default value is [FPCDefaultHaptic](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/haptic/FPC_default_haptic.dart).\
+The default value is [FPCDefaultHaptic();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/haptic/fpc_default_haptic.dart).\
 Get the actual vibration functions instance in the widget tree:
 ```dart
 final IFPCHaptic haptic = FPCConfig.of(context).haptic;

@@ -76,7 +76,9 @@ class _FPCAppBarCupertino extends StatelessWidget {
     required IFPCTextStyle textStyle,
     required IFPCTheme theme,
   }) {
-    if (this.middle != null) return this.middle;
+    if (this.middle != null) {
+      return this.middle;
+    }
 
     if (this.title != null) {
       return Text(
@@ -168,7 +170,9 @@ class _FPCAppBarMaterial extends StatelessWidget {
     required IFPCTextStyle textStyle,
     required IFPCTheme theme,
   }) {
-    if (this.middle != null) return this.middle;
+    if (this.middle != null) {
+      return this.middle;
+    }
 
     if (this.title != null) {
       return Text(

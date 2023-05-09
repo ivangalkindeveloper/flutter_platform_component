@@ -15,11 +15,11 @@ class FPCAnimatedOpacity extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final FPCConfig config = context.config;
-    final IFPCSize size = config.size;
+    final IFPCDuration duration = config.duration;
 
     return AnimatedOpacity(
       opacity: this.condition ? 1 : 0,
-      duration: size.durationAnimationDefault,
+      duration: duration.animationDefault,
       curve: Curves.easeInOut,
       child: this.child,
     );

@@ -1,3 +1,4 @@
+import 'package:flutter_platform_component/src/widget/helper/fpc_text_form_field.dart';
 import 'package:flutter_platform_component/src/extension/fpc_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/services.dart';
@@ -6,7 +7,6 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart'
     show
         Material,
-        TextFormField,
         Colors,
         InputDecoration,
         OutlineInputBorder,
@@ -282,8 +282,6 @@ class FPCField extends StatelessWidget {
         );
     final String? hintText = this.hintText != null ? " ${this.hintText}" : null;
     final InputDecoration decoration = InputDecoration(
-      alignLabelWithHint: false,
-      //
       labelText: this.labelText,
       labelStyle: fieldLabelStyle,
       //
@@ -327,6 +325,7 @@ class FPCField extends StatelessWidget {
         borderSide: BorderSide(color: Colors.transparent),
       ),
       hoverColor: Colors.transparent,
+      alignLabelWithHint: false,
     );
     final double cursorWidth = size.s10 / 5;
     final double cursorHeight = (fieldTextStyle.fontSize ?? size.s16) * 1.1;
@@ -335,7 +334,7 @@ class FPCField extends StatelessWidget {
       color: Colors.transparent,
       child: DefaultTextStyle(
         style: fieldTextStyle,
-        child: TextFormField(
+        child: FPCTextFormField(
           controller: this.controller,
           focusNode: this.focusNode,
           decoration: decoration,

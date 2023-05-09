@@ -14,7 +14,7 @@ Future<T?> showFPCExpandedModal<T>({
   BorderRadius? borderRadius,
 }) {
   final FPCConfig config = context.config;
-  final TargetPlatform platform = config.platform;
+  final FPCPlatform platform = config.platform;
 
   final Color methodBarrierColor =
       barrierColor ?? config.barrierColorExpandedModal;
@@ -22,7 +22,7 @@ Future<T?> showFPCExpandedModal<T>({
       borderRadius ?? config.borderRadiusModal;
 
   switch (platform) {
-    case TargetPlatform.iOS:
+    case FPCPlatform.iOS:
       return showCupertinoModalBottomSheet<T?>(
         context: context,
         useRootNavigator: false,
@@ -35,7 +35,7 @@ Future<T?> showFPCExpandedModal<T>({
         builder: (BuildContext context) => child,
       );
 
-    case TargetPlatform.android:
+    case FPCPlatform.Android:
       return showMaterialModalBottomSheet<T?>(
         context: context,
         useRootNavigator: false,
@@ -65,13 +65,13 @@ Future<T?> showFPCPopUpModal<T>({
   Color? barrierColor,
 }) {
   final FPCConfig config = context.config;
-  final TargetPlatform platform = config.platform;
+  final FPCPlatform platform = config.platform;
 
   final Color methodBarrierColor =
       barrierColor ?? config.barrierColorPopUpModal;
 
   switch (platform) {
-    case TargetPlatform.iOS:
+    case FPCPlatform.iOS:
       return showCupertinoModalPopup<T>(
         context: context,
         useRootNavigator: false,
@@ -79,7 +79,7 @@ Future<T?> showFPCPopUpModal<T>({
         builder: (BuildContext context) => child,
       );
 
-    case TargetPlatform.android:
+    case FPCPlatform.Android:
       return showMaterialModalBottomSheet<T>(
         context: context,
         useRootNavigator: false,
