@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(
       FlutterPlatformComponent(
-        child: const App(),
+        child: const Application(),
       ),
     );
 
-class App extends StatelessWidget {
-  const App({
+class Application extends StatelessWidget {
+  const Application({
     Key? key,
   }) : super(key: key);
 

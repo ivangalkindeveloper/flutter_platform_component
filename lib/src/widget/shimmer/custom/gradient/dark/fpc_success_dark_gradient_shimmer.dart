@@ -9,6 +9,7 @@ class FPCSuccessDarkGradientShimmer extends StatelessWidget {
     this.width,
     this.borderRadius,
     this.duration,
+    this.delay,
     this.child,
   });
 
@@ -17,6 +18,7 @@ class FPCSuccessDarkGradientShimmer extends StatelessWidget {
   final double? width;
   final BorderRadius? borderRadius;
   final Duration? duration;
+  final Duration? delay;
   final Widget? child;
 
   @override
@@ -32,6 +34,7 @@ class FPCSuccessDarkGradientShimmer extends StatelessWidget {
       width: this.width,
       borderRadius: this.borderRadius,
       duration: this.duration,
+      delay: this.delay,
       child: this.child,
     );
   }

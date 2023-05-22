@@ -12,6 +12,7 @@ class FPCBasicShimmer extends StatefulWidget {
     this.width,
     this.borderRadius,
     this.duration,
+    this.delay,
     this.child,
   });
 
@@ -22,6 +23,7 @@ class FPCBasicShimmer extends StatefulWidget {
   final double? width;
   final BorderRadius? borderRadius;
   final Duration? duration;
+  final Duration? delay;
   final Widget? child;
 
   @override
@@ -33,7 +35,7 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
   late FPCConfig _config;
   late IFPCDuration _duration;
 
-  bool _isHighlight = true;
+  bool _isHighlight = false;
 
   // Subscription
   late final StreamSubscription _highlightSubscription;
@@ -46,13 +48,14 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
   }
 
   @override
-  void didInitState() {
+  void didInitState() async {
+    await Future.delayed(this.widget.delay ?? Duration.zero);
+
     // Subscription
     this._highlightSubscription = Stream.periodic(
-        this.widget.duration ?? this._duration.shimmer,
-        (int second) =>
-            second % 2 == 0).listen(
-        (bool isHighLight) => setState(() => this._isHighlight = isHighLight));
+            this.widget.duration ?? this._duration.shimmer,
+            (int second) => second % 2 == 0)
+        .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
   }
 
   @override
@@ -64,8 +67,7 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
       this._highlightSubscription = Stream.periodic(
               this.widget.duration ?? this._duration.shimmer,
               (int second) => second % 2 == 0)
-          .listen((bool isHighLight) =>
-              setState(() => this._isHighlight = isHighLight));
+          .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
     }
   }
 
@@ -78,9 +80,8 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
 
   @override
   Widget build(BuildContext context) {
-    final Color color = this._isHighlight
-        ? this.widget.highlightColor
-        : this.widget.backgroundColor;
+    final Color color =
+        this._isHighlight ? this.widget.highlightColor : this.widget.backgroundColor;
     final BorderRadius borderRadius =
         this.widget.borderRadius ?? this._config.borderRadiusCard;
     final Widget child = this.widget.child ?? const SizedBox();

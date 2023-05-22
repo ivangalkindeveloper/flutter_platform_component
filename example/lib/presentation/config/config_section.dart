@@ -1,5 +1,4 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 
 class ConfigSection extends StatelessWidget {
@@ -39,24 +38,14 @@ class ConfigSection extends StatelessWidget {
             Expanded(
               child: FPCPrimaryLabelButton(
                 title: "Light Theme",
-                onPressed: () {
-                  final IFPCTheme theme = FPCDefaultLightTheme();
-                  SystemChrome.setSystemUIOverlayStyle(
-                      theme.systemOverlayStyle);
-                  config.changeTheme(theme: theme);
-                },
+                onPressed: () => config.changeTheme(theme: FPCDefaultLightTheme()),
               ),
             ),
             SizedBox(width: size.s16),
             Expanded(
               child: FPCPrimaryLabelButton(
                 title: "Dark Theme",
-                onPressed: () {
-                  final IFPCTheme theme = FPCDefaultDarkTheme();
-                  SystemChrome.setSystemUIOverlayStyle(
-                      theme.systemOverlayStyle);
-                  config.changeTheme(theme: theme);
-                },
+                onPressed: () => config.changeTheme(theme: FPCDefaultDarkTheme()),
               ),
             ),
           ],

@@ -1,7 +1,7 @@
 import 'package:example/presentation/component_list/component_list_text_style.dart';
 import 'package:example/presentation/component_list/component_list_platform.dart';
 import 'package:example/presentation/component_list/component_list_theme.dart';
-import 'package:example/presentation/component_list/component_list_wdget.dart';
+import 'package:example/presentation/component_list/component_list_widget.dart';
 import 'package:example/presentation/component_list/component_list_size.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:example/presentation/config/config_section.dart';

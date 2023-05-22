@@ -11,7 +11,12 @@ enum FPCBadgePosition {
   bottomStart,
 }
 
-enum FPCTransitionType {
+enum FPCOpenContainerTransitionType {
+  fade,
+  fadeThrough,
+}
+
+enum FPCSwitcherTransitionType {
   vertical,
   horizontal,
   scaled,

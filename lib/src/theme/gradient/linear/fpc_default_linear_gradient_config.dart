@@ -1,15 +1,8 @@
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-abstract class IFPCLinearGradientConfig {
-  abstract final AlignmentGeometry begin;
-  abstract final AlignmentGeometry end;
-  abstract final List<double>? stops;
-  abstract final TileMode tileMode;
-  abstract final GradientTransform? transform;
-}
-
-class FPCLinearGradientConfig implements IFPCLinearGradientConfig {
-  const FPCLinearGradientConfig({
+class FPCDefaultLinearGradientConfig implements IFPCLinearGradientConfig {
+  const FPCDefaultLinearGradientConfig({
     this.begin = Alignment.centerLeft,
     this.end = Alignment.centerRight,
     this.stops,

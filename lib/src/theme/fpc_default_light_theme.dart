@@ -1,8 +1,10 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'dart:ui';
+
+import 'package:flutter/cupertino.dart' show CupertinoThemeData, CupertinoDynamicColor;
+import 'package:flutter/material.dart' show ThemeMode, ThemeData, Colors;
 
 class FPCDefaultLightTheme extends IFPCTheme {
   FPCDefaultLightTheme({
@@ -128,21 +130,10 @@ class FPCDefaultLightTheme extends IFPCTheme {
     IFPCSweepGradientConfig? sweepGradientConfig,
   })  :
         // Framework
-        this.cupertinoThemeData =
-            cupertinoThemeData ?? const CupertinoThemeData(),
+        this.cupertinoThemeData = cupertinoThemeData ?? const CupertinoThemeData(),
         this.materialThemeMode = materialThemeMode ?? ThemeMode.light,
         this.materialThemeData = materialThemeData ?? ThemeData.light(),
-        this.systemOverlayStyle = systemOverlayStyle ??
-            const SystemUiOverlayStyle(
-              systemNavigationBarColor: const Color(0xffFFFFFF),
-              systemNavigationBarDividerColor: Colors.transparent,
-              systemNavigationBarIconBrightness: Brightness.dark,
-              systemNavigationBarContrastEnforced: false,
-              statusBarColor: const Color(0xffFFFFFF),
-              statusBarBrightness: Brightness.dark,
-              statusBarIconBrightness: Brightness.dark,
-              systemStatusBarContrastEnforced: false,
-            ),
+        this.systemOverlayStyle = systemOverlayStyle ?? SystemUiOverlayStyle.light,
 
         // White
         this.white = white ?? const Color(0xffFFFFFF),
@@ -154,8 +145,7 @@ class FPCDefaultLightTheme extends IFPCTheme {
 
         // Background
         this.backgroundScaffold = backgroundScaffold ?? const Color(0xffFAFAFA),
-        this.backgroundComponent =
-            backgroundComponent ?? const Color(0xffFFFFFF),
+        this.backgroundComponent = backgroundComponent ?? const Color(0xffFFFFFF),
 
         // Blur
         this.blur = blur ?? const Color(0xffFFFFFF),
@@ -410,18 +400,16 @@ class FPCDefaultLightTheme extends IFPCTheme {
         this.barrierPopUpModalMaterial =
             barrierPopUpModalMaterial ?? Colors.black.withOpacity(0.35),
         // Barrier / Dialog
-        this.barrierDialogCupertino =
-            barrierDialogCupertino ?? const Color(0x8A000000),
-        this.barrierDialogMaterial =
-            barrierDialogMaterial ?? const Color(0x8A000000),
+        this.barrierDialogCupertino = barrierDialogCupertino ?? const Color(0x8A000000),
+        this.barrierDialogMaterial = barrierDialogMaterial ?? const Color(0x8A000000),
 
         // Gradient
         this.linearGradientConfig =
-            linearGradientConfig ?? const FPCLinearGradientConfig(),
+            linearGradientConfig ?? const FPCDefaultLinearGradientConfig(),
         this.radialGradientConfig =
-            radialGradientConfig ?? const FPCRadialGradientConfig(),
+            radialGradientConfig ?? const FPCDefaultRadialGradientConfig(),
         this.sweepGradientConfig =
-            sweepGradientConfig ?? const FPCSweepGradientConfig();
+            sweepGradientConfig ?? const FPCDefaultSweepGradientConfig();
 
   // Framework
   @override
@@ -772,12 +760,10 @@ class FPCDefaultLightTheme extends IFPCTheme {
         secondaryGradient: secondaryGradient ?? this.secondaryGradient,
         // Secondary / Light
         secondaryLight: secondaryLight ?? this.secondaryLight,
-        secondaryLightGradient:
-            secondaryLightGradient ?? this.secondaryLightGradient,
+        secondaryLightGradient: secondaryLightGradient ?? this.secondaryLightGradient,
         // Secondary / Dark
         secondaryDark: secondaryDark ?? this.secondaryDark,
-        secondaryDarkGradient:
-            secondaryDarkGradient ?? this.secondaryDarkGradient,
+        secondaryDarkGradient: secondaryDarkGradient ?? this.secondaryDarkGradient,
 
         // Accent
         accent: accent ?? this.accent,
@@ -852,10 +838,8 @@ class FPCDefaultLightTheme extends IFPCTheme {
         barrierPopUpModalMaterial:
             barrierPopUpModalMaterial ?? this.barrierPopUpModalMaterial,
         // Barrier / Dialog
-        barrierDialogCupertino:
-            barrierDialogCupertino ?? this.barrierDialogCupertino,
-        barrierDialogMaterial:
-            barrierDialogMaterial ?? this.barrierDialogMaterial,
+        barrierDialogCupertino: barrierDialogCupertino ?? this.barrierDialogCupertino,
+        barrierDialogMaterial: barrierDialogMaterial ?? this.barrierDialogMaterial,
 
         // Gradient
         linearGradientConfig: linearGradientConfig ?? this.linearGradientConfig,

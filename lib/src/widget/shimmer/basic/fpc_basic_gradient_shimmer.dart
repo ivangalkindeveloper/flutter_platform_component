@@ -12,6 +12,7 @@ class FPCBasicGradientShimmer extends StatefulWidget {
     this.width,
     this.borderRadius,
     this.duration,
+    this.delay,
     this.child,
   });
 
@@ -22,11 +23,11 @@ class FPCBasicGradientShimmer extends StatefulWidget {
   final double? width;
   final BorderRadius? borderRadius;
   final Duration? duration;
+  final Duration? delay;
   final Widget? child;
 
   @override
-  State<FPCBasicGradientShimmer> createState() =>
-      _FPCBasicGradientShimmerState();
+  State<FPCBasicGradientShimmer> createState() => _FPCBasicGradientShimmerState();
 }
 
 class _FPCBasicGradientShimmerState extends State<FPCBasicGradientShimmer>
@@ -34,7 +35,7 @@ class _FPCBasicGradientShimmerState extends State<FPCBasicGradientShimmer>
   late FPCConfig _config;
   late IFPCDuration _duration;
 
-  bool _isHighlight = true;
+  bool _isHighlight = false;
 
   // Subscription
   late final StreamSubscription _highlightSubscription;
@@ -47,13 +48,14 @@ class _FPCBasicGradientShimmerState extends State<FPCBasicGradientShimmer>
   }
 
   @override
-  void didInitState() {
+  void didInitState() async {
+    await Future.delayed(this.widget.delay ?? Duration.zero);
+
     // Subscription
     this._highlightSubscription = Stream.periodic(
-        this.widget.duration ?? this._duration.shimmer,
-        (int second) =>
-            second % 2 == 0).listen(
-        (bool isHighLight) => setState(() => this._isHighlight = isHighLight));
+            this.widget.duration ?? this._duration.shimmer,
+            (int second) => second % 2 == 0)
+        .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
   }
 
   @override
@@ -65,8 +67,7 @@ class _FPCBasicGradientShimmerState extends State<FPCBasicGradientShimmer>
       this._highlightSubscription = Stream.periodic(
               this.widget.duration ?? this._duration.shimmer,
               (int second) => second % 2 == 0)
-          .listen((bool isHighLight) =>
-              setState(() => this._isHighlight = isHighLight));
+          .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
     }
   }
 

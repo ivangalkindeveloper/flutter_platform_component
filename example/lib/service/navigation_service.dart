@@ -4,6 +4,7 @@ import 'package:example/presentation/widget/animation/animated_fade_in_screen.da
 import 'package:example/presentation/widget/animation/animated_fade_out_screen.dart';
 import 'package:example/presentation/widget/animation/animated_opacity_screen.dart';
 import 'package:example/presentation/widget/animation/animated_opacity_stack_screen.dart';
+import 'package:example/presentation/widget/animation/animated_open_container_screen.dart';
 import 'package:example/presentation/widget/animation/animated_switcher_screen.dart';
 import 'package:example/presentation/widget/animation/animated_transition_switcher_screen.dart';
 import 'package:example/presentation/widget/app_bar/app_bar_screen.dart';
@@ -85,13 +86,12 @@ class NavigationService implements INavigationService {
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
   static const String animated_container_screen = "/animated_container_screen";
-  static const String animated_cross_fade_screen =
-      "/animated_cross_fade_screen";
+  static const String animated_cross_fade_screen = "/animated_cross_fade_screen";
   static const String animated_fade_in_screen = "/animated_fade_in_screen";
   static const String animated_fade_out_screen = "/animated_fade_out_screen";
   static const String animated_opacity_screen = "/animated_opacity_screen";
-  static const String animated_opacity_stack_screen =
-      "/animated_opacity_stack_screen";
+  static const String animated_opacity_stack_screen = "/animated_opacity_stack_screen";
+  static const String animated_open_container_screen = "/animated_open_container_screen";
   static const String animated_switcher_screen = "/animated_switcher_screen";
   static const String animated_transition_switcher_screen =
       "/animated_transition_switcher_screen";
@@ -103,8 +103,7 @@ class NavigationService implements INavigationService {
   static const String gradient_counter_badge_screen =
       "/gradient_counter_badge_content_screen";
   static const String dot_badge_screen = "/dot_badge_screen";
-  static const String gradient_dot_badge_screen =
-      "/gradient_dot_badge_content_screen";
+  static const String gradient_dot_badge_screen = "/gradient_dot_badge_content_screen";
 
   static const String blur_screen = "/blur_screen";
 
@@ -116,25 +115,21 @@ class NavigationService implements INavigationService {
   static const String card_screen = "/card_screen";
   static const String gradient_card_screen = "/gradient_card_screen";
   static const String select_card_screen = "/select_card_screen";
-  static const String gradient_select_card_screen =
-      "/gradient_select_card_screen";
+  static const String gradient_select_card_screen = "/gradient_select_card_screen";
 
   static const String checkbox_screen = "/checkbox_screen";
 
   static const String code_field_screen = "/code_field_screen";
-  static const String gradient_code_field_screen =
-      "/gradient_code_field_screen";
+  static const String gradient_code_field_screen = "/gradient_code_field_screen";
 
   static const String dialog_screen = "/dialog_screen";
 
   static const String divider_screen = "/divider_screen";
 
   static const String form_field_screen = "/form_field_screen";
-  static const String gradient_form_field_screen =
-      "/gradient_form_field_screen";
+  static const String gradient_form_field_screen = "/gradient_form_field_screen";
   static const String select_field_screen = "/select_field_screen";
-  static const String gradient_select_field_screen =
-      "/gradient_select_field_screen";
+  static const String gradient_select_field_screen = "/gradient_select_field_screen";
 
   static const String gradient_screen = "/gradient_screen";
 
@@ -142,14 +137,12 @@ class NavigationService implements INavigationService {
 
   static const String circular_indicator_screen = "/circular_indicator_screen";
   static const String page_indicator_screen = "/page_indicator_screen";
-  static const String gradient_page_indicator_screen =
-      "/gradient_page_indicator_screen";
+  static const String gradient_page_indicator_screen = "/gradient_page_indicator_screen";
   static const String progress_indicator_screen = "/progress_indicator_screen";
   static const String story_indicator_screen = "/story_indicator_screen";
 
   static const String keyboard_button_screen = "/keyboard_button_screen";
-  static const String keyboard_number_button_screen =
-      "/keyboard_number_button_screen";
+  static const String keyboard_number_button_screen = "/keyboard_number_button_screen";
   static const String keyboard_screen = "/keyboard_screen";
 
   static const String list_refresh_screen = "/list_refresh_screen";
@@ -157,16 +150,14 @@ class NavigationService implements INavigationService {
 
   static const String action_modal_screen = "/action_modal_screen";
   static const String expanded_modal_screen = "/expanded_modal_screen";
-  static const String blur_expanded_modal_screen =
-      "/blur_expanded_modal_screen";
+  static const String blur_expanded_modal_screen = "/blur_expanded_modal_screen";
   static const String pop_up_modal_screen = "/pop_up_modal_screen";
   static const String black_always_expand_modal_screen =
       "/black_always_expand_modal_screen";
   static const String blur_black_always_expand_modal_screen =
       "/blur_black_always_expand_modal_screen";
 
-  static const String bottom_navigation_bar_screen =
-      "/bottom_navigation_bar_screen";
+  static const String bottom_navigation_bar_screen = "/bottom_navigation_bar_screen";
   static const String blur_bottom_navigation_bar_screen =
       "/blur_bottom_navigation_bar_screen";
   static const String navigator_screen = "/navigator_screen";
@@ -192,11 +183,9 @@ class NavigationService implements INavigationService {
 
   static const String slider_screen = "/slider_screen";
 
-  static const String sliding_segment_control_screen =
-      "/sliding_segment_control_screen";
+  static const String sliding_segment_control_screen = "/sliding_segment_control_screen";
 
-  static const String sliver_navigation_bar_screen =
-      "/sliver_navigation_bar_screen";
+  static const String sliver_navigation_bar_screen = "/sliver_navigation_bar_screen";
 
   static const String snackbar_screen = "/snackbar_screen";
   static const String gradient_snackbar_screen = "/gradient_snackbar_screen";
@@ -240,6 +229,11 @@ class NavigationService implements INavigationService {
         return FPCRoute.pageRouteFromContext(
           context: navigatorKey.currentContext!,
           child: const AnimatedOpacityStackScreen(),
+        );
+      case animated_open_container_screen:
+        return FPCRoute.pageRouteFromContext(
+          context: navigatorKey.currentContext!,
+          child: const AnimatedOpenContainerScreen(),
         );
       case animated_switcher_screen:
         return FPCRoute.pageRouteFromContext(

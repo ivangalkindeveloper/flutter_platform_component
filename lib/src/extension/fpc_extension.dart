@@ -2,7 +2,8 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:animations/animations.dart' show SharedAxisTransitionType;
+import 'package:animations/animations.dart'
+    show ContainerTransitionType, SharedAxisTransitionType;
 import 'package:badges/badges.dart' as badges show BadgePosition;
 
 extension FPCPlatformListExtension on List<FPCPlatform> {
@@ -25,20 +26,30 @@ extension FPCBuildContextExtension on BuildContext {
   FPCConfig get componentConfig => FPCConfig.of(this);
 }
 
-extension FPCTransitionTypeListExtension on List<FPCTransitionType> {
-  SharedAxisTransitionType? fromString(String name) =>
-      SharedAxisTransitionType.values
-          .firstWhereOrNull((element) => element.name == name);
+extension FPCOpenContainerTransitionTypeExtension on FPCOpenContainerTransitionType {
+  ContainerTransitionType get packageMap {
+    switch (this) {
+      case FPCOpenContainerTransitionType.fade:
+        return ContainerTransitionType.fade;
+      case FPCOpenContainerTransitionType.fadeThrough:
+        return ContainerTransitionType.fadeThrough;
+    }
+  }
 }
 
-extension FPCTransitionTypeExtension on FPCTransitionType {
+extension FPCTransitionTypeListExtension on List<FPCSwitcherTransitionType> {
+  SharedAxisTransitionType? fromString(String name) => SharedAxisTransitionType.values
+      .firstWhereOrNull((SharedAxisTransitionType type) => type.name == name);
+}
+
+extension FPCTransitionTypeExtension on FPCSwitcherTransitionType {
   SharedAxisTransitionType get packageMap {
     switch (this) {
-      case FPCTransitionType.vertical:
+      case FPCSwitcherTransitionType.vertical:
         return SharedAxisTransitionType.vertical;
-      case FPCTransitionType.horizontal:
+      case FPCSwitcherTransitionType.horizontal:
         return SharedAxisTransitionType.horizontal;
-      case FPCTransitionType.scaled:
+      case FPCSwitcherTransitionType.scaled:
         return SharedAxisTransitionType.scaled;
     }
   }
@@ -46,12 +57,12 @@ extension FPCTransitionTypeExtension on FPCTransitionType {
 
 extension FPCBadgePositionListExtension on List<FPCBadgePosition> {
   FPCBadgePosition? fromString(String name) => FPCBadgePosition.values
-      .firstWhereOrNull((element) => element.name == name);
+      .firstWhereOrNull((FPCBadgePosition position) => position.name == name);
 }
 
 extension FPCBadgePositionExtension on FPCBadgePosition {
   FPCBadgePosition? fromString(String name) => FPCBadgePosition.values
-      .firstWhereOrNull((element) => element.name == name);
+      .firstWhereOrNull((FPCBadgePosition position) => position.name == name);
 
   badges.BadgePosition get packageMapForCounter {
     switch (this) {

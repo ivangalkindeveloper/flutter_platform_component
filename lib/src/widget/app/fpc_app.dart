@@ -91,7 +91,6 @@ class FPCApp extends FPCPlatformWidget {
             checkerboardOffscreenLayers: checkerboardOffscreenLayers,
             showSemanticsDebugger: showSemanticsDebugger,
             debugShowCheckedModeBanner: debugShowCheckedModeBanner,
-            useInheritedMediaQuery: useInheritedMediaQuery,
             //
             shortcuts: shortcuts,
             actions: actions,
@@ -135,7 +134,6 @@ class FPCApp extends FPCPlatformWidget {
             checkerboardOffscreenLayers: checkerboardOffscreenLayers,
             showSemanticsDebugger: showSemanticsDebugger,
             debugShowCheckedModeBanner: debugShowCheckedModeBanner,
-            useInheritedMediaQuery: useInheritedMediaQuery,
             //
             shortcuts: shortcuts,
             actions: actions,
@@ -215,7 +213,6 @@ class FPCApp extends FPCPlatformWidget {
             checkerboardOffscreenLayers: checkerboardOffscreenLayers,
             showSemanticsDebugger: showSemanticsDebugger,
             debugShowCheckedModeBanner: debugShowCheckedModeBanner,
-            useInheritedMediaQuery: useInheritedMediaQuery,
             //
             shortcuts: shortcuts,
             actions: actions,
@@ -256,7 +253,6 @@ class FPCApp extends FPCPlatformWidget {
             checkerboardOffscreenLayers: checkerboardOffscreenLayers,
             showSemanticsDebugger: showSemanticsDebugger,
             debugShowCheckedModeBanner: debugShowCheckedModeBanner,
-            useInheritedMediaQuery: useInheritedMediaQuery,
             //
             shortcuts: shortcuts,
             actions: actions,

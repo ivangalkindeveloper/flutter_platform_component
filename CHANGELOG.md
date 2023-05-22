@@ -1,16 +1,23 @@
+## 1.2.3
+* Adding FPCAnimatedOpenContainer;
+* FPCCupertinoSliverRefreshControl as helper for indicator color;
+* Fix shimmers and adding delay;
+* Fix gradient configs;
+* Fix README.
+
 ## 1.1.3
 * Fix available extensions.
 
 ## 1.1.2
-* Fix readme.
+* Fix README.
 
 ## 1.1.1
-* Fix readme.
+* Fix README;
 * Fix platform utils.
 
 ## 1.1.0
-* Fix entities classes.
-* IFPCDateTime, IFPCDuration, IFPCTimeOfDay.
+* Fix entities classes;
+* IFPCDateTime, IFPCDuration, IFPCTimeOfDay;
 * Adding FPCTextFormField as helper field for fix bug with errorText.
 
 ## 1.0.9

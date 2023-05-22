@@ -43,24 +43,21 @@ class FPCConfig extends InheritedWidget {
 
   // Barrier
   // Barrier / Expanded Modal
-  Color get barrierColorExpandedModal =>
-      FPCPlatformUtil.decompose<Color, Color, Color>(
+  Color get barrierColorExpandedModal => FPCPlatformUtil.decompose<Color, Color, Color>(
         platform: this.platform,
         cupertino: this.theme.barrierExpandedModalCupertino,
         material: this.theme.barrierExpandedModalMaterial,
       );
 
   // Barrier / Pop Up Modal
-  Color get barrierColorPopUpModal =>
-      FPCPlatformUtil.decompose<Color, Color, Color>(
+  Color get barrierColorPopUpModal => FPCPlatformUtil.decompose<Color, Color, Color>(
         platform: this.platform,
         cupertino: this.theme.barrierPopUpModalCupertino,
         material: this.theme.barrierPopUpModalMaterial,
       );
 
   // Barrier / Dialog
-  Color get barrierColorDialog =>
-      FPCPlatformUtil.decompose<Color, Color, Color>(
+  Color get barrierColorDialog => FPCPlatformUtil.decompose<Color, Color, Color>(
         platform: this.platform,
         cupertino: this.theme.barrierDialogCupertino,
         material: this.theme.barrierDialogMaterial,
@@ -133,24 +130,21 @@ class FPCConfig extends InheritedWidget {
 
   // BorderWidth
   // BorderWidth / Button
-  double get borderWidthButton =>
-      FPCPlatformUtil.decompose<double, double, double>(
+  double get borderWidthButton => FPCPlatformUtil.decompose<double, double, double>(
         platform: this.platform,
         cupertino: this.size.borderWidthButtonCupertino,
         material: this.size.borderWidthButtonMaterial,
       );
 
   // BorderWidth / Card
-  double get borderWidthCard =>
-      FPCPlatformUtil.decompose<double, double, double>(
+  double get borderWidthCard => FPCPlatformUtil.decompose<double, double, double>(
         platform: this.platform,
         cupertino: this.size.borderWidthCardCupertino,
         material: this.size.borderWidthCardMaterial,
       );
 
   // BorderWidth / Field
-  double get borderWidthField =>
-      FPCPlatformUtil.decompose<double, double, double>(
+  double get borderWidthField => FPCPlatformUtil.decompose<double, double, double>(
         platform: this.platform,
         cupertino: this.size.borderWidthFieldCupertino,
         material: this.size.borderWidthFieldMaterial,
@@ -165,16 +159,14 @@ class FPCConfig extends InheritedWidget {
       );
 
   // BorderWidth / Snackbar
-  double get borderWidthSnackbar =>
-      FPCPlatformUtil.decompose<double, double, double>(
+  double get borderWidthSnackbar => FPCPlatformUtil.decompose<double, double, double>(
         platform: this.platform,
         cupertino: this.size.borderWidthSnackbarCupertino,
         material: this.size.borderWidthSnackbarMaterial,
       );
 
   static FPCConfig of(BuildContext context) {
-    final FPCConfig? config =
-        context.dependOnInheritedWidgetOfExactType<FPCConfig>();
+    final FPCConfig? config = context.dependOnInheritedWidgetOfExactType<FPCConfig>();
     if (config == null) {
       throw const FPCConfigNullException();
     }
@@ -184,11 +176,11 @@ class FPCConfig extends InheritedWidget {
 
   @override
   bool updateShouldNotify(FPCConfig oldWidget) =>
-      oldWidget.platform != this.platform ||
       oldWidget.textStyle != this.textStyle ||
       oldWidget.timeOfDay != this.timeOfDay ||
       oldWidget.dateTime != this.dateTime ||
       oldWidget.duration != this.duration ||
+      oldWidget.platform != this.platform ||
       oldWidget.haptic != this.haptic ||
       oldWidget.theme != this.theme ||
       oldWidget.size != this.size;

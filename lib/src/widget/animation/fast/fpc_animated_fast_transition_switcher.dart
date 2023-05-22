@@ -1,6 +1,8 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:animations/animations.dart';
 import 'package:flutter/widgets.dart';
+
+import 'package:animations/animations.dart'
+    show PageTransitionSwitcher, SharedAxisTransition;
 
 class FPCAnimatedFastTransitionSwitcher extends StatelessWidget {
   const FPCAnimatedFastTransitionSwitcher({
@@ -10,7 +12,7 @@ class FPCAnimatedFastTransitionSwitcher extends StatelessWidget {
     this.isReverse = false,
   });
 
-  final FPCTransitionType type;
+  final FPCSwitcherTransitionType type;
   final Widget child;
   final bool isReverse;
 

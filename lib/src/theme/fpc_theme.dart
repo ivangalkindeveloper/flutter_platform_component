@@ -1,8 +1,10 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'dart:ui';
+
+import 'package:flutter/cupertino.dart' show CupertinoThemeData;
+import 'package:flutter/material.dart' show ThemeMode, ThemeData;
 
 abstract class IFPCTheme {
   const IFPCTheme();

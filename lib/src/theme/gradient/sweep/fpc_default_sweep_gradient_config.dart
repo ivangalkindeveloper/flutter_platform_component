@@ -1,17 +1,9 @@
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:math' as math;
 
-abstract class IFPCSweepGradientConfig {
-  abstract final AlignmentGeometry center;
-  abstract final double startAngle;
-  abstract final double endAngle;
-  abstract final List<double>? stops;
-  abstract final TileMode tileMode;
-  abstract final GradientTransform? transform;
-}
-
-class FPCSweepGradientConfig implements IFPCSweepGradientConfig {
-  const FPCSweepGradientConfig({
+class FPCDefaultSweepGradientConfig implements IFPCSweepGradientConfig {
+  const FPCDefaultSweepGradientConfig({
     this.center = Alignment.center,
     this.startAngle = 0.0,
     this.endAngle = math.pi * 2,

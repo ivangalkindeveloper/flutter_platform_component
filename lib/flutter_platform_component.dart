@@ -8,9 +8,6 @@ export 'src/flutter_platform_component.dart';
 
 // Config
 export 'src/config/fpc_config.dart';
-export 'src/config/fpc_linear_gradient_config.dart';
-export 'src/config/fpc_radial_gradient_config.dart';
-export 'src/config/fpc_sweep_gradient_config.dart';
 
 // Data
 export 'src/data/fpc_action_modal_item.dart';
@@ -59,6 +56,17 @@ export 'src/text_style/fpc_default_text_style.dart';
 export 'src/text_style/fpc_text_style.dart';
 
 // Theme
+// Theme / Gradient
+// Theme / Gradient / Linear
+export 'src/theme//gradient/linear/fpc_default_linear_gradient_config.dart';
+export 'src/theme//gradient/linear/fpc_linear_gradient_config.dart';
+// Theme / Gradient / Radial
+export 'src/theme/gradient/radial/fpc_default_radial_gradient_config.dart';
+export 'src/theme/gradient/radial/fpc_radial_gradient_config.dart';
+// Theme / Gradient / Sweep
+export 'src/theme/gradient/sweep/fpc_default_sweep_gradient_config.dart';
+export 'src/theme/gradient/sweep/fpc_sweep_gradient_config.dart';
+// Theme / Theme
 export 'src/theme/fpc_default_dark_theme.dart';
 export 'src/theme/fpc_default_light_theme.dart';
 export 'src/theme/fpc_theme.dart';
@@ -83,6 +91,7 @@ export 'src/widget/animation/default/fpc_animated_fade_out_up.dart';
 export 'src/widget/animation/default/fpc_animated_fade_out.dart';
 export 'src/widget/animation/default/fpc_animated_opacity_stack.dart';
 export 'src/widget/animation/default/fpc_animated_opacity.dart';
+export 'src/widget/animation/default/fpc_animated_open_container.dart';
 export 'src/widget/animation/default/fpc_animated_switcher.dart';
 export 'src/widget/animation/default/fpc_animated_transition_switcher.dart';
 // Animation / Fast
@@ -100,6 +109,7 @@ export 'src/widget/animation/fast/fpc_animated_fast_fade_out_up.dart';
 export 'src/widget/animation/fast/fpc_animated_fast_fade_out.dart';
 export 'src/widget/animation/fast/fpc_animated_fast_opacity_stack.dart';
 export 'src/widget/animation/fast/fpc_animated_fast_opacity.dart';
+export 'src/widget/animation/fast/fpc_animated_fast_open_container.dart';
 export 'src/widget/animation/fast/fpc_animated_fast_switcher.dart';
 export 'src/widget/animation/fast/fpc_animated_fast_transition_switcher.dart';
 // Animation / Slow
@@ -117,6 +127,7 @@ export 'src/widget/animation/slow/fpc_animated_slow_fade_out_up.dart';
 export 'src/widget/animation/slow/fpc_animated_slow_fade_out.dart';
 export 'src/widget/animation/slow/fpc_animated_slow_opacity_stack.dart';
 export 'src/widget/animation/slow/fpc_animated_slow_opacity.dart';
+export 'src/widget/animation/slow/fpc_animated_slow_open_container.dart';
 export 'src/widget/animation/slow/fpc_animated_slow_switcher.dart';
 export 'src/widget/animation/slow/fpc_animated_slow_transition_switcher.dart';
 

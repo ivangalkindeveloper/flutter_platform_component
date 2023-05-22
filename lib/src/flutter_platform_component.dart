@@ -1,5 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 
 class FlutterPlatformComponent extends StatefulWidget {
@@ -27,8 +28,7 @@ class FlutterPlatformComponent extends StatefulWidget {
   final Widget child;
 
   @override
-  State<FlutterPlatformComponent> createState() =>
-      _FlutterPlatformComponentState();
+  State<FlutterPlatformComponent> createState() => _FlutterPlatformComponentState();
 }
 
 class _FlutterPlatformComponentState extends State<FlutterPlatformComponent> {
@@ -87,8 +87,10 @@ class _FlutterPlatformComponentState extends State<FlutterPlatformComponent> {
 
   void changeTheme({
     required IFPCTheme theme,
-  }) =>
-      setState(() => this.theme = theme);
+  }) {
+    SystemChrome.setSystemUIOverlayStyle(theme.systemOverlayStyle);
+    setState(() => this.theme = theme);
+  }
 
   void changeSize({
     required IFPCSize size,

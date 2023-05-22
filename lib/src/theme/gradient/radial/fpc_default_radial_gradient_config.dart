@@ -1,17 +1,8 @@
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-abstract class IFPCRadialGradientConfig {
-  abstract final AlignmentGeometry center;
-  abstract final double radius;
-  abstract final List<double>? stops;
-  abstract final TileMode tileMode;
-  abstract final AlignmentGeometry? focal;
-  abstract final double focalRadius;
-  abstract final GradientTransform? transform;
-}
-
-class FPCRadialGradientConfig implements IFPCRadialGradientConfig {
-  const FPCRadialGradientConfig({
+class FPCDefaultRadialGradientConfig implements IFPCRadialGradientConfig {
+  const FPCDefaultRadialGradientConfig({
     this.center = Alignment.center,
     this.radius = 0.5,
     this.stops,

@@ -56,7 +56,7 @@ class _AnimatedTransitionSwitcherScreenState
                               ),
                               SizedBox(height: size.s16),
                               FPCAnimatedSlowTransitionSwitcher(
-                                type: FPCTransitionType.horizontal,
+                                type: FPCSwitcherTransitionType.horizontal,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -83,7 +83,7 @@ class _AnimatedTransitionSwitcherScreenState
                               ),
                               SizedBox(height: size.s16),
                               FPCAnimatedTransitionSwitcher(
-                                type: FPCTransitionType.horizontal,
+                                type: FPCSwitcherTransitionType.horizontal,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -110,7 +110,7 @@ class _AnimatedTransitionSwitcherScreenState
                               ),
                               SizedBox(height: size.s16),
                               FPCAnimatedFastTransitionSwitcher(
-                                type: FPCTransitionType.horizontal,
+                                type: FPCSwitcherTransitionType.horizontal,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -146,7 +146,7 @@ class _AnimatedTransitionSwitcherScreenState
                               ),
                               SizedBox(height: size.s16),
                               FPCAnimatedSlowTransitionSwitcher(
-                                type: FPCTransitionType.scaled,
+                                type: FPCSwitcherTransitionType.scaled,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -173,7 +173,7 @@ class _AnimatedTransitionSwitcherScreenState
                               ),
                               SizedBox(height: size.s16),
                               FPCAnimatedTransitionSwitcher(
-                                type: FPCTransitionType.scaled,
+                                type: FPCSwitcherTransitionType.scaled,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -200,7 +200,7 @@ class _AnimatedTransitionSwitcherScreenState
                               ),
                               SizedBox(height: size.s16),
                               FPCAnimatedFastTransitionSwitcher(
-                                type: FPCTransitionType.scaled,
+                                type: FPCSwitcherTransitionType.scaled,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -236,7 +236,7 @@ class _AnimatedTransitionSwitcherScreenState
                               ),
                               SizedBox(height: size.s16),
                               FPCAnimatedSlowTransitionSwitcher(
-                                type: FPCTransitionType.vertical,
+                                type: FPCSwitcherTransitionType.vertical,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -263,7 +263,7 @@ class _AnimatedTransitionSwitcherScreenState
                               ),
                               SizedBox(height: size.s16),
                               FPCAnimatedTransitionSwitcher(
-                                type: FPCTransitionType.vertical,
+                                type: FPCSwitcherTransitionType.vertical,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
@@ -290,7 +290,7 @@ class _AnimatedTransitionSwitcherScreenState
                               ),
                               SizedBox(height: size.s16),
                               FPCAnimatedFastTransitionSwitcher(
-                                type: FPCTransitionType.vertical,
+                                type: FPCSwitcherTransitionType.vertical,
                                 child: this._action
                                     ? Container(
                                         key: UniqueKey(),
