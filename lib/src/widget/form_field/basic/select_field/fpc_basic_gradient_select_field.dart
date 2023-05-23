@@ -88,10 +88,12 @@ class FPCBasicGradientSelectField extends StatefulWidget {
   final String? restorationId;
 
   @override
-  State<FPCBasicGradientSelectField> createState() => _FPCBasicGradientSelectFieldState();
+  State<FPCBasicGradientSelectField> createState() =>
+      _FPCBasicGradientSelectFieldState();
 }
 
-class _FPCBasicGradientSelectFieldState extends State<FPCBasicGradientSelectField>
+class _FPCBasicGradientSelectFieldState
+    extends State<FPCBasicGradientSelectField>
     with FPCDidInitMixin<FPCBasicGradientSelectField> {
   late FPCSizeState _sizeState;
 

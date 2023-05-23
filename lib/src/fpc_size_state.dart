@@ -18,64 +18,64 @@ class FPCSizeState extends State<_FPCSizeState> {
 
   // BorderRadius
   // BorderRadius / Button
-  BorderRadius get borderRadiusButton =>
-      FPCPlatformUtil.decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
+  BorderRadius get borderRadiusButton => FPCPlatformUtil.decomposeFromContext<
+          BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this.size.borderRadiusButtonCupertino,
         material: this.size.borderRadiusButtonMaterial,
       );
 
   // BorderRadius / Card
-  BorderRadius get borderRadiusCard =>
-      FPCPlatformUtil.decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
+  BorderRadius get borderRadiusCard => FPCPlatformUtil.decomposeFromContext<
+          BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this.size.borderRadiusCardCupertino,
         material: this.size.borderRadiusCardMaterial,
       );
 
   // BorderRadius / Dialog
-  BorderRadius get borderRadiusDialog =>
-      FPCPlatformUtil.decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
+  BorderRadius get borderRadiusDialog => FPCPlatformUtil.decomposeFromContext<
+          BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this.size.borderRadiusDialogCupertino,
         material: this.size.borderRadiusDialogMaterial,
       );
 
   // BorderRadius / Field
-  BorderRadius get borderRadiusField =>
-      FPCPlatformUtil.decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
+  BorderRadius get borderRadiusField => FPCPlatformUtil.decomposeFromContext<
+          BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this.size.borderRadiusFieldCupertino,
         material: this.size.borderRadiusFieldMaterial,
       );
 
   // BorderRadius / Modal
-  BorderRadius get borderRadiusModal =>
-      FPCPlatformUtil.decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
+  BorderRadius get borderRadiusModal => FPCPlatformUtil.decomposeFromContext<
+          BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this.size.borderRadiusModalCupertino,
         material: this.size.borderRadiusModalMaterial,
       );
 
   // BorderRadius / Segment Control
-  BorderRadius get borderRadiusSegmentControl =>
-      FPCPlatformUtil.decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
+  BorderRadius get borderRadiusSegmentControl => FPCPlatformUtil
+          .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this.size.borderRadiusSegmentControlCupertino,
         material: this.size.borderRadiusSegmentControlMaterial,
       );
 
   // BorderRadius / Snackbar
-  BorderRadius get borderRadiusSnackbar =>
-      FPCPlatformUtil.decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
+  BorderRadius get borderRadiusSnackbar => FPCPlatformUtil.decomposeFromContext<
+          BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this.size.borderRadiusSnackbarCupertino,
         material: this.size.borderRadiusSnackbarMaterial,
       );
 
   // BorderRadius / Toggle
-  BorderRadius get borderRadiusToggle =>
-      FPCPlatformUtil.decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
+  BorderRadius get borderRadiusToggle => FPCPlatformUtil.decomposeFromContext<
+          BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this.size.borderRadiusToggleCupertino,
         material: this.size.borderRadiusToggleMaterial,

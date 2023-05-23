@@ -231,7 +231,8 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
         }
 
         // Auto Validator
-        final String? _autoValidatorResult = this.widget.autoValidator?.call(value);
+        final String? _autoValidatorResult =
+            this.widget.autoValidator?.call(value);
         if (_autoValidatorResult != null) {
           this._haptic.error();
           setState(() {
@@ -256,7 +257,8 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
   void didUpdateWidget(covariant FPCBasicFormField oldWidget) {
     super.didUpdateWidget(oldWidget);
     // Controller
-    if (this.widget.controller != null && this._controller != this.widget.controller) {
+    if (this.widget.controller != null &&
+        this._controller != this.widget.controller) {
       this._controller = this.widget.controller!;
 
       this._isAutoValidationError = false;
@@ -266,7 +268,8 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
     }
 
     // FocusNode
-    if (this.widget.focusNode != null && this._focusNode != this.widget.focusNode) {
+    if (this.widget.focusNode != null &&
+        this._focusNode != this.widget.focusNode) {
       this._focusNode.removeListener(this._focusNodeListener);
       this._focusNode = this.widget.focusNode!;
       this._focusNode.addListener(this._focusNodeListener);
@@ -395,7 +398,8 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
     final Color labelColor = this._labelColor();
     final double height = this.widget.height ?? this._size.heightFormField;
     final double paddingTop = this.widget.padding?.top ?? this._size.s16 / 4;
-    final double paddingBottom = this.widget.padding?.bottom ?? this._size.s16 / 4;
+    final double paddingBottom =
+        this.widget.padding?.bottom ?? this._size.s16 / 4;
     final double paddingLeft = this.widget.padding?.left ?? this._size.s16;
     final double paddingRight = this.widget.padding?.right ?? this._size.s16;
     final BorderRadius borderRadius =
@@ -412,7 +416,8 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
             : EdgeInsets.zero;
     final void Function(String)? onChanged =
         this.widget.isDisabled ? null : this.widget.onChanged;
-    final void Function()? onTap = this.widget.isDisabled ? null : this.widget.onTap;
+    final void Function()? onTap =
+        this.widget.isDisabled ? null : this.widget.onTap;
     final void Function()? onEditingComplete =
         this.widget.isDisabled ? null : this.widget.onEditingComplete;
     final void Function(String)? onFieldSubmitted =
@@ -429,10 +434,10 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
     final TextStyle errorStyle = this.widget.errorStyle?.copyWith(
               color: this.widget.errorStyle?.color ?? this._theme.danger,
               fontSize: this.widget.errorStyle?.fontSize ?? this._size.s14,
-              fontWeight:
-                  this.widget.errorStyle?.fontWeight ?? this._textStyle.fontWeightRegular,
-              fontFamily:
-                  this.widget.errorStyle?.fontFamily ?? this._textStyle.fontFamilyRegular,
+              fontWeight: this.widget.errorStyle?.fontWeight ??
+                  this._textStyle.fontWeightRegular,
+              fontFamily: this.widget.errorStyle?.fontFamily ??
+                  this._textStyle.fontFamilyRegular,
               package: this._textStyle.package,
             ) ??
         TextStyle(
@@ -502,7 +507,8 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
                               hintStyle: this.widget.hintStyle,
                               //
                               textInputType: this.widget.textInputType,
-                              textCapitalization: this.widget.textCapitalization,
+                              textCapitalization:
+                                  this.widget.textCapitalization,
                               textInputAction: this.widget.textInputAction,
                               //
                               textAlign: this.widget.textAlign,
@@ -510,14 +516,16 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
                               isReadOnly: this.widget.isDisabled,
                               isShowCursor: this.widget.isShowCursor,
                               //
-                              obscuringCharacter: this.widget.obscuringCharacter,
+                              obscuringCharacter:
+                                  this.widget.obscuringCharacter,
                               isObscuringText: this.widget.isObscuringText,
                               //
                               isAutocorrect: this.widget.isAutocorrect,
                               smartDashesType: this.widget.smartDashesType,
                               smartQuotesType: this.widget.smartQuotesType,
                               isSuggestions: this.widget.isSuggestions,
-                              maxLengthEnforcement: this.widget.maxLengthEnforcement,
+                              maxLengthEnforcement:
+                                  this.widget.maxLengthEnforcement,
                               //
                               maxLines: this.widget.maxLines,
                               maxLength: this.widget.maxLength,
@@ -536,7 +544,8 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
                               //
                               cursorColor: this.widget.focusedColor,
                               //
-                              keyboardAppearance: this.widget.keyboardAppearance,
+                              keyboardAppearance:
+                                  this.widget.keyboardAppearance,
                               enableInteractiveSelection:
                                   this.widget.enableInteractiveSelection,
                               selectionControls: this.widget.selectionControls,
@@ -546,7 +555,8 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
                               restorationId: this.widget.restorationId,
                               enableIMEPersonalizedLearning:
                                   this.widget.enableIMEPersonalizedLearning,
-                              contextMenuBuilder: this.widget.contextMenuBuilder,
+                              contextMenuBuilder:
+                                  this.widget.contextMenuBuilder,
                             ),
                           ),
                         ),

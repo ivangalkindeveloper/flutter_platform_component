@@ -23,8 +23,9 @@ class AnimatedOpenContainerScreen extends StatelessWidget {
               children: [
                 FPCAnimatedSlowOpenContainer(
                   type: FPCOpenContainerTransitionType.fade,
-                  closedBuilder: (BuildContext context, VoidCallback openContainer) =>
-                      FPCPrimaryButton(
+                  closedBuilder:
+                      (BuildContext context, VoidCallback openContainer) =>
+                          FPCPrimaryButton(
                     title: "Slow",
                     onPressed: openContainer,
                   ),
@@ -36,8 +37,9 @@ class AnimatedOpenContainerScreen extends StatelessWidget {
                 SizedBox(height: size.s16 / 2),
                 FPCAnimatedOpenContainer(
                   type: FPCOpenContainerTransitionType.fade,
-                  closedBuilder: (BuildContext context, VoidCallback openContainer) =>
-                      FPCPrimaryButton(
+                  closedBuilder:
+                      (BuildContext context, VoidCallback openContainer) =>
+                          FPCPrimaryButton(
                     title: "Default",
                     onPressed: openContainer,
                   ),
@@ -49,8 +51,9 @@ class AnimatedOpenContainerScreen extends StatelessWidget {
                 SizedBox(height: size.s16 / 2),
                 FPCAnimatedFastOpenContainer(
                   type: FPCOpenContainerTransitionType.fade,
-                  closedBuilder: (BuildContext context, VoidCallback openContainer) =>
-                      FPCPrimaryButton(
+                  closedBuilder:
+                      (BuildContext context, VoidCallback openContainer) =>
+                          FPCPrimaryButton(
                     title: "Fast",
                     onPressed: openContainer,
                   ),

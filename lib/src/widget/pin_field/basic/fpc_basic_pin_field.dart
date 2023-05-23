@@ -76,7 +76,8 @@ class _FPCBasicPINFieldState extends State<FPCBasicPINField>
   @override
   void didInitState() {
     // Controller
-    this._textEditingController = this.widget.controller ?? TextEditingController();
+    this._textEditingController =
+        this.widget.controller ?? TextEditingController();
     this._animationController = AnimationController(
       vsync: this,
       duration: this._duration.animationSlow,
@@ -84,7 +85,8 @@ class _FPCBasicPINFieldState extends State<FPCBasicPINField>
     this._animationController.addStatusListener(this._controllerListener);
 
     // Error
-    this._errorSubscription = this.widget.errorController?.stream.listen((bool isError) {
+    this._errorSubscription =
+        this.widget.errorController?.stream.listen((bool isError) {
       if (this.mounted == false) {
         return;
       }
@@ -134,7 +136,8 @@ class _FPCBasicPINFieldState extends State<FPCBasicPINField>
   }
 
   void _controllerListener(AnimationStatus status) {
-    if (status == AnimationStatus.completed) this._animationController.reverse();
+    if (status == AnimationStatus.completed)
+      this._animationController.reverse();
   }
 
   PinTheme _item({
@@ -167,7 +170,8 @@ class _FPCBasicPINFieldState extends State<FPCBasicPINField>
     final double height = this.widget.height ?? this._size.s16;
     final double borderWidth =
         this.widget.borderWidth ?? this._sizeState.borderWidthField;
-    final double horizontalInterval = this.widget.horizontalInterval ?? this._size.s16;
+    final double horizontalInterval =
+        this.widget.horizontalInterval ?? this._size.s16;
     final void Function(String)? onChanged =
         this.widget.isDisabled ? null : this.widget.onChanged;
     final void Function(String)? onCompleted =

@@ -37,14 +37,16 @@ class ConfigSection extends StatelessWidget {
             Expanded(
               child: FPCPrimaryLabelButton(
                 title: "Light Theme",
-                onPressed: () => context.changeTheme(theme: FPCDefaultLightTheme()),
+                onPressed: () =>
+                    context.changeTheme(theme: FPCDefaultLightTheme()),
               ),
             ),
             SizedBox(width: size.s16),
             Expanded(
               child: FPCPrimaryLabelButton(
                 title: "Dark Theme",
-                onPressed: () => context.changeTheme(theme: FPCDefaultDarkTheme()),
+                onPressed: () =>
+                    context.changeTheme(theme: FPCDefaultDarkTheme()),
               ),
             ),
           ],

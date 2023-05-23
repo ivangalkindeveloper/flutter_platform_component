@@ -183,11 +183,14 @@ class _FPCBasicToggleState<T> extends State<FPCBasicToggle<T>>
                     item: item,
                     index: index,
                     length: this.widget.items.length,
-                    unselectedBackgroundColor: this.widget.unselectedBackgroundColor,
-                    unselectedInternalColor: this.widget.unselectedInternalColor,
+                    unselectedBackgroundColor:
+                        this.widget.unselectedBackgroundColor,
+                    unselectedInternalColor:
+                        this.widget.unselectedInternalColor,
                     unselectedSplashColor: this.widget.unselectedSplashColor,
                     unselectedStyle: this.widget.unselectedStyle,
-                    selectedBackgroundColor: this.widget.selectedBackgroundColor,
+                    selectedBackgroundColor:
+                        this.widget.selectedBackgroundColor,
                     selectedInternalColor: this.widget.selectedInternalColor,
                     selectedSplashColor: this.widget.selectedSplashColor,
                     selectedStyle: this.widget.selectedStyle,
@@ -305,17 +308,21 @@ class _FPCToggleButton<T> extends StatelessWidget {
     final IFPCTheme theme = context.componentTheme;
     final IFPCSize size = context.componentSize;
 
-    final double indent =
-        ((index + 1) != this.length) ? (this.horizontalInterval ?? size.s16 / 4) : 0;
+    final double indent = ((index + 1) != this.length)
+        ? (this.horizontalInterval ?? size.s16 / 4)
+        : 0;
     final Color backgroundColor = this._backgroundColor(theme: theme);
     final Color splashColor = this._splashColor(theme: theme);
     final Color internalColor = this._internalColor(theme: theme);
-    final double internalIconHeight = this.internalIconHeight ?? size.heightIconDefault;
+    final double internalIconHeight =
+        this.internalIconHeight ?? size.heightIconDefault;
     final TextStyle unselectedStyle = this.unselectedStyle?.copyWith(
               color: this.unselectedStyle?.color ?? internalColor,
               fontSize: this.unselectedStyle?.fontSize ?? size.s16,
-              fontWeight: this.unselectedStyle?.fontWeight ?? textStyle.fontWeightMedium,
-              fontFamily: this.unselectedStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              fontWeight: this.unselectedStyle?.fontWeight ??
+                  textStyle.fontWeightMedium,
+              fontFamily: this.unselectedStyle?.fontFamily ??
+                  textStyle.fontFamilyMedium,
             ) ??
         TextStyle(
           color: internalColor,
@@ -326,8 +333,10 @@ class _FPCToggleButton<T> extends StatelessWidget {
     final TextStyle selectedStyle = this.selectedStyle?.copyWith(
               color: this.selectedStyle?.color ?? internalColor,
               fontSize: this.selectedStyle?.fontSize ?? size.s16,
-              fontWeight: this.selectedStyle?.fontWeight ?? textStyle.fontWeightMedium,
-              fontFamily: this.selectedStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              fontWeight:
+                  this.selectedStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily:
+                  this.selectedStyle?.fontFamily ?? textStyle.fontFamilyMedium,
             ) ??
         TextStyle(
           color: internalColor,
@@ -335,7 +344,8 @@ class _FPCToggleButton<T> extends StatelessWidget {
           fontWeight: textStyle.fontWeightMedium,
           fontFamily: textStyle.fontFamilyMedium,
         );
-    final TextStyle titleStyle = this.isSelected ? selectedStyle : unselectedStyle;
+    final TextStyle titleStyle =
+        this.isSelected ? selectedStyle : unselectedStyle;
 
     return Padding(
       padding: EdgeInsets.only(right: indent),

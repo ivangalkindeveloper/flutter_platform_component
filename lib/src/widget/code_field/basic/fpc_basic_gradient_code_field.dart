@@ -50,7 +50,8 @@ class FPCBasicGradientCodeField extends StatefulWidget {
   final Color? disabledColor;
 
   @override
-  State<FPCBasicGradientCodeField> createState() => _FPCBasicGradientCodeFieldState();
+  State<FPCBasicGradientCodeField> createState() =>
+      _FPCBasicGradientCodeFieldState();
 }
 
 class _FPCBasicGradientCodeFieldState extends State<FPCBasicGradientCodeField>
@@ -84,7 +85,8 @@ class _FPCBasicGradientCodeFieldState extends State<FPCBasicGradientCodeField>
   @override
   void didInitState() {
     // Controller
-    this._textEditingController = this.widget.controller ?? TextEditingController();
+    this._textEditingController =
+        this.widget.controller ?? TextEditingController();
     this._animationController = AnimationController(
       vsync: this,
       duration: this._duration.animationSlow,
@@ -92,7 +94,8 @@ class _FPCBasicGradientCodeFieldState extends State<FPCBasicGradientCodeField>
     this._animationController.addStatusListener(this._controllerListener);
 
     // Error
-    this._errorSubscription = this.widget.errorController?.stream.listen((bool isError) {
+    this._errorSubscription =
+        this.widget.errorController?.stream.listen((bool isError) {
       if (this.mounted == false) {
         return;
       }
@@ -141,7 +144,8 @@ class _FPCBasicGradientCodeFieldState extends State<FPCBasicGradientCodeField>
   }
 
   void _controllerListener(AnimationStatus status) {
-    if (status == AnimationStatus.completed) this._animationController.reverse();
+    if (status == AnimationStatus.completed)
+      this._animationController.reverse();
   }
 
   PinTheme _item({
@@ -171,8 +175,10 @@ class _FPCBasicGradientCodeFieldState extends State<FPCBasicGradientCodeField>
 
   @override
   Widget build(BuildContext context) {
-    final double itemHeight = this.widget.itemHeight ?? this._size.heightCodeField;
-    final double itemWidth = this.widget.itemWidth ?? (this._size.heightCodeField * 0.75);
+    final double itemHeight =
+        this.widget.itemHeight ?? this._size.heightCodeField;
+    final double itemWidth =
+        this.widget.itemWidth ?? (this._size.heightCodeField * 0.75);
     final BorderRadius borderRadius =
         this.widget.borderRadius ?? this._sizeState.borderRadiusButton;
     final double borderWidth =
@@ -180,10 +186,10 @@ class _FPCBasicGradientCodeFieldState extends State<FPCBasicGradientCodeField>
     final TextStyle itemStyle = this.widget.itemStyle?.copyWith(
               color: this.widget.itemStyle?.color ?? this._theme.black,
               fontSize: this.widget.itemStyle?.fontSize ?? this._size.s20,
-              fontWeight:
-                  this.widget.itemStyle?.fontWeight ?? this._textStyle.fontWeightMedium,
-              fontFamily:
-                  this.widget.itemStyle?.fontFamily ?? this._textStyle.fontFamilyMedium,
+              fontWeight: this.widget.itemStyle?.fontWeight ??
+                  this._textStyle.fontWeightMedium,
+              fontFamily: this.widget.itemStyle?.fontFamily ??
+                  this._textStyle.fontFamilyMedium,
               package: this._textStyle.package,
             ) ??
         TextStyle(
@@ -198,7 +204,8 @@ class _FPCBasicGradientCodeFieldState extends State<FPCBasicGradientCodeField>
     final double cursorHeight =
         (this.widget.itemWidth ?? this._size.heightCodeField) - this._size.s14;
     final bool isReadOnly = this.widget.isDisabled || this._isError;
-    final void Function(String)? onChanged = isReadOnly ? null : this.widget.onChanged;
+    final void Function(String)? onChanged =
+        isReadOnly ? null : this.widget.onChanged;
     final void Function(String)? onCompleted =
         isReadOnly ? null : this.widget.onCompleted;
 
