@@ -6,8 +6,7 @@ class ConfigSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = FPCConfig.of(context);
-    final IFPCSize size = config.size;
+    final IFPCSize size = context.componentSize;
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -17,7 +16,7 @@ class ConfigSection extends StatelessWidget {
             Expanded(
               child: FPCPrimaryLabelButton(
                 title: "iOS",
-                onPressed: () => config.changePlatform(
+                onPressed: () => context.changePlatform(
                   platform: FPCPlatform.iOS,
                 ),
               ),
@@ -26,7 +25,7 @@ class ConfigSection extends StatelessWidget {
             Expanded(
               child: FPCPrimaryLabelButton(
                 title: "Android",
-                onPressed: () => config.changePlatform(
+                onPressed: () => context.changePlatform(
                   platform: FPCPlatform.Android,
                 ),
               ),
@@ -38,14 +37,14 @@ class ConfigSection extends StatelessWidget {
             Expanded(
               child: FPCPrimaryLabelButton(
                 title: "Light Theme",
-                onPressed: () => config.changeTheme(theme: FPCDefaultLightTheme()),
+                onPressed: () => context.changeTheme(theme: FPCDefaultLightTheme()),
               ),
             ),
             SizedBox(width: size.s16),
             Expanded(
               child: FPCPrimaryLabelButton(
                 title: "Dark Theme",
-                onPressed: () => config.changeTheme(theme: FPCDefaultDarkTheme()),
+                onPressed: () => context.changeTheme(theme: FPCDefaultDarkTheme()),
               ),
             ),
           ],

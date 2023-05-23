@@ -55,9 +55,8 @@ class _FPCKeyboardButtonCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCHaptic haptic = config.haptic;
-    final IFPCSize size = config.size;
+    final IFPCHaptic haptic = context.componentHaptic;
+    final IFPCSize size = context.componentSize;
 
     final double height = this.height ?? size.heightKeyboardButton;
     final VoidCallback onPressed = this.isDisabled
@@ -114,10 +113,9 @@ class _FPCKeyboardButtonMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCHaptic haptic = config.haptic;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCHaptic haptic = context.componentHaptic;
+    final IFPCSize size = context.componentSize;
 
     final Color splashColor = this.splashColor ?? theme.greyLight;
     final double height = this.height ?? size.heightKeyboardButton;

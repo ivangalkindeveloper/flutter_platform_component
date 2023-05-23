@@ -3,7 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:ui';
 
-import 'package:flutter/cupertino.dart' show CupertinoThemeData, CupertinoDynamicColor;
+import 'package:flutter/cupertino.dart'
+    show CupertinoThemeData, CupertinoDynamicColor;
 import 'package:flutter/material.dart' show ThemeMode, ThemeData, Colors;
 
 class FPCDefaultDarkTheme extends IFPCTheme {
@@ -130,10 +131,12 @@ class FPCDefaultDarkTheme extends IFPCTheme {
     IFPCSweepGradientConfig? sweepGradientConfig,
   })  :
         // Framework
-        this.cupertinoThemeData = cupertinoThemeData ?? const CupertinoThemeData(),
+        this.cupertinoThemeData =
+            cupertinoThemeData ?? const CupertinoThemeData(),
         this.materialThemeMode = materialThemeMode ?? ThemeMode.dark,
         this.materialThemeData = materialThemeData ?? ThemeData.dark(),
-        this.systemOverlayStyle = systemOverlayStyle ?? SystemUiOverlayStyle.dark,
+        this.systemOverlayStyle =
+            systemOverlayStyle ?? SystemUiOverlayStyle.dark,
 
         // White
         this.white = white ?? const Color(0xff171717),
@@ -145,7 +148,8 @@ class FPCDefaultDarkTheme extends IFPCTheme {
 
         // Background
         this.backgroundScaffold = backgroundScaffold ?? const Color(0xff3A3A3C),
-        this.backgroundComponent = backgroundComponent ?? const Color(0xff171717),
+        this.backgroundComponent =
+            backgroundComponent ?? const Color(0xff171717),
 
         // Blur
         this.blur = blur ?? const Color(0xff171717),
@@ -400,8 +404,10 @@ class FPCDefaultDarkTheme extends IFPCTheme {
         this.barrierPopUpModalMaterial =
             barrierPopUpModalMaterial ?? Colors.black.withOpacity(0.35),
         // Barrier / Dialog
-        this.barrierDialogCupertino = barrierDialogCupertino ?? const Color(0x8A000000),
-        this.barrierDialogMaterial = barrierDialogMaterial ?? const Color(0x8A000000),
+        this.barrierDialogCupertino =
+            barrierDialogCupertino ?? const Color(0x8A000000),
+        this.barrierDialogMaterial =
+            barrierDialogMaterial ?? const Color(0x8A000000),
 
         // Gradient
         this.linearGradientConfig =
@@ -760,10 +766,12 @@ class FPCDefaultDarkTheme extends IFPCTheme {
         secondaryGradient: secondaryGradient ?? this.secondaryGradient,
         // Secondary / Light
         secondaryLight: secondaryLight ?? this.secondaryLight,
-        secondaryLightGradient: secondaryLightGradient ?? this.secondaryLightGradient,
+        secondaryLightGradient:
+            secondaryLightGradient ?? this.secondaryLightGradient,
         // Secondary / Dark
         secondaryDark: secondaryDark ?? this.secondaryDark,
-        secondaryDarkGradient: secondaryDarkGradient ?? this.secondaryDarkGradient,
+        secondaryDarkGradient:
+            secondaryDarkGradient ?? this.secondaryDarkGradient,
 
         // Accent
         accent: accent ?? this.accent,
@@ -838,8 +846,10 @@ class FPCDefaultDarkTheme extends IFPCTheme {
         barrierPopUpModalMaterial:
             barrierPopUpModalMaterial ?? this.barrierPopUpModalMaterial,
         // Barrier / Dialog
-        barrierDialogCupertino: barrierDialogCupertino ?? this.barrierDialogCupertino,
-        barrierDialogMaterial: barrierDialogMaterial ?? this.barrierDialogMaterial,
+        barrierDialogCupertino:
+            barrierDialogCupertino ?? this.barrierDialogCupertino,
+        barrierDialogMaterial:
+            barrierDialogMaterial ?? this.barrierDialogMaterial,
 
         // Gradient
         linearGradientConfig: linearGradientConfig ?? this.linearGradientConfig,

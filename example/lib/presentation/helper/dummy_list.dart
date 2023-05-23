@@ -6,8 +6,7 @@ class DummyList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = FPCConfig.of(context);
-    final IFPCSize size = config.size;
+    final IFPCSize size = context.componentSize;
 
     return Column(
       mainAxisSize: MainAxisSize.min,

@@ -19,7 +19,7 @@ class FPCWhiteAlwaysExpandedModalAppBar extends FPCBasicAppBar {
           context: context,
           transitionBetweenRoutes: false,
           backgroundColor:
-              backgroundColor ?? context.componentConfig.theme.blackAlways,
+              backgroundColor ?? context.componentTheme.blackAlways,
           prefix: _prefix(
             prefix: prefix,
             cupertinoLocale: cupertinoLocale,
@@ -27,13 +27,12 @@ class FPCWhiteAlwaysExpandedModalAppBar extends FPCBasicAppBar {
           ),
           title: title,
           titleStyle: titleStyle?.copyWith(
-                color: titleStyle.color ??
-                    context.componentConfig.theme.whiteAlways,
-                package: context.componentConfig.textStyle.package,
+                color: titleStyle.color ?? context.componentTheme.whiteAlways,
+                package: context.componentTextStyle.package,
               ) ??
               TextStyle(
-                color: context.componentConfig.theme.whiteAlways,
-                package: context.componentConfig.textStyle.package,
+                color: context.componentTheme.whiteAlways,
+                package: context.componentTextStyle.package,
               ),
           middle: middle,
           postfix: postfix,

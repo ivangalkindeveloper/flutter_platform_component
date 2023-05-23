@@ -70,9 +70,8 @@ class FPCBasicBlurAppBar extends FPCPlatformAppBar {
     }
 
     if (title != null) {
-      final FPCConfig config = context.componentConfig;
-      final IFPCTextStyle textStyle = config.textStyle;
-      final IFPCTheme theme = config.theme;
+      final IFPCTextStyle textStyle = context.componentTextStyle;
+      final IFPCTheme theme = context.componentTheme;
 
       return Text(
         title,
@@ -118,9 +117,8 @@ class _FPCAppBarCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return FPCBlur(
       color: this.blurColor,
@@ -184,9 +182,8 @@ class _FPCAppBarMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return FPCBlur(
       color: this.blurColor,

@@ -12,18 +12,16 @@ class FPCSweepGradient extends SweepGradient {
     GradientTransform? transform,
     required List<Color> colors,
   }) : super(
-          center: center ??
-              context.componentConfig.theme.sweepGradientConfig.center,
+          center: center ?? context.componentTheme.sweepGradientConfig.center,
           startAngle: startAngle ??
-              context.componentConfig.theme.sweepGradientConfig.startAngle,
-          endAngle: endAngle ??
-              context.componentConfig.theme.sweepGradientConfig.endAngle,
-          stops:
-              stops ?? context.componentConfig.theme.sweepGradientConfig.stops,
-          tileMode: tileMode ??
-              context.componentConfig.theme.sweepGradientConfig.tileMode,
-          transform: transform ??
-              context.componentConfig.theme.sweepGradientConfig.transform,
+              context.componentTheme.sweepGradientConfig.startAngle,
+          endAngle:
+              endAngle ?? context.componentTheme.sweepGradientConfig.endAngle,
+          stops: stops ?? context.componentTheme.sweepGradientConfig.stops,
+          tileMode:
+              tileMode ?? context.componentTheme.sweepGradientConfig.tileMode,
+          transform:
+              transform ?? context.componentTheme.sweepGradientConfig.transform,
           colors: colors,
         );
 }

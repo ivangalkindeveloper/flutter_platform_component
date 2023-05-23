@@ -24,9 +24,8 @@ class FPCBasicGradientDotBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCDuration duration = config.duration;
-    final IFPCSize size = config.size;
+    final IFPCDuration duration = context.componentDuration;
+    final IFPCSize size = context.componentSize;
 
     final Duration durationBadge = this.duration ?? duration.badge;
     final double height = this.height ?? size.s10;

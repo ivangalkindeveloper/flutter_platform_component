@@ -27,12 +27,13 @@ class FPCBasicGradientShimmer extends StatefulWidget {
   final Widget? child;
 
   @override
-  State<FPCBasicGradientShimmer> createState() => _FPCBasicGradientShimmerState();
+  State<FPCBasicGradientShimmer> createState() =>
+      _FPCBasicGradientShimmerState();
 }
 
 class _FPCBasicGradientShimmerState extends State<FPCBasicGradientShimmer>
     with FPCDidInitMixin<FPCBasicGradientShimmer> {
-  late FPCConfig _config;
+  late FPCSizeState _sizeState;
   late IFPCDuration _duration;
 
   bool _isHighlight = false;
@@ -42,8 +43,8 @@ class _FPCBasicGradientShimmerState extends State<FPCBasicGradientShimmer>
 
   @override
   void didChangeDependencies() {
-    this._config = context.componentConfig;
-    this._duration = this._config.duration;
+    this._sizeState = this.context.componentSizeState;
+    this._duration = this.context.componentDuration;
     super.didChangeDependencies();
   }
 
@@ -53,9 +54,10 @@ class _FPCBasicGradientShimmerState extends State<FPCBasicGradientShimmer>
 
     // Subscription
     this._highlightSubscription = Stream.periodic(
-            this.widget.duration ?? this._duration.shimmer,
-            (int second) => second % 2 == 0)
-        .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
+        this.widget.duration ?? this._duration.shimmer,
+        (int second) =>
+            second % 2 == 0).listen(
+        (bool isHighLight) => setState(() => this._isHighlight = isHighLight));
   }
 
   @override
@@ -67,7 +69,8 @@ class _FPCBasicGradientShimmerState extends State<FPCBasicGradientShimmer>
       this._highlightSubscription = Stream.periodic(
               this.widget.duration ?? this._duration.shimmer,
               (int second) => second % 2 == 0)
-          .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
+          .listen((bool isHighLight) =>
+              setState(() => this._isHighlight = isHighLight));
     }
   }
 
@@ -84,7 +87,7 @@ class _FPCBasicGradientShimmerState extends State<FPCBasicGradientShimmer>
         ? this.widget.highlightGradient
         : this.widget.backgroundGradient;
     final BorderRadius borderRadius =
-        this.widget.borderRadius ?? this._config.borderRadiusCard;
+        this.widget.borderRadius ?? this._sizeState.borderRadiusCard;
     final Widget child = this.widget.child ?? const SizedBox();
 
     return FPCAnimatedContainer(

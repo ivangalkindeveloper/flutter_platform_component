@@ -21,20 +21,22 @@ class FPCAnimatedSlowOpenContainer extends StatelessWidget {
   final bool isTappable;
   final Color? closedColor;
   final ShapeBorder? closedShape;
-  final Widget Function(BuildContext context, VoidCallback openContainer) closedBuilder;
+  final Widget Function(BuildContext context, VoidCallback openContainer)
+      closedBuilder;
   final Color? openColor;
   final ShapeBorder? openShape;
   final Widget Function(BuildContext context) openBuilder;
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCDuration duration = config.duration;
+    final IFPCDuration duration = context.componentDuration;
 
     final Color closedColor = this.closedColor ?? Colors.transparent;
-    final ShapeBorder closedShape = this.closedShape ?? const RoundedRectangleBorder();
+    final ShapeBorder closedShape =
+        this.closedShape ?? const RoundedRectangleBorder();
     final Color openColor = this.openColor ?? Colors.transparent;
-    final ShapeBorder openShape = this.closedShape ?? const RoundedRectangleBorder();
+    final ShapeBorder openShape =
+        this.closedShape ?? const RoundedRectangleBorder();
 
     return OpenContainer(
       transitionType: this.type.packageMap,

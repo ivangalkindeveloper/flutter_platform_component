@@ -49,10 +49,9 @@ class FPCButtonRowChild extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTextStyle textStyle = config.textStyle;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTextStyle textStyle = context.componentTextStyle;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return Row(
       mainAxisSize: this.mainAxisSize,
@@ -60,7 +59,9 @@ class FPCButtonRowChild extends StatelessWidget {
       children: [
         if (this.prefix != null) this.prefix!,
         if (this.prefix != null &&
-            (this.prefixIcon != null || this.title != null || this.postfix != null))
+            (this.prefixIcon != null ||
+                this.title != null ||
+                this.postfix != null))
           SizedBox(width: size.s16),
         if (this.prefixIcon != null)
           this._gradientWrapper(
@@ -71,7 +72,8 @@ class FPCButtonRowChild extends StatelessWidget {
               size: this.internalIconHeight,
             ),
           ),
-        if (this.prefixIcon != null && (this.title != null || this.postfix != null))
+        if (this.prefixIcon != null &&
+            (this.title != null || this.postfix != null))
           SizedBox(width: size.s16),
         if (this.title != null)
           Flexible(
@@ -83,10 +85,10 @@ class FPCButtonRowChild extends StatelessWidget {
                 style: this.titleStyle?.copyWith(
                           color: this.titleStyle?.color ?? theme.black,
                           fontSize: this.titleStyle?.fontSize ?? size.s16,
-                          fontWeight:
-                              this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
-                          fontFamily:
-                              this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+                          fontWeight: this.titleStyle?.fontWeight ??
+                              textStyle.fontWeightMedium,
+                          fontFamily: this.titleStyle?.fontFamily ??
+                              textStyle.fontFamilyMedium,
                           package: textStyle.package,
                         ) ??
                     TextStyle(
@@ -99,7 +101,8 @@ class FPCButtonRowChild extends StatelessWidget {
               ),
             ),
           ),
-        if (this.prefixIcon != null && (this.prefixIcon != null || this.title != null))
+        if (this.prefixIcon != null &&
+            (this.prefixIcon != null || this.title != null))
           SizedBox(width: size.s16),
         if (this.postfixIcon != null)
           this._gradientWrapper(
@@ -111,7 +114,9 @@ class FPCButtonRowChild extends StatelessWidget {
             ),
           ),
         if (this.postfix != null &&
-            (this.prefix != null || this.prefixIcon != null || this.title != null))
+            (this.prefix != null ||
+                this.prefixIcon != null ||
+                this.title != null))
           SizedBox(width: size.s16),
         if (this.postfix != null) this.postfix!,
       ],

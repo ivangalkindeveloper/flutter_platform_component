@@ -53,9 +53,11 @@ class FPCBasicSlidingSegmentControl<T> extends StatefulWidget {
 }
 
 class _FPCBasicSlidingSegmentControlState<T>
-    extends State<FPCBasicSlidingSegmentControl<T>> {
+    extends State<FPCBasicSlidingSegmentControl<T>>
+    with FPCDidInitMixin<FPCBasicSlidingSegmentControl<T>> {
   late IFPCHaptic _haptic;
   late IFPCTheme _theme;
+  late IFPCSize _size;
 
   // Controller
   late final TextEditingController _controller;
@@ -64,20 +66,19 @@ class _FPCBasicSlidingSegmentControlState<T>
   bool _isValidationError = false;
 
   @override
-  void initState() {
-    super.initState();
+  void didChangeDependencies() {
+    this._haptic = this.context.componentHaptic;
+    this._theme = this.context.componentTheme;
+    this._size = this.context.componentSize;
+    super.didChangeDependencies();
+  }
+
+  @override
+  void didInitState() {
     // Controller
     this._controller = TextEditingController(
       text: this.widget.value != null ? this.widget.value.toString() : null,
     );
-  }
-
-  @override
-  void didChangeDependencies() {
-    final FPCConfig config = context.componentConfig;
-    this._haptic = config.haptic;
-    this._theme = config.theme;
-    super.didChangeDependencies();
   }
 
   @override
@@ -149,12 +150,8 @@ class _FPCBasicSlidingSegmentControlState<T>
 
     if (this.widget.items.length == 1) throw const FPCItemsLengthException();
 
-    final FPCConfig config = context.componentConfig;
-    final IFPCSize size = config.size;
-
     final Color backgroundColor = this._backgroundColor();
-    final double height =
-        this.widget.height ?? size.heightSlidingSegmentControl;
+    final double height = this.widget.height ?? this._size.heightSlidingSegmentControl;
 
     return Stack(
       alignment: Alignment.center,
@@ -184,28 +181,22 @@ class _FPCBasicSlidingSegmentControlState<T>
           children: Map.fromEntries(
             this.widget.items.map((FPCSlidingSegmentControlItem item) {
               final bool isSelected = this.widget.value == item.value;
-              final Color internalColor =
-                  this._internalColor(isSelected: isSelected);
+              final Color internalColor = this._internalColor(isSelected: isSelected);
               final double internalIconHeight =
-                  this.widget.internalIconHeight ?? size.heightIconDefault;
-              final TextStyle unselectedStyle =
-                  this.widget.unselectedStyle?.copyWith(
-                            color: this.widget.unselectedStyle?.color ??
-                                internalColor,
-                          ) ??
-                      TextStyle(
-                        color: internalColor,
-                      );
-              final TextStyle selectedStyle =
-                  this.widget.selectedStyle?.copyWith(
-                            color: this.widget.selectedStyle?.color ??
-                                internalColor,
-                          ) ??
-                      TextStyle(
-                        color: internalColor,
-                      );
-              final TextStyle titleStyle =
-                  isSelected ? selectedStyle : unselectedStyle;
+                  this.widget.internalIconHeight ?? this._size.heightIconDefault;
+              final TextStyle unselectedStyle = this.widget.unselectedStyle?.copyWith(
+                        color: this.widget.unselectedStyle?.color ?? internalColor,
+                      ) ??
+                  TextStyle(
+                    color: internalColor,
+                  );
+              final TextStyle selectedStyle = this.widget.selectedStyle?.copyWith(
+                        color: this.widget.selectedStyle?.color ?? internalColor,
+                      ) ??
+                  TextStyle(
+                    color: internalColor,
+                  );
+              final TextStyle titleStyle = isSelected ? selectedStyle : unselectedStyle;
 
               return MapEntry(
                 item.value,

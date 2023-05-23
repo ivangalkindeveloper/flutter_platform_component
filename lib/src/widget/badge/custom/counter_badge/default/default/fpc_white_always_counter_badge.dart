@@ -23,20 +23,19 @@ class FPCWhiteAlwaysCounterBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTextStyle textStyle = config.textStyle;
-    final IFPCTheme theme = config.theme;
+    final IFPCTextStyle textStyle = context.componentTextStyle;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCBasicCounterBadge(
       color: theme.whiteAlways,
       count: this.count,
       countStyle: this.countStyle?.copyWith(
                 color: this.countStyle?.color ??
-                    context.componentConfig.theme.blackAlways,
+                    context.componentTheme.blackAlways,
                 package: textStyle.package,
               ) ??
           TextStyle(
-            color: context.componentConfig.theme.blackAlways,
+            color: context.componentTheme.blackAlways,
             package: textStyle.package,
           ),
       position: this.position,

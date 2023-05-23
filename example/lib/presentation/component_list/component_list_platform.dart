@@ -6,9 +6,8 @@ class ConfigListPlatform extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = FPCConfig.of(context);
-    final FPCPlatform platform = config.platform;
-    final IFPCSize size = config.size;
+    final FPCPlatform platform = context.componentPlatform;
+    final IFPCSize size = context.componentSize;
 
     return Row(
       crossAxisAlignment: CrossAxisAlignment.end,

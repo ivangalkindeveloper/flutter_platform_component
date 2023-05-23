@@ -35,9 +35,8 @@ class FPCAccentGradientLabelButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTextStyle textStyle = config.textStyle;
-    final IFPCTheme theme = config.theme;
+    final IFPCTextStyle textStyle = context.componentTextStyle;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCBasicGradientButton(
       backgroundGradient: this.isFilled ? theme.accentLightGradient : null,

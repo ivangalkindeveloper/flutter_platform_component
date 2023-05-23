@@ -37,8 +37,7 @@ class FPCAccentSegmentControl<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCBasicSegmentControl(
       value: this.value,

@@ -55,8 +55,8 @@ class FPCBasicCodeField extends StatefulWidget {
 
 class _FPCBasicCodeFieldState extends State<FPCBasicCodeField>
     with TickerProviderStateMixin, FPCDidInitMixin<FPCBasicCodeField> {
-  late FPCConfig _config;
   late IFPCTextStyle _textStyle;
+  late FPCSizeState _sizeState;
   late IFPCDuration _duration;
   late IFPCHaptic _haptic;
   late IFPCTheme _theme;
@@ -72,20 +72,19 @@ class _FPCBasicCodeFieldState extends State<FPCBasicCodeField>
 
   @override
   void didChangeDependencies() {
-    this._config = context.componentConfig;
-    this._textStyle = this._config.textStyle;
-    this._duration = this._config.duration;
-    this._haptic = this._config.haptic;
-    this._theme = this._config.theme;
-    this._size = this._config.size;
+    this._textStyle = this.context.componentTextStyle;
+    this._sizeState = this.context.componentSizeState;
+    this._duration = this.context.componentDuration;
+    this._haptic = this.context.componentHaptic;
+    this._theme = this.context.componentTheme;
+    this._size = this._sizeState.size;
     super.didChangeDependencies();
   }
 
   @override
   void didInitState() {
     // Controller
-    this._textEditingController =
-        this.widget.controller ?? TextEditingController();
+    this._textEditingController = this.widget.controller ?? TextEditingController();
     this._animationController = AnimationController(
       vsync: this,
       duration: this._duration.animationSlow,
@@ -93,8 +92,7 @@ class _FPCBasicCodeFieldState extends State<FPCBasicCodeField>
     this._animationController.addStatusListener(this._controllerListener);
 
     // Error
-    this._errorSubscription =
-        this.widget.errorController?.stream.listen((bool isError) {
+    this._errorSubscription = this.widget.errorController?.stream.listen((bool isError) {
       if (this.mounted == false) {
         return;
       }
@@ -144,8 +142,7 @@ class _FPCBasicCodeFieldState extends State<FPCBasicCodeField>
   }
 
   void _controllerListener(AnimationStatus status) {
-    if (status == AnimationStatus.completed)
-      this._animationController.reverse();
+    if (status == AnimationStatus.completed) this._animationController.reverse();
   }
 
   PinTheme _item({
@@ -175,21 +172,19 @@ class _FPCBasicCodeFieldState extends State<FPCBasicCodeField>
 
   @override
   Widget build(BuildContext context) {
-    final double itemHeight =
-        this.widget.itemHeight ?? this._size.heightCodeField;
-    final double itemWidth =
-        this.widget.itemWidth ?? (this._size.heightCodeField * 0.75);
+    final double itemHeight = this.widget.itemHeight ?? this._size.heightCodeField;
+    final double itemWidth = this.widget.itemWidth ?? (this._size.heightCodeField * 0.75);
     final BorderRadius borderRadius =
-        this.widget.borderRadius ?? this._config.borderRadiusButton;
+        this.widget.borderRadius ?? this._sizeState.borderRadiusButton;
     final double borderWidth =
-        this.widget.borderWidth ?? this._config.borderWidthField;
+        this.widget.borderWidth ?? this._sizeState.borderWidthField;
     final TextStyle itemStyle = this.widget.itemStyle?.copyWith(
               color: this.widget.itemStyle?.color ?? this._theme.black,
               fontSize: this.widget.itemStyle?.fontSize ?? this._size.s20,
-              fontWeight: this.widget.itemStyle?.fontWeight ??
-                  this._textStyle.fontWeightMedium,
-              fontFamily: this.widget.itemStyle?.fontFamily ??
-                  this._textStyle.fontFamilyMedium,
+              fontWeight:
+                  this.widget.itemStyle?.fontWeight ?? this._textStyle.fontWeightMedium,
+              fontFamily:
+                  this.widget.itemStyle?.fontFamily ?? this._textStyle.fontFamilyMedium,
               package: this._textStyle.package,
             ) ??
         TextStyle(
@@ -204,8 +199,7 @@ class _FPCBasicCodeFieldState extends State<FPCBasicCodeField>
     final double cursorHeight =
         (this.widget.itemWidth ?? this._size.heightCodeField) - this._size.s14;
     final bool isReadOnly = this.widget.isDisabled || this._isError;
-    final void Function(String)? onChanged =
-        isReadOnly ? null : this.widget.onChanged;
+    final void Function(String)? onChanged = isReadOnly ? null : this.widget.onChanged;
     final void Function(String)? onCompleted =
         isReadOnly ? null : this.widget.onCompleted;
 

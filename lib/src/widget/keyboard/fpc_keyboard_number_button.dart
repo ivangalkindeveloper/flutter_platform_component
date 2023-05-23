@@ -23,10 +23,9 @@ class FPCKeyboardNumberButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTextStyle textStyle = config.textStyle;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTextStyle textStyle = context.componentTextStyle;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return FPCKeyboardButton(
       splashColor: this.splashColor,

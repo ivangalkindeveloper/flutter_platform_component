@@ -17,13 +17,12 @@ ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showFPCSnackBar({
   EdgeInsets? padding,
   Duration? duration,
 }) {
-  final FPCConfig config = context.componentConfig;
-  final IFPCDuration durationConfig = config.duration;
-  final IFPCHaptic haptic = config.haptic;
-  final IFPCSize size = config.size;
+  final IFPCDuration durationContext = context.componentDuration;
+  final IFPCHaptic haptic = context.componentHaptic;
+  final IFPCSize size = context.componentSize;
 
   final ScaffoldMessengerState messengerState = ScaffoldMessenger.of(context);
-  final Duration durationMethod = duration ?? durationConfig.snackbar;
+  final Duration durationMethod = duration ?? durationContext.snackbar;
   final EdgeInsets methodPadding = padding ?? EdgeInsets.all(size.s16);
 
   messengerState.hideCurrentSnackBar();

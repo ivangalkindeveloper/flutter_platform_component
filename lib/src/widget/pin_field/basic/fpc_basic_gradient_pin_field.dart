@@ -44,13 +44,12 @@ class FPCBasicGradientPINField extends StatefulWidget {
   final Color? disabledColor;
 
   @override
-  State<FPCBasicGradientPINField> createState() =>
-      _FPCBasicGradientPINFieldState();
+  State<FPCBasicGradientPINField> createState() => _FPCBasicGradientPINFieldState();
 }
 
 class _FPCBasicGradientPINFieldState extends State<FPCBasicGradientPINField>
     with TickerProviderStateMixin, FPCDidInitMixin<FPCBasicGradientPINField> {
-  late FPCConfig _config;
+  late FPCSizeState _sizeState;
   late IFPCDuration _duration;
   late IFPCHaptic _haptic;
   late IFPCTheme _theme;
@@ -66,19 +65,18 @@ class _FPCBasicGradientPINFieldState extends State<FPCBasicGradientPINField>
 
   @override
   void didChangeDependencies() {
-    this._config = context.componentConfig;
-    this._duration = this._config.duration;
-    this._haptic = this._config.haptic;
-    this._theme = this._config.theme;
-    this._size = this._config.size;
+    this._sizeState = this.context.componentSizeState;
+    this._duration = this.context.componentDuration;
+    this._haptic = this.context.componentHaptic;
+    this._theme = this.context.componentTheme;
+    this._size = this._sizeState.size;
     super.didChangeDependencies();
   }
 
   @override
   void didInitState() {
     // Controller
-    this._textEditingController =
-        this.widget.controller ?? TextEditingController();
+    this._textEditingController = this.widget.controller ?? TextEditingController();
     this._animationController = AnimationController(
       vsync: this,
       duration: this._duration.animationSlow,
@@ -86,8 +84,7 @@ class _FPCBasicGradientPINFieldState extends State<FPCBasicGradientPINField>
     this._animationController.addStatusListener(this._controllerListener);
 
     // Error
-    this._errorSubscription =
-        this.widget.errorController?.stream.listen((bool isError) {
+    this._errorSubscription = this.widget.errorController?.stream.listen((bool isError) {
       if (this.mounted == false) {
         return;
       }
@@ -137,8 +134,7 @@ class _FPCBasicGradientPINFieldState extends State<FPCBasicGradientPINField>
   }
 
   void _controllerListener(AnimationStatus status) {
-    if (status == AnimationStatus.completed)
-      this._animationController.reverse();
+    if (status == AnimationStatus.completed) this._animationController.reverse();
   }
 
   PinTheme _item({
@@ -170,9 +166,8 @@ class _FPCBasicGradientPINFieldState extends State<FPCBasicGradientPINField>
   Widget build(BuildContext context) {
     final double height = this.widget.height ?? this._size.s16;
     final double borderWidth =
-        this.widget.borderWidth ?? this._config.borderWidthField;
-    final double horizontalInterval =
-        this.widget.horizontalInterval ?? this._size.s16;
+        this.widget.borderWidth ?? this._sizeState.borderWidthField;
+    final double horizontalInterval = this.widget.horizontalInterval ?? this._size.s16;
     final void Function(String)? onChanged =
         this.widget.isDisabled ? null : this.widget.onChanged;
     final void Function(String)? onCompleted =

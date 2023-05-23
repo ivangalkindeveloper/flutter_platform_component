@@ -11,8 +11,7 @@ class FPCInfoLightGradientDivider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCBasicGradientDivider(
       gradient: theme.infoLightGradient,

@@ -6,19 +6,16 @@ class GradientCounterBadgeScreen extends StatefulWidget {
   const GradientCounterBadgeScreen({Key? key});
 
   @override
-  State<GradientCounterBadgeScreen> createState() =>
-      _GradientCounterBadgeScreenState();
+  State<GradientCounterBadgeScreen> createState() => _GradientCounterBadgeScreenState();
 }
 
-class _GradientCounterBadgeScreenState
-    extends State<GradientCounterBadgeScreen> {
+class _GradientCounterBadgeScreenState extends State<GradientCounterBadgeScreen> {
   int _count = 0;
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = FPCConfig.of(context);
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
@@ -178,16 +175,16 @@ class _Child extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = FPCConfig.of(context);
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final FPCSizeState sizeState = context.componentSizeState;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return Container(
       height: size.s32,
       width: size.s28 * 2,
       decoration: BoxDecoration(
         color: theme.greyLight,
-        borderRadius: config.borderRadiusCard,
+        borderRadius: sizeState.borderRadiusCard,
       ),
     );
   }

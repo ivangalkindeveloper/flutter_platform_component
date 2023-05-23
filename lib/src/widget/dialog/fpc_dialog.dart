@@ -102,10 +102,9 @@ class _FPCDialogCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTextStyle textStyle = config.textStyle;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTextStyle textStyle = context.componentTextStyle;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     final TextStyle titleStyle = this.titleStyle?.copyWith(
               color: this.titleStyle?.color ?? theme.blackAlways,
@@ -238,15 +237,15 @@ class _FPCDialogMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTextStyle textStyle = config.textStyle;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTextStyle textStyle = context.componentTextStyle;
+    final FPCSizeState sizeState = context.componentSizeState;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     final Color backgroundColor =
         this.backgroundColor ?? theme.backgroundScaffold;
     final BorderRadius borderRadius =
-        this.borderRadius ?? config.borderRadiusDialog;
+        this.borderRadius ?? sizeState.borderRadiusDialog;
     final TextStyle titleStyle = this.titleStyle?.copyWith(
               color: this.titleStyle?.color ?? theme.black,
               fontSize: this.titleStyle?.fontSize ?? size.s16,

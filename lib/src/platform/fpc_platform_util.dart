@@ -23,8 +23,7 @@ class FPCPlatformUtil {
     required Cupertino cupertino,
     required Material material,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final FPCPlatform platform = config.platform;
+    final FPCPlatform platform = context.componentPlatform;
 
     switch (platform) {
       case FPCPlatform.iOS:

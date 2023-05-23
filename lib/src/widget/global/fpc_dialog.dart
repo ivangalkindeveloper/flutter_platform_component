@@ -9,11 +9,12 @@ Future<T?> showFPCDialog<T>({
   required Widget child,
   Color? barrierColor,
 }) {
-  final FPCConfig config = context.componentConfig;
-  final FPCPlatform platform = config.platform;
-  final IFPCHaptic haptic = config.haptic;
+  final FPCThemeState themeState = context.componentThemeState;
+  final FPCPlatform platform = context.componentPlatform;
+  final IFPCHaptic haptic = context.componentHaptic;
 
-  final Color methodBarrierColor = barrierColor ?? config.barrierColorDialog;
+  final Color methodBarrierColor =
+      barrierColor ?? themeState.barrierColorDialog;
 
   haptic.selection();
   switch (platform) {

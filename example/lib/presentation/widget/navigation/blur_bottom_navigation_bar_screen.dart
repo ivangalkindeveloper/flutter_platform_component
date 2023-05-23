@@ -17,9 +17,8 @@ class _BlurBottomNavigationBarScreenState
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = FPCConfig.of(context);
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     final Color childColor = this._index == 1 ? theme.primary : theme.grey;
 

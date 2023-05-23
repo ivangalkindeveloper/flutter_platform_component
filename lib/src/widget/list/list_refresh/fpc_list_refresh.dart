@@ -61,9 +61,8 @@ class _FPCListRefreshCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCHaptic haptic = config.haptic;
-    final IFPCTheme theme = config.theme;
+    final IFPCHaptic haptic = context.componentHaptic;
+    final IFPCTheme theme = context.componentTheme;
 
     final Color colorBrightness =
         theme.systemOverlayStyle.statusBarBrightness == Brightness.dark
@@ -115,10 +114,9 @@ class _FPCListRefreshMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCHaptic haptic = config.haptic;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCHaptic haptic = context.componentHaptic;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     final Color backgroundColor = this.backgroundColor ?? theme.white;
     final Color color = this.color ?? theme.primary;

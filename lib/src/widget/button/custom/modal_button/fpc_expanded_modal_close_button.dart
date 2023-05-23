@@ -40,8 +40,7 @@ class _FPCExpandedModalCloseButtonCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return CupertinoButton(
       padding: EdgeInsets.zero,
@@ -70,9 +69,8 @@ class _FPCExpandedModalCloseButtonMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     final Color splashColor = this.splashColor ?? theme.greyLight;
 

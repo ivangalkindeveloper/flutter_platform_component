@@ -44,10 +44,9 @@ class FPCBasicGradientCounterBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCDuration duration = config.duration;
-    final IFPCSize size = config.size;
-    final IFPCTextStyle textStyle = config.textStyle;
+    final IFPCDuration duration = context.componentDuration;
+    final IFPCSize size = context.componentSize;
+    final IFPCTextStyle textStyle = context.componentTextStyle;
 
     final Duration durationBadge = this.duration ?? duration.badge;
     final EdgeInsets padding = this.padding ??
@@ -58,8 +57,8 @@ class FPCBasicGradientCounterBadge extends StatelessWidget {
     final bool isShow = this._isShow();
     final String count = this._count();
     final TextStyle countStyle = this.countStyle?.copyWith(
-              color: this.countStyle?.color ??
-                  context.componentConfig.theme.whiteAlways,
+              color:
+                  this.countStyle?.color ?? context.componentTheme.whiteAlways,
               fontSize: this.countStyle?.fontSize ?? size.s14,
               fontWeight:
                   this.countStyle?.fontWeight ?? textStyle.fontWeightRegular,
@@ -68,7 +67,7 @@ class FPCBasicGradientCounterBadge extends StatelessWidget {
               package: textStyle.package,
             ) ??
         TextStyle(
-          color: context.componentConfig.theme.whiteAlways,
+          color: context.componentTheme.whiteAlways,
           fontSize: size.s14,
           fontWeight: textStyle.fontWeightRegular,
           fontFamily: textStyle.fontFamilyRegular,

@@ -1,6 +1,8 @@
-## 1.2.3
+## 2.0.0
+* State decomposition and optimization;
 * Adding FPCAnimatedOpenContainer;
 * FPCCupertinoSliverRefreshControl as helper for indicator color;
+* Deleting context properties in basic widgets;
 * Fix shimmers and adding delay;
 * Fix gradient configs;
 * Fix README.

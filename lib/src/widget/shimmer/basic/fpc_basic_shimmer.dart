@@ -32,7 +32,7 @@ class FPCBasicShimmer extends StatefulWidget {
 
 class _FPCBasicShimmerState extends State<FPCBasicShimmer>
     with FPCDidInitMixin<FPCBasicShimmer> {
-  late FPCConfig _config;
+  late FPCSizeState _sizeState;
   late IFPCDuration _duration;
 
   bool _isHighlight = false;
@@ -42,8 +42,8 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
 
   @override
   void didChangeDependencies() {
-    this._config = context.componentConfig;
-    this._duration = this._config.duration;
+    this._sizeState = this.context.componentSizeState;
+    this._duration = this.context.componentDuration;
     super.didChangeDependencies();
   }
 
@@ -53,9 +53,10 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
 
     // Subscription
     this._highlightSubscription = Stream.periodic(
-            this.widget.duration ?? this._duration.shimmer,
-            (int second) => second % 2 == 0)
-        .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
+        this.widget.duration ?? this._duration.shimmer,
+        (int second) =>
+            second % 2 == 0).listen(
+        (bool isHighLight) => setState(() => this._isHighlight = isHighLight));
   }
 
   @override
@@ -67,7 +68,8 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
       this._highlightSubscription = Stream.periodic(
               this.widget.duration ?? this._duration.shimmer,
               (int second) => second % 2 == 0)
-          .listen((bool isHighLight) => setState(() => this._isHighlight = isHighLight));
+          .listen((bool isHighLight) =>
+              setState(() => this._isHighlight = isHighLight));
     }
   }
 
@@ -80,10 +82,11 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
 
   @override
   Widget build(BuildContext context) {
-    final Color color =
-        this._isHighlight ? this.widget.highlightColor : this.widget.backgroundColor;
+    final Color color = this._isHighlight
+        ? this.widget.highlightColor
+        : this.widget.backgroundColor;
     final BorderRadius borderRadius =
-        this.widget.borderRadius ?? this._config.borderRadiusCard;
+        this.widget.borderRadius ?? this._sizeState.borderRadiusCard;
     final Widget child = this.widget.child ?? const SizedBox();
 
     return FPCAnimatedContainer(

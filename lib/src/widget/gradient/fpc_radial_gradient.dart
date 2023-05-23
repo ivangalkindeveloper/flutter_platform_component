@@ -13,20 +13,16 @@ class FPCRadialGradient extends RadialGradient {
     GradientTransform? transform,
     required List<Color> colors,
   }) : super(
-          center: center ??
-              context.componentConfig.theme.radialGradientConfig.center,
-          radius: radius ??
-              context.componentConfig.theme.radialGradientConfig.radius,
-          stops:
-              stops ?? context.componentConfig.theme.radialGradientConfig.stops,
-          tileMode: tileMode ??
-              context.componentConfig.theme.radialGradientConfig.tileMode,
-          focal:
-              focal ?? context.componentConfig.theme.radialGradientConfig.focal,
+          center: center ?? context.componentTheme.radialGradientConfig.center,
+          radius: radius ?? context.componentTheme.radialGradientConfig.radius,
+          stops: stops ?? context.componentTheme.radialGradientConfig.stops,
+          tileMode:
+              tileMode ?? context.componentTheme.radialGradientConfig.tileMode,
+          focal: focal ?? context.componentTheme.radialGradientConfig.focal,
           focalRadius: focalRadius ??
-              context.componentConfig.theme.radialGradientConfig.focalRadius,
+              context.componentTheme.radialGradientConfig.focalRadius,
           transform: transform ??
-              context.componentConfig.theme.radialGradientConfig.transform,
+              context.componentTheme.radialGradientConfig.transform,
           colors: colors,
         );
 }

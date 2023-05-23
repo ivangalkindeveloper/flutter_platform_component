@@ -12,13 +12,14 @@ Future<T?> showFPCExpandedModal<T>({
   Color? barrierColor,
   BorderRadius? borderRadius,
 }) {
-  final FPCConfig config = context.componentConfig;
-  final FPCPlatform platform = config.platform;
+  final FPCThemeState themeState = context.componentThemeState;
+  final FPCSizeState sizeState = context.componentSizeState;
+  final FPCPlatform platform = context.componentPlatform;
 
   final Color methodBarrierColor =
-      barrierColor ?? config.barrierColorExpandedModal;
+      barrierColor ?? themeState.barrierColorExpandedModal;
   final BorderRadius methodBorderRadius =
-      borderRadius ?? config.borderRadiusModal;
+      borderRadius ?? sizeState.borderRadiusModal;
 
   switch (platform) {
     case FPCPlatform.iOS:
@@ -63,11 +64,11 @@ Future<T?> showFPCPopUpModal<T>({
   required Widget child,
   Color? barrierColor,
 }) {
-  final FPCConfig config = context.componentConfig;
-  final FPCPlatform platform = config.platform;
+  final FPCThemeState themeState = context.componentThemeState;
+  final FPCPlatform platform = context.componentPlatform;
 
   final Color methodBarrierColor =
-      barrierColor ?? config.barrierColorPopUpModal;
+      barrierColor ?? themeState.barrierColorPopUpModal;
 
   switch (platform) {
     case FPCPlatform.iOS:

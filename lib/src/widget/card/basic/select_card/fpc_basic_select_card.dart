@@ -80,10 +80,10 @@ class _FPCBasicSelectCardCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
+    final FPCSizeState sizeState = context.componentSizeState;
 
     final BorderRadius borderRadius =
-        this.borderRadius ?? config.borderRadiusCard;
+        this.borderRadius ?? sizeState.borderRadiusCard;
     final VoidCallback onPressed = this.isDisabled ? () {} : this.onPressed;
 
     return Stack(
@@ -147,12 +147,12 @@ class _FPCBasicSelectCardMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final FPCSizeState sizeState = context.componentSizeState;
+    final IFPCTheme theme = context.componentTheme;
 
     final Color splashColor = this.splashColor ?? theme.grey;
     final BorderRadius borderRadius =
-        this.borderRadius ?? config.borderRadiusCard;
+        this.borderRadius ?? sizeState.borderRadiusCard;
     final VoidCallback onPressed = this.isDisabled ? () {} : this.onPressed;
 
     return Stack(

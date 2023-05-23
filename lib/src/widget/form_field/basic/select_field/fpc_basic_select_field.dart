@@ -91,13 +91,21 @@ class FPCBasicSelectField extends StatefulWidget {
   State<FPCBasicSelectField> createState() => _FPCBasicSelectFieldState();
 }
 
-class _FPCBasicSelectFieldState extends State<FPCBasicSelectField> {
+class _FPCBasicSelectFieldState extends State<FPCBasicSelectField>
+    with FPCDidInitMixin<FPCBasicSelectField> {
+  late FPCSizeState _sizeState;
+
   // Controller
   late final TextEditingController _controller;
 
   @override
-  void initState() {
-    super.initState();
+  void didChangeDependencies() {
+    this._sizeState = this.context.componentSizeState;
+    super.didChangeDependencies();
+  }
+
+  @override
+  void didInitState() {
     // Controller
     this._controller = TextEditingController(text: this.widget.title);
   }
@@ -126,11 +134,10 @@ class _FPCBasicSelectFieldState extends State<FPCBasicSelectField> {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
     final BorderRadius borderRadius =
-        this.widget.borderRadius ?? config.borderRadiusField;
+        this.widget.borderRadius ?? this._sizeState.borderRadiusField;
     final double borderWidth =
-        this.widget.borderWidth ?? config.borderWidthField;
+        this.widget.borderWidth ?? this._sizeState.borderWidthField;
 
     return FPCSelectFieldWrapper(
       context: context,

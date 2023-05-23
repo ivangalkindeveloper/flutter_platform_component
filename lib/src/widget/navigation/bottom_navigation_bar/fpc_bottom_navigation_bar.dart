@@ -66,8 +66,7 @@ class _FPCBottomNavigationBarCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     final Color backgroundColor =
         this.backgroundColor ?? theme.backgroundComponent;
@@ -115,9 +114,8 @@ class _FPCBottomNavigationBarMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTextStyle textStyle = config.textStyle;
-    final IFPCTheme theme = config.theme;
+    final IFPCTextStyle textStyle = context.componentTextStyle;
+    final IFPCTheme theme = context.componentTheme;
 
     final Color backgroundColor =
         this.backgroundColor ?? theme.backgroundComponent;

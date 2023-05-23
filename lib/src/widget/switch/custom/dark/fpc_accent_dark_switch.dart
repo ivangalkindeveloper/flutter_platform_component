@@ -17,8 +17,7 @@ class FPCAccentDarkSwitch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCBasicSwitch(
       value: this.value,

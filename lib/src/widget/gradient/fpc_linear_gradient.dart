@@ -11,15 +11,13 @@ class FPCLinearGradient extends LinearGradient {
     GradientTransform? transform,
     required List<Color> colors,
   }) : super(
-          begin:
-              begin ?? context.componentConfig.theme.linearGradientConfig.begin,
-          end: end ?? context.componentConfig.theme.linearGradientConfig.end,
-          stops:
-              stops ?? context.componentConfig.theme.linearGradientConfig.stops,
-          tileMode: tileMode ??
-              context.componentConfig.theme.linearGradientConfig.tileMode,
+          begin: begin ?? context.componentTheme.linearGradientConfig.begin,
+          end: end ?? context.componentTheme.linearGradientConfig.end,
+          stops: stops ?? context.componentTheme.linearGradientConfig.stops,
+          tileMode:
+              tileMode ?? context.componentTheme.linearGradientConfig.tileMode,
           transform: transform ??
-              context.componentConfig.theme.linearGradientConfig.transform,
+              context.componentTheme.linearGradientConfig.transform,
           colors: colors,
         );
 }

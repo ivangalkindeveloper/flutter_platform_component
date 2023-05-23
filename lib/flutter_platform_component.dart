@@ -6,9 +6,6 @@ library flutter_platform_component;
 
 export 'src/flutter_platform_component.dart';
 
-// Config
-export 'src/config/fpc_config.dart';
-
 // Data
 export 'src/data/fpc_action_modal_item.dart';
 export 'src/data/fpc_bottom_navigation_bar_icon_item.dart';

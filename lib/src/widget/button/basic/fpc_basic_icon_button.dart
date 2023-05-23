@@ -55,8 +55,7 @@ class _FPCBasicIconButtonCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCSize size = config.size;
+    final IFPCSize size = context.componentSize;
 
     final double height = this.height ?? size.heightIconDefault;
     final VoidCallback onPressed = this.isDisabled ? () {} : this.onPressed;
@@ -109,9 +108,8 @@ class _FPCBasicIconButtonMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     final Color splashColor = this.splashColor ?? theme.greyLight;
     final double height = this.height ?? size.heightIconDefault;

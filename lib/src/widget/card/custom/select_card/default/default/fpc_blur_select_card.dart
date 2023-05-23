@@ -1,6 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:flutter/material.dart' show Colors;
 import 'package:flutter/widgets.dart';
+
+import 'package:flutter/material.dart' show Colors;
 
 class FPCBlurSelectCard extends StatelessWidget {
   const FPCBlurSelectCard({
@@ -28,11 +29,14 @@ class FPCBlurSelectCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final FPCSizeState sizeState = context.componentSizeState;
+    final IFPCTheme theme = context.componentTheme;
+
+    final BorderRadius borderRadius =
+        this.borderRadius ?? sizeState.borderRadiusCard;
 
     return FPCBlur(
-      borderRadius: this.borderRadius ?? config.borderRadiusCard,
+      borderRadius: borderRadius,
       child: FPCBasicSelectCard(
         backgroundColor: Colors.transparent,
         splashColor: theme.primary,

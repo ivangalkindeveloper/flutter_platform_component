@@ -73,8 +73,8 @@ class FPCApp extends FPCPlatformWidget {
             title: title,
             onGenerateTitle: onGenerateTitle,
             //
-            theme: cupertinoThemeData ??
-                context.componentConfig.theme.cupertinoThemeData,
+            theme:
+                cupertinoThemeData ?? context.componentTheme.cupertinoThemeData,
             locale: locale,
             localizationsDelegates: [
               DefaultWidgetsLocalizations.delegate,
@@ -113,10 +113,10 @@ class FPCApp extends FPCPlatformWidget {
             title: title,
             onGenerateTitle: onGenerateTitle,
             //
-            themeMode: materialThemeMode ??
-                context.componentConfig.theme.materialThemeMode,
-            theme: materialThemeData ??
-                context.componentConfig.theme.materialThemeData,
+            themeMode:
+                materialThemeMode ?? context.componentTheme.materialThemeMode,
+            theme:
+                materialThemeData ?? context.componentTheme.materialThemeData,
             locale: locale,
             localizationsDelegates: [
               DefaultWidgetsLocalizations.delegate,
@@ -195,8 +195,8 @@ class FPCApp extends FPCPlatformWidget {
             title: title,
             onGenerateTitle: onGenerateTitle,
             //
-            theme: cupertinoThemeData ??
-                context.componentConfig.theme.cupertinoThemeData,
+            theme:
+                cupertinoThemeData ?? context.componentTheme.cupertinoThemeData,
             locale: locale,
             localizationsDelegates: [
               DefaultWidgetsLocalizations.delegate,
@@ -232,10 +232,10 @@ class FPCApp extends FPCPlatformWidget {
             title: title,
             onGenerateTitle: onGenerateTitle,
             //
-            themeMode: materialThemeMode ??
-                context.componentConfig.theme.materialThemeMode,
-            theme: materialThemeData ??
-                context.componentConfig.theme.materialThemeData,
+            themeMode:
+                materialThemeMode ?? context.componentTheme.materialThemeMode,
+            theme:
+                materialThemeData ?? context.componentTheme.materialThemeData,
             locale: locale,
             localizationsDelegates: [
               DefaultWidgetsLocalizations.delegate,

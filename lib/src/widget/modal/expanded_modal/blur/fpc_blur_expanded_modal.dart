@@ -44,15 +44,15 @@ class FPCBlurExpandedModal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final FPCSizeState sizeState = context.componentSizeState;
+    final IFPCTheme theme = context.componentTheme;
 
     return SafeArea(
       bottom: false,
       child: ClipRRect(
         borderRadius: BorderRadius.only(
-          topLeft: config.borderRadiusModal.topLeft,
-          topRight: config.borderRadiusModal.topRight,
+          topLeft: sizeState.borderRadiusModal.topLeft,
+          topRight: sizeState.borderRadiusModal.topRight,
         ),
         child: FPCScaffold(
           backgroundColor: this.backgroundColor ?? theme.backgroundScaffold,

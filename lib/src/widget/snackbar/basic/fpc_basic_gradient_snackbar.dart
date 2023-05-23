@@ -29,12 +29,13 @@ class FPCBasicGradientSnackbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCSize size = config.size;
+    final FPCSizeState sizeState = context.componentSizeState;
+    final IFPCSize size = context.componentSize;
 
     final BorderRadius borderRadius =
-        this.borderRadius ?? config.borderRadiusSnackbar;
-    final double borderWidth = this.borderWidth ?? config.borderWidthSnackbar;
+        this.borderRadius ?? sizeState.borderRadiusSnackbar;
+    final double borderWidth =
+        this.borderWidth ?? sizeState.borderWidthSnackbar;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
           vertical: size.s16 / 2,

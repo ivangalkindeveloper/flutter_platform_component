@@ -31,9 +31,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -46,9 +45,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -61,9 +59,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -76,9 +73,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -91,9 +87,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -106,9 +101,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -121,9 +115,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -136,9 +129,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -151,9 +143,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -166,9 +157,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -181,9 +171,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -196,9 +185,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -211,9 +199,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -226,9 +213,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -241,9 +227,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -256,9 +241,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -271,9 +255,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -286,9 +269,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -301,9 +283,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -316,9 +297,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -331,9 +311,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -346,9 +325,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -361,9 +339,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -376,9 +353,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -391,9 +367,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -406,9 +381,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -421,9 +395,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -436,9 +409,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -451,9 +423,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -466,9 +437,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -481,9 +451,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -496,9 +465,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -511,9 +479,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -526,9 +493,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -541,9 +507,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -556,9 +521,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -571,9 +535,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -586,9 +549,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -601,9 +563,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -616,9 +577,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -631,9 +591,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -646,9 +605,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -661,9 +619,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -676,9 +633,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -691,9 +647,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -706,9 +661,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -721,9 +675,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -736,9 +689,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -751,9 +703,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -766,9 +717,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -781,9 +731,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -796,9 +745,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -811,9 +759,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -826,9 +773,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -841,9 +787,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -857,9 +802,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -872,9 +816,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -887,9 +830,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -902,9 +844,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -917,9 +858,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -932,9 +872,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -947,9 +886,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -962,9 +900,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -977,9 +914,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -992,9 +928,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1007,9 +942,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1022,9 +956,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1037,9 +970,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1052,9 +984,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1067,9 +998,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1082,9 +1012,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1097,9 +1026,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1112,9 +1040,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1127,9 +1054,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1142,9 +1068,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1157,9 +1082,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1172,9 +1096,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1187,9 +1110,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1202,9 +1124,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1217,9 +1138,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1232,9 +1152,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1247,9 +1166,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1262,9 +1180,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1277,9 +1194,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1292,9 +1208,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1307,9 +1222,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1322,9 +1236,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1337,9 +1250,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1352,9 +1264,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1367,9 +1278,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1382,9 +1292,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1397,9 +1306,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1412,9 +1320,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1427,9 +1334,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1442,9 +1348,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1457,9 +1362,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1472,9 +1376,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1487,9 +1390,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1502,9 +1404,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1517,9 +1418,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1532,9 +1432,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1547,9 +1446,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1562,9 +1460,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1577,9 +1474,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1592,9 +1488,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1607,9 +1502,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1622,9 +1516,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1637,9 +1530,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1652,9 +1544,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1667,9 +1558,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1683,9 +1573,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1698,9 +1587,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1713,9 +1601,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1728,9 +1615,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1743,9 +1629,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1758,9 +1643,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1773,9 +1657,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1788,9 +1671,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1803,9 +1685,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1818,9 +1699,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1833,9 +1713,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1848,9 +1727,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1863,9 +1741,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1878,9 +1755,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1893,9 +1769,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1908,9 +1783,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1923,9 +1797,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1938,9 +1811,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1953,9 +1825,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1968,9 +1839,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -1983,9 +1853,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -1998,9 +1867,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2013,9 +1881,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2028,9 +1895,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2043,9 +1909,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2058,9 +1923,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2073,9 +1937,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2088,9 +1951,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2103,9 +1965,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2118,9 +1979,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2133,9 +1993,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2148,9 +2007,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2163,9 +2021,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2178,9 +2035,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2193,9 +2049,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2208,9 +2063,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2223,9 +2077,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2238,9 +2091,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2253,9 +2105,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2268,9 +2119,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2283,9 +2133,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2298,9 +2147,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2313,9 +2161,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2328,9 +2175,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2343,9 +2189,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2358,9 +2203,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2373,9 +2217,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2388,9 +2231,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2403,9 +2245,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2418,9 +2259,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2433,9 +2273,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2448,9 +2287,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2463,9 +2301,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,
@@ -2478,9 +2315,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconColor(
       icon: icon,
@@ -2493,9 +2329,8 @@ class FPCIcon {
     required BuildContext context,
     required IconData icon,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return _iconGradient(
       icon: icon,

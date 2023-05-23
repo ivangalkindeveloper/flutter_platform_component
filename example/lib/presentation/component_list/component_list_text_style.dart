@@ -6,9 +6,8 @@ class ConfigListTextStyle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = FPCConfig.of(context);
-    final IFPCTextStyle textStyle = config.textStyle;
-    final IFPCSize size = config.size;
+    final IFPCTextStyle textStyle = context.componentTextStyle;
+    final IFPCSize size = context.componentSize;
 
     return Column(
       mainAxisSize: MainAxisSize.min,

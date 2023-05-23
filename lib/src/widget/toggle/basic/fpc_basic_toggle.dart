@@ -58,8 +58,11 @@ class FPCBasicToggle<T> extends StatefulWidget {
   State<FPCBasicToggle<T>> createState() => _FPCBasicToggleState<T>();
 }
 
-class _FPCBasicToggleState<T> extends State<FPCBasicToggle<T>> {
+class _FPCBasicToggleState<T> extends State<FPCBasicToggle<T>>
+    with FPCDidInitMixin<FPCBasicToggle<T>> {
+  late FPCSizeState _sizeState;
   late IFPCHaptic _haptic;
+  late IFPCSize _size;
 
   // Controller
   late final TextEditingController _controller;
@@ -68,19 +71,19 @@ class _FPCBasicToggleState<T> extends State<FPCBasicToggle<T>> {
   bool _isValidationError = false;
 
   @override
-  void initState() {
-    super.initState();
+  void didChangeDependencies() {
+    this._sizeState = this.context.componentSizeState;
+    this._haptic = this.context.componentHaptic;
+    this._size = this.context.componentSize;
+    super.didChangeDependencies();
+  }
+
+  @override
+  void didInitState() {
     // Controller
     this._controller = TextEditingController(
       text: this.widget.value != null ? this.widget.value.toString() : null,
     );
-  }
-
-  @override
-  void didChangeDependencies() {
-    final FPCConfig config = context.componentConfig;
-    this._haptic = config.haptic;
-    super.didChangeDependencies();
   }
 
   @override
@@ -141,12 +144,9 @@ class _FPCBasicToggleState<T> extends State<FPCBasicToggle<T>> {
 
     if (this.widget.items.length == 1) throw const FPCItemsLengthException();
 
-    final FPCConfig config = context.componentConfig;
-    final IFPCSize size = config.size;
-
-    final double height = this.widget.height ?? size.heightToggle;
+    final double height = this.widget.height ?? this._size.heightToggle;
     final BorderRadius borderRadius =
-        this.widget.borderRadius ?? config.borderRadiusToggle;
+        this.widget.borderRadius ?? this._sizeState.borderRadiusToggle;
 
     return SizedBox(
       height: height,
@@ -183,14 +183,11 @@ class _FPCBasicToggleState<T> extends State<FPCBasicToggle<T>> {
                     item: item,
                     index: index,
                     length: this.widget.items.length,
-                    unselectedBackgroundColor:
-                        this.widget.unselectedBackgroundColor,
-                    unselectedInternalColor:
-                        this.widget.unselectedInternalColor,
+                    unselectedBackgroundColor: this.widget.unselectedBackgroundColor,
+                    unselectedInternalColor: this.widget.unselectedInternalColor,
                     unselectedSplashColor: this.widget.unselectedSplashColor,
                     unselectedStyle: this.widget.unselectedStyle,
-                    selectedBackgroundColor:
-                        this.widget.selectedBackgroundColor,
+                    selectedBackgroundColor: this.widget.selectedBackgroundColor,
                     selectedInternalColor: this.widget.selectedInternalColor,
                     selectedSplashColor: this.widget.selectedSplashColor,
                     selectedStyle: this.widget.selectedStyle,
@@ -304,26 +301,21 @@ class _FPCToggleButton<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTextStyle textStyle = config.textStyle;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTextStyle textStyle = context.componentTextStyle;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
-    final double indent = ((index + 1) != this.length)
-        ? (this.horizontalInterval ?? size.s16 / 4)
-        : 0;
+    final double indent =
+        ((index + 1) != this.length) ? (this.horizontalInterval ?? size.s16 / 4) : 0;
     final Color backgroundColor = this._backgroundColor(theme: theme);
     final Color splashColor = this._splashColor(theme: theme);
     final Color internalColor = this._internalColor(theme: theme);
-    final double internalIconHeight =
-        this.internalIconHeight ?? size.heightIconDefault;
+    final double internalIconHeight = this.internalIconHeight ?? size.heightIconDefault;
     final TextStyle unselectedStyle = this.unselectedStyle?.copyWith(
               color: this.unselectedStyle?.color ?? internalColor,
               fontSize: this.unselectedStyle?.fontSize ?? size.s16,
-              fontWeight: this.unselectedStyle?.fontWeight ??
-                  textStyle.fontWeightMedium,
-              fontFamily: this.unselectedStyle?.fontFamily ??
-                  textStyle.fontFamilyMedium,
+              fontWeight: this.unselectedStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily: this.unselectedStyle?.fontFamily ?? textStyle.fontFamilyMedium,
             ) ??
         TextStyle(
           color: internalColor,
@@ -334,10 +326,8 @@ class _FPCToggleButton<T> extends StatelessWidget {
     final TextStyle selectedStyle = this.selectedStyle?.copyWith(
               color: this.selectedStyle?.color ?? internalColor,
               fontSize: this.selectedStyle?.fontSize ?? size.s16,
-              fontWeight:
-                  this.selectedStyle?.fontWeight ?? textStyle.fontWeightMedium,
-              fontFamily:
-                  this.selectedStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              fontWeight: this.selectedStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily: this.selectedStyle?.fontFamily ?? textStyle.fontFamilyMedium,
             ) ??
         TextStyle(
           color: internalColor,
@@ -345,8 +335,7 @@ class _FPCToggleButton<T> extends StatelessWidget {
           fontWeight: textStyle.fontWeightMedium,
           fontFamily: textStyle.fontFamilyMedium,
         );
-    final TextStyle titleStyle =
-        this.isSelected ? selectedStyle : unselectedStyle;
+    final TextStyle titleStyle = this.isSelected ? selectedStyle : unselectedStyle;
 
     return Padding(
       padding: EdgeInsets.only(right: indent),

@@ -7,9 +7,9 @@ class FPCTimeOfDayRange {
     TimeOfDay? minimum,
     TimeOfDay? initial,
     TimeOfDay? maximum,
-  })  : this.minimum = minimum ?? context.componentConfig.timeOfDay.minimum,
-        this.initial = initial ?? context.componentConfig.timeOfDay.initial,
-        this.maximum = maximum ?? context.componentConfig.timeOfDay.maximum;
+  })  : this.minimum = minimum ?? context.componentTimeOfDay.minimum,
+        this.initial = initial ?? context.componentTimeOfDay.initial,
+        this.maximum = maximum ?? context.componentTimeOfDay.maximum;
 
   final TimeOfDay minimum;
   final TimeOfDay initial;

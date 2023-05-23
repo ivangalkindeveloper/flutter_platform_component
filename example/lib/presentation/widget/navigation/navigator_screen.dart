@@ -29,8 +29,7 @@ class NavigatorScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = FPCConfig.of(context);
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
@@ -63,9 +62,8 @@ class _Page1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = FPCConfig.of(context);
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
@@ -94,8 +92,7 @@ class _Page2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = FPCConfig.of(context);
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,

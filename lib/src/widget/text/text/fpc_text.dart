@@ -88,8 +88,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -121,8 +120,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -154,8 +152,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -200,8 +197,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -233,8 +229,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -266,8 +261,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -312,8 +306,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -345,8 +338,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -378,8 +370,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -411,8 +402,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -444,8 +434,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -477,8 +466,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -510,8 +498,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -543,8 +530,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -576,8 +562,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -609,8 +594,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -642,8 +626,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -675,8 +658,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -708,8 +690,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -741,8 +722,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -774,8 +754,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -807,8 +786,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -840,8 +818,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -873,8 +850,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -972,8 +948,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -1005,8 +980,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -1038,8 +1012,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -1084,8 +1057,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -1117,8 +1089,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -1150,8 +1121,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -1196,8 +1166,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -1229,8 +1198,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -1262,8 +1230,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -1295,8 +1262,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -1328,8 +1294,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -1361,8 +1326,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -1394,8 +1358,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -1427,8 +1390,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -1460,8 +1422,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -1493,8 +1454,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -1526,8 +1486,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -1559,8 +1518,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -1592,8 +1550,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -1625,8 +1582,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -1658,8 +1614,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -1691,8 +1646,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -1724,8 +1678,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -1757,8 +1710,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -1856,8 +1808,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -1889,8 +1840,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -1922,8 +1872,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -1968,8 +1917,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -2001,8 +1949,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -2034,8 +1981,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -2080,8 +2026,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -2113,8 +2058,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -2146,8 +2090,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -2179,8 +2122,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -2212,8 +2154,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -2245,8 +2186,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -2278,8 +2218,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -2311,8 +2250,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -2344,8 +2282,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -2377,8 +2314,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -2410,8 +2346,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -2443,8 +2378,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -2476,8 +2410,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -2509,8 +2442,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -2542,8 +2474,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -2575,8 +2506,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -2608,8 +2538,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -2641,8 +2570,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -2740,8 +2668,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -2773,8 +2700,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -2806,8 +2732,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -2852,8 +2777,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -2885,8 +2809,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -2918,8 +2841,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -2964,8 +2886,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -2997,8 +2918,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -3030,8 +2950,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -3063,8 +2982,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -3096,8 +3014,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -3129,8 +3046,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -3162,8 +3078,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -3195,8 +3110,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -3228,8 +3142,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -3261,8 +3174,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -3294,8 +3206,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -3327,8 +3238,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -3360,8 +3270,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -3393,8 +3302,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -3426,8 +3334,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -3459,8 +3366,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -3492,8 +3398,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -3525,8 +3430,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -3624,8 +3528,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -3657,8 +3560,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -3690,8 +3592,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -3736,8 +3637,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -3769,8 +3669,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -3802,8 +3701,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -3848,8 +3746,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -3881,8 +3778,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -3914,8 +3810,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -3947,8 +3842,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -3980,8 +3874,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -4013,8 +3906,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -4046,8 +3938,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -4079,8 +3970,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -4112,8 +4002,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -4145,8 +4034,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -4178,8 +4066,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -4211,8 +4098,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -4244,8 +4130,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -4277,8 +4162,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -4310,8 +4194,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -4343,8 +4226,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -4376,8 +4258,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -4409,8 +4290,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -4508,8 +4388,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -4541,8 +4420,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -4574,8 +4452,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -4620,8 +4497,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -4653,8 +4529,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -4686,8 +4561,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -4732,8 +4606,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -4765,8 +4638,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -4798,8 +4670,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -4831,8 +4702,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -4864,8 +4734,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -4897,8 +4766,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -4930,8 +4798,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -4963,8 +4830,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -4996,8 +4862,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -5029,8 +4894,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -5062,8 +4926,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -5095,8 +4958,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -5128,8 +4990,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -5161,8 +5022,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -5194,8 +5054,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -5227,8 +5086,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -5260,8 +5118,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -5293,8 +5150,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -5392,8 +5248,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -5425,8 +5280,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -5458,8 +5312,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -5504,8 +5357,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -5537,8 +5389,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -5570,8 +5421,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -5616,8 +5466,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -5649,8 +5498,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -5682,8 +5530,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -5715,8 +5562,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -5748,8 +5594,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -5781,8 +5626,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -5814,8 +5658,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -5847,8 +5690,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -5880,8 +5722,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -5913,8 +5754,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -5946,8 +5786,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -5979,8 +5818,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -6012,8 +5850,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -6045,8 +5882,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -6078,8 +5914,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -6111,8 +5946,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -6144,8 +5978,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -6177,8 +6010,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -6276,8 +6108,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -6309,8 +6140,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -6342,8 +6172,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -6388,8 +6217,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -6421,8 +6249,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -6454,8 +6281,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -6500,8 +6326,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -6533,8 +6358,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -6566,8 +6390,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -6599,8 +6422,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -6632,8 +6454,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -6665,8 +6486,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -6698,8 +6518,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -6731,8 +6550,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -6764,8 +6582,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -6797,8 +6614,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -6830,8 +6646,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -6863,8 +6678,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -6896,8 +6710,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -6929,8 +6742,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -6962,8 +6774,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -6995,8 +6806,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -7028,8 +6838,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -7061,8 +6870,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -7161,8 +6969,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -7194,8 +7001,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -7227,8 +7033,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -7273,8 +7078,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -7306,8 +7110,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -7339,8 +7142,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -7385,8 +7187,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -7418,8 +7219,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -7451,8 +7251,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -7484,8 +7283,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -7517,8 +7315,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -7550,8 +7347,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -7583,8 +7379,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -7616,8 +7411,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -7649,8 +7443,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -7682,8 +7475,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -7715,8 +7507,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -7748,8 +7539,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -7781,8 +7571,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -7814,8 +7603,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -7847,8 +7635,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -7880,8 +7667,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -7913,8 +7699,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -7946,8 +7731,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -8045,8 +7829,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -8078,8 +7861,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -8111,8 +7893,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -8157,8 +7938,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -8190,8 +7970,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -8223,8 +8002,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -8269,8 +8047,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -8302,8 +8079,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -8335,8 +8111,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -8368,8 +8143,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -8401,8 +8175,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -8434,8 +8207,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -8467,8 +8239,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -8500,8 +8271,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -8533,8 +8303,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -8566,8 +8335,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -8599,8 +8367,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -8632,8 +8399,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -8665,8 +8431,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -8698,8 +8463,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -8731,8 +8495,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -8764,8 +8527,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -8797,8 +8559,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -8830,8 +8591,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -8929,8 +8689,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -8962,8 +8721,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -8995,8 +8753,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -9041,8 +8798,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -9074,8 +8830,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -9107,8 +8862,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -9153,8 +8907,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -9186,8 +8939,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -9219,8 +8971,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -9252,8 +9003,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -9285,8 +9035,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -9318,8 +9067,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -9351,8 +9099,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -9384,8 +9131,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -9417,8 +9163,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -9450,8 +9195,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -9483,8 +9227,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -9516,8 +9259,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -9549,8 +9291,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -9582,8 +9323,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -9615,8 +9355,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -9648,8 +9387,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -9681,8 +9419,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -9714,8 +9451,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -9813,8 +9549,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -9846,8 +9581,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -9879,8 +9613,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -9925,8 +9658,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -9958,8 +9690,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -9991,8 +9722,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -10037,8 +9767,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -10070,8 +9799,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -10103,8 +9831,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -10136,8 +9863,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -10169,8 +9895,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -10202,8 +9927,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -10235,8 +9959,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -10268,8 +9991,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -10301,8 +10023,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -10334,8 +10055,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -10367,8 +10087,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -10400,8 +10119,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -10433,8 +10151,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -10466,8 +10183,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -10499,8 +10215,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -10532,8 +10247,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -10565,8 +10279,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -10598,8 +10311,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -10697,8 +10409,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -10730,8 +10441,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -10763,8 +10473,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -10809,8 +10518,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -10842,8 +10550,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -10875,8 +10582,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -10921,8 +10627,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -10954,8 +10659,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -10987,8 +10691,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -11020,8 +10723,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -11053,8 +10755,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -11086,8 +10787,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -11119,8 +10819,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -11152,8 +10851,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -11185,8 +10883,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -11218,8 +10915,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -11251,8 +10947,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -11284,8 +10979,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -11317,8 +11011,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -11350,8 +11043,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -11383,8 +11075,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -11416,8 +11107,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -11449,8 +11139,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -11482,8 +11171,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -11581,8 +11269,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -11614,8 +11301,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -11647,8 +11333,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -11693,8 +11378,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -11726,8 +11410,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -11759,8 +11442,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -11805,8 +11487,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -11838,8 +11519,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -11871,8 +11551,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -11904,8 +11583,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -11937,8 +11615,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -11970,8 +11647,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -12003,8 +11679,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -12036,8 +11711,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -12069,8 +11743,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -12102,8 +11775,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -12135,8 +11807,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -12168,8 +11839,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -12201,8 +11871,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -12234,8 +11903,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -12267,8 +11935,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -12300,8 +11967,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -12333,8 +11999,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -12366,8 +12031,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -12465,8 +12129,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -12498,8 +12161,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -12531,8 +12193,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -12577,8 +12238,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -12610,8 +12270,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -12643,8 +12302,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -12689,8 +12347,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -12722,8 +12379,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -12755,8 +12411,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -12788,8 +12443,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -12821,8 +12475,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -12854,8 +12507,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -12887,8 +12539,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -12920,8 +12571,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -12953,8 +12603,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -12986,8 +12635,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -13019,8 +12667,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -13052,8 +12699,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -13085,8 +12731,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -13118,8 +12763,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -13151,8 +12795,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -13184,8 +12827,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -13217,8 +12859,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -13250,8 +12891,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -13349,8 +12989,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -13382,8 +13021,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -13415,8 +13053,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -13461,8 +13098,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -13494,8 +13130,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -13527,8 +13162,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -13573,8 +13207,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -13606,8 +13239,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -13639,8 +13271,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -13672,8 +13303,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -13705,8 +13335,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -13738,8 +13367,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -13771,8 +13399,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -13804,8 +13431,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -13837,8 +13463,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -13870,8 +13495,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -13903,8 +13527,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -13936,8 +13559,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -13969,8 +13591,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -14002,8 +13623,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -14035,8 +13655,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -14068,8 +13687,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -14101,8 +13719,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -14134,8 +13751,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -14234,8 +13850,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -14267,8 +13882,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -14300,8 +13914,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -14346,8 +13959,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -14379,8 +13991,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -14412,8 +14023,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -14458,8 +14068,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -14491,8 +14100,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -14524,8 +14132,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -14557,8 +14164,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -14590,8 +14196,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -14623,8 +14228,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -14656,8 +14260,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -14689,8 +14292,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -14722,8 +14324,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -14755,8 +14356,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -14788,8 +14388,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -14821,8 +14420,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -14854,8 +14452,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -14887,8 +14484,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -14920,8 +14516,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -14953,8 +14548,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -14986,8 +14580,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -15019,8 +14612,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -15118,8 +14710,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -15151,8 +14742,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -15184,8 +14774,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -15230,8 +14819,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -15263,8 +14851,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -15296,8 +14883,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -15342,8 +14928,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -15375,8 +14960,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -15408,8 +14992,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -15441,8 +15024,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -15474,8 +15056,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -15507,8 +15088,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -15540,8 +15120,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -15573,8 +15152,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -15606,8 +15184,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -15639,8 +15216,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -15672,8 +15248,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -15705,8 +15280,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -15738,8 +15312,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -15771,8 +15344,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -15804,8 +15376,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -15837,8 +15408,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -15870,8 +15440,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -15903,8 +15472,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -16002,8 +15570,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -16035,8 +15602,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -16068,8 +15634,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -16114,8 +15679,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -16147,8 +15711,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -16180,8 +15743,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -16226,8 +15788,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -16259,8 +15820,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -16292,8 +15852,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -16325,8 +15884,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -16358,8 +15916,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -16391,8 +15948,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -16424,8 +15980,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -16457,8 +16012,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -16490,8 +16044,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -16523,8 +16076,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -16556,8 +16108,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -16589,8 +16140,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -16622,8 +16172,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -16655,8 +16204,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -16688,8 +16236,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -16721,8 +16268,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -16754,8 +16300,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -16787,8 +16332,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -16886,8 +16430,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -16919,8 +16462,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -16952,8 +16494,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -16998,8 +16539,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -17031,8 +16571,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -17064,8 +16603,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -17110,8 +16648,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -17143,8 +16680,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -17176,8 +16712,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -17209,8 +16744,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -17242,8 +16776,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -17275,8 +16808,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -17308,8 +16840,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -17341,8 +16872,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -17374,8 +16904,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -17407,8 +16936,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -17440,8 +16968,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -17473,8 +17000,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -17506,8 +17032,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -17539,8 +17064,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -17572,8 +17096,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -17605,8 +17128,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -17638,8 +17160,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -17671,8 +17192,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -17770,8 +17290,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -17803,8 +17322,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -17836,8 +17354,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -17882,8 +17399,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -17915,8 +17431,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -17948,8 +17463,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -17994,8 +17508,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -18027,8 +17540,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -18060,8 +17572,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -18093,8 +17604,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -18126,8 +17636,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -18159,8 +17668,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -18192,8 +17700,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -18225,8 +17732,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -18258,8 +17764,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -18291,8 +17796,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -18324,8 +17828,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -18357,8 +17860,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -18390,8 +17892,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -18423,8 +17924,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -18456,8 +17956,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -18489,8 +17988,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -18522,8 +18020,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -18555,8 +18052,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -18654,8 +18150,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -18687,8 +18182,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -18720,8 +18214,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -18766,8 +18259,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -18799,8 +18291,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -18832,8 +18323,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -18878,8 +18368,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -18911,8 +18400,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -18944,8 +18432,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -18977,8 +18464,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -19010,8 +18496,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -19043,8 +18528,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -19076,8 +18560,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -19109,8 +18592,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -19142,8 +18624,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -19175,8 +18656,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -19208,8 +18688,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -19241,8 +18720,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -19274,8 +18752,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -19307,8 +18784,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -19340,8 +18816,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -19373,8 +18848,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -19406,8 +18880,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -19439,8 +18912,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -19538,8 +19010,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -19571,8 +19042,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -19604,8 +19074,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -19650,8 +19119,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -19683,8 +19151,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -19716,8 +19183,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -19762,8 +19228,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -19795,8 +19260,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -19828,8 +19292,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -19861,8 +19324,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -19894,8 +19356,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -19927,8 +19388,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -19960,8 +19420,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -19993,8 +19452,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -20026,8 +19484,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -20059,8 +19516,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -20092,8 +19548,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -20125,8 +19580,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -20158,8 +19612,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -20191,8 +19644,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -20224,8 +19676,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -20257,8 +19708,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -20290,8 +19740,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -20323,8 +19772,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -20422,8 +19870,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -20455,8 +19902,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -20488,8 +19934,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -20534,8 +19979,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -20567,8 +20011,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -20600,8 +20043,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -20646,8 +20088,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -20679,8 +20120,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -20712,8 +20152,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -20745,8 +20184,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -20778,8 +20216,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -20811,8 +20248,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -20844,8 +20280,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -20877,8 +20312,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -20910,8 +20344,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -20943,8 +20376,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -20976,8 +20408,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -21009,8 +20440,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -21042,8 +20472,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -21075,8 +20504,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -21108,8 +20536,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -21141,8 +20568,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -21174,8 +20600,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -21207,8 +20632,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -21307,8 +20731,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -21340,8 +20763,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -21373,8 +20795,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -21419,8 +20840,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -21452,8 +20872,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -21485,8 +20904,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -21531,8 +20949,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -21564,8 +20981,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -21597,8 +21013,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -21630,8 +21045,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -21663,8 +21077,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -21696,8 +21109,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -21729,8 +21141,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -21762,8 +21173,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -21795,8 +21205,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -21828,8 +21237,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -21861,8 +21269,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -21894,8 +21301,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -21927,8 +21333,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -21960,8 +21365,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -21993,8 +21397,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -22026,8 +21429,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -22059,8 +21461,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -22092,8 +21493,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -22191,8 +21591,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -22224,8 +21623,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -22257,8 +21655,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -22303,8 +21700,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -22336,8 +21732,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -22369,8 +21764,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -22415,8 +21809,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -22448,8 +21841,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -22481,8 +21873,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -22514,8 +21905,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -22547,8 +21937,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -22580,8 +21969,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -22613,8 +22001,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -22646,8 +22033,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -22679,8 +22065,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -22712,8 +22097,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -22745,8 +22129,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -22778,8 +22161,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -22811,8 +22193,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -22844,8 +22225,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -22877,8 +22257,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -22910,8 +22289,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -22943,8 +22321,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -22976,8 +22353,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -23075,8 +22451,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -23108,8 +22483,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -23141,8 +22515,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -23187,8 +22560,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -23220,8 +22592,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -23253,8 +22624,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -23299,8 +22669,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -23332,8 +22701,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -23365,8 +22733,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -23398,8 +22765,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -23431,8 +22797,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -23464,8 +22829,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -23497,8 +22861,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -23530,8 +22893,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -23563,8 +22925,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -23596,8 +22957,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -23629,8 +22989,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -23662,8 +23021,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -23695,8 +23053,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -23728,8 +23085,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -23761,8 +23117,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -23794,8 +23149,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -23827,8 +23181,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -23860,8 +23213,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -23959,8 +23311,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -23992,8 +23343,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -24025,8 +23375,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -24071,8 +23420,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -24104,8 +23452,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -24137,8 +23484,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -24183,8 +23529,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -24216,8 +23561,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -24249,8 +23593,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -24282,8 +23625,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -24315,8 +23657,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -24348,8 +23689,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -24381,8 +23721,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -24414,8 +23753,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -24447,8 +23785,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -24480,8 +23817,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -24513,8 +23849,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -24546,8 +23881,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -24579,8 +23913,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -24612,8 +23945,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -24645,8 +23977,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -24678,8 +24009,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -24711,8 +24041,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -24744,8 +24073,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -24843,8 +24171,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -24876,8 +24203,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -24909,8 +24235,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -24955,8 +24280,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -24988,8 +24312,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -25021,8 +24344,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -25067,8 +24389,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -25100,8 +24421,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -25133,8 +24453,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -25166,8 +24485,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -25199,8 +24517,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -25232,8 +24549,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -25265,8 +24581,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -25298,8 +24613,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -25331,8 +24645,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -25364,8 +24677,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -25397,8 +24709,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -25430,8 +24741,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -25463,8 +24773,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -25496,8 +24805,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -25529,8 +24837,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -25562,8 +24869,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -25595,8 +24901,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -25628,8 +24933,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -25727,8 +25031,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -25760,8 +25063,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -25793,8 +25095,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -25839,8 +25140,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -25872,8 +25172,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -25905,8 +25204,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -25951,8 +25249,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -25984,8 +25281,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -26017,8 +25313,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -26050,8 +25345,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -26083,8 +25377,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -26116,8 +25409,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -26149,8 +25441,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -26182,8 +25473,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -26215,8 +25505,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -26248,8 +25537,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -26281,8 +25569,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -26314,8 +25601,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -26347,8 +25633,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -26380,8 +25665,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -26413,8 +25697,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -26446,8 +25729,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -26479,8 +25761,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -26512,8 +25793,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -26611,8 +25891,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -26644,8 +25923,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -26677,8 +25955,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -26723,8 +26000,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -26756,8 +26032,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -26789,8 +26064,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -26835,8 +26109,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -26868,8 +26141,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -26901,8 +26173,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -26934,8 +26205,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -26967,8 +26237,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -27000,8 +26269,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -27033,8 +26301,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -27066,8 +26333,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -27099,8 +26365,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -27132,8 +26397,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -27165,8 +26429,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -27198,8 +26461,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -27231,8 +26493,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -27264,8 +26525,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -27297,8 +26557,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -27330,8 +26589,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -27363,8 +26621,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -27396,8 +26653,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -27495,8 +26751,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -27528,8 +26783,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -27561,8 +26815,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -27607,8 +26860,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -27640,8 +26892,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -27673,8 +26924,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -27719,8 +26969,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -27752,8 +27001,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -27785,8 +27033,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -27818,8 +27065,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -27851,8 +27097,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -27884,8 +27129,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -27917,8 +27161,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -27950,8 +27193,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -27983,8 +27225,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -28016,8 +27257,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -28049,8 +27289,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -28082,8 +27321,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -28115,8 +27353,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -28148,8 +27385,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -28181,8 +27417,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -28214,8 +27449,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -28247,8 +27481,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -28280,8 +27513,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -28380,8 +27612,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -28413,8 +27644,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -28446,8 +27676,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -28492,8 +27721,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -28525,8 +27753,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -28558,8 +27785,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -28604,8 +27830,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -28637,8 +27862,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -28670,8 +27894,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -28703,8 +27926,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -28736,8 +27958,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -28769,8 +27990,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -28802,8 +28022,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -28835,8 +28054,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -28868,8 +28086,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -28901,8 +28118,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -28934,8 +28150,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -28967,8 +28182,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -29000,8 +28214,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -29033,8 +28246,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -29066,8 +28278,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -29099,8 +28310,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -29132,8 +28342,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -29165,8 +28374,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -29264,8 +28472,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -29297,8 +28504,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -29330,8 +28536,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -29376,8 +28581,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -29409,8 +28613,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -29442,8 +28645,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -29488,8 +28690,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -29521,8 +28722,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -29554,8 +28754,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -29587,8 +28786,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -29620,8 +28818,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -29653,8 +28850,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -29686,8 +28882,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -29719,8 +28914,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -29752,8 +28946,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -29785,8 +28978,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -29818,8 +29010,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -29851,8 +29042,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -29884,8 +29074,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -29917,8 +29106,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -29950,8 +29138,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -29983,8 +29170,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -30016,8 +29202,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -30049,8 +29234,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -30148,8 +29332,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -30181,8 +29364,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -30214,8 +29396,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -30260,8 +29441,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -30293,8 +29473,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -30326,8 +29505,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -30372,8 +29550,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -30405,8 +29582,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -30438,8 +29614,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -30471,8 +29646,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -30504,8 +29678,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -30537,8 +29710,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -30570,8 +29742,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -30603,8 +29774,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -30636,8 +29806,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -30669,8 +29838,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -30702,8 +29870,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -30735,8 +29902,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -30768,8 +29934,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -30801,8 +29966,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -30834,8 +29998,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -30867,8 +30030,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -30900,8 +30062,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -30933,8 +30094,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -31032,8 +30192,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -31065,8 +30224,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -31098,8 +30256,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -31144,8 +30301,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -31177,8 +30333,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -31210,8 +30365,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -31256,8 +30410,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -31289,8 +30442,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -31322,8 +30474,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -31355,8 +30506,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -31388,8 +30538,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -31421,8 +30570,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -31454,8 +30602,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -31487,8 +30634,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -31520,8 +30666,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -31553,8 +30698,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -31586,8 +30730,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -31619,8 +30762,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -31652,8 +30794,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -31685,8 +30826,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -31718,8 +30858,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -31751,8 +30890,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -31784,8 +30922,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -31817,8 +30954,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -31916,8 +31052,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -31949,8 +31084,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -31982,8 +31116,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -32028,8 +31161,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -32061,8 +31193,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -32094,8 +31225,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -32140,8 +31270,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -32173,8 +31302,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -32206,8 +31334,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -32239,8 +31366,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -32272,8 +31398,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -32305,8 +31430,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -32338,8 +31462,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -32371,8 +31494,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -32404,8 +31526,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -32437,8 +31558,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -32470,8 +31590,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -32503,8 +31622,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -32536,8 +31654,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -32569,8 +31686,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -32602,8 +31718,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -32635,8 +31750,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -32668,8 +31782,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -32701,8 +31814,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -32800,8 +31912,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -32833,8 +31944,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -32866,8 +31976,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -32912,8 +32021,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -32945,8 +32053,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -32978,8 +32085,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -33024,8 +32130,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -33057,8 +32162,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -33090,8 +32194,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -33123,8 +32226,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -33156,8 +32258,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -33189,8 +32290,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -33222,8 +32322,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -33255,8 +32354,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -33288,8 +32386,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -33321,8 +32418,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -33354,8 +32450,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -33387,8 +32482,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -33420,8 +32514,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -33453,8 +32546,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -33486,8 +32578,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -33519,8 +32610,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -33552,8 +32642,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -33585,8 +32674,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -33684,8 +32772,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -33717,8 +32804,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -33750,8 +32836,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -33796,8 +32881,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -33829,8 +32913,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -33862,8 +32945,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -33908,8 +32990,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -33941,8 +33022,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -33974,8 +33054,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -34007,8 +33086,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -34040,8 +33118,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -34073,8 +33150,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -34106,8 +33182,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -34139,8 +33214,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -34172,8 +33246,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -34205,8 +33278,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -34238,8 +33310,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -34271,8 +33342,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -34304,8 +33374,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -34337,8 +33406,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -34370,8 +33438,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -34403,8 +33470,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -34436,8 +33502,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -34469,8 +33534,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,
@@ -34568,8 +33632,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryGradient,
@@ -34601,8 +33664,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryLightGradient,
@@ -34634,8 +33696,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.primaryDarkGradient,
@@ -34680,8 +33741,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -34713,8 +33773,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -34746,8 +33805,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -34792,8 +33850,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryGradient,
@@ -34825,8 +33882,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryLightGradient,
@@ -34858,8 +33914,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.secondaryDarkGradient,
@@ -34891,8 +33946,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyGradient,
@@ -34924,8 +33978,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyLightGradient,
@@ -34957,8 +34010,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.greyDarkGradient,
@@ -34990,8 +34042,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoGradient,
@@ -35023,8 +34074,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoLightGradient,
@@ -35056,8 +34106,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.infoDarkGradient,
@@ -35089,8 +34138,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successGradient,
@@ -35122,8 +34170,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successLightGradient,
@@ -35155,8 +34202,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.successDarkGradient,
@@ -35188,8 +34234,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningGradient,
@@ -35221,8 +34266,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningLightGradient,
@@ -35254,8 +34298,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.warningDarkGradient,
@@ -35287,8 +34330,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerGradient,
@@ -35320,8 +34362,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerLightGradient,
@@ -35353,8 +34394,7 @@ class FPCText {
     TextAlign? align,
     TextOverflow? overflow,
   }) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCGradientMask(
       gradient: theme.dangerDarkGradient,

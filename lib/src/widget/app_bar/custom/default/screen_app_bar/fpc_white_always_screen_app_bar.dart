@@ -22,7 +22,7 @@ class FPCWhiteAlwaysScreenAppBar extends FPCBasicAppBar {
           context: context,
           transitionBetweenRoutes: transitionBetweenRoutes,
           backgroundColor:
-              backgroundColor ?? context.componentConfig.theme.blackAlways,
+              backgroundColor ?? context.componentTheme.blackAlways,
           prefix: _prefix(
             context: context,
             prefix: prefix,
@@ -30,13 +30,12 @@ class FPCWhiteAlwaysScreenAppBar extends FPCBasicAppBar {
           ),
           title: title,
           titleStyle: titleStyle?.copyWith(
-                color: titleStyle.color ??
-                    context.componentConfig.theme.whiteAlways,
-                package: context.componentConfig.textStyle.package,
+                color: titleStyle.color ?? context.componentTheme.whiteAlways,
+                package: context.componentTextStyle.package,
               ) ??
               TextStyle(
-                color: context.componentConfig.theme.whiteAlways,
-                package: context.componentConfig.textStyle.package,
+                color: context.componentTheme.whiteAlways,
+                package: context.componentTextStyle.package,
               ),
           middle: middle,
           postfix: postfix,

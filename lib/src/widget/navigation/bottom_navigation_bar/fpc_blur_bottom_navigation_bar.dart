@@ -77,8 +77,7 @@ class _FPCBlurBottomNavigationBarCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     final Color unselectedColor = this.unselectedColor ?? theme.grey;
     final Color selectedColor = this.selectedColor ?? theme.primary;
@@ -138,9 +137,8 @@ class _FPCBlurBottomNavigationBarMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTextStyle textStyle = config.textStyle;
-    final IFPCTheme theme = config.theme;
+    final IFPCTextStyle textStyle = context.componentTextStyle;
+    final IFPCTheme theme = context.componentTheme;
 
     final Color unselectedColor = this.unselectedColor ?? theme.grey;
     final TextStyle unselectedStyle = this.unselectedStyle?.copyWith(

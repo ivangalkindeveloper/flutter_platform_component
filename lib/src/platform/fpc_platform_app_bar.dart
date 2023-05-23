@@ -25,9 +25,8 @@ class FPCPlatformAppBar extends StatelessWidget
 
   @override
   Size get preferredSize {
-    final FPCConfig config = context.componentConfig;
-    final FPCPlatform platform = config.platform;
-    final IFPCSize size = config.size;
+    final FPCPlatform platform = context.componentPlatform;
+    final IFPCSize size = context.componentSize;
 
     final double additionalPreferredHeight = this.bottom != null
         ? (this.bottom!.preferredSize.height + size.s16 / 2)

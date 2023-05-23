@@ -55,12 +55,14 @@ class FPCBasicGradientToggle<T> extends StatefulWidget {
   final String? restorationId;
 
   @override
-  State<FPCBasicGradientToggle<T>> createState() =>
-      _FPCBasicGradientToggleState<T>();
+  State<FPCBasicGradientToggle<T>> createState() => _FPCBasicGradientToggleState<T>();
 }
 
-class _FPCBasicGradientToggleState<T> extends State<FPCBasicGradientToggle<T>> {
+class _FPCBasicGradientToggleState<T> extends State<FPCBasicGradientToggle<T>>
+    with FPCDidInitMixin<FPCBasicGradientToggle<T>> {
+  late FPCSizeState _sizeState;
   late IFPCHaptic _haptic;
+  late IFPCSize _size;
 
   // Controller
   late final TextEditingController _controller;
@@ -69,19 +71,19 @@ class _FPCBasicGradientToggleState<T> extends State<FPCBasicGradientToggle<T>> {
   bool _isValidationError = false;
 
   @override
-  void initState() {
-    super.initState();
+  void didChangeDependencies() {
+    this._sizeState = this.context.componentSizeState;
+    this._haptic = this.context.componentHaptic;
+    this._size = this.context.componentSize;
+    super.didChangeDependencies();
+  }
+
+  @override
+  void didInitState() {
     // Controller
     this._controller = TextEditingController(
       text: this.widget.value != null ? this.widget.value.toString() : null,
     );
-  }
-
-  @override
-  void didChangeDependencies() {
-    final FPCConfig config = context.componentConfig;
-    this._haptic = config.haptic;
-    super.didChangeDependencies();
   }
 
   @override
@@ -142,12 +144,9 @@ class _FPCBasicGradientToggleState<T> extends State<FPCBasicGradientToggle<T>> {
 
     if (this.widget.items.length == 1) throw const FPCItemsLengthException();
 
-    final FPCConfig config = context.componentConfig;
-    final IFPCSize size = config.size;
-
-    final double height = this.widget.height ?? size.heightToggle;
+    final double height = this.widget.height ?? this._size.heightToggle;
     final BorderRadius borderRadius =
-        this.widget.borderRadius ?? config.borderRadiusToggle;
+        this.widget.borderRadius ?? this._sizeState.borderRadiusToggle;
 
     return SizedBox(
       height: height,
@@ -186,14 +185,11 @@ class _FPCBasicGradientToggleState<T> extends State<FPCBasicGradientToggle<T>> {
                     length: this.widget.items.length,
                     unselectedBackgroundGradient:
                         this.widget.unselectedBackgroundGradient,
-                    unselectedInternalGradient:
-                        this.widget.unselectedInternalGradient,
+                    unselectedInternalGradient: this.widget.unselectedInternalGradient,
                     unselectedSplashColor: this.widget.unselectedSplashColor,
                     unselectedStyle: this.widget.unselectedStyle,
-                    selectedBackgroundGradient:
-                        this.widget.selectedBackgroundGradient,
-                    selectedInternalGradient:
-                        this.widget.selectedInternalGradient,
+                    selectedBackgroundGradient: this.widget.selectedBackgroundGradient,
+                    selectedInternalGradient: this.widget.selectedInternalGradient,
                     selectedSplashColor: this.widget.selectedSplashColor,
                     selectedStyle: this.widget.selectedStyle,
                     internalIconHeight: this.widget.internalIconHeight,
@@ -314,30 +310,24 @@ class _FPCGradientToggleButton<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTextStyle textStyle = config.textStyle;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTextStyle textStyle = context.componentTextStyle;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
-    final double indent = ((index + 1) != this.length)
-        ? (this.horizontalInterval ?? size.s16 / 4)
-        : 0;
+    final double indent =
+        ((index + 1) != this.length) ? (this.horizontalInterval ?? size.s16 / 4) : 0;
     final Gradient backgroundGradient = this._backgroundGradient(
       context: context,
       theme: theme,
     );
     final Color? splashColor = this._splashColor(theme: theme);
     final Gradient internalGradient = this._internalGradient(theme: theme);
-    final double internalIconHeight =
-        this.internalIconHeight ?? size.heightIconDefault;
+    final double internalIconHeight = this.internalIconHeight ?? size.heightIconDefault;
     final TextStyle unselectedStyle = this.unselectedStyle?.copyWith(
-              color:
-                  this.unselectedStyle?.color ?? internalGradient.colors.first,
+              color: this.unselectedStyle?.color ?? internalGradient.colors.first,
               fontSize: this.unselectedStyle?.fontSize ?? size.s16,
-              fontWeight: this.unselectedStyle?.fontWeight ??
-                  textStyle.fontWeightMedium,
-              fontFamily: this.unselectedStyle?.fontFamily ??
-                  textStyle.fontFamilyMedium,
+              fontWeight: this.unselectedStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily: this.unselectedStyle?.fontFamily ?? textStyle.fontFamilyMedium,
             ) ??
         TextStyle(
           color: internalGradient.colors.first,
@@ -348,10 +338,8 @@ class _FPCGradientToggleButton<T> extends StatelessWidget {
     final TextStyle selectedStyle = this.selectedStyle?.copyWith(
               color: this.selectedStyle?.color ?? internalGradient.colors.first,
               fontSize: this.selectedStyle?.fontSize ?? size.s16,
-              fontWeight:
-                  this.selectedStyle?.fontWeight ?? textStyle.fontWeightMedium,
-              fontFamily:
-                  this.selectedStyle?.fontFamily ?? textStyle.fontFamilyMedium,
+              fontWeight: this.selectedStyle?.fontWeight ?? textStyle.fontWeightMedium,
+              fontFamily: this.selectedStyle?.fontFamily ?? textStyle.fontFamilyMedium,
             ) ??
         TextStyle(
           color: internalGradient.colors.first,
@@ -359,8 +347,7 @@ class _FPCGradientToggleButton<T> extends StatelessWidget {
           fontWeight: textStyle.fontWeightMedium,
           fontFamily: textStyle.fontFamilyMedium,
         );
-    final TextStyle titleStyle =
-        this.isSelected ? selectedStyle : unselectedStyle;
+    final TextStyle titleStyle = this.isSelected ? selectedStyle : unselectedStyle;
 
     return Padding(
       padding: EdgeInsets.only(right: indent),

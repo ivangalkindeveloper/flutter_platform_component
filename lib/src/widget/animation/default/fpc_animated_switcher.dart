@@ -11,8 +11,7 @@ class FPCAnimatedSwitcher extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCDuration duration = config.duration;
+    final IFPCDuration duration = context.componentDuration;
 
     return AnimatedSwitcher(
       duration: duration.animationDefault,

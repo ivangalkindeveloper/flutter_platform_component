@@ -14,9 +14,8 @@ class BlurAppBarScreen extends StatefulWidget {
 class _BlurAppBarScreenState extends State<BlurAppBarScreen> {
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = FPCConfig.of(context);
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     return FPCScaffold(
       extendBodyBehindAppBar: true,

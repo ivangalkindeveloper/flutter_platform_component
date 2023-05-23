@@ -21,8 +21,7 @@ class FPCDefaultDuration implements IFPCDuration {
   })  :
         // Animation
         this.animationFast = animationFast ?? const Duration(milliseconds: 160),
-        this.animationDefault =
-            animationDefault ?? const Duration(milliseconds: 320),
+        this.animationDefault = animationDefault ?? const Duration(milliseconds: 320),
         this.animationSlow = animationSlow ?? const Duration(milliseconds: 640),
 
         // Badge

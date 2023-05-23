@@ -41,8 +41,7 @@ class FPCInfoLightGradientCodeField extends StatelessWidget {
   final Color? disabledColor;
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final IFPCTheme theme = context.componentTheme;
 
     return FPCBasicGradientCodeField(
       controller: this.controller,

@@ -166,14 +166,13 @@ class FPCBasicGradientFormField extends StatefulWidget {
   final String? restorationId;
 
   @override
-  State<FPCBasicGradientFormField> createState() =>
-      _FPCBasicGradientFormFieldState();
+  State<FPCBasicGradientFormField> createState() => _FPCBasicGradientFormFieldState();
 }
 
 class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
     with FPCDidInitMixin<FPCBasicGradientFormField> {
-  late FPCConfig _config;
   late IFPCTextStyle _textStyle;
+  late FPCSizeState _sizeState;
   late IFPCHaptic _haptic;
   late IFPCTheme _theme;
   late final IFPCSize _size;
@@ -195,11 +194,11 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
 
   @override
   void didChangeDependencies() {
-    this._config = context.componentConfig;
-    this._textStyle = this._config.textStyle;
-    this._haptic = this._config.haptic;
-    this._theme = this._config.theme;
-    this._size = this._config.size;
+    this._textStyle = this.context.componentTextStyle;
+    this._sizeState = this.context.componentSizeState;
+    this._haptic = this.context.componentHaptic;
+    this._theme = this.context.componentTheme;
+    this._size = this._sizeState.size;
     super.didChangeDependencies();
   }
 
@@ -231,8 +230,7 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
         }
 
         // Auto Validator
-        final String? _autoValidatorResult =
-            this.widget.autoValidator?.call(value);
+        final String? _autoValidatorResult = this.widget.autoValidator?.call(value);
         if (_autoValidatorResult != null) {
           this._haptic.error();
           setState(() {
@@ -257,8 +255,7 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
   void didUpdateWidget(covariant FPCBasicGradientFormField oldWidget) {
     super.didUpdateWidget(oldWidget);
     // Controller
-    if (this.widget.controller != null &&
-        this._controller != this.widget.controller) {
+    if (this.widget.controller != null && this._controller != this.widget.controller) {
       this._controller = this.widget.controller!;
 
       this._isAutoValidationError = false;
@@ -268,8 +265,7 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
     }
 
     // FocusNode
-    if (this.widget.focusNode != null &&
-        this._focusNode != this.widget.focusNode) {
+    if (this.widget.focusNode != null && this._focusNode != this.widget.focusNode) {
       this._focusNode.removeListener(this._focusNodeListener);
       this._focusNode = this.widget.focusNode!;
       this._focusNode.addListener(this._focusNodeListener);
@@ -389,15 +385,14 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
     final Color labelColor = this._labelColor();
     final double height = this.widget.height ?? this._size.heightFormField;
     final double paddingTop = this.widget.padding?.top ?? this._size.s16 / 4;
-    final double paddingBottom =
-        this.widget.padding?.bottom ?? this._size.s16 / 4;
+    final double paddingBottom = this.widget.padding?.bottom ?? this._size.s16 / 4;
     final double paddingLeft = this.widget.padding?.left ?? this._size.s16;
     final double paddingRight = this.widget.padding?.right ?? this._size.s16;
     final BorderRadius borderRadius =
-        this.widget.borderRadius ?? this._config.borderRadiusField;
+        this.widget.borderRadius ?? this._sizeState.borderRadiusField;
     final Gradient borderGradient = this._borderGradient();
     final double borderWidth =
-        this.widget.borderWidth ?? this._config.borderWidthField;
+        this.widget.borderWidth ?? this._sizeState.borderWidthField;
     final Gradient internalIconGradient = this._internalIconGradient();
     final double internalIconHeight =
         this.widget.internalIconHeight ?? this._size.heightIconDefault;
@@ -407,8 +402,7 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
             : EdgeInsets.zero;
     final void Function(String)? onChanged =
         this.widget.isDisabled ? null : this.widget.onChanged;
-    final void Function()? onTap =
-        this.widget.isDisabled ? null : this.widget.onTap;
+    final void Function()? onTap = this.widget.isDisabled ? null : this.widget.onTap;
     final void Function()? onEditingComplete =
         this.widget.isDisabled ? null : this.widget.onEditingComplete;
     final void Function(String)? onFieldSubmitted =
@@ -425,10 +419,10 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
     final TextStyle errorStyle = this.widget.errorStyle?.copyWith(
               color: this.widget.errorStyle?.color ?? this._theme.danger,
               fontSize: this.widget.errorStyle?.fontSize ?? this._size.s14,
-              fontWeight: this.widget.errorStyle?.fontWeight ??
-                  this._textStyle.fontWeightRegular,
-              fontFamily: this.widget.errorStyle?.fontFamily ??
-                  this._textStyle.fontFamilyRegular,
+              fontWeight:
+                  this.widget.errorStyle?.fontWeight ?? this._textStyle.fontWeightRegular,
+              fontFamily:
+                  this.widget.errorStyle?.fontFamily ?? this._textStyle.fontFamilyRegular,
               package: this._textStyle.package,
             ) ??
         TextStyle(
@@ -496,8 +490,7 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
                               hintStyle: this.widget.hintStyle,
                               //
                               textInputType: this.widget.textInputType,
-                              textCapitalization:
-                                  this.widget.textCapitalization,
+                              textCapitalization: this.widget.textCapitalization,
                               textInputAction: this.widget.textInputAction,
                               //
                               textAlign: this.widget.textAlign,
@@ -505,16 +498,14 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
                               isReadOnly: this.widget.isDisabled,
                               isShowCursor: this.widget.isShowCursor,
                               //
-                              obscuringCharacter:
-                                  this.widget.obscuringCharacter,
+                              obscuringCharacter: this.widget.obscuringCharacter,
                               isObscuringText: this.widget.isObscuringText,
                               //
                               isAutocorrect: this.widget.isAutocorrect,
                               smartDashesType: this.widget.smartDashesType,
                               smartQuotesType: this.widget.smartQuotesType,
                               isSuggestions: this.widget.isSuggestions,
-                              maxLengthEnforcement:
-                                  this.widget.maxLengthEnforcement,
+                              maxLengthEnforcement: this.widget.maxLengthEnforcement,
                               //
                               maxLines: this.widget.maxLines,
                               maxLength: this.widget.maxLength,
@@ -531,11 +522,9 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
                               ],
                               isEnabled: !this.widget.isDisabled,
                               //
-                              cursorColor:
-                                  this.widget.focusedGradient.colors.first,
+                              cursorColor: this.widget.focusedGradient.colors.first,
                               //
-                              keyboardAppearance:
-                                  this.widget.keyboardAppearance,
+                              keyboardAppearance: this.widget.keyboardAppearance,
                               enableInteractiveSelection:
                                   this.widget.enableInteractiveSelection,
                               selectionControls: this.widget.selectionControls,
@@ -545,8 +534,7 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
                               restorationId: this.widget.restorationId,
                               enableIMEPersonalizedLearning:
                                   this.widget.enableIMEPersonalizedLearning,
-                              contextMenuBuilder:
-                                  this.widget.contextMenuBuilder,
+                              contextMenuBuilder: this.widget.contextMenuBuilder,
                             ),
                           ),
                         ),

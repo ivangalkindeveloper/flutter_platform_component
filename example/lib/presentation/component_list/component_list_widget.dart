@@ -7,8 +7,7 @@ class ComponentListWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = FPCConfig.of(context);
-    final IFPCSize size = config.size;
+    final IFPCSize size = context.componentSize;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -16,26 +15,26 @@ class ComponentListWidget extends StatelessWidget {
       children: [
         FPCPrimaryButton(
           title: "Animated Container",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.animated_container_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.animated_container_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Cross Fade",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.animated_cross_fade_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.animated_cross_fade_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Fade In",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.animated_fade_in_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.animated_fade_in_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Fade Out",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.animated_fade_out_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.animated_fade_out_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
@@ -46,8 +45,8 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Opacity",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.animated_opacity_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.animated_opacity_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
@@ -58,8 +57,8 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Switcher",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.animated_switcher_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.animated_switcher_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
@@ -70,19 +69,20 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "App Bar",
-          onPressed: () => Navigator.pushNamed(context, NavigationService.app_bar_screen),
+          onPressed: () =>
+              Navigator.pushNamed(context, NavigationService.app_bar_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Blur App Bar",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.blur_app_bar_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.blur_app_bar_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Counter Badge",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.counter_badge_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.counter_badge_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
@@ -99,59 +99,62 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Dot Badge",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.gradient_dot_badge_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.gradient_dot_badge_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Blur",
-          onPressed: () => Navigator.pushNamed(context, NavigationService.blur_screen),
+          onPressed: () =>
+              Navigator.pushNamed(context, NavigationService.blur_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Button",
-          onPressed: () => Navigator.pushNamed(context, NavigationService.button_screen),
+          onPressed: () =>
+              Navigator.pushNamed(context, NavigationService.button_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Button",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.gradient_button_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.gradient_button_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Icon Button",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.icon_button_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.icon_button_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Modal Button",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.modal_button_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.modal_button_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Card",
-          onPressed: () => Navigator.pushNamed(context, NavigationService.card_screen),
+          onPressed: () =>
+              Navigator.pushNamed(context, NavigationService.card_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Card",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.gradient_card_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.gradient_card_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Select Card",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.select_card_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.select_card_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Select Card",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.gradient_select_card_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.gradient_select_card_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
@@ -168,18 +171,20 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Code Field",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.gradient_code_field_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.gradient_code_field_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Dialog",
-          onPressed: () => Navigator.pushNamed(context, NavigationService.dialog_screen),
+          onPressed: () =>
+              Navigator.pushNamed(context, NavigationService.dialog_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Divider",
-          onPressed: () => Navigator.pushNamed(context, NavigationService.divider_screen),
+          onPressed: () =>
+              Navigator.pushNamed(context, NavigationService.divider_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
@@ -190,14 +195,14 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Form Field",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.gradient_form_field_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.gradient_form_field_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Select Field",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.select_field_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.select_field_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
@@ -214,19 +219,20 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Icon",
-          onPressed: () => Navigator.pushNamed(context, NavigationService.icon_screen),
+          onPressed: () =>
+              Navigator.pushNamed(context, NavigationService.icon_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Circular Indicator",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.circular_indicator_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.circular_indicator_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Page Indicator",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.page_indicator_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.page_indicator_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
@@ -237,20 +243,20 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Progress Indicator",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.progress_indicator_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.progress_indicator_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Story Indicator",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.story_indicator_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.story_indicator_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Keyboard Button",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.keyboard_button_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.keyboard_button_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
@@ -267,26 +273,26 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "List Refresh",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.list_refresh_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.list_refresh_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "List Section",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.list_section_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.list_section_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Action Modal",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.action_modal_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.action_modal_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Expanded Modal",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.expanded_modal_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.expanded_modal_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
@@ -297,8 +303,8 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Blur Expanded Modal",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.blur_expanded_modal_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.blur_expanded_modal_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
@@ -309,8 +315,8 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Pop Up Modal",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.pop_up_modal_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.pop_up_modal_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
@@ -333,14 +339,14 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Date Picker",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.date_picker_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.date_picker_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Time Picker",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.time_picker_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.time_picker_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
@@ -351,13 +357,14 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient PIN Field",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.gradient_pin_field_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.gradient_pin_field_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Radio",
-          onPressed: () => Navigator.pushNamed(context, NavigationService.radio_screen),
+          onPressed: () =>
+              Navigator.pushNamed(context, NavigationService.radio_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
@@ -374,8 +381,8 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Segment Control",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.segment_control_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.segment_control_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
@@ -386,18 +393,20 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Shimmer",
-          onPressed: () => Navigator.pushNamed(context, NavigationService.shimmer_screen),
+          onPressed: () =>
+              Navigator.pushNamed(context, NavigationService.shimmer_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Shimmer",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.gradient_shimmer_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.gradient_shimmer_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Slider",
-          onPressed: () => Navigator.pushNamed(context, NavigationService.slider_screen),
+          onPressed: () =>
+              Navigator.pushNamed(context, NavigationService.slider_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
@@ -420,18 +429,20 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Snackbar",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.gradient_snackbar_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.gradient_snackbar_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Switch",
-          onPressed: () => Navigator.pushNamed(context, NavigationService.switch_screen),
+          onPressed: () =>
+              Navigator.pushNamed(context, NavigationService.switch_screen),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Text",
-          onPressed: () => Navigator.pushNamed(context, NavigationService.text_screen),
+          onPressed: () =>
+              Navigator.pushNamed(context, NavigationService.text_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
@@ -442,13 +453,14 @@ class ComponentListWidget extends StatelessWidget {
         SizedBox(height: size.s16),
         FPCPrimaryButton(
           title: "Toggle",
-          onPressed: () => Navigator.pushNamed(context, NavigationService.toggle_screen),
+          onPressed: () =>
+              Navigator.pushNamed(context, NavigationService.toggle_screen),
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Toggle",
-          onPressed: () =>
-              Navigator.pushNamed(context, NavigationService.gradient_toggle_screen),
+          onPressed: () => Navigator.pushNamed(
+              context, NavigationService.gradient_toggle_screen),
         ),
       ],
     );

@@ -62,12 +62,14 @@ class FPCBasicSegmentControl<T> extends StatefulWidget {
   final String? restorationId;
 
   @override
-  State<FPCBasicSegmentControl<T>> createState() =>
-      _FPCBasicSegmentControlState<T>();
+  State<FPCBasicSegmentControl<T>> createState() => _FPCBasicSegmentControlState<T>();
 }
 
-class _FPCBasicSegmentControlState<T> extends State<FPCBasicSegmentControl<T>> {
+class _FPCBasicSegmentControlState<T> extends State<FPCBasicSegmentControl<T>>
+    with FPCDidInitMixin<FPCBasicSegmentControl<T>> {
+  late FPCSizeState _sizeState;
   late IFPCHaptic _haptic;
+  late IFPCSize _size;
 
   // Controller
   late final TextEditingController _controller;
@@ -76,19 +78,19 @@ class _FPCBasicSegmentControlState<T> extends State<FPCBasicSegmentControl<T>> {
   bool _isValidationError = false;
 
   @override
-  void initState() {
-    super.initState();
+  void didChangeDependencies() {
+    this._sizeState = this.context.componentSizeState;
+    this._haptic = this.context.componentHaptic;
+    this._size = this._sizeState.size;
+    super.didChangeDependencies();
+  }
+
+  @override
+  void didInitState() {
     // Controller
     this._controller = TextEditingController(
       text: this.widget.value?.toString(),
     );
-  }
-
-  @override
-  void didChangeDependencies() {
-    final FPCConfig config = context.componentConfig;
-    this._haptic = config.haptic;
-    super.didChangeDependencies();
   }
 
   @override
@@ -149,12 +151,9 @@ class _FPCBasicSegmentControlState<T> extends State<FPCBasicSegmentControl<T>> {
 
     if (this.widget.items.length == 1) throw const FPCItemsLengthException();
 
-    final FPCConfig config = context.componentConfig;
-    final IFPCSize size = config.size;
-
-    final double height = this.widget.height ?? size.heightSegmentControl;
+    final double height = this.widget.height ?? this._size.heightSegmentControl;
     final BorderRadius borderRadius =
-        this.widget.borderRadius ?? config.borderRadiusSegmentControl;
+        this.widget.borderRadius ?? this._sizeState.borderRadiusSegmentControl;
 
     return SizedBox(
       height: height,
@@ -190,15 +189,12 @@ class _FPCBasicSegmentControlState<T> extends State<FPCBasicSegmentControl<T>> {
                     index: index,
                     item: item,
                     length: this.widget.items.length,
-                    unselectedBackgroundColor:
-                        this.widget.unselectedBackgroundColor,
+                    unselectedBackgroundColor: this.widget.unselectedBackgroundColor,
                     unselectedBorderColor: this.widget.unselectedBorderColor,
-                    unselectedInternalColor:
-                        this.widget.unselectedInternalColor,
+                    unselectedInternalColor: this.widget.unselectedInternalColor,
                     unselectedSplashColor: this.widget.unselectedSplashColor,
                     unselectedStyle: this.widget.unselectedStyle,
-                    selectedBackgroundColor:
-                        this.widget.selectedBackgroundColor,
+                    selectedBackgroundColor: this.widget.selectedBackgroundColor,
                     selectedBorderColor: this.widget.selectedBorderColor,
                     selectedInternalColor: this.widget.selectedInternalColor,
                     selectedSplashColor: this.widget.selectedSplashColor,
@@ -364,29 +360,25 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final FPCSizeState sizeState = context.componentSizeState;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     final Color backgroundColor = this._backgroundColor(theme: theme);
     final Color? splashColor = this._splashColor(theme: theme);
     final Color borderColor = this._borderColor(theme: theme);
     final Color internalColor = this._internalColor(theme: theme);
-    final double internalIconHeight =
-        this.internalIconHeight ?? size.heightIconDefault;
-    final double borderWidth =
-        this.borderWidth ?? config.borderWidthSegmentControl;
+    final double internalIconHeight = this.internalIconHeight ?? size.heightIconDefault;
+    final double borderWidth = this.borderWidth ?? sizeState.borderWidthSegmentControl;
     final double leftBorderWidth = index == 0 ? borderWidth : 0;
-    final double rightBorderWidth =
-        (index + 1) == this.length ? borderWidth : 0;
+    final double rightBorderWidth = (index + 1) == this.length ? borderWidth : 0;
     final Radius topLeft =
         index == 0 ? Radius.circular(this.borderRadius.topLeft.x) : Radius.zero;
     final Radius topRight = (index + 1) == this.length
         ? Radius.circular(this.borderRadius.topRight.x)
         : Radius.zero;
-    final Radius bottomLeft = index == 0
-        ? Radius.circular(this.borderRadius.bottomLeft.x)
-        : Radius.zero;
+    final Radius bottomLeft =
+        index == 0 ? Radius.circular(this.borderRadius.bottomLeft.x) : Radius.zero;
     final Radius bottomRight = (index + 1) == this.length
         ? Radius.circular(this.borderRadius.bottomRight.x)
         : Radius.zero;
@@ -407,8 +399,7 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
         TextStyle(
           color: internalColor,
         );
-    final TextStyle titleStyle =
-        this.isSelected ? selectedColor : unselectedStyle;
+    final TextStyle titleStyle = this.isSelected ? selectedColor : unselectedStyle;
 
     return FPCBasicButton(
       backgroundColor: backgroundColor,

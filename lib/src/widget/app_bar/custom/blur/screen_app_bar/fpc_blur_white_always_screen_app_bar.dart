@@ -24,7 +24,7 @@ class FPCBlurWhiteAlwaysScreenAppBar extends FPCBasicBlurAppBar {
   }) : super(
           context: context,
           transitionBetweenRoutes: transitionBetweenRoutes,
-          blurColor: blurColor ?? context.componentConfig.theme.blackAlways,
+          blurColor: blurColor ?? context.componentTheme.blackAlways,
           blurOpacity: blurOpacity,
           blurFilter: blurFilter,
           prefix: _prefix(
@@ -34,12 +34,12 @@ class FPCBlurWhiteAlwaysScreenAppBar extends FPCBasicBlurAppBar {
           ),
           title: title,
           style: style?.copyWith(
-                color: style.color ?? context.componentConfig.theme.whiteAlways,
-                package: context.componentConfig.textStyle.package,
+                color: style.color ?? context.componentTheme.whiteAlways,
+                package: context.componentTextStyle.package,
               ) ??
               TextStyle(
-                color: context.componentConfig.theme.whiteAlways,
-                package: context.componentConfig.textStyle.package,
+                color: context.componentTheme.whiteAlways,
+                package: context.componentTextStyle.package,
               ),
           middle: middle,
           postfix: postfix,

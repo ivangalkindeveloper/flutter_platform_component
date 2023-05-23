@@ -72,9 +72,8 @@ class _FPCDatePickerCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCDateTime dateTime = config.dateTime;
-    final IFPCTheme theme = config.theme;
+    final IFPCDateTime dateTime = context.componentDateTime;
+    final IFPCTheme theme = context.componentTheme;
 
     final double height =
         this.cupertinoHeight ?? (MediaQuery.of(context).size.height / 4);
@@ -133,14 +132,14 @@ class _FPCDatePickerMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
+    final FPCSizeState sizeState = context.componentSizeState;
+    final IFPCTheme theme = context.componentTheme;
 
     final Color backgroundColor =
         this.materialDialogBackgroundColor ?? theme.backgroundScaffold;
     final Color color = this.materialDialogColor ?? theme.primary;
     final BorderRadius borderRadius =
-        this.materialDialogBorderRadius ?? config.borderRadiusDialog;
+        this.materialDialogBorderRadius ?? sizeState.borderRadiusDialog;
     final Widget materialDialog = this.materialDialog ?? const SizedBox();
 
     return Theme(

@@ -80,13 +80,13 @@ class _FPCBasicGradientButtonCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCSize size = config.size;
+    final FPCSizeState sizeState = context.componentSizeState;
+    final IFPCSize size = context.componentSize;
 
     final double height = this.height ?? size.heightButton;
     final BorderRadius borderRadius =
-        this.borderRadius ?? config.borderRadiusButton;
-    final double borderWidth = this.borderWidth ?? config.borderWidthButton;
+        this.borderRadius ?? sizeState.borderRadiusButton;
+    final double borderWidth = this.borderWidth ?? sizeState.borderWidthButton;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
           horizontal: size.s16,
@@ -118,7 +118,7 @@ class _FPCBasicGradientButtonCupertino extends StatelessWidget {
                     gradient: this.borderGradient!,
                     child: FPCAnimatedContainer(
                       decoration: BoxDecoration(
-                        borderRadius: config.borderRadiusButton,
+                        borderRadius: sizeState.borderRadiusButton,
                         border: Border.all(
                           color: this.borderGradient!.colors.first,
                           width: borderWidth,
@@ -176,15 +176,15 @@ class _FPCBasicGradientButtonMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCTheme theme = config.theme;
-    final IFPCSize size = config.size;
+    final FPCSizeState sizeState = context.componentSizeState;
+    final IFPCTheme theme = context.componentTheme;
+    final IFPCSize size = context.componentSize;
 
     final Color splashColor = this.splashColor ?? theme.grey;
     final double height = this.height ?? size.heightButton;
     final BorderRadius borderRadius =
-        this.borderRadius ?? config.borderRadiusButton;
-    final double borderWidth = this.borderWidth ?? config.borderWidthButton;
+        this.borderRadius ?? sizeState.borderRadiusButton;
+    final double borderWidth = this.borderWidth ?? sizeState.borderWidthButton;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
           horizontal: size.s16,

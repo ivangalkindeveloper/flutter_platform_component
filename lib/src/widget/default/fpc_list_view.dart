@@ -62,8 +62,7 @@ class FPCListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCConfig config = context.componentConfig;
-    final IFPCSize size = config.size;
+    final IFPCSize size = context.componentSize;
 
     return ListView(
       key: key,
