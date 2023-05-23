@@ -2,8 +2,9 @@
 
 <div align="center">
   📱 Ready-made inherited component base using ready-made abstractions for quick use and decomposed by platform.
-
-
+  <br>
+  <br>
+  
   | iOS (Cupertino) | Android (Material) |
   | :-------------: | :----------------: |
   |        ✅       |         ✅         |
