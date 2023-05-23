@@ -1,7 +1,8 @@
 <h1 align="center">Flutter Platform Component</h1>
 
 <div align="center">
-  📱 Ready-made inherited component base using ready-made abstractions for quick use and decomposed by platform.\
+  📱 Ready-made inherited component base using ready-made abstractions for quick use and decomposed by platform.
+
 
   | iOS (Cupertino) | Android (Material) |
   | :-------------: | :----------------: |
