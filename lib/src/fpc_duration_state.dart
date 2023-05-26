@@ -1,7 +1,7 @@
 part of 'flutter_platform_component.dart';
 
-class _FPCDurationState extends StatefulWidget {
-  const _FPCDurationState({
+class _FPCDurationWidget extends StatefulWidget {
+  const _FPCDurationWidget({
     required this.duration,
     required this.child,
   });
@@ -10,50 +10,55 @@ class _FPCDurationState extends StatefulWidget {
   final Widget child;
 
   @override
-  State<_FPCDurationState> createState() => FPCDurationState();
+  State<_FPCDurationWidget> createState() => _FPCDurationState();
 }
 
-class FPCDurationState extends State<_FPCDurationState> {
-  late IFPCDuration duration;
+class _FPCDurationState extends State<_FPCDurationWidget> {
+  late IFPCDuration _duration;
 
   @override
   void initState() {
     super.initState();
-    this.duration = this.widget.duration ?? const FPCDefaultDuration();
+    this._duration = this.widget.duration ?? const FPCDefaultDuration();
   }
 
-  void changeDuration({
-    required IFPCDuration duration,
-  }) =>
-      setState(() => this.duration = duration);
-
-  static FPCDurationState of(BuildContext context) {
-    final FPCDurationState? state =
-        context.dependOnInheritedWidgetOfExactType<_FPCDurationScope>()?.state;
-    if (state == null) {
-      throw const FPCConfigNullException();
-    }
-
-    return state;
-  }
+  void _changeDuration(IFPCDuration duration) =>
+      setState(() => this._duration = duration);
 
   @override
   Widget build(BuildContext context) {
-    return _FPCDurationScope(
-      state: this,
+    return FPCDurationState(
+      duration: this._duration,
+      changeDuration: this._changeDuration,
       child: this.widget.child,
     );
   }
 }
 
-class _FPCDurationScope extends InheritedWidget {
-  const _FPCDurationScope({
-    required this.state,
+class FPCDurationState extends InheritedWidget {
+  const FPCDurationState({
+    required this.duration,
+    required this.changeDuration,
     required super.child,
   });
 
-  final FPCDurationState state;
+  final IFPCDuration duration;
+  final void Function(IFPCDuration duration) changeDuration;
+
+  static FPCDurationState of(BuildContext context) {
+    final FPCDurationState? state =
+        context.dependOnInheritedWidgetOfExactType<FPCDurationState>();
+    if (state == null) {
+      throw const FPCRootWidgetMountedException();
+    }
+
+    return state;
+  }
+
+  static FPCDurationState? maybeOf(BuildContext context) =>
+      context.dependOnInheritedWidgetOfExactType<FPCDurationState>();
 
   @override
-  bool updateShouldNotify(_FPCDurationScope oldWidget) => true;
+  bool updateShouldNotify(FPCDurationState oldWidget) =>
+      oldWidget.duration != this.duration;
 }

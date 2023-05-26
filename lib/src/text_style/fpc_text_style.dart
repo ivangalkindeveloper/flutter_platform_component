@@ -21,4 +21,40 @@ abstract class IFPCTextStyle {
   abstract final String? package;
 
   IFPCTextStyle copyWith();
+
+  @override
+  bool operator ==(Object object) =>
+      object is IFPCTextStyle &&
+      // FontWeight
+      object.fontWeightThin == this.fontWeightThin &&
+      object.fontWeightRegular == this.fontWeightRegular &&
+      object.fontWeightMedium == this.fontWeightMedium &&
+      object.fontWeightSemiBold == this.fontWeightSemiBold &&
+      object.fontWeightBold == this.fontWeightBold &&
+      // FontFamily
+      object.fontFamilyThin == this.fontFamilyThin &&
+      object.fontFamilyRegular == this.fontFamilyRegular &&
+      object.fontFamilyMedium == this.fontFamilyMedium &&
+      object.fontFamilySemiBold == this.fontFamilySemiBold &&
+      object.fontFamilyBold == this.fontFamilyBold &&
+      // Package
+      object.package == this.package;
+
+  @override
+  int get hashCode => Object.hashAll([
+        // FontWeight
+        this.fontWeightThin,
+        this.fontWeightRegular,
+        this.fontWeightMedium,
+        this.fontWeightSemiBold,
+        this.fontWeightBold,
+        // FontFamily
+        this.fontFamilyThin,
+        this.fontFamilyRegular,
+        this.fontFamilyMedium,
+        this.fontFamilySemiBold,
+        this.fontFamilyBold,
+        // Package
+        this.package,
+      ]);
 }

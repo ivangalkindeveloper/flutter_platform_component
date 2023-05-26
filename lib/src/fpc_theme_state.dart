@@ -1,7 +1,7 @@
 part of 'flutter_platform_component.dart';
 
-class _FPCThemeState extends StatefulWidget {
-  const _FPCThemeState({
+class _FPCThemeWidget extends StatefulWidget {
+  const _FPCThemeWidget({
     required this.theme,
     required this.child,
   });
@@ -10,77 +10,96 @@ class _FPCThemeState extends StatefulWidget {
   final Widget child;
 
   @override
-  State<_FPCThemeState> createState() => FPCThemeState();
+  State<_FPCThemeWidget> createState() => _FPCThemeState();
 }
 
-class FPCThemeState extends State<_FPCThemeState> {
-  late IFPCTheme theme;
+class _FPCThemeState extends State<_FPCThemeWidget> {
+  late IFPCTheme _theme;
 
   // Barrier
   // Barrier / Expanded Modal
-  Color get barrierColorExpandedModal =>
+  Color get _barrierColorExpandedModal =>
       FPCPlatformUtil.decomposeFromContext<Color, Color, Color>(
         context: this.context,
-        cupertino: this.theme.barrierExpandedModalCupertino,
-        material: this.theme.barrierExpandedModalMaterial,
+        cupertino: this._theme.barrierExpandedModalCupertino,
+        material: this._theme.barrierExpandedModalMaterial,
       );
 
   // Barrier / Pop Up Modal
-  Color get barrierColorPopUpModal =>
+  Color get _barrierColorPopUpModal =>
       FPCPlatformUtil.decomposeFromContext<Color, Color, Color>(
         context: this.context,
-        cupertino: this.theme.barrierPopUpModalCupertino,
-        material: this.theme.barrierPopUpModalMaterial,
+        cupertino: this._theme.barrierPopUpModalCupertino,
+        material: this._theme.barrierPopUpModalMaterial,
       );
 
   // Barrier / Dialog
-  Color get barrierColorDialog =>
+  Color get _barrierColorDialog =>
       FPCPlatformUtil.decomposeFromContext<Color, Color, Color>(
         context: this.context,
-        cupertino: this.theme.barrierDialogCupertino,
-        material: this.theme.barrierDialogMaterial,
+        cupertino: this._theme.barrierDialogCupertino,
+        material: this._theme.barrierDialogMaterial,
       );
 
   @override
   void initState() {
     super.initState();
-    this.theme = this.widget.theme ?? FPCDefaultLightTheme();
+    this._theme = this.widget.theme ?? FPCDefaultLightTheme();
   }
 
-  void changeTheme({
-    required IFPCTheme theme,
-  }) {
+  void _changeTheme(IFPCTheme theme) {
     SystemChrome.setSystemUIOverlayStyle(theme.systemOverlayStyle);
-    setState(() => this.theme = theme);
-  }
-
-  static FPCThemeState of(BuildContext context) {
-    final FPCThemeState? state =
-        context.dependOnInheritedWidgetOfExactType<_FPCThemeScope>()?.state;
-    if (state == null) {
-      throw const FPCConfigNullException();
-    }
-
-    return state;
+    setState(() => this._theme = theme);
   }
 
   @override
   Widget build(BuildContext context) {
-    return _FPCThemeScope(
-      state: this,
+    return FPCThemeState(
+      theme: this._theme,
+      changeTheme: this._changeTheme,
+      //
+      barrierColorExpandedModal: this._barrierColorExpandedModal,
+      barrierColorPopUpModal: this._barrierColorPopUpModal,
+      barrierColorDialog: this._barrierColorDialog,
+      //
       child: this.widget.child,
     );
   }
 }
 
-class _FPCThemeScope extends InheritedWidget {
-  const _FPCThemeScope({
-    required this.state,
+class FPCThemeState extends InheritedWidget {
+  const FPCThemeState({
+    required this.theme,
+    required this.changeTheme,
+    //
+    required this.barrierColorExpandedModal,
+    required this.barrierColorPopUpModal,
+    required this.barrierColorDialog,
+    //
     required super.child,
   });
 
-  final FPCThemeState state;
+  final IFPCTheme theme;
+  final void Function(IFPCTheme theme) changeTheme;
+  //
+  final Color barrierColorExpandedModal;
+  final Color barrierColorPopUpModal;
+  final Color barrierColorDialog;
+
+  static FPCThemeState of(BuildContext context) {
+    final FPCThemeState? state =
+        context.dependOnInheritedWidgetOfExactType<FPCThemeState>();
+    if (state == null) {
+      throw const FPCRootWidgetMountedException();
+    }
+
+    return state;
+  }
+
+  static FPCThemeState? maybeOf(BuildContext context) =>
+      context.dependOnInheritedWidgetOfExactType<FPCThemeState>();
 
   @override
-  bool updateShouldNotify(_FPCThemeScope oldWidget) => true;
+  bool updateShouldNotify(covariant FPCThemeState oldWidget) =>
+      oldWidget.theme != this.theme;
 }

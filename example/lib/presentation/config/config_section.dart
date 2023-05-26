@@ -16,18 +16,14 @@ class ConfigSection extends StatelessWidget {
             Expanded(
               child: FPCPrimaryLabelButton(
                 title: "iOS",
-                onPressed: () => context.changePlatform(
-                  platform: FPCPlatform.iOS,
-                ),
+                onPressed: () => context.changePlatform(FPCPlatform.iOS),
               ),
             ),
             SizedBox(width: size.s16),
             Expanded(
               child: FPCPrimaryLabelButton(
                 title: "Android",
-                onPressed: () => context.changePlatform(
-                  platform: FPCPlatform.Android,
-                ),
+                onPressed: () => context.changePlatform(FPCPlatform.Android),
               ),
             ),
           ],
@@ -37,16 +33,14 @@ class ConfigSection extends StatelessWidget {
             Expanded(
               child: FPCPrimaryLabelButton(
                 title: "Light Theme",
-                onPressed: () =>
-                    context.changeTheme(theme: FPCDefaultLightTheme()),
+                onPressed: () => context.changeTheme(FPCDefaultLightTheme()),
               ),
             ),
             SizedBox(width: size.s16),
             Expanded(
               child: FPCPrimaryLabelButton(
                 title: "Dark Theme",
-                onPressed: () =>
-                    context.changeTheme(theme: FPCDefaultDarkTheme()),
+                onPressed: () => context.changeTheme(FPCDefaultDarkTheme()),
               ),
             ),
           ],

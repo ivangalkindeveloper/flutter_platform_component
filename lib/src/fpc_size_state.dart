@@ -1,7 +1,7 @@
 part of 'flutter_platform_component.dart';
 
-class _FPCSizeState extends StatefulWidget {
-  const _FPCSizeState({
+class _FPCSizeWidget extends StatefulWidget {
+  const _FPCSizeWidget({
     required this.size,
     required this.child,
   });
@@ -10,156 +10,207 @@ class _FPCSizeState extends StatefulWidget {
   final Widget child;
 
   @override
-  State<_FPCSizeState> createState() => FPCSizeState();
+  State<_FPCSizeWidget> createState() => _FPCSizeState();
 }
 
-class FPCSizeState extends State<_FPCSizeState> {
-  late IFPCSize size;
-
-  // BorderRadius
-  // BorderRadius / Button
-  BorderRadius get borderRadiusButton => FPCPlatformUtil.decomposeFromContext<
-          BorderRadius, BorderRadius, BorderRadius>(
-        context: this.context,
-        cupertino: this.size.borderRadiusButtonCupertino,
-        material: this.size.borderRadiusButtonMaterial,
-      );
-
-  // BorderRadius / Card
-  BorderRadius get borderRadiusCard => FPCPlatformUtil.decomposeFromContext<
-          BorderRadius, BorderRadius, BorderRadius>(
-        context: this.context,
-        cupertino: this.size.borderRadiusCardCupertino,
-        material: this.size.borderRadiusCardMaterial,
-      );
-
-  // BorderRadius / Dialog
-  BorderRadius get borderRadiusDialog => FPCPlatformUtil.decomposeFromContext<
-          BorderRadius, BorderRadius, BorderRadius>(
-        context: this.context,
-        cupertino: this.size.borderRadiusDialogCupertino,
-        material: this.size.borderRadiusDialogMaterial,
-      );
-
-  // BorderRadius / Field
-  BorderRadius get borderRadiusField => FPCPlatformUtil.decomposeFromContext<
-          BorderRadius, BorderRadius, BorderRadius>(
-        context: this.context,
-        cupertino: this.size.borderRadiusFieldCupertino,
-        material: this.size.borderRadiusFieldMaterial,
-      );
-
-  // BorderRadius / Modal
-  BorderRadius get borderRadiusModal => FPCPlatformUtil.decomposeFromContext<
-          BorderRadius, BorderRadius, BorderRadius>(
-        context: this.context,
-        cupertino: this.size.borderRadiusModalCupertino,
-        material: this.size.borderRadiusModalMaterial,
-      );
-
-  // BorderRadius / Segment Control
-  BorderRadius get borderRadiusSegmentControl => FPCPlatformUtil
-          .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
-        context: this.context,
-        cupertino: this.size.borderRadiusSegmentControlCupertino,
-        material: this.size.borderRadiusSegmentControlMaterial,
-      );
-
-  // BorderRadius / Snackbar
-  BorderRadius get borderRadiusSnackbar => FPCPlatformUtil.decomposeFromContext<
-          BorderRadius, BorderRadius, BorderRadius>(
-        context: this.context,
-        cupertino: this.size.borderRadiusSnackbarCupertino,
-        material: this.size.borderRadiusSnackbarMaterial,
-      );
-
-  // BorderRadius / Toggle
-  BorderRadius get borderRadiusToggle => FPCPlatformUtil.decomposeFromContext<
-          BorderRadius, BorderRadius, BorderRadius>(
-        context: this.context,
-        cupertino: this.size.borderRadiusToggleCupertino,
-        material: this.size.borderRadiusToggleMaterial,
-      );
-
-  // BorderWidth
-  // BorderWidth / Button
-  double get borderWidthButton =>
-      FPCPlatformUtil.decomposeFromContext<double, double, double>(
-        context: this.context,
-        cupertino: this.size.borderWidthButtonCupertino,
-        material: this.size.borderWidthButtonMaterial,
-      );
-
-  // BorderWidth / Card
-  double get borderWidthCard =>
-      FPCPlatformUtil.decomposeFromContext<double, double, double>(
-        context: this.context,
-        cupertino: this.size.borderWidthCardCupertino,
-        material: this.size.borderWidthCardMaterial,
-      );
-
-  // BorderWidth / Field
-  double get borderWidthField =>
-      FPCPlatformUtil.decomposeFromContext<double, double, double>(
-        context: this.context,
-        cupertino: this.size.borderWidthFieldCupertino,
-        material: this.size.borderWidthFieldMaterial,
-      );
-
-  // BorderWidth / Segment Control
-  double get borderWidthSegmentControl =>
-      FPCPlatformUtil.decomposeFromContext<double, double, double>(
-        context: this.context,
-        cupertino: this.size.borderWidthSegmentControlCupertino,
-        material: this.size.borderWidthSegmentControlMaterial,
-      );
-
-  // BorderWidth / Snackbar
-  double get borderWidthSnackbar =>
-      FPCPlatformUtil.decomposeFromContext<double, double, double>(
-        context: this.context,
-        cupertino: this.size.borderWidthSnackbarCupertino,
-        material: this.size.borderWidthSnackbarMaterial,
-      );
+class _FPCSizeState extends State<_FPCSizeWidget> {
+  late IFPCSize _size;
 
   @override
   void initState() {
     super.initState();
-    this.size = this.widget.size ?? const FPCDefaultSize();
+    this._size = this.widget.size ?? const FPCDefaultSize();
   }
 
-  void changeSize({
-    required IFPCSize size,
-  }) =>
-      setState(() => this.size = size);
+  void _changeSize(IFPCSize size) => setState(() => this._size = size);
 
-  static FPCSizeState of(BuildContext context) {
-    final FPCSizeState? state =
-        context.dependOnInheritedWidgetOfExactType<_FPCSizeScope>()?.state;
-    if (state == null) {
-      throw const FPCConfigNullException();
-    }
+  // BorderRadius
+  // BorderRadius / Button
+  BorderRadius get _borderRadiusButton => FPCPlatformUtil.decomposeFromContext<
+          BorderRadius, BorderRadius, BorderRadius>(
+        context: this.context,
+        cupertino: this._size.borderRadiusButtonCupertino,
+        material: this._size.borderRadiusButtonMaterial,
+      );
 
-    return state;
-  }
+  // BorderRadius / Card
+  BorderRadius get _borderRadiusCard => FPCPlatformUtil.decomposeFromContext<
+          BorderRadius, BorderRadius, BorderRadius>(
+        context: this.context,
+        cupertino: this._size.borderRadiusCardCupertino,
+        material: this._size.borderRadiusCardMaterial,
+      );
+
+  // BorderRadius / Dialog
+  BorderRadius get _borderRadiusDialog => FPCPlatformUtil.decomposeFromContext<
+          BorderRadius, BorderRadius, BorderRadius>(
+        context: this.context,
+        cupertino: this._size.borderRadiusDialogCupertino,
+        material: this._size.borderRadiusDialogMaterial,
+      );
+
+  // BorderRadius / Field
+  BorderRadius get _borderRadiusField => FPCPlatformUtil.decomposeFromContext<
+          BorderRadius, BorderRadius, BorderRadius>(
+        context: this.context,
+        cupertino: this._size.borderRadiusFieldCupertino,
+        material: this._size.borderRadiusFieldMaterial,
+      );
+
+  // BorderRadius / Modal
+  BorderRadius get _borderRadiusModal => FPCPlatformUtil.decomposeFromContext<
+          BorderRadius, BorderRadius, BorderRadius>(
+        context: this.context,
+        cupertino: this._size.borderRadiusModalCupertino,
+        material: this._size.borderRadiusModalMaterial,
+      );
+
+  // BorderRadius / Segment Control
+  BorderRadius get _borderRadiusSegmentControl => FPCPlatformUtil
+          .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
+        context: this.context,
+        cupertino: this._size.borderRadiusSegmentControlCupertino,
+        material: this._size.borderRadiusSegmentControlMaterial,
+      );
+
+  // BorderRadius / Snackbar
+  BorderRadius get _borderRadiusSnackbar => FPCPlatformUtil
+          .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
+        context: this.context,
+        cupertino: this._size.borderRadiusSnackbarCupertino,
+        material: this._size.borderRadiusSnackbarMaterial,
+      );
+
+  // BorderRadius / Toggle
+  BorderRadius get _borderRadiusToggle => FPCPlatformUtil.decomposeFromContext<
+          BorderRadius, BorderRadius, BorderRadius>(
+        context: this.context,
+        cupertino: this._size.borderRadiusToggleCupertino,
+        material: this._size.borderRadiusToggleMaterial,
+      );
+
+  // BorderWidth
+  // BorderWidth / Button
+  double get _borderWidthButton =>
+      FPCPlatformUtil.decomposeFromContext<double, double, double>(
+        context: this.context,
+        cupertino: this._size.borderWidthButtonCupertino,
+        material: this._size.borderWidthButtonMaterial,
+      );
+
+  // BorderWidth / Card
+  double get _borderWidthCard =>
+      FPCPlatformUtil.decomposeFromContext<double, double, double>(
+        context: this.context,
+        cupertino: this._size.borderWidthCardCupertino,
+        material: this._size.borderWidthCardMaterial,
+      );
+
+  // BorderWidth / Field
+  double get _borderWidthField =>
+      FPCPlatformUtil.decomposeFromContext<double, double, double>(
+        context: this.context,
+        cupertino: this._size.borderWidthFieldCupertino,
+        material: this._size.borderWidthFieldMaterial,
+      );
+
+  // BorderWidth / Segment Control
+  double get _borderWidthSegmentControl =>
+      FPCPlatformUtil.decomposeFromContext<double, double, double>(
+        context: this.context,
+        cupertino: this._size.borderWidthSegmentControlCupertino,
+        material: this._size.borderWidthSegmentControlMaterial,
+      );
+
+  // BorderWidth / Snackbar
+  double get _borderWidthSnackbar =>
+      FPCPlatformUtil.decomposeFromContext<double, double, double>(
+        context: this.context,
+        cupertino: this._size.borderWidthSnackbarCupertino,
+        material: this._size.borderWidthSnackbarMaterial,
+      );
 
   @override
   Widget build(BuildContext context) {
-    return _FPCSizeScope(
-      state: this,
+    return FPCSizeState(
+      size: this._size,
+      changeSize: this._changeSize,
+      //
+      borderRadiusButton: this._borderRadiusButton,
+      borderRadiusCard: this._borderRadiusCard,
+      borderRadiusDialog: this._borderRadiusDialog,
+      borderRadiusField: this._borderRadiusField,
+      borderRadiusModal: this._borderRadiusModal,
+      borderRadiusSegmentControl: this._borderRadiusSegmentControl,
+      borderRadiusSnackbar: this._borderRadiusSnackbar,
+      borderRadiusToggle: this._borderRadiusToggle,
+      //
+      borderWidthButton: this._borderWidthButton,
+      borderWidthCard: this._borderWidthCard,
+      borderWidthField: this._borderWidthField,
+      borderWidthSegmentControl: this._borderWidthSegmentControl,
+      borderWidthSnackbar: this._borderWidthSnackbar,
+      //
       child: this.widget.child,
     );
   }
 }
 
-class _FPCSizeScope extends InheritedWidget {
-  const _FPCSizeScope({
-    required this.state,
+class FPCSizeState extends InheritedWidget {
+  const FPCSizeState({
+    required this.size,
+    required this.changeSize,
+    //
+    required this.borderRadiusButton,
+    required this.borderRadiusCard,
+    required this.borderRadiusDialog,
+    required this.borderRadiusField,
+    required this.borderRadiusModal,
+    required this.borderRadiusSegmentControl,
+    required this.borderRadiusSnackbar,
+    required this.borderRadiusToggle,
+    //
+    required this.borderWidthButton,
+    required this.borderWidthCard,
+    required this.borderWidthField,
+    required this.borderWidthSegmentControl,
+    required this.borderWidthSnackbar,
+    //
     required super.child,
   });
 
-  final FPCSizeState state;
+  final IFPCSize size;
+  final void Function(IFPCSize size) changeSize;
+  //
+  final BorderRadius borderRadiusButton;
+  final BorderRadius borderRadiusCard;
+  final BorderRadius borderRadiusDialog;
+  final BorderRadius borderRadiusField;
+  final BorderRadius borderRadiusModal;
+  final BorderRadius borderRadiusSegmentControl;
+  final BorderRadius borderRadiusSnackbar;
+  final BorderRadius borderRadiusToggle;
+  //
+  final double borderWidthButton;
+  final double borderWidthCard;
+  final double borderWidthField;
+  final double borderWidthSegmentControl;
+  final double borderWidthSnackbar;
+
+  static FPCSizeState of(BuildContext context) {
+    final FPCSizeState? state =
+        context.dependOnInheritedWidgetOfExactType<FPCSizeState>();
+    if (state == null) {
+      throw const FPCRootWidgetMountedException();
+    }
+
+    return state;
+  }
+
+  static FPCSizeState? maybeOf(BuildContext context) =>
+      context.dependOnInheritedWidgetOfExactType<FPCSizeState>();
 
   @override
-  bool updateShouldNotify(_FPCSizeScope oldWidget) => true;
+  bool updateShouldNotify(FPCSizeState oldWidget) =>
+      oldWidget.size != this.size;
 }

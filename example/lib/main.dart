@@ -26,7 +26,6 @@ class Application extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FPCApp(
-      context: context,
       navigatorKey: this.navigationService.navigatorKey,
       onGenerateRoute: this.navigationService.onGenerateRoute,
       onGenerateInitialRoutes: (String route) => [

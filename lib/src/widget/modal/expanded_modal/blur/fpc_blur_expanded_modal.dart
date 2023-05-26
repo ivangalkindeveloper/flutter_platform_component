@@ -13,7 +13,7 @@ class FPCBlurExpandedModal extends StatelessWidget {
     this.appBarCupertinoLocale,
     this.onPressedBack,
     this.appBarTitle,
-    this.appBarStyle,
+    this.appBarTitleStyle,
     this.appBarMiddle,
     this.appBarProstfix,
     this.appBarBottomPadding,
@@ -32,7 +32,7 @@ class FPCBlurExpandedModal extends StatelessWidget {
   final String? appBarCupertinoLocale;
   final VoidCallback? onPressedBack;
   final String? appBarTitle;
-  final TextStyle? appBarStyle;
+  final TextStyle? appBarTitleStyle;
   final Widget? appBarMiddle;
   final Widget? appBarProstfix;
   final EdgeInsets? appBarBottomPadding;
@@ -67,7 +67,7 @@ class FPCBlurExpandedModal extends StatelessWidget {
             cupertinoLocale: this.appBarCupertinoLocale,
             onPressedBack: this.onPressedBack,
             title: this.appBarTitle,
-            style: this.appBarStyle,
+            titleStyle: this.appBarTitleStyle,
             middle: this.appBarMiddle,
             postfix: this.appBarProstfix,
             bottomPadding: this.appBarBottomPadding,

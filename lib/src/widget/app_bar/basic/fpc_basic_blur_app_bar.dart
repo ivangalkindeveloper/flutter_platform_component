@@ -15,7 +15,7 @@ class FPCBasicBlurAppBar extends FPCPlatformAppBar {
     ImageFilter? blurFilter,
     Widget? prefix,
     String? title,
-    TextStyle? style,
+    TextStyle? titleStyle,
     Widget? middle,
     Widget? postfix,
     EdgeInsets? bottomPadding,
@@ -29,12 +29,9 @@ class FPCBasicBlurAppBar extends FPCPlatformAppBar {
             blurOpacity: blurOpacity,
             blurFilter: blurFilter,
             prefix: prefix,
-            middle: _middle(
-              context: context,
-              title: title,
-              style: style,
-              middle: middle,
-            ),
+            title: title,
+            titleStyle: titleStyle,
+            middle: middle,
             postfix: postfix,
             bottomPadding: bottomPadding,
             bottom: bottom,
@@ -46,49 +43,15 @@ class FPCBasicBlurAppBar extends FPCPlatformAppBar {
             blurOpacity: blurOpacity,
             blurFilter: blurFilter,
             prefix: prefix,
-            middle: _middle(
-              context: context,
-              title: title,
-              style: style,
-              middle: middle,
-            ),
+            title: title,
+            titleStyle: titleStyle,
+            middle: middle,
             postfix: postfix,
             bottomPadding: bottomPadding,
             bottom: bottom,
           ),
           bottom: bottom,
         );
-
-  static Widget? _middle({
-    required BuildContext context,
-    required String? title,
-    required TextStyle? style,
-    required Widget? middle,
-  }) {
-    if (middle != null) {
-      return middle;
-    }
-
-    if (title != null) {
-      final IFPCTextStyle textStyle = context.componentTextStyle;
-      final IFPCTheme theme = context.componentTheme;
-
-      return Text(
-        title,
-        textAlign: TextAlign.center,
-        style: style?.copyWith(
-              color: style.color ?? theme.black,
-              package: textStyle.package,
-            ) ??
-            TextStyle(
-              color: theme.black,
-              package: textStyle.package,
-            ),
-      );
-    }
-
-    return null;
-  }
 }
 
 class _FPCAppBarCupertino extends StatelessWidget {
@@ -99,6 +62,8 @@ class _FPCAppBarCupertino extends StatelessWidget {
     required this.blurOpacity,
     required this.blurFilter,
     required this.prefix,
+    required this.title,
+    required this.titleStyle,
     required this.middle,
     required this.postfix,
     required this.bottomPadding,
@@ -110,13 +75,42 @@ class _FPCAppBarCupertino extends StatelessWidget {
   final double? blurOpacity;
   final ImageFilter? blurFilter;
   final Widget? prefix;
+  final String? title;
+  final TextStyle? titleStyle;
   final Widget? middle;
   final Widget? postfix;
   final EdgeInsets? bottomPadding;
   final PreferredSizeWidget? bottom;
 
+  Widget? _middle({
+    required IFPCTextStyle textStyle,
+    required IFPCTheme theme,
+  }) {
+    if (this.middle != null) {
+      return this.middle;
+    }
+
+    if (this.title != null) {
+      return Text(
+        title!,
+        textAlign: TextAlign.center,
+        style: this.titleStyle?.copyWith(
+                  color: titleStyle?.color ?? theme.black,
+                  package: textStyle.package,
+                ) ??
+            TextStyle(
+              color: theme.black,
+              package: textStyle.package,
+            ),
+      );
+    }
+
+    return null;
+  }
+
   @override
   Widget build(BuildContext context) {
+    final IFPCTextStyle textStyle = context.componentTextStyle;
     final IFPCTheme theme = context.componentTheme;
     final IFPCSize size = context.componentSize;
 
@@ -138,7 +132,10 @@ class _FPCAppBarCupertino extends StatelessWidget {
               width: 0,
             ),
             leading: this.prefix,
-            middle: this.middle,
+            middle: this._middle(
+              textStyle: textStyle,
+              theme: theme,
+            ),
             trailing: this.postfix,
           ),
           if (this.bottom != null)
@@ -164,6 +161,8 @@ class _FPCAppBarMaterial extends StatelessWidget {
     required this.blurOpacity,
     required this.blurFilter,
     required this.prefix,
+    required this.title,
+    required this.titleStyle,
     required this.middle,
     required this.postfix,
     required this.bottomPadding,
@@ -175,13 +174,42 @@ class _FPCAppBarMaterial extends StatelessWidget {
   final double? blurOpacity;
   final ImageFilter? blurFilter;
   final Widget? prefix;
+  final String? title;
+  final TextStyle? titleStyle;
   final Widget? middle;
   final Widget? postfix;
   final EdgeInsets? bottomPadding;
   final PreferredSizeWidget? bottom;
 
+  Widget? _middle({
+    required IFPCTextStyle textStyle,
+    required IFPCTheme theme,
+  }) {
+    if (this.middle != null) {
+      return this.middle;
+    }
+
+    if (this.title != null) {
+      return Text(
+        title!,
+        textAlign: TextAlign.center,
+        style: this.titleStyle?.copyWith(
+                  color: titleStyle?.color ?? theme.black,
+                  package: textStyle.package,
+                ) ??
+            TextStyle(
+              color: theme.black,
+              package: textStyle.package,
+            ),
+      );
+    }
+
+    return null;
+  }
+
   @override
   Widget build(BuildContext context) {
+    final IFPCTextStyle textStyle = context.componentTextStyle;
     final IFPCTheme theme = context.componentTheme;
     final IFPCSize size = context.componentSize;
 
@@ -198,7 +226,10 @@ class _FPCAppBarMaterial extends StatelessWidget {
             systemOverlayStyle: theme.systemOverlayStyle,
             backgroundColor: theme.backgroundComponent.withOpacity(0),
             leading: this.prefix,
-            title: this.middle,
+            title: this._middle(
+              textStyle: textStyle,
+              theme: theme,
+            ),
             centerTitle: true,
             actions: this.postfix != null
                 ? [

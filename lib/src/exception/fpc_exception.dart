@@ -1,7 +1,8 @@
-class FPCConfigNullException implements Exception {
-  const FPCConfigNullException();
+class FPCRootWidgetMountedException implements Exception {
+  const FPCRootWidgetMountedException();
 
-  final String message = "Main widget of Flutter Component is not initizalized";
+  final String message =
+      "Root widget FlutterPlatformComponent is not mounted and initizalized";
 }
 
 class FPCItemsEmptyException implements Exception {
@@ -13,5 +14,5 @@ class FPCItemsEmptyException implements Exception {
 class FPCItemsLengthException implements Exception {
   const FPCItemsLengthException();
 
-  final String message = "Items legnth is 1";
+  final String message = "Items length == 1";
 }

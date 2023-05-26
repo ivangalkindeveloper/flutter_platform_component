@@ -1,8 +1,12 @@
+## 2.1.0
+* Overriding operators for main entities;
+* Deleting context properties in basic widgets;
+* Fix README.
+
 ## 2.0.0
 * State decomposition and optimization;
 * Adding FPCAnimatedOpenContainer;
 * FPCCupertinoSliverRefreshControl as helper for indicator color;
-* Deleting context properties in basic widgets;
 * Fix shimmers and adding delay;
 * Fix gradient configs;
 * Fix README.
@@ -38,7 +42,7 @@
 * Fixes form fields.
 
 ## 1.0.4
-* ColorButton > ColorInternal.
+* Property colorButton > colorInternal.
 
 ## 1.0.3
 * Fixes for mouse behaviors and formatting.

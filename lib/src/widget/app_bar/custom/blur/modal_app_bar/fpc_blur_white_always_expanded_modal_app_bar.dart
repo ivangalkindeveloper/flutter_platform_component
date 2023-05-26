@@ -13,7 +13,7 @@ class FPCBlurWhiteAlwaysExpandedModalAppBar extends FPCBasicBlurAppBar {
     String? cupertinoLocale,
     VoidCallback? onPressedBack,
     String? title,
-    TextStyle? style,
+    TextStyle? titleStyle,
     Widget? middle,
     Widget? postfix,
     EdgeInsets? bottomPadding,
@@ -30,8 +30,8 @@ class FPCBlurWhiteAlwaysExpandedModalAppBar extends FPCBasicBlurAppBar {
             onPressedBack: onPressedBack,
           ),
           title: title,
-          style: style?.copyWith(
-                color: style.color ?? context.componentTheme.whiteAlways,
+          titleStyle: titleStyle?.copyWith(
+                color: titleStyle.color ?? context.componentTheme.whiteAlways,
                 package: context.componentTextStyle.package,
               ) ??
               TextStyle(

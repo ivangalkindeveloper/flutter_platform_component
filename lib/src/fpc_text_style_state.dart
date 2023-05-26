@@ -1,7 +1,7 @@
 part of 'flutter_platform_component.dart';
 
-class _FPCTextStyleState extends StatefulWidget {
-  const _FPCTextStyleState({
+class _FPCTextStyleWidget extends StatefulWidget {
+  const _FPCTextStyleWidget({
     required this.textStyle,
     required this.child,
   });
@@ -10,50 +10,55 @@ class _FPCTextStyleState extends StatefulWidget {
   final Widget child;
 
   @override
-  State<_FPCTextStyleState> createState() => FPCTextStyleState();
+  State<_FPCTextStyleWidget> createState() => _FPCTextStyleState();
 }
 
-class FPCTextStyleState extends State<_FPCTextStyleState> {
-  late IFPCTextStyle textStyle;
+class _FPCTextStyleState extends State<_FPCTextStyleWidget> {
+  late IFPCTextStyle _textStyle;
 
   @override
   void initState() {
     super.initState();
-    this.textStyle = this.widget.textStyle ?? const FPCDefaultTextStyle();
+    this._textStyle = this.widget.textStyle ?? const FPCDefaultTextStyle();
   }
 
-  void changeTextStyle({
-    required IFPCTextStyle textStyle,
-  }) =>
-      setState(() => this.textStyle = textStyle);
-
-  static FPCTextStyleState of(BuildContext context) {
-    final FPCTextStyleState? state =
-        context.dependOnInheritedWidgetOfExactType<_FPCTextStyleScope>()?.state;
-    if (state == null) {
-      throw const FPCConfigNullException();
-    }
-
-    return state;
-  }
+  void _changeTextStyle(IFPCTextStyle textStyle) =>
+      setState(() => this._textStyle = textStyle);
 
   @override
   Widget build(BuildContext context) {
-    return _FPCTextStyleScope(
-      state: this,
+    return FPCTextStyleState(
+      textStyle: this._textStyle,
+      changeTextStyle: this._changeTextStyle,
       child: this.widget.child,
     );
   }
 }
 
-class _FPCTextStyleScope extends InheritedWidget {
-  const _FPCTextStyleScope({
-    required this.state,
+class FPCTextStyleState extends InheritedWidget {
+  const FPCTextStyleState({
+    required this.textStyle,
+    required this.changeTextStyle,
     required super.child,
   });
 
-  final FPCTextStyleState state;
+  final IFPCTextStyle textStyle;
+  final void Function(IFPCTextStyle textStyle) changeTextStyle;
+
+  static FPCTextStyleState of(BuildContext context) {
+    final FPCTextStyleState? state =
+        context.dependOnInheritedWidgetOfExactType<FPCTextStyleState>();
+    if (state == null) {
+      throw const FPCRootWidgetMountedException();
+    }
+
+    return state;
+  }
+
+  static FPCTextStyleState? maybeOf(BuildContext context) =>
+      context.dependOnInheritedWidgetOfExactType<FPCTextStyleState>();
 
   @override
-  bool updateShouldNotify(_FPCTextStyleScope oldWidget) => true;
+  bool updateShouldNotify(FPCTextStyleState oldWidget) =>
+      oldWidget.textStyle != this.textStyle;
 }

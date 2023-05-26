@@ -16,7 +16,7 @@ class FPCBlurWhiteAlwaysScreenAppBar extends FPCBasicBlurAppBar {
     Widget? prefix,
     VoidCallback? onPressedBack,
     String? title,
-    TextStyle? style,
+    TextStyle? titleStyle,
     Widget? middle,
     Widget? postfix,
     EdgeInsets? bottomPadding,
@@ -33,8 +33,8 @@ class FPCBlurWhiteAlwaysScreenAppBar extends FPCBasicBlurAppBar {
             onPressedBack: onPressedBack,
           ),
           title: title,
-          style: style?.copyWith(
-                color: style.color ?? context.componentTheme.whiteAlways,
+          titleStyle: titleStyle?.copyWith(
+                color: titleStyle.color ?? context.componentTheme.whiteAlways,
                 package: context.componentTextStyle.package,
               ) ??
               TextStyle(

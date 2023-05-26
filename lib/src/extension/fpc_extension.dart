@@ -25,43 +25,42 @@ extension FPCPlatformListExtension on List<FPCPlatform> {
 extension FPCBuildContextExtension on BuildContext {
   FPCTextStyleState get componentTextStyleState => FPCTextStyleState.of(this);
   IFPCTextStyle get componentTextStyle => FPCTextStyleState.of(this).textStyle;
-  void changeTextStyle({required IFPCTextStyle textStyle}) =>
-      FPCTextStyleState.of(this).changeTextStyle(textStyle: textStyle);
+  void changeTextStyle(IFPCTextStyle textStyle) =>
+      FPCTextStyleState.of(this).changeTextStyle(textStyle);
 
   FPCTimeOfDayState get componentTimeOfDayState => FPCTimeOfDayState.of(this);
   IFPCTimeOfDay get componentTimeOfDay => FPCTimeOfDayState.of(this).timeOfDay;
-  void changeTimeOfDay({required IFPCTimeOfDay timeOfDay}) =>
-      FPCTimeOfDayState.of(this).changeTimeOfDay(timeOfDay: timeOfDay);
+  void changeTimeOfDay(IFPCTimeOfDay timeOfDay) =>
+      FPCTimeOfDayState.of(this).changeTimeOfDay(timeOfDay);
 
   FPCDateTimeState get componentDateTimeState => FPCDateTimeState.of(this);
   IFPCDateTime get componentDateTime => FPCDateTimeState.of(this).dateTime;
-  void changeDateTime({required IFPCDateTime dateTime}) =>
-      FPCDateTimeState.of(this).changeDateTime(dateTime: dateTime);
+  void changeDateTime(IFPCDateTime dateTime) =>
+      FPCDateTimeState.of(this).changeDateTime(dateTime);
 
   FPCDurationState get componentDurationState => FPCDurationState.of(this);
   IFPCDuration get componentDuration => FPCDurationState.of(this).duration;
-  void changeDuration({required IFPCDuration duration}) =>
-      FPCDurationState.of(this).changeDuration(duration: duration);
+  void changeDuration(IFPCDuration duration) =>
+      FPCDurationState.of(this).changeDuration(duration);
 
   FPCPlatformState get componentPlatformState => FPCPlatformState.of(this);
   FPCPlatform get componentPlatform => FPCPlatformState.of(this).platform;
-  void changePlatform({required FPCPlatform platform}) =>
-      FPCPlatformState.of(this).changePlatform(platform: platform);
+  void changePlatform(FPCPlatform platform) =>
+      FPCPlatformState.of(this).changePlatform(platform);
 
   FPCHapticState get componentHapticState => FPCHapticState.of(this);
   IFPCHaptic get componentHaptic => FPCHapticState.of(this).haptic;
-  void changeHaptic({required IFPCHaptic haptic}) =>
-      FPCHapticState.of(this).changeHaptic(haptic: haptic);
+  void changeHaptic(IFPCHaptic haptic) =>
+      FPCHapticState.of(this).changeHaptic(haptic);
 
   FPCThemeState get componentThemeState => FPCThemeState.of(this);
   IFPCTheme get componentTheme => FPCThemeState.of(this).theme;
-  void changeTheme({required IFPCTheme theme}) =>
-      FPCThemeState.of(this).changeTheme(theme: theme);
+  void changeTheme(IFPCTheme theme) =>
+      FPCThemeState.of(this).changeTheme(theme);
 
   FPCSizeState get componentSizeState => FPCSizeState.of(this);
   IFPCSize get componentSize => FPCSizeState.of(this).size;
-  void changeSize({required IFPCSize size}) =>
-      FPCSizeState.of(this).changeSize(size: size);
+  void changeSize(IFPCSize size) => FPCSizeState.of(this).changeSize(size);
 }
 
 extension FPCOpenContainerTransitionTypeExtension

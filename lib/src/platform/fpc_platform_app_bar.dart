@@ -7,7 +7,7 @@ import 'package:flutter/material.dart' show kToolbarHeight;
 
 class FPCPlatformAppBar extends StatelessWidget
     implements ObstructingPreferredSizeWidget {
-  const FPCPlatformAppBar({
+  FPCPlatformAppBar({
     super.key,
     required this.context,
     required this.cupertino,
@@ -25,15 +25,14 @@ class FPCPlatformAppBar extends StatelessWidget
 
   @override
   Size get preferredSize {
-    final FPCPlatform platform = context.componentPlatform;
-    final IFPCSize size = context.componentSize;
+    final IFPCSize size = this.context.componentSize;
 
     final double additionalPreferredHeight = this.bottom != null
         ? (this.bottom!.preferredSize.height + size.s16 / 2)
         : 0;
 
-    return FPCPlatformUtil.decompose<Size, Size, Size>(
-      platform: platform,
+    return FPCPlatformUtil.decomposeFromContext<Size, Size, Size>(
+      context: this.context,
       cupertino: Size.fromHeight(
         kMinInteractiveDimensionCupertino + additionalPreferredHeight,
       ),

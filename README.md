@@ -11,11 +11,15 @@
 
   <a href="">![Pub Likes](https://img.shields.io/pub/likes/flutter_platform_component?color=success)</a>
   <a href="">![Pub Version](https://img.shields.io/pub/v/flutter_platform_component?color=important)</a>
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT">
+  </a>
 </div>
 
 <div align="center">
-  <a href="https://www.buymeacoffee.com/ivangalkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="32px" width= "128px"></a>
+  <a href="https://www.buymeacoffee.com/ivangalkin">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="32px" width= "128px">
+  </a>
 </div>
 
 ## Getting Started
@@ -23,6 +27,7 @@
   - [Platform decomposition](#platform-decomposition)
   - [One theme contract](#one-theme-contract)
   - [Basic entities](#basic-entities)
+  - [Optimization](#optimization)
   - [Color scheme](#color-scheme)
   - [Boilerplate](#boilerplate)
   - [Unified API](#unified-api)
@@ -166,6 +171,8 @@ Theme Extension works in the same way as this package.\
 In the case of this package - it is necessary to fill in only one contract of the theme used.
 ### Basic entities
 In addition to the theme, there are other basic entities that are managed identically to the theme - sizes, text styles and haptics.
+### Optimization
+Each entity is updated with its stateful and inherited widgets to optimize the redrawing of child widgets that are subscribed via the context to the entity data.
 ### Color scheme
 The color scheme was created in terms of the convenience of designers (primary, secondary and accent colors).\
 In the scheme by name, permanent colors and tint colors are created (note - primaryLight and primaryDark).
@@ -248,8 +255,8 @@ FPCPrimaryButton(
 
 ## Main entites
 ### Platform
-[Enum](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/enum/fpc_enum.dart) that all package components use.\
-The default value is extension from defaultTargetPlatform [FPCPlatform.values.fromTargetPlatform(defaultTargetPlatform);](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/extension/fpc_extension.dart#L12).\
+[Enum](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/enum/fpc_enum.dart#L1) that all package components use.\
+The default value is extension from defaultTargetPlatform [FPCPlatform.values.fromTargetPlatform(defaultTargetPlatform);](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/extension/fpc_extension.dart#L13).\
 Get the actual platform in the widget tree using context:
 ```dart
 final FPCPlatform platform = context.componentPlatform;
@@ -260,9 +267,9 @@ context.componentChangePlatform(platform: FPCPlatform.Android);
 ```
 
 ### Theme
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/theme/fpc_theme.dart) of a theme that all package components use.\
-The default value is [FPCDefaultLightTheme();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/theme/fpc_default_light_theme.dart).\
-There is also a dark theme for example - [FPCDefaultDarkTheme();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/theme/fpc_default_dark_theme.dart).\
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/theme/fpc_theme.dart#L9) of a theme that all package components use.\
+The default value is [FPCDefaultLightTheme();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/theme/fpc_default_light_theme.dart#L10).\
+There is also a dark theme for example - [FPCDefaultDarkTheme();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/theme/fpc_default_dark_theme.dart#L10).\
 Get the actual theme instance in the widget tree:
 ```dart
 final IFPCTheme theme = context.componentTheme;
@@ -281,8 +288,8 @@ final Color barrierColorDialog = themeState.barrierColorDialog;
 ```
 
 ### Size
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/size/fpc_size.dart) of a sizes that all package components use.\
-The default value is [const FPCDefaultSize();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/size/fpc_default_size.dart).\
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/size/fpc_size.dart#L3) of a sizes that all package components use.\
+The default value is [const FPCDefaultSize();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/size/fpc_default_size.dart#L4).\
 Get the actual sizes instance in the widget tree:
 ```dart
 final IFPCSize size = context.componentSize;
@@ -311,8 +318,8 @@ final double borderWidthSnackbar = sizeState.borderWidthSnackbar;
 ```
 
 ### Text Style
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/text_style/fpc_text_style.dart) of a font weights and families that text components use.\
-The default value is [const FPCDefaultTextStyle();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/text_style/fpc_default_text_style.dart).\
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/text_style/fpc_text_style.dart#L3) of a font weights and families that text components use.\
+The default value is [const FPCDefaultTextStyle();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/text_style/fpc_default_text_style.dart#L4).\
 Get the actual text style instance in the widget tree:
 ```dart
 final IFPCTextStyle textStyle = context.componentTextStyle;
@@ -323,8 +330,8 @@ context.componentChangeTextStyle(const TextStyles());
 ```
 
 ### Duration
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/duration/fpc_duration.dart) of animation widgets.\
-The default value is [const FPCDefaultDuration();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/duration/fpc_default_duration.dart).\
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/duration/fpc_duration.dart#L1) of animation widgets.\
+The default value is [const FPCDefaultDuration();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/duration/fpc_default_duration.dart#L3).\
 Get the actual duration instance in the widget tree:
 ```dart
 final IFPCDuration duration = context.componentDuration;
@@ -335,8 +342,8 @@ context.componentChangeDuration(const Durations());
 ```
 
 ### Date Time
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/date_time/fpc_date_time.dart) of DateTime pickers.\
-The default value is [FPCDefaultDateTime();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/date_time/fpc_default_date_time.dart).\
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/date_time/fpc_date_time.dart#L1) of DateTime pickers.\
+The default value is [FPCDefaultDateTime();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/date_time/fpc_default_date_time.dart#L3).\
 Get the actual date time instance in the widget tree:
 ```dart
 final IFPCDateTime dateTime = context.componentDateTime;
@@ -347,8 +354,8 @@ context.componentChangeDateTime(DateTimes());
 ```
 
 ### Time Of Day
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/time_of_day/fpc_time_of_day.dart) of TimeOfDay pickers.\
-The default value is [FPCDefaultTimeOfDay();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/time_of_day/fpc_default_time_of_day.dart).\
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/time_of_day/fpc_time_of_day.dart#L3) of TimeOfDay pickers.\
+The default value is [FPCDefaultTimeOfDay();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/time_of_day/fpc_default_time_of_day.dart#L5).\
 Get the actual time of day instance in the widget tree:
 ```dart
 final IFPCTimeOfDay timeOfDay = context.componentTimeOfDay;
@@ -359,8 +366,8 @@ context.componentChangeTimeOfDay(TimesOfDay());
 ```
 
 ### Haptic
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/haptic/fpc_haptic.dart) of vibration functions.\
-The default value is [const FPCDefaultHaptic();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/haptic/fpc_default_haptic.dart).\
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/haptic/fpc_haptic.dart#L1) of vibration functions.\
+The default value is [const FPCDefaultHaptic();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/haptic/fpc_default_haptic.dart#L4).\
 Get the actual vibration functions instance in the widget tree:
 ```dart
 final IFPCHaptic haptic = context.componentHaptic;
@@ -1550,10 +1557,7 @@ FPCPrimaryGradientToggle<String>(
 ## TODO
 1) Duplication of all colors in ready-made components for easy overwriting;
 2) Elevation of components;
-3) Refactoring circular indicators from static methods to widgets;
-4) Refactoring icons from static methods to widgets;
-5) Refactoring text widgets from static methods to widgets;
-6) Support WEB.
+3) Support WEB.
 
 ## Additional Information
 For more details see example project.\

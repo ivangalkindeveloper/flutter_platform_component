@@ -1,7 +1,7 @@
 part of 'flutter_platform_component.dart';
 
-class _FPCTimeOfDayState extends StatefulWidget {
-  const _FPCTimeOfDayState({
+class _FPCTimeOfDayWidget extends StatefulWidget {
+  const _FPCTimeOfDayWidget({
     required this.timeOfDay,
     required this.child,
   });
@@ -10,50 +10,55 @@ class _FPCTimeOfDayState extends StatefulWidget {
   final Widget child;
 
   @override
-  State<_FPCTimeOfDayState> createState() => FPCTimeOfDayState();
+  State<_FPCTimeOfDayWidget> createState() => _FPCTimeOfDayState();
 }
 
-class FPCTimeOfDayState extends State<_FPCTimeOfDayState> {
-  late IFPCTimeOfDay timeOfDay;
+class _FPCTimeOfDayState extends State<_FPCTimeOfDayWidget> {
+  late IFPCTimeOfDay _timeOfDay;
 
   @override
   void initState() {
     super.initState();
-    this.timeOfDay = this.widget.timeOfDay ?? FPCDefaultTimeOfDay();
+    this._timeOfDay = this.widget.timeOfDay ?? FPCDefaultTimeOfDay();
   }
 
-  void changeTimeOfDay({
-    required IFPCTimeOfDay timeOfDay,
-  }) =>
-      setState(() => this.timeOfDay = timeOfDay);
-
-  static FPCTimeOfDayState of(BuildContext context) {
-    final FPCTimeOfDayState? state =
-        context.dependOnInheritedWidgetOfExactType<_FPCTimeOfDayScope>()?.state;
-    if (state == null) {
-      throw const FPCConfigNullException();
-    }
-
-    return state;
-  }
+  void _changeTimeOfDay(IFPCTimeOfDay timeOfDay) =>
+      setState(() => this._timeOfDay = timeOfDay);
 
   @override
   Widget build(BuildContext context) {
-    return _FPCTimeOfDayScope(
-      state: this,
+    return FPCTimeOfDayState(
+      timeOfDay: this._timeOfDay,
+      changeTimeOfDay: this._changeTimeOfDay,
       child: this.widget.child,
     );
   }
 }
 
-class _FPCTimeOfDayScope extends InheritedWidget {
-  const _FPCTimeOfDayScope({
-    required this.state,
+class FPCTimeOfDayState extends InheritedWidget {
+  const FPCTimeOfDayState({
+    required this.timeOfDay,
+    required this.changeTimeOfDay,
     required super.child,
   });
 
-  final FPCTimeOfDayState state;
+  final IFPCTimeOfDay timeOfDay;
+  final void Function(IFPCTimeOfDay timeOfDay) changeTimeOfDay;
+
+  static FPCTimeOfDayState of(BuildContext context) {
+    final FPCTimeOfDayState? state =
+        context.dependOnInheritedWidgetOfExactType<FPCTimeOfDayState>();
+    if (state == null) {
+      throw const FPCRootWidgetMountedException();
+    }
+
+    return state;
+  }
+
+  static FPCTimeOfDayState? maybeOf(BuildContext context) =>
+      context.dependOnInheritedWidgetOfExactType<FPCTimeOfDayState>();
 
   @override
-  bool updateShouldNotify(_FPCTimeOfDayScope oldWidget) => true;
+  bool updateShouldNotify(FPCTimeOfDayState oldWidget) =>
+      oldWidget.timeOfDay != this.timeOfDay;
 }

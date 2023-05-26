@@ -38,7 +38,7 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
   bool _isHighlight = false;
 
   // Subscription
-  late final StreamSubscription _highlightSubscription;
+  StreamSubscription? _highlightSubscription;
 
   @override
   void didChangeDependencies() {
@@ -64,7 +64,7 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
     super.didUpdateWidget(oldWidget);
     // Subscription
     if (this.widget.duration != oldWidget.duration) {
-      await this._highlightSubscription.cancel();
+      await this._highlightSubscription?.cancel();
       this._highlightSubscription = Stream.periodic(
               this.widget.duration ?? this._duration.shimmer,
               (int second) => second % 2 == 0)
@@ -76,7 +76,7 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
   @override
   void dispose() {
     // Subscription
-    this._highlightSubscription.cancel();
+    this._highlightSubscription?.cancel();
     super.dispose();
   }
 

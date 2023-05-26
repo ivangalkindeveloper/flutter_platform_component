@@ -39,21 +39,21 @@ class FlutterPlatformComponent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return _FPCTextStyleState(
+    return _FPCTextStyleWidget(
       textStyle: this.textStyle,
-      child: _FPCTimeOfDayState(
+      child: _FPCTimeOfDayWidget(
         timeOfDay: this.timeOfDay,
-        child: _FPCDateTimeState(
+        child: _FPCDateTimeWidget(
           dateTime: this.dateTime,
-          child: _FPCDurationState(
+          child: _FPCDurationWidget(
             duration: this.duration,
-            child: _FPCPlatformState(
+            child: _FPCPlatformWidget(
               platform: this.platform,
-              child: _FPCHapticState(
+              child: _FPCHapticWidget(
                 haptic: this.haptic,
-                child: _FPCThemeState(
+                child: _FPCThemeWidget(
                   theme: this.theme,
-                  child: _FPCSizeState(
+                  child: _FPCSizeWidget(
                     size: this.size,
                     child: this.child,
                   ),
