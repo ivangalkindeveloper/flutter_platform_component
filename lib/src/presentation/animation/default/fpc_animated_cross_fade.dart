@@ -28,7 +28,7 @@ class FPCAnimatedCrossFade extends StatelessWidget {
       secondCurve: animation.curve,
       secondChild: this.secondChild,
       sizeCurve: animation.curve,
-      alignment: Alignment.topCenter,
+      alignment: Alignment.center,
     );
   }
 }
