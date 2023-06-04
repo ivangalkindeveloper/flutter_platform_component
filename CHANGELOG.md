@@ -1,3 +1,13 @@
+## 2.2.0
+* Folder refactoring;
+* IFPCAnimation, FPCAnimation;
+* FPCAnimatedAlign, FPCAnimatedFastAlign, FPCAnimatedSlowAlign;
+* FPCAnimatedDefaultTextStyle, FPCAnimatedFastDefaultTextStyle, FPCAnimatedSlowDefaultTextStyle;
+* FPCAnimatedPositioned, FPCAnimatedFastPositioned, FPCAnimatedSlowPositioned;
+* FPCAnimatedSize, FPCAnimatedFastSize, FPCAnimatedSlowSize;
+* Fix example;
+* Fix README.
+
 ## 2.1.0
 * Overriding operators for main entities;
 * Deleting context properties in basic widgets;
@@ -5,7 +15,7 @@
 
 ## 2.0.0
 * State decomposition and optimization;
-* Adding FPCAnimatedOpenContainer;
+* FPCAnimatedOpenContainer;
 * FPCCupertinoSliverRefreshControl as helper for indicator color;
 * Fix shimmers and adding delay;
 * Fix gradient configs;

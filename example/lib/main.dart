@@ -1,6 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:example/presentation/component_list/component_list.dart';
-import 'package:example/service/navigation_service.dart';
+import 'package:example/presentation/screen/main/main_screen.dart';
+import 'package:example/core/service/navigation_service.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,7 +31,7 @@ class Application extends StatelessWidget {
       onGenerateInitialRoutes: (String route) => [
         FPCRoute.pageRouteFromContext(
           context: context,
-          child: const ComponentList(),
+          child: const MainScreen(),
         ),
       ],
     );

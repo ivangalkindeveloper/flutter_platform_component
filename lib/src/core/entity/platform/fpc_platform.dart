@@ -1,0 +1,4 @@
+enum FPCPlatform {
+  iOS,
+  Android,
+}
