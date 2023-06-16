@@ -33,7 +33,6 @@ class FPCAnimatedFastContainer extends StatelessWidget {
       padding: this.padding,
       duration: duration.animationFast,
       curve: animation.curve,
-      clipBehavior: animation.clipBehavior,
       child: this.child,
     );
   }

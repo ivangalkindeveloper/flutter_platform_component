@@ -20,7 +20,7 @@ class _AnimatedSizeScreenState extends State<AnimatedSizeScreen> {
       backgroundColor: theme.backgroundScaffold,
       appBar: FPCScreenAppBar(
         context: context,
-        title: "Animated Align",
+        title: "Animated Size",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: SafeArea(

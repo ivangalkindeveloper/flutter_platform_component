@@ -21,7 +21,7 @@ class _AnimatedPositionedScreenState extends State<AnimatedPositionedScreen> {
       backgroundColor: theme.backgroundScaffold,
       appBar: FPCScreenAppBar(
         context: context,
-        title: "Animated Psitioned",
+        title: "Animated Positioned",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: SafeArea(

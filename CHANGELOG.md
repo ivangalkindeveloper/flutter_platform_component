@@ -1,3 +1,6 @@
+## 2.2.1
+* Fix FPCAnimatedContainter clipBehavior;
+
 ## 2.2.0
 * Folder refactoring;
 * IFPCAnimation, FPCAnimation;

@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 
 import 'package:flutter/cupertino.dart'
     show ObstructingPreferredSizeWidget, CupertinoPageScaffold;
-import 'package:flutter/material.dart' show Scaffold, Colors;
+import 'package:flutter/material.dart' show Scaffold;
 
 class FPCScaffold extends FPCPlatformWidget {
   FPCScaffold({
@@ -74,7 +74,7 @@ class _FPCScaffoldCupertino extends StatelessWidget {
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
-        backgroundColor: Colors.transparent,
+        backgroundColor: backgroundColor,
         resizeToAvoidBottomInset: this.resizeToAvoidBottomInset,
         extendBodyBehindAppBar: this.extendBodyBehindAppBar,
         extendBody: this.extendBody,
