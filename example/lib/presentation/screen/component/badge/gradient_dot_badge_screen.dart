@@ -175,7 +175,7 @@ class _Child extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCSizeState sizeState = context.componentSizeState;
+    final FPCSizeScope sizeScope = context.componentSizeScope;
     final IFPCTheme theme = context.componentTheme;
     final IFPCSize size = context.componentSize;
 
@@ -184,7 +184,7 @@ class _Child extends StatelessWidget {
       width: size.s28 * 2,
       decoration: BoxDecoration(
         color: theme.greyLight,
-        borderRadius: sizeState.borderRadiusCard,
+        borderRadius: sizeScope.borderRadiusCard,
       ),
     );
   }

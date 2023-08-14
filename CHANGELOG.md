@@ -1,3 +1,8 @@
+## 2.3.0
+* Folder refactoring;
+* Entity states and scopes refactoring;
+* FPCNestedWillPopScope;
+
 ## 2.2.1
 * Fix FPCAnimatedContainter clipBehavior;
 

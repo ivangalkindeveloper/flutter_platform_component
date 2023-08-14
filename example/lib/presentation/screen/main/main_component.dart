@@ -1,5 +1,5 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:example/core/service/navigation_service.dart';
+import 'package:example/presentation/service/navigation_service.dart';
 import 'package:flutter/material.dart';
 
 class MainComponent extends StatelessWidget {

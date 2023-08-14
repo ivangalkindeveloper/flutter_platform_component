@@ -238,14 +238,14 @@ class _FPCDialogMaterial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final IFPCTextStyle textStyle = context.componentTextStyle;
-    final FPCSizeState sizeState = context.componentSizeState;
+    final FPCSizeScope sizeScope = context.componentSizeScope;
     final IFPCTheme theme = context.componentTheme;
     final IFPCSize size = context.componentSize;
 
     final Color backgroundColor =
         this.backgroundColor ?? theme.backgroundScaffold;
     final BorderRadius borderRadius =
-        this.borderRadius ?? sizeState.borderRadiusDialog;
+        this.borderRadius ?? sizeScope.borderRadiusDialog;
     final TextStyle titleStyle = this.titleStyle?.copyWith(
               color: this.titleStyle?.color ?? theme.black,
               fontSize: this.titleStyle?.fontSize ?? size.s16,

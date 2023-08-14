@@ -50,7 +50,7 @@ class FPCBasicPINField extends StatefulWidget {
 class _FPCBasicPINFieldState extends State<FPCBasicPINField>
     with TickerProviderStateMixin, FPCDidInitMixin<FPCBasicPINField> {
   late IFPCAnimation _animation;
-  late FPCSizeState _sizeState;
+  late FPCSizeScope _sizeScope;
   late IFPCDuration _duration;
   late IFPCHaptic _haptic;
   late IFPCTheme _theme;
@@ -67,11 +67,11 @@ class _FPCBasicPINFieldState extends State<FPCBasicPINField>
   @override
   void didChangeDependencies() {
     this._animation = this.context.componentAnimation;
-    this._sizeState = this.context.componentSizeState;
+    this._sizeScope = this.context.componentSizeScope;
     this._duration = this.context.componentDuration;
     this._haptic = this.context.componentHaptic;
     this._theme = this.context.componentTheme;
-    this._size = this._sizeState.size;
+    this._size = this._sizeScope.size;
     super.didChangeDependencies();
   }
 
@@ -171,7 +171,7 @@ class _FPCBasicPINFieldState extends State<FPCBasicPINField>
   Widget build(BuildContext context) {
     final double height = this.widget.height ?? this._size.s16;
     final double borderWidth =
-        this.widget.borderWidth ?? this._sizeState.borderWidthField;
+        this.widget.borderWidth ?? this._sizeScope.borderWidthField;
     final double horizontalInterval =
         this.widget.horizontalInterval ?? this._size.s16;
     final void Function(String)? onChanged =

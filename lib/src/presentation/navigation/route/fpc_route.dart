@@ -13,7 +13,7 @@ class FPCRoute {
     bool allowSnapshotting = true,
     required Widget child,
   }) =>
-      FPCPlatformUtil.decompose(
+      FPCPlatformUtility.decompose(
         platform: platform,
         cupertino: MaterialWithModalsPageRoute(
           maintainState: maintainState,
@@ -35,7 +35,7 @@ class FPCRoute {
     bool allowSnapshotting = true,
     required Widget child,
   }) =>
-      FPCPlatformUtil.decomposeFromContext(
+      FPCPlatformUtility.decomposeFromContext(
         context: context,
         cupertino: MaterialWithModalsPageRoute(
           maintainState: maintainState,

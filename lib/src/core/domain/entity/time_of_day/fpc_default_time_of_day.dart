@@ -1,4 +1,4 @@
-import 'package:flutter_platform_component/src/core/entity/time_of_day/fpc_time_of_day.dart';
+import 'package:flutter_platform_component/src/core/domain/entity/time_of_day/fpc_time_of_day.dart';
 
 import 'package:flutter/material.dart' show TimeOfDay;
 

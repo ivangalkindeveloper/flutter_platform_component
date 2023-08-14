@@ -257,7 +257,7 @@ class FPCApp extends FPCPlatformWidget {
         );
 
   static HeroController createHeroController({required BuildContext context}) =>
-      FPCPlatformUtil.decomposeFromContext<HeroController, HeroController,
+      FPCPlatformUtility.decomposeFromContext<HeroController, HeroController,
           HeroController>(
         context: context,
         cupertino: CupertinoApp.createCupertinoHeroController(),

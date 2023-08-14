@@ -28,7 +28,7 @@ class _FPCPlatformState extends State<_FPCPlatformWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return FPCPlatformState(
+    return FPCPlatformScope(
       platform: this._platform,
       changePlatform: this._changePlatform,
       child: this.widget.child,
@@ -36,8 +36,8 @@ class _FPCPlatformState extends State<_FPCPlatformWidget> {
   }
 }
 
-class FPCPlatformState extends InheritedWidget {
-  const FPCPlatformState({
+class FPCPlatformScope extends InheritedWidget with FPCScopeMixin {
+  const FPCPlatformScope({
     required this.platform,
     required this.changePlatform,
     required super.child,
@@ -46,20 +46,13 @@ class FPCPlatformState extends InheritedWidget {
   final FPCPlatform platform;
   final void Function(FPCPlatform platform) changePlatform;
 
-  static FPCPlatformState of(BuildContext context) {
-    final FPCPlatformState? state =
-        context.dependOnInheritedWidgetOfExactType<FPCPlatformState>();
-    if (state == null) {
-      throw const FPCRootWidgetMountedException();
-    }
+  static FPCPlatformScope of(BuildContext context) =>
+      FPCScopeMixin.of<FPCPlatformScope>(context);
 
-    return state;
-  }
-
-  static FPCPlatformState? maybeOf(BuildContext context) =>
-      context.dependOnInheritedWidgetOfExactType<FPCPlatformState>();
+  static FPCPlatformScope? maybeOf(BuildContext context) =>
+      FPCScopeMixin.maybeOf<FPCPlatformScope>(context);
 
   @override
-  bool updateShouldNotify(covariant FPCPlatformState oldWidget) =>
+  bool updateShouldNotify(covariant FPCPlatformScope oldWidget) =>
       oldWidget.platform != this.platform;
 }

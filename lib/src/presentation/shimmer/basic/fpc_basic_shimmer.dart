@@ -32,7 +32,7 @@ class FPCBasicShimmer extends StatefulWidget {
 
 class _FPCBasicShimmerState extends State<FPCBasicShimmer>
     with FPCDidInitMixin<FPCBasicShimmer> {
-  late FPCSizeState _sizeState;
+  late FPCSizeScope _sizeScope;
   late IFPCDuration _duration;
 
   bool _isHighlight = false;
@@ -42,7 +42,7 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
 
   @override
   void didChangeDependencies() {
-    this._sizeState = this.context.componentSizeState;
+    this._sizeScope = this.context.componentSizeScope;
     this._duration = this.context.componentDuration;
     super.didChangeDependencies();
   }
@@ -86,7 +86,7 @@ class _FPCBasicShimmerState extends State<FPCBasicShimmer>
         ? this.widget.highlightColor
         : this.widget.backgroundColor;
     final BorderRadius borderRadius =
-        this.widget.borderRadius ?? this._sizeState.borderRadiusCard;
+        this.widget.borderRadius ?? this._sizeScope.borderRadiusCard;
     final Widget child = this.widget.child ?? const SizedBox();
 
     return FPCAnimatedContainer(

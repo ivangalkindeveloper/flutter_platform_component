@@ -27,7 +27,7 @@ class _FPCTimeOfDayState extends State<_FPCTimeOfDayWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return FPCTimeOfDayState(
+    return FPCTimeOfDayScope(
       timeOfDay: this._timeOfDay,
       changeTimeOfDay: this._changeTimeOfDay,
       child: this.widget.child,
@@ -35,8 +35,8 @@ class _FPCTimeOfDayState extends State<_FPCTimeOfDayWidget> {
   }
 }
 
-class FPCTimeOfDayState extends InheritedWidget {
-  const FPCTimeOfDayState({
+class FPCTimeOfDayScope extends InheritedWidget with FPCScopeMixin {
+  const FPCTimeOfDayScope({
     required this.timeOfDay,
     required this.changeTimeOfDay,
     required super.child,
@@ -45,20 +45,13 @@ class FPCTimeOfDayState extends InheritedWidget {
   final IFPCTimeOfDay timeOfDay;
   final void Function(IFPCTimeOfDay timeOfDay) changeTimeOfDay;
 
-  static FPCTimeOfDayState of(BuildContext context) {
-    final FPCTimeOfDayState? state =
-        context.dependOnInheritedWidgetOfExactType<FPCTimeOfDayState>();
-    if (state == null) {
-      throw const FPCRootWidgetMountedException();
-    }
+  static FPCTimeOfDayScope of(BuildContext context) =>
+      FPCScopeMixin.of<FPCTimeOfDayScope>(context);
 
-    return state;
-  }
-
-  static FPCTimeOfDayState? maybeOf(BuildContext context) =>
-      context.dependOnInheritedWidgetOfExactType<FPCTimeOfDayState>();
+  static FPCTimeOfDayScope? maybeOf(BuildContext context) =>
+      FPCScopeMixin.maybeOf<FPCTimeOfDayScope>(context);
 
   @override
-  bool updateShouldNotify(FPCTimeOfDayState oldWidget) =>
+  bool updateShouldNotify(FPCTimeOfDayScope oldWidget) =>
       oldWidget.timeOfDay != this.timeOfDay;
 }

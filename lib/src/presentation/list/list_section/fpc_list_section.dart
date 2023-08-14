@@ -77,14 +77,14 @@ class _FPCListSectionCupertino extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final IFPCTextStyle textStyle = context.componentTextStyle;
-    final FPCSizeState sizeState = context.componentSizeState;
+    final FPCSizeScope sizeScope = context.componentSizeScope;
     final IFPCTheme theme = context.componentTheme;
     final IFPCSize size = context.componentSize;
 
     final Color backgroundColor =
         this.backgroundColor ?? theme.backgroundComponent;
     final BorderRadius borderRadius =
-        this.borderRadius ?? sizeState.borderRadiusCard;
+        this.borderRadius ?? sizeScope.borderRadiusCard;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
           vertical: size.s16 / 2,
@@ -200,14 +200,14 @@ class _FPCListSectionMaterial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final IFPCTextStyle textStyle = context.componentTextStyle;
-    final FPCSizeState sizeState = context.componentSizeState;
+    final FPCSizeScope sizeScope = context.componentSizeScope;
     final IFPCTheme theme = context.componentTheme;
     final IFPCSize size = context.componentSize;
 
     final Color backgroundColor =
         this.backgroundColor ?? theme.backgroundComponent;
     final BorderRadius borderRadius =
-        this.borderRadius ?? sizeState.borderRadiusCard;
+        this.borderRadius ?? sizeScope.borderRadiusCard;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
           vertical: size.s16 / 2,

@@ -19,7 +19,7 @@ class _FPCThemeState extends State<_FPCThemeWidget> {
   // Barrier
   // Barrier / Expanded Modal
   Color get _barrierColorExpandedModal =>
-      FPCPlatformUtil.decomposeFromContext<Color, Color, Color>(
+      FPCPlatformUtility.decomposeFromContext<Color, Color, Color>(
         context: this.context,
         cupertino: this._theme.barrierExpandedModalCupertino,
         material: this._theme.barrierExpandedModalMaterial,
@@ -27,7 +27,7 @@ class _FPCThemeState extends State<_FPCThemeWidget> {
 
   // Barrier / Pop Up Modal
   Color get _barrierColorPopUpModal =>
-      FPCPlatformUtil.decomposeFromContext<Color, Color, Color>(
+      FPCPlatformUtility.decomposeFromContext<Color, Color, Color>(
         context: this.context,
         cupertino: this._theme.barrierPopUpModalCupertino,
         material: this._theme.barrierPopUpModalMaterial,
@@ -35,7 +35,7 @@ class _FPCThemeState extends State<_FPCThemeWidget> {
 
   // Barrier / Dialog
   Color get _barrierColorDialog =>
-      FPCPlatformUtil.decomposeFromContext<Color, Color, Color>(
+      FPCPlatformUtility.decomposeFromContext<Color, Color, Color>(
         context: this.context,
         cupertino: this._theme.barrierDialogCupertino,
         material: this._theme.barrierDialogMaterial,
@@ -54,7 +54,7 @@ class _FPCThemeState extends State<_FPCThemeWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return FPCThemeState(
+    return FPCThemeScope(
       theme: this._theme,
       changeTheme: this._changeTheme,
       //
@@ -67,8 +67,8 @@ class _FPCThemeState extends State<_FPCThemeWidget> {
   }
 }
 
-class FPCThemeState extends InheritedWidget {
-  const FPCThemeState({
+class FPCThemeScope extends InheritedWidget with FPCScopeMixin {
+  const FPCThemeScope({
     required this.theme,
     required this.changeTheme,
     //
@@ -86,20 +86,13 @@ class FPCThemeState extends InheritedWidget {
   final Color barrierColorPopUpModal;
   final Color barrierColorDialog;
 
-  static FPCThemeState of(BuildContext context) {
-    final FPCThemeState? state =
-        context.dependOnInheritedWidgetOfExactType<FPCThemeState>();
-    if (state == null) {
-      throw const FPCRootWidgetMountedException();
-    }
+  static FPCThemeScope of(BuildContext context) =>
+      FPCScopeMixin.of<FPCThemeScope>(context);
 
-    return state;
-  }
-
-  static FPCThemeState? maybeOf(BuildContext context) =>
-      context.dependOnInheritedWidgetOfExactType<FPCThemeState>();
+  static FPCThemeScope? maybeOf(BuildContext context) =>
+      FPCScopeMixin.maybeOf<FPCThemeScope>(context);
 
   @override
-  bool updateShouldNotify(covariant FPCThemeState oldWidget) =>
+  bool updateShouldNotify(covariant FPCThemeScope oldWidget) =>
       oldWidget.theme != this.theme;
 }

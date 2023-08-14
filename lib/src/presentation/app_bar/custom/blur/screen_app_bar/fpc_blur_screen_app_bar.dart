@@ -62,7 +62,7 @@ class FPCBlurScreenAppBar extends FPCBasicBlurAppBar {
           transformHitTests: false,
           child: FPCIcon.black(
             context: context,
-            icon: FPCPlatformUtil.decomposeFromContext<IconData, IconData,
+            icon: FPCPlatformUtility.decomposeFromContext<IconData, IconData,
                 IconData>(
               context: context,
               cupertino: CupertinoIcons.back,

@@ -25,12 +25,12 @@ class FPCBasicGradientCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCSizeState sizeState = context.componentSizeState;
+    final FPCSizeScope sizeScope = context.componentSizeScope;
     final IFPCSize size = context.componentSize;
 
     final BorderRadius borderRadius =
-        this.borderRadius ?? sizeState.borderRadiusCard;
-    final double borderWidth = this.borderWidth ?? sizeState.borderWidthCard;
+        this.borderRadius ?? sizeScope.borderRadiusCard;
+    final double borderWidth = this.borderWidth ?? sizeScope.borderWidthCard;
     final EdgeInsets padding = this.padding ?? size.paddingCard;
 
     return Stack(

@@ -23,10 +23,10 @@ class FPCBlurCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCSizeState sizeState = context.componentSizeState;
+    final FPCSizeScope sizeScope = context.componentSizeScope;
 
     final BorderRadius borderRadius =
-        this.borderRadius ?? sizeState.borderRadiusCard;
+        this.borderRadius ?? sizeScope.borderRadiusCard;
 
     return FPCBlur(
       borderRadius: borderRadius,

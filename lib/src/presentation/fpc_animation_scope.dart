@@ -27,7 +27,7 @@ class _FPCAnimationState extends State<_FPCAnimationWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return FPCAnimationState(
+    return FPCAnimationScope(
       animation: this._animation,
       changeAnimation: this._changeAnimation,
       child: this.widget.child,
@@ -35,8 +35,8 @@ class _FPCAnimationState extends State<_FPCAnimationWidget> {
   }
 }
 
-class FPCAnimationState extends InheritedWidget {
-  const FPCAnimationState({
+class FPCAnimationScope extends InheritedWidget {
+  const FPCAnimationScope({
     required this.animation,
     required this.changeAnimation,
     required super.child,
@@ -45,20 +45,13 @@ class FPCAnimationState extends InheritedWidget {
   final IFPCAnimation animation;
   final void Function(IFPCAnimation animation) changeAnimation;
 
-  static FPCAnimationState of(BuildContext context) {
-    final FPCAnimationState? state =
-        context.dependOnInheritedWidgetOfExactType<FPCAnimationState>();
-    if (state == null) {
-      throw const FPCRootWidgetMountedException();
-    }
+  static FPCAnimationScope of(BuildContext context) =>
+      FPCScopeMixin.of<FPCAnimationScope>(context);
 
-    return state;
-  }
-
-  static FPCAnimationState? maybeOf(BuildContext context) =>
-      context.dependOnInheritedWidgetOfExactType<FPCAnimationState>();
+  static FPCAnimationScope? maybeOf(BuildContext context) =>
+      FPCScopeMixin.maybeOf<FPCAnimationScope>(context);
 
   @override
-  bool updateShouldNotify(covariant FPCAnimationState oldWidget) =>
+  bool updateShouldNotify(covariant FPCAnimationScope oldWidget) =>
       oldWidget.animation != this.animation;
 }

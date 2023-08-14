@@ -27,7 +27,7 @@ class _FPCDurationState extends State<_FPCDurationWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return FPCDurationState(
+    return FPCDurationScope(
       duration: this._duration,
       changeDuration: this._changeDuration,
       child: this.widget.child,
@@ -35,8 +35,8 @@ class _FPCDurationState extends State<_FPCDurationWidget> {
   }
 }
 
-class FPCDurationState extends InheritedWidget {
-  const FPCDurationState({
+class FPCDurationScope extends InheritedWidget with FPCScopeMixin {
+  const FPCDurationScope({
     required this.duration,
     required this.changeDuration,
     required super.child,
@@ -45,20 +45,13 @@ class FPCDurationState extends InheritedWidget {
   final IFPCDuration duration;
   final void Function(IFPCDuration duration) changeDuration;
 
-  static FPCDurationState of(BuildContext context) {
-    final FPCDurationState? state =
-        context.dependOnInheritedWidgetOfExactType<FPCDurationState>();
-    if (state == null) {
-      throw const FPCRootWidgetMountedException();
-    }
+  static FPCDurationScope of(BuildContext context) =>
+      FPCScopeMixin.of<FPCDurationScope>(context);
 
-    return state;
-  }
-
-  static FPCDurationState? maybeOf(BuildContext context) =>
-      context.dependOnInheritedWidgetOfExactType<FPCDurationState>();
+  static FPCDurationScope? maybeOf(BuildContext context) =>
+      FPCScopeMixin.maybeOf<FPCDurationScope>(context);
 
   @override
-  bool updateShouldNotify(FPCDurationState oldWidget) =>
+  bool updateShouldNotify(FPCDurationScope oldWidget) =>
       oldWidget.duration != this.duration;
 }

@@ -23,49 +23,49 @@ extension FPCPlatformListExtension on List<FPCPlatform> {
 }
 
 extension FPCBuildContextExtension on BuildContext {
-  FPCAnimationState get componentAnimationState => FPCAnimationState.of(this);
-  IFPCAnimation get componentAnimation => FPCAnimationState.of(this).animation;
+  FPCAnimationScope get componentAnimationScope => FPCAnimationScope.of(this);
+  IFPCAnimation get componentAnimation => FPCAnimationScope.of(this).animation;
   void changeAnimation(IFPCAnimation animation) =>
-      FPCAnimationState.of(this).changeAnimation(animation);
+      FPCAnimationScope.of(this).changeAnimation(animation);
 
-  FPCTextStyleState get componentTextStyleState => FPCTextStyleState.of(this);
-  IFPCTextStyle get componentTextStyle => FPCTextStyleState.of(this).textStyle;
+  FPCTextStyleScope get componentTextStyleScope => FPCTextStyleScope.of(this);
+  IFPCTextStyle get componentTextStyle => FPCTextStyleScope.of(this).textStyle;
   void changeTextStyle(IFPCTextStyle textStyle) =>
-      FPCTextStyleState.of(this).changeTextStyle(textStyle);
+      FPCTextStyleScope.of(this).changeTextStyle(textStyle);
 
-  FPCTimeOfDayState get componentTimeOfDayState => FPCTimeOfDayState.of(this);
-  IFPCTimeOfDay get componentTimeOfDay => FPCTimeOfDayState.of(this).timeOfDay;
+  FPCTimeOfDayScope get componentTimeOfDayScope => FPCTimeOfDayScope.of(this);
+  IFPCTimeOfDay get componentTimeOfDay => FPCTimeOfDayScope.of(this).timeOfDay;
   void changeTimeOfDay(IFPCTimeOfDay timeOfDay) =>
-      FPCTimeOfDayState.of(this).changeTimeOfDay(timeOfDay);
+      FPCTimeOfDayScope.of(this).changeTimeOfDay(timeOfDay);
 
-  FPCDateTimeState get componentDateTimeState => FPCDateTimeState.of(this);
-  IFPCDateTime get componentDateTime => FPCDateTimeState.of(this).dateTime;
+  FPCDateTimeScope get componentDateTimeScope => FPCDateTimeScope.of(this);
+  IFPCDateTime get componentDateTime => FPCDateTimeScope.of(this).dateTime;
   void changeDateTime(IFPCDateTime dateTime) =>
-      FPCDateTimeState.of(this).changeDateTime(dateTime);
+      FPCDateTimeScope.of(this).changeDateTime(dateTime);
 
-  FPCDurationState get componentDurationState => FPCDurationState.of(this);
-  IFPCDuration get componentDuration => FPCDurationState.of(this).duration;
+  FPCDurationScope get componentDurationScope => FPCDurationScope.of(this);
+  IFPCDuration get componentDuration => FPCDurationScope.of(this).duration;
   void changeDuration(IFPCDuration duration) =>
-      FPCDurationState.of(this).changeDuration(duration);
+      FPCDurationScope.of(this).changeDuration(duration);
 
-  FPCPlatformState get componentPlatformState => FPCPlatformState.of(this);
-  FPCPlatform get componentPlatform => FPCPlatformState.of(this).platform;
+  FPCPlatformScope get componentPlatformScope => FPCPlatformScope.of(this);
+  FPCPlatform get componentPlatform => FPCPlatformScope.of(this).platform;
   void changePlatform(FPCPlatform platform) =>
-      FPCPlatformState.of(this).changePlatform(platform);
+      FPCPlatformScope.of(this).changePlatform(platform);
 
-  FPCHapticState get componentHapticState => FPCHapticState.of(this);
-  IFPCHaptic get componentHaptic => FPCHapticState.of(this).haptic;
+  FPCHapticScope get componentHapticScope => FPCHapticScope.of(this);
+  IFPCHaptic get componentHaptic => FPCHapticScope.of(this).haptic;
   void changeHaptic(IFPCHaptic haptic) =>
-      FPCHapticState.of(this).changeHaptic(haptic);
+      FPCHapticScope.of(this).changeHaptic(haptic);
 
-  FPCThemeState get componentThemeState => FPCThemeState.of(this);
-  IFPCTheme get componentTheme => FPCThemeState.of(this).theme;
+  FPCThemeScope get componentThemeScope => FPCThemeScope.of(this);
+  IFPCTheme get componentTheme => FPCThemeScope.of(this).theme;
   void changeTheme(IFPCTheme theme) =>
-      FPCThemeState.of(this).changeTheme(theme);
+      FPCThemeScope.of(this).changeTheme(theme);
 
-  FPCSizeState get componentSizeState => FPCSizeState.of(this);
-  IFPCSize get componentSize => FPCSizeState.of(this).size;
-  void changeSize(IFPCSize size) => FPCSizeState.of(this).changeSize(size);
+  FPCSizeScope get componentSizeScope => FPCSizeScope.of(this);
+  IFPCSize get componentSize => FPCSizeScope.of(this).size;
+  void changeSize(IFPCSize size) => FPCSizeScope.of(this).changeSize(size);
 }
 
 extension FPCOpenContainerTransitionTypeExtension

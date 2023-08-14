@@ -1,4 +1,4 @@
-import 'package:flutter_platform_component/src/core/entity/text_style/fpc_text_style.dart';
+import 'package:flutter_platform_component/src/core/domain/entity/text_style/fpc_text_style.dart';
 import 'package:flutter/widgets.dart';
 
 class FPCDefaultTextStyle extends IFPCTextStyle {

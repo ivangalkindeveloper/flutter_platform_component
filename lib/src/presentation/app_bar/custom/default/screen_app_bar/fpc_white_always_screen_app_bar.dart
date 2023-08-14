@@ -65,7 +65,7 @@ class FPCWhiteAlwaysScreenAppBar extends FPCBasicAppBar {
           transformHitTests: false,
           child: FPCIcon.whiteAlways(
             context: context,
-            icon: FPCPlatformUtil.decomposeFromContext<IconData, IconData,
+            icon: FPCPlatformUtility.decomposeFromContext<IconData, IconData,
                 IconData>(
               context: context,
               cupertino: CupertinoIcons.back,

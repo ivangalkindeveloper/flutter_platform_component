@@ -80,13 +80,13 @@ class _FPCBasicButtonCupertino extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCSizeState sizeState = context.componentSizeState;
+    final FPCSizeScope sizeScope = context.componentSizeScope;
     final IFPCSize size = context.componentSize;
 
     final double height = this.height ?? size.heightButton;
     final BorderRadius borderRadius =
-        this.borderRadius ?? sizeState.borderRadiusButton;
-    final double borderWidth = this.borderWidth ?? sizeState.borderWidthButton;
+        this.borderRadius ?? sizeScope.borderRadiusButton;
+    final double borderWidth = this.borderWidth ?? sizeScope.borderWidthButton;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
           horizontal: size.s16,
@@ -162,15 +162,15 @@ class _FPCBasicButtonMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCSizeState sizeState = context.componentSizeState;
+    final FPCSizeScope sizeScope = context.componentSizeScope;
     final IFPCTheme theme = context.componentTheme;
     final IFPCSize size = context.componentSize;
 
     final Color splashColor = this.splashColor ?? theme.grey;
     final double height = this.height ?? size.heightButton;
     final BorderRadius borderRadius =
-        this.borderRadius ?? sizeState.borderRadiusButton;
-    final double borderWidth = this.borderWidth ?? sizeState.borderWidthButton;
+        this.borderRadius ?? sizeScope.borderRadiusButton;
+    final double borderWidth = this.borderWidth ?? sizeScope.borderWidthButton;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
           horizontal: size.s16,

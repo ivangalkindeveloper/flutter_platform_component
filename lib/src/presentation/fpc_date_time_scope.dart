@@ -27,7 +27,7 @@ class _FPCDateTimeState extends State<_FPCDateTimeWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return FPCDateTimeState(
+    return FPCDateTimeScope(
       dateTime: this._dateTime,
       changeDateTime: this._changeDateTime,
       child: this.widget.child,
@@ -35,8 +35,8 @@ class _FPCDateTimeState extends State<_FPCDateTimeWidget> {
   }
 }
 
-class FPCDateTimeState extends InheritedWidget {
-  const FPCDateTimeState({
+class FPCDateTimeScope extends InheritedWidget with FPCScopeMixin {
+  const FPCDateTimeScope({
     required this.dateTime,
     required this.changeDateTime,
     required super.child,
@@ -45,20 +45,13 @@ class FPCDateTimeState extends InheritedWidget {
   final IFPCDateTime dateTime;
   final void Function(IFPCDateTime dateTime) changeDateTime;
 
-  static FPCDateTimeState of(BuildContext context) {
-    final FPCDateTimeState? state =
-        context.dependOnInheritedWidgetOfExactType<FPCDateTimeState>();
-    if (state == null) {
-      throw const FPCRootWidgetMountedException();
-    }
+  static FPCDateTimeScope of(BuildContext context) =>
+      FPCScopeMixin.of<FPCDateTimeScope>(context);
 
-    return state;
-  }
-
-  static FPCDateTimeState? maybeOf(BuildContext context) =>
-      context.dependOnInheritedWidgetOfExactType<FPCDateTimeState>();
+  static FPCDateTimeScope? maybeOf(BuildContext context) =>
+      FPCScopeMixin.maybeOf<FPCDateTimeScope>(context);
 
   @override
-  bool updateShouldNotify(covariant FPCDateTimeState oldWidget) =>
+  bool updateShouldNotify(covariant FPCDateTimeScope oldWidget) =>
       oldWidget.dateTime != this.dateTime;
 }

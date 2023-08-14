@@ -9,7 +9,7 @@ Future<T?> showFPCDialog<T>({
   required Widget child,
   Color? barrierColor,
 }) {
-  final FPCThemeState themeState = context.componentThemeState;
+  final FPCThemeScope themeState = context.componentThemeScope;
   final FPCPlatform platform = context.componentPlatform;
   final IFPCHaptic haptic = context.componentHaptic;
 

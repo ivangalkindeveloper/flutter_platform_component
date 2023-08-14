@@ -27,7 +27,7 @@ class _FPCHapticState extends State<_FPCHapticWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return FPCHapticState(
+    return FPCHapticScope(
       haptic: this._haptic,
       changeHaptic: this._changeHaptic,
       child: this.widget.child,
@@ -35,8 +35,8 @@ class _FPCHapticState extends State<_FPCHapticWidget> {
   }
 }
 
-class FPCHapticState extends InheritedWidget {
-  const FPCHapticState({
+class FPCHapticScope extends InheritedWidget with FPCScopeMixin {
+  const FPCHapticScope({
     required this.haptic,
     required this.changeHaptic,
     required super.child,
@@ -45,20 +45,13 @@ class FPCHapticState extends InheritedWidget {
   final IFPCHaptic haptic;
   final void Function(IFPCHaptic haptic) changeHaptic;
 
-  static FPCHapticState of(BuildContext context) {
-    final FPCHapticState? state =
-        context.dependOnInheritedWidgetOfExactType<FPCHapticState>();
-    if (state == null) {
-      throw const FPCRootWidgetMountedException();
-    }
+  static FPCHapticScope of(BuildContext context) =>
+      FPCScopeMixin.of<FPCHapticScope>(context);
 
-    return state;
-  }
-
-  static FPCHapticState? maybeOf(BuildContext context) =>
-      context.dependOnInheritedWidgetOfExactType<FPCHapticState>();
+  static FPCHapticScope? maybeOf(BuildContext context) =>
+      FPCScopeMixin.maybeOf<FPCHapticScope>(context);
 
   @override
-  bool updateShouldNotify(FPCHapticState oldWidget) =>
+  bool updateShouldNotify(FPCHapticScope oldWidget) =>
       oldWidget.haptic != this.haptic;
 }

@@ -1,7 +1,6 @@
 import 'package:flutter_platform_component/src/presentation/helper/fpc_button_row_child.dart';
+import 'package:flutter_platform_component/src/core/data/exception/fpc_exception.dart';
 import 'package:flutter_platform_component/src/presentation/helper/fpc_field.dart';
-import 'package:flutter_platform_component/src/core/exception/fpc_exception.dart';
-
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 

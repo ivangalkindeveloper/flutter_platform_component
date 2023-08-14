@@ -1,5 +1,4 @@
 import 'package:flutter_platform_component/src/presentation/helper/fpc_field.dart';
-
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -172,7 +171,7 @@ class FPCBasicFormField extends StatefulWidget {
 class _FPCBasicFormFieldState extends State<FPCBasicFormField>
     with FPCDidInitMixin<FPCBasicFormField> {
   late IFPCTextStyle _textStyle;
-  late FPCSizeState _sizeState;
+  late FPCSizeScope _sizeScope;
   late IFPCHaptic _haptic;
   late IFPCTheme _theme;
   late IFPCSize _size;
@@ -195,10 +194,10 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
   @override
   void didChangeDependencies() {
     this._textStyle = this.context.componentTextStyle;
-    this._sizeState = this.context.componentSizeState;
+    this._sizeScope = this.context.componentSizeScope;
     this._haptic = this.context.componentHaptic;
     this._theme = this.context.componentTheme;
-    this._size = this._sizeState.size;
+    this._size = this._sizeScope.size;
     super.didChangeDependencies();
   }
 
@@ -403,10 +402,10 @@ class _FPCBasicFormFieldState extends State<FPCBasicFormField>
     final double paddingLeft = this.widget.padding?.left ?? this._size.s16;
     final double paddingRight = this.widget.padding?.right ?? this._size.s16;
     final BorderRadius borderRadius =
-        this.widget.borderRadius ?? this._sizeState.borderRadiusField;
+        this.widget.borderRadius ?? this._sizeScope.borderRadiusField;
     final Color borderColor = this._borderColor();
     final double borderWidth =
-        this.widget.borderWidth ?? this._sizeState.borderWidthField;
+        this.widget.borderWidth ?? this._sizeScope.borderWidthField;
     final Color internalIconColor = this._internalIconColor();
     final double internalIconHeight =
         this.widget.internalIconHeight ?? this._size.heightIconDefault;

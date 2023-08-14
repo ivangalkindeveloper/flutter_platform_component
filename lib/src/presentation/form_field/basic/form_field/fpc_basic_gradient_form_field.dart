@@ -173,7 +173,7 @@ class FPCBasicGradientFormField extends StatefulWidget {
 class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
     with FPCDidInitMixin<FPCBasicGradientFormField> {
   late IFPCTextStyle _textStyle;
-  late FPCSizeState _sizeState;
+  late FPCSizeScope _sizeScope;
   late IFPCHaptic _haptic;
   late IFPCTheme _theme;
   late final IFPCSize _size;
@@ -196,10 +196,10 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
   @override
   void didChangeDependencies() {
     this._textStyle = this.context.componentTextStyle;
-    this._sizeState = this.context.componentSizeState;
+    this._sizeScope = this.context.componentSizeScope;
     this._haptic = this.context.componentHaptic;
     this._theme = this.context.componentTheme;
-    this._size = this._sizeState.size;
+    this._size = this._sizeScope.size;
     super.didChangeDependencies();
   }
 
@@ -394,10 +394,10 @@ class _FPCBasicGradientFormFieldState extends State<FPCBasicGradientFormField>
     final double paddingLeft = this.widget.padding?.left ?? this._size.s16;
     final double paddingRight = this.widget.padding?.right ?? this._size.s16;
     final BorderRadius borderRadius =
-        this.widget.borderRadius ?? this._sizeState.borderRadiusField;
+        this.widget.borderRadius ?? this._sizeScope.borderRadiusField;
     final Gradient borderGradient = this._borderGradient();
     final double borderWidth =
-        this.widget.borderWidth ?? this._sizeState.borderWidthField;
+        this.widget.borderWidth ?? this._sizeScope.borderWidthField;
     final Gradient internalIconGradient = this._internalIconGradient();
     final double internalIconHeight =
         this.widget.internalIconHeight ?? this._size.heightIconDefault;

@@ -6,7 +6,7 @@ class AnimatedOpenContainerScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCSizeState sizeState = context.componentSizeState;
+    final FPCSizeScope sizeScope = context.componentSizeScope;
     final IFPCSize size = context.componentSize;
 
     return FPCScaffold(
@@ -30,7 +30,7 @@ class AnimatedOpenContainerScreen extends StatelessWidget {
                     onPressed: openContainer,
                   ),
                   openShape: RoundedRectangleBorder(
-                    borderRadius: sizeState.borderRadiusButton,
+                    borderRadius: sizeScope.borderRadiusButton,
                   ),
                   openBuilder: (BuildContext context) => const _OpenContainer(),
                 ),
@@ -44,7 +44,7 @@ class AnimatedOpenContainerScreen extends StatelessWidget {
                     onPressed: openContainer,
                   ),
                   openShape: RoundedRectangleBorder(
-                    borderRadius: sizeState.borderRadiusButton,
+                    borderRadius: sizeScope.borderRadiusButton,
                   ),
                   openBuilder: (BuildContext context) => const _OpenContainer(),
                 ),
@@ -58,7 +58,7 @@ class AnimatedOpenContainerScreen extends StatelessWidget {
                     onPressed: openContainer,
                   ),
                   openShape: RoundedRectangleBorder(
-                    borderRadius: sizeState.borderRadiusButton,
+                    borderRadius: sizeScope.borderRadiusButton,
                   ),
                   openBuilder: (BuildContext context) => const _OpenContainer(),
                 ),

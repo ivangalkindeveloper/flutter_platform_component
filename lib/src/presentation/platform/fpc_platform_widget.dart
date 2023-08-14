@@ -1,4 +1,4 @@
-import 'package:flutter_platform_component/src/core/util/fpc_platform_util.dart';
+import 'package:flutter_platform_component/src/utility/fpc_platform_utility.dart';
 import 'package:flutter/widgets.dart';
 
 class FPCPlatformWidget extends StatelessWidget {
@@ -13,7 +13,7 @@ class FPCPlatformWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FPCPlatformUtil.decomposeFromContext<Widget, Widget, Widget>(
+    return FPCPlatformUtility.decomposeFromContext<Widget, Widget, Widget>(
       context: context,
       cupertino: this.cupertino,
       material: this.material,

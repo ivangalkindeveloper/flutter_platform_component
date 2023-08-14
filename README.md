@@ -210,6 +210,48 @@ The package uses a fork of the following dependencies:\
 Express our gratitude to the authors of these dependencies.
 
 ## Usage
+First, create and populate the presentational entities you need from the interfaces that this package provides:
+```dart
+class Animations extends FPCDefaultAnimation {
+  const Animations();
+  // Fill properties
+}
+
+class TextStyles extends FPCDefaultTextStyle {
+  const TextStyles();
+  // Fill properties
+}
+
+class TimesOfDay extends FPCDefaultTimeOfDay {
+  TimesOfDay();
+  // Fill properties
+}
+
+class DateTimes extends FPCDefaultDateTime {
+  DateTimes();
+  // Fill properties
+}
+
+class Durations extends FPCDefaultDuration {
+  const Durations();
+  // Fill properties
+}
+
+class Haptics extends FPCDefaultHaptic {
+  const Haptics();
+  // Fill properties
+}
+
+class LightTheme extends FPCDefaultLightTheme {
+  const LightTheme();
+  // Fill properties
+}
+
+class Sizes extends FPCDefaultSize {
+  const Sizes();
+  // Fill properties
+}
+```
 Initialize the main component widget at the root:
 ```dart
 void main() => runApp(
@@ -333,21 +375,21 @@ context.componentChangeSize(const Sizes());
 ```
 You can get the actual size state for platform-decomposing entities:
 ```dart
-final FPCSizeState sizeState = context.componentSizeState;
+final FPCsizeScope sizeScope = context.componentSizeScope;
 
-final BorderRadius borderRadiusButton = sizeState.borderRadiusButton;
-final BorderRadius borderRadiusCard = sizeState.borderRadiusCard;
-final BorderRadius borderRadiusDialog = sizeState.borderRadiusDialog;
-final BorderRadius borderRadiusField = sizeState.borderRadiusField;
-final BorderRadius borderRadiusModal = sizeState.borderRadiusModal;
-final BorderRadius borderRadiusSegmentControl = sizeState.borderRadiusSegmentControl;
-final BorderRadius borderRadiusSnackbar = sizeState.borderRadiusSnackbar;
-final BorderRadius borderRadiusToggle = sizeState.borderRadiusToggle;
-final double borderWidthButton = sizeState.borderWidthButton;
-final double borderWidthCard = sizeState.borderWidthCard;
-final double borderWidthField = sizeState.borderWidthField;
-final double borderWidthSegmentControl = sizeState.borderWidthSegmentControl;
-final double borderWidthSnackbar = sizeState.borderWidthSnackbar;
+final BorderRadius borderRadiusButton = sizeScope.borderRadiusButton;
+final BorderRadius borderRadiusCard = sizeScope.borderRadiusCard;
+final BorderRadius borderRadiusDialog = sizeScope.borderRadiusDialog;
+final BorderRadius borderRadiusField = sizeScope.borderRadiusField;
+final BorderRadius borderRadiusModal = sizeScope.borderRadiusModal;
+final BorderRadius borderRadiusSegmentControl = sizeScope.borderRadiusSegmentControl;
+final BorderRadius borderRadiusSnackbar = sizeScope.borderRadiusSnackbar;
+final BorderRadius borderRadiusToggle = sizeScope.borderRadiusToggle;
+final double borderWidthButton = sizeScope.borderWidthButton;
+final double borderWidthCard = sizeScope.borderWidthCard;
+final double borderWidthField = sizeScope.borderWidthField;
+final double borderWidthSegmentControl = sizeScope.borderWidthSegmentControl;
+final double borderWidthSnackbar = sizeScope.borderWidthSnackbar;
 ```
 
 ### TextStyle
@@ -376,11 +418,11 @@ context.componentChangeTheme(DarkTheme());
 ```
 You can get the actual theme state for platform-decomposing entities:
 ```dart
-final FPCThemeState themeState = context.componentThemeState;
+final FPCThemeState themeScope = context.componentThemeScope;
 
-final Color barrierColorExpandedModal = themeState.barrierColorExpandedModal;
-final Color barrierColorPopUpModal = themeState.barrierColorPopUpModal;
-final Color barrierColorDialog = themeState.barrierColorDialog;
+final Color barrierColorExpandedModal = themeScope.barrierColorExpandedModal;
+final Color barrierColorPopUpModal = themeScope.barrierColorPopUpModal;
+final Color barrierColorDialog = themeScope.barrierColorDialog;
 ```
 
 ### TimeOfDay
@@ -846,6 +888,8 @@ FPCPrimaryGradientCodeField(
 Container for disabled overlaying are guided by theme config.
 #### CupertinoNavigator
 Default [CupertinoTabView](https://api.flutter.dev/flutter/cupertino/CupertinoTabView-class.html) widget supplemented by methods.
+#### NestedWillPopScope
+WillPopScope widget for nested navigation.
 #### TextInputHandlerFormatter
 Text handler for autovalidating.
 

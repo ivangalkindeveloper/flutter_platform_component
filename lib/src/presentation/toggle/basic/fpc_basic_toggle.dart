@@ -1,7 +1,6 @@
 import 'package:flutter_platform_component/src/presentation/helper/fpc_button_row_child.dart';
+import 'package:flutter_platform_component/src/core/data/exception/fpc_exception.dart';
 import 'package:flutter_platform_component/src/presentation/helper/fpc_field.dart';
-import 'package:flutter_platform_component/src/core/exception/fpc_exception.dart';
-
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
@@ -60,7 +59,7 @@ class FPCBasicToggle<T> extends StatefulWidget {
 
 class _FPCBasicToggleState<T> extends State<FPCBasicToggle<T>>
     with FPCDidInitMixin<FPCBasicToggle<T>> {
-  late FPCSizeState _sizeState;
+  late FPCSizeScope _sizeScope;
   late IFPCHaptic _haptic;
   late IFPCSize _size;
 
@@ -72,7 +71,7 @@ class _FPCBasicToggleState<T> extends State<FPCBasicToggle<T>>
 
   @override
   void didChangeDependencies() {
-    this._sizeState = this.context.componentSizeState;
+    this._sizeScope = this.context.componentSizeScope;
     this._haptic = this.context.componentHaptic;
     this._size = this.context.componentSize;
     super.didChangeDependencies();
@@ -146,7 +145,7 @@ class _FPCBasicToggleState<T> extends State<FPCBasicToggle<T>>
 
     final double height = this.widget.height ?? this._size.heightToggle;
     final BorderRadius borderRadius =
-        this.widget.borderRadius ?? this._sizeState.borderRadiusToggle;
+        this.widget.borderRadius ?? this._sizeScope.borderRadiusToggle;
 
     return SizedBox(
       height: height,

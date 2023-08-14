@@ -1,4 +1,4 @@
-import 'package:flutter_platform_component/src/core/entity/date_time/fpc_date_time.dart';
+import 'package:flutter_platform_component/src/core/domain/entity/date_time/fpc_date_time.dart';
 
 class FPCDefaultDateTime implements IFPCDateTime {
   FPCDefaultDateTime({

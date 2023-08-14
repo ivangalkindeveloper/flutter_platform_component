@@ -6,59 +6,58 @@ library flutter_platform_component;
 
 // Core
 // Core / Data
-export 'src/core/data/fpc_action_modal_item.dart';
-export 'src/core/data/fpc_bottom_navigation_bar_icon_item.dart';
-export 'src/core/data/fpc_bottom_navigation_bar_item.dart';
-export 'src/core/data/fpc_date_time_range.dart';
-export 'src/core/data/fpc_dialog_item.dart';
-export 'src/core/data/fpc_enum.dart';
-export 'src/core/data/fpc_list_section_item.dart';
-export 'src/core/data/fpc_segment_control_item.dart';
-export 'src/core/data/fpc_sliding_segment_control_item.dart';
-export 'src/core/data/fpc_time_of_day_range.dart';
-export 'src/core/data/fpc_toggle_item.dart';
-// Core / Entity
-// Core / Entity / Animation
-export 'src/core/entity/animation/fpc_default_animation.dart';
-export 'src/core/entity/animation/fpc_animation.dart';
-// Core / Entity / DateTime
-export 'src/core/entity/date_time/fpc_default_date_time.dart';
-export 'src/core/entity/date_time/fpc_date_time.dart';
-// Core / Entity / Duration
-export 'src/core/entity/duration/fpc_default_duration.dart';
-export 'src/core/entity/duration/fpc_duration.dart';
-// Core / Entity / Haptic
-export 'src/core/entity/haptic/fpc_default_haptic.dart';
-export 'src/core/entity/haptic/fpc_haptic.dart';
-// Core / Entity / Platform
-export 'src/core/entity/platform/fpc_platform.dart';
-// Core / Entity / Size
-export 'src/core/entity/size/fpc_default_size.dart';
-export 'src/core/entity/size/fpc_size.dart';
-// Core / Entity / Text Style
-export 'src/core/entity/text_style/fpc_default_text_style.dart';
-export 'src/core/entity/text_style/fpc_text_style.dart';
-// Core / Entity / Theme
-export 'src/core/entity/theme/fpc_default_dark_theme.dart';
-export 'src/core/entity/theme/fpc_default_light_theme.dart';
-export 'src/core/entity/theme/fpc_theme.dart';
-// Core / Entity / Theme / Gradient
-// Core / Entity / Theme / Gradient / Linear
-export 'src/core/entity/theme/gradient/linear/fpc_default_linear_gradient_config.dart';
-export 'src/core/entity/theme/gradient/linear/fpc_linear_gradient_config.dart';
-// Core / Entity / Theme / Gradient / Radial
-export 'src/core/entity/theme/gradient/radial/fpc_default_radial_gradient_config.dart';
-export 'src/core/entity/theme/gradient/radial/fpc_radial_gradient_config.dart';
-// Core / Entity / Theme / Gradient / Sweep
-export 'src/core/entity/theme/gradient/sweep/fpc_default_sweep_gradient_config.dart';
-export 'src/core/entity/theme/gradient/sweep/fpc_sweep_gradient_config.dart';
-// Core / Entity / TimeOfDay
-export 'src/core/entity/time_of_day/fpc_default_time_of_day.dart';
-export 'src/core/entity/time_of_day/fpc_time_of_day.dart';
-// Core / Util
-export 'src/core/util/fpc_extension.dart';
-export 'src/core/util/fpc_mixin.dart';
-export 'src/core/util/fpc_platform_util.dart';
+// Core / Data / Data
+export 'src/core/data/data/fpc_action_modal_item.dart';
+export 'src/core/data/data/fpc_bottom_navigation_bar_icon_item.dart';
+export 'src/core/data/data/fpc_bottom_navigation_bar_item.dart';
+export 'src/core/data/data/fpc_date_time_range.dart';
+export 'src/core/data/data/fpc_dialog_item.dart';
+export 'src/core/data/data/fpc_enum.dart';
+export 'src/core/data/data/fpc_list_section_item.dart';
+export 'src/core/data/data/fpc_segment_control_item.dart';
+export 'src/core/data/data/fpc_sliding_segment_control_item.dart';
+export 'src/core/data/data/fpc_time_of_day_range.dart';
+export 'src/core/data/data/fpc_toggle_item.dart';
+
+// Core / Domain
+// Core / Domain / Entity
+// Core / Domain / Entity / Animation
+export 'src/core/domain/entity/animation/fpc_default_animation.dart';
+export 'src/core/domain/entity/animation/fpc_animation.dart';
+// Core / Domain / Entity / DateTime
+export 'src/core/domain/entity/date_time/fpc_default_date_time.dart';
+export 'src/core/domain/entity/date_time/fpc_date_time.dart';
+// Core / Domain / Entity / Duration
+export 'src/core/domain/entity/duration/fpc_default_duration.dart';
+export 'src/core/domain/entity/duration/fpc_duration.dart';
+// Core / Domain / Entity / Haptic
+export 'src/core/domain/entity/haptic/fpc_default_haptic.dart';
+export 'src/core/domain/entity/haptic/fpc_haptic.dart';
+// Core / Domain / Entity / Platform
+export 'src/core/domain/entity/platform/fpc_platform.dart';
+// Core / Domain / Entity / Size
+export 'src/core/domain/entity/size/fpc_default_size.dart';
+export 'src/core/domain/entity/size/fpc_size.dart';
+// Core / Domain / Entity / Text Style
+export 'src/core/domain/entity/text_style/fpc_default_text_style.dart';
+export 'src/core/domain/entity/text_style/fpc_text_style.dart';
+// Core / Domain / Entity / Theme
+export 'src/core/domain/entity/theme/fpc_default_dark_theme.dart';
+export 'src/core/domain/entity/theme/fpc_default_light_theme.dart';
+export 'src/core/domain/entity/theme/fpc_theme.dart';
+// Core / Domain / Entity / Theme / Gradient
+// Core / Domain / Entity / Theme / Gradient / Linear
+export 'src/core/domain/entity/theme/gradient/linear/fpc_default_linear_gradient_config.dart';
+export 'src/core/domain/entity/theme/gradient/linear/fpc_linear_gradient_config.dart';
+// Core / Domain / Entity / Theme / Gradient / Radial
+export 'src/core/domain/entity/theme/gradient/radial/fpc_default_radial_gradient_config.dart';
+export 'src/core/domain/entity/theme/gradient/radial/fpc_radial_gradient_config.dart';
+// Core / Domain / Entity / Theme / Gradient / Sweep
+export 'src/core/domain/entity/theme/gradient/sweep/fpc_default_sweep_gradient_config.dart';
+export 'src/core/domain/entity/theme/gradient/sweep/fpc_sweep_gradient_config.dart';
+// Core / Domain / Entity / TimeOfDay
+export 'src/core/domain/entity/time_of_day/fpc_default_time_of_day.dart';
+export 'src/core/domain/entity/time_of_day/fpc_time_of_day.dart';
 
 // Presentation
 export 'src/presentation/flutter_platform_component.dart';
@@ -627,6 +626,7 @@ export 'src/presentation/code_field/custom/gradient/light/fpc_warning_light_grad
 // Presentation / Commom
 export 'src/presentation/common/fpc_component_disabled_overlay.dart';
 export 'src/presentation/common/fpc_cupertino_navigator.dart';
+export 'src/presentation/common/fpc_nested_will_pop_scope.dart';
 export 'src/presentation/common/fpc_text_input_handler_formatter.dart';
 // Presentation / Dialog
 export 'src/presentation/dialog/fpc_dialog.dart';
@@ -1403,3 +1403,9 @@ export 'src/presentation/toggle/custom/gradient/light/fpc_primary_light_gradient
 export 'src/presentation/toggle/custom/gradient/light/fpc_secondary_light_gradient_toggle.dart';
 export 'src/presentation/toggle/custom/gradient/light/fpc_success_light_gradient_toggle.dart';
 export 'src/presentation/toggle/custom/gradient/light/fpc_warning_light_gradient_toggle.dart';
+
+// Utility
+export 'src/utility/fpc_extension.dart';
+export 'src/utility/fpc_mixin.dart';
+export 'src/utility/fpc_platform_utility.dart';
+export 'src/utility/fpc_state_scope_nester.dart';

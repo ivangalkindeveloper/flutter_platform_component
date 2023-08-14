@@ -27,7 +27,7 @@ class _FPCTextStyleState extends State<_FPCTextStyleWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return FPCTextStyleState(
+    return FPCTextStyleScope(
       textStyle: this._textStyle,
       changeTextStyle: this._changeTextStyle,
       child: this.widget.child,
@@ -35,8 +35,8 @@ class _FPCTextStyleState extends State<_FPCTextStyleWidget> {
   }
 }
 
-class FPCTextStyleState extends InheritedWidget {
-  const FPCTextStyleState({
+class FPCTextStyleScope extends InheritedWidget with FPCScopeMixin {
+  const FPCTextStyleScope({
     required this.textStyle,
     required this.changeTextStyle,
     required super.child,
@@ -45,20 +45,13 @@ class FPCTextStyleState extends InheritedWidget {
   final IFPCTextStyle textStyle;
   final void Function(IFPCTextStyle textStyle) changeTextStyle;
 
-  static FPCTextStyleState of(BuildContext context) {
-    final FPCTextStyleState? state =
-        context.dependOnInheritedWidgetOfExactType<FPCTextStyleState>();
-    if (state == null) {
-      throw const FPCRootWidgetMountedException();
-    }
+  static FPCTextStyleScope of(BuildContext context) =>
+      FPCScopeMixin.of<FPCTextStyleScope>(context);
 
-    return state;
-  }
-
-  static FPCTextStyleState? maybeOf(BuildContext context) =>
-      context.dependOnInheritedWidgetOfExactType<FPCTextStyleState>();
+  static FPCTextStyleScope? maybeOf(BuildContext context) =>
+      FPCScopeMixin.maybeOf<FPCTextStyleScope>(context);
 
   @override
-  bool updateShouldNotify(FPCTextStyleState oldWidget) =>
+  bool updateShouldNotify(FPCTextStyleScope oldWidget) =>
       oldWidget.textStyle != this.textStyle;
 }

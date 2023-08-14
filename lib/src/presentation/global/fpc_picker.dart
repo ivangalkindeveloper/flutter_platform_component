@@ -15,12 +15,12 @@ Future<DateTime?> showFPCDatePicker({
   BorderRadius? materialDialogBorderRadius,
   Color? barrierColor,
 }) {
-  final FPCThemeState themeState = context.componentThemeState;
-  final FPCPlatform platform = context.componentPlatform;
+  final FPCThemeScope themeScope = context.componentThemeScope;
   final IFPCDateTime dateTime = context.componentDateTime;
+  final FPCPlatform platform = context.componentPlatform;
 
   final Color barrierColorMethod =
-      barrierColor ?? themeState.barrierColorPopUpModal;
+      barrierColor ?? themeScope.barrierColorPopUpModal;
   final DateTime dateTimeMinimum = dateTimeRange?.minimum ?? dateTime.minimum;
   final DateTime dateTimeInitial = dateTimeRange?.initial ?? dateTime.initial;
   final DateTime dateTimeMaximum = dateTimeRange?.maximum ?? dateTime.maximum;
@@ -81,13 +81,12 @@ Future<TimeOfDay?> showFPCTimePicker({
   BorderRadius? materialDialogBorderRadius,
   Color? barrierColor,
 }) {
-  final FPCThemeState themeState = context.componentThemeState;
+  final FPCThemeScope themeScope = context.componentThemeScope;
   final IFPCTimeOfDay timeOfDay = context.componentTimeOfDay;
   final FPCPlatform platform = context.componentPlatform;
 
   final Color barrierColorMethod =
-      barrierColor ?? themeState.barrierColorPopUpModal;
-
+      barrierColor ?? themeScope.barrierColorPopUpModal;
   final TimeOfDay timeOfDayInitial =
       timeOfDayRange?.initial ?? timeOfDay.initial;
 

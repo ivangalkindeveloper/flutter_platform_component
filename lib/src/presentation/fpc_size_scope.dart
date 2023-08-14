@@ -10,10 +10,10 @@ class _FPCSizeWidget extends StatefulWidget {
   final Widget child;
 
   @override
-  State<_FPCSizeWidget> createState() => _FPCSizeState();
+  State<_FPCSizeWidget> createState() => _FPCsizeScope();
 }
 
-class _FPCSizeState extends State<_FPCSizeWidget> {
+class _FPCsizeScope extends State<_FPCSizeWidget> {
   late IFPCSize _size;
 
   @override
@@ -26,15 +26,15 @@ class _FPCSizeState extends State<_FPCSizeWidget> {
 
   // BorderRadius
   // BorderRadius / Button
-  BorderRadius get _borderRadiusButton => FPCPlatformUtil.decomposeFromContext<
-          BorderRadius, BorderRadius, BorderRadius>(
+  BorderRadius get _borderRadiusButton => FPCPlatformUtility
+          .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this._size.borderRadiusButtonCupertino,
         material: this._size.borderRadiusButtonMaterial,
       );
 
   // BorderRadius / Card
-  BorderRadius get _borderRadiusCard => FPCPlatformUtil.decomposeFromContext<
+  BorderRadius get _borderRadiusCard => FPCPlatformUtility.decomposeFromContext<
           BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this._size.borderRadiusCardCupertino,
@@ -42,31 +42,31 @@ class _FPCSizeState extends State<_FPCSizeWidget> {
       );
 
   // BorderRadius / Dialog
-  BorderRadius get _borderRadiusDialog => FPCPlatformUtil.decomposeFromContext<
-          BorderRadius, BorderRadius, BorderRadius>(
+  BorderRadius get _borderRadiusDialog => FPCPlatformUtility
+          .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this._size.borderRadiusDialogCupertino,
         material: this._size.borderRadiusDialogMaterial,
       );
 
   // BorderRadius / Field
-  BorderRadius get _borderRadiusField => FPCPlatformUtil.decomposeFromContext<
-          BorderRadius, BorderRadius, BorderRadius>(
+  BorderRadius get _borderRadiusField => FPCPlatformUtility
+          .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this._size.borderRadiusFieldCupertino,
         material: this._size.borderRadiusFieldMaterial,
       );
 
   // BorderRadius / Modal
-  BorderRadius get _borderRadiusModal => FPCPlatformUtil.decomposeFromContext<
-          BorderRadius, BorderRadius, BorderRadius>(
+  BorderRadius get _borderRadiusModal => FPCPlatformUtility
+          .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this._size.borderRadiusModalCupertino,
         material: this._size.borderRadiusModalMaterial,
       );
 
   // BorderRadius / Segment Control
-  BorderRadius get _borderRadiusSegmentControl => FPCPlatformUtil
+  BorderRadius get _borderRadiusSegmentControl => FPCPlatformUtility
           .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this._size.borderRadiusSegmentControlCupertino,
@@ -74,7 +74,7 @@ class _FPCSizeState extends State<_FPCSizeWidget> {
       );
 
   // BorderRadius / Snackbar
-  BorderRadius get _borderRadiusSnackbar => FPCPlatformUtil
+  BorderRadius get _borderRadiusSnackbar => FPCPlatformUtility
           .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this._size.borderRadiusSnackbarCupertino,
@@ -82,8 +82,8 @@ class _FPCSizeState extends State<_FPCSizeWidget> {
       );
 
   // BorderRadius / Toggle
-  BorderRadius get _borderRadiusToggle => FPCPlatformUtil.decomposeFromContext<
-          BorderRadius, BorderRadius, BorderRadius>(
+  BorderRadius get _borderRadiusToggle => FPCPlatformUtility
+          .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
         context: this.context,
         cupertino: this._size.borderRadiusToggleCupertino,
         material: this._size.borderRadiusToggleMaterial,
@@ -92,7 +92,7 @@ class _FPCSizeState extends State<_FPCSizeWidget> {
   // BorderWidth
   // BorderWidth / Button
   double get _borderWidthButton =>
-      FPCPlatformUtil.decomposeFromContext<double, double, double>(
+      FPCPlatformUtility.decomposeFromContext<double, double, double>(
         context: this.context,
         cupertino: this._size.borderWidthButtonCupertino,
         material: this._size.borderWidthButtonMaterial,
@@ -100,7 +100,7 @@ class _FPCSizeState extends State<_FPCSizeWidget> {
 
   // BorderWidth / Card
   double get _borderWidthCard =>
-      FPCPlatformUtil.decomposeFromContext<double, double, double>(
+      FPCPlatformUtility.decomposeFromContext<double, double, double>(
         context: this.context,
         cupertino: this._size.borderWidthCardCupertino,
         material: this._size.borderWidthCardMaterial,
@@ -108,7 +108,7 @@ class _FPCSizeState extends State<_FPCSizeWidget> {
 
   // BorderWidth / Field
   double get _borderWidthField =>
-      FPCPlatformUtil.decomposeFromContext<double, double, double>(
+      FPCPlatformUtility.decomposeFromContext<double, double, double>(
         context: this.context,
         cupertino: this._size.borderWidthFieldCupertino,
         material: this._size.borderWidthFieldMaterial,
@@ -116,7 +116,7 @@ class _FPCSizeState extends State<_FPCSizeWidget> {
 
   // BorderWidth / Segment Control
   double get _borderWidthSegmentControl =>
-      FPCPlatformUtil.decomposeFromContext<double, double, double>(
+      FPCPlatformUtility.decomposeFromContext<double, double, double>(
         context: this.context,
         cupertino: this._size.borderWidthSegmentControlCupertino,
         material: this._size.borderWidthSegmentControlMaterial,
@@ -124,7 +124,7 @@ class _FPCSizeState extends State<_FPCSizeWidget> {
 
   // BorderWidth / Snackbar
   double get _borderWidthSnackbar =>
-      FPCPlatformUtil.decomposeFromContext<double, double, double>(
+      FPCPlatformUtility.decomposeFromContext<double, double, double>(
         context: this.context,
         cupertino: this._size.borderWidthSnackbarCupertino,
         material: this._size.borderWidthSnackbarMaterial,
@@ -132,7 +132,7 @@ class _FPCSizeState extends State<_FPCSizeWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return FPCSizeState(
+    return FPCSizeScope(
       size: this._size,
       changeSize: this._changeSize,
       //
@@ -156,8 +156,8 @@ class _FPCSizeState extends State<_FPCSizeWidget> {
   }
 }
 
-class FPCSizeState extends InheritedWidget {
-  const FPCSizeState({
+class FPCSizeScope extends InheritedWidget with FPCScopeMixin {
+  const FPCSizeScope({
     required this.size,
     required this.changeSize,
     //
@@ -197,20 +197,13 @@ class FPCSizeState extends InheritedWidget {
   final double borderWidthSegmentControl;
   final double borderWidthSnackbar;
 
-  static FPCSizeState of(BuildContext context) {
-    final FPCSizeState? state =
-        context.dependOnInheritedWidgetOfExactType<FPCSizeState>();
-    if (state == null) {
-      throw const FPCRootWidgetMountedException();
-    }
+  static FPCSizeScope of(BuildContext context) =>
+      FPCScopeMixin.of<FPCSizeScope>(context);
 
-    return state;
-  }
-
-  static FPCSizeState? maybeOf(BuildContext context) =>
-      context.dependOnInheritedWidgetOfExactType<FPCSizeState>();
+  static FPCSizeScope? maybeOf(BuildContext context) =>
+      FPCScopeMixin.maybeOf<FPCSizeScope>(context);
 
   @override
-  bool updateShouldNotify(FPCSizeState oldWidget) =>
+  bool updateShouldNotify(FPCSizeScope oldWidget) =>
       oldWidget.size != this.size;
 }

@@ -1,4 +1,4 @@
-import 'package:flutter_platform_component/src/core/entity/animation/fpc_animation.dart';
+import 'package:flutter_platform_component/src/core/domain/entity/animation/fpc_animation.dart';
 import 'package:flutter/widgets.dart';
 
 class FPCDefaultAnimation implements IFPCAnimation {

@@ -132,14 +132,14 @@ class _FPCDatePickerMaterial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCSizeState sizeState = context.componentSizeState;
+    final FPCSizeScope sizeScope = context.componentSizeScope;
     final IFPCTheme theme = context.componentTheme;
 
     final Color backgroundColor =
         this.materialDialogBackgroundColor ?? theme.backgroundScaffold;
     final Color color = this.materialDialogColor ?? theme.primary;
     final BorderRadius borderRadius =
-        this.materialDialogBorderRadius ?? sizeState.borderRadiusDialog;
+        this.materialDialogBorderRadius ?? sizeScope.borderRadiusDialog;
     final Widget materialDialog = this.materialDialog ?? const SizedBox();
 
     return Theme(

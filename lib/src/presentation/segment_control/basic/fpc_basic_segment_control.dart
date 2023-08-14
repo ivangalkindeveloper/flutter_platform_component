@@ -1,8 +1,7 @@
 import 'package:flutter_platform_component/src/presentation/helper/fpc_custom_rounded_rectangle_border.dart';
 import 'package:flutter_platform_component/src/presentation/helper/fpc_button_row_child.dart';
+import 'package:flutter_platform_component/src/core/data/exception/fpc_exception.dart';
 import 'package:flutter_platform_component/src/presentation/helper/fpc_field.dart';
-import 'package:flutter_platform_component/src/core/exception/fpc_exception.dart';
-
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
@@ -68,7 +67,7 @@ class FPCBasicSegmentControl<T> extends StatefulWidget {
 
 class _FPCBasicSegmentControlState<T> extends State<FPCBasicSegmentControl<T>>
     with FPCDidInitMixin<FPCBasicSegmentControl<T>> {
-  late FPCSizeState _sizeState;
+  late FPCSizeScope _sizeScope;
   late IFPCHaptic _haptic;
   late IFPCSize _size;
 
@@ -80,9 +79,9 @@ class _FPCBasicSegmentControlState<T> extends State<FPCBasicSegmentControl<T>>
 
   @override
   void didChangeDependencies() {
-    this._sizeState = this.context.componentSizeState;
+    this._sizeScope = this.context.componentSizeScope;
     this._haptic = this.context.componentHaptic;
-    this._size = this._sizeState.size;
+    this._size = this._sizeScope.size;
     super.didChangeDependencies();
   }
 
@@ -154,7 +153,7 @@ class _FPCBasicSegmentControlState<T> extends State<FPCBasicSegmentControl<T>>
 
     final double height = this.widget.height ?? this._size.heightSegmentControl;
     final BorderRadius borderRadius =
-        this.widget.borderRadius ?? this._sizeState.borderRadiusSegmentControl;
+        this.widget.borderRadius ?? this._sizeScope.borderRadiusSegmentControl;
 
     return SizedBox(
       height: height,
@@ -364,7 +363,7 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FPCSizeState sizeState = context.componentSizeState;
+    final FPCSizeScope sizeScope = context.componentSizeScope;
     final IFPCTheme theme = context.componentTheme;
     final IFPCSize size = context.componentSize;
 
@@ -375,7 +374,7 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
     final double internalIconHeight =
         this.internalIconHeight ?? size.heightIconDefault;
     final double borderWidth =
-        this.borderWidth ?? sizeState.borderWidthSegmentControl;
+        this.borderWidth ?? sizeScope.borderWidthSegmentControl;
     final double leftBorderWidth = index == 0 ? borderWidth : 0;
     final double rightBorderWidth =
         (index + 1) == this.length ? borderWidth : 0;
