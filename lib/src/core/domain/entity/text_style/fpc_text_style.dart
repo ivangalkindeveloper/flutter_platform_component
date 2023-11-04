@@ -23,22 +23,24 @@ abstract class IFPCTextStyle {
   IFPCTextStyle copyWith();
 
   @override
-  bool operator ==(Object object) =>
-      object is IFPCTextStyle &&
+  bool operator ==(Object other) =>
+      other is IFPCTextStyle &&
       // FontWeight
-      object.fontWeightThin == this.fontWeightThin &&
-      object.fontWeightRegular == this.fontWeightRegular &&
-      object.fontWeightMedium == this.fontWeightMedium &&
-      object.fontWeightSemiBold == this.fontWeightSemiBold &&
-      object.fontWeightBold == this.fontWeightBold &&
+      other.fontWeightThin == this.fontWeightThin &&
+      other.fontWeightRegular == this.fontWeightRegular &&
+      other.fontWeightMedium == this.fontWeightMedium &&
+      other.fontWeightSemiBold == this.fontWeightSemiBold &&
+      other.fontWeightBold == this.fontWeightBold &&
+
       // FontFamily
-      object.fontFamilyThin == this.fontFamilyThin &&
-      object.fontFamilyRegular == this.fontFamilyRegular &&
-      object.fontFamilyMedium == this.fontFamilyMedium &&
-      object.fontFamilySemiBold == this.fontFamilySemiBold &&
-      object.fontFamilyBold == this.fontFamilyBold &&
+      other.fontFamilyThin == this.fontFamilyThin &&
+      other.fontFamilyRegular == this.fontFamilyRegular &&
+      other.fontFamilyMedium == this.fontFamilyMedium &&
+      other.fontFamilySemiBold == this.fontFamilySemiBold &&
+      other.fontFamilyBold == this.fontFamilyBold &&
+
       // Package
-      object.package == this.package;
+      other.package == this.package;
 
   @override
   int get hashCode => Object.hashAll([
@@ -48,12 +50,14 @@ abstract class IFPCTextStyle {
         this.fontWeightMedium,
         this.fontWeightSemiBold,
         this.fontWeightBold,
+
         // FontFamily
         this.fontFamilyThin,
         this.fontFamilyRegular,
         this.fontFamilyMedium,
         this.fontFamilySemiBold,
         this.fontFamilyBold,
+
         // Package
         this.package,
       ]);

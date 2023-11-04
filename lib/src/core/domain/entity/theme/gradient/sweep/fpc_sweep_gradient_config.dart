@@ -11,14 +11,14 @@ abstract class IFPCSweepGradientConfig {
   abstract final GradientTransform? transform;
 
   @override
-  bool operator ==(Object object) =>
-      object is IFPCSweepGradientConfig &&
-      object.center == this.center &&
-      object.startAngle == this.startAngle &&
-      object.endAngle == this.endAngle &&
-      object.stops == this.stops &&
-      object.tileMode == this.tileMode &&
-      object.transform == this.transform;
+  bool operator ==(Object other) =>
+      other is IFPCSweepGradientConfig &&
+      other.center == this.center &&
+      other.startAngle == this.startAngle &&
+      other.endAngle == this.endAngle &&
+      other.stops == this.stops &&
+      other.tileMode == this.tileMode &&
+      other.transform == this.transform;
 
   @override
   int get hashCode => Object.hash(

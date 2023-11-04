@@ -10,13 +10,13 @@ abstract class IFPCLinearGradientConfig {
   abstract final GradientTransform? transform;
 
   @override
-  bool operator ==(Object object) =>
-      object is IFPCLinearGradientConfig &&
-      object.begin == this.begin &&
-      object.end == this.end &&
-      object.stops == this.stops &&
-      object.tileMode == this.tileMode &&
-      object.transform == this.transform;
+  bool operator ==(Object other) =>
+      other is IFPCLinearGradientConfig &&
+      other.begin == this.begin &&
+      other.end == this.end &&
+      other.stops == this.stops &&
+      other.tileMode == this.tileMode &&
+      other.transform == this.transform;
 
   @override
   int get hashCode => Object.hash(

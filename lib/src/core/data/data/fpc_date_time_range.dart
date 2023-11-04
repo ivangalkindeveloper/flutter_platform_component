@@ -7,9 +7,9 @@ class FPCDateTimeRange {
     DateTime? minimum,
     DateTime? initial,
     DateTime? maximum,
-  })  : this.minimum = minimum ?? context.componentDateTime.minimum,
-        this.initial = initial ?? context.componentDateTime.initial,
-        this.maximum = maximum ?? context.componentDateTime.maximum;
+  })  : this.minimum = minimum ?? context.fpcDateTime.minimum,
+        this.initial = initial ?? context.fpcDateTime.initial,
+        this.maximum = maximum ?? context.fpcDateTime.maximum;
 
   final DateTime minimum;
   final DateTime initial;

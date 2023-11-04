@@ -8,11 +8,11 @@ abstract class IFPCTimeOfDay {
   IFPCTimeOfDay copyWith();
 
   @override
-  bool operator ==(Object object) =>
-      object is IFPCTimeOfDay &&
-      object.minimum == this.minimum &&
-      object.initial == this.initial &&
-      object.maximum == this.maximum;
+  bool operator ==(Object other) =>
+      other is IFPCTimeOfDay &&
+      other.minimum == this.minimum &&
+      other.initial == this.initial &&
+      other.maximum == this.maximum;
 
   @override
   int get hashCode => Object.hashAll([

@@ -4,38 +4,22 @@ import 'package:flutter/widgets.dart';
 class FPCDefaultTextStyle extends IFPCTextStyle {
   const FPCDefaultTextStyle({
     // FontWeight
-    FontWeight? fontWeightThin,
-    FontWeight? fontWeightRegular,
-    FontWeight? fontWeightMedium,
-    FontWeight? fontWeightSemiBold,
-    FontWeight? fontWeightBold,
+    this.fontWeightThin = FontWeight.w300,
+    this.fontWeightRegular = FontWeight.w400,
+    this.fontWeightMedium = FontWeight.w600,
+    this.fontWeightSemiBold = FontWeight.w700,
+    this.fontWeightBold = FontWeight.w800,
 
     // FontFamily
-    String? fontFamilyThin,
-    String? fontFamilyRegular,
-    String? fontFamilyMedium,
-    String? fontFamilySemiBold,
-    String? fontFamilyBold,
+    this.fontFamilyThin,
+    this.fontFamilyRegular,
+    this.fontFamilyMedium,
+    this.fontFamilySemiBold,
+    this.fontFamilyBold,
 
     // Package
-    String? package,
-  })  :
-        // FontWeight
-        this.fontWeightThin = fontWeightThin ?? FontWeight.w300,
-        this.fontWeightRegular = fontWeightRegular ?? FontWeight.w400,
-        this.fontWeightMedium = fontWeightMedium ?? FontWeight.w600,
-        this.fontWeightSemiBold = fontWeightSemiBold ?? FontWeight.w700,
-        this.fontWeightBold = fontWeightBold ?? FontWeight.w800,
-
-        // FontFamily
-        this.fontFamilyThin = fontFamilyThin,
-        this.fontFamilyRegular = fontFamilyRegular,
-        this.fontFamilyMedium = fontFamilyMedium,
-        this.fontFamilySemiBold = fontFamilySemiBold,
-        this.fontFamilyBold = fontFamilyBold,
-
-        // Package
-        this.package = package;
+    this.package,
+  });
 
   // FontWeight
   @override

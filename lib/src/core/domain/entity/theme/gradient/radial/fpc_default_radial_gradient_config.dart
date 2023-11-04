@@ -12,11 +12,18 @@ class FPCDefaultRadialGradientConfig implements IFPCRadialGradientConfig {
     this.transform,
   });
 
+  @override
   final AlignmentGeometry center;
+  @override
   final double radius;
+  @override
   final List<double>? stops;
+  @override
   final TileMode tileMode;
+  @override
   final AlignmentGeometry? focal;
+  @override
   final double focalRadius;
+  @override
   final GradientTransform? transform;
 }

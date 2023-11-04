@@ -10,412 +10,263 @@ import 'package:flutter/material.dart' show ThemeMode, ThemeData, Colors;
 class FPCDefaultDarkTheme extends IFPCTheme {
   FPCDefaultDarkTheme({
     // Framework
-    CupertinoThemeData? cupertinoThemeData,
-    ThemeMode? materialThemeMode,
+    this.cupertinoThemeData = const CupertinoThemeData(),
+    this.materialThemeMode = ThemeMode.dark,
     ThemeData? materialThemeData,
-    SystemUiOverlayStyle? systemOverlayStyle,
+    this.systemOverlayStyle = SystemUiOverlayStyle.dark,
 
     // White
-    Color? white,
-    Color? whiteAlways,
+    this.white = const Color(0xff171717),
+    this.whiteAlways = const Color(0xffFFFFFF),
 
     // Black
-    Color? black,
-    Color? blackAlways,
+    this.black = const Color(0xffFFFFFF),
+    this.blackAlways = const Color(0xff171717),
 
     // Background
-    Color? backgroundScaffold,
-    Color? backgroundComponent,
+    this.backgroundScaffold = const Color(0xff3A3A3C),
+    this.backgroundComponent = const Color(0xff171717),
 
     // Blur
-    Color? blur,
+    this.blur = const Color(0xff171717),
     ImageFilter? blurFilter,
 
     // Primary
-    Color? primary,
-    Color? primaryInternal,
-    Gradient? primaryGradient,
+    this.primary = const Color(0xff7F11DF),
+    this.primaryInternal = const Color(0xffFFFFFF),
+    this.primaryGradient = const LinearGradient(
+      colors: [
+        Color(0xff7F11DF),
+        Color(0xff7C3DAE),
+      ],
+    ),
     // Primary / Light
-    Color? primaryLight,
-    Gradient? primaryLightGradient,
+    this.primaryLight = const Color(0xffA145F2),
+    this.primaryLightGradient = const LinearGradient(
+      colors: [
+        Color(0xffA145F2),
+        Color(0xffCB45F2),
+      ],
+    ),
     // Primary / Dark
-    Color? primaryDark,
-    Gradient? primaryDarkGradient,
+    this.primaryDark = const Color(0xff783C96),
+    this.primaryDarkGradient = const LinearGradient(
+      colors: [
+        Color(0xff783C96),
+        Color(0xff75299E),
+      ],
+    ),
 
     // Secondary
-    Color? secondary,
-    Color? secondaryInternal,
-    Gradient? secondaryGradient,
+    this.secondary = const Color(0xff2330E1),
+    this.secondaryInternal = const Color(0xffFFFFFF),
+    this.secondaryGradient = const LinearGradient(
+      colors: [
+        Color(0xff2330E1),
+        Color(0xff4B53B4),
+      ],
+    ),
     // Secondary / Light
-    Color? secondaryLight,
-    Gradient? secondaryLightGradient,
+    this.secondaryLight = const Color(0xff5A45F2),
+    this.secondaryLightGradient = const LinearGradient(
+      colors: [
+        Color(0xff5A45F2),
+        Color(0xff2100FA),
+      ],
+    ),
     // Secondary / Dark
-    Color? secondaryDark,
-    Gradient? secondaryDarkGradient,
+    this.secondaryDark = const Color(0xff3A458D),
+    this.secondaryDarkGradient = const LinearGradient(
+      colors: [
+        Color(0xff3A458D),
+        Color(0xff66697A),
+      ],
+    ),
 
-    // Secondary
-    Color? accent,
-    Color? accentInternal,
-    Gradient? accentGradient,
-    // Secondary / Light
-    Color? accentLight,
-    Gradient? accentLightGradient,
-    // Secondary / Dark
-    Color? accentDark,
-    Gradient? accentDarkGradient,
+    // Accent
+    this.accent = const Color(0xff9ADB14),
+    this.accentInternal = const Color(0xffFFFFFF),
+    this.accentGradient = const LinearGradient(
+      colors: [
+        Color(0xff9ADB14),
+        Color(0xff99D322),
+      ],
+    ),
+    // Accent / Light
+    this.accentLight = const Color(0xffAEFF00),
+    this.accentLightGradient = const LinearGradient(
+      colors: [
+        Color(0xffAEFF00),
+        Color(0xffB0DF49),
+      ],
+    ),
+    // Accent / Dark
+    this.accentDark = const Color(0xff96B262),
+    this.accentDarkGradient = const LinearGradient(
+      colors: [
+        Color(0xff96B262),
+        Color(0xff95A573),
+      ],
+    ),
 
     // Grey
-    Color? grey,
-    Gradient? greyGradient,
+    this.grey = const Color(0xff969696),
+    this.greyGradient = const LinearGradient(
+      colors: [
+        Color(0xff969696),
+        Color(0xff858585),
+      ],
+    ),
     // Grey / Light
-    Color? greyLight,
-    Gradient? greyLightGradient,
+    this.greyLight = const Color(0xff999999),
+    this.greyLightGradient = const LinearGradient(
+      colors: [
+        Color(0xff999999),
+        Color(0xffB0B0B0),
+      ],
+    ),
     // Grey / Dark
-    Color? greyDark,
-    Gradient? greyDarkGradient,
+    this.greyDark = const Color(0xff707070),
+    this.greyDarkGradient = const LinearGradient(
+      colors: [
+        Color(0xff707070),
+        Color(0xff5E5E5E),
+      ],
+    ),
 
     // Info
-    Color? info,
-    Gradient? infoGradient,
+    this.info = const Color(0xff05A6EB),
+    this.infoGradient = const LinearGradient(
+      colors: [
+        Color(0xff05A6EB),
+        Color(0xff2693C9),
+      ],
+    ),
     // Info / Light
-    Color? infoLight,
-    Gradient? infoLightGradient,
+    this.infoLight = const Color(0xff29B9FA),
+    this.infoLightGradient = const LinearGradient(
+      colors: [
+        Color(0xff29B9FA),
+        Color(0xff64D2FF),
+      ],
+    ),
     // Info / Dark
-    Color? infoDark,
-    Gradient? infoDarkGradient,
+    this.infoDark = const Color(0xff5575CE),
+    this.infoDarkGradient = const LinearGradient(
+      colors: [
+        Color(0xff5575CE),
+        Color(0xff436ADB),
+      ],
+    ),
 
     // Success
-    Color? success,
-    Gradient? successGradient,
+    this.success = const Color(0xff2AD561),
+    this.successGradient = const LinearGradient(
+      colors: [
+        Color(0xff2AD561),
+        Color(0xff3EB161),
+      ],
+    ),
     // Success / Light
-    Color? successLight,
-    Gradient? successLightGradient,
+    this.successLight = const Color(0xff3FE970),
+    this.successLightGradient = const LinearGradient(
+      colors: [
+        Color(0xff3FE970),
+        Color(0xff30D158),
+      ],
+    ),
     // Success / Dark
-    Color? successDark,
-    Gradient? successDarkGradient,
+    this.successDark = const Color(0xff63B078),
+    this.successDarkGradient = const LinearGradient(
+      colors: [
+        Color(0xff63B078),
+        Color(0xff8EB496),
+      ],
+    ),
 
     // Warning
-    Color? warning,
-    Gradient? warningGradient,
+    this.warning = const Color(0xffF08C00),
+    this.warningGradient = const LinearGradient(
+      colors: [
+        Color(0xffF08C00),
+        Color(0xffDA8C16),
+      ],
+    ),
     // Warning / Light
-    Color? warningLight,
-    Gradient? warningLightGradient,
+    this.warningLight = const Color(0xffFF9500),
+    this.warningLightGradient = const LinearGradient(
+      colors: [
+        Color(0xffFF9500),
+        Color(0xffFDA835),
+      ],
+    ),
     // Warning / Dark
-    Color? warningDark,
-    Gradient? warningDarkGradient,
+    this.warningDark = const Color(0xffFFB340),
+    this.warningDarkGradient = const LinearGradient(
+      colors: [
+        Color(0xffFFB340),
+        Color(0xffFFC060),
+      ],
+    ),
 
     // Danger
-    Color? danger,
-    Gradient? dangerGradient,
+    this.danger = const Color(0xffEA211A),
+    this.dangerGradient = const LinearGradient(
+      colors: [
+        Color(0xffEA211A),
+        Color(0xffC3332C),
+      ],
+    ),
     // Danger / Light
-    Color? dangerLight,
-    Gradient? dangerLightGradient,
+    this.dangerLight = const Color(0xffFF3B30),
+    this.dangerLightGradient = const LinearGradient(
+      colors: [
+        Color(0xffFF3B30),
+        Color(0xffDD3D36),
+      ],
+    ),
     // Danger / Dark
-    Color? dangerDark,
-    Gradient? dangerDarkGradient,
+    this.dangerDark = const Color(0xff9A4742),
+    this.dangerDarkGradient = const LinearGradient(
+      colors: [
+        Color(0xff9A4742),
+        Color(0xffB45A55),
+      ],
+    ),
 
     // Barrier
     // Barrier / Expanded Modal
-    Color? barrierExpandedModalCupertino,
+    this.barrierExpandedModalCupertino =
+        const CupertinoDynamicColor.withBrightness(
+      color: Color(0x33000000),
+      darkColor: Color(0x7A000000),
+    ),
     Color? barrierExpandedModalMaterial,
     // Barrier / Pop Up Modal
-    Color? barrierPopUpModalCupertino,
+    this.barrierPopUpModalCupertino =
+        const CupertinoDynamicColor.withBrightness(
+      color: Color(0x33000000),
+      darkColor: Color(0x7A000000),
+    ),
     Color? barrierPopUpModalMaterial,
     // Barrier / Dialog
-    Color? barrierDialogCupertino,
-    Color? barrierDialogMaterial,
+    this.barrierDialogCupertino = const Color(0x8A000000),
+    this.barrierDialogMaterial = const Color(0x8A000000),
 
     // Gradient
-    IFPCLinearGradientConfig? linearGradientConfig,
-    IFPCRadialGradientConfig? radialGradientConfig,
-    IFPCSweepGradientConfig? sweepGradientConfig,
-  })  :
-        // Framework
-        this.cupertinoThemeData =
-            cupertinoThemeData ?? const CupertinoThemeData(),
-        this.materialThemeMode = materialThemeMode ?? ThemeMode.dark,
-        this.materialThemeData = materialThemeData ?? ThemeData.dark(),
-        this.systemOverlayStyle =
-            systemOverlayStyle ?? SystemUiOverlayStyle.dark,
-
-        // White
-        this.white = white ?? const Color(0xff171717),
-        this.whiteAlways = whiteAlways ?? const Color(0xffFFFFFF),
-
-        // Black
-        this.black = black ?? const Color(0xffFFFFFF),
-        this.blackAlways = blackAlways ?? const Color(0xff171717),
-
-        // Background
-        this.backgroundScaffold = backgroundScaffold ?? const Color(0xff3A3A3C),
-        this.backgroundComponent =
-            backgroundComponent ?? const Color(0xff171717),
-
-        // Blur
-        this.blur = blur ?? const Color(0xff171717),
+    this.linearGradientConfig = const FPCDefaultLinearGradientConfig(),
+    this.radialGradientConfig = const FPCDefaultRadialGradientConfig(),
+    this.sweepGradientConfig = const FPCDefaultSweepGradientConfig(),
+  })  : this.materialThemeData = materialThemeData ?? ThemeData.dark(),
         this.blurFilter = blurFilter ??
             ImageFilter.blur(
               sigmaX: 6,
               sigmaY: 6,
             ),
-
-        // Primary
-        this.primary = primary ?? const Color(0xff7F11DF),
-        this.primaryInternal = primaryInternal ?? const Color(0xffFFFFFF),
-        this.primaryGradient = primaryGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff7F11DF),
-                Color(0xff7C3DAE),
-              ],
-            ),
-        // Primary / Light
-        this.primaryLight = primaryLight ?? const Color(0xffA145F2),
-        this.primaryLightGradient = primaryLightGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xffA145F2),
-                Color(0xffCB45F2),
-              ],
-            ),
-        // Primary / Dark
-        this.primaryDark = primaryDark ?? const Color(0xff783C96),
-        this.primaryDarkGradient = primaryDarkGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff783C96),
-                Color(0xff75299E),
-              ],
-            ),
-
-        // Secondary
-        this.secondary = secondary ?? const Color(0xff2330E1),
-        this.secondaryInternal = secondaryInternal ?? const Color(0xffFFFFFF),
-        this.secondaryGradient = secondaryGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff2330E1),
-                Color(0xff4B53B4),
-              ],
-            ),
-        // Secondary / Light
-        this.secondaryLight = secondaryLight ?? const Color(0xff5A45F2),
-        this.secondaryLightGradient = secondaryLightGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff5A45F2),
-                Color(0xff2100FA),
-              ],
-            ),
-        // Secondary / Dark
-        this.secondaryDark = secondaryDark ?? const Color(0xff3A458D),
-        this.secondaryDarkGradient = secondaryDarkGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff3A458D),
-                Color(0xff66697A),
-              ],
-            ),
-
-        // Accent
-        this.accent = accent ?? const Color(0xff9ADB14),
-        this.accentInternal = accentInternal ?? const Color(0xffFFFFFF),
-        this.accentGradient = accentGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff9ADB14),
-                Color(0xff99D322),
-              ],
-            ),
-        // Accent / Light
-        this.accentLight = accentLight ?? const Color(0xffAEFF00),
-        this.accentLightGradient = accentLightGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xffAEFF00),
-                Color(0xffB0DF49),
-              ],
-            ),
-        // Accent / Dark
-        this.accentDark = accentDark ?? const Color(0xff96B262),
-        this.accentDarkGradient = accentDarkGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff96B262),
-                Color(0xff95A573),
-              ],
-            ),
-
-        // Grey
-        this.grey = grey ?? const Color(0xff969696),
-        this.greyGradient = greyGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff969696),
-                Color(0xff858585),
-              ],
-            ),
-        // Grey / Light
-        this.greyLight = greyLight ?? const Color(0xff999999),
-        this.greyLightGradient = greyLightGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff999999),
-                Color(0xffB0B0B0),
-              ],
-            ),
-        // Grey / Dark
-        this.greyDark = greyDark ?? const Color(0xff707070),
-        this.greyDarkGradient = greyDarkGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff707070),
-                Color(0xff5E5E5E),
-              ],
-            ),
-
-        // Info
-        this.info = info ?? const Color(0xff05A6EB),
-        this.infoGradient = infoGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff05A6EB),
-                Color(0xff2693C9),
-              ],
-            ),
-        // Info / Light
-        this.infoLight = infoLight ?? const Color(0xff29B9FA),
-        this.infoLightGradient = infoLightGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff29B9FA),
-                Color(0xff64D2FF),
-              ],
-            ),
-        // Info / Dark
-        this.infoDark = infoDark ?? const Color(0xff5575CE),
-        this.infoDarkGradient = infoDarkGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff5575CE),
-                Color(0xff436ADB),
-              ],
-            ),
-
-        // Success
-        this.success = success ?? const Color(0xff2AD561),
-        this.successGradient = successGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff2AD561),
-                Color(0xff3EB161),
-              ],
-            ),
-        // Success / Light
-        this.successLight = successLight ?? const Color(0xff3FE970),
-        this.successLightGradient = successLightGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff3FE970),
-                Color(0xff30D158),
-              ],
-            ),
-        // Success / Dark
-        this.successDark = successDark ?? const Color(0xff63B078),
-        this.successDarkGradient = successDarkGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff63B078),
-                Color(0xff8EB496),
-              ],
-            ),
-
-        // Warning
-        this.warning = warning ?? const Color(0xffF08C00),
-        this.warningGradient = warningGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xffF08C00),
-                Color(0xffDA8C16),
-              ],
-            ),
-        // Warning / Light
-        this.warningLight = warningLight ?? const Color(0xffFF9500),
-        this.warningLightGradient = warningLightGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xffFF9500),
-                Color(0xffFDA835),
-              ],
-            ),
-        // Warning / Dark
-        this.warningDark = warningDark ?? const Color(0xffFFB340),
-        this.warningDarkGradient = warningDarkGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xffFFB340),
-                Color(0xffFFC060),
-              ],
-            ),
-
-        // Danger
-        this.danger = danger ?? const Color(0xffEA211A),
-        this.dangerGradient = dangerGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xffEA211A),
-                Color(0xffC3332C),
-              ],
-            ),
-        // Danger / Light
-        this.dangerLight = dangerLight ?? const Color(0xffFF3B30),
-        this.dangerLightGradient = dangerLightGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xffFF3B30),
-                Color(0xffDD3D36),
-              ],
-            ),
-        // Danger / Dark
-        this.dangerDark = dangerDark ?? const Color(0xff9A4742),
-        this.dangerDarkGradient = dangerDarkGradient ??
-            const LinearGradient(
-              colors: const [
-                Color(0xff9A4742),
-                Color(0xffB45A55),
-              ],
-            ),
-
-        // Barrier
-        // Barrier / Expanded Modal
-        this.barrierExpandedModalCupertino = barrierExpandedModalCupertino ??
-            const CupertinoDynamicColor.withBrightness(
-              color: Color(0x33000000),
-              darkColor: Color(0x7A000000),
-            ),
         this.barrierExpandedModalMaterial =
             barrierExpandedModalMaterial ?? Colors.black.withOpacity(0.35),
-        // Barrier / Pop Up Modal
-        this.barrierPopUpModalCupertino = barrierPopUpModalCupertino ??
-            const CupertinoDynamicColor.withBrightness(
-              color: Color(0x33000000),
-              darkColor: Color(0x7A000000),
-            ),
         this.barrierPopUpModalMaterial =
-            barrierPopUpModalMaterial ?? Colors.black.withOpacity(0.35),
-        // Barrier / Dialog
-        this.barrierDialogCupertino =
-            barrierDialogCupertino ?? const Color(0x8A000000),
-        this.barrierDialogMaterial =
-            barrierDialogMaterial ?? const Color(0x8A000000),
-
-        // Gradient
-        this.linearGradientConfig =
-            linearGradientConfig ?? const FPCDefaultLinearGradientConfig(),
-        this.radialGradientConfig =
-            radialGradientConfig ?? const FPCDefaultRadialGradientConfig(),
-        this.sweepGradientConfig =
-            sweepGradientConfig ?? const FPCDefaultSweepGradientConfig();
+            barrierPopUpModalMaterial ?? Colors.black.withOpacity(0.35);
 
   // Framework
   @override
@@ -587,13 +438,19 @@ class FPCDefaultDarkTheme extends IFPCTheme {
 
   // Barrier
   // Barrier / Expanded Modal
+  @override
   final Color barrierExpandedModalCupertino;
+  @override
   final Color barrierExpandedModalMaterial;
   // Barrier / Pop Up Modal
+  @override
   final Color barrierPopUpModalCupertino;
+  @override
   final Color barrierPopUpModalMaterial;
   // Barrier / Dialog
+  @override
   final Color barrierDialogCupertino;
+  @override
   final Color barrierDialogMaterial;
 
   // Gradient
@@ -604,6 +461,7 @@ class FPCDefaultDarkTheme extends IFPCTheme {
   @override
   final IFPCSweepGradientConfig sweepGradientConfig;
 
+  @override
   FPCDefaultDarkTheme copyWith({
     // Framework
     CupertinoThemeData? cupertinoThemeData,
@@ -857,6 +715,7 @@ class FPCDefaultDarkTheme extends IFPCTheme {
         sweepGradientConfig: sweepGradientConfig ?? this.sweepGradientConfig,
       );
 
+  @override
   FPCDefaultDarkTheme lerp({
     required IFPCTheme other,
     required double t,

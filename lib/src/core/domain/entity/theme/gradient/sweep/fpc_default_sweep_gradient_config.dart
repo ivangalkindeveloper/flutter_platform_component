@@ -12,10 +12,16 @@ class FPCDefaultSweepGradientConfig implements IFPCSweepGradientConfig {
     this.transform,
   });
 
+  @override
   final AlignmentGeometry center;
+  @override
   final double startAngle;
+  @override
   final double endAngle;
+  @override
   final List<double>? stops;
+  @override
   final TileMode tileMode;
+  @override
   final GradientTransform? transform;
 }

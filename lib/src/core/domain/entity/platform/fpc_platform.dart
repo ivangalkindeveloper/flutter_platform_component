@@ -1,4 +1,4 @@
 enum FPCPlatform {
   iOS,
-  Android,
+  android,
 }

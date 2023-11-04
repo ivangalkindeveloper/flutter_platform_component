@@ -1,13 +1,12 @@
 import 'package:flutter/widgets.dart';
 
-class FPCBottomNavigationBarWidgetItem extends BottomNavigationBarItem {
-  const FPCBottomNavigationBarWidgetItem({
-    required Widget child,
-    String? label,
+class FPCBottomNavigationBarItem extends BottomNavigationBarItem {
+  const FPCBottomNavigationBarItem({
+    super.label,
     String? tooltip,
+    required Widget child,
   }) : super(
           icon: child,
-          label: label,
           tooltip: tooltip ?? "",
         );
 }

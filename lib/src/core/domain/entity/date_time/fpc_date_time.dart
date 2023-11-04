@@ -8,11 +8,11 @@ abstract class IFPCDateTime {
   IFPCDateTime copyWith();
 
   @override
-  bool operator ==(Object object) =>
-      object is IFPCDateTime &&
-      object.minimum == this.minimum &&
-      object.initial == this.initial &&
-      object.maximum == this.maximum;
+  bool operator ==(Object other) =>
+      other is IFPCDateTime &&
+      other.minimum == this.minimum &&
+      other.initial == this.initial &&
+      other.maximum == this.maximum;
 
   @override
   int get hashCode => Object.hashAll([

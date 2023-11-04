@@ -3,16 +3,16 @@ import 'package:flutter/widgets.dart';
 
 class FPCDefaultAnimation implements IFPCAnimation {
   const FPCDefaultAnimation({
-    Curve? curve,
-    Clip? clipBehavior,
-  })  : this.curve = curve ?? Curves.easeInOut,
-        this.clipBehavior = clipBehavior ?? Clip.hardEdge;
+    this.curve = Curves.easeInOut,
+    this.clipBehavior = Clip.hardEdge,
+  });
 
   @override
   final Curve curve;
   @override
   final Clip clipBehavior;
 
+  @override
   FPCDefaultAnimation copyWith({
     Curve? curve,
     Clip? clipBehavior,

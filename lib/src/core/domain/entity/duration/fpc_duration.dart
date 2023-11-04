@@ -15,26 +15,26 @@ abstract class IFPCDuration {
   // Shimmer
   abstract final Duration shimmer;
 
-  // Snackbar
+  // SnackBar
   abstract final Duration snackbar;
 
   IFPCDuration copyWith();
 
   @override
-  bool operator ==(Object object) =>
-      object is IFPCDuration &&
+  bool operator ==(Object other) =>
+      other is IFPCDuration &&
       // Animation
-      object.animationFast == this.animationFast &&
-      object.animationDefault == this.animationDefault &&
-      object.animationSlow == this.animationSlow &&
+      other.animationFast == this.animationFast &&
+      other.animationDefault == this.animationDefault &&
+      other.animationSlow == this.animationSlow &&
       // Badge
-      object.badge == this.badge &&
+      other.badge == this.badge &&
       // Page Indicator
-      object.pageIndicator == this.pageIndicator &&
+      other.pageIndicator == this.pageIndicator &&
       // Shimmer
-      object.shimmer == this.shimmer &&
-      // Snackbar
-      object.snackbar == this.snackbar;
+      other.shimmer == this.shimmer &&
+      // SnackBar
+      other.snackbar == this.snackbar;
 
   @override
   int get hashCode => Object.hashAll([
@@ -48,7 +48,7 @@ abstract class IFPCDuration {
         this.pageIndicator,
         // Shimmer
         this.shimmer,
-        // Snackbar
+        // SnackBar
         this.snackbar,
       ]);
 }

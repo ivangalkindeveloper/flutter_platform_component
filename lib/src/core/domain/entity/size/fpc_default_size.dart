@@ -4,212 +4,114 @@ import 'package:flutter/widgets.dart';
 class FPCDefaultSize implements IFPCSize {
   const FPCDefaultSize({
     // Size
-    double? s10,
-    double? s12,
-    double? s14,
-    double? s16,
-    double? s18,
-    double? s20,
-    double? s28,
-    double? s32,
+    this.s10 = 10,
+    this.s12 = 12,
+    this.s14 = 14,
+    this.s16 = 16,
+    this.s18 = 18,
+    this.s20 = 20,
+    this.s28 = 28,
+    this.s32 = 32,
 
     // Padding
     // Padding / Padding
-    EdgeInsets? paddingDefault,
+    this.paddingDefault = const EdgeInsets.all(16),
     // Padding / Card
-    EdgeInsets? paddingCard,
+    this.paddingCard = const EdgeInsets.all(16),
     // Padding / List View
-    EdgeInsets? paddingListView,
+    this.paddingListView = const EdgeInsets.only(
+      top: 16,
+      left: 16,
+      right: 16,
+      bottom: 96,
+    ),
 
     // Height
     // Height / Button
-    double? heightButton,
+    this.heightButton = 48,
     // Height / Code Field
-    double? heightCodeField,
+    this.heightCodeField = 48,
     // Height / Form Field
-    double? heightFormField,
+    this.heightFormField = 48,
     // Height / Keyboard Button
-    double? heightKeyboardButton,
+    this.heightKeyboardButton = 72,
     // Height / Segment Control
-    double? heightSegmentControl,
+    this.heightSegmentControl = 36,
     // Height / Sliding Segment Control
-    double? heightSlidingSegmentControl,
+    this.heightSlidingSegmentControl = 36,
     // Height / Toggle
-    double? heightToggle,
+    this.heightToggle = 36,
     // Height / Icon
-    double? heightIconSmall,
-    double? heightIconDefault,
-    double? heightIconLarge,
+    this.heightIconSmall = 16,
+    this.heightIconDefault = 24,
+    this.heightIconLarge = 32,
     // Height / Indicator
-    double? heightIndicatorSmall,
-    double? heightIndicatorDefault,
-    double? heightIndicatorLarge,
+    this.heightIndicatorSmall = 16,
+    this.heightIndicatorDefault = 24,
+    this.heightIndicatorLarge = 32,
 
     // BorderRadius
     // BorderRadius / Button
-    BorderRadius? borderRadiusButtonCupertino,
-    BorderRadius? borderRadiusButtonMaterial,
+    this.borderRadiusButtonCupertino =
+        const BorderRadius.all(Radius.circular(8)),
+    this.borderRadiusButtonMaterial =
+        const BorderRadius.all(Radius.circular(4)),
     // BorderRadius / Card
-    BorderRadius? borderRadiusCardCupertino,
-    BorderRadius? borderRadiusCardMaterial,
+    this.borderRadiusCardCupertino = const BorderRadius.all(Radius.circular(8)),
+    this.borderRadiusCardMaterial = const BorderRadius.all(Radius.circular(4)),
     // BorderRadius / Dialog
-    BorderRadius? borderRadiusDialogCupertino,
-    BorderRadius? borderRadiusDialogMaterial,
+    this.borderRadiusDialogCupertino =
+        const BorderRadius.all(Radius.circular(8)),
+    this.borderRadiusDialogMaterial =
+        const BorderRadius.all(Radius.circular(16)),
     // BorderRadius / Field
-    BorderRadius? borderRadiusFieldCupertino,
-    BorderRadius? borderRadiusFieldMaterial,
+    this.borderRadiusFieldCupertino =
+        const BorderRadius.all(Radius.circular(8)),
+    this.borderRadiusFieldMaterial = const BorderRadius.all(Radius.circular(4)),
     // BorderRadius / Modal
-    BorderRadius? borderRadiusModalCupertino,
-    BorderRadius? borderRadiusModalMaterial,
+    this.borderRadiusModalCupertino =
+        const BorderRadius.all(Radius.circular(12)),
+    this.borderRadiusModalMaterial =
+        const BorderRadius.all(Radius.circular(16)),
     // BorderRadius / Segment Control
-    BorderRadius? borderRadiusSegmentControlCupertino,
-    BorderRadius? borderRadiusSegmentControlMaterial,
-    // BorderRadius / Snackbar
-    BorderRadius? borderRadiusSnackbarCupertino,
-    BorderRadius? borderRadiusSnackbarMaterial,
+    this.borderRadiusSegmentControlCupertino =
+        const BorderRadius.all(Radius.circular(16)),
+    this.borderRadiusSegmentControlMaterial =
+        const BorderRadius.all(Radius.circular(16)),
+    // BorderRadius / SnackBar
+    this.borderRadiusSnackBarCupertino =
+        const BorderRadius.all(Radius.circular(8)),
+    this.borderRadiusSnackBarMaterial =
+        const BorderRadius.all(Radius.circular(4)),
     // BorderRadius / Toggle
-    BorderRadius? borderRadiusToggleCupertino,
-    BorderRadius? borderRadiusToggleMaterial,
+    this.borderRadiusToggleCupertino =
+        const BorderRadius.all(Radius.circular(8)),
+    this.borderRadiusToggleMaterial =
+        const BorderRadius.all(Radius.circular(4)),
 
     // BorderWidth
     // BorderWidth / Button
-    double? borderWidthButtonCupertino,
-    double? borderWidthButtonMaterial,
+    this.borderWidthButtonCupertino = 1,
+    this.borderWidthButtonMaterial = 1,
     // BorderWidth / Card
-    double? borderWidthCardCupertino,
-    double? borderWidthCardMaterial,
+    this.borderWidthCardCupertino = 1,
+    this.borderWidthCardMaterial = 1,
     // BorderWidth / Field
-    double? borderWidthFieldCupertino,
-    double? borderWidthFieldMaterial,
+    this.borderWidthFieldCupertino = 1,
+    this.borderWidthFieldMaterial = 1,
     // BorderWidth / Segment Control
-    double? borderWidthSegmentControlCupertino,
-    double? borderWidthSegmentControlMaterial,
-    // BorderWidth / Snackbar
-    double? borderWidthSnackbarCupertino,
-    double? borderWidthSnackbarMaterial,
+    this.borderWidthSegmentControlCupertino = 1,
+    this.borderWidthSegmentControlMaterial = 1,
+    // BorderWidth / SnackBar
+    this.borderWidthSnackBarCupertino = 1,
+    this.borderWidthSnackBarMaterial = 1,
 
     // Opacity
     // Opacity / Blur
-    double? opacityBlur,
+    this.opacityBlur = 0.6,
     // Opacity / Disabled
-    double? opacityDisabled,
-  })  :
-        // Size
-        this.s10 = s10 ?? 10,
-        this.s12 = s12 ?? 12,
-        this.s14 = s14 ?? 14,
-        this.s16 = s16 ?? 16,
-        this.s18 = s18 ?? 18,
-        this.s20 = s20 ?? 20,
-        this.s28 = s28 ?? 28,
-        this.s32 = s32 ?? 32,
-
-        // Padding
-        // Padding / Padding
-        this.paddingDefault = paddingDefault ?? const EdgeInsets.all(16),
-        // Padding / Card
-        this.paddingCard = paddingCard ?? const EdgeInsets.all(16),
-        // Padding / List View
-        this.paddingListView = paddingListView ??
-            const EdgeInsets.only(
-              top: 16,
-              left: 16,
-              right: 16,
-              bottom: 96,
-            ),
-
-        // Height
-        // Height / Button
-        this.heightButton = heightButton ?? 48,
-        // Height / Code Field
-        this.heightCodeField = heightCodeField ?? 48,
-        // Height / Form Field
-        this.heightFormField = heightFormField ?? 48,
-        // Height / Keyboard Button
-        this.heightKeyboardButton = heightKeyboardButton ?? 72,
-        // Height / Segment Control
-        this.heightSegmentControl = heightSegmentControl ?? 36,
-        // Height / Sliding Segment Control
-        this.heightSlidingSegmentControl = heightSlidingSegmentControl ?? 36,
-        // Height / Toggle
-        this.heightToggle = heightToggle ?? 36,
-        // Height / Icon
-        this.heightIconSmall = heightIconSmall ?? 16,
-        this.heightIconDefault = heightIconDefault ?? 24,
-        this.heightIconLarge = heightIconLarge ?? 32,
-        // Height / Indicator
-        this.heightIndicatorSmall = heightIndicatorSmall ?? 16,
-        this.heightIndicatorDefault = heightIndicatorDefault ?? 24,
-        this.heightIndicatorLarge = heightIndicatorLarge ?? 32,
-
-        // BorderRadius
-        // BorderRadius / Button
-        this.borderRadiusButtonCupertino = borderRadiusButtonCupertino ??
-            const BorderRadius.all(Radius.circular(8)),
-        this.borderRadiusButtonMaterial = borderRadiusButtonMaterial ??
-            const BorderRadius.all(Radius.circular(4)),
-        // BorderRadius / Card
-        this.borderRadiusCardCupertino = borderRadiusCardCupertino ??
-            const BorderRadius.all(Radius.circular(8)),
-        this.borderRadiusCardMaterial = borderRadiusCardMaterial ??
-            const BorderRadius.all(Radius.circular(4)),
-        // BorderRadius / Dialog
-        this.borderRadiusDialogCupertino = borderRadiusDialogCupertino ??
-            const BorderRadius.all(Radius.circular(8)),
-        this.borderRadiusDialogMaterial = borderRadiusDialogMaterial ??
-            const BorderRadius.all(Radius.circular(16)),
-        // BorderRadius / Field
-        this.borderRadiusFieldCupertino = borderRadiusFieldCupertino ??
-            const BorderRadius.all(Radius.circular(8)),
-        this.borderRadiusFieldMaterial = borderRadiusFieldMaterial ??
-            const BorderRadius.all(Radius.circular(4)),
-        // BorderRadius / Modal
-        this.borderRadiusModalCupertino = borderRadiusModalCupertino ??
-            const BorderRadius.all(Radius.circular(12)),
-        this.borderRadiusModalMaterial = borderRadiusModalMaterial ??
-            const BorderRadius.all(Radius.circular(16)),
-        // BorderRadius / Segment Control
-        this.borderRadiusSegmentControlCupertino =
-            borderRadiusSegmentControlCupertino ??
-                const BorderRadius.all(Radius.circular(16)),
-        this.borderRadiusSegmentControlMaterial =
-            borderRadiusSegmentControlMaterial ??
-                const BorderRadius.all(Radius.circular(16)),
-        // BorderRadius / Snackbar
-        this.borderRadiusSnackbarCupertino = borderRadiusSnackbarCupertino ??
-            const BorderRadius.all(Radius.circular(8)),
-        this.borderRadiusSnackbarMaterial = borderRadiusSnackbarMaterial ??
-            const BorderRadius.all(Radius.circular(4)),
-        // BorderRadius / Toggle
-        this.borderRadiusToggleCupertino = borderRadiusToggleCupertino ??
-            const BorderRadius.all(Radius.circular(8)),
-        this.borderRadiusToggleMaterial = borderRadiusToggleMaterial ??
-            const BorderRadius.all(Radius.circular(4)),
-
-        // BorderWidth
-        // BorderWidth / Button
-        this.borderWidthButtonCupertino = borderWidthButtonCupertino ?? 1,
-        this.borderWidthButtonMaterial = borderWidthButtonMaterial ?? 1,
-        // BorderWidth / Card
-        this.borderWidthCardCupertino = borderWidthCardCupertino ?? 1,
-        this.borderWidthCardMaterial = borderWidthCardMaterial ?? 1,
-        // BorderWidth / Field
-        this.borderWidthFieldCupertino = borderWidthFieldCupertino ?? 1,
-        this.borderWidthFieldMaterial = borderWidthFieldMaterial ?? 1,
-        // BorderWidth / Segment Control
-        this.borderWidthSegmentControlCupertino =
-            borderWidthSegmentControlCupertino ?? 1,
-        this.borderWidthSegmentControlMaterial =
-            borderWidthSegmentControlMaterial ?? 1,
-        // BorderWidth / Snackbar
-        this.borderWidthSnackbarCupertino = borderWidthSnackbarCupertino ?? 1,
-        this.borderWidthSnackbarMaterial = borderWidthSnackbarMaterial ?? 1,
-
-        // Opacity
-        // Opacity / Blur
-        this.opacityBlur = opacityBlur ?? 0.6,
-        // Opacity / Disabled
-        this.opacityDisabled = opacityDisabled ?? 0.6;
+    this.opacityDisabled = 0.6,
+  });
 
   // Size
   @override
@@ -308,11 +210,11 @@ class FPCDefaultSize implements IFPCSize {
   final BorderRadius borderRadiusSegmentControlCupertino;
   @override
   final BorderRadius borderRadiusSegmentControlMaterial;
-  // BorderRadius / Snackbar
+  // BorderRadius / SnackBar
   @override
-  final BorderRadius borderRadiusSnackbarCupertino;
+  final BorderRadius borderRadiusSnackBarCupertino;
   @override
-  final BorderRadius borderRadiusSnackbarMaterial;
+  final BorderRadius borderRadiusSnackBarMaterial;
   // BorderRadius / Toggle
   @override
   final BorderRadius borderRadiusToggleCupertino;
@@ -340,11 +242,11 @@ class FPCDefaultSize implements IFPCSize {
   final double borderWidthSegmentControlCupertino;
   @override
   final double borderWidthSegmentControlMaterial;
-  // BorderWidth / Snackbar
+  // BorderWidth / SnackBar
   @override
-  final double borderWidthSnackbarCupertino;
+  final double borderWidthSnackBarCupertino;
   @override
-  final double borderWidthSnackbarMaterial;
+  final double borderWidthSnackBarMaterial;
 
   // Opacity
   // Opacity / Blur
@@ -354,6 +256,7 @@ class FPCDefaultSize implements IFPCSize {
   @override
   final double opacityDisabled;
 
+  @override
   FPCDefaultSize copyWith({
     // Size
     double? s10,
@@ -416,9 +319,9 @@ class FPCDefaultSize implements IFPCSize {
     // BorderRadius / Segment Control
     BorderRadius? borderRadiusSegmentControlCupertino,
     BorderRadius? borderRadiusSegmentControlMaterial,
-    // BorderRadius / Snackbar
-    BorderRadius? borderRadiusSnackbarCupertino,
-    BorderRadius? borderRadiusSnackbarMaterial,
+    // BorderRadius / SnackBar
+    BorderRadius? borderRadiusSnackBarCupertino,
+    BorderRadius? borderRadiusSnackBarMaterial,
     // BorderRadius / Toggle
     BorderRadius? borderRadiusToggleCupertino,
     BorderRadius? borderRadiusToggleMaterial,
@@ -436,9 +339,9 @@ class FPCDefaultSize implements IFPCSize {
     // BorderWidth / Segment Control
     double? borderWidthSegmentControlCupertino,
     double? borderWidthSegmentControlMaterial,
-    // BorderWidth / Snackbar
-    double? borderWidthSnackbarCupertino,
-    double? borderWidthSnackbarMaterial,
+    // BorderWidth / SnackBar
+    double? borderWidthSnackBarCupertino,
+    double? borderWidthSnackBarMaterial,
 
     // Opacity
     // Opacity / Blur
@@ -524,11 +427,11 @@ class FPCDefaultSize implements IFPCSize {
         borderRadiusSegmentControlMaterial:
             borderRadiusSegmentControlMaterial ??
                 this.borderRadiusSegmentControlMaterial,
-        // BorderRadius / Snackbar
-        borderRadiusSnackbarCupertino:
-            borderRadiusSnackbarCupertino ?? this.borderRadiusSnackbarCupertino,
-        borderRadiusSnackbarMaterial:
-            borderRadiusSnackbarMaterial ?? this.borderRadiusSnackbarMaterial,
+        // BorderRadius / SnackBar
+        borderRadiusSnackBarCupertino:
+            borderRadiusSnackBarCupertino ?? this.borderRadiusSnackBarCupertino,
+        borderRadiusSnackBarMaterial:
+            borderRadiusSnackBarMaterial ?? this.borderRadiusSnackBarMaterial,
         // BorderRadius / Toggle
         borderRadiusToggleCupertino:
             borderRadiusToggleCupertino ?? this.borderRadiusToggleCupertino,
@@ -557,11 +460,11 @@ class FPCDefaultSize implements IFPCSize {
                 this.borderWidthSegmentControlCupertino,
         borderWidthSegmentControlMaterial: borderWidthSegmentControlMaterial ??
             this.borderWidthSegmentControlMaterial,
-        // BorderWidth / Snackbar
-        borderWidthSnackbarCupertino:
-            borderWidthSnackbarCupertino ?? this.borderWidthSnackbarCupertino,
-        borderWidthSnackbarMaterial:
-            borderWidthSnackbarMaterial ?? this.borderWidthSnackbarMaterial,
+        // BorderWidth / SnackBar
+        borderWidthSnackBarCupertino:
+            borderWidthSnackBarCupertino ?? this.borderWidthSnackBarCupertino,
+        borderWidthSnackBarMaterial:
+            borderWidthSnackBarMaterial ?? this.borderWidthSnackBarMaterial,
 
         // Opacity
         // Opacity / Blur

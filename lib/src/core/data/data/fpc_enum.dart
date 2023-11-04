@@ -16,3 +16,10 @@ enum FPCSwitcherTransitionType {
   horizontal,
   scaled,
 }
+
+enum FPCBorderType {
+  circle,
+  rrect,
+  rect,
+  oval,
+}

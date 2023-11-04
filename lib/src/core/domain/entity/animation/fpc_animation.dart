@@ -9,10 +9,10 @@ abstract class IFPCAnimation {
   IFPCAnimation copyWith();
 
   @override
-  bool operator ==(Object object) =>
-      object is IFPCAnimation &&
-      object.curve == this.curve &&
-      object.clipBehavior == this.clipBehavior;
+  bool operator ==(Object other) =>
+      other is IFPCAnimation &&
+      other.curve == this.curve &&
+      other.clipBehavior == this.clipBehavior;
 
   @override
   int get hashCode => Object.hashAll([

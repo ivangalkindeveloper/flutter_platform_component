@@ -10,9 +10,14 @@ class FPCDefaultLinearGradientConfig implements IFPCLinearGradientConfig {
     this.transform,
   });
 
+  @override
   final AlignmentGeometry begin;
+  @override
   final AlignmentGeometry end;
+  @override
   final List<double>? stops;
+  @override
   final TileMode tileMode;
+  @override
   final GradientTransform? transform;
 }

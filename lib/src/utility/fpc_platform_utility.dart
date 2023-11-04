@@ -11,7 +11,7 @@ class FPCPlatformUtility {
     switch (platform) {
       case FPCPlatform.iOS:
         return cupertino;
-      case FPCPlatform.Android:
+      case FPCPlatform.android:
         return material;
       default:
         return material;
@@ -23,12 +23,12 @@ class FPCPlatformUtility {
     required Cupertino cupertino,
     required Material material,
   }) {
-    final FPCPlatform platform = context.componentPlatform;
+    final FPCPlatform platform = context.fpcPlatform;
 
     switch (platform) {
       case FPCPlatform.iOS:
         return cupertino;
-      case FPCPlatform.Android:
+      case FPCPlatform.android:
         return material;
       default:
         return material;

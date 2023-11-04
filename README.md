@@ -103,7 +103,7 @@
     - [Dialog](#dialog)
     - [Modal](#modal)
     - [Picker](#picker)
-    - [Snackbar](#snackbar)
+    - [SnackBar](#snackbar)
   - [Gradient](#gradient)
     - [GradientMask](#gradientmask)
     - [LinearGradient](#linearGradient)
@@ -152,9 +152,9 @@
   - [Slider](#slider)
   - [SlidingSegmentControl](#slidingsegmentcontrol)
   - [SliverNavigationAppBar](#slivernavigationappbar)
-  - [Snackbar](#snackbar)
-    - [Snackbar](#snackbar)
-    - [GradientSnackbar](#gradientsnackbar)
+  - [SnackBar](#snackbar)
+    - [SnackBar](#snackbar)
+    - [GradientSnackBar](#gradientsnackbar)
   - [Text](#text)
     - [Text](#text)
     - [TextSpan](#textspan)
@@ -214,42 +214,50 @@ First, create and populate the presentational entities you need from the interfa
 ```dart
 class Animations extends FPCDefaultAnimation {
   const Animations();
-  // Fill properties
+
+  // Override properties
 }
 
 class TextStyles extends FPCDefaultTextStyle {
   const TextStyles();
-  // Fill properties
+
+  // Override properties
 }
 
 class TimesOfDay extends FPCDefaultTimeOfDay {
-  TimesOfDay();
-  // Fill properties
+  const TimesOfDay();
+
+  // Override properties
 }
 
 class DateTimes extends FPCDefaultDateTime {
   DateTimes();
-  // Fill properties
+
+  // Override properties
 }
 
 class Durations extends FPCDefaultDuration {
   const Durations();
-  // Fill properties
+
+  // Override properties
 }
 
 class Haptics extends FPCDefaultHaptic {
   const Haptics();
-  // Fill properties
+
+  // Override properties
 }
 
 class LightTheme extends FPCDefaultLightTheme {
   const LightTheme();
-  // Fill properties
+
+  // Override properties
 }
 
 class Sizes extends FPCDefaultSize {
   const Sizes();
-  // Fill properties
+
+  // Override properties
 }
 ```
 Initialize the main component widget at the root:
@@ -258,7 +266,7 @@ void main() => runApp(
       FlutterPlatformComponent( // Initialize the main component widget at the root of widget tree
         animation: const Animations(),
         textStyle: const TextStyles(),
-        timeOfDay: TimesOfDay(),
+        timeOfDay: const TimesOfDay(),
         dateTime: DateTimes(),
         duration: const Durations(),
         platform: FPCPlatform.iOS,
@@ -303,79 +311,79 @@ FPCPrimaryButton(
 
 ## Entities
 ### Animation
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/animation/fpc_animation.dart#L3) of animation properties for animation widgets.\
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/animation/fpc_animation.dart#L3) of animation properties for animation widgets.\
 The default value is [const FPCDefaultAnimation();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/animation/fpc_default_animation.dart#L4).\
 Get the actual animation instance in the widget tree:
 ```dart
-final IFPCAnimation animation = context.componentAnimation;
+final IFPCAnimation animation = context.fpcAnimation;
 ```
 The method allows you to change the current animations:
 ```dart
-context.componentChangeDateTime(const Animations());
+context.fpcChangeDateTime(const Animations());
 ```
 
 ### DateTime
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/date_time/fpc_date_time.dart#L1) of dateTime properties for pickers.\
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/date_time/fpc_date_time.dart#L1) of dateTime properties for pickers.\
 The default value is [FPCDefaultDateTime();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/date_time/fpc_default_date_time.dart#L3).\
 Get the actual date time instance in the widget tree:
 ```dart
-final IFPCDateTime dateTime = context.componentDateTime;
+final IFPCDateTime dateTime = context.fpcDateTime;
 ```
 The method allows you to change the current date times:
 ```dart
-context.componentChangeDateTime(DateTimes());
+context.fpcChangeDateTime(DateTimes());
 ```
 
 ### Duration
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/duration/fpc_duration.dart#L1) of duration properties for animation widgets.\
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/duration/fpc_duration.dart#L1) of duration properties for animation widgets.\
 The default value is [const FPCDefaultDuration();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/duration/fpc_default_duration.dart#L3).\
 Get the actual duration instance in the widget tree:
 ```dart
-final IFPCDuration duration = context.componentDuration;
+final IFPCDuration duration = context.fpcDuration;
 ```
 The method allows you to change the current durations:
 ```dart
-context.componentChangeDuration(const Durations());
+context.fpcChangeDuration(const Durations());
 ```
 
 ### Haptic
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/haptic/fpc_haptic.dart#L1) of vibration functions.\
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/domain/core/entity/haptic/fpc_haptic.dart#L1) of vibration functions.\
 The default value is [const FPCDefaultHaptic();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/haptic/fpc_default_haptic.dart#L4).\
 Get the actual vibration functions instance in the widget tree:
 ```dart
-final IFPCHaptic haptic = context.componentHaptic;
+final IFPCHaptic haptic = context.fpcHaptic;
 ```
 The method allows you to change the current haptic vibration:
 ```dart
-context.componentChangeHaptic(const Haptics());
+context.fpcChangeHaptic(const Haptics());
 ```
 
 ### Platform
-[Enum](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/platform/fpc_platform.dart#L1) that all package components use for platform decomposition.\
-The default value is extension from defaultTargetPlatform [FPCPlatform.values.fromTargetPlatform(defaultTargetPlatform);](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/util//fpc_extension.dart#L13).\
+[Enum](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/platform/fpc_platform.dart#L1) that all package components use for platform decomposition.\
+The default value is extension from defaultTargetPlatform [FPCPlatform.values.fromTargetPlatform(defaultTargetPlatform);](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/utility/fpc_extension.dart#L13).\
 Get the actual platform in the widget tree using context:
 ```dart
-final FPCPlatform platform = context.componentPlatform;
+final FPCPlatform platform = context.fpcPlatform;
 ```
 The method allows you to change the current platform:
 ```dart
-context.componentChangePlatform(platform: FPCPlatform.Android);
+context.fpcChangePlatform(platform: FPCPlatform.android);
 ```
 
 ### Size
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/size/fpc_size.dart#L3) of a sizes that all package components use.\
-The default value is [const FPCDefaultSize();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/size/fpc_default_size.dart#L4).\
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/size/fpc_size.dart#L3) of a sizes that all package components use.\
+The default value is [const FPCDefaultSize();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/size/fpc_default_size.dart#L4).\
 Get the actual sizes instance in the widget tree:
 ```dart
-final IFPCSize size = context.componentSize;
+final IFPCSize size = context.fpcSize;
 ```
 The method allows you to change the current sizes:
 ```dart
-context.componentChangeSize(const Sizes());
+context.fpcChangeSize(const Sizes());
 ```
 You can get the actual size state for platform-decomposing entities:
 ```dart
-final FPCsizeScope sizeScope = context.componentSizeScope;
+final FPCsizeScope sizeScope = context.fpcSizeScope;
 
 final BorderRadius borderRadiusButton = sizeScope.borderRadiusButton;
 final BorderRadius borderRadiusCard = sizeScope.borderRadiusCard;
@@ -383,42 +391,42 @@ final BorderRadius borderRadiusDialog = sizeScope.borderRadiusDialog;
 final BorderRadius borderRadiusField = sizeScope.borderRadiusField;
 final BorderRadius borderRadiusModal = sizeScope.borderRadiusModal;
 final BorderRadius borderRadiusSegmentControl = sizeScope.borderRadiusSegmentControl;
-final BorderRadius borderRadiusSnackbar = sizeScope.borderRadiusSnackbar;
+final BorderRadius borderRadiusSnackBar = sizeScope.borderRadiusSnackBar;
 final BorderRadius borderRadiusToggle = sizeScope.borderRadiusToggle;
 final double borderWidthButton = sizeScope.borderWidthButton;
 final double borderWidthCard = sizeScope.borderWidthCard;
 final double borderWidthField = sizeScope.borderWidthField;
 final double borderWidthSegmentControl = sizeScope.borderWidthSegmentControl;
-final double borderWidthSnackbar = sizeScope.borderWidthSnackbar;
+final double borderWidthSnackBar = sizeScope.borderWidthSnackBar;
 ```
 
 ### TextStyle
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/text_style/fpc_text_style.dart#L3) of a font weights and families that text components use.\
-The default value is [const FPCDefaultTextStyle();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/text_style/fpc_default_text_style.dart#L4).\
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/text_style/fpc_text_style.dart#L3) of a font weights and families that text components use.\
+The default value is [const FPCDefaultTextStyle();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/text_style/fpc_default_text_style.dart#L4).\
 Get the actual text style instance in the widget tree:
 ```dart
-final IFPCTextStyle textStyle = context.componentTextStyle;
+final IFPCTextStyle textStyle = context.fpcTextStyle;
 ```
 The method allows you to change the current text styles:
 ```dart
-context.componentChangeTextStyle(const TextStyles());
+context.fpcChangeTextStyle(const TextStyles());
 ```
 
 ### Theme
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/theme/fpc_theme.dart#L9) of a theme that all package components use.\
-The default value is [FPCDefaultLightTheme();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/theme/fpc_default_light_theme.dart#L10).\
-There is also a dark theme for example - [FPCDefaultDarkTheme();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/theme/fpc_default_dark_theme.dart#L10).\
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/theme/fpc_theme.dart#L9) of a theme that all package components use.\
+The default value is [FPCDefaultLightTheme();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/theme/fpc_default_light_theme.dart#L10).\
+There is also a dark theme for example - [FPCDefaultDarkTheme();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/theme/fpc_default_dark_theme.dart#L10).\
 Get the actual theme instance in the widget tree:
 ```dart
-final IFPCTheme theme = context.componentTheme;
+final IFPCTheme theme = context.fpcTheme;
 ```
 The method allows you to change the current theme:
 ```dart
-context.componentChangeTheme(DarkTheme());
+context.fpcChangeTheme(DarkTheme());
 ```
 You can get the actual theme state for platform-decomposing entities:
 ```dart
-final FPCThemeState themeScope = context.componentThemeScope;
+final FPCThemeState themeScope = context.fpcThemeScope;
 
 final Color barrierColorExpandedModal = themeScope.barrierColorExpandedModal;
 final Color barrierColorPopUpModal = themeScope.barrierColorPopUpModal;
@@ -426,15 +434,15 @@ final Color barrierColorDialog = themeScope.barrierColorDialog;
 ```
 
 ### TimeOfDay
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/time_of_day/fpc_time_of_day.dart#L3) of TimeOfDay pickers.\
-The default value is [FPCDefaultTimeOfDay();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/time_of_day/fpc_default_time_of_day.dart#L5).\
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/time_of_day/fpc_time_of_day.dart#L3) of TimeOfDay pickers.\
+The default value is [FPCDefaultTimeOfDay();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/time_of_day/fpc_default_time_of_day.dart#L5).\
 Get the actual time of day instance in the widget tree:
 ```dart
-final IFPCTimeOfDay timeOfDay = context.componentTimeOfDay;
+final IFPCTimeOfDay timeOfDay = context.fpcTimeOfDay;
 ```
 The method allows you to change the current times of day:
 ```dart
-context.componentChangeTimeOfDay(TimesOfDay());
+context.fpcChangeTimeOfDay(const TimesOfDay());
 ```
 
 ## Components
@@ -1007,7 +1015,7 @@ showFPCTimePicker(
   cupertinoModalBuilder: (BuildContext context) => CupertinoModalBuilder(),
 );
 ```
-#### Snackbar
+#### SnackBar
 Static methods for showing snackbars:
 ```dart
 showFPCSnackBar(
@@ -1527,11 +1535,11 @@ FPCSliverNavigationAppBar(),
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/sliver_navigation_app_bar/sliver_navigation_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/sliver_navigation_app_bar/sliver_navigation_app_bar_material.gif) |
 
-### Snackbar
-#### Snackbar
-Snackbar component with solid colors.
+### SnackBar
+#### SnackBar
+SnackBar component with solid colors.
 ```dart
-FPCPrimarySnackbar(
+FPCPrimarySnackBar(
   child: Child(),
 ),
 ```
@@ -1539,15 +1547,15 @@ FPCPrimarySnackbar(
 
 Ready-made buttons contains outlined snackbars.
 ```dart
-FPCPrimaryOutlineSnackbar(
+FPCPrimaryOutlineSnackBar(
   child: Child(),
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/snackbar/outlined_snackbar.png)
-#### GradientSnackbar
-Snackbar component with gradient colors.
+#### GradientSnackBar
+SnackBar component with gradient colors.
 ```dart
-FPCPrimaryGradientSnackbar(
+FPCPrimaryGradientSnackBar(
   child: Child(),
 ),
 ```
@@ -1555,7 +1563,7 @@ FPCPrimaryGradientSnackbar(
 
 Ready-made buttons contains outlined snackbars.
 ```dart
-FPCPrimaryGradientOutlineSnackbar(
+FPCPrimaryGradientOutlineSnackBar(
   child: Child(),
 ),
 ```
@@ -1649,9 +1657,8 @@ FPCPrimaryGradientToggle<String>(
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/toggle/gradient_toggle_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/images/toggle/gradient_toggle_material.gif) |
 
 ## TODO
-1) Duplication of all colors in ready-made components for easy overwriting;
-2) Elevation of components;
-3) Support WEB.
+1) Elevation of components;
+2) Support WEB.
 
 ## Additional Information
 For more details see example project.\

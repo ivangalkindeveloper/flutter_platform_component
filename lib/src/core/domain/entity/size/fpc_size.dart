@@ -64,9 +64,9 @@ abstract class IFPCSize {
   // BorderRadius / Segment Control
   abstract final BorderRadius borderRadiusSegmentControlCupertino;
   abstract final BorderRadius borderRadiusSegmentControlMaterial;
-  // BorderRadius / Snackbar
-  abstract final BorderRadius borderRadiusSnackbarCupertino;
-  abstract final BorderRadius borderRadiusSnackbarMaterial;
+  // BorderRadius / SnackBar
+  abstract final BorderRadius borderRadiusSnackBarCupertino;
+  abstract final BorderRadius borderRadiusSnackBarMaterial;
   // BorderRadius / Toggle
   abstract final BorderRadius borderRadiusToggleCupertino;
   abstract final BorderRadius borderRadiusToggleMaterial;
@@ -84,9 +84,9 @@ abstract class IFPCSize {
   // BorderWidth / Segment Control
   abstract final double borderWidthSegmentControlCupertino;
   abstract final double borderWidthSegmentControlMaterial;
-  // BorderWidth / Snackbar
-  abstract final double borderWidthSnackbarCupertino;
-  abstract final double borderWidthSnackbarMaterial;
+  // BorderWidth / SnackBar
+  abstract final double borderWidthSnackBarCupertino;
+  abstract final double borderWidthSnackBarMaterial;
 
   // Opacity
   // Opacity / Blur
@@ -97,105 +97,103 @@ abstract class IFPCSize {
   IFPCSize copyWith();
 
   @override
-  bool operator ==(Object object) =>
-      object is IFPCSize &&
+  bool operator ==(Object other) =>
+      other is IFPCSize &&
       // Size
-      object.s10 == this.s10 &&
-      object.s12 == this.s12 &&
-      object.s14 == this.s14 &&
-      object.s16 == this.s16 &&
-      object.s18 == this.s18 &&
-      object.s20 == this.s20 &&
-      object.s28 == this.s28 &&
-      object.s32 == this.s32 &&
+      other.s10 == this.s10 &&
+      other.s12 == this.s12 &&
+      other.s14 == this.s14 &&
+      other.s16 == this.s16 &&
+      other.s18 == this.s18 &&
+      other.s20 == this.s20 &&
+      other.s28 == this.s28 &&
+      other.s32 == this.s32 &&
 
       // Padding
       // Padding / Default
-      object.paddingDefault == this.paddingDefault &&
+      other.paddingDefault == this.paddingDefault &&
       // Padding / Card
-      object.paddingCard == this.paddingCard &&
+      other.paddingCard == this.paddingCard &&
       // Padding / List View
-      object.paddingListView == this.paddingListView &&
+      other.paddingListView == this.paddingListView &&
 
       // Height
       // Height / Button
-      object.heightButton == this.heightButton &&
+      other.heightButton == this.heightButton &&
       // Height / Code Field
-      object.heightCodeField == this.heightCodeField &&
+      other.heightCodeField == this.heightCodeField &&
       // Height / Form Field
-      object.heightFormField == this.heightFormField &&
+      other.heightFormField == this.heightFormField &&
       // Height / Keyboard Button
-      object.heightKeyboardButton == this.heightKeyboardButton &&
+      other.heightKeyboardButton == this.heightKeyboardButton &&
       // Height / Segment Control
-      object.heightSegmentControl == this.heightSegmentControl &&
+      other.heightSegmentControl == this.heightSegmentControl &&
       // Height / Sliding Segment Control
-      object.heightSlidingSegmentControl == this.heightSlidingSegmentControl &&
+      other.heightSlidingSegmentControl == this.heightSlidingSegmentControl &&
       // Height / Toggle
-      object.heightToggle == this.heightToggle &&
+      other.heightToggle == this.heightToggle &&
       // Height / Icon
-      object.heightIconSmall == this.heightIconSmall &&
-      object.heightIconDefault == this.heightIconDefault &&
-      object.heightIconLarge == this.heightIconLarge &&
+      other.heightIconSmall == this.heightIconSmall &&
+      other.heightIconDefault == this.heightIconDefault &&
+      other.heightIconLarge == this.heightIconLarge &&
       // Height / Indicator
-      object.heightIndicatorSmall == this.heightIndicatorSmall &&
-      object.heightIndicatorDefault == this.heightIndicatorDefault &&
-      object.heightIndicatorLarge == this.heightIndicatorLarge &&
+      other.heightIndicatorSmall == this.heightIndicatorSmall &&
+      other.heightIndicatorDefault == this.heightIndicatorDefault &&
+      other.heightIndicatorLarge == this.heightIndicatorLarge &&
 
       // BorderRadius
       // BorderRadius / Button
-      object.borderRadiusButtonCupertino == this.borderRadiusButtonCupertino &&
-      object.borderRadiusButtonMaterial == this.borderRadiusButtonMaterial &&
+      other.borderRadiusButtonCupertino == this.borderRadiusButtonCupertino &&
+      other.borderRadiusButtonMaterial == this.borderRadiusButtonMaterial &&
       // BorderRadius / Card
-      object.borderRadiusCardCupertino == this.borderRadiusCardCupertino &&
-      object.borderRadiusCardMaterial == this.borderRadiusCardMaterial &&
+      other.borderRadiusCardCupertino == this.borderRadiusCardCupertino &&
+      other.borderRadiusCardMaterial == this.borderRadiusCardMaterial &&
       // BorderRadius / Dialog
-      object.borderRadiusDialogCupertino == this.borderRadiusDialogCupertino &&
-      object.borderRadiusDialogMaterial == this.borderRadiusDialogMaterial &&
+      other.borderRadiusDialogCupertino == this.borderRadiusDialogCupertino &&
+      other.borderRadiusDialogMaterial == this.borderRadiusDialogMaterial &&
       // BorderRadius / Field
-      object.borderRadiusFieldCupertino == this.borderRadiusFieldCupertino &&
-      object.borderRadiusFieldMaterial == this.borderRadiusFieldMaterial &&
+      other.borderRadiusFieldCupertino == this.borderRadiusFieldCupertino &&
+      other.borderRadiusFieldMaterial == this.borderRadiusFieldMaterial &&
       // BorderRadius / Modal
-      object.borderRadiusModalCupertino == this.borderRadiusModalCupertino &&
-      object.borderRadiusModalMaterial == this.borderRadiusModalMaterial &&
+      other.borderRadiusModalCupertino == this.borderRadiusModalCupertino &&
+      other.borderRadiusModalMaterial == this.borderRadiusModalMaterial &&
       // BorderRadius / Segment Control
-      object.borderRadiusSegmentControlCupertino ==
+      other.borderRadiusSegmentControlCupertino ==
           this.borderRadiusSegmentControlCupertino &&
-      object.borderRadiusSegmentControlMaterial ==
+      other.borderRadiusSegmentControlMaterial ==
           this.borderRadiusSegmentControlMaterial &&
-      // BorderRadius / Snackbar
-      object.borderRadiusSnackbarCupertino ==
-          this.borderRadiusSnackbarCupertino &&
-      object.borderRadiusSnackbarMaterial ==
-          this.borderRadiusSnackbarMaterial &&
+      // BorderRadius / SnackBar
+      other.borderRadiusSnackBarCupertino ==
+          this.borderRadiusSnackBarCupertino &&
+      other.borderRadiusSnackBarMaterial == this.borderRadiusSnackBarMaterial &&
       // BorderRadius / Toggle
-      object.borderRadiusToggleCupertino == this.borderRadiusToggleCupertino &&
-      object.borderRadiusToggleMaterial == this.borderRadiusToggleMaterial &&
+      other.borderRadiusToggleCupertino == this.borderRadiusToggleCupertino &&
+      other.borderRadiusToggleMaterial == this.borderRadiusToggleMaterial &&
 
       // BorderWidth
       // BorderWidth / Button
-      object.borderWidthButtonCupertino == this.borderWidthButtonCupertino &&
-      object.borderWidthButtonMaterial == this.borderWidthButtonMaterial &&
+      other.borderWidthButtonCupertino == this.borderWidthButtonCupertino &&
+      other.borderWidthButtonMaterial == this.borderWidthButtonMaterial &&
       // BorderWidth / Card
-      object.borderWidthCardCupertino == this.borderWidthCardCupertino &&
-      object.borderWidthCardMaterial == this.borderWidthCardMaterial &&
+      other.borderWidthCardCupertino == this.borderWidthCardCupertino &&
+      other.borderWidthCardMaterial == this.borderWidthCardMaterial &&
       // BorderWidth / Field
-      object.borderWidthFieldCupertino == this.borderWidthFieldCupertino &&
-      object.borderWidthFieldMaterial == this.borderWidthFieldMaterial &&
+      other.borderWidthFieldCupertino == this.borderWidthFieldCupertino &&
+      other.borderWidthFieldMaterial == this.borderWidthFieldMaterial &&
       // BorderWidth / Segment Control
-      object.borderWidthSegmentControlCupertino ==
+      other.borderWidthSegmentControlCupertino ==
           this.borderWidthSegmentControlCupertino &&
-      object.borderWidthSegmentControlMaterial ==
+      other.borderWidthSegmentControlMaterial ==
           this.borderWidthSegmentControlMaterial &&
-      // BorderWidth / Snackbar
-      object.borderWidthSnackbarCupertino ==
-          this.borderWidthSnackbarCupertino &&
-      object.borderWidthSnackbarMaterial == this.borderWidthSnackbarMaterial &&
+      // BorderWidth / SnackBar
+      other.borderWidthSnackBarCupertino == this.borderWidthSnackBarCupertino &&
+      other.borderWidthSnackBarMaterial == this.borderWidthSnackBarMaterial &&
 
       // Opacity
       // Opacity / Blur
-      object.opacityBlur == this.opacityBlur &&
+      other.opacityBlur == this.opacityBlur &&
       // Opacity / Disabled
-      object.opacityDisabled == this.opacityDisabled;
+      other.opacityDisabled == this.opacityDisabled;
 
   @override
   int get hashCode => Object.hashAll([
@@ -260,9 +258,9 @@ abstract class IFPCSize {
         //  / Segment Control
         this.borderRadiusSegmentControlCupertino,
         this.borderRadiusSegmentControlMaterial,
-        //  / Snackbar
-        this.borderRadiusSnackbarCupertino,
-        this.borderRadiusSnackbarMaterial,
+        //  / SnackBar
+        this.borderRadiusSnackBarCupertino,
+        this.borderRadiusSnackBarMaterial,
         //  / Toggle
         this.borderRadiusToggleCupertino,
         this.borderRadiusToggleMaterial,
@@ -280,9 +278,9 @@ abstract class IFPCSize {
         // BorderWidth / Segment Control
         this.borderWidthSegmentControlCupertino,
         this.borderWidthSegmentControlMaterial,
-        // BorderWidth / Snackbar
-        this.borderWidthSnackbarCupertino,
-        this.borderWidthSnackbarMaterial,
+        // BorderWidth / SnackBar
+        this.borderWidthSnackBarCupertino,
+        this.borderWidthSnackBarMaterial,
 
         // Opacity
         // Opacity / Blur

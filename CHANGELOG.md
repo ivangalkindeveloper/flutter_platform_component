@@ -1,10 +1,30 @@
+Update description with normal names and code examples
+Link to snippets and GIF with example
+
+
+## 3.0.0
+* FPCBasicDottedButton;
+* Optimization and refactoring of components with different controllers;
+* Removed named fields BuildContext, text, icon from static methods and components;
+* Changed the name of contextual extensions;
+* The FPCBasicOutlineButton component is separated from FPCBasicButton;
+* A separate component FPCMaterialScrollbar is highlighted;
+* FPCDisabledWrapper;
+* All linter requirements have been corrected and optimized;
+* ExpandedModal > ExpandedBottomSheet;
+* SmallModal > SmallBottomSheet;
+* The SelectField component is allocated to a separate directory;
+* Snippets script and new repository;
+* Updated README.
+
+
 ## 2.3.0
 * Folder refactoring;
 * Entity states and scopes refactoring;
-* FPCNestedWillPopScope;
+* FPCNestedWillPopScope.
 
 ## 2.2.1
-* Fix FPCAnimatedContainter clipBehavior;
+* Fix FPCAnimatedContainter clipBehavior.
 
 ## 2.2.0
 * Folder refactoring;

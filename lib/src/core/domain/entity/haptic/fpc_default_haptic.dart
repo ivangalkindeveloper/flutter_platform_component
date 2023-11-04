@@ -4,33 +4,33 @@ import 'package:flutter_vibrate/flutter_vibrate.dart';
 class FPCDefaultHaptic implements IFPCHaptic {
   const FPCDefaultHaptic();
 
-  Future<void> _vibrate({required FeedbackType type}) async {
+  Future<void> _vibrate(FeedbackType type) async {
     if (FPCPlatformUtility.isMobile && await Vibrate.canVibrate) {
       Vibrate.feedback(type);
     }
   }
 
   @override
-  Future<void> success() => this._vibrate(type: FeedbackType.success);
+  Future<void> success() => this._vibrate(FeedbackType.success);
 
   @override
-  Future<void> warning() => this._vibrate(type: FeedbackType.warning);
+  Future<void> warning() => this._vibrate(FeedbackType.warning);
 
   @override
-  Future<void> error() => this._vibrate(type: FeedbackType.error);
+  Future<void> error() => this._vibrate(FeedbackType.error);
 
   @override
-  Future<void> selection() => this._vibrate(type: FeedbackType.selection);
+  Future<void> selection() => this._vibrate(FeedbackType.selection);
 
   @override
-  Future<void> impact() => this._vibrate(type: FeedbackType.impact);
+  Future<void> impact() => this._vibrate(FeedbackType.impact);
 
   @override
-  Future<void> heavy() => this._vibrate(type: FeedbackType.heavy);
+  Future<void> heavy() => this._vibrate(FeedbackType.heavy);
 
   @override
-  Future<void> medium() => this._vibrate(type: FeedbackType.medium);
+  Future<void> medium() => this._vibrate(FeedbackType.medium);
 
   @override
-  Future<void> light() => this._vibrate(type: FeedbackType.light);
+  Future<void> light() => this._vibrate(FeedbackType.light);
 }

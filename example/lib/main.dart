@@ -1,6 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:example/presentation/screen/main/main_screen.dart';
-import 'package:example/presentation/service/navigation_service.dart';
+import 'package:example/application/widget/main/main_screen.dart';
+import 'package:example/application/navigation_service.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,9 +17,9 @@ void main() {
 
 class Application extends StatelessWidget {
   const Application({
-    Key? key,
+    super.key,
     required this.navigationService,
-  }) : super(key: key);
+  });
 
   final INavigationService navigationService;
 
@@ -30,7 +30,7 @@ class Application extends StatelessWidget {
       onGenerateRoute: this.navigationService.onGenerateRoute,
       onGenerateInitialRoutes: (String route) => [
         FPCRoute.pageRouteFromContext(
-          context: context,
+          context,
           child: const MainScreen(),
         ),
       ],

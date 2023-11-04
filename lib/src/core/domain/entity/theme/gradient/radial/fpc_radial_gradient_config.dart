@@ -12,15 +12,15 @@ abstract class IFPCRadialGradientConfig {
   abstract final GradientTransform? transform;
 
   @override
-  bool operator ==(Object object) =>
-      object is IFPCRadialGradientConfig &&
-      object.center == this.center &&
-      object.radius == this.radius &&
-      object.stops == this.stops &&
-      object.tileMode == this.tileMode &&
-      object.focal == this.focal &&
-      object.focalRadius == this.focalRadius &&
-      object.transform == this.transform;
+  bool operator ==(Object other) =>
+      other is IFPCRadialGradientConfig &&
+      other.center == this.center &&
+      other.radius == this.radius &&
+      other.stops == this.stops &&
+      other.tileMode == this.tileMode &&
+      other.focal == this.focal &&
+      other.focalRadius == this.focalRadius &&
+      other.transform == this.transform;
 
   @override
   int get hashCode => Object.hash(

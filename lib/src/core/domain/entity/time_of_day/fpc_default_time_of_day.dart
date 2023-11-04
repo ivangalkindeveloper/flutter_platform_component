@@ -3,13 +3,11 @@ import 'package:flutter_platform_component/src/core/domain/entity/time_of_day/fp
 import 'package:flutter/material.dart' show TimeOfDay;
 
 class FPCDefaultTimeOfDay implements IFPCTimeOfDay {
-  FPCDefaultTimeOfDay({
-    TimeOfDay? minimum,
-    TimeOfDay? initial,
-    TimeOfDay? maximum,
-  })  : this.minimum = minimum ?? TimeOfDay(hour: 00, minute: 00),
-        this.initial = initial ?? TimeOfDay(hour: 12, minute: 00),
-        this.maximum = maximum ?? TimeOfDay(hour: 24, minute: 00);
+  const FPCDefaultTimeOfDay({
+    this.minimum = const TimeOfDay(hour: 00, minute: 00),
+    this.initial = const TimeOfDay(hour: 12, minute: 00),
+    this.maximum = const TimeOfDay(hour: 24, minute: 00),
+  });
 
   @override
   final TimeOfDay minimum;
@@ -18,6 +16,7 @@ class FPCDefaultTimeOfDay implements IFPCTimeOfDay {
   @override
   final TimeOfDay maximum;
 
+  @override
   FPCDefaultTimeOfDay copyWith({
     TimeOfDay? minimum,
     TimeOfDay? initial,

@@ -3,39 +3,22 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 class FPCDefaultDuration implements IFPCDuration {
   const FPCDefaultDuration({
     // Animation
-    Duration? animationFast,
-    Duration? animationDefault,
-    Duration? animationSlow,
+    this.animationFast = const Duration(milliseconds: 160),
+    this.animationDefault = const Duration(milliseconds: 320),
+    this.animationSlow = const Duration(milliseconds: 640),
 
     // Badge
-    Duration? badge,
+    this.badge = const Duration(milliseconds: 320),
 
     // Page Indicator
-    Duration? pageIndicator,
+    this.pageIndicator = const Duration(milliseconds: 320),
 
     // Shimmer
-    Duration? shimmer,
+    this.shimmer = const Duration(seconds: 1),
 
-    // Snackbar
-    Duration? snackbar,
-  })  :
-        // Animation
-        this.animationFast = animationFast ?? const Duration(milliseconds: 160),
-        this.animationDefault =
-            animationDefault ?? const Duration(milliseconds: 320),
-        this.animationSlow = animationSlow ?? const Duration(milliseconds: 640),
-
-        // Badge
-        this.badge = badge ?? const Duration(milliseconds: 320),
-
-        // Page Indicator
-        this.pageIndicator = pageIndicator ?? const Duration(milliseconds: 320),
-
-        // Shimmer
-        this.shimmer = shimmer ?? const Duration(seconds: 1),
-
-        // Snackbar
-        this.snackbar = snackbar ?? const Duration(seconds: 4);
+    // SnackBar
+    this.snackbar = const Duration(seconds: 4),
+  });
 
   // Animation
   @override
@@ -57,10 +40,11 @@ class FPCDefaultDuration implements IFPCDuration {
   @override
   final Duration shimmer;
 
-  // Snackbar
+  // SnackBar
   @override
   final Duration snackbar;
 
+  @override
   FPCDefaultDuration copyWith({
     // Animation
     Duration? animationFast,
@@ -76,7 +60,7 @@ class FPCDefaultDuration implements IFPCDuration {
     // Shimmer
     Duration? shimmer,
 
-    // Snackbar
+    // SnackBar
     Duration? snackbar,
   }) =>
       FPCDefaultDuration(
@@ -94,7 +78,7 @@ class FPCDefaultDuration implements IFPCDuration {
         // Shimmer
         shimmer: shimmer ?? this.shimmer,
 
-        // Snackbar
+        // SnackBar
         snackbar: snackbar ?? this.snackbar,
       );
 }
