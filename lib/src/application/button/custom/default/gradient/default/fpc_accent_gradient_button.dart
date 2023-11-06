@@ -35,7 +35,7 @@ class FPCAccentGradientButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientButton(
+    return FPCGradientButton(
       backgroundGradient: theme.accentGradient,
       splashColor: theme.accentInternal,
       height: this.height,
@@ -46,7 +46,7 @@ class FPCAccentGradientButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.accentInternal(context),
+        firstChild: const FPCAccentInternalCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

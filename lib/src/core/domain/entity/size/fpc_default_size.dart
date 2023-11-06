@@ -46,9 +46,9 @@ class FPCDefaultSize implements IFPCSize {
     this.heightIconDefault = 24,
     this.heightIconLarge = 32,
     // Height / Indicator
-    this.heightIndicatorSmall = 16,
-    this.heightIndicatorDefault = 24,
-    this.heightIndicatorLarge = 32,
+    this.heightCircularIndicatorSmall = 16,
+    this.heightCircularIndicatorDefault = 24,
+    this.heightCircularIndicatorLarge = 32,
 
     // BorderRadius
     // BorderRadius / Button
@@ -173,11 +173,11 @@ class FPCDefaultSize implements IFPCSize {
   final double heightIconLarge;
   // Height / Indicator
   @override
-  final double heightIndicatorSmall;
+  final double heightCircularIndicatorSmall;
   @override
-  final double heightIndicatorDefault;
+  final double heightCircularIndicatorDefault;
   @override
-  final double heightIndicatorLarge;
+  final double heightCircularIndicatorLarge;
 
   // BorderRadius
   // BorderRadius / Button
@@ -296,9 +296,9 @@ class FPCDefaultSize implements IFPCSize {
     double? heightIconDefault,
     double? heightIconLarge,
     // Height / Indicator
-    double? heightIndicatorSmall,
-    double? heightIndicatorDefault,
-    double? heightIndicatorLarge,
+    double? heightCircularIndicatorSmall,
+    double? heightCircularIndicatorDefault,
+    double? heightCircularIndicatorLarge,
 
     // BorderRadius
     // BorderRadius / Button
@@ -389,10 +389,12 @@ class FPCDefaultSize implements IFPCSize {
         heightIconDefault: heightIconDefault ?? this.heightIconDefault,
         heightIconLarge: heightIconLarge ?? this.heightIconLarge,
         // Height / Indicator
-        heightIndicatorSmall: heightIndicatorSmall ?? this.heightIndicatorSmall,
-        heightIndicatorDefault:
-            heightIndicatorDefault ?? this.heightIndicatorDefault,
-        heightIndicatorLarge: heightIndicatorLarge ?? this.heightIndicatorLarge,
+        heightCircularIndicatorSmall:
+            heightCircularIndicatorSmall ?? this.heightCircularIndicatorSmall,
+        heightCircularIndicatorDefault: heightCircularIndicatorDefault ??
+            this.heightCircularIndicatorDefault,
+        heightCircularIndicatorLarge:
+            heightCircularIndicatorLarge ?? this.heightCircularIndicatorLarge,
 
         // BorderRadius
         // BorderRadius / Button

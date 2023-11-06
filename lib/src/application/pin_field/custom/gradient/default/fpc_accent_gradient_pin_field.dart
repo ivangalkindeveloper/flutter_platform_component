@@ -36,7 +36,7 @@ class FPCAccentGradientPINField extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientPINField(
+    return FPCGradientPINField(
       length: this.length,
       controller: this.controller,
       errorController: this.errorController,

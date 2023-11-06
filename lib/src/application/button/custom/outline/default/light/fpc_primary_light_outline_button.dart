@@ -35,7 +35,7 @@ class FPCPrimaryLightOutlineButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicOutlineButton(
+    return FPCOutlineButton(
       splashColor: theme.primaryLight,
       height: this.height,
       borderRadius: this.borderRadius,
@@ -46,7 +46,7 @@ class FPCPrimaryLightOutlineButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.primaryLight(context),
+        firstChild: const FPCPrimaryLightCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

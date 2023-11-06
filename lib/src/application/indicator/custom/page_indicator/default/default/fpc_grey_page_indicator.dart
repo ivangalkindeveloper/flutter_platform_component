@@ -23,7 +23,7 @@ class FPCGreyPageIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicPageIndicator(
+    return FPCPageIndicator(
       length: this.length,
       index: this.index,
       unselectedColor: theme.greyLight,

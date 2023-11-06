@@ -44,7 +44,7 @@ class FPCPrimaryGradientCodeField extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientCodeField(
+    return FPCGradientCodeField(
       controller: this.controller,
       errorController: this.errorController,
       focusNode: this.focusNode,

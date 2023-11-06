@@ -39,7 +39,7 @@ class FPCSecondaryLightSegmentControl<T> extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicSegmentControl(
+    return FPCSegmentControl(
       value: this.value,
       onChanged: this.onChanged,
       unselectedBackgroundColor: Colors.transparent,

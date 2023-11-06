@@ -35,7 +35,7 @@ class FPCWhiteAlwaysOutlineButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicOutlineButton(
+    return FPCOutlineButton(
       splashColor: theme.whiteAlways,
       height: this.height,
       borderRadius: this.borderRadius,
@@ -46,7 +46,7 @@ class FPCWhiteAlwaysOutlineButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.whiteAlways(context),
+        firstChild: const FPCWhiteAlwaysCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

@@ -21,7 +21,7 @@ class FPCInfoDotBadge extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicDotBadge(
+    return FPCDotBadge(
       color: theme.info,
       position: this.position,
       isShow: this.isShow,

@@ -37,9 +37,8 @@ class _ListSectionScreenState extends State<ListSectionScreen> {
           FPCListSection(
             items: [
               FPCListSectionItem(
-                prefix: FPCIcon.primary(
-                  context,
-                  Icons.account_circle_outlined,
+                prefix: const FPCPrimaryIcon(
+                  icon: Icons.account_circle_outlined,
                 ),
                 title: "First tile",
                 description: "Description of first tile",

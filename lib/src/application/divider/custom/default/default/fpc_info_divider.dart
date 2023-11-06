@@ -13,7 +13,7 @@ class FPCInfoDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicDivider(
+    return FPCDivider(
       color: theme.info,
       height: this.height,
     );

@@ -39,7 +39,7 @@ class FPCDangerLabelButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicButton(
+    return FPCButton(
       backgroundColor: this.isFilled ? theme.dangerLight : Colors.transparent,
       splashColor: theme.danger,
       height: this.height,
@@ -50,7 +50,7 @@ class FPCDangerLabelButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.danger(context),
+        firstChild: const FPCDangerCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

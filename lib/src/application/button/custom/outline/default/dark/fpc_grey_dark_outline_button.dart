@@ -37,7 +37,7 @@ class FPCGreyDarkOutlineButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicOutlineButton(
+    return FPCOutlineButton(
       filledColor: this.isFilled ? theme.grey : null,
       splashColor: theme.greyDark,
       height: this.height,
@@ -49,7 +49,7 @@ class FPCGreyDarkOutlineButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.greyDark(context),
+        firstChild: const FPCGreyDarkCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

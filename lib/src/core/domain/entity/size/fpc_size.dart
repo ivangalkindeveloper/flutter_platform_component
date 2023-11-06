@@ -41,9 +41,9 @@ abstract class IFPCSize {
   abstract final double heightIconDefault;
   abstract final double heightIconLarge;
   // Height / Indicator
-  abstract final double heightIndicatorSmall;
-  abstract final double heightIndicatorDefault;
-  abstract final double heightIndicatorLarge;
+  abstract final double heightCircularIndicatorSmall;
+  abstract final double heightCircularIndicatorDefault;
+  abstract final double heightCircularIndicatorLarge;
 
   // BorderRadius
   // BorderRadius / Button
@@ -137,9 +137,10 @@ abstract class IFPCSize {
       other.heightIconDefault == this.heightIconDefault &&
       other.heightIconLarge == this.heightIconLarge &&
       // Height / Indicator
-      other.heightIndicatorSmall == this.heightIndicatorSmall &&
-      other.heightIndicatorDefault == this.heightIndicatorDefault &&
-      other.heightIndicatorLarge == this.heightIndicatorLarge &&
+      other.heightCircularIndicatorSmall == this.heightCircularIndicatorSmall &&
+      other.heightCircularIndicatorDefault ==
+          this.heightCircularIndicatorDefault &&
+      other.heightCircularIndicatorLarge == this.heightCircularIndicatorLarge &&
 
       // BorderRadius
       // BorderRadius / Button
@@ -235,9 +236,9 @@ abstract class IFPCSize {
         this.heightIconDefault,
         this.heightIconLarge,
         // Height / Indicator
-        this.heightIndicatorSmall,
-        this.heightIndicatorDefault,
-        this.heightIndicatorLarge,
+        this.heightCircularIndicatorSmall,
+        this.heightCircularIndicatorDefault,
+        this.heightCircularIndicatorLarge,
 
         //
         //  / Button

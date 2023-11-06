@@ -13,7 +13,7 @@ class FPCPrimaryDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicDivider(
+    return FPCDivider(
       color: theme.primary,
       height: this.height,
     );

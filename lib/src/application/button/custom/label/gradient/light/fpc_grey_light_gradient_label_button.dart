@@ -37,7 +37,7 @@ class FPCGreyLightGradientLabelButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientButton(
+    return FPCGradientButton(
       backgroundGradient: FPCLinearGradient(
         context: context,
         colors: const [
@@ -54,7 +54,7 @@ class FPCGreyLightGradientLabelButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.greyLight(context),
+        firstChild: const FPCGreyLightCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

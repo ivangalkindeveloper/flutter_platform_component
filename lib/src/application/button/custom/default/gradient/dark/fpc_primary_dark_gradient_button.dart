@@ -35,7 +35,7 @@ class FPCPrimaryDarkGradientButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientButton(
+    return FPCGradientButton(
       backgroundGradient: theme.primaryDarkGradient,
       splashColor: theme.primaryInternal,
       height: this.height,
@@ -46,7 +46,7 @@ class FPCPrimaryDarkGradientButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.primaryInternal(context),
+        firstChild: const FPCPrimaryInternalCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

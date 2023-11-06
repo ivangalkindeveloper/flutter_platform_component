@@ -19,7 +19,7 @@ class FPCDangerDarkSwitch extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicSwitch(
+    return FPCSwitch(
       value: this.value,
       onChanged: this.onChanged,
       unselectedColor: theme.greyDark,

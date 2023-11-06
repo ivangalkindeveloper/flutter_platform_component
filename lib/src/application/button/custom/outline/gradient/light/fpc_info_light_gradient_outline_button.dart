@@ -35,7 +35,7 @@ class FPCInfoLightGradientOutlineButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientOutlineButton(
+    return FPCGradientOutlineButton(
       splashColor: theme.infoLight,
       height: this.height,
       borderRadius: this.borderRadius,
@@ -46,7 +46,7 @@ class FPCInfoLightGradientOutlineButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.infoLightGradient(context),
+        firstChild: const FPCInfoLightGradientCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

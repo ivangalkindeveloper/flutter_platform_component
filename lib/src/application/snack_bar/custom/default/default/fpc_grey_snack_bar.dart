@@ -27,7 +27,7 @@ class FPCGreySnackBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicSnackBar(
+    return FPCSnackBar(
       backgroundColor: theme.grey,
       borderRadius: this.borderRadius,
       borderWidth: this.borderWidth,

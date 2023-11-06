@@ -47,7 +47,7 @@ class FPCSuccessDarkDottedButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicDottedButton(
+    return FPCDottedButton(
       filledColor: this.isFilled ? theme.success : null,
       splashColor: theme.successDark,
       height: this.height,
@@ -63,7 +63,7 @@ class FPCSuccessDarkDottedButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.successDark(context),
+        firstChild: const FPCSuccessDarkCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

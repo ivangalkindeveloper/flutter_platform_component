@@ -25,7 +25,7 @@ class FPCDangerDarkGradientCounterBadge extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientCounterBadge(
+    return FPCGradientCounterBadge(
       gradient: theme.dangerDarkGradient,
       count: this.count,
       countStyle: this.countStyle,

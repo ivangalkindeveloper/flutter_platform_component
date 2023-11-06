@@ -36,7 +36,7 @@ class FPCSuccessPINField extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicPINField(
+    return FPCPINField(
       controller: this.controller,
       errorController: this.errorController,
       focusNode: this.focusNode,

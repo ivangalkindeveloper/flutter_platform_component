@@ -37,7 +37,7 @@ class FPCSuccessDarkOutlineButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicOutlineButton(
+    return FPCOutlineButton(
       filledColor: this.isFilled ? theme.success : null,
       splashColor: theme.successDark,
       height: this.height,
@@ -49,7 +49,7 @@ class FPCSuccessDarkOutlineButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.successDark(context),
+        firstChild: const FPCSuccessDarkCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

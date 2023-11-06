@@ -1,7 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCExpandedBottomSheetAppBar extends FPCBasicAppBar {
+class FPCExpandedBottomSheetAppBar extends FPCAppBar {
   FPCExpandedBottomSheetAppBar(
     super.context, {
     super.key,

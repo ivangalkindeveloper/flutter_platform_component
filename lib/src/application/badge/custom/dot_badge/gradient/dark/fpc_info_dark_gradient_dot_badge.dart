@@ -21,7 +21,7 @@ class FPCInfoDarkGradientDotBadge extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientDotBadge(
+    return FPCGradientDotBadge(
       gradient: theme.infoDarkGradient,
       position: this.position,
       isShow: this.isShow,

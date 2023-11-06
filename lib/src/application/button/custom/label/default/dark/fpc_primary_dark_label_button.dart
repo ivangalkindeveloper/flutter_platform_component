@@ -39,7 +39,7 @@ class FPCPrimaryDarkLabelButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicButton(
+    return FPCButton(
       backgroundColor: this.isFilled ? theme.primary : Colors.transparent,
       splashColor: theme.primaryDark,
       height: this.height,
@@ -50,7 +50,7 @@ class FPCPrimaryDarkLabelButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.primaryDark(context),
+        firstChild: const FPCPrimaryDarkCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

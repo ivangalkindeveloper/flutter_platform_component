@@ -139,18 +139,18 @@ class MainSize extends StatelessWidget {
         SizedBox(height: size.s16 / 4),
         // Height / Indicator
         RowStringValue(
-          title: "Height Indicator Small:",
-          value: size.heightIndicatorSmall.toString(),
+          title: "Height Curcular Indicator Small:",
+          value: size.heightCircularIndicatorSmall.toString(),
         ),
         SizedBox(height: size.s16 / 4),
         RowStringValue(
-          title: "Height Indicator Default:",
-          value: size.heightIndicatorDefault.toString(),
+          title: "Height Curcular Indicator Default:",
+          value: size.heightCircularIndicatorDefault.toString(),
         ),
         SizedBox(height: size.s16 / 4),
         RowStringValue(
-          title: "Height Indicator Large:",
-          value: size.heightIndicatorLarge.toString(),
+          title: "Height Curcular Indicator Large:",
+          value: size.heightCircularIndicatorLarge.toString(),
         ),
         SizedBox(height: size.s16 / 2),
         // BorderRadius

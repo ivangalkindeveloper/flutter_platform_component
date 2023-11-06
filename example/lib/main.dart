@@ -1,15 +1,15 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:example/application/widget/main/main_screen.dart';
-import 'package:example/application/navigation_service.dart';
+import 'package:example/application/navigation_controller.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  final INavigationService navigationService = NavigationService();
+  final INavigationController navigationController = NavigationController();
 
   runApp(
     FlutterPlatformComponent(
       child: Application(
-        navigationService: navigationService,
+        navigationController: navigationController,
       ),
     ),
   );
@@ -18,16 +18,16 @@ void main() {
 class Application extends StatelessWidget {
   const Application({
     super.key,
-    required this.navigationService,
+    required this.navigationController,
   });
 
-  final INavigationService navigationService;
+  final INavigationController navigationController;
 
   @override
   Widget build(BuildContext context) {
     return FPCApp(
-      navigatorKey: this.navigationService.navigatorKey,
-      onGenerateRoute: this.navigationService.onGenerateRoute,
+      navigatorKey: this.navigationController.navigatorKey,
+      onGenerateRoute: this.navigationController.onGenerateRoute,
       onGenerateInitialRoutes: (String route) => [
         FPCRoute.pageRouteFromContext(
           context,

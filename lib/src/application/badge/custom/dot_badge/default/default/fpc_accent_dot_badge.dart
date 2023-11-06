@@ -21,7 +21,7 @@ class FPCAccentDotBadge extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicDotBadge(
+    return FPCDotBadge(
       color: theme.accent,
       position: this.position,
       isShow: this.isShow,

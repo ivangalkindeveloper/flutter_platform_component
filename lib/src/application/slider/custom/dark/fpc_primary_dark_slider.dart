@@ -25,7 +25,7 @@ class FPCPrimaryDarkSlider extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicSlider(
+    return FPCSlider(
       value: this.value,
       onChanged: this.onChanged,
       backgroundColor: theme.greyDark,

@@ -17,7 +17,7 @@ class FPCPrimaryStoryIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicStoryIndicator(
+    return FPCStoryIndicator(
       backgroundColor: theme.grey,
       color: theme.primary,
       length: this.length,

@@ -36,7 +36,7 @@ class FPCPrimaryLightGradientPINField extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientPINField(
+    return FPCGradientPINField(
       controller: this.controller,
       errorController: this.errorController,
       focusNode: this.focusNode,

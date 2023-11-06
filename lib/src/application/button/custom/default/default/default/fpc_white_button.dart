@@ -35,7 +35,7 @@ class FPCWhiteButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicButton(
+    return FPCButton(
       backgroundColor: theme.white,
       splashColor: theme.black,
       height: this.height,
@@ -46,7 +46,7 @@ class FPCWhiteButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.black(context),
+        firstChild: const FPCBlackCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

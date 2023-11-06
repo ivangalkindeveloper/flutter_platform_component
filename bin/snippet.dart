@@ -43,6 +43,7 @@ void main() {
     "_dialog.dart": [],
     "_divider.dart": [],
     "_form_field.dart": [],
+    "_icon.dart": [],
     "_indicator.dart": [],
     "_keyboard.dart": [],
     "_list_refresh.dart": [],
@@ -54,6 +55,7 @@ void main() {
     "_scaffold.dart": [],
     "_scrollbar.dart": [],
     "_segment_control.dart": [],
+    "_select_card.dart": [],
     "_select_field.dart": [],
     "_shimmer.dart": [],
     "_slider.dart": [],
@@ -156,6 +158,7 @@ void _handleTable(
 
 ComponentParseData _parceComponentFile(List<String> lines) {
   String name = "";
+  bool isBasicComponent = false;
   final List<String> constructorRequiredFieldLines = [];
   final List<String> bodyRequiredFieldLines = [];
 
@@ -164,19 +167,25 @@ ComponentParseData _parceComponentFile(List<String> lines) {
       final List<String> lineSplit = line.split(" ");
       name = lineSplit[1].replaceAll("<T>", "");
     }
-
-    if (line.contains("required ")) {
-      constructorRequiredFieldLines.add(
-          line.split(" ").last.replaceAll("this.", "").replaceAll(",", ""));
+    if (line.contains("extends FPCPlatform")) {
+      isBasicComponent = true;
     }
-
-    if (line.contains("final ")) {
-      if (constructorRequiredFieldLines
-          .contains(line.split(" ").last.replaceAll(";", ""))) {
-        bodyRequiredFieldLines.add(line);
+    if (isBasicComponent) {
+      // TODO Basic parse
+    } else {
+      if (line.contains("required ")) {
+        constructorRequiredFieldLines.add(
+            line.split(" ").last.replaceAll("this.", "").replaceAll(",", ""));
+      }
+      if (line.contains("final ")) {
+        if (constructorRequiredFieldLines
+            .contains(line.split(" ").last.replaceAll(";", ""))) {
+          bodyRequiredFieldLines.add(line);
+        }
       }
     }
-    if (line.contains("Widget build(BuildContext context) {")) {
+
+    if (line == "}") {
       break;
     }
   }

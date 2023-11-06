@@ -44,7 +44,7 @@ class FPCBlackAlwaysCodeField extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicCodeField(
+    return FPCCodeField(
       controller: this.controller,
       errorController: this.errorController,
       focusNode: this.focusNode,

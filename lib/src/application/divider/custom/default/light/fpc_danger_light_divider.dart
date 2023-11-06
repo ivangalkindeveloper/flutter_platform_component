@@ -13,7 +13,7 @@ class FPCDangerLightDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicDivider(
+    return FPCDivider(
       color: theme.dangerLight,
       height: this.height,
     );

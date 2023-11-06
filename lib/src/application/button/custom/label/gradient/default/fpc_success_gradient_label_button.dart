@@ -39,7 +39,7 @@ class FPCSuccessGradientLabelButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientButton(
+    return FPCGradientButton(
       backgroundGradient: this.isFilled
           ? theme.successLightGradient
           : FPCLinearGradient(
@@ -58,7 +58,7 @@ class FPCSuccessGradientLabelButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.success(context),
+        firstChild: const FPCSuccessCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

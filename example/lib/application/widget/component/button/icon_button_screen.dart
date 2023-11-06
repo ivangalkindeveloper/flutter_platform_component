@@ -35,12 +35,11 @@ class _IconButtonScreenState extends State<IconButtonScreen> {
                 setState(() => this._isDisabled = !this._isDisabled),
           ),
           SizedBox(height: size.s16 * 2),
-          FPCBasicIconButton(
+          FPCIconButton(
             onPressed: () {},
             isDisabled: this._isDisabled,
-            child: FPCIcon.primary(
-              context,
-              Icons.account_circle_outlined,
+            child: const FPCPrimaryIcon(
+              icon: Icons.account_circle_outlined,
             ),
           ),
         ],

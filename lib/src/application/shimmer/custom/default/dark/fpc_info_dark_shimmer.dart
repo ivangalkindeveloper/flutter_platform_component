@@ -25,7 +25,7 @@ class FPCInfoDarkShimmer extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicShimmer(
+    return FPCShimmer(
       backgroundColor: theme.info,
       highlightColor: theme.infoDark,
       shape: this.shape,

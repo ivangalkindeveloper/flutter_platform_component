@@ -35,7 +35,7 @@ class FPCSecondaryLightOutlineButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicOutlineButton(
+    return FPCOutlineButton(
       splashColor: theme.secondaryLight,
       height: this.height,
       borderRadius: this.borderRadius,
@@ -46,7 +46,7 @@ class FPCSecondaryLightOutlineButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.secondaryLight(context),
+        firstChild: const FPCSecondaryLightCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

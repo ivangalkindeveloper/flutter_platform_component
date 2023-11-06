@@ -37,7 +37,7 @@ class FPCAccentDarkOutlineButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicOutlineButton(
+    return FPCOutlineButton(
       filledColor: this.isFilled ? theme.accent : null,
       splashColor: theme.accentDark,
       height: this.height,
@@ -49,7 +49,7 @@ class FPCAccentDarkOutlineButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.accentDark(context),
+        firstChild: const FPCAccentDarkCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

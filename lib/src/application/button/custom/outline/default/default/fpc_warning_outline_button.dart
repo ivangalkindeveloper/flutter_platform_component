@@ -37,7 +37,7 @@ class FPCWarningOutlineButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicOutlineButton(
+    return FPCOutlineButton(
       filledColor: this.isFilled ? theme.warningLight : null,
       splashColor: theme.warning,
       height: this.height,
@@ -49,7 +49,7 @@ class FPCWarningOutlineButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.warning(context),
+        firstChild: const FPCWarningCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

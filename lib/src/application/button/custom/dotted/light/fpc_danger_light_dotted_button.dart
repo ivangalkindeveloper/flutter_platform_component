@@ -45,7 +45,7 @@ class FPCDangerLightDottedButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicDottedButton(
+    return FPCDottedButton(
       splashColor: theme.dangerLight,
       height: this.height,
       borderRadius: this.borderRadius,
@@ -60,7 +60,7 @@ class FPCDangerLightDottedButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.dangerLight(context),
+        firstChild: const FPCDangerLightCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

@@ -39,7 +39,7 @@ class FPCSuccessLabelButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicButton(
+    return FPCButton(
       backgroundColor: this.isFilled ? theme.successLight : Colors.transparent,
       splashColor: theme.success,
       height: this.height,
@@ -50,7 +50,7 @@ class FPCSuccessLabelButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.success(context),
+        firstChild: const FPCSuccessCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

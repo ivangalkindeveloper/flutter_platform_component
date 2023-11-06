@@ -13,7 +13,7 @@ class FPCAccentLightProgressIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicProgressIndicator(
+    return FPCProgressIndicator(
       backgroundColor: theme.greyLight,
       color: theme.accentLight,
       value: this.value,

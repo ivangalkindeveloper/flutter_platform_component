@@ -45,7 +45,7 @@ class FPCAccentLightDottedButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicDottedButton(
+    return FPCDottedButton(
       splashColor: theme.accentLight,
       height: this.height,
       borderRadius: this.borderRadius,
@@ -60,7 +60,7 @@ class FPCAccentLightDottedButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.accentLight(context),
+        firstChild: const FPCAccentLightCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

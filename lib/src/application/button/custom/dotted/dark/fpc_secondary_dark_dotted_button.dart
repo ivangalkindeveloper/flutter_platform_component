@@ -47,7 +47,7 @@ class FPCSecondaryDarkDottedButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicDottedButton(
+    return FPCDottedButton(
       filledColor: this.isFilled ? theme.secondary : null,
       splashColor: theme.secondaryDark,
       height: this.height,
@@ -63,7 +63,7 @@ class FPCSecondaryDarkDottedButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.secondaryDark(context),
+        firstChild: const FPCSecondaryDarkCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

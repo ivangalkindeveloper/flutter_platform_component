@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter/cupertino.dart' show CupertinoIcons;
 import 'package:flutter/material.dart' show Icons;
 
-class FPCBlurWhiteAlwaysScreenAppBar extends FPCBasicBlurAppBar {
+class FPCBlurWhiteAlwaysScreenAppBar extends FPCBlurAppBar {
   FPCBlurWhiteAlwaysScreenAppBar(
     super.context, {
     super.key,
@@ -52,15 +52,14 @@ class FPCBlurWhiteAlwaysScreenAppBar extends FPCBasicBlurAppBar {
           ? (Matrix4.identity()..scale(-1.0, 1.0, 1.0))
           : Matrix4.identity();
 
-      return FPCBasicIconButton(
+      return FPCIconButton(
         onPressed: onPressedBack,
         child: Transform(
           transform: transform,
           alignment: Alignment.center,
           transformHitTests: false,
-          child: FPCIcon.whiteAlways(
-            context,
-            FPCPlatformUtility.decomposeFromContext<IconData, IconData,
+          child: FPCWhiteAlwaysIcon(
+            icon: FPCPlatformUtility.decomposeFromContext<IconData, IconData,
                 IconData>(
               context: context,
               cupertino: CupertinoIcons.back,

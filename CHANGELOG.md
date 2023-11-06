@@ -1,20 +1,31 @@
-Update description with normal names and code examples
+Добавить сниппеты для контекста
+Добавить сниппеты для глобал функций
+
+Update README with normal names and code examples
 Link to snippets and GIF with example
 
 
 ## 3.0.0
+Addings:
 * FPCBasicDottedButton;
+* FPCDisabledWrapper;
+* Snippets repository;
+Refactoring:
 * Optimization and refactoring of components with different controllers;
 * Removed named fields BuildContext, text, icon from static methods and components;
-* Changed the name of contextual extensions;
-* The FPCBasicOutlineButton component is separated from FPCBasicButton;
-* A separate component FPCMaterialScrollbar is highlighted;
-* FPCDisabledWrapper;
 * All linter requirements have been corrected and optimized;
-* ExpandedModal > ExpandedBottomSheet;
-* SmallModal > SmallBottomSheet;
+* The FPCOutlineButton component is separated from FPCButton;
+* A separate component FPCMaterialScrollbar is highlighted;
 * The SelectField component is allocated to a separate directory;
+* FPCCircularIndicator and FPCIcon are highlighted in separate widgets with colors;
 * Snippets script and new repository;
+Renamings:
+* Removed "Basic" prefix for basic components;
+* "context.component..." > "context.fpc...";
+* "Modal" > "BottomSheet";
+* "Snackbar" > "SnackBar";
+* "SliverNavigationAppBar" > "SliverAppBar";
+Other:
 * Updated README.
 
 

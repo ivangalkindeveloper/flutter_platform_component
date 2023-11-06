@@ -31,7 +31,7 @@ class FPCSuccessDarkSlidingSegmentControl<T> extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicSlidingSegmentControl<T>(
+    return FPCSlidingSegmentControl<T>(
       value: this.value,
       onChanged: this.onChanged,
       backgroundColor: theme.grey,

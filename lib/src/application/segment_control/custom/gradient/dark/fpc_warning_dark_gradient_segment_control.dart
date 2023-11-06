@@ -39,7 +39,7 @@ class FPCWarningDarkGradientSegmentControl<T> extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientSegmentControl(
+    return FPCGradientSegmentControl(
       value: this.value,
       onChanged: this.onChanged,
       unselectedBackgroundGradient: const LinearGradient(

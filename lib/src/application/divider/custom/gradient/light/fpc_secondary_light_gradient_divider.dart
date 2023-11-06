@@ -13,7 +13,7 @@ class FPCSecondaryLightGradientDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientDivider(
+    return FPCGradientDivider(
       gradient: theme.secondaryLightGradient,
       height: this.height,
     );

@@ -25,7 +25,7 @@ class FPCDangerShimmer extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicShimmer(
+    return FPCShimmer(
       backgroundColor: theme.dangerLight,
       highlightColor: theme.danger,
       shape: this.shape,

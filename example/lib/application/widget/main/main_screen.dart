@@ -34,7 +34,7 @@ class _MainScreenState extends State<MainScreen> {
 
     return FPCScaffold(
       backgroundColor: theme.backgroundScaffold,
-      appBar: FPCBasicAppBar(
+      appBar: FPCAppBar(
         context,
         title: "Flutter Component",
       ),

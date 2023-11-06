@@ -23,7 +23,7 @@ class FPCSuccessDarkRadio<T> extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicRadio(
+    return FPCRadio(
       value: this.value,
       groupValue: this.groupValue,
       onChanged: this.onChanged,

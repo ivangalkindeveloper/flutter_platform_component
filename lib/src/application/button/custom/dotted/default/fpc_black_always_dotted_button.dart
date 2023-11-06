@@ -45,7 +45,7 @@ class FPCBlackAlwaysDottedButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicDottedButton(
+    return FPCDottedButton(
       splashColor: theme.blackAlways,
       height: this.height,
       borderRadius: this.borderRadius,
@@ -60,7 +60,7 @@ class FPCBlackAlwaysDottedButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.blackAlways(context),
+        firstChild: const FPCBlackAlwaysCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

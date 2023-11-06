@@ -25,7 +25,7 @@ class FPCSecondaryDarkCounterBadge extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicCounterBadge(
+    return FPCCounterBadge(
       color: theme.secondaryDark,
       count: this.count,
       countStyle: this.countStyle,

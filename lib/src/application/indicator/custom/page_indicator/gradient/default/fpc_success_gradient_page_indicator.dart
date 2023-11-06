@@ -23,7 +23,7 @@ class FPCSuccessGradientPageIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientPageIndicator(
+    return FPCGradientPageIndicator(
       length: this.length,
       index: this.index,
       unselectedGradident: theme.greyGradient,

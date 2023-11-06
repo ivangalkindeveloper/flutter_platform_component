@@ -161,7 +161,7 @@ class FPCAccentFormField extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicFormField(
+    return FPCFormField(
       controller: this.controller,
       focusNode: this.focusNode,
       //

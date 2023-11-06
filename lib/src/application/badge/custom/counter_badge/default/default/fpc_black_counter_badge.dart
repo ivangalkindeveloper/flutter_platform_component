@@ -26,7 +26,7 @@ class FPCBlackCounterBadge extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicCounterBadge(
+    return FPCCounterBadge(
       color: theme.black,
       count: this.count,
       countStyle: this.countStyle?.copyWith(

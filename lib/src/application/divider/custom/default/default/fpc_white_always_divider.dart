@@ -13,7 +13,7 @@ class FPCWhiteAlwaysDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicDivider(
+    return FPCDivider(
       color: theme.whiteAlways,
       height: this.height,
     );

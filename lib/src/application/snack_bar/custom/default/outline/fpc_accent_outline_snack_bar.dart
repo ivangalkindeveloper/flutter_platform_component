@@ -27,7 +27,7 @@ class FPCAccentOutlineSnackBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicSnackBar(
+    return FPCSnackBar(
       backgroundColor: theme.accentLight,
       borderColor: theme.accent,
       borderRadius: this.borderRadius,

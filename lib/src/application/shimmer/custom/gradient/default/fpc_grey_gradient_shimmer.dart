@@ -25,7 +25,7 @@ class FPCGreyGradientShimmer extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientShimmer(
+    return FPCGradientShimmer(
       backgroundGradient: theme.greyLightGradient,
       highlightGradient: theme.greyGradient,
       shape: this.shape,

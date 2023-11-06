@@ -1,5 +1,5 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:example/application/navigation_service.dart';
+import 'package:example/application/navigation_controller.dart';
 import 'package:flutter/material.dart';
 
 class MainComponent extends StatelessWidget {
@@ -17,7 +17,7 @@ class MainComponent extends StatelessWidget {
           title: "Animated Align",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.animatedAlignScreen,
+            NavigationController.animatedAlignScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -25,7 +25,7 @@ class MainComponent extends StatelessWidget {
           title: "Animated Container",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.animatedContainerScreen,
+            NavigationController.animatedContainerScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -33,7 +33,7 @@ class MainComponent extends StatelessWidget {
           title: "Animated Cross Fade",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.animatedCrossFadeScreen,
+            NavigationController.animatedCrossFadeScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -41,7 +41,7 @@ class MainComponent extends StatelessWidget {
           title: "Animated Default Text Style",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.animatedDefaultTextStyleScreen,
+            NavigationController.animatedDefaultTextStyleScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -49,7 +49,7 @@ class MainComponent extends StatelessWidget {
           title: "Animated Fade In",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.animatedFadeInScreen,
+            NavigationController.animatedFadeInScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -57,7 +57,7 @@ class MainComponent extends StatelessWidget {
           title: "Animated Fade Out",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.animatedFadeOutScreen,
+            NavigationController.animatedFadeOutScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -65,7 +65,7 @@ class MainComponent extends StatelessWidget {
           title: "Animated Opacity Stack",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.animatedOpacityStackScreen,
+            NavigationController.animatedOpacityStackScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -73,7 +73,7 @@ class MainComponent extends StatelessWidget {
           title: "Animated Opacity",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.animatedOpacityScreen,
+            NavigationController.animatedOpacityScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -81,7 +81,7 @@ class MainComponent extends StatelessWidget {
           title: "Animated Open Container",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.animatedOpenContainerScreen,
+            NavigationController.animatedOpenContainerScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -89,7 +89,7 @@ class MainComponent extends StatelessWidget {
           title: "Animated Positioned",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.animatedPositionedScreen,
+            NavigationController.animatedPositionedScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -97,7 +97,7 @@ class MainComponent extends StatelessWidget {
           title: "Animated Size",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.animatedSizeScreen,
+            NavigationController.animatedSizeScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -105,7 +105,7 @@ class MainComponent extends StatelessWidget {
           title: "Animated Switcher",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.animatedSwitcherScreen,
+            NavigationController.animatedSwitcherScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -113,7 +113,7 @@ class MainComponent extends StatelessWidget {
           title: "Animated Transition Switcher",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.animatedTransitionSwitcherScreen,
+            NavigationController.animatedTransitionSwitcherScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -121,7 +121,7 @@ class MainComponent extends StatelessWidget {
           title: "App Bar",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.appBarScreen,
+            NavigationController.appBarScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -129,7 +129,7 @@ class MainComponent extends StatelessWidget {
           title: "Blur App Bar",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.blurAppBarScreen,
+            NavigationController.blurAppBarScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -137,7 +137,7 @@ class MainComponent extends StatelessWidget {
           title: "Counter Badge",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.counterBadgeScreen,
+            NavigationController.counterBadgeScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -145,7 +145,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient Counter Badge",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientCounterBadgeScreen,
+            NavigationController.gradientCounterBadgeScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -153,7 +153,7 @@ class MainComponent extends StatelessWidget {
           title: "Dot Badge",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.dotBadgeScreen,
+            NavigationController.dotBadgeScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -161,7 +161,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient Dot Badge",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientDotBadgeScreen,
+            NavigationController.gradientDotBadgeScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -169,7 +169,7 @@ class MainComponent extends StatelessWidget {
           title: "Blur",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.blurScreen,
+            NavigationController.blurScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -177,7 +177,7 @@ class MainComponent extends StatelessWidget {
           title: "Action Bottom Sheet",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.actionBottomSheetScreen,
+            NavigationController.actionBottomSheetScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -185,7 +185,7 @@ class MainComponent extends StatelessWidget {
           title: "Expanded Bottom Sheet",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.expandedBottomSheetScreen,
+            NavigationController.expandedBottomSheetScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -193,7 +193,7 @@ class MainComponent extends StatelessWidget {
           title: "Black Always Expanded Bottom Sheet",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.blackAlwaysExpandBottomSheetScreen,
+            NavigationController.blackAlwaysExpandBottomSheetScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -201,7 +201,7 @@ class MainComponent extends StatelessWidget {
           title: "Blur Expanded Bottom Sheet",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.blurExpandedBottomSheetScreen,
+            NavigationController.blurExpandedBottomSheetScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -209,7 +209,7 @@ class MainComponent extends StatelessWidget {
           title: "Blur Black Always Expanded Bottom Sheet",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.blurBlackAlwaysExpandBottomSheetScreen,
+            NavigationController.blurBlackAlwaysExpandBottomSheetScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -217,7 +217,7 @@ class MainComponent extends StatelessWidget {
           title: "Small Bottom Sheet",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.popUpBottomSheetScreen,
+            NavigationController.popUpBottomSheetScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -225,7 +225,7 @@ class MainComponent extends StatelessWidget {
           title: "Button",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.buttonScreen,
+            NavigationController.buttonScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -233,7 +233,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient Button",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientButtonScreen,
+            NavigationController.gradientButtonScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -241,7 +241,7 @@ class MainComponent extends StatelessWidget {
           title: "Label Button",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.labelButtonScreen,
+            NavigationController.labelButtonScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -249,7 +249,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient Label Button",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientLabelButtonScreen,
+            NavigationController.gradientLabelButtonScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -257,7 +257,7 @@ class MainComponent extends StatelessWidget {
           title: "Outline Button",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.outlineButtonScreen,
+            NavigationController.outlineButtonScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -265,7 +265,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient Outline Button",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientOutlineButtonScreen,
+            NavigationController.gradientOutlineButtonScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -273,7 +273,7 @@ class MainComponent extends StatelessWidget {
           title: "Dotted Button",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.dottedButtonScreen,
+            NavigationController.dottedButtonScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -281,7 +281,7 @@ class MainComponent extends StatelessWidget {
           title: "Icon Button",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.iconButtonScreen,
+            NavigationController.iconButtonScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -289,7 +289,7 @@ class MainComponent extends StatelessWidget {
           title: "Bottom Sheet Button",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.modalButtonScreen,
+            NavigationController.modalButtonScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -297,7 +297,7 @@ class MainComponent extends StatelessWidget {
           title: "Card",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.cardScreen,
+            NavigationController.cardScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -305,7 +305,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient Card",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientCardScreen,
+            NavigationController.gradientCardScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -313,7 +313,7 @@ class MainComponent extends StatelessWidget {
           title: "Select Card",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.selectCardScreen,
+            NavigationController.selectCardScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -321,7 +321,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient Select Card",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientSelectCardScreen,
+            NavigationController.gradientSelectCardScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -329,7 +329,7 @@ class MainComponent extends StatelessWidget {
           title: "Checkbox",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.checkboxScreen,
+            NavigationController.checkboxScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -337,7 +337,7 @@ class MainComponent extends StatelessWidget {
           title: "Code Field",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.codeFieldScreen,
+            NavigationController.codeFieldScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -345,7 +345,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient Code Field",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientCodeFieldScreen,
+            NavigationController.gradientCodeFieldScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -353,7 +353,7 @@ class MainComponent extends StatelessWidget {
           title: "Dialog",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.dialogScreen,
+            NavigationController.dialogScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -361,7 +361,7 @@ class MainComponent extends StatelessWidget {
           title: "Divider",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.dividerScreen,
+            NavigationController.dividerScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -369,7 +369,7 @@ class MainComponent extends StatelessWidget {
           title: "Form Field",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.formFieldScreen,
+            NavigationController.formFieldScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -377,7 +377,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient Form Field",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientFormFieldScreen,
+            NavigationController.gradientFormFieldScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -385,7 +385,7 @@ class MainComponent extends StatelessWidget {
           title: "Select Field",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.selectFieldScreen,
+            NavigationController.selectFieldScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -393,7 +393,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient Select Field",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientSelectFieldScreen,
+            NavigationController.gradientSelectFieldScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -401,7 +401,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientScreen,
+            NavigationController.gradientScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -409,7 +409,7 @@ class MainComponent extends StatelessWidget {
           title: "Icon",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.iconScreen,
+            NavigationController.iconScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -417,7 +417,7 @@ class MainComponent extends StatelessWidget {
           title: "Circular Indicator",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.circularIndicatorScreen,
+            NavigationController.circularIndicatorScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -425,7 +425,7 @@ class MainComponent extends StatelessWidget {
           title: "Page Indicator",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.pageIndicatorScreen,
+            NavigationController.pageIndicatorScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -433,7 +433,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient Page Indicator",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientPageIndicatorScreen,
+            NavigationController.gradientPageIndicatorScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -441,7 +441,7 @@ class MainComponent extends StatelessWidget {
           title: "Progress Indicator",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.progressIndicatorScreen,
+            NavigationController.progressIndicatorScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -449,7 +449,7 @@ class MainComponent extends StatelessWidget {
           title: "Story Indicator",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.storyIndicatorScreen,
+            NavigationController.storyIndicatorScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -457,7 +457,7 @@ class MainComponent extends StatelessWidget {
           title: "Keyboard Button",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.keyboardButtonScreen,
+            NavigationController.keyboardButtonScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -465,7 +465,7 @@ class MainComponent extends StatelessWidget {
           title: "Keyboard Number Button",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.keyboardNumberButtonScreen,
+            NavigationController.keyboardNumberButtonScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -473,7 +473,7 @@ class MainComponent extends StatelessWidget {
           title: "Keyboard",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.keyboardScreen,
+            NavigationController.keyboardScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -481,7 +481,7 @@ class MainComponent extends StatelessWidget {
           title: "List Refresh",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.listRefreshScreen,
+            NavigationController.listRefreshScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -489,7 +489,7 @@ class MainComponent extends StatelessWidget {
           title: "List Section",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.listSectionScreen,
+            NavigationController.listSectionScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -497,7 +497,7 @@ class MainComponent extends StatelessWidget {
           title: "Bottom Navigation Bar",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.bottomNavigationBarScreen,
+            NavigationController.bottomNavigationBarScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -505,7 +505,7 @@ class MainComponent extends StatelessWidget {
           title: "Blur Bottom Navigation Bar",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.blurBottomNavigationBarScreen,
+            NavigationController.blurBottomNavigationBarScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -513,7 +513,7 @@ class MainComponent extends StatelessWidget {
           title: "Navigator",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.navigatorScreen,
+            NavigationController.navigatorScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -521,7 +521,7 @@ class MainComponent extends StatelessWidget {
           title: "Date Picker",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.datePickerScreen,
+            NavigationController.datePickerScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -529,7 +529,7 @@ class MainComponent extends StatelessWidget {
           title: "Time Picker",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.timePickerScreen,
+            NavigationController.timePickerScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -537,7 +537,7 @@ class MainComponent extends StatelessWidget {
           title: "PIN Field",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.pinFieldScreen,
+            NavigationController.pinFieldScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -545,7 +545,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient PIN Field",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientPinFieldScreen,
+            NavigationController.gradientPinFieldScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -553,7 +553,7 @@ class MainComponent extends StatelessWidget {
           title: "Radio",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.radioScreen,
+            NavigationController.radioScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -561,7 +561,7 @@ class MainComponent extends StatelessWidget {
           title: "Scaffold",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.scaffoldScreen,
+            NavigationController.scaffoldScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -569,7 +569,7 @@ class MainComponent extends StatelessWidget {
           title: "Scrollbar",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.scrollbarScreen,
+            NavigationController.scrollbarScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -577,7 +577,7 @@ class MainComponent extends StatelessWidget {
           title: "Segment Control",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.segmentControlScreen,
+            NavigationController.segmentControlScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -585,7 +585,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient Segment Control",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientSegmentControlScreen,
+            NavigationController.gradientSegmentControlScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -593,7 +593,7 @@ class MainComponent extends StatelessWidget {
           title: "Shimmer",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.shimmerScreen,
+            NavigationController.shimmerScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -601,7 +601,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient Shimmer",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientShimmerScreen,
+            NavigationController.gradientShimmerScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -609,7 +609,7 @@ class MainComponent extends StatelessWidget {
           title: "Slider",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.sliderScreen,
+            NavigationController.sliderScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -617,15 +617,15 @@ class MainComponent extends StatelessWidget {
           title: "Sliding Segment Control",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.slidingSegmentControlScreen,
+            NavigationController.slidingSegmentControlScreen,
           ),
         ),
         SizedBox(height: size.s16),
         FPCPrimaryButton(
-          title: "Sliver Navigation Bar",
+          title: "Sliver App Bar",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.sliverNavigationBarScreen,
+            NavigationController.sliverAppBarScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -633,7 +633,7 @@ class MainComponent extends StatelessWidget {
           title: "SnackBar",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.snackbarScreen,
+            NavigationController.snackBarScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -641,7 +641,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient SnackBar",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientSnackBarScreen,
+            NavigationController.gradientSnackBarScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -649,7 +649,7 @@ class MainComponent extends StatelessWidget {
           title: "Switch",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.switchScreen,
+            NavigationController.switchScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -657,7 +657,7 @@ class MainComponent extends StatelessWidget {
           title: "Text",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.textScreen,
+            NavigationController.textScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -665,7 +665,7 @@ class MainComponent extends StatelessWidget {
           title: "Text Span",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.textSpanScreen,
+            NavigationController.textSpanScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -673,7 +673,7 @@ class MainComponent extends StatelessWidget {
           title: "Toggle",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.toggleScreen,
+            NavigationController.toggleScreen,
           ),
         ),
         SizedBox(height: size.s16 / 2),
@@ -681,7 +681,7 @@ class MainComponent extends StatelessWidget {
           title: "Gradient Toggle",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationService.gradientToggleScreen,
+            NavigationController.gradientToggleScreen,
           ),
         ),
       ],

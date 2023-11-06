@@ -82,9 +82,8 @@ class _FPCExpandedBottomSheetCloseButtonMaterial extends StatelessWidget {
         iconSize: size.heightIconDefault,
         onPressed: this.onPressed,
         padding: EdgeInsets.zero,
-        icon: FPCIcon.grey(
-          context,
-          Icons.close,
+        icon: const FPCGreyIcon(
+          icon: Icons.close,
         ),
       ),
     );

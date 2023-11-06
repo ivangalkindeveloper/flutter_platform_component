@@ -35,7 +35,7 @@ class FPCGreyLightButton extends StatelessWidget {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicButton(
+    return FPCButton(
       backgroundColor: theme.greyLight,
       splashColor: theme.whiteAlways,
       height: this.height,
@@ -46,7 +46,7 @@ class FPCGreyLightButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: FPCAnimatedOpacityStack(
         condition: this.isLoading,
-        firstChild: FPCCircularIndicator.whiteAlways(context),
+        firstChild: const FPCWhiteAlwaysCircularIndicator(),
         secondChild: FPCButtonRowChild(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,

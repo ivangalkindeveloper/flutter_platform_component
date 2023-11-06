@@ -161,7 +161,7 @@ class FPCPrimaryGradientFormField extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientFormField(
+    return FPCGradientFormField(
       controller: this.controller,
       focusNode: this.focusNode,
       //

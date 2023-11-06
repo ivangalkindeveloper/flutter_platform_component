@@ -19,7 +19,7 @@ class FPCWarningDarkCheckbox extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicCheckbox(
+    return FPCCheckbox(
       value: this.value,
       onChanged: this.onChanged,
       unselectedColor: theme.grey,

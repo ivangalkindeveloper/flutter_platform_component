@@ -39,7 +39,7 @@ class FPCSecondaryGradientToggle<T> extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientToggle(
+    return FPCGradientToggle(
       value: this.value,
       onChanged: this.onChanged,
       unselectedBackgroundGradient: FPCLinearGradient(

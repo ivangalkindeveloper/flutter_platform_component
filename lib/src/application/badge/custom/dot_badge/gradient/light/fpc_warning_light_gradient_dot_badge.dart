@@ -21,7 +21,7 @@ class FPCWarningLightGradientDotBadge extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientDotBadge(
+    return FPCGradientDotBadge(
       gradient: theme.warningLightGradient,
       position: this.position,
       isShow: this.isShow,

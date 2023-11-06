@@ -39,7 +39,7 @@ class FPCSecondaryToggle<T> extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicToggle(
+    return FPCToggle(
       value: this.value,
       onChanged: this.onChanged,
       unselectedBackgroundColor: theme.backgroundComponent,

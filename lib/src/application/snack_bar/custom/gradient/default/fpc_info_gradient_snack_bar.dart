@@ -27,7 +27,7 @@ class FPCInfoGradientSnackBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
 
-    return FPCBasicGradientSnackBar(
+    return FPCGradientSnackBar(
       backgroundGradient: theme.infoGradient,
       borderRadius: this.borderRadius,
       borderWidth: this.borderWidth,

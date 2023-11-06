@@ -84,9 +84,8 @@ class _FPCWhiteAlwaysExpandedBottomSheetCloseButtonMaterial
         iconSize: size.heightIconDefault,
         onPressed: this.onPressed,
         padding: EdgeInsets.zero,
-        icon: FPCIcon.whiteAlways(
-          context,
-          Icons.close,
+        icon: const FPCWhiteAlwaysIcon(
+          icon: Icons.close,
         ),
       ),
     );
