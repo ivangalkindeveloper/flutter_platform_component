@@ -7,6 +7,8 @@ class FPCGradientCard extends StatelessWidget {
   const FPCGradientCard({
     super.key,
     required this.backgroundGradient,
+    this.height,
+    this.width,
     this.constraints,
     this.borderRadius,
     this.borderGradient,
@@ -16,6 +18,8 @@ class FPCGradientCard extends StatelessWidget {
   });
 
   final Gradient backgroundGradient;
+  final double? height;
+  final double? width;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Gradient? borderGradient;
@@ -36,6 +40,8 @@ class FPCGradientCard extends StatelessWidget {
     return Stack(
       children: [
         FPCAnimatedContainer(
+          height: this.height,
+          width: this.width,
           padding: padding,
           constraints: this.constraints,
           decoration: BoxDecoration(

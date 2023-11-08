@@ -6,6 +6,8 @@ import 'package:flutter/material.dart' show Colors;
 class FPCBlurSelectCard extends StatelessWidget {
   const FPCBlurSelectCard({
     super.key,
+    this.height,
+    this.width,
     this.constraints,
     this.borderRadius,
     this.borderColor,
@@ -17,6 +19,8 @@ class FPCBlurSelectCard extends StatelessWidget {
     required this.child,
   });
 
+  final double? height;
+  final double? width;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Color? borderColor;

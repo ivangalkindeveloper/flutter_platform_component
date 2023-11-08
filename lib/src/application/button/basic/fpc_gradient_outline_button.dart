@@ -7,7 +7,7 @@ import 'package:flutter/cupertino.dart' show CupertinoButton;
 class FPCGradientOutlineButton extends FPCPlatformWidget {
   FPCGradientOutlineButton({
     super.key,
-    Gradient? filledGradient,
+    Gradient? backgroundGradient,
     Color? splashColor,
     double? height,
     BorderRadius? borderRadius,
@@ -21,7 +21,7 @@ class FPCGradientOutlineButton extends FPCPlatformWidget {
   }) : super(
           cupertino: _FPCGradientOutlineButtonCupertino(
             key: key,
-            filledGradient: filledGradient,
+            backgroundGradient: backgroundGradient,
             splashColor: splashColor,
             height: height,
             borderRadius: borderRadius,
@@ -35,7 +35,7 @@ class FPCGradientOutlineButton extends FPCPlatformWidget {
           ),
           material: _FPCGradientOutlineButtonMaterial(
             key: key,
-            filledGradient: filledGradient,
+            backgroundGradient: backgroundGradient,
             splashColor: splashColor,
             height: height,
             borderRadius: borderRadius,
@@ -53,7 +53,7 @@ class FPCGradientOutlineButton extends FPCPlatformWidget {
 class _FPCGradientOutlineButtonCupertino extends StatelessWidget {
   const _FPCGradientOutlineButtonCupertino({
     super.key,
-    required this.filledGradient,
+    required this.backgroundGradient,
     required this.splashColor,
     required this.height,
     required this.borderRadius,
@@ -66,7 +66,7 @@ class _FPCGradientOutlineButtonCupertino extends StatelessWidget {
     required this.child,
   });
 
-  final Gradient? filledGradient;
+  final Gradient? backgroundGradient;
   final Color? splashColor;
   final double? height;
   final BorderRadius? borderRadius;
@@ -110,7 +110,7 @@ class _FPCGradientOutlineButtonCupertino extends StatelessWidget {
                 height: height,
                 padding: padding,
                 decoration: BoxDecoration(
-                  gradient: this.filledGradient,
+                  gradient: this.backgroundGradient,
                   borderRadius: borderRadius,
                 ),
                 child: this.child,
@@ -141,7 +141,7 @@ class _FPCGradientOutlineButtonCupertino extends StatelessWidget {
 class _FPCGradientOutlineButtonMaterial extends StatelessWidget {
   const _FPCGradientOutlineButtonMaterial({
     super.key,
-    required this.filledGradient,
+    required this.backgroundGradient,
     required this.splashColor,
     required this.height,
     required this.borderRadius,
@@ -154,7 +154,7 @@ class _FPCGradientOutlineButtonMaterial extends StatelessWidget {
     required this.child,
   });
 
-  final Gradient? filledGradient;
+  final Gradient? backgroundGradient;
   final Color? splashColor;
   final double? height;
   final BorderRadius? borderRadius;
@@ -193,7 +193,7 @@ class _FPCGradientOutlineButtonMaterial extends StatelessWidget {
           height: height,
           padding: EdgeInsets.zero,
           decoration: BoxDecoration(
-            gradient: this.filledGradient,
+            gradient: this.backgroundGradient,
             borderRadius: borderRadius,
           ),
           child: ElevatedButton(

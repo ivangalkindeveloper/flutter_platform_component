@@ -4,6 +4,8 @@ import 'package:flutter/widgets.dart';
 class FPCGreyLightGradientSelectCard extends StatelessWidget {
   const FPCGreyLightGradientSelectCard({
     super.key,
+    this.height,
+    this.width,
     this.constraints,
     this.borderRadius,
     this.borderGradient,
@@ -15,6 +17,8 @@ class FPCGreyLightGradientSelectCard extends StatelessWidget {
     required this.child,
   });
 
+  final double? height;
+  final double? width;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Gradient? borderGradient;
@@ -32,6 +36,8 @@ class FPCGreyLightGradientSelectCard extends StatelessWidget {
     return FPCGradientSelectCard(
       backgroundGradient: theme.greyLightGradient,
       splashColor: theme.whiteAlways,
+      height: this.height,
+      width: this.width,
       constraints: this.constraints,
       borderRadius: this.borderRadius,
       borderGradient: this.borderGradient,

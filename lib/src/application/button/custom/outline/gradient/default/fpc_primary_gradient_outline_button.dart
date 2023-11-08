@@ -38,7 +38,7 @@ class FPCPrimaryGradientOutlineButton extends StatelessWidget {
     final IFPCTheme theme = context.fpcTheme;
 
     return FPCGradientOutlineButton(
-      filledGradient: this.isFilled ? theme.primaryLightGradient : null,
+      backgroundGradient: this.isFilled ? theme.primaryLightGradient : null,
       splashColor: theme.primary,
       height: this.height,
       borderRadius: this.borderRadius,

@@ -5,6 +5,8 @@ class FPCCard extends StatelessWidget {
   const FPCCard({
     super.key,
     required this.backgroundColor,
+    this.height,
+    this.width,
     this.constraints,
     this.borderRadius,
     this.borderColor,
@@ -14,6 +16,8 @@ class FPCCard extends StatelessWidget {
   });
 
   final Color backgroundColor;
+  final double? height;
+  final double? width;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Color? borderColor;
@@ -32,6 +36,8 @@ class FPCCard extends StatelessWidget {
     final EdgeInsets padding = this.padding ?? size.paddingCard;
 
     return FPCAnimatedContainer(
+      height: this.height,
+      width: this.width,
       padding: padding,
       constraints: this.constraints,
       decoration: BoxDecoration(

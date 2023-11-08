@@ -7,6 +7,7 @@ import 'package:flutter/cupertino.dart' show showCupertinoModalPopup;
 
 Future<DateTime?> showFPCDatePicker(
   BuildContext context, {
+  bool useRootNavigator = false,
   FPCDateTimeRange? dateTimeRange,
   required Widget Function(BuildContext) cupertinoModalBuilder,
   Locale? materialDialogLocale,
@@ -29,7 +30,7 @@ Future<DateTime?> showFPCDatePicker(
     case FPCPlatform.iOS:
       return showCupertinoModalPopup<DateTime?>(
         context: context,
-        useRootNavigator: false,
+        useRootNavigator: useRootNavigator,
         barrierColor: barrierColorMethod,
         builder: cupertinoModalBuilder,
       );
@@ -37,7 +38,7 @@ Future<DateTime?> showFPCDatePicker(
     case FPCPlatform.android:
       return showDatePicker(
         context: context,
-        useRootNavigator: false,
+        useRootNavigator: useRootNavigator,
         firstDate: dateTimeMinimum,
         initialDate: dateTimeInitial,
         lastDate: dateTimeMaximum,
@@ -55,7 +56,7 @@ Future<DateTime?> showFPCDatePicker(
     default:
       return showDatePicker(
         context: context,
-        useRootNavigator: false,
+        useRootNavigator: useRootNavigator,
         firstDate: dateTimeMinimum,
         initialDate: dateTimeInitial,
         lastDate: dateTimeMaximum,
@@ -74,6 +75,7 @@ Future<DateTime?> showFPCDatePicker(
 
 Future<TimeOfDay?> showFPCTimePicker(
   BuildContext context, {
+  bool useRootNavigator = false,
   FPCTimeOfDayRange? timeOfDayRange,
   required Widget Function(BuildContext) cupertinoModalBuilder,
   Color? materialDialogBackgroundColor,
@@ -94,7 +96,7 @@ Future<TimeOfDay?> showFPCTimePicker(
     case FPCPlatform.iOS:
       return showCupertinoModalPopup<TimeOfDay?>(
         context: context,
-        useRootNavigator: false,
+        useRootNavigator: useRootNavigator,
         barrierColor: barrierColorMethod,
         builder: cupertinoModalBuilder,
       );
@@ -102,7 +104,7 @@ Future<TimeOfDay?> showFPCTimePicker(
     case FPCPlatform.android:
       return showTimePicker(
         context: context,
-        useRootNavigator: false,
+        useRootNavigator: useRootNavigator,
         initialTime: timeOfDayInitial,
         builder: (BuildContext context, Widget? materialDialog) =>
             FPCTimePicker(
@@ -117,7 +119,7 @@ Future<TimeOfDay?> showFPCTimePicker(
     default:
       return showTimePicker(
         context: context,
-        useRootNavigator: false,
+        useRootNavigator: useRootNavigator,
         initialTime: timeOfDayInitial,
         builder: (BuildContext context, Widget? materialDialog) =>
             FPCTimePicker(

@@ -1,8 +1,9 @@
 library flutter_platform_component_select_card;
 
 // Basic
-export 'basic/fpc_select_card.dart';
 export 'basic/fpc_gradient_select_card.dart';
+export 'basic/fpc_select_card.dart';
+export 'basic/fpc_select_dotted_card.dart';
 // Custom /
 // Custom / Default
 // Custom / Default / Dark
@@ -38,6 +39,34 @@ export 'custom/default/light/fpc_primary_light_select_card.dart';
 export 'custom/default/light/fpc_secondary_light_select_card.dart';
 export 'custom/default/light/fpc_success_light_select_card.dart';
 export 'custom/default/light/fpc_warning_light_select_card.dart';
+// Custom / Dotted
+// Custom / Dotted / Dark
+export 'custom/dotted/dark/fpc_accent_dark_select_dotted_card.dart';
+export 'custom/dotted/dark/fpc_danger_dark_select_dotted_card.dart';
+export 'custom/dotted/dark/fpc_grey_dark_select_dotted_card.dart';
+export 'custom/dotted/dark/fpc_info_dark_select_dotted_card.dart';
+export 'custom/dotted/dark/fpc_primary_dark_select_dotted_card.dart';
+export 'custom/dotted/dark/fpc_secondary_dark_select_dotted_card.dart';
+export 'custom/dotted/dark/fpc_success_dark_select_dotted_card.dart';
+export 'custom/dotted/dark/fpc_warning_dark_select_dotted_card.dart';
+// Custom / Dotted / Default
+export 'custom/dotted/default/fpc_accent_select_dotted_card.dart';
+export 'custom/dotted/default/fpc_danger_select_dotted_card.dart';
+export 'custom/dotted/default/fpc_grey_select_dotted_card.dart';
+export 'custom/dotted/default/fpc_info_select_dotted_card.dart';
+export 'custom/dotted/default/fpc_primary_select_dotted_card.dart';
+export 'custom/dotted/default/fpc_secondary_select_dotted_card.dart';
+export 'custom/dotted/default/fpc_success_select_dotted_card.dart';
+export 'custom/dotted/default/fpc_warning_select_dotted_card.dart';
+// Custom / Dotted / Light
+export 'custom/dotted/light/fpc_accent_light_select_dotted_card.dart';
+export 'custom/dotted/light/fpc_danger_light_select_dotted_card.dart';
+export 'custom/dotted/light/fpc_grey_light_select_dotted_card.dart';
+export 'custom/dotted/light/fpc_info_light_select_dotted_card.dart';
+export 'custom/dotted/light/fpc_primary_light_select_dotted_card.dart';
+export 'custom/dotted/light/fpc_secondary_light_select_dotted_card.dart';
+export 'custom/dotted/light/fpc_success_light_select_dotted_card.dart';
+export 'custom/dotted/light/fpc_warning_light_select_dotted_card.dart';
 // Custom / Gradient
 // Custom / Gradient / Dark
 export 'custom/gradient/dark/fpc_accent_dark_gradient_select_card.dart';

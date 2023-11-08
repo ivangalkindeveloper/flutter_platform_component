@@ -7,7 +7,7 @@ import 'package:flutter/cupertino.dart' show CupertinoButton;
 class FPCOutlineButton extends FPCPlatformWidget {
   FPCOutlineButton({
     super.key,
-    Color? filledColor,
+    Color? backgroundColor,
     Color? splashColor,
     double? height,
     BorderRadius? borderRadius,
@@ -21,7 +21,7 @@ class FPCOutlineButton extends FPCPlatformWidget {
   }) : super(
           cupertino: _FPCOutlineButtonCupertino(
             key: key,
-            filledColor: filledColor,
+            backgroundColor: backgroundColor,
             splashColor: splashColor,
             height: height,
             borderRadius: borderRadius,
@@ -35,7 +35,7 @@ class FPCOutlineButton extends FPCPlatformWidget {
           ),
           material: _FPCOutlineButtonMaterial(
             key: key,
-            filledColor: filledColor,
+            backgroundColor: backgroundColor,
             splashColor: splashColor,
             height: height,
             borderRadius: borderRadius,
@@ -53,7 +53,7 @@ class FPCOutlineButton extends FPCPlatformWidget {
 class _FPCOutlineButtonCupertino extends StatelessWidget {
   const _FPCOutlineButtonCupertino({
     super.key,
-    required this.filledColor,
+    required this.backgroundColor,
     required this.splashColor,
     required this.height,
     required this.borderRadius,
@@ -66,7 +66,7 @@ class _FPCOutlineButtonCupertino extends StatelessWidget {
     required this.child,
   });
 
-  final Color? filledColor;
+  final Color? backgroundColor;
   final Color? splashColor;
   final double? height;
   final BorderRadius? borderRadius;
@@ -108,7 +108,7 @@ class _FPCOutlineButtonCupertino extends StatelessWidget {
             height: height,
             padding: padding,
             decoration: BoxDecoration(
-              color: this.filledColor,
+              color: this.backgroundColor,
               borderRadius: borderRadius,
               border: Border.all(
                 color: this.borderColor,
@@ -126,7 +126,7 @@ class _FPCOutlineButtonCupertino extends StatelessWidget {
 class _FPCOutlineButtonMaterial extends StatelessWidget {
   const _FPCOutlineButtonMaterial({
     super.key,
-    required this.filledColor,
+    required this.backgroundColor,
     required this.splashColor,
     required this.height,
     required this.borderRadius,
@@ -139,7 +139,7 @@ class _FPCOutlineButtonMaterial extends StatelessWidget {
     required this.child,
   });
 
-  final Color? filledColor;
+  final Color? backgroundColor;
   final Color? splashColor;
   final double? height;
   final BorderRadius? borderRadius;
@@ -178,7 +178,7 @@ class _FPCOutlineButtonMaterial extends StatelessWidget {
           height: height,
           padding: EdgeInsets.zero,
           decoration: BoxDecoration(
-            color: this.filledColor,
+            color: this.backgroundColor,
             borderRadius: borderRadius,
             border: Border.all(
               color: this.borderColor,

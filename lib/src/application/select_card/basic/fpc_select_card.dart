@@ -9,6 +9,8 @@ class FPCSelectCard extends FPCPlatformWidget {
     super.key,
     required Color backgroundColor,
     Color? splashColor,
+    double? height,
+    double? width,
     BoxConstraints? constraints,
     BorderRadius? borderRadius,
     Color? borderColor,
@@ -23,6 +25,8 @@ class FPCSelectCard extends FPCPlatformWidget {
             key: key,
             backgroundColor: backgroundColor,
             splashColor: splashColor,
+            height: height,
+            width: width,
             constraints: constraints,
             borderRadius: borderRadius,
             borderColor: borderColor,
@@ -37,6 +41,8 @@ class FPCSelectCard extends FPCPlatformWidget {
             key: key,
             backgroundColor: backgroundColor,
             splashColor: splashColor,
+            height: height,
+            width: width,
             constraints: constraints,
             borderRadius: borderRadius,
             borderColor: borderColor,
@@ -55,6 +61,8 @@ class _FPCSelectCardCupertino extends StatelessWidget {
     super.key,
     required this.backgroundColor,
     required this.splashColor,
+    required this.height,
+    required this.width,
     required this.constraints,
     required this.borderRadius,
     required this.borderColor,
@@ -68,6 +76,8 @@ class _FPCSelectCardCupertino extends StatelessWidget {
 
   final Color backgroundColor;
   final Color? splashColor;
+  final double? height;
+  final double? width;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Color? borderColor;
@@ -97,6 +107,8 @@ class _FPCSelectCardCupertino extends StatelessWidget {
           borderRadius: borderRadius,
           child: FPCCard(
             backgroundColor: this.backgroundColor,
+            height: this.height,
+            width: this.width,
             constraints: this.constraints,
             borderRadius: borderRadius,
             borderColor: this.borderColor,
@@ -115,6 +127,8 @@ class _FPCSelectCardMaterial extends StatelessWidget {
     super.key,
     required this.backgroundColor,
     required this.splashColor,
+    required this.height,
+    required this.width,
     required this.constraints,
     required this.borderRadius,
     required this.borderColor,
@@ -128,6 +142,8 @@ class _FPCSelectCardMaterial extends StatelessWidget {
 
   final Color backgroundColor;
   final Color? splashColor;
+  final double? height;
+  final double? width;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Color? borderColor;
@@ -155,6 +171,8 @@ class _FPCSelectCardMaterial extends StatelessWidget {
       children: [
         FPCCard(
           backgroundColor: this.backgroundColor,
+          height: this.height,
+          width: this.width,
           constraints: this.constraints,
           borderRadius: this.borderRadius,
           borderColor: this.borderColor,

@@ -4,6 +4,8 @@ import 'package:flutter/widgets.dart';
 class FPCSuccessLightSelectCard extends StatelessWidget {
   const FPCSuccessLightSelectCard({
     super.key,
+    this.height,
+    this.width,
     this.constraints,
     this.borderRadius,
     this.borderColor,
@@ -15,6 +17,8 @@ class FPCSuccessLightSelectCard extends StatelessWidget {
     required this.child,
   });
 
+  final double? height;
+  final double? width;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Color? borderColor;
@@ -32,6 +36,8 @@ class FPCSuccessLightSelectCard extends StatelessWidget {
     return FPCSelectCard(
       backgroundColor: theme.successLight,
       splashColor: theme.whiteAlways,
+      height: this.height,
+      width: this.width,
       constraints: this.constraints,
       borderRadius: this.borderRadius,
       borderColor: this.borderColor,

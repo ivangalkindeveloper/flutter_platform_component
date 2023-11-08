@@ -67,8 +67,8 @@ class FPCApp extends FPCPlatformWidget {
             onUnknownRoute: onUnknownRoute,
             navigatorObservers: navigatorObservers,
             builder: _builderWrapper(
-              scaffoldMessengerKey: scaffoldMessengerKey,
-              builder: builder,
+              scaffoldMessengerKey,
+              builder,
             ),
             title: title,
             onGenerateTitle: onGenerateTitle,
@@ -184,8 +184,8 @@ class FPCApp extends FPCPlatformWidget {
             routerConfig: routerConfig,
             backButtonDispatcher: backButtonDispatcher,
             builder: _builderWrapper(
-              scaffoldMessengerKey: scaffoldMessengerKey,
-              builder: builder,
+              scaffoldMessengerKey,
+              builder,
             ),
             title: title,
             onGenerateTitle: onGenerateTitle,
@@ -263,11 +263,14 @@ class FPCApp extends FPCPlatformWidget {
         material: MaterialApp.createMaterialHeroController(),
       );
 
-  static Widget Function(BuildContext, Widget?) _builderWrapper({
-    required GlobalKey<ScaffoldMessengerState>? scaffoldMessengerKey,
-    required Widget Function(BuildContext, Widget?)? builder,
-  }) =>
-      (BuildContext context, Widget? child) {
+  static Widget Function(BuildContext, Widget?) _builderWrapper(
+    GlobalKey<ScaffoldMessengerState>? scaffoldMessengerKey,
+    Widget Function(BuildContext, Widget?)? builder,
+  ) =>
+      (
+        BuildContext context,
+        Widget? child,
+      ) {
         final Widget Function(BuildContext, Widget?)? builderMethod = builder;
         if (builderMethod != null) {
           child = builderMethod(

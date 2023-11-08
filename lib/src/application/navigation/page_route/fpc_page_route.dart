@@ -5,8 +5,8 @@ import 'package:modal_bottom_sheet/modal_bottom_sheet.dart'
     show MaterialWithModalsPageRoute;
 import 'package:flutter/material.dart' show MaterialPageRoute;
 
-class FPCRoute {
-  static MaterialPageRoute pageRoute(
+class FPCPageRoute {
+  static MaterialPageRoute fromPlatform(
     FPCPlatform platform, {
     bool maintainState = true,
     bool fullscreenDialog = false,
@@ -28,7 +28,7 @@ class FPCRoute {
         ),
       );
 
-  static MaterialPageRoute pageRouteFromContext(
+  static MaterialPageRoute fromContext(
     BuildContext context, {
     bool maintainState = true,
     bool fullscreenDialog = false,
@@ -50,7 +50,7 @@ class FPCRoute {
         ),
       );
 
-  static PageRouteBuilder pageRouteFade({
+  static PageRouteBuilder fade({
     required Widget child,
   }) =>
       PageRouteBuilder(

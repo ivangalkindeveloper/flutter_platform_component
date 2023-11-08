@@ -38,7 +38,7 @@ class FPCAccentOutlineButton extends StatelessWidget {
     final IFPCTheme theme = context.fpcTheme;
 
     return FPCOutlineButton(
-      filledColor: this.isFilled ? theme.accentLight : null,
+      backgroundColor: this.isFilled ? theme.accentLight : null,
       splashColor: theme.accent,
       height: this.height,
       borderRadius: this.borderRadius,

@@ -4,6 +4,8 @@ import 'package:flutter/widgets.dart';
 class FPCPrimaryDarkSelectCard extends StatelessWidget {
   const FPCPrimaryDarkSelectCard({
     super.key,
+    this.height,
+    this.width,
     this.constraints,
     this.borderRadius,
     this.borderColor,
@@ -15,6 +17,8 @@ class FPCPrimaryDarkSelectCard extends StatelessWidget {
     required this.child,
   });
 
+  final double? height;
+  final double? width;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Color? borderColor;
@@ -32,6 +36,8 @@ class FPCPrimaryDarkSelectCard extends StatelessWidget {
     return FPCSelectCard(
       backgroundColor: theme.primaryDark,
       splashColor: theme.primaryInternal,
+      height: this.height,
+      width: this.width,
       constraints: this.constraints,
       borderRadius: this.borderRadius,
       borderColor: this.borderColor,

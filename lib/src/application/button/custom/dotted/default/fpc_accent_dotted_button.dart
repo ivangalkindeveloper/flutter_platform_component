@@ -48,7 +48,7 @@ class FPCAccentDottedButton extends StatelessWidget {
     final IFPCTheme theme = context.fpcTheme;
 
     return FPCDottedButton(
-      filledColor: this.isFilled ? theme.accentLight : null,
+      backgroundColor: this.isFilled ? theme.accentLight : null,
       splashColor: theme.accent,
       height: this.height,
       borderRadius: this.borderRadius,

@@ -38,7 +38,7 @@ class FPCWarningDarkGradientOutlineButton extends StatelessWidget {
     final IFPCTheme theme = context.fpcTheme;
 
     return FPCGradientOutlineButton(
-      filledGradient: this.isFilled ? theme.warningGradient : null,
+      backgroundGradient: this.isFilled ? theme.warningGradient : null,
       splashColor: theme.warningDark,
       height: this.height,
       borderRadius: this.borderRadius,

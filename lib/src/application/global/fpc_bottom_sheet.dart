@@ -8,6 +8,7 @@ import 'package:flutter/material.dart' show Colors;
 
 Future<T?> showFPCExpandedBottomSheet<T>(
   BuildContext context, {
+  bool useRootNavigator = false,
   Color? barrierColor,
   BorderRadius? borderRadius,
   required Widget child,
@@ -25,7 +26,7 @@ Future<T?> showFPCExpandedBottomSheet<T>(
     case FPCPlatform.iOS:
       return showCupertinoModalBottomSheet<T?>(
         context: context,
-        useRootNavigator: false,
+        useRootNavigator: useRootNavigator,
         elevation: 0,
         barrierColor: methodBarrierColor,
         backgroundColor: Colors.transparent,
@@ -38,7 +39,7 @@ Future<T?> showFPCExpandedBottomSheet<T>(
     case FPCPlatform.android:
       return showMaterialModalBottomSheet<T?>(
         context: context,
-        useRootNavigator: false,
+        useRootNavigator: useRootNavigator,
         elevation: 0,
         barrierColor: methodBarrierColor,
         backgroundColor: Colors.transparent,
@@ -49,7 +50,7 @@ Future<T?> showFPCExpandedBottomSheet<T>(
     default:
       return showMaterialModalBottomSheet<T?>(
         context: context,
-        useRootNavigator: false,
+        useRootNavigator: useRootNavigator,
         elevation: 0,
         barrierColor: methodBarrierColor,
         backgroundColor: Colors.transparent,
@@ -61,6 +62,7 @@ Future<T?> showFPCExpandedBottomSheet<T>(
 
 Future<T?> showFPCSmallBottomSheet<T>(
   BuildContext context, {
+  bool useRootNavigator = false,
   Color? barrierColor,
   required Widget child,
 }) {
@@ -74,7 +76,7 @@ Future<T?> showFPCSmallBottomSheet<T>(
     case FPCPlatform.iOS:
       return showCupertinoModalPopup<T>(
         context: context,
-        useRootNavigator: false,
+        useRootNavigator: useRootNavigator,
         barrierColor: methodBarrierColor,
         builder: (BuildContext context) => child,
       );
@@ -82,7 +84,7 @@ Future<T?> showFPCSmallBottomSheet<T>(
     case FPCPlatform.android:
       return showMaterialModalBottomSheet<T>(
         context: context,
-        useRootNavigator: false,
+        useRootNavigator: useRootNavigator,
         elevation: 0,
         barrierColor: methodBarrierColor,
         backgroundColor: Colors.transparent,
@@ -92,7 +94,7 @@ Future<T?> showFPCSmallBottomSheet<T>(
     default:
       return showMaterialModalBottomSheet<T>(
         context: context,
-        useRootNavigator: false,
+        useRootNavigator: useRootNavigator,
         elevation: 0,
         barrierColor: methodBarrierColor,
         backgroundColor: Colors.transparent,

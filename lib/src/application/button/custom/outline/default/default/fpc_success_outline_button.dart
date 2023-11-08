@@ -38,7 +38,7 @@ class FPCSuccessOutlineButton extends StatelessWidget {
     final IFPCTheme theme = context.fpcTheme;
 
     return FPCOutlineButton(
-      filledColor: this.isFilled ? theme.successLight : null,
+      backgroundColor: this.isFilled ? theme.successLight : null,
       splashColor: theme.success,
       height: this.height,
       borderRadius: this.borderRadius,

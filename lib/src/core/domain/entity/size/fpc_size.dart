@@ -40,10 +40,14 @@ abstract class IFPCSize {
   abstract final double heightIconSmall;
   abstract final double heightIconDefault;
   abstract final double heightIconLarge;
-  // Height / Indicator
+  // Height / Circular Indicator
   abstract final double heightCircularIndicatorSmall;
   abstract final double heightCircularIndicatorDefault;
   abstract final double heightCircularIndicatorLarge;
+  // Height / Avatar
+  abstract final double heightAvatarSmall;
+  abstract final double heightAvatarDefault;
+  abstract final double heightAvatarLarge;
 
   // BorderRadius
   // BorderRadius / Button

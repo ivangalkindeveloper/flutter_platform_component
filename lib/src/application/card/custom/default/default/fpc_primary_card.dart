@@ -4,6 +4,8 @@ import 'package:flutter/widgets.dart';
 class FPCPrimaryCard extends StatelessWidget {
   const FPCPrimaryCard({
     super.key,
+    this.height,
+    this.width,
     this.constraints,
     this.borderRadius,
     this.borderColor,
@@ -12,6 +14,8 @@ class FPCPrimaryCard extends StatelessWidget {
     required this.child,
   });
 
+  final double? height;
+  final double? width;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Color? borderColor;
@@ -25,6 +29,8 @@ class FPCPrimaryCard extends StatelessWidget {
 
     return FPCCard(
       backgroundColor: theme.primary,
+      height: this.height,
+      width: this.width,
       constraints: this.constraints,
       borderRadius: this.borderRadius,
       borderColor: this.borderColor,

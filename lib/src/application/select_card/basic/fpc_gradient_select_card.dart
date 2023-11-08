@@ -9,6 +9,8 @@ class FPCGradientSelectCard extends FPCPlatformWidget {
     super.key,
     required Gradient backgroundGradient,
     Color? splashColor,
+    double? height,
+    double? width,
     BoxConstraints? constraints,
     BorderRadius? borderRadius,
     Gradient? borderGradient,
@@ -23,6 +25,8 @@ class FPCGradientSelectCard extends FPCPlatformWidget {
             key: key,
             backgroundGradient: backgroundGradient,
             splashColor: splashColor,
+            height: height,
+            width: width,
             constraints: constraints,
             borderRadius: borderRadius,
             borderGradient: borderGradient,
@@ -37,6 +41,8 @@ class FPCGradientSelectCard extends FPCPlatformWidget {
             key: key,
             backgroundGradient: backgroundGradient,
             splashColor: splashColor,
+            height: height,
+            width: width,
             constraints: constraints,
             borderRadius: borderRadius,
             borderGradient: borderGradient,
@@ -55,6 +61,8 @@ class _FPCGradientSelectCardCupertino extends StatelessWidget {
     super.key,
     required this.backgroundGradient,
     required this.splashColor,
+    required this.height,
+    required this.width,
     required this.constraints,
     required this.borderRadius,
     required this.borderGradient,
@@ -68,6 +76,8 @@ class _FPCGradientSelectCardCupertino extends StatelessWidget {
 
   final Gradient backgroundGradient;
   final Color? splashColor;
+  final double? height;
+  final double? width;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Gradient? borderGradient;
@@ -97,6 +107,8 @@ class _FPCGradientSelectCardCupertino extends StatelessWidget {
           borderRadius: borderRadius,
           child: FPCGradientCard(
             backgroundGradient: this.backgroundGradient,
+            height: this.height,
+            width: this.width,
             constraints: this.constraints,
             borderRadius: this.borderRadius,
             borderGradient: this.borderGradient,
@@ -115,6 +127,8 @@ class _FPCGradientSelectCardMaterial extends StatelessWidget {
     super.key,
     required this.backgroundGradient,
     required this.splashColor,
+    required this.height,
+    required this.width,
     required this.constraints,
     required this.borderRadius,
     required this.borderGradient,
@@ -128,6 +142,8 @@ class _FPCGradientSelectCardMaterial extends StatelessWidget {
 
   final Gradient backgroundGradient;
   final Color? splashColor;
+  final double? height;
+  final double? width;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Gradient? borderGradient;
@@ -155,6 +171,8 @@ class _FPCGradientSelectCardMaterial extends StatelessWidget {
       children: [
         FPCGradientCard(
           backgroundGradient: this.backgroundGradient,
+          height: this.height,
+          width: this.width,
           constraints: this.constraints,
           borderRadius: this.borderRadius,
           borderGradient: this.borderGradient,

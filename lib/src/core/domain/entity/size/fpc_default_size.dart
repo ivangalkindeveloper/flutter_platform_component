@@ -45,10 +45,14 @@ class FPCDefaultSize implements IFPCSize {
     this.heightIconSmall = 16,
     this.heightIconDefault = 24,
     this.heightIconLarge = 32,
-    // Height / Indicator
+    // Height / Circular Indicator
     this.heightCircularIndicatorSmall = 16,
     this.heightCircularIndicatorDefault = 24,
     this.heightCircularIndicatorLarge = 32,
+    // Height / Avatar
+    this.heightAvatarSmall = 16,
+    this.heightAvatarDefault = 24,
+    this.heightAvatarLarge = 32,
 
     // BorderRadius
     // BorderRadius / Button
@@ -171,13 +175,20 @@ class FPCDefaultSize implements IFPCSize {
   final double heightIconDefault;
   @override
   final double heightIconLarge;
-  // Height / Indicator
+  // Height / Circular Indicator
   @override
   final double heightCircularIndicatorSmall;
   @override
   final double heightCircularIndicatorDefault;
   @override
   final double heightCircularIndicatorLarge;
+  // Height / Avatar
+  @override
+  final double heightAvatarSmall;
+  @override
+  final double heightAvatarDefault;
+  @override
+  final double heightAvatarLarge;
 
   // BorderRadius
   // BorderRadius / Button
@@ -295,10 +306,14 @@ class FPCDefaultSize implements IFPCSize {
     double? heightIconSmall,
     double? heightIconDefault,
     double? heightIconLarge,
-    // Height / Indicator
+    // Height / Circular Indicator
     double? heightCircularIndicatorSmall,
     double? heightCircularIndicatorDefault,
     double? heightCircularIndicatorLarge,
+    // Height / Avatar
+    double? heightAvatarSmall,
+    double? heightAvatarDefault,
+    double? heightAvatarLarge,
 
     // BorderRadius
     // BorderRadius / Button
@@ -388,13 +403,17 @@ class FPCDefaultSize implements IFPCSize {
         heightIconSmall: heightIconSmall ?? this.heightIconSmall,
         heightIconDefault: heightIconDefault ?? this.heightIconDefault,
         heightIconLarge: heightIconLarge ?? this.heightIconLarge,
-        // Height / Indicator
+        // Height / Circular Indicator
         heightCircularIndicatorSmall:
             heightCircularIndicatorSmall ?? this.heightCircularIndicatorSmall,
         heightCircularIndicatorDefault: heightCircularIndicatorDefault ??
             this.heightCircularIndicatorDefault,
         heightCircularIndicatorLarge:
             heightCircularIndicatorLarge ?? this.heightCircularIndicatorLarge,
+        // Height / Avatar
+        heightAvatarSmall: heightAvatarSmall ?? this.heightAvatarSmall,
+        heightAvatarDefault: heightAvatarDefault ?? this.heightAvatarDefault,
+        heightAvatarLarge: heightAvatarLarge ?? this.heightAvatarLarge,
 
         // BorderRadius
         // BorderRadius / Button

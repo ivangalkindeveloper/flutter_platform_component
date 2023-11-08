@@ -8,7 +8,7 @@ import 'package:flutter/cupertino.dart' show CupertinoButton;
 class FPCDottedButton extends FPCPlatformWidget {
   FPCDottedButton({
     super.key,
-    Color? filledColor,
+    Color? backgroundColor,
     Color? splashColor,
     double? height,
     Radius? borderRadius,
@@ -25,7 +25,7 @@ class FPCDottedButton extends FPCPlatformWidget {
   }) : super(
           cupertino: _FPCDottedButtonCupertino(
             key: key,
-            filledColor: filledColor,
+            backgroundColor: backgroundColor,
             splashColor: splashColor,
             height: height,
             borderRadius: borderRadius,
@@ -42,7 +42,7 @@ class FPCDottedButton extends FPCPlatformWidget {
           ),
           material: _FPCDottedButtonMaterial(
             key: key,
-            filledColor: filledColor,
+            backgroundColor: backgroundColor,
             splashColor: splashColor,
             height: height,
             borderRadius: borderRadius,
@@ -63,7 +63,7 @@ class FPCDottedButton extends FPCPlatformWidget {
 class _FPCDottedButtonCupertino extends StatelessWidget {
   const _FPCDottedButtonCupertino({
     super.key,
-    required this.filledColor,
+    required this.backgroundColor,
     required this.splashColor,
     required this.height,
     required this.borderRadius,
@@ -79,7 +79,7 @@ class _FPCDottedButtonCupertino extends StatelessWidget {
     required this.child,
   });
 
-  final Color? filledColor;
+  final Color? backgroundColor;
   final Color? splashColor;
   final double? height;
   final Radius? borderRadius;
@@ -134,7 +134,7 @@ class _FPCDottedButtonCupertino extends StatelessWidget {
               height: height,
               padding: padding,
               decoration: BoxDecoration(
-                color: this.filledColor,
+                color: this.backgroundColor,
                 borderRadius: BorderRadius.all(borderRadius),
               ),
               child: this.child,
@@ -149,7 +149,7 @@ class _FPCDottedButtonCupertino extends StatelessWidget {
 class _FPCDottedButtonMaterial extends StatelessWidget {
   const _FPCDottedButtonMaterial({
     super.key,
-    required this.filledColor,
+    required this.backgroundColor,
     required this.splashColor,
     required this.height,
     required this.borderRadius,
@@ -165,7 +165,7 @@ class _FPCDottedButtonMaterial extends StatelessWidget {
     required this.child,
   });
 
-  final Color? filledColor;
+  final Color? backgroundColor;
   final Color? splashColor;
   final double? height;
   final Radius? borderRadius;
@@ -208,7 +208,7 @@ class _FPCDottedButtonMaterial extends StatelessWidget {
           height: height,
           padding: EdgeInsets.zero,
           decoration: BoxDecoration(
-            color: this.filledColor,
+            color: this.backgroundColor,
             borderRadius: BorderRadius.all(borderRadius),
           ),
           child: DottedBorder(

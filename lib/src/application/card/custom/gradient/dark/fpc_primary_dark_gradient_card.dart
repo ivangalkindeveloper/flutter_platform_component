@@ -4,6 +4,8 @@ import 'package:flutter/widgets.dart';
 class FPCPrimaryDarkGradientCard extends StatelessWidget {
   const FPCPrimaryDarkGradientCard({
     super.key,
+    this.height,
+    this.width,
     this.constraints,
     this.borderRadius,
     this.borderGradient,
@@ -12,6 +14,8 @@ class FPCPrimaryDarkGradientCard extends StatelessWidget {
     required this.child,
   });
 
+  final double? height;
+  final double? width;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Gradient? borderGradient;
@@ -25,6 +29,8 @@ class FPCPrimaryDarkGradientCard extends StatelessWidget {
 
     return FPCGradientCard(
       backgroundGradient: theme.primaryDarkGradient,
+      height: this.height,
+      width: this.width,
       constraints: this.constraints,
       borderRadius: this.borderRadius,
       borderGradient: this.borderGradient,

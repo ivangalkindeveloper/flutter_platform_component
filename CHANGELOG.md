@@ -1,14 +1,13 @@
-Добавить сниппеты для контекста
-Добавить сниппеты для глобал функций
-
 Update README with normal names and code examples
 Link to snippets and GIF with example
 
 
 ## 3.0.0
 Addings:
-* FPCBasicDottedButton;
+* FPCDottedButton;
 * FPCDisabledWrapper;
+* FPCDottedCard;
+* FPCSelectDottedCard;
 * Snippets repository;
 Refactoring:
 * Optimization and refactoring of components with different controllers;
@@ -26,8 +25,8 @@ Renamings:
 * "Snackbar" > "SnackBar";
 * "SliverNavigationAppBar" > "SliverAppBar";
 Other:
+* Separate library files for directiories;
 * Updated README.
-
 
 ## 2.3.0
 * Folder refactoring;

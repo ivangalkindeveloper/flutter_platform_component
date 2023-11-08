@@ -221,453 +221,453 @@ class NavigationController implements INavigationController {
   Route<dynamic>? onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
       case animatedAlignScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const AnimatedAlignScreen(),
         );
       case animatedContainerScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const AnimatedContainerScreen(),
         );
       case animatedCrossFadeScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const AnimatedCrossFadeScreen(),
         );
       case animatedDefaultTextStyleScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const AnimatedDefaultTextStyleScreen(),
         );
       case animatedFadeInScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const AnimatedFadeInScreen(),
         );
       case animatedFadeOutScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const AnimatedFadeOutScreen(),
         );
       case animatedOpacityScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const AnimatedOpacityScreen(),
         );
       case animatedOpacityStackScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const AnimatedOpacityStackScreen(),
         );
       case animatedOpenContainerScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const AnimatedOpenContainerScreen(),
         );
       case animatedPositionedScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const AnimatedPositionedScreen(),
         );
       case animatedSizeScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const AnimatedSizeScreen(),
         );
       case animatedSwitcherScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const AnimatedSwitcherScreen(),
         );
       case animatedTransitionSwitcherScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const AnimatedTransitionSwitcherScreen(),
         );
 
       case appBarScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const AppBarScreen(),
         );
       case blurAppBarScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const BlurAppBarScreen(),
         );
 
       case counterBadgeScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const CounterBadgeScreen(),
         );
       case gradientCounterBadgeScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientCounterBadgeScreen(),
         );
       case dotBadgeScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const DotBadgeScreen(),
         );
       case gradientDotBadgeScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientDotBadgeScreen(),
         );
 
       case blurScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const BlurScreen(),
         );
 
       case actionBottomSheetScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const ActionBottomSheetScreen(),
         );
       case expandedBottomSheetScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const ExpandedBottomSheetScreen(),
         );
       case blurExpandedBottomSheetScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const BlurExpandedBottomSheetScreen(),
         );
       case popUpBottomSheetScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const PopUpBottomSheetScreen(),
         );
       case blackAlwaysExpandBottomSheetScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const BlackAlwaysExpandedBottomSheetScreen(),
         );
       case blurBlackAlwaysExpandBottomSheetScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const BlurBlackAlwaysExpandedBottomSheetScreen(),
         );
 
       case buttonScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const ButtonScreen(),
         );
       case gradientButtonScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientButtonScreen(),
         );
       case labelButtonScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const LabelButtonScreen(),
         );
       case gradientLabelButtonScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientLabelButtonScreen(),
         );
       case outlineButtonScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const OutlineButtonScreen(),
         );
       case gradientOutlineButtonScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientOutlineButtonScreen(),
         );
       case dottedButtonScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const DottedButtonScreen(),
         );
       case iconButtonScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const IconButtonScreen(),
         );
       case modalButtonScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const BottomSheetButtonScreen(),
         );
 
       case cardScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const CardScreen(),
         );
       case gradientCardScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientCardScreen(),
         );
       case selectCardScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const SelectCardScreen(),
         );
       case gradientSelectCardScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientSelectCardScreen(),
         );
 
       case checkboxScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const CheckboxScreen(),
         );
 
       case codeFieldScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const CodeFieldScreen(),
         );
       case gradientCodeFieldScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientCodeFieldScreen(),
         );
 
       case dialogScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const DialogScreen(),
         );
 
       case dividerScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const DividerScreen(),
         );
 
       case formFieldScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const FormFieldScreen(),
         );
       case gradientFormFieldScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientFormFieldScreen(),
         );
       case selectFieldScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const SelectFieldScreen(),
         );
       case gradientSelectFieldScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientSelectFieldScreen(),
         );
 
       case gradientScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientScreen(),
         );
 
       case iconScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const IconScreen(),
         );
 
       case circularIndicatorScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const CircularIndicatorScreen(),
         );
       case pageIndicatorScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const PageIndicatorScreen(),
         );
       case gradientPageIndicatorScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientPageIndicatorScreen(),
         );
       case progressIndicatorScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const ProgressIndicatorScreen(),
         );
       case storyIndicatorScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const StoryIndicatorScreen(),
         );
 
       case keyboardButtonScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const KeyboardButtonScreen(),
         );
       case keyboardNumberButtonScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const KeyboardNumberButtonScreen(),
         );
       case keyboardScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const KeyboardScreen(),
         );
 
       case listRefreshScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const ListRefreshScreen(),
         );
       case listSectionScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const ListSectionScreen(),
         );
 
       case bottomNavigationBarScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const BottomNavigationBarScreen(),
         );
       case blurBottomNavigationBarScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const BlurBottomNavigationBarScreen(),
         );
       case navigatorScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const NavigatorScreen(),
         );
 
       case datePickerScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const DatePickerScreen(),
         );
       case timePickerScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const TimePickerScreen(),
         );
 
       case pinFieldScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const PINFieldScreen(),
         );
       case gradientPinFieldScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientPINFieldScreen(),
         );
 
       case radioScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const RadioScreen(),
         );
 
       case scaffoldScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const ScaffoldScreen(),
         );
 
       case scrollbarScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const ScrollbarScreen(),
         );
 
       case segmentControlScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const SegmentControlScreen(),
         );
       case gradientSegmentControlScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientSegmentControlScreen(),
         );
 
       case shimmerScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const ShimmerScreen(),
         );
       case gradientShimmerScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientShimmerScreen(),
         );
 
       case sliderScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const SliderScreen(),
         );
 
       case slidingSegmentControlScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const SlidingSegmentControlScreen(),
         );
 
       case sliverAppBarScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const SliverAppBarScreen(),
         );
 
       case snackBarScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const SnackBarScreen(),
         );
       case gradientSnackBarScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientSnackBarScreen(),
         );
 
       case switchScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const SwitchScreen(),
         );
 
       case textScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const TextScreen(),
         );
       case textSpanScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const TextSpanScreen(),
         );
 
       case toggleScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const ToggleScreen(),
         );
       case gradientToggleScreen:
-        return FPCRoute.pageRouteFromContext(
+        return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientToggleScreen(),
         );

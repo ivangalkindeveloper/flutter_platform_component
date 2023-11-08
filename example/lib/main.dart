@@ -29,7 +29,7 @@ class Application extends StatelessWidget {
       navigatorKey: this.navigationController.navigatorKey,
       onGenerateRoute: this.navigationController.onGenerateRoute,
       onGenerateInitialRoutes: (String route) => [
-        FPCRoute.pageRouteFromContext(
+        FPCPageRoute.fromContext(
           context,
           child: const MainScreen(),
         ),

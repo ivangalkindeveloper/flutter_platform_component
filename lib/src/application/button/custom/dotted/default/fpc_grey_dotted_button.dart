@@ -48,7 +48,7 @@ class FPCGreyDottedButton extends StatelessWidget {
     final IFPCTheme theme = context.fpcTheme;
 
     return FPCDottedButton(
-      filledColor: this.isFilled ? theme.greyLight : null,
+      backgroundColor: this.isFilled ? theme.greyLight : null,
       splashColor: theme.grey,
       height: this.height,
       borderRadius: this.borderRadius,

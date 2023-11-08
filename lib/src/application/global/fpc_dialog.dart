@@ -6,6 +6,7 @@ import 'package:flutter/material.dart' show showDialog;
 
 Future<T?> showFPCDialog<T>(
   BuildContext context, {
+  bool useRootNavigator = false,
   Color? barrierColor,
   required Widget child,
 }) {
@@ -21,7 +22,7 @@ Future<T?> showFPCDialog<T>(
     case FPCPlatform.iOS:
       return showCupertinoDialog<T>(
         context: context,
-        useRootNavigator: false,
+        useRootNavigator: useRootNavigator,
         barrierDismissible: true,
         builder: (BuildContext context) => child,
       );
@@ -29,7 +30,7 @@ Future<T?> showFPCDialog<T>(
     case FPCPlatform.android:
       return showDialog<T>(
         context: context,
-        useRootNavigator: false,
+        useRootNavigator: useRootNavigator,
         barrierColor: methodBarrierColor,
         builder: (BuildContext context) => child,
       );
@@ -37,7 +38,7 @@ Future<T?> showFPCDialog<T>(
     default:
       return showDialog<T>(
         context: context,
-        useRootNavigator: false,
+        useRootNavigator: useRootNavigator,
         barrierColor: methodBarrierColor,
         builder: (BuildContext context) => child,
       );

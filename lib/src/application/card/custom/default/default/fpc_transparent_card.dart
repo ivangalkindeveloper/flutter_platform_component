@@ -5,6 +5,8 @@ import 'package:flutter/widgets.dart';
 class FPCTransparentCard extends StatelessWidget {
   const FPCTransparentCard({
     super.key,
+    this.height,
+    this.width,
     this.constraints,
     this.borderRadius,
     this.borderColor,
@@ -13,6 +15,8 @@ class FPCTransparentCard extends StatelessWidget {
     required this.child,
   });
 
+  final double? height;
+  final double? width;
   final BoxConstraints? constraints;
   final BorderRadius? borderRadius;
   final Color? borderColor;
@@ -24,6 +28,8 @@ class FPCTransparentCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return FPCCard(
       backgroundColor: Colors.transparent,
+      height: this.height,
+      width: this.width,
       constraints: this.constraints,
       borderRadius: this.borderRadius,
       borderColor: this.borderColor,
