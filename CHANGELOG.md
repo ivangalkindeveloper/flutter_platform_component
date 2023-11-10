@@ -9,6 +9,7 @@ Addings:
 * FPCDottedCard;
 * FPCSelectDottedCard;
 * Snippets repository;
+
 Refactoring:
 * Optimization and refactoring of components with different controllers;
 * Removed named fields BuildContext, text, icon from static methods and components;
@@ -18,12 +19,14 @@ Refactoring:
 * The SelectField component is allocated to a separate directory;
 * FPCCircularIndicator and FPCIcon are highlighted in separate widgets with colors;
 * Snippets script and new repository;
+
 Renamings:
 * Removed "Basic" prefix for basic components;
 * "context.component..." > "context.fpc...";
 * "Modal" > "BottomSheet";
 * "Snackbar" > "SnackBar";
 * "SliverNavigationAppBar" > "SliverAppBar";
+
 Other:
 * Separate library files for directiories;
 * Updated README.

@@ -378,61 +378,61 @@ void _generateSnippetsFiles(
     _jsonEncoder.convert(
       const {
         "FPCShowExpandedBottomSheet": {
-          "prefix": "showfpcexpandedbottomsheet",
+          "prefix": "fpcshowexpandedbottomsheet",
           "body": [
             "showFPCExpandedBottomSheet(",
-            " context,",
-            " child: ,",
+            "  context,",
+            "  child: ,",
             ");",
           ]
         },
         "FPCShowSmallBottomSheet": {
-          "prefix": "showfpcsmallbottomsheet",
+          "prefix": "fpcshowsmallbottomsheet",
           "body": [
             "showFPCSmallBottomSheet(",
-            " context,",
-            " child: ,",
+            "  context,",
+            "  child: ,",
             ");",
           ]
         },
         "FPCShowDialog": {
-          "prefix": "showfpcdialog",
+          "prefix": "fpcshowdialog",
           "body": [
             "showFPCDialog(",
-            " context,",
-            " child: ,",
+            "  context,",
+            "  child: ,",
             ");",
           ]
         },
         "FPCShowDatePicker": {
-          "prefix": "showfpcdatepicker",
+          "prefix": "fpcshowdatepicker",
           "body": [
             "showFPCDatePicker(",
-            " context,",
-            " cupertinoModalBuilder: (BuildContext context) {},",
+            "  context,",
+            "  cupertinoModalBuilder: (BuildContext context) {},",
             ");",
           ]
         },
         "FPCShowTimePicker": {
-          "prefix": "showfpctimepicker",
+          "prefix": "fpcshowtimepicker",
           "body": [
             "showFPCTimePicker(",
-            " context,",
-            " cupertinoModalBuilder: (BuildContext context) {},",
+            "  context,",
+            "  cupertinoModalBuilder: (BuildContext context) {},",
             ");",
           ]
         },
         "FPCShowSnackBar": {
-          "prefix": "showfpcsnackbar",
+          "prefix": "fpcshowsnackbar",
           "body": [
             "showFPCSnackBar(",
-            " context,",
-            " child: ,",
+            "  context,",
+            "  child: ,",
             ");",
           ]
         },
         "FPCHideSnackBar": {
-          "prefix": "hidefpcsnackbar",
+          "prefix": "fpchidesnackbar",
           "body": [
             "hideFPCSnackBar(context);",
           ]
@@ -490,7 +490,7 @@ void _prepareReadmeTable() async {
     for (MapEntry<String, _Snippet> entry in snippets.entries) {
       sink.write("| ${entry.value.prefix} | ${entry.key} |\n");
     }
-    sink.write("|\n");
+    sink.write("|||\n");
   }
   await sink.close();
 }
