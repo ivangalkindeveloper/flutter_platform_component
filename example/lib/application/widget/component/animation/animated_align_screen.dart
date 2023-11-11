@@ -17,7 +17,6 @@ class _AnimatedAlignScreenState extends State<AnimatedAlignScreen> {
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      backgroundColor: theme.backgroundScaffold,
       appBar: FPCScreenAppBar(
         context,
         title: "Animated Align",

@@ -310,18 +310,10 @@ class MainComponent extends StatelessWidget {
         ),
         SizedBox(height: size.s16 / 2),
         FPCPrimaryButton(
-          title: "Select Card",
+          title: "Dotted Card",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationController.selectCardScreen,
-          ),
-        ),
-        SizedBox(height: size.s16 / 2),
-        FPCPrimaryButton(
-          title: "Gradient Select Card",
-          onPressed: () => Navigator.pushNamed(
-            context,
-            NavigationController.gradientSelectCardScreen,
+            NavigationController.dottedCardScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -378,22 +370,6 @@ class MainComponent extends StatelessWidget {
           onPressed: () => Navigator.pushNamed(
             context,
             NavigationController.gradientFormFieldScreen,
-          ),
-        ),
-        SizedBox(height: size.s16 / 2),
-        FPCPrimaryButton(
-          title: "Select Field",
-          onPressed: () => Navigator.pushNamed(
-            context,
-            NavigationController.selectFieldScreen,
-          ),
-        ),
-        SizedBox(height: size.s16 / 2),
-        FPCPrimaryButton(
-          title: "Gradient Select Field",
-          onPressed: () => Navigator.pushNamed(
-            context,
-            NavigationController.gradientSelectFieldScreen,
           ),
         ),
         SizedBox(height: size.s16),
@@ -586,6 +562,46 @@ class MainComponent extends StatelessWidget {
           onPressed: () => Navigator.pushNamed(
             context,
             NavigationController.gradientSegmentControlScreen,
+          ),
+        ),
+        SizedBox(height: size.s16),
+        FPCPrimaryButton(
+          title: "Select Card",
+          onPressed: () => Navigator.pushNamed(
+            context,
+            NavigationController.selectCardScreen,
+          ),
+        ),
+        SizedBox(height: size.s16 / 2),
+        FPCPrimaryButton(
+          title: "Gradient Select Card",
+          onPressed: () => Navigator.pushNamed(
+            context,
+            NavigationController.gradientSelectCardScreen,
+          ),
+        ),
+        SizedBox(height: size.s16 / 2),
+        FPCPrimaryButton(
+          title: "Dotted Select Card",
+          onPressed: () => Navigator.pushNamed(
+            context,
+            NavigationController.dottedSelectCardScreen,
+          ),
+        ),
+        SizedBox(height: size.s16),
+        FPCPrimaryButton(
+          title: "Select Field",
+          onPressed: () => Navigator.pushNamed(
+            context,
+            NavigationController.selectFieldScreen,
+          ),
+        ),
+        SizedBox(height: size.s16 / 2),
+        FPCPrimaryButton(
+          title: "Gradient Select Field",
+          onPressed: () => Navigator.pushNamed(
+            context,
+            NavigationController.gradientSelectFieldScreen,
           ),
         ),
         SizedBox(height: size.s16),

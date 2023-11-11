@@ -15,11 +15,9 @@ class _PageIndicatorScreenState extends State<PageIndicatorScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      backgroundColor: theme.backgroundScaffold,
       appBar: FPCScreenAppBar(
         context,
         title: "Page Indicator",

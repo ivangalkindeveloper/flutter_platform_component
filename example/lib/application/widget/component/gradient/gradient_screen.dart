@@ -11,7 +11,6 @@ class GradientScreen extends StatelessWidget {
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      backgroundColor: theme.backgroundScaffold,
       appBar: FPCScreenAppBar(
         context,
         title: "Gradient",

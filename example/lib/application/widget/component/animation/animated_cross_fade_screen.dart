@@ -18,7 +18,6 @@ class _AnimatedCrossFadeScreenState extends State<AnimatedCrossFadeScreen> {
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      backgroundColor: theme.backgroundScaffold,
       appBar: FPCScreenAppBar(
         context,
         title: "Animated Cross Fade",

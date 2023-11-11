@@ -303,7 +303,7 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
     }
 
     if (this._focusNode.hasPrimaryFocus == false &&
-        this._controller.text.isEmpty) {
+        this._controller.text.isNotEmpty) {
       setState(() {});
     }
   }

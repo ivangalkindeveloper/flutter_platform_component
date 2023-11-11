@@ -26,10 +26,12 @@
 
 <div align="center">
 
-  [VS Code Snippets](https://marketplace.visualstudio.com/items?itemName=ivangalkin.flutter-platform-component-snippet) have been generated for this package:\
+  [VS Code Snippets](https://marketplace.visualstudio.com/items?itemName=ivangalkin.flutter-platform-component-snippet) have been generated for this package:
+  
   ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/snippet.gif)
 
 </div>
+
 
 ## Getting Started
 - [Benefits](#benefits)
@@ -252,7 +254,8 @@ The package uses a fork of the following dependencies:\
 Express our gratitude to the authors of these dependencies.
 
 ## Usage
-First, create and populate the presentational entities you need from the interfaces that this package provides:
+### 1) Fill entities.
+Create and populate the presentational entities you need from the interfaces that this package provides:
 ```dart
 class Animations extends FPCDefaultAnimation {
   const Animations();
@@ -302,7 +305,7 @@ class Sizes extends FPCDefaultSize {
   // Override properties
 }
 ```
-Initialize the main component widget at the root:
+### 2) Initialize the main component widget at the root:
 ```dart
 void main() => runApp(
       FlutterPlatformComponent( // Initialize the main component widget at the root of widget tree
@@ -331,6 +334,7 @@ class Application extends StatelessWidget {
   }
 }
 ```
+### 3) Use components.
 All basic components are named "FPC<component-name>".\
 Usage basic components:
 ```dart

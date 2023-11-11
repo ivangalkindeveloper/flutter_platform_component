@@ -17,7 +17,6 @@ class _AnimatedOpacityScreenState extends State<AnimatedOpacityScreen> {
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      backgroundColor: theme.backgroundScaffold,
       appBar: FPCScreenAppBar(
         context,
         title: "Animated Opacity",

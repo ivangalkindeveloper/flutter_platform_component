@@ -18,7 +18,6 @@ class _AnimatedPositionedScreenState extends State<AnimatedPositionedScreen> {
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      backgroundColor: theme.backgroundScaffold,
       appBar: FPCScreenAppBar(
         context,
         title: "Animated Positioned",

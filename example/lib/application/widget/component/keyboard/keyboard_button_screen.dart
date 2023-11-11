@@ -14,11 +14,9 @@ class _KeyboardButtonScreenState extends State<KeyboardButtonScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      backgroundColor: theme.backgroundScaffold,
       appBar: FPCScreenAppBar(
         context,
         title: "Keyboard Button",

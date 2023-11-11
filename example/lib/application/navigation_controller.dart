@@ -28,9 +28,11 @@ import 'package:example/application/widget/component/button/bottom_sheet_button_
 import 'package:example/application/widget/component/button/outline/gradient_outline_button_screen.dart';
 import 'package:example/application/widget/component/button/outline/outline_button_screen.dart';
 import 'package:example/application/widget/component/card/card_screen.dart';
+import 'package:example/application/widget/component/card/dotted_card_screen.dart';
 import 'package:example/application/widget/component/card/gradient_card_screen.dart';
-import 'package:example/application/widget/component/card/gradient_select_card_screen.dart';
-import 'package:example/application/widget/component/card/select_card_screen.dart';
+import 'package:example/application/widget/component/select_card/dotted_select_card_screen.dart';
+import 'package:example/application/widget/component/select_card/gradient_select_card_screen.dart';
+import 'package:example/application/widget/component/select_card/select_card_screen.dart';
 import 'package:example/application/widget/component/checkbox/checkbox_screen.dart';
 import 'package:example/application/widget/component/code_field/code_field_screen.dart';
 import 'package:example/application/widget/component/code_field/gradient_code_field_screen.dart';
@@ -40,8 +42,8 @@ import 'package:example/application/widget/component/picker/date_picker_screen.d
 import 'package:example/application/widget/component/dialog/dialog_screen.dart';
 import 'package:example/application/widget/component/form_field/form_field_screen.dart';
 import 'package:example/application/widget/component/form_field/gradient_form_field_screen.dart';
-import 'package:example/application/widget/component/form_field/gradient_select_field_screen.dart';
-import 'package:example/application/widget/component/form_field/select_field_screen.dart';
+import 'package:example/application/widget/component/select_field/gradient_select_field_screen.dart';
+import 'package:example/application/widget/component/select_field/select_field_screen.dart';
 import 'package:example/application/widget/component/gradient/gradient_screen.dart';
 import 'package:example/application/widget/component/icon/icon_screen.dart';
 import 'package:example/application/widget/component/indicator/circular_indicator_screen.dart';
@@ -143,8 +145,7 @@ class NavigationController implements INavigationController {
 
   static const String cardScreen = "/card";
   static const String gradientCardScreen = "/gradientCard";
-  static const String selectCardScreen = "/selectCard";
-  static const String gradientSelectCardScreen = "/gradientSelectCard";
+  static const String dottedCardScreen = "/dottedCardScreen";
 
   static const String checkboxScreen = "/checkbox";
 
@@ -157,8 +158,6 @@ class NavigationController implements INavigationController {
 
   static const String formFieldScreen = "/formField";
   static const String gradientFormFieldScreen = "/gradientFormField";
-  static const String selectFieldScreen = "/selectField";
-  static const String gradientSelectFieldScreen = "/gradientSelectField";
 
   static const String gradientScreen = "/gradient";
 
@@ -196,6 +195,13 @@ class NavigationController implements INavigationController {
 
   static const String segmentControlScreen = "/segmentControl";
   static const String gradientSegmentControlScreen = "/gradientSegmentControl";
+
+  static const String selectCardScreen = "/selectCard";
+  static const String gradientSelectCardScreen = "/gradientSelectCard";
+  static const String dottedSelectCardScreen = "/dottedSelectCardScreen";
+
+  static const String selectFieldScreen = "/selectField";
+  static const String gradientSelectFieldScreen = "/gradientSelectField";
 
   static const String shimmerScreen = "/shimmer";
   static const String gradientShimmerScreen = "/gradientShimmer";
@@ -411,15 +417,10 @@ class NavigationController implements INavigationController {
           navigatorKey.currentContext!,
           child: const GradientCardScreen(),
         );
-      case selectCardScreen:
+      case dottedCardScreen:
         return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
-          child: const SelectCardScreen(),
-        );
-      case gradientSelectCardScreen:
-        return FPCPageRoute.fromContext(
-          navigatorKey.currentContext!,
-          child: const GradientSelectCardScreen(),
+          child: const DottedCardScreen(),
         );
 
       case checkboxScreen:
@@ -460,16 +461,6 @@ class NavigationController implements INavigationController {
         return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientFormFieldScreen(),
-        );
-      case selectFieldScreen:
-        return FPCPageRoute.fromContext(
-          navigatorKey.currentContext!,
-          child: const SelectFieldScreen(),
-        );
-      case gradientSelectFieldScreen:
-        return FPCPageRoute.fromContext(
-          navigatorKey.currentContext!,
-          child: const GradientSelectFieldScreen(),
         );
 
       case gradientScreen:
@@ -602,6 +593,33 @@ class NavigationController implements INavigationController {
         return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientSegmentControlScreen(),
+        );
+
+      case selectCardScreen:
+        return FPCPageRoute.fromContext(
+          navigatorKey.currentContext!,
+          child: const SelectCardScreen(),
+        );
+      case gradientSelectCardScreen:
+        return FPCPageRoute.fromContext(
+          navigatorKey.currentContext!,
+          child: const GradientSelectCardScreen(),
+        );
+      case dottedSelectCardScreen:
+        return FPCPageRoute.fromContext(
+          navigatorKey.currentContext!,
+          child: const DottedSelectCardScreen(),
+        );
+
+      case selectFieldScreen:
+        return FPCPageRoute.fromContext(
+          navigatorKey.currentContext!,
+          child: const SelectFieldScreen(),
+        );
+      case gradientSelectFieldScreen:
+        return FPCPageRoute.fromContext(
+          navigatorKey.currentContext!,
+          child: const GradientSelectFieldScreen(),
         );
 
       case shimmerScreen:

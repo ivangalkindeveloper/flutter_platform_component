@@ -19,7 +19,6 @@ class _AnimatedDefaultTextStyleScreenState
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      backgroundColor: theme.backgroundScaffold,
       appBar: FPCScreenAppBar(
         context,
         title: "Animated Default Text Style",

@@ -270,7 +270,7 @@ void _generateSnippetsFiles(
         "FPCBuildContextChangeAnimation": {
           "prefix": "fpccontextchangeanimation",
           "body": [
-            "context.fpcChangeAnimation();",
+            "context.fpcChangeAnimation(\${animation});",
           ]
         },
         "FPCBuildContextTextStyle": {
@@ -282,7 +282,7 @@ void _generateSnippetsFiles(
         "FPCBuildContextChangeTextStyle": {
           "prefix": "fpccontextchangetextstyle",
           "body": [
-            "context.fpcChangeTextStyle();",
+            "context.fpcChangeTextStyle(\${textstyle});",
           ]
         },
         "FPCBuildContextTimeOfDay": {
@@ -294,7 +294,7 @@ void _generateSnippetsFiles(
         "FPCBuildContextChangeTimeOfDay": {
           "prefix": "fpccontextchangetimeofday",
           "body": [
-            "context.fpcChangeTimeOfDay();",
+            "context.fpcChangeTimeOfDay(\${timeofday});",
           ]
         },
         "FPCBuildContextDateTime": {
@@ -306,7 +306,7 @@ void _generateSnippetsFiles(
         "FPCBuildContextChangeDateTime": {
           "prefix": "fpccontextchangedatetime",
           "body": [
-            "context.fpcChangeDateTime();",
+            "context.fpcChangeDateTime(\${datetime});",
           ]
         },
         "FPCBuildContextDuration": {
@@ -318,7 +318,7 @@ void _generateSnippetsFiles(
         "FPCBuildContextChangeDuration": {
           "prefix": "fpccontextchangeduration",
           "body": [
-            "context.fpcChangeDuration();",
+            "context.fpcChangeDuration(\${duration});",
           ]
         },
         "FPCBuildContextPlatform": {
@@ -330,7 +330,7 @@ void _generateSnippetsFiles(
         "FPCBuildContextChangePlatform": {
           "prefix": "fpccontextchangeplatform",
           "body": [
-            "context.fpcChangePlatform();",
+            "context.fpcChangePlatform(\${platform});",
           ]
         },
         "FPCBuildContextHaptic": {
@@ -342,7 +342,7 @@ void _generateSnippetsFiles(
         "FPCBuildContextChangeHaptic": {
           "prefix": "fpccontextchangehaptic",
           "body": [
-            "context.fpcChangeHaptic();",
+            "context.fpcChangeHaptic(\${haptic});",
           ]
         },
         "FPCBuildContextTheme": {
@@ -354,7 +354,7 @@ void _generateSnippetsFiles(
         "FPCBuildContextChangeTheme": {
           "prefix": "fpccontextchangetheme",
           "body": [
-            "context.fpcChangeTheme();",
+            "context.fpcChangeTheme(\${theme});",
           ]
         },
         "FPCBuildContextSize": {
@@ -366,7 +366,7 @@ void _generateSnippetsFiles(
         "FPCBuildContextChangeSize": {
           "prefix": "fpccontextchangesize",
           "body": [
-            "context.fpcChangeSize();",
+            "context.fpcChangeSize(\${size});",
           ]
         }
       },
@@ -382,7 +382,7 @@ void _generateSnippetsFiles(
           "body": [
             "showFPCExpandedBottomSheet(",
             "  context,",
-            "  child: ,",
+            "  child: \${child},",
             ");",
           ]
         },
@@ -391,7 +391,7 @@ void _generateSnippetsFiles(
           "body": [
             "showFPCSmallBottomSheet(",
             "  context,",
-            "  child: ,",
+            "  child: \${child},",
             ");",
           ]
         },
@@ -400,7 +400,7 @@ void _generateSnippetsFiles(
           "body": [
             "showFPCDialog(",
             "  context,",
-            "  child: ,",
+            "  child: \${child},",
             ");",
           ]
         },
@@ -409,7 +409,9 @@ void _generateSnippetsFiles(
           "body": [
             "showFPCDatePicker(",
             "  context,",
-            "  cupertinoModalBuilder: (BuildContext context) {},",
+            "  cupertinoModalBuilder: (BuildContext context) {",
+            "    \${cupertinomodalbuilder}",
+            "  },",
             ");",
           ]
         },
@@ -418,7 +420,9 @@ void _generateSnippetsFiles(
           "body": [
             "showFPCTimePicker(",
             "  context,",
-            "  cupertinoModalBuilder: (BuildContext context) {},",
+            "  cupertinoModalBuilder: (BuildContext context) {",
+            "    \${cupertinomodalbuilder}",
+            "  },",
             ");",
           ]
         },
@@ -427,7 +431,7 @@ void _generateSnippetsFiles(
           "body": [
             "showFPCSnackBar(",
             "  context,",
-            "  child: ,",
+            "  child: \${child},",
             ");",
           ]
         },

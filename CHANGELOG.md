@@ -7,7 +7,7 @@ Addings:
 * FPCDottedButton;
 * FPCDisabledWrapper;
 * FPCDottedCard;
-* FPCSelectDottedCard;
+* FPCDottedSelectCard;
 * Snippets repository;
 
 Refactoring:

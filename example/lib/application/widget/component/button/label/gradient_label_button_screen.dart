@@ -16,11 +16,9 @@ class _GradientLabelButtonScreenState extends State<GradientLabelButtonScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      backgroundColor: theme.backgroundScaffold,
       appBar: FPCScreenAppBar(
         context,
         title: "Gradient Label Button",
