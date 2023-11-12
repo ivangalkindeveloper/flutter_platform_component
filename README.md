@@ -32,7 +32,7 @@
 
 </div>
 
-
+<br>
 
 ## Getting Started
 - [Benefits](#benefits)
@@ -217,7 +217,7 @@
 - [TODO](#todo)
 - [Additional Information](#additional-information)
 
-
+<br>
 
 ## Benefits
 The package works according to the principle: fill out needed contracts - get all ready-made inherited platform components.
@@ -247,7 +247,7 @@ Every component that can be clicked has the property to be disabled implemented.
 ### Snippets
 VS Code snippets have been generated for this package for convenient development and creating your own widget wrappers.
 
-
+<br>
 
 ## Design
 Components follow the following design paradigm:
@@ -257,7 +257,7 @@ Components follow the following design paradigm:
 4) Component change the color of the disabled component, if it only has not background color;
 5) The design of cross-platform components and their behavior are not mix.
 
-
+<br>
 
 ## Dependencies
 The package uses a fork of the following dependencies:\
@@ -270,7 +270,7 @@ The package uses a fork of the following dependencies:\
 [pinput](https://pub.dev/packages/pinput) - code fields and PIN fields.\
 Express our gratitude to the authors of these dependencies.
 
-
+<br>
 
 ## Usage
 ### 1) Fill entities
@@ -328,7 +328,7 @@ class Sizes extends FPCDefaultSize {
 Initialize the main component widget at the root:
 ```dart
 void main() => runApp(
-      FlutterPlatformComponent( // Initialize the main component widget at the root of widget tree
+      FlutterPlatformComponent( // Initialize the main widget at the root
         animation: const Animations(),
         textStyle: const TextStyles(),
         timeOfDay: const TimesOfDay(),
@@ -374,7 +374,7 @@ FPCPrimaryButton(
 ),
 ```
 
-
+<br>
 
 ## Entities
 ### Animation
@@ -512,10 +512,10 @@ The method allows you to change the current times of day:
 context.fpcChangeTimeOfDay(const TimesOfDay());
 ```
 
-
+<br>
 
 ## Components
-
+<br>
 
 ### Animation
 All animations durations are guided by slow, default and fast durations from the size config.
@@ -745,22 +745,22 @@ const FPCAnimatedSlowTransitionSwitcher(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_transition_switcher.gif)
-
+<br>
 
 ### App
 #### FPCApp
-Main root widget of the application, decomposed by platform.\
+Basic root widget of the application, decomposed by platform.\
 Example of using a component:
 ```dart
 FPCApp(
   home: const Child(),
 ),
 ```
-
+<br>
 
 ### AppBar
 #### FPCAppBar
-Main app bar widget, decomposed by platform.\
+Basic app bar component, decomposed by platform.\
 Example of using a component:
 ```dart
 FPCAppBar(
@@ -863,7 +863,7 @@ FPCBlurWhiteAlwaysExpandedBottomSheetAppBar(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/blur/blur_white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/blur/blur_white_always_expanded_modal_app_bar_material.gif) |
-
+<br>
 
 ### Badge
 #### FPCCounterBadge
@@ -906,7 +906,7 @@ FPCPrimaryGradientDotBadge(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/badge/dot/gradient_dot_badge.gif)
-
+<br>
 
 ### Blur
 Blur component for creating blur effect for parent.\
@@ -917,7 +917,7 @@ FPCBlur(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/blur/blur.png)
-
+<br>
 
 ### BottomSheet
 #### FPCActionBottomSheet
@@ -995,7 +995,7 @@ FPCSmallBottomSheet(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/pop_up_modal/pop_up_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/pop_up_modal/pop_up_modal_material.gif) |
-
+<br>
 
 ### Button
 #### FPCButton
@@ -1133,7 +1133,7 @@ FPCWhiteAlwaysExpandedBottomSheetCloseButton(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/modal/white_always_expanded_modal_close_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/modal/white_always_expanded_modal_close_button_material.gif) |
-
+<br>
 
 ### Card
 #### FPCCard
@@ -1163,7 +1163,7 @@ FPCPrimaryDottedCard(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/dotted_card.png)
-
+<br>
 
 ### Checkbox
 ### FPCCheckbox
@@ -1178,7 +1178,7 @@ FPCPrimaryCheckbox(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/checkbox/checkbox_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/checkbox/checkbox_material.gif) |
-
+<br>
 
 ### CodeField
 #### FPCCodeField
@@ -1199,7 +1199,7 @@ FPCPrimaryGradientCodeField(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/code_field/gradient_code_field.gif)
-
+<br>
 
 ### Common
 #### CupertinoNavigator
@@ -1218,14 +1218,14 @@ Separated material scrollbar component.
 WillPopScope widget for nested navigation.
 #### FPCTextInputHandlerFormatter
 Text handler for autovalidating.
-
+<br>
 
 ### Default
 #### FPCListView
 Default ListView widget are guided by size config.
 #### FPCPadding
 Default Padding widget are guided by size config.
-
+<br>
 
 ### Dialog
 #### FPCDialog
@@ -1249,7 +1249,7 @@ FPCDialog(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/dialog/dialog_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/dialog/dialog_material.gif) |
-
+<br>
 
 ### Divider
 #### FPCDivider
@@ -1266,7 +1266,7 @@ Example of using a ready-made component:
 const FPCPrimaryGradientDivider(),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/divider/gradient_divider.png)
-
+<br>
 
 ### FormField
 Form field does not repeat the design accuracy of platform components, since pure native fields are very rarely used in good productive projects.\
@@ -1289,7 +1289,7 @@ FPCPrimaryGradientFormField(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/form_field/gradient_form_field.gif)
-
+<br>
 
 ### Global
 Classes that contains platform-decomposed functions to invoke the required interface behaviors.
@@ -1343,7 +1343,7 @@ hideFPCSnackBar(
   context,
 );
 ```
-
+<br>
 
 ### Gradient
 #### FPCGradientMask
@@ -1394,7 +1394,7 @@ FPCSweepGradient(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/gradient/sweep_gradient.png)
-
+<br>
 
 ### Icon
 All icons sizes are guided by small, default and large sizes from the size config.\
@@ -1406,7 +1406,7 @@ const FPCPrimaryIcon(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/icon/icon.png)
-
+<br>
 
 ### Indicator
 #### CircularIndicator
@@ -1468,7 +1468,7 @@ FPCPrimaryStoryIndicator(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/indicator/story_indicator/story_indicator.gif)
-
+<br>
 
 ### Keyboard
 #### FPCKeyboardButton
@@ -1506,7 +1506,7 @@ FPCKeyboard(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/keyboard/keyboard/keyboard_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/keyboard/keyboard/keyboard_material.gif) |
-
+<br>
 
 ### List
 #### FPCListRefresh
@@ -1542,7 +1542,7 @@ FPCListSection(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/list/list_section/list_section_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/list/list_section/list_section_material.gif) |
-
+<br>
 
 ### Navigation
 #### FPCBottomNavigationBar
@@ -1617,7 +1617,7 @@ FPCRoute.fade(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/navigation/route/route_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/navigation/route/route_material.gif) |
-
+<br>
 
 ### Picker
 ### FPCDatePicker
@@ -1644,7 +1644,7 @@ FPCTimePicker(),
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/picker/time_picker/time_picker_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/picker/time_picker/time_picker_material.gif) |
-
+<br>
 
 ### PINField
 #### FPCPINField
@@ -1665,7 +1665,7 @@ FPCPrimaryGradientPINField(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/pin_field/gradient_pin_field.gif)
-
+<br>
 
 ### Radio
 #### FPCRadio
@@ -1681,7 +1681,7 @@ FPCPrimaryRadio<String>(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/radio/radio_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/radio/radio_material.gif) |
-
+<br>
 
 ### Scaffold
 #### FPCScaffold
@@ -1695,7 +1695,7 @@ FPCScaffold(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/scaffold/scaffold_cupertino.png) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/scaffold/scaffold_material.png) |
-
+<br>
 
 ### Scrollbar
 #### FPCScrollbar
@@ -1709,7 +1709,7 @@ FPCScrollbar(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/scrollbar/scrollbar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/scrollbar/scrollbar_material.gif) |
-
+<br>
 
 ### SegmentControl
 #### FPCSegmentControl
@@ -1756,7 +1756,7 @@ FPCPrimaryGradientSegmentControl<String>(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/segment_control/gradient_segment_control_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/segment_control/gradient_segment_control_material.gif) |
-
+<br>
 
 ### SelectCard
 #### FPCSelectCard
@@ -1795,7 +1795,7 @@ FPCPrimaryDottedSelectCard(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_card/dotted_select_card_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_card/dotted_select_card_material.gif) |
-
+<br>
 
 ### SelectField
 #### FPCSelectField
@@ -1822,7 +1822,7 @@ FPCPrimaryGradientSelectField(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_field/gradient_select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_field/gradient_select_field_material.gif) |
-
+<br>
 
 ### Shimmer
 #### FPCShimmer
@@ -1839,7 +1839,7 @@ Example of using a ready-made component:
 const FPCPrimaryGradientShimmer(),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/shimmer/gradient_shimmer.gif)
-
+<br>
 
 ### Slider
 #### FPCSlider
@@ -1854,7 +1854,7 @@ FPCPrimarySlider(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/slider/slider_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/slider/slider_material.gif) |
-
+<br>
 
 ### SlidingSegmentControl
 Sliding segment control compoennt does not have a direct analogue on android, therefore it does not have a decomposition for this platform.
@@ -1878,7 +1878,7 @@ FPCSlidingSegmentControl<String>(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/sliding_segment_control/sliding_segment_control.gif)
-
+<br>
 
 ### SliverAppBar
 Ready-made sliver navigation app bar component, decomposed by platform.\
@@ -1889,7 +1889,7 @@ FPCSliverAppBar(),
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/sliver_navigation_app_bar/sliver_navigation_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/sliver_navigation_app_bar/sliver_navigation_app_bar_material.gif) |
-
+<br>
 
 ### SnackBar
 #### FPCSnackBar
@@ -1928,7 +1928,7 @@ const FPCPrimaryGradientOutlineSnackBar(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/snackbar/gradient_outline_snackbar.png)
-
+<br>
 
 ### Switch
 #### FPCSwitch
@@ -1943,7 +1943,7 @@ FPCPrimarySwitch(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/switch/switch_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/switch/switch_material.gif) |
-
+<br>
 
 ### Text
 #### FPCText
@@ -1982,7 +1982,7 @@ FPCTextStyle.regular16Black(
   context,
 ),
 ```
-
+<br>
 
 ### Toggle
 One of the proposed visions of the segment control component.
@@ -2031,11 +2031,14 @@ FPCPrimaryGradientToggle<String>(
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/toggle/gradient_toggle_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/toggle/gradient_toggle_material.gif) |
 
+<br>
+
 
 ## TODO
 1) Elevation of components;
 2) Support WEB.
 
+<br>
 
 ## Additional Information
 For more details see example project.\
