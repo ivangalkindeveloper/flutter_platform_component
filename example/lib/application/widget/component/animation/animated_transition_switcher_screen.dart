@@ -1,5 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class AnimatedTransitionSwitcherScreen extends StatefulWidget {
   const AnimatedTransitionSwitcherScreen({super.key});
@@ -42,7 +43,7 @@ class _AnimatedTransitionSwitcherScreenState
                         context,
                         "Horizontal",
                       ),
-                      SizedBox(height: size.s16 / 2),
+                      Gap(size.s16 / 2),
                       Row(
                         children: [
                           Column(
@@ -52,7 +53,7 @@ class _AnimatedTransitionSwitcherScreenState
                                 context,
                                 "Slow",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedSlowTransitionSwitcher(
                                 type: FPCSwitcherTransitionType.horizontal,
                                 child: this._action
@@ -79,7 +80,7 @@ class _AnimatedTransitionSwitcherScreenState
                                 context,
                                 "Default",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedTransitionSwitcher(
                                 type: FPCSwitcherTransitionType.horizontal,
                                 child: this._action
@@ -106,7 +107,7 @@ class _AnimatedTransitionSwitcherScreenState
                                 context,
                                 "Fast",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedFastTransitionSwitcher(
                                 type: FPCSwitcherTransitionType.horizontal,
                                 child: this._action
@@ -127,12 +128,12 @@ class _AnimatedTransitionSwitcherScreenState
                           ),
                         ],
                       ),
-                      SizedBox(height: size.s16),
+                      Gap(size.s16),
                       FPCText.regular16Black(
                         context,
                         "Scaled",
                       ),
-                      SizedBox(height: size.s16 / 2),
+                      Gap(size.s16 / 2),
                       Row(
                         children: [
                           Column(
@@ -142,7 +143,7 @@ class _AnimatedTransitionSwitcherScreenState
                                 context,
                                 "Slow",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedSlowTransitionSwitcher(
                                 type: FPCSwitcherTransitionType.scaled,
                                 child: this._action
@@ -169,7 +170,7 @@ class _AnimatedTransitionSwitcherScreenState
                                 context,
                                 "Default",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedTransitionSwitcher(
                                 type: FPCSwitcherTransitionType.scaled,
                                 child: this._action
@@ -196,7 +197,7 @@ class _AnimatedTransitionSwitcherScreenState
                                 context,
                                 "Fast",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedFastTransitionSwitcher(
                                 type: FPCSwitcherTransitionType.scaled,
                                 child: this._action
@@ -217,12 +218,12 @@ class _AnimatedTransitionSwitcherScreenState
                           ),
                         ],
                       ),
-                      SizedBox(height: size.s16),
+                      Gap(size.s16),
                       FPCText.regular16Black(
                         context,
                         "Vertical",
                       ),
-                      SizedBox(height: size.s16 / 2),
+                      Gap(size.s16 / 2),
                       Row(
                         children: [
                           Column(
@@ -232,7 +233,7 @@ class _AnimatedTransitionSwitcherScreenState
                                 context,
                                 "Slow",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedSlowTransitionSwitcher(
                                 type: FPCSwitcherTransitionType.vertical,
                                 child: this._action
@@ -259,7 +260,7 @@ class _AnimatedTransitionSwitcherScreenState
                                 context,
                                 "Default",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedTransitionSwitcher(
                                 type: FPCSwitcherTransitionType.vertical,
                                 child: this._action
@@ -286,7 +287,7 @@ class _AnimatedTransitionSwitcherScreenState
                                 context,
                                 "Fast",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedFastTransitionSwitcher(
                                 type: FPCSwitcherTransitionType.vertical,
                                 child: this._action

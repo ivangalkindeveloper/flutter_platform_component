@@ -1,5 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class AnimatedOpenContainerScreen extends StatelessWidget {
   const AnimatedOpenContainerScreen({super.key});
@@ -34,7 +35,7 @@ class AnimatedOpenContainerScreen extends StatelessWidget {
                   ),
                   openBuilder: (BuildContext context) => const _OpenContainer(),
                 ),
-                SizedBox(height: size.s16 / 2),
+                Gap(size.s16 / 2),
                 FPCAnimatedOpenContainer(
                   type: FPCOpenContainerTransitionType.fade,
                   closedBuilder:
@@ -48,7 +49,7 @@ class AnimatedOpenContainerScreen extends StatelessWidget {
                   ),
                   openBuilder: (BuildContext context) => const _OpenContainer(),
                 ),
-                SizedBox(height: size.s16 / 2),
+                Gap(size.s16 / 2),
                 FPCAnimatedFastOpenContainer(
                   type: FPCOpenContainerTransitionType.fade,
                   closedBuilder:

@@ -2,6 +2,7 @@ import 'package:example/application/widget/custom/config_section.dart';
 import 'package:example/application/widget/custom/dummy_list.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class BlurBottomNavigationBarScreen extends StatefulWidget {
   const BlurBottomNavigationBarScreen({super.key});
@@ -33,7 +34,7 @@ class _BlurBottomNavigationBarScreenState
       body: FPCListView(
         children: [
           const ConfigSection(),
-          SizedBox(height: size.s16 * 2),
+          Gap(size.s16 * 2),
           const DummyList(),
         ],
       ),

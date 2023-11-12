@@ -1,5 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class AnimatedOpacityStackScreen extends StatefulWidget {
   const AnimatedOpacityStackScreen({super.key});
@@ -43,7 +44,7 @@ class _AnimatedOpacityStackScreenState
                             context,
                             "Slow",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           FPCAnimatedSlowOpacityStack(
                             condition: this._action,
                             firstChild: Container(
@@ -67,7 +68,7 @@ class _AnimatedOpacityStackScreenState
                             context,
                             "Default",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           FPCAnimatedOpacityStack(
                             condition: this._action,
                             firstChild: Container(
@@ -91,7 +92,7 @@ class _AnimatedOpacityStackScreenState
                             context,
                             "Fast",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           FPCAnimatedFastOpacityStack(
                             condition: this._action,
                             firstChild: Container(

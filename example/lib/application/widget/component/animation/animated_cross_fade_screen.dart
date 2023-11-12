@@ -1,5 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class AnimatedCrossFadeScreen extends StatefulWidget {
   const AnimatedCrossFadeScreen({super.key});
@@ -42,7 +43,7 @@ class _AnimatedCrossFadeScreenState extends State<AnimatedCrossFadeScreen> {
                             context,
                             "Slow",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           FPCAnimatedSlowCrossFade(
                             condition: this._action,
                             firstChild: Container(
@@ -66,7 +67,7 @@ class _AnimatedCrossFadeScreenState extends State<AnimatedCrossFadeScreen> {
                             context,
                             "Default",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           FPCAnimatedCrossFade(
                             condition: this._action,
                             firstChild: Container(
@@ -90,7 +91,7 @@ class _AnimatedCrossFadeScreenState extends State<AnimatedCrossFadeScreen> {
                             context,
                             "Fast",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           FPCAnimatedFastCrossFade(
                             condition: this._action,
                             firstChild: Container(

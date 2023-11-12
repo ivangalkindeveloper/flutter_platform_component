@@ -10,6 +10,7 @@ import 'package:example/application/widget/main/main_duration.dart';
 import 'package:example/application/widget/main/main_theme.dart';
 import 'package:example/application/widget/main/main_size.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -42,23 +43,23 @@ class _MainScreenState extends State<MainScreen> {
           controller: this._scrollController,
           children: [
             const ConfigSection(),
-            SizedBox(height: size.s16),
+            Gap(size.s16),
             const MainAnimation(),
-            SizedBox(height: size.s16),
+            Gap(size.s16),
             const MainDateTime(),
-            SizedBox(height: size.s16),
+            Gap(size.s16),
             const MainDuration(),
-            SizedBox(height: size.s16),
+            Gap(size.s16),
             const MainPlatform(),
-            SizedBox(height: size.s16),
+            Gap(size.s16),
             const MainSize(),
-            SizedBox(height: size.s16),
+            Gap(size.s16),
             const MainTextStyle(),
-            SizedBox(height: size.s16),
+            Gap(size.s16),
             const MainTheme(),
-            SizedBox(height: size.s16),
+            Gap(size.s16),
             const MainTimeOfDay(),
-            SizedBox(height: size.s16),
+            Gap(size.s16),
             const MainComponent(),
           ],
         ),

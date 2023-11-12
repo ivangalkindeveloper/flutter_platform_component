@@ -1,6 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:example/application/navigation_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class MainComponent extends StatelessWidget {
   const MainComponent({super.key});
@@ -20,7 +21,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.animatedAlignScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Container",
           onPressed: () => Navigator.pushNamed(
@@ -28,7 +29,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.animatedContainerScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Cross Fade",
           onPressed: () => Navigator.pushNamed(
@@ -36,7 +37,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.animatedCrossFadeScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Default Text Style",
           onPressed: () => Navigator.pushNamed(
@@ -44,7 +45,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.animatedDefaultTextStyleScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Fade In",
           onPressed: () => Navigator.pushNamed(
@@ -52,7 +53,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.animatedFadeInScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Fade Out",
           onPressed: () => Navigator.pushNamed(
@@ -60,7 +61,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.animatedFadeOutScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Opacity Stack",
           onPressed: () => Navigator.pushNamed(
@@ -68,7 +69,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.animatedOpacityStackScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Opacity",
           onPressed: () => Navigator.pushNamed(
@@ -76,7 +77,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.animatedOpacityScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Open Container",
           onPressed: () => Navigator.pushNamed(
@@ -84,7 +85,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.animatedOpenContainerScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Positioned",
           onPressed: () => Navigator.pushNamed(
@@ -92,7 +93,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.animatedPositionedScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Size",
           onPressed: () => Navigator.pushNamed(
@@ -100,7 +101,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.animatedSizeScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Switcher",
           onPressed: () => Navigator.pushNamed(
@@ -108,7 +109,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.animatedSwitcherScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Animated Transition Switcher",
           onPressed: () => Navigator.pushNamed(
@@ -116,7 +117,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.animatedTransitionSwitcherScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "App Bar",
           onPressed: () => Navigator.pushNamed(
@@ -124,7 +125,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.appBarScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Blur App Bar",
           onPressed: () => Navigator.pushNamed(
@@ -132,7 +133,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.blurAppBarScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Counter Badge",
           onPressed: () => Navigator.pushNamed(
@@ -140,7 +141,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.counterBadgeScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Counter Badge",
           onPressed: () => Navigator.pushNamed(
@@ -148,7 +149,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientCounterBadgeScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Dot Badge",
           onPressed: () => Navigator.pushNamed(
@@ -156,7 +157,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.dotBadgeScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Dot Badge",
           onPressed: () => Navigator.pushNamed(
@@ -164,7 +165,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientDotBadgeScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Blur",
           onPressed: () => Navigator.pushNamed(
@@ -172,7 +173,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.blurScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Action Bottom Sheet",
           onPressed: () => Navigator.pushNamed(
@@ -180,7 +181,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.actionBottomSheetScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Expanded Bottom Sheet",
           onPressed: () => Navigator.pushNamed(
@@ -188,7 +189,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.expandedBottomSheetScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Black Always Expanded Bottom Sheet",
           onPressed: () => Navigator.pushNamed(
@@ -196,7 +197,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.blackAlwaysExpandBottomSheetScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Blur Expanded Bottom Sheet",
           onPressed: () => Navigator.pushNamed(
@@ -204,7 +205,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.blurExpandedBottomSheetScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Blur Black Always Expanded Bottom Sheet",
           onPressed: () => Navigator.pushNamed(
@@ -212,7 +213,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.blurBlackAlwaysExpandBottomSheetScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Small Bottom Sheet",
           onPressed: () => Navigator.pushNamed(
@@ -220,7 +221,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.popUpBottomSheetScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Button",
           onPressed: () => Navigator.pushNamed(
@@ -228,7 +229,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.buttonScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Button",
           onPressed: () => Navigator.pushNamed(
@@ -236,7 +237,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientButtonScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Label Button",
           onPressed: () => Navigator.pushNamed(
@@ -244,7 +245,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.labelButtonScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Label Button",
           onPressed: () => Navigator.pushNamed(
@@ -252,7 +253,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientLabelButtonScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Outline Button",
           onPressed: () => Navigator.pushNamed(
@@ -260,7 +261,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.outlineButtonScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Outline Button",
           onPressed: () => Navigator.pushNamed(
@@ -268,7 +269,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientOutlineButtonScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Dotted Button",
           onPressed: () => Navigator.pushNamed(
@@ -276,7 +277,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.dottedButtonScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Icon Button",
           onPressed: () => Navigator.pushNamed(
@@ -284,7 +285,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.iconButtonScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Bottom Sheet Button",
           onPressed: () => Navigator.pushNamed(
@@ -292,7 +293,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.modalButtonScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Card",
           onPressed: () => Navigator.pushNamed(
@@ -300,7 +301,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.cardScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Card",
           onPressed: () => Navigator.pushNamed(
@@ -308,7 +309,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientCardScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Dotted Card",
           onPressed: () => Navigator.pushNamed(
@@ -316,7 +317,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.dottedCardScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Checkbox",
           onPressed: () => Navigator.pushNamed(
@@ -324,7 +325,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.checkboxScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Code Field",
           onPressed: () => Navigator.pushNamed(
@@ -332,7 +333,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.codeFieldScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Code Field",
           onPressed: () => Navigator.pushNamed(
@@ -340,7 +341,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientCodeFieldScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Dialog",
           onPressed: () => Navigator.pushNamed(
@@ -348,7 +349,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.dialogScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Divider",
           onPressed: () => Navigator.pushNamed(
@@ -356,7 +357,15 @@ class MainComponent extends StatelessWidget {
             NavigationController.dividerScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16 / 2),
+        FPCPrimaryButton(
+          title: "Gradient Divider",
+          onPressed: () => Navigator.pushNamed(
+            context,
+            NavigationController.gradientDividerScreen,
+          ),
+        ),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Form Field",
           onPressed: () => Navigator.pushNamed(
@@ -364,7 +373,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.formFieldScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Form Field",
           onPressed: () => Navigator.pushNamed(
@@ -372,7 +381,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientFormFieldScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Gradient",
           onPressed: () => Navigator.pushNamed(
@@ -380,7 +389,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Icon",
           onPressed: () => Navigator.pushNamed(
@@ -388,7 +397,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.iconScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Circular Indicator",
           onPressed: () => Navigator.pushNamed(
@@ -396,7 +405,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.circularIndicatorScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Page Indicator",
           onPressed: () => Navigator.pushNamed(
@@ -404,7 +413,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.pageIndicatorScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Page Indicator",
           onPressed: () => Navigator.pushNamed(
@@ -412,7 +421,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientPageIndicatorScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Progress Indicator",
           onPressed: () => Navigator.pushNamed(
@@ -420,7 +429,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.progressIndicatorScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Story Indicator",
           onPressed: () => Navigator.pushNamed(
@@ -428,7 +437,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.storyIndicatorScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Keyboard Button",
           onPressed: () => Navigator.pushNamed(
@@ -436,7 +445,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.keyboardButtonScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Keyboard Number Button",
           onPressed: () => Navigator.pushNamed(
@@ -444,7 +453,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.keyboardNumberButtonScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Keyboard",
           onPressed: () => Navigator.pushNamed(
@@ -452,7 +461,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.keyboardScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "List Refresh",
           onPressed: () => Navigator.pushNamed(
@@ -460,7 +469,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.listRefreshScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "List Section",
           onPressed: () => Navigator.pushNamed(
@@ -468,7 +477,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.listSectionScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Bottom Navigation Bar",
           onPressed: () => Navigator.pushNamed(
@@ -476,7 +485,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.bottomNavigationBarScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Blur Bottom Navigation Bar",
           onPressed: () => Navigator.pushNamed(
@@ -484,7 +493,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.blurBottomNavigationBarScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Navigator",
           onPressed: () => Navigator.pushNamed(
@@ -492,7 +501,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.navigatorScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Date Picker",
           onPressed: () => Navigator.pushNamed(
@@ -500,7 +509,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.datePickerScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Time Picker",
           onPressed: () => Navigator.pushNamed(
@@ -508,7 +517,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.timePickerScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "PIN Field",
           onPressed: () => Navigator.pushNamed(
@@ -516,7 +525,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.pinFieldScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient PIN Field",
           onPressed: () => Navigator.pushNamed(
@@ -524,7 +533,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientPinFieldScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Radio",
           onPressed: () => Navigator.pushNamed(
@@ -532,7 +541,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.radioScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Scaffold",
           onPressed: () => Navigator.pushNamed(
@@ -540,7 +549,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.scaffoldScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Scrollbar",
           onPressed: () => Navigator.pushNamed(
@@ -548,7 +557,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.scrollbarScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Segment Control",
           onPressed: () => Navigator.pushNamed(
@@ -556,7 +565,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.segmentControlScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Segment Control",
           onPressed: () => Navigator.pushNamed(
@@ -564,7 +573,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientSegmentControlScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Select Card",
           onPressed: () => Navigator.pushNamed(
@@ -572,7 +581,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.selectCardScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Select Card",
           onPressed: () => Navigator.pushNamed(
@@ -580,7 +589,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientSelectCardScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Dotted Select Card",
           onPressed: () => Navigator.pushNamed(
@@ -588,7 +597,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.dottedSelectCardScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Select Field",
           onPressed: () => Navigator.pushNamed(
@@ -596,7 +605,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.selectFieldScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Select Field",
           onPressed: () => Navigator.pushNamed(
@@ -604,7 +613,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientSelectFieldScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Shimmer",
           onPressed: () => Navigator.pushNamed(
@@ -612,7 +621,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.shimmerScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Shimmer",
           onPressed: () => Navigator.pushNamed(
@@ -620,7 +629,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientShimmerScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Slider",
           onPressed: () => Navigator.pushNamed(
@@ -628,7 +637,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.sliderScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Sliding Segment Control",
           onPressed: () => Navigator.pushNamed(
@@ -636,7 +645,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.slidingSegmentControlScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Sliver App Bar",
           onPressed: () => Navigator.pushNamed(
@@ -644,7 +653,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.sliverAppBarScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "SnackBar",
           onPressed: () => Navigator.pushNamed(
@@ -652,7 +661,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.snackBarScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient SnackBar",
           onPressed: () => Navigator.pushNamed(
@@ -660,7 +669,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.gradientSnackBarScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Switch",
           onPressed: () => Navigator.pushNamed(
@@ -668,7 +677,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.switchScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Text",
           onPressed: () => Navigator.pushNamed(
@@ -676,7 +685,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.textScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Text Span",
           onPressed: () => Navigator.pushNamed(
@@ -684,7 +693,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.textSpanScreen,
           ),
         ),
-        SizedBox(height: size.s16),
+        Gap(size.s16),
         FPCPrimaryButton(
           title: "Toggle",
           onPressed: () => Navigator.pushNamed(
@@ -692,7 +701,7 @@ class MainComponent extends StatelessWidget {
             NavigationController.toggleScreen,
           ),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         FPCPrimaryButton(
           title: "Gradient Toggle",
           onPressed: () => Navigator.pushNamed(

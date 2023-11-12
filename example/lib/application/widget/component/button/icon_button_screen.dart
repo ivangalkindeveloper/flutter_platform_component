@@ -1,6 +1,7 @@
 import 'package:example/application/widget/custom/config_section.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class IconButtonScreen extends StatefulWidget {
   const IconButtonScreen({super.key});
@@ -26,13 +27,13 @@ class _IconButtonScreenState extends State<IconButtonScreen> {
         childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
-          SizedBox(height: size.s16 / 2),
+          Gap(size.s16 / 2),
           FPCPrimaryButton(
             title: "isDisabled",
             onPressed: () =>
                 setState(() => this._isDisabled = !this._isDisabled),
           ),
-          SizedBox(height: size.s16 * 2),
+          Gap(size.s16 * 2),
           FPCIconButton(
             onPressed: () {},
             isDisabled: this._isDisabled,

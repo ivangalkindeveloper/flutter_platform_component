@@ -2,6 +2,7 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:example/application/widget/custom/config_section.dart';
 import 'package:example/application/widget/custom/dummy_list.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class ScrollbarScreen extends StatelessWidget {
   const ScrollbarScreen({super.key});
@@ -20,7 +21,7 @@ class ScrollbarScreen extends StatelessWidget {
         child: FPCListView(
           children: [
             const ConfigSection(),
-            SizedBox(height: size.s16 * 2),
+            Gap(size.s16 * 2),
             const DummyList(),
             const DummyList(),
             const DummyList(),

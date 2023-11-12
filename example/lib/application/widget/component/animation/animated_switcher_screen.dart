@@ -1,5 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class AnimatedSwitcherScreen extends StatefulWidget {
   const AnimatedSwitcherScreen({super.key});
@@ -41,7 +42,7 @@ class _AnimatedSwitcherScreenState extends State<AnimatedSwitcherScreen> {
                             context,
                             "Slow",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           FPCAnimatedSlowSwitcher(
                             child: this._action
                                 ? Container(
@@ -67,7 +68,7 @@ class _AnimatedSwitcherScreenState extends State<AnimatedSwitcherScreen> {
                             context,
                             "Default",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           FPCAnimatedSwitcher(
                             child: this._action
                                 ? Container(
@@ -93,7 +94,7 @@ class _AnimatedSwitcherScreenState extends State<AnimatedSwitcherScreen> {
                             context,
                             "Fast",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           FPCAnimatedFastSwitcher(
                             child: this._action
                                 ? Container(

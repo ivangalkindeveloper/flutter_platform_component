@@ -12,6 +12,7 @@ dependencies:
   cupertino_icons:
   flutter_platform_component:
     path: ../
+  gap:
 
 dev_dependencies:
   flutter_test:

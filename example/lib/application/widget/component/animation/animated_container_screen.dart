@@ -1,5 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class AnimatedContainerScreen extends StatefulWidget {
   const AnimatedContainerScreen({super.key});
@@ -42,7 +43,7 @@ class _AnimatedContainerScreenState extends State<AnimatedContainerScreen> {
                             context,
                             "Slow",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           FPCAnimatedSlowContainer(
                             height: this._action ? size.s28 * 4 : size.s28 * 2,
                             width: this._action ? size.s28 * 4 : size.s28 * 2,
@@ -60,7 +61,7 @@ class _AnimatedContainerScreenState extends State<AnimatedContainerScreen> {
                             context,
                             "Default",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           FPCAnimatedContainer(
                             height: this._action ? size.s28 * 4 : size.s28 * 2,
                             width: this._action ? size.s28 * 4 : size.s28 * 2,
@@ -78,7 +79,7 @@ class _AnimatedContainerScreenState extends State<AnimatedContainerScreen> {
                             context,
                             "Fast",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           FPCAnimatedFastContainer(
                             height: this._action ? size.s28 * 4 : size.s28 * 2,
                             width: this._action ? size.s28 * 4 : size.s28 * 2,

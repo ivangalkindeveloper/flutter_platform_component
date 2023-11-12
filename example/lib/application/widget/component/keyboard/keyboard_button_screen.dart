@@ -1,6 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:example/application/widget/custom/config_section.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class KeyboardButtonScreen extends StatefulWidget {
   const KeyboardButtonScreen({super.key});
@@ -26,13 +27,13 @@ class _KeyboardButtonScreenState extends State<KeyboardButtonScreen> {
         childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
-          SizedBox(height: size.s16 / 2),
+          Gap(size.s16 / 2),
           FPCPrimaryButton(
             title: "isDisabled",
             onPressed: () =>
                 setState(() => this._isDisabled = !this._isDisabled),
           ),
-          SizedBox(height: size.s16 * 2),
+          Gap(size.s16 * 2),
           FPCKeyboardButton(
             onPressed: () {},
             isDisabled: this._isDisabled,

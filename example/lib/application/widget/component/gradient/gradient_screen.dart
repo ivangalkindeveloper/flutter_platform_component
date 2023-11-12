@@ -1,6 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:example/application/widget/custom/config_section.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class GradientScreen extends StatelessWidget {
   const GradientScreen({super.key});
@@ -19,7 +20,7 @@ class GradientScreen extends StatelessWidget {
       body: FPCListView(
         children: [
           const ConfigSection(),
-          SizedBox(height: size.s16 * 2),
+          Gap(size.s16 * 2),
           FPCGradientCard(
             backgroundGradient: FPCLinearGradient(
               context,
@@ -30,7 +31,7 @@ class GradientScreen extends StatelessWidget {
               "Linear Gradient",
             ),
           ),
-          SizedBox(height: size.s16),
+          Gap(size.s16),
           FPCGradientCard(
             backgroundGradient: FPCRadialGradient(
               context,
@@ -41,7 +42,7 @@ class GradientScreen extends StatelessWidget {
               "Radial Gradient",
             ),
           ),
-          SizedBox(height: size.s16),
+          Gap(size.s16),
           FPCGradientCard(
             backgroundGradient: FPCSweepGradient(
               context,

@@ -193,30 +193,30 @@ class _FPCDottedSelectCardMaterial extends StatelessWidget {
       borderRadius: BorderRadius.all(borderRadius),
       isDisabled: this.isDisabled,
       children: [
-        FPCDottedCard(
-          backgroundColor: this.backgroundColor,
-          constraints: this.constraints,
-          height: this.height,
-          width: this.width,
-          borderRadius: borderRadius,
-          borderColor: this.borderColor,
-          borderWidth: this.borderWidth,
-          borderType: this.borderType,
-          strokeCap: this.strokeCap,
-          pattern: this.pattern,
-          padding: EdgeInsets.zero,
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              elevation: 0,
-              foregroundColor: splashColor,
-              backgroundColor: Colors.transparent,
-              shadowColor: Colors.transparent,
-              padding: this.padding,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(borderRadius),
-              ),
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            elevation: 0,
+            foregroundColor: splashColor,
+            backgroundColor: Colors.transparent,
+            shadowColor: Colors.transparent,
+            padding: EdgeInsets.zero,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(borderRadius),
             ),
-            onPressed: onPressed,
+          ),
+          onPressed: onPressed,
+          child: FPCDottedCard(
+            backgroundColor: this.backgroundColor,
+            constraints: this.constraints,
+            height: this.height,
+            width: this.width,
+            borderRadius: borderRadius,
+            borderColor: this.borderColor,
+            borderWidth: this.borderWidth,
+            borderType: this.borderType,
+            strokeCap: this.strokeCap,
+            pattern: this.pattern,
+            padding: this.padding,
             child: this.child,
           ),
         ),

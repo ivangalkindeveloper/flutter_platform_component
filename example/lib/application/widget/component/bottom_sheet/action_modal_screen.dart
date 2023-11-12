@@ -1,6 +1,7 @@
 import 'package:example/application/widget/custom/config_section.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ActionBottomSheetScreen extends StatelessWidget {
   const ActionBottomSheetScreen({super.key});
@@ -18,7 +19,7 @@ class ActionBottomSheetScreen extends StatelessWidget {
       body: FPCListView(
         children: [
           const ConfigSection(),
-          SizedBox(height: size.s16 / 2),
+          Gap(size.s16 / 2),
           FPCPrimaryButton(
             title: "Open",
             onPressed: () => showFPCSmallBottomSheet(

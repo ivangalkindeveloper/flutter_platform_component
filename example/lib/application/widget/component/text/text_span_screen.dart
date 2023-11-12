@@ -1,6 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:example/application/widget/custom/config_section.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class TextSpanScreen extends StatelessWidget {
   const TextSpanScreen({super.key});
@@ -18,7 +19,7 @@ class TextSpanScreen extends StatelessWidget {
       body: FPCListView(
         children: [
           const ConfigSection(),
-          SizedBox(height: size.s16 * 2),
+          Gap(size.s16 * 2),
           Padding(
             padding: EdgeInsets.all(size.s32),
             child: FPCTextSpan(

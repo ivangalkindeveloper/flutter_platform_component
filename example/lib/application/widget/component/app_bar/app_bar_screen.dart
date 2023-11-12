@@ -3,15 +3,11 @@ import 'package:example/application/widget/custom/config_section.dart';
 import 'package:example/application/widget/custom/dummy_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
-class AppBarScreen extends StatefulWidget {
+class AppBarScreen extends StatelessWidget {
   const AppBarScreen({super.key});
 
-  @override
-  State<AppBarScreen> createState() => _AppBarScreenState();
-}
-
-class _AppBarScreenState extends State<AppBarScreen> {
   @override
   Widget build(BuildContext context) {
     final IFPCTheme theme = context.fpcTheme;
@@ -53,7 +49,7 @@ class _AppBarScreenState extends State<AppBarScreen> {
       body: FPCListView(
         children: [
           const ConfigSection(),
-          SizedBox(height: size.s16 * 2),
+          Gap(size.s16 * 2),
           const DummyList(),
         ],
       ),

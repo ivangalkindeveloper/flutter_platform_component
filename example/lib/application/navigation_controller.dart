@@ -30,6 +30,7 @@ import 'package:example/application/widget/component/button/outline/outline_butt
 import 'package:example/application/widget/component/card/card_screen.dart';
 import 'package:example/application/widget/component/card/dotted_card_screen.dart';
 import 'package:example/application/widget/component/card/gradient_card_screen.dart';
+import 'package:example/application/widget/component/divider/gradient_divider_screen.dart';
 import 'package:example/application/widget/component/select_card/dotted_select_card_screen.dart';
 import 'package:example/application/widget/component/select_card/gradient_select_card_screen.dart';
 import 'package:example/application/widget/component/select_card/select_card_screen.dart';
@@ -155,6 +156,7 @@ class NavigationController implements INavigationController {
   static const String dialogScreen = "/dialog";
 
   static const String dividerScreen = "/divider";
+  static const String gradientDividerScreen = "/gradientDivider";
 
   static const String formFieldScreen = "/formField";
   static const String gradientFormFieldScreen = "/gradientFormField";
@@ -198,7 +200,7 @@ class NavigationController implements INavigationController {
 
   static const String selectCardScreen = "/selectCard";
   static const String gradientSelectCardScreen = "/gradientSelectCard";
-  static const String dottedSelectCardScreen = "/dottedSelectCardScreen";
+  static const String dottedSelectCardScreen = "/dottedSelectCard";
 
   static const String selectFieldScreen = "/selectField";
   static const String gradientSelectFieldScreen = "/gradientSelectField";
@@ -450,6 +452,11 @@ class NavigationController implements INavigationController {
         return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const DividerScreen(),
+        );
+      case gradientDividerScreen:
+        return FPCPageRoute.fromContext(
+          navigatorKey.currentContext!,
+          child: const GradientDividerScreen(),
         );
 
       case formFieldScreen:

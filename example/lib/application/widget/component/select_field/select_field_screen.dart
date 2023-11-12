@@ -1,6 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:example/application/widget/custom/config_section.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class SelectFieldScreen extends StatefulWidget {
   const SelectFieldScreen({super.key});
@@ -37,18 +38,18 @@ class _SelectFieldScreenState extends State<SelectFieldScreen> {
         child: FPCListView(
           children: [
             const ConfigSection(),
-            SizedBox(height: size.s16 / 2),
+            Gap(size.s16 / 2),
             FPCPrimaryButton(
               title: "validate",
               onPressed: () => this._formKey.currentState?.validate(),
             ),
-            SizedBox(height: size.s16 / 2),
+            Gap(size.s16 / 2),
             FPCPrimaryButton(
               title: "isDisabled",
               onPressed: () =>
                   setState(() => this._isDisabled = !this._isDisabled),
             ),
-            SizedBox(height: size.s16 * 2),
+            Gap(size.s16 * 2),
             FPCSelectField(
               title: this._title,
               labelText: "Label",

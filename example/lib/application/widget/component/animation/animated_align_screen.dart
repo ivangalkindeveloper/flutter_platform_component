@@ -1,5 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class AnimatedAlignScreen extends StatefulWidget {
   const AnimatedAlignScreen({super.key});
@@ -41,7 +42,7 @@ class _AnimatedAlignScreenState extends State<AnimatedAlignScreen> {
                             context,
                             "Slow",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           Container(
                             height: size.s28 * 4,
                             width: size.s28 * 4,
@@ -67,7 +68,7 @@ class _AnimatedAlignScreenState extends State<AnimatedAlignScreen> {
                             context,
                             "Default",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           Container(
                             height: size.s28 * 4,
                             width: size.s28 * 4,
@@ -93,7 +94,7 @@ class _AnimatedAlignScreenState extends State<AnimatedAlignScreen> {
                             context,
                             "Fast",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           Container(
                             height: size.s28 * 4,
                             width: size.s28 * 4,

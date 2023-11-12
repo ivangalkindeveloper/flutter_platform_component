@@ -1,5 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class RowStringValue extends StatelessWidget {
   const RowStringValue({
@@ -25,7 +26,7 @@ class RowStringValue extends StatelessWidget {
             align: TextAlign.start,
           ),
         ),
-        SizedBox(width: size.s16),
+        Gap(size.s16),
         Flexible(
           child: FPCText.regular16Black(
             context,

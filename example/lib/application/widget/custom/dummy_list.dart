@@ -1,5 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class DummyList extends StatelessWidget {
   const DummyList({super.key});
@@ -18,7 +19,7 @@ class DummyList extends StatelessWidget {
             const FPCGreyLightCard(
               child: SizedBox(),
             ),
-            SizedBox(height: size.s16 / 2),
+            Gap(size.s16 / 2),
           ],
         ),
       ),

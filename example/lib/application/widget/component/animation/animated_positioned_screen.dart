@@ -1,5 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class AnimatedPositionedScreen extends StatefulWidget {
   const AnimatedPositionedScreen({super.key});
@@ -42,7 +43,7 @@ class _AnimatedPositionedScreenState extends State<AnimatedPositionedScreen> {
                             context,
                             "Slow",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           Stack(
                             children: [
                               Container(
@@ -72,7 +73,7 @@ class _AnimatedPositionedScreenState extends State<AnimatedPositionedScreen> {
                             context,
                             "Default",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           Stack(
                             children: [
                               Container(
@@ -102,7 +103,7 @@ class _AnimatedPositionedScreenState extends State<AnimatedPositionedScreen> {
                             context,
                             "Fast",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           Stack(
                             children: [
                               Container(

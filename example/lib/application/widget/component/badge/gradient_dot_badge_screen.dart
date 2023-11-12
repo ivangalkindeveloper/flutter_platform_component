@@ -1,6 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:example/application/widget/custom/config_section.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class GradientDotBadgeScreen extends StatefulWidget {
   const GradientDotBadgeScreen({super.key});
@@ -25,17 +26,17 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
       body: FPCListView(
         children: [
           const ConfigSection(),
-          SizedBox(height: size.s16 / 2),
+          Gap(size.s16 / 2),
           FPCPrimaryButton(
             title: "isShow",
             onPressed: () => setState(() => this._isShow = !this._isShow),
           ),
-          SizedBox(height: size.s16 * 2),
+          Gap(size.s16 * 2),
           FPCText.regular16Black(
             context,
             "Dark",
           ),
-          SizedBox(height: size.s16),
+          Gap(size.s16),
           Wrap(
             spacing: size.s16,
             runSpacing: size.s16 / 2,
@@ -74,12 +75,12 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
               ),
             ],
           ),
-          SizedBox(height: size.s16 * 2),
+          Gap(size.s16 * 2),
           FPCText.regular16Black(
             context,
             "Default",
           ),
-          SizedBox(height: size.s16),
+          Gap(size.s16),
           Wrap(
             spacing: size.s16,
             runSpacing: size.s16 / 2,
@@ -118,12 +119,12 @@ class _GradientDotBadgeScreenState extends State<GradientDotBadgeScreen> {
               ),
             ],
           ),
-          SizedBox(height: size.s16 * 2),
+          Gap(size.s16 * 2),
           FPCText.regular16Black(
             context,
             "Light",
           ),
-          SizedBox(height: size.s16),
+          Gap(size.s16),
           Wrap(
             spacing: size.s16,
             runSpacing: size.s16 / 2,

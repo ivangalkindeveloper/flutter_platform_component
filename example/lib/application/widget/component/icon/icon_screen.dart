@@ -1,6 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:example/application/widget/custom/config_section.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class IconScreen extends StatelessWidget {
   const IconScreen({super.key});
@@ -18,7 +19,7 @@ class IconScreen extends StatelessWidget {
       body: FPCListView(
         children: [
           const ConfigSection(),
-          SizedBox(height: size.s16 * 2),
+          Gap(size.s16 * 2),
           Row(
             children: [
               Column(
@@ -28,7 +29,7 @@ class IconScreen extends StatelessWidget {
                     context,
                     "Small",
                   ),
-                  SizedBox(height: size.s16),
+                  Gap(size.s16),
                   const FPCPrimarySmallIcon(
                     icon: Icons.account_circle_outlined,
                   ),
@@ -42,7 +43,7 @@ class IconScreen extends StatelessWidget {
                     context,
                     "Default",
                   ),
-                  SizedBox(height: size.s16),
+                  Gap(size.s16),
                   const FPCPrimaryIcon(
                     icon: Icons.account_circle_outlined,
                   ),
@@ -56,7 +57,7 @@ class IconScreen extends StatelessWidget {
                     context,
                     "Large",
                   ),
-                  SizedBox(height: size.s16),
+                  Gap(size.s16),
                   const FPCPrimaryLargeIcon(
                     icon: Icons.account_circle_outlined,
                   ),
@@ -64,12 +65,12 @@ class IconScreen extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: size.s16 * 4),
+          Gap(size.s16 * 4),
           FPCText.regular16Black(
             context,
             "Small",
           ),
-          SizedBox(height: size.s16),
+          Gap(size.s16),
           Wrap(
             spacing: size.s16,
             runSpacing: size.s16 / 2,
@@ -220,12 +221,12 @@ class IconScreen extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: size.s16),
+          Gap(size.s16),
           FPCText.regular16Black(
             context,
             "Default",
           ),
-          SizedBox(height: size.s16),
+          Gap(size.s16),
           Wrap(
             spacing: size.s16,
             runSpacing: size.s16 / 2,
@@ -376,12 +377,12 @@ class IconScreen extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: size.s16),
+          Gap(size.s16),
           FPCText.regular16Black(
             context,
             "Large",
           ),
-          SizedBox(height: size.s16),
+          Gap(size.s16),
           Wrap(
             spacing: size.s16,
             runSpacing: size.s16 / 2,

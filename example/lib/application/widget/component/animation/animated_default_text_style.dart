@@ -1,5 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class AnimatedDefaultTextStyleScreen extends StatefulWidget {
   const AnimatedDefaultTextStyleScreen({super.key});
@@ -43,7 +44,7 @@ class _AnimatedDefaultTextStyleScreenState
                             context,
                             "Slow",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           FPCAnimatedSlowDefaultTextStyle(
                             style: this._action
                                 ? TextStyle(
@@ -70,7 +71,7 @@ class _AnimatedDefaultTextStyleScreenState
                             context,
                             "Default",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           FPCAnimatedDefaultTextStyle(
                             style: this._action
                                 ? TextStyle(
@@ -97,7 +98,7 @@ class _AnimatedDefaultTextStyleScreenState
                             context,
                             "Fast",
                           ),
-                          SizedBox(height: size.s16),
+                          Gap(size.s16),
                           FPCAnimatedFastDefaultTextStyle(
                             style: this._action
                                 ? TextStyle(

@@ -21,7 +21,7 @@ class FPCDivider extends StatelessWidget {
       height: height,
       decoration: BoxDecoration(
         color: this.color,
-        borderRadius: BorderRadius.circular(this.height ?? (size.s10 / 10)),
+        borderRadius: BorderRadius.circular(height),
       ),
     );
   }

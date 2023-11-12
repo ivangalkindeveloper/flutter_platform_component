@@ -1,5 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ConfigSection extends StatelessWidget {
   const ConfigSection({super.key});
@@ -19,7 +20,7 @@ class ConfigSection extends StatelessWidget {
                 onPressed: () => context.fpcChangePlatform(FPCPlatform.iOS),
               ),
             ),
-            SizedBox(width: size.s16),
+            Gap(size.s16),
             Expanded(
               child: FPCPrimaryLabelButton(
                 title: "Android",
@@ -36,7 +37,7 @@ class ConfigSection extends StatelessWidget {
                 onPressed: () => context.fpcChangeTheme(FPCDefaultLightTheme()),
               ),
             ),
-            SizedBox(width: size.s16),
+            Gap(size.s16),
             Expanded(
               child: FPCPrimaryLabelButton(
                 title: "Dark Theme",

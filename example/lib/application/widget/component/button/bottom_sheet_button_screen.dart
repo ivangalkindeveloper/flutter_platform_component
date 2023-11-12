@@ -1,6 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:example/application/widget/custom/config_section.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class BottomSheetButtonScreen extends StatelessWidget {
   const BottomSheetButtonScreen({super.key});
@@ -20,20 +21,20 @@ class BottomSheetButtonScreen extends StatelessWidget {
         childrenAlignment: CrossAxisAlignment.center,
         children: [
           const ConfigSection(),
-          SizedBox(height: size.s16 * 2),
+          Gap(size.s16 * 2),
           FPCCupertinoBottomSheetButton(
             onPressed: () {},
           ),
-          SizedBox(height: size.s16 * 2),
+          Gap(size.s16 * 2),
           FPCExpandedBottomSheetCloseButton(
             cupertinoLocale: "Back",
             onPressed: () {},
           ),
-          SizedBox(height: size.s16 * 2),
+          Gap(size.s16 * 2),
           FPCSmallBottomSheetCloseButton(
             onPressed: () {},
           ),
-          SizedBox(height: size.s16 * 2),
+          Gap(size.s16 * 2),
           Container(
             height: size.s32 * 4,
             width: size.s32 * 4,

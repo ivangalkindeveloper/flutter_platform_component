@@ -761,7 +761,6 @@ FPCScreenAppBar(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/default/screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/default/screen_app_bar_material.gif) |
-
 #### FPCWhiteAlwaysScreenAppBar
 Ready-made components white always screen app bar.\
 Example of using a ready-made component:
@@ -773,7 +772,6 @@ FPCWhiteAlwaysScreenAppBar(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/default/white_always_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/default/white_always_screen_app_bar_material.gif) |
-
 #### FPCExpandedBottomSheetAppBar
 Ready-made components expanded bottom sheet app bar.\
 Example of using a ready-made component:
@@ -785,7 +783,6 @@ FPCExpandedBottomSheetAppBar(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/default/expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/default/expanded_modal_app_bar_material.gif) |
-
 #### FPCWhiteAlwaysExpandedBottomSheetAppBar
 Ready-made component white always expanded bottom sheet app bar.\
 Example of using a ready-made component:
@@ -797,7 +794,6 @@ FPCWhiteAlwaysExpandedBottomSheetAppBar(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/default/white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/default/white_always_expanded_modal_app_bar_material.gif) |
-
 #### FPCBlurAppBar
 Main app bar widget wrapped in blur, decomposed by platform.\
 Example of using a ready-made component:
@@ -816,7 +812,6 @@ FPCBlurScreenAppBar(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/blur/blur_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/blur/blur_screen_app_bar_material.gif) |
-
 #### FPCBlurWhiteAlwaysScreenAppBar
 Blur white always screen app bar.\
 Example of using a ready-made component:
@@ -828,7 +823,6 @@ FPCBlurWhiteAlwaysScreenAppBar(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/blur/blur_white_always_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/blur/blur_white_always_screen_app_bar_material.gif) |
-
 #### FPCBlurExpandedBottomSheetAppBar
 Blur expanded bottom sheet app bar.\
 Example of using a ready-made component:
@@ -840,7 +834,6 @@ FPCBlurExpandedBottomSheetAppBar(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/blur/blur_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/blur/blur_expanded_modal_app_bar_material.gif) |
-
 #### FPCBlurWhiteAlwaysExpandedBottomSheetAppBar
 Blur white always expanded bottom sheet app bar.\
 Example of using a ready-made component:
@@ -926,7 +919,6 @@ FPCActionBottomSheet(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/action_modal/action_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/action_modal/action_modal_material.gif) |
-
 #### FPCExpandedBottomSheet
 Expanded modal scaffold component to display large bottom sheet content.\
 Example of using a component:
@@ -938,7 +930,6 @@ FPCExpandedBottomSheet(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/expanded_modal/default/expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/expanded_modal/default/expanded_modal_material.gif) |
-
 #### FPCBlackAlwaysExpandedBottomSheet
 Ready-made components contains expanded bottom sheet with always black background.\
 Example of using a component:
@@ -950,7 +941,6 @@ FPCBlackAlwaysExpandedBottomSheet(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/expanded_modal/default/black_always_expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/expanded_modal/default/black_always_expanded_modal_material.gif) |
-
 #### FPCBlurExpandedBottomSheet
 Expanded bottom sheet scaffold component to display large bottom sheet content with blur app bar.\
 Example of using a component:
@@ -962,7 +952,6 @@ FPCBlurExpandedBottomSheet(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/expanded_modal/blur/blur_expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/expanded_modal/blur/blur_expanded_modal_material.gif) |
-
 #### FPCBlurBlackAlwaysExpandedBottomSheet
 Ready-made components contains expanded bottom sheet with always black background with blur app bar.\
 Example of using a component:
@@ -974,7 +963,6 @@ FPCBlurBlackAlwaysExpandedBottomSheet(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/expanded_modal/blur/blur_black_always_expanded_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/expanded_modal/blur/blur_black_always_expanded_modal_material.gif) |
-
 #### FPCSmallBottomSheet
 Small bottom sheet window component to display small content.\
 Example of using a component:
@@ -1011,7 +999,6 @@ FPCPrimaryLabelButton(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/default/label/label_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/default/label/label_button_material.gif) |
-
 #### FPCGradientButton
 Button component with gradient background color, decomposed by platform.\
 Ready-made default button has loading properties.\
@@ -1035,7 +1022,6 @@ FPCPrimaryGradientLabelButton(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/gradient/label/gradient_label_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/gradient/label/gradient_label_button_material.gif) |
-
 #### FPCDottedButton
 Button component with dotted border, decomposed by platform.\
 Example of using a ready-made component:
@@ -1046,8 +1032,7 @@ FPCPrimaryDottedButton(
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/default/outline/dotted_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/default/outline/dotted_button_material.gif) |
-
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/default/dotted/dotted_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/default/dotted/dotted_button_material.gif) |
 #### FPCOutlineButton
 Button component with outline border, decomposed by platform.\
 Example of using a ready-made component:
@@ -1059,7 +1044,6 @@ FPCPrimaryOutlineButton(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/default/outline/outline_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/default/outline/outline_button_material.gif) |
-
 #### FPCGradientOutlineButton
 Also gradient outline button.\
 Example of using a ready-made component:
@@ -1071,7 +1055,6 @@ FPCPrimaryGradientOutlineButton(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/gradient/outline/gradient_outline_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/gradient/outline/gradient_outline_button_material.gif) |
-
 #### FPCIconButton
 Icon button component, decomposed by platform.\
 Example of using a component:
@@ -1084,7 +1067,6 @@ FPCIconButton(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/icon/icon_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/icon/icon_button_material.gif) |
-
 #### FPCCupertinoBottomSheetButton
 Dedicated decomposed buttons, separately for bottom sheets.\
 Example of using a component:
@@ -1094,7 +1076,6 @@ FPCCupertinoBottomSheetButton(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/modal/modal_close_button_cupertino.gif)
-
 #### FPCExpandedBottomSheetCloseButton
 Expanded bottom sheet close button.\
 Example of using a component:
@@ -1107,7 +1088,6 @@ FPCExpandedBottomSheetCloseButton(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/modal/expanded_modal_close_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/modal/expanded_modal_close_button_material.gif) |
-
 #### FPCSmallBottomSheetCloseButton
 Small bottom sheet close button.\
 Example of using a component:
@@ -1119,7 +1099,6 @@ FPCSmallBottomSheetCloseButton(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/modal/pop_up_modal_close_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/modal/pop_up_modal_close_button_material.gif) |
-
 #### FPCWhiteAlwaysExpandedBottomSheetCloseButton
 White always bottom sheet close button.\
 Example of using a component:
@@ -1142,7 +1121,7 @@ FPCPrimaryCard(
   child: const Child(),
 ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/default/card.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/card.png)
 #### FPCGradientCard
 Card component with gradient background color.\
 Example of using a ready-made component:
@@ -1151,7 +1130,7 @@ FPCPrimaryGradientCard(
   child: const Child(),
 ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/default/gradient_card.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/gradient_card.png)
 #### FPCDottedCard
 Card component with dotted border.\
 Example of using a ready-made component:
@@ -1160,7 +1139,7 @@ FPCPrimaryDottedCard(
   child: const Child(),
 ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/default/dotted_card.png)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/dotted_card.png)
 
 ### Checkbox
 ### FPCCheckbox
@@ -1248,14 +1227,14 @@ FPCDialog(
 Simple thin container for visual separation.\
 Example of using a ready-made component:
 ```dart
-FPCPrimaryDivider(),
+const FPCPrimaryDivider(),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/divider/divider.png)
 #### FPCGradientDivider
 Simple thin gradient container for visual separation.\
 Example of using a ready-made component:
 ```dart
-FPCPrimaryGradientDivider(),
+const FPCPrimaryGradientDivider(),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/divider/gradient_divider.png)
 
@@ -1270,7 +1249,7 @@ FPCPrimaryFormField(
   labelText: "Label",
 ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/form_field/form_field/form_field.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/form_field/form_field.gif)
 #### FPCGradientFormField
 Form field component with gradient colors.\
 Example of using a ready-made component:
@@ -1279,7 +1258,7 @@ FPCPrimaryGradientFormField(
   labelText: "Label",
 ),
 ```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/form_field/form_field/gradient_form_field.gif)
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/form_field/gradient_form_field.gif)
 
 ### Global
 Classes that contains platform-decomposed functions to invoke the required interface behaviors.
@@ -1288,13 +1267,13 @@ Global methods for opening bottom sheets:
 ```dart
 showFPCExpandedBottomSheet<T>(
   context,
-  child: Child(),
+  child: const Child(),
 );
 ```
 ```dart
 showFPCSmallBottomSheet<T>(
   context,
-  child: Child(),
+  child: const Child(),
 );
 ```
 #### Dialog
@@ -1302,7 +1281,7 @@ Global method for opening dialogs:
 ```dart
 showFPCDialog<T>(
   context,
-  child: Child(),
+  child: const Child(),
 );
 ```
 #### Picker
@@ -1747,8 +1726,7 @@ FPCPrimarySelectCard(
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/select/select_card_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/select/select_card_material.gif) |
-
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_card/select_card_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_card/select_card_material.gif) |
 #### FPCGradientSelectCard
 Clickable card component with gradient background color.\
 Example of using a ready-made component:
@@ -1760,8 +1738,7 @@ FPCPrimaryGradientSelectCard(
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/select/gradient_select_card_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/select/gradient_select_card_material.gif) |
-
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_card/gradient_select_card_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_card/gradient_select_card_material.gif) |
 #### FPCDottedSelectCard
 Clickable card component with dotted border.\
 Example of using a ready-made component:
@@ -1773,7 +1750,7 @@ FPCPrimaryDottedSelectCard(
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/dotted/dotted_card_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/dotted/dotted_card_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_card/dotted_select_card_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_card/dotted_select_card_material.gif) |
 
 ### SelectField
 #### FPCSelectField
@@ -1787,7 +1764,7 @@ FPCPrimarySelectField(
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/form_field/select_field/select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/form_field/select_field/select_field_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_field/select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_field/select_field_material.gif) |
 #### FPCGradientSelectField
 Clickable field component with gradient colors, decomposed by platform.\
 Example of using a ready-made component:
@@ -1799,7 +1776,7 @@ FPCPrimaryGradientSelectField(
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/form_field/select_field/gradient_select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/form_field/select_field/gradient_select_field_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_field/gradient_select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_field/gradient_select_field_material.gif) |
 
 ### Shimmer
 #### FPCShimmer

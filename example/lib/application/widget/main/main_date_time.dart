@@ -1,6 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:example/application/widget/custom/row_string_value.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class MainDateTime extends StatelessWidget {
   const MainDateTime({super.key});
@@ -18,17 +19,17 @@ class MainDateTime extends StatelessWidget {
           context,
           "DateTime",
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         RowStringValue(
           title: "Minimum:",
           value: dateTime.minimum.toString(),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         RowStringValue(
           title: "Initial:",
           value: dateTime.initial.toString(),
         ),
-        SizedBox(height: size.s16 / 2),
+        Gap(size.s16 / 2),
         RowStringValue(
           title: "Maximum:",
           value: dateTime.maximum.toString(),

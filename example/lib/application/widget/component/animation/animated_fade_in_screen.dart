@@ -1,5 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class AnimatedFadeInScreen extends StatefulWidget {
   const AnimatedFadeInScreen({super.key});
@@ -40,7 +41,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                         context,
                         "Slow",
                       ),
-                      SizedBox(height: size.s16 / 2),
+                      Gap(size.s16 / 2),
                       Row(
                         children: [
                           Column(
@@ -50,7 +51,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 context,
                                 "In",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedSlowFadeIn(
                                 isAnimate: _action,
                                 child: Container(
@@ -69,7 +70,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 context,
                                 "In Up",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedSlowFadeInUp(
                                 isAnimate: _action,
                                 child: Container(
@@ -88,7 +89,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 context,
                                 "In Down",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedSlowFadeInDown(
                                 isAnimate: _action,
                                 child: Container(
@@ -107,7 +108,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 context,
                                 "In Left",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedSlowFadeInLeft(
                                 isAnimate: _action,
                                 child: Container(
@@ -126,7 +127,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 context,
                                 "In Right",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedSlowFadeInRight(
                                 isAnimate: _action,
                                 child: Container(
@@ -139,12 +140,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(height: size.s16),
+                      Gap(size.s16),
                       FPCText.regular16Black(
                         context,
                         "Default",
                       ),
-                      SizedBox(height: size.s16 / 2),
+                      Gap(size.s16 / 2),
                       Row(
                         children: [
                           Column(
@@ -154,7 +155,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 context,
                                 "In",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedFadeIn(
                                 isAnimate: _action,
                                 child: Container(
@@ -173,7 +174,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 context,
                                 "In Up",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedFadeInUp(
                                 isAnimate: _action,
                                 child: Container(
@@ -192,7 +193,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 context,
                                 "In Down",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedFadeInDown(
                                 isAnimate: _action,
                                 child: Container(
@@ -211,7 +212,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 context,
                                 "In Left",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedFadeInLeft(
                                 isAnimate: _action,
                                 child: Container(
@@ -230,7 +231,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 context,
                                 "In Right",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedFadeInRight(
                                 isAnimate: _action,
                                 child: Container(
@@ -243,12 +244,12 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(height: size.s16),
+                      Gap(size.s16),
                       FPCText.regular16Black(
                         context,
                         "Fast",
                       ),
-                      SizedBox(height: size.s16 / 2),
+                      Gap(size.s16 / 2),
                       Row(
                         children: [
                           Column(
@@ -258,7 +259,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 context,
                                 "In",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedFastFadeIn(
                                 isAnimate: _action,
                                 child: Container(
@@ -277,7 +278,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 context,
                                 "In Up",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedFastFadeInUp(
                                 isAnimate: _action,
                                 child: Container(
@@ -296,7 +297,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 context,
                                 "In Down",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedFastFadeInDown(
                                 isAnimate: _action,
                                 child: Container(
@@ -315,7 +316,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 context,
                                 "In Left",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedFastFadeInLeft(
                                 isAnimate: _action,
                                 child: Container(
@@ -334,7 +335,7 @@ class _AnimatedFadeInScreenState extends State<AnimatedFadeInScreen> {
                                 context,
                                 "In Right",
                               ),
-                              SizedBox(height: size.s16),
+                              Gap(size.s16),
                               FPCAnimatedFastFadeInRight(
                                 isAnimate: _action,
                                 child: Container(

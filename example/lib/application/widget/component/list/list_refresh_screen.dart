@@ -1,6 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:example/application/widget/custom/config_section.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class ListRefreshScreen extends StatefulWidget {
   const ListRefreshScreen({super.key});
@@ -39,84 +40,84 @@ class _ListRefreshScreenState extends State<ListRefreshScreen> {
             mainAxisSize: MainAxisSize.min,
             children: [
               const ConfigSection(),
-              SizedBox(height: size.s16 * 2),
+              Gap(size.s16 * 2),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16),
+              Gap(size.s16),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16),
+              Gap(size.s16),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16),
+              Gap(size.s16),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
               //
-              SizedBox(height: size.s16 * 2),
+              Gap(size.s16 * 2),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16),
+              Gap(size.s16),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16),
+              Gap(size.s16),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16),
+              Gap(size.s16),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16 * 2),
+              Gap(size.s16 * 2),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16),
+              Gap(size.s16),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16),
+              Gap(size.s16),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16),
+              Gap(size.s16),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16 * 2),
+              Gap(size.s16 * 2),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16),
+              Gap(size.s16),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16),
+              Gap(size.s16),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16),
+              Gap(size.s16),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16 * 2),
+              Gap(size.s16 * 2),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16),
+              Gap(size.s16),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16),
+              Gap(size.s16),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
-              SizedBox(height: size.s16),
+              Gap(size.s16),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),
