@@ -33,6 +33,7 @@
 </div>
 
 
+
 ## Getting Started
 - [Benefits](#benefits)
   - [Platform decomposition](#platform-decomposition)
@@ -216,6 +217,8 @@
 - [TODO](#todo)
 - [Additional Information](#additional-information)
 
+
+
 ## Benefits
 The package works according to the principle: fill out needed contracts - get all ready-made inherited platform components.
 ### Platform decomposition
@@ -244,6 +247,8 @@ Every component that can be clicked has the property to be disabled implemented.
 ### Snippets
 VS Code snippets have been generated for this package for convenient development and creating your own widget wrappers.
 
+
+
 ## Design
 Components follow the following design paradigm:
 1) The component should not contain business logic;
@@ -251,6 +256,8 @@ Components follow the following design paradigm:
 3) If there is no such component in the target platform cookbook, a component is needed that will be as similar as possible to it and has identical behavior;
 4) Component change the color of the disabled component, if it only has not background color;
 5) The design of cross-platform components and their behavior are not mix.
+
+
 
 ## Dependencies
 The package uses a fork of the following dependencies:\
@@ -262,6 +269,8 @@ The package uses a fork of the following dependencies:\
 [modal_bottom_sheet](https://pub.dev/packages/modal_bottom_sheet) - transitions that support modal animations and modal windows appearance method;\
 [pinput](https://pub.dev/packages/pinput) - code fields and PIN fields.\
 Express our gratitude to the authors of these dependencies.
+
+
 
 ## Usage
 ### 1) Fill entities
@@ -365,6 +374,8 @@ FPCPrimaryButton(
 ),
 ```
 
+
+
 ## Entities
 ### Animation
 [An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/animation/fpc_animation.dart#L3) of animation properties for animation widgets.\
@@ -423,7 +434,7 @@ final FPCPlatform platform = context.fpcPlatform;
 ```
 The method allows you to change the current platform:
 ```dart
-context.fpcChangePlatform(platform: FPCPlatform.android);
+context.fpcChangePlatform(FPCPlatform.android);
 ```
 
 ### Size
@@ -501,7 +512,11 @@ The method allows you to change the current times of day:
 context.fpcChangeTimeOfDay(const TimesOfDay());
 ```
 
+
+
 ## Components
+
+
 ### Animation
 All animations durations are guided by slow, default and fast durations from the size config.
 #### FPCAnimatedAlign
@@ -731,6 +746,7 @@ const FPCAnimatedSlowTransitionSwitcher(
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_transition_switcher.gif)
 
+
 ### App
 #### FPCApp
 Main root widget of the application, decomposed by platform.\
@@ -740,6 +756,7 @@ FPCApp(
   home: const Child(),
 ),
 ```
+
 
 ### AppBar
 #### FPCAppBar
@@ -751,7 +768,7 @@ FPCAppBar(
 ),
 ```
 #### FPCScreenAppBar
-Ready-made components contains screen app bar.\
+Ready-made component contains screen app bar.\
 Example of using a ready-made component:
 ```dart
 FPCScreenAppBar(
@@ -762,7 +779,7 @@ FPCScreenAppBar(
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/default/screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/default/screen_app_bar_material.gif) |
 #### FPCWhiteAlwaysScreenAppBar
-Ready-made components white always screen app bar.\
+Ready-made component white always screen app bar.\
 Example of using a ready-made component:
 ```dart
 FPCWhiteAlwaysScreenAppBar(
@@ -773,7 +790,7 @@ FPCWhiteAlwaysScreenAppBar(
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/default/white_always_screen_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/default/white_always_screen_app_bar_material.gif) |
 #### FPCExpandedBottomSheetAppBar
-Ready-made components expanded bottom sheet app bar.\
+Ready-made component expanded bottom sheet app bar.\
 Example of using a ready-made component:
 ```dart
 FPCExpandedBottomSheetAppBar(
@@ -788,22 +805,23 @@ Ready-made component white always expanded bottom sheet app bar.\
 Example of using a ready-made component:
 ```dart
 FPCWhiteAlwaysExpandedBottomSheetAppBar(
-  context: context,
+  context,
 ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/default/white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/default/white_always_expanded_modal_app_bar_material.gif) |
 #### FPCBlurAppBar
-Main app bar widget wrapped in blur, decomposed by platform.\
-Example of using a ready-made component:
+Basic app bar widget wrapped in blur, decomposed by platform.\
+Example of using a component:
 ```dart
 FPCBlurAppBar(
   context,
 ),
 ```
 #### FPCBlurScreenAppBar
-Blur screen app bar:
+Blur screen app bar.\
+Example of using a ready-made component:
 ```dart
 FPCBlurScreenAppBar(
   context,
@@ -845,6 +863,7 @@ FPCBlurWhiteAlwaysExpandedBottomSheetAppBar(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/blur/blur_white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/blur/blur_white_always_expanded_modal_app_bar_material.gif) |
+
 
 ### Badge
 #### FPCCounterBadge
@@ -888,6 +907,7 @@ FPCPrimaryGradientDotBadge(
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/badge/dot/gradient_dot_badge.gif)
 
+
 ### Blur
 Blur component for creating blur effect for parent.\
 Example of using a component:
@@ -897,6 +917,7 @@ FPCBlur(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/blur/blur.png)
+
 
 ### BottomSheet
 #### FPCActionBottomSheet
@@ -975,6 +996,7 @@ FPCSmallBottomSheet(
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/pop_up_modal/pop_up_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/pop_up_modal/pop_up_modal_material.gif) |
 
+
 ### Button
 #### FPCButton
 Button component with solid background color, decomposed by platform.\
@@ -1032,7 +1054,7 @@ FPCPrimaryDottedButton(
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
-| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/default/dotted/dotted_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/default/dotted/dotted_button_material.gif) |
+| ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/dotted/dotted_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/dotted/dotted_button_material.gif) |
 #### FPCOutlineButton
 Button component with outline border, decomposed by platform.\
 Example of using a ready-made component:
@@ -1112,6 +1134,7 @@ FPCWhiteAlwaysExpandedBottomSheetCloseButton(
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/modal/white_always_expanded_modal_close_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/modal/white_always_expanded_modal_close_button_material.gif) |
 
+
 ### Card
 #### FPCCard
 Card component with solid background color.\
@@ -1141,6 +1164,7 @@ FPCPrimaryDottedCard(
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/dotted_card.png)
 
+
 ### Checkbox
 ### FPCCheckbox
 Checkbox component, decomposed by platform.\
@@ -1154,6 +1178,7 @@ FPCPrimaryCheckbox(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/checkbox/checkbox_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/checkbox/checkbox_material.gif) |
+
 
 ### CodeField
 #### FPCCodeField
@@ -1175,6 +1200,7 @@ FPCPrimaryGradientCodeField(
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/code_field/gradient_code_field.gif)
 
+
 ### Common
 #### CupertinoNavigator
 Default [CupertinoTabView](https://api.flutter.dev/flutter/cupertino/CupertinoTabView-class.html) widget supplemented by methods.
@@ -1193,11 +1219,13 @@ WillPopScope widget for nested navigation.
 #### FPCTextInputHandlerFormatter
 Text handler for autovalidating.
 
+
 ### Default
 #### FPCListView
 Default ListView widget are guided by size config.
 #### FPCPadding
 Default Padding widget are guided by size config.
+
 
 ### Dialog
 #### FPCDialog
@@ -1222,6 +1250,7 @@ FPCDialog(
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/dialog/dialog_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/dialog/dialog_material.gif) |
 
+
 ### Divider
 #### FPCDivider
 Simple thin container for visual separation.\
@@ -1237,6 +1266,7 @@ Example of using a ready-made component:
 const FPCPrimaryGradientDivider(),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/divider/gradient_divider.png)
+
 
 ### FormField
 Form field does not repeat the design accuracy of platform components, since pure native fields are very rarely used in good productive projects.\
@@ -1259,6 +1289,7 @@ FPCPrimaryGradientFormField(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/form_field/gradient_form_field.gif)
+
 
 ### Global
 Classes that contains platform-decomposed functions to invoke the required interface behaviors.
@@ -1313,6 +1344,7 @@ hideFPCSnackBar(
 );
 ```
 
+
 ### Gradient
 #### FPCGradientMask
 Widget for overlaying a gradient mask.\
@@ -1363,6 +1395,7 @@ FPCSweepGradient(
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/gradient/sweep_gradient.png)
 
+
 ### Icon
 All icons sizes are guided by small, default and large sizes from the size config.\
 There is no basic component, the icons are divided into separate widgets based on color and size.\
@@ -1373,6 +1406,7 @@ const FPCPrimaryIcon(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/icon/icon.png)
+
 
 ### Indicator
 #### CircularIndicator
@@ -1435,6 +1469,7 @@ FPCPrimaryStoryIndicator(
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/indicator/story_indicator/story_indicator.gif)
 
+
 ### Keyboard
 #### FPCKeyboardButton
 Button component of keyboard.\
@@ -1472,6 +1507,7 @@ FPCKeyboard(
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/keyboard/keyboard/keyboard_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/keyboard/keyboard/keyboard_material.gif) |
 
+
 ### List
 #### FPCListRefresh
 List refresh component to display the loading of asynchronous behavior, decomposed by platform.\
@@ -1506,6 +1542,7 @@ FPCListSection(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/list/list_section/list_section_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/list/list_section/list_section_material.gif) |
+
 
 ### Navigation
 #### FPCBottomNavigationBar
@@ -1581,6 +1618,7 @@ FPCRoute.fade(
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/navigation/route/route_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/navigation/route/route_material.gif) |
 
+
 ### Picker
 ### FPCDatePicker
 Not a simple component that decomposes the vision of a date picker.\
@@ -1607,6 +1645,7 @@ FPCTimePicker(),
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/picker/time_picker/time_picker_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/picker/time_picker/time_picker_material.gif) |
 
+
 ### PINField
 #### FPCPINField
 PIN field component with solid colors.\
@@ -1627,6 +1666,7 @@ FPCPrimaryGradientPINField(
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/pin_field/gradient_pin_field.gif)
 
+
 ### Radio
 #### FPCRadio
 Radio component, decomposed by platform.\
@@ -1642,6 +1682,7 @@ FPCPrimaryRadio<String>(
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/radio/radio_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/radio/radio_material.gif) |
 
+
 ### Scaffold
 #### FPCScaffold
 Standard scaffold widget, decomposed by platform.\
@@ -1655,6 +1696,7 @@ FPCScaffold(
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/scaffold/scaffold_cupertino.png) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/scaffold/scaffold_material.png) |
 
+
 ### Scrollbar
 #### FPCScrollbar
 Scrollbar component, decomposed by platform.\
@@ -1667,6 +1709,7 @@ FPCScrollbar(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/scrollbar/scrollbar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/scrollbar/scrollbar_material.gif) |
+
 
 ### SegmentControl
 #### FPCSegmentControl
@@ -1714,6 +1757,7 @@ FPCPrimaryGradientSegmentControl<String>(
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/segment_control/gradient_segment_control_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/segment_control/gradient_segment_control_material.gif) |
 
+
 ### SelectCard
 #### FPCSelectCard
 Clickable card component with solid background color.\
@@ -1752,6 +1796,7 @@ FPCPrimaryDottedSelectCard(
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_card/dotted_select_card_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_card/dotted_select_card_material.gif) |
 
+
 ### SelectField
 #### FPCSelectField
 Clickable field component with solid colors, decomposed by platform.\
@@ -1778,6 +1823,7 @@ FPCPrimaryGradientSelectField(
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_field/gradient_select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_field/gradient_select_field_material.gif) |
 
+
 ### Shimmer
 #### FPCShimmer
 Special component for loading animation with solid color.\
@@ -1794,6 +1840,7 @@ const FPCPrimaryGradientShimmer(),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/shimmer/gradient_shimmer.gif)
 
+
 ### Slider
 #### FPCSlider
 Slider component, decomposed by platform.\
@@ -1807,6 +1854,7 @@ FPCPrimarySlider(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/slider/slider_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/slider/slider_material.gif) |
+
 
 ### SlidingSegmentControl
 Sliding segment control compoennt does not have a direct analogue on android, therefore it does not have a decomposition for this platform.
@@ -1831,6 +1879,7 @@ FPCSlidingSegmentControl<String>(
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/sliding_segment_control/sliding_segment_control.gif)
 
+
 ### SliverAppBar
 Ready-made sliver navigation app bar component, decomposed by platform.\
 Example of using a ready-made component:
@@ -1840,6 +1889,7 @@ FPCSliverAppBar(),
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/sliver_navigation_app_bar/sliver_navigation_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/sliver_navigation_app_bar/sliver_navigation_app_bar_material.gif) |
+
 
 ### SnackBar
 #### FPCSnackBar
@@ -1879,6 +1929,7 @@ const FPCPrimaryGradientOutlineSnackBar(
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/snackbar/gradient_outline_snackbar.png)
 
+
 ### Switch
 #### FPCSwitch
 Switch component, decomposed by platform.\
@@ -1892,6 +1943,7 @@ FPCPrimarySwitch(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/switch/switch_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/switch/switch_material.gif) |
+
 
 ### Text
 #### FPCText
@@ -1930,6 +1982,7 @@ FPCTextStyle.regular16Black(
   context,
 ),
 ```
+
 
 ### Toggle
 One of the proposed visions of the segment control component.
@@ -1978,9 +2031,11 @@ FPCPrimaryGradientToggle<String>(
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/toggle/gradient_toggle_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/toggle/gradient_toggle_material.gif) |
 
+
 ## TODO
 1) Elevation of components;
 2) Support WEB.
+
 
 ## Additional Information
 For more details see example project.\
