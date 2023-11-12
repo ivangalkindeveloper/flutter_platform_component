@@ -33,142 +33,142 @@ class _DottedSelectCardScreenState extends State<DottedSelectCardScreen> {
                 setState(() => this._isDisabled = !this._isDisabled),
           ),
           Gap(size.s16 * 2),
-          // FPCText.regular16Black(
-          //   context,
-          //   "Dark",
-          // ),
-          // Gap(size.s16),
-          // FPCAccentDarkDottedSelectCard(
-          //   onPressed: () {},
-          //   isDisabled: this._isDisabled,
-          //   child: FPCText.regular16Black(
-          //     context,
-          //     "Child",
-          //   ),
-          // ),
-          // Gap(size.s16 / 2),
-          // FPCInfoDarkDottedSelectCard(
-          //   onPressed: () {},
-          //   isDisabled: this._isDisabled,
-          //   child: FPCText.regular16Black(
-          //     context,
-          //     "Child",
-          //   ),
-          // ),
-          // Gap(size.s16 / 2),
-          // FPCSuccessDarkDottedSelectCard(
-          //   onPressed: () {},
-          //   isDisabled: this._isDisabled,
-          //   child: FPCText.regular16Black(
-          //     context,
-          //     "Child",
-          //   ),
-          // ),
-          // Gap(size.s16 / 2),
-          // FPCGreyDarkDottedSelectCard(
-          //   onPressed: () {},
-          //   isDisabled: this._isDisabled,
-          //   child: FPCText.regular16Black(
-          //     context,
-          //     "Child",
-          //   ),
-          // ),
-          // Gap(size.s16 / 2),
-          // FPCPrimaryDarkDottedSelectCard(
-          //   onPressed: () {},
-          //   isDisabled: this._isDisabled,
-          //   child: FPCText.regular16Black(
-          //     context,
-          //     "Child",
-          //   ),
-          // ),
-          // Gap(size.s16 / 2),
-          // FPCDangerDarkDottedSelectCard(
-          //   onPressed: () {},
-          //   isDisabled: this._isDisabled,
-          //   child: FPCText.regular16Black(
-          //     context,
-          //     "Child",
-          //   ),
-          // ),
-          // Gap(size.s16 / 2),
-          // FPCSecondaryDarkDottedSelectCard(
-          //   onPressed: () {},
-          //   isDisabled: this._isDisabled,
-          //   child: FPCText.regular16Black(
-          //     context,
-          //     "Child",
-          //   ),
-          // ),
-          // Gap(size.s16 / 2),
-          // FPCWarningDarkDottedSelectCard(
-          //   onPressed: () {},
-          //   isDisabled: this._isDisabled,
-          //   child: FPCText.regular16Black(
-          //     context,
-          //     "Child",
-          //   ),
-          // ),
-          // Gap(size.s16 * 2),
-          // FPCText.regular16Black(
-          //   context,
-          //   "Default",
-          // ),
-          // Gap(size.s16),
-          // FPCAccentDottedSelectCard(
-          //   onPressed: () {},
-          //   isDisabled: this._isDisabled,
-          //   child: FPCText.regular16Black(
-          //     context,
-          //     "Child",
-          //   ),
-          // ),
-          // Gap(size.s16 / 2),
-          // FPCBlackAlwaysDottedSelectCard(
-          //   onPressed: () {},
-          //   isDisabled: this._isDisabled,
-          //   child: FPCText.regular16Black(
-          //     context,
-          //     "Child",
-          //   ),
-          // ),
-          // Gap(size.s16 / 2),
-          // FPCBlackDottedSelectCard(
-          //   onPressed: () {},
-          //   isDisabled: this._isDisabled,
-          //   child: FPCText.regular16Black(
-          //     context,
-          //     "Child",
-          //   ),
-          // ),
-          // Gap(size.s16 / 2),
-          // FPCInfoDottedSelectCard(
-          //   onPressed: () {},
-          //   isDisabled: this._isDisabled,
-          //   child: FPCText.regular16Black(
-          //     context,
-          //     "Child",
-          //   ),
-          // ),
-          // Gap(size.s16 / 2),
-          // FPCSuccessDottedSelectCard(
-          //   onPressed: () {},
-          //   isDisabled: this._isDisabled,
-          //   child: FPCText.regular16Black(
-          //     context,
-          //     "Child",
-          //   ),
-          // ),
-          // Gap(size.s16 / 2),
-          // FPCGreyDottedSelectCard(
-          //   onPressed: () {},
-          //   isDisabled: this._isDisabled,
-          //   child: FPCText.regular16Black(
-          //     context,
-          //     "Child",
-          //   ),
-          // ),
-          // Gap(size.s16 / 2),
+          FPCText.regular16Black(
+            context,
+            "Dark",
+          ),
+          Gap(size.s16),
+          FPCAccentDarkDottedSelectCard(
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+            child: FPCText.regular16Black(
+              context,
+              "Child",
+            ),
+          ),
+          Gap(size.s16 / 2),
+          FPCInfoDarkDottedSelectCard(
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+            child: FPCText.regular16Black(
+              context,
+              "Child",
+            ),
+          ),
+          Gap(size.s16 / 2),
+          FPCSuccessDarkDottedSelectCard(
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+            child: FPCText.regular16Black(
+              context,
+              "Child",
+            ),
+          ),
+          Gap(size.s16 / 2),
+          FPCGreyDarkDottedSelectCard(
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+            child: FPCText.regular16Black(
+              context,
+              "Child",
+            ),
+          ),
+          Gap(size.s16 / 2),
+          FPCPrimaryDarkDottedSelectCard(
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+            child: FPCText.regular16Black(
+              context,
+              "Child",
+            ),
+          ),
+          Gap(size.s16 / 2),
+          FPCDangerDarkDottedSelectCard(
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+            child: FPCText.regular16Black(
+              context,
+              "Child",
+            ),
+          ),
+          Gap(size.s16 / 2),
+          FPCSecondaryDarkDottedSelectCard(
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+            child: FPCText.regular16Black(
+              context,
+              "Child",
+            ),
+          ),
+          Gap(size.s16 / 2),
+          FPCWarningDarkDottedSelectCard(
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+            child: FPCText.regular16Black(
+              context,
+              "Child",
+            ),
+          ),
+          Gap(size.s16 * 2),
+          FPCText.regular16Black(
+            context,
+            "Default",
+          ),
+          Gap(size.s16),
+          FPCAccentDottedSelectCard(
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+            child: FPCText.regular16Black(
+              context,
+              "Child",
+            ),
+          ),
+          Gap(size.s16 / 2),
+          FPCBlackAlwaysDottedSelectCard(
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+            child: FPCText.regular16Black(
+              context,
+              "Child",
+            ),
+          ),
+          Gap(size.s16 / 2),
+          FPCBlackDottedSelectCard(
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+            child: FPCText.regular16Black(
+              context,
+              "Child",
+            ),
+          ),
+          Gap(size.s16 / 2),
+          FPCInfoDottedSelectCard(
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+            child: FPCText.regular16Black(
+              context,
+              "Child",
+            ),
+          ),
+          Gap(size.s16 / 2),
+          FPCSuccessDottedSelectCard(
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+            child: FPCText.regular16Black(
+              context,
+              "Child",
+            ),
+          ),
+          Gap(size.s16 / 2),
+          FPCGreyDottedSelectCard(
+            onPressed: () {},
+            isDisabled: this._isDisabled,
+            child: FPCText.regular16Black(
+              context,
+              "Child",
+            ),
+          ),
+          Gap(size.s16 / 2),
           FPCPrimaryDottedSelectCard(
             onPressed: () {},
             isDisabled: this._isDisabled,

@@ -100,8 +100,7 @@ void main() async {
       );
     }
 
-    snippetTable[
-            "fpc${snippentFileName.replaceAll(".dart", "")}.code-snippets"] =
+    snippetTable["fpc${snippentFileName.replaceAll(".dart", "")}.json"] =
         snippetItems;
   }
 
@@ -256,8 +255,7 @@ void _generateSnippetsFiles(
     file.writeAsStringSync(prettyJsonString);
   }
 
-  final File fpcBuildContextSnippetsFile =
-      File("fpc_build_context.code-snippets");
+  final File fpcBuildContextSnippetsFile = File("fpc_build_context.json");
   fpcBuildContextSnippetsFile.writeAsStringSync(
     _jsonEncoder.convert(
       const {
@@ -373,7 +371,7 @@ void _generateSnippetsFiles(
     ),
   );
 
-  final File fpcGlobalSnippetsFile = File("fpc_global.code-snippets");
+  final File fpcGlobalSnippetsFile = File("fpc_global.json");
   fpcGlobalSnippetsFile.writeAsStringSync(
     _jsonEncoder.convert(
       const {
@@ -456,7 +454,7 @@ void _preparePackageTable() {
     snippetList.add(
       {
         "language": "dart",
-        "path": ".snippet/${entity.path.split("/").last}",
+        "path": "./snippet/${entity.path.split("/").last}",
       },
     );
   }
@@ -474,7 +472,7 @@ void _prepareReadmeTable() async {
   );
   snippetEntites.sort((a, b) => a.path.compareTo(b.path));
   for (FileSystemEntity entity in snippetEntites) {
-    if (entity.path.contains(".code-snippets") == false) {
+    if (entity.path.contains("fpc_") == false) {
       continue;
     }
 

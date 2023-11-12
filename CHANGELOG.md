@@ -1,7 +1,3 @@
-Update README with normal names and code examples
-Link to snippets and GIF with example
-
-
 ## 3.0.0
 Addings:
 * FPCDottedButton;
