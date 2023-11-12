@@ -5,14 +5,14 @@ repository: https://github.com/ivangalkindeveloper/flutter_platform_component
 # homepage: https://www.example.com
 
 environment:
-  sdk: ">=2.18.4 <3.0.0"
+  sdk: ">=2.18.4 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
   animate_do: 3.1.2
   animations: 2.0.8
   badges: 3.1.2
-  collection:
+  collection: 1.17.2
   dotted_border: 2.1.0
   flutter:
     sdk: flutter
