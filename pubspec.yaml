@@ -2,7 +2,6 @@ name: flutter_platform_component
 description: Ready-made inherited component base using ready-made abstractions for quick use and decomposed by platform.
 version: 2.3.0
 repository: https://github.com/ivangalkindeveloper/flutter_platform_component
-# homepage: https://www.example.com
 
 environment:
   sdk: ">=2.18.4 <4.0.0"
