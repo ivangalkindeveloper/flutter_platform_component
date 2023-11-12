@@ -43,7 +43,7 @@ class FPCGreyLightGradientPINField extends StatelessWidget {
       length: this.length,
       unfocusedBackgroundGradient: theme.greyLightGradient,
       focusedBackgroundGradient: FPCLinearGradient(
-        context: context,
+        context,
         colors: [
           theme.backgroundComponent,
           theme.backgroundComponent,

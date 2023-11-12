@@ -39,7 +39,7 @@ class FPCAccentLightGradientLabelButton extends StatelessWidget {
 
     return FPCGradientButton(
       backgroundGradient: FPCLinearGradient(
-        context: context,
+        context,
         colors: const [
           Colors.transparent,
           Colors.transparent,

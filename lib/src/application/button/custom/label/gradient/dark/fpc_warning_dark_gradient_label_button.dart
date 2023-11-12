@@ -43,7 +43,7 @@ class FPCWarningDarkGradientLabelButton extends StatelessWidget {
       backgroundGradient: this.isFilled
           ? theme.warningGradient
           : FPCLinearGradient(
-              context: context,
+              context,
               colors: const [
                 Colors.transparent,
                 Colors.transparent,

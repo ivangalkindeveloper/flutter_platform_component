@@ -50,14 +50,14 @@ class FPCPrimaryGradientCodeField extends StatelessWidget {
       focusNode: this.focusNode,
       length: length,
       unfocusedBackgroundGradient: FPCLinearGradient(
-        context: context,
+        context,
         colors: [
           theme.backgroundComponent,
           theme.backgroundComponent,
         ],
       ),
       focusedBackgroundGradient: FPCLinearGradient(
-        context: context,
+        context,
         colors: [
           theme.backgroundComponent,
           theme.backgroundComponent,

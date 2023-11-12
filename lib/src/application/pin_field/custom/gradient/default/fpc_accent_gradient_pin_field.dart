@@ -43,7 +43,7 @@ class FPCAccentGradientPINField extends StatelessWidget {
       focusNode: this.focusNode,
       unfocusedBackgroundGradient: theme.greyGradient,
       focusedBackgroundGradient: FPCLinearGradient(
-        context: context,
+        context,
         colors: [
           theme.backgroundComponent,
           theme.backgroundComponent,

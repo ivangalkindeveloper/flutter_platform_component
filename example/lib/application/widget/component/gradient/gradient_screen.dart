@@ -22,7 +22,7 @@ class GradientScreen extends StatelessWidget {
           SizedBox(height: size.s16 * 2),
           FPCGradientCard(
             backgroundGradient: FPCLinearGradient(
-              context: context,
+              context,
               colors: theme.primaryGradient.colors,
             ),
             child: FPCText.regular16White(
@@ -33,7 +33,7 @@ class GradientScreen extends StatelessWidget {
           SizedBox(height: size.s16),
           FPCGradientCard(
             backgroundGradient: FPCRadialGradient(
-              context: context,
+              context,
               colors: theme.primaryGradient.colors,
             ),
             child: FPCText.regular16White(
@@ -44,7 +44,7 @@ class GradientScreen extends StatelessWidget {
           SizedBox(height: size.s16),
           FPCGradientCard(
             backgroundGradient: FPCSweepGradient(
-              context: context,
+              context,
               colors: theme.primaryGradient.colors,
             ),
             child: FPCText.regular16White(

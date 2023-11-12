@@ -43,7 +43,7 @@ class FPCSuccessDarkGradientLabelButton extends StatelessWidget {
       backgroundGradient: this.isFilled
           ? theme.successGradient
           : FPCLinearGradient(
-              context: context,
+              context,
               colors: const [
                 Colors.transparent,
                 Colors.transparent,

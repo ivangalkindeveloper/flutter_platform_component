@@ -141,7 +141,7 @@ class _FPCGradientSelectFieldState extends State<FPCGradientSelectField>
 
     final Gradient backgroundGradient = this.widget.backgroundGradient ??
         FPCLinearGradient(
-          context: context,
+          context,
           colors: [
             theme.backgroundComponent,
             theme.backgroundComponent,

@@ -42,6 +42,10 @@ class FPCDottedCard extends StatelessWidget {
     final double borderWidth = this.borderWidth ?? sizeScope.borderWidthCard;
     final List<double> pattern = this.pattern ?? const [2, 2];
     final EdgeInsets padding = this.padding ?? size.paddingCard;
+    final BoxConstraints constraints = this.constraints ??
+        const BoxConstraints(
+          minWidth: double.infinity,
+        );
 
     return FPCAnimatedContainer(
       height: this.height,
@@ -61,7 +65,11 @@ class FPCDottedCard extends StatelessWidget {
         dashPattern: pattern,
         padding: padding,
         borderPadding: EdgeInsets.zero,
-        child: this.child,
+        child: Container(
+          alignment: Alignment.center,
+          constraints: constraints,
+          child: this.child,
+        ),
       ),
     );
   }

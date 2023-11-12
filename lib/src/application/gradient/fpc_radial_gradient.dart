@@ -2,8 +2,8 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class FPCRadialGradient extends RadialGradient {
-  FPCRadialGradient({
-    required BuildContext context,
+  FPCRadialGradient(
+    BuildContext context, {
     AlignmentGeometry? center,
     double? radius,
     List<double>? stops,

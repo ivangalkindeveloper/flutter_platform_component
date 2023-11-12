@@ -43,14 +43,14 @@ class FPCAccentGradientToggle<T> extends StatelessWidget {
       value: this.value,
       onChanged: this.onChanged,
       unselectedBackgroundGradient: FPCLinearGradient(
-        context: context,
+        context,
         colors: [
           theme.backgroundComponent,
           theme.backgroundComponent,
         ],
       ),
       unselectedInternalGradient: FPCLinearGradient(
-        context: context,
+        context,
         colors: [
           theme.black,
           theme.black,
@@ -60,7 +60,7 @@ class FPCAccentGradientToggle<T> extends StatelessWidget {
       unselectedStyle: this.unselectedStyle,
       selectedBackgroundGradient: theme.accentGradient,
       selectedInternalGradient: FPCLinearGradient(
-        context: context,
+        context,
         colors: [
           theme.white,
           theme.white,

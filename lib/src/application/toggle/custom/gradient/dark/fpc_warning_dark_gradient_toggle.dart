@@ -43,14 +43,14 @@ class FPCWarningDarkGradientToggle<T> extends StatelessWidget {
       value: this.value,
       onChanged: this.onChanged,
       unselectedBackgroundGradient: FPCLinearGradient(
-        context: context,
+        context,
         colors: [
           theme.backgroundComponent,
           theme.white,
         ],
       ),
       unselectedInternalGradient: FPCLinearGradient(
-        context: context,
+        context,
         colors: [
           theme.black,
           theme.black,
@@ -60,7 +60,7 @@ class FPCWarningDarkGradientToggle<T> extends StatelessWidget {
       unselectedStyle: this.unselectedStyle,
       selectedBackgroundGradient: theme.warningDarkGradient,
       selectedInternalGradient: FPCLinearGradient(
-        context: context,
+        context,
         colors: [
           theme.white,
           theme.white,

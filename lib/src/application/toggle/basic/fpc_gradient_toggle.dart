@@ -253,7 +253,7 @@ class _FPCGradientToggleButton<T> extends StatelessWidget {
 
     return this.unselectedBackgroundGradient ??
         FPCLinearGradient(
-          context: context,
+          context,
           colors: [
             theme.backgroundComponent,
             theme.backgroundComponent,

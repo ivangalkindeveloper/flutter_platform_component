@@ -2,8 +2,8 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class FPCLinearGradient extends LinearGradient {
-  FPCLinearGradient({
-    required BuildContext context,
+  FPCLinearGradient(
+    BuildContext context, {
     AlignmentGeometry? begin,
     AlignmentGeometry? end,
     List<double>? stops,
