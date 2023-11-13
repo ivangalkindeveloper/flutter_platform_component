@@ -515,7 +515,6 @@ context.fpcChangeTimeOfDay(const TimesOfDay());
 <br>
 
 ## Components
-<br>
 
 ### Animation
 All animations durations are guided by slow, default and fast durations from the size config.
@@ -523,13 +522,13 @@ All animations durations are guided by slow, default and fast durations from the
 Standard AnimatedAlign widget.\
 Example of using a ready-made component:
 ```dart
+const FPCAnimatedSlowAlign(
+  child: Child(),
+),
 const FPCAnimatedAlign(
   child: Child(),
 ),
 const FPCAnimatedFastAlign(
-  child: Child(),
-),
-const FPCAnimatedSlowAlign(
   child: Child(),
 ),
 ```
@@ -538,13 +537,13 @@ const FPCAnimatedSlowAlign(
 Standard AnimatedContainer widget.\
 Example of using a ready-made component:
 ```dart
+const FPCAnimatedSlowContainer(
+  child: Child(),
+),
 const FPCAnimatedContainer(
   child: Child(),
 ),
 const FPCAnimatedFastContainer(
-  child: Child(),
-),
-const FPCAnimatedSlowContainer(
   child: Child(),
 ),
 ```
@@ -553,6 +552,11 @@ const FPCAnimatedSlowContainer(
 Standard AnimatedCrossFade widget.\
 Example of using a ready-made component:
 ```dart
+FPCAnimatedSlowCrossFade(
+  condition: condition,
+  firstChild: const FirstChild(),
+  secondChild: const SecondChild(),
+),
 FPCAnimatedCrossFade(
   condition: condition,
   firstChild: const FirstChild(),
@@ -563,24 +567,19 @@ FPCAnimatedFastCrossFade(
   firstChild: const FirstChild(),
   secondChild: const SecondChild(),
 ),
-FPCAnimatedSlowCrossFade(
-  condition: condition,
-  firstChild: const FirstChild(),
-  secondChild: const SecondChild(),
-),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_cross_fade.gif)
 #### FPCAnimatedDefaultTextStyle
 Standard AnimatedDefaultTextStyle widget.\
 Example of using a ready-made component:
 ```dart
+const AnimatedSlowDefaultTextStyle(
+  child: Child(),
+),
 const AnimatedDefaultTextStyle(
   child: Child(),
 ),
 const AnimatedFastDefaultTextStyle(
-  child: Child(),
-),
-const AnimatedSlowDefaultTextStyle(
   child: Child(),
 ),
 ```
@@ -589,15 +588,15 @@ const AnimatedSlowDefaultTextStyle(
 Fade-In from left, right, up and down animation widget.\
 Example of using a ready-made component:
 ```dart
+FPCAnimatedSlowFadeIn(
+  isAnimate: animate,
+  child: const Child(),
+),
 FPCAnimatedFadeIn(
   isAnimate: animate,
   child: const Child(),
 ),
 FPCAnimatedFastFadeIn(
-  isAnimate: animate,
-  child: const Child(),
-),
-FPCAnimatedSlowFadeIn(
   isAnimate: animate,
   child: const Child(),
 ),
@@ -607,15 +606,15 @@ FPCAnimatedSlowFadeIn(
 Fade-Out from left, right, up and down animation widget.\
 Example of using a ready-made component:
 ```dart
+const FPCAnimatedSlowFadeOut(
+  isAnimate: animate,
+  child: Child(),
+),
 const FPCAnimatedFadeOut(
   isAnimate: animate,
   child: Child(),
 ),
 const FPCAnimatedFastFadeOut(
-  isAnimate: animate,
-  child: Child(),
-),
-const FPCAnimatedSlowFadeOut(
   isAnimate: animate,
   child: Child(),
 ),
@@ -626,6 +625,11 @@ Stack of two AnimatedOpacity widgets.\
 Needed when the widget should not adjust to the size of the first or second child.
 Example of using a ready-made component:
 ```dart
+FPCAnimatedSlowOpacityStack(
+  condition: condition,
+  firstChild: const FirstChild(),
+  secondChild: const SecondChild(),
+),
 FPCAnimatedOpacityStack(
   condition: condition,
   firstChild: const FirstChild(),
@@ -636,26 +640,21 @@ FPCAnimatedFastOpacityStack(
   firstChild: const FirstChild(),
   secondChild: const SecondChild(),
 ),
-FPCAnimatedSlowOpacityStack(
-  condition: condition,
-  firstChild: const FirstChild(),
-  secondChild: const SecondChild(),
-),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_opacity_stack.gif)
 #### FPCAnimatedOpacity
 Standard AnimatedOpaicty widget.\
 Example of using a ready-made component:
 ```dart
+FPCAnimatedSlowOpacity(
+  condition: condition,
+  child: const Child(),
+),
 FPCAnimatedOpacity(
   condition: condition,
   child: const Child(),
 ),
 FPCAnimatedFastOpacity(
-  condition: condition,
-  child: const Child(),
-),
-FPCAnimatedSlowOpacity(
   condition: condition,
   child: const Child(),
 ),
@@ -665,6 +664,11 @@ FPCAnimatedSlowOpacity(
 Transition navigation widget.\
 Example of using a ready-made component:
 ```dart
+FPCAnimatedSlowOpenContainer(
+  type: FPCOpenContainerTransitionType.fade,
+  closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
+  openBuilder: (BuildContext context) => const OpenChild(),
+),
 FPCAnimatedOpenContainer(
   type: FPCOpenContainerTransitionType.fade,
   closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
@@ -675,24 +679,19 @@ FPCAnimatedFastOpenContainer(
   closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
   openBuilder: (BuildContext context) => const OpenChild(),
 ),
-FPCAnimatedSlowOpenContainer(
-  type: FPCOpenContainerTransitionType.fade,
-  closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
-  openBuilder: (BuildContext context) => const OpenChild(),
-),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_open_container.gif)
 #### FPCAnimatedPositioned
 Standard AnimatedPositioned widget.\
 Example of using a ready-made component:
 ```dart
+const FPCAnimatedSlowPositioned(
+  child: Child(),
+),
 const FPCAnimatedPositioned(
   child: Child(),
 ),
 const FPCAnimatedFastPositioned(
-  child: Child(),
-),
-const FPCAnimatedSlowPositioned(
   child: Child(),
 ),
 ```
@@ -701,13 +700,13 @@ const FPCAnimatedSlowPositioned(
 Standard AnimatedSize widget.\
 Example of using a ready-made component:
 ```dart
+const FPCAnimatedSlowSize(
+  child: Child(),
+),
 const FPCAnimatedSize(
   child: Child(),
 ),
 const FPCAnimatedFastSize(
-  child: Child(),
-),
-const FPCAnimatedSlowSize(
   child: Child(),
 ),
 ```
@@ -716,13 +715,13 @@ const FPCAnimatedSlowSize(
 Standard AnimatedSwitcher widget.\
 Example of using a ready-made component:
 ```dart
+const FPCAnimatedSlowSwitcher(
+  child: Child(),
+),
 const FPCAnimatedSwitcher(
   child: Child(),
 ),
 const FPCAnimatedFastSwitcher(
-  child: Child(),
-),
-const FPCAnimatedSlowSwitcher(
   child: Child(),
 ),
 ```
@@ -731,6 +730,10 @@ const FPCAnimatedSlowSwitcher(
 Transition widget with great animation change of child.\
 Example of using a ready-made component:
 ```dart
+const FPCAnimatedSlowTransitionSwitcher(
+  type: FPCTransitionType.scaled,
+  child: Child(),
+),
 const FPCAnimatedTransitionSwitcher(
   type: FPCTransitionType.scaled,
   child: Child(),
@@ -739,12 +742,9 @@ const FPCAnimatedFastTransitionSwitcher(
   type: FPCTransitionType.scaled,
   child: Child(),
 ),
-const FPCAnimatedSlowTransitionSwitcher(
-  type: FPCTransitionType.scaled,
-  child: Child(),
-),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_transition_switcher.gif)
+
 <br>
 
 ### App
@@ -863,6 +863,7 @@ FPCBlurWhiteAlwaysExpandedBottomSheetAppBar(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/blur/blur_white_always_expanded_modal_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/app_bar/blur/blur_white_always_expanded_modal_app_bar_material.gif) |
+
 <br>
 
 ### Badge
@@ -906,6 +907,7 @@ FPCPrimaryGradientDotBadge(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/badge/dot/gradient_dot_badge.gif)
+
 <br>
 
 ### Blur
@@ -917,6 +919,7 @@ FPCBlur(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/blur/blur.png)
+
 <br>
 
 ### BottomSheet
@@ -944,8 +947,8 @@ FPCActionBottomSheet(
 Expanded modal scaffold component to display large bottom sheet content.\
 Example of using a component:
 ```dart
-FPCExpandedBottomSheet(
-  body: const Child(),
+const FPCExpandedBottomSheet(
+  body: Child(),
 ),
 ```
 | iOS (Cupertino) | Android (Material) |
@@ -955,8 +958,8 @@ FPCExpandedBottomSheet(
 Ready-made components contains expanded bottom sheet with always black background.\
 Example of using a component:
 ```dart
-FPCBlackAlwaysExpandedBottomSheet(
-  body: const Child(),
+const FPCBlackAlwaysExpandedBottomSheet(
+  body: Child(),
 ),
 ```
 | iOS (Cupertino) | Android (Material) |
@@ -966,8 +969,8 @@ FPCBlackAlwaysExpandedBottomSheet(
 Expanded bottom sheet scaffold component to display large bottom sheet content with blur app bar.\
 Example of using a component:
 ```dart
-FPCBlurExpandedBottomSheet(
-  body: const Child(),
+const FPCBlurExpandedBottomSheet(
+  body: Child(),
 ),
 ```
 | iOS (Cupertino) | Android (Material) |
@@ -977,8 +980,8 @@ FPCBlurExpandedBottomSheet(
 Ready-made components contains expanded bottom sheet with always black background with blur app bar.\
 Example of using a component:
 ```dart
-FPCBlurBlackAlwaysExpandedBottomSheet(
-  body: const Child(),
+const FPCBlurBlackAlwaysExpandedBottomSheet(
+  body: Child(),
 ),
 ```
 | iOS (Cupertino) | Android (Material) |
@@ -988,13 +991,14 @@ FPCBlurBlackAlwaysExpandedBottomSheet(
 Small bottom sheet window component to display small content.\
 Example of using a component:
 ```dart
-FPCSmallBottomSheet(
-  body: const Child(),
+const FPCSmallBottomSheet(
+  body: Child(),
 ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/pop_up_modal/pop_up_modal_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/modal/pop_up_modal/pop_up_modal_material.gif) |
+
 <br>
 
 ### Button
@@ -1133,6 +1137,7 @@ FPCWhiteAlwaysExpandedBottomSheetCloseButton(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/modal/white_always_expanded_modal_close_button_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/button/modal/white_always_expanded_modal_close_button_material.gif) |
+
 <br>
 
 ### Card
@@ -1140,8 +1145,8 @@ FPCWhiteAlwaysExpandedBottomSheetCloseButton(
 Card component with solid background color.\
 Example of using a ready-made component:
 ```dart
-FPCPrimaryCard(
-  child: const Child(),
+const FPCPrimaryCard(
+  child: Child(),
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/card.png)
@@ -1149,8 +1154,8 @@ FPCPrimaryCard(
 Card component with gradient background color.\
 Example of using a ready-made component:
 ```dart
-FPCPrimaryGradientCard(
-  child: const Child(),
+const FPCPrimaryGradientCard(
+  child: Child(),
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/gradient_card.png)
@@ -1158,11 +1163,12 @@ FPCPrimaryGradientCard(
 Card component with dotted border.\
 Example of using a ready-made component:
 ```dart
-FPCPrimaryDottedCard(
-  child: const Child(),
+const FPCPrimaryDottedCard(
+  child: Child(),
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/card/dotted_card.png)
+
 <br>
 
 ### Checkbox
@@ -1178,6 +1184,7 @@ FPCPrimaryCheckbox(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/checkbox/checkbox_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/checkbox/checkbox_material.gif) |
+
 <br>
 
 ### CodeField
@@ -1186,7 +1193,7 @@ Component field code, which is designed to display any typed SMS code with solid
 Example of using a ready-made component:
 ```dart
 FPCPrimaryCodeField(
-  length: length,
+  length: 6,
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/code_field/code_field.gif)
@@ -1195,10 +1202,11 @@ Component field code, which is designed to display any typed SMS code with solid
 Example of using a ready-made component:
 ```dart
 FPCPrimaryGradientCodeField(
-  length: length,
+  length: 6,
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/code_field/gradient_code_field.gif)
+
 <br>
 
 ### Common
@@ -1218,6 +1226,7 @@ Separated material scrollbar component.
 WillPopScope widget for nested navigation.
 #### FPCTextInputHandlerFormatter
 Text handler for autovalidating.
+
 <br>
 
 ### Default
@@ -1225,6 +1234,7 @@ Text handler for autovalidating.
 Default ListView widget are guided by size config.
 #### FPCPadding
 Default Padding widget are guided by size config.
+
 <br>
 
 ### Dialog
@@ -1249,6 +1259,7 @@ FPCDialog(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/dialog/dialog_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/dialog/dialog_material.gif) |
+
 <br>
 
 ### Divider
@@ -1266,6 +1277,7 @@ Example of using a ready-made component:
 const FPCPrimaryGradientDivider(),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/divider/gradient_divider.png)
+
 <br>
 
 ### FormField
@@ -1289,6 +1301,7 @@ FPCPrimaryGradientFormField(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/form_field/gradient_form_field.gif)
+
 <br>
 
 ### Global
@@ -1343,6 +1356,7 @@ hideFPCSnackBar(
   context,
 );
 ```
+
 <br>
 
 ### Gradient
@@ -1352,7 +1366,7 @@ Example of using a component:
 ```dart
 FPCGradientMask(
   gradient: Gradient(),
-  child: Child(),
+  child: const Child(),
 ),
 ```
 #### FPCLinearGradient
@@ -1361,9 +1375,9 @@ Example of using a class:
 ```dart
 FPCLinearGradient(
   context,
-  colors: [
-    FirstColor(),
-    SecondColor(),
+  colors: const [
+    firstColor,
+    secondColor,
   ],
 ),
 ```
@@ -1374,9 +1388,9 @@ Example of using a class:
 ```dart
 FPCRadialGradient(
   context,
-  colors: [
-    FirstColor(),
-    SecondColor(),
+  colors: const [
+    firstColor,
+    secondColor,
   ],
 ),
 ```
@@ -1387,13 +1401,14 @@ Example of using a class:
 ```dart
 FPCSweepGradient(
   context,
-  colors: [
-    FirstColor(),
-    SecondColor(),
+  colors: const [
+    firstColor,
+    secondColor,
   ],
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/gradient/sweep_gradient.png)
+
 <br>
 
 ### Icon
@@ -1401,11 +1416,18 @@ All icons sizes are guided by small, default and large sizes from the size confi
 There is no basic component, the icons are divided into separate widgets based on color and size.\
 Example of using a ready-made component:
 ```dart
+const FPCPrimarySmallIcon(
+  icon: Icons.icon,
+),
 const FPCPrimaryIcon(
+  icon: Icons.icon,
+),
+const FPCPrimaryLargeIcon(
   icon: Icons.icon,
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/icon/icon.png)
+
 <br>
 
 ### Indicator
@@ -1414,7 +1436,9 @@ Circular indicator component with solid color, decomposed by platform.\
 There is no basic componen, the circular indicators are divided into separate widgets based on color and size.\
 Example of using a ready-made component:
 ```dart
+const FPCPrimarySmallCircularIndicator(),
 const FPCPrimaryCircularIndicator(),
+const FPCPrimaryLargeCircularIndicator(),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
@@ -1423,7 +1447,9 @@ const FPCPrimaryCircularIndicator(),
 Circular indicator component with gradient color, decomposed by platform.\
 Example of using a ready-made component:
 ```dart
+const FPCPrimaryGradientSmallCircularIndicator(),
 const FPCPrimaryGradientCircularIndicator(),
+const FPCPrimaryGradientLargeCircularIndicator(),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
@@ -1433,7 +1459,7 @@ Page indicator component with solid color, ideal for displaying the current page
 Example of using a ready-made component:
 ```dart
 FPCPrimaryPageIndicator(
-  length: length,
+  length: 4,
   index: index,
 ),
 ```
@@ -1443,7 +1469,7 @@ Page indicator component with gradient color, ideal for displaying the current p
 Example of using a ready-made component:
 ```dart
 FPCPrimaryGradientPageIndicator(
-  length: length,
+  length: 4,
   index: index,
 ),
 ```
@@ -1462,12 +1488,13 @@ Story indicator component with solid color, needed to display the steps and the 
 Example of using a ready-made component:
 ```dart
 FPCPrimaryStoryIndicator(
-  length: length,
+  length: 4,
   index: index,
   value: value,
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/indicator/story_indicator/story_indicator.gif)
+
 <br>
 
 ### Keyboard
@@ -1477,7 +1504,7 @@ Example of using a component:
 ```dart
 FPCKeyboardButton(
   onPressed: () {},
-  child: Child(),
+  child: const Child(),
 ),
 ```
 | iOS (Cupertino) | Android (Material) |
@@ -1506,6 +1533,7 @@ FPCKeyboard(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/keyboard/keyboard/keyboard_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/keyboard/keyboard/keyboard_material.gif) |
+
 <br>
 
 ### List
@@ -1516,7 +1544,7 @@ Example of using a component:
 FPCListRefresh(
   controller: controller,
   onRefresh: onRefresh,
-  child: Child(),
+  child: const Child(),
 ),
 ```
 | iOS (Cupertino) | Android (Material) |
@@ -1542,6 +1570,7 @@ FPCListSection(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/list/list_section/list_section_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/list/list_section/list_section_material.gif) |
+
 <br>
 
 ### Navigation
@@ -1617,6 +1646,7 @@ FPCRoute.fade(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/navigation/route/route_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/navigation/route/route_material.gif) |
+
 <br>
 
 ### Picker
@@ -1644,6 +1674,7 @@ FPCTimePicker(),
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/picker/time_picker/time_picker_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/picker/time_picker/time_picker_material.gif) |
+
 <br>
 
 ### PINField
@@ -1651,8 +1682,8 @@ FPCTimePicker(),
 PIN field component with solid colors.\
 Example of using a ready-made component:
 ```dart
-FPCPrimaryPINField(
-  length: length,
+const FPCPrimaryPINField(
+  length: 4,
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/pin_field/pin_field.gif)
@@ -1660,11 +1691,12 @@ FPCPrimaryPINField(
 PIN field component with gradient colors.\
 Example of using a ready-made component:
 ```dart
-FPCPrimaryGradientPINField(
-  length: length,
+const FPCPrimaryGradientPINField(
+  length: 4,
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/pin_field/gradient_pin_field.gif)
+
 <br>
 
 ### Radio
@@ -1681,6 +1713,7 @@ FPCPrimaryRadio<String>(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/radio/radio_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/radio/radio_material.gif) |
+
 <br>
 
 ### Scaffold
@@ -1695,6 +1728,7 @@ FPCScaffold(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/scaffold/scaffold_cupertino.png) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/scaffold/scaffold_material.png) |
+
 <br>
 
 ### Scrollbar
@@ -1709,6 +1743,7 @@ FPCScrollbar(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/scrollbar/scrollbar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/scrollbar/scrollbar_material.gif) |
+
 <br>
 
 ### SegmentControl
@@ -1756,6 +1791,7 @@ FPCPrimaryGradientSegmentControl<String>(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/segment_control/gradient_segment_control_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/segment_control/gradient_segment_control_material.gif) |
+
 <br>
 
 ### SelectCard
@@ -1795,6 +1831,7 @@ FPCPrimaryDottedSelectCard(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_card/dotted_select_card_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_card/dotted_select_card_material.gif) |
+
 <br>
 
 ### SelectField
@@ -1803,7 +1840,7 @@ Clickable field component with solid colors, decomposed by platform.\
 Example of using a ready-made component:
 ```dart
 FPCPrimarySelectField(
-  title: "Title",
+  title: title,
   labelText: "Label",
 ),
 ```
@@ -1815,13 +1852,14 @@ Clickable field component with gradient colors, decomposed by platform.\
 Example of using a ready-made component:
 ```dart
 FPCPrimaryGradientSelectField(
-  title: "Title",
+  title: title,
   labelText: "Label",
 ),
 ```
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_field/gradient_select_field_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/select_field/gradient_select_field_material.gif) |
+
 <br>
 
 ### Shimmer
@@ -1839,6 +1877,7 @@ Example of using a ready-made component:
 const FPCPrimaryGradientShimmer(),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/shimmer/gradient_shimmer.gif)
+
 <br>
 
 ### Slider
@@ -1854,6 +1893,7 @@ FPCPrimarySlider(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/slider/slider_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/slider/slider_material.gif) |
+
 <br>
 
 ### SlidingSegmentControl
@@ -1878,6 +1918,7 @@ FPCSlidingSegmentControl<String>(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/sliding_segment_control/sliding_segment_control.gif)
+
 <br>
 
 ### SliverAppBar
@@ -1889,6 +1930,7 @@ FPCSliverAppBar(),
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/sliver_navigation_app_bar/sliver_navigation_app_bar_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/sliver_navigation_app_bar/sliver_navigation_app_bar_material.gif) |
+
 <br>
 
 ### SnackBar
@@ -1928,6 +1970,7 @@ const FPCPrimaryGradientOutlineSnackBar(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/snackbar/gradient_outline_snackbar.png)
+
 <br>
 
 ### Switch
@@ -1943,6 +1986,7 @@ FPCPrimarySwitch(
 | iOS (Cupertino) | Android (Material) |
 | --------------- | ------------------ |
 | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/switch/switch_cupertino.gif) | ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/switch/switch_material.gif) |
+
 <br>
 
 ### Text
@@ -1982,6 +2026,7 @@ FPCTextStyle.regular16Black(
   context,
 ),
 ```
+
 <br>
 
 ### Toggle
