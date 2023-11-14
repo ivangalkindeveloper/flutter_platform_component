@@ -18,13 +18,17 @@ Future<T?> showFPCDialog<T>(
       barrierColor ?? themeState.barrierColorDialog;
 
   haptic.selection();
+
   switch (platform) {
     case FPCPlatform.iOS:
       return showCupertinoDialog<T>(
         context: context,
         useRootNavigator: useRootNavigator,
         barrierDismissible: true,
-        builder: (BuildContext context) => child,
+        builder: (
+          BuildContext context,
+        ) =>
+            child,
       );
 
     case FPCPlatform.android:
@@ -32,15 +36,10 @@ Future<T?> showFPCDialog<T>(
         context: context,
         useRootNavigator: useRootNavigator,
         barrierColor: methodBarrierColor,
-        builder: (BuildContext context) => child,
-      );
-
-    default:
-      return showDialog<T>(
-        context: context,
-        useRootNavigator: useRootNavigator,
-        barrierColor: methodBarrierColor,
-        builder: (BuildContext context) => child,
+        builder: (
+          BuildContext context,
+        ) =>
+            child,
       );
   }
 }

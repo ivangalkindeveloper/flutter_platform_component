@@ -33,7 +33,10 @@ Future<T?> showFPCExpandedBottomSheet<T>(
         transitionBackgroundColor: Colors.transparent,
         topRadius: methodBorderRadius.topLeft,
         expand: true,
-        builder: (BuildContext context) => child,
+        builder: (
+          BuildContext context,
+        ) =>
+            child,
       );
 
     case FPCPlatform.android:
@@ -44,18 +47,10 @@ Future<T?> showFPCExpandedBottomSheet<T>(
         barrierColor: methodBarrierColor,
         backgroundColor: Colors.transparent,
         expand: true,
-        builder: (BuildContext context) => child,
-      );
-
-    default:
-      return showMaterialModalBottomSheet<T?>(
-        context: context,
-        useRootNavigator: useRootNavigator,
-        elevation: 0,
-        barrierColor: methodBarrierColor,
-        backgroundColor: Colors.transparent,
-        expand: true,
-        builder: (BuildContext context) => child,
+        builder: (
+          BuildContext context,
+        ) =>
+            child,
       );
   }
 }
@@ -78,7 +73,10 @@ Future<T?> showFPCSmallBottomSheet<T>(
         context: context,
         useRootNavigator: useRootNavigator,
         barrierColor: methodBarrierColor,
-        builder: (BuildContext context) => child,
+        builder: (
+          BuildContext context,
+        ) =>
+            child,
       );
 
     case FPCPlatform.android:
@@ -88,17 +86,10 @@ Future<T?> showFPCSmallBottomSheet<T>(
         elevation: 0,
         barrierColor: methodBarrierColor,
         backgroundColor: Colors.transparent,
-        builder: (BuildContext context) => child,
-      );
-
-    default:
-      return showMaterialModalBottomSheet<T>(
-        context: context,
-        useRootNavigator: useRootNavigator,
-        elevation: 0,
-        barrierColor: methodBarrierColor,
-        backgroundColor: Colors.transparent,
-        builder: (BuildContext context) => child,
+        builder: (
+          BuildContext context,
+        ) =>
+            child,
       );
   }
 }

@@ -26,8 +26,8 @@ ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showFPCSnackBar(
   final EdgeInsets methodPadding = padding ?? EdgeInsets.all(size.s16);
 
   messengerState.hideCurrentSnackBar();
-
   haptic.selection();
+
   return messengerState.showSnackBar(
     SnackBar(
       elevation: 0,

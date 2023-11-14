@@ -43,25 +43,10 @@ Future<DateTime?> showFPCDatePicker(
         initialDate: dateTimeInitial,
         lastDate: dateTimeMaximum,
         locale: materialDialogLocale,
-        builder: (BuildContext context, Widget? materialDialog) =>
-            FPCDatePicker(
-          dateTimeRange: dateTimeRange,
-          materialDialog: materialDialog,
-          materialDialogBackgroundColor: materialDialogBackgroundColor,
-          materialDialogColor: materialDialogColor,
-          materialDialogBorderRadius: materialDialogBorderRadius,
-        ),
-      );
-
-    default:
-      return showDatePicker(
-        context: context,
-        useRootNavigator: useRootNavigator,
-        firstDate: dateTimeMinimum,
-        initialDate: dateTimeInitial,
-        lastDate: dateTimeMaximum,
-        locale: materialDialogLocale,
-        builder: (BuildContext context, Widget? materialDialog) =>
+        builder: (
+          BuildContext context,
+          Widget? materialDialog,
+        ) =>
             FPCDatePicker(
           dateTimeRange: dateTimeRange,
           materialDialog: materialDialog,
@@ -106,22 +91,10 @@ Future<TimeOfDay?> showFPCTimePicker(
         context: context,
         useRootNavigator: useRootNavigator,
         initialTime: timeOfDayInitial,
-        builder: (BuildContext context, Widget? materialDialog) =>
-            FPCTimePicker(
-          timeOfDayRange: timeOfDayRange,
-          materialDialog: materialDialog,
-          materialDialogBackgroundColor: materialDialogBackgroundColor,
-          materialDialogColor: materialDialogColor,
-          materialDialogBorderRadius: materialDialogBorderRadius,
-        ),
-      );
-
-    default:
-      return showTimePicker(
-        context: context,
-        useRootNavigator: useRootNavigator,
-        initialTime: timeOfDayInitial,
-        builder: (BuildContext context, Widget? materialDialog) =>
+        builder: (
+          BuildContext context,
+          Widget? materialDialog,
+        ) =>
             FPCTimePicker(
           timeOfDayRange: timeOfDayRange,
           materialDialog: materialDialog,
