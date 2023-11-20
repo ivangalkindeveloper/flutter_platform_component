@@ -1,3 +1,6 @@
+## 3.0.3
+* Fix "Modal" > "BottomSheet" naming.
+
 ## 3.0.2
 * Removing useless code snippets.
 

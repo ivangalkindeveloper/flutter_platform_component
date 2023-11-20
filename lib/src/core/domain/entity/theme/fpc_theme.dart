@@ -115,12 +115,12 @@ abstract class IFPCTheme {
   abstract final Gradient dangerDarkGradient;
 
   // Barrier
-  // Barrier / Expanded Modal
-  abstract final Color barrierExpandedModalCupertino;
-  abstract final Color barrierExpandedModalMaterial;
-  // Barrier / Modal
-  abstract final Color barrierPopUpModalCupertino;
-  abstract final Color barrierPopUpModalMaterial;
+  // Barrier / Expanded BottomSheet
+  abstract final Color barrierExpandedBottomSheetCupertino;
+  abstract final Color barrierExpandedBottomSheetMaterial;
+  // Barrier / Small BottomSheet
+  abstract final Color barrierSmallBottomSheetCupertino;
+  abstract final Color barrierSmallBottomSheetMaterial;
   // Barrier / Dialog
   abstract final Color barrierDialogCupertino;
   abstract final Color barrierDialogMaterial;
@@ -246,13 +246,16 @@ abstract class IFPCTheme {
       other.dangerDarkGradient == this.dangerDarkGradient &&
 
       // Barrier
-      // Barrier / Expanded Modal
-      other.barrierExpandedModalCupertino ==
-          this.barrierExpandedModalCupertino &&
-      other.barrierExpandedModalMaterial == this.barrierExpandedModalMaterial &&
-      // Barrier / Modal
-      other.barrierPopUpModalCupertino == this.barrierPopUpModalCupertino &&
-      other.barrierPopUpModalMaterial == this.barrierPopUpModalMaterial &&
+      // Barrier / Expanded BottomSheet
+      other.barrierExpandedBottomSheetCupertino ==
+          this.barrierExpandedBottomSheetCupertino &&
+      other.barrierExpandedBottomSheetMaterial ==
+          this.barrierExpandedBottomSheetMaterial &&
+      // Barrier / BottomSheet
+      other.barrierSmallBottomSheetCupertino ==
+          this.barrierSmallBottomSheetCupertino &&
+      other.barrierSmallBottomSheetMaterial ==
+          this.barrierSmallBottomSheetMaterial &&
       // Barrier / Dialog
       other.barrierDialogCupertino == this.barrierDialogCupertino &&
       other.barrierDialogMaterial == this.barrierDialogMaterial &&
@@ -370,12 +373,12 @@ abstract class IFPCTheme {
         this.dangerDarkGradient,
 
         // Barrier
-        // Barrier / Expanded Modal
-        this.barrierExpandedModalCupertino,
-        this.barrierExpandedModalMaterial,
-        // Barrier / Modal
-        this.barrierPopUpModalCupertino,
-        this.barrierPopUpModalMaterial,
+        // Barrier / Expanded BottomSheet
+        this.barrierExpandedBottomSheetCupertino,
+        this.barrierExpandedBottomSheetMaterial,
+        // Barrier / BottomSheet
+        this.barrierSmallBottomSheetCupertino,
+        this.barrierSmallBottomSheetMaterial,
         // Barrier / Dialog
         this.barrierDialogCupertino,
         this.barrierDialogMaterial,

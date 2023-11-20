@@ -25,6 +25,14 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
   void _changeSize(IFPCSize size) => setState(() => this._size = size);
 
   // BorderRadius
+  // BorderRadius / BottomSheet
+  BorderRadius get _borderRadiusBottomSheet => FPCPlatformUtility
+          .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
+        context: this.context,
+        cupertino: this._size.borderRadiusBottomSheetCupertino,
+        material: this._size.borderRadiusBottomSheetMaterial,
+      );
+
   // BorderRadius / Button
   BorderRadius get _borderRadiusButton => FPCPlatformUtility
           .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
@@ -55,14 +63,6 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
         context: this.context,
         cupertino: this._size.borderRadiusFieldCupertino,
         material: this._size.borderRadiusFieldMaterial,
-      );
-
-  // BorderRadius / Modal
-  BorderRadius get _borderRadiusModal => FPCPlatformUtility
-          .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
-        context: this.context,
-        cupertino: this._size.borderRadiusModalCupertino,
-        material: this._size.borderRadiusModalMaterial,
       );
 
   // BorderRadius / Segment Control
@@ -136,11 +136,11 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
       size: this._size,
       changeSize: this._changeSize,
       //
+      borderRadiusBottomSheet: this._borderRadiusBottomSheet,
       borderRadiusButton: this._borderRadiusButton,
       borderRadiusCard: this._borderRadiusCard,
       borderRadiusDialog: this._borderRadiusDialog,
       borderRadiusField: this._borderRadiusField,
-      borderRadiusModal: this._borderRadiusModal,
       borderRadiusSegmentControl: this._borderRadiusSegmentControl,
       borderRadiusSnackBar: this._borderRadiusSnackBar,
       borderRadiusToggle: this._borderRadiusToggle,
@@ -162,11 +162,11 @@ class FPCSizeScope extends InheritedWidget with FPCScopeMixin {
     required this.size,
     required this.changeSize,
     //
+    required this.borderRadiusBottomSheet,
     required this.borderRadiusButton,
     required this.borderRadiusCard,
     required this.borderRadiusDialog,
     required this.borderRadiusField,
-    required this.borderRadiusModal,
     required this.borderRadiusSegmentControl,
     required this.borderRadiusSnackBar,
     required this.borderRadiusToggle,
@@ -183,11 +183,11 @@ class FPCSizeScope extends InheritedWidget with FPCScopeMixin {
   final IFPCSize size;
   final void Function(IFPCSize size) changeSize;
   //
+  final BorderRadius borderRadiusBottomSheet;
   final BorderRadius borderRadiusButton;
   final BorderRadius borderRadiusCard;
   final BorderRadius borderRadiusDialog;
   final BorderRadius borderRadiusField;
-  final BorderRadius borderRadiusModal;
   final BorderRadius borderRadiusSegmentControl;
   final BorderRadius borderRadiusSnackBar;
   final BorderRadius borderRadiusToggle;

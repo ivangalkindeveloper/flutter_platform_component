@@ -9,7 +9,7 @@ Future<DateTime?> showFPCDatePicker(
   BuildContext context, {
   bool useRootNavigator = false,
   FPCDateTimeRange? dateTimeRange,
-  required Widget Function(BuildContext) cupertinoModalBuilder,
+  required Widget Function(BuildContext) cupertinoBottomSheetBuilder,
   Locale? materialDialogLocale,
   Color? materialDialogBackgroundColor,
   Color? materialDialogColor,
@@ -21,7 +21,7 @@ Future<DateTime?> showFPCDatePicker(
   final FPCPlatform platform = context.fpcPlatform;
 
   final Color barrierColorMethod =
-      barrierColor ?? themeScope.barrierColorPopUpModal;
+      barrierColor ?? themeScope.barrierColorSmallBottomSheet;
   final DateTime dateTimeMinimum = dateTimeRange?.minimum ?? dateTime.minimum;
   final DateTime dateTimeInitial = dateTimeRange?.initial ?? dateTime.initial;
   final DateTime dateTimeMaximum = dateTimeRange?.maximum ?? dateTime.maximum;
@@ -32,7 +32,7 @@ Future<DateTime?> showFPCDatePicker(
         context: context,
         useRootNavigator: useRootNavigator,
         barrierColor: barrierColorMethod,
-        builder: cupertinoModalBuilder,
+        builder: cupertinoBottomSheetBuilder,
       );
 
     case FPCPlatform.android:
@@ -62,7 +62,7 @@ Future<TimeOfDay?> showFPCTimePicker(
   BuildContext context, {
   bool useRootNavigator = false,
   FPCTimeOfDayRange? timeOfDayRange,
-  required Widget Function(BuildContext) cupertinoModalBuilder,
+  required Widget Function(BuildContext) cupertinoBottomSheetBuilder,
   Color? materialDialogBackgroundColor,
   Color? materialDialogColor,
   BorderRadius? materialDialogBorderRadius,
@@ -73,7 +73,7 @@ Future<TimeOfDay?> showFPCTimePicker(
   final FPCPlatform platform = context.fpcPlatform;
 
   final Color barrierColorMethod =
-      barrierColor ?? themeScope.barrierColorPopUpModal;
+      barrierColor ?? themeScope.barrierColorSmallBottomSheet;
   final TimeOfDay timeOfDayInitial =
       timeOfDayRange?.initial ?? timeOfDay.initial;
 
@@ -83,7 +83,7 @@ Future<TimeOfDay?> showFPCTimePicker(
         context: context,
         useRootNavigator: useRootNavigator,
         barrierColor: barrierColorMethod,
-        builder: cupertinoModalBuilder,
+        builder: cupertinoBottomSheetBuilder,
       );
 
     case FPCPlatform.android:

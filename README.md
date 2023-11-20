@@ -452,11 +452,11 @@ You can get the actual state for platform-decomposing size properties:
 ```dart
 final FPCsizeScope sizeScope = context.fpcSizeScope;
 
+final BorderRadius borderRadiusBottomSheet = sizeScope.borderRadiusBottomSheet;
 final BorderRadius borderRadiusButton = sizeScope.borderRadiusButton;
 final BorderRadius borderRadiusCard = sizeScope.borderRadiusCard;
 final BorderRadius borderRadiusDialog = sizeScope.borderRadiusDialog;
 final BorderRadius borderRadiusField = sizeScope.borderRadiusField;
-final BorderRadius borderRadiusModal = sizeScope.borderRadiusModal;
 final BorderRadius borderRadiusSegmentControl = sizeScope.borderRadiusSegmentControl;
 final BorderRadius borderRadiusSnackBar = sizeScope.borderRadiusSnackBar;
 final BorderRadius borderRadiusToggle = sizeScope.borderRadiusToggle;
@@ -495,8 +495,8 @@ You can get the actual theme state for platform-decomposing entities:
 ```dart
 final FPCThemeScope themeScope = context.fpcThemeScope;
 
-final Color barrierColorExpandedModal = themeScope.barrierColorExpandedModal;
-final Color barrierColorPopUpModal = themeScope.barrierColorPopUpModal;
+final Color barrierColorExpandedBottomSheet = themeScope.barrierColorExpandedBottomSheet;
+final Color barrierColorSmallBottomSheet = themeScope.barrierColorSmallBottomSheet;
 final Color barrierColorDialog = themeScope.barrierColorDialog;
 ```
 
@@ -1333,13 +1333,13 @@ Global methods for opening pickers:
 ```dart
 showFPCDatePicker(
   context,
-  cupertinoModalBuilder: (BuildContext context) => const CupertinoModalBuilder(),
+  cupertinoBottomSheetBuilder: (BuildContext context) => const CupertinoBottomSheetBuilder(),
 );
 ```
 ```dart
 showFPCTimePicker(
   context,
-  cupertinoModalBuilder: (BuildContext context) => const CupertinoModalBuilder(),
+  cupertinoBottomSheetBuilder: (BuildContext context) => const CupertinoBottomSheetBuilder(),
 );
 ```
 #### SnackBar

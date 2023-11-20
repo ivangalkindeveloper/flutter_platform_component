@@ -51,8 +51,8 @@ class FPCBlurExpandedBottomSheet extends StatelessWidget {
       bottom: false,
       child: ClipRRect(
         borderRadius: BorderRadius.only(
-          topLeft: sizeScope.borderRadiusModal.topLeft,
-          topRight: sizeScope.borderRadiusModal.topRight,
+          topLeft: sizeScope.borderRadiusBottomSheet.topLeft,
+          topRight: sizeScope.borderRadiusBottomSheet.topRight,
         ),
         child: FPCScaffold(
           backgroundColor: this.backgroundColor ?? theme.backgroundScaffold,

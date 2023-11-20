@@ -25,7 +25,7 @@ class DatePickerScreen extends StatelessWidget {
             title: "Open",
             onPressed: () => showFPCDatePicker(
               context,
-              cupertinoModalBuilder: (BuildContext context) =>
+              cupertinoBottomSheetBuilder: (BuildContext context) =>
                   FPCSmallBottomSheet(
                 backgroundColor: theme.backgroundScaffold,
                 child: FPCDatePicker(),

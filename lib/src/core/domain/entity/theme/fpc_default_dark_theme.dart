@@ -235,20 +235,20 @@ class FPCDefaultDarkTheme extends IFPCTheme {
     ),
 
     // Barrier
-    // Barrier / Expanded Modal
-    this.barrierExpandedModalCupertino =
+    // Barrier / Expanded BottomSheet
+    this.barrierExpandedBottomSheetCupertino =
         const CupertinoDynamicColor.withBrightness(
       color: Color(0x33000000),
       darkColor: Color(0x7A000000),
     ),
-    Color? barrierExpandedModalMaterial,
-    // Barrier / Pop Up Modal
-    this.barrierPopUpModalCupertino =
+    Color? barrierExpandedBottomSheetMaterial,
+    // Barrier / Pop Up BottomSheet
+    this.barrierSmallBottomSheetCupertino =
         const CupertinoDynamicColor.withBrightness(
       color: Color(0x33000000),
       darkColor: Color(0x7A000000),
     ),
-    Color? barrierPopUpModalMaterial,
+    Color? barrierSmallBottomSheetMaterial,
     // Barrier / Dialog
     this.barrierDialogCupertino = const Color(0x8A000000),
     this.barrierDialogMaterial = const Color(0x8A000000),
@@ -263,10 +263,11 @@ class FPCDefaultDarkTheme extends IFPCTheme {
               sigmaX: 6,
               sigmaY: 6,
             ),
-        this.barrierExpandedModalMaterial =
-            barrierExpandedModalMaterial ?? Colors.black.withOpacity(0.35),
-        this.barrierPopUpModalMaterial =
-            barrierPopUpModalMaterial ?? Colors.black.withOpacity(0.35);
+        this.barrierExpandedBottomSheetMaterial =
+            barrierExpandedBottomSheetMaterial ??
+                Colors.black.withOpacity(0.35),
+        this.barrierSmallBottomSheetMaterial =
+            barrierSmallBottomSheetMaterial ?? Colors.black.withOpacity(0.35);
 
   // Framework
   @override
@@ -437,16 +438,16 @@ class FPCDefaultDarkTheme extends IFPCTheme {
   final Gradient dangerDarkGradient;
 
   // Barrier
-  // Barrier / Expanded Modal
+  // Barrier / Expanded BottomSheet
   @override
-  final Color barrierExpandedModalCupertino;
+  final Color barrierExpandedBottomSheetCupertino;
   @override
-  final Color barrierExpandedModalMaterial;
-  // Barrier / Pop Up Modal
+  final Color barrierExpandedBottomSheetMaterial;
+  // Barrier / Pop Up BottomSheet
   @override
-  final Color barrierPopUpModalCupertino;
+  final Color barrierSmallBottomSheetCupertino;
   @override
-  final Color barrierPopUpModalMaterial;
+  final Color barrierSmallBottomSheetMaterial;
   // Barrier / Dialog
   @override
   final Color barrierDialogCupertino;
@@ -569,12 +570,12 @@ class FPCDefaultDarkTheme extends IFPCTheme {
     Gradient? dangerDarkGradient,
 
     // Barrier
-    // Barrier / Expanded Modal
-    Color? barrierExpandedModalCupertino,
-    Color? barrierExpandedModalMaterial,
-    // Barrier / Pop Up Modal
-    Color? barrierPopUpModalCupertino,
-    Color? barrierPopUpModalMaterial,
+    // Barrier / Expanded BottomSheet
+    Color? barrierExpandedBottomSheetCupertino,
+    Color? barrierExpandedBottomSheetMaterial,
+    // Barrier / Pop Up BottomSheet
+    Color? barrierSmallBottomSheetCupertino,
+    Color? barrierSmallBottomSheetMaterial,
     // Barrier / Dialog
     Color? barrierDialogCupertino,
     Color? barrierDialogMaterial,
@@ -693,16 +694,18 @@ class FPCDefaultDarkTheme extends IFPCTheme {
         dangerDarkGradient: dangerDarkGradient ?? this.dangerDarkGradient,
 
         // Barrier
-        // Barrier / Expanded Modal
-        barrierExpandedModalCupertino:
-            barrierExpandedModalCupertino ?? this.barrierExpandedModalCupertino,
-        barrierExpandedModalMaterial:
-            barrierExpandedModalMaterial ?? this.barrierExpandedModalMaterial,
-        // Barrier / Pop Up Modal
-        barrierPopUpModalCupertino:
-            barrierPopUpModalCupertino ?? this.barrierPopUpModalCupertino,
-        barrierPopUpModalMaterial:
-            barrierPopUpModalMaterial ?? this.barrierPopUpModalMaterial,
+        // Barrier / Expanded BottomSheet
+        barrierExpandedBottomSheetCupertino:
+            barrierExpandedBottomSheetCupertino ??
+                this.barrierExpandedBottomSheetCupertino,
+        barrierExpandedBottomSheetMaterial:
+            barrierExpandedBottomSheetMaterial ??
+                this.barrierExpandedBottomSheetMaterial,
+        // Barrier / Pop Up BottomSheet
+        barrierSmallBottomSheetCupertino: barrierSmallBottomSheetCupertino ??
+            this.barrierSmallBottomSheetCupertino,
+        barrierSmallBottomSheetMaterial: barrierSmallBottomSheetMaterial ??
+            this.barrierSmallBottomSheetMaterial,
         // Barrier / Dialog
         barrierDialogCupertino:
             barrierDialogCupertino ?? this.barrierDialogCupertino,
@@ -1052,26 +1055,26 @@ class FPCDefaultDarkTheme extends IFPCTheme {
         ),
 
         // Barrier
-        // Barrier / Expanded Modal
-        barrierExpandedModalCupertino: Color.lerp(
-          this.barrierExpandedModalCupertino,
-          other.barrierExpandedModalCupertino,
+        // Barrier / Expanded BottomSheet
+        barrierExpandedBottomSheetCupertino: Color.lerp(
+          this.barrierExpandedBottomSheetCupertino,
+          other.barrierExpandedBottomSheetCupertino,
           t,
         ),
-        barrierExpandedModalMaterial: Color.lerp(
-          this.barrierExpandedModalMaterial,
-          other.barrierExpandedModalMaterial,
+        barrierExpandedBottomSheetMaterial: Color.lerp(
+          this.barrierExpandedBottomSheetMaterial,
+          other.barrierExpandedBottomSheetMaterial,
           t,
         ),
-        // Barrier / Pop Up Modal
-        barrierPopUpModalCupertino: Color.lerp(
-          this.barrierPopUpModalCupertino,
-          other.barrierPopUpModalCupertino,
+        // Barrier / Pop Up BottomSheet
+        barrierSmallBottomSheetCupertino: Color.lerp(
+          this.barrierSmallBottomSheetCupertino,
+          other.barrierSmallBottomSheetCupertino,
           t,
         ),
-        barrierPopUpModalMaterial: Color.lerp(
-          this.barrierPopUpModalMaterial,
-          other.barrierPopUpModalMaterial,
+        barrierSmallBottomSheetMaterial: Color.lerp(
+          this.barrierSmallBottomSheetMaterial,
+          other.barrierSmallBottomSheetMaterial,
           t,
         ),
         // Barrier / Dialog

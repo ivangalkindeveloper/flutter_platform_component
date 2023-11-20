@@ -50,6 +50,9 @@ abstract class IFPCSize {
   abstract final double heightAvatarLarge;
 
   // BorderRadius
+  // BorderRadius / BottomSheet
+  abstract final BorderRadius borderRadiusBottomSheetCupertino;
+  abstract final BorderRadius borderRadiusBottomSheetMaterial;
   // BorderRadius / Button
   abstract final BorderRadius borderRadiusButtonCupertino;
   abstract final BorderRadius borderRadiusButtonMaterial;
@@ -62,9 +65,6 @@ abstract class IFPCSize {
   // BorderRadius / Field
   abstract final BorderRadius borderRadiusFieldCupertino;
   abstract final BorderRadius borderRadiusFieldMaterial;
-  // BorderRadius / Modal
-  abstract final BorderRadius borderRadiusModalCupertino;
-  abstract final BorderRadius borderRadiusModalMaterial;
   // BorderRadius / Segment Control
   abstract final BorderRadius borderRadiusSegmentControlCupertino;
   abstract final BorderRadius borderRadiusSegmentControlMaterial;
@@ -147,6 +147,11 @@ abstract class IFPCSize {
       other.heightCircularIndicatorLarge == this.heightCircularIndicatorLarge &&
 
       // BorderRadius
+      // BorderRadius / BottomSheet
+      other.borderRadiusBottomSheetCupertino ==
+          this.borderRadiusBottomSheetCupertino &&
+      other.borderRadiusBottomSheetMaterial ==
+          this.borderRadiusBottomSheetMaterial &&
       // BorderRadius / Button
       other.borderRadiusButtonCupertino == this.borderRadiusButtonCupertino &&
       other.borderRadiusButtonMaterial == this.borderRadiusButtonMaterial &&
@@ -159,9 +164,6 @@ abstract class IFPCSize {
       // BorderRadius / Field
       other.borderRadiusFieldCupertino == this.borderRadiusFieldCupertino &&
       other.borderRadiusFieldMaterial == this.borderRadiusFieldMaterial &&
-      // BorderRadius / Modal
-      other.borderRadiusModalCupertino == this.borderRadiusModalCupertino &&
-      other.borderRadiusModalMaterial == this.borderRadiusModalMaterial &&
       // BorderRadius / Segment Control
       other.borderRadiusSegmentControlCupertino ==
           this.borderRadiusSegmentControlCupertino &&
@@ -244,29 +246,29 @@ abstract class IFPCSize {
         this.heightCircularIndicatorDefault,
         this.heightCircularIndicatorLarge,
 
-        //
-        //  / Button
+        // BorderRadius
+        // BorderRadius / BottomSheet
+        this.borderRadiusBottomSheetCupertino,
+        this.borderRadiusBottomSheetMaterial,
+        // BorderRadius / Button
         this.borderRadiusButtonCupertino,
         this.borderRadiusButtonMaterial,
-        //  / Card
+        // BorderRadius / Card
         this.borderRadiusCardCupertino,
         this.borderRadiusCardMaterial,
-        //  / Dialog
+        // BorderRadius / Dialog
         this.borderRadiusDialogCupertino,
         this.borderRadiusDialogMaterial,
-        //  / Field
+        // BorderRadius / Field
         this.borderRadiusFieldCupertino,
         this.borderRadiusFieldMaterial,
-        //  / Modal
-        this.borderRadiusModalCupertino,
-        this.borderRadiusModalMaterial,
-        //  / Segment Control
+        // BorderRadius / Segment Control
         this.borderRadiusSegmentControlCupertino,
         this.borderRadiusSegmentControlMaterial,
-        //  / SnackBar
+        // BorderRadius / SnackBar
         this.borderRadiusSnackBarCupertino,
         this.borderRadiusSnackBarMaterial,
-        //  / Toggle
+        // BorderRadius / Toggle
         this.borderRadiusToggleCupertino,
         this.borderRadiusToggleMaterial,
 

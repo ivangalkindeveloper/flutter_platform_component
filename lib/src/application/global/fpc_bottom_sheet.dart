@@ -18,9 +18,9 @@ Future<T?> showFPCExpandedBottomSheet<T>(
   final FPCPlatform platform = context.fpcPlatform;
 
   final Color methodBarrierColor =
-      barrierColor ?? themeState.barrierColorExpandedModal;
+      barrierColor ?? themeState.barrierColorExpandedBottomSheet;
   final BorderRadius methodBorderRadius =
-      borderRadius ?? sizeScope.borderRadiusModal;
+      borderRadius ?? sizeScope.borderRadiusBottomSheet;
 
   switch (platform) {
     case FPCPlatform.iOS:
@@ -65,7 +65,7 @@ Future<T?> showFPCSmallBottomSheet<T>(
   final FPCPlatform platform = context.fpcPlatform;
 
   final Color methodBarrierColor =
-      barrierColor ?? themeState.barrierColorPopUpModal;
+      barrierColor ?? themeState.barrierColorSmallBottomSheet;
 
   switch (platform) {
     case FPCPlatform.iOS:

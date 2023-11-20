@@ -155,6 +155,17 @@ class MainSize extends StatelessWidget {
         ),
         Gap(size.s16 / 2),
         // BorderRadius
+        // BorderRadius / BottomSheet
+        RowStringValue(
+          title: "BorderRadius BottomSheet Cupertino:",
+          value: size.borderRadiusBottomSheetCupertino.toString(),
+        ),
+        Gap(size.s16 / 4),
+        RowStringValue(
+          title: "BorderRadius BottomSheet Material:",
+          value: size.borderRadiusBottomSheetMaterial.toString(),
+        ),
+        Gap(size.s16 / 4),
         // BorderRadius / Button
         RowStringValue(
           title: "BorderRadius Button Cupertino:",
@@ -197,17 +208,6 @@ class MainSize extends StatelessWidget {
         RowStringValue(
           title: "BorderRadius Field Material:",
           value: size.borderRadiusFieldMaterial.toString(),
-        ),
-        Gap(size.s16 / 4),
-        // BorderRadius / Modal
-        RowStringValue(
-          title: "BorderRadius Modal Cupertino:",
-          value: size.borderRadiusModalCupertino.toString(),
-        ),
-        Gap(size.s16 / 4),
-        RowStringValue(
-          title: "BorderRadius Modal Material:",
-          value: size.borderRadiusModalMaterial.toString(),
         ),
         Gap(size.s16 / 4),
         // BorderRadius / Segment Control

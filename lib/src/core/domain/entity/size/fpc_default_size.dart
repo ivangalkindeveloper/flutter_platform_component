@@ -55,6 +55,11 @@ class FPCDefaultSize implements IFPCSize {
     this.heightAvatarLarge = 32,
 
     // BorderRadius
+    // BorderRadius / BottomSheet
+    this.borderRadiusBottomSheetCupertino =
+        const BorderRadius.all(Radius.circular(12)),
+    this.borderRadiusBottomSheetMaterial =
+        const BorderRadius.all(Radius.circular(16)),
     // BorderRadius / Button
     this.borderRadiusButtonCupertino =
         const BorderRadius.all(Radius.circular(8)),
@@ -72,11 +77,6 @@ class FPCDefaultSize implements IFPCSize {
     this.borderRadiusFieldCupertino =
         const BorderRadius.all(Radius.circular(8)),
     this.borderRadiusFieldMaterial = const BorderRadius.all(Radius.circular(4)),
-    // BorderRadius / Modal
-    this.borderRadiusModalCupertino =
-        const BorderRadius.all(Radius.circular(12)),
-    this.borderRadiusModalMaterial =
-        const BorderRadius.all(Radius.circular(16)),
     // BorderRadius / Segment Control
     this.borderRadiusSegmentControlCupertino =
         const BorderRadius.all(Radius.circular(16)),
@@ -191,6 +191,11 @@ class FPCDefaultSize implements IFPCSize {
   final double heightAvatarLarge;
 
   // BorderRadius
+  // BorderRadius / BottomSheet
+  @override
+  final BorderRadius borderRadiusBottomSheetCupertino;
+  @override
+  final BorderRadius borderRadiusBottomSheetMaterial;
   // BorderRadius / Button
   @override
   final BorderRadius borderRadiusButtonCupertino;
@@ -211,11 +216,6 @@ class FPCDefaultSize implements IFPCSize {
   final BorderRadius borderRadiusFieldCupertino;
   @override
   final BorderRadius borderRadiusFieldMaterial;
-  // BorderRadius / Modal
-  @override
-  final BorderRadius borderRadiusModalCupertino;
-  @override
-  final BorderRadius borderRadiusModalMaterial;
   // BorderRadius / Segment Control
   @override
   final BorderRadius borderRadiusSegmentControlCupertino;
@@ -316,6 +316,9 @@ class FPCDefaultSize implements IFPCSize {
     double? heightAvatarLarge,
 
     // BorderRadius
+    // BorderRadius / BottomSheet
+    BorderRadius? borderRadiusBottomSheetCupertino,
+    BorderRadius? borderRadiusBottomSheetMaterial,
     // BorderRadius / Button
     BorderRadius? borderRadiusButtonCupertino,
     BorderRadius? borderRadiusButtonMaterial,
@@ -328,9 +331,6 @@ class FPCDefaultSize implements IFPCSize {
     // BorderRadius / Field
     BorderRadius? borderRadiusFieldCupertino,
     BorderRadius? borderRadiusFieldMaterial,
-    // BorderRadius / Modal
-    BorderRadius? borderRadiusModalCupertino,
-    BorderRadius? borderRadiusModalMaterial,
     // BorderRadius / Segment Control
     BorderRadius? borderRadiusSegmentControlCupertino,
     BorderRadius? borderRadiusSegmentControlMaterial,
@@ -416,6 +416,11 @@ class FPCDefaultSize implements IFPCSize {
         heightAvatarLarge: heightAvatarLarge ?? this.heightAvatarLarge,
 
         // BorderRadius
+        // BorderRadius / BottomSheet
+        borderRadiusBottomSheetCupertino: borderRadiusBottomSheetCupertino ??
+            this.borderRadiusBottomSheetCupertino,
+        borderRadiusBottomSheetMaterial: borderRadiusBottomSheetMaterial ??
+            this.borderRadiusBottomSheetMaterial,
         // BorderRadius / Button
         borderRadiusButtonCupertino:
             borderRadiusButtonCupertino ?? this.borderRadiusButtonCupertino,
@@ -436,11 +441,6 @@ class FPCDefaultSize implements IFPCSize {
             borderRadiusFieldCupertino ?? this.borderRadiusFieldCupertino,
         borderRadiusFieldMaterial:
             borderRadiusFieldMaterial ?? this.borderRadiusFieldMaterial,
-        // BorderRadius / Modal
-        borderRadiusModalCupertino:
-            borderRadiusModalCupertino ?? this.borderRadiusModalCupertino,
-        borderRadiusModalMaterial:
-            borderRadiusModalMaterial ?? this.borderRadiusModalMaterial,
         // BorderRadius / Segment Control
         borderRadiusSegmentControlCupertino:
             borderRadiusSegmentControlCupertino ??

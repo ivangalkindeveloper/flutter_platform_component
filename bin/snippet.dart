@@ -407,8 +407,8 @@ void _generateSnippetsFiles(
           "body": [
             "showFPCDatePicker(",
             "  context,",
-            "  cupertinoModalBuilder: (BuildContext context) {",
-            "    \${cupertinomodalbuilder}",
+            "  cupertinoBottomSheetBuilder: (BuildContext context) {",
+            "    \${cupertinobottomsheetbuilder}",
             "  },",
             ");",
           ]
@@ -418,8 +418,8 @@ void _generateSnippetsFiles(
           "body": [
             "showFPCTimePicker(",
             "  context,",
-            "  cupertinoModalBuilder: (BuildContext context) {",
-            "    \${cupertinomodalbuilder}",
+            "  cupertinoBottomSheetBuilder: (BuildContext context) {",
+            "    \${cupertinobottomsheetbuilder}",
             "  },",
             ");",
           ]

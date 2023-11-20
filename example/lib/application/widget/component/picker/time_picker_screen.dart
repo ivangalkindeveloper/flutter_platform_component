@@ -25,7 +25,7 @@ class TimePickerScreen extends StatelessWidget {
             title: "Open",
             onPressed: () => showFPCTimePicker(
               context,
-              cupertinoModalBuilder: (BuildContext context) =>
+              cupertinoBottomSheetBuilder: (BuildContext context) =>
                   FPCSmallBottomSheet(
                 backgroundColor: theme.backgroundScaffold,
                 child: FPCTimePicker(),

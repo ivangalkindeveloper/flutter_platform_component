@@ -17,20 +17,20 @@ class _FPCThemeState extends State<_FPCThemeWidget> {
   late IFPCTheme _theme;
 
   // Barrier
-  // Barrier / Expanded Modal
-  Color get _barrierColorExpandedModal =>
+  // Barrier / Expanded BottomSheet
+  Color get _barrierColorExpandedBottomSheet =>
       FPCPlatformUtility.decomposeFromContext<Color, Color, Color>(
         context: this.context,
-        cupertino: this._theme.barrierExpandedModalCupertino,
-        material: this._theme.barrierExpandedModalMaterial,
+        cupertino: this._theme.barrierExpandedBottomSheetCupertino,
+        material: this._theme.barrierExpandedBottomSheetMaterial,
       );
 
-  // Barrier / Pop Up Modal
-  Color get _barrierColorPopUpModal =>
+  // Barrier / Pop Up BottomSheet
+  Color get _barrierColorSmallBottomSheet =>
       FPCPlatformUtility.decomposeFromContext<Color, Color, Color>(
         context: this.context,
-        cupertino: this._theme.barrierPopUpModalCupertino,
-        material: this._theme.barrierPopUpModalMaterial,
+        cupertino: this._theme.barrierSmallBottomSheetCupertino,
+        material: this._theme.barrierSmallBottomSheetMaterial,
       );
 
   // Barrier / Dialog
@@ -58,8 +58,8 @@ class _FPCThemeState extends State<_FPCThemeWidget> {
       theme: this._theme,
       changeTheme: this._changeTheme,
       //
-      barrierColorExpandedModal: this._barrierColorExpandedModal,
-      barrierColorPopUpModal: this._barrierColorPopUpModal,
+      barrierColorExpandedBottomSheet: this._barrierColorExpandedBottomSheet,
+      barrierColorSmallBottomSheet: this._barrierColorSmallBottomSheet,
       barrierColorDialog: this._barrierColorDialog,
       //
       child: this.widget.child,
@@ -73,8 +73,8 @@ class FPCThemeScope extends InheritedWidget with FPCScopeMixin {
     required this.theme,
     required this.changeTheme,
     //
-    required this.barrierColorExpandedModal,
-    required this.barrierColorPopUpModal,
+    required this.barrierColorExpandedBottomSheet,
+    required this.barrierColorSmallBottomSheet,
     required this.barrierColorDialog,
     //
     required super.child,
@@ -83,8 +83,8 @@ class FPCThemeScope extends InheritedWidget with FPCScopeMixin {
   final IFPCTheme theme;
   final void Function(IFPCTheme theme) changeTheme;
   //
-  final Color barrierColorExpandedModal;
-  final Color barrierColorPopUpModal;
+  final Color barrierColorExpandedBottomSheet;
+  final Color barrierColorSmallBottomSheet;
   final Color barrierColorDialog;
 
   static FPCThemeScope of(BuildContext context) =>

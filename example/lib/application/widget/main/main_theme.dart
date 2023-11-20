@@ -342,26 +342,26 @@ class MainTheme extends StatelessWidget {
         ),
         Gap(size.s16 / 2),
         // Barrier
-        // Barrier / Expanded Modal
+        // Barrier / Expanded Bottom Sheet
         RowColorValue(
-          title: "BarrierExpandedModalCupertino:",
-          color: theme.barrierExpandedModalCupertino,
+          title: "BarrierExpandedBottomSheetCupertino:",
+          color: theme.barrierExpandedBottomSheetCupertino,
         ),
         Gap(size.s16 / 4),
         RowColorValue(
-          title: "BarrierExpandedModalMaterial:",
-          color: theme.barrierExpandedModalMaterial,
+          title: "BarrierExpandedBottomSheetMaterial:",
+          color: theme.barrierExpandedBottomSheetMaterial,
         ),
         Gap(size.s16 / 4),
-        // Barrier / Pop Up Modal
+        // Barrier / Small Bottom Sheet
         RowColorValue(
-          title: "BarrierPopUpModalCupertino:",
-          color: theme.barrierPopUpModalCupertino,
+          title: "BarrierSmallBottomSheetCupertino:",
+          color: theme.barrierSmallBottomSheetCupertino,
         ),
         Gap(size.s16 / 4),
         RowColorValue(
-          title: "BarrierPopUpModalMaterial:",
-          color: theme.barrierPopUpModalMaterial,
+          title: "BarrierSmallBottomSheetMaterial:",
+          color: theme.barrierSmallBottomSheetMaterial,
         ),
         Gap(size.s16 / 4),
         // Barrier / Dialog
