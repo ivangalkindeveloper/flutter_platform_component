@@ -1,6 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:badges/badges.dart' as badges;
 import 'package:flutter/widgets.dart';
+import 'package:badges/badges.dart';
 
 import 'package:flutter/material.dart' show Colors;
 
@@ -31,16 +31,16 @@ class FPCDotBadge extends StatelessWidget {
     final Duration durationBadge = this.duration ?? duration.badge;
     final double height = this.height ?? size.s10;
 
-    return badges.Badge(
+    return Badge(
       position: this.position.packageMapForDot,
-      badgeAnimation: badges.BadgeAnimation.fade(
+      badgeAnimation: BadgeAnimation.fade(
         animationDuration: durationBadge,
         disappearanceFadeAnimationDuration: durationBadge,
         curve: animation.curve,
         colorChangeAnimationCurve: animation.curve,
       ),
       showBadge: this.isShow,
-      badgeStyle: const badges.BadgeStyle(
+      badgeStyle: const BadgeStyle(
         elevation: 0,
         padding: EdgeInsets.zero,
         badgeColor: Colors.transparent,

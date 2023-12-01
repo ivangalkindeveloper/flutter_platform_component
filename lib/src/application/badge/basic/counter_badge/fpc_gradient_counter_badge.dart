@@ -1,6 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:badges/badges.dart' as badges;
 import 'package:flutter/widgets.dart';
+import 'package:badges/badges.dart';
 
 import 'package:flutter/material.dart' show Colors;
 
@@ -74,16 +74,16 @@ class FPCGradientCounterBadge extends StatelessWidget {
           package: textStyle.package,
         );
 
-    return badges.Badge(
+    return Badge(
       position: this.position.packageMapForCounter,
-      badgeAnimation: badges.BadgeAnimation.fade(
+      badgeAnimation: BadgeAnimation.fade(
         animationDuration: durationBadge,
         disappearanceFadeAnimationDuration: durationBadge,
         curve: animation.curve,
         colorChangeAnimationCurve: animation.curve,
       ),
       showBadge: isShow,
-      badgeStyle: const badges.BadgeStyle(
+      badgeStyle: const BadgeStyle(
         elevation: 0,
         badgeColor: Colors.transparent,
         padding: EdgeInsets.zero,

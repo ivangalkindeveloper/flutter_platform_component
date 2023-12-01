@@ -1,3 +1,6 @@
+## 3.0.4
+* Update pubspec.
+
 ## 3.0.3
 * Fix "Modal" > "BottomSheet" naming.
 
