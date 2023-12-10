@@ -1,7 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCAccentDarkSnackBar extends StatelessWidget {
+class FPCAccentDarkSnackBar extends StatelessWidget with FPCSnackBarMixin {
   const FPCAccentDarkSnackBar({
     super.key,
     this.borderRadius,

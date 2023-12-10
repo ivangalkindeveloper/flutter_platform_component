@@ -1,3 +1,12 @@
+## 3.0.5
+Addings:
+* FPCDatePickerMixin;
+* FPCDialogMixin;
+* FPCExpandedBottomSheetMixin;
+* FPCSmallBottomSheetMixin;
+* FPCSnackBarMixin;
+* FPCTimePickerMixin.
+
 ## 3.0.4
 * Update pubspec.
 

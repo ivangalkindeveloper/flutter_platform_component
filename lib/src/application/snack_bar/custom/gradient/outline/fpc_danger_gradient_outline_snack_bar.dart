@@ -1,7 +1,8 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCDangerGradientOutlineSnackBar extends StatelessWidget {
+class FPCDangerGradientOutlineSnackBar extends StatelessWidget
+    with FPCSnackBarMixin {
   const FPCDangerGradientOutlineSnackBar({
     super.key,
     this.borderRadius,

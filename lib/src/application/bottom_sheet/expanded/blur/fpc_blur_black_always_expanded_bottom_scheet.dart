@@ -2,7 +2,8 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:ui';
 
-class FPCBlurBlackAlwaysExpandedBottomSheet extends StatelessWidget {
+class FPCBlurBlackAlwaysExpandedBottomSheet<T> extends StatelessWidget
+    with FPCExpandedBottomSheetMixin<T> {
   const FPCBlurBlackAlwaysExpandedBottomSheet({
     super.key,
     // App Bar

@@ -5,7 +5,8 @@ import 'package:flutter/cupertino.dart'
     show CupertinoActionSheetAction, CupertinoTheme, CupertinoActionSheet;
 import 'package:flutter/material.dart' show ListTile;
 
-class FPCActionBottomSheet extends FPCPlatformWidget {
+class FPCActionBottomSheet<T> extends FPCPlatformWidget
+    with FPCSmallBottomSheetMixin<T> {
   FPCActionBottomSheet({
     super.key,
     Color? backgroundColor,

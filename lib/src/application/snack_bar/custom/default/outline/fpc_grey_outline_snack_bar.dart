@@ -1,7 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCGreyOutlineSnackBar extends StatelessWidget {
+class FPCGreyOutlineSnackBar extends StatelessWidget with FPCSnackBarMixin {
   const FPCGreyOutlineSnackBar({
     super.key,
     this.borderRadius,

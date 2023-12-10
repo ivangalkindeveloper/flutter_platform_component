@@ -11,7 +11,7 @@ import 'package:flutter/cupertino.dart'
         CupertinoDatePickerMode;
 import 'package:flutter/material.dart' show Theme, ColorScheme, TimeOfDay;
 
-class FPCTimePicker extends FPCPlatformWidget {
+class FPCTimePicker extends FPCPlatformWidget with FPCTimePickerMixin {
   FPCTimePicker({
     super.key,
     FPCTimeOfDayRange? timeOfDayRange,

@@ -5,7 +5,7 @@ import 'package:flutter/cupertino.dart'
     show CupertinoAlertDialog, CupertinoDialogAction;
 import 'package:flutter/material.dart' show AlertDialog, TextButton;
 
-class FPCDialog extends FPCPlatformWidget {
+class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
   FPCDialog({
     super.key,
     Color? backgroundColor,

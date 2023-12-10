@@ -11,7 +11,7 @@ import 'package:flutter/cupertino.dart'
         CupertinoDatePickerMode;
 import 'package:flutter/material.dart' show Theme, ColorScheme, DialogTheme;
 
-class FPCDatePicker extends FPCPlatformWidget {
+class FPCDatePicker extends FPCPlatformWidget with FPCDatePickerMixin {
   FPCDatePicker({
     super.key,
     FPCDateTimeRange? dateTimeRange,

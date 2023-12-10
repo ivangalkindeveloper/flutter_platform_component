@@ -1,7 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCSecondaryLightSnackBar extends StatelessWidget {
+class FPCSecondaryLightSnackBar extends StatelessWidget with FPCSnackBarMixin {
   const FPCSecondaryLightSnackBar({
     super.key,
     this.borderRadius,

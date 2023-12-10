@@ -1,7 +1,8 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCSmallBottomSheet extends StatelessWidget {
+class FPCSmallBottomSheet<T> extends StatelessWidget
+    with FPCSmallBottomSheetMixin<T> {
   const FPCSmallBottomSheet({
     super.key,
     this.backgroundColor,

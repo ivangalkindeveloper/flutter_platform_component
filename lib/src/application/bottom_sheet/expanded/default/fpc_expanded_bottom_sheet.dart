@@ -1,7 +1,8 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCExpandedBottomSheet extends StatelessWidget {
+class FPCExpandedBottomSheet<T> extends StatelessWidget
+    with FPCExpandedBottomSheetMixin<T> {
   const FPCExpandedBottomSheet({
     super.key,
     // App Bar
