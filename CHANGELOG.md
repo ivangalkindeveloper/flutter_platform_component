@@ -1,3 +1,6 @@
+## 3.0.6
+* Fix snackbar expanded width;
+
 ## 3.0.5
 Addings:
 * FPCDatePickerMixin;
