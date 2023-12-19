@@ -65,6 +65,8 @@ abstract class IFPCSize {
   // BorderRadius / Field
   abstract final BorderRadius borderRadiusFieldCupertino;
   abstract final BorderRadius borderRadiusFieldMaterial;
+  // BorderRadius / Pop Up Menu
+  abstract final BorderRadius borderRadiusPopUpMenuMaterial;
   // BorderRadius / Segment Control
   abstract final BorderRadius borderRadiusSegmentControlCupertino;
   abstract final BorderRadius borderRadiusSegmentControlMaterial;

@@ -22,14 +22,19 @@ class FPCDisabledOverlay extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
-    return Container(
-      decoration: BoxDecoration(
-        color: this._color(theme).withOpacity(size.opacityDisabled),
-        borderRadius: this.borderRadius,
+    return ConstrainedBox(
+      constraints: const BoxConstraints.expand(),
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: this._color(theme).withOpacity(size.opacityDisabled),
+          borderRadius: this.borderRadius,
+        ),
       ),
     );
   }

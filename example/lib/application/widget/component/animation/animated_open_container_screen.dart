@@ -1,17 +1,22 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class AnimatedOpenContainerScreen extends StatelessWidget {
-  const AnimatedOpenContainerScreen({super.key});
+  const AnimatedOpenContainerScreen({
+    super.key,
+  });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      appBar: FPCScreenAppBar(
+      appBar: AppBarConfig(
         context,
         title: "Animated Open Container",
         onPressedBack: () => Navigator.pop(context),
@@ -33,7 +38,10 @@ class AnimatedOpenContainerScreen extends StatelessWidget {
                   openShape: RoundedRectangleBorder(
                     borderRadius: sizeScope.borderRadiusButton,
                   ),
-                  openBuilder: (BuildContext context) => const _OpenContainer(),
+                  openBuilder: (
+                    BuildContext context,
+                  ) =>
+                      const _OpenContainer(),
                 ),
                 Gap(size.s16 / 2),
                 FPCAnimatedOpenContainer(
@@ -47,7 +55,10 @@ class AnimatedOpenContainerScreen extends StatelessWidget {
                   openShape: RoundedRectangleBorder(
                     borderRadius: sizeScope.borderRadiusButton,
                   ),
-                  openBuilder: (BuildContext context) => const _OpenContainer(),
+                  openBuilder: (
+                    BuildContext context,
+                  ) =>
+                      const _OpenContainer(),
                 ),
                 Gap(size.s16 / 2),
                 FPCAnimatedFastOpenContainer(
@@ -61,7 +72,10 @@ class AnimatedOpenContainerScreen extends StatelessWidget {
                   openShape: RoundedRectangleBorder(
                     borderRadius: sizeScope.borderRadiusButton,
                   ),
-                  openBuilder: (BuildContext context) => const _OpenContainer(),
+                  openBuilder: (
+                    BuildContext context,
+                  ) =>
+                      const _OpenContainer(),
                 ),
               ],
             ),
@@ -76,14 +90,15 @@ class _OpenContainer extends StatelessWidget {
   const _OpenContainer();
 
   @override
-  Widget build(BuildContext context) {
-    return FPCScaffold(
-      appBar: FPCScreenAppBar(
-        context,
-        title: "Open Container",
-        onPressedBack: () => Navigator.pop(context),
-      ),
-      body: Container(),
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      FPCScaffold(
+        appBar: FPCScreenAppBar(
+          context,
+          title: "Open Container",
+          onPressedBack: () => Navigator.pop(context),
+        ),
+        body: Container(),
+      );
 }

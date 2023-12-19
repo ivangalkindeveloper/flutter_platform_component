@@ -1,10 +1,12 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:example/application/widget/custom/config_section.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class RadioScreen extends StatefulWidget {
-  const RadioScreen({super.key});
+  const RadioScreen({
+    super.key,
+  });
 
   @override
   State<RadioScreen> createState() => _RadioScreenState();
@@ -15,11 +17,13 @@ class _RadioScreenState extends State<RadioScreen> {
   bool _isDisabled = false;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      appBar: FPCScreenAppBar(
+      appBar: AppBarConfig(
         context,
         title: "Radio",
         onPressedBack: () => Navigator.pop(context),
@@ -27,8 +31,6 @@ class _RadioScreenState extends State<RadioScreen> {
       body: FPCListView(
         childrenAlignment: CrossAxisAlignment.center,
         children: [
-          const ConfigSection(),
-          Gap(size.s16 / 2),
           FPCPrimaryButton(
             title: "isDisabled",
             onPressed: () =>

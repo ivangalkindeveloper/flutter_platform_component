@@ -93,24 +93,7 @@ class _FPCGradientCodeFieldState extends State<FPCGradientCodeField>
 
     // Error
     this._errorSubscription =
-        this.widget.errorController?.stream.listen((bool isError) {
-      if (this.mounted == false) {
-        return;
-      }
-
-      if (isError == false) {
-        setState(() => this._isError = false);
-        return;
-      }
-
-      setState(() => this._isError = true);
-      this._animationController.forward();
-      Future.delayed(this._duration.animationDefault, () {
-        this._haptic.error();
-        this.widget.controller?.clear();
-        this.widget.errorController?.add(false);
-      });
-    });
+        this.widget.errorController?.stream.listen(this._errorListener);
   }
 
   @override
@@ -130,6 +113,11 @@ class _FPCGradientCodeFieldState extends State<FPCGradientCodeField>
       );
       this._animationController.addStatusListener(this._controllerListener);
     }
+
+    // Error
+    this._errorSubscription?.cancel();
+    this._errorSubscription =
+        this.widget.errorController?.stream.listen(this._errorListener);
   }
 
   @override
@@ -147,6 +135,25 @@ class _FPCGradientCodeFieldState extends State<FPCGradientCodeField>
     if (status == AnimationStatus.completed) {
       this._animationController.reverse();
     }
+  }
+
+  void _errorListener(bool isError) {
+    if (this.mounted == false) {
+      return;
+    }
+
+    if (isError == false) {
+      setState(() => this._isError = false);
+      return;
+    }
+
+    setState(() => this._isError = true);
+    this._animationController.forward();
+    Future.delayed(this._duration.animationDefault, () {
+      this._haptic.error();
+      this.widget.controller?.clear();
+      this.widget.errorController?.add(false);
+    });
   }
 
   PinTheme _item({
@@ -175,7 +182,9 @@ class _FPCGradientCodeFieldState extends State<FPCGradientCodeField>
       );
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final double itemHeight =
         this.widget.itemHeight ?? this._size.heightCodeField;
     final double itemWidth =
@@ -273,14 +282,20 @@ class _FPCGradientCodeFieldState extends State<FPCGradientCodeField>
                 borderColor: null,
               ),
               forceErrorState: this._isError,
-              separatorBuilder: (int value) =>
-                  SizedBox(width: horizontalInterval),
+              separatorBuilder: (
+                int value,
+              ) =>
+                  SizedBox(
+                width: horizontalInterval,
+              ),
               autofocus: this.widget.isAutofocus,
               showCursor: this.widget.isShowCursor,
-              cursor: Container(
-                color: this.widget.focusedBorderColor,
+              cursor: SizedBox(
                 height: cursorHeight,
                 width: this._size.s10 / 10,
+                child: ColoredBox(
+                  color: this.widget.focusedBorderColor,
+                ),
               ),
               onChanged: onChanged,
               onCompleted: onCompleted,

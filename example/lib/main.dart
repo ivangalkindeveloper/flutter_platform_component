@@ -24,16 +24,20 @@ class Application extends StatelessWidget {
   final INavigationController navigationController;
 
   @override
-  Widget build(BuildContext context) {
-    return FPCApp(
-      navigatorKey: this.navigationController.navigatorKey,
-      onGenerateRoute: this.navigationController.onGenerateRoute,
-      onGenerateInitialRoutes: (String route) => [
-        FPCPageRoute.fromContext(
-          context,
-          child: const MainScreen(),
-        ),
-      ],
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      FPCApp(
+        navigatorKey: this.navigationController.navigatorKey,
+        onGenerateRoute: this.navigationController.onGenerateRoute,
+        onGenerateInitialRoutes: (
+          String route,
+        ) =>
+            [
+          FPCPageRoute.fromContext(
+            context,
+            child: const MainScreen(),
+          ),
+        ],
+      );
 }

@@ -13,25 +13,30 @@ class FPCCupertinoBottomSheetButton extends StatelessWidget {
   final VoidCallback onPressed;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
     return CupertinoButton(
       onPressed: this.onPressed,
       padding: EdgeInsets.zero,
-      child: Container(
+      child: SizedBox(
         height: size.s12 * 2,
         width: size.s12 * 2,
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-          color: theme.greyLight,
-          shape: BoxShape.circle,
-        ),
-        child: Icon(
-          Icons.close,
-          size: size.s20,
-          color: CupertinoColors.systemFill.resolveFrom(context),
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            color: theme.greyLight,
+            shape: BoxShape.circle,
+          ),
+          child: Center(
+            child: Icon(
+              Icons.close,
+              size: size.s20,
+              color: CupertinoColors.systemFill.resolveFrom(context),
+            ),
+          ),
         ),
       ),
     );

@@ -4,10 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class MainDuration extends StatelessWidget {
-  const MainDuration({super.key});
+  const MainDuration({
+    super.key,
+  });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCDuration duration = context.fpcDuration;
     final IFPCSize size = context.fpcSize;
 

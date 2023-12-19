@@ -26,13 +26,14 @@ class _FPCTextStyleState extends State<_FPCTextStyleWidget> {
       setState(() => this._textStyle = textStyle);
 
   @override
-  Widget build(BuildContext context) {
-    return FPCTextStyleScope(
-      textStyle: this._textStyle,
-      changeTextStyle: this._changeTextStyle,
-      child: this.widget.child,
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      FPCTextStyleScope(
+        textStyle: this._textStyle,
+        changeTextStyle: this._changeTextStyle,
+        child: this.widget.child,
+      );
 }
 
 class FPCTextStyleScope extends InheritedWidget with FPCScopeMixin {
@@ -46,10 +47,14 @@ class FPCTextStyleScope extends InheritedWidget with FPCScopeMixin {
   final IFPCTextStyle textStyle;
   final void Function(IFPCTextStyle textStyle) changeTextStyle;
 
-  static FPCTextStyleScope of(BuildContext context) =>
+  static FPCTextStyleScope of(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.of<FPCTextStyleScope>(context);
 
-  static FPCTextStyleScope? maybeOf(BuildContext context) =>
+  static FPCTextStyleScope? maybeOf(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.maybeOf<FPCTextStyleScope>(context);
 
   @override

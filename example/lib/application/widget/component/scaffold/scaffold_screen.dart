@@ -1,17 +1,22 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:flutter/material.dart';
 
 class ScaffoldScreen extends StatelessWidget {
-  const ScaffoldScreen({super.key});
+  const ScaffoldScreen({
+    super.key,
+  });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
 
     return FPCScaffold(
       extendBody: true,
       backgroundColor: theme.backgroundScaffold,
-      appBar: FPCScreenAppBar(
+      appBar: AppBarConfig(
         context,
         title: "Scaffold App Bar",
         onPressedBack: () => Navigator.pop(context),

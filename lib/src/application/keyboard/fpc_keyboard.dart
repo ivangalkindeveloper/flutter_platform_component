@@ -28,7 +28,9 @@ class FPCKeyboard extends StatelessWidget {
   final Color? disabledColor;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCSize size = context.fpcSize;
 
     final double height = this.height ?? size.heightKeyboardButton;

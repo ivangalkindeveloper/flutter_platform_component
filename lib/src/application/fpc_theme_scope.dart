@@ -53,18 +53,19 @@ class _FPCThemeState extends State<_FPCThemeWidget> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    return FPCThemeScope(
-      theme: this._theme,
-      changeTheme: this._changeTheme,
-      //
-      barrierColorExpandedBottomSheet: this._barrierColorExpandedBottomSheet,
-      barrierColorSmallBottomSheet: this._barrierColorSmallBottomSheet,
-      barrierColorDialog: this._barrierColorDialog,
-      //
-      child: this.widget.child,
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      FPCThemeScope(
+        theme: this._theme,
+        changeTheme: this._changeTheme,
+        //
+        barrierColorExpandedBottomSheet: this._barrierColorExpandedBottomSheet,
+        barrierColorSmallBottomSheet: this._barrierColorSmallBottomSheet,
+        barrierColorDialog: this._barrierColorDialog,
+        //
+        child: this.widget.child,
+      );
 }
 
 class FPCThemeScope extends InheritedWidget with FPCScopeMixin {
@@ -87,10 +88,14 @@ class FPCThemeScope extends InheritedWidget with FPCScopeMixin {
   final Color barrierColorSmallBottomSheet;
   final Color barrierColorDialog;
 
-  static FPCThemeScope of(BuildContext context) =>
+  static FPCThemeScope of(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.of<FPCThemeScope>(context);
 
-  static FPCThemeScope? maybeOf(BuildContext context) =>
+  static FPCThemeScope? maybeOf(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.maybeOf<FPCThemeScope>(context);
 
   @override

@@ -28,6 +28,10 @@ class FPCSecondaryDarkFormField extends StatelessWidget {
     this.hintText,
     this.hintStyle,
     //
+    this.suffixText,
+    this.suffixStyle,
+    //
+    this.errorText,
     this.errorStyle,
     //
     this.textInputType = TextInputType.text,
@@ -60,12 +64,12 @@ class FPCSecondaryDarkFormField extends StatelessWidget {
     this.inputFormatters,
     //
     this.keyboardAppearance,
-    this.enableInteractiveSelection,
+    this.isInteractiveSelection,
     this.selectionControls,
     this.buildCounter,
     this.autofillHints,
     //
-    this.enableIMEPersonalizedLearning = true,
+    this.isIMEPersonalizedLearning = true,
     this.contextMenuBuilder,
     //
     this.prefix,
@@ -102,6 +106,10 @@ class FPCSecondaryDarkFormField extends StatelessWidget {
   final String? hintText;
   final TextStyle? hintStyle;
   //
+  final String? suffixText;
+  final TextStyle? suffixStyle;
+  //
+  final String? errorText;
   final TextStyle? errorStyle;
   //
   final TextInputType textInputType;
@@ -134,7 +142,7 @@ class FPCSecondaryDarkFormField extends StatelessWidget {
   final List<TextInputFormatter>? inputFormatters;
   //
   final Brightness? keyboardAppearance;
-  final bool? enableInteractiveSelection;
+  final bool? isInteractiveSelection;
   final TextSelectionControls? selectionControls;
   final Widget? Function(
     BuildContext, {
@@ -144,7 +152,7 @@ class FPCSecondaryDarkFormField extends StatelessWidget {
   })? buildCounter;
   final Iterable<String>? autofillHints;
   //
-  final bool enableIMEPersonalizedLearning;
+  final bool isIMEPersonalizedLearning;
   final Widget Function(BuildContext, EditableTextState)? contextMenuBuilder;
   //
   final Widget? prefix;
@@ -158,7 +166,9 @@ class FPCSecondaryDarkFormField extends StatelessWidget {
   final String? restorationId;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
 
     return FPCFormField(
@@ -188,6 +198,10 @@ class FPCSecondaryDarkFormField extends StatelessWidget {
       hintText: this.hintText,
       hintStyle: this.hintStyle,
       //
+      suffixText: this.suffixText,
+      suffixStyle: this.suffixStyle,
+      //
+      errorText: this.errorText,
       errorStyle: this.errorStyle,
       //
       textInputType: this.textInputType,
@@ -220,12 +234,12 @@ class FPCSecondaryDarkFormField extends StatelessWidget {
       inputFormatters: this.inputFormatters,
       //
       keyboardAppearance: this.keyboardAppearance,
-      enableInteractiveSelection: this.enableInteractiveSelection,
+      isInteractiveSelection: this.isInteractiveSelection,
       selectionControls: this.selectionControls,
       buildCounter: this.buildCounter,
       autofillHints: this.autofillHints,
       //
-      enableIMEPersonalizedLearning: this.enableIMEPersonalizedLearning,
+      isIMEPersonalizedLearning: this.isIMEPersonalizedLearning,
       contextMenuBuilder: this.contextMenuBuilder,
       //
       prefix: this.prefix,

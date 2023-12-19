@@ -26,13 +26,14 @@ class _FPCDateTimeState extends State<_FPCDateTimeWidget> {
       setState(() => this._dateTime = dateTime);
 
   @override
-  Widget build(BuildContext context) {
-    return FPCDateTimeScope(
-      dateTime: this._dateTime,
-      changeDateTime: this._changeDateTime,
-      child: this.widget.child,
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      FPCDateTimeScope(
+        dateTime: this._dateTime,
+        changeDateTime: this._changeDateTime,
+        child: this.widget.child,
+      );
 }
 
 class FPCDateTimeScope extends InheritedWidget with FPCScopeMixin {
@@ -46,10 +47,14 @@ class FPCDateTimeScope extends InheritedWidget with FPCScopeMixin {
   final IFPCDateTime dateTime;
   final void Function(IFPCDateTime dateTime) changeDateTime;
 
-  static FPCDateTimeScope of(BuildContext context) =>
+  static FPCDateTimeScope of(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.of<FPCDateTimeScope>(context);
 
-  static FPCDateTimeScope? maybeOf(BuildContext context) =>
+  static FPCDateTimeScope? maybeOf(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.maybeOf<FPCDateTimeScope>(context);
 
   @override

@@ -11,7 +11,7 @@ class FPCDangerLightDottedButton extends StatelessWidget {
     this.borderWidth,
     this.borderType = FPCBorderType.rrect,
     this.strokeCap = StrokeCap.butt,
-    this.pattern,
+    this.pattern = const [2, 2],
     this.padding,
     this.prefix,
     this.title,
@@ -29,7 +29,7 @@ class FPCDangerLightDottedButton extends StatelessWidget {
   final double? borderWidth;
   final FPCBorderType borderType;
   final StrokeCap strokeCap;
-  final List<double>? pattern;
+  final List<double> pattern;
   final EdgeInsets? padding;
   final Widget? prefix;
   final String? title;
@@ -41,7 +41,9 @@ class FPCDangerLightDottedButton extends StatelessWidget {
   final Color? disabledColor;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 

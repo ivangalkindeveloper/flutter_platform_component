@@ -1,8 +1,10 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:modal_bottom_sheet/modal_bottom_sheet.dart'
-    show showCupertinoModalBottomSheet, showMaterialModalBottomSheet;
+import 'package:flutter_platform_component/package/modal_bottom_sheet/bottom_sheets/cupertino_bottom_sheet.dart'
+    show showCupertinoModalBottomSheet;
+import 'package:flutter_platform_component/package/modal_bottom_sheet/bottom_sheets/material_bottom_sheet.dart'
+    show showMaterialModalBottomSheet;
 import 'package:flutter/cupertino.dart' show showCupertinoModalPopup;
 import 'package:flutter/material.dart' show Colors;
 

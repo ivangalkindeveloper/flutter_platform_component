@@ -23,7 +23,9 @@ class FPCSmallBottomSheet<T> extends StatelessWidget
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
@@ -35,7 +37,7 @@ class FPCSmallBottomSheet<T> extends StatelessWidget
           topLeft: sizeScope.borderRadiusBottomSheet.topLeft,
           topRight: sizeScope.borderRadiusBottomSheet.topRight,
         ),
-        child: Container(
+        child: ColoredBox(
           color: this.backgroundColor ?? theme.backgroundScaffold,
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -45,13 +47,16 @@ class FPCSmallBottomSheet<T> extends StatelessWidget
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     SizedBox(height: size.s16 / 2),
-                    Container(
+                    SizedBox(
                       height: this.barHeight ?? size.s16 / 4,
                       width: this.barWidth ?? size.s32,
-                      decoration: BoxDecoration(
-                        color: theme.greyLight,
-                        borderRadius: BorderRadius.circular(
-                            this.barHeight ?? size.s16 / 2),
+                      child: DecoratedBox(
+                        decoration: BoxDecoration(
+                          color: theme.greyLight,
+                          borderRadius: BorderRadius.circular(
+                            this.barHeight ?? size.s16 / 2,
+                          ),
+                        ),
                       ),
                     ),
                   ],

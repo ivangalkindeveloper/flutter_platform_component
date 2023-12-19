@@ -126,7 +126,9 @@ class _FPCSegmentControlState<T> extends State<FPCSegmentControl<T>> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     if (this.widget.items.isEmpty) {
       throw const FPCItemsEmptyException();
     }
@@ -336,7 +338,9 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
@@ -399,72 +403,78 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           this._expandedWrapper(
-            child: Container(
-              height: this.height,
+            child: Padding(
               padding: padding,
-              decoration: ShapeDecoration(
-                shape: FPCCustomRoundedRectangleBorder(
-                  topSide: BorderSide(
-                    color: borderColor,
-                    width: borderWidth,
+              child: SizedBox(
+                height: this.height,
+                child: DecoratedBox(
+                  decoration: ShapeDecoration(
+                    shape: FPCCustomRoundedRectangleBorder(
+                      topSide: BorderSide(
+                        color: borderColor,
+                        width: borderWidth,
+                      ),
+                      bottomSide: BorderSide(
+                        color: borderColor,
+                        width: borderWidth,
+                      ),
+                      leftSide: BorderSide(
+                        color: borderColor,
+                        width: leftBorderWidth,
+                      ),
+                      rightSide: BorderSide(
+                        color: borderColor,
+                        width: rightBorderWidth,
+                      ),
+                      topLeftCornerSide: BorderSide(
+                        color: borderColor,
+                        width: borderWidth,
+                      ),
+                      topRightCornerSide: BorderSide(
+                        color: borderColor,
+                        width: borderWidth,
+                      ),
+                      bottomLeftCornerSide: BorderSide(
+                        color: borderColor,
+                        width: borderWidth,
+                      ),
+                      bottomRightCornerSide: BorderSide(
+                        color: borderColor,
+                        width: borderWidth,
+                      ),
+                      borderRadius: BorderRadius.only(
+                        topLeft: topLeft,
+                        topRight: topRight,
+                        bottomLeft: bottomLeft,
+                        bottomRight: bottomRight,
+                      ),
+                    ),
                   ),
-                  bottomSide: BorderSide(
-                    color: borderColor,
-                    width: borderWidth,
-                  ),
-                  leftSide: BorderSide(
-                    color: borderColor,
-                    width: leftBorderWidth,
-                  ),
-                  rightSide: BorderSide(
-                    color: borderColor,
-                    width: rightBorderWidth,
-                  ),
-                  topLeftCornerSide: BorderSide(
-                    color: borderColor,
-                    width: borderWidth,
-                  ),
-                  topRightCornerSide: BorderSide(
-                    color: borderColor,
-                    width: borderWidth,
-                  ),
-                  bottomLeftCornerSide: BorderSide(
-                    color: borderColor,
-                    width: borderWidth,
-                  ),
-                  bottomRightCornerSide: BorderSide(
-                    color: borderColor,
-                    width: borderWidth,
-                  ),
-                  borderRadius: BorderRadius.only(
-                    topLeft: topLeft,
-                    topRight: topRight,
-                    bottomLeft: bottomLeft,
-                    bottomRight: bottomRight,
+                  child: FPCButtonRowChild(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    internalIconColor: internalColor,
+                    internalIconGradient: null,
+                    internalIconHeight: internalIconHeight,
+                    prefix: this.item.prefix,
+                    prefixIcon: this.item.prefixIcon,
+                    titleGradient: null,
+                    title: this.item.title,
+                    textAlign: TextAlign.center,
+                    titleStyle: titleStyle,
+                    postfixIcon: this.item.postfixIcon,
+                    postfix: this.item.postfix,
                   ),
                 ),
-              ),
-              child: FPCButtonRowChild(
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.center,
-                internalIconColor: internalColor,
-                internalIconGradient: null,
-                internalIconHeight: internalIconHeight,
-                prefix: this.item.prefix,
-                prefixIcon: this.item.prefixIcon,
-                titleGradient: null,
-                title: this.item.title,
-                textAlign: TextAlign.center,
-                titleStyle: titleStyle,
-                postfixIcon: this.item.postfixIcon,
-                postfix: this.item.postfix,
               ),
             ),
           ),
           if ((index + 1) != this.length)
-            Container(
+            SizedBox(
               width: borderWidth,
-              color: borderColor,
+              child: ColoredBox(
+                color: borderColor,
+              ),
             ),
         ],
       ),

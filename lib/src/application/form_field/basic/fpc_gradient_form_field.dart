@@ -31,6 +31,10 @@ class FPCGradientFormField extends StatefulWidget {
     this.hintText,
     this.hintStyle,
     //
+    this.suffixText,
+    this.suffixStyle,
+    //
+    this.errorText,
     this.errorStyle,
     //
     this.textInputType = TextInputType.text,
@@ -63,12 +67,12 @@ class FPCGradientFormField extends StatefulWidget {
     this.inputFormatters,
     //
     this.keyboardAppearance,
-    this.enableInteractiveSelection,
+    this.isInteractiveSelection,
     this.selectionControls,
     this.buildCounter,
     this.autofillHints,
     //
-    this.enableIMEPersonalizedLearning = true,
+    this.isIMEPersonalizedLearning = true,
     this.contextMenuBuilder,
     //
     this.prefix,
@@ -108,6 +112,10 @@ class FPCGradientFormField extends StatefulWidget {
   final String? hintText;
   final TextStyle? hintStyle;
   //
+  final String? suffixText;
+  final TextStyle? suffixStyle;
+  //
+  final String? errorText;
   final TextStyle? errorStyle;
   //
   final TextInputType textInputType;
@@ -140,7 +148,7 @@ class FPCGradientFormField extends StatefulWidget {
   final List<TextInputFormatter>? inputFormatters;
   //
   final Brightness? keyboardAppearance;
-  final bool? enableInteractiveSelection;
+  final bool? isInteractiveSelection;
   final TextSelectionControls? selectionControls;
   final Widget? Function(
     BuildContext, {
@@ -150,7 +158,7 @@ class FPCGradientFormField extends StatefulWidget {
   })? buildCounter;
   final Iterable<String>? autofillHints;
   //
-  final bool enableIMEPersonalizedLearning;
+  final bool isIMEPersonalizedLearning;
   final Widget Function(BuildContext, EditableTextState)? contextMenuBuilder;
   //
   final Widget? prefix;
@@ -279,6 +287,16 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
       this._focusNode = this.widget.focusNode ?? FocusNode();
       this._focusNode.addListener(this._focusNodeListener);
     }
+
+    // ErrorText
+    if (oldWidget.errorText != this.widget.errorText) {
+      if (this.widget.errorText != null) {
+        setState(() {
+          this._isValidationError = true;
+          this._validationText = this.widget.errorText!;
+        });
+      }
+    }
   }
 
   @override
@@ -363,6 +381,14 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
     return this.widget.internalIconGradient ?? this._theme.greyGradient;
   }
 
+  Color _cursorColor() {
+    if (this._isValidationError || this._isAutoValidationError) {
+      return this._theme.danger;
+    }
+
+    return this.widget.focusedGradient.colors.first;
+  }
+
   String? _validator(String? value) {
     if (value == null || this.mounted == false) {
       return null;
@@ -410,13 +436,17 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final Gradient backgroundGradient = this._backgroundGradient();
     final Color labelColor = this._labelColor();
     final double height = this.widget.height ?? this._size.heightFormField;
     final double paddingTop = this.widget.padding?.top ?? this._size.s20 / 4;
-    final double paddingBottom =
-        this.widget.padding?.bottom ?? this._size.s16 / 4;
+    final double paddingBottom = this.widget.padding?.bottom ??
+        (this._focusNode.hasPrimaryFocus || this._controller.text.isNotEmpty
+            ? 0
+            : this._size.s16 / 3);
     final double paddingLeft = this.widget.padding?.left ?? this._size.s16;
     final double paddingRight = this.widget.padding?.right ?? this._size.s16;
     final BorderRadius borderRadius =
@@ -429,8 +459,11 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
         this.widget.internalIconHeight ?? this._size.heightIconDefault;
     final EdgeInsets internalPadding =
         this._focusNode.hasPrimaryFocus || this._controller.text.isNotEmpty
-            ? EdgeInsets.only(top: (this._size.s12 / 2))
+            ? EdgeInsets.only(
+                top: this._size.s10 / 2,
+              )
             : EdgeInsets.zero;
+    final Color cursorColor = this._cursorColor();
     final void Function(String)? onChanged =
         this.widget.isDisabled ? null : this.widget.onChanged;
     final void Function()? onTap =
@@ -493,10 +526,15 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
                   children: [
                     Row(
                       children: [
-                        this.widget.prefix ?? SizedBox(width: paddingLeft),
+                        this.widget.prefix ??
+                            SizedBox(
+                              width: paddingLeft,
+                            ),
                         if (this.widget.prefixIcon != null)
                           Padding(
-                            padding: EdgeInsets.only(right: this._size.s16),
+                            padding: EdgeInsets.only(
+                              right: this._size.s16,
+                            ),
                             child: FPCGradientMask(
                               gradient: internalIconGradient,
                               child: Icon(
@@ -523,6 +561,9 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
                               //
                               hintText: this.widget.hintText,
                               hintStyle: this.widget.hintStyle,
+                              //
+                              suffixText: this.widget.suffixText,
+                              suffixStyle: this.widget.suffixStyle,
                               //
                               textInputType: this.widget.textInputType,
                               textCapitalization:
@@ -561,20 +602,19 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
                               ],
                               isEnabled: !this.widget.isDisabled,
                               //
-                              cursorColor:
-                                  this.widget.focusedGradient.colors.first,
+                              cursorColor: cursorColor,
                               //
                               keyboardAppearance:
                                   this.widget.keyboardAppearance,
-                              enableInteractiveSelection:
-                                  this.widget.enableInteractiveSelection,
+                              isInteractiveSelection:
+                                  this.widget.isInteractiveSelection,
                               selectionControls: this.widget.selectionControls,
                               buildCounter: this.widget.buildCounter,
                               autofillHints: this.widget.autofillHints,
                               //
                               restorationId: this.widget.restorationId,
-                              enableIMEPersonalizedLearning:
-                                  this.widget.enableIMEPersonalizedLearning,
+                              isIMEPersonalizedLearning:
+                                  this.widget.isIMEPersonalizedLearning,
                               contextMenuBuilder:
                                   this.widget.contextMenuBuilder,
                             ),
@@ -582,7 +622,9 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
                         ),
                         if (this.widget.postfixIcon != null)
                           Padding(
-                            padding: EdgeInsets.only(left: this._size.s16),
+                            padding: EdgeInsets.only(
+                              left: this._size.s16,
+                            ),
                             child: FPCGradientMask(
                               gradient: internalIconGradient,
                               child: Icon(
@@ -591,7 +633,10 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
                               ),
                             ),
                           ),
-                        this.widget.postfix ?? SizedBox(width: paddingRight),
+                        this.widget.postfix ??
+                            SizedBox(
+                              width: paddingRight,
+                            ),
                       ],
                     ),
                     if (this.widget.bottom != null) this.widget.bottom!,
@@ -605,7 +650,7 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
                   condition: this._focusNode.hasPrimaryFocus,
                   child: FPCGradientMask(
                     gradient: borderGradient,
-                    child: Container(
+                    child: DecoratedBox(
                       decoration: BoxDecoration(
                         borderRadius: borderRadius,
                         border: Border.all(
@@ -637,7 +682,7 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
               ],
             ),
           ),
-          secondChild: Container(),
+          secondChild: const Row(),
         ),
       ],
     );

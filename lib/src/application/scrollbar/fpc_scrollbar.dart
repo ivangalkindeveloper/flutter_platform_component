@@ -5,28 +5,9 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter/cupertino.dart' show CupertinoScrollbar;
 
 class FPCScrollbar extends FPCPlatformWidget {
-  FPCScrollbar({
+  const FPCScrollbar({
     super.key,
-    ScrollController? controller,
-    required Widget child,
-  }) : super(
-          cupertino: _FPCScrollbarCupertino(
-            key: key,
-            controller: controller,
-            child: child,
-          ),
-          material: _FPCScrollbarMaterial(
-            key: key,
-            controller: controller,
-            child: child,
-          ),
-        );
-}
-
-class _FPCScrollbarCupertino extends StatelessWidget {
-  const _FPCScrollbarCupertino({
-    super.key,
-    required this.controller,
+    this.controller,
     required this.child,
   });
 
@@ -34,29 +15,20 @@ class _FPCScrollbarCupertino extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
-    return CupertinoScrollbar(
-      controller: this.controller,
-      child: this.child,
-    );
-  }
-}
-
-class _FPCScrollbarMaterial extends StatelessWidget {
-  const _FPCScrollbarMaterial({
-    super.key,
-    required this.controller,
-    required this.child,
-  });
-
-  final ScrollController? controller;
-  final Widget child;
+  Widget cupertino(
+    BuildContext context,
+  ) =>
+      CupertinoScrollbar(
+        controller: this.controller,
+        child: this.child,
+      );
 
   @override
-  Widget build(BuildContext context) {
-    return FPCMaterialScrollbar(
-      controller: this.controller,
-      child: this.child,
-    );
-  }
+  Widget material(
+    BuildContext context,
+  ) =>
+      FPCMaterialScrollbar(
+        controller: this.controller,
+        child: this.child,
+      );
 }

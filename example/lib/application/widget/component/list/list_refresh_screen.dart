@@ -1,10 +1,12 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:example/application/widget/custom/config_section.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class ListRefreshScreen extends StatefulWidget {
-  const ListRefreshScreen({super.key});
+  const ListRefreshScreen({
+    super.key,
+  });
 
   @override
   State<ListRefreshScreen> createState() => _ListRefreshScreenState();
@@ -23,11 +25,13 @@ class _ListRefreshScreenState extends State<ListRefreshScreen> {
       await Future.delayed(const Duration(seconds: 2));
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      appBar: FPCScreenAppBar(
+      appBar: AppBarConfig(
         context,
         title: "List Refresh",
         onPressedBack: () => Navigator.pop(context),
@@ -39,8 +43,6 @@ class _ListRefreshScreenState extends State<ListRefreshScreen> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const ConfigSection(),
-              Gap(size.s16 * 2),
               const FPCGreyLightCard(
                 child: SizedBox(),
               ),

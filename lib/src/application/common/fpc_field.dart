@@ -1,5 +1,3 @@
-import 'package:flutter_platform_component/src/application/helper/fpc_text_form_field.dart';
-
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -8,6 +6,7 @@ import 'package:flutter/material.dart'
     show
         Material,
         Colors,
+        TextFormField,
         InputDecoration,
         OutlineInputBorder,
         AdaptiveTextSelectionToolbar;
@@ -29,6 +28,9 @@ class FPCField extends StatelessWidget {
     //
     required this.hintText,
     required this.hintStyle,
+    //
+    required this.suffixText,
+    required this.suffixStyle,
     //
     required this.textInputType,
     required this.textCapitalization,
@@ -63,13 +65,13 @@ class FPCField extends StatelessWidget {
     required this.cursorColor,
     //
     required this.keyboardAppearance,
-    required this.enableInteractiveSelection,
+    required this.isInteractiveSelection,
     required this.selectionControls,
     required this.buildCounter,
     required this.autofillHints,
     //
     required this.restorationId,
-    required this.enableIMEPersonalizedLearning,
+    required this.isIMEPersonalizedLearning,
     required this.contextMenuBuilder,
   });
 
@@ -87,6 +89,9 @@ class FPCField extends StatelessWidget {
   //
   final String? hintText;
   final TextStyle? hintStyle;
+  //
+  final String? suffixText;
+  final TextStyle? suffixStyle;
   //
   final TextInputType? textInputType;
   final TextCapitalization textCapitalization;
@@ -121,7 +126,7 @@ class FPCField extends StatelessWidget {
   final Color? cursorColor;
   //
   final Brightness? keyboardAppearance;
-  final bool? enableInteractiveSelection;
+  final bool? isInteractiveSelection;
   final TextSelectionControls? selectionControls;
   final Widget? Function(
     BuildContext, {
@@ -132,7 +137,7 @@ class FPCField extends StatelessWidget {
   final Iterable<String>? autofillHints;
   //
   final String? restorationId;
-  final bool enableIMEPersonalizedLearning;
+  final bool isIMEPersonalizedLearning;
   final Widget Function(BuildContext, EditableTextState)? contextMenuBuilder;
 
   factory FPCField.hidden({
@@ -156,6 +161,9 @@ class FPCField extends StatelessWidget {
         //
         hintText: null,
         hintStyle: null,
+        //
+        suffixText: null,
+        suffixStyle: null,
         //
         textInputType: null,
         textCapitalization: TextCapitalization.none,
@@ -190,13 +198,13 @@ class FPCField extends StatelessWidget {
         cursorColor: null,
         //
         keyboardAppearance: null,
-        enableInteractiveSelection: null,
+        isInteractiveSelection: null,
         selectionControls: null,
         buildCounter: null,
         autofillHints: null,
         //
         restorationId: restorationId,
-        enableIMEPersonalizedLearning: false,
+        isIMEPersonalizedLearning: false,
         contextMenuBuilder: null,
       );
 
@@ -209,27 +217,13 @@ class FPCField extends StatelessWidget {
       );
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
-    final TextStyle fieldTextStyle = this.textStyle?.copyWith(
-              color: this.textStyle?.color ?? theme.black,
-              fontSize: this.textStyle?.fontSize ?? size.s16,
-              fontWeight:
-                  this.textStyle?.fontWeight ?? textStyle.fontWeightRegular,
-              fontFamily:
-                  this.textStyle?.fontFamily ?? textStyle.fontFamilyRegular,
-              package: textStyle.package,
-            ) ??
-        TextStyle(
-          color: theme.black,
-          fontSize: size.s16,
-          fontWeight: textStyle.fontWeightRegular,
-          fontFamily: textStyle.fontFamilyRegular,
-          package: textStyle.package,
-        );
     final TextStyle fieldLabelStyle = this.labelStyle?.copyWith(
               color: this.labelColor,
               fontSize: this.labelStyle?.fontSize ?? size.s16,
@@ -262,6 +256,22 @@ class FPCField extends StatelessWidget {
           fontFamily: textStyle.fontFamilyRegular,
           package: textStyle.package,
         );
+    final TextStyle fieldTextStyle = this.textStyle?.copyWith(
+              color: this.textStyle?.color ?? theme.black,
+              fontSize: this.textStyle?.fontSize ?? size.s16,
+              fontWeight:
+                  this.textStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily:
+                  this.textStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.black,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightRegular,
+          fontFamily: textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
     final TextStyle fieldHintStyle = this.hintStyle?.copyWith(
               color: this.hintStyle?.color ?? theme.greyLight,
               fontSize: this.hintStyle?.fontSize ?? size.s16,
@@ -278,31 +288,55 @@ class FPCField extends StatelessWidget {
           fontFamily: textStyle.fontFamilyRegular,
           package: textStyle.package,
         );
+    final TextStyle fieldSuffixStyle = this.suffixStyle?.copyWith(
+              color: this.suffixStyle?.color ?? theme.black,
+              fontSize: this.suffixStyle?.fontSize ?? size.s16,
+              fontWeight:
+                  this.suffixStyle?.fontWeight ?? textStyle.fontWeightRegular,
+              fontFamily:
+                  this.suffixStyle?.fontFamily ?? textStyle.fontFamilyRegular,
+              package: textStyle.package,
+            ) ??
+        TextStyle(
+          color: theme.black,
+          fontSize: size.s16,
+          fontWeight: textStyle.fontWeightRegular,
+          fontFamily: textStyle.fontFamilyRegular,
+          package: textStyle.package,
+        );
     final String? hintText = this.hintText != null ? " ${this.hintText}" : null;
     final InputDecoration decoration = InputDecoration(
       labelText: this.labelText,
       labelStyle: fieldLabelStyle,
       //
-      hintText: hintText,
-      hintStyle: fieldHintStyle,
-      //
-      errorText: null,
-      errorStyle: const TextStyle(height: 0),
-      //
-      isCollapsed: true,
-      contentPadding: EdgeInsets.only(
-        top: size.s18 / 2,
-        bottom: size.s14 / 4,
-      ),
-      //
       prefixText: this.prefixText,
       prefixStyle: fieldPrefixStyle,
       //
-      filled: true,
-      fillColor: Colors.transparent,
+      hintText: hintText,
+      hintStyle: fieldHintStyle,
+      //
+      suffixText: this.suffixText,
+      suffixStyle: fieldSuffixStyle,
       //
       counterText: "",
-      counterStyle: const TextStyle(height: 0),
+      counterStyle: const TextStyle(
+        height: 0,
+      ),
+      //
+      errorText: null,
+      errorStyle: TextStyle(
+        height: 0,
+        color: this.cursorColor,
+      ),
+      //
+      isCollapsed: true,
+      contentPadding: EdgeInsets.only(
+        top: size.s14 / 2,
+        bottom: size.s14 / 4,
+      ),
+      //
+      filled: true,
+      fillColor: Colors.transparent,
       //
       errorBorder: const OutlineInputBorder(
         borderSide: BorderSide(color: Colors.transparent),
@@ -326,13 +360,16 @@ class FPCField extends StatelessWidget {
       alignLabelWithHint: false,
     );
     final double cursorWidth = size.s10 / 5;
-    final double cursorHeight = (fieldTextStyle.fontSize ?? size.s16) * 1.1;
+    final double cursorHeight = (fieldTextStyle.fontSize ?? size.s16);
+    final Radius cursorRadius = Radius.circular(
+      size.s16,
+    );
 
     return Material(
       color: Colors.transparent,
       child: DefaultTextStyle(
         style: fieldTextStyle,
-        child: FPCTextFormField(
+        child: TextFormField(
           controller: this.controller,
           focusNode: this.focusNode,
           decoration: decoration,
@@ -371,17 +408,18 @@ class FPCField extends StatelessWidget {
           //
           cursorWidth: cursorWidth,
           cursorHeight: cursorHeight,
+          cursorRadius: cursorRadius,
           cursorColor: this.cursorColor,
           //
           keyboardAppearance: this.keyboardAppearance,
-          enableInteractiveSelection: this.enableInteractiveSelection,
+          enableInteractiveSelection: this.isInteractiveSelection,
           selectionControls: this.selectionControls,
           buildCounter: this.buildCounter,
           autofillHints: this.autofillHints,
           autovalidateMode: AutovalidateMode.disabled,
           //
           restorationId: this.restorationId,
-          enableIMEPersonalizedLearning: this.enableIMEPersonalizedLearning,
+          enableIMEPersonalizedLearning: this.isIMEPersonalizedLearning,
           contextMenuBuilder:
               this.contextMenuBuilder ?? this._defaultContextMenuBuilder,
         ),

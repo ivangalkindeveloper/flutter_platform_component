@@ -17,7 +17,9 @@ class FPCAnimatedSlowTransitionSwitcher extends StatelessWidget {
   final bool isReverse;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCDuration duration = context.fpcDuration;
 
     return PageTransitionSwitcher(

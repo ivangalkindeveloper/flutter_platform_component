@@ -14,7 +14,9 @@ class FPCAnimatedSlowCrossFade extends StatelessWidget {
   final Widget secondChild;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCAnimation animation = context.fpcAnimation;
     final IFPCDuration duration = context.fpcDuration;
 

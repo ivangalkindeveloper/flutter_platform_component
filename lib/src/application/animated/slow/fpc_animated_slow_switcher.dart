@@ -10,7 +10,9 @@ class FPCAnimatedSlowSwitcher extends StatelessWidget {
   final Widget? child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCAnimation animation = context.fpcAnimation;
     final IFPCDuration duration = context.fpcDuration;
 
@@ -19,10 +21,7 @@ class FPCAnimatedSlowSwitcher extends StatelessWidget {
       switchInCurve: animation.curve,
       reverseDuration: duration.animationSlow,
       switchOutCurve: animation.curve,
-      child: this.child ??
-          Container(
-            key: UniqueKey(),
-          ),
+      child: this.child,
     );
   }
 }

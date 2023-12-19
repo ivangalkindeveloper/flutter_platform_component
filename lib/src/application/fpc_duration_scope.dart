@@ -26,13 +26,14 @@ class _FPCDurationState extends State<_FPCDurationWidget> {
       setState(() => this._duration = duration);
 
   @override
-  Widget build(BuildContext context) {
-    return FPCDurationScope(
-      duration: this._duration,
-      changeDuration: this._changeDuration,
-      child: this.widget.child,
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      FPCDurationScope(
+        duration: this._duration,
+        changeDuration: this._changeDuration,
+        child: this.widget.child,
+      );
 }
 
 class FPCDurationScope extends InheritedWidget with FPCScopeMixin {
@@ -46,10 +47,14 @@ class FPCDurationScope extends InheritedWidget with FPCScopeMixin {
   final IFPCDuration duration;
   final void Function(IFPCDuration duration) changeDuration;
 
-  static FPCDurationScope of(BuildContext context) =>
+  static FPCDurationScope of(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.of<FPCDurationScope>(context);
 
-  static FPCDurationScope? maybeOf(BuildContext context) =>
+  static FPCDurationScope? maybeOf(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.maybeOf<FPCDurationScope>(context);
 
   @override

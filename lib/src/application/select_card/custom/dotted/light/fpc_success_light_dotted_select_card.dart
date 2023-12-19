@@ -11,7 +11,7 @@ class FPCSuccessLightDottedSelectCard extends StatelessWidget {
     this.borderWidth,
     this.borderType = FPCBorderType.rrect,
     this.strokeCap = StrokeCap.butt,
-    this.pattern,
+    this.pattern = const [2, 2],
     this.padding,
     required this.onPressed,
     this.isDisabled = false,
@@ -26,7 +26,7 @@ class FPCSuccessLightDottedSelectCard extends StatelessWidget {
   final double? borderWidth;
   final FPCBorderType borderType;
   final StrokeCap strokeCap;
-  final List<double>? pattern;
+  final List<double> pattern;
   final EdgeInsets? padding;
   final VoidCallback onPressed;
   final bool isDisabled;
@@ -34,7 +34,9 @@ class FPCSuccessLightDottedSelectCard extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
 
     return FPCDottedSelectCard(

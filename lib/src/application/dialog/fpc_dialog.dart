@@ -8,54 +8,14 @@ import 'package:flutter/material.dart' show AlertDialog, TextButton;
 class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
   FPCDialog({
     super.key,
-    Color? backgroundColor,
-    BorderRadius? borderRadius,
-    required String title,
-    TextStyle? titleStyle,
-    String? description,
-    TextStyle? descriptionStyle,
-    Widget? content,
-    TextStyle? itemStyle,
-    required List<FPCDialogItem> items,
-  }) : super(
-          cupertino: _FPCDialogCupertino(
-            key: key,
-            backgroundColor: backgroundColor,
-            borderRadius: borderRadius,
-            title: title,
-            titleStyle: titleStyle,
-            description: description,
-            descriptionStyle: descriptionStyle,
-            content: content,
-            itemStyle: itemStyle,
-            items: items,
-          ),
-          material: _FPCDialogMaterial(
-            key: key,
-            backgroundColor: backgroundColor,
-            borderRadius: borderRadius,
-            title: title,
-            titleStyle: titleStyle,
-            description: description,
-            descriptionStyle: descriptionStyle,
-            content: content,
-            itemStyle: itemStyle,
-            items: items,
-          ),
-        );
-}
-
-class _FPCDialogCupertino extends StatelessWidget {
-  const _FPCDialogCupertino({
-    super.key,
-    required this.backgroundColor,
-    required this.borderRadius,
+    this.backgroundColor,
+    this.borderRadius,
     required this.title,
-    required this.titleStyle,
-    required this.description,
-    required this.descriptionStyle,
-    required this.content,
-    required this.itemStyle,
+    this.titleStyle,
+    this.description,
+    this.descriptionStyle,
+    this.content,
+    this.itemStyle,
     required this.items,
   });
 
@@ -69,43 +29,45 @@ class _FPCDialogCupertino extends StatelessWidget {
   final TextStyle? itemStyle;
   final List<FPCDialogItem> items;
 
-  Widget? _content({
-    required TextStyle descriptionStyle,
-  }) {
-    if (this.content != null) {
-      return this.content!;
-    }
-
-    if (this.description != null) {
-      return Text(
-        this.description!,
-        style: descriptionStyle,
-      );
-    }
-
-    return null;
-  }
-
-  CupertinoDialogAction _item({
-    required FPCDialogItem item,
-    required TextStyle itemStyle,
-  }) =>
-      CupertinoDialogAction(
-        textStyle: itemStyle,
-        isDefaultAction: item.isDefaultAction,
-        isDestructiveAction: item.isDestructiveAction,
-        onPressed: item.onPressed,
-        child: Text(
-          item.title,
-          style: itemStyle,
-        ),
-      );
-
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
+
+    Widget? buildContent({
+      required TextStyle descriptionStyle,
+    }) {
+      if (this.content != null) {
+        return this.content!;
+      }
+
+      if (this.description != null) {
+        return Text(
+          this.description!,
+          style: descriptionStyle,
+        );
+      }
+
+      return null;
+    }
+
+    CupertinoDialogAction buildItem({
+      required FPCDialogItem item,
+      required TextStyle itemStyle,
+    }) =>
+        CupertinoDialogAction(
+          textStyle: itemStyle,
+          isDefaultAction: item.isDefault,
+          isDestructiveAction: item.isDestructive,
+          onPressed: item.onPressed,
+          child: Text(
+            item.title,
+            style: itemStyle,
+          ),
+        );
 
     final TextStyle titleStyle = this.titleStyle?.copyWith(
               color: this.titleStyle?.color ?? theme.blackAlways,
@@ -161,13 +123,16 @@ class _FPCDialogCupertino extends StatelessWidget {
         this.title,
         style: titleStyle,
       ),
-      content: this._content(
+      content: buildContent(
         descriptionStyle: descriptionStyle,
       ),
       actions: this
           .items
           .map(
-            (FPCDialogItem item) => this._item(
+            (
+              FPCDialogItem item,
+            ) =>
+                buildItem(
               item: item,
               itemStyle: itemStyle,
             ),
@@ -175,75 +140,52 @@ class _FPCDialogCupertino extends StatelessWidget {
           .toList(),
     );
   }
-}
-
-class _FPCDialogMaterial extends StatelessWidget {
-  const _FPCDialogMaterial({
-    super.key,
-    required this.backgroundColor,
-    required this.borderRadius,
-    required this.title,
-    required this.titleStyle,
-    required this.description,
-    required this.descriptionStyle,
-    required this.content,
-    required this.itemStyle,
-    required this.items,
-  });
-
-  final Color? backgroundColor;
-  final BorderRadius? borderRadius;
-  final String title;
-  final TextStyle? titleStyle;
-  final String? description;
-  final TextStyle? descriptionStyle;
-  final Widget? content;
-  final TextStyle? itemStyle;
-  final List<FPCDialogItem> items;
-
-  Widget? _content({
-    required TextStyle descriptionStyle,
-  }) {
-    if (this.content != null) {
-      return this.content!;
-    }
-
-    if (this.description != null) {
-      return Text(
-        this.description!,
-        style: descriptionStyle,
-      );
-    }
-
-    return null;
-  }
-
-  TextButton _item({
-    required FPCDialogItem item,
-    required TextStyle itemStyle,
-    required BorderRadius borderRadius,
-  }) =>
-      TextButton(
-        style: TextButton.styleFrom(
-          elevation: 0,
-          foregroundColor: itemStyle.color,
-          shape: RoundedRectangleBorder(
-            borderRadius: borderRadius,
-          ),
-        ),
-        onPressed: item.onPressed,
-        child: Text(
-          item.title,
-          style: itemStyle,
-        ),
-      );
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
+
+    Widget? buildContent({
+      required TextStyle descriptionStyle,
+    }) {
+      if (this.content != null) {
+        return this.content!;
+      }
+
+      if (this.description != null) {
+        return Text(
+          this.description!,
+          style: descriptionStyle,
+        );
+      }
+
+      return null;
+    }
+
+    TextButton buildItem({
+      required FPCDialogItem item,
+      required TextStyle itemStyle,
+      required BorderRadius borderRadius,
+    }) =>
+        TextButton(
+          style: TextButton.styleFrom(
+            elevation: 0,
+            foregroundColor: itemStyle.color,
+            shape: RoundedRectangleBorder(
+              borderRadius: borderRadius,
+            ),
+          ),
+          onPressed: item.onPressed,
+          child: Text(
+            item.title,
+            style: itemStyle,
+          ),
+        );
 
     final Color backgroundColor =
         this.backgroundColor ?? theme.backgroundScaffold;
@@ -308,13 +250,16 @@ class _FPCDialogMaterial extends StatelessWidget {
         this.title,
         style: titleStyle,
       ),
-      content: this._content(
+      content: buildContent(
         descriptionStyle: descriptionStyle,
       ),
       actions: this
           .items
           .map(
-            (FPCDialogItem item) => this._item(
+            (
+              FPCDialogItem item,
+            ) =>
+                buildItem(
               item: item,
               itemStyle: itemStyle,
               borderRadius: borderRadius,

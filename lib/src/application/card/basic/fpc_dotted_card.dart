@@ -14,7 +14,7 @@ class FPCDottedCard extends StatelessWidget {
     this.borderWidth,
     this.borderType = FPCBorderType.rrect,
     this.strokeCap = StrokeCap.butt,
-    this.pattern,
+    this.pattern = const [2, 2],
     this.padding,
     required this.child,
   });
@@ -28,19 +28,20 @@ class FPCDottedCard extends StatelessWidget {
   final double? borderWidth;
   final FPCBorderType borderType;
   final StrokeCap strokeCap;
-  final List<double>? pattern;
+  final List<double> pattern;
   final EdgeInsets? padding;
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCSize size = context.fpcSize;
 
     final Radius borderRadius =
         this.borderRadius ?? sizeScope.borderRadiusCard.bottomLeft;
     final double borderWidth = this.borderWidth ?? sizeScope.borderWidthCard;
-    final List<double> pattern = this.pattern ?? const [2, 2];
     final EdgeInsets padding = this.padding ?? size.paddingCard;
     final BoxConstraints constraints = this.constraints ??
         const BoxConstraints(
@@ -62,11 +63,10 @@ class FPCDottedCard extends StatelessWidget {
         strokeWidth: borderWidth,
         borderType: this.borderType.packageMap,
         strokeCap: this.strokeCap,
-        dashPattern: pattern,
+        dashPattern: this.pattern,
         padding: padding,
         borderPadding: EdgeInsets.zero,
-        child: Container(
-          alignment: Alignment.center,
+        child: ConstrainedBox(
           constraints: constraints,
           child: this.child,
         ),

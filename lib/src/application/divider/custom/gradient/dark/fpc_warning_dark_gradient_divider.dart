@@ -10,7 +10,9 @@ class FPCWarningDarkGradientDivider extends StatelessWidget {
   final double? height;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
 
     return FPCGradientDivider(

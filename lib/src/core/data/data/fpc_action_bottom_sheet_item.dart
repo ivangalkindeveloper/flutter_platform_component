@@ -6,14 +6,14 @@ class FPCActionBottomSheetItem {
     required this.title,
     this.postfix,
     required this.onPressed,
-    this.isDefaultAction = false,
-    this.isDestructiveAction = false,
+    this.isDefault = false,
+    this.isDestructive = false,
   });
 
   final Widget? prefix;
   final String title;
   final Widget? postfix;
   final VoidCallback onPressed;
-  final bool isDefaultAction;
-  final bool isDestructiveAction;
+  final bool isDefault;
+  final bool isDestructive;
 }

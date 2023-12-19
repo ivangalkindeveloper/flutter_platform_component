@@ -14,7 +14,9 @@ class FPCSuccessStoryIndicator extends StatelessWidget {
   final double value;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
 
     return FPCStoryIndicator(

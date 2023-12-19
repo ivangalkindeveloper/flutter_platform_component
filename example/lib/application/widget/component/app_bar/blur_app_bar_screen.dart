@@ -1,21 +1,21 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:example/application/widget/custom/config_section.dart';
 import 'package:example/application/widget/custom/dummy_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:gap/gap.dart';
 
 class BlurAppBarScreen extends StatelessWidget {
-  const BlurAppBarScreen({super.key});
+  const BlurAppBarScreen({
+    super.key,
+  });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
-    final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
       extendBodyBehindAppBar: true,
-
       backgroundColor: theme.backgroundScaffold,
       appBar: FPCBlurExpandedBottomSheetAppBar(
         context,
@@ -46,11 +46,9 @@ class BlurAppBarScreen extends StatelessWidget {
       //   title: "Blur White Always Screen",
       // ),
 
-      body: FPCListView(
+      body: const FPCListView(
         children: [
-          const ConfigSection(),
-          Gap(size.s16 * 2),
-          const DummyList(),
+          DummyList(),
         ],
       ),
     );

@@ -128,7 +128,9 @@ class _FPCGradientSegmentControlState<T>
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     if (this.widget.items.isEmpty) {
       throw const FPCItemsEmptyException();
     }
@@ -347,7 +349,9 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
@@ -419,7 +423,7 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
                   Positioned.fill(
                     child: FPCGradientMask(
                       gradient: borderGradient,
-                      child: Container(
+                      child: DecoratedBox(
                         decoration: ShapeDecoration(
                           shape: FPCCustomRoundedRectangleBorder(
                             topSide: BorderSide(
@@ -488,10 +492,12 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
             ),
           ),
           if ((index + 1) != this.length)
-            Container(
+            SizedBox(
               width: borderWidth,
-              decoration: BoxDecoration(
-                gradient: borderGradient,
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: borderGradient,
+                ),
               ),
             ),
         ],

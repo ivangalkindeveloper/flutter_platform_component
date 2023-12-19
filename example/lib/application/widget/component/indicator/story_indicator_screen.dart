@@ -1,11 +1,13 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:example/application/widget/custom/config_section.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 import 'dart:async';
 
 class StoryIndicatorScreen extends StatefulWidget {
-  const StoryIndicatorScreen({super.key});
+  const StoryIndicatorScreen({
+    super.key,
+  });
 
   @override
   State<StoryIndicatorScreen> createState() => _StoryIndicatorScreenState();
@@ -73,11 +75,13 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen>
       });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      appBar: FPCScreenAppBar(
+      appBar: AppBarConfig(
         context,
         title: "Story Indicator",
         onPressedBack: () => Navigator.pop(context),
@@ -95,8 +99,6 @@ class _StoryIndicatorScreenState extends State<StoryIndicatorScreen>
 
                   return FPCListView(
                     children: [
-                      const ConfigSection(),
-                      Gap(size.s16 / 2),
                       FPCPrimaryButton(
                         title: "Start",
                         onPressed: this._startTimer,

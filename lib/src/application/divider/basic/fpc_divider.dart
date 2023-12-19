@@ -12,16 +12,20 @@ class FPCDivider extends StatelessWidget {
   final double? height;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCSize size = context.fpcSize;
 
     final double height = this.height ?? (size.s10 / 10);
 
-    return Container(
+    return SizedBox(
       height: height,
-      decoration: BoxDecoration(
-        color: this.color,
-        borderRadius: BorderRadius.circular(height),
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: this.color,
+          borderRadius: BorderRadius.circular(height),
+        ),
       ),
     );
   }

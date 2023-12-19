@@ -16,19 +16,20 @@ class FPCAnimatedOpacityStack extends StatelessWidget {
   final Alignment? alignment;
 
   @override
-  Widget build(BuildContext context) {
-    return Stack(
-      alignment: this.alignment ?? Alignment.center,
-      children: [
-        FPCAnimatedOpacity(
-          condition: this.condition,
-          child: this.firstChild,
-        ),
-        FPCAnimatedOpacity(
-          condition: !this.condition,
-          child: this.secondChild,
-        ),
-      ],
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      Stack(
+        alignment: this.alignment ?? Alignment.center,
+        children: [
+          FPCAnimatedOpacity(
+            condition: this.condition,
+            child: this.firstChild,
+          ),
+          FPCAnimatedOpacity(
+            condition: !this.condition,
+            child: this.secondChild,
+          ),
+        ],
+      );
 }

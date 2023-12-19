@@ -1,10 +1,12 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:example/application/widget/custom/config_section.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class SegmentControlScreen extends StatefulWidget {
-  const SegmentControlScreen({super.key});
+  const SegmentControlScreen({
+    super.key,
+  });
 
   @override
   State<SegmentControlScreen> createState() => _SegmentControlScreenState();
@@ -30,11 +32,13 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
   bool _isDisabled = false;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      appBar: FPCScreenAppBar(
+      appBar: AppBarConfig(
         context,
         title: "Segment Control",
         onPressedBack: () => Navigator.pop(context),
@@ -44,8 +48,6 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
         child: FPCListView(
           childrenAlignment: CrossAxisAlignment.center,
           children: [
-            const ConfigSection(),
-            Gap(size.s16 / 2),
             FPCPrimaryButton(
               title: "validate",
               onPressed: () => this._formKey.currentState?.validate(),

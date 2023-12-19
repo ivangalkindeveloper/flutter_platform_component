@@ -22,7 +22,9 @@ class FPCAnimatedPositioned extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCAnimation animation = context.fpcAnimation;
     final IFPCDuration duration = context.fpcDuration;
 

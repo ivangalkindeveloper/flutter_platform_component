@@ -2,10 +2,14 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class FPCGreyCircularIndicator extends StatelessWidget {
-  const FPCGreyCircularIndicator({super.key});
+  const FPCGreyCircularIndicator({
+    super.key,
+  });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 

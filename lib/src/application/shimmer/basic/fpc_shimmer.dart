@@ -81,7 +81,9 @@ class _FPCShimmerState extends State<FPCShimmer>
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final Color color = this._isHighlight
         ? this.widget.highlightColor
         : this.widget.backgroundColor;

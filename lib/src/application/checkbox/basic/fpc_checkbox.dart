@@ -4,45 +4,14 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart' show Material, Checkbox, Colors;
 
 class FPCCheckbox extends FPCPlatformWidget {
-  FPCCheckbox({
-    super.key,
-    required bool? value,
-    required void Function(bool) onChanged,
-    required Color unselectedColor,
-    required Color selectedColor,
-    bool isDisabled = false,
-    Color? disabledColor,
-  }) : super(
-          cupertino: _FPCCheckboxCupertino(
-            key: key,
-            value: value,
-            onChanged: onChanged,
-            unselectedColor: unselectedColor,
-            selectedColor: selectedColor,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-          ),
-          material: _FPCCheckboxMaterial(
-            key: key,
-            value: value,
-            onChanged: onChanged,
-            unselectedColor: unselectedColor,
-            selectedColor: selectedColor,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-          ),
-        );
-}
-
-class _FPCCheckboxCupertino extends StatelessWidget {
-  const _FPCCheckboxCupertino({
+  const FPCCheckbox({
     super.key,
     required this.value,
     required this.onChanged,
     required this.unselectedColor,
     required this.selectedColor,
-    required this.isDisabled,
-    required this.disabledColor,
+    this.isDisabled = false,
+    this.disabledColor,
   });
 
   final bool? value;
@@ -53,7 +22,9 @@ class _FPCCheckboxCupertino extends StatelessWidget {
   final Color? disabledColor;
 
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
@@ -88,28 +59,11 @@ class _FPCCheckboxCupertino extends StatelessWidget {
       ),
     );
   }
-}
-
-class _FPCCheckboxMaterial extends StatelessWidget {
-  const _FPCCheckboxMaterial({
-    super.key,
-    required this.value,
-    required this.onChanged,
-    required this.unselectedColor,
-    required this.selectedColor,
-    required this.isDisabled,
-    required this.disabledColor,
-  });
-
-  final bool? value;
-  final void Function(bool) onChanged;
-  final Color unselectedColor;
-  final Color selectedColor;
-  final bool isDisabled;
-  final Color? disabledColor;
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 

@@ -6,52 +6,15 @@ import 'package:flutter/material.dart'
 import 'package:flutter/cupertino.dart' show CupertinoTabBar;
 
 class FPCBottomNavigationBar extends FPCPlatformWidget {
-  FPCBottomNavigationBar({
-    super.key,
-    required int index,
-    required ValueChanged<int> onPressed,
-    Color? backgroundColor,
-    Color? unselectedColor,
-    TextStyle? unselectedStyle,
-    Color? selectedColor,
-    TextStyle? selectedStyle,
-    required List<BottomNavigationBarItem> items,
-  }) : super(
-          cupertino: _FPCBottomNavigationBarCupertino(
-            key: key,
-            index: index,
-            onPressed: onPressed,
-            backgroundColor: backgroundColor,
-            unselectedColor: unselectedColor,
-            unselectedStyle: unselectedStyle,
-            selectedColor: selectedColor,
-            selectedStyle: selectedStyle,
-            items: items,
-          ),
-          material: _FPCBottomNavigationBarMaterial(
-            key: key,
-            index: index,
-            onPressed: onPressed,
-            backgroundColor: backgroundColor,
-            unselectedColor: unselectedColor,
-            unselectedStyle: unselectedStyle,
-            selectedColor: selectedColor,
-            selectedStyle: selectedStyle,
-            items: items,
-          ),
-        );
-}
-
-class _FPCBottomNavigationBarCupertino extends StatelessWidget {
-  const _FPCBottomNavigationBarCupertino({
+  const FPCBottomNavigationBar({
     super.key,
     required this.index,
     required this.onPressed,
-    required this.backgroundColor,
-    required this.unselectedColor,
-    required this.unselectedStyle,
-    required this.selectedColor,
-    required this.selectedStyle,
+    this.backgroundColor,
+    this.unselectedColor,
+    this.unselectedStyle,
+    this.selectedColor,
+    this.selectedStyle,
     required this.items,
   });
 
@@ -65,7 +28,9 @@ class _FPCBottomNavigationBarCupertino extends StatelessWidget {
   final List<BottomNavigationBarItem> items;
 
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
 
     final Color backgroundColor =
@@ -88,32 +53,11 @@ class _FPCBottomNavigationBarCupertino extends StatelessWidget {
       activeColor: selectedColor,
     );
   }
-}
-
-class _FPCBottomNavigationBarMaterial extends StatelessWidget {
-  const _FPCBottomNavigationBarMaterial({
-    super.key,
-    required this.index,
-    required this.onPressed,
-    required this.backgroundColor,
-    required this.unselectedColor,
-    required this.unselectedStyle,
-    required this.selectedColor,
-    required this.selectedStyle,
-    required this.items,
-  });
-
-  final int index;
-  final ValueChanged<int> onPressed;
-  final Color? backgroundColor;
-  final Color? unselectedColor;
-  final TextStyle? unselectedStyle;
-  final Color? selectedColor;
-  final TextStyle? selectedStyle;
-  final List<BottomNavigationBarItem> items;
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 

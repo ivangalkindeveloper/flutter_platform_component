@@ -1,9 +1,12 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class AnimatedFadeOutScreen extends StatefulWidget {
-  const AnimatedFadeOutScreen({super.key});
+  const AnimatedFadeOutScreen({
+    super.key,
+  });
 
   @override
   State<AnimatedFadeOutScreen> createState() => _AnimatedFadeOutScreenState();
@@ -13,12 +16,14 @@ class _AnimatedFadeOutScreenState extends State<AnimatedFadeOutScreen> {
   bool _action = false;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      appBar: FPCScreenAppBar(
+      appBar: AppBarConfig(
         context,
         title: "Animated Fade Out",
         onPressedBack: () => Navigator.pop(context),

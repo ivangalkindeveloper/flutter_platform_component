@@ -3,23 +3,28 @@ enum FPCBadgePosition {
   topStart,
   topEnd,
   bottomEnd,
-  bottomStart,
+  bottomStart;
 }
 
 enum FPCOpenContainerTransitionType {
   fade,
-  fadeThrough,
+  fadeThrough;
 }
 
 enum FPCSwitcherTransitionType {
   vertical,
   horizontal,
-  scaled,
+  scaled;
 }
 
 enum FPCBorderType {
   circle,
   rrect,
   rect,
-  oval,
+  oval;
+}
+
+enum FPCPopUpMenuAlignment {
+  start,
+  center;
 }

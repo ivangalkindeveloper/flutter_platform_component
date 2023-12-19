@@ -5,72 +5,20 @@ import 'package:flutter/material.dart' show ElevatedButton, Colors;
 import 'package:flutter/cupertino.dart' show CupertinoButton;
 
 class FPCGradientSelectCard extends FPCPlatformWidget {
-  FPCGradientSelectCard({
-    super.key,
-    required Gradient backgroundGradient,
-    Color? splashColor,
-    double? height,
-    double? width,
-    BoxConstraints? constraints,
-    BorderRadius? borderRadius,
-    Gradient? borderGradient,
-    double? borderWidth,
-    EdgeInsets? padding,
-    required VoidCallback onPressed,
-    bool isDisabled = false,
-    Color? disabledColor,
-    required Widget child,
-  }) : super(
-          cupertino: _FPCGradientSelectCardCupertino(
-            key: key,
-            backgroundGradient: backgroundGradient,
-            splashColor: splashColor,
-            height: height,
-            width: width,
-            constraints: constraints,
-            borderRadius: borderRadius,
-            borderGradient: borderGradient,
-            borderWidth: borderWidth,
-            padding: padding,
-            onPressed: onPressed,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-            child: child,
-          ),
-          material: _FPCGradientSelectCardMaterial(
-            key: key,
-            backgroundGradient: backgroundGradient,
-            splashColor: splashColor,
-            height: height,
-            width: width,
-            constraints: constraints,
-            borderRadius: borderRadius,
-            borderGradient: borderGradient,
-            borderWidth: borderWidth,
-            padding: padding,
-            onPressed: onPressed,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-            child: child,
-          ),
-        );
-}
-
-class _FPCGradientSelectCardCupertino extends StatelessWidget {
-  const _FPCGradientSelectCardCupertino({
+  const FPCGradientSelectCard({
     super.key,
     required this.backgroundGradient,
-    required this.splashColor,
-    required this.height,
-    required this.width,
-    required this.constraints,
-    required this.borderRadius,
-    required this.borderGradient,
-    required this.borderWidth,
-    required this.padding,
+    this.splashColor,
+    this.height,
+    this.width,
+    this.constraints,
+    this.borderRadius,
+    this.borderGradient,
+    this.borderWidth,
+    this.padding,
     required this.onPressed,
-    required this.isDisabled,
-    required this.disabledColor,
+    this.isDisabled = false,
+    this.disabledColor,
     required this.child,
   });
 
@@ -89,7 +37,9 @@ class _FPCGradientSelectCardCupertino extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
 
     final BorderRadius borderRadius =
@@ -120,42 +70,11 @@ class _FPCGradientSelectCardCupertino extends StatelessWidget {
       ],
     );
   }
-}
-
-class _FPCGradientSelectCardMaterial extends StatelessWidget {
-  const _FPCGradientSelectCardMaterial({
-    super.key,
-    required this.backgroundGradient,
-    required this.splashColor,
-    required this.height,
-    required this.width,
-    required this.constraints,
-    required this.borderRadius,
-    required this.borderGradient,
-    required this.borderWidth,
-    required this.padding,
-    required this.onPressed,
-    required this.isDisabled,
-    required this.disabledColor,
-    required this.child,
-  });
-
-  final Gradient backgroundGradient;
-  final Color? splashColor;
-  final double? height;
-  final double? width;
-  final BoxConstraints? constraints;
-  final BorderRadius? borderRadius;
-  final Gradient? borderGradient;
-  final double? borderWidth;
-  final EdgeInsets? padding;
-  final VoidCallback onPressed;
-  final bool isDisabled;
-  final Color? disabledColor;
-  final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCTheme theme = context.fpcTheme;
 

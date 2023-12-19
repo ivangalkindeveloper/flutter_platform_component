@@ -1,7 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:modal_bottom_sheet/modal_bottom_sheet.dart'
+import 'package:flutter_platform_component/package/modal_bottom_sheet/material_with_modal_page_route.dart'
     show MaterialWithModalsPageRoute;
 import 'package:flutter/material.dart' show MaterialPageRoute;
 
@@ -18,13 +18,19 @@ class FPCPageRoute {
         cupertino: MaterialWithModalsPageRoute(
           maintainState: maintainState,
           fullscreenDialog: fullscreenDialog,
-          builder: (BuildContext context) => child,
+          builder: (
+            BuildContext context,
+          ) =>
+              child,
         ),
         material: MaterialPageRoute(
           maintainState: maintainState,
           fullscreenDialog: fullscreenDialog,
           allowSnapshotting: allowSnapshotting,
-          builder: (BuildContext context) => child,
+          builder: (
+            BuildContext context,
+          ) =>
+              child,
         ),
       );
 
@@ -40,13 +46,19 @@ class FPCPageRoute {
         cupertino: MaterialWithModalsPageRoute(
           maintainState: maintainState,
           fullscreenDialog: fullscreenDialog,
-          builder: (BuildContext context) => child,
+          builder: (
+            BuildContext context,
+          ) =>
+              child,
         ),
         material: MaterialPageRoute(
           maintainState: maintainState,
           fullscreenDialog: fullscreenDialog,
           allowSnapshotting: allowSnapshotting,
-          builder: (BuildContext context) => child,
+          builder: (
+            BuildContext context,
+          ) =>
+              child,
         ),
       );
 

@@ -13,8 +13,6 @@ class FPCPlatformUtility {
         return cupertino;
       case FPCPlatform.android:
         return material;
-      default:
-        return material;
     }
   }
 
@@ -23,20 +21,18 @@ class FPCPlatformUtility {
     required Cupertino cupertino,
     required Material material,
   }) {
-    final FPCPlatform platform = context.fpcPlatform;
-
-    switch (platform) {
+    switch (context.fpcPlatform) {
       case FPCPlatform.iOS:
         return cupertino;
       case FPCPlatform.android:
         return material;
-      default:
-        return material;
     }
   }
 
-  static bool get isMobile => [
+  static bool get isIO => [
         TargetPlatform.iOS,
         TargetPlatform.android,
-      ].contains(defaultTargetPlatform);
+      ].contains(
+        defaultTargetPlatform,
+      );
 }

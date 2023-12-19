@@ -4,10 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class MainTimeOfDay extends StatelessWidget {
-  const MainTimeOfDay({super.key});
+  const MainTimeOfDay({
+    super.key,
+  });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTimeOfDay timeOfDay = context.fpcTimeOfDay;
     final IFPCSize size = context.fpcSize;
 

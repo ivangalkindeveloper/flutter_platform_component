@@ -1,26 +1,28 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:example/application/widget/custom/config_section.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class BlurScreen extends StatelessWidget {
-  const BlurScreen({super.key});
+  const BlurScreen({
+    super.key,
+  });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      appBar: FPCScreenAppBar(
+      appBar: AppBarConfig(
         context,
         title: "Blur",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: FPCListView(
         children: [
-          const ConfigSection(),
-          Gap(size.s16 * 2),
           Padding(
             padding: EdgeInsets.all(size.s16),
             child: Stack(
@@ -31,15 +33,19 @@ class BlurScreen extends StatelessWidget {
                     Row(
                       children: [
                         Expanded(
-                          child: Container(
+                          child: SizedBox(
                             height: size.s32 * 2,
-                            color: theme.primary,
+                            child: ColoredBox(
+                              color: theme.primary,
+                            ),
                           ),
                         ),
                         Expanded(
-                          child: Container(
+                          child: SizedBox(
                             height: size.s32 * 2,
-                            color: theme.info,
+                            child: ColoredBox(
+                              color: theme.info,
+                            ),
                           ),
                         ),
                       ],
@@ -47,15 +53,19 @@ class BlurScreen extends StatelessWidget {
                     Row(
                       children: [
                         Expanded(
-                          child: Container(
+                          child: SizedBox(
                             height: size.s32 * 2,
-                            color: theme.warning,
+                            child: ColoredBox(
+                              color: theme.warning,
+                            ),
                           ),
                         ),
                         Expanded(
-                          child: Container(
+                          child: SizedBox(
                             height: size.s32 * 2,
-                            color: theme.danger,
+                            child: ColoredBox(
+                              color: theme.danger,
+                            ),
                           ),
                         ),
                       ],
@@ -63,7 +73,9 @@ class BlurScreen extends StatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsets.all(size.s16),
+                  padding: EdgeInsets.all(
+                    size.s16,
+                  ),
                   child: FPCBlurCard(
                     child: Gap(
                       size.s32,

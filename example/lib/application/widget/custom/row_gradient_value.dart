@@ -13,7 +13,9 @@ class RowGradientValue extends StatelessWidget {
   final Gradient gradient;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCSize size = context.fpcSize;
 
     return Row(

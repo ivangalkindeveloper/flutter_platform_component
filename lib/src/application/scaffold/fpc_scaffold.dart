@@ -6,53 +6,16 @@ import 'package:flutter/cupertino.dart'
 import 'package:flutter/material.dart' show Scaffold;
 
 class FPCScaffold extends FPCPlatformWidget {
-  FPCScaffold({
+  const FPCScaffold({
     super.key,
-    Color? backgroundColor,
-    bool resizeToAvoidBottomInset = true,
-    bool extendBodyBehindAppBar = false,
-    bool extendBody = false,
-    ObstructingPreferredSizeWidget? appBar,
-    required Widget body,
-    Widget? bottomNavigationBar,
-    String? restorationId,
-  }) : super(
-          cupertino: _FPCScaffoldCupertino(
-            key: key,
-            backgroundColor: backgroundColor,
-            resizeToAvoidBottomInset: resizeToAvoidBottomInset,
-            extendBodyBehindAppBar: extendBodyBehindAppBar,
-            extendBody: extendBody,
-            appBar: appBar,
-            body: body,
-            bottomNavigationBar: bottomNavigationBar,
-            restorationId: restorationId,
-          ),
-          material: _FPCScaffoldMaterial(
-            key: key,
-            backgroundColor: backgroundColor,
-            resizeToAvoidBottomInset: resizeToAvoidBottomInset,
-            extendBodyBehindAppBar: extendBodyBehindAppBar,
-            extendBody: extendBody,
-            appBar: appBar,
-            body: body,
-            bottomNavigationBar: bottomNavigationBar,
-            restorationId: restorationId,
-          ),
-        );
-}
-
-class _FPCScaffoldCupertino extends StatelessWidget {
-  const _FPCScaffoldCupertino({
-    super.key,
-    required this.backgroundColor,
-    required this.resizeToAvoidBottomInset,
-    required this.extendBodyBehindAppBar,
-    required this.extendBody,
-    required this.appBar,
+    this.backgroundColor,
+    this.resizeToAvoidBottomInset = true,
+    this.extendBodyBehindAppBar = false,
+    this.extendBody = false,
+    this.appBar,
     required this.body,
-    required this.bottomNavigationBar,
-    required this.restorationId,
+    this.bottomNavigationBar,
+    this.restorationId,
   });
 
   final Color? backgroundColor;
@@ -65,7 +28,9 @@ class _FPCScaffoldCupertino extends StatelessWidget {
   final String? restorationId;
 
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
 
     final Color backgroundColor =
@@ -89,32 +54,11 @@ class _FPCScaffoldCupertino extends StatelessWidget {
       ),
     );
   }
-}
-
-class _FPCScaffoldMaterial extends StatelessWidget {
-  const _FPCScaffoldMaterial({
-    super.key,
-    required this.backgroundColor,
-    required this.resizeToAvoidBottomInset,
-    required this.extendBodyBehindAppBar,
-    required this.extendBody,
-    required this.appBar,
-    required this.body,
-    required this.bottomNavigationBar,
-    required this.restorationId,
-  });
-
-  final Color? backgroundColor;
-  final bool resizeToAvoidBottomInset;
-  final bool extendBodyBehindAppBar;
-  final bool extendBody;
-  final ObstructingPreferredSizeWidget? appBar;
-  final Widget body;
-  final Widget? bottomNavigationBar;
-  final String? restorationId;
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
 
     final Color backgroundColor =

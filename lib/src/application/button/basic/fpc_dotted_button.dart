@@ -6,76 +6,21 @@ import 'package:flutter/material.dart' show ElevatedButton, Colors;
 import 'package:flutter/cupertino.dart' show CupertinoButton;
 
 class FPCDottedButton extends FPCPlatformWidget {
-  FPCDottedButton({
+  const FPCDottedButton({
     super.key,
-    Color? backgroundColor,
-    Color? splashColor,
-    double? height,
-    Radius? borderRadius,
-    required Color borderColor,
-    double? borderWidth,
-    FPCBorderType borderType = FPCBorderType.rrect,
-    StrokeCap strokeCap = StrokeCap.butt,
-    List<double>? pattern,
-    EdgeInsets? padding,
-    required VoidCallback onPressed,
-    bool isDisabled = false,
-    Color? disabledColor,
-    required Widget child,
-  }) : super(
-          cupertino: _FPCDottedButtonCupertino(
-            key: key,
-            backgroundColor: backgroundColor,
-            splashColor: splashColor,
-            height: height,
-            borderRadius: borderRadius,
-            borderColor: borderColor,
-            borderWidth: borderWidth,
-            borderType: borderType,
-            strokeCap: strokeCap,
-            pattern: pattern,
-            padding: padding,
-            onPressed: onPressed,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-            child: child,
-          ),
-          material: _FPCDottedButtonMaterial(
-            key: key,
-            backgroundColor: backgroundColor,
-            splashColor: splashColor,
-            height: height,
-            borderRadius: borderRadius,
-            borderColor: borderColor,
-            borderWidth: borderWidth,
-            borderType: borderType,
-            strokeCap: strokeCap,
-            pattern: pattern,
-            padding: padding,
-            onPressed: onPressed,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-            child: child,
-          ),
-        );
-}
-
-class _FPCDottedButtonCupertino extends StatelessWidget {
-  const _FPCDottedButtonCupertino({
-    super.key,
-    required this.backgroundColor,
+    this.backgroundColor,
     required this.splashColor,
-    required this.height,
-    required this.borderRadius,
+    this.height,
+    this.borderRadius,
     required this.borderColor,
-    required this.borderWidth,
-    required this.borderType,
-    required this.strokeCap,
-    required this.pattern,
-    required this.padding,
+    this.borderWidth,
+    this.borderType = FPCBorderType.rrect,
+    this.strokeCap = StrokeCap.butt,
+    this.pattern = const [2, 2],
+    this.padding,
     required this.onPressed,
-    required this.isDisabled,
-    required this.disabledColor,
+    this.isDisabled = false,
+    this.disabledColor,
     required this.child,
   });
 
@@ -87,7 +32,7 @@ class _FPCDottedButtonCupertino extends StatelessWidget {
   final double? borderWidth;
   final FPCBorderType borderType;
   final StrokeCap strokeCap;
-  final List<double>? pattern;
+  final List<double> pattern;
   final EdgeInsets? padding;
   final VoidCallback onPressed;
   final bool isDisabled;
@@ -95,7 +40,9 @@ class _FPCDottedButtonCupertino extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCSize size = context.fpcSize;
 
@@ -103,7 +50,6 @@ class _FPCDottedButtonCupertino extends StatelessWidget {
     final Radius borderRadius =
         this.borderRadius ?? sizeScope.borderRadiusButton.bottomLeft;
     final double borderWidth = this.borderWidth ?? sizeScope.borderWidthButton;
-    final List<double> pattern = this.pattern ?? const [2, 2];
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
           horizontal: size.s16,
@@ -127,7 +73,7 @@ class _FPCDottedButtonCupertino extends StatelessWidget {
             strokeWidth: borderWidth,
             borderType: this.borderType.packageMap,
             strokeCap: this.strokeCap,
-            dashPattern: pattern,
+            dashPattern: this.pattern,
             padding: EdgeInsets.zero,
             borderPadding: EdgeInsets.zero,
             child: FPCAnimatedContainer(
@@ -144,44 +90,11 @@ class _FPCDottedButtonCupertino extends StatelessWidget {
       ],
     );
   }
-}
-
-class _FPCDottedButtonMaterial extends StatelessWidget {
-  const _FPCDottedButtonMaterial({
-    super.key,
-    required this.backgroundColor,
-    required this.splashColor,
-    required this.height,
-    required this.borderRadius,
-    required this.borderColor,
-    required this.borderWidth,
-    required this.borderType,
-    required this.strokeCap,
-    required this.pattern,
-    required this.padding,
-    required this.onPressed,
-    required this.isDisabled,
-    required this.disabledColor,
-    required this.child,
-  });
-
-  final Color? backgroundColor;
-  final Color? splashColor;
-  final double? height;
-  final Radius? borderRadius;
-  final Color borderColor;
-  final double? borderWidth;
-  final FPCBorderType borderType;
-  final StrokeCap strokeCap;
-  final List<double>? pattern;
-  final EdgeInsets? padding;
-  final VoidCallback onPressed;
-  final bool isDisabled;
-  final Color? disabledColor;
-  final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
@@ -191,7 +104,6 @@ class _FPCDottedButtonMaterial extends StatelessWidget {
     final Radius borderRadius =
         this.borderRadius ?? sizeScope.borderRadiusButton.bottomLeft;
     final double borderWidth = this.borderWidth ?? sizeScope.borderWidthButton;
-    final List<double> pattern = this.pattern ?? const [2, 2];
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
           horizontal: size.s16,
@@ -217,7 +129,7 @@ class _FPCDottedButtonMaterial extends StatelessWidget {
             strokeWidth: borderWidth,
             borderType: this.borderType.packageMap,
             strokeCap: this.strokeCap,
-            dashPattern: pattern,
+            dashPattern: this.pattern,
             padding: EdgeInsets.zero,
             borderPadding: EdgeInsets.zero,
             child: ElevatedButton(

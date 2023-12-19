@@ -5,7 +5,7 @@ class FPCDefaultHaptic implements IFPCHaptic {
   const FPCDefaultHaptic();
 
   Future<void> _vibrate(FeedbackType type) async {
-    if (FPCPlatformUtility.isMobile && await Vibrate.canVibrate) {
+    if (FPCPlatformUtility.isIO && await Vibrate.canVibrate) {
       Vibrate.feedback(type);
     }
   }

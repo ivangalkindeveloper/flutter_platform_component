@@ -8,9 +8,12 @@ class FPCNestedWillPopScope extends StatefulWidget {
   });
 
   final Widget child;
+  // ignore: deprecated_member_use
   final WillPopCallback onWillPop;
 
-  static State<FPCNestedWillPopScope>? of(BuildContext context) =>
+  static State<FPCNestedWillPopScope>? of(
+    BuildContext context,
+  ) =>
       context.findAncestorStateOfType<_FPCNestedWillPopScopeState>();
 
   @override
@@ -39,8 +42,10 @@ class _FPCNestedWillPopScopeState extends State<FPCNestedWillPopScope> {
   }
 
   void updateRouteCallback() {
+    // ignore: deprecated_member_use
     this._route?.removeScopedWillPopCallback(onWillPop);
     this._route = ModalRoute.of(context);
+    // ignore: deprecated_member_use
     this._route?.addScopedWillPopCallback(onWillPop);
   }
 
@@ -57,10 +62,14 @@ class _FPCNestedWillPopScopeState extends State<FPCNestedWillPopScope> {
 
   @override
   void dispose() {
+    // ignore: deprecated_member_use
     this._route?.removeScopedWillPopCallback(onWillPop);
     super.dispose();
   }
 
   @override
-  Widget build(BuildContext context) => this.widget.child;
+  Widget build(
+    BuildContext context,
+  ) =>
+      this.widget.child;
 }

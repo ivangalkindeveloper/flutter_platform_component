@@ -1,10 +1,12 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:example/application/widget/custom/config_section.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class ButtonScreen extends StatefulWidget {
-  const ButtonScreen({super.key});
+  const ButtonScreen({
+    super.key,
+  });
 
   @override
   State<ButtonScreen> createState() => _ButtonScreenState();
@@ -15,19 +17,19 @@ class _ButtonScreenState extends State<ButtonScreen> {
   bool _isDisabled = false;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      appBar: FPCScreenAppBar(
+      appBar: AppBarConfig(
         context,
         title: "Button",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: FPCListView(
         children: [
-          const ConfigSection(),
-          Gap(size.s16 / 2),
           FPCPrimaryButton(
             title: "isLoading",
             onPressed: () => setState(() => this._isLoading = !this._isLoading),

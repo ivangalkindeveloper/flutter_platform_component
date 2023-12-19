@@ -1,9 +1,11 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:example/application/widget/custom/config_section.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:flutter/widgets.dart';
 
 class NavigatorScreen extends StatelessWidget {
-  const NavigatorScreen({super.key});
+  const NavigatorScreen({
+    super.key,
+  });
 
   static final GlobalKey<NavigatorState> navigatorKey =
       GlobalKey<NavigatorState>();
@@ -28,37 +30,33 @@ class NavigatorScreen extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
-    return FPCScaffold(
-      appBar: FPCScreenAppBar(
-        context,
-        title: "Navigator",
-        onPressedBack: () => Navigator.pop(context),
-      ),
-      body: SafeArea(
-        bottom: false,
-        child: Column(
-          children: [
-            const ConfigSection(),
-            Expanded(
-              child: FPCNavigator(
-                navigatorKey: navigatorKey,
-                initialRoute: page_1,
-                onGenerateRoute: _onGenerateRoute,
-              ),
-            ),
-          ],
+  Widget build(
+    BuildContext context,
+  ) =>
+      FPCScaffold(
+        appBar: AppBarConfig(
+          context,
+          title: "Navigator",
+          onPressedBack: () => Navigator.pop(context),
         ),
-      ),
-    );
-  }
+        body: SafeArea(
+          bottom: false,
+          child: FPCNavigator(
+            navigatorKey: navigatorKey,
+            initialRoute: page_1,
+            onGenerateRoute: _onGenerateRoute,
+          ),
+        ),
+      );
 }
 
 class _Page1 extends StatelessWidget {
   const _Page1();
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
@@ -86,20 +84,21 @@ class _Page2 extends StatelessWidget {
   const _Page2();
 
   @override
-  Widget build(BuildContext context) {
-    return FPCScaffold(
-      appBar: FPCScreenAppBar(
-        context,
-        title: "Page 2",
-        onPressedBack: () =>
-            Navigator.pop(NavigatorScreen.navigatorKey.currentContext!),
-      ),
-      body: Center(
-        child: FPCText.regular16Black(
+  Widget build(
+    BuildContext context,
+  ) =>
+      FPCScaffold(
+        appBar: FPCScreenAppBar(
           context,
-          "Page 2",
+          title: "Page 2",
+          onPressedBack: () =>
+              Navigator.pop(NavigatorScreen.navigatorKey.currentContext!),
         ),
-      ),
-    );
-  }
+        body: Center(
+          child: FPCText.regular16Black(
+            context,
+            "Page 2",
+          ),
+        ),
+      );
 }

@@ -26,13 +26,14 @@ class _FPCHapticState extends State<_FPCHapticWidget> {
       setState(() => this._haptic = haptic);
 
   @override
-  Widget build(BuildContext context) {
-    return FPCHapticScope(
-      haptic: this._haptic,
-      changeHaptic: this._changeHaptic,
-      child: this.widget.child,
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      FPCHapticScope(
+        haptic: this._haptic,
+        changeHaptic: this._changeHaptic,
+        child: this.widget.child,
+      );
 }
 
 class FPCHapticScope extends InheritedWidget with FPCScopeMixin {
@@ -46,10 +47,14 @@ class FPCHapticScope extends InheritedWidget with FPCScopeMixin {
   final IFPCHaptic haptic;
   final void Function(IFPCHaptic haptic) changeHaptic;
 
-  static FPCHapticScope of(BuildContext context) =>
+  static FPCHapticScope of(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.of<FPCHapticScope>(context);
 
-  static FPCHapticScope? maybeOf(BuildContext context) =>
+  static FPCHapticScope? maybeOf(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.maybeOf<FPCHapticScope>(context);
 
   @override

@@ -74,22 +74,23 @@ class _FPCCupertinoNavigatorState extends State<FPCCupertinoNavigator> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Navigator(
-      key: widget.navigatorKey,
-      onPopPage: widget.onPopPage,
-      initialRoute: widget.initialRoute,
-      onGenerateInitialRoutes: widget.onGenerateInitialRoutes,
-      onGenerateRoute: _onGenerateRoute,
-      onUnknownRoute: _onUnknownRoute,
-      transitionDelegate: widget.transitionDelegate,
-      reportsRouteUpdateToEngine: widget.reportsRouteUpdateToEngine,
-      clipBehavior: widget.clipBehavior,
-      observers: _navigatorObservers,
-      requestFocus: widget.requestFocus,
-      restorationScopeId: widget.restorationScopeId,
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      Navigator(
+        key: widget.navigatorKey,
+        onPopPage: widget.onPopPage,
+        initialRoute: widget.initialRoute,
+        onGenerateInitialRoutes: widget.onGenerateInitialRoutes,
+        onGenerateRoute: _onGenerateRoute,
+        onUnknownRoute: _onUnknownRoute,
+        transitionDelegate: widget.transitionDelegate,
+        reportsRouteUpdateToEngine: widget.reportsRouteUpdateToEngine,
+        clipBehavior: widget.clipBehavior,
+        observers: _navigatorObservers,
+        requestFocus: widget.requestFocus,
+        restorationScopeId: widget.restorationScopeId,
+      );
 
   Route<dynamic>? _onGenerateRoute(RouteSettings settings) {
     final String? name = settings.name;

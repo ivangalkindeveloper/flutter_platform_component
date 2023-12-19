@@ -1,11 +1,12 @@
-import 'package:example/application/widget/custom/config_section.dart';
-import 'package:example/application/widget/custom/dummy_list.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
+import 'package:example/application/widget/custom/dummy_list.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
 class BlurBottomNavigationBarScreen extends StatefulWidget {
-  const BlurBottomNavigationBarScreen({super.key});
+  const BlurBottomNavigationBarScreen({
+    super.key,
+  });
 
   @override
   State<BlurBottomNavigationBarScreen> createState() =>
@@ -17,7 +18,9 @@ class _BlurBottomNavigationBarScreenState
   int _index = 0;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
@@ -26,16 +29,14 @@ class _BlurBottomNavigationBarScreenState
     return FPCScaffold(
       extendBody: true,
       backgroundColor: theme.backgroundScaffold,
-      appBar: FPCScreenAppBar(
+      appBar: AppBarConfig(
         context,
         title: "Blur Bottom Navigation Bar",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FPCListView(
+      body: const FPCListView(
         children: [
-          const ConfigSection(),
-          Gap(size.s16 * 2),
-          const DummyList(),
+          DummyList(),
         ],
       ),
       bottomNavigationBar: FPCBlurBottomNavigationBar(

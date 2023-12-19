@@ -43,7 +43,9 @@ class FPCCounterBadge extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCAnimation animation = context.fpcAnimation;
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCDuration duration = context.fpcDuration;
@@ -88,17 +90,27 @@ class FPCCounterBadge extends StatelessWidget {
         badgeColor: Colors.transparent,
         padding: EdgeInsets.zero,
       ),
-      badgeContent: Container(
-        alignment: Alignment.center,
+      badgeContent: Padding(
         padding: padding,
-        decoration: BoxDecoration(
-          color: this.color,
-          borderRadius: BorderRadius.circular(size.s16 * 2),
-        ),
-        constraints: BoxConstraints(minWidth: size.s10 * 2),
-        child: Text(
-          count,
-          style: countStyle,
+        child: ConstrainedBox(
+          constraints: BoxConstraints(minWidth: size.s10 * 2),
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              color: this.color,
+              borderRadius: BorderRadius.circular(size.s16 * 2),
+            ),
+            child: Center(
+              child: Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: size.s16 / 4,
+                ),
+                child: Text(
+                  count,
+                  style: countStyle,
+                ),
+              ),
+            ),
+          ),
         ),
       ),
       child: this.child,

@@ -40,47 +40,75 @@ class FlutterPlatformComponent extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
-    return FPCStateScopeNester(
-      stateScopes: [
-        (Widget nesterChild) => _FPCAnimationWidget(
-              animation: this.animation,
-              child: nesterChild,
-            ),
-        (Widget nesterChild) => _FPCTextStyleWidget(
-              textStyle: this.textStyle,
-              child: nesterChild,
-            ),
-        (Widget nesterChild) => _FPCTimeOfDayWidget(
-              timeOfDay: this.timeOfDay,
-              child: nesterChild,
-            ),
-        (Widget nesterChild) => _FPCDateTimeWidget(
-              dateTime: this.dateTime,
-              child: nesterChild,
-            ),
-        (Widget nesterChild) => _FPCDurationWidget(
-              duration: this.duration,
-              child: nesterChild,
-            ),
-        (Widget nesterChild) => _FPCPlatformWidget(
-              platform: this.platform,
-              child: nesterChild,
-            ),
-        (Widget nesterChild) => _FPCHapticWidget(
-              haptic: this.haptic,
-              child: nesterChild,
-            ),
-        (Widget nesterChild) => _FPCThemeWidget(
-              theme: this.theme,
-              child: nesterChild,
-            ),
-        (Widget nesterChild) => _FPCSizeWidget(
-              size: this.size,
-              child: nesterChild,
-            ),
-      ],
-      child: this.child,
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      FPCStateScopeNester(
+        stateScopes: [
+          (
+            Widget child,
+          ) =>
+              _FPCAnimationWidget(
+                animation: this.animation,
+                child: child,
+              ),
+          (
+            Widget child,
+          ) =>
+              _FPCTextStyleWidget(
+                textStyle: this.textStyle,
+                child: child,
+              ),
+          (
+            Widget child,
+          ) =>
+              _FPCTimeOfDayWidget(
+                timeOfDay: this.timeOfDay,
+                child: child,
+              ),
+          (
+            Widget child,
+          ) =>
+              _FPCDateTimeWidget(
+                dateTime: this.dateTime,
+                child: child,
+              ),
+          (
+            Widget child,
+          ) =>
+              _FPCDurationWidget(
+                duration: this.duration,
+                child: child,
+              ),
+          (
+            Widget child,
+          ) =>
+              _FPCPlatformWidget(
+                platform: this.platform,
+                child: child,
+              ),
+          (
+            Widget child,
+          ) =>
+              _FPCHapticWidget(
+                haptic: this.haptic,
+                child: child,
+              ),
+          (
+            Widget child,
+          ) =>
+              _FPCThemeWidget(
+                theme: this.theme,
+                child: child,
+              ),
+          (
+            Widget child,
+          ) =>
+              _FPCSizeWidget(
+                size: this.size,
+                child: child,
+              ),
+        ],
+        child: this.child,
+      );
 }

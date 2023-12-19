@@ -5,44 +5,13 @@ import 'package:flutter/cupertino.dart' show CupertinoButton;
 import 'package:flutter/material.dart' show IconButton;
 
 class FPCKeyboardButton extends FPCPlatformWidget {
-  FPCKeyboardButton({
+  const FPCKeyboardButton({
     super.key,
-    Color? splashColor,
-    double? height,
-    required VoidCallback onPressed,
-    bool isDisabled = false,
-    Color? disabledColor,
-    required Widget child,
-  }) : super(
-          cupertino: _FPCKeyboardButtonCupertino(
-            key: key,
-            splashColor: splashColor,
-            height: height,
-            onPressed: onPressed,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-            child: child,
-          ),
-          material: _FPCKeyboardButtonMaterial(
-            key: key,
-            splashColor: splashColor,
-            height: height,
-            onPressed: onPressed,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-            child: child,
-          ),
-        );
-}
-
-class _FPCKeyboardButtonCupertino extends StatelessWidget {
-  const _FPCKeyboardButtonCupertino({
-    super.key,
-    required this.splashColor,
-    required this.height,
+    this.splashColor,
+    this.height,
     required this.onPressed,
-    required this.isDisabled,
-    required this.disabledColor,
+    this.isDisabled = false,
+    this.disabledColor,
     required this.child,
   });
 
@@ -54,7 +23,9 @@ class _FPCKeyboardButtonCupertino extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final IFPCHaptic haptic = context.fpcHaptic;
     final IFPCSize size = context.fpcSize;
 
@@ -84,28 +55,11 @@ class _FPCKeyboardButtonCupertino extends StatelessWidget {
       ),
     );
   }
-}
-
-class _FPCKeyboardButtonMaterial extends StatelessWidget {
-  const _FPCKeyboardButtonMaterial({
-    super.key,
-    required this.splashColor,
-    required this.height,
-    required this.onPressed,
-    required this.isDisabled,
-    required this.disabledColor,
-    required this.child,
-  });
-
-  final Color? splashColor;
-  final double? height;
-  final VoidCallback onPressed;
-  final bool isDisabled;
-  final Color? disabledColor;
-  final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCHaptic haptic = context.fpcHaptic;
     final IFPCSize size = context.fpcSize;

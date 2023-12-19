@@ -4,12 +4,12 @@ class FPCDialogItem {
   const FPCDialogItem({
     required this.title,
     required this.onPressed,
-    this.isDefaultAction = false,
-    this.isDestructiveAction = false,
+    this.isDefault = false,
+    this.isDestructive = false,
   });
 
   final String title;
   final VoidCallback onPressed;
-  final bool isDefaultAction;
-  final bool isDestructiveAction;
+  final bool isDefault;
+  final bool isDestructive;
 }

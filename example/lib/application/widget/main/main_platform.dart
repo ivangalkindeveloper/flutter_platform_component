@@ -4,10 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class MainPlatform extends StatelessWidget {
-  const MainPlatform({super.key});
+  const MainPlatform({
+    super.key,
+  });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final FPCPlatform platform = context.fpcPlatform;
     final IFPCSize size = context.fpcSize;
 

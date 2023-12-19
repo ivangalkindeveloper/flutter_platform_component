@@ -28,7 +28,9 @@ class FPCGradientSnackBar extends StatelessWidget with FPCSnackBarMixin {
   final Widget? bottom;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCSize size = context.fpcSize;
 

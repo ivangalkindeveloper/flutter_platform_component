@@ -6,66 +6,20 @@ import 'package:flutter/cupertino.dart' show CupertinoNavigationBar;
 import 'package:flutter/material.dart' show AppBar, Colors;
 
 class FPCBlurAppBar extends FPCPlatformAppBar {
-  FPCBlurAppBar(
+  const FPCBlurAppBar(
     super.context, {
     super.key,
-    bool transitionBetweenRoutes = true,
-    Color? blurColor,
-    double? blurOpacity,
-    ImageFilter? blurFilter,
-    Widget? prefix,
-    String? title,
-    TextStyle? titleStyle,
-    Widget? middle,
-    Widget? postfix,
-    EdgeInsets? bottomPadding,
-    super.bottom,
-  }) : super(
-          cupertino: _FPCAppBarCupertino(
-            key: key,
-            transitionBetweenRoutes: transitionBetweenRoutes,
-            blurColor: blurColor,
-            blurOpacity: blurOpacity,
-            blurFilter: blurFilter,
-            prefix: prefix,
-            title: title,
-            titleStyle: titleStyle,
-            middle: middle,
-            postfix: postfix,
-            bottomPadding: bottomPadding,
-            bottom: bottom,
-          ),
-          material: _FPCAppBarMaterial(
-            key: key,
-            transitionBetweenRoutes: transitionBetweenRoutes,
-            blurColor: blurColor,
-            blurOpacity: blurOpacity,
-            blurFilter: blurFilter,
-            prefix: prefix,
-            title: title,
-            titleStyle: titleStyle,
-            middle: middle,
-            postfix: postfix,
-            bottomPadding: bottomPadding,
-            bottom: bottom,
-          ),
-        );
-}
-
-class _FPCAppBarCupertino extends StatelessWidget {
-  const _FPCAppBarCupertino({
-    super.key,
-    required this.transitionBetweenRoutes,
-    required this.blurColor,
-    required this.blurOpacity,
-    required this.blurFilter,
-    required this.prefix,
-    required this.title,
-    required this.titleStyle,
-    required this.middle,
-    required this.postfix,
-    required this.bottomPadding,
-    required this.bottom,
+    this.transitionBetweenRoutes = true,
+    this.blurColor,
+    this.blurOpacity,
+    this.blurFilter,
+    this.prefix,
+    this.title,
+    this.titleStyle,
+    this.middle,
+    this.postfix,
+    this.bottomPadding,
+    this.bottom,
   });
 
   final bool transitionBetweenRoutes;
@@ -107,7 +61,9 @@ class _FPCAppBarCupertino extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
@@ -149,64 +105,11 @@ class _FPCAppBarCupertino extends StatelessWidget {
       ),
     );
   }
-}
-
-class _FPCAppBarMaterial extends StatelessWidget {
-  const _FPCAppBarMaterial({
-    super.key,
-    required this.transitionBetweenRoutes,
-    required this.blurColor,
-    required this.blurOpacity,
-    required this.blurFilter,
-    required this.prefix,
-    required this.title,
-    required this.titleStyle,
-    required this.middle,
-    required this.postfix,
-    required this.bottomPadding,
-    required this.bottom,
-  });
-
-  final bool transitionBetweenRoutes;
-  final Color? blurColor;
-  final double? blurOpacity;
-  final ImageFilter? blurFilter;
-  final Widget? prefix;
-  final String? title;
-  final TextStyle? titleStyle;
-  final Widget? middle;
-  final Widget? postfix;
-  final EdgeInsets? bottomPadding;
-  final PreferredSizeWidget? bottom;
-
-  Widget? _middle({
-    required IFPCTextStyle textStyle,
-    required IFPCTheme theme,
-  }) {
-    if (this.middle != null) {
-      return this.middle;
-    }
-
-    if (this.title != null) {
-      return Text(
-        title!,
-        textAlign: TextAlign.center,
-        style: this.titleStyle?.copyWith(
-                  color: titleStyle?.color ?? theme.black,
-                  package: textStyle.package,
-                ) ??
-            TextStyle(
-              color: theme.black,
-              package: textStyle.package,
-            ),
-      );
-    }
-
-    return null;
-  }
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
@@ -253,4 +156,7 @@ class _FPCAppBarMaterial extends StatelessWidget {
       ),
     );
   }
+
+  @override
+  PreferredSizeWidget? preffered() => this.bottom;
 }

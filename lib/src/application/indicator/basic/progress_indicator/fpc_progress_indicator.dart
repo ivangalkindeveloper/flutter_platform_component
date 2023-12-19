@@ -16,7 +16,9 @@ class FPCProgressIndicator extends StatelessWidget {
   final double value;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCSize size = context.fpcSize;
 
     return ClipRRect(

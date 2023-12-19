@@ -19,7 +19,9 @@ class FPCBlur extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
@@ -32,9 +34,8 @@ class FPCBlur extends StatelessWidget {
       borderRadius: borderRadius,
       child: BackdropFilter(
         filter: filter,
-        child: Container(
+        child: ColoredBox(
           color: color.withOpacity(opacity),
-          alignment: Alignment.center,
           child: this.child,
         ),
       ),

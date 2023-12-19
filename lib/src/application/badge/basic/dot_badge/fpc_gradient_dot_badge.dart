@@ -23,7 +23,9 @@ class FPCGradientDotBadge extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCAnimation animation = context.fpcAnimation;
     final IFPCDuration duration = context.fpcDuration;
     final IFPCSize size = context.fpcSize;
@@ -45,12 +47,14 @@ class FPCGradientDotBadge extends StatelessWidget {
         padding: EdgeInsets.zero,
         badgeColor: Colors.transparent,
       ),
-      badgeContent: Container(
+      badgeContent: SizedBox(
         height: height,
         width: height,
-        decoration: BoxDecoration(
-          gradient: this.gradient,
-          shape: BoxShape.circle,
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            gradient: this.gradient,
+            shape: BoxShape.circle,
+          ),
         ),
       ),
       child: this.child,

@@ -1,10 +1,12 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:example/application/widget/custom/config_section.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class DotBadgeScreen extends StatefulWidget {
-  const DotBadgeScreen({super.key});
+  const DotBadgeScreen({
+    super.key,
+  });
 
   @override
   State<DotBadgeScreen> createState() => _DotBadgeScreenState();
@@ -14,19 +16,19 @@ class _DotBadgeScreenState extends State<DotBadgeScreen> {
   bool _isShow = false;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      appBar: FPCScreenAppBar(
+      appBar: AppBarConfig(
         context,
         title: "Dot Badge",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: FPCListView(
         children: [
-          const ConfigSection(),
-          Gap(size.s16 / 2),
           FPCPrimaryButton(
             title: "isShow",
             onPressed: () => setState(() => this._isShow = !this._isShow),
@@ -189,7 +191,9 @@ class _Child extends StatelessWidget {
   const _Child();
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;

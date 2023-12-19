@@ -30,6 +30,7 @@ export 'src/application/navigation/lib.dart';
 export 'src/application/picker/lib.dart';
 export 'src/application/pin_field/lib.dart';
 export 'src/application/platform/lib.dart';
+export 'src/application/pop_up_menu/lib.dart';
 export 'src/application/radio/lib.dart';
 export 'src/application/scaffold/lib.dart';
 export 'src/application/scrollbar/lib.dart';

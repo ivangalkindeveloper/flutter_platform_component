@@ -4,10 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class MainComponent extends StatelessWidget {
-  const MainComponent({super.key});
+  const MainComponent({
+    super.key,
+  });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCSize size = context.fpcSize;
 
     return Column(
@@ -218,7 +222,7 @@ class MainComponent extends StatelessWidget {
           title: "Small Bottom Sheet",
           onPressed: () => Navigator.pushNamed(
             context,
-            NavigationController.popUpBottomSheetScreen,
+            NavigationController.smallBottomSheetScreen,
           ),
         ),
         Gap(size.s16),
@@ -531,6 +535,14 @@ class MainComponent extends StatelessWidget {
           onPressed: () => Navigator.pushNamed(
             context,
             NavigationController.gradientPinFieldScreen,
+          ),
+        ),
+        Gap(size.s16),
+        FPCPrimaryButton(
+          title: "Pop Up Menu",
+          onPressed: () => Navigator.pushNamed(
+            context,
+            NavigationController.popUpMenuScreen,
           ),
         ),
         Gap(size.s16),

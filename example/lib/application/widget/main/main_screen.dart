@@ -1,5 +1,5 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:example/application/widget/custom/config_section.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:example/application/widget/main/main_time_of_day.dart';
 import 'package:example/application/widget/main/main_text_style.dart';
 import 'package:example/application/widget/main/main_component.dart';
@@ -13,7 +13,9 @@ import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class MainScreen extends StatefulWidget {
-  const MainScreen({super.key});
+  const MainScreen({
+    super.key,
+  });
 
   @override
   State<MainScreen> createState() => _MainScreenState();
@@ -29,11 +31,13 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      appBar: FPCAppBar(
+      appBar: AppBarConfig(
         context,
         title: "Flutter Component",
       ),
@@ -42,8 +46,6 @@ class _MainScreenState extends State<MainScreen> {
         child: FPCListView(
           controller: this._scrollController,
           children: [
-            const ConfigSection(),
-            Gap(size.s16),
             const MainAnimation(),
             Gap(size.s16),
             const MainDateTime(),

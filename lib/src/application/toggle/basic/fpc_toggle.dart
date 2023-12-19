@@ -119,7 +119,9 @@ class _FPCToggleState<T> extends State<FPCToggle<T>> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     if (this.widget.items.isEmpty) {
       throw const FPCItemsEmptyException();
     }
@@ -275,7 +277,9 @@ class _FPCToggleButton<T> extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;

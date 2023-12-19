@@ -30,12 +30,13 @@ class _CupertinoSliverRefresh extends SingleChildRenderObjectWidget {
   final bool hasLayoutExtent;
 
   @override
-  _RenderCupertinoSliverRefresh createRenderObject(BuildContext context) {
-    return _RenderCupertinoSliverRefresh(
-      refreshIndicatorExtent: refreshIndicatorLayoutExtent,
-      hasLayoutExtent: hasLayoutExtent,
-    );
-  }
+  _RenderCupertinoSliverRefresh createRenderObject(
+    BuildContext context,
+  ) =>
+      _RenderCupertinoSliverRefresh(
+        refreshIndicatorExtent: refreshIndicatorLayoutExtent,
+        hasLayoutExtent: hasLayoutExtent,
+      );
 
   @override
   void updateRenderObject(BuildContext context,
@@ -333,7 +334,9 @@ class FPCCupertinoSliverRefreshControl extends StatefulWidget {
   /// Retrieve the current state of the CupertinoSliverRefreshControl. The same as the
   /// state that gets passed into the [builder] function. Used for testing.
   @visibleForTesting
-  static RefreshIndicatorMode state(BuildContext context) {
+  static RefreshIndicatorMode state(
+    BuildContext context,
+  ) {
     final _FPCCupertinoSliverRefreshControlState state = context
         .findAncestorStateOfType<_FPCCupertinoSliverRefreshControlState>()!;
     return state.refreshState;
@@ -554,29 +557,30 @@ class _FPCCupertinoSliverRefreshControlState
   }
 
   @override
-  Widget build(BuildContext context) {
-    return _CupertinoSliverRefresh(
-      refreshIndicatorLayoutExtent: widget.refreshIndicatorExtent,
-      hasLayoutExtent: hasSliverLayoutExtent,
-      // A LayoutBuilder lets the sliver's layout changes be fed back out to
-      // its owner to trigger state changes.
-      child: LayoutBuilder(
-        builder: (BuildContext context, BoxConstraints constraints) {
-          latestIndicatorBoxExtent = constraints.maxHeight;
-          refreshState = transitionNextState();
-          if (widget.builder != null && latestIndicatorBoxExtent > 0) {
-            return widget.builder!(
-              context,
-              refreshState,
-              widget.color,
-              latestIndicatorBoxExtent,
-              widget.refreshTriggerPullDistance,
-              widget.refreshIndicatorExtent,
-            );
-          }
-          return Container();
-        },
-      ),
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      _CupertinoSliverRefresh(
+        refreshIndicatorLayoutExtent: widget.refreshIndicatorExtent,
+        hasLayoutExtent: hasSliverLayoutExtent,
+        // A LayoutBuilder lets the sliver's layout changes be fed back out to
+        // its owner to trigger state changes.
+        child: LayoutBuilder(
+          builder: (BuildContext context, BoxConstraints constraints) {
+            latestIndicatorBoxExtent = constraints.maxHeight;
+            refreshState = transitionNextState();
+            if (widget.builder != null && latestIndicatorBoxExtent > 0) {
+              return widget.builder!(
+                context,
+                refreshState,
+                widget.color,
+                latestIndicatorBoxExtent,
+                widget.refreshTriggerPullDistance,
+                widget.refreshIndicatorExtent,
+              );
+            }
+            return Container();
+          },
+        ),
+      );
 }

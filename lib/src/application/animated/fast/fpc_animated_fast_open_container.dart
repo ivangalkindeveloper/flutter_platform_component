@@ -25,10 +25,14 @@ class FPCAnimatedFastOpenContainer extends StatelessWidget {
       closedBuilder;
   final Color? openColor;
   final ShapeBorder? openShape;
-  final Widget Function(BuildContext context) openBuilder;
+  final Widget Function(
+    BuildContext context,
+  ) openBuilder;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCAnimation animation = context.fpcAnimation;
     final IFPCDuration duration = context.fpcDuration;
 

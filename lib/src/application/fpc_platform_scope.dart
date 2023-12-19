@@ -27,13 +27,14 @@ class _FPCPlatformState extends State<_FPCPlatformWidget> {
       setState(() => this._platform = platform);
 
   @override
-  Widget build(BuildContext context) {
-    return FPCPlatformScope(
-      platform: this._platform,
-      changePlatform: this._changePlatform,
-      child: this.widget.child,
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      FPCPlatformScope(
+        platform: this._platform,
+        changePlatform: this._changePlatform,
+        child: this.widget.child,
+      );
 }
 
 class FPCPlatformScope extends InheritedWidget with FPCScopeMixin {
@@ -47,10 +48,14 @@ class FPCPlatformScope extends InheritedWidget with FPCScopeMixin {
   final FPCPlatform platform;
   final void Function(FPCPlatform platform) changePlatform;
 
-  static FPCPlatformScope of(BuildContext context) =>
+  static FPCPlatformScope of(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.of<FPCPlatformScope>(context);
 
-  static FPCPlatformScope? maybeOf(BuildContext context) =>
+  static FPCPlatformScope? maybeOf(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.maybeOf<FPCPlatformScope>(context);
 
   @override

@@ -16,7 +16,9 @@ class FPCAnimatedFastFadeOut extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCDuration duration = context.fpcDuration;
 
     return FadeOut(

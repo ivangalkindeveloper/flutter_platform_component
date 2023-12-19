@@ -1,25 +1,27 @@
-import 'package:example/application/widget/custom/config_section.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class SnackBarScreen extends StatelessWidget {
-  const SnackBarScreen({super.key});
+  const SnackBarScreen({
+    super.key,
+  });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      appBar: FPCScreenAppBar(
+      appBar: AppBarConfig(
         context,
         title: "SnackBar",
         onPressedBack: () => Navigator.pop(context),
       ),
       body: FPCListView(
         children: [
-          const ConfigSection(),
-          Gap(size.s16 * 2),
           FPCText.regular16Black(
             context,
             "Dark",

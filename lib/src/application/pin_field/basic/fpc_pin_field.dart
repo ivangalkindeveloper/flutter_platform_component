@@ -85,24 +85,7 @@ class _FPCPINFieldState extends State<FPCPINField>
 
     // Error
     this._errorSubscription =
-        this.widget.errorController?.stream.listen((bool isError) {
-      if (this.mounted == false) {
-        return;
-      }
-
-      if (isError == false) {
-        setState(() => this._isError = false);
-        return;
-      }
-
-      setState(() => this._isError = true);
-      this._animationController.forward();
-      Future.delayed(this._duration.animationDefault, () {
-        this._haptic.error();
-        this.widget.controller?.clear();
-        this.widget.errorController?.add(false);
-      });
-    });
+        this.widget.errorController?.stream.listen(this._errorListener);
   }
 
   @override
@@ -121,6 +104,11 @@ class _FPCPINFieldState extends State<FPCPINField>
       );
       this._animationController.addStatusListener(this._controllerListener);
     }
+
+    // Error
+    this._errorSubscription?.cancel();
+    this._errorSubscription =
+        this.widget.errorController?.stream.listen(this._errorListener);
   }
 
   @override
@@ -138,6 +126,25 @@ class _FPCPINFieldState extends State<FPCPINField>
     if (status == AnimationStatus.completed) {
       this._animationController.reverse();
     }
+  }
+
+  void _errorListener(bool isError) {
+    if (this.mounted == false) {
+      return;
+    }
+
+    if (isError == false) {
+      setState(() => this._isError = false);
+      return;
+    }
+
+    setState(() => this._isError = true);
+    this._animationController.forward();
+    Future.delayed(this._duration.animationDefault, () {
+      this._haptic.error();
+      this.widget.controller?.clear();
+      this.widget.errorController?.add(false);
+    });
   }
 
   PinTheme _item({
@@ -166,7 +173,9 @@ class _FPCPINFieldState extends State<FPCPINField>
       );
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final double height = this.widget.height ?? this._size.s16;
     final double borderWidth =
         this.widget.borderWidth ?? this._sizeScope.borderWidthField;

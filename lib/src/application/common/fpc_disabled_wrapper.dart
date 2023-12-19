@@ -16,22 +16,23 @@ class FPCDisabledWrapper extends StatelessWidget {
   final List<Widget> children;
 
   @override
-  Widget build(BuildContext context) {
-    return Stack(
-      alignment: Alignment.center,
-      children: [
-        ...this.children,
-        Positioned.fill(
-          child: FPCAnimatedSwitcher(
-            child: this.isDisabled
-                ? FPCDisabledOverlay(
-                    color: this.disabledColor,
-                    borderRadius: this.borderRadius,
-                  )
-                : null,
+  Widget build(
+    BuildContext context,
+  ) =>
+      Stack(
+        alignment: Alignment.center,
+        children: [
+          ...this.children,
+          Positioned.fill(
+            child: FPCAnimatedSwitcher(
+              child: this.isDisabled
+                  ? FPCDisabledOverlay(
+                      color: this.disabledColor,
+                      borderRadius: this.borderRadius,
+                    )
+                  : null,
+            ),
           ),
-        ),
-      ],
-    );
-  }
+        ],
+      );
 }

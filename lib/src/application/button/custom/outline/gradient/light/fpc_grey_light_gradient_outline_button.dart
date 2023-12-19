@@ -31,7 +31,9 @@ class FPCGreyLightGradientOutlineButton extends StatelessWidget {
   final Color? disabledColor;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
 

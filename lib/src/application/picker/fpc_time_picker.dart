@@ -14,51 +14,14 @@ import 'package:flutter/material.dart' show Theme, ColorScheme, TimeOfDay;
 class FPCTimePicker extends FPCPlatformWidget with FPCTimePickerMixin {
   FPCTimePicker({
     super.key,
-    FPCTimeOfDayRange? timeOfDayRange,
-    double? cupertinoHeight,
-    TextStyle? cupertinoStyle,
-    void Function(TimeOfDay)? cupertinoOnChanged,
-    Widget? materialDialog,
-    Color? materialDialogBackgroundColor,
-    Color? materialDialogColor,
-    BorderRadius? materialDialogBorderRadius,
-  }) : super(
-          cupertino: _FPCDatePickerCupertino(
-            key: key,
-            timeOfDayRange: timeOfDayRange,
-            cupertinoHeight: cupertinoHeight,
-            cupertinoStyle: cupertinoStyle,
-            cupertinoOnChanged: cupertinoOnChanged,
-            materialDialog: materialDialog,
-            materialDialogBackgroundColor: materialDialogBackgroundColor,
-            materialDialogColor: materialDialogColor,
-            materialDialogBorderRadius: materialDialogBorderRadius,
-          ),
-          material: _FPCDatePickerMaterial(
-            key: key,
-            timeOfDayRange: timeOfDayRange,
-            cupertinoHeight: cupertinoHeight,
-            cupertinoStyle: cupertinoStyle,
-            cupertinoOnChanged: cupertinoOnChanged,
-            materialDialog: materialDialog,
-            materialDialogBackgroundColor: materialDialogBackgroundColor,
-            materialDialogColor: materialDialogColor,
-            materialDialogBorderRadius: materialDialogBorderRadius,
-          ),
-        );
-}
-
-class _FPCDatePickerCupertino extends StatelessWidget {
-  const _FPCDatePickerCupertino({
-    super.key,
-    required this.timeOfDayRange,
-    required this.cupertinoHeight,
-    required this.cupertinoStyle,
-    required this.cupertinoOnChanged,
-    required this.materialDialog,
-    required this.materialDialogBackgroundColor,
-    required this.materialDialogColor,
-    required this.materialDialogBorderRadius,
+    this.timeOfDayRange,
+    this.cupertinoHeight,
+    this.cupertinoStyle,
+    this.cupertinoOnChanged,
+    this.materialDialog,
+    this.materialDialogBackgroundColor,
+    this.materialDialogColor,
+    this.materialDialogBorderRadius,
   });
 
   final FPCTimeOfDayRange? timeOfDayRange;
@@ -71,7 +34,9 @@ class _FPCDatePickerCupertino extends StatelessWidget {
   final BorderRadius? materialDialogBorderRadius;
 
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final IFPCTimeOfDay timeOfDay = context.fpcTimeOfDay;
     final IFPCDateTime dateTime = context.fpcDateTime;
     final IFPCTheme theme = context.fpcTheme;
@@ -133,32 +98,11 @@ class _FPCDatePickerCupertino extends StatelessWidget {
       ),
     );
   }
-}
-
-class _FPCDatePickerMaterial extends StatelessWidget {
-  const _FPCDatePickerMaterial({
-    super.key,
-    required this.timeOfDayRange,
-    required this.cupertinoHeight,
-    required this.cupertinoStyle,
-    required this.cupertinoOnChanged,
-    required this.materialDialog,
-    required this.materialDialogBackgroundColor,
-    required this.materialDialogColor,
-    required this.materialDialogBorderRadius,
-  });
-
-  final FPCTimeOfDayRange? timeOfDayRange;
-  final double? cupertinoHeight;
-  final TextStyle? cupertinoStyle;
-  final void Function(TimeOfDay)? cupertinoOnChanged;
-  final Widget? materialDialog;
-  final Color? materialDialogBackgroundColor;
-  final Color? materialDialogColor;
-  final BorderRadius? materialDialogBorderRadius;
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCTheme theme = context.fpcTheme;
 

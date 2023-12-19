@@ -5,57 +5,17 @@ import 'package:flutter/cupertino.dart' show CupertinoSlider;
 import 'package:flutter/material.dart' show Slider;
 
 class FPCSlider extends FPCPlatformWidget {
-  FPCSlider({
-    super.key,
-    required double value,
-    required void Function(double) onChanged,
-    required Color backgroundColor,
-    required Color color,
-    double min = 0.0,
-    double max = 1.0,
-    int? divisions,
-    bool isDisabled = false,
-    Color? disabledColor,
-  }) : super(
-          cupertino: _FPCSliderCupertino(
-            key: key,
-            value: value,
-            onChanged: onChanged,
-            backgroundColor: backgroundColor,
-            color: color,
-            min: min,
-            max: max,
-            divisions: divisions,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-          ),
-          material: _FPCSliderMaterial(
-            key: key,
-            value: value,
-            onChanged: onChanged,
-            backgroundColor: backgroundColor,
-            color: color,
-            min: min,
-            max: max,
-            divisions: divisions,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-          ),
-        );
-}
-
-class _FPCSliderCupertino extends StatelessWidget {
-  const _FPCSliderCupertino({
+  const FPCSlider({
     super.key,
     required this.value,
     required this.onChanged,
     required this.backgroundColor,
     required this.color,
-    required this.min,
-    required this.max,
-    required this.divisions,
-    required this.isDisabled,
-    required this.disabledColor,
+    this.min = 0.0,
+    this.max = 1.0,
+    this.divisions,
+    this.isDisabled = false,
+    this.disabledColor,
   });
 
   final double value;
@@ -69,7 +29,9 @@ class _FPCSliderCupertino extends StatelessWidget {
   final Color? disabledColor;
 
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final void Function(double)? onChanged =
         this.isDisabled ? null : this.onChanged;
 
@@ -89,34 +51,11 @@ class _FPCSliderCupertino extends StatelessWidget {
       ],
     );
   }
-}
-
-class _FPCSliderMaterial extends StatelessWidget {
-  const _FPCSliderMaterial({
-    super.key,
-    required this.value,
-    required this.onChanged,
-    required this.backgroundColor,
-    required this.color,
-    required this.min,
-    required this.max,
-    required this.divisions,
-    required this.isDisabled,
-    required this.disabledColor,
-  });
-
-  final double value;
-  final void Function(double) onChanged;
-  final Color backgroundColor;
-  final Color color;
-  final double min;
-  final double max;
-  final int? divisions;
-  final bool isDisabled;
-  final Color? disabledColor;
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final void Function(double)? onChanged =
         this.isDisabled ? null : this.onChanged;
 

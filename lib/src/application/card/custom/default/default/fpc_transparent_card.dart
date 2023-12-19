@@ -25,17 +25,18 @@ class FPCTransparentCard extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
-    return FPCCard(
-      backgroundColor: Colors.transparent,
-      height: this.height,
-      width: this.width,
-      constraints: this.constraints,
-      borderRadius: this.borderRadius,
-      borderColor: this.borderColor,
-      borderWidth: this.borderWidth,
-      padding: this.padding,
-      child: this.child,
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      FPCCard(
+        backgroundColor: Colors.transparent,
+        height: this.height,
+        width: this.width,
+        constraints: this.constraints,
+        borderRadius: this.borderRadius,
+        borderColor: this.borderColor,
+        borderWidth: this.borderWidth,
+        padding: this.padding,
+        child: this.child,
+      );
 }

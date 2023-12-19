@@ -1,5 +1,14 @@
+## 4.0.0
+Addings:
+* FPCPopUpMenu;
+* ErrorText property for form fields;
+
+Refactoring:
+* Optimization of widgets, abandonment of the Container;
+* Refactoring of example project.
+
 ## 3.0.6
-* Fix snackbar expanded width;
+* Fix snack bar expanded width;
 
 ## 3.0.5
 Addings:

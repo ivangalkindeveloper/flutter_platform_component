@@ -5,45 +5,14 @@ import 'package:flutter/cupertino.dart' show CupertinoSwitch;
 import 'package:flutter/material.dart' show Switch;
 
 class FPCSwitch extends FPCPlatformWidget {
-  FPCSwitch({
-    super.key,
-    required bool value,
-    required Function(bool) onChanged,
-    required Color unselectedColor,
-    required Color selectedColor,
-    bool isDisabled = false,
-    Color? disabledColor,
-  }) : super(
-          cupertino: _FPCSwitchCupertino(
-            key: key,
-            value: value,
-            onChanged: onChanged,
-            unselectedColor: unselectedColor,
-            selectedColor: selectedColor,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-          ),
-          material: _FPCSwitchMaterial(
-            key: key,
-            value: value,
-            onChanged: onChanged,
-            unselectedColor: unselectedColor,
-            selectedColor: selectedColor,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-          ),
-        );
-}
-
-class _FPCSwitchCupertino extends StatelessWidget {
-  const _FPCSwitchCupertino({
+  const FPCSwitch({
     super.key,
     required this.value,
     required this.onChanged,
     required this.unselectedColor,
     required this.selectedColor,
-    required this.isDisabled,
-    required this.disabledColor,
+    this.isDisabled = false,
+    this.disabledColor,
   });
 
   final bool value;
@@ -54,7 +23,9 @@ class _FPCSwitchCupertino extends StatelessWidget {
   final Color? disabledColor;
 
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
@@ -63,7 +34,9 @@ class _FPCSwitchCupertino extends StatelessWidget {
 
     return FPCDisabledWrapper(
       disabledColor: this.disabledColor,
-      borderRadius: BorderRadius.circular(size.s32),
+      borderRadius: BorderRadius.circular(
+        size.s32,
+      ),
       isDisabled: this.isDisabled,
       children: [
         CupertinoSwitch(
@@ -76,33 +49,18 @@ class _FPCSwitchCupertino extends StatelessWidget {
       ],
     );
   }
-}
-
-class _FPCSwitchMaterial extends StatelessWidget {
-  const _FPCSwitchMaterial({
-    super.key,
-    required this.value,
-    required this.onChanged,
-    required this.unselectedColor,
-    required this.selectedColor,
-    required this.isDisabled,
-    required this.disabledColor,
-  });
-
-  final bool value;
-  final Function(bool) onChanged;
-  final Color unselectedColor;
-  final Color selectedColor;
-  final bool isDisabled;
-  final Color? disabledColor;
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final IFPCSize size = context.fpcSize;
 
     return FPCDisabledWrapper(
       disabledColor: this.disabledColor,
-      borderRadius: BorderRadius.circular(size.s32),
+      borderRadius: BorderRadius.circular(
+        size.s32,
+      ),
       isDisabled: this.isDisabled,
       children: [
         Switch(

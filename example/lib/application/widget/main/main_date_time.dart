@@ -4,10 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class MainDateTime extends StatelessWidget {
-  const MainDateTime({super.key});
+  const MainDateTime({
+    super.key,
+  });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCDateTime dateTime = context.fpcDateTime;
     final IFPCSize size = context.fpcSize;
 

@@ -12,7 +12,7 @@ class FPCGreyDarkDottedCard extends StatelessWidget {
     this.borderWidth,
     this.borderType = FPCBorderType.rrect,
     this.strokeCap = StrokeCap.butt,
-    this.pattern,
+    this.pattern = const [2, 2],
     this.padding,
     this.isFilled = false,
     required this.child,
@@ -26,13 +26,15 @@ class FPCGreyDarkDottedCard extends StatelessWidget {
   final double? borderWidth;
   final FPCBorderType borderType;
   final StrokeCap strokeCap;
-  final List<double>? pattern;
+  final List<double> pattern;
   final EdgeInsets? padding;
   final bool isFilled;
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
 
     return FPCDottedCard(

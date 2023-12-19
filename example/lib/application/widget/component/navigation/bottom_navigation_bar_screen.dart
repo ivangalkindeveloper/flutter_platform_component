@@ -1,11 +1,12 @@
-import 'package:example/application/widget/custom/config_section.dart';
-import 'package:example/application/widget/custom/dummy_list.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
+import 'package:example/application/widget/custom/dummy_list.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
 class BottomNavigationBarScreen extends StatefulWidget {
-  const BottomNavigationBarScreen({super.key});
+  const BottomNavigationBarScreen({
+    super.key,
+  });
 
   @override
   State<BottomNavigationBarScreen> createState() =>
@@ -16,7 +17,9 @@ class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> {
   int _index = 0;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
@@ -25,16 +28,14 @@ class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> {
     return FPCScaffold(
       extendBody: true,
       backgroundColor: theme.backgroundScaffold,
-      appBar: FPCScreenAppBar(
+      appBar: AppBarConfig(
         context,
         title: "Bottom Navigation Bar",
         onPressedBack: () => Navigator.pop(context),
       ),
-      body: FPCListView(
+      body: const FPCListView(
         children: [
-          const ConfigSection(),
-          Gap(size.s16 * 2),
-          const DummyList(),
+          DummyList(),
         ],
       ),
       bottomNavigationBar: FPCBottomNavigationBar(

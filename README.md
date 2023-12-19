@@ -343,10 +343,10 @@ void main() => runApp(
     );
 
 class Application extends StatelessWidget {
-  const Application({super.key});
+  const Application({super.key,});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context,) {
     return FPCApp(
       home: const HomeScreen(),
     );
@@ -667,17 +667,17 @@ Example of using a ready-made component:
 FPCAnimatedSlowOpenContainer(
   type: FPCOpenContainerTransitionType.fade,
   closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
-  openBuilder: (BuildContext context) => const OpenChild(),
+  openBuilder: (BuildContext context,) => const OpenChild(),
 ),
 FPCAnimatedOpenContainer(
   type: FPCOpenContainerTransitionType.fade,
   closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
-  openBuilder: (BuildContext context) => const OpenChild(),
+  openBuilder: (BuildContext context,) => const OpenChild(),
 ),
 FPCAnimatedFastOpenContainer(
   type: FPCOpenContainerTransitionType.fade,
   closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
-  openBuilder: (BuildContext context) => const OpenChild(),
+  openBuilder: (BuildContext context,) => const OpenChild(),
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_open_container.gif)
@@ -1333,13 +1333,13 @@ Global methods for opening pickers:
 ```dart
 showFPCDatePicker(
   context,
-  cupertinoBottomSheetBuilder: (BuildContext context) => const CupertinoBottomSheetBuilder(),
+  cupertinoBottomSheetBuilder: (BuildContext context,) => const CupertinoBottomSheetBuilder(),
 );
 ```
 ```dart
 showFPCTimePicker(
   context,
-  cupertinoBottomSheetBuilder: (BuildContext context) => const CupertinoBottomSheetBuilder(),
+  cupertinoBottomSheetBuilder: (BuildContext context,) => const CupertinoBottomSheetBuilder(),
 );
 ```
 #### SnackBar

@@ -5,61 +5,29 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart' show RefreshIndicator;
 
 class FPCListRefresh extends FPCPlatformWidget {
-  FPCListRefresh({
-    super.key,
-    required ScrollController controller,
-    required Future<void> Function() onRefresh,
-    Color? backgroundColor,
-    Color? color,
-    double displacement = 40.0,
-    double edgeOffset = 0.0,
-    required Widget child,
-  }) : super(
-          cupertino: _FPCListRefreshCupertino(
-            key: key,
-            controller: controller,
-            onRefresh: onRefresh,
-            backgroundColor: backgroundColor,
-            color: color,
-            displacement: displacement,
-            edgeOffset: edgeOffset,
-            child: child,
-          ),
-          material: _FPCListRefreshMaterial(
-            key: key,
-            controller: controller,
-            onRefresh: onRefresh,
-            backgroundColor: backgroundColor,
-            color: color,
-            displacement: displacement,
-            edgeOffset: edgeOffset,
-            child: child,
-          ),
-        );
-}
-
-class _FPCListRefreshCupertino extends StatelessWidget {
-  const _FPCListRefreshCupertino({
+  const FPCListRefresh({
     super.key,
     required this.controller,
     required this.onRefresh,
+    this.backgroundColor,
+    this.color,
+    this.displacement = 40,
+    this.edgeOffset = 0,
     required this.child,
-    required this.backgroundColor,
-    required this.color,
-    required this.displacement,
-    required this.edgeOffset,
   });
 
   final ScrollController controller;
   final Future<void> Function() onRefresh;
-  final Widget child;
   final Color? backgroundColor;
   final Color? color;
   final double displacement;
   final double edgeOffset;
+  final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final IFPCHaptic haptic = context.fpcHaptic;
     final IFPCTheme theme = context.fpcTheme;
 
@@ -89,30 +57,11 @@ class _FPCListRefreshCupertino extends StatelessWidget {
       ],
     );
   }
-}
-
-class _FPCListRefreshMaterial extends StatelessWidget {
-  const _FPCListRefreshMaterial({
-    super.key,
-    required this.controller,
-    required this.onRefresh,
-    required this.child,
-    required this.backgroundColor,
-    required this.color,
-    required this.displacement,
-    required this.edgeOffset,
-  });
-
-  final ScrollController controller;
-  final Future<void> Function() onRefresh;
-  final Widget child;
-  final Color? backgroundColor;
-  final Color? color;
-  final double displacement;
-  final double edgeOffset;
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final IFPCHaptic haptic = context.fpcHaptic;
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;

@@ -81,7 +81,9 @@ class _FPCGradientShimmerState extends State<FPCGradientShimmer>
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final Gradient gradient = this._isHighlight
         ? this.widget.highlightGradient
         : this.widget.backgroundGradient;

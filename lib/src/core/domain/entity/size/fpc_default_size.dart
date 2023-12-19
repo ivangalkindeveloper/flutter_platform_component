@@ -77,6 +77,9 @@ class FPCDefaultSize implements IFPCSize {
     this.borderRadiusFieldCupertino =
         const BorderRadius.all(Radius.circular(8)),
     this.borderRadiusFieldMaterial = const BorderRadius.all(Radius.circular(4)),
+    // BorderRadius / Pop Up Menu
+    this.borderRadiusPopUpMenuMaterial =
+        const BorderRadius.all(Radius.circular(8)),
     // BorderRadius / Segment Control
     this.borderRadiusSegmentControlCupertino =
         const BorderRadius.all(Radius.circular(16)),
@@ -216,6 +219,9 @@ class FPCDefaultSize implements IFPCSize {
   final BorderRadius borderRadiusFieldCupertino;
   @override
   final BorderRadius borderRadiusFieldMaterial;
+  // BorderRadius / Pop Up Menu
+  @override
+  final BorderRadius borderRadiusPopUpMenuMaterial;
   // BorderRadius / Segment Control
   @override
   final BorderRadius borderRadiusSegmentControlCupertino;
@@ -331,6 +337,8 @@ class FPCDefaultSize implements IFPCSize {
     // BorderRadius / Field
     BorderRadius? borderRadiusFieldCupertino,
     BorderRadius? borderRadiusFieldMaterial,
+    // BorderRadius / Pop Up Menu
+    BorderRadius? borderRadiusPopUpMenuMaterial,
     // BorderRadius / Segment Control
     BorderRadius? borderRadiusSegmentControlCupertino,
     BorderRadius? borderRadiusSegmentControlMaterial,
@@ -441,6 +449,9 @@ class FPCDefaultSize implements IFPCSize {
             borderRadiusFieldCupertino ?? this.borderRadiusFieldCupertino,
         borderRadiusFieldMaterial:
             borderRadiusFieldMaterial ?? this.borderRadiusFieldMaterial,
+        // BorderRadius / Pop Up Menu
+        borderRadiusPopUpMenuMaterial:
+            borderRadiusPopUpMenuMaterial ?? this.borderRadiusPopUpMenuMaterial,
         // BorderRadius / Segment Control
         borderRadiusSegmentControlCupertino:
             borderRadiusSegmentControlCupertino ??

@@ -124,7 +124,9 @@ class _FPCSlidingSegmentControlState<T>
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     if (this.widget.items.isEmpty) {
       throw const FPCItemsEmptyException();
     }

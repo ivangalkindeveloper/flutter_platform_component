@@ -5,32 +5,10 @@ import 'package:flutter/material.dart' show Icons, IconButton;
 import 'package:flutter/cupertino.dart' show CupertinoButton;
 
 class FPCExpandedBottomSheetCloseButton extends FPCPlatformWidget {
-  FPCExpandedBottomSheetCloseButton({
-    super.key,
-    required String cupertinoLocale,
-    Color? splashColor,
-    required VoidCallback onPressed,
-  }) : super(
-          cupertino: _FPCExpandedBottomSheetCloseButtonCupertino(
-            key: key,
-            cupertinoLocale: cupertinoLocale,
-            splashColor: splashColor,
-            onPressed: onPressed,
-          ),
-          material: _FPCExpandedBottomSheetCloseButtonMaterial(
-            key: key,
-            cupertinoLocale: cupertinoLocale,
-            splashColor: splashColor,
-            onPressed: onPressed,
-          ),
-        );
-}
-
-class _FPCExpandedBottomSheetCloseButtonCupertino extends StatelessWidget {
-  const _FPCExpandedBottomSheetCloseButtonCupertino({
+  const FPCExpandedBottomSheetCloseButton({
     super.key,
     required this.cupertinoLocale,
-    required this.splashColor,
+    this.splashColor,
     required this.onPressed,
   });
 
@@ -39,7 +17,9 @@ class _FPCExpandedBottomSheetCloseButtonCupertino extends StatelessWidget {
   final VoidCallback onPressed;
 
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
 
     return CupertinoButton(
@@ -53,22 +33,11 @@ class _FPCExpandedBottomSheetCloseButtonCupertino extends StatelessWidget {
       ),
     );
   }
-}
-
-class _FPCExpandedBottomSheetCloseButtonMaterial extends StatelessWidget {
-  const _FPCExpandedBottomSheetCloseButtonMaterial({
-    super.key,
-    required this.cupertinoLocale,
-    required this.splashColor,
-    required this.onPressed,
-  });
-
-  final String cupertinoLocale;
-  final Color? splashColor;
-  final VoidCallback onPressed;
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 

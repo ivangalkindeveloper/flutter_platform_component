@@ -31,6 +31,7 @@ import 'package:example/application/widget/component/card/card_screen.dart';
 import 'package:example/application/widget/component/card/dotted_card_screen.dart';
 import 'package:example/application/widget/component/card/gradient_card_screen.dart';
 import 'package:example/application/widget/component/divider/gradient_divider_screen.dart';
+import 'package:example/application/widget/component/pop_up_menu/pop_up_menu_screen.dart';
 import 'package:example/application/widget/component/select_card/dotted_select_card_screen.dart';
 import 'package:example/application/widget/component/select_card/gradient_select_card_screen.dart';
 import 'package:example/application/widget/component/select_card/select_card_screen.dart';
@@ -57,12 +58,12 @@ import 'package:example/application/widget/component/keyboard/keyboard_number_bu
 import 'package:example/application/widget/component/keyboard/keyboard_screen.dart';
 import 'package:example/application/widget/component/list/list_section_screen.dart';
 import 'package:example/application/widget/component/list/list_refresh_screen.dart';
-import 'package:example/application/widget/component/bottom_sheet/action_modal_screen.dart';
-import 'package:example/application/widget/component/bottom_sheet/expanded_modal_screen.dart';
-import 'package:example/application/widget/component/bottom_sheet/blur_expanded_modal_screen.dart';
-import 'package:example/application/widget/component/bottom_sheet/small_modal_screen.dart';
-import 'package:example/application/widget/component/bottom_sheet/black_always_expanded_modal_screen.dart';
-import 'package:example/application/widget/component/bottom_sheet/blur_black_always_expanded_modal_screen.dart';
+import 'package:example/application/widget/component/bottom_sheet/action_bottom_sheet_screen.dart';
+import 'package:example/application/widget/component/bottom_sheet/expanded_bottom_sheet_screen.dart';
+import 'package:example/application/widget/component/bottom_sheet/blur_expanded_bottom_sheet_screen.dart';
+import 'package:example/application/widget/component/bottom_sheet/small_bottom_sheet_screen.dart';
+import 'package:example/application/widget/component/bottom_sheet/black_always_expanded_bottom_sheet_screen.dart';
+import 'package:example/application/widget/component/bottom_sheet/blur_black_always_expanded_bottom_sheet_screen.dart';
 import 'package:example/application/widget/component/navigation/bottom_navigation_bar_screen.dart';
 import 'package:example/application/widget/component/navigation/navigator_screen.dart';
 import 'package:example/application/widget/component/picker/time_picker_screen.dart';
@@ -128,7 +129,7 @@ class NavigationController implements INavigationController {
   static const String expandedBottomSheetScreen = "/expandedBottomSheet";
   static const String blurExpandedBottomSheetScreen =
       "/blurExpandedBottomSheet";
-  static const String popUpBottomSheetScreen = "/popUpBottomSheet";
+  static const String smallBottomSheetScreen = "/smallBottomSheet";
   static const String blackAlwaysExpandBottomSheetScreen =
       "/blackAlwaysExpandBottomSheet";
   static const String blurBlackAlwaysExpandBottomSheetScreen =
@@ -188,6 +189,8 @@ class NavigationController implements INavigationController {
 
   static const String pinFieldScreen = "/pinField";
   static const String gradientPinFieldScreen = "/gradientPinField";
+
+  static const String popUpMenuScreen = "/popUpMenu";
 
   static const String radioScreen = "/radio";
 
@@ -347,10 +350,10 @@ class NavigationController implements INavigationController {
           navigatorKey.currentContext!,
           child: const BlurExpandedBottomSheetScreen(),
         );
-      case popUpBottomSheetScreen:
+      case smallBottomSheetScreen:
         return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
-          child: const PopUpBottomSheetScreen(),
+          child: const SmallBottomSheetScreen(),
         );
       case blackAlwaysExpandBottomSheetScreen:
         return FPCPageRoute.fromContext(
@@ -571,6 +574,12 @@ class NavigationController implements INavigationController {
         return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientPINFieldScreen(),
+        );
+
+      case popUpMenuScreen:
+        return FPCPageRoute.fromContext(
+          navigatorKey.currentContext!,
+          child: const PopUpMenuScreen(),
         );
 
       case radioScreen:

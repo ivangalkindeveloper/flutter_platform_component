@@ -1,9 +1,12 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class AnimatedCrossFadeScreen extends StatefulWidget {
-  const AnimatedCrossFadeScreen({super.key});
+  const AnimatedCrossFadeScreen({
+    super.key,
+  });
 
   @override
   State<AnimatedCrossFadeScreen> createState() =>
@@ -14,12 +17,14 @@ class _AnimatedCrossFadeScreenState extends State<AnimatedCrossFadeScreen> {
   bool _action = false;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      appBar: FPCScreenAppBar(
+      appBar: AppBarConfig(
         context,
         title: "Animated Cross Fade",
         onPressedBack: () => Navigator.pop(context),

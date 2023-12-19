@@ -136,7 +136,9 @@ class _FPCSelectFieldState extends State<FPCSelectField>
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
 
     final Color backgroundColor =
@@ -148,7 +150,6 @@ class _FPCSelectFieldState extends State<FPCSelectField>
         this.widget.borderWidth ?? this._sizeScope.borderWidthField;
 
     return FPCSelectFieldWrapper(
-      context: context,
       splashColor: splashColor,
       borderRadius: borderRadius,
       onPressed: this.widget.onPressed,

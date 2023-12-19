@@ -5,56 +5,16 @@ import 'package:flutter/material.dart' show ElevatedButton, Colors;
 import 'package:flutter/cupertino.dart' show CupertinoButton;
 
 class FPCButton extends FPCPlatformWidget {
-  FPCButton({
-    super.key,
-    required Color backgroundColor,
-    Color? splashColor,
-    double? height,
-    BorderRadius? borderRadius,
-    EdgeInsets? padding,
-    required VoidCallback onPressed,
-    bool isDisabled = false,
-    Color? disabledColor,
-    required Widget child,
-  }) : super(
-          cupertino: _FPCButtonCupertino(
-            key: key,
-            backgroundColor: backgroundColor,
-            splashColor: splashColor,
-            height: height,
-            borderRadius: borderRadius,
-            padding: padding,
-            onPressed: onPressed,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-            child: child,
-          ),
-          material: _FPCButtonMaterial(
-            key: key,
-            backgroundColor: backgroundColor,
-            splashColor: splashColor,
-            height: height,
-            borderRadius: borderRadius,
-            padding: padding,
-            onPressed: onPressed,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-            child: child,
-          ),
-        );
-}
-
-class _FPCButtonCupertino extends StatelessWidget {
-  const _FPCButtonCupertino({
+  const FPCButton({
     super.key,
     required this.backgroundColor,
-    required this.splashColor,
-    required this.height,
-    required this.borderRadius,
-    required this.padding,
+    this.splashColor,
+    this.height,
+    this.borderRadius,
+    this.padding,
     required this.onPressed,
-    required this.isDisabled,
-    required this.disabledColor,
+    this.isDisabled = false,
+    this.disabledColor,
     required this.child,
   });
 
@@ -69,7 +29,9 @@ class _FPCButtonCupertino extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCSize size = context.fpcSize;
 
@@ -106,34 +68,11 @@ class _FPCButtonCupertino extends StatelessWidget {
       ],
     );
   }
-}
-
-class _FPCButtonMaterial extends StatelessWidget {
-  const _FPCButtonMaterial({
-    super.key,
-    required this.backgroundColor,
-    required this.splashColor,
-    required this.height,
-    required this.borderRadius,
-    required this.padding,
-    required this.onPressed,
-    required this.isDisabled,
-    required this.disabledColor,
-    required this.child,
-  });
-
-  final Color backgroundColor;
-  final Color? splashColor;
-  final double? height;
-  final BorderRadius? borderRadius;
-  final EdgeInsets? padding;
-  final VoidCallback onPressed;
-  final bool isDisabled;
-  final Color? disabledColor;
-  final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;

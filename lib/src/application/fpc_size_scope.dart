@@ -131,29 +131,30 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
       );
 
   @override
-  Widget build(BuildContext context) {
-    return FPCSizeScope(
-      size: this._size,
-      changeSize: this._changeSize,
-      //
-      borderRadiusBottomSheet: this._borderRadiusBottomSheet,
-      borderRadiusButton: this._borderRadiusButton,
-      borderRadiusCard: this._borderRadiusCard,
-      borderRadiusDialog: this._borderRadiusDialog,
-      borderRadiusField: this._borderRadiusField,
-      borderRadiusSegmentControl: this._borderRadiusSegmentControl,
-      borderRadiusSnackBar: this._borderRadiusSnackBar,
-      borderRadiusToggle: this._borderRadiusToggle,
-      //
-      borderWidthButton: this._borderWidthButton,
-      borderWidthCard: this._borderWidthCard,
-      borderWidthField: this._borderWidthField,
-      borderWidthSegmentControl: this._borderWidthSegmentControl,
-      borderWidthSnackBar: this._borderWidthSnackBar,
-      //
-      child: this.widget.child,
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      FPCSizeScope(
+        size: this._size,
+        changeSize: this._changeSize,
+        //
+        borderRadiusBottomSheet: this._borderRadiusBottomSheet,
+        borderRadiusButton: this._borderRadiusButton,
+        borderRadiusCard: this._borderRadiusCard,
+        borderRadiusDialog: this._borderRadiusDialog,
+        borderRadiusField: this._borderRadiusField,
+        borderRadiusSegmentControl: this._borderRadiusSegmentControl,
+        borderRadiusSnackBar: this._borderRadiusSnackBar,
+        borderRadiusToggle: this._borderRadiusToggle,
+        //
+        borderWidthButton: this._borderWidthButton,
+        borderWidthCard: this._borderWidthCard,
+        borderWidthField: this._borderWidthField,
+        borderWidthSegmentControl: this._borderWidthSegmentControl,
+        borderWidthSnackBar: this._borderWidthSnackBar,
+        //
+        child: this.widget.child,
+      );
 }
 
 class FPCSizeScope extends InheritedWidget with FPCScopeMixin {
@@ -198,10 +199,14 @@ class FPCSizeScope extends InheritedWidget with FPCScopeMixin {
   final double borderWidthSegmentControl;
   final double borderWidthSnackBar;
 
-  static FPCSizeScope of(BuildContext context) =>
+  static FPCSizeScope of(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.of<FPCSizeScope>(context);
 
-  static FPCSizeScope? maybeOf(BuildContext context) =>
+  static FPCSizeScope? maybeOf(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.maybeOf<FPCSizeScope>(context);
 
   @override

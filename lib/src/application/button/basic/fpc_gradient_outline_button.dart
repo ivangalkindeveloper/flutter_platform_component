@@ -5,64 +5,18 @@ import 'package:flutter/material.dart' show ElevatedButton, Colors;
 import 'package:flutter/cupertino.dart' show CupertinoButton;
 
 class FPCGradientOutlineButton extends FPCPlatformWidget {
-  FPCGradientOutlineButton({
+  const FPCGradientOutlineButton({
     super.key,
-    Gradient? backgroundGradient,
-    Color? splashColor,
-    double? height,
-    BorderRadius? borderRadius,
-    required Gradient borderGradient,
-    double? borderWidth,
-    EdgeInsets? padding,
-    required VoidCallback onPressed,
-    bool isDisabled = false,
-    Color? disabledColor,
-    required Widget child,
-  }) : super(
-          cupertino: _FPCGradientOutlineButtonCupertino(
-            key: key,
-            backgroundGradient: backgroundGradient,
-            splashColor: splashColor,
-            height: height,
-            borderRadius: borderRadius,
-            borderGradient: borderGradient,
-            borderWidth: borderWidth,
-            padding: padding,
-            onPressed: onPressed,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-            child: child,
-          ),
-          material: _FPCGradientOutlineButtonMaterial(
-            key: key,
-            backgroundGradient: backgroundGradient,
-            splashColor: splashColor,
-            height: height,
-            borderRadius: borderRadius,
-            borderGradient: borderGradient,
-            borderWidth: borderWidth,
-            padding: padding,
-            onPressed: onPressed,
-            isDisabled: isDisabled,
-            disabledColor: disabledColor,
-            child: child,
-          ),
-        );
-}
-
-class _FPCGradientOutlineButtonCupertino extends StatelessWidget {
-  const _FPCGradientOutlineButtonCupertino({
-    super.key,
-    required this.backgroundGradient,
-    required this.splashColor,
-    required this.height,
-    required this.borderRadius,
+    this.backgroundGradient,
+    this.splashColor,
+    this.height,
+    this.borderRadius,
     required this.borderGradient,
-    required this.borderWidth,
-    required this.padding,
+    this.borderWidth,
+    this.padding,
     required this.onPressed,
-    required this.isDisabled,
-    required this.disabledColor,
+    this.isDisabled = false,
+    this.disabledColor,
     required this.child,
   });
 
@@ -79,7 +33,9 @@ class _FPCGradientOutlineButtonCupertino extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCSize size = context.fpcSize;
 
@@ -136,38 +92,11 @@ class _FPCGradientOutlineButtonCupertino extends StatelessWidget {
       ],
     );
   }
-}
-
-class _FPCGradientOutlineButtonMaterial extends StatelessWidget {
-  const _FPCGradientOutlineButtonMaterial({
-    super.key,
-    required this.backgroundGradient,
-    required this.splashColor,
-    required this.height,
-    required this.borderRadius,
-    required this.borderGradient,
-    required this.borderWidth,
-    required this.padding,
-    required this.onPressed,
-    required this.isDisabled,
-    required this.disabledColor,
-    required this.child,
-  });
-
-  final Gradient? backgroundGradient;
-  final Color? splashColor;
-  final double? height;
-  final BorderRadius? borderRadius;
-  final Gradient borderGradient;
-  final double? borderWidth;
-  final EdgeInsets? padding;
-  final VoidCallback onPressed;
-  final bool isDisabled;
-  final Color? disabledColor;
-  final Widget child;
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;

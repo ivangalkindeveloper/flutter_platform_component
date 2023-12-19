@@ -6,53 +6,16 @@ import 'package:flutter/cupertino.dart'
 import 'package:flutter/material.dart' show SliverAppBar, Colors, Icons;
 
 class FPCSliverAppBar extends FPCPlatformWidget {
-  FPCSliverAppBar({
+  const FPCSliverAppBar({
     super.key,
-    bool transitionBetweenRoutes = true,
-    Color? backgroundColor,
-    Widget? prefix,
-    VoidCallback? onPressedBack,
-    String? title,
-    TextStyle? titleStyle,
-    Widget? middle,
-    Widget? postfix,
-  }) : super(
-          cupertino: _FPCSliverAppBarCupertino(
-            key: key,
-            transitionBetweenRoutes: transitionBetweenRoutes,
-            backgroundColor: backgroundColor,
-            prefix: prefix,
-            onPressedBack: onPressedBack,
-            title: title,
-            titleStyle: titleStyle,
-            middle: middle,
-            postfix: postfix,
-          ),
-          material: _FPCSliverAppBarMaterial(
-            key: key,
-            transitionBetweenRoutes: transitionBetweenRoutes,
-            backgroundColor: backgroundColor,
-            prefix: prefix,
-            onPressedBack: onPressedBack,
-            title: title,
-            titleStyle: titleStyle,
-            middle: middle,
-            postfix: postfix,
-          ),
-        );
-}
-
-class _FPCSliverAppBarCupertino extends StatelessWidget {
-  const _FPCSliverAppBarCupertino({
-    super.key,
-    required this.transitionBetweenRoutes,
-    required this.backgroundColor,
-    required this.onPressedBack,
-    required this.prefix,
-    required this.title,
-    required this.titleStyle,
-    required this.middle,
-    required this.postfix,
+    this.transitionBetweenRoutes = true,
+    this.backgroundColor,
+    this.onPressedBack,
+    this.prefix,
+    this.title,
+    this.titleStyle,
+    this.middle,
+    this.postfix,
   });
 
   final bool transitionBetweenRoutes;
@@ -98,35 +61,37 @@ class _FPCSliverAppBarCupertino extends StatelessWidget {
     return null;
   }
 
-  Widget? _middle({
-    required IFPCTextStyle textStyle,
-    required IFPCTheme theme,
-  }) {
-    if (this.middle != null) {
-      return this.middle;
-    }
-
-    if (this.title != null) {
-      return Text(
-        title!,
-        style: this.titleStyle?.copyWith(
-                  color: titleStyle?.color ?? theme.black,
-                  package: textStyle.package,
-                ) ??
-            TextStyle(
-              color: theme.black,
-              package: textStyle.package,
-            ),
-      );
-    }
-
-    return null;
-  }
-
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
+
+    Widget? middle({
+      required IFPCTextStyle textStyle,
+      required IFPCTheme theme,
+    }) {
+      if (this.middle != null) {
+        return this.middle;
+      }
+
+      if (this.title != null) {
+        return Text(
+          title!,
+          style: this.titleStyle?.copyWith(
+                    color: titleStyle?.color ?? theme.black,
+                    package: textStyle.package,
+                  ) ??
+              TextStyle(
+                color: theme.black,
+                package: textStyle.package,
+              ),
+        );
+      }
+
+      return null;
+    }
 
     return CupertinoSliverNavigationBar(
       automaticallyImplyLeading: false,
@@ -142,111 +107,56 @@ class _FPCSliverAppBarCupertino extends StatelessWidget {
       leading: this._prefix(
         context: context,
       ),
-      largeTitle: this._middle(
+      largeTitle: middle(
         textStyle: textStyle,
         theme: theme,
       ),
       trailing: this.postfix,
     );
   }
-}
-
-class _FPCSliverAppBarMaterial extends StatelessWidget {
-  const _FPCSliverAppBarMaterial({
-    super.key,
-    required this.transitionBetweenRoutes,
-    required this.backgroundColor,
-    required this.onPressedBack,
-    required this.prefix,
-    required this.title,
-    required this.titleStyle,
-    required this.middle,
-    required this.postfix,
-  });
-
-  final bool transitionBetweenRoutes;
-  final Color? backgroundColor;
-  final Widget? prefix;
-  final VoidCallback? onPressedBack;
-  final String? title;
-  final TextStyle? titleStyle;
-  final Widget? middle;
-  final Widget? postfix;
-
-  Widget? _prefix({
-    required BuildContext context,
-  }) {
-    if (this.prefix != null) {
-      return this.prefix;
-    }
-
-    if (this.onPressedBack != null) {
-      final TextDirection textDirection = Directionality.of(context);
-      final Matrix4 transform = textDirection == TextDirection.rtl
-          ? (Matrix4.identity()..scale(-1.0, 1.0, 1.0))
-          : Matrix4.identity();
-
-      return FPCIconButton(
-        onPressed: this.onPressedBack!,
-        child: Transform(
-          transform: transform,
-          alignment: Alignment.center,
-          transformHitTests: false,
-          child: FPCBlackIcon(
-            icon: FPCPlatformUtility.decomposeFromContext<IconData, IconData,
-                IconData>(
-              context: context,
-              cupertino: CupertinoIcons.back,
-              material: Icons.arrow_back,
-            ),
-          ),
-        ),
-      );
-    }
-
-    return null;
-  }
-
-  Widget? _middle({
-    required IFPCTextStyle textStyle,
-    required IFPCTheme theme,
-  }) {
-    if (this.middle != null) {
-      return this.middle;
-    }
-
-    if (this.title != null) {
-      return Text(
-        title!,
-        textAlign: TextAlign.center,
-        style: this.titleStyle?.copyWith(
-                  color: titleStyle?.color ?? theme.black,
-                  fontWeight:
-                      this.titleStyle?.fontWeight ?? textStyle.fontWeightMedium,
-                  fontFamily:
-                      this.titleStyle?.fontFamily ?? textStyle.fontFamilyMedium,
-                  package: textStyle.package,
-                ) ??
-            TextStyle(
-              color: theme.black,
-              fontWeight: textStyle.fontWeightMedium,
-              fontFamily: textStyle.fontFamilyMedium,
-              package: textStyle.package,
-            ),
-      );
-    }
-
-    return null;
-  }
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final IFPCTextStyle textStyle = context.fpcTextStyle;
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
     final Color backgroundColor =
         this.backgroundColor ?? theme.backgroundComponent;
+
+    Widget? middle({
+      required IFPCTextStyle textStyle,
+      required IFPCTheme theme,
+    }) {
+      if (this.middle != null) {
+        return this.middle;
+      }
+
+      if (this.title != null) {
+        return Text(
+          title!,
+          textAlign: TextAlign.center,
+          style: this.titleStyle?.copyWith(
+                    color: titleStyle?.color ?? theme.black,
+                    fontWeight: this.titleStyle?.fontWeight ??
+                        textStyle.fontWeightMedium,
+                    fontFamily: this.titleStyle?.fontFamily ??
+                        textStyle.fontFamilyMedium,
+                    package: textStyle.package,
+                  ) ??
+              TextStyle(
+                color: theme.black,
+                fontWeight: textStyle.fontWeightMedium,
+                fontFamily: textStyle.fontFamilyMedium,
+                package: textStyle.package,
+              ),
+        );
+      }
+
+      return null;
+    }
 
     return SliverAppBar.large(
       elevation: 0,
@@ -257,7 +167,7 @@ class _FPCSliverAppBarMaterial extends StatelessWidget {
       leading: this._prefix(
         context: context,
       ),
-      title: this._middle(
+      title: middle(
         textStyle: textStyle,
         theme: theme,
       ),

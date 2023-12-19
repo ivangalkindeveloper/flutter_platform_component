@@ -136,7 +136,9 @@ class _FPCGradientSelectFieldState extends State<FPCGradientSelectField>
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
 
     final Gradient backgroundGradient = this.widget.backgroundGradient ??
@@ -154,7 +156,6 @@ class _FPCGradientSelectFieldState extends State<FPCGradientSelectField>
         this.widget.borderWidth ?? this._sizeScope.borderWidthField;
 
     return FPCSelectFieldWrapper(
-      context: context,
       splashColor: splashColor,
       borderRadius: borderRadius,
       onPressed: this.widget.onPressed,

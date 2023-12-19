@@ -2,10 +2,14 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class FPCDangerCircularIndicator extends StatelessWidget {
-  const FPCDangerCircularIndicator({super.key});
+  const FPCDangerCircularIndicator({
+    super.key,
+  });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 

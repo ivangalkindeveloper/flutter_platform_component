@@ -13,13 +13,14 @@ class FPCTextSpan extends StatelessWidget {
   final List<InlineSpan> children;
 
   @override
-  Widget build(BuildContext context) {
-    return Text.rich(
-      TextSpan(
-        children: this.children,
-      ),
-      textAlign: this.align,
-      overflow: this.overflow,
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      Text.rich(
+        TextSpan(
+          children: this.children,
+        ),
+        textAlign: this.align,
+        overflow: this.overflow,
+      );
 }

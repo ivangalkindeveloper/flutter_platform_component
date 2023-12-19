@@ -11,7 +11,10 @@ class FPCStateScopeNester extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) => stateScopes.reversed.fold<Widget>(
+  Widget build(
+    BuildContext context,
+  ) =>
+      stateScopes.reversed.fold<Widget>(
         this.child,
         (
           Widget previous,
@@ -32,7 +35,10 @@ class FPCScopeNester extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) => scopes.reversed.fold<Widget>(
+  Widget build(
+    BuildContext context,
+  ) =>
+      scopes.reversed.fold<Widget>(
         this.child,
         (
           Widget previous,

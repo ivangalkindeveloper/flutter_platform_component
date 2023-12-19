@@ -26,13 +26,14 @@ class _FPCAnimationState extends State<_FPCAnimationWidget> {
       setState(() => this._animation = animation);
 
   @override
-  Widget build(BuildContext context) {
-    return FPCAnimationScope(
-      animation: this._animation,
-      changeAnimation: this._changeAnimation,
-      child: this.widget.child,
-    );
-  }
+  Widget build(
+    BuildContext context,
+  ) =>
+      FPCAnimationScope(
+        animation: this._animation,
+        changeAnimation: this._changeAnimation,
+        child: this.widget.child,
+      );
 }
 
 class FPCAnimationScope extends InheritedWidget {
@@ -46,10 +47,14 @@ class FPCAnimationScope extends InheritedWidget {
   final IFPCAnimation animation;
   final void Function(IFPCAnimation animation) changeAnimation;
 
-  static FPCAnimationScope of(BuildContext context) =>
+  static FPCAnimationScope of(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.of<FPCAnimationScope>(context);
 
-  static FPCAnimationScope? maybeOf(BuildContext context) =>
+  static FPCAnimationScope? maybeOf(
+    BuildContext context,
+  ) =>
       FPCScopeMixin.maybeOf<FPCAnimationScope>(context);
 
   @override

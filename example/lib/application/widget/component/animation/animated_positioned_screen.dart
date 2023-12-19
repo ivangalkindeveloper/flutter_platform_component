@@ -1,9 +1,12 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
+import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class AnimatedPositionedScreen extends StatefulWidget {
-  const AnimatedPositionedScreen({super.key});
+  const AnimatedPositionedScreen({
+    super.key,
+  });
 
   @override
   State<AnimatedPositionedScreen> createState() =>
@@ -14,12 +17,14 @@ class _AnimatedPositionedScreenState extends State<AnimatedPositionedScreen> {
   bool _action = false;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 
     return FPCScaffold(
-      appBar: FPCScreenAppBar(
+      appBar: AppBarConfig(
         context,
         title: "Animated Positioned",
         onPressedBack: () => Navigator.pop(context),

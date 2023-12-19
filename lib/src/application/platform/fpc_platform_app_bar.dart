@@ -5,31 +5,36 @@ import 'package:flutter/cupertino.dart'
     show kMinInteractiveDimensionCupertino, ObstructingPreferredSizeWidget;
 import 'package:flutter/material.dart' show kToolbarHeight;
 
-class FPCPlatformAppBar extends StatelessWidget
+abstract class FPCPlatformAppBar extends StatelessWidget
     implements ObstructingPreferredSizeWidget {
   const FPCPlatformAppBar(
     this.context, {
     super.key,
-    required this.cupertino,
-    required this.material,
-    this.bottom,
   });
 
   final BuildContext context;
-  final Widget cupertino;
-  final Widget material;
-  final PreferredSizeWidget? bottom;
+
+  Widget cupertino(
+    BuildContext context,
+  );
+  Widget material(
+    BuildContext context,
+  );
+  PreferredSizeWidget? preffered();
 
   @override
-  bool shouldFullyObstruct(BuildContext context) => false;
+  bool shouldFullyObstruct(
+    BuildContext context,
+  ) =>
+      false;
 
   @override
   Size get preferredSize {
     final IFPCSize size = this.context.fpcSize;
+    final PreferredSizeWidget? preffered = this.preffered();
 
-    final double additionalPreferredHeight = this.bottom != null
-        ? (this.bottom!.preferredSize.height + size.s16 / 2)
-        : 0;
+    final double additionalPreferredHeight =
+        preffered != null ? (preffered.preferredSize.height + size.s16 / 2) : 0;
 
     return FPCPlatformUtility.decomposeFromContext<Size, Size, Size>(
       context: this.context,
@@ -43,11 +48,18 @@ class FPCPlatformAppBar extends StatelessWidget
   }
 
   @override
-  Widget build(BuildContext context) {
-    return FPCPlatformUtility.decomposeFromContext<Widget, Widget, Widget>(
-      context: context,
-      cupertino: this.cupertino,
-      material: this.material,
-    );
+  Widget build(
+    BuildContext context,
+  ) {
+    switch (context.fpcPlatform) {
+      case FPCPlatform.iOS:
+        return this.cupertino(
+          context,
+        );
+      case FPCPlatform.android:
+        return this.material(
+          context,
+        );
+    }
   }
 }

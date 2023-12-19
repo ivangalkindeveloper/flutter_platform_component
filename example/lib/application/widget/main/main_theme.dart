@@ -6,10 +6,14 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class MainTheme extends StatelessWidget {
-  const MainTheme({super.key});
+  const MainTheme({
+    super.key,
+  });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 

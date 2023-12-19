@@ -5,33 +5,10 @@ import 'package:flutter/material.dart' show Icons, IconButton;
 import 'package:flutter/cupertino.dart' show CupertinoButton;
 
 class FPCWhiteAlwaysExpandedBottomSheetCloseButton extends FPCPlatformWidget {
-  FPCWhiteAlwaysExpandedBottomSheetCloseButton({
-    super.key,
-    required String cupertinoLocale,
-    Color? splashColor,
-    required VoidCallback onPressed,
-  }) : super(
-          cupertino: _FPCWhiteAlwaysExpandedBottomSheetCloseButtonCupertino(
-            key: key,
-            cupertinoLocale: cupertinoLocale,
-            splashColor: splashColor,
-            onPressed: onPressed,
-          ),
-          material: _FPCWhiteAlwaysExpandedBottomSheetCloseButtonMaterial(
-            key: key,
-            cupertinoLocale: cupertinoLocale,
-            splashColor: splashColor,
-            onPressed: onPressed,
-          ),
-        );
-}
-
-class _FPCWhiteAlwaysExpandedBottomSheetCloseButtonCupertino
-    extends StatelessWidget {
-  const _FPCWhiteAlwaysExpandedBottomSheetCloseButtonCupertino({
+  const FPCWhiteAlwaysExpandedBottomSheetCloseButton({
     super.key,
     required this.cupertinoLocale,
-    required this.splashColor,
+    this.splashColor,
     required this.onPressed,
   });
 
@@ -40,7 +17,9 @@ class _FPCWhiteAlwaysExpandedBottomSheetCloseButtonCupertino
   final VoidCallback onPressed;
 
   @override
-  Widget build(BuildContext context) {
+  Widget cupertino(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
 
     return CupertinoButton(
@@ -54,23 +33,11 @@ class _FPCWhiteAlwaysExpandedBottomSheetCloseButtonCupertino
       ),
     );
   }
-}
-
-class _FPCWhiteAlwaysExpandedBottomSheetCloseButtonMaterial
-    extends StatelessWidget {
-  const _FPCWhiteAlwaysExpandedBottomSheetCloseButtonMaterial({
-    super.key,
-    required this.cupertinoLocale,
-    required this.splashColor,
-    required this.onPressed,
-  });
-
-  final String cupertinoLocale;
-  final Color? splashColor;
-  final VoidCallback onPressed;
 
   @override
-  Widget build(BuildContext context) {
+  Widget material(
+    BuildContext context,
+  ) {
     final IFPCTheme theme = context.fpcTheme;
     final IFPCSize size = context.fpcSize;
 

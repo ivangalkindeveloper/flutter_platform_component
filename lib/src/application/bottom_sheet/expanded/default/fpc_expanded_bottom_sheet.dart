@@ -41,7 +41,9 @@ class FPCExpandedBottomSheet<T> extends StatelessWidget
   final Widget body;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final IFPCTheme theme = context.fpcTheme;
 
