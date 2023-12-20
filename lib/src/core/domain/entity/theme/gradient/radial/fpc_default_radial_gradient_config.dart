@@ -1,7 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCDefaultRadialGradientConfig implements IFPCRadialGradientConfig {
+class FPCDefaultRadialGradientConfig implements FPCRadialGradientConfig {
   const FPCDefaultRadialGradientConfig({
     this.center = Alignment.center,
     this.radius = 0.5,

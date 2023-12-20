@@ -12,8 +12,8 @@ class MainDuration extends StatelessWidget {
   Widget build(
     BuildContext context,
   ) {
-    final IFPCDuration duration = context.fpcDuration;
-    final IFPCSize size = context.fpcSize;
+    final FPCDuration duration = context.fpcDuration;
+    final FPCSize size = context.fpcSize;
 
     return Column(
       mainAxisSize: MainAxisSize.min,

@@ -12,7 +12,7 @@ class BlackAlwaysExpandedBottomSheetScreen extends StatelessWidget {
   Widget build(
     BuildContext context,
   ) {
-    final IFPCTheme theme = context.fpcTheme;
+    final FPCTheme theme = context.fpcTheme;
 
     return FPCScaffold(
       appBar: AppBarConfig(

@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
-abstract class IFPCRadialGradientConfig {
-  const IFPCRadialGradientConfig();
+abstract class FPCRadialGradientConfig {
+  const FPCRadialGradientConfig();
 
   abstract final AlignmentGeometry center;
   abstract final double radius;
@@ -13,7 +13,7 @@ abstract class IFPCRadialGradientConfig {
 
   @override
   bool operator ==(Object other) =>
-      other is IFPCRadialGradientConfig &&
+      other is FPCRadialGradientConfig &&
       other.center == this.center &&
       other.radius == this.radius &&
       other.stops == this.stops &&
@@ -23,13 +23,15 @@ abstract class IFPCRadialGradientConfig {
       other.transform == this.transform;
 
   @override
-  int get hashCode => Object.hash(
-        this.center,
-        this.radius,
-        this.stops,
-        this.tileMode,
-        this.focal,
-        this.focalRadius,
-        this.transform,
+  int get hashCode => Object.hashAll(
+        [
+          this.center,
+          this.radius,
+          this.stops,
+          this.tileMode,
+          this.focal,
+          this.focalRadius,
+          this.transform,
+        ],
       );
 }

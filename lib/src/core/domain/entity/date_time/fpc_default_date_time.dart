@@ -1,6 +1,6 @@
 import 'package:flutter_platform_component/src/core/domain/entity/date_time/fpc_date_time.dart';
 
-class FPCDefaultDateTime implements IFPCDateTime {
+class FPCDefaultDateTime implements FPCDateTime {
   FPCDefaultDateTime({
     DateTime? minimum,
     DateTime? initial,

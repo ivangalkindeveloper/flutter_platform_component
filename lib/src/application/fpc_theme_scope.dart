@@ -6,7 +6,7 @@ class _FPCThemeWidget extends StatefulWidget {
     required this.child,
   });
 
-  final IFPCTheme? theme;
+  final FPCTheme? theme;
   final Widget child;
 
   @override
@@ -14,7 +14,7 @@ class _FPCThemeWidget extends StatefulWidget {
 }
 
 class _FPCThemeState extends State<_FPCThemeWidget> {
-  late IFPCTheme _theme;
+  late FPCTheme _theme;
 
   // Barrier
   // Barrier / Expanded BottomSheet
@@ -47,7 +47,7 @@ class _FPCThemeState extends State<_FPCThemeWidget> {
     this._theme = this.widget.theme ?? FPCDefaultLightTheme();
   }
 
-  void _changeTheme(IFPCTheme theme) {
+  void _changeTheme(FPCTheme theme) {
     SystemChrome.setSystemUIOverlayStyle(theme.systemOverlayStyle);
     setState(() => this._theme = theme);
   }
@@ -81,8 +81,8 @@ class FPCThemeScope extends InheritedWidget with FPCScopeMixin {
     required super.child,
   });
 
-  final IFPCTheme theme;
-  final void Function(IFPCTheme theme) changeTheme;
+  final FPCTheme theme;
+  final void Function(FPCTheme theme) changeTheme;
   //
   final Color barrierColorExpandedBottomSheet;
   final Color barrierColorSmallBottomSheet;

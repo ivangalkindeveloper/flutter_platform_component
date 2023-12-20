@@ -11,7 +11,7 @@ class DummyList extends StatelessWidget {
   Widget build(
     BuildContext context,
   ) {
-    final IFPCSize size = context.fpcSize;
+    final FPCSize size = context.fpcSize;
 
     return Column(
       mainAxisSize: MainAxisSize.min,

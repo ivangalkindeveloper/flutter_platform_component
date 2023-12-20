@@ -2,7 +2,7 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:math' as math;
 
-class FPCDefaultSweepGradientConfig implements IFPCSweepGradientConfig {
+class FPCDefaultSweepGradientConfig implements FPCSweepGradientConfig {
   const FPCDefaultSweepGradientConfig({
     this.center = Alignment.center,
     this.startAngle = 0.0,

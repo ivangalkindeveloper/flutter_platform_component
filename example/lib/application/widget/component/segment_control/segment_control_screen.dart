@@ -35,7 +35,7 @@ class _SegmentControlScreenState extends State<SegmentControlScreen> {
   Widget build(
     BuildContext context,
   ) {
-    final IFPCSize size = context.fpcSize;
+    final FPCSize size = context.fpcSize;
 
     return FPCScaffold(
       appBar: AppBarConfig(

@@ -20,8 +20,8 @@ class _AnimatedPositionedScreenState extends State<AnimatedPositionedScreen> {
   Widget build(
     BuildContext context,
   ) {
-    final IFPCTheme theme = context.fpcTheme;
-    final IFPCSize size = context.fpcSize;
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
 
     return FPCScaffold(
       appBar: AppBarConfig(

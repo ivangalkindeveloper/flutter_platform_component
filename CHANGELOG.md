@@ -6,6 +6,9 @@ Addings:
 Refactoring:
 * Optimization of widgets, abandonment of the Container;
 * Refactoring of example project.
+* Transfer modal_bottom_sheet in local directory and optimization;
+* Transfer theme colors in MaterialTheme and CupertinoTheme;
+* Refactoring snippet script and new VS Code snippets;
 
 ## 3.0.6
 * Fix snack bar expanded width;
@@ -70,7 +73,7 @@ Other:
 
 ## 2.2.0
 * Folder refactoring;
-* IFPCAnimation, FPCAnimation;
+* FPCAnimation, FPCAnimation;
 * FPCAnimatedAlign, FPCAnimatedFastAlign, FPCAnimatedSlowAlign;
 * FPCAnimatedDefaultTextStyle, FPCAnimatedFastDefaultTextStyle, FPCAnimatedSlowDefaultTextStyle;
 * FPCAnimatedPositioned, FPCAnimatedFastPositioned, FPCAnimatedSlowPositioned;
@@ -103,7 +106,7 @@ Other:
 
 ## 1.1.0
 * Fix entities classes;
-* IFPCDateTime, IFPCDuration, IFPCTimeOfDay;
+* FPCDateTime, FPCDuration, FPCTimeOfDay;
 * Adding FPCTextFormField as helper field for fix bug with errorText.
 
 ## 1.0.9

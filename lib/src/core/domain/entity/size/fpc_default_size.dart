@@ -1,7 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCDefaultSize implements IFPCSize {
+class FPCDefaultSize implements FPCSize {
   const FPCDefaultSize({
     // Size
     this.s10 = 10,

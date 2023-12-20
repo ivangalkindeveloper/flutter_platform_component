@@ -21,8 +21,8 @@ class _BlurBottomNavigationBarScreenState
   Widget build(
     BuildContext context,
   ) {
-    final IFPCTheme theme = context.fpcTheme;
-    final IFPCSize size = context.fpcSize;
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
 
     final Color childColor = this._index == 1 ? theme.primary : theme.grey;
 

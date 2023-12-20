@@ -16,7 +16,7 @@ class RowGradientValue extends StatelessWidget {
   Widget build(
     BuildContext context,
   ) {
-    final IFPCSize size = context.fpcSize;
+    final FPCSize size = context.fpcSize;
 
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,

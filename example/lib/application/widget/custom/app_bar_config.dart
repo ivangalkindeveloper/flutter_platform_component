@@ -18,8 +18,8 @@ class AppBarConfig extends FPCScreenAppBar {
   static Widget _postifx(
     BuildContext context,
   ) {
-    final IFPCTheme theme = context.fpcTheme;
-    final IFPCSize size = context.fpcSize;
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
     final bool isIOS = context.fpcPlatform == FPCPlatform.iOS;
 
     return Row(

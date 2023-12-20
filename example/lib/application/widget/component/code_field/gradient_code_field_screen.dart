@@ -31,7 +31,7 @@ class _GradientCodeFieldScreenState extends State<GradientCodeFieldScreen> {
   Widget build(
     BuildContext context,
   ) {
-    final IFPCSize size = context.fpcSize;
+    final FPCSize size = context.fpcSize;
 
     return FPCScaffold(
       appBar: AppBarConfig(

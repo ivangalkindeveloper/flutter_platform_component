@@ -13,7 +13,7 @@ class MainPlatform extends StatelessWidget {
     BuildContext context,
   ) {
     final FPCPlatform platform = context.fpcPlatform;
-    final IFPCSize size = context.fpcSize;
+    final FPCSize size = context.fpcSize;
 
     return Column(
       mainAxisSize: MainAxisSize.min,

@@ -12,8 +12,8 @@ class MainAnimation extends StatelessWidget {
   Widget build(
     BuildContext context,
   ) {
-    final IFPCAnimation animation = context.fpcAnimation;
-    final IFPCSize size = context.fpcSize;
+    final FPCAnimation animation = context.fpcAnimation;
+    final FPCSize size = context.fpcSize;
 
     return Column(
       mainAxisSize: MainAxisSize.min,

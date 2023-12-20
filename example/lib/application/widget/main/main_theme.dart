@@ -14,8 +14,8 @@ class MainTheme extends StatelessWidget {
   Widget build(
     BuildContext context,
   ) {
-    final IFPCTheme theme = context.fpcTheme;
-    final IFPCSize size = context.fpcSize;
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
 
     return Column(
       mainAxisSize: MainAxisSize.min,

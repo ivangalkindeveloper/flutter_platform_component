@@ -5,7 +5,9 @@ enum FPCPlatform {
   iOS,
   android;
 
-  static FPCPlatform? fromString(String name) =>
+  static FPCPlatform? fromString(
+    String name,
+  ) =>
       FPCPlatform.values.firstWhereOrNull(
         (
           FPCPlatform platform,
@@ -13,7 +15,9 @@ enum FPCPlatform {
             platform.name == name,
       );
 
-  static FPCPlatform fromTargetPlatform(TargetPlatform platform) {
+  static FPCPlatform fromTarget(
+    TargetPlatform platform,
+  ) {
     switch (platform) {
       case TargetPlatform.iOS:
         return FPCPlatform.iOS;

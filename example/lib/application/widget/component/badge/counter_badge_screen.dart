@@ -19,7 +19,7 @@ class _CounterBadgeScreenState extends State<CounterBadgeScreen> {
   Widget build(
     BuildContext context,
   ) {
-    final IFPCSize size = context.fpcSize;
+    final FPCSize size = context.fpcSize;
 
     return FPCScaffold(
       appBar: AppBarConfig(
@@ -195,8 +195,8 @@ class _Child extends StatelessWidget {
     BuildContext context,
   ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
-    final IFPCTheme theme = context.fpcTheme;
-    final IFPCSize size = context.fpcSize;
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
 
     return Container(
       height: size.s32,

@@ -13,7 +13,7 @@ class AnimatedOpenContainerScreen extends StatelessWidget {
     BuildContext context,
   ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
-    final IFPCSize size = context.fpcSize;
+    final FPCSize size = context.fpcSize;
 
     return FPCScaffold(
       appBar: AppBarConfig(

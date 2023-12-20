@@ -30,7 +30,7 @@ class _GradientPINFieldScreenState extends State<GradientPINFieldScreen> {
   Widget build(
     BuildContext context,
   ) {
-    final IFPCSize size = context.fpcSize;
+    final FPCSize size = context.fpcSize;
 
     return FPCScaffold(
       appBar: AppBarConfig(

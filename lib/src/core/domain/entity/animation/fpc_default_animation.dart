@@ -1,7 +1,7 @@
 import 'package:flutter_platform_component/src/core/domain/entity/animation/fpc_animation.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCDefaultAnimation implements IFPCAnimation {
+class FPCDefaultAnimation implements FPCAnimation {
   const FPCDefaultAnimation({
     this.curve = Curves.easeInOut,
     this.clipBehavior = Clip.hardEdge,

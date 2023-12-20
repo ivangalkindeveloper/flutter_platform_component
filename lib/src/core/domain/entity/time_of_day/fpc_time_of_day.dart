@@ -1,23 +1,25 @@
 import 'package:flutter/material.dart' show TimeOfDay;
 
-abstract class IFPCTimeOfDay {
+abstract class FPCTimeOfDay {
   abstract final TimeOfDay minimum;
   abstract final TimeOfDay initial;
   abstract final TimeOfDay maximum;
 
-  IFPCTimeOfDay copyWith();
+  FPCTimeOfDay copyWith();
 
   @override
   bool operator ==(Object other) =>
-      other is IFPCTimeOfDay &&
+      other is FPCTimeOfDay &&
       other.minimum == this.minimum &&
       other.initial == this.initial &&
       other.maximum == this.maximum;
 
   @override
-  int get hashCode => Object.hashAll([
-        this.minimum,
-        this.initial,
-        this.maximum,
-      ]);
+  int get hashCode => Object.hashAll(
+        [
+          this.minimum,
+          this.initial,
+          this.maximum,
+        ],
+      );
 }

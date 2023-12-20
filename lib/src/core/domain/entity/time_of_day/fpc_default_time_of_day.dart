@@ -2,7 +2,7 @@ import 'package:flutter_platform_component/src/core/domain/entity/time_of_day/fp
 
 import 'package:flutter/material.dart' show TimeOfDay;
 
-class FPCDefaultTimeOfDay implements IFPCTimeOfDay {
+class FPCDefaultTimeOfDay implements FPCTimeOfDay {
   const FPCDefaultTimeOfDay({
     this.minimum = const TimeOfDay(hour: 00, minute: 00),
     this.initial = const TimeOfDay(hour: 12, minute: 00),

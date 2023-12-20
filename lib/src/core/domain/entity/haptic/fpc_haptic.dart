@@ -1,5 +1,5 @@
-abstract class IFPCHaptic {
-  const IFPCHaptic();
+abstract class FPCHaptic {
+  const FPCHaptic();
 
   void success();
 
@@ -19,7 +19,7 @@ abstract class IFPCHaptic {
 
   @override
   bool operator ==(Object other) =>
-      other is IFPCHaptic &&
+      other is FPCHaptic &&
       other.success == this.success &&
       other.warning == this.warning &&
       other.error == this.error &&
@@ -30,14 +30,16 @@ abstract class IFPCHaptic {
       other.light == this.light;
 
   @override
-  int get hashCode => Object.hashAll([
-        this.success,
-        this.warning,
-        this.error,
-        this.selection,
-        this.impact,
-        this.heavy,
-        this.medium,
-        this.light,
-      ]);
+  int get hashCode => Object.hashAll(
+        [
+          this.success,
+          this.warning,
+          this.error,
+          this.selection,
+          this.impact,
+          this.heavy,
+          this.medium,
+          this.light,
+        ],
+      );
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
-abstract class IFPCLinearGradientConfig {
-  const IFPCLinearGradientConfig();
+abstract class FPCLinearGradientConfig {
+  const FPCLinearGradientConfig();
 
   abstract final AlignmentGeometry begin;
   abstract final AlignmentGeometry end;
@@ -11,7 +11,7 @@ abstract class IFPCLinearGradientConfig {
 
   @override
   bool operator ==(Object other) =>
-      other is IFPCLinearGradientConfig &&
+      other is FPCLinearGradientConfig &&
       other.begin == this.begin &&
       other.end == this.end &&
       other.stops == this.stops &&
@@ -19,11 +19,13 @@ abstract class IFPCLinearGradientConfig {
       other.transform == this.transform;
 
   @override
-  int get hashCode => Object.hash(
-        this.begin,
-        this.end,
-        this.stops,
-        this.tileMode,
-        this.transform,
+  int get hashCode => Object.hashAll(
+        [
+          this.begin,
+          this.end,
+          this.stops,
+          this.tileMode,
+          this.transform,
+        ],
       );
 }

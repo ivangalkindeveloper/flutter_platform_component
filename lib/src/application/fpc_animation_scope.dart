@@ -6,7 +6,7 @@ class _FPCAnimationWidget extends StatefulWidget {
     required this.child,
   });
 
-  final IFPCAnimation? animation;
+  final FPCAnimation? animation;
   final Widget child;
 
   @override
@@ -14,7 +14,7 @@ class _FPCAnimationWidget extends StatefulWidget {
 }
 
 class _FPCAnimationState extends State<_FPCAnimationWidget> {
-  late IFPCAnimation _animation;
+  late FPCAnimation _animation;
 
   @override
   void initState() {
@@ -22,7 +22,7 @@ class _FPCAnimationState extends State<_FPCAnimationWidget> {
     this._animation = this.widget.animation ?? const FPCDefaultAnimation();
   }
 
-  void _changeAnimation(IFPCAnimation animation) =>
+  void _changeAnimation(FPCAnimation animation) =>
       setState(() => this._animation = animation);
 
   @override
@@ -44,8 +44,8 @@ class FPCAnimationScope extends InheritedWidget {
     required super.child,
   });
 
-  final IFPCAnimation animation;
-  final void Function(IFPCAnimation animation) changeAnimation;
+  final FPCAnimation animation;
+  final void Function(FPCAnimation animation) changeAnimation;
 
   static FPCAnimationScope of(
     BuildContext context,

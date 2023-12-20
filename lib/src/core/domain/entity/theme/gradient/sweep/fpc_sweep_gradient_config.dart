@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
-abstract class IFPCSweepGradientConfig {
-  const IFPCSweepGradientConfig();
+abstract class FPCSweepGradientConfig {
+  const FPCSweepGradientConfig();
 
   abstract final AlignmentGeometry center;
   abstract final double startAngle;
@@ -12,7 +12,7 @@ abstract class IFPCSweepGradientConfig {
 
   @override
   bool operator ==(Object other) =>
-      other is IFPCSweepGradientConfig &&
+      other is FPCSweepGradientConfig &&
       other.center == this.center &&
       other.startAngle == this.startAngle &&
       other.endAngle == this.endAngle &&
@@ -21,12 +21,14 @@ abstract class IFPCSweepGradientConfig {
       other.transform == this.transform;
 
   @override
-  int get hashCode => Object.hash(
-        this.center,
-        this.startAngle,
-        this.endAngle,
-        this.stops,
-        this.tileMode,
-        this.transform,
+  int get hashCode => Object.hashAll(
+        [
+          this.center,
+          this.startAngle,
+          this.endAngle,
+          this.stops,
+          this.tileMode,
+          this.transform,
+        ],
       );
 }

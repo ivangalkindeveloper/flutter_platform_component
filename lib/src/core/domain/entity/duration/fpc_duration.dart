@@ -1,5 +1,5 @@
-abstract class IFPCDuration {
-  const IFPCDuration();
+abstract class FPCDuration {
+  const FPCDuration();
 
   // Animation
   abstract final Duration animationFast;
@@ -18,11 +18,11 @@ abstract class IFPCDuration {
   // SnackBar
   abstract final Duration snackbar;
 
-  IFPCDuration copyWith();
+  FPCDuration copyWith();
 
   @override
   bool operator ==(Object other) =>
-      other is IFPCDuration &&
+      other is FPCDuration &&
       // Animation
       other.animationFast == this.animationFast &&
       other.animationDefault == this.animationDefault &&
@@ -37,18 +37,20 @@ abstract class IFPCDuration {
       other.snackbar == this.snackbar;
 
   @override
-  int get hashCode => Object.hashAll([
-        // Animation
-        this.animationFast,
-        this.animationDefault,
-        this.animationSlow,
-        // Badge
-        this.badge,
-        // Page Indicator
-        this.pageIndicator,
-        // Shimmer
-        this.shimmer,
-        // SnackBar
-        this.snackbar,
-      ]);
+  int get hashCode => Object.hashAll(
+        [
+          // Animation
+          this.animationFast,
+          this.animationDefault,
+          this.animationSlow,
+          // Badge
+          this.badge,
+          // Page Indicator
+          this.pageIndicator,
+          // Shimmer
+          this.shimmer,
+          // SnackBar
+          this.snackbar,
+        ],
+      );
 }

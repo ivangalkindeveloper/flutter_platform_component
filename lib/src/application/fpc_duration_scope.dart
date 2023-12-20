@@ -6,7 +6,7 @@ class _FPCDurationWidget extends StatefulWidget {
     required this.child,
   });
 
-  final IFPCDuration? duration;
+  final FPCDuration? duration;
   final Widget child;
 
   @override
@@ -14,7 +14,7 @@ class _FPCDurationWidget extends StatefulWidget {
 }
 
 class _FPCDurationState extends State<_FPCDurationWidget> {
-  late IFPCDuration _duration;
+  late FPCDuration _duration;
 
   @override
   void initState() {
@@ -22,7 +22,7 @@ class _FPCDurationState extends State<_FPCDurationWidget> {
     this._duration = this.widget.duration ?? const FPCDefaultDuration();
   }
 
-  void _changeDuration(IFPCDuration duration) =>
+  void _changeDuration(FPCDuration duration) =>
       setState(() => this._duration = duration);
 
   @override
@@ -44,8 +44,8 @@ class FPCDurationScope extends InheritedWidget with FPCScopeMixin {
     required super.child,
   });
 
-  final IFPCDuration duration;
-  final void Function(IFPCDuration duration) changeDuration;
+  final FPCDuration duration;
+  final void Function(FPCDuration duration) changeDuration;
 
   static FPCDurationScope of(
     BuildContext context,

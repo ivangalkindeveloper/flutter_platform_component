@@ -6,7 +6,7 @@ class _FPCDateTimeWidget extends StatefulWidget {
     required this.child,
   });
 
-  final IFPCDateTime? dateTime;
+  final FPCDateTime? dateTime;
   final Widget child;
 
   @override
@@ -14,7 +14,7 @@ class _FPCDateTimeWidget extends StatefulWidget {
 }
 
 class _FPCDateTimeState extends State<_FPCDateTimeWidget> {
-  late IFPCDateTime _dateTime;
+  late FPCDateTime _dateTime;
 
   @override
   void initState() {
@@ -22,7 +22,7 @@ class _FPCDateTimeState extends State<_FPCDateTimeWidget> {
     this._dateTime = this.widget.dateTime ?? FPCDefaultDateTime();
   }
 
-  void _changeDateTime(IFPCDateTime dateTime) =>
+  void _changeDateTime(FPCDateTime dateTime) =>
       setState(() => this._dateTime = dateTime);
 
   @override
@@ -44,8 +44,8 @@ class FPCDateTimeScope extends InheritedWidget with FPCScopeMixin {
     required super.child,
   });
 
-  final IFPCDateTime dateTime;
-  final void Function(IFPCDateTime dateTime) changeDateTime;
+  final FPCDateTime dateTime;
+  final void Function(FPCDateTime dateTime) changeDateTime;
 
   static FPCDateTimeScope of(
     BuildContext context,

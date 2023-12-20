@@ -382,7 +382,7 @@ FPCPrimaryButton(
 The default value is [const FPCDefaultAnimation();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/animation/fpc_default_animation.dart#L4).\
 Get the actual animation instance in the widget tree:
 ```dart
-final IFPCAnimation animation = context.fpcAnimation;
+final FPCAnimation animation = context.fpcAnimation;
 ```
 The method allows you to change the current animations:
 ```dart
@@ -394,7 +394,7 @@ context.fpcChangeDateTime(const Animations());
 The default value is [FPCDefaultDateTime();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/date_time/fpc_default_date_time.dart#L3).\
 Get the actual date time instance in the widget tree:
 ```dart
-final IFPCDateTime dateTime = context.fpcDateTime;
+final FPCDateTime dateTime = context.fpcDateTime;
 ```
 The method allows you to change the current date times:
 ```dart
@@ -406,7 +406,7 @@ context.fpcChangeDateTime(DateTimes());
 The default value is [const FPCDefaultDuration();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/duration/fpc_default_duration.dart#L3).\
 Get the actual duration instance in the widget tree:
 ```dart
-final IFPCDuration duration = context.fpcDuration;
+final FPCDuration duration = context.fpcDuration;
 ```
 The method allows you to change the current durations:
 ```dart
@@ -418,7 +418,7 @@ context.fpcChangeDuration(const Durations());
 The default value is [const FPCDefaultHaptic();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/entity/haptic/fpc_default_haptic.dart#L4).\
 Get the actual vibration functions instance in the widget tree:
 ```dart
-final IFPCHaptic haptic = context.fpcHaptic;
+final FPCHaptic haptic = context.fpcHaptic;
 ```
 The method allows you to change the current haptic vibration:
 ```dart
@@ -442,7 +442,7 @@ context.fpcChangePlatform(FPCPlatform.android);
 The default value is [const FPCDefaultSize();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/size/fpc_default_size.dart#L4).\
 Get the actual sizes instance in the widget tree:
 ```dart
-final IFPCSize size = context.fpcSize;
+final FPCSize size = context.fpcSize;
 ```
 The method allows you to change the current sizes:
 ```dart
@@ -472,7 +472,7 @@ final double borderWidthSnackBar = sizeScope.borderWidthSnackBar;
 The default value is [const FPCDefaultTextStyle();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/text_style/fpc_default_text_style.dart#L4).\
 Get the actual text style instance in the widget tree:
 ```dart
-final IFPCTextStyle textStyle = context.fpcTextStyle;
+final FPCFont font = context.fpcFont;
 ```
 The method allows you to change the current text styles:
 ```dart
@@ -485,7 +485,7 @@ The default value is [FPCDefaultLightTheme();](https://github.com/ivangalkindeve
 There is also a dark theme for example - [FPCDefaultDarkTheme();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/theme/fpc_default_dark_theme.dart#L10).\
 Get the actual theme instance in the widget tree:
 ```dart
-final IFPCTheme theme = context.fpcTheme;
+final FPCTheme theme = context.fpcTheme;
 ```
 The method allows you to change the current theme:
 ```dart
@@ -505,7 +505,7 @@ final Color barrierColorDialog = themeScope.barrierColorDialog;
 The default value is [FPCDefaultTimeOfDay();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/time_of_day/fpc_default_time_of_day.dart#L5).\
 Get the actual time of day instance in the widget tree:
 ```dart
-final IFPCTimeOfDay timeOfDay = context.fpcTimeOfDay;
+final FPCTimeOfDay timeOfDay = context.fpcTimeOfDay;
 ```
 The method allows you to change the current times of day:
 ```dart

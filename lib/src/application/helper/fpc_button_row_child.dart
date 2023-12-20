@@ -51,9 +51,9 @@ class FPCButtonRowChild extends StatelessWidget {
   Widget build(
     BuildContext context,
   ) {
-    final IFPCTextStyle textStyle = context.fpcTextStyle;
-    final IFPCTheme theme = context.fpcTheme;
-    final IFPCSize size = context.fpcSize;
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
 
     return Row(
       mainAxisSize: this.mainAxisSize,
@@ -87,18 +87,18 @@ class FPCButtonRowChild extends StatelessWidget {
                 style: this.titleStyle?.copyWith(
                           color: this.titleStyle?.color ?? theme.black,
                           fontSize: this.titleStyle?.fontSize ?? size.s16,
-                          fontWeight: this.titleStyle?.fontWeight ??
-                              textStyle.fontWeightMedium,
-                          fontFamily: this.titleStyle?.fontFamily ??
-                              textStyle.fontFamilyMedium,
-                          package: textStyle.package,
+                          fontWeight:
+                              this.titleStyle?.fontWeight ?? font.weightMedium,
+                          fontFamily:
+                              this.titleStyle?.fontFamily ?? font.familyMedium,
+                          package: font.package,
                         ) ??
                     TextStyle(
                       color: theme.black,
                       fontSize: size.s16,
-                      fontWeight: textStyle.fontWeightMedium,
-                      fontFamily: textStyle.fontFamilyMedium,
-                      package: textStyle.package,
+                      fontWeight: font.weightMedium,
+                      fontFamily: font.familyMedium,
+                      package: font.package,
                     ),
               ),
             ),

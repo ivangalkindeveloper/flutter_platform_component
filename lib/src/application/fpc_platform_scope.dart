@@ -20,7 +20,9 @@ class _FPCPlatformState extends State<_FPCPlatformWidget> {
   void initState() {
     super.initState();
     this._platform = this.widget.platform ??
-        FPCPlatform.fromTargetPlatform(defaultTargetPlatform);
+        FPCPlatform.fromTarget(
+          defaultTargetPlatform,
+        );
   }
 
   void _changePlatform(FPCPlatform platform) =>

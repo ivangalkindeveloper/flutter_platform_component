@@ -7,7 +7,7 @@ import 'package:flutter/cupertino.dart'
     show CupertinoThemeData, CupertinoDynamicColor;
 import 'package:flutter/material.dart' show ThemeMode, ThemeData, Colors;
 
-class FPCDefaultDarkTheme extends IFPCTheme {
+class FPCDefaultDarkTheme extends FPCTheme {
   FPCDefaultDarkTheme({
     // Framework
     this.cupertinoThemeData = const CupertinoThemeData(),
@@ -456,11 +456,11 @@ class FPCDefaultDarkTheme extends IFPCTheme {
 
   // Gradient
   @override
-  final IFPCLinearGradientConfig linearGradientConfig;
+  final FPCLinearGradientConfig linearGradientConfig;
   @override
-  final IFPCRadialGradientConfig radialGradientConfig;
+  final FPCRadialGradientConfig radialGradientConfig;
   @override
-  final IFPCSweepGradientConfig sweepGradientConfig;
+  final FPCSweepGradientConfig sweepGradientConfig;
 
   @override
   FPCDefaultDarkTheme copyWith({
@@ -581,9 +581,9 @@ class FPCDefaultDarkTheme extends IFPCTheme {
     Color? barrierDialogMaterial,
 
     // Gradient
-    IFPCLinearGradientConfig? linearGradientConfig,
-    IFPCRadialGradientConfig? radialGradientConfig,
-    IFPCSweepGradientConfig? sweepGradientConfig,
+    FPCLinearGradientConfig? linearGradientConfig,
+    FPCRadialGradientConfig? radialGradientConfig,
+    FPCSweepGradientConfig? sweepGradientConfig,
   }) =>
       FPCDefaultDarkTheme(
         // Framework
@@ -720,7 +720,7 @@ class FPCDefaultDarkTheme extends IFPCTheme {
 
   @override
   FPCDefaultDarkTheme lerp({
-    required IFPCTheme other,
+    required FPCTheme other,
     required double t,
   }) =>
       this.copyWith(

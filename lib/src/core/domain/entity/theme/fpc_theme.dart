@@ -6,8 +6,8 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart' show CupertinoThemeData;
 import 'package:flutter/material.dart' show ThemeMode, ThemeData;
 
-abstract class IFPCTheme {
-  const IFPCTheme();
+abstract class FPCTheme {
+  const FPCTheme();
 
   // Framework
   abstract final CupertinoThemeData cupertinoThemeData;
@@ -126,20 +126,20 @@ abstract class IFPCTheme {
   abstract final Color barrierDialogMaterial;
 
   // Gradient
-  abstract final IFPCLinearGradientConfig linearGradientConfig;
-  abstract final IFPCRadialGradientConfig radialGradientConfig;
-  abstract final IFPCSweepGradientConfig sweepGradientConfig;
+  abstract final FPCLinearGradientConfig linearGradientConfig;
+  abstract final FPCRadialGradientConfig radialGradientConfig;
+  abstract final FPCSweepGradientConfig sweepGradientConfig;
 
-  IFPCTheme copyWith();
+  FPCTheme copyWith();
 
-  IFPCTheme lerp({
-    required IFPCTheme other,
+  FPCTheme lerp({
+    required FPCTheme other,
     required double t,
   });
 
   @override
   bool operator ==(Object other) =>
-      other is IFPCTheme &&
+      other is FPCTheme &&
       // Framework
       other.cupertinoThemeData == this.cupertinoThemeData &&
       other.materialThemeMode == this.materialThemeMode &&
@@ -266,126 +266,128 @@ abstract class IFPCTheme {
       other.radialGradientConfig == this.radialGradientConfig;
 
   @override
-  int get hashCode => Object.hashAll([
-        // Framework
-        this.cupertinoThemeData,
-        this.materialThemeMode,
-        this.materialThemeData,
-        this.systemOverlayStyle,
+  int get hashCode => Object.hashAll(
+        [
+          // Framework
+          this.cupertinoThemeData,
+          this.materialThemeMode,
+          this.materialThemeData,
+          this.systemOverlayStyle,
 
-        // White
-        this.white,
-        this.whiteAlways,
+          // White
+          this.white,
+          this.whiteAlways,
 
-        // Black
-        this.black,
-        this.blackAlways,
+          // Black
+          this.black,
+          this.blackAlways,
 
-        // Background
-        this.backgroundScaffold,
-        this.backgroundComponent,
+          // Background
+          this.backgroundScaffold,
+          this.backgroundComponent,
 
-        // Blur
-        this.blur,
-        this.blurFilter,
+          // Blur
+          this.blur,
+          this.blurFilter,
 
-        // Primary
-        this.primary,
-        this.primaryInternal,
-        this.primaryGradient,
-        // Primary / Light
-        this.primaryLight,
-        this.primaryLightGradient,
-        // Primary / Dark
-        this.primaryDark,
-        this.primaryDarkGradient,
+          // Primary
+          this.primary,
+          this.primaryInternal,
+          this.primaryGradient,
+          // Primary / Light
+          this.primaryLight,
+          this.primaryLightGradient,
+          // Primary / Dark
+          this.primaryDark,
+          this.primaryDarkGradient,
 
-        // Secondary
-        this.secondary,
-        this.secondaryInternal,
-        this.secondaryGradient,
-        // Secondary / Light
-        this.secondaryLight,
-        this.secondaryLightGradient,
-        // Secondary / Dark
-        this.secondaryDark,
-        this.secondaryDarkGradient,
+          // Secondary
+          this.secondary,
+          this.secondaryInternal,
+          this.secondaryGradient,
+          // Secondary / Light
+          this.secondaryLight,
+          this.secondaryLightGradient,
+          // Secondary / Dark
+          this.secondaryDark,
+          this.secondaryDarkGradient,
 
-        // Accent
-        this.accent,
-        this.accentInternal,
-        this.accentGradient,
-        // Accent / Light
-        this.accentLight,
-        this.accentLightGradient,
-        // Accent / Dark
-        this.accentDark,
-        this.accentDarkGradient,
+          // Accent
+          this.accent,
+          this.accentInternal,
+          this.accentGradient,
+          // Accent / Light
+          this.accentLight,
+          this.accentLightGradient,
+          // Accent / Dark
+          this.accentDark,
+          this.accentDarkGradient,
 
-        // Grey
-        this.grey,
-        this.greyGradient,
-        // Grey / Light
-        this.greyLight,
-        this.greyLightGradient,
-        // Grey / Dark
-        this.greyDark,
-        this.greyDarkGradient,
+          // Grey
+          this.grey,
+          this.greyGradient,
+          // Grey / Light
+          this.greyLight,
+          this.greyLightGradient,
+          // Grey / Dark
+          this.greyDark,
+          this.greyDarkGradient,
 
-        // Info
-        this.info,
-        this.infoGradient,
-        // Info / Light
-        this.infoLight,
-        this.infoLightGradient,
-        // Info / Dark
-        this.infoDark,
-        this.infoDarkGradient,
+          // Info
+          this.info,
+          this.infoGradient,
+          // Info / Light
+          this.infoLight,
+          this.infoLightGradient,
+          // Info / Dark
+          this.infoDark,
+          this.infoDarkGradient,
 
-        // Success
-        this.success,
-        this.successGradient,
-        // Success / Light
-        this.successLight,
-        this.successLightGradient,
-        // Success / Dark
-        this.successDark,
-        this.successDarkGradient,
+          // Success
+          this.success,
+          this.successGradient,
+          // Success / Light
+          this.successLight,
+          this.successLightGradient,
+          // Success / Dark
+          this.successDark,
+          this.successDarkGradient,
 
-        // Warning
-        this.warning,
-        this.warningGradient,
-        // Warning / Light
-        this.warningLight,
-        this.warningLightGradient,
-        // Warning / Dark
-        this.warningDark,
-        this.warningDarkGradient,
+          // Warning
+          this.warning,
+          this.warningGradient,
+          // Warning / Light
+          this.warningLight,
+          this.warningLightGradient,
+          // Warning / Dark
+          this.warningDark,
+          this.warningDarkGradient,
 
-        // Danger
-        this.danger,
-        this.dangerGradient,
-        // Danger / Light
-        this.dangerLight,
-        this.dangerLightGradient,
-        // Danger / Dark
-        this.dangerDark,
-        this.dangerDarkGradient,
+          // Danger
+          this.danger,
+          this.dangerGradient,
+          // Danger / Light
+          this.dangerLight,
+          this.dangerLightGradient,
+          // Danger / Dark
+          this.dangerDark,
+          this.dangerDarkGradient,
 
-        // Barrier
-        // Barrier / Expanded BottomSheet
-        this.barrierExpandedBottomSheetCupertino,
-        this.barrierExpandedBottomSheetMaterial,
-        // Barrier / BottomSheet
-        this.barrierSmallBottomSheetCupertino,
-        this.barrierSmallBottomSheetMaterial,
-        // Barrier / Dialog
-        this.barrierDialogCupertino,
-        this.barrierDialogMaterial,
+          // Barrier
+          // Barrier / Expanded BottomSheet
+          this.barrierExpandedBottomSheetCupertino,
+          this.barrierExpandedBottomSheetMaterial,
+          // Barrier / BottomSheet
+          this.barrierSmallBottomSheetCupertino,
+          this.barrierSmallBottomSheetMaterial,
+          // Barrier / Dialog
+          this.barrierDialogCupertino,
+          this.barrierDialogMaterial,
 
-        // Gradient
-        this.linearGradientConfig,
-        this.radialGradientConfig,
-        this.radialGradientConfig,
-      ]);
+          // Gradient
+          this.linearGradientConfig,
+          this.radialGradientConfig,
+          this.radialGradientConfig,
+        ],
+      );
 }

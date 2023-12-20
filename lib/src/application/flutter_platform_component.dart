@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 
 part 'fpc_time_of_day_scope.dart';
-part 'fpc_text_style_scope.dart';
 part 'fpc_animation_scope.dart';
 part 'fpc_date_time_scope.dart';
 part 'fpc_duration_scope.dart';
@@ -12,31 +11,32 @@ part 'fpc_platform_scope.dart';
 part 'fpc_haptic_scope.dart';
 part 'fpc_theme_scope.dart';
 part 'fpc_size_scope.dart';
+part 'fpc_font_scope.dart';
 
 class FlutterPlatformComponent extends StatelessWidget {
   const FlutterPlatformComponent({
     super.key,
-    this.textStyle,
-    this.timeOfDay,
     this.animation,
+    this.timeOfDay,
     this.dateTime,
     this.duration,
     this.platform,
     this.haptic,
     this.theme,
     this.size,
+    this.font,
     required this.child,
   });
 
-  final IFPCAnimation? animation;
-  final IFPCTextStyle? textStyle;
-  final IFPCTimeOfDay? timeOfDay;
-  final IFPCDateTime? dateTime;
-  final IFPCDuration? duration;
+  final FPCAnimation? animation;
+  final FPCTimeOfDay? timeOfDay;
+  final FPCDateTime? dateTime;
+  final FPCDuration? duration;
   final FPCPlatform? platform;
-  final IFPCHaptic? haptic;
-  final IFPCTheme? theme;
-  final IFPCSize? size;
+  final FPCHaptic? haptic;
+  final FPCTheme? theme;
+  final FPCSize? size;
+  final FPCFont? font;
   final Widget child;
 
   @override
@@ -50,13 +50,6 @@ class FlutterPlatformComponent extends StatelessWidget {
           ) =>
               _FPCAnimationWidget(
                 animation: this.animation,
-                child: child,
-              ),
-          (
-            Widget child,
-          ) =>
-              _FPCTextStyleWidget(
-                textStyle: this.textStyle,
                 child: child,
               ),
           (
@@ -106,6 +99,13 @@ class FlutterPlatformComponent extends StatelessWidget {
           ) =>
               _FPCSizeWidget(
                 size: this.size,
+                child: child,
+              ),
+          (
+            Widget child,
+          ) =>
+              _FPCFontWidget(
+                font: this.font,
                 child: child,
               ),
         ],

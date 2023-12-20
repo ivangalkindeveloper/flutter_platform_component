@@ -1,7 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:example/application/widget/custom/app_bar_config.dart';
 import 'package:example/application/widget/main/main_time_of_day.dart';
-import 'package:example/application/widget/main/main_text_style.dart';
 import 'package:example/application/widget/main/main_component.dart';
 import 'package:example/application/widget/main/main_animation.dart';
 import 'package:example/application/widget/main/main_date_time.dart';
@@ -9,6 +8,7 @@ import 'package:example/application/widget/main/main_platform.dart';
 import 'package:example/application/widget/main/main_duration.dart';
 import 'package:example/application/widget/main/main_theme.dart';
 import 'package:example/application/widget/main/main_size.dart';
+import 'package:example/application/widget/main/main_font.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
@@ -34,7 +34,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(
     BuildContext context,
   ) {
-    final IFPCSize size = context.fpcSize;
+    final FPCSize size = context.fpcSize;
 
     return FPCScaffold(
       appBar: AppBarConfig(
@@ -52,11 +52,11 @@ class _MainScreenState extends State<MainScreen> {
             Gap(size.s16),
             const MainDuration(),
             Gap(size.s16),
+            const MainFont(),
+            Gap(size.s16),
             const MainPlatform(),
             Gap(size.s16),
             const MainSize(),
-            Gap(size.s16),
-            const MainTextStyle(),
             Gap(size.s16),
             const MainTheme(),
             Gap(size.s16),

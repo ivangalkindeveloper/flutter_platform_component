@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
-abstract class IFPCSize {
-  const IFPCSize();
+abstract class FPCSize {
+  const FPCSize();
 
   // Size
   abstract final double s10;
@@ -100,11 +100,11 @@ abstract class IFPCSize {
   // Opacity / Disabled
   abstract final double opacityDisabled;
 
-  IFPCSize copyWith();
+  FPCSize copyWith();
 
   @override
   bool operator ==(Object other) =>
-      other is IFPCSize &&
+      other is FPCSize &&
       // Size
       other.s10 == this.s10 &&
       other.s12 == this.s12 &&
@@ -205,96 +205,98 @@ abstract class IFPCSize {
       other.opacityDisabled == this.opacityDisabled;
 
   @override
-  int get hashCode => Object.hashAll([
-        // Size
-        this.s10,
-        this.s12,
-        this.s14,
-        this.s16,
-        this.s18,
-        this.s20,
-        this.s28,
-        this.s32,
+  int get hashCode => Object.hashAll(
+        [
+          // Size
+          this.s10,
+          this.s12,
+          this.s14,
+          this.s16,
+          this.s18,
+          this.s20,
+          this.s28,
+          this.s32,
 
-        // Padding
-        // Padding / Default
-        this.paddingDefault,
-        // Padding / Card
-        this.paddingCard,
-        // Padding / List View
-        this.paddingListView,
+          // Padding
+          // Padding / Default
+          this.paddingDefault,
+          // Padding / Card
+          this.paddingCard,
+          // Padding / List View
+          this.paddingListView,
 
-        // Height
-        // Height / Button
-        this.heightButton,
-        // Height / Code Field
-        this.heightCodeField,
-        // Height / Form Field
-        this.heightFormField,
-        // Height / Keyboard Button
-        this.heightKeyboardButton,
-        // Height / Segment Control
-        this.heightSegmentControl,
-        // Height / Sliding Segment Control
-        this.heightSlidingSegmentControl,
-        // Height / Toggle
-        this.heightToggle,
-        // Height / Icon
-        this.heightIconSmall,
-        this.heightIconDefault,
-        this.heightIconLarge,
-        // Height / Indicator
-        this.heightCircularIndicatorSmall,
-        this.heightCircularIndicatorDefault,
-        this.heightCircularIndicatorLarge,
+          // Height
+          // Height / Button
+          this.heightButton,
+          // Height / Code Field
+          this.heightCodeField,
+          // Height / Form Field
+          this.heightFormField,
+          // Height / Keyboard Button
+          this.heightKeyboardButton,
+          // Height / Segment Control
+          this.heightSegmentControl,
+          // Height / Sliding Segment Control
+          this.heightSlidingSegmentControl,
+          // Height / Toggle
+          this.heightToggle,
+          // Height / Icon
+          this.heightIconSmall,
+          this.heightIconDefault,
+          this.heightIconLarge,
+          // Height / Indicator
+          this.heightCircularIndicatorSmall,
+          this.heightCircularIndicatorDefault,
+          this.heightCircularIndicatorLarge,
 
-        // BorderRadius
-        // BorderRadius / BottomSheet
-        this.borderRadiusBottomSheetCupertino,
-        this.borderRadiusBottomSheetMaterial,
-        // BorderRadius / Button
-        this.borderRadiusButtonCupertino,
-        this.borderRadiusButtonMaterial,
-        // BorderRadius / Card
-        this.borderRadiusCardCupertino,
-        this.borderRadiusCardMaterial,
-        // BorderRadius / Dialog
-        this.borderRadiusDialogCupertino,
-        this.borderRadiusDialogMaterial,
-        // BorderRadius / Field
-        this.borderRadiusFieldCupertino,
-        this.borderRadiusFieldMaterial,
-        // BorderRadius / Segment Control
-        this.borderRadiusSegmentControlCupertino,
-        this.borderRadiusSegmentControlMaterial,
-        // BorderRadius / SnackBar
-        this.borderRadiusSnackBarCupertino,
-        this.borderRadiusSnackBarMaterial,
-        // BorderRadius / Toggle
-        this.borderRadiusToggleCupertino,
-        this.borderRadiusToggleMaterial,
+          // BorderRadius
+          // BorderRadius / BottomSheet
+          this.borderRadiusBottomSheetCupertino,
+          this.borderRadiusBottomSheetMaterial,
+          // BorderRadius / Button
+          this.borderRadiusButtonCupertino,
+          this.borderRadiusButtonMaterial,
+          // BorderRadius / Card
+          this.borderRadiusCardCupertino,
+          this.borderRadiusCardMaterial,
+          // BorderRadius / Dialog
+          this.borderRadiusDialogCupertino,
+          this.borderRadiusDialogMaterial,
+          // BorderRadius / Field
+          this.borderRadiusFieldCupertino,
+          this.borderRadiusFieldMaterial,
+          // BorderRadius / Segment Control
+          this.borderRadiusSegmentControlCupertino,
+          this.borderRadiusSegmentControlMaterial,
+          // BorderRadius / SnackBar
+          this.borderRadiusSnackBarCupertino,
+          this.borderRadiusSnackBarMaterial,
+          // BorderRadius / Toggle
+          this.borderRadiusToggleCupertino,
+          this.borderRadiusToggleMaterial,
 
-        // BorderWidth
-        // BorderWidth / Button
-        this.borderWidthButtonCupertino,
-        this.borderWidthButtonMaterial,
-        // BorderWidth / Card
-        this.borderWidthCardCupertino,
-        this.borderWidthCardMaterial,
-        // BorderWidth / Field
-        this.borderWidthFieldCupertino,
-        this.borderWidthFieldMaterial,
-        // BorderWidth / Segment Control
-        this.borderWidthSegmentControlCupertino,
-        this.borderWidthSegmentControlMaterial,
-        // BorderWidth / SnackBar
-        this.borderWidthSnackBarCupertino,
-        this.borderWidthSnackBarMaterial,
+          // BorderWidth
+          // BorderWidth / Button
+          this.borderWidthButtonCupertino,
+          this.borderWidthButtonMaterial,
+          // BorderWidth / Card
+          this.borderWidthCardCupertino,
+          this.borderWidthCardMaterial,
+          // BorderWidth / Field
+          this.borderWidthFieldCupertino,
+          this.borderWidthFieldMaterial,
+          // BorderWidth / Segment Control
+          this.borderWidthSegmentControlCupertino,
+          this.borderWidthSegmentControlMaterial,
+          // BorderWidth / SnackBar
+          this.borderWidthSnackBarCupertino,
+          this.borderWidthSnackBarMaterial,
 
-        // Opacity
-        // Opacity / Blur
-        this.opacityBlur,
-        // Opacity / Disabled
-        this.opacityDisabled,
-      ]);
+          // Opacity
+          // Opacity / Blur
+          this.opacityBlur,
+          // Opacity / Disabled
+          this.opacityDisabled,
+        ],
+      );
 }

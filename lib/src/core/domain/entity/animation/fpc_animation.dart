@@ -1,22 +1,24 @@
 import 'package:flutter/widgets.dart';
 
-abstract class IFPCAnimation {
-  const IFPCAnimation();
+abstract class FPCAnimation {
+  const FPCAnimation();
 
   abstract final Curve curve;
   abstract final Clip clipBehavior;
 
-  IFPCAnimation copyWith();
+  FPCAnimation copyWith();
 
   @override
   bool operator ==(Object other) =>
-      other is IFPCAnimation &&
+      other is FPCAnimation &&
       other.curve == this.curve &&
       other.clipBehavior == this.clipBehavior;
 
   @override
-  int get hashCode => Object.hashAll([
-        this.curve,
-        this.clipBehavior,
-      ]);
+  int get hashCode => Object.hashAll(
+        [
+          this.curve,
+          this.clipBehavior,
+        ],
+      );
 }

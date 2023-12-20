@@ -6,7 +6,7 @@ class _FPCSizeWidget extends StatefulWidget {
     required this.child,
   });
 
-  final IFPCSize? size;
+  final FPCSize? size;
   final Widget child;
 
   @override
@@ -14,7 +14,7 @@ class _FPCSizeWidget extends StatefulWidget {
 }
 
 class _FPCsizeScope extends State<_FPCSizeWidget> {
-  late IFPCSize _size;
+  late FPCSize _size;
 
   @override
   void initState() {
@@ -22,7 +22,7 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
     this._size = this.widget.size ?? const FPCDefaultSize();
   }
 
-  void _changeSize(IFPCSize size) => setState(() => this._size = size);
+  void _changeSize(FPCSize size) => setState(() => this._size = size);
 
   // BorderRadius
   // BorderRadius / BottomSheet
@@ -181,8 +181,8 @@ class FPCSizeScope extends InheritedWidget with FPCScopeMixin {
     required super.child,
   });
 
-  final IFPCSize size;
-  final void Function(IFPCSize size) changeSize;
+  final FPCSize size;
+  final void Function(FPCSize size) changeSize;
   //
   final BorderRadius borderRadiusBottomSheet;
   final BorderRadius borderRadiusButton;

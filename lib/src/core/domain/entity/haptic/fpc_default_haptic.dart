@@ -1,7 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter_vibrate/flutter_vibrate.dart';
 
-class FPCDefaultHaptic implements IFPCHaptic {
+class FPCDefaultHaptic implements FPCHaptic {
   const FPCDefaultHaptic();
 
   Future<void> _vibrate(FeedbackType type) async {

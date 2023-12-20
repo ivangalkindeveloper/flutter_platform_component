@@ -1,6 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 
-class FPCDefaultDuration implements IFPCDuration {
+class FPCDefaultDuration implements FPCDuration {
   const FPCDefaultDuration({
     // Animation
     this.animationFast = const Duration(milliseconds: 160),

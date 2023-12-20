@@ -1,11 +1,11 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-sealed class IFPCPopUpMenuItem {
-  const IFPCPopUpMenuItem();
+sealed class FPCPopUpItem {
+  const FPCPopUpItem();
 }
 
-class FPCPopUpMenuHeader implements IFPCPopUpMenuItem {
+class FPCPopUpMenuHeader implements FPCPopUpItem {
   const FPCPopUpMenuHeader({
     required this.prefix,
     required this.title,
@@ -21,7 +21,7 @@ class FPCPopUpMenuHeader implements IFPCPopUpMenuItem {
   final VoidCallback onPressed;
 }
 
-class FPCPopUpMenuTitle implements IFPCPopUpMenuItem {
+class FPCPopUpMenuTitle implements FPCPopUpItem {
   const FPCPopUpMenuTitle({
     required this.title,
     this.style,
@@ -33,11 +33,11 @@ class FPCPopUpMenuTitle implements IFPCPopUpMenuItem {
   final FPCPopUpMenuAlignment alignment;
 }
 
-class FPCPopUpMenuDivider implements IFPCPopUpMenuItem {
+class FPCPopUpMenuDivider implements FPCPopUpItem {
   const FPCPopUpMenuDivider();
 }
 
-class FPCPopUpMenuMediumRow implements IFPCPopUpMenuItem {
+class FPCPopUpMenuMediumRow implements FPCPopUpItem {
   const FPCPopUpMenuMediumRow({
     required this.items,
   });
@@ -59,7 +59,7 @@ class FPCPopUpMenuMediumRowItem {
   final bool isDestructive;
 }
 
-class FPCPopUpMenuSmallRow implements IFPCPopUpMenuItem {
+class FPCPopUpMenuSmallRow implements FPCPopUpItem {
   const FPCPopUpMenuSmallRow({
     required this.items,
   });
@@ -79,7 +79,7 @@ class FPCPopUpMenuSmallRowItem {
   final bool isDestructive;
 }
 
-class FPCPopUpMenuItem implements IFPCPopUpMenuItem {
+class FPCPopUpMenuItem implements FPCPopUpItem {
   const FPCPopUpMenuItem({
     required this.title,
     this.subtitle,

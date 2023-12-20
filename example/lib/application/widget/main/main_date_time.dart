@@ -12,8 +12,8 @@ class MainDateTime extends StatelessWidget {
   Widget build(
     BuildContext context,
   ) {
-    final IFPCDateTime dateTime = context.fpcDateTime;
-    final IFPCSize size = context.fpcSize;
+    final FPCDateTime dateTime = context.fpcDateTime;
+    final FPCSize size = context.fpcSize;
 
     return Column(
       mainAxisSize: MainAxisSize.min,

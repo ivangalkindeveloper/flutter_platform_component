@@ -54,6 +54,7 @@ void main() async {
     "_navigator.dart": [],
     "_picker.dart": [],
     "_pin_field.dart": [],
+    "_pop_up_menu.dart": [],
     "_radio.dart": [],
     "_scaffold.dart": [],
     "_scrollbar.dart": [],
@@ -262,7 +263,7 @@ void _generateSnippetsFiles(
         "FPCBuildContextAnimation": {
           "prefix": "fpccontextanimation",
           "body": [
-            "final IFPCAnimation animation = context.fpcAnimation;",
+            "final FPCAnimation animation = context.fpcAnimation;",
           ]
         },
         "FPCBuildContextChangeAnimation": {
@@ -271,22 +272,10 @@ void _generateSnippetsFiles(
             "context.fpcChangeAnimation(\${animation});",
           ]
         },
-        "FPCBuildContextTextStyle": {
-          "prefix": "fpccontexttextstyle",
-          "body": [
-            "final IFPCTextStyle textStyle = context.fpcTextStyle;",
-          ]
-        },
-        "FPCBuildContextChangeTextStyle": {
-          "prefix": "fpccontextchangetextstyle",
-          "body": [
-            "context.fpcChangeTextStyle(\${textstyle});",
-          ]
-        },
         "FPCBuildContextTimeOfDay": {
           "prefix": "fpccontexttimeofday",
           "body": [
-            "final IFPCTimeOfDay timeOfDay = context.fpcTimeOfDay;",
+            "final FPCTimeOfDay timeOfDay = context.fpcTimeOfDay;",
           ]
         },
         "FPCBuildContextChangeTimeOfDay": {
@@ -298,7 +287,7 @@ void _generateSnippetsFiles(
         "FPCBuildContextDateTime": {
           "prefix": "fpccontextdatetime",
           "body": [
-            "final IFPCDateTime dateTime = context.fpcDateTime;",
+            "final FPCDateTime dateTime = context.fpcDateTime;",
           ]
         },
         "FPCBuildContextChangeDateTime": {
@@ -310,7 +299,7 @@ void _generateSnippetsFiles(
         "FPCBuildContextDuration": {
           "prefix": "fpccontextduration",
           "body": [
-            "final IFPCDuration duration = context.fpcDuration;",
+            "final FPCDuration duration = context.fpcDuration;",
           ]
         },
         "FPCBuildContextChangeDuration": {
@@ -334,7 +323,7 @@ void _generateSnippetsFiles(
         "FPCBuildContextHaptic": {
           "prefix": "fpccontexthaptic",
           "body": [
-            "final IFPCHaptic haptic = context.fpcHaptic;",
+            "final FPCHaptic haptic = context.fpcHaptic;",
           ]
         },
         "FPCBuildContextChangeHaptic": {
@@ -346,7 +335,7 @@ void _generateSnippetsFiles(
         "FPCBuildContextTheme": {
           "prefix": "fpccontexttheme",
           "body": [
-            "final IFPCTheme theme = context.fpcTheme;",
+            "final FPCTheme theme = context.fpcTheme;",
           ]
         },
         "FPCBuildContextChangeTheme": {
@@ -358,7 +347,7 @@ void _generateSnippetsFiles(
         "FPCBuildContextSize": {
           "prefix": "fpccontextsize",
           "body": [
-            "final IFPCSize size = context.fpcSize;",
+            "final FPCSize size = context.fpcSize;",
           ]
         },
         "FPCBuildContextChangeSize": {
@@ -366,7 +355,19 @@ void _generateSnippetsFiles(
           "body": [
             "context.fpcChangeSize(\${size});",
           ]
-        }
+        },
+        "FPCBuildContextFont": {
+          "prefix": "fpccontexttextstyle",
+          "body": [
+            "final FPCFont font = context.fpcFont;",
+          ]
+        },
+        "FPCBuildContextChangeFont": {
+          "prefix": "fpccontextchangetextstyle",
+          "body": [
+            "context.fpcChangeFont(\${font});",
+          ]
+        },
       },
     ),
   );

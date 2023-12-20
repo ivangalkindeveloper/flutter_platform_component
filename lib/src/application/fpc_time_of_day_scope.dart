@@ -6,7 +6,7 @@ class _FPCTimeOfDayWidget extends StatefulWidget {
     required this.child,
   });
 
-  final IFPCTimeOfDay? timeOfDay;
+  final FPCTimeOfDay? timeOfDay;
   final Widget child;
 
   @override
@@ -14,7 +14,7 @@ class _FPCTimeOfDayWidget extends StatefulWidget {
 }
 
 class _FPCTimeOfDayState extends State<_FPCTimeOfDayWidget> {
-  late IFPCTimeOfDay _timeOfDay;
+  late FPCTimeOfDay _timeOfDay;
 
   @override
   void initState() {
@@ -22,7 +22,7 @@ class _FPCTimeOfDayState extends State<_FPCTimeOfDayWidget> {
     this._timeOfDay = this.widget.timeOfDay ?? const FPCDefaultTimeOfDay();
   }
 
-  void _changeTimeOfDay(IFPCTimeOfDay timeOfDay) =>
+  void _changeTimeOfDay(FPCTimeOfDay timeOfDay) =>
       setState(() => this._timeOfDay = timeOfDay);
 
   @override
@@ -44,8 +44,8 @@ class FPCTimeOfDayScope extends InheritedWidget with FPCScopeMixin {
     required super.child,
   });
 
-  final IFPCTimeOfDay timeOfDay;
-  final void Function(IFPCTimeOfDay timeOfDay) changeTimeOfDay;
+  final FPCTimeOfDay timeOfDay;
+  final void Function(FPCTimeOfDay timeOfDay) changeTimeOfDay;
 
   static FPCTimeOfDayScope of(
     BuildContext context,

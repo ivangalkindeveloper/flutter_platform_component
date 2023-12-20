@@ -1,0 +1,41 @@
+import 'package:flutter_platform_component/flutter_platform_component.dart';
+import 'package:flutter/widgets.dart';
+
+class FPCAnimatedFastContainer extends StatelessWidget {
+  const FPCAnimatedFastContainer({
+    super.key,
+    this.height,
+    this.width,
+    this.constraints,
+    this.decoration,
+    this.padding,
+    this.child,
+  });
+
+  final double? height;
+  final double? width;
+  final BoxConstraints? constraints;
+  final BoxDecoration? decoration;
+  final EdgeInsets? padding;
+  final Widget? child;
+
+  @override
+  Widget build(
+    BuildContext context,
+  ) {
+    final FPCAnimation animation = context.fpcAnimation;
+    final FPCDuration duration = context.fpcDuration;
+
+    return AnimatedContainer(
+      height: this.height,
+      width: this.width,
+      alignment: Alignment.center,
+      constraints: this.constraints,
+      decoration: this.decoration,
+      padding: this.padding,
+      duration: duration.animationFast,
+      curve: animation.curve,
+      child: this.child,
+    );
+  }
+}

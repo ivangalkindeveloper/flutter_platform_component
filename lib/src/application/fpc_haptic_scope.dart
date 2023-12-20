@@ -6,7 +6,7 @@ class _FPCHapticWidget extends StatefulWidget {
     required this.child,
   });
 
-  final IFPCHaptic? haptic;
+  final FPCHaptic? haptic;
   final Widget child;
 
   @override
@@ -14,7 +14,7 @@ class _FPCHapticWidget extends StatefulWidget {
 }
 
 class _FPCHapticState extends State<_FPCHapticWidget> {
-  late IFPCHaptic _haptic;
+  late FPCHaptic _haptic;
 
   @override
   void initState() {
@@ -22,8 +22,7 @@ class _FPCHapticState extends State<_FPCHapticWidget> {
     this._haptic = this.widget.haptic ?? const FPCDefaultHaptic();
   }
 
-  void _changeHaptic(IFPCHaptic haptic) =>
-      setState(() => this._haptic = haptic);
+  void _changeHaptic(FPCHaptic haptic) => setState(() => this._haptic = haptic);
 
   @override
   Widget build(
@@ -44,8 +43,8 @@ class FPCHapticScope extends InheritedWidget with FPCScopeMixin {
     required super.child,
   });
 
-  final IFPCHaptic haptic;
-  final void Function(IFPCHaptic haptic) changeHaptic;
+  final FPCHaptic haptic;
+  final void Function(FPCHaptic haptic) changeHaptic;
 
   static FPCHapticScope of(
     BuildContext context,

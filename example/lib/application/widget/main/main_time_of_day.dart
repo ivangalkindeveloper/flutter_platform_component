@@ -12,8 +12,8 @@ class MainTimeOfDay extends StatelessWidget {
   Widget build(
     BuildContext context,
   ) {
-    final IFPCTimeOfDay timeOfDay = context.fpcTimeOfDay;
-    final IFPCSize size = context.fpcSize;
+    final FPCTimeOfDay timeOfDay = context.fpcTimeOfDay;
+    final FPCSize size = context.fpcSize;
 
     return Column(
       mainAxisSize: MainAxisSize.min,
