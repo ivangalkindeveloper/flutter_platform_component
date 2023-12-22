@@ -32,7 +32,6 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
         cupertino: this._size.borderRadiusBottomSheetCupertino,
         material: this._size.borderRadiusBottomSheetMaterial,
       );
-
   // BorderRadius / Button
   BorderRadius get _borderRadiusButton => FPCPlatformUtility
           .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
@@ -40,7 +39,6 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
         cupertino: this._size.borderRadiusButtonCupertino,
         material: this._size.borderRadiusButtonMaterial,
       );
-
   // BorderRadius / Card
   BorderRadius get _borderRadiusCard => FPCPlatformUtility.decomposeFromContext<
           BorderRadius, BorderRadius, BorderRadius>(
@@ -48,7 +46,6 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
         cupertino: this._size.borderRadiusCardCupertino,
         material: this._size.borderRadiusCardMaterial,
       );
-
   // BorderRadius / Dialog
   BorderRadius get _borderRadiusDialog => FPCPlatformUtility
           .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
@@ -56,7 +53,6 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
         cupertino: this._size.borderRadiusDialogCupertino,
         material: this._size.borderRadiusDialogMaterial,
       );
-
   // BorderRadius / Field
   BorderRadius get _borderRadiusField => FPCPlatformUtility
           .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
@@ -64,7 +60,13 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
         cupertino: this._size.borderRadiusFieldCupertino,
         material: this._size.borderRadiusFieldMaterial,
       );
-
+  // BorderRadius / Pop Up Menu
+  BorderRadius get _borderRadiusPopUpMenu => FPCPlatformUtility
+          .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
+        context: this.context,
+        cupertino: this._size.borderRadiusPopUpMenuCupertino,
+        material: this._size.borderRadiusPopUpMenuMaterial,
+      );
   // BorderRadius / Segment Control
   BorderRadius get _borderRadiusSegmentControl => FPCPlatformUtility
           .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
@@ -72,7 +74,6 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
         cupertino: this._size.borderRadiusSegmentControlCupertino,
         material: this._size.borderRadiusSegmentControlMaterial,
       );
-
   // BorderRadius / SnackBar
   BorderRadius get _borderRadiusSnackBar => FPCPlatformUtility
           .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
@@ -80,7 +81,6 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
         cupertino: this._size.borderRadiusSnackBarCupertino,
         material: this._size.borderRadiusSnackBarMaterial,
       );
-
   // BorderRadius / Toggle
   BorderRadius get _borderRadiusToggle => FPCPlatformUtility
           .decomposeFromContext<BorderRadius, BorderRadius, BorderRadius>(
@@ -97,7 +97,6 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
         cupertino: this._size.borderWidthButtonCupertino,
         material: this._size.borderWidthButtonMaterial,
       );
-
   // BorderWidth / Card
   double get _borderWidthCard =>
       FPCPlatformUtility.decomposeFromContext<double, double, double>(
@@ -105,7 +104,6 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
         cupertino: this._size.borderWidthCardCupertino,
         material: this._size.borderWidthCardMaterial,
       );
-
   // BorderWidth / Field
   double get _borderWidthField =>
       FPCPlatformUtility.decomposeFromContext<double, double, double>(
@@ -113,7 +111,6 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
         cupertino: this._size.borderWidthFieldCupertino,
         material: this._size.borderWidthFieldMaterial,
       );
-
   // BorderWidth / Segment Control
   double get _borderWidthSegmentControl =>
       FPCPlatformUtility.decomposeFromContext<double, double, double>(
@@ -121,7 +118,6 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
         cupertino: this._size.borderWidthSegmentControlCupertino,
         material: this._size.borderWidthSegmentControlMaterial,
       );
-
   // BorderWidth / SnackBar
   double get _borderWidthSnackBar =>
       FPCPlatformUtility.decomposeFromContext<double, double, double>(
@@ -143,6 +139,7 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
         borderRadiusCard: this._borderRadiusCard,
         borderRadiusDialog: this._borderRadiusDialog,
         borderRadiusField: this._borderRadiusField,
+        borderRadiusPopUpMenu: this._borderRadiusPopUpMenu,
         borderRadiusSegmentControl: this._borderRadiusSegmentControl,
         borderRadiusSnackBar: this._borderRadiusSnackBar,
         borderRadiusToggle: this._borderRadiusToggle,
@@ -168,6 +165,7 @@ class FPCSizeScope extends InheritedWidget with FPCScopeMixin {
     required this.borderRadiusCard,
     required this.borderRadiusDialog,
     required this.borderRadiusField,
+    required this.borderRadiusPopUpMenu,
     required this.borderRadiusSegmentControl,
     required this.borderRadiusSnackBar,
     required this.borderRadiusToggle,
@@ -189,6 +187,7 @@ class FPCSizeScope extends InheritedWidget with FPCScopeMixin {
   final BorderRadius borderRadiusCard;
   final BorderRadius borderRadiusDialog;
   final BorderRadius borderRadiusField;
+  final BorderRadius borderRadiusPopUpMenu;
   final BorderRadius borderRadiusSegmentControl;
   final BorderRadius borderRadiusSnackBar;
   final BorderRadius borderRadiusToggle;

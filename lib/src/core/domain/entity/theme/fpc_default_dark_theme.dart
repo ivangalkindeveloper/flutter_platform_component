@@ -10,10 +10,13 @@ import 'package:flutter/material.dart' show ThemeMode, ThemeData, Colors;
 class FPCDefaultDarkTheme extends FPCTheme {
   FPCDefaultDarkTheme({
     // Framework
-    this.cupertinoThemeData = const CupertinoThemeData(),
+    this.cupertinoThemeData,
+    this.materialThemeData,
     this.materialThemeMode = ThemeMode.dark,
-    ThemeData? materialThemeData,
     this.systemOverlayStyle = SystemUiOverlayStyle.dark,
+
+    // Brightness
+    this.brightness = Brightness.dark,
 
     // White
     this.white = const Color(0xff171717),
@@ -242,7 +245,7 @@ class FPCDefaultDarkTheme extends FPCTheme {
       darkColor: Color(0x7A000000),
     ),
     Color? barrierExpandedBottomSheetMaterial,
-    // Barrier / Pop Up BottomSheet
+    // Barrier / Small BottomSheet
     this.barrierSmallBottomSheetCupertino =
         const CupertinoDynamicColor.withBrightness(
       color: Color(0x33000000),
@@ -257,8 +260,7 @@ class FPCDefaultDarkTheme extends FPCTheme {
     this.linearGradientConfig = const FPCDefaultLinearGradientConfig(),
     this.radialGradientConfig = const FPCDefaultRadialGradientConfig(),
     this.sweepGradientConfig = const FPCDefaultSweepGradientConfig(),
-  })  : this.materialThemeData = materialThemeData ?? ThemeData.dark(),
-        this.blurFilter = blurFilter ??
+  })  : this.blurFilter = blurFilter ??
             ImageFilter.blur(
               sigmaX: 6,
               sigmaY: 6,
@@ -271,13 +273,17 @@ class FPCDefaultDarkTheme extends FPCTheme {
 
   // Framework
   @override
-  final CupertinoThemeData cupertinoThemeData;
+  final CupertinoThemeData? cupertinoThemeData;
   @override
-  final ThemeMode materialThemeMode;
+  final ThemeData? materialThemeData;
   @override
-  final ThemeData materialThemeData;
+  final ThemeMode? materialThemeMode;
   @override
   final SystemUiOverlayStyle systemOverlayStyle;
+
+  // Brightness
+  @override
+  final Brightness brightness;
 
   // White
   @override
@@ -443,7 +449,7 @@ class FPCDefaultDarkTheme extends FPCTheme {
   final Color barrierExpandedBottomSheetCupertino;
   @override
   final Color barrierExpandedBottomSheetMaterial;
-  // Barrier / Pop Up BottomSheet
+  // Barrier / Small BottomSheet
   @override
   final Color barrierSmallBottomSheetCupertino;
   @override
@@ -469,6 +475,9 @@ class FPCDefaultDarkTheme extends FPCTheme {
     ThemeMode? materialThemeMode,
     ThemeData? materialThemeData,
     SystemUiOverlayStyle? systemOverlayStyle,
+
+    // Brightness
+    Brightness? brightness,
 
     // White
     Color? white,
@@ -573,7 +582,7 @@ class FPCDefaultDarkTheme extends FPCTheme {
     // Barrier / Expanded BottomSheet
     Color? barrierExpandedBottomSheetCupertino,
     Color? barrierExpandedBottomSheetMaterial,
-    // Barrier / Pop Up BottomSheet
+    // Barrier / Small BottomSheet
     Color? barrierSmallBottomSheetCupertino,
     Color? barrierSmallBottomSheetMaterial,
     // Barrier / Dialog
@@ -588,9 +597,12 @@ class FPCDefaultDarkTheme extends FPCTheme {
       FPCDefaultDarkTheme(
         // Framework
         cupertinoThemeData: cupertinoThemeData ?? this.cupertinoThemeData,
-        materialThemeMode: materialThemeMode ?? this.materialThemeMode,
         materialThemeData: materialThemeData ?? this.materialThemeData,
+        materialThemeMode: materialThemeMode ?? this.materialThemeMode,
         systemOverlayStyle: systemOverlayStyle ?? this.systemOverlayStyle,
+
+        // Brightness
+        brightness: brightness ?? this.brightness,
 
         // White
         white: white ?? this.white,
@@ -701,7 +713,7 @@ class FPCDefaultDarkTheme extends FPCTheme {
         barrierExpandedBottomSheetMaterial:
             barrierExpandedBottomSheetMaterial ??
                 this.barrierExpandedBottomSheetMaterial,
-        // Barrier / Pop Up BottomSheet
+        // Barrier / Small BottomSheet
         barrierSmallBottomSheetCupertino: barrierSmallBottomSheetCupertino ??
             this.barrierSmallBottomSheetCupertino,
         barrierSmallBottomSheetMaterial: barrierSmallBottomSheetMaterial ??
@@ -1066,7 +1078,7 @@ class FPCDefaultDarkTheme extends FPCTheme {
           other.barrierExpandedBottomSheetMaterial,
           t,
         ),
-        // Barrier / Pop Up BottomSheet
+        // Barrier / Small BottomSheet
         barrierSmallBottomSheetCupertino: Color.lerp(
           this.barrierSmallBottomSheetCupertino,
           other.barrierSmallBottomSheetCupertino,

@@ -24,12 +24,10 @@ class FPCPopUpMenuHeader implements FPCPopUpItem {
 class FPCPopUpMenuTitle implements FPCPopUpItem {
   const FPCPopUpMenuTitle({
     required this.title,
-    this.style,
     this.alignment = FPCPopUpMenuAlignment.start,
   });
 
   final String title;
-  final TextStyle? style;
   final FPCPopUpMenuAlignment alignment;
 }
 

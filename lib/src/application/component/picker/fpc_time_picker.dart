@@ -43,8 +43,8 @@ class FPCTimePicker extends FPCPlatformWidget with FPCTimePickerMixin {
 
     final double height =
         this.cupertinoHeight ?? (MediaQuery.of(context).size.height / 4);
-    final TextStyle cupertinoStyle = this.cupertinoStyle ??
-        theme.cupertinoThemeData.textTheme.pickerTextStyle.copyWith(
+    final TextStyle? cupertinoStyle = this.cupertinoStyle ??
+        theme.cupertinoThemeData?.textTheme.pickerTextStyle.copyWith(
           color: CupertinoDynamicColor.maybeResolve(theme.black, context),
         );
     final TimeOfDay timeOfDayMinimum =
@@ -114,11 +114,11 @@ class FPCTimePicker extends FPCPlatformWidget with FPCTimePickerMixin {
     final Widget materialDialog = this.materialDialog ?? const SizedBox();
 
     return Theme(
-      data: theme.materialThemeData.copyWith(
+      data: (theme.materialThemeData ?? Theme.of(context)).copyWith(
         colorScheme: ColorScheme.fromSeed(
           seedColor: color,
         ),
-        timePickerTheme: theme.materialThemeData.timePickerTheme.copyWith(
+        timePickerTheme: theme.materialThemeData?.timePickerTheme.copyWith(
           backgroundColor: backgroundColor,
           shape: RoundedRectangleBorder(
             borderRadius: borderRadius,

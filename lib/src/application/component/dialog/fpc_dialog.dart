@@ -2,8 +2,12 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 import 'package:flutter/cupertino.dart'
-    show CupertinoAlertDialog, CupertinoDialogAction;
-import 'package:flutter/material.dart' show AlertDialog, TextButton;
+    show
+        CupertinoTheme,
+        CupertinoAlertDialog,
+        CupertinoDialogAction,
+        CupertinoTextThemeData;
+import 'package:flutter/material.dart' show TextButton, AlertDialog;
 
 class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
   FPCDialog({
@@ -34,7 +38,6 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
-    final FPCSize size = context.fpcSize;
     final FPCFont font = context.fpcFont;
 
     Widget? buildContent({
@@ -70,70 +73,66 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
         );
 
     final TextStyle titleStyle = this.titleStyle?.copyWith(
-              color: this.titleStyle?.color ?? theme.blackAlways,
-              fontSize: this.titleStyle?.fontSize ?? size.s16,
-              fontWeight: this.titleStyle?.fontWeight ?? font.weightMedium,
-              fontFamily: this.titleStyle?.fontFamily ?? font.familyMedium,
-              package: font.package,
+              color: this.titleStyle?.color ?? theme.black,
+              fontSize: this.titleStyle?.fontSize,
+              fontWeight: this.titleStyle?.fontWeight,
+              fontFamily: this.titleStyle?.fontFamily,
             ) ??
         TextStyle(
-          color: theme.blackAlways,
-          fontSize: size.s16,
-          fontWeight: font.weightMedium,
-          fontFamily: font.familyMedium,
-          package: font.package,
+          color: theme.black,
         );
     final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
-              color: this.descriptionStyle?.color ?? theme.blackAlways,
-              fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-              fontWeight:
-                  this.descriptionStyle?.fontWeight ?? font.weightRegular,
-              fontFamily:
-                  this.descriptionStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
+              color: this.descriptionStyle?.color,
+              fontSize: this.descriptionStyle?.fontSize,
+              fontWeight: this.descriptionStyle?.fontWeight,
+              fontFamily: this.descriptionStyle?.fontFamily,
             ) ??
         TextStyle(
-          color: theme.blackAlways,
-          fontSize: size.s14,
-          fontWeight: font.weightRegular,
-          fontFamily: font.familyRegular,
-          package: font.package,
+          color: theme.black,
         );
     final TextStyle itemStyle = this.itemStyle?.copyWith(
               color: this.itemStyle?.color ?? theme.primary,
-              fontSize: this.itemStyle?.fontSize ?? size.s16,
-              fontWeight: this.itemStyle?.fontWeight ?? font.weightMedium,
-              fontFamily: this.itemStyle?.fontFamily ?? font.familyMedium,
+              fontSize: this.itemStyle?.fontSize,
+              fontWeight: this.itemStyle?.fontWeight,
+              fontFamily: this.itemStyle?.fontFamily,
               package: font.package,
             ) ??
         TextStyle(
           color: theme.primary,
-          fontSize: size.s16,
-          fontWeight: font.weightMedium,
-          fontFamily: font.familyMedium,
-          package: font.package,
         );
 
-    return CupertinoAlertDialog(
-      title: Text(
-        this.title,
-        style: titleStyle,
+    return CupertinoTheme(
+      data: CupertinoTheme.of(context).copyWith(
+        textTheme: CupertinoTextThemeData(
+          textStyle: TextStyle(
+            color: theme.black,
+          ),
+          actionTextStyle: TextStyle(
+            color: theme.black,
+          ),
+        ),
       ),
-      content: buildContent(
-        descriptionStyle: descriptionStyle,
+      child: CupertinoAlertDialog(
+        title: Text(
+          this.title,
+          style: titleStyle,
+        ),
+        content: buildContent(
+          descriptionStyle: descriptionStyle,
+        ),
+        actions: this
+            .items
+            .map(
+              (
+                FPCDialogItem item,
+              ) =>
+                  buildItem(
+                item: item,
+                itemStyle: itemStyle,
+              ),
+            )
+            .toList(),
       ),
-      actions: this
-          .items
-          .map(
-            (
-              FPCDialogItem item,
-            ) =>
-                buildItem(
-              item: item,
-              itemStyle: itemStyle,
-            ),
-          )
-          .toList(),
     );
   }
 

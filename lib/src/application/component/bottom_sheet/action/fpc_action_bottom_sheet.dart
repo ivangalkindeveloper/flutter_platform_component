@@ -2,7 +2,7 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 import 'package:flutter/cupertino.dart'
-    show CupertinoActionSheetAction, CupertinoTheme, CupertinoActionSheet;
+    show CupertinoActionSheet, CupertinoActionSheetAction, CupertinoTheme;
 import 'package:flutter/material.dart' show ListTile;
 
 class FPCActionBottomSheet<T> extends FPCPlatformWidget
@@ -10,7 +10,6 @@ class FPCActionBottomSheet<T> extends FPCPlatformWidget
   FPCActionBottomSheet({
     super.key,
     this.backgroundColor,
-    this.color,
     this.splashColor,
     this.title,
     this.titleStyle,
@@ -23,7 +22,6 @@ class FPCActionBottomSheet<T> extends FPCPlatformWidget
   });
 
   final Color? backgroundColor;
-  final Color? color;
   final Color? splashColor;
   final String? title;
   final TextStyle? titleStyle;
@@ -69,7 +67,6 @@ class FPCActionBottomSheet<T> extends FPCPlatformWidget
       return null;
     }
 
-    final Color color = this.color ?? theme.primary;
     final Widget? title = buildTitle();
     final Widget? content = buildContent();
 
@@ -107,7 +104,7 @@ class FPCActionBottomSheet<T> extends FPCPlatformWidget
 
     return CupertinoTheme(
       data: CupertinoTheme.of(context).copyWith(
-        primaryColor: color,
+        primaryColor: theme.primary,
       ),
       child: CupertinoActionSheet(
         title: title,

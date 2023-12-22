@@ -2,13 +2,7 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 import 'package:flutter/cupertino.dart'
-    show
-        CupertinoTheme,
-        CupertinoThemeData,
-        CupertinoTextThemeData,
-        CupertinoDynamicColor,
-        CupertinoDatePicker,
-        CupertinoDatePickerMode;
+    show CupertinoDatePicker, CupertinoDatePickerMode;
 import 'package:flutter/material.dart' show Theme, ColorScheme, DialogTheme;
 
 class FPCDatePicker extends FPCPlatformWidget with FPCDatePickerMixin {
@@ -38,14 +32,9 @@ class FPCDatePicker extends FPCPlatformWidget with FPCDatePickerMixin {
     BuildContext context,
   ) {
     final FPCDateTime dateTime = context.fpcDateTime;
-    final FPCTheme theme = context.fpcTheme;
 
     final double height =
         this.cupertinoHeight ?? (MediaQuery.of(context).size.height / 4);
-    final TextStyle cupertinoStyle = this.cupertinoStyle ??
-        theme.cupertinoThemeData.textTheme.pickerTextStyle.copyWith(
-          color: CupertinoDynamicColor.maybeResolve(theme.black, context),
-        );
     final DateTime dateTimeMinimum = dateTimeRange?.minimum ?? dateTime.minimum;
     final DateTime dateTimeInitial = dateTimeRange?.initial ?? dateTime.initial;
     final DateTime dateTimeMaximum = dateTimeRange?.maximum ?? dateTime.maximum;
@@ -54,20 +43,13 @@ class FPCDatePicker extends FPCPlatformWidget with FPCDatePickerMixin {
 
     return SizedBox(
       height: height,
-      child: CupertinoTheme(
-        data: CupertinoThemeData(
-          textTheme: CupertinoTextThemeData(
-            dateTimePickerTextStyle: cupertinoStyle,
-          ),
-        ),
-        child: CupertinoDatePicker(
-          mode: CupertinoDatePickerMode.date,
-          minimumDate: dateTimeMinimum,
-          initialDateTime: dateTimeInitial,
-          maximumDate: dateTimeMaximum,
-          use24hFormat: true,
-          onDateTimeChanged: onChanged,
-        ),
+      child: CupertinoDatePicker(
+        mode: CupertinoDatePickerMode.date,
+        minimumDate: dateTimeMinimum,
+        initialDateTime: dateTimeInitial,
+        maximumDate: dateTimeMaximum,
+        use24hFormat: true,
+        onDateTimeChanged: onChanged,
       ),
     );
   }
@@ -87,7 +69,7 @@ class FPCDatePicker extends FPCPlatformWidget with FPCDatePickerMixin {
     final Widget materialDialog = this.materialDialog ?? const SizedBox();
 
     return Theme(
-      data: theme.materialThemeData.copyWith(
+      data: (theme.materialThemeData ?? Theme.of(context)).copyWith(
         colorScheme: ColorScheme.fromSeed(
           seedColor: color,
         ),

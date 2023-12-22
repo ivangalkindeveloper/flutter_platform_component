@@ -31,11 +31,7 @@ class MainTheme extends StatelessWidget {
           title: "CupertinoThemeData:",
           value: theme.cupertinoThemeData.toString(),
         ),
-        Gap(size.s16 / 4),
-        RowStringValue(
-          title: "MaterialThemeMode:",
-          value: theme.materialThemeMode.name,
-        ),
+
         Gap(size.s16 / 4),
         RowStringValue(
           title: "MaterialThemeData:",
@@ -43,8 +39,19 @@ class MainTheme extends StatelessWidget {
         ),
         Gap(size.s16 / 4),
         RowStringValue(
+          title: "MaterialThemeMode:",
+          value: theme.materialThemeMode?.name ?? "",
+        ),
+        Gap(size.s16 / 4),
+        RowStringValue(
           title: "SystemOverlayStyle:",
           value: theme.systemOverlayStyle.toString(),
+        ),
+        Gap(size.s16 / 2),
+        //
+        RowStringValue(
+          title: "Brightness:",
+          value: theme.brightness.name,
         ),
         Gap(size.s16 / 2),
         // White

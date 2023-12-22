@@ -27,6 +27,22 @@ class FPCPopUpMenu extends FPCPlatformWidget {
   Widget cupertino(
     BuildContext context,
   ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+
+    final TextStyle titleStyle = TextStyle(
+      color: this.itemStyle?.color ?? theme.black,
+      fontSize: this.itemStyle?.fontSize,
+      fontWeight: this.itemStyle?.fontWeight,
+      fontFamily: this.itemStyle?.fontFamily,
+    );
+    final TextStyle subtitleStyle = TextStyle(
+      color: this.itemStyle?.color ?? theme.grey,
+      fontSize: this.itemStyle?.fontSize,
+      fontWeight: this.itemStyle?.fontWeight,
+      fontFamily: this.itemStyle?.fontFamily,
+    );
+
     PullDownMenuHeader header(
       FPCPopUpMenuHeader item,
     ) =>
@@ -36,6 +52,14 @@ class FPCPopUpMenu extends FPCPlatformWidget {
           subtitle: item.subtitle,
           icon: item.icon,
           onTap: item.onPressed,
+          itemTheme: PullDownMenuItemTheme(
+            destructiveColor: theme.danger,
+            textStyle: titleStyle,
+            subtitleStyle: subtitleStyle,
+            iconActionTextStyle: TextStyle(
+              color: theme.black,
+            ),
+          ),
         );
 
     PullDownMenuTitleAlignment titleAlignment(
@@ -54,9 +78,11 @@ class FPCPopUpMenu extends FPCPlatformWidget {
     ) =>
         PullDownMenuTitle(
           title: Text(item.title),
-          titleStyle: item.style,
           alignment: titleAlignment(
             item.alignment,
+          ),
+          titleStyle: TextStyle(
+            color: theme.black,
           ),
         );
 
@@ -67,6 +93,11 @@ class FPCPopUpMenu extends FPCPlatformWidget {
           title: item.title,
           icon: item.icon,
           onTap: item.onPressed,
+          itemTheme: PullDownMenuItemTheme(
+            iconActionTextStyle: TextStyle(
+              color: theme.black,
+            ),
+          ),
         );
 
     PullDownMenuItem smallRowMenuButton(
@@ -76,6 +107,11 @@ class FPCPopUpMenu extends FPCPlatformWidget {
           title: "",
           icon: item.icon,
           onTap: item.onPressed,
+          itemTheme: PullDownMenuItemTheme(
+            iconActionTextStyle: TextStyle(
+              color: theme.black,
+            ),
+          ),
         );
 
     PullDownMenuItem menuButton(
@@ -87,10 +123,19 @@ class FPCPopUpMenu extends FPCPlatformWidget {
           icon: item.icon,
           onTap: item.onPressed,
           isDestructive: item.isDestructive,
+          itemTheme: PullDownMenuItemTheme(
+            destructiveColor: theme.danger,
+            textStyle: titleStyle,
+            subtitleStyle: subtitleStyle,
+          ),
         );
 
     return PullDownButton(
       animationBuilder: null,
+      routeTheme: PullDownMenuRouteTheme(
+        backgroundColor: theme.backgroundComponent,
+        borderRadius: size.borderRadiusPopUpMenuCupertino,
+      ),
       position: PullDownMenuPosition.automatic,
       itemBuilder: (
         BuildContext context,

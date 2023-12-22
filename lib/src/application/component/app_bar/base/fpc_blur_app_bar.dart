@@ -78,7 +78,6 @@ class FPCBlurAppBar extends FPCPlatformAppBar {
           CupertinoNavigationBar(
             automaticallyImplyLeading: false,
             automaticallyImplyMiddle: false,
-            brightness: theme.cupertinoThemeData.brightness,
             transitionBetweenRoutes: this.transitionBetweenRoutes,
             backgroundColor: theme.backgroundComponent.withOpacity(0),
             border: Border.all(

@@ -24,7 +24,6 @@ class _FPCThemeState extends State<_FPCThemeWidget> {
         cupertino: this._theme.barrierExpandedBottomSheetCupertino,
         material: this._theme.barrierExpandedBottomSheetMaterial,
       );
-
   // Barrier / Pop Up BottomSheet
   Color get _barrierColorSmallBottomSheet =>
       FPCPlatformUtility.decomposeFromContext<Color, Color, Color>(
@@ -32,7 +31,6 @@ class _FPCThemeState extends State<_FPCThemeWidget> {
         cupertino: this._theme.barrierSmallBottomSheetCupertino,
         material: this._theme.barrierSmallBottomSheetMaterial,
       );
-
   // Barrier / Dialog
   Color get _barrierColorDialog =>
       FPCPlatformUtility.decomposeFromContext<Color, Color, Color>(

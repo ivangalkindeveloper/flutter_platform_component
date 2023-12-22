@@ -95,7 +95,7 @@ class FPCSliverAppBar extends FPCPlatformWidget {
 
     return CupertinoSliverNavigationBar(
       automaticallyImplyLeading: false,
-      brightness: theme.cupertinoThemeData.brightness,
+      brightness: theme.brightness,
       transitionBetweenRoutes: this.transitionBetweenRoutes,
       backgroundColor: backgroundColor,
       border: const Border(

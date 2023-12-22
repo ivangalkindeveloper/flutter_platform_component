@@ -66,6 +66,7 @@ abstract class FPCSize {
   abstract final BorderRadius borderRadiusFieldCupertino;
   abstract final BorderRadius borderRadiusFieldMaterial;
   // BorderRadius / Pop Up Menu
+  abstract final BorderRadius borderRadiusPopUpMenuCupertino;
   abstract final BorderRadius borderRadiusPopUpMenuMaterial;
   // BorderRadius / Segment Control
   abstract final BorderRadius borderRadiusSegmentControlCupertino;

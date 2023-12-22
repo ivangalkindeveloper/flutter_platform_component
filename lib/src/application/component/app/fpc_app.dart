@@ -6,11 +6,9 @@ import 'package:flutter/material.dart'
         MaterialApp,
         ScaffoldMessenger,
         ScaffoldMessengerState,
-        ThemeMode,
-        ThemeData,
         DefaultMaterialLocalizations;
 import 'package:flutter/cupertino.dart'
-    show CupertinoApp, CupertinoThemeData, DefaultCupertinoLocalizations;
+    show CupertinoApp, DefaultCupertinoLocalizations;
 
 class FPCApp extends FPCPlatformWidget {
   const FPCApp({
@@ -27,10 +25,6 @@ class FPCApp extends FPCPlatformWidget {
     this.builder,
     this.title = '',
     this.onGenerateTitle,
-    //
-    this.cupertinoThemeData,
-    this.materialThemeMode,
-    this.materialThemeData,
     //
     this.locale,
     this.localizationsDelegates = const [],
@@ -64,10 +58,6 @@ class FPCApp extends FPCPlatformWidget {
   final Widget Function(BuildContext, Widget?)? builder;
   final String title;
   final String Function(BuildContext)? onGenerateTitle;
-  //
-  final CupertinoThemeData? cupertinoThemeData;
-  final ThemeMode? materialThemeMode;
-  final ThemeData? materialThemeData;
   //
   final Locale? locale;
   final List<LocalizationsDelegate<dynamic>> localizationsDelegates;
@@ -147,7 +137,9 @@ class FPCApp extends FPCPlatformWidget {
         title: this.title,
         onGenerateTitle: this.onGenerateTitle,
         //
-        theme: this.cupertinoThemeData ?? context.fpcTheme.cupertinoThemeData,
+        theme: context.fpcTheme.cupertinoThemeData ??
+            context.fpcMergedCupertinoTheme,
+        //
         locale: this.locale,
         localizationsDelegates: [
           DefaultWidgetsLocalizations.delegate,
@@ -191,8 +183,10 @@ class FPCApp extends FPCPlatformWidget {
         title: this.title,
         onGenerateTitle: this.onGenerateTitle,
         //
-        themeMode: this.materialThemeMode ?? context.fpcTheme.materialThemeMode,
-        theme: this.materialThemeData ?? context.fpcTheme.materialThemeData,
+        themeMode: context.fpcTheme.materialThemeMode,
+        theme: context.fpcTheme.materialThemeData ??
+            context.fpcMergedMaterialTheme,
+        //
         locale: this.locale,
         localizationsDelegates: [
           DefaultWidgetsLocalizations.delegate,

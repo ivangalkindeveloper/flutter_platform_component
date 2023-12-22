@@ -2,13 +2,24 @@
 Addings:
 * FPCPopUpMenu;
 * ErrorText property for form fields;
+- FPCTooltop;
+- FPCDrawer;
 
 Refactoring:
+* Project folder refactoring;
+* Refactoring FPCPlatformWidget and FPCPlatformAppBar to abstract classes with build methods for each platforms;
 * Optimization of widgets, abandonment of the Container;
-* Refactoring of example project.
+* Refactoring of example project;
 * Transfer modal_bottom_sheet in local directory and optimization;
-* Transfer theme colors in MaterialTheme and CupertinoTheme;
 * Refactoring snippet script and new VS Code snippets;
+
+Renamings:
+* "IFPC" abstract entities > FPC abstract entities;
+* FPCTextStyle entity > FPCFont entity;
+
+Fixes:
+* Fix dark theme of CupertinoAlertDialog;
+* Fix dark theme of CupertinoActionSheet.
 
 ## 3.0.6
 * Fix snack bar expanded width;

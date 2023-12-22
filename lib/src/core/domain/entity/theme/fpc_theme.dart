@@ -4,16 +4,19 @@ import 'package:flutter/widgets.dart';
 import 'dart:ui';
 
 import 'package:flutter/cupertino.dart' show CupertinoThemeData;
-import 'package:flutter/material.dart' show ThemeMode, ThemeData;
+import 'package:flutter/material.dart' show ThemeData, ThemeMode;
 
 abstract class FPCTheme {
   const FPCTheme();
 
   // Framework
-  abstract final CupertinoThemeData cupertinoThemeData;
-  abstract final ThemeMode materialThemeMode;
-  abstract final ThemeData materialThemeData;
+  abstract final CupertinoThemeData? cupertinoThemeData;
+  abstract final ThemeData? materialThemeData;
+  abstract final ThemeMode? materialThemeMode;
   abstract final SystemUiOverlayStyle systemOverlayStyle;
+
+  // Brightness
+  abstract final Brightness brightness;
 
   // White
   abstract final Color white;
@@ -251,7 +254,7 @@ abstract class FPCTheme {
           this.barrierExpandedBottomSheetCupertino &&
       other.barrierExpandedBottomSheetMaterial ==
           this.barrierExpandedBottomSheetMaterial &&
-      // Barrier / BottomSheet
+      // Barrier / Small BottomSheet
       other.barrierSmallBottomSheetCupertino ==
           this.barrierSmallBottomSheetCupertino &&
       other.barrierSmallBottomSheetMaterial ==
@@ -377,7 +380,7 @@ abstract class FPCTheme {
           // Barrier / Expanded BottomSheet
           this.barrierExpandedBottomSheetCupertino,
           this.barrierExpandedBottomSheetMaterial,
-          // Barrier / BottomSheet
+          // Barrier / Small BottomSheet
           this.barrierSmallBottomSheetCupertino,
           this.barrierSmallBottomSheetMaterial,
           // Barrier / Dialog
