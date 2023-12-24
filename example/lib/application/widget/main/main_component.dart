@@ -539,6 +539,14 @@ class MainComponent extends StatelessWidget {
         ),
         Gap(size.s16),
         FPCPrimaryButton(
+          title: "Plaform",
+          onPressed: () => Navigator.pushNamed(
+            context,
+            NavigationController.platformScreen,
+          ),
+        ),
+        Gap(size.s16),
+        FPCPrimaryButton(
           title: "Pop Up Menu",
           onPressed: () => Navigator.pushNamed(
             context,

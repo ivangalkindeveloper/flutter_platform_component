@@ -46,7 +46,7 @@ class FPCSnackBar extends StatelessWidget with FPCSnackBarMixin {
     final MainAxisAlignment mainAxisAlignment =
         this.mainAxisAlignment ?? MainAxisAlignment.start;
 
-    return FPCAnimatedContainer(
+    return DecoratedBox(
       decoration: BoxDecoration(
         color: this.backgroundColor,
         borderRadius: borderRadius,
@@ -57,31 +57,33 @@ class FPCSnackBar extends StatelessWidget with FPCSnackBarMixin {
               )
             : null,
       ),
-      padding: padding,
-      child: Row(
-        children: [
-          Expanded(
-            child: Row(
-              mainAxisAlignment: mainAxisAlignment,
-              children: [
-                if (this.prefix != null) this.prefix!,
-                if (this.prefix != null) SizedBox(width: size.s16),
-                Expanded(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      this.child,
-                      if (this.bottom != null) this.bottom!,
-                    ],
+      child: Padding(
+        padding: padding,
+        child: Row(
+          children: [
+            Expanded(
+              child: Row(
+                mainAxisAlignment: mainAxisAlignment,
+                children: [
+                  if (this.prefix != null) this.prefix!,
+                  if (this.prefix != null) SizedBox(width: size.s16),
+                  Expanded(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        this.child,
+                        if (this.bottom != null) this.bottom!,
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-          if (this.postfix != null) SizedBox(width: size.s16),
-          if (this.postfix != null) this.postfix!,
-        ],
+            if (this.postfix != null) SizedBox(width: size.s16),
+            if (this.postfix != null) this.postfix!,
+          ],
+        ),
       ),
     );
   }

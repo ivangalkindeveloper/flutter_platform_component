@@ -55,14 +55,18 @@ class FPCButton extends FPCPlatformWidget {
           padding: EdgeInsets.zero,
           borderRadius: borderRadius,
           onPressed: onPressed,
-          child: FPCAnimatedContainer(
+          child: SizedBox(
             height: height,
-            padding: padding,
-            decoration: BoxDecoration(
-              color: this.backgroundColor,
-              borderRadius: borderRadius,
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                color: this.backgroundColor,
+                borderRadius: borderRadius,
+              ),
+              child: Padding(
+                padding: padding,
+                child: this.child,
+              ),
             ),
-            child: this.child,
           ),
         ),
       ],
@@ -93,27 +97,28 @@ class FPCButton extends FPCPlatformWidget {
       borderRadius: borderRadius,
       isDisabled: this.isDisabled,
       children: [
-        FPCAnimatedContainer(
+        SizedBox(
           height: height,
-          padding: EdgeInsets.zero,
-          decoration: BoxDecoration(
-            color: this.backgroundColor,
-            borderRadius: borderRadius,
-          ),
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              elevation: 0,
-              foregroundColor: splashColor,
-              backgroundColor: Colors.transparent,
-              shadowColor: Colors.transparent,
-              fixedSize: Size.fromHeight(height),
-              padding: padding,
-              shape: RoundedRectangleBorder(
-                borderRadius: borderRadius,
-              ),
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              color: this.backgroundColor,
+              borderRadius: borderRadius,
             ),
-            onPressed: onPressed,
-            child: this.child,
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                elevation: 0,
+                foregroundColor: splashColor,
+                backgroundColor: Colors.transparent,
+                shadowColor: Colors.transparent,
+                fixedSize: Size.fromHeight(height),
+                padding: padding,
+                shape: RoundedRectangleBorder(
+                  borderRadius: borderRadius,
+                ),
+              ),
+              onPressed: onPressed,
+              child: this.child,
+            ),
           ),
         ),
       ],

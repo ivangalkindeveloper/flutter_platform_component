@@ -48,43 +48,45 @@ class FPCGradientSnackBar extends StatelessWidget with FPCSnackBarMixin {
 
     return Stack(
       children: [
-        FPCAnimatedContainer(
+        DecoratedBox(
           decoration: BoxDecoration(
             gradient: this.backgroundGradient,
             borderRadius: borderRadius,
           ),
-          padding: padding,
-          child: Row(
-            children: [
-              Expanded(
-                child: Row(
-                  mainAxisAlignment: mainAxisAlignment,
-                  children: [
-                    if (this.prefix != null) this.prefix!,
-                    if (this.prefix != null) SizedBox(width: size.s16),
-                    Expanded(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          this.child,
-                          if (this.bottom != null) this.bottom!,
-                        ],
+          child: Padding(
+            padding: padding,
+            child: Row(
+              children: [
+                Expanded(
+                  child: Row(
+                    mainAxisAlignment: mainAxisAlignment,
+                    children: [
+                      if (this.prefix != null) this.prefix!,
+                      if (this.prefix != null) SizedBox(width: size.s16),
+                      Expanded(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            this.child,
+                            if (this.bottom != null) this.bottom!,
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-              if (this.postfix != null) SizedBox(width: size.s16),
-              if (this.postfix != null) this.postfix!,
-            ],
+                if (this.postfix != null) SizedBox(width: size.s16),
+                if (this.postfix != null) this.postfix!,
+              ],
+            ),
           ),
         ),
         if (this.borderGradient != null)
           Positioned.fill(
             child: FPCGradientMask(
               gradient: this.borderGradient!,
-              child: FPCAnimatedContainer(
+              child: DecoratedBox(
                 decoration: BoxDecoration(
                   borderRadius: borderRadius,
                   border: Border.all(
@@ -92,7 +94,6 @@ class FPCGradientSnackBar extends StatelessWidget with FPCSnackBarMixin {
                     width: borderWidth,
                   ),
                 ),
-                child: const SizedBox(),
               ),
             ),
           ),

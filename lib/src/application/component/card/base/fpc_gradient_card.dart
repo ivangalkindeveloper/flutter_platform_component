@@ -37,27 +37,35 @@ class FPCGradientCard extends StatelessWidget {
     final BorderRadius borderRadius =
         this.borderRadius ?? sizeScope.borderRadiusCard;
     final double borderWidth = this.borderWidth ?? sizeScope.borderWidthCard;
+    final BoxConstraints constraints =
+        this.constraints ?? const BoxConstraints.expand();
     final EdgeInsets padding = this.padding ?? size.paddingCard;
 
     return Stack(
       children: [
-        FPCAnimatedContainer(
+        SizedBox(
           height: this.height,
           width: this.width,
-          padding: padding,
-          constraints: this.constraints,
-          decoration: BoxDecoration(
-            gradient: this.backgroundGradient,
-            borderRadius: borderRadius,
+          child: ConstrainedBox(
+            constraints: constraints,
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: this.backgroundGradient,
+                borderRadius: borderRadius,
+              ),
+              child: Padding(
+                padding: padding,
+                child: this.child,
+              ),
+            ),
           ),
-          child: this.child,
         ),
         if (this.borderGradient != null)
           Positioned.fill(
             child: IgnorePointer(
               child: FPCGradientMask(
                 gradient: this.borderGradient!,
-                child: FPCAnimatedContainer(
+                child: DecoratedBox(
                   decoration: BoxDecoration(
                     borderRadius: borderRadius,
                     border: Border.all(
@@ -65,7 +73,6 @@ class FPCGradientCard extends StatelessWidget {
                       width: borderWidth,
                     ),
                   ),
-                  child: const SizedBox(),
                 ),
               ),
             ),

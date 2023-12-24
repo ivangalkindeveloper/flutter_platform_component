@@ -35,24 +35,32 @@ class FPCCard extends StatelessWidget {
     final BorderRadius borderRadius =
         this.borderRadius ?? sizeScope.borderRadiusCard;
     final double borderWidth = this.borderWidth ?? sizeScope.borderWidthCard;
+    final BoxConstraints constraints =
+        this.constraints ?? const BoxConstraints.expand();
     final EdgeInsets padding = this.padding ?? size.paddingCard;
 
-    return FPCAnimatedContainer(
+    return SizedBox(
       height: this.height,
       width: this.width,
-      padding: padding,
-      constraints: this.constraints,
-      decoration: BoxDecoration(
-        color: this.backgroundColor,
-        borderRadius: borderRadius,
-        border: this.borderColor != null
-            ? Border.all(
-                color: this.borderColor!,
-                width: borderWidth,
-              )
-            : null,
+      child: ConstrainedBox(
+        constraints: constraints,
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            color: this.backgroundColor,
+            borderRadius: borderRadius,
+            border: this.borderColor != null
+                ? Border.all(
+                    color: this.borderColor!,
+                    width: borderWidth,
+                  )
+                : null,
+          ),
+          child: Padding(
+            padding: padding,
+            child: this.child,
+          ),
+        ),
       ),
-      child: this.child,
     );
   }
 }

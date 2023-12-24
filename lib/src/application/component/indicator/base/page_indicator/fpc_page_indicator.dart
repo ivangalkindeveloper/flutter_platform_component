@@ -67,7 +67,9 @@ class FPCPageIndicator extends StatelessWidget {
                 ),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(size.s32),
+                  borderRadius: BorderRadius.circular(
+                    size.s32,
+                  ),
                   color: this._color(
                     index: index,
                   ),
@@ -76,7 +78,10 @@ class FPCPageIndicator extends StatelessWidget {
                 curve: animation.curve,
                 child: const SizedBox(),
               ),
-              if (index != (this.length - 1)) SizedBox(width: size.s16 / 2),
+              if (index != (this.length - 1))
+                SizedBox(
+                  width: size.s16 / 2,
+                ),
             ],
           ),
       ],

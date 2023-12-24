@@ -76,14 +76,20 @@ class FPCDottedButton extends FPCPlatformWidget {
             dashPattern: this.pattern,
             padding: EdgeInsets.zero,
             borderPadding: EdgeInsets.zero,
-            child: FPCAnimatedContainer(
+            child: SizedBox(
               height: height,
-              padding: padding,
-              decoration: BoxDecoration(
-                color: this.backgroundColor,
-                borderRadius: BorderRadius.all(borderRadius),
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  color: this.backgroundColor,
+                  borderRadius: BorderRadius.all(
+                    borderRadius,
+                  ),
+                ),
+                child: Padding(
+                  padding: padding,
+                  child: this.child,
+                ),
               ),
-              child: this.child,
             ),
           ),
         ),
@@ -116,36 +122,37 @@ class FPCDottedButton extends FPCPlatformWidget {
       borderRadius: BorderRadius.all(borderRadius),
       isDisabled: this.isDisabled,
       children: [
-        FPCAnimatedContainer(
+        SizedBox(
           height: height,
-          padding: EdgeInsets.zero,
-          decoration: BoxDecoration(
-            color: this.backgroundColor,
-            borderRadius: BorderRadius.all(borderRadius),
-          ),
-          child: DottedBorder(
-            color: this.borderColor,
-            radius: borderRadius,
-            strokeWidth: borderWidth,
-            borderType: this.borderType.packageMap,
-            strokeCap: this.strokeCap,
-            dashPattern: this.pattern,
-            padding: EdgeInsets.zero,
-            borderPadding: EdgeInsets.zero,
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                elevation: 0,
-                foregroundColor: splashColor,
-                backgroundColor: Colors.transparent,
-                shadowColor: Colors.transparent,
-                fixedSize: Size.fromHeight(height),
-                padding: padding,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(borderRadius),
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              color: this.backgroundColor,
+              borderRadius: BorderRadius.all(borderRadius),
+            ),
+            child: DottedBorder(
+              color: this.borderColor,
+              radius: borderRadius,
+              strokeWidth: borderWidth,
+              borderType: this.borderType.packageMap,
+              strokeCap: this.strokeCap,
+              dashPattern: this.pattern,
+              padding: EdgeInsets.zero,
+              borderPadding: EdgeInsets.zero,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  elevation: 0,
+                  foregroundColor: splashColor,
+                  backgroundColor: Colors.transparent,
+                  shadowColor: Colors.transparent,
+                  fixedSize: Size.fromHeight(height),
+                  padding: padding,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(borderRadius),
+                  ),
                 ),
+                onPressed: onPressed,
+                child: this.child,
               ),
-              onPressed: onPressed,
-              child: this.child,
             ),
           ),
         ),

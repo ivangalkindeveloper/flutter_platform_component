@@ -2,7 +2,7 @@
 Addings:
 * FPCPopUpMenu;
 * ErrorText property for form fields;
-- FPCTooltop;
+- FPCTooltip;
 - FPCDrawer;
 
 Refactoring:

@@ -42,33 +42,36 @@ class FPCDottedCard extends StatelessWidget {
     final Radius borderRadius =
         this.borderRadius ?? sizeScope.borderRadiusCard.bottomLeft;
     final double borderWidth = this.borderWidth ?? sizeScope.borderWidthCard;
+
     final EdgeInsets padding = this.padding ?? size.paddingCard;
     final BoxConstraints constraints = this.constraints ??
         const BoxConstraints(
           minWidth: double.infinity,
         );
 
-    return FPCAnimatedContainer(
+    return SizedBox(
       height: this.height,
       width: this.width,
-      constraints: this.constraints,
-      padding: EdgeInsets.zero,
-      decoration: BoxDecoration(
-        color: this.backgroundColor,
-        borderRadius: BorderRadius.all(borderRadius),
-      ),
-      child: DottedBorder(
-        color: this.borderColor,
-        radius: borderRadius,
-        strokeWidth: borderWidth,
-        borderType: this.borderType.packageMap,
-        strokeCap: this.strokeCap,
-        dashPattern: this.pattern,
-        padding: padding,
-        borderPadding: EdgeInsets.zero,
-        child: ConstrainedBox(
-          constraints: constraints,
-          child: this.child,
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: this.backgroundColor,
+          borderRadius: BorderRadius.all(
+            borderRadius,
+          ),
+        ),
+        child: DottedBorder(
+          color: this.borderColor,
+          radius: borderRadius,
+          strokeWidth: borderWidth,
+          borderType: this.borderType.packageMap,
+          strokeCap: this.strokeCap,
+          dashPattern: this.pattern,
+          padding: padding,
+          borderPadding: EdgeInsets.zero,
+          child: ConstrainedBox(
+            constraints: constraints,
+            child: this.child,
+          ),
         ),
       ),
     );

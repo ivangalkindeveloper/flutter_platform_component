@@ -31,6 +31,7 @@ import 'package:example/application/widget/component/card/card_screen.dart';
 import 'package:example/application/widget/component/card/dotted_card_screen.dart';
 import 'package:example/application/widget/component/card/gradient_card_screen.dart';
 import 'package:example/application/widget/component/divider/gradient_divider_screen.dart';
+import 'package:example/application/widget/component/platform/platform_screen.dart';
 import 'package:example/application/widget/component/pop_up_menu/pop_up_menu_screen.dart';
 import 'package:example/application/widget/component/select_card/dotted_select_card_screen.dart';
 import 'package:example/application/widget/component/select_card/gradient_select_card_screen.dart';
@@ -189,6 +190,8 @@ class NavigationController implements INavigationController {
 
   static const String pinFieldScreen = "/pinField";
   static const String gradientPinFieldScreen = "/gradientPinField";
+
+  static const String platformScreen = "/platform";
 
   static const String popUpMenuScreen = "/popUpMenu";
 
@@ -574,6 +577,12 @@ class NavigationController implements INavigationController {
         return FPCPageRoute.fromContext(
           navigatorKey.currentContext!,
           child: const GradientPINFieldScreen(),
+        );
+
+      case platformScreen:
+        return FPCPageRoute.fromContext(
+          navigatorKey.currentContext!,
+          child: const PlatformScreen(),
         );
 
       case popUpMenuScreen:
