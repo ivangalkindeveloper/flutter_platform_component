@@ -5,11 +5,19 @@ class FPCDefaultSize implements FPCSize {
   const FPCDefaultSize({
     // Size
     this.s10 = 10,
+    this.s11 = 11,
     this.s12 = 12,
+    this.s13 = 13,
     this.s14 = 14,
+    this.s15 = 15,
     this.s16 = 16,
+    this.s17 = 17,
     this.s18 = 18,
+    this.s19 = 19,
     this.s20 = 20,
+    this.s22 = 22,
+    this.s24 = 24,
+    this.s26 = 26,
     this.s28 = 28,
     this.s32 = 32,
 
@@ -126,15 +134,31 @@ class FPCDefaultSize implements FPCSize {
   @override
   final double s10;
   @override
+  final double s11;
+  @override
   final double s12;
+  @override
+  final double s13;
   @override
   final double s14;
   @override
+  final double s15;
+  @override
   final double s16;
+  @override
+  final double s17;
   @override
   final double s18;
   @override
+  final double s19;
+  @override
   final double s20;
+  @override
+  final double s22;
+  @override
+  final double s24;
+  @override
+  final double s26;
   @override
   final double s28;
   @override
@@ -281,11 +305,19 @@ class FPCDefaultSize implements FPCSize {
   FPCDefaultSize copyWith({
     // Size
     double? s10,
+    double? s11,
     double? s12,
+    double? s13,
     double? s14,
+    double? s15,
     double? s16,
+    double? s17,
     double? s18,
+    double? s19,
     double? s20,
+    double? s22,
+    double? s24,
+    double? s26,
     double? s28,
     double? s32,
 
@@ -379,11 +411,19 @@ class FPCDefaultSize implements FPCSize {
       FPCDefaultSize(
         // Size
         s10: s10 ?? this.s10,
+        s11: s11 ?? this.s11,
         s12: s12 ?? this.s12,
+        s13: s13 ?? this.s13,
         s14: s14 ?? this.s14,
+        s15: s15 ?? this.s15,
         s16: s16 ?? this.s16,
+        s17: s17 ?? this.s17,
         s18: s18 ?? this.s18,
+        s19: s19 ?? this.s19,
         s20: s20 ?? this.s20,
+        s22: s22 ?? this.s22,
+        s24: s24 ?? this.s24,
+        s26: s26 ?? this.s26,
         s28: s28 ?? this.s28,
         s32: s32 ?? this.s32,
 

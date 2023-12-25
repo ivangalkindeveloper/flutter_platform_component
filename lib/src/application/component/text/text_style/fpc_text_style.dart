@@ -2,8 +2,6 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 class FPCTextStyle {
-  // Thin
-  // 10
   static TextStyle thin10White(
     BuildContext context,
   ) {
@@ -84,7 +82,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin10PrimaryButton(
+  static TextStyle thin10PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -148,7 +146,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin10SecondaryButton(
+  static TextStyle thin10SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -212,7 +210,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin10AccentButton(
+  static TextStyle thin10AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -500,7 +498,502 @@ class FPCTextStyle {
     );
   }
 
-  // 12
+  static TextStyle thin11White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin11DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s11,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
   static TextStyle thin12White(
     BuildContext context,
   ) {
@@ -581,7 +1074,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin12PrimaryButton(
+  static TextStyle thin12PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -645,7 +1138,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin12SecondaryButton(
+  static TextStyle thin12SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -709,7 +1202,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin12AccentButton(
+  static TextStyle thin12AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -997,7 +1490,502 @@ class FPCTextStyle {
     );
   }
 
-  // 14
+  static TextStyle thin13White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin13DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s13,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
   static TextStyle thin14White(
     BuildContext context,
   ) {
@@ -1078,7 +2066,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin14PrimaryButton(
+  static TextStyle thin14PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -1142,7 +2130,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin14SecondaryButton(
+  static TextStyle thin14SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -1206,7 +2194,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin14AccentButton(
+  static TextStyle thin14AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -1494,7 +2482,502 @@ class FPCTextStyle {
     );
   }
 
-  // 16
+  static TextStyle thin15White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin15DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s15,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
   static TextStyle thin16White(
     BuildContext context,
   ) {
@@ -1575,7 +3058,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin16PrimaryButton(
+  static TextStyle thin16PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -1639,7 +3122,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin16SecondaryButton(
+  static TextStyle thin16SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -1703,7 +3186,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin16AccentButton(
+  static TextStyle thin16AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -1991,7 +3474,502 @@ class FPCTextStyle {
     );
   }
 
-  // 18
+  static TextStyle thin17White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin17DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s17,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
   static TextStyle thin18White(
     BuildContext context,
   ) {
@@ -2072,7 +4050,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin18PrimaryButton(
+  static TextStyle thin18PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -2136,7 +4114,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin18SecondaryButton(
+  static TextStyle thin18SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -2200,7 +4178,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin18AccentButton(
+  static TextStyle thin18AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -2488,7 +4466,502 @@ class FPCTextStyle {
     );
   }
 
-  // 20
+  static TextStyle thin19White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin19DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s19,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
   static TextStyle thin20White(
     BuildContext context,
   ) {
@@ -2569,7 +5042,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin20PrimaryButton(
+  static TextStyle thin20PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -2633,7 +5106,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin20SecondaryButton(
+  static TextStyle thin20SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -2697,7 +5170,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin20AccentButton(
+  static TextStyle thin20AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -2985,7 +5458,1494 @@ class FPCTextStyle {
     );
   }
 
-  // 28
+  static TextStyle thin22White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin22DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s22,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin24DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s24,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
+  static TextStyle thin26DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s26,
+      fontWeight: font.weightThin,
+      fontFamily: font.familyThin,
+      package: font.package,
+    );
+  }
+
   static TextStyle thin28White(
     BuildContext context,
   ) {
@@ -3066,7 +7026,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin28PrimaryButton(
+  static TextStyle thin28PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -3130,7 +7090,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin28SecondaryButton(
+  static TextStyle thin28SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -3194,7 +7154,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin28AccentButton(
+  static TextStyle thin28AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -3482,7 +7442,6 @@ class FPCTextStyle {
     );
   }
 
-  // 32
   static TextStyle thin32White(
     BuildContext context,
   ) {
@@ -3563,7 +7522,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin32PrimaryButton(
+  static TextStyle thin32PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -3627,7 +7586,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin32SecondaryButton(
+  static TextStyle thin32SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -3691,7 +7650,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle thin32AccentButton(
+  static TextStyle thin32AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -3979,8 +7938,7942 @@ class FPCTextStyle {
     );
   }
 
-  // Regular
-  // 10
+  static TextStyle light10White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light10DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s10,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light11DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s11,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light12DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s12,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light13DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s13,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light14DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s14,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light15DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s15,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light16DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s16,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light17DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s17,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light18DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s18,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light19DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s19,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light20DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s20,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light22DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s22,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light24DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s24,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light26DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s26,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light28DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s28,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
+  static TextStyle light32DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s32,
+      fontWeight: font.weightLight,
+      fontFamily: font.familyLight,
+      package: font.package,
+    );
+  }
+
   static TextStyle regular10White(
     BuildContext context,
   ) {
@@ -4061,7 +15954,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular10PrimaryButton(
+  static TextStyle regular10PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -4125,7 +16018,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular10SecondaryButton(
+  static TextStyle regular10SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -4189,7 +16082,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular10AccentButton(
+  static TextStyle regular10AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -4477,7 +16370,502 @@ class FPCTextStyle {
     );
   }
 
-  // 12
+  static TextStyle regular11White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular11DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s11,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
   static TextStyle regular12White(
     BuildContext context,
   ) {
@@ -4558,7 +16946,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular12PrimaryButton(
+  static TextStyle regular12PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -4622,7 +17010,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular12SecondaryButton(
+  static TextStyle regular12SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -4686,7 +17074,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular12AccentButton(
+  static TextStyle regular12AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -4974,7 +17362,502 @@ class FPCTextStyle {
     );
   }
 
-  // 14
+  static TextStyle regular13White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular13DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s13,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
   static TextStyle regular14White(
     BuildContext context,
   ) {
@@ -5055,7 +17938,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular14PrimaryButton(
+  static TextStyle regular14PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -5119,7 +18002,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular14SecondaryButton(
+  static TextStyle regular14SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -5183,7 +18066,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular14AccentButton(
+  static TextStyle regular14AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -5471,7 +18354,502 @@ class FPCTextStyle {
     );
   }
 
-  // 16
+  static TextStyle regular15White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular15DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s15,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
   static TextStyle regular16White(
     BuildContext context,
   ) {
@@ -5552,7 +18930,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular16PrimaryButton(
+  static TextStyle regular16PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -5616,7 +18994,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular16SecondaryButton(
+  static TextStyle regular16SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -5680,7 +19058,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular16AccentButton(
+  static TextStyle regular16AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -5968,7 +19346,502 @@ class FPCTextStyle {
     );
   }
 
-  // 18
+  static TextStyle regular17White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular17DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s17,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
   static TextStyle regular18White(
     BuildContext context,
   ) {
@@ -6049,7 +19922,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular18PrimaryButton(
+  static TextStyle regular18PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -6113,7 +19986,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular18SecondaryButton(
+  static TextStyle regular18SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -6177,7 +20050,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular18AccentButton(
+  static TextStyle regular18AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -6465,7 +20338,502 @@ class FPCTextStyle {
     );
   }
 
-  // 20
+  static TextStyle regular19White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular19DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s19,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
   static TextStyle regular20White(
     BuildContext context,
   ) {
@@ -6546,7 +20914,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular20PrimaryButton(
+  static TextStyle regular20PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -6610,7 +20978,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular20SecondaryButton(
+  static TextStyle regular20SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -6674,7 +21042,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular20AccentButton(
+  static TextStyle regular20AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -6962,7 +21330,1494 @@ class FPCTextStyle {
     );
   }
 
-  // 28
+  static TextStyle regular22White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular22DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s22,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular24DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s24,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
+  static TextStyle regular26DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s26,
+      fontWeight: font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: font.package,
+    );
+  }
+
   static TextStyle regular28White(
     BuildContext context,
   ) {
@@ -7043,7 +22898,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular28PrimaryButton(
+  static TextStyle regular28PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -7107,7 +22962,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular28SecondaryButton(
+  static TextStyle regular28SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -7171,7 +23026,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular28AccentButton(
+  static TextStyle regular28AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -7459,7 +23314,6 @@ class FPCTextStyle {
     );
   }
 
-  // 32
   static TextStyle regular32White(
     BuildContext context,
   ) {
@@ -7540,7 +23394,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular32PrimaryButton(
+  static TextStyle regular32PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -7604,7 +23458,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular32SecondaryButton(
+  static TextStyle regular32SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -7668,7 +23522,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle regular32AccentButton(
+  static TextStyle regular32AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -7956,8 +23810,6 @@ class FPCTextStyle {
     );
   }
 
-  // Medium
-  // 10
   static TextStyle medium10White(
     BuildContext context,
   ) {
@@ -8038,7 +23890,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium10PrimaryButton(
+  static TextStyle medium10PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -8102,7 +23954,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium10SecondaryButton(
+  static TextStyle medium10SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -8166,7 +24018,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium10AccentButton(
+  static TextStyle medium10AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -8454,7 +24306,502 @@ class FPCTextStyle {
     );
   }
 
-  // 12
+  static TextStyle medium11White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium11DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s11,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
   static TextStyle medium12White(
     BuildContext context,
   ) {
@@ -8535,7 +24882,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium12PrimaryButton(
+  static TextStyle medium12PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -8599,7 +24946,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium12SecondaryButton(
+  static TextStyle medium12SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -8663,7 +25010,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium12AccentButton(
+  static TextStyle medium12AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -8951,7 +25298,502 @@ class FPCTextStyle {
     );
   }
 
-  // 14
+  static TextStyle medium13White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium13DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s13,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
   static TextStyle medium14White(
     BuildContext context,
   ) {
@@ -9032,7 +25874,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium14PrimaryButton(
+  static TextStyle medium14PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -9096,7 +25938,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium14SecondaryButton(
+  static TextStyle medium14SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -9160,7 +26002,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium14AccentButton(
+  static TextStyle medium14AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -9448,7 +26290,502 @@ class FPCTextStyle {
     );
   }
 
-  // 16
+  static TextStyle medium15White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium15DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s15,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
   static TextStyle medium16White(
     BuildContext context,
   ) {
@@ -9529,7 +26866,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium16PrimaryButton(
+  static TextStyle medium16PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -9593,7 +26930,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium16SecondaryButton(
+  static TextStyle medium16SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -9657,7 +26994,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium16AccentButton(
+  static TextStyle medium16AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -9945,7 +27282,502 @@ class FPCTextStyle {
     );
   }
 
-  // 18
+  static TextStyle medium17White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium17DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s17,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
   static TextStyle medium18White(
     BuildContext context,
   ) {
@@ -10026,7 +27858,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium18PrimaryButton(
+  static TextStyle medium18PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -10090,7 +27922,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium18SecondaryButton(
+  static TextStyle medium18SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -10154,7 +27986,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium18AccentButton(
+  static TextStyle medium18AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -10442,7 +28274,502 @@ class FPCTextStyle {
     );
   }
 
-  // 20
+  static TextStyle medium19White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium19DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s19,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
   static TextStyle medium20White(
     BuildContext context,
   ) {
@@ -10523,7 +28850,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium20PrimaryButton(
+  static TextStyle medium20PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -10587,7 +28914,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium20SecondaryButton(
+  static TextStyle medium20SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -10651,7 +28978,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium20AccentButton(
+  static TextStyle medium20AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -10939,7 +29266,1494 @@ class FPCTextStyle {
     );
   }
 
-  // 28
+  static TextStyle medium22White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium22DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s22,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium24DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s24,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
+  static TextStyle medium26DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s26,
+      fontWeight: font.weightMedium,
+      fontFamily: font.familyMedium,
+      package: font.package,
+    );
+  }
+
   static TextStyle medium28White(
     BuildContext context,
   ) {
@@ -11020,7 +30834,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium28PrimaryButton(
+  static TextStyle medium28PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -11084,7 +30898,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium28SecondaryButton(
+  static TextStyle medium28SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -11148,7 +30962,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium28AccentButton(
+  static TextStyle medium28AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -11436,7 +31250,6 @@ class FPCTextStyle {
     );
   }
 
-  // 32
   static TextStyle medium32White(
     BuildContext context,
   ) {
@@ -11517,7 +31330,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium32PrimaryButton(
+  static TextStyle medium32PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -11581,7 +31394,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium32SecondaryButton(
+  static TextStyle medium32SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -11645,7 +31458,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle medium32AccentButton(
+  static TextStyle medium32AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -11933,8 +31746,6 @@ class FPCTextStyle {
     );
   }
 
-  // SemiBold
-  // 10
   static TextStyle semiBold10White(
     BuildContext context,
   ) {
@@ -12015,7 +31826,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold10PrimaryButton(
+  static TextStyle semiBold10PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -12079,7 +31890,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold10SecondaryButton(
+  static TextStyle semiBold10SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -12143,7 +31954,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold10AccentButton(
+  static TextStyle semiBold10AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -12431,7 +32242,502 @@ class FPCTextStyle {
     );
   }
 
-  // 12
+  static TextStyle semiBold11White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold11DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s11,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
   static TextStyle semiBold12White(
     BuildContext context,
   ) {
@@ -12512,7 +32818,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold12PrimaryButton(
+  static TextStyle semiBold12PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -12576,7 +32882,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold12SecondaryButton(
+  static TextStyle semiBold12SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -12640,7 +32946,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold12AccentButton(
+  static TextStyle semiBold12AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -12928,7 +33234,502 @@ class FPCTextStyle {
     );
   }
 
-  // 14
+  static TextStyle semiBold13White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold13DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s13,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
   static TextStyle semiBold14White(
     BuildContext context,
   ) {
@@ -13009,7 +33810,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold14PrimaryButton(
+  static TextStyle semiBold14PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -13073,7 +33874,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold14SecondaryButton(
+  static TextStyle semiBold14SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -13137,7 +33938,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold14AccentButton(
+  static TextStyle semiBold14AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -13425,7 +34226,502 @@ class FPCTextStyle {
     );
   }
 
-  // 16
+  static TextStyle semiBold15White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold15DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s15,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
   static TextStyle semiBold16White(
     BuildContext context,
   ) {
@@ -13506,7 +34802,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold16PrimaryButton(
+  static TextStyle semiBold16PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -13570,7 +34866,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold16SecondaryButton(
+  static TextStyle semiBold16SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -13634,7 +34930,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold16AccentButton(
+  static TextStyle semiBold16AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -13922,7 +35218,502 @@ class FPCTextStyle {
     );
   }
 
-  // 18
+  static TextStyle semiBold17White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold17DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s17,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
   static TextStyle semiBold18White(
     BuildContext context,
   ) {
@@ -14003,7 +35794,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold18PrimaryButton(
+  static TextStyle semiBold18PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -14067,7 +35858,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold18SecondaryButton(
+  static TextStyle semiBold18SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -14131,7 +35922,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold18AccentButton(
+  static TextStyle semiBold18AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -14419,7 +36210,502 @@ class FPCTextStyle {
     );
   }
 
-  // 20
+  static TextStyle semiBold19White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold19DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s19,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
   static TextStyle semiBold20White(
     BuildContext context,
   ) {
@@ -14500,7 +36786,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold20PrimaryButton(
+  static TextStyle semiBold20PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -14564,7 +36850,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold20SecondaryButton(
+  static TextStyle semiBold20SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -14628,7 +36914,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold20AccentButton(
+  static TextStyle semiBold20AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -14916,7 +37202,1494 @@ class FPCTextStyle {
     );
   }
 
-  // 28
+  static TextStyle semiBold22White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold22DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s22,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold24DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s24,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle semiBold26DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s26,
+      fontWeight: font.weightSemiBold,
+      fontFamily: font.familySemiBold,
+      package: font.package,
+    );
+  }
+
   static TextStyle semiBold28White(
     BuildContext context,
   ) {
@@ -14997,7 +38770,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold28PrimaryButton(
+  static TextStyle semiBold28PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -15061,7 +38834,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold28SecondaryButton(
+  static TextStyle semiBold28SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -15125,7 +38898,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold28AccentButton(
+  static TextStyle semiBold28AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -15413,7 +39186,6 @@ class FPCTextStyle {
     );
   }
 
-  // 32
   static TextStyle semiBold32White(
     BuildContext context,
   ) {
@@ -15494,7 +39266,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold32PrimaryButton(
+  static TextStyle semiBold32PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -15558,7 +39330,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold32SecondaryButton(
+  static TextStyle semiBold32SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -15622,7 +39394,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle semiBold32AccentButton(
+  static TextStyle semiBold32AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -15910,8 +39682,6 @@ class FPCTextStyle {
     );
   }
 
-  // Bold
-  // 10
   static TextStyle bold10White(
     BuildContext context,
   ) {
@@ -15992,7 +39762,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold10PrimaryButton(
+  static TextStyle bold10PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -16056,7 +39826,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold10SecondaryButton(
+  static TextStyle bold10SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -16120,7 +39890,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold10AccentButton(
+  static TextStyle bold10AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -16408,7 +40178,502 @@ class FPCTextStyle {
     );
   }
 
-  // 12
+  static TextStyle bold11White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold11DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s11,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
   static TextStyle bold12White(
     BuildContext context,
   ) {
@@ -16489,7 +40754,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold12PrimaryButton(
+  static TextStyle bold12PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -16553,7 +40818,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold12SecondaryButton(
+  static TextStyle bold12SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -16617,7 +40882,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold12AccentButton(
+  static TextStyle bold12AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -16905,7 +41170,502 @@ class FPCTextStyle {
     );
   }
 
-  // 14
+  static TextStyle bold13White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold13DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s13,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
   static TextStyle bold14White(
     BuildContext context,
   ) {
@@ -16986,7 +41746,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold14PrimaryButton(
+  static TextStyle bold14PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -17050,7 +41810,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold14SecondaryButton(
+  static TextStyle bold14SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -17114,7 +41874,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold14AccentButton(
+  static TextStyle bold14AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -17402,7 +42162,502 @@ class FPCTextStyle {
     );
   }
 
-  // 16
+  static TextStyle bold15White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold15DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s15,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
   static TextStyle bold16White(
     BuildContext context,
   ) {
@@ -17483,7 +42738,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold16PrimaryButton(
+  static TextStyle bold16PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -17547,7 +42802,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold16SecondaryButton(
+  static TextStyle bold16SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -17611,7 +42866,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold16AccentButton(
+  static TextStyle bold16AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -17899,7 +43154,502 @@ class FPCTextStyle {
     );
   }
 
-  // 18
+  static TextStyle bold17White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold17DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s17,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
   static TextStyle bold18White(
     BuildContext context,
   ) {
@@ -17980,7 +43730,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold18PrimaryButton(
+  static TextStyle bold18PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -18044,7 +43794,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold18SecondaryButton(
+  static TextStyle bold18SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -18108,7 +43858,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold18AccentButton(
+  static TextStyle bold18AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -18396,7 +44146,502 @@ class FPCTextStyle {
     );
   }
 
-  // 20
+  static TextStyle bold19White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold19DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s19,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
   static TextStyle bold20White(
     BuildContext context,
   ) {
@@ -18477,7 +44722,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold20PrimaryButton(
+  static TextStyle bold20PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -18541,7 +44786,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold20SecondaryButton(
+  static TextStyle bold20SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -18605,7 +44850,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold20AccentButton(
+  static TextStyle bold20AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -18893,7 +45138,1494 @@ class FPCTextStyle {
     );
   }
 
-  // 28
+  static TextStyle bold22White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold22DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s22,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold24DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s24,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle bold26DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s26,
+      fontWeight: font.weightBold,
+      fontFamily: font.familyBold,
+      package: font.package,
+    );
+  }
+
   static TextStyle bold28White(
     BuildContext context,
   ) {
@@ -18974,7 +46706,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold28PrimaryButton(
+  static TextStyle bold28PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -19038,7 +46770,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold28SecondaryButton(
+  static TextStyle bold28SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -19102,7 +46834,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold28AccentButton(
+  static TextStyle bold28AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -19390,7 +47122,6 @@ class FPCTextStyle {
     );
   }
 
-  // 32
   static TextStyle bold32White(
     BuildContext context,
   ) {
@@ -19471,7 +47202,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold32PrimaryButton(
+  static TextStyle bold32PrimaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -19535,7 +47266,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold32SecondaryButton(
+  static TextStyle bold32SecondaryInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -19599,7 +47330,7 @@ class FPCTextStyle {
     );
   }
 
-  static TextStyle bold32AccentButton(
+  static TextStyle bold32AccentInternal(
     BuildContext context,
   ) {
     final FPCTheme theme = context.fpcTheme;
@@ -19886,4 +47617,7941 @@ class FPCTextStyle {
       package: font.package,
     );
   }
+
+  static TextStyle extraBold10White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold10DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s10,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold11DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s11,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold12DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s12,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold13DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s13,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold14DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s14,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold15DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s15,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold16DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s16,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold17DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s17,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold18DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s18,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold19DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s19,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold20DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s20,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold22DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s22,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold24DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s24,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold26DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s26,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold28DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s28,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32White(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.white,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32WhiteAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.whiteAlways,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32Black(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.black,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32BlackAlways(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.blackAlways,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32Primary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primary,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32PrimaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryInternal,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32PrimaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryLight,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32PrimaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.primaryDark,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32Secondary(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondary,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32SecondaryInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryInternal,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32SecondaryLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryLight,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32SecondaryDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.secondaryDark,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32Accent(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accent,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32AccentInternal(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentInternal,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32AccentLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentLight,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32AccentDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.accentDark,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32Grey(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.grey,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32GreyLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyLight,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32GreyDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.greyDark,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32Info(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.info,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32InfoLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoLight,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32InfoDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.infoDark,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32Success(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.success,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32SuccessLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successLight,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32SuccessDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.successDark,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32Warning(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warning,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32WarningLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningLight,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32WarningDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.warningDark,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32Danger(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.danger,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32DangerLight(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerLight,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
+  static TextStyle extraBold32DangerDark(
+    BuildContext context,
+  ) {
+    final FPCTheme theme = context.fpcTheme;
+    final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
+
+    return TextStyle(
+      color: theme.dangerDark,
+      fontSize: size.s32,
+      fontWeight: font.weightExtraBold,
+      fontFamily: font.familyExtraBold,
+      package: font.package,
+    );
+  }
+
 }

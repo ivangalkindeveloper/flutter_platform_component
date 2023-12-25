@@ -5,11 +5,19 @@ abstract class FPCSize {
 
   // Size
   abstract final double s10;
+  abstract final double s11;
   abstract final double s12;
+  abstract final double s13;
   abstract final double s14;
+  abstract final double s15;
   abstract final double s16;
+  abstract final double s17;
   abstract final double s18;
+  abstract final double s19;
   abstract final double s20;
+  abstract final double s22;
+  abstract final double s24;
+  abstract final double s26;
   abstract final double s28;
   abstract final double s32;
 
@@ -108,11 +116,19 @@ abstract class FPCSize {
       other is FPCSize &&
       // Size
       other.s10 == this.s10 &&
+      other.s11 == this.s11 &&
       other.s12 == this.s12 &&
+      other.s13 == this.s13 &&
       other.s14 == this.s14 &&
+      other.s15 == this.s15 &&
       other.s16 == this.s16 &&
+      other.s17 == this.s17 &&
       other.s18 == this.s18 &&
+      other.s19 == this.s19 &&
       other.s20 == this.s20 &&
+      other.s22 == this.s22 &&
+      other.s24 == this.s24 &&
+      other.s26 == this.s26 &&
       other.s28 == this.s28 &&
       other.s32 == this.s32 &&
 
