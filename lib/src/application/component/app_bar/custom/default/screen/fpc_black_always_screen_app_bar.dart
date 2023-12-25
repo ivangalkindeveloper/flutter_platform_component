@@ -4,8 +4,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter/cupertino.dart' show CupertinoIcons;
 import 'package:flutter/material.dart' show Icons;
 
-class FPCWhiteAlwaysScreenAppBar extends FPCAppBar {
-  FPCWhiteAlwaysScreenAppBar(
+class FPCBlackAlwaysScreenAppBar extends FPCAppBar {
+  FPCBlackAlwaysScreenAppBar(
     super.context, {
     super.key,
     super.transitionBetweenRoutes,

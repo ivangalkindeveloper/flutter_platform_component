@@ -58,7 +58,7 @@ class FPCBlackAlwaysExpandedBottomSheet<T> extends StatelessWidget
           backgroundColor: this.backgroundColor ?? theme.blackAlways,
           resizeToAvoidBottomInset: this.resizeToAvoidBottomInset,
           extendBodyBehindAppBar: this.extendBodyBehindAppBar,
-          appBar: FPCWhiteAlwaysExpandedBottomSheetAppBar(
+          appBar: FPCBlackAlwaysExpandedBottomSheetAppBar(
             context,
             backgroundColor: this.appBarBackgroundColor ?? theme.blackAlways,
             prefix: this.appBarPrefix,

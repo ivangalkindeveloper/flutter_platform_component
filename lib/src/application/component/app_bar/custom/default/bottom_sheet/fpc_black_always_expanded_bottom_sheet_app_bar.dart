@@ -1,8 +1,8 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCWhiteAlwaysExpandedBottomSheetAppBar extends FPCAppBar {
-  FPCWhiteAlwaysExpandedBottomSheetAppBar(
+class FPCBlackAlwaysExpandedBottomSheetAppBar extends FPCAppBar {
+  FPCBlackAlwaysExpandedBottomSheetAppBar(
     super.context, {
     super.key,
     Color? backgroundColor,

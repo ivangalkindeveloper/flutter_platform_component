@@ -81,13 +81,13 @@ void main() async {
     entities,
   );
 
-  for (MapEntry<String, List<FileSystemEntity>> fileEntry
+  for (final MapEntry<String, List<FileSystemEntity>> fileEntry
       in fileTable.entries) {
     final String snippentFileName = fileEntry.key;
     final List<FileSystemEntity> entities = fileEntry.value.toList();
     final Map<String, _Snippet> snippetItems = {};
 
-    for (FileSystemEntity entity in entities) {
+    for (final FileSystemEntity entity in entities) {
       if (entity is! File) {
         continue;
       }
@@ -107,15 +107,17 @@ void main() async {
 
   await Directory("bin/snippet").create();
   Directory.current = Directory("bin/snippet");
-  _generateSnippetsFiles(snippetTable);
+  _generateSnippetsFiles(
+    snippetTable,
+  );
   _preparePackageTable();
   _prepareReadmeTable();
 }
 
 Directory _handleDirectory() {
-  final Directory parentDirectory = Directory(Directory.current.parent.path);
-  Directory.current = parentDirectory;
-  return Directory("lib/src/application/");
+  // final Directory parentDirectory = Directory(Directory.current.parent.path);
+  // Directory.current = parentDirectory;
+  return Directory("lib/src/application/component/");
 }
 
 List<FileSystemEntity> _getFileEntities(
@@ -126,7 +128,9 @@ List<FileSystemEntity> _getFileEntities(
     recursive: true,
   );
   entities.removeWhere(
-    (entity) =>
+    (
+      FileSystemEntity entity,
+    ) =>
         _isComponent(
               matchList,
               entity.path,
@@ -164,7 +168,9 @@ void _handleTable(
   }
 }
 
-_ComponentParseData _parceComponentFile(List<String> lines) {
+_ComponentParseData _parceComponentFile(
+  List<String> lines,
+) {
   String name = "";
   final List<String> constructorRequiredFieldLines = [];
   final List<String> bodyRequiredFieldLines = [];
@@ -174,17 +180,19 @@ _ComponentParseData _parceComponentFile(List<String> lines) {
       final List<String> lineSplit = line.split(" ");
       name = lineSplit[1];
     }
-    if (line.contains("required ")) {
-      if (line.contains("this.")) {
-        constructorRequiredFieldLines.add(
-            line.split(" ").last.replaceAll("this.", "").replaceAll(",", ""));
-      } else {
-        bodyRequiredFieldLines.add(line
-            .substring(2)
-            .replaceAll("required", "final")
-            .replaceAll(",", ";"));
-      }
+
+    if (line.contains("required ") &&
+        (line.contains("this.") || line.contains("super."))) {
+      constructorRequiredFieldLines.add(
+        line
+            .split(" ")
+            .last
+            .replaceAll("this.", "")
+            .replaceAll("super.", "")
+            .replaceAll(",", ""),
+      );
     }
+
     if (line.contains("final ")) {
       if (constructorRequiredFieldLines
           .contains(line.split(" ").last.replaceAll(";", ""))) {
@@ -203,45 +211,67 @@ _ComponentParseData _parceComponentFile(List<String> lines) {
   );
 }
 
-List<String> _getSnippetBody(_ComponentParseData data) {
+List<String> _getSnippetBody(
+  _ComponentParseData data,
+) {
   final List<String> body = [];
 
   body.add(
       "import 'package:flutter_platform_component/flutter_platform_component.dart';");
   body.add("import 'package:flutter/widgets.dart';");
   body.add("");
-  body.add(
-      "class \${name}${data.name.replaceAll("FPC", "")} extends StatelessWidget {");
-  body.add("  const \${name}${data.name.replaceAll("FPC", "")}({");
-  body.add("    super.key,");
-  for (String requiredFieidLine in data.requiredFieldLines) {
-    final String requiredFieldName =
-        requiredFieidLine.split(" ").last.replaceAll(";", "");
-    body.add("    required this.$requiredFieldName,");
-  }
-  body.add("  });");
-  body.add("");
-  if (data.requiredFieldLines.isNotEmpty) {
-    for (String requiredFieidLine in data.requiredFieldLines) {
-      body.add(requiredFieidLine);
+
+  if (data.name.contains("AppBar")) {
+    body.add(
+        "class \${name}${data.name.replaceAll("FPC", "")} extends ${data.name} {");
+    body.add("  const \${name}${data.name.replaceAll("FPC", "")}(");
+    if (data.requiredFieldLines.isEmpty) {
+      body.add("    super.context,");
+      body.add("  );");
+    } else {
+      body.add("    super.context, {");
+      for (String requiredFieidLine in data.requiredFieldLines) {
+        final String requiredFieldName =
+            requiredFieidLine.split(" ").last.replaceAll(";", "");
+        body.add("    required super.$requiredFieldName,");
+      }
+      body.add("  });");
     }
-    body.add("");
-  }
-  body.add("  @override");
-  body.add("  Widget build(BuildContext context) {");
-  if (data.requiredFieldLines.isNotEmpty) {
-    body.add("    return ${data.name}(");
-    for (final String requiredFieidLine in data.requiredFieldLines) {
+    body.add("}");
+  } else {
+    body.add(
+        "class \${name}${data.name.replaceAll("FPC", "")} extends StatelessWidget {");
+    body.add("  const \${name}${data.name.replaceAll("FPC", "")}({");
+    body.add("    super.key,");
+    for (String requiredFieidLine in data.requiredFieldLines) {
       final String requiredFieldName =
           requiredFieidLine.split(" ").last.replaceAll(";", "");
-      body.add("      $requiredFieldName: this.$requiredFieldName,");
+      body.add("    required this.$requiredFieldName,");
     }
-    body.add("    );");
-  } else {
-    body.add("    return const ${data.name}();");
+    body.add("  });");
+    body.add("");
+    if (data.requiredFieldLines.isNotEmpty) {
+      for (String requiredFieidLine in data.requiredFieldLines) {
+        body.add(requiredFieidLine);
+      }
+      body.add("");
+    }
+    body.add("  @override");
+    body.add("  Widget build(BuildContext context) {");
+    if (data.requiredFieldLines.isNotEmpty) {
+      body.add("    return ${data.name}(");
+      for (final String requiredFieidLine in data.requiredFieldLines) {
+        final String requiredFieldName =
+            requiredFieidLine.split(" ").last.replaceAll(";", "");
+        body.add("      $requiredFieldName: this.$requiredFieldName,");
+      }
+      body.add("    );");
+    } else {
+      body.add("    return const ${data.name}();");
+    }
+    body.add("  }");
+    body.add("}");
   }
-  body.add("  }");
-  body.add("}");
 
   return body;
 }

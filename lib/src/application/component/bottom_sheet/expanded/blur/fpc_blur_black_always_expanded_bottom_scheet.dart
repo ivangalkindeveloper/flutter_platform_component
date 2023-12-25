@@ -61,7 +61,7 @@ class FPCBlurBlackAlwaysExpandedBottomSheet<T> extends StatelessWidget
           backgroundColor: this.backgroundColor ?? theme.blackAlways,
           resizeToAvoidBottomInset: this.resizeToAvoidBottomInset,
           extendBodyBehindAppBar: true,
-          appBar: FPCBlurWhiteAlwaysExpandedBottomSheetAppBar(
+          appBar: FPCBlurBlackAlwaysExpandedBottomSheetAppBar(
             context,
             blurColor: this.appBarBlurColor ?? theme.blackAlways,
             blurOpacity: this.appBarBlurOpacity,

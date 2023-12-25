@@ -11,7 +11,7 @@ class FPCAppBar extends FPCPlatformAppBar {
     this.transitionBetweenRoutes = true,
     this.backgroundColor,
     this.prefix,
-    required this.title,
+    this.title,
     this.titleStyle,
     this.middle,
     this.postfix,
