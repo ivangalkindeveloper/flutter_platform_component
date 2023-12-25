@@ -58,40 +58,46 @@ class FPCCustomRoundedRectangleBorder extends ShapeBorder {
   final BorderSide? bottomRightCornerSide;
 
   double get biggestWidth => max(
-      max(
+        max(
           max(
+            max(
               max(
+                max(
                   max(
-                      max(max(topSide?.width ?? 0.0, rightSide?.width ?? 0.0),
-                          bottomSide?.width ?? 0.0),
-                      leftSide?.width ?? 0.0),
-                  bottomRightCornerSide?.width ?? 0.0),
-              bottomLeftCornerSide?.width ?? 0.0),
-          topRightCornerSide?.width ?? 0.0),
-      topLeftCornerSide?.width ?? 0.0);
+                    topSide?.width ?? 0.0,
+                    rightSide?.width ?? 0.0,
+                  ),
+                  bottomSide?.width ?? 0.0,
+                ),
+                leftSide?.width ?? 0.0,
+              ),
+              bottomRightCornerSide?.width ?? 0.0,
+            ),
+            bottomLeftCornerSide?.width ?? 0.0,
+          ),
+          topRightCornerSide?.width ?? 0.0,
+        ),
+        topLeftCornerSide?.width ?? 0.0,
+      );
 
   /// The radii for each corner.
   final BorderRadius borderRadius;
 
   @override
-  EdgeInsetsGeometry get dimensions {
-    return EdgeInsets.all(biggestWidth);
-  }
+  EdgeInsetsGeometry get dimensions => EdgeInsets.all(biggestWidth);
 
   @override
-  ShapeBorder scale(double t) {
-    return FPCCustomRoundedRectangleBorder(
-      topSide: topSide?.scale(t),
-      leftSide: leftSide?.scale(t),
-      bottomSide: bottomSide?.scale(t),
-      rightSide: bottomSide?.scale(t),
-      topLeftCornerSide: topLeftCornerSide?.scale(t),
-      topRightCornerSide: topRightCornerSide?.scale(t),
-      bottomLeftCornerSide: bottomLeftCornerSide?.scale(t),
-      bottomRightCornerSide: bottomRightCornerSide?.scale(t),
-      borderRadius: borderRadius * t,
-    );
-  }
+  ShapeBorder scale(double t) => FPCCustomRoundedRectangleBorder(
+        topSide: topSide?.scale(t),
+        leftSide: leftSide?.scale(t),
+        bottomSide: bottomSide?.scale(t),
+        rightSide: bottomSide?.scale(t),
+        topLeftCornerSide: topLeftCornerSide?.scale(t),
+        topRightCornerSide: topRightCornerSide?.scale(t),
+        bottomLeftCornerSide: bottomLeftCornerSide?.scale(t),
+        bottomRightCornerSide: bottomRightCornerSide?.scale(t),
+        borderRadius: borderRadius * t,
+      );
 
   @override
   ShapeBorder? lerpFrom(ShapeBorder? a, double t) {
@@ -164,18 +170,19 @@ class FPCCustomRoundedRectangleBorder extends ShapeBorder {
   }
 
   @override
-  Path getInnerPath(Rect rect, {TextDirection? textDirection}) {
-    return Path()
-      ..addRRect(borderRadius
-          .resolve(textDirection)
-          .toRRect(rect)
-          .deflate(biggestWidth));
-  }
+  Path getInnerPath(
+    Rect rect, {
+    TextDirection? textDirection,
+  }) =>
+      Path()
+        ..addRRect(borderRadius
+            .resolve(textDirection)
+            .toRRect(rect)
+            .deflate(biggestWidth));
 
   @override
-  Path getOuterPath(Rect rect, {TextDirection? textDirection}) {
-    return Path()..addRRect(borderRadius.resolve(textDirection).toRRect(rect));
-  }
+  Path getOuterPath(Rect rect, {TextDirection? textDirection}) =>
+      Path()..addRRect(borderRadius.resolve(textDirection).toRRect(rect));
 
   @override
   void paint(Canvas canvas, Rect rect, {TextDirection? textDirection}) {

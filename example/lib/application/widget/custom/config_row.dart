@@ -1,6 +1,6 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 
 class ConfigRow extends StatelessWidget {
@@ -21,14 +21,21 @@ class ConfigRow extends StatelessWidget {
           onPressed: () => context.fpcChangePlatform(
             isIOS ? FPCPlatform.android : FPCPlatform.iOS,
           ),
-          child: FPCPrimaryIcon(
-            icon: isIOS ? CupertinoIcons.info : Icons.android,
+          child: SizedBox(
+            height: size.s22,
+            child: SvgPicture.asset(
+              isIOS ? "asset/ios.svg" : "asset/android.svg",
+              colorFilter: ColorFilter.mode(
+                theme.primary,
+                BlendMode.srcIn,
+              ),
+            ),
           ),
         ),
         Gap(size.s16),
         FPCIconButton(
           onPressed: () => context.fpcChangeTheme(
-            theme.materialThemeMode == ThemeMode.light
+            theme.brightness == Brightness.light
                 ? FPCDefaultDarkTheme()
                 : FPCDefaultLightTheme(),
           ),

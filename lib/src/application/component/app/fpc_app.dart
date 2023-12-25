@@ -3,10 +3,10 @@ import 'package:flutter/widgets.dart';
 
 import 'package:flutter/material.dart'
     show
+        DefaultMaterialLocalizations,
         MaterialApp,
         ScaffoldMessenger,
-        ScaffoldMessengerState,
-        DefaultMaterialLocalizations;
+        ScaffoldMessengerState;
 import 'package:flutter/cupertino.dart'
     show CupertinoApp, DefaultCupertinoLocalizations;
 
@@ -183,9 +183,9 @@ class FPCApp extends FPCPlatformWidget {
         title: this.title,
         onGenerateTitle: this.onGenerateTitle,
         //
-        themeMode: context.fpcTheme.materialThemeMode,
         theme: context.fpcTheme.materialThemeData ??
             context.fpcMergedMaterialTheme,
+        themeMode: context.fpcTheme.materialThemeMode,
         //
         locale: this.locale,
         localizationsDelegates: [

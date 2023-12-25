@@ -172,9 +172,9 @@ class FPCAppRouter extends FPCPlatformWidget {
         title: title,
         onGenerateTitle: onGenerateTitle,
         //
-        themeMode: context.fpcTheme.materialThemeMode,
         theme: context.fpcTheme.materialThemeData ??
             context.fpcMergedMaterialTheme,
+        themeMode: context.fpcTheme.materialThemeMode,
         //
         locale: locale,
         localizationsDelegates: [

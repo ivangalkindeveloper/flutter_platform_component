@@ -13,6 +13,7 @@ dependencies:
   flutter_platform_component:
     path: ../
   gap:
+  flutter_svg:
 
 dev_dependencies:
   flutter_test:
@@ -21,3 +22,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - asset/
