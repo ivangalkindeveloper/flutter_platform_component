@@ -55,7 +55,7 @@ class _FPCCupertinoNavigatorState extends State<FPCCupertinoNavigator> {
   @override
   void initState() {
     super.initState();
-    _heroController = CupertinoApp.createCupertinoHeroController();
+    this._heroController = CupertinoApp.createCupertinoHeroController();
     _updateObservers();
   }
 

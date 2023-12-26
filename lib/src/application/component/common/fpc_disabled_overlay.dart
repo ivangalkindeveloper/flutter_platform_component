@@ -32,7 +32,9 @@ class FPCDisabledOverlay extends StatelessWidget {
       constraints: const BoxConstraints.expand(),
       child: DecoratedBox(
         decoration: BoxDecoration(
-          color: this._color(theme).withOpacity(size.opacityDisabled),
+          color: this._color(theme).withOpacity(
+                size.opacityDisabled,
+              ),
           borderRadius: this.borderRadius,
         ),
       ),

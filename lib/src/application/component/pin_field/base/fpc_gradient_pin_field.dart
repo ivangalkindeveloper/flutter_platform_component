@@ -189,13 +189,18 @@ class _FPCGradientPINFieldState extends State<FPCGradientPINField>
 
     return FPCDisabledWrapper(
       disabledColor: this.widget.disabledColor,
-      borderRadius: BorderRadius.circular(height),
+      borderRadius: BorderRadius.circular(
+        height,
+      ),
       isDisabled: this.widget.isDisabled,
       children: [
         SlideTransition(
           position: Tween<Offset>(
             begin: Offset.zero,
-            end: const Offset(0.1, 0.0),
+            end: const Offset(
+              0.1,
+              0.0,
+            ),
           ).animate(
             CurvedAnimation(
               parent: this._animationController,
@@ -236,8 +241,12 @@ class _FPCGradientPINFieldState extends State<FPCGradientPINField>
                 borderColor: null,
               ),
               forceErrorState: this._isError,
-              separatorBuilder: (int value) =>
-                  SizedBox(width: horizontalInterval),
+              separatorBuilder: (
+                int value,
+              ) =>
+                  SizedBox(
+                width: horizontalInterval,
+              ),
               autofocus: this.widget.isAutofocus,
               showCursor: false,
               onChanged: onChanged,

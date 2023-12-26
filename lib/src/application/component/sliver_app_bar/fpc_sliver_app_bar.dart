@@ -37,7 +37,12 @@ class FPCSliverAppBar extends FPCPlatformWidget {
     if (this.onPressedBack != null) {
       final TextDirection textDirection = Directionality.of(context);
       final Matrix4 transform = textDirection == TextDirection.rtl
-          ? (Matrix4.identity()..scale(-1.0, 1.0, 1.0))
+          ? (Matrix4.identity()
+            ..scale(
+              -1.0,
+              1.0,
+              1.0,
+            ))
           : Matrix4.identity();
 
       return FPCIconButton(
@@ -79,14 +84,10 @@ class FPCSliverAppBar extends FPCPlatformWidget {
       if (this.title != null) {
         return Text(
           title!,
-          style: this.titleStyle?.copyWith(
-                    color: titleStyle?.color ?? theme.black,
-                    package: font.package,
-                  ) ??
-              TextStyle(
-                color: theme.black,
-                package: font.package,
-              ),
+          style: TextStyle(
+            color: titleStyle?.color ?? theme.black,
+            package: font.package,
+          ),
         );
       }
 
@@ -138,20 +139,12 @@ class FPCSliverAppBar extends FPCPlatformWidget {
         return Text(
           title!,
           textAlign: TextAlign.center,
-          style: this.titleStyle?.copyWith(
-                    color: titleStyle?.color ?? theme.black,
-                    fontWeight:
-                        this.titleStyle?.fontWeight ?? font.weightMedium,
-                    fontFamily:
-                        this.titleStyle?.fontFamily ?? font.familyMedium,
-                    package: font.package,
-                  ) ??
-              TextStyle(
-                color: theme.black,
-                fontWeight: font.weightMedium,
-                fontFamily: font.familyMedium,
-                package: font.package,
-              ),
+          style: TextStyle(
+            color: titleStyle?.color ?? theme.black,
+            fontWeight: this.titleStyle?.fontWeight ?? font.weightMedium,
+            fontFamily: this.titleStyle?.fontFamily ?? font.familyMedium,
+            package: font.package,
+          ),
         );
       }
 

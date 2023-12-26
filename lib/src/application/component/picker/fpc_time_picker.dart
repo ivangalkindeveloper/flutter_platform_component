@@ -9,8 +9,9 @@ import 'package:flutter/cupertino.dart'
         CupertinoDynamicColor,
         CupertinoDatePicker,
         CupertinoDatePickerMode;
-import 'package:flutter/material.dart' show Theme, ColorScheme, TimeOfDay;
+import 'package:flutter/material.dart' show TimeOfDay, TimePickerDialog;
 
+//TODO Change props
 class FPCTimePicker extends FPCPlatformWidget with FPCTimePickerMixin {
   FPCTimePicker({
     super.key,
@@ -103,29 +104,13 @@ class FPCTimePicker extends FPCPlatformWidget with FPCTimePickerMixin {
   Widget material(
     BuildContext context,
   ) {
-    final FPCSizeScope sizeScope = context.fpcSizeScope;
-    final FPCTheme theme = context.fpcTheme;
+    final FPCTimeOfDay timeOfDay = context.fpcTimeOfDay;
 
-    final Color backgroundColor =
-        this.materialDialogBackgroundColor ?? theme.backgroundScaffold;
-    final Color color = this.materialDialogColor ?? theme.primary;
-    final BorderRadius borderRadius =
-        this.materialDialogBorderRadius ?? sizeScope.borderRadiusDialog;
-    final Widget materialDialog = this.materialDialog ?? const SizedBox();
+    final TimeOfDay timeOfDayInitial =
+        timeOfDayRange?.initial ?? timeOfDay.initial;
 
-    return Theme(
-      data: (theme.materialThemeData ?? Theme.of(context)).copyWith(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: color,
-        ),
-        timePickerTheme: theme.materialThemeData?.timePickerTheme.copyWith(
-          backgroundColor: backgroundColor,
-          shape: RoundedRectangleBorder(
-            borderRadius: borderRadius,
-          ),
-        ),
-      ),
-      child: materialDialog,
+    return TimePickerDialog(
+      initialTime: timeOfDayInitial,
     );
   }
 }

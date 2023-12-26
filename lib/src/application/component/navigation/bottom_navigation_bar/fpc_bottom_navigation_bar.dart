@@ -64,33 +64,19 @@ class FPCBottomNavigationBar extends FPCPlatformWidget {
     final Color backgroundColor =
         this.backgroundColor ?? theme.backgroundComponent;
     final Color unselectedColor = this.unselectedColor ?? theme.grey;
-    final TextStyle unselectedStyle = this.unselectedStyle?.copyWith(
-              color: this.unselectedStyle?.color ?? unselectedColor,
-              fontWeight:
-                  this.unselectedStyle?.fontWeight ?? font.weightRegular,
-              fontFamily:
-                  this.unselectedStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: unselectedColor,
-          fontWeight: this.unselectedStyle?.fontWeight ?? font.weightRegular,
-          fontFamily: this.unselectedStyle?.fontFamily ?? font.familyRegular,
-          package: font.package,
-        );
+    final TextStyle unselectedStyle = TextStyle(
+      color: this.unselectedStyle?.color ?? unselectedColor,
+      fontWeight: this.unselectedStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: this.unselectedStyle?.fontFamily ?? font.familyRegular,
+      package: font.package,
+    );
     final Color selectedColor = this.selectedColor ?? theme.primary;
-    final TextStyle selectedStyle = this.selectedStyle?.copyWith(
-              color: this.unselectedStyle?.color ?? selectedColor,
-              fontWeight: this.selectedStyle?.fontWeight ?? font.weightRegular,
-              fontFamily: this.selectedStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: selectedColor,
-          fontWeight: this.selectedStyle?.fontWeight ?? font.weightRegular,
-          fontFamily: this.selectedStyle?.fontFamily ?? font.familyRegular,
-          package: font.package,
-        );
+    final TextStyle selectedStyle = TextStyle(
+      color: this.unselectedStyle?.color ?? selectedColor,
+      fontWeight: this.selectedStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: this.selectedStyle?.fontFamily ?? font.familyRegular,
+      package: font.package,
+    );
 
     return BottomNavigationBar(
       elevation: 0,

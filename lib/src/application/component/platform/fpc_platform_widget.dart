@@ -9,10 +9,12 @@ abstract class FPCPlatformWidget extends StatelessWidget {
   Widget cupertino(
     BuildContext context,
   );
+
   Widget material(
     BuildContext context,
   );
 
+  @protected
   @override
   Widget build(
     BuildContext context,

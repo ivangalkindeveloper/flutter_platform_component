@@ -1,7 +1,7 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 
+import 'package:flutter/cupertino.dart' show CupertinoSliverRefreshControl;
 import 'package:flutter/material.dart' show RefreshIndicator;
 
 class FPCListRefresh extends FPCPlatformWidget {
@@ -29,21 +29,13 @@ class FPCListRefresh extends FPCPlatformWidget {
     BuildContext context,
   ) {
     final FPCHaptic haptic = context.fpcHaptic;
-    final FPCTheme theme = context.fpcTheme;
-
-    final Color colorBrightness =
-        theme.systemOverlayStyle.statusBarBrightness == Brightness.dark
-            ? theme.greyDark
-            : theme.greyLight;
-    final Color color = this.color ?? colorBrightness;
 
     return CustomScrollView(
       controller: this.controller,
       physics: const AlwaysScrollableScrollPhysics(),
       slivers: [
         SliverSafeArea(
-          sliver: FPCCupertinoSliverRefreshControl(
-            color: color,
+          sliver: CupertinoSliverRefreshControl(
             onRefresh: () async {
               haptic.selection();
               await this.onRefresh();

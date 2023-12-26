@@ -17,17 +17,21 @@ abstract class FPCPlatformAppBar extends StatelessWidget
   Widget cupertino(
     BuildContext context,
   );
+
   Widget material(
     BuildContext context,
   );
+
   PreferredSizeWidget? preffered();
 
+  @protected
   @override
   bool shouldFullyObstruct(
     BuildContext context,
   ) =>
       false;
 
+  @protected
   @override
   Size get preferredSize {
     final FPCSize size = this.context.fpcSize;
@@ -47,6 +51,7 @@ abstract class FPCPlatformAppBar extends StatelessWidget
     );
   }
 
+  @protected
   @override
   Widget build(
     BuildContext context,

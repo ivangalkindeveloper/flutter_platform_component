@@ -23,7 +23,7 @@ class FPCAnimatedFastSize extends StatelessWidget {
       //
       curve: animation.curve,
       clipBehavior: animation.clipBehavior,
-      duration: duration.animationDefault,
+      duration: duration.animationFast,
       reverseDuration: duration.animationFast,
       child: this.child,
     );

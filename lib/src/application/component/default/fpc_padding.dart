@@ -17,9 +17,11 @@ class FPCPadding extends StatelessWidget {
   ) {
     final FPCSize size = context.fpcSize;
 
+    final EdgeInsets padding = this.padding ?? size.paddingDefault;
+
     return Padding(
       key: key,
-      padding: this.padding ?? size.paddingDefault,
+      padding: padding,
       child: this.child,
     );
   }

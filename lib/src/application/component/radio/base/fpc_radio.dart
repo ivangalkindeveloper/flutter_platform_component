@@ -3,13 +3,13 @@ import 'package:flutter/widgets.dart';
 
 import 'package:flutter/material.dart'
     show
+        Colors,
         Material,
         Radio,
         Theme,
         ThemeData,
         MaterialState,
-        MaterialStateProperty,
-        Colors;
+        MaterialStateProperty;
 
 class FPCRadio<T> extends FPCPlatformWidget {
   const FPCRadio({
@@ -46,7 +46,9 @@ class FPCRadio<T> extends FPCPlatformWidget {
       color: Colors.transparent,
       child: FPCDisabledWrapper(
         disabledColor: this.disabledColor,
-        borderRadius: BorderRadius.circular(size.s32),
+        borderRadius: BorderRadius.circular(
+          size.s32,
+        ),
         isDisabled: this.isDisabled,
         children: [
           Theme(
@@ -61,7 +63,11 @@ class FPCRadio<T> extends FPCPlatformWidget {
               focusColor: Colors.transparent,
               hoverColor: Colors.transparent,
               overlayColor: MaterialStateProperty.resolveWith(
-                  (Set<MaterialState> states) => Colors.transparent),
+                (
+                  Set<MaterialState> states,
+                ) =>
+                    Colors.transparent,
+              ),
               toggleable: this.isToggleable,
             ),
           ),
@@ -83,7 +89,9 @@ class FPCRadio<T> extends FPCPlatformWidget {
       color: Colors.transparent,
       child: FPCDisabledWrapper(
         disabledColor: this.disabledColor,
-        borderRadius: BorderRadius.circular(size.s32),
+        borderRadius: BorderRadius.circular(
+          size.s32,
+        ),
         isDisabled: this.isDisabled,
         children: [
           Theme(

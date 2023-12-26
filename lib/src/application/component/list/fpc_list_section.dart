@@ -49,36 +49,20 @@ class FPCListSection extends FPCPlatformWidget {
           vertical: size.s16 / 2,
           horizontal: size.s16,
         );
-    final TextStyle titleStyle = this.titleStyle?.copyWith(
-              color: this.titleStyle?.color ?? theme.black,
-              fontSize: this.titleStyle?.fontSize ?? size.s16,
-              fontWeight: this.titleStyle?.fontWeight ?? font.weightMedium,
-              fontFamily: this.titleStyle?.fontFamily ?? font.familyMedium,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.black,
-          fontSize: size.s16,
-          fontWeight: font.weightMedium,
-          fontFamily: font.familyMedium,
-          package: font.package,
-        );
-    final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
-              color: this.descriptionStyle?.color ?? theme.grey,
-              fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-              fontWeight:
-                  this.descriptionStyle?.fontWeight ?? font.weightRegular,
-              fontFamily:
-                  this.descriptionStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.grey,
-          fontSize: size.s14,
-          fontWeight: font.weightRegular,
-          fontFamily: font.familyRegular,
-          package: font.package,
-        );
+    final TextStyle titleStyle = TextStyle(
+      color: this.titleStyle?.color ?? theme.black,
+      fontSize: this.titleStyle?.fontSize ?? size.s16,
+      fontWeight: this.titleStyle?.fontWeight ?? font.weightMedium,
+      fontFamily: this.titleStyle?.fontFamily ?? font.familyMedium,
+      package: font.package,
+    );
+    final TextStyle descriptionStyle = TextStyle(
+      color: this.descriptionStyle?.color ?? theme.grey,
+      fontSize: this.descriptionStyle?.fontSize ?? size.s14,
+      fontWeight: this.descriptionStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: this.descriptionStyle?.fontFamily ?? font.familyRegular,
+      package: font.package,
+    );
     final double separatorPadding = this.separatorPadding ?? size.s16;
 
     return FPCDisabledWrapper(
@@ -140,36 +124,20 @@ class FPCListSection extends FPCPlatformWidget {
           vertical: size.s16 / 2,
           horizontal: size.s16,
         );
-    final TextStyle titleStyle = this.titleStyle?.copyWith(
-              color: this.titleStyle?.color ?? theme.black,
-              fontSize: this.titleStyle?.fontSize ?? size.s16,
-              fontWeight: this.titleStyle?.fontWeight ?? font.weightMedium,
-              fontFamily: this.titleStyle?.fontFamily ?? font.familyMedium,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.black,
-          fontSize: size.s16,
-          fontWeight: font.weightMedium,
-          fontFamily: font.familyMedium,
-          package: font.package,
-        );
-    final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
-              color: this.descriptionStyle?.color ?? theme.grey,
-              fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-              fontWeight:
-                  this.descriptionStyle?.fontWeight ?? font.weightRegular,
-              fontFamily:
-                  this.descriptionStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.grey,
-          fontSize: size.s14,
-          fontWeight: font.weightRegular,
-          fontFamily: font.familyRegular,
-          package: font.package,
-        );
+    final TextStyle titleStyle = TextStyle(
+      color: this.titleStyle?.color ?? theme.black,
+      fontSize: this.titleStyle?.fontSize ?? size.s16,
+      fontWeight: this.titleStyle?.fontWeight ?? font.weightMedium,
+      fontFamily: this.titleStyle?.fontFamily ?? font.familyMedium,
+      package: font.package,
+    );
+    final TextStyle descriptionStyle = TextStyle(
+      color: this.descriptionStyle?.color ?? theme.grey,
+      fontSize: this.descriptionStyle?.fontSize ?? size.s14,
+      fontWeight: this.descriptionStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: this.descriptionStyle?.fontFamily ?? font.familyRegular,
+      package: font.package,
+    );
     final double separatorPadding = this.separatorPadding ?? size.s16;
 
     return Column(
@@ -211,7 +179,10 @@ class FPCListSection extends FPCPlatformWidget {
                 child: Row(
                   children: [
                     if (item.prefix != null) item.prefix!,
-                    if (item.prefix != null) SizedBox(width: size.s16),
+                    if (item.prefix != null)
+                      SizedBox(
+                        width: size.s16,
+                      ),
                     Expanded(
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
@@ -227,7 +198,9 @@ class FPCListSection extends FPCPlatformWidget {
                                 ),
                               ),
                               if (item.postfix != null)
-                                SizedBox(width: size.s16),
+                                SizedBox(
+                                  width: size.s16,
+                                ),
                               if (item.postfix != null) item.postfix!,
                             ],
                           ),

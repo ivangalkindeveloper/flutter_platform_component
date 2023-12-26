@@ -87,7 +87,9 @@ class FPCListView extends StatelessWidget {
       clipBehavior: this.clipBehavior,
       children: [
         Padding(
-          padding: this._padding(size: size),
+          padding: this._padding(
+            size: size,
+          ),
           child: Column(
             crossAxisAlignment: this.childrenAlignment,
             mainAxisSize: MainAxisSize.min,

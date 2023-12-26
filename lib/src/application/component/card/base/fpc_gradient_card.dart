@@ -37,8 +37,10 @@ class FPCGradientCard extends StatelessWidget {
     final BorderRadius borderRadius =
         this.borderRadius ?? sizeScope.borderRadiusCard;
     final double borderWidth = this.borderWidth ?? sizeScope.borderWidthCard;
-    final BoxConstraints constraints =
-        this.constraints ?? const BoxConstraints.expand();
+    final BoxConstraints constraints = this.constraints ??
+        const BoxConstraints(
+          minWidth: double.infinity,
+        );
     final EdgeInsets padding = this.padding ?? size.paddingCard;
 
     return Stack(
@@ -55,7 +57,9 @@ class FPCGradientCard extends StatelessWidget {
               ),
               child: Padding(
                 padding: padding,
-                child: this.child,
+                child: Center(
+                  child: this.child,
+                ),
               ),
             ),
           ),

@@ -69,8 +69,12 @@ class _FPCSlidingSegmentControlState<T>
   }
 
   @override
-  void didUpdateWidget(covariant FPCSlidingSegmentControl<T> oldWidget) {
-    super.didUpdateWidget(oldWidget);
+  void didUpdateWidget(
+    covariant FPCSlidingSegmentControl<T> oldWidget,
+  ) {
+    super.didUpdateWidget(
+      oldWidget,
+    );
     if (this.mounted == false) {
       return;
     }
@@ -141,7 +145,9 @@ class _FPCSlidingSegmentControlState<T>
 
     return FPCDisabledWrapper(
       disabledColor: this.widget.disabledColor,
-      borderRadius: const BorderRadius.all(Radius.circular(8)),
+      borderRadius: const BorderRadius.all(
+        Radius.circular(8),
+      ),
       isDisabled: this.widget.isDisabled,
       children: [
         SizedBox(
@@ -160,61 +166,60 @@ class _FPCSlidingSegmentControlState<T>
             }
 
             if (this._isValidationError = true) {
-              setState(() => this._isValidationError = false);
+              setState(
+                () => this._isValidationError = false,
+              );
             }
-            this.widget.onChanged(value);
+            this.widget.onChanged(
+                  value,
+                );
           },
           backgroundColor: backgroundColor,
           thumbColor: this.widget.thumbColor,
           children: Map.fromEntries(
-            this.widget.items.map((FPCSlidingSegmentControlItem item) {
-              final bool isSelected = this.widget.value == item.value;
-              final Color internalColor =
-                  this._internalColor(isSelected: isSelected);
-              final double internalIconHeight =
-                  this.widget.internalIconHeight ??
-                      this._size.heightIconDefault;
-              final TextStyle unselectedStyle =
-                  this.widget.unselectedStyle?.copyWith(
-                            color: this.widget.unselectedStyle?.color ??
-                                internalColor,
-                          ) ??
-                      TextStyle(
-                        color: internalColor,
-                      );
-              final TextStyle selectedStyle =
-                  this.widget.selectedStyle?.copyWith(
-                            color: this.widget.selectedStyle?.color ??
-                                internalColor,
-                          ) ??
-                      TextStyle(
-                        color: internalColor,
-                      );
-              final TextStyle titleStyle =
-                  isSelected ? selectedStyle : unselectedStyle;
+            this.widget.items.map(
+              (
+                FPCSlidingSegmentControlItem item,
+              ) {
+                final bool isSelected = this.widget.value == item.value;
+                final Color internalColor = this._internalColor(
+                  isSelected: isSelected,
+                );
+                final double internalIconHeight =
+                    this.widget.internalIconHeight ??
+                        this._size.heightIconDefault;
+                final TextStyle unselectedStyle = TextStyle(
+                  color: this.widget.unselectedStyle?.color ?? internalColor,
+                );
+                final TextStyle selectedStyle = TextStyle(
+                  color: this.widget.selectedStyle?.color ?? internalColor,
+                );
+                final TextStyle titleStyle =
+                    isSelected ? selectedStyle : unselectedStyle;
 
-              return MapEntry(
-                item.value,
-                SizedBox(
-                  height: height,
-                  child: FPCButtonRowChild(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    internalIconColor: internalColor,
-                    internalIconGradient: null,
-                    internalIconHeight: internalIconHeight,
-                    prefix: item.prefix,
-                    prefixIcon: item.prefixIcon,
-                    titleGradient: null,
-                    title: item.title,
-                    textAlign: TextAlign.center,
-                    titleStyle: titleStyle,
-                    postfixIcon: item.postfixIcon,
-                    postfix: item.postfix,
+                return MapEntry(
+                  item.value,
+                  SizedBox(
+                    height: height,
+                    child: FPCButtonRowChild(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      internalIconColor: internalColor,
+                      internalIconGradient: null,
+                      internalIconHeight: internalIconHeight,
+                      prefix: item.prefix,
+                      prefixIcon: item.prefixIcon,
+                      titleGradient: null,
+                      title: item.title,
+                      textAlign: TextAlign.center,
+                      titleStyle: titleStyle,
+                      postfixIcon: item.postfixIcon,
+                      postfix: item.postfix,
+                    ),
                   ),
-                ),
-              );
-            }),
+                );
+              },
+            ),
           ),
         ),
       ],

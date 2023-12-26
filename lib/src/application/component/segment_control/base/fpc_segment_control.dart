@@ -166,9 +166,13 @@ class _FPCSegmentControlState<T> extends State<FPCSegmentControl<T>> {
                   ? () {}
                   : () {
                       if (this._isValidationError = true) {
-                        setState(() => this._isValidationError = false);
+                        setState(
+                          () => this._isValidationError = false,
+                        );
                       }
-                      this.widget.onChanged(item.value);
+                      this.widget.onChanged(
+                            item.value,
+                          );
                     };
               final bool isSelected = this.widget.value == item.value;
 
@@ -345,10 +349,18 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
     final FPCTheme theme = context.fpcTheme;
     final FPCSize size = context.fpcSize;
 
-    final Color backgroundColor = this._backgroundColor(theme: theme);
-    final Color? splashColor = this._splashColor(theme: theme);
-    final Color borderColor = this._borderColor(theme: theme);
-    final Color internalColor = this._internalColor(theme: theme);
+    final Color backgroundColor = this._backgroundColor(
+      theme: theme,
+    );
+    final Color? splashColor = this._splashColor(
+      theme: theme,
+    );
+    final Color borderColor = this._borderColor(
+      theme: theme,
+    );
+    final Color internalColor = this._internalColor(
+      theme: theme,
+    );
     final double internalIconHeight =
         this.internalIconHeight ?? size.heightIconDefault;
     final double borderWidth =
@@ -356,34 +368,37 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
     final double leftBorderWidth = index == 0 ? borderWidth : 0;
     final double rightBorderWidth =
         (index + 1) == this.length ? borderWidth : 0;
-    final Radius topLeft =
-        index == 0 ? Radius.circular(this.borderRadius.topLeft.x) : Radius.zero;
+    final Radius topLeft = index == 0
+        ? Radius.circular(
+            this.borderRadius.topLeft.x,
+          )
+        : Radius.zero;
     final Radius topRight = (index + 1) == this.length
-        ? Radius.circular(this.borderRadius.topRight.x)
+        ? Radius.circular(
+            this.borderRadius.topRight.x,
+          )
         : Radius.zero;
     final Radius bottomLeft = index == 0
-        ? Radius.circular(this.borderRadius.bottomLeft.x)
+        ? Radius.circular(
+            this.borderRadius.bottomLeft.x,
+          )
         : Radius.zero;
     final Radius bottomRight = (index + 1) == this.length
-        ? Radius.circular(this.borderRadius.bottomRight.x)
+        ? Radius.circular(
+            this.borderRadius.bottomRight.x,
+          )
         : Radius.zero;
     final EdgeInsets padding = this.padding ??
         EdgeInsets.symmetric(
           horizontal: size.s16,
           vertical: size.s16 / 4,
         );
-    final TextStyle unselectedStyle = this.selectedStyle?.copyWith(
-              color: this.selectedStyle?.color ?? internalColor,
-            ) ??
-        TextStyle(
-          color: internalColor,
-        );
-    final TextStyle selectedColor = this.unselectedStyle?.copyWith(
-              color: this.unselectedStyle?.color ?? internalColor,
-            ) ??
-        TextStyle(
-          color: internalColor,
-        );
+    final TextStyle unselectedStyle = TextStyle(
+      color: this.selectedStyle?.color ?? internalColor,
+    );
+    final TextStyle selectedColor = TextStyle(
+      color: this.unselectedStyle?.color ?? internalColor,
+    );
     final TextStyle titleStyle =
         this.isSelected ? selectedColor : unselectedStyle;
 

@@ -62,7 +62,10 @@ class FPCGradientSnackBar extends StatelessWidget with FPCSnackBarMixin {
                     mainAxisAlignment: mainAxisAlignment,
                     children: [
                       if (this.prefix != null) this.prefix!,
-                      if (this.prefix != null) SizedBox(width: size.s16),
+                      if (this.prefix != null)
+                        SizedBox(
+                          width: size.s16,
+                        ),
                       Expanded(
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
@@ -76,7 +79,10 @@ class FPCGradientSnackBar extends StatelessWidget with FPCSnackBarMixin {
                     ],
                   ),
                 ),
-                if (this.postfix != null) SizedBox(width: size.s16),
+                if (this.postfix != null)
+                  SizedBox(
+                    width: size.s16,
+                  ),
                 if (this.postfix != null) this.postfix!,
               ],
             ),

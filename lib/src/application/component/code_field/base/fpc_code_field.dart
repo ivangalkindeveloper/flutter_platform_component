@@ -193,22 +193,13 @@ class _FPCCodeFieldState extends State<FPCCodeField>
         this.widget.borderRadius ?? this._sizeScope.borderRadiusButton;
     final double borderWidth =
         this.widget.borderWidth ?? this._sizeScope.borderWidthField;
-    final TextStyle itemStyle = this.widget.itemStyle?.copyWith(
-              color: this.widget.itemStyle?.color ?? this._theme.black,
-              fontSize: this.widget.itemStyle?.fontSize ?? this._size.s20,
-              fontWeight:
-                  this.widget.itemStyle?.fontWeight ?? this._font.weightMedium,
-              fontFamily:
-                  this.widget.itemStyle?.fontFamily ?? this._font.familyMedium,
-              package: this._font.package,
-            ) ??
-        TextStyle(
-          color: this._theme.black,
-          fontSize: this._size.s20,
-          fontWeight: this._font.weightMedium,
-          fontFamily: this._font.familyMedium,
-          package: this._font.package,
-        );
+    final TextStyle itemStyle = TextStyle(
+      color: this.widget.itemStyle?.color ?? this._theme.black,
+      fontSize: this.widget.itemStyle?.fontSize ?? this._size.s20,
+      fontWeight: this.widget.itemStyle?.fontWeight ?? this._font.weightMedium,
+      fontFamily: this.widget.itemStyle?.fontFamily ?? this._font.familyMedium,
+      package: this._font.package,
+    );
     final double horizontalInterval =
         this.widget.horizontalInterval ?? (this._size.s16 / 2);
     final double cursorHeight =

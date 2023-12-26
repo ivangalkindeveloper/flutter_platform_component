@@ -224,76 +224,41 @@ class FPCField extends StatelessWidget {
     final FPCSize size = context.fpcSize;
     final FPCFont font = context.fpcFont;
 
-    final TextStyle fieldLabelStyle = this.labelStyle?.copyWith(
-              color: this.labelColor,
-              fontSize: this.labelStyle?.fontSize ?? size.s16,
-              fontWeight: this.labelStyle?.fontWeight ?? font.weightRegular,
-              fontFamily: this.labelStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: this.labelColor,
-          fontSize: size.s16,
-          fontWeight: font.weightRegular,
-          fontFamily: font.familyRegular,
-          package: font.package,
-        );
-    final TextStyle fieldPrefixStyle = this.prefixStyle?.copyWith(
-              color: this.prefixStyle?.color ?? theme.black,
-              fontSize: this.prefixStyle?.fontSize ?? size.s16,
-              fontWeight: this.prefixStyle?.fontWeight ?? font.weightRegular,
-              fontFamily: this.prefixStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.black,
-          fontSize: size.s16,
-          fontWeight: font.weightRegular,
-          fontFamily: font.familyRegular,
-          package: font.package,
-        );
-    final TextStyle fieldTextStyle = this.textStyle?.copyWith(
-              color: this.textStyle?.color ?? theme.black,
-              fontSize: this.textStyle?.fontSize ?? size.s16,
-              fontWeight: this.textStyle?.fontWeight ?? font.weightRegular,
-              fontFamily: this.textStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.black,
-          fontSize: size.s16,
-          fontWeight: font.weightRegular,
-          fontFamily: font.familyRegular,
-          package: font.package,
-        );
-    final TextStyle fieldHintStyle = this.hintStyle?.copyWith(
-              color: this.hintStyle?.color ?? theme.greyLight,
-              fontSize: this.hintStyle?.fontSize ?? size.s16,
-              fontWeight: this.hintStyle?.fontWeight ?? font.weightRegular,
-              fontFamily: this.hintStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.greyLight,
-          fontSize: size.s16,
-          fontWeight: font.weightRegular,
-          fontFamily: font.familyRegular,
-          package: font.package,
-        );
-    final TextStyle fieldSuffixStyle = this.suffixStyle?.copyWith(
-              color: this.suffixStyle?.color ?? theme.black,
-              fontSize: this.suffixStyle?.fontSize ?? size.s16,
-              fontWeight: this.suffixStyle?.fontWeight ?? font.weightRegular,
-              fontFamily: this.suffixStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.black,
-          fontSize: size.s16,
-          fontWeight: font.weightRegular,
-          fontFamily: font.familyRegular,
-          package: font.package,
-        );
+    final TextStyle fieldLabelStyle = TextStyle(
+      color: this.labelColor,
+      fontSize: this.labelStyle?.fontSize ?? size.s16,
+      fontWeight: this.labelStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: this.labelStyle?.fontFamily ?? font.familyRegular,
+      package: font.package,
+    );
+    final TextStyle fieldPrefixStyle = TextStyle(
+      color: this.prefixStyle?.color ?? theme.black,
+      fontSize: this.prefixStyle?.fontSize ?? size.s16,
+      fontWeight: this.prefixStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: this.prefixStyle?.fontFamily ?? font.familyRegular,
+      package: font.package,
+    );
+    final TextStyle fieldTextStyle = TextStyle(
+      color: this.textStyle?.color ?? theme.black,
+      fontSize: this.textStyle?.fontSize ?? size.s16,
+      fontWeight: this.textStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: this.textStyle?.fontFamily ?? font.familyRegular,
+      package: font.package,
+    );
+    final TextStyle fieldHintStyle = TextStyle(
+      color: this.hintStyle?.color ?? theme.greyLight,
+      fontSize: this.hintStyle?.fontSize ?? size.s16,
+      fontWeight: this.hintStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: this.hintStyle?.fontFamily ?? font.familyRegular,
+      package: font.package,
+    );
+    final TextStyle fieldSuffixStyle = TextStyle(
+      color: this.suffixStyle?.color ?? theme.black,
+      fontSize: this.suffixStyle?.fontSize ?? size.s16,
+      fontWeight: this.suffixStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: this.suffixStyle?.fontFamily ?? font.familyRegular,
+      package: font.package,
+    );
     final String? hintText = this.hintText != null ? " ${this.hintText}" : null;
     final InputDecoration decoration = InputDecoration(
       labelText: this.labelText,

@@ -24,7 +24,9 @@ class FPCGradientDivider extends StatelessWidget {
       child: DecoratedBox(
         decoration: BoxDecoration(
           gradient: this.gradient,
-          borderRadius: BorderRadius.circular(height),
+          borderRadius: BorderRadius.circular(
+            height,
+          ),
         ),
       ),
     );

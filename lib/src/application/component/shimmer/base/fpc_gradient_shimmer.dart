@@ -49,27 +49,51 @@ class _FPCGradientShimmerState extends State<FPCGradientShimmer>
 
   @override
   void didInitState() async {
-    await Future.delayed(this.widget.delay ?? Duration.zero);
+    await Future.delayed(
+      this.widget.delay ?? Duration.zero,
+    );
 
     // Subscription
     this._highlightSubscription = Stream.periodic(
-        this.widget.duration ?? this._duration.shimmer,
-        (int second) =>
-            second % 2 == 0).listen(
-        (bool isHighLight) => setState(() => this._isHighlight = isHighLight));
+      this.widget.duration ?? this._duration.shimmer,
+      (
+        int second,
+      ) =>
+          second % 2 == 0,
+    ).listen(
+      (
+        bool isHighLight,
+      ) =>
+          setState(
+        () => this._isHighlight = isHighLight,
+      ),
+    );
   }
 
   @override
-  void didUpdateWidget(covariant FPCGradientShimmer oldWidget) async {
-    super.didUpdateWidget(oldWidget);
+  void didUpdateWidget(
+    covariant FPCGradientShimmer oldWidget,
+  ) async {
+    super.didUpdateWidget(
+      oldWidget,
+    );
     // Subscription
     if (this.widget.duration != oldWidget.duration) {
       await this._highlightSubscription?.cancel();
       this._highlightSubscription = Stream.periodic(
-              this.widget.duration ?? this._duration.shimmer,
-              (int second) => second % 2 == 0)
-          .listen((bool isHighLight) =>
-              setState(() => this._isHighlight = isHighLight));
+        this.widget.duration ?? this._duration.shimmer,
+        (
+          int second,
+        ) =>
+            second % 2 == 0,
+      ).listen(
+        (
+          bool isHighLight,
+        ) =>
+            setState(
+          () => this._isHighlight = isHighLight,
+        ),
+      );
     }
   }
 

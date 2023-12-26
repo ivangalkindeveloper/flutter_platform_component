@@ -37,20 +37,13 @@ class FPCKeyboardNumberButton extends StatelessWidget {
       disabledColor: this.disabledColor,
       child: Text(
         this.number.toString(),
-        style: this.numberStyle?.copyWith(
-                  color: this.numberStyle?.color ?? theme.black,
-                  fontSize: this.numberStyle?.fontSize ?? size.s28,
-                  fontWeight: this.numberStyle?.fontWeight ?? font.weightMedium,
-                  fontFamily: this.numberStyle?.fontFamily ?? font.familyMedium,
-                  package: font.package,
-                ) ??
-            TextStyle(
-              color: theme.black,
-              fontSize: size.s28,
-              fontWeight: font.weightMedium,
-              fontFamily: font.familyMedium,
-              package: font.package,
-            ),
+        style: TextStyle(
+          color: this.numberStyle?.color ?? theme.black,
+          fontSize: this.numberStyle?.fontSize ?? size.s28,
+          fontWeight: this.numberStyle?.fontWeight ?? font.weightMedium,
+          fontFamily: this.numberStyle?.fontFamily ?? font.familyMedium,
+          package: font.package,
+        ),
       ),
     );
   }

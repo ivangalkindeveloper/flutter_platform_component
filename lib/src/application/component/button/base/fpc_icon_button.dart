@@ -36,7 +36,9 @@ class FPCIconButton extends FPCPlatformWidget {
       width: height,
       child: FPCDisabledWrapper(
         disabledColor: this.disabledColor,
-        borderRadius: BorderRadius.circular(height),
+        borderRadius: BorderRadius.circular(
+          height,
+        ),
         isDisabled: this.isDisabled,
         children: [
           CupertinoButton(
@@ -66,7 +68,9 @@ class FPCIconButton extends FPCPlatformWidget {
       width: height,
       child: FPCDisabledWrapper(
         disabledColor: this.disabledColor,
-        borderRadius: BorderRadius.circular(height),
+        borderRadius: BorderRadius.circular(
+          height,
+        ),
         isDisabled: this.isDisabled,
         children: [
           IconButton(

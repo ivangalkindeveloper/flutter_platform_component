@@ -74,8 +74,12 @@ class _FPCToggleState<T> extends State<FPCToggle<T>> {
   }
 
   @override
-  void didUpdateWidget(covariant FPCToggle<T> oldWidget) {
-    super.didUpdateWidget(oldWidget);
+  void didUpdateWidget(
+    covariant FPCToggle<T> oldWidget,
+  ) {
+    super.didUpdateWidget(
+      oldWidget,
+    );
     if (this.mounted == false) {
       return;
     }
@@ -89,7 +93,9 @@ class _FPCToggleState<T> extends State<FPCToggle<T>> {
     }
   }
 
-  String? _validator(String? value) {
+  String? _validator(
+    String? value,
+  ) {
     if (value == null || this.mounted == false) {
       return null;
     }
@@ -97,12 +103,16 @@ class _FPCToggleState<T> extends State<FPCToggle<T>> {
     // Required
     if (this.widget.isRequired && value.isEmpty) {
       this._haptic.error();
-      setState(() => this._isValidationError = true);
+      setState(
+        () => this._isValidationError = true,
+      );
       return "";
     }
 
     // Default
-    setState(() => this._isValidationError = false);
+    setState(
+      () => this._isValidationError = false,
+    );
     return null;
   }
 
@@ -159,9 +169,13 @@ class _FPCToggleState<T> extends State<FPCToggle<T>> {
                   ? () {}
                   : () {
                       if (this._isValidationError == true) {
-                        setState(() => this._isValidationError = false);
+                        setState(
+                          () => this._isValidationError = false,
+                        );
                       }
-                      this.widget.onChanged(item.value);
+                      this.widget.onChanged(
+                            item.value,
+                          );
                     };
               final bool isSelected = item.value == this.widget.value;
 
@@ -287,40 +301,38 @@ class _FPCToggleButton<T> extends StatelessWidget {
     final double indent = ((index + 1) != this.length)
         ? (this.horizontalInterval ?? size.s16 / 4)
         : 0;
-    final Color backgroundColor = this._backgroundColor(theme: theme);
-    final Color splashColor = this._splashColor(theme: theme);
-    final Color internalColor = this._internalColor(theme: theme);
+    final Color backgroundColor = this._backgroundColor(
+      theme: theme,
+    );
+    final Color splashColor = this._splashColor(
+      theme: theme,
+    );
+    final Color internalColor = this._internalColor(
+      theme: theme,
+    );
     final double internalIconHeight =
         this.internalIconHeight ?? size.heightIconDefault;
-    final TextStyle unselectedStyle = this.unselectedStyle?.copyWith(
-              color: this.unselectedStyle?.color ?? internalColor,
-              fontSize: this.unselectedStyle?.fontSize ?? size.s16,
-              fontWeight: this.unselectedStyle?.fontWeight ?? font.weightMedium,
-              fontFamily: this.unselectedStyle?.fontFamily ?? font.familyMedium,
-            ) ??
-        TextStyle(
-          color: internalColor,
-          fontSize: size.s16,
-          fontWeight: font.weightMedium,
-          fontFamily: font.familyMedium,
-        );
-    final TextStyle selectedStyle = this.selectedStyle?.copyWith(
-              color: this.selectedStyle?.color ?? internalColor,
-              fontSize: this.selectedStyle?.fontSize ?? size.s16,
-              fontWeight: this.selectedStyle?.fontWeight ?? font.weightMedium,
-              fontFamily: this.selectedStyle?.fontFamily ?? font.familyMedium,
-            ) ??
-        TextStyle(
-          color: internalColor,
-          fontSize: size.s16,
-          fontWeight: font.weightMedium,
-          fontFamily: font.familyMedium,
-        );
+    final TextStyle unselectedStyle = TextStyle(
+      color: this.unselectedStyle?.color ?? internalColor,
+      fontSize: this.unselectedStyle?.fontSize ?? size.s16,
+      fontWeight: this.unselectedStyle?.fontWeight ?? font.weightMedium,
+      fontFamily: this.unselectedStyle?.fontFamily ?? font.familyMedium,
+      package: font.package,
+    );
+    final TextStyle selectedStyle = TextStyle(
+      color: this.selectedStyle?.color ?? internalColor,
+      fontSize: this.selectedStyle?.fontSize ?? size.s16,
+      fontWeight: this.selectedStyle?.fontWeight ?? font.weightMedium,
+      fontFamily: this.selectedStyle?.fontFamily ?? font.familyMedium,
+      package: font.package,
+    );
     final TextStyle titleStyle =
         this.isSelected ? selectedStyle : unselectedStyle;
 
     return Padding(
-      padding: EdgeInsets.only(right: indent),
+      padding: EdgeInsets.only(
+        right: indent,
+      ),
       child: FPCButton(
         backgroundColor: backgroundColor,
         splashColor: splashColor,

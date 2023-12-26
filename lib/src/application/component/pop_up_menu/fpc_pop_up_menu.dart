@@ -77,7 +77,9 @@ class FPCPopUpMenu extends FPCPlatformWidget {
       FPCPopUpMenuTitle item,
     ) =>
         PullDownMenuTitle(
-          title: Text(item.title),
+          title: Text(
+            item.title,
+          ),
           alignment: titleAlignment(
             item.alignment,
           ),
@@ -210,34 +212,20 @@ class FPCPopUpMenu extends FPCPlatformWidget {
     final FPCSize size = context.fpcSize;
     final FPCFont font = context.fpcFont;
 
-    final TextStyle titleStyle = this.itemStyle?.copyWith(
-              color: this.itemStyle?.color ?? theme.black,
-              fontSize: this.itemStyle?.fontSize ?? size.s16,
-              fontWeight: this.itemStyle?.fontWeight ?? font.weightRegular,
-              fontFamily: this.itemStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.black,
-          fontSize: size.s16,
-          fontWeight: font.weightRegular,
-          fontFamily: font.familyRegular,
-          package: font.package,
-        );
-    final TextStyle subtitleStyle = this.itemStyle?.copyWith(
-              color: this.itemStyle?.color ?? theme.black,
-              fontSize: this.itemStyle?.fontSize ?? size.s10,
-              fontWeight: this.itemStyle?.fontWeight ?? font.weightRegular,
-              fontFamily: this.itemStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.black,
-          fontSize: size.s10,
-          fontWeight: font.weightRegular,
-          fontFamily: font.familyRegular,
-          package: font.package,
-        );
+    final TextStyle titleStyle = TextStyle(
+      color: this.itemStyle?.color ?? theme.black,
+      fontSize: this.itemStyle?.fontSize ?? size.s16,
+      fontWeight: this.itemStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: this.itemStyle?.fontFamily ?? font.familyRegular,
+      package: font.package,
+    );
+    final TextStyle subtitleStyle = TextStyle(
+      color: this.itemStyle?.color ?? theme.black,
+      fontSize: this.itemStyle?.fontSize ?? size.s10,
+      fontWeight: this.itemStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: this.itemStyle?.fontFamily ?? font.familyRegular,
+      package: font.package,
+    );
 
     MenuItemButton headerButton(
       FPCPopUpMenuHeader item,

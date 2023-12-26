@@ -30,6 +30,12 @@ class FPCSmallBottomSheet<T> extends StatelessWidget
     final FPCTheme theme = context.fpcTheme;
     final FPCSize size = context.fpcSize;
 
+    final Color backgroundColor =
+        this.backgroundColor ?? theme.backgroundScaffold;
+    final double barHeight = this.barHeight ?? size.s16 / 4;
+    final double barWidth = this.barWidth ?? size.s32;
+    final EdgeInsets padding = this.padding ?? EdgeInsets.all(size.s16);
+
     return SafeArea(
       bottom: false,
       child: ClipRRect(
@@ -38,7 +44,7 @@ class FPCSmallBottomSheet<T> extends StatelessWidget
           topRight: sizeScope.borderRadiusBottomSheet.topRight,
         ),
         child: ColoredBox(
-          color: this.backgroundColor ?? theme.backgroundScaffold,
+          color: backgroundColor,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -46,15 +52,17 @@ class FPCSmallBottomSheet<T> extends StatelessWidget
                 Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    SizedBox(height: size.s16 / 2),
                     SizedBox(
-                      height: this.barHeight ?? size.s16 / 4,
-                      width: this.barWidth ?? size.s32,
+                      height: size.s16 / 2,
+                    ),
+                    SizedBox(
+                      height: barHeight,
+                      width: barWidth,
                       child: DecoratedBox(
                         decoration: BoxDecoration(
                           color: theme.greyLight,
                           borderRadius: BorderRadius.circular(
-                            this.barHeight ?? size.s16 / 2,
+                            barHeight,
                           ),
                         ),
                       ),
@@ -64,7 +72,7 @@ class FPCSmallBottomSheet<T> extends StatelessWidget
               SafeArea(
                 top: false,
                 child: Padding(
-                  padding: this.padding ?? EdgeInsets.all(size.s16),
+                  padding: padding,
                   child: this.child,
                 ),
               ),

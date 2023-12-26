@@ -98,18 +98,19 @@ class FPCGradientSelectCard extends FPCPlatformWidget {
           borderWidth: this.borderWidth,
           padding: EdgeInsets.zero,
           child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                elevation: 0,
-                foregroundColor: splashColor,
-                backgroundColor: Colors.transparent,
-                shadowColor: Colors.transparent,
-                padding: this.padding,
-                shape: RoundedRectangleBorder(
-                  borderRadius: borderRadius,
-                ),
+            style: ElevatedButton.styleFrom(
+              elevation: 0,
+              foregroundColor: splashColor,
+              backgroundColor: Colors.transparent,
+              shadowColor: Colors.transparent,
+              padding: this.padding,
+              shape: RoundedRectangleBorder(
+                borderRadius: borderRadius,
               ),
-              onPressed: onPressed,
-              child: this.child),
+            ),
+            onPressed: onPressed,
+            child: this.child,
+          ),
         ),
       ],
     );

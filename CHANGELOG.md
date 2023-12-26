@@ -3,13 +3,14 @@ Addings:
 * ErrorText property for form fields;
 * FPCAnimatedPadding;
 * FPCAnimatedFractionallySizedBox;
+* AnimatedPhysicalModel;
 * FPCPopUpMenu;
 
-- AnimatedPhysicalModel;
 - AnimatedPositionedDirectional;
 - AnimatedRotation;
 - AnimatedScale;
 - AnimatedSlide;
+
 - FPCTooltip;
 - FPCDrawer;
 

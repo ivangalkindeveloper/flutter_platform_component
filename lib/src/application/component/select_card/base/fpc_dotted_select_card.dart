@@ -54,13 +54,17 @@ class FPCDottedSelectCard extends FPCPlatformWidget {
 
     return FPCDisabledWrapper(
       disabledColor: this.disabledColor,
-      borderRadius: BorderRadius.all(borderRadius),
+      borderRadius: BorderRadius.all(
+        borderRadius,
+      ),
       isDisabled: this.isDisabled,
       children: [
         CupertinoButton(
           onPressed: onPressed,
           padding: EdgeInsets.zero,
-          borderRadius: BorderRadius.all(borderRadius),
+          borderRadius: BorderRadius.all(
+            borderRadius,
+          ),
           child: FPCDottedCard(
             backgroundColor: this.backgroundColor,
             constraints: this.constraints,
@@ -94,7 +98,9 @@ class FPCDottedSelectCard extends FPCPlatformWidget {
 
     return FPCDisabledWrapper(
       disabledColor: this.disabledColor,
-      borderRadius: BorderRadius.all(borderRadius),
+      borderRadius: BorderRadius.all(
+        borderRadius,
+      ),
       isDisabled: this.isDisabled,
       children: [
         ElevatedButton(
@@ -105,7 +111,9 @@ class FPCDottedSelectCard extends FPCPlatformWidget {
             shadowColor: Colors.transparent,
             padding: EdgeInsets.zero,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.all(borderRadius),
+              borderRadius: BorderRadius.all(
+                borderRadius,
+              ),
             ),
           ),
           onPressed: onPressed,

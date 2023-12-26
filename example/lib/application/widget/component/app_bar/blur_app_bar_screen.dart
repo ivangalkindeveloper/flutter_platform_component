@@ -14,43 +14,75 @@ class BlurAppBarScreen extends StatelessWidget {
   ) {
     final FPCTheme theme = context.fpcTheme;
 
-    return FPCScaffold(
-      extendBodyBehindAppBar: true,
-      backgroundColor: theme.backgroundScaffold,
-      appBar: FPCBlurExpandedBottomSheetAppBar(
-        context,
-        cupertinoLocale: "Back",
-        onPressedBack: () => Navigator.pop(context),
-        title: "Blur Expanded Bottom Sheet",
-      ),
-
-      // backgroundColor: theme.black,
-      // appBar: FPCBlurWhiteAlwaysExpandedBottomSheetAppBar(
-      //   context,
-      //   cupertinoLocale: "Back",
-      //   onPressedBack: () => Navigator.pop(context),
-      //   title: "Blur White Always Expanded BottomSheet",
-      // ),
-
-      // backgroundColor: theme.backgroundScaffold,
-      // appBar: FPCBlurScreenAppBar(
-      //   context,
-      //   title: "Blur Screen",
-      //   onPressedBack: () => Navigator.pop(context),
-      // ),
-
-      // backgroundColor: theme.black,
-      // appBar: FPCBlurWhiteAlwaysScreenAppBar(
-      //   context,
-      //   onPressedBack: () => Navigator.pop(context),
-      //   title: "Blur White Always Screen",
-      // ),
-
-      body: const FPCListView(
-        children: [
-          DummyList(),
-        ],
-      ),
+    return Column(
+      children: [
+        Expanded(
+          child: FPCScaffold(
+            extendBodyBehindAppBar: true,
+            backgroundColor: theme.backgroundScaffold,
+            appBar: FPCBlurScreenAppBar(
+              context,
+              title: "Blur Screen",
+              onPressedBack: () => Navigator.pop(context),
+            ),
+            body: const FPCListView(
+              children: [
+                DummyList(),
+              ],
+            ),
+          ),
+        ),
+        Expanded(
+          child: FPCScaffold(
+            extendBodyBehindAppBar: true,
+            backgroundColor: theme.black,
+            appBar: FPCBlurBlackAlwaysScreenAppBar(
+              context,
+              onPressedBack: () => Navigator.pop(context),
+              title: "Blur White Always Screen",
+            ),
+            body: const FPCListView(
+              children: [
+                DummyList(),
+              ],
+            ),
+          ),
+        ),
+        Expanded(
+          child: FPCScaffold(
+            extendBodyBehindAppBar: true,
+            backgroundColor: theme.backgroundScaffold,
+            appBar: FPCBlurExpandedBottomSheetAppBar(
+              context,
+              cupertinoLocale: "Back",
+              onPressedBack: () => Navigator.pop(context),
+              title: "Blur Expanded Bottom Sheet",
+            ),
+            body: const FPCListView(
+              children: [
+                DummyList(),
+              ],
+            ),
+          ),
+        ),
+        Expanded(
+          child: FPCScaffold(
+            extendBodyBehindAppBar: true,
+            backgroundColor: theme.black,
+            appBar: FPCBlurBlackAlwaysExpandedBottomSheetAppBar(
+              context,
+              cupertinoLocale: "Back",
+              onPressedBack: () => Navigator.pop(context),
+              title: "Blur White Always Expanded BottomSheet",
+            ),
+            body: const FPCListView(
+              children: [
+                DummyList(),
+              ],
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

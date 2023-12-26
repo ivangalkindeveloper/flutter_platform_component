@@ -32,23 +32,31 @@ class FPCCheckbox extends FPCPlatformWidget {
       color: Colors.transparent,
       child: FPCDisabledWrapper(
         disabledColor: this.disabledColor,
-        borderRadius: BorderRadius.circular(size.s32),
+        borderRadius: BorderRadius.circular(
+          size.s32,
+        ),
         isDisabled: this.isDisabled,
         children: [
           Checkbox(
             value: this.value,
-            onChanged: (bool? value) {
+            onChanged: (
+              bool? value,
+            ) {
               if (value == null || this.isDisabled) {
                 return;
               }
 
-              this.onChanged(value);
+              this.onChanged(
+                value,
+              );
             },
             activeColor: this.selectedColor,
             checkColor: theme.white,
             splashRadius: 0,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(size.s16),
+              borderRadius: BorderRadius.circular(
+                size.s16,
+              ),
             ),
             side: BorderSide(
               width: size.s10 / 10,
@@ -69,17 +77,23 @@ class FPCCheckbox extends FPCPlatformWidget {
 
     return FPCDisabledWrapper(
       disabledColor: this.disabledColor,
-      borderRadius: BorderRadius.circular(size.s32),
+      borderRadius: BorderRadius.circular(
+        size.s32,
+      ),
       isDisabled: this.isDisabled,
       children: [
         Checkbox(
           value: this.value,
-          onChanged: (bool? value) {
+          onChanged: (
+            bool? value,
+          ) {
             if (value == null || this.isDisabled) {
               return;
             }
 
-            this.onChanged(value);
+            this.onChanged(
+              value,
+            );
           },
           activeColor: this.selectedColor,
           checkColor: theme.white,

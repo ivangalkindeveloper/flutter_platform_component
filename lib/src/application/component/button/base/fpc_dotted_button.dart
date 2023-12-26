@@ -59,13 +59,17 @@ class FPCDottedButton extends FPCPlatformWidget {
 
     return FPCDisabledWrapper(
       disabledColor: this.disabledColor,
-      borderRadius: BorderRadius.all(borderRadius),
+      borderRadius: BorderRadius.all(
+        borderRadius,
+      ),
       isDisabled: this.isDisabled,
       children: [
         CupertinoButton(
           minSize: height,
           padding: EdgeInsets.zero,
-          borderRadius: BorderRadius.all(borderRadius),
+          borderRadius: BorderRadius.all(
+            borderRadius,
+          ),
           onPressed: onPressed,
           child: DottedBorder(
             color: this.borderColor,
@@ -119,7 +123,9 @@ class FPCDottedButton extends FPCPlatformWidget {
 
     return FPCDisabledWrapper(
       disabledColor: this.disabledColor,
-      borderRadius: BorderRadius.all(borderRadius),
+      borderRadius: BorderRadius.all(
+        borderRadius,
+      ),
       isDisabled: this.isDisabled,
       children: [
         SizedBox(
@@ -127,7 +133,9 @@ class FPCDottedButton extends FPCPlatformWidget {
           child: DecoratedBox(
             decoration: BoxDecoration(
               color: this.backgroundColor,
-              borderRadius: BorderRadius.all(borderRadius),
+              borderRadius: BorderRadius.all(
+                borderRadius,
+              ),
             ),
             child: DottedBorder(
               color: this.borderColor,
@@ -147,7 +155,9 @@ class FPCDottedButton extends FPCPlatformWidget {
                   fixedSize: Size.fromHeight(height),
                   padding: padding,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(borderRadius),
+                    borderRadius: BorderRadius.all(
+                      borderRadius,
+                    ),
                   ),
                 ),
                 onPressed: onPressed,

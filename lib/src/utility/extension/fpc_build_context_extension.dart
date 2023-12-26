@@ -285,7 +285,7 @@ extension FPCBuildContextExtension on BuildContext {
       appBarTheme: AppBarTheme(
         // color: theme.primary,
         backgroundColor: theme.backgroundComponent,
-        foregroundColor: theme.backgroundComponent,
+        foregroundColor: theme.black,
         // elevation: ,
         // scrolledUnderElevation: ,
         shadowColor: theme.blackAlways,
@@ -312,7 +312,7 @@ extension FPCBuildContextExtension on BuildContext {
         ),
         // toolbarTextStyle: ,
         // titleTextStyle: ,
-        // systemOverlayStyle: ,
+        systemOverlayStyle: theme.systemOverlayStyle,
       ),
       badgeTheme: BadgeThemeData(
         backgroundColor: theme.danger,

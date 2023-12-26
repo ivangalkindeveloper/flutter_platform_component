@@ -13,7 +13,9 @@ class FPCTextInputHandlerFormatter implements TextInputFormatter {
     TextEditingValue value,
   ) {
     if (oldValue.text != value.text) {
-      this.onValue(value.text);
+      this.onValue(
+        value.text,
+      );
     }
     return value;
   }

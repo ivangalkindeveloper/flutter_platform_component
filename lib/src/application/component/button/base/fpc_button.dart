@@ -110,7 +110,9 @@ class FPCButton extends FPCPlatformWidget {
                 foregroundColor: splashColor,
                 backgroundColor: Colors.transparent,
                 shadowColor: Colors.transparent,
-                fixedSize: Size.fromHeight(height),
+                fixedSize: Size.fromHeight(
+                  height,
+                ),
                 padding: padding,
                 shape: RoundedRectangleBorder(
                   borderRadius: borderRadius,

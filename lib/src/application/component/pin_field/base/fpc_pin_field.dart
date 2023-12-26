@@ -195,7 +195,10 @@ class _FPCPINFieldState extends State<FPCPINField>
         SlideTransition(
           position: Tween<Offset>(
             begin: Offset.zero,
-            end: const Offset(0.1, 0.0),
+            end: const Offset(
+              0.1,
+              0.0,
+            ),
           ).animate(
             CurvedAnimation(
               parent: this._animationController,
@@ -236,8 +239,12 @@ class _FPCPINFieldState extends State<FPCPINField>
                 borderColor: null,
               ),
               forceErrorState: this._isError,
-              separatorBuilder: (int value) =>
-                  SizedBox(width: horizontalInterval),
+              separatorBuilder: (
+                int value,
+              ) =>
+                  SizedBox(
+                width: horizontalInterval,
+              ),
               autofocus: this.widget.isAutofocus,
               showCursor: false,
               onChanged: onChanged,

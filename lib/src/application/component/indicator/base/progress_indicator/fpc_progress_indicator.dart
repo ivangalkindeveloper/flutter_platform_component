@@ -22,7 +22,9 @@ class FPCProgressIndicator extends StatelessWidget {
     final FPCSize size = context.fpcSize;
 
     return ClipRRect(
-      borderRadius: BorderRadius.circular(size.s32),
+      borderRadius: BorderRadius.circular(
+        size.s32,
+      ),
       child: LinearProgressIndicator(
         backgroundColor: this.backgroundColor,
         minHeight: size.s16 / 4,

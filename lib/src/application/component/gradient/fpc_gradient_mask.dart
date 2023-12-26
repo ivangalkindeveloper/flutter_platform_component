@@ -7,6 +7,11 @@ class FPCGradientMask extends ShaderMask {
     required super.child,
   }) : super(
           blendMode: BlendMode.srcIn,
-          shaderCallback: (Rect rect) => gradient.createShader(rect),
+          shaderCallback: (
+            Rect rect,
+          ) =>
+              gradient.createShader(
+            rect,
+          ),
         );
 }

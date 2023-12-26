@@ -3,8 +3,9 @@ import 'package:flutter/widgets.dart';
 
 import 'package:flutter/cupertino.dart'
     show CupertinoDatePicker, CupertinoDatePickerMode;
-import 'package:flutter/material.dart' show Theme, ColorScheme, DialogTheme;
+import 'package:flutter/material.dart' show DatePickerDialog;
 
+//TODO Change props
 class FPCDatePicker extends FPCPlatformWidget with FPCDatePickerMixin {
   const FPCDatePicker({
     super.key,
@@ -58,31 +59,16 @@ class FPCDatePicker extends FPCPlatformWidget with FPCDatePickerMixin {
   Widget material(
     BuildContext context,
   ) {
-    final FPCSizeScope sizeScope = context.fpcSizeScope;
-    final FPCTheme theme = context.fpcTheme;
+    final FPCDateTime dateTime = context.fpcDateTime;
 
-    final Color backgroundColor =
-        this.materialDialogBackgroundColor ?? theme.backgroundScaffold;
-    final Color color = this.materialDialogColor ?? theme.primary;
-    final BorderRadius borderRadius =
-        this.materialDialogBorderRadius ?? sizeScope.borderRadiusDialog;
-    final Widget materialDialog = this.materialDialog ?? const SizedBox();
+    final DateTime dateTimeMinimum = dateTimeRange?.minimum ?? dateTime.minimum;
+    final DateTime dateTimeInitial = dateTimeRange?.initial ?? dateTime.initial;
+    final DateTime dateTimeMaximum = dateTimeRange?.maximum ?? dateTime.maximum;
 
-    return Theme(
-      data: (theme.materialThemeData ?? Theme.of(context)).copyWith(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: color,
-        ),
-        dialogTheme: DialogTheme(
-          elevation: 0,
-          backgroundColor: backgroundColor,
-          shape: RoundedRectangleBorder(
-            borderRadius: borderRadius,
-          ),
-          actionsPadding: EdgeInsets.zero,
-        ),
-      ),
-      child: materialDialog,
+    return DatePickerDialog(
+      firstDate: dateTimeMinimum,
+      currentDate: dateTimeInitial,
+      lastDate: dateTimeMaximum,
     );
   }
 }

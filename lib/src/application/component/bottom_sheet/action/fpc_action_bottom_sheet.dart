@@ -111,7 +111,10 @@ class FPCActionBottomSheet<T> extends FPCPlatformWidget
         message: content,
         actions: items
             .map(
-              (FPCActionBottomSheetItem item) => buildItem(
+              (
+                FPCActionBottomSheetItem item,
+              ) =>
+                  buildItem(
                 size: size,
                 item: item,
               ),
@@ -204,6 +207,7 @@ class FPCActionBottomSheet<T> extends FPCPlatformWidget
     }) {
       final Color? itemStyleColor =
           item.isDestructive ? theme.danger : this.titleStyle?.color;
+
       return ListTile(
         tileColor: backgroundColor,
         splashColor: splashColor,
@@ -227,50 +231,27 @@ class FPCActionBottomSheet<T> extends FPCPlatformWidget
     final Color backgroundColor =
         this.backgroundColor ?? theme.backgroundComponent;
     final Color splashColor = this.splashColor ?? theme.greyLight;
-    final TextStyle titleStyle = this.titleStyle?.copyWith(
-              color: this.titleStyle?.color ?? theme.black,
-              fontSize: this.titleStyle?.fontSize ?? size.s16,
-              fontWeight: this.titleStyle?.fontWeight ?? font.weightRegular,
-              fontFamily: this.titleStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.black,
-          fontSize: size.s16,
-          fontWeight: font.weightRegular,
-          fontFamily: font.familyRegular,
-          package: font.package,
-        );
-    final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
-              color: this.descriptionStyle?.color ?? theme.black,
-              fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-              fontWeight:
-                  this.descriptionStyle?.fontWeight ?? font.weightRegular,
-              fontFamily:
-                  this.descriptionStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.black,
-          fontSize: size.s14,
-          fontWeight: font.weightRegular,
-          fontFamily: font.familyRegular,
-          package: font.package,
-        );
-    final TextStyle itemStyle = this.itemStyle?.copyWith(
-              color: this.itemStyle?.color ?? theme.black,
-              fontSize: this.itemStyle?.fontSize ?? size.s16,
-              fontWeight: this.itemStyle?.fontWeight ?? font.weightRegular,
-              fontFamily: this.itemStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.black,
-          fontSize: size.s16,
-          fontWeight: font.weightRegular,
-          fontFamily: font.familyRegular,
-          package: font.package,
-        );
+    final TextStyle titleStyle = TextStyle(
+      color: this.titleStyle?.color ?? theme.black,
+      fontSize: this.titleStyle?.fontSize ?? size.s16,
+      fontWeight: this.titleStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: font.familyRegular,
+      package: this.titleStyle?.fontFamily ?? font.package,
+    );
+    final TextStyle descriptionStyle = TextStyle(
+      color: this.descriptionStyle?.color ?? theme.black,
+      fontSize: this.descriptionStyle?.fontSize ?? size.s14,
+      fontWeight: this.descriptionStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: this.descriptionStyle?.fontFamily ?? font.familyRegular,
+      package: font.package,
+    );
+    final TextStyle itemStyle = TextStyle(
+      color: this.itemStyle?.color ?? theme.black,
+      fontSize: this.itemStyle?.fontSize ?? size.s16,
+      fontWeight: this.itemStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: this.itemStyle?.fontFamily ?? font.familyRegular,
+      package: font.package,
+    );
     final Widget? content = buildContent(
       backgroundColor: backgroundColor,
       titleStyle: titleStyle,

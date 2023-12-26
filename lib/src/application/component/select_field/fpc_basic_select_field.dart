@@ -106,12 +106,18 @@ class _FPCSelectFieldState extends State<FPCSelectField>
   @override
   void didInitState() {
     // Controller
-    this._controller = TextEditingController(text: this.widget.title);
+    this._controller = TextEditingController(
+      text: this.widget.title,
+    );
   }
 
   @override
-  void didUpdateWidget(covariant FPCSelectField oldWidget) {
-    super.didUpdateWidget(oldWidget);
+  void didUpdateWidget(
+    covariant FPCSelectField oldWidget,
+  ) {
+    super.didUpdateWidget(
+      oldWidget,
+    );
     if (this.mounted == false) {
       return;
     }

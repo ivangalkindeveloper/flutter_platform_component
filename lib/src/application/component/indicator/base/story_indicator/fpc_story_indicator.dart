@@ -45,7 +45,9 @@ class FPCStoryIndicator extends StatelessWidget {
                   child: FPCProgressIndicator(
                     backgroundColor: this.backgroundColor,
                     color: this.color,
-                    value: this._value(index: index),
+                    value: this._value(
+                      index: index,
+                    ),
                   ),
                 ),
                 if (index != (this.length - 1)) SizedBox(width: size.s16 / 4),

@@ -481,22 +481,15 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
           left: this._size.s16,
           right: this._size.s16,
         );
-    final TextStyle errorStyle = this.widget.errorStyle?.copyWith(
-              color: this.widget.errorStyle?.color ?? this._theme.danger,
-              fontSize: this.widget.errorStyle?.fontSize ?? this._size.s14,
-              fontWeight: this.widget.errorStyle?.fontWeight ??
-                  this._font.weightRegular,
-              fontFamily: this.widget.errorStyle?.fontFamily ??
-                  this._font.familyRegular,
-              package: this._font.package,
-            ) ??
-        TextStyle(
-          color: this._theme.danger,
-          fontSize: this._size.s14,
-          fontWeight: this._font.weightRegular,
-          fontFamily: this._font.familyRegular,
-          package: this._font.package,
-        );
+    final TextStyle errorStyle = TextStyle(
+      color: this.widget.errorStyle?.color ?? this._theme.danger,
+      fontSize: this.widget.errorStyle?.fontSize ?? this._size.s14,
+      fontWeight:
+          this.widget.errorStyle?.fontWeight ?? this._font.weightRegular,
+      fontFamily:
+          this.widget.errorStyle?.fontFamily ?? this._font.familyRegular,
+      package: this._font.package,
+    );
 
     return Column(
       mainAxisSize: MainAxisSize.min,

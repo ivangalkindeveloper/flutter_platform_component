@@ -52,25 +52,27 @@ class FPCDottedCard extends StatelessWidget {
     return SizedBox(
       height: this.height,
       width: this.width,
-      child: DecoratedBox(
-        decoration: BoxDecoration(
-          color: this.backgroundColor,
-          borderRadius: BorderRadius.all(
-            borderRadius,
+      child: ConstrainedBox(
+        constraints: constraints,
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            color: this.backgroundColor,
+            borderRadius: BorderRadius.all(
+              borderRadius,
+            ),
           ),
-        ),
-        child: DottedBorder(
-          color: this.borderColor,
-          radius: borderRadius,
-          strokeWidth: borderWidth,
-          borderType: this.borderType.packageMap,
-          strokeCap: this.strokeCap,
-          dashPattern: this.pattern,
-          padding: padding,
-          borderPadding: EdgeInsets.zero,
-          child: ConstrainedBox(
-            constraints: constraints,
-            child: this.child,
+          child: DottedBorder(
+            color: this.borderColor,
+            radius: borderRadius,
+            strokeWidth: borderWidth,
+            borderType: this.borderType.packageMap,
+            strokeCap: this.strokeCap,
+            dashPattern: this.pattern,
+            padding: padding,
+            borderPadding: EdgeInsets.zero,
+            child: Center(
+              child: this.child,
+            ),
           ),
         ),
       ),

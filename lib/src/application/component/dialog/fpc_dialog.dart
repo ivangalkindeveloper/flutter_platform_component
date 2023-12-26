@@ -2,11 +2,7 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 import 'package:flutter/cupertino.dart'
-    show
-        CupertinoTheme,
-        CupertinoAlertDialog,
-        CupertinoDialogAction,
-        CupertinoTextThemeData;
+    show CupertinoAlertDialog, CupertinoDialogAction;
 import 'package:flutter/material.dart' show TextButton, AlertDialog;
 
 class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
@@ -72,67 +68,48 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
           ),
         );
 
-    final TextStyle titleStyle = this.titleStyle?.copyWith(
-              color: this.titleStyle?.color ?? theme.black,
-              fontSize: this.titleStyle?.fontSize,
-              fontWeight: this.titleStyle?.fontWeight,
-              fontFamily: this.titleStyle?.fontFamily,
-            ) ??
-        TextStyle(
-          color: theme.black,
-        );
-    final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
-              color: this.descriptionStyle?.color,
-              fontSize: this.descriptionStyle?.fontSize,
-              fontWeight: this.descriptionStyle?.fontWeight,
-              fontFamily: this.descriptionStyle?.fontFamily,
-            ) ??
-        TextStyle(
-          color: theme.black,
-        );
-    final TextStyle itemStyle = this.itemStyle?.copyWith(
-              color: this.itemStyle?.color ?? theme.primary,
-              fontSize: this.itemStyle?.fontSize,
-              fontWeight: this.itemStyle?.fontWeight,
-              fontFamily: this.itemStyle?.fontFamily,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.primary,
-        );
+    final TextStyle titleStyle = TextStyle(
+      color: this.titleStyle?.color ?? theme.black,
+      fontSize: this.titleStyle?.fontSize,
+      fontWeight: this.titleStyle?.fontWeight,
+      fontFamily: this.titleStyle?.fontFamily,
+      package: font.package,
+    );
+    final TextStyle descriptionStyle = TextStyle(
+      color: this.descriptionStyle?.color ?? theme.black,
+      fontSize: this.descriptionStyle?.fontSize,
+      fontWeight: this.descriptionStyle?.fontWeight,
+      fontFamily: this.descriptionStyle?.fontFamily,
+      package: font.package,
+    );
+    final TextStyle itemStyle = TextStyle(
+      color: this.itemStyle?.color ?? theme.primary,
+      fontSize: this.itemStyle?.fontSize,
+      fontWeight: this.itemStyle?.fontWeight,
+      fontFamily: this.itemStyle?.fontFamily,
+      package: font.package,
+    );
 
-    return CupertinoTheme(
-      data: CupertinoTheme.of(context).copyWith(
-        textTheme: CupertinoTextThemeData(
-          textStyle: TextStyle(
-            color: theme.black,
-          ),
-          actionTextStyle: TextStyle(
-            color: theme.black,
-          ),
-        ),
+    return CupertinoAlertDialog(
+      title: Text(
+        this.title,
+        style: titleStyle,
       ),
-      child: CupertinoAlertDialog(
-        title: Text(
-          this.title,
-          style: titleStyle,
-        ),
-        content: buildContent(
-          descriptionStyle: descriptionStyle,
-        ),
-        actions: this
-            .items
-            .map(
-              (
-                FPCDialogItem item,
-              ) =>
-                  buildItem(
-                item: item,
-                itemStyle: itemStyle,
-              ),
-            )
-            .toList(),
+      content: buildContent(
+        descriptionStyle: descriptionStyle,
       ),
+      actions: this
+          .items
+          .map(
+            (
+              FPCDialogItem item,
+            ) =>
+                buildItem(
+              item: item,
+              itemStyle: itemStyle,
+            ),
+          )
+          .toList(),
     );
   }
 
@@ -186,50 +163,27 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
         this.backgroundColor ?? theme.backgroundScaffold;
     final BorderRadius borderRadius =
         this.borderRadius ?? sizeScope.borderRadiusDialog;
-    final TextStyle titleStyle = this.titleStyle?.copyWith(
-              color: this.titleStyle?.color ?? theme.black,
-              fontSize: this.titleStyle?.fontSize ?? size.s16,
-              fontWeight: this.titleStyle?.fontWeight ?? font.weightMedium,
-              fontFamily: this.titleStyle?.fontFamily ?? font.familyMedium,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.black,
-          fontSize: size.s16,
-          fontWeight: font.weightMedium,
-          fontFamily: font.familyMedium,
-          package: font.package,
-        );
-    final TextStyle descriptionStyle = this.descriptionStyle?.copyWith(
-              color: this.descriptionStyle?.color ?? theme.black,
-              fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-              fontWeight:
-                  this.descriptionStyle?.fontWeight ?? font.weightRegular,
-              fontFamily:
-                  this.descriptionStyle?.fontFamily ?? font.familyRegular,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.black,
-          fontSize: size.s14,
-          fontWeight: font.weightRegular,
-          fontFamily: font.familyRegular,
-          package: font.package,
-        );
-    final TextStyle itemStyle = this.itemStyle?.copyWith(
-              color: this.itemStyle?.color ?? theme.primary,
-              fontSize: this.itemStyle?.fontSize ?? size.s16,
-              fontWeight: this.itemStyle?.fontWeight ?? font.weightMedium,
-              fontFamily: this.itemStyle?.fontFamily ?? font.familyMedium,
-              package: font.package,
-            ) ??
-        TextStyle(
-          color: theme.primary,
-          fontSize: size.s16,
-          fontWeight: font.weightMedium,
-          fontFamily: font.familyMedium,
-          package: font.package,
-        );
+    final TextStyle titleStyle = TextStyle(
+      color: this.titleStyle?.color ?? theme.black,
+      fontSize: this.titleStyle?.fontSize ?? size.s16,
+      fontWeight: this.titleStyle?.fontWeight ?? font.weightMedium,
+      fontFamily: this.titleStyle?.fontFamily ?? font.familyMedium,
+      package: font.package,
+    );
+    final TextStyle descriptionStyle = TextStyle(
+      color: this.descriptionStyle?.color ?? theme.black,
+      fontSize: this.descriptionStyle?.fontSize ?? size.s14,
+      fontWeight: this.descriptionStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: this.descriptionStyle?.fontFamily ?? font.familyRegular,
+      package: font.package,
+    );
+    final TextStyle itemStyle = TextStyle(
+      color: this.itemStyle?.color ?? theme.primary,
+      fontSize: this.itemStyle?.fontSize ?? size.s16,
+      fontWeight: this.itemStyle?.fontWeight ?? font.weightMedium,
+      fontFamily: this.itemStyle?.fontFamily ?? font.familyMedium,
+      package: font.package,
+    );
 
     return AlertDialog(
       elevation: 0,

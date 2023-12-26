@@ -23,7 +23,7 @@ class FPCAnimatedSlowSize extends StatelessWidget {
       //
       curve: animation.curve,
       clipBehavior: animation.clipBehavior,
-      duration: duration.animationDefault,
+      duration: duration.animationSlow,
       reverseDuration: duration.animationSlow,
       child: this.child,
     );
