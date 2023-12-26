@@ -22,7 +22,12 @@ class _FPCsizeScope extends State<_FPCSizeWidget> {
     this._size = this.widget.size ?? const FPCDefaultSize();
   }
 
-  void _changeSize(FPCSize size) => setState(() => this._size = size);
+  void _changeSize(
+    FPCSize size,
+  ) =>
+      setState(
+        () => this._size = size,
+      );
 
   // BorderRadius
   // BorderRadius / BottomSheet
@@ -209,6 +214,8 @@ class FPCSizeScope extends InheritedWidget with FPCScopeMixin {
       FPCScopeMixin.maybeOf<FPCSizeScope>(context);
 
   @override
-  bool updateShouldNotify(FPCSizeScope oldWidget) =>
+  bool updateShouldNotify(
+    FPCSizeScope oldWidget,
+  ) =>
       oldWidget.size != this.size;
 }

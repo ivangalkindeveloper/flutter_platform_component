@@ -49,7 +49,7 @@ class _AnimatedOpacityScreenState extends State<AnimatedOpacityScreen> {
                           ),
                           Gap(size.s16),
                           FPCAnimatedSlowOpacity(
-                            condition: this._action,
+                            opacity: this._action ? 1 : 0,
                             child: Container(
                               height: size.s28 * 4,
                               width: size.s28 * 4,
@@ -68,7 +68,7 @@ class _AnimatedOpacityScreenState extends State<AnimatedOpacityScreen> {
                           ),
                           Gap(size.s16),
                           FPCAnimatedOpacity(
-                            condition: this._action,
+                            opacity: this._action ? 1 : 0,
                             child: Container(
                               height: size.s28 * 4,
                               width: size.s28 * 4,
@@ -87,7 +87,7 @@ class _AnimatedOpacityScreenState extends State<AnimatedOpacityScreen> {
                           ),
                           Gap(size.s16),
                           FPCAnimatedFastOpacity(
-                            condition: this._action,
+                            opacity: this._action ? 1 : 0,
                             child: Container(
                               height: size.s28 * 4,
                               width: size.s28 * 4,

@@ -45,9 +45,15 @@ class _FPCThemeState extends State<_FPCThemeWidget> {
     this._theme = this.widget.theme ?? FPCDefaultLightTheme();
   }
 
-  void _changeTheme(FPCTheme theme) {
-    SystemChrome.setSystemUIOverlayStyle(theme.systemOverlayStyle);
-    setState(() => this._theme = theme);
+  void _changeTheme(
+    FPCTheme theme,
+  ) {
+    SystemChrome.setSystemUIOverlayStyle(
+      theme.systemOverlayStyle,
+    );
+    setState(
+      () => this._theme = theme,
+    );
   }
 
   @override
@@ -97,6 +103,8 @@ class FPCThemeScope extends InheritedWidget with FPCScopeMixin {
       FPCScopeMixin.maybeOf<FPCThemeScope>(context);
 
   @override
-  bool updateShouldNotify(covariant FPCThemeScope oldWidget) =>
+  bool updateShouldNotify(
+    covariant FPCThemeScope oldWidget,
+  ) =>
       oldWidget.theme != this.theme;
 }

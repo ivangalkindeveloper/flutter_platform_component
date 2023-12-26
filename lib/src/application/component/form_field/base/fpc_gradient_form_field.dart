@@ -647,7 +647,7 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
             Positioned.fill(
               child: IgnorePointer(
                 child: FPCAnimatedFastOpacity(
-                  condition: this._focusNode.hasPrimaryFocus,
+                  opacity: this._focusNode.hasPrimaryFocus ? 1 : 0,
                   child: FPCGradientMask(
                     gradient: borderGradient,
                     child: DecoratedBox(

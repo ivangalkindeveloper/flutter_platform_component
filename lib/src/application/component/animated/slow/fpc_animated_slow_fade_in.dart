@@ -6,13 +6,17 @@ import 'package:animate_do/animate_do.dart' show FadeIn;
 class FPCAnimatedSlowFadeIn extends StatelessWidget {
   const FPCAnimatedSlowFadeIn({
     super.key,
+    this.delay = Duration.zero,
     this.onCreated,
     this.isAnimate = true,
+    this.isManual = false,
     required this.child,
   });
 
+  final Duration delay;
   final dynamic Function(AnimationController)? onCreated;
   final bool isAnimate;
+  final bool isManual;
   final Widget child;
 
   @override
@@ -22,9 +26,12 @@ class FPCAnimatedSlowFadeIn extends StatelessWidget {
     final FPCDuration duration = context.fpcDuration;
 
     return FadeIn(
-      duration: duration.animationSlow,
+      delay: this.delay,
       controller: this.onCreated,
       animate: this.isAnimate,
+      manualTrigger: this.isManual,
+      //
+      duration: duration.animationSlow,
       child: this.child,
     );
   }

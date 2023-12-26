@@ -1,7 +1,15 @@
 ## 4.0.0
 Addings:
-* FPCPopUpMenu;
 * ErrorText property for form fields;
+* FPCAnimatedPadding;
+* FPCAnimatedFractionallySizedBox;
+* FPCPopUpMenu;
+
+- AnimatedPhysicalModel;
+- AnimatedPositionedDirectional;
+- AnimatedRotation;
+- AnimatedScale;
+- AnimatedSlide;
 - FPCTooltip;
 - FPCDrawer;
 
@@ -12,6 +20,7 @@ Refactoring:
 * Refactoring of example project;
 * Transfer modal_bottom_sheet in local directory and optimization;
 * Refactoring snippet script and new VS Code snippets;
+* Synchronizing FPCTheme with the ThemeData and CupertinoThemeData themes;
 
 Renamings:
 * "IFPC" abstract entities > FPC abstract entities;

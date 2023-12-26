@@ -22,8 +22,12 @@ class _FPCDateTimeState extends State<_FPCDateTimeWidget> {
     this._dateTime = this.widget.dateTime ?? FPCDefaultDateTime();
   }
 
-  void _changeDateTime(FPCDateTime dateTime) =>
-      setState(() => this._dateTime = dateTime);
+  void _changeDateTime(
+    FPCDateTime dateTime,
+  ) =>
+      setState(
+        () => this._dateTime = dateTime,
+      );
 
   @override
   Widget build(
@@ -58,6 +62,8 @@ class FPCDateTimeScope extends InheritedWidget with FPCScopeMixin {
       FPCScopeMixin.maybeOf<FPCDateTimeScope>(context);
 
   @override
-  bool updateShouldNotify(covariant FPCDateTimeScope oldWidget) =>
+  bool updateShouldNotify(
+    covariant FPCDateTimeScope oldWidget,
+  ) =>
       oldWidget.dateTime != this.dateTime;
 }

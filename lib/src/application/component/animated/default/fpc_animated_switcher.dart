@@ -4,9 +4,13 @@ import 'package:flutter/widgets.dart';
 class FPCAnimatedSwitcher extends StatelessWidget {
   const FPCAnimatedSwitcher({
     super.key,
+    this.transitionBuilder = AnimatedSwitcher.defaultTransitionBuilder,
+    this.layoutBuilder = AnimatedSwitcher.defaultLayoutBuilder,
     required this.child,
   });
 
+  final Widget Function(Widget, Animation<double>) transitionBuilder;
+  final Widget Function(Widget?, List<Widget>) layoutBuilder;
   final Widget? child;
 
   @override
@@ -17,10 +21,13 @@ class FPCAnimatedSwitcher extends StatelessWidget {
     final FPCDuration duration = context.fpcDuration;
 
     return AnimatedSwitcher(
-      duration: duration.animationDefault,
-      switchInCurve: animation.curve,
+      transitionBuilder: this.transitionBuilder,
+      layoutBuilder: this.layoutBuilder,
+      //
       reverseDuration: duration.animationDefault,
       switchOutCurve: animation.curve,
+      duration: duration.animationDefault,
+      switchInCurve: animation.curve,
       child: this.child,
     );
   }

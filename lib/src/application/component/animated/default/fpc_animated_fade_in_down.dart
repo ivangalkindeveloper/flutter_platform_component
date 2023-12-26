@@ -6,14 +6,18 @@ import 'package:animate_do/animate_do.dart' show FadeInDown;
 class FPCAnimatedFadeInDown extends StatelessWidget {
   const FPCAnimatedFadeInDown({
     super.key,
+    this.delay = Duration.zero,
     this.onCreated,
     this.isAnimate = true,
+    this.isManual = false,
     this.from,
     required this.child,
   });
 
+  final Duration delay;
   final dynamic Function(AnimationController)? onCreated;
   final bool isAnimate;
+  final bool isManual;
   final double? from;
   final Widget child;
 
@@ -24,11 +28,16 @@ class FPCAnimatedFadeInDown extends StatelessWidget {
     final FPCDuration duration = context.fpcDuration;
     final FPCSize size = context.fpcSize;
 
+    final double from = this.from ?? size.s16 * 4;
+
     return FadeInDown(
-      duration: duration.animationDefault,
+      delay: this.delay,
       controller: this.onCreated,
       animate: this.isAnimate,
-      from: this.from ?? size.s16 * 4,
+      manualTrigger: this.isManual,
+      from: from,
+      //
+      duration: duration.animationDefault,
       child: this.child,
     );
   }

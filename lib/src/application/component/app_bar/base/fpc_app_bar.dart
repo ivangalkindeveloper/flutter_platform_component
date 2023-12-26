@@ -29,10 +29,7 @@ class FPCAppBar extends FPCPlatformAppBar {
   final EdgeInsets? bottomPadding;
   final PreferredSizeWidget? bottom;
 
-  Widget? _middle({
-    required FPCTheme theme,
-    required FPCFont font,
-  }) {
+  Widget? _middle() {
     if (this.middle != null) {
       return this.middle;
     }
@@ -41,14 +38,7 @@ class FPCAppBar extends FPCPlatformAppBar {
       return Text(
         title!,
         textAlign: TextAlign.center,
-        style: this.titleStyle?.copyWith(
-                  color: titleStyle?.color ?? theme.black,
-                  package: font.package,
-                ) ??
-            TextStyle(
-              color: theme.black,
-              package: font.package,
-            ),
+        style: this.titleStyle,
       );
     }
 
@@ -61,10 +51,6 @@ class FPCAppBar extends FPCPlatformAppBar {
   ) {
     final FPCTheme theme = context.fpcTheme;
     final FPCSize size = context.fpcSize;
-    final FPCFont font = context.fpcFont;
-
-    final Color backgroundColor =
-        this.backgroundColor ?? theme.backgroundComponent;
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -72,17 +58,15 @@ class FPCAppBar extends FPCPlatformAppBar {
         CupertinoNavigationBar(
           automaticallyImplyLeading: false,
           automaticallyImplyMiddle: false,
+          brightness: theme.brightness,
           transitionBetweenRoutes: this.transitionBetweenRoutes,
-          backgroundColor: backgroundColor,
+          backgroundColor: this.backgroundColor,
           border: Border.all(
             color: Colors.transparent,
             width: 0,
           ),
           leading: this.prefix,
-          middle: this._middle(
-            theme: theme,
-            font: font,
-          ),
+          middle: this._middle(),
           trailing: this.postfix,
         ),
         if (this.bottom != null)
@@ -104,10 +88,6 @@ class FPCAppBar extends FPCPlatformAppBar {
   ) {
     final FPCTheme theme = context.fpcTheme;
     final FPCSize size = context.fpcSize;
-    final FPCFont font = context.fpcFont;
-
-    final Color backgroundColor =
-        this.backgroundColor ?? theme.backgroundComponent;
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -116,12 +96,9 @@ class FPCAppBar extends FPCPlatformAppBar {
           elevation: 0,
           automaticallyImplyLeading: false,
           systemOverlayStyle: theme.systemOverlayStyle,
-          backgroundColor: backgroundColor,
+          backgroundColor: this.backgroundColor,
           leading: this.prefix,
-          title: this._middle(
-            theme: theme,
-            font: font,
-          ),
+          title: this._middle(),
           centerTitle: true,
           actions: this.postfix != null
               ? [

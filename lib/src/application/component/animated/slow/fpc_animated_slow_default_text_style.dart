@@ -5,10 +5,22 @@ class FPCAnimatedSlowDefaultTextStyle extends StatelessWidget {
   const FPCAnimatedSlowDefaultTextStyle({
     super.key,
     required this.style,
+    this.textAlign,
+    this.softWrap = true,
+    this.overflow = TextOverflow.clip,
+    this.maxLines,
+    this.textWidthBasis = TextWidthBasis.parent,
+    this.textHeightBehavior,
     required this.child,
   });
 
   final TextStyle style;
+  final TextAlign? textAlign;
+  final bool softWrap;
+  final TextOverflow overflow;
+  final int? maxLines;
+  final TextWidthBasis textWidthBasis;
+  final TextHeightBehavior? textHeightBehavior;
   final Widget child;
 
   @override
@@ -20,6 +32,13 @@ class FPCAnimatedSlowDefaultTextStyle extends StatelessWidget {
 
     return AnimatedDefaultTextStyle(
       style: this.style,
+      textAlign: this.textAlign,
+      softWrap: this.softWrap,
+      overflow: this.overflow,
+      maxLines: this.maxLines,
+      textWidthBasis: this.textWidthBasis,
+      textHeightBehavior: this.textHeightBehavior,
+      //
       duration: duration.animationSlow,
       curve: animation.curve,
       child: this.child,

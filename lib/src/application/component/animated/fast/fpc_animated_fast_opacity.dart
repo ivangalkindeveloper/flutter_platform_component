@@ -4,11 +4,15 @@ import 'package:flutter/widgets.dart';
 class FPCAnimatedFastOpacity extends StatelessWidget {
   const FPCAnimatedFastOpacity({
     super.key,
-    required this.condition,
+    required this.opacity,
+    this.onEnd,
+    this.alwaysIncludeSemantics = false,
     required this.child,
   });
 
-  final bool condition;
+  final double opacity;
+  final void Function()? onEnd;
+  final bool alwaysIncludeSemantics;
   final Widget child;
 
   @override
@@ -19,9 +23,12 @@ class FPCAnimatedFastOpacity extends StatelessWidget {
     final FPCDuration duration = context.fpcDuration;
 
     return AnimatedOpacity(
-      opacity: this.condition ? 1 : 0,
-      duration: duration.animationFast,
+      opacity: this.opacity,
+      onEnd: this.onEnd,
+      alwaysIncludeSemantics: this.alwaysIncludeSemantics,
+      //
       curve: animation.curve,
+      duration: duration.animationFast,
       child: this.child,
     );
   }

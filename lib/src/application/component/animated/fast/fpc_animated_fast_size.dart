@@ -4,9 +4,11 @@ import 'package:flutter/widgets.dart';
 class FPCAnimatedFastSize extends StatelessWidget {
   const FPCAnimatedFastSize({
     super.key,
+    this.alignment = Alignment.center,
     required this.child,
   });
 
+  final Alignment alignment;
   final Widget child;
 
   @override
@@ -17,10 +19,12 @@ class FPCAnimatedFastSize extends StatelessWidget {
     final FPCDuration duration = context.fpcDuration;
 
     return AnimatedSize(
-      duration: duration.animationDefault,
-      reverseDuration: duration.animationFast,
+      alignment: this.alignment,
+      //
       curve: animation.curve,
       clipBehavior: animation.clipBehavior,
+      duration: duration.animationDefault,
+      reverseDuration: duration.animationFast,
       child: this.child,
     );
   }

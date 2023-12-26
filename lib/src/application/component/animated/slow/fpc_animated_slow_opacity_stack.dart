@@ -4,30 +4,30 @@ import 'package:flutter/widgets.dart';
 class FPCAnimatedSlowOpacityStack extends StatelessWidget {
   const FPCAnimatedSlowOpacityStack({
     super.key,
+    this.alignment = Alignment.center,
     required this.condition,
     required this.firstChild,
     required this.secondChild,
-    this.alignment,
   });
 
+  final Alignment alignment;
   final bool condition;
   final Widget firstChild;
   final Widget secondChild;
-  final Alignment? alignment;
 
   @override
   Widget build(
     BuildContext context,
   ) =>
       Stack(
-        alignment: this.alignment ?? Alignment.center,
+        alignment: this.alignment,
         children: [
           FPCAnimatedSlowOpacity(
-            condition: this.condition,
+            opacity: this.condition ? 1 : 0,
             child: this.firstChild,
           ),
           FPCAnimatedSlowOpacity(
-            condition: !this.condition,
+            opacity: !this.condition ? 1 : 0,
             child: this.secondChild,
           ),
         ],

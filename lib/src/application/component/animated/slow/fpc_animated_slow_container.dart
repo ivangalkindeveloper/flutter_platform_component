@@ -4,19 +4,31 @@ import 'package:flutter/widgets.dart';
 class FPCAnimatedSlowContainer extends StatelessWidget {
   const FPCAnimatedSlowContainer({
     super.key,
-    this.height,
-    this.width,
-    this.constraints,
-    this.decoration,
+    this.alignment,
     this.padding,
+    this.color,
+    this.decoration,
+    this.foregroundDecoration,
+    this.width,
+    this.height,
+    this.constraints,
+    this.transform,
+    this.transformAlignment,
+    this.onEnd,
     this.child,
   });
 
-  final double? height;
-  final double? width;
-  final BoxConstraints? constraints;
-  final BoxDecoration? decoration;
+  final AlignmentGeometry? alignment;
   final EdgeInsets? padding;
+  final Color? color;
+  final BoxDecoration? decoration;
+  final BoxDecoration? foregroundDecoration;
+  final double? width;
+  final double? height;
+  final BoxConstraints? constraints;
+  final Matrix4? transform;
+  final AlignmentGeometry? transformAlignment;
+  final void Function()? onEnd;
   final Widget? child;
 
   @override
@@ -27,14 +39,21 @@ class FPCAnimatedSlowContainer extends StatelessWidget {
     final FPCDuration duration = context.fpcDuration;
 
     return AnimatedContainer(
-      height: this.height,
-      width: this.width,
-      alignment: Alignment.center,
-      constraints: this.constraints,
-      decoration: this.decoration,
+      alignment: this.alignment,
       padding: this.padding,
-      duration: duration.animationSlow,
+      color: this.color,
+      decoration: this.decoration,
+      foregroundDecoration: this.foregroundDecoration,
+      width: this.width,
+      height: this.height,
+      constraints: this.constraints,
+      transform: this.transform,
+      transformAlignment: this.transformAlignment,
+      onEnd: this.onEnd,
+      //
       curve: animation.curve,
+      clipBehavior: animation.clipBehavior,
+      duration: duration.animationSlow,
       child: this.child,
     );
   }

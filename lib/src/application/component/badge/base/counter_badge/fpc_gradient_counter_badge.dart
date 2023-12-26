@@ -52,11 +52,7 @@ class FPCGradientCounterBadge extends StatelessWidget {
     final FPCFont font = context.fpcFont;
 
     final Duration durationBadge = this.duration ?? duration.badge;
-    final EdgeInsets padding = this.padding ??
-        EdgeInsets.symmetric(
-          vertical: size.s10 / 4,
-          horizontal: size.s10 / 2,
-        );
+    final EdgeInsets padding = this.padding ?? EdgeInsets.zero;
     final bool isShow = this._isShow();
     final String count = this._count();
     final TextStyle countStyle = this.countStyle?.copyWith(
@@ -91,11 +87,15 @@ class FPCGradientCounterBadge extends StatelessWidget {
       badgeContent: Padding(
         padding: padding,
         child: ConstrainedBox(
-          constraints: BoxConstraints(minWidth: size.s10 * 2),
+          constraints: BoxConstraints(
+            minWidth: size.s10 * 2,
+          ),
           child: DecoratedBox(
             decoration: BoxDecoration(
               gradient: this.gradient,
-              borderRadius: BorderRadius.circular(size.s16 * 2),
+              borderRadius: BorderRadius.circular(
+                size.s16 * 2,
+              ),
             ),
             child: Center(
               child: Padding(

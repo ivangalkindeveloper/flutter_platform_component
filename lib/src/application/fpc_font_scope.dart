@@ -22,7 +22,12 @@ class _FPCFontState extends State<_FPCFontWidget> {
     this._font = this.widget.font ?? const FPCDefaultFont();
   }
 
-  void _changeFont(FPCFont font) => setState(() => this._font = font);
+  void _changeFont(
+    FPCFont font,
+  ) =>
+      setState(
+        () => this._font = font,
+      );
 
   @override
   Widget build(
@@ -57,6 +62,8 @@ class FPCFontScope extends InheritedWidget with FPCScopeMixin {
       FPCScopeMixin.maybeOf<FPCFontScope>(context);
 
   @override
-  bool updateShouldNotify(FPCFontScope oldWidget) =>
+  bool updateShouldNotify(
+    FPCFontScope oldWidget,
+  ) =>
       oldWidget.font != this.font;
 }

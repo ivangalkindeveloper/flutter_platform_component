@@ -45,8 +45,6 @@ class FPCAnimatedFastOpenContainer extends StatelessWidget {
 
     return OpenContainer(
       transitionType: this.type.packageMap,
-      transitionDuration: duration.animationFast,
-      clipBehavior: animation.clipBehavior,
       tappable: this.isTappable,
       closedElevation: 0,
       closedColor: closedColor,
@@ -55,8 +53,14 @@ class FPCAnimatedFastOpenContainer extends StatelessWidget {
       openElevation: 0,
       openColor: openColor,
       openShape: openShape,
-      openBuilder: (BuildContext context, void Function() closeContainer) =>
+      openBuilder: (
+        BuildContext context,
+        void Function() closeContainer,
+      ) =>
           this.openBuilder(context),
+      //
+      clipBehavior: animation.clipBehavior,
+      transitionDuration: duration.animationFast,
     );
   }
 }

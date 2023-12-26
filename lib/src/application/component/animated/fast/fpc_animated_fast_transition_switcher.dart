@@ -23,7 +23,6 @@ class FPCAnimatedFastTransitionSwitcher extends StatelessWidget {
     final FPCDuration duration = context.fpcDuration;
 
     return PageTransitionSwitcher(
-      duration: duration.animationFast,
       reverse: this.isReverse,
       transitionBuilder: (
         Widget childWidget,
@@ -36,6 +35,8 @@ class FPCAnimatedFastTransitionSwitcher extends StatelessWidget {
         transitionType: this.type.packageMap,
         child: childWidget,
       ),
+      //
+      duration: duration.animationFast,
       child: this.child,
     );
   }

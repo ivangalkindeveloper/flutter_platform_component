@@ -26,8 +26,9 @@ class FPCAnimatedFastAlign extends StatelessWidget {
       alignment: this.alignment,
       heightFactor: this.heightFactor,
       widthFactor: this.widthFactor,
-      duration: duration.animationFast,
+      //
       curve: animation.curve,
+      duration: duration.animationFast,
       child: this.child,
     );
   }

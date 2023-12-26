@@ -1,30 +1,26 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCAnimatedSize extends StatelessWidget {
-  const FPCAnimatedSize({
+class FPCAnimatedSlowPadding extends StatelessWidget {
+  const FPCAnimatedSlowPadding({
     super.key,
-    this.alignment = Alignment.center,
+    required this.padding,
     required this.child,
   });
 
-  final Alignment alignment;
+  final EdgeInsetsGeometry padding;
   final Widget child;
 
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     final FPCAnimation animation = context.fpcAnimation;
     final FPCDuration duration = context.fpcDuration;
 
-    return AnimatedSize(
-      alignment: this.alignment,
+    return AnimatedPadding(
+      padding: this.padding,
       //
       curve: animation.curve,
-      clipBehavior: animation.clipBehavior,
-      duration: duration.animationDefault,
-      reverseDuration: duration.animationDefault,
+      duration: duration.animationSlow,
       child: this.child,
     );
   }

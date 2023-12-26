@@ -35,8 +35,9 @@ class FPCAnimatedFastPositioned extends StatelessWidget {
       bottom: this.bottom,
       width: this.width,
       height: this.height,
-      duration: duration.animationFast,
+      //
       curve: animation.curve,
+      duration: duration.animationFast,
       child: this.child,
     );
   }

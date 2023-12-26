@@ -25,8 +25,12 @@ class _FPCPlatformState extends State<_FPCPlatformWidget> {
         );
   }
 
-  void _changePlatform(FPCPlatform platform) =>
-      setState(() => this._platform = platform);
+  void _changePlatform(
+    FPCPlatform platform,
+  ) =>
+      setState(
+        () => this._platform = platform,
+      );
 
   @override
   Widget build(
@@ -61,6 +65,8 @@ class FPCPlatformScope extends InheritedWidget with FPCScopeMixin {
       FPCScopeMixin.maybeOf<FPCPlatformScope>(context);
 
   @override
-  bool updateShouldNotify(covariant FPCPlatformScope oldWidget) =>
+  bool updateShouldNotify(
+    covariant FPCPlatformScope oldWidget,
+  ) =>
       oldWidget.platform != this.platform;
 }

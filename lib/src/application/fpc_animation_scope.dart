@@ -22,8 +22,12 @@ class _FPCAnimationState extends State<_FPCAnimationWidget> {
     this._animation = this.widget.animation ?? const FPCDefaultAnimation();
   }
 
-  void _changeAnimation(FPCAnimation animation) =>
-      setState(() => this._animation = animation);
+  void _changeAnimation(
+    FPCAnimation animation,
+  ) =>
+      setState(
+        () => this._animation = animation,
+      );
 
   @override
   Widget build(
@@ -58,6 +62,8 @@ class FPCAnimationScope extends InheritedWidget {
       FPCScopeMixin.maybeOf<FPCAnimationScope>(context);
 
   @override
-  bool updateShouldNotify(covariant FPCAnimationScope oldWidget) =>
+  bool updateShouldNotify(
+    covariant FPCAnimationScope oldWidget,
+  ) =>
       oldWidget.animation != this.animation;
 }

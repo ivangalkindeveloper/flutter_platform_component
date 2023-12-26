@@ -5,11 +5,13 @@ class FPCAnimatedSlowCrossFade extends StatelessWidget {
   const FPCAnimatedSlowCrossFade({
     super.key,
     required this.condition,
+    this.alignment = Alignment.topCenter,
     required this.firstChild,
     required this.secondChild,
   });
 
   final bool condition;
+  final AlignmentGeometry alignment;
   final Widget firstChild;
   final Widget secondChild;
 
@@ -23,14 +25,15 @@ class FPCAnimatedSlowCrossFade extends StatelessWidget {
     return AnimatedCrossFade(
       crossFadeState:
           this.condition ? CrossFadeState.showFirst : CrossFadeState.showSecond,
-      duration: duration.animationSlow,
+      alignment: this.alignment,
       firstCurve: animation.curve,
       firstChild: this.firstChild,
       reverseDuration: duration.animationSlow,
       secondCurve: animation.curve,
       secondChild: this.secondChild,
       sizeCurve: animation.curve,
-      alignment: Alignment.center,
+      //
+      duration: duration.animationSlow,
     );
   }
 }
