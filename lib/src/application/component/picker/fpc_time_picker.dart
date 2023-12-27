@@ -2,13 +2,7 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 import 'package:flutter/cupertino.dart'
-    show
-        CupertinoTheme,
-        CupertinoThemeData,
-        CupertinoTextThemeData,
-        CupertinoDynamicColor,
-        CupertinoDatePicker,
-        CupertinoDatePickerMode;
+    show CupertinoDatePicker, CupertinoDatePickerMode;
 import 'package:flutter/material.dart' show TimeOfDay, TimePickerDialog;
 
 //TODO Change props
@@ -40,14 +34,9 @@ class FPCTimePicker extends FPCPlatformWidget with FPCTimePickerMixin {
   ) {
     final FPCTimeOfDay timeOfDay = context.fpcTimeOfDay;
     final FPCDateTime dateTime = context.fpcDateTime;
-    final FPCTheme theme = context.fpcTheme;
 
     final double height =
         this.cupertinoHeight ?? (MediaQuery.of(context).size.height / 4);
-    final TextStyle? cupertinoStyle = this.cupertinoStyle ??
-        theme.cupertinoThemeData?.textTheme.pickerTextStyle.copyWith(
-          color: CupertinoDynamicColor.maybeResolve(theme.black, context),
-        );
     final TimeOfDay timeOfDayMinimum =
         timeOfDayRange?.minimum ?? timeOfDay.minimum;
     final TimeOfDay timeOfDayInitial =
@@ -78,24 +67,21 @@ class FPCTimePicker extends FPCPlatformWidget with FPCTimePickerMixin {
 
     return SizedBox(
       height: height,
-      child: CupertinoTheme(
-        data: CupertinoThemeData(
-          textTheme: CupertinoTextThemeData(
-            dateTimePickerTextStyle: cupertinoStyle,
-          ),
-        ),
-        child: CupertinoDatePicker(
-          mode: CupertinoDatePickerMode.time,
-          use24hFormat: true,
-          minimumDate: dateTimeMinimum,
-          initialDateTime: dateTimeInitial,
-          maximumDate: dateTimeMaximum,
-          onDateTimeChanged: (DateTime value) =>
-              this.cupertinoOnChanged?.call(TimeOfDay(
+      child: CupertinoDatePicker(
+        mode: CupertinoDatePickerMode.time,
+        use24hFormat: true,
+        minimumDate: dateTimeMinimum,
+        initialDateTime: dateTimeInitial,
+        maximumDate: dateTimeMaximum,
+        onDateTimeChanged: (
+          DateTime value,
+        ) =>
+            this.cupertinoOnChanged?.call(
+                  TimeOfDay(
                     hour: value.hour,
                     minute: value.minute,
-                  )),
-        ),
+                  ),
+                ),
       ),
     );
   }

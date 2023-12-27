@@ -253,7 +253,7 @@ extension FPCBuildContextExtension on BuildContext {
       // primarySwatch: ,
       scaffoldBackgroundColor: theme.backgroundScaffold,
       secondaryHeaderColor: theme.primary,
-      shadowColor: theme.black,
+      shadowColor: theme.blackAlways,
       splashColor: theme.greyLight,
       unselectedWidgetColor: theme.grey,
       fontFamily: font.familyRegular,
@@ -492,7 +492,7 @@ extension FPCBuildContextExtension on BuildContext {
       datePickerTheme: DatePickerThemeData(
         backgroundColor: theme.backgroundComponent,
         // elevation: ,
-        shadowColor: theme.black,
+        shadowColor: theme.blackAlways,
         surfaceTintColor: theme.backgroundComponent,
         // shape: ,
         headerBackgroundColor: theme.primary,

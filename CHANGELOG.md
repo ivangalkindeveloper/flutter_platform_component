@@ -5,11 +5,10 @@ Addings:
 * FPCAnimatedFractionallySizedBox;
 * AnimatedPhysicalModel;
 * FPCPopUpMenu;
-
-- AnimatedPositionedDirectional;
-- AnimatedRotation;
-- AnimatedScale;
-- AnimatedSlide;
+* AnimatedPositionedDirectional;
+* AnimatedRotation;
+* AnimatedScale;
+* AnimatedSlide;
 
 - FPCTooltip;
 - FPCDrawer;
