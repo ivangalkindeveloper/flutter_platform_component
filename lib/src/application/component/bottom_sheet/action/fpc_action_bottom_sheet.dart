@@ -201,7 +201,6 @@ class FPCActionBottomSheet<T> extends FPCPlatformWidget
       required FPCSize size,
       required FPCFont font,
       required Color backgroundColor,
-      required Color splashColor,
       required FPCActionBottomSheetItem item,
       required TextStyle itemStyle,
     }) {
@@ -210,7 +209,6 @@ class FPCActionBottomSheet<T> extends FPCPlatformWidget
 
       return ListTile(
         tileColor: backgroundColor,
-        splashColor: splashColor,
         contentPadding: EdgeInsets.symmetric(
           horizontal: size.s16,
           vertical: 0,
@@ -230,12 +228,11 @@ class FPCActionBottomSheet<T> extends FPCPlatformWidget
 
     final Color backgroundColor =
         this.backgroundColor ?? theme.backgroundComponent;
-    final Color splashColor = this.splashColor ?? theme.greyLight;
     final TextStyle titleStyle = TextStyle(
       color: this.titleStyle?.color ?? theme.black,
       fontSize: this.titleStyle?.fontSize ?? size.s16,
-      fontWeight: this.titleStyle?.fontWeight ?? font.weightRegular,
-      fontFamily: font.familyRegular,
+      fontWeight: this.titleStyle?.fontWeight ?? font.weightMedium,
+      fontFamily: this.titleStyle?.fontFamily ?? font.familyMedium,
       package: this.titleStyle?.fontFamily ?? font.package,
     );
     final TextStyle descriptionStyle = TextStyle(
@@ -272,7 +269,6 @@ class FPCActionBottomSheet<T> extends FPCPlatformWidget
               size: size,
               font: font,
               backgroundColor: backgroundColor,
-              splashColor: splashColor,
               item: item,
               itemStyle: itemStyle,
             ),
@@ -283,7 +279,6 @@ class FPCActionBottomSheet<T> extends FPCPlatformWidget
               size: size,
               font: font,
               backgroundColor: backgroundColor,
-              splashColor: splashColor,
               item: cancelItem!,
               itemStyle: itemStyle,
             ),

@@ -129,8 +129,7 @@ class FPCAppRouter extends FPCPlatformWidget {
         title: title,
         onGenerateTitle: onGenerateTitle,
         //
-        theme: context.fpcTheme.cupertinoThemeData ??
-            context.fpcMergedCupertinoTheme,
+        theme: context.fpcMergedCupertinoTheme,
         //
         locale: locale,
         localizationsDelegates: [
@@ -172,8 +171,7 @@ class FPCAppRouter extends FPCPlatformWidget {
         title: title,
         onGenerateTitle: onGenerateTitle,
         //
-        theme: context.fpcTheme.materialThemeData ??
-            context.fpcMergedMaterialTheme,
+        theme: context.fpcMergedMaterialTheme,
         themeMode: context.fpcTheme.materialThemeMode,
         //
         locale: locale,

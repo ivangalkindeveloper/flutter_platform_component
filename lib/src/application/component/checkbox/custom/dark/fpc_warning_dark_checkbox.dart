@@ -26,6 +26,7 @@ class FPCWarningDarkCheckbox extends StatelessWidget {
       onChanged: this.onChanged,
       unselectedColor: theme.grey,
       selectedColor: theme.warningDark,
+      checkColor: theme.white,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

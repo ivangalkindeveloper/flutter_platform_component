@@ -23,19 +23,19 @@ class FPCGradientPageIndicator extends StatelessWidget {
   final double? selectedWidth;
   final Duration? duration;
 
-  double _width({
-    required FPCSize size,
-    required int index,
-  }) {
+  double _width(
+    FPCSize size,
+    int index,
+  ) {
     final double unselectedWidth = this.unselectedWidth ?? size.s16 / 2;
     final double selectedWidth = this.selectedWidth ?? size.s16;
     final double width = this.index == index ? selectedWidth : unselectedWidth;
     return width;
   }
 
-  Gradient _gradient({
-    required int index,
-  }) {
+  Gradient _gradient(
+    int index,
+  ) {
     final Gradient gradient =
         this.index == index ? this.selectedGradident : this.unselectedGradident;
     return gradient;
@@ -62,8 +62,8 @@ class FPCGradientPageIndicator extends StatelessWidget {
               AnimatedContainer(
                 height: height,
                 width: this._width(
-                  size: size,
-                  index: index,
+                  size,
+                  index,
                 ),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
@@ -71,7 +71,7 @@ class FPCGradientPageIndicator extends StatelessWidget {
                     size.s32,
                   ),
                   gradient: this._gradient(
-                    index: index,
+                    index,
                   ),
                 ),
                 duration: durationBuild,

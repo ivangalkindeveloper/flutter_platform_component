@@ -26,6 +26,7 @@ class FPCGreyDarkCheckbox extends StatelessWidget {
       onChanged: this.onChanged,
       unselectedColor: theme.grey,
       selectedColor: theme.greyDark,
+      checkColor: theme.white,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

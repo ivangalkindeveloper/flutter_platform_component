@@ -55553,5 +55553,4 @@ class FPCTextStyle {
       package: font.package,
     );
   }
-
 }

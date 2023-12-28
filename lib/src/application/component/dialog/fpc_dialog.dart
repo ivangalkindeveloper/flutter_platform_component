@@ -33,11 +33,8 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
   Widget cupertino(
     BuildContext context,
   ) {
-    final FPCTheme theme = context.fpcTheme;
-    final FPCFont font = context.fpcFont;
-
     Widget? buildContent({
-      required TextStyle descriptionStyle,
+      required TextStyle? style,
     }) {
       if (this.content != null) {
         return this.content!;
@@ -46,7 +43,7 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
       if (this.description != null) {
         return Text(
           this.description!,
-          style: descriptionStyle,
+          style: style,
         );
       }
 
@@ -55,7 +52,7 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
 
     CupertinoDialogAction buildItem({
       required FPCDialogItem item,
-      required TextStyle itemStyle,
+      required TextStyle? itemStyle,
     }) =>
         CupertinoDialogAction(
           textStyle: itemStyle,
@@ -64,31 +61,9 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
           onPressed: item.onPressed,
           child: Text(
             item.title,
-            style: itemStyle,
+            style: this.itemStyle,
           ),
         );
-
-    final TextStyle titleStyle = TextStyle(
-      color: this.titleStyle?.color ?? theme.black,
-      fontSize: this.titleStyle?.fontSize,
-      fontWeight: this.titleStyle?.fontWeight,
-      fontFamily: this.titleStyle?.fontFamily,
-      package: font.package,
-    );
-    final TextStyle descriptionStyle = TextStyle(
-      color: this.descriptionStyle?.color ?? theme.black,
-      fontSize: this.descriptionStyle?.fontSize,
-      fontWeight: this.descriptionStyle?.fontWeight,
-      fontFamily: this.descriptionStyle?.fontFamily,
-      package: font.package,
-    );
-    final TextStyle itemStyle = TextStyle(
-      color: this.itemStyle?.color ?? theme.primary,
-      fontSize: this.itemStyle?.fontSize,
-      fontWeight: this.itemStyle?.fontWeight,
-      fontFamily: this.itemStyle?.fontFamily,
-      package: font.package,
-    );
 
     return CupertinoAlertDialog(
       title: Text(
@@ -96,7 +71,7 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
         style: titleStyle,
       ),
       content: buildContent(
-        descriptionStyle: descriptionStyle,
+        style: this.descriptionStyle,
       ),
       actions: this
           .items
@@ -106,7 +81,7 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
             ) =>
                 buildItem(
               item: item,
-              itemStyle: itemStyle,
+              itemStyle: this.itemStyle,
             ),
           )
           .toList(),
@@ -118,12 +93,9 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
     BuildContext context,
   ) {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
-    final FPCTheme theme = context.fpcTheme;
-    final FPCSize size = context.fpcSize;
-    final FPCFont font = context.fpcFont;
 
     Widget? buildContent({
-      required TextStyle descriptionStyle,
+      required TextStyle? style,
     }) {
       if (this.content != null) {
         return this.content!;
@@ -141,13 +113,12 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
 
     TextButton buildItem({
       required FPCDialogItem item,
-      required TextStyle itemStyle,
+      required TextStyle? style,
       required BorderRadius borderRadius,
     }) =>
         TextButton(
           style: TextButton.styleFrom(
             elevation: 0,
-            foregroundColor: itemStyle.color,
             shape: RoundedRectangleBorder(
               borderRadius: borderRadius,
             ),
@@ -159,44 +130,21 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
           ),
         );
 
-    final Color backgroundColor =
-        this.backgroundColor ?? theme.backgroundScaffold;
     final BorderRadius borderRadius =
         this.borderRadius ?? sizeScope.borderRadiusDialog;
-    final TextStyle titleStyle = TextStyle(
-      color: this.titleStyle?.color ?? theme.black,
-      fontSize: this.titleStyle?.fontSize ?? size.s16,
-      fontWeight: this.titleStyle?.fontWeight ?? font.weightMedium,
-      fontFamily: this.titleStyle?.fontFamily ?? font.familyMedium,
-      package: font.package,
-    );
-    final TextStyle descriptionStyle = TextStyle(
-      color: this.descriptionStyle?.color ?? theme.black,
-      fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-      fontWeight: this.descriptionStyle?.fontWeight ?? font.weightRegular,
-      fontFamily: this.descriptionStyle?.fontFamily ?? font.familyRegular,
-      package: font.package,
-    );
-    final TextStyle itemStyle = TextStyle(
-      color: this.itemStyle?.color ?? theme.primary,
-      fontSize: this.itemStyle?.fontSize ?? size.s16,
-      fontWeight: this.itemStyle?.fontWeight ?? font.weightMedium,
-      fontFamily: this.itemStyle?.fontFamily ?? font.familyMedium,
-      package: font.package,
-    );
 
     return AlertDialog(
       elevation: 0,
-      backgroundColor: backgroundColor,
+      backgroundColor: this.backgroundColor,
       shape: RoundedRectangleBorder(
         borderRadius: borderRadius,
       ),
       title: Text(
         this.title,
-        style: titleStyle,
+        style: this.titleStyle,
       ),
       content: buildContent(
-        descriptionStyle: descriptionStyle,
+        style: this.descriptionStyle,
       ),
       actions: this
           .items
@@ -206,7 +154,7 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
             ) =>
                 buildItem(
               item: item,
-              itemStyle: itemStyle,
+              style: this.itemStyle,
               borderRadius: borderRadius,
             ),
           )

@@ -10,6 +10,7 @@ class FPCCheckbox extends FPCPlatformWidget {
     required this.onChanged,
     required this.unselectedColor,
     required this.selectedColor,
+    required this.checkColor,
     this.isDisabled = false,
     this.disabledColor,
   });
@@ -18,6 +19,7 @@ class FPCCheckbox extends FPCPlatformWidget {
   final void Function(bool) onChanged;
   final Color unselectedColor;
   final Color selectedColor;
+  final Color checkColor;
   final bool isDisabled;
   final Color? disabledColor;
 
@@ -25,7 +27,6 @@ class FPCCheckbox extends FPCPlatformWidget {
   Widget cupertino(
     BuildContext context,
   ) {
-    final FPCTheme theme = context.fpcTheme;
     final FPCSize size = context.fpcSize;
 
     return Material(
@@ -51,7 +52,7 @@ class FPCCheckbox extends FPCPlatformWidget {
               );
             },
             activeColor: this.selectedColor,
-            checkColor: theme.white,
+            checkColor: this.checkColor,
             splashRadius: 0,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(
@@ -72,7 +73,6 @@ class FPCCheckbox extends FPCPlatformWidget {
   Widget material(
     BuildContext context,
   ) {
-    final FPCTheme theme = context.fpcTheme;
     final FPCSize size = context.fpcSize;
 
     return FPCDisabledWrapper(
@@ -96,7 +96,7 @@ class FPCCheckbox extends FPCPlatformWidget {
             );
           },
           activeColor: this.selectedColor,
-          checkColor: theme.white,
+          checkColor: this.checkColor,
           side: BorderSide(
             width: size.s10 / 5,
             color: this.unselectedColor,

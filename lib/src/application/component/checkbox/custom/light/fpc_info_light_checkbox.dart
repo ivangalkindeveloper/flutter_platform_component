@@ -26,6 +26,7 @@ class FPCInfoLightCheckbox extends StatelessWidget {
       onChanged: this.onChanged,
       unselectedColor: theme.grey,
       selectedColor: theme.infoLight,
+      checkColor: theme.white,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

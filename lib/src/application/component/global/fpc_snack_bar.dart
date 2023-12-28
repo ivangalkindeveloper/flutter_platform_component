@@ -23,7 +23,10 @@ ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showFPCSnackBar(
 
   final ScaffoldMessengerState messengerState = ScaffoldMessenger.of(context);
   final Duration durationMethod = duration ?? durationContext.snackbar;
-  final EdgeInsets methodPadding = padding ?? EdgeInsets.all(size.s16);
+  final EdgeInsets methodPadding = padding ??
+      EdgeInsets.all(
+        size.s16,
+      );
 
   messengerState.hideCurrentSnackBar();
   haptic.selection();
@@ -45,4 +48,6 @@ ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showFPCSnackBar(
 void hideFPCSnackBar(
   BuildContext context,
 ) =>
-    ScaffoldMessenger.of(context).hideCurrentSnackBar();
+    ScaffoldMessenger.of(
+      context,
+    ).hideCurrentSnackBar();

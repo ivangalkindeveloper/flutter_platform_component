@@ -11,9 +11,6 @@ Future<DateTime?> showFPCDatePicker(
   FPCDateTimeRange? dateTimeRange,
   required Widget Function(BuildContext) cupertinoBottomSheetBuilder,
   Locale? materialDialogLocale,
-  Color? materialDialogBackgroundColor,
-  Color? materialDialogColor,
-  BorderRadius? materialDialogBorderRadius,
   Color? barrierColor,
 }) {
   final FPCThemeScope themeScope = context.fpcThemeScope;
@@ -45,14 +42,10 @@ Future<DateTime?> showFPCDatePicker(
         locale: materialDialogLocale,
         builder: (
           BuildContext context,
-          Widget? materialDialog,
+          Widget? child,
         ) =>
             FPCDatePicker(
           dateTimeRange: dateTimeRange,
-          materialDialog: materialDialog,
-          materialDialogBackgroundColor: materialDialogBackgroundColor,
-          materialDialogColor: materialDialogColor,
-          materialDialogBorderRadius: materialDialogBorderRadius,
         ),
       );
   }
@@ -63,9 +56,6 @@ Future<TimeOfDay?> showFPCTimePicker(
   bool useRootNavigator = false,
   FPCTimeOfDayRange? timeOfDayRange,
   required Widget Function(BuildContext) cupertinoBottomSheetBuilder,
-  Color? materialDialogBackgroundColor,
-  Color? materialDialogColor,
-  BorderRadius? materialDialogBorderRadius,
   Color? barrierColor,
 }) {
   final FPCThemeScope themeScope = context.fpcThemeScope;
@@ -93,14 +83,10 @@ Future<TimeOfDay?> showFPCTimePicker(
         initialTime: timeOfDayInitial,
         builder: (
           BuildContext context,
-          Widget? materialDialog,
+          Widget? child,
         ) =>
             FPCTimePicker(
           timeOfDayRange: timeOfDayRange,
-          materialDialog: materialDialog,
-          materialDialogBackgroundColor: materialDialogBackgroundColor,
-          materialDialogColor: materialDialogColor,
-          materialDialogBorderRadius: materialDialogBorderRadius,
         ),
       );
   }

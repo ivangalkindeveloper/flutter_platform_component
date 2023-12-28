@@ -57,41 +57,20 @@ class FPCBottomNavigationBar extends FPCPlatformWidget {
   @override
   Widget material(
     BuildContext context,
-  ) {
-    final FPCTheme theme = context.fpcTheme;
-    final FPCFont font = context.fpcFont;
-
-    final Color backgroundColor =
-        this.backgroundColor ?? theme.backgroundComponent;
-    final Color unselectedColor = this.unselectedColor ?? theme.grey;
-    final TextStyle unselectedStyle = TextStyle(
-      color: this.unselectedStyle?.color ?? unselectedColor,
-      fontWeight: this.unselectedStyle?.fontWeight ?? font.weightRegular,
-      fontFamily: this.unselectedStyle?.fontFamily ?? font.familyRegular,
-      package: font.package,
-    );
-    final Color selectedColor = this.selectedColor ?? theme.primary;
-    final TextStyle selectedStyle = TextStyle(
-      color: this.unselectedStyle?.color ?? selectedColor,
-      fontWeight: this.selectedStyle?.fontWeight ?? font.weightRegular,
-      fontFamily: this.selectedStyle?.fontFamily ?? font.familyRegular,
-      package: font.package,
-    );
-
-    return BottomNavigationBar(
-      elevation: 0,
-      type: BottomNavigationBarType.fixed,
-      enableFeedback: false,
-      showSelectedLabels: true,
-      showUnselectedLabels: true,
-      currentIndex: this.index,
-      items: this.items,
-      onTap: this.onPressed,
-      backgroundColor: backgroundColor,
-      unselectedItemColor: unselectedColor,
-      selectedItemColor: selectedColor,
-      unselectedLabelStyle: unselectedStyle,
-      selectedLabelStyle: selectedStyle,
-    );
-  }
+  ) =>
+      BottomNavigationBar(
+        elevation: 0,
+        type: BottomNavigationBarType.fixed,
+        enableFeedback: false,
+        showSelectedLabels: true,
+        showUnselectedLabels: true,
+        currentIndex: this.index,
+        items: this.items,
+        onTap: this.onPressed,
+        backgroundColor: this.backgroundColor,
+        unselectedItemColor: this.unselectedColor,
+        selectedItemColor: this.selectedColor,
+        unselectedLabelStyle: this.unselectedStyle,
+        selectedLabelStyle: this.selectedStyle,
+      );
 }

@@ -34,7 +34,10 @@ class FPCSmallBottomSheet<T> extends StatelessWidget
         this.backgroundColor ?? theme.backgroundScaffold;
     final double barHeight = this.barHeight ?? size.s16 / 4;
     final double barWidth = this.barWidth ?? size.s32;
-    final EdgeInsets padding = this.padding ?? EdgeInsets.all(size.s16);
+    final EdgeInsets padding = this.padding ??
+        EdgeInsets.all(
+          size.s16,
+        );
 
     return SafeArea(
       bottom: false,

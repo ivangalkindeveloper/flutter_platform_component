@@ -89,15 +89,20 @@ class _FPCGradientCodeFieldState extends State<FPCGradientCodeField>
       vsync: this,
       duration: this._duration.animationSlow,
     );
-    this._animationController.addStatusListener(this._controllerListener);
+    this._animationController.addStatusListener(
+          this._controllerListener,
+        );
 
     // Error
-    this._errorSubscription =
-        this.widget.errorController?.stream.listen(this._errorListener);
+    this._errorSubscription = this.widget.errorController?.stream.listen(
+          this._errorListener,
+        );
   }
 
   @override
-  void didUpdateWidget(covariant FPCGradientCodeField oldWidget) {
+  void didUpdateWidget(
+    covariant FPCGradientCodeField oldWidget,
+  ) {
     super.didUpdateWidget(oldWidget);
     if (this.mounted == false) {
       return;
@@ -105,25 +110,32 @@ class _FPCGradientCodeFieldState extends State<FPCGradientCodeField>
 
     // Controller
     if (this._animationController.duration != this._duration.animationSlow) {
-      this._animationController.removeStatusListener(this._controllerListener);
+      this._animationController.removeStatusListener(
+            this._controllerListener,
+          );
       this._animationController.dispose();
       this._animationController = AnimationController(
         vsync: this,
         duration: this._duration.animationSlow,
       );
-      this._animationController.addStatusListener(this._controllerListener);
+      this._animationController.addStatusListener(
+            this._controllerListener,
+          );
     }
 
     // Error
     this._errorSubscription?.cancel();
-    this._errorSubscription =
-        this.widget.errorController?.stream.listen(this._errorListener);
+    this._errorSubscription = this.widget.errorController?.stream.listen(
+          this._errorListener,
+        );
   }
 
   @override
   void dispose() {
     // Controller
-    this._animationController.removeStatusListener(this._controllerListener);
+    this._animationController.removeStatusListener(
+          this._controllerListener,
+        );
     this._animationController.dispose();
 
     // Error
@@ -131,7 +143,9 @@ class _FPCGradientCodeFieldState extends State<FPCGradientCodeField>
     super.dispose();
   }
 
-  void _controllerListener(AnimationStatus status) {
+  void _controllerListener(
+    AnimationStatus status,
+  ) {
     if (status == AnimationStatus.completed) {
       this._animationController.reverse();
     }
@@ -218,7 +232,10 @@ class _FPCGradientCodeFieldState extends State<FPCGradientCodeField>
         SlideTransition(
           position: Tween<Offset>(
             begin: Offset.zero,
-            end: const Offset(0.1, 0.0),
+            end: const Offset(
+              0.1,
+              0.0,
+            ),
           ).animate(
             CurvedAnimation(
               parent: this._animationController,

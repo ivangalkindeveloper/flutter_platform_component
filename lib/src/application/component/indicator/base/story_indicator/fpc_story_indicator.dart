@@ -17,7 +17,9 @@ class FPCStoryIndicator extends StatelessWidget {
   final int index;
   final double value;
 
-  double _value({required int index}) {
+  double _value(
+    int index,
+  ) {
     if (index < this.index) {
       return 1;
     }
@@ -46,7 +48,7 @@ class FPCStoryIndicator extends StatelessWidget {
                     backgroundColor: this.backgroundColor,
                     color: this.color,
                     value: this._value(
-                      index: index,
+                      index,
                     ),
                   ),
                 ),

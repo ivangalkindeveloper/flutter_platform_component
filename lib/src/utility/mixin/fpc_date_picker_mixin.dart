@@ -8,9 +8,6 @@ mixin FPCDatePickerMixin on Widget {
     FPCDateTimeRange? dateTimeRange,
     required Widget Function(BuildContext) cupertinoBottomSheetBuilder,
     Locale? materialDialogLocale,
-    Color? materialDialogBackgroundColor,
-    Color? materialDialogColor,
-    BorderRadius? materialDialogBorderRadius,
     Color? barrierColor,
   }) =>
       showFPCDatePicker(
@@ -19,9 +16,6 @@ mixin FPCDatePickerMixin on Widget {
         dateTimeRange: dateTimeRange,
         cupertinoBottomSheetBuilder: cupertinoBottomSheetBuilder,
         materialDialogLocale: materialDialogLocale,
-        materialDialogBackgroundColor: materialDialogBackgroundColor,
-        materialDialogColor: materialDialogColor,
-        materialDialogBorderRadius: materialDialogBorderRadius,
         barrierColor: barrierColor,
       );
 }

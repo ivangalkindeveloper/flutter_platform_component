@@ -2,6 +2,7 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
 
+import 'package:flutter/material.dart' show Colors;
 import 'package:flutter/cupertino.dart'
     show CupertinoListSection, CupertinoListTile;
 
@@ -38,31 +39,11 @@ class FPCListSection extends FPCPlatformWidget {
     final FPCSizeScope sizeScope = context.fpcSizeScope;
     final FPCTheme theme = context.fpcTheme;
     final FPCSize size = context.fpcSize;
-    final FPCFont font = context.fpcFont;
 
     final Color backgroundColor =
         this.backgroundColor ?? theme.backgroundComponent;
     final BorderRadius borderRadius =
         this.borderRadius ?? sizeScope.borderRadiusCard;
-    final EdgeInsets padding = this.padding ??
-        EdgeInsets.symmetric(
-          vertical: size.s16 / 2,
-          horizontal: size.s16,
-        );
-    final TextStyle titleStyle = TextStyle(
-      color: this.titleStyle?.color ?? theme.black,
-      fontSize: this.titleStyle?.fontSize ?? size.s16,
-      fontWeight: this.titleStyle?.fontWeight ?? font.weightMedium,
-      fontFamily: this.titleStyle?.fontFamily ?? font.familyMedium,
-      package: font.package,
-    );
-    final TextStyle descriptionStyle = TextStyle(
-      color: this.descriptionStyle?.color ?? theme.grey,
-      fontSize: this.descriptionStyle?.fontSize ?? size.s14,
-      fontWeight: this.descriptionStyle?.fontWeight ?? font.weightRegular,
-      fontFamily: this.descriptionStyle?.fontFamily ?? font.familyRegular,
-      package: font.package,
-    );
     final double separatorPadding = this.separatorPadding ?? size.s16;
 
     return FPCDisabledWrapper(
@@ -72,9 +53,9 @@ class FPCListSection extends FPCPlatformWidget {
       children: [
         CupertinoListSection.insetGrouped(
           margin: EdgeInsets.zero,
-          backgroundColor: backgroundColor,
+          backgroundColor: Colors.transparent,
           decoration: BoxDecoration(
-            borderRadius: borderRadius,
+            borderRadius: BorderRadius.circular(32),
           ),
           dividerMargin: separatorPadding,
           children: this.items.map(
@@ -89,6 +70,7 @@ class FPCListSection extends FPCPlatformWidget {
                   : null;
 
               return CupertinoListTile(
+                backgroundColor: backgroundColor,
                 padding: padding,
                 leading: item.prefix,
                 title: Text(
@@ -127,8 +109,8 @@ class FPCListSection extends FPCPlatformWidget {
     final TextStyle titleStyle = TextStyle(
       color: this.titleStyle?.color ?? theme.black,
       fontSize: this.titleStyle?.fontSize ?? size.s16,
-      fontWeight: this.titleStyle?.fontWeight ?? font.weightMedium,
-      fontFamily: this.titleStyle?.fontFamily ?? font.familyMedium,
+      fontWeight: this.titleStyle?.fontWeight ?? font.weightRegular,
+      fontFamily: this.titleStyle?.fontFamily ?? font.familyRegular,
       package: font.package,
     );
     final TextStyle descriptionStyle = TextStyle(

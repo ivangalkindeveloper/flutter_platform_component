@@ -2,14 +2,7 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 import 'package:flutter/material.dart'
-    show
-        Colors,
-        Material,
-        Radio,
-        Theme,
-        ThemeData,
-        MaterialState,
-        MaterialStateProperty;
+    show Colors, Material, Radio, MaterialState, MaterialStateProperty;
 
 class FPCRadio<T> extends FPCPlatformWidget {
   const FPCRadio({
@@ -51,25 +44,29 @@ class FPCRadio<T> extends FPCPlatformWidget {
         ),
         isDisabled: this.isDisabled,
         children: [
-          Theme(
-            data: ThemeData(
-              unselectedWidgetColor: this.unselectedColor,
+          Radio<T>(
+            value: this.value,
+            groupValue: this.groupValue,
+            onChanged: onChanged,
+            fillColor: MaterialStateProperty.resolveWith(
+              (
+                Set<MaterialState> states,
+              ) {
+                if (states.contains(MaterialState.selected)) {
+                  return this.selectedColor;
+                }
+                return this.unselectedColor;
+              },
             ),
-            child: Radio<T>(
-              value: this.value,
-              groupValue: this.groupValue,
-              onChanged: onChanged,
-              activeColor: this.selectedColor,
-              focusColor: Colors.transparent,
-              hoverColor: Colors.transparent,
-              overlayColor: MaterialStateProperty.resolveWith(
-                (
-                  Set<MaterialState> states,
-                ) =>
-                    Colors.transparent,
-              ),
-              toggleable: this.isToggleable,
+            focusColor: Colors.transparent,
+            hoverColor: Colors.transparent,
+            overlayColor: MaterialStateProperty.resolveWith(
+              (
+                Set<MaterialState> states,
+              ) =>
+                  Colors.transparent,
             ),
+            toggleable: this.isToggleable,
           ),
         ],
       ),
@@ -94,17 +91,21 @@ class FPCRadio<T> extends FPCPlatformWidget {
         ),
         isDisabled: this.isDisabled,
         children: [
-          Theme(
-            data: ThemeData(
-              unselectedWidgetColor: this.unselectedColor,
+          Radio<T>(
+            value: this.value,
+            groupValue: this.groupValue,
+            onChanged: onChanged,
+            fillColor: MaterialStateProperty.resolveWith(
+              (
+                Set<MaterialState> states,
+              ) {
+                if (states.contains(MaterialState.selected)) {
+                  return this.selectedColor;
+                }
+                return this.unselectedColor;
+              },
             ),
-            child: Radio<T>(
-              value: this.value,
-              groupValue: this.groupValue,
-              onChanged: onChanged,
-              activeColor: this.selectedColor,
-              toggleable: this.isToggleable,
-            ),
+            toggleable: this.isToggleable,
           ),
         ],
       ),

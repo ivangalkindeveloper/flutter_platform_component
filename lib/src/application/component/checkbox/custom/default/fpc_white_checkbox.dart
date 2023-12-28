@@ -26,6 +26,7 @@ class FPCWhiteCheckbox extends StatelessWidget {
       onChanged: this.onChanged,
       unselectedColor: theme.grey,
       selectedColor: theme.white,
+      checkColor: theme.black,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

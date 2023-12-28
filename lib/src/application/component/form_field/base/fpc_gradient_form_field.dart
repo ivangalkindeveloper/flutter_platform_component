@@ -270,22 +270,30 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
     // Controller
     if (this.widget.controller != oldWidget.controller) {
       if (this.widget.controller != null) {
-        this._controller.removeListener(this._controllerListener);
+        this._controller.removeListener(
+              this._controllerListener,
+            );
         this._controller.dispose();
       }
       this._controller = this.widget.controller ?? TextEditingController();
-      this._controller.addListener(this._controllerListener);
+      this._controller.addListener(
+            this._controllerListener,
+          );
       this._validator(this._controller.text);
     }
 
     // FocusNode
     if (oldWidget.focusNode != this.widget.focusNode) {
       if (this.widget.focusNode != null) {
-        this._focusNode.removeListener(this._focusNodeListener);
+        this._focusNode.removeListener(
+              this._focusNodeListener,
+            );
         this._focusNode.dispose();
       }
       this._focusNode = this.widget.focusNode ?? FocusNode();
-      this._focusNode.addListener(this._focusNodeListener);
+      this._focusNode.addListener(
+            this._focusNodeListener,
+          );
     }
 
     // ErrorText
@@ -303,13 +311,17 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
   void dispose() {
     super.dispose();
     // Controller
-    this._controller.removeListener(this._controllerListener);
+    this._controller.removeListener(
+          this._controllerListener,
+        );
     if (this.widget.controller == null) {
       this._controller.dispose();
     }
 
     // FocusNode
-    this._focusNode.removeListener(this._focusNodeListener);
+    this._focusNode.removeListener(
+          this._focusNodeListener,
+        );
     if (this.widget.focusNode == null) {
       this._focusNode.dispose();
     }
@@ -322,7 +334,10 @@ class _FPCGradientFormFieldState extends State<FPCGradientFormField>
 
     if (this._focusNode.hasPrimaryFocus == false &&
         this._controller.text.isNotEmpty) {
-      setState(() {});
+      setState(() {
+        this._isValidationError = false;
+        this._validationText = "";
+      });
     }
   }
 

@@ -5,7 +5,6 @@ import 'package:flutter/cupertino.dart'
     show CupertinoDatePicker, CupertinoDatePickerMode;
 import 'package:flutter/material.dart' show TimeOfDay, TimePickerDialog;
 
-//TODO Change props
 class FPCTimePicker extends FPCPlatformWidget with FPCTimePickerMixin {
   FPCTimePicker({
     super.key,
@@ -13,20 +12,12 @@ class FPCTimePicker extends FPCPlatformWidget with FPCTimePickerMixin {
     this.cupertinoHeight,
     this.cupertinoStyle,
     this.cupertinoOnChanged,
-    this.materialDialog,
-    this.materialDialogBackgroundColor,
-    this.materialDialogColor,
-    this.materialDialogBorderRadius,
   });
 
   final FPCTimeOfDayRange? timeOfDayRange;
   final double? cupertinoHeight;
   final TextStyle? cupertinoStyle;
   final void Function(TimeOfDay)? cupertinoOnChanged;
-  final Widget? materialDialog;
-  final Color? materialDialogBackgroundColor;
-  final Color? materialDialogColor;
-  final BorderRadius? materialDialogBorderRadius;
 
   @override
   Widget cupertino(
@@ -35,8 +26,11 @@ class FPCTimePicker extends FPCPlatformWidget with FPCTimePickerMixin {
     final FPCTimeOfDay timeOfDay = context.fpcTimeOfDay;
     final FPCDateTime dateTime = context.fpcDateTime;
 
-    final double height =
-        this.cupertinoHeight ?? (MediaQuery.of(context).size.height / 4);
+    final double height = this.cupertinoHeight ??
+        (MediaQuery.of(
+              context,
+            ).size.height /
+            4);
     final TimeOfDay timeOfDayMinimum =
         timeOfDayRange?.minimum ?? timeOfDay.minimum;
     final TimeOfDay timeOfDayInitial =
@@ -64,6 +58,10 @@ class FPCTimePicker extends FPCPlatformWidget with FPCTimePickerMixin {
       timeOfDayMaximum.hour,
       timeOfDayMaximum.minute,
     );
+    void Function(TimeOfDay)? onChanged = this.cupertinoOnChanged ??
+        (
+          TimeOfDay value,
+        ) {};
 
     return SizedBox(
       height: height,
@@ -76,12 +74,12 @@ class FPCTimePicker extends FPCPlatformWidget with FPCTimePickerMixin {
         onDateTimeChanged: (
           DateTime value,
         ) =>
-            this.cupertinoOnChanged?.call(
-                  TimeOfDay(
-                    hour: value.hour,
-                    minute: value.minute,
-                  ),
-                ),
+            onChanged(
+          TimeOfDay(
+            hour: value.hour,
+            minute: value.minute,
+          ),
+        ),
       ),
     );
   }

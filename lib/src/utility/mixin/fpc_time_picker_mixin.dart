@@ -9,9 +9,6 @@ mixin FPCTimePickerMixin on Widget {
     bool useRootNavigator = false,
     FPCTimeOfDayRange? timeOfDayRange,
     required Widget Function(BuildContext) cupertinoBottomSheetBuilder,
-    Color? materialDialogBackgroundColor,
-    Color? materialDialogColor,
-    BorderRadius? materialDialogBorderRadius,
     Color? barrierColor,
   }) =>
       showFPCTimePicker(
@@ -19,9 +16,6 @@ mixin FPCTimePickerMixin on Widget {
         useRootNavigator: useRootNavigator,
         timeOfDayRange: timeOfDayRange,
         cupertinoBottomSheetBuilder: cupertinoBottomSheetBuilder,
-        materialDialogBackgroundColor: materialDialogBackgroundColor,
-        materialDialogColor: materialDialogColor,
-        materialDialogBorderRadius: materialDialogBorderRadius,
         barrierColor: barrierColor,
       );
 }

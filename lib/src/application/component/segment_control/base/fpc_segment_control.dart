@@ -418,53 +418,53 @@ class _FPCSegmentControlButton<T> extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           this._expandedWrapper(
-            child: Padding(
-              padding: padding,
-              child: SizedBox(
-                height: this.height,
-                child: DecoratedBox(
-                  decoration: ShapeDecoration(
-                    shape: FPCCustomRoundedRectangleBorder(
-                      topSide: BorderSide(
-                        color: borderColor,
-                        width: borderWidth,
-                      ),
-                      bottomSide: BorderSide(
-                        color: borderColor,
-                        width: borderWidth,
-                      ),
-                      leftSide: BorderSide(
-                        color: borderColor,
-                        width: leftBorderWidth,
-                      ),
-                      rightSide: BorderSide(
-                        color: borderColor,
-                        width: rightBorderWidth,
-                      ),
-                      topLeftCornerSide: BorderSide(
-                        color: borderColor,
-                        width: borderWidth,
-                      ),
-                      topRightCornerSide: BorderSide(
-                        color: borderColor,
-                        width: borderWidth,
-                      ),
-                      bottomLeftCornerSide: BorderSide(
-                        color: borderColor,
-                        width: borderWidth,
-                      ),
-                      bottomRightCornerSide: BorderSide(
-                        color: borderColor,
-                        width: borderWidth,
-                      ),
-                      borderRadius: BorderRadius.only(
-                        topLeft: topLeft,
-                        topRight: topRight,
-                        bottomLeft: bottomLeft,
-                        bottomRight: bottomRight,
-                      ),
+            child: SizedBox(
+              height: this.height,
+              child: DecoratedBox(
+                decoration: ShapeDecoration(
+                  shape: FPCCustomRoundedRectangleBorder(
+                    topSide: BorderSide(
+                      color: borderColor,
+                      width: borderWidth,
+                    ),
+                    bottomSide: BorderSide(
+                      color: borderColor,
+                      width: borderWidth,
+                    ),
+                    leftSide: BorderSide(
+                      color: borderColor,
+                      width: leftBorderWidth,
+                    ),
+                    rightSide: BorderSide(
+                      color: borderColor,
+                      width: rightBorderWidth,
+                    ),
+                    topLeftCornerSide: BorderSide(
+                      color: borderColor,
+                      width: borderWidth,
+                    ),
+                    topRightCornerSide: BorderSide(
+                      color: borderColor,
+                      width: borderWidth,
+                    ),
+                    bottomLeftCornerSide: BorderSide(
+                      color: borderColor,
+                      width: borderWidth,
+                    ),
+                    bottomRightCornerSide: BorderSide(
+                      color: borderColor,
+                      width: borderWidth,
+                    ),
+                    borderRadius: BorderRadius.only(
+                      topLeft: topLeft,
+                      topRight: topRight,
+                      bottomLeft: bottomLeft,
+                      bottomRight: bottomRight,
                     ),
                   ),
+                ),
+                child: Padding(
+                  padding: padding,
                   child: FPCButtonRowChild(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,

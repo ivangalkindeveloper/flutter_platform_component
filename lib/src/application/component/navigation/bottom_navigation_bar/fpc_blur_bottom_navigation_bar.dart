@@ -70,49 +70,30 @@ class FPCBlurBottomNavigationBar extends FPCPlatformWidget {
   @override
   Widget material(
     BuildContext context,
-  ) {
-    final FPCTheme theme = context.fpcTheme;
-    final FPCFont font = context.fpcFont;
-
-    final Color unselectedColor = this.unselectedColor ?? theme.grey;
-    final TextStyle unselectedStyle = TextStyle(
-      color: this.unselectedStyle?.color ?? unselectedColor,
-      fontWeight: this.unselectedStyle?.fontWeight ?? font.weightRegular,
-      fontFamily: this.unselectedStyle?.fontFamily ?? font.familyRegular,
-      package: font.package,
-    );
-    final Color selectedColor = this.selectedColor ?? theme.primary;
-    final TextStyle selectedStyle = TextStyle(
-      color: this.unselectedStyle?.color ?? selectedColor,
-      fontWeight: this.selectedStyle?.fontWeight ?? font.weightRegular,
-      fontFamily: this.selectedStyle?.fontFamily ?? font.familyRegular,
-      package: font.package,
-    );
-
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        FPCBlur(
-          color: this.blurColor,
-          opacity: this.blurOpacity,
-          filter: this.blurFilter,
-          child: BottomNavigationBar(
-            elevation: 0,
-            type: BottomNavigationBarType.fixed,
-            enableFeedback: false,
-            showSelectedLabels: true,
-            showUnselectedLabels: true,
-            currentIndex: this.index,
-            items: this.items,
-            onTap: this.onPressed,
-            backgroundColor: Colors.transparent,
-            unselectedItemColor: unselectedColor,
-            selectedItemColor: selectedColor,
-            unselectedLabelStyle: unselectedStyle,
-            selectedLabelStyle: selectedStyle,
+  ) =>
+      Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          FPCBlur(
+            color: this.blurColor,
+            opacity: this.blurOpacity,
+            filter: this.blurFilter,
+            child: BottomNavigationBar(
+              elevation: 0,
+              type: BottomNavigationBarType.fixed,
+              enableFeedback: false,
+              showSelectedLabels: true,
+              showUnselectedLabels: true,
+              currentIndex: this.index,
+              items: this.items,
+              onTap: this.onPressed,
+              backgroundColor: Colors.transparent,
+              unselectedItemColor: this.unselectedColor,
+              selectedItemColor: this.selectedColor,
+              unselectedLabelStyle: this.unselectedStyle,
+              selectedLabelStyle: this.selectedStyle,
+            ),
           ),
-        ),
-      ],
-    );
-  }
+        ],
+      );
 }

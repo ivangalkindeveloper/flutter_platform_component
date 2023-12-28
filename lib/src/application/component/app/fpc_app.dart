@@ -137,8 +137,7 @@ class FPCApp extends FPCPlatformWidget {
         title: this.title,
         onGenerateTitle: this.onGenerateTitle,
         //
-        theme: context.fpcTheme.cupertinoThemeData ??
-            context.fpcMergedCupertinoTheme,
+        theme: context.fpcMergedCupertinoTheme,
         //
         locale: this.locale,
         localizationsDelegates: [
@@ -183,8 +182,7 @@ class FPCApp extends FPCPlatformWidget {
         title: this.title,
         onGenerateTitle: this.onGenerateTitle,
         //
-        theme: context.fpcTheme.materialThemeData ??
-            context.fpcMergedMaterialTheme,
+        theme: context.fpcMergedMaterialTheme,
         themeMode: context.fpcTheme.materialThemeMode,
         //
         locale: this.locale,

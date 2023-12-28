@@ -26,6 +26,7 @@ class FPCAccentCheckbox extends StatelessWidget {
       onChanged: this.onChanged,
       unselectedColor: theme.grey,
       selectedColor: theme.accent,
+      checkColor: theme.accentInternal,
       isDisabled: this.isDisabled,
       disabledColor: this.disabledColor,
     );

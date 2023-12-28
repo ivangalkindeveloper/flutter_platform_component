@@ -41,6 +41,7 @@ class FPCAnimatedFastPhysicalModel extends StatelessWidget {
       onEnd: this.onEnd,
       //
       curve: animation.curve,
+      clipBehavior: animation.clipBehavior,
       duration: duration.animationFast,
       child: this.child,
     );

@@ -89,15 +89,20 @@ class _FPCCodeFieldState extends State<FPCCodeField>
       vsync: this,
       duration: this._duration.animationSlow,
     );
-    this._animationController.addStatusListener(this._controllerListener);
+    this._animationController.addStatusListener(
+          this._controllerListener,
+        );
 
     // Error
-    this._errorSubscription =
-        this.widget.errorController?.stream.listen(this._errorListener);
+    this._errorSubscription = this.widget.errorController?.stream.listen(
+          this._errorListener,
+        );
   }
 
   @override
-  void didUpdateWidget(covariant FPCCodeField oldWidget) {
+  void didUpdateWidget(
+    covariant FPCCodeField oldWidget,
+  ) {
     super.didUpdateWidget(oldWidget);
     if (this.mounted == false) {
       return;
@@ -105,25 +110,32 @@ class _FPCCodeFieldState extends State<FPCCodeField>
 
     // Controller
     if (this._animationController.duration != this._duration.animationSlow) {
-      this._animationController.removeStatusListener(this._controllerListener);
+      this._animationController.removeStatusListener(
+            this._controllerListener,
+          );
       this._animationController.dispose();
       this._animationController = AnimationController(
         vsync: this,
         duration: this._duration.animationSlow,
       );
-      this._animationController.addStatusListener(this._controllerListener);
+      this._animationController.addStatusListener(
+            this._controllerListener,
+          );
     }
 
     // Error
     this._errorSubscription?.cancel();
-    this._errorSubscription =
-        this.widget.errorController?.stream.listen(this._errorListener);
+    this._errorSubscription = this.widget.errorController?.stream.listen(
+          this._errorListener,
+        );
   }
 
   @override
   void dispose() {
     // Controller
-    this._animationController.removeStatusListener(this._controllerListener);
+    this._animationController.removeStatusListener(
+          this._controllerListener,
+        );
     this._animationController.dispose();
 
     // Error
@@ -131,7 +143,9 @@ class _FPCCodeFieldState extends State<FPCCodeField>
     super.dispose();
   }
 
-  void _controllerListener(AnimationStatus status) {
+  void _controllerListener(
+    AnimationStatus status,
+  ) {
     if (status == AnimationStatus.completed) {
       this._animationController.reverse();
     }
@@ -149,11 +163,14 @@ class _FPCCodeFieldState extends State<FPCCodeField>
 
     setState(() => this._isError = true);
     this._animationController.forward();
-    Future.delayed(this._duration.animationDefault, () {
-      this._haptic.error();
-      this.widget.controller?.clear();
-      this.widget.errorController?.add(false);
-    });
+    Future.delayed(
+      this._duration.animationDefault,
+      () {
+        this._haptic.error();
+        this.widget.controller?.clear();
+        this.widget.errorController?.add(false);
+      },
+    );
   }
 
   PinTheme _item({

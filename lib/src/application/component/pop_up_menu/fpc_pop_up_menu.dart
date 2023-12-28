@@ -29,18 +29,21 @@ class FPCPopUpMenu extends FPCPlatformWidget {
   ) {
     final FPCTheme theme = context.fpcTheme;
     final FPCSize size = context.fpcSize;
+    final FPCFont font = context.fpcFont;
 
     final TextStyle titleStyle = TextStyle(
       color: this.itemStyle?.color ?? theme.black,
       fontSize: this.itemStyle?.fontSize,
       fontWeight: this.itemStyle?.fontWeight,
       fontFamily: this.itemStyle?.fontFamily,
+      package: font.package,
     );
     final TextStyle subtitleStyle = TextStyle(
       color: this.itemStyle?.color ?? theme.grey,
       fontSize: this.itemStyle?.fontSize,
       fontWeight: this.itemStyle?.fontWeight,
       fontFamily: this.itemStyle?.fontFamily,
+      package: font.package,
     );
 
     PullDownMenuHeader header(

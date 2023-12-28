@@ -83,7 +83,7 @@ class FPCGradientButton extends FPCPlatformWidget {
     final FPCTheme theme = context.fpcTheme;
     final FPCSize size = context.fpcSize;
 
-    final Color splashColor = this.splashColor ?? theme.grey;
+    final Color splashColor = this.splashColor ?? theme.greyLight;
     final double height = this.height ?? size.heightButton;
     final BorderRadius borderRadius =
         this.borderRadius ?? sizeScope.borderRadiusButton;

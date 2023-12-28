@@ -212,11 +212,15 @@ class _FPCFormFieldState extends State<FPCFormField>
   void didInitState() {
     // Controller
     this._controller = this.widget.controller ?? TextEditingController();
-    this._controller.addListener(this._controllerListener);
+    this._controller.addListener(
+          this._controllerListener,
+        );
 
     // FocusNode
     this._focusNode = this.widget.focusNode ?? FocusNode();
-    this._focusNode.addListener(this._focusNodeListener);
+    this._focusNode.addListener(
+          this._focusNodeListener,
+        );
 
     // Handler
     this._textInputHandlerFormatter = FPCTextInputHandlerFormatter(
@@ -270,11 +274,15 @@ class _FPCFormFieldState extends State<FPCFormField>
     // Controller
     if (this.widget.controller != oldWidget.controller) {
       if (this.widget.controller != null) {
-        this._controller.removeListener(this._controllerListener);
+        this._controller.removeListener(
+              this._controllerListener,
+            );
         this._controller.dispose();
       }
       this._controller = this.widget.controller ?? TextEditingController();
-      this._controller.addListener(this._controllerListener);
+      this._controller.addListener(
+            this._controllerListener,
+          );
       this._validator(this._controller.text);
     }
 
@@ -303,13 +311,17 @@ class _FPCFormFieldState extends State<FPCFormField>
   void dispose() {
     super.dispose();
     // Controller
-    this._controller.removeListener(this._controllerListener);
+    this._controller.removeListener(
+          this._controllerListener,
+        );
     if (this.widget.controller == null) {
       this._controller.dispose();
     }
 
     // FocusNode
-    this._focusNode.removeListener(this._focusNodeListener);
+    this._focusNode.removeListener(
+          this._focusNodeListener,
+        );
     if (this.widget.focusNode == null) {
       this._focusNode.dispose();
     }
@@ -322,7 +334,10 @@ class _FPCFormFieldState extends State<FPCFormField>
 
     if (this._focusNode.hasPrimaryFocus == false &&
         this._controller.text.isNotEmpty) {
-      setState(() {});
+      setState(() {
+        this._isValidationError = false;
+        this._validationText = "";
+      });
     }
   }
 

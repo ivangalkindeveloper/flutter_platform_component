@@ -45138,5 +45138,4 @@ class FPCTextSpanItem {
         ),
         recognizer: TapGestureRecognizer()..onTap = onPressed,
       );
-
 }
