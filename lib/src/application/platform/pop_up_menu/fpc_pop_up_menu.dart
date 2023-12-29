@@ -27,8 +27,8 @@ class FPCPopUpMenu extends FPCPlatformWidget {
   Widget cupertino(
     BuildContext context,
   ) {
+    final FPCSizeScope sizeScope = context.fpcSizeScope;
     final FPCTheme theme = context.fpcTheme;
-    final FPCSize size = context.fpcSize;
     final FPCFont font = context.fpcFont;
 
     final TextStyle titleStyle = TextStyle(
@@ -139,7 +139,7 @@ class FPCPopUpMenu extends FPCPlatformWidget {
       animationBuilder: null,
       routeTheme: PullDownMenuRouteTheme(
         backgroundColor: theme.backgroundComponent,
-        borderRadius: size.borderRadiusPopUpMenuCupertino,
+        borderRadius: sizeScope.borderRadiusPopUpMenu,
       ),
       position: PullDownMenuPosition.automatic,
       itemBuilder: (

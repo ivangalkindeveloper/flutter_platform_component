@@ -54,12 +54,16 @@ class FPCDurationScope extends InheritedWidget with FPCScopeMixin {
   static FPCDurationScope of(
     BuildContext context,
   ) =>
-      FPCScopeMixin.of<FPCDurationScope>(context);
+      FPCScopeMixin.of<FPCDurationScope>(
+        context,
+      );
 
   static FPCDurationScope? maybeOf(
     BuildContext context,
   ) =>
-      FPCScopeMixin.maybeOf<FPCDurationScope>(context);
+      FPCScopeMixin.maybeOf<FPCDurationScope>(
+        context,
+      );
 
   @override
   bool updateShouldNotify(

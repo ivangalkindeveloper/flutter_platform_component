@@ -1,8 +1,8 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCAnimatedContainer extends StatelessWidget {
-  const FPCAnimatedContainer({
+class FPCAnimatedFastContainer extends StatelessWidget {
+  const FPCAnimatedFastContainer({
     super.key,
     this.alignment,
     this.padding,
@@ -15,6 +15,7 @@ class FPCAnimatedContainer extends StatelessWidget {
     this.transform,
     this.transformAlignment,
     this.onEnd,
+    this.clipBehavior = Clip.none,
     this.child,
   });
 
@@ -29,6 +30,7 @@ class FPCAnimatedContainer extends StatelessWidget {
   final Matrix4? transform;
   final AlignmentGeometry? transformAlignment;
   final void Function()? onEnd;
+  final Clip clipBehavior;
   final Widget? child;
 
   @override
@@ -50,9 +52,10 @@ class FPCAnimatedContainer extends StatelessWidget {
       transform: this.transform,
       transformAlignment: this.transformAlignment,
       onEnd: this.onEnd,
+      clipBehavior: this.clipBehavior,
       //
       curve: animation.curve,
-      duration: duration.animationDefault,
+      duration: duration.animationFast,
       child: this.child,
     );
   }

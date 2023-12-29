@@ -54,12 +54,16 @@ class FPCHapticScope extends InheritedWidget with FPCScopeMixin {
   static FPCHapticScope of(
     BuildContext context,
   ) =>
-      FPCScopeMixin.of<FPCHapticScope>(context);
+      FPCScopeMixin.of<FPCHapticScope>(
+        context,
+      );
 
   static FPCHapticScope? maybeOf(
     BuildContext context,
   ) =>
-      FPCScopeMixin.maybeOf<FPCHapticScope>(context);
+      FPCScopeMixin.maybeOf<FPCHapticScope>(
+        context,
+      );
 
   @override
   bool updateShouldNotify(

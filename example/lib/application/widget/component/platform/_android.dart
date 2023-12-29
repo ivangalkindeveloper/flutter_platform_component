@@ -152,11 +152,7 @@ class _AndroidState extends State<_Android> with TickerProviderStateMixin {
                   ),
                   Gap(size.s16),
                   ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      textStyle: const TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
+                    style: ElevatedButton.styleFrom(),
                     child: const Text('ElevatedButton'),
                     onPressed: () {},
                   ),
@@ -456,12 +452,22 @@ class _AndroidState extends State<_Android> with TickerProviderStateMixin {
                     ),
                   ),
                   Gap(size.s16),
-                  Chip(
-                    avatar: CircleAvatar(
-                      backgroundColor: Colors.grey.shade800,
-                      child: const Text("Chip"),
-                    ),
+                  const Chip(
+                    label: Text("Description"),
+                  ),
+                  Gap(size.s16),
+                  FilterChip(
+                    selected: false,
                     label: const Text("Description"),
+                    tooltip: "Tooltip",
+                    onSelected: (bool value) {},
+                  ),
+                  Gap(size.s16),
+                  ChoiceChip(
+                    selected: false,
+                    label: const Text("Description"),
+                    tooltip: "Tooltip",
+                    onSelected: (bool value) {},
                   ),
                   Gap(size.s16),
                   const CircularProgressIndicator(),

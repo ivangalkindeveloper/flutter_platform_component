@@ -54,12 +54,16 @@ class FPCAnimationScope extends InheritedWidget {
   static FPCAnimationScope of(
     BuildContext context,
   ) =>
-      FPCScopeMixin.of<FPCAnimationScope>(context);
+      FPCScopeMixin.of<FPCAnimationScope>(
+        context,
+      );
 
   static FPCAnimationScope? maybeOf(
     BuildContext context,
   ) =>
-      FPCScopeMixin.maybeOf<FPCAnimationScope>(context);
+      FPCScopeMixin.maybeOf<FPCAnimationScope>(
+        context,
+      );
 
   @override
   bool updateShouldNotify(

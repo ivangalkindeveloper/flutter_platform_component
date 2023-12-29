@@ -95,12 +95,16 @@ class FPCThemeScope extends InheritedWidget with FPCScopeMixin {
   static FPCThemeScope of(
     BuildContext context,
   ) =>
-      FPCScopeMixin.of<FPCThemeScope>(context);
+      FPCScopeMixin.of<FPCThemeScope>(
+        context,
+      );
 
   static FPCThemeScope? maybeOf(
     BuildContext context,
   ) =>
-      FPCScopeMixin.maybeOf<FPCThemeScope>(context);
+      FPCScopeMixin.maybeOf<FPCThemeScope>(
+        context,
+      );
 
   @override
   bool updateShouldNotify(

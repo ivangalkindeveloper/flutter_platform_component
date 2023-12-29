@@ -206,12 +206,16 @@ class FPCSizeScope extends InheritedWidget with FPCScopeMixin {
   static FPCSizeScope of(
     BuildContext context,
   ) =>
-      FPCScopeMixin.of<FPCSizeScope>(context);
+      FPCScopeMixin.of<FPCSizeScope>(
+        context,
+      );
 
   static FPCSizeScope? maybeOf(
     BuildContext context,
   ) =>
-      FPCScopeMixin.maybeOf<FPCSizeScope>(context);
+      FPCScopeMixin.maybeOf<FPCSizeScope>(
+        context,
+      );
 
   @override
   bool updateShouldNotify(

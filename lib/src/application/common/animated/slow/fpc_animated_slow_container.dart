@@ -15,6 +15,7 @@ class FPCAnimatedSlowContainer extends StatelessWidget {
     this.transform,
     this.transformAlignment,
     this.onEnd,
+    this.clipBehavior = Clip.none,
     this.child,
   });
 
@@ -29,6 +30,7 @@ class FPCAnimatedSlowContainer extends StatelessWidget {
   final Matrix4? transform;
   final AlignmentGeometry? transformAlignment;
   final void Function()? onEnd;
+  final Clip clipBehavior;
   final Widget? child;
 
   @override
@@ -50,6 +52,7 @@ class FPCAnimatedSlowContainer extends StatelessWidget {
       transform: this.transform,
       transformAlignment: this.transformAlignment,
       onEnd: this.onEnd,
+      clipBehavior: this.clipBehavior,
       //
       curve: animation.curve,
       duration: duration.animationSlow,

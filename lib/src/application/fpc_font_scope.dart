@@ -54,12 +54,16 @@ class FPCFontScope extends InheritedWidget with FPCScopeMixin {
   static FPCFontScope of(
     BuildContext context,
   ) =>
-      FPCScopeMixin.of<FPCFontScope>(context);
+      FPCScopeMixin.of<FPCFontScope>(
+        context,
+      );
 
   static FPCFontScope? maybeOf(
     BuildContext context,
   ) =>
-      FPCScopeMixin.maybeOf<FPCFontScope>(context);
+      FPCScopeMixin.maybeOf<FPCFontScope>(
+        context,
+      );
 
   @override
   bool updateShouldNotify(

@@ -54,12 +54,16 @@ class FPCDateTimeScope extends InheritedWidget with FPCScopeMixin {
   static FPCDateTimeScope of(
     BuildContext context,
   ) =>
-      FPCScopeMixin.of<FPCDateTimeScope>(context);
+      FPCScopeMixin.of<FPCDateTimeScope>(
+        context,
+      );
 
   static FPCDateTimeScope? maybeOf(
     BuildContext context,
   ) =>
-      FPCScopeMixin.maybeOf<FPCDateTimeScope>(context);
+      FPCScopeMixin.maybeOf<FPCDateTimeScope>(
+        context,
+      );
 
   @override
   bool updateShouldNotify(

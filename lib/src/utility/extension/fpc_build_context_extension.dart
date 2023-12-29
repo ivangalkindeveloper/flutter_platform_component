@@ -476,19 +476,26 @@ extension FPCBuildContextExtension on BuildContext {
         ),
       ),
       chipTheme: ChipThemeData(
-        color: MaterialStateProperty.all(
-          theme.primary,
+        color: MaterialStateProperty.resolveWith(
+          (
+            Set<MaterialState> states,
+          ) {
+            if (states.contains(MaterialState.selected)) {
+              return theme.primary;
+            }
+            return theme.backgroundComponent;
+          },
         ),
         backgroundColor: theme.backgroundComponent,
         deleteIconColor: theme.danger,
         disabledColor: theme.grey,
         selectedColor: theme.primary,
-        secondarySelectedColor: theme.primary,
+        secondarySelectedColor: theme.backgroundComponent,
         shadowColor: theme.blackAlways,
         surfaceTintColor: theme.primary,
         selectedShadowColor: theme.blackAlways,
         showCheckmark: chipTheme?.showCheckmark,
-        checkmarkColor: theme.primary, //TODO
+        checkmarkColor: theme.primaryInternal,
         labelPadding: chipTheme?.labelPadding,
         padding: chipTheme?.padding,
         side: chipTheme?.side,
@@ -612,7 +619,49 @@ extension FPCBuildContextExtension on BuildContext {
         menuStyle: dropdownMenuTheme?.menuStyle,
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
-        style: elevatedButtonTheme?.style,
+        style: ButtonStyle(
+          textStyle: elevatedButtonTheme?.style?.textStyle,
+          backgroundColor: MaterialStateProperty.all(
+            theme.primary,
+          ),
+          foregroundColor: MaterialStateProperty.all(
+            theme.primaryInternal,
+          ),
+          overlayColor: MaterialStateProperty.all(
+            theme.greyLight,
+          ),
+          shadowColor: MaterialStateProperty.all(
+            theme.blackAlways,
+          ),
+          surfaceTintColor: MaterialStateProperty.all(
+            theme.primary,
+          ),
+          elevation: elevatedButtonTheme?.style?.elevation,
+          padding: elevatedButtonTheme?.style?.padding,
+          minimumSize: elevatedButtonTheme?.style?.minimumSize,
+          fixedSize: elevatedButtonTheme?.style?.fixedSize,
+          maximumSize: elevatedButtonTheme?.style?.maximumSize,
+          iconColor: MaterialStateProperty.resolveWith(
+            (
+              Set<MaterialState> states,
+            ) {
+              if (states.contains(MaterialState.selected)) {
+                return theme.primaryInternal;
+              }
+              return theme.primary;
+            },
+          ),
+          iconSize: elevatedButtonTheme?.style?.iconSize,
+          side: elevatedButtonTheme?.style?.side,
+          shape: elevatedButtonTheme?.style?.shape,
+          mouseCursor: elevatedButtonTheme?.style?.mouseCursor,
+          visualDensity: elevatedButtonTheme?.style?.visualDensity,
+          tapTargetSize: elevatedButtonTheme?.style?.tapTargetSize,
+          animationDuration: elevatedButtonTheme?.style?.animationDuration,
+          enableFeedback: elevatedButtonTheme?.style?.enableFeedback,
+          alignment: elevatedButtonTheme?.style?.alignment,
+          splashFactory: elevatedButtonTheme?.style?.splashFactory,
+        ),
       ),
       expansionTileTheme: ExpansionTileThemeData(
         backgroundColor: theme.backgroundComponent,
@@ -719,8 +768,11 @@ extension FPCBuildContextExtension on BuildContext {
         elevation: navigationRailTheme?.elevation,
         unselectedLabelTextStyle: navigationRailTheme?.unselectedLabelTextStyle,
         selectedLabelTextStyle: navigationRailTheme?.selectedLabelTextStyle,
-        unselectedIconTheme: navigationRailTheme?.unselectedIconTheme, //TODO
-        selectedIconTheme: navigationRailTheme?.selectedIconTheme, //TODO
+        unselectedIconTheme: navigationRailTheme?.unselectedIconTheme,
+        selectedIconTheme: navigationRailTheme?.selectedIconTheme ??
+            IconThemeData(
+              color: theme.primaryInternal,
+            ),
         groupAlignment: navigationRailTheme?.groupAlignment,
         labelType: navigationRailTheme?.labelType,
         useIndicator: navigationRailTheme?.useIndicator,
@@ -804,13 +856,29 @@ extension FPCBuildContextExtension on BuildContext {
       segmentedButtonTheme: SegmentedButtonThemeData(
         style: ButtonStyle(
           textStyle: segmentedButtonTheme?.style?.textStyle,
-          // backgroundColor: MaterialStateProperty.all(
-          //   theme.primaryLight,
-          // ),
-          foregroundColor: MaterialStateProperty.all(
-            theme.primary,
+          backgroundColor: MaterialStateProperty.resolveWith(
+            (
+              Set<MaterialState> states,
+            ) {
+              if (states.contains(MaterialState.selected)) {
+                return theme.primaryLight;
+              }
+              return theme.backgroundComponent;
+            },
           ),
-          overlayColor: segmentedButtonTheme?.style?.overlayColor,
+          foregroundColor: MaterialStateProperty.resolveWith(
+            (
+              Set<MaterialState> states,
+            ) {
+              if (states.contains(MaterialState.selected)) {
+                return theme.primaryInternal;
+              }
+              return theme.primary;
+            },
+          ),
+          overlayColor: MaterialStateProperty.all(
+            theme.greyLight,
+          ),
           shadowColor: MaterialStateProperty.all(
             theme.blackAlways,
           ),
@@ -822,8 +890,15 @@ extension FPCBuildContextExtension on BuildContext {
           minimumSize: segmentedButtonTheme?.style?.minimumSize,
           fixedSize: segmentedButtonTheme?.style?.fixedSize,
           maximumSize: segmentedButtonTheme?.style?.maximumSize,
-          iconColor: MaterialStateProperty.all(
-            theme.primary,
+          iconColor: MaterialStateProperty.resolveWith(
+            (
+              Set<MaterialState> states,
+            ) {
+              if (states.contains(MaterialState.selected)) {
+                return theme.primaryInternal;
+              }
+              return theme.primary;
+            },
           ),
           iconSize: segmentedButtonTheme?.style?.iconSize,
           side: MaterialStateProperty.all(
@@ -961,7 +1036,7 @@ extension FPCBuildContextExtension on BuildContext {
         textStyle: toggleButtonsTheme?.textStyle,
         constraints: toggleButtonsTheme?.constraints,
         color: theme.primary,
-        selectedColor: theme.primaryLight,
+        selectedColor: theme.primaryInternal,
         disabledColor: theme.grey,
         fillColor: theme.primary,
         focusColor: theme.grey,

@@ -54,12 +54,16 @@ class FPCTimeOfDayScope extends InheritedWidget with FPCScopeMixin {
   static FPCTimeOfDayScope of(
     BuildContext context,
   ) =>
-      FPCScopeMixin.of<FPCTimeOfDayScope>(context);
+      FPCScopeMixin.of<FPCTimeOfDayScope>(
+        context,
+      );
 
   static FPCTimeOfDayScope? maybeOf(
     BuildContext context,
   ) =>
-      FPCScopeMixin.maybeOf<FPCTimeOfDayScope>(context);
+      FPCScopeMixin.maybeOf<FPCTimeOfDayScope>(
+        context,
+      );
 
   @override
   bool updateShouldNotify(

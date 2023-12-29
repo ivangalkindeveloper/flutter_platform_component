@@ -57,12 +57,16 @@ class FPCPlatformScope extends InheritedWidget with FPCScopeMixin {
   static FPCPlatformScope of(
     BuildContext context,
   ) =>
-      FPCScopeMixin.of<FPCPlatformScope>(context);
+      FPCScopeMixin.of<FPCPlatformScope>(
+        context,
+      );
 
   static FPCPlatformScope? maybeOf(
     BuildContext context,
   ) =>
-      FPCScopeMixin.maybeOf<FPCPlatformScope>(context);
+      FPCScopeMixin.maybeOf<FPCPlatformScope>(
+        context,
+      );
 
   @override
   bool updateShouldNotify(

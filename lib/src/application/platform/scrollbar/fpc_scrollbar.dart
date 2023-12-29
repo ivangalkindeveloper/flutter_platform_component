@@ -1,5 +1,4 @@
-import 'package:flutter_platform_component/src/application/component/common/fpc_material_scrollbar.dart';
-import 'package:flutter_platform_component/src/application/component/platform/fpc_platform_widget.dart';
+import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
 import 'package:flutter/cupertino.dart' show CupertinoScrollbar;

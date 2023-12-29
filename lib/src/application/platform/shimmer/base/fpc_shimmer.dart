@@ -2,8 +2,6 @@ import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:async';
 
-//TODO
-
 class FPCShimmer extends StatefulWidget {
   const FPCShimmer({
     super.key,
