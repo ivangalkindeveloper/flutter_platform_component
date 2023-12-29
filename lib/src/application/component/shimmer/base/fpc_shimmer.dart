@@ -75,27 +75,32 @@ class _FPCShimmerState extends State<FPCShimmer>
   @override
   void didUpdateWidget(
     covariant FPCShimmer oldWidget,
-  ) async {
+  ) {
     super.didUpdateWidget(
       oldWidget,
     );
 
     // Subscription
     if (this.widget.duration != oldWidget.duration) {
-      await this._highlightSubscription?.cancel();
-      this._highlightSubscription = Stream.periodic(
-        this.widget.duration ?? this._duration.shimmer,
+      this._highlightSubscription?.cancel().then(
         (
-          int second,
-        ) =>
-            second % 2 == 0,
-      ).listen(
-        (
-          bool isHighLight,
-        ) =>
-            setState(
-          () => this._isHighlight = isHighLight,
-        ),
+          void value,
+        ) {
+          this._highlightSubscription = Stream.periodic(
+            this.widget.duration ?? this._duration.shimmer,
+            (
+              int second,
+            ) =>
+                second % 2 == 0,
+          ).listen(
+            (
+              bool isHighLight,
+            ) =>
+                setState(
+              () => this._isHighlight = isHighLight,
+            ),
+          );
+        },
       );
     }
   }
@@ -116,7 +121,6 @@ class _FPCShimmerState extends State<FPCShimmer>
         : this.widget.backgroundColor;
     final BorderRadius borderRadius =
         this.widget.borderRadius ?? this._sizeScope.borderRadiusCard;
-    final Widget child = this.widget.child ?? const SizedBox();
 
     return FPCAnimatedContainer(
       height: this.widget.height,
@@ -126,7 +130,7 @@ class _FPCShimmerState extends State<FPCShimmer>
         borderRadius: borderRadius,
         shape: this.widget.shape,
       ),
-      child: child,
+      child: this.widget.child,
     );
   }
 }

@@ -30,8 +30,9 @@ class FPCSuccessLightSlider extends StatelessWidget {
     return FPCSlider(
       value: this.value,
       onChanged: this.onChanged,
-      backgroundColor: theme.greyLight,
-      color: theme.successLight,
+      unselectedColor: theme.greyLight,
+      selectedColor: theme.successLight,
+      thumbColor: theme.successLight,
       min: this.min,
       max: this.max,
       divisions: this.divisions,

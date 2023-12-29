@@ -30,8 +30,9 @@ class FPCDangerLightSlider extends StatelessWidget {
     return FPCSlider(
       value: this.value,
       onChanged: this.onChanged,
-      backgroundColor: theme.greyLight,
-      color: theme.dangerLight,
+      unselectedColor: theme.greyLight,
+      selectedColor: theme.dangerLight,
+      thumbColor: theme.dangerLight,
       min: this.min,
       max: this.max,
       divisions: this.divisions,

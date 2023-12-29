@@ -30,8 +30,9 @@ class FPCSecondaryLightSlider extends StatelessWidget {
     return FPCSlider(
       value: this.value,
       onChanged: this.onChanged,
-      backgroundColor: theme.greyLight,
-      color: theme.secondaryLight,
+      unselectedColor: theme.greyLight,
+      selectedColor: theme.secondaryLight,
+      thumbColor: theme.secondaryLight,
       min: this.min,
       max: this.max,
       divisions: this.divisions,

@@ -9,8 +9,9 @@ class FPCSlider extends FPCPlatformWidget {
     super.key,
     required this.value,
     required this.onChanged,
-    required this.backgroundColor,
-    required this.color,
+    required this.unselectedColor,
+    required this.selectedColor,
+    this.thumbColor,
     this.min = 0.0,
     this.max = 1.0,
     this.divisions,
@@ -20,8 +21,9 @@ class FPCSlider extends FPCPlatformWidget {
 
   final double value;
   final void Function(double) onChanged;
-  final Color backgroundColor;
-  final Color color;
+  final Color unselectedColor;
+  final Color selectedColor;
+  final Color? thumbColor;
   final double min;
   final double max;
   final int? divisions;
@@ -32,21 +34,30 @@ class FPCSlider extends FPCPlatformWidget {
   Widget cupertino(
     BuildContext context,
   ) {
-    final void Function(double)? onChanged =
-        this.isDisabled ? null : this.onChanged;
+    final FPCTheme theme = context.fpcTheme;
+
+    final void Function(double) onChanged = this.isDisabled
+        ? (
+            double value,
+          ) {}
+        : this.onChanged;
 
     return FPCDisabledWrapper(
       disabledColor: this.disabledColor,
       borderRadius: null,
       isDisabled: this.isDisabled,
       children: [
-        CupertinoSlider(
-          value: this.value,
-          onChanged: onChanged,
-          activeColor: this.color,
-          min: this.min,
-          max: this.max,
-          divisions: this.divisions,
+        SizedBox(
+          width: double.infinity,
+          child: CupertinoSlider(
+            value: this.value,
+            onChanged: onChanged,
+            activeColor: this.selectedColor,
+            thumbColor: theme.backgroundComponent,
+            min: this.min,
+            max: this.max,
+            divisions: this.divisions,
+          ),
         ),
       ],
     );
@@ -56,22 +67,31 @@ class FPCSlider extends FPCPlatformWidget {
   Widget material(
     BuildContext context,
   ) {
-    final void Function(double)? onChanged =
-        this.isDisabled ? null : this.onChanged;
+    final FPCTheme theme = context.fpcTheme;
+    final void Function(double) onChanged = this.isDisabled
+        ? (
+            double value,
+          ) {}
+        : this.onChanged;
+    final Color thumbColor = this.thumbColor ?? theme.primary;
 
     return FPCDisabledWrapper(
       disabledColor: this.disabledColor,
       borderRadius: null,
       isDisabled: this.isDisabled,
       children: [
-        Slider(
-          value: this.value,
-          onChanged: onChanged,
-          inactiveColor: this.backgroundColor,
-          activeColor: this.color,
-          min: this.min,
-          max: this.max,
-          divisions: this.divisions,
+        SizedBox(
+          width: double.infinity,
+          child: Slider(
+            value: this.value,
+            onChanged: onChanged,
+            inactiveColor: this.unselectedColor,
+            activeColor: this.selectedColor,
+            thumbColor: thumbColor,
+            min: this.min,
+            max: this.max,
+            divisions: this.divisions,
+          ),
         ),
       ],
     );

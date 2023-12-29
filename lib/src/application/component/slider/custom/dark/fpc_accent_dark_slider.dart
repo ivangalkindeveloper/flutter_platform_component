@@ -30,8 +30,9 @@ class FPCAccentDarkSlider extends StatelessWidget {
     return FPCSlider(
       value: this.value,
       onChanged: this.onChanged,
-      backgroundColor: theme.greyDark,
-      color: theme.accentDark,
+      unselectedColor: theme.greyDark,
+      selectedColor: theme.accentDark,
+      thumbColor: theme.accentDark,
       min: this.min,
       max: this.max,
       divisions: this.divisions,

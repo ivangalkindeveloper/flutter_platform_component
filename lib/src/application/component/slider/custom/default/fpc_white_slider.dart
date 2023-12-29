@@ -30,8 +30,9 @@ class FPCWhiteSlider extends StatelessWidget {
     return FPCSlider(
       value: this.value,
       onChanged: this.onChanged,
-      backgroundColor: theme.grey,
-      color: theme.white,
+      unselectedColor: theme.grey,
+      selectedColor: theme.white,
+      thumbColor: theme.white,
       min: this.min,
       max: this.max,
       divisions: this.divisions,

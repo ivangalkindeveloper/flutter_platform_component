@@ -30,8 +30,9 @@ class FPCWarningLightSlider extends StatelessWidget {
     return FPCSlider(
       value: this.value,
       onChanged: this.onChanged,
-      backgroundColor: theme.greyLight,
-      color: theme.warningLight,
+      unselectedColor: theme.greyLight,
+      selectedColor: theme.warningLight,
+      thumbColor: theme.warningLight,
       min: this.min,
       max: this.max,
       divisions: this.divisions,

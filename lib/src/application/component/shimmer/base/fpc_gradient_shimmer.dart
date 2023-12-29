@@ -113,7 +113,6 @@ class _FPCGradientShimmerState extends State<FPCGradientShimmer>
         : this.widget.backgroundGradient;
     final BorderRadius borderRadius =
         this.widget.borderRadius ?? this._sizeScope.borderRadiusCard;
-    final Widget child = this.widget.child ?? const SizedBox();
 
     return FPCAnimatedContainer(
       height: this.widget.height,
@@ -123,7 +122,7 @@ class _FPCGradientShimmerState extends State<FPCGradientShimmer>
         borderRadius: borderRadius,
         shape: this.widget.shape,
       ),
-      child: child,
+      child: this.widget.child,
     );
   }
 }
