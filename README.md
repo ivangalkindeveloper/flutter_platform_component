@@ -1823,26 +1823,26 @@ FPCPrimaryGradientToggle<String>(
 ### Default
 #### Animation
 All animations durations are guided by slow, default and fast durations from the size config:
-FPCAnimatedAlign
-FPCAnimatedContainer
-FPCAnimatedCrossFade
-FPCAnimatedDefaultTextStyle
-FPCAnimatedFadeInDown, FPCAnimatedFadeInLeft, FPCAnimatedFadeInRight, FPCAnimatedFadeInUp, FPCAnimatedFadeIn (from animate_do package)
-FPCAnimatedFadeOutDown, FPCAnimatedFadeOutLeft, FPCAnimatedFadeOutRight, FPCAnimatedFadeOutUp, FPCAnimatedFadeOut (from animate_do package)
-FPCAnimatedFractionallySizedBox
-FPCAnimatedOpacityStack (stack of two AnimatedOpacity widgets)
-FPCAnimatedOpacity
-FPCAnimatedOpenContainer (from animations package)
-FPCAnimatedPadding
-FPCAnimatedPhysicalModel
-FPCAnimatedPositionedDirectional
-FPCAnimatedPositioned
-FPCAnimatedRotation
-FPCAnimatedScale
-FPCAnimatedSize
-FPCAnimatedSlide
-FPCAnimatedSwitcher
-FPCAnimatedTransitionSwitcher (from animations package)
+FPCAnimatedAlign\
+FPCAnimatedContainer\
+FPCAnimatedCrossFade\
+FPCAnimatedDefaultTextStyle\
+FPCAnimatedFadeInDown, FPCAnimatedFadeInLeft, FPCAnimatedFadeInRight, FPCAnimatedFadeInUp, FPCAnimatedFadeIn (animate_do package)\
+FPCAnimatedFadeOutDown, FPCAnimatedFadeOutLeft, FPCAnimatedFadeOutRight, FPCAnimatedFadeOutUp, FPCAnimatedFadeOut (animate_do package)\
+FPCAnimatedFractionallySizedBox\
+FPCAnimatedOpacityStack (stack of two AnimatedOpacity widgets)\
+FPCAnimatedOpacity\
+FPCAnimatedOpenContainer (animations package)\
+FPCAnimatedPadding\
+FPCAnimatedPhysicalModel\
+FPCAnimatedPositionedDirectional\
+FPCAnimatedPositioned\
+FPCAnimatedRotation\
+FPCAnimatedScale\
+FPCAnimatedSize\
+FPCAnimatedSlide\
+FPCAnimatedSwitcher\
+FPCAnimatedTransitionSwitcher (animations package)\
 #### FPCListView
 Default ListView widget are guided by size config.
 #### FPCPadding
