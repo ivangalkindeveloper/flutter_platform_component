@@ -14,12 +14,19 @@ class FPCDefaultFont extends FPCFont {
 
     // Family
     this.familyThin,
+    this.familyThinItalic,
     this.familyLight,
+    this.familyLightItalic,
     this.familyRegular,
+    this.familyRegularItalic,
     this.familyMedium,
+    this.familyMediumItalic,
     this.familySemiBold,
+    this.familySemiBoldItalic,
     this.familyBold,
+    this.familyBoldItalic,
     this.familyExtraBold,
+    this.familyExtraBoldItalic,
 
     // Package
     this.package,
@@ -45,17 +52,31 @@ class FPCDefaultFont extends FPCFont {
   @override
   final String? familyThin;
   @override
+  final String? familyThinItalic;
+  @override
   final String? familyLight;
+  @override
+  final String? familyLightItalic;
   @override
   final String? familyRegular;
   @override
+  final String? familyRegularItalic;
+  @override
   final String? familyMedium;
+  @override
+  final String? familyMediumItalic;
   @override
   final String? familySemiBold;
   @override
+  final String? familySemiBoldItalic;
+  @override
   final String? familyBold;
   @override
+  final String? familyBoldItalic;
+  @override
   final String? familyExtraBold;
+  @override
+  final String? familyExtraBoldItalic;
 
   // Package
   @override
@@ -74,12 +95,19 @@ class FPCDefaultFont extends FPCFont {
 
     // Family
     String? familyThin,
+    String? familyThinItalic,
     String? familyLight,
+    String? familyLightItalic,
     String? familyRegular,
+    String? familyRegularItalic,
     String? familyMedium,
+    String? familyMediumItalic,
     String? familySemiBold,
+    String? familySemiBoldItalic,
     String? familyBold,
+    String? familyBoldItalic,
     String? familyExtraBold,
+    String? familyExtraBoldItalic,
 
     // Package
     String? package,
@@ -96,12 +124,20 @@ class FPCDefaultFont extends FPCFont {
 
         // Family
         familyThin: familyThin ?? this.familyThin,
+        familyThinItalic: familyThinItalic ?? this.familyThinItalic,
         familyLight: familyLight ?? this.familyLight,
+        familyLightItalic: familyLightItalic ?? this.familyLightItalic,
         familyRegular: familyRegular ?? this.familyRegular,
+        familyRegularItalic: familyRegularItalic ?? this.familyRegularItalic,
         familyMedium: familyMedium ?? this.familyMedium,
+        familyMediumItalic: familyMediumItalic ?? this.familyMediumItalic,
         familySemiBold: familySemiBold ?? this.familySemiBold,
+        familySemiBoldItalic: familySemiBoldItalic ?? this.familySemiBoldItalic,
         familyBold: familyBold ?? this.familyBold,
+        familyBoldItalic: familyBoldItalic ?? this.familyBoldItalic,
         familyExtraBold: familyExtraBold ?? this.familyExtraBold,
+        familyExtraBoldItalic:
+            familyExtraBoldItalic ?? this.familyExtraBoldItalic,
 
         // Package
         package: package ?? this.package,

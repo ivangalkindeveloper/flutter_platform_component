@@ -10,9 +10,6 @@ Addings:
 * AnimatedScale;
 * AnimatedSlide;
 
-- FPCTooltip;
-- FPCDrawer;
-
 Refactoring:
 * Project folder refactoring;
 * Refactoring FPCPlatformWidget and FPCPlatformAppBar to abstract classes with build methods for each platforms;

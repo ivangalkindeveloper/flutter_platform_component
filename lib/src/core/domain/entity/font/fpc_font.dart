@@ -14,12 +14,19 @@ abstract class FPCFont {
 
   // Family
   abstract final String? familyThin;
+  abstract final String? familyThinItalic;
   abstract final String? familyLight;
+  abstract final String? familyLightItalic;
   abstract final String? familyRegular;
+  abstract final String? familyRegularItalic;
   abstract final String? familyMedium;
+  abstract final String? familyMediumItalic;
   abstract final String? familySemiBold;
+  abstract final String? familySemiBoldItalic;
   abstract final String? familyBold;
+  abstract final String? familyBoldItalic;
   abstract final String? familyExtraBold;
+  abstract final String? familyExtraBoldItalic;
 
   // Package
   abstract final String? package;
@@ -41,12 +48,19 @@ abstract class FPCFont {
 
       // Family
       other.familyThin == this.familyThin &&
+      other.familyThinItalic == this.familyThinItalic &&
       other.familyLight == this.familyLight &&
+      other.familyLightItalic == this.familyLightItalic &&
       other.familyRegular == this.familyRegular &&
+      other.familyRegularItalic == this.familyRegularItalic &&
       other.familyMedium == this.familyMedium &&
+      other.familyMediumItalic == this.familyMediumItalic &&
       other.familySemiBold == this.familySemiBold &&
+      other.familySemiBoldItalic == this.familySemiBoldItalic &&
       other.familyBold == this.familyBold &&
+      other.familyBoldItalic == this.familyBoldItalic &&
       other.familyExtraBold == this.familyExtraBold &&
+      other.familyExtraBoldItalic == this.familyExtraBold &&
 
       // Package
       other.package == this.package;

@@ -8,6 +8,8 @@ library flutter_platform_component;
 // Application / Common
 export 'src/application/common/animated/lib.dart';
 export 'src/application/common/lib.dart';
+// Application / Default
+export 'src/application/default/lib.dart';
 // Application / Platform
 export 'src/application/platform/app/lib.dart';
 export 'src/application/platform/app_bar/lib.dart';
@@ -18,7 +20,6 @@ export 'src/application/platform/button/lib.dart';
 export 'src/application/platform/card/lib.dart';
 export 'src/application/platform/checkbox/lib.dart';
 export 'src/application/platform/code_field/lib.dart';
-export 'src/application/platform/default/lib.dart';
 export 'src/application/platform/dialog/lib.dart';
 export 'src/application/platform/divider/lib.dart';
 export 'src/application/platform/form_field/lib.dart';
@@ -47,7 +48,8 @@ export 'src/application/platform/snack_bar/lib.dart';
 export 'src/application/platform/switch/lib.dart';
 export 'src/application/platform/text/lib.dart';
 export 'src/application/platform/toggle/lib.dart';
-export 'src/application/flutter_platform_component.dart';
+// Application / Scope
+export 'src/application/scope/lib.dart';
 
 // Core
 // Core / Data

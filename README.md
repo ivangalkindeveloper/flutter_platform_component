@@ -53,77 +53,158 @@
   - [Animation](#animation)
   - [DateTime](#datetime)
   - [Duration](#duration)
+  - [Font](#font)
   - [Haptic](#haptic)
   - [Platform](#platform)
   - [Size](#size)
-  - [TextStyle](#textstyle)
   - [Theme](#theme)
   - [TimeOfDay](#timeofday)
 - [Components](#components)
-  - [Animation](#animation)
-    - [FPCAnimatedAlign](#fpcanimatedalign)
-    - [FPCAnimatedContainer](#fpcanimatedcontainer)
-    - [FPCAnimatedCrossFade](#fpcanimatedcrossfade)
-    - [FPCAnimatedDefaultTextStyle](#fpcanimateddefaulttextstyle)
-    - [FPCAnimatedFadeIn](#fpcanimatedfadein)
-    - [FPCAnimatedFadeOut](#fpcanimatedfadeout)
-    - [FPCAnimatedOpacityStack](#fpcanimatedopacitystack)
-    - [FPCAnimatedOpacity](#fpcanimatedopacity)
-    - [FPCAnimatedOpenContainer](#fpcanimatedopencontainer)
-    - [FPCAnimatedPositioned](#fpcanimatedpositioned)
-    - [FPCAnimatedSize](#fpcanimatedsize)
-    - [FPCAnimatedSwitcher](#fpcanimatedswitcher)
-    - [FPCAnimatedTransitionSwitcher](#fpcanimatedtransitionswitcher)
-  - [App](#app)
-    - [FPCApp](#fpcapp)
-  - [AppBar](#appbar)
-    - [FPCAppBar](#fpcappbar)
-    - [FPCScreenAppBar](#fpcscreenappbar)
-    - [FPCWhiteAlwaysScreenAppBar](#fpcwhitealwaysscreenappbar)
-    - [FPCExpandedBottomSheetAppBar](#fpcexpandedbottomsheetappbar)
-    - [FPCWhiteAlwaysExpandedBottomSheetAppBar](#fpcwhitealwaysexpandedbottomsheetappbar)
-    - [FPCBlurAppBar](#fpcblurappbar)
-    - [FPCBlurScreenAppBar](#fpcblurscreenappbar)
-    - [FPCBlurWhiteAlwaysScreenAppBar](#fpcblurwhitealwaysscreenappbar)
-    - [FPCBlurExpandedBottomSheetAppBar](#fpcblurexpandedbottomsheetappbar)
-    - [FPCBlurWhiteAlwaysExpandedBottomSheetAppBar](#fpcblurwhitealwaysexpandedbottomsheetappbar)
-  - [Badge](#badge)
-    - [FPCCounterBadge](#fpccounterbadge)
-    - [FPCGradientCounterBadge](#fpcgradientcounterbadge)
-    - [FPCDotBadge](#fpcdotbadge)
-    - [FPCGradientDotBadge](#fpcgradientdotbadge)
-  - [Blur](#blur)
-    - [FPCBlur](#fpcblur)
-  - [BottomSheet](#bottomsheet)
-    - [FPCActionBottomSheet](#fpcactionbottomsheet)
-    - [FPCExpandedBottomSheet](#fpcexpandedbottomsheet)
-    - [FPCBlackAlwaysExpandedBottomSheet](#fpcblackalwaysexpandedbottomsheet)
-    - [FPCBlurExpandedBottomSheet](#fpcblurexpandedbottomsheet)
-    - [FPCBlurBlackAlwaysExpandedBottomSheet](#fpcblurblackalwaysexpandedbottomsheet)
-    - [FPCSmallBottomSheet](#fpcsmallbottomsheet)
-  - [Button](#button)
-    - [FPCButton](#fpcbutton)
-    - [FPCGradientButton](#fpcgradientbutton)
-    - [FPCDottedButton](#fpcdottedbutton)
-    - [FPCOutlineButton](#fpcoutlinebutton)
-    - [FPCGradientOutlineButton](#fpcgradientoutlinebutton)
-    - [FPCIconButton](#fpciconbutton)
-    - [FPCCupertinoBottomSheetButton](#fpccupertinobottomsheetbutton)
-    - [FPCExpandedBottomSheetCloseButton](#fpcexpandedbottomsheetclosebutton)
-    - [FPCSmallBottomSheetCloseButton](#fpcsmallbottomsheetclosebutton)
-    - [FPCWhiteAlwaysExpandedBottomSheetCloseButton](#fpcwhitealwaysexpandedbottomsheetclosebutton)
-  - [Card](#card)
-    - [FPCCard](#fpccard)
-    - [FPCGradientCard](#fpcgradientcard)
-    - [FPCDottedCard](#fpcdottedcard)
-  - [Checkbox](#checkbox)
-    - [FPCCheckbox](#fpccheckbox)
-  - [CodeField](#codefield)
-    - [FPCCodeField](#fpccodefield)
-    - [FPCGradientCodeField](#fpcgradientcodefield)
+  - [Platform](#components)
+    - [App](#app)
+      - [FPCApp](#fpcapp)
+    - [AppBar](#appbar)
+      - [FPCAppBar](#fpcappbar)
+      - [FPCScreenAppBar](#fpcscreenappbar)
+      - [FPCWhiteAlwaysScreenAppBar](#fpcwhitealwaysscreenappbar)
+      - [FPCExpandedBottomSheetAppBar](#fpcexpandedbottomsheetappbar)
+      - [FPCWhiteAlwaysExpandedBottomSheetAppBar](#fpcwhitealwaysexpandedbottomsheetappbar)
+      - [FPCBlurAppBar](#fpcblurappbar)
+      - [FPCBlurScreenAppBar](#fpcblurscreenappbar)
+      - [FPCBlurWhiteAlwaysScreenAppBar](#fpcblurwhitealwaysscreenappbar)
+      - [FPCBlurExpandedBottomSheetAppBar](#fpcblurexpandedbottomsheetappbar)
+      - [FPCBlurWhiteAlwaysExpandedBottomSheetAppBar](#fpcblurwhitealwaysexpandedbottomsheetappbar)
+    - [Badge](#badge)
+      - [FPCCounterBadge](#fpccounterbadge)
+      - [FPCGradientCounterBadge](#fpcgradientcounterbadge)
+      - [FPCDotBadge](#fpcdotbadge)
+      - [FPCGradientDotBadge](#fpcgradientdotbadge)
+    - [Blur](#blur)
+      - [FPCBlur](#fpcblur)
+    - [BottomSheet](#bottomsheet)
+      - [FPCActionBottomSheet](#fpcactionbottomsheet)
+      - [FPCExpandedBottomSheet](#fpcexpandedbottomsheet)
+      - [FPCBlackAlwaysExpandedBottomSheet](#fpcblackalwaysexpandedbottomsheet)
+      - [FPCBlurExpandedBottomSheet](#fpcblurexpandedbottomsheet)
+      - [FPCBlurBlackAlwaysExpandedBottomSheet](#fpcblurblackalwaysexpandedbottomsheet)
+      - [FPCSmallBottomSheet](#fpcsmallbottomsheet)
+    - [Button](#button)
+      - [FPCButton](#fpcbutton)
+      - [FPCGradientButton](#fpcgradientbutton)
+      - [FPCDottedButton](#fpcdottedbutton)
+      - [FPCOutlineButton](#fpcoutlinebutton)
+      - [FPCGradientOutlineButton](#fpcgradientoutlinebutton)
+      - [FPCIconButton](#fpciconbutton)
+      - [FPCCupertinoBottomSheetButton](#fpccupertinobottomsheetbutton)
+      - [FPCExpandedBottomSheetCloseButton](#fpcexpandedbottomsheetclosebutton)
+      - [FPCSmallBottomSheetCloseButton](#fpcsmallbottomsheetclosebutton)
+      - [FPCWhiteAlwaysExpandedBottomSheetCloseButton](#fpcwhitealwaysexpandedbottomsheetclosebutton)
+    - [Card](#card)
+      - [FPCCard](#fpccard)
+      - [FPCGradientCard](#fpcgradientcard)
+      - [FPCDottedCard](#fpcdottedcard)
+    - [Checkbox](#checkbox)
+      - [FPCCheckbox](#fpccheckbox)
+    - [CodeField](#codefield)
+      - [FPCCodeField](#fpccodefield)
+      - [FPCGradientCodeField](#fpcgradientcodefield)
+    - [Dialog](#dialog)
+      - [FPCDialog](#fpcdialog)
+    - [Divider](#divider)
+      - [FPCDivider](#fpcdivider)
+      - [FPCGradientDivider](#fpcgradientdivider)
+    - [FormField](#formfield)
+      - [FPCFormField](#fpcformfield)
+      - [FPCGradientFormField](#fpcgradientformfield)
+    - [Global](#global)
+      - [BottomSheet](#bottomsheet)
+      - [Dialog](#dialog)
+      - [Picker](#picker)
+      - [SnackBar](#snackbar)
+    - [Gradient](#gradient)
+      - [FPCGradientMask](#fpcgradientmask)
+      - [FPCLinearGradient](#fpclinearGradient)
+      - [FPCRadialGradient](#fpcradialGradient)
+      - [FPCSweepGradient](#fpcsweepGradient)
+    - [Icon](#icon)
+    - [Indicator](#indicator)
+      - [CircularIndicator](#circularindicator)
+      - [GradientCircularIndicator](#gradientcircularindicator)
+      - [FPCPageIndicator](#fpcpageindicator)
+      - [FPCGradientPageIndicator](#fpcgradientpageindicator)
+      - [FPCProgressIndicator](#fpcprogressindicator)
+      - [FPCStoryIndicator](#fpcstoryindicator)
+    - [Keyboard](#keyboard)
+      - [FPCKeyboardButton](#fpckeyboardbutton)
+      - [FPCKeyboardNumberButton](#fpckeyboardnumberbutton)
+      - [FPCKeyboard](#fpckeyboard)
+    - [List](#list)
+      - [FPCListRefresh](#fpclistrefresh)
+      - [FPCListSection](#fpclistsection)
+    - [Navigation](#navigation)
+      - [FPCBottomNavigationBar](#fpcbottomnavigationbar)
+      - [FPCBlurBottomNavigationBar](#fpcblurbottomnavigationbar)
+      - [FPCNavigator](#fpcnavigator)
+      - [FPCRoute](#fpcroute)
+    - [Picker](#picker)
+      - [FPCDatePicker](#fpcdatepicker)
+      - [FPCTimePicker](#fpctimepicker)
+    - [PINField](#pinfield)
+      - [FPCPINField](#fpcpinfield)
+      - [FPCGradientPINField](#fpcgradientpinfield)
+    - [Radio](#radio)
+      - [FPCRadio](#fpcradio)
+    - [Scaffold](#scaffold)
+      - [FPCScaffold](#fpcscaffold)
+    - [Scrollbar](#scrollbar)
+      - [FPCScrollbar](#fpcscrollbar)
+    - [SegmentControl](#segmentcontrol)
+      - [FPCSegmentControl](#fpcsegmentcontrol)
+      - [FPCGradientSegmentControl](#fpcgradientsegmentcontrol)
+    - [SelectCard](#selectcard)
+      - [FPCSelectCard](#fpcselectcard)
+      - [FPCGradientSelectCard](#fpcgradientselectcard)
+      - [FPCDottedSelectCard](#fpcdottedselectcard)
+    - [SelectField](#selectfield)
+      - [FPCSelectField](#fpcselectfield)
+      - [FPCGradientSelectField](#fpcgradientselectfield)
+    - [Shimmer](#shimmer)
+      - [FPCShimmer](#fpcshimmer)
+      - [FPCGradientShimmer](#fpcgradientshimmer)
+    - [Slider](#slider)
+      - [FPCSlider](#fpcslider)
+    - [SlidingSegmentControl](#slidingsegmentcontrol)
+      - [FPCSlidingSegmentControl](#fpcslidingsegmentcontrol)
+    - [SliverAppBar](#sliverappbar)
+      - [FPCSliverAppBar](#fpcsliverappbar)
+    - [SnackBar](#snackbar)
+      - [FPCSnackBar](#fpcsnackbar)
+      - [FPCGradientSnackBar](#fpcgradientsnackbar)
+    - [Switch](#switch)
+      - [FPCSwitch](#fpcswitch)
+    - [Text](#text)
+      - [FPCText](#fpctext)
+      - [FPCTextSpan](#fpctextspan)
+      - [FPCTextStyle](#fpctextstyle)
+    - [Toggle](#toggle)
+      - [FPCToggle](#fpctoggle)
+      - [FPCGradientToggle](#fpcgradienttoggle)
   - [Common](#common)
+    - [Animation](#animation)
+      - [FPCAnimatedAlign](#fpcanimatedalign)
+      - [FPCAnimatedContainer](#fpcanimatedcontainer)
+      - [FPCAnimatedCrossFade](#fpcanimatedcrossfade)
+      - [FPCAnimatedDefaultTextStyle](#fpcanimateddefaulttextstyle)
+      - [FPCAnimatedFadeIn](#fpcanimatedfadein)
+      - [FPCAnimatedFadeOut](#fpcanimatedfadeout)
+      - [FPCAnimatedOpacityStack](#fpcanimatedopacitystack)
+      - [FPCAnimatedOpacity](#fpcanimatedopacity)
+      - [FPCAnimatedOpenContainer](#fpcanimatedopencontainer)
+      - [FPCAnimatedPositioned](#fpcanimatedpositioned)
+      - [FPCAnimatedSize](#fpcanimatedsize)
+      - [FPCAnimatedSwitcher](#fpcanimatedswitcher)
+      - [FPCAnimatedTransitionSwitcher](#fpcanimatedtransitionswitcher)
     - [FPCCupertinoNavigator](#fpccupertinonavigator)
-    - [FPCCupertinoSliverRefreshControl](#fpccupertinosliverrefreshcontrol)
     - [FPCDisabledOverlay](#fpcdisabledoverlay)
     - [FPCDisabledWrapper](#fpcdisabledwrapper)
     - [FPCField](#fpcfield)
@@ -133,87 +214,6 @@
   - [Default](#default)
     - [FPCListView](#fpclistview)
     - [FPCPadding](#fpcpadding)
-  - [Dialog](#dialog)
-    - [FPCDialog](#fpcdialog)
-  - [Divider](#divider)
-    - [FPCDivider](#fpcdivider)
-    - [FPCGradientDivider](#fpcgradientdivider)
-  - [FormField](#formfield)
-    - [FPCFormField](#fpcformfield)
-    - [FPCGradientFormField](#fpcgradientformfield)
-  - [Global](#global)
-    - [BottomSheet](#bottomsheet)
-    - [Dialog](#dialog)
-    - [Picker](#picker)
-    - [SnackBar](#snackbar)
-  - [Gradient](#gradient)
-    - [FPCGradientMask](#fpcgradientmask)
-    - [FPCLinearGradient](#fpclinearGradient)
-    - [FPCRadialGradient](#fpcradialGradient)
-    - [FPCSweepGradient](#fpcsweepGradient)
-  - [Icon](#icon)
-  - [Indicator](#indicator)
-    - [CircularIndicator](#circularindicator)
-    - [GradientCircularIndicator](#gradientcircularindicator)
-    - [FPCPageIndicator](#fpcpageindicator)
-    - [FPCGradientPageIndicator](#fpcgradientpageindicator)
-    - [FPCProgressIndicator](#fpcprogressindicator)
-    - [FPCStoryIndicator](#fpcstoryindicator)
-  - [Keyboard](#keyboard)
-    - [FPCKeyboardButton](#fpckeyboardbutton)
-    - [FPCKeyboardNumberButton](#fpckeyboardnumberbutton)
-    - [FPCKeyboard](#fpckeyboard)
-  - [List](#list)
-    - [FPCListRefresh](#fpclistrefresh)
-    - [FPCListSection](#fpclistsection)
-  - [Navigation](#navigation)
-    - [FPCBottomNavigationBar](#fpcbottomnavigationbar)
-    - [FPCBlurBottomNavigationBar](#fpcblurbottomnavigationbar)
-    - [FPCNavigator](#fpcnavigator)
-    - [FPCRoute](#fpcroute)
-  - [Picker](#picker)
-    - [FPCDatePicker](#fpcdatepicker)
-    - [FPCTimePicker](#fpctimepicker)
-  - [PINField](#pinfield)
-    - [FPCPINField](#fpcpinfield)
-    - [FPCGradientPINField](#fpcgradientpinfield)
-  - [Radio](#radio)
-    - [FPCRadio](#fpcradio)
-  - [Scaffold](#scaffold)
-    - [FPCScaffold](#fpcscaffold)
-  - [Scrollbar](#scrollbar)
-    - [FPCScrollbar](#fpcscrollbar)
-  - [SegmentControl](#segmentcontrol)
-    - [FPCSegmentControl](#fpcsegmentcontrol)
-    - [FPCGradientSegmentControl](#fpcgradientsegmentcontrol)
-  - [SelectCard](#selectcard)
-    - [FPCSelectCard](#fpcselectcard)
-    - [FPCGradientSelectCard](#fpcgradientselectcard)
-    - [FPCDottedSelectCard](#fpcdottedselectcard)
-  - [SelectField](#selectfield)
-    - [FPCSelectField](#fpcselectfield)
-    - [FPCGradientSelectField](#fpcgradientselectfield)
-  - [Shimmer](#shimmer)
-    - [FPCShimmer](#fpcshimmer)
-    - [FPCGradientShimmer](#fpcgradientshimmer)
-  - [Slider](#slider)
-    - [FPCSlider](#fpcslider)
-  - [SlidingSegmentControl](#slidingsegmentcontrol)
-    - [FPCSlidingSegmentControl](#fpcslidingsegmentcontrol)
-  - [SliverAppBar](#sliverappbar)
-    - [FPCSliverAppBar](#fpcsliverappbar)
-  - [SnackBar](#snackbar)
-    - [FPCSnackBar](#fpcsnackbar)
-    - [FPCGradientSnackBar](#fpcgradientsnackbar)
-  - [Switch](#switch)
-    - [FPCSwitch](#fpcswitch)
-  - [Text](#text)
-    - [FPCText](#fpctext)
-    - [FPCTextSpan](#fpctextspan)
-    - [FPCTextStyle](#fpctextstyle)
-  - [Toggle](#toggle)
-    - [FPCToggle](#fpctoggle)
-    - [FPCGradientToggle](#fpcgradienttoggle)
 - [TODO](#todo)
 - [Additional Information](#additional-information)
 
@@ -278,49 +278,41 @@ Create and fill the presentational entities you need from the interfaces that th
 ```dart
 class Animations extends FPCDefaultAnimation {
   const Animations();
-
-  // Override properties
-}
-
-class TextStyles extends FPCDefaultTextStyle {
-  const TextStyles();
-
   // Override properties
 }
 
 class TimesOfDay extends FPCDefaultTimeOfDay {
   const TimesOfDay();
-
   // Override properties
 }
 
 class DateTimes extends FPCDefaultDateTime {
   DateTimes();
-
   // Override properties
 }
 
 class Durations extends FPCDefaultDuration {
   const Durations();
-
   // Override properties
 }
 
 class Haptics extends FPCDefaultHaptic {
   const Haptics();
-
   // Override properties
 }
 
 class LightTheme extends FPCDefaultLightTheme {
   const LightTheme();
-
   // Override properties
 }
 
 class Sizes extends FPCDefaultSize {
   const Sizes();
+  // Override properties
+}
 
+class Fonts extends FPCDefaultFont {
+  const Fonts();
   // Override properties
 }
 ```
@@ -330,7 +322,6 @@ Initialize the main component widget at the root:
 void main() => runApp(
       FlutterPlatformComponent( // Initialize the main widget at the root
         animation: const Animations(),
-        textStyle: const TextStyles(),
         timeOfDay: const TimesOfDay(),
         dateTime: DateTimes(),
         duration: const Durations(),
@@ -338,12 +329,15 @@ void main() => runApp(
         haptic: const Haptics(),
         theme: LightTheme(),
         size: const Sizes(),
+        font: const Fonts(),
         child: const Application(),
       ),
     );
 
 class Application extends StatelessWidget {
-  const Application({super.key,});
+  const Application({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context,) {
@@ -386,7 +380,9 @@ final FPCAnimation animation = context.fpcAnimation;
 ```
 The method allows you to change the current animations:
 ```dart
-context.fpcChangeDateTime(const Animations());
+context.fpcChangeDateTime(
+  const Animations(),
+);
 ```
 
 ### DateTime
@@ -398,7 +394,9 @@ final FPCDateTime dateTime = context.fpcDateTime;
 ```
 The method allows you to change the current date times:
 ```dart
-context.fpcChangeDateTime(DateTimes());
+context.fpcChangeDateTime(
+  DateTimes()
+);
 ```
 
 ### Duration
@@ -410,7 +408,23 @@ final FPCDuration duration = context.fpcDuration;
 ```
 The method allows you to change the current durations:
 ```dart
-context.fpcChangeDuration(const Durations());
+context.fpcChangeDuration(
+  const Durations()
+);
+```
+
+### Font
+[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/font/fpc_font.dart#L3) of a font weights and families that text components use.\
+The default value is [const FPCDefaultFont();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/font/fpc_default_font.dart#L4).\
+Get the actual text style instance in the widget tree:
+```dart
+final FPCFont font = context.fpcFont;
+```
+The method allows you to change the current text styles:
+```dart
+context.fpcChangeFont(
+  const Fonts()
+);
 ```
 
 ### Haptic
@@ -422,7 +436,9 @@ final FPCHaptic haptic = context.fpcHaptic;
 ```
 The method allows you to change the current haptic vibration:
 ```dart
-context.fpcChangeHaptic(const Haptics());
+context.fpcChangeHaptic(
+  const Haptics()
+);
 ```
 
 ### Platform
@@ -434,7 +450,9 @@ final FPCPlatform platform = context.fpcPlatform;
 ```
 The method allows you to change the current platform:
 ```dart
-context.fpcChangePlatform(FPCPlatform.android);
+context.fpcChangePlatform(
+  FPCPlatform.android
+);
 ```
 
 ### Size
@@ -446,7 +464,9 @@ final FPCSize size = context.fpcSize;
 ```
 The method allows you to change the current sizes:
 ```dart
-context.fpcChangeSize(const Sizes());
+context.fpcChangeSize(
+  const Sizes()
+);
 ```
 You can get the actual state for platform-decomposing size properties:
 ```dart
@@ -457,26 +477,16 @@ final BorderRadius borderRadiusButton = sizeScope.borderRadiusButton;
 final BorderRadius borderRadiusCard = sizeScope.borderRadiusCard;
 final BorderRadius borderRadiusDialog = sizeScope.borderRadiusDialog;
 final BorderRadius borderRadiusField = sizeScope.borderRadiusField;
+final BorderRadius borderRadiusPopUpMenu = sizeScope.borderRadiusPopUpMenu;
 final BorderRadius borderRadiusSegmentControl = sizeScope.borderRadiusSegmentControl;
 final BorderRadius borderRadiusSnackBar = sizeScope.borderRadiusSnackBar;
 final BorderRadius borderRadiusToggle = sizeScope.borderRadiusToggle;
+
 final double borderWidthButton = sizeScope.borderWidthButton;
 final double borderWidthCard = sizeScope.borderWidthCard;
 final double borderWidthField = sizeScope.borderWidthField;
 final double borderWidthSegmentControl = sizeScope.borderWidthSegmentControl;
 final double borderWidthSnackBar = sizeScope.borderWidthSnackBar;
-```
-
-### TextStyle
-[An abstraction](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/text_style/fpc_text_style.dart#L3) of a font weights and families that text components use.\
-The default value is [const FPCDefaultTextStyle();](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/lib/src/core/domain/entity/text_style/fpc_default_text_style.dart#L4).\
-Get the actual text style instance in the widget tree:
-```dart
-final FPCFont font = context.fpcFont;
-```
-The method allows you to change the current text styles:
-```dart
-context.fpcChangeTextStyle(const TextStyles());
 ```
 
 ### Theme
@@ -489,7 +499,9 @@ final FPCTheme theme = context.fpcTheme;
 ```
 The method allows you to change the current theme:
 ```dart
-context.fpcChangeTheme(DarkTheme());
+context.fpcChangeTheme(
+  DarkTheme()
+);
 ```
 You can get the actual theme state for platform-decomposing entities:
 ```dart
@@ -509,244 +521,15 @@ final FPCTimeOfDay timeOfDay = context.fpcTimeOfDay;
 ```
 The method allows you to change the current times of day:
 ```dart
-context.fpcChangeTimeOfDay(const TimesOfDay());
+context.fpcChangeTimeOfDay(
+  const TimesOfDay()
+);
 ```
 
 <br>
 
 ## Components
-
-### Animation
-All animations durations are guided by slow, default and fast durations from the size config.
-#### FPCAnimatedAlign
-Standard AnimatedAlign widget.\
-Example of using a ready-made component:
-```dart
-const FPCAnimatedSlowAlign(
-  child: Child(),
-),
-const FPCAnimatedAlign(
-  child: Child(),
-),
-const FPCAnimatedFastAlign(
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_align.gif)
-#### FPCAnimatedContainer
-Standard AnimatedContainer widget.\
-Example of using a ready-made component:
-```dart
-const FPCAnimatedSlowContainer(
-  child: Child(),
-),
-const FPCAnimatedContainer(
-  child: Child(),
-),
-const FPCAnimatedFastContainer(
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_container.gif)
-#### FPCAnimatedCrossFade
-Standard AnimatedCrossFade widget.\
-Example of using a ready-made component:
-```dart
-FPCAnimatedSlowCrossFade(
-  condition: condition,
-  firstChild: const FirstChild(),
-  secondChild: const SecondChild(),
-),
-FPCAnimatedCrossFade(
-  condition: condition,
-  firstChild: const FirstChild(),
-  secondChild: const SecondChild(),
-),
-FPCAnimatedFastCrossFade(
-  condition: condition,
-  firstChild: const FirstChild(),
-  secondChild: const SecondChild(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_cross_fade.gif)
-#### FPCAnimatedDefaultTextStyle
-Standard AnimatedDefaultTextStyle widget.\
-Example of using a ready-made component:
-```dart
-const AnimatedSlowDefaultTextStyle(
-  child: Child(),
-),
-const AnimatedDefaultTextStyle(
-  child: Child(),
-),
-const AnimatedFastDefaultTextStyle(
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_default_text_style.gif)
-#### FPCAnimatedFadeIn
-Fade-In from left, right, up and down animation widget.\
-Example of using a ready-made component:
-```dart
-FPCAnimatedSlowFadeIn(
-  isAnimate: animate,
-  child: const Child(),
-),
-FPCAnimatedFadeIn(
-  isAnimate: animate,
-  child: const Child(),
-),
-FPCAnimatedFastFadeIn(
-  isAnimate: animate,
-  child: const Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_fade_in.gif)
-#### FPCAnimatedFadeOut
-Fade-Out from left, right, up and down animation widget.\
-Example of using a ready-made component:
-```dart
-const FPCAnimatedSlowFadeOut(
-  isAnimate: animate,
-  child: Child(),
-),
-const FPCAnimatedFadeOut(
-  isAnimate: animate,
-  child: Child(),
-),
-const FPCAnimatedFastFadeOut(
-  isAnimate: animate,
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_fade_out.gif)
-#### FPCAnimatedOpacityStack
-Stack of two AnimatedOpacity widgets.\
-Needed when the widget should not adjust to the size of the first or second child.
-Example of using a ready-made component:
-```dart
-FPCAnimatedSlowOpacityStack(
-  condition: condition,
-  firstChild: const FirstChild(),
-  secondChild: const SecondChild(),
-),
-FPCAnimatedOpacityStack(
-  condition: condition,
-  firstChild: const FirstChild(),
-  secondChild: const SecondChild(),
-),
-FPCAnimatedFastOpacityStack(
-  condition: condition,
-  firstChild: const FirstChild(),
-  secondChild: const SecondChild(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_opacity_stack.gif)
-#### FPCAnimatedOpacity
-Standard AnimatedOpaicty widget.\
-Example of using a ready-made component:
-```dart
-FPCAnimatedSlowOpacity(
-  condition: condition,
-  child: const Child(),
-),
-FPCAnimatedOpacity(
-  condition: condition,
-  child: const Child(),
-),
-FPCAnimatedFastOpacity(
-  condition: condition,
-  child: const Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_opacity.gif)
-#### FPCAnimatedOpenContainer
-Transition navigation widget.\
-Example of using a ready-made component:
-```dart
-FPCAnimatedSlowOpenContainer(
-  type: FPCOpenContainerTransitionType.fade,
-  closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
-  openBuilder: (BuildContext context,) => const OpenChild(),
-),
-FPCAnimatedOpenContainer(
-  type: FPCOpenContainerTransitionType.fade,
-  closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
-  openBuilder: (BuildContext context,) => const OpenChild(),
-),
-FPCAnimatedFastOpenContainer(
-  type: FPCOpenContainerTransitionType.fade,
-  closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
-  openBuilder: (BuildContext context,) => const OpenChild(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_open_container.gif)
-#### FPCAnimatedPositioned
-Standard AnimatedPositioned widget.\
-Example of using a ready-made component:
-```dart
-const FPCAnimatedSlowPositioned(
-  child: Child(),
-),
-const FPCAnimatedPositioned(
-  child: Child(),
-),
-const FPCAnimatedFastPositioned(
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_positioned.gif)
-#### FPCAnimatedSize
-Standard AnimatedSize widget.\
-Example of using a ready-made component:
-```dart
-const FPCAnimatedSlowSize(
-  child: Child(),
-),
-const FPCAnimatedSize(
-  child: Child(),
-),
-const FPCAnimatedFastSize(
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_size.gif)
-#### FPCAnimatedSwitcher
-Standard AnimatedSwitcher widget.\
-Example of using a ready-made component:
-```dart
-const FPCAnimatedSlowSwitcher(
-  child: Child(),
-),
-const FPCAnimatedSwitcher(
-  child: Child(),
-),
-const FPCAnimatedFastSwitcher(
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_switcher.gif)
-#### FPCAnimatedTransitionSwitcher
-Transition widget with great animation change of child.\
-Example of using a ready-made component:
-```dart
-const FPCAnimatedSlowTransitionSwitcher(
-  type: FPCTransitionType.scaled,
-  child: Child(),
-),
-const FPCAnimatedTransitionSwitcher(
-  type: FPCTransitionType.scaled,
-  child: Child(),
-),
-const FPCAnimatedFastTransitionSwitcher(
-  type: FPCTransitionType.scaled,
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_transition_switcher.gif)
-
-<br>
-
+### Platform
 ### App
 #### FPCApp
 Basic root widget of the application, decomposed by platform.\
@@ -1206,34 +989,6 @@ FPCPrimaryGradientCodeField(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/code_field/gradient_code_field.gif)
-
-<br>
-
-### Common
-#### CupertinoNavigator
-Default [CupertinoTabView](https://api.flutter.dev/flutter/cupertino/CupertinoTabView-class.html) widget supplemented by methods.
-#### FPCCupertinoSliverRefreshControl
-Default [CupertinoSliverRefreshControl](https://api.flutter.dev/flutter/cupertino/CupertinoSliverRefreshControl-class.html) widget supplemented by methods.
-#### FPCDisabledOverlay
-Container for disabled overlaying are guided by theme config.
-#### FPCDisabledWrapper
-Wrapper widget for disabled functional.
-#### FPCField
-Special wrapper of field for internal usage&
-#### FPCMaterialScrollbar
-Separated material scrollbar component.
-#### FPCNestedWillPopScope
-WillPopScope widget for nested navigation.
-#### FPCTextInputHandlerFormatter
-Text handler for autovalidating.
-
-<br>
-
-### Default
-#### FPCListView
-Default ListView widget are guided by size config.
-#### FPCPadding
-Default Padding widget are guided by size config.
 
 <br>
 
@@ -2078,10 +1833,268 @@ FPCPrimaryGradientToggle<String>(
 
 <br>
 
+### Common
+#### Animation
+All animations durations are guided by slow, default and fast durations from the size config.
+##### FPCAnimatedAlign
+Standard AnimatedAlign widget.\
+Example of using a ready-made component:
+```dart
+const FPCAnimatedSlowAlign(
+  child: Child(),
+),
+const FPCAnimatedAlign(
+  child: Child(),
+),
+const FPCAnimatedFastAlign(
+  child: Child(),
+),
+```
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_align.gif)
+##### FPCAnimatedContainer
+Standard AnimatedContainer widget.\
+Example of using a ready-made component:
+```dart
+const FPCAnimatedSlowContainer(
+  child: Child(),
+),
+const FPCAnimatedContainer(
+  child: Child(),
+),
+const FPCAnimatedFastContainer(
+  child: Child(),
+),
+```
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_container.gif)
+##### FPCAnimatedCrossFade
+Standard AnimatedCrossFade widget.\
+Example of using a ready-made component:
+```dart
+FPCAnimatedSlowCrossFade(
+  condition: condition,
+  firstChild: const FirstChild(),
+  secondChild: const SecondChild(),
+),
+FPCAnimatedCrossFade(
+  condition: condition,
+  firstChild: const FirstChild(),
+  secondChild: const SecondChild(),
+),
+FPCAnimatedFastCrossFade(
+  condition: condition,
+  firstChild: const FirstChild(),
+  secondChild: const SecondChild(),
+),
+```
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_cross_fade.gif)
+##### FPCAnimatedDefaultTextStyle
+Standard AnimatedDefaultTextStyle widget.\
+Example of using a ready-made component:
+```dart
+const AnimatedSlowDefaultTextStyle(
+  child: Child(),
+),
+const AnimatedDefaultTextStyle(
+  child: Child(),
+),
+const AnimatedFastDefaultTextStyle(
+  child: Child(),
+),
+```
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_default_text_style.gif)
+##### FPCAnimatedFadeIn
+Fade-In from left, right, up and down animation widget.\
+Example of using a ready-made component:
+```dart
+FPCAnimatedSlowFadeIn(
+  isAnimate: animate,
+  child: const Child(),
+),
+FPCAnimatedFadeIn(
+  isAnimate: animate,
+  child: const Child(),
+),
+FPCAnimatedFastFadeIn(
+  isAnimate: animate,
+  child: const Child(),
+),
+```
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_fade_in.gif)
+##### FPCAnimatedFadeOut
+Fade-Out from left, right, up and down animation widget.\
+Example of using a ready-made component:
+```dart
+const FPCAnimatedSlowFadeOut(
+  isAnimate: animate,
+  child: Child(),
+),
+const FPCAnimatedFadeOut(
+  isAnimate: animate,
+  child: Child(),
+),
+const FPCAnimatedFastFadeOut(
+  isAnimate: animate,
+  child: Child(),
+),
+```
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_fade_out.gif)
+##### FPCAnimatedOpacityStack
+Stack of two AnimatedOpacity widgets.\
+Needed when the widget should not adjust to the size of the first or second child.
+Example of using a ready-made component:
+```dart
+FPCAnimatedSlowOpacityStack(
+  condition: condition,
+  firstChild: const FirstChild(),
+  secondChild: const SecondChild(),
+),
+FPCAnimatedOpacityStack(
+  condition: condition,
+  firstChild: const FirstChild(),
+  secondChild: const SecondChild(),
+),
+FPCAnimatedFastOpacityStack(
+  condition: condition,
+  firstChild: const FirstChild(),
+  secondChild: const SecondChild(),
+),
+```
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_opacity_stack.gif)
+##### FPCAnimatedOpacity
+Standard AnimatedOpaicty widget.\
+Example of using a ready-made component:
+```dart
+FPCAnimatedSlowOpacity(
+  condition: condition,
+  child: const Child(),
+),
+FPCAnimatedOpacity(
+  condition: condition,
+  child: const Child(),
+),
+FPCAnimatedFastOpacity(
+  condition: condition,
+  child: const Child(),
+),
+```
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_opacity.gif)
+##### FPCAnimatedOpenContainer
+Transition navigation widget.\
+Example of using a ready-made component:
+```dart
+FPCAnimatedSlowOpenContainer(
+  type: FPCOpenContainerTransitionType.fade,
+  closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
+  openBuilder: (BuildContext context,) => const OpenChild(),
+),
+FPCAnimatedOpenContainer(
+  type: FPCOpenContainerTransitionType.fade,
+  closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
+  openBuilder: (BuildContext context,) => const OpenChild(),
+),
+FPCAnimatedFastOpenContainer(
+  type: FPCOpenContainerTransitionType.fade,
+  closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
+  openBuilder: (BuildContext context,) => const OpenChild(),
+),
+```
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_open_container.gif)
+#### FPCAnimatedPositioned
+Standard AnimatedPositioned widget.\
+Example of using a ready-made component:
+```dart
+const FPCAnimatedSlowPositioned(
+  child: Child(),
+),
+const FPCAnimatedPositioned(
+  child: Child(),
+),
+const FPCAnimatedFastPositioned(
+  child: Child(),
+),
+```
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_positioned.gif)
+##### FPCAnimatedSize
+Standard AnimatedSize widget.\
+Example of using a ready-made component:
+```dart
+const FPCAnimatedSlowSize(
+  child: Child(),
+),
+const FPCAnimatedSize(
+  child: Child(),
+),
+const FPCAnimatedFastSize(
+  child: Child(),
+),
+```
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_size.gif)
+##### FPCAnimatedSwitcher
+Standard AnimatedSwitcher widget.\
+Example of using a ready-made component:
+```dart
+const FPCAnimatedSlowSwitcher(
+  child: Child(),
+),
+const FPCAnimatedSwitcher(
+  child: Child(),
+),
+const FPCAnimatedFastSwitcher(
+  child: Child(),
+),
+```
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_switcher.gif)
+##### FPCAnimatedTransitionSwitcher
+Transition widget with great animation change of child.\
+Example of using a ready-made component:
+```dart
+const FPCAnimatedSlowTransitionSwitcher(
+  type: FPCTransitionType.scaled,
+  child: Child(),
+),
+const FPCAnimatedTransitionSwitcher(
+  type: FPCTransitionType.scaled,
+  child: Child(),
+),
+const FPCAnimatedFastTransitionSwitcher(
+  type: FPCTransitionType.scaled,
+  child: Child(),
+),
+```
+![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_transition_switcher.gif)
+
+<br>
+
+#### CupertinoNavigator
+Default [CupertinoTabView](https://api.flutter.dev/flutter/cupertino/CupertinoTabView-class.html) widget supplemented by methods.
+#### FPCDisabledOverlay
+Container for disabled overlaying are guided by theme config.
+#### FPCDisabledWrapper
+Wrapper widget for disabled functional.
+#### FPCField
+Special wrapper of field for internal usage.
+#### FPCMaterialScrollbar
+Separated material scrollbar component.
+#### FPCNestedWillPopScope
+WillPopScope widget for nested navigation.
+#### FPCTextInputHandlerFormatter
+Text handler for autovalidating.
+
+<br>
+
+### Default
+#### FPCListView
+Default ListView widget are guided by size config.
+#### FPCPadding
+Default Padding widget are guided by size config.
+
+<br>
 
 ## TODO
 1) Elevation of components;
-2) Support WEB.
+2) Support WEB & desktop.
+3) FPCTooltip;
+4) FPCDrawer;
 
 <br>
 
