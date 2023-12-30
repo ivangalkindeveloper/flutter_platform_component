@@ -189,7 +189,7 @@
     - [Toggle](#toggle)
       - [FPCToggle](#fpctoggle)
       - [FPCGradientToggle](#fpcgradienttoggle)
-  - [Common](#common)
+  - [Default](#default)
     - [Animation](#animation)
       - [FPCAnimatedAlign](#fpcanimatedalign)
       - [FPCAnimatedContainer](#fpcanimatedcontainer)
@@ -204,6 +204,9 @@
       - [FPCAnimatedSize](#fpcanimatedsize)
       - [FPCAnimatedSwitcher](#fpcanimatedswitcher)
       - [FPCAnimatedTransitionSwitcher](#fpcanimatedtransitionswitcher)
+    - [FPCListView](#fpclistview)
+    - [FPCPadding](#fpcpadding)
+  - [Common](#common)
     - [FPCCupertinoNavigator](#fpccupertinonavigator)
     - [FPCDisabledOverlay](#fpcdisabledoverlay)
     - [FPCDisabledWrapper](#fpcdisabledwrapper)
@@ -211,9 +214,6 @@
     - [FPCMaterialScrollbar](#fpcmaterialscrollbar)
     - [FPCNestedWillPopScope](#fpcnestedwillpopscope)
     - [FPCTextInputHandlerFormatter](#fpctextinputhandlerformatter)
-  - [Default](#default)
-    - [FPCListView](#fpclistview)
-    - [FPCPadding](#fpcpadding)
 - [TODO](#todo)
 - [Additional Information](#additional-information)
 
@@ -1833,7 +1833,7 @@ FPCPrimaryGradientToggle<String>(
 
 <br>
 
-### Common
+### Default
 #### Animation
 All animations durations are guided by slow, default and fast durations from the size config.
 ##### FPCAnimatedAlign
@@ -2062,9 +2062,14 @@ const FPCAnimatedFastTransitionSwitcher(
 ),
 ```
 ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_transition_switcher.gif)
+#### FPCListView
+Default ListView widget are guided by size config.
+#### FPCPadding
+Default Padding widget are guided by size config.
 
 <br>
 
+### Common
 #### CupertinoNavigator
 Default [CupertinoTabView](https://api.flutter.dev/flutter/cupertino/CupertinoTabView-class.html) widget supplemented by methods.
 #### FPCDisabledOverlay
@@ -2079,14 +2084,6 @@ Separated material scrollbar component.
 WillPopScope widget for nested navigation.
 #### FPCTextInputHandlerFormatter
 Text handler for autovalidating.
-
-<br>
-
-### Default
-#### FPCListView
-Default ListView widget are guided by size config.
-#### FPCPadding
-Default Padding widget are guided by size config.
 
 <br>
 
