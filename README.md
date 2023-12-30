@@ -190,7 +190,7 @@
       - [FPCToggle](#fpctoggle)
       - [FPCGradientToggle](#fpcgradienttoggle)
   - [Default](#default)
-    - [Animation](#animation)
+    - [Animated](#animated)
     - [FPCListView](#fpclistview)
     - [FPCPadding](#fpcpadding)
   - [Common](#common)
@@ -1821,8 +1821,8 @@ FPCPrimaryGradientToggle<String>(
 <br>
 
 ### Default
-#### Animation
-All animations durations are guided by slow, default and fast durations from the size config:
+#### Animated
+All animations durations are guided by slow, default and fast durations from the size config:\
 FPCAnimatedAlign\
 FPCAnimatedContainer\
 FPCAnimatedCrossFade\
