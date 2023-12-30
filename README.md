@@ -1835,233 +1835,27 @@ FPCPrimaryGradientToggle<String>(
 
 ### Default
 #### Animation
-All animations durations are guided by slow, default and fast durations from the size config.
-##### FPCAnimatedAlign
-Standard AnimatedAlign widget.\
-Example of using a ready-made component:
-```dart
-const FPCAnimatedSlowAlign(
-  child: Child(),
-),
-const FPCAnimatedAlign(
-  child: Child(),
-),
-const FPCAnimatedFastAlign(
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_align.gif)
-##### FPCAnimatedContainer
-Standard AnimatedContainer widget.\
-Example of using a ready-made component:
-```dart
-const FPCAnimatedSlowContainer(
-  child: Child(),
-),
-const FPCAnimatedContainer(
-  child: Child(),
-),
-const FPCAnimatedFastContainer(
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_container.gif)
-##### FPCAnimatedCrossFade
-Standard AnimatedCrossFade widget.\
-Example of using a ready-made component:
-```dart
-FPCAnimatedSlowCrossFade(
-  condition: condition,
-  firstChild: const FirstChild(),
-  secondChild: const SecondChild(),
-),
-FPCAnimatedCrossFade(
-  condition: condition,
-  firstChild: const FirstChild(),
-  secondChild: const SecondChild(),
-),
-FPCAnimatedFastCrossFade(
-  condition: condition,
-  firstChild: const FirstChild(),
-  secondChild: const SecondChild(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_cross_fade.gif)
-##### FPCAnimatedDefaultTextStyle
-Standard AnimatedDefaultTextStyle widget.\
-Example of using a ready-made component:
-```dart
-const AnimatedSlowDefaultTextStyle(
-  child: Child(),
-),
-const AnimatedDefaultTextStyle(
-  child: Child(),
-),
-const AnimatedFastDefaultTextStyle(
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_default_text_style.gif)
-##### FPCAnimatedFadeIn
-Fade-In from left, right, up and down animation widget.\
-Example of using a ready-made component:
-```dart
-FPCAnimatedSlowFadeIn(
-  isAnimate: animate,
-  child: const Child(),
-),
-FPCAnimatedFadeIn(
-  isAnimate: animate,
-  child: const Child(),
-),
-FPCAnimatedFastFadeIn(
-  isAnimate: animate,
-  child: const Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_fade_in.gif)
-##### FPCAnimatedFadeOut
-Fade-Out from left, right, up and down animation widget.\
-Example of using a ready-made component:
-```dart
-const FPCAnimatedSlowFadeOut(
-  isAnimate: animate,
-  child: Child(),
-),
-const FPCAnimatedFadeOut(
-  isAnimate: animate,
-  child: Child(),
-),
-const FPCAnimatedFastFadeOut(
-  isAnimate: animate,
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_fade_out.gif)
-##### FPCAnimatedOpacityStack
-Stack of two AnimatedOpacity widgets.\
-Needed when the widget should not adjust to the size of the first or second child.
-Example of using a ready-made component:
-```dart
-FPCAnimatedSlowOpacityStack(
-  condition: condition,
-  firstChild: const FirstChild(),
-  secondChild: const SecondChild(),
-),
-FPCAnimatedOpacityStack(
-  condition: condition,
-  firstChild: const FirstChild(),
-  secondChild: const SecondChild(),
-),
-FPCAnimatedFastOpacityStack(
-  condition: condition,
-  firstChild: const FirstChild(),
-  secondChild: const SecondChild(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_opacity_stack.gif)
-##### FPCAnimatedOpacity
-Standard AnimatedOpaicty widget.\
-Example of using a ready-made component:
-```dart
-FPCAnimatedSlowOpacity(
-  condition: condition,
-  child: const Child(),
-),
-FPCAnimatedOpacity(
-  condition: condition,
-  child: const Child(),
-),
-FPCAnimatedFastOpacity(
-  condition: condition,
-  child: const Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_opacity.gif)
-##### FPCAnimatedOpenContainer
-Transition navigation widget.\
-Example of using a ready-made component:
-```dart
-FPCAnimatedSlowOpenContainer(
-  type: FPCOpenContainerTransitionType.fade,
-  closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
-  openBuilder: (BuildContext context,) => const OpenChild(),
-),
-FPCAnimatedOpenContainer(
-  type: FPCOpenContainerTransitionType.fade,
-  closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
-  openBuilder: (BuildContext context,) => const OpenChild(),
-),
-FPCAnimatedFastOpenContainer(
-  type: FPCOpenContainerTransitionType.fade,
-  closedBuilder: (BuildContext context, VoidCallback openContainer) => const ClosedChild(),
-  openBuilder: (BuildContext context,) => const OpenChild(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_open_container.gif)
-#### FPCAnimatedPositioned
-Standard AnimatedPositioned widget.\
-Example of using a ready-made component:
-```dart
-const FPCAnimatedSlowPositioned(
-  child: Child(),
-),
-const FPCAnimatedPositioned(
-  child: Child(),
-),
-const FPCAnimatedFastPositioned(
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_positioned.gif)
-##### FPCAnimatedSize
-Standard AnimatedSize widget.\
-Example of using a ready-made component:
-```dart
-const FPCAnimatedSlowSize(
-  child: Child(),
-),
-const FPCAnimatedSize(
-  child: Child(),
-),
-const FPCAnimatedFastSize(
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_size.gif)
-##### FPCAnimatedSwitcher
-Standard AnimatedSwitcher widget.\
-Example of using a ready-made component:
-```dart
-const FPCAnimatedSlowSwitcher(
-  child: Child(),
-),
-const FPCAnimatedSwitcher(
-  child: Child(),
-),
-const FPCAnimatedFastSwitcher(
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_switcher.gif)
-##### FPCAnimatedTransitionSwitcher
-Transition widget with great animation change of child.\
-Example of using a ready-made component:
-```dart
-const FPCAnimatedSlowTransitionSwitcher(
-  type: FPCTransitionType.scaled,
-  child: Child(),
-),
-const FPCAnimatedTransitionSwitcher(
-  type: FPCTransitionType.scaled,
-  child: Child(),
-),
-const FPCAnimatedFastTransitionSwitcher(
-  type: FPCTransitionType.scaled,
-  child: Child(),
-),
-```
-![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/animation/animated_transition_switcher.gif)
+All animations durations are guided by slow, default and fast durations from the size config:
+FPCAnimatedAlign
+FPCAnimatedContainer
+FPCAnimatedCrossFade
+FPCAnimatedDefaultTextStyle
+FPCAnimatedFadeInDown, FPCAnimatedFadeInLeft, FPCAnimatedFadeInRight, FPCAnimatedFadeInUp, FPCAnimatedFadeIn (from animate_do package)
+FPCAnimatedFadeOutDown, FPCAnimatedFadeOutLeft, FPCAnimatedFadeOutRight, FPCAnimatedFadeOutUp, FPCAnimatedFadeOut (from animate_do package)
+FPCAnimatedFractionallySizedBox
+FPCAnimatedOpacityStack (stack of two AnimatedOpacity widgets)
+FPCAnimatedOpacity
+FPCAnimatedOpenContainer (from animations package)
+FPCAnimatedPadding
+FPCAnimatedPhysicalModel
+FPCAnimatedPositionedDirectional
+FPCAnimatedPositioned
+FPCAnimatedRotation
+FPCAnimatedScale
+FPCAnimatedSize
+FPCAnimatedSlide
+FPCAnimatedSwitcher
+FPCAnimatedTransitionSwitcher (from animations package)
 #### FPCListView
 Default ListView widget are guided by size config.
 #### FPCPadding

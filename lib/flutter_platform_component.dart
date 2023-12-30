@@ -6,9 +6,9 @@ library flutter_platform_component;
 
 // Application
 // Application / Common
-export 'src/application/common/animated/lib.dart';
 export 'src/application/common/lib.dart';
 // Application / Default
+export 'src/application/default/animated/lib.dart';
 export 'src/application/default/lib.dart';
 // Application / Platform
 export 'src/application/platform/app/lib.dart';

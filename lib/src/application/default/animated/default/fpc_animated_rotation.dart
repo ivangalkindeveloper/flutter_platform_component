@@ -1,8 +1,8 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:flutter/widgets.dart';
 
-class FPCAnimatedFastRotattion extends StatelessWidget {
-  const FPCAnimatedFastRotattion({
+class FPCAnimatedRotation extends StatelessWidget {
+  const FPCAnimatedRotation({
     super.key,
     required this.turns,
     this.alignment = Alignment.center,
@@ -29,7 +29,7 @@ class FPCAnimatedFastRotattion extends StatelessWidget {
       onEnd: this.onEnd,
       //
       curve: animation.curve,
-      duration: duration.animationFast,
+      duration: duration.animationDefault,
       child: this.child,
     );
   }
