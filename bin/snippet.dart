@@ -31,43 +31,43 @@ const JsonEncoder _jsonEncoder = JsonEncoder.withIndent('  ');
 void main() async {
   final Map<String, Map<String, _Snippet>> snippetTable = {};
   final Map<String, List<FileSystemEntity>> fileTable = {
-    "_animated": [],
-    "_app.dart": [],
-    "_app_bar.dart": [],
-    "_badge.dart": [],
-    "_blur.dart": [],
-    "_bottom_sheet.dart": [],
-    "_button.dart": [],
-    "_card.dart": [],
-    "_checkbox.dart": [],
-    "_code_field.dart": [],
-    "_list_view.dart": [],
-    "_padding.dart": [],
-    "_dialog.dart": [],
-    "_divider.dart": [],
-    "_form_field.dart": [],
-    "_icon.dart": [],
-    "_indicator.dart": [],
-    "_keyboard.dart": [],
-    "_list": [],
-    "_bottom_navigation_bar.dart": [],
-    "_navigator.dart": [],
-    "_picker.dart": [],
-    "_pin_field.dart": [],
-    "_pop_up_menu.dart": [],
-    "_radio.dart": [],
-    "_scaffold.dart": [],
-    "_scrollbar.dart": [],
-    "_segment_control.dart": [],
-    "_select_card.dart": [],
-    "_select_field.dart": [],
-    "_shimmer.dart": [],
-    "_slider.dart": [],
-    "_sliding_segment_control.dart": [],
-    "_sliver_app_bar.dart": [],
-    "_snack_bar.dart": [],
-    "_switch.dart": [],
-    "_toggle.dart": [],
+    "animated": [],
+    "app": [],
+    "app_bar": [],
+    "badge": [],
+    "blur": [],
+    "bottom_sheet": [],
+    "button": [],
+    "card": [],
+    "checkbox": [],
+    "code_field": [],
+    "list_view": [],
+    "padding": [],
+    "dialog": [],
+    "divider": [],
+    "form_field": [],
+    "icon": [],
+    "indicator": [],
+    "keyboard": [],
+    "list": [],
+    "bottom_navigation_bar": [],
+    "navigator": [],
+    "picker": [],
+    "pin_field": [],
+    "pop_up_menu": [],
+    "radio": [],
+    "scaffold": [],
+    "scrollbar": [],
+    "segment_control": [],
+    "select_card": [],
+    "select_field": [],
+    "shimmer": [],
+    "slider": [],
+    "sliding_segment_control": [],
+    "sliver_app_bar": [],
+    "snack_bar": [],
+    "switch": [],
+    "toggle": [],
   };
 
   final Directory directory = _handleDirectory();
@@ -83,7 +83,7 @@ void main() async {
 
   for (final MapEntry<String, List<FileSystemEntity>> fileEntry
       in fileTable.entries) {
-    final String snippentFileName = fileEntry.key;
+    final String snippetFileName = fileEntry.key;
     final List<FileSystemEntity> entities = fileEntry.value.toList();
     final Map<String, _Snippet> snippetItems = {};
 
@@ -93,16 +93,19 @@ void main() async {
       }
 
       final List<String> lines = entity.readAsLinesSync();
-      final _ComponentParseData componentParseData = _parceComponentFile(lines);
+      final _ComponentParseData componentParseData = _parceComponentFile(
+        lines,
+      );
 
       snippetItems[componentParseData.name] = _Snippet(
         prefix: componentParseData.name.replaceAll("<T>", "").toLowerCase(),
-        body: _getSnippetBody(componentParseData),
+        body: _getSnippetBody(
+          componentParseData,
+        ),
       );
     }
 
-    snippetTable["fpc${snippentFileName.replaceAll(".dart", "")}.json"] =
-        snippetItems;
+    snippetTable["fpc_$snippetFileName.json"] = snippetItems;
   }
 
   await Directory("bin/snippet").create();
@@ -117,7 +120,7 @@ void main() async {
 Directory _handleDirectory() {
   // final Directory parentDirectory = Directory(Directory.current.parent.path);
   // Directory.current = parentDirectory;
-  return Directory("lib/src/application/component/");
+  return Directory("lib/src/application/");
 }
 
 List<FileSystemEntity> _getFileEntities(
@@ -280,13 +283,27 @@ void _generateSnippetsFiles(
   Map<String, Map<String, _Snippet>> snippetTable,
 ) async {
   for (MapEntry<String, Map<String, _Snippet>> entry in snippetTable.entries) {
-    final File file = File(entry.key);
+    final File file = File(
+      entry.key,
+    );
     final String prettyJsonString = _jsonEncoder.convert(
-        entry.value.map((key, value) => MapEntry(key, value.toJson())));
+      entry.value.map(
+        (
+          key,
+          value,
+        ) =>
+            MapEntry(
+          key,
+          value.toJson(),
+        ),
+      ),
+    );
     file.writeAsStringSync(prettyJsonString);
   }
 
-  final File fpcBuildContextSnippetsFile = File("fpc_build_context.json");
+  final File fpcBuildContextSnippetsFile = File(
+    "fpc_build_context.json",
+  );
   fpcBuildContextSnippetsFile.writeAsStringSync(
     _jsonEncoder.convert(
       const {
@@ -300,18 +317,6 @@ void _generateSnippetsFiles(
           "prefix": "fpccontextchangeanimation",
           "body": [
             "context.fpcChangeAnimation(\${animation});",
-          ]
-        },
-        "FPCBuildContextTimeOfDay": {
-          "prefix": "fpccontexttimeofday",
-          "body": [
-            "final FPCTimeOfDay timeOfDay = context.fpcTimeOfDay;",
-          ]
-        },
-        "FPCBuildContextChangeTimeOfDay": {
-          "prefix": "fpccontextchangetimeofday",
-          "body": [
-            "context.fpcChangeTimeOfDay(\${timeofday});",
           ]
         },
         "FPCBuildContextDateTime": {
@@ -338,16 +343,16 @@ void _generateSnippetsFiles(
             "context.fpcChangeDuration(\${duration});",
           ]
         },
-        "FPCBuildContextPlatform": {
-          "prefix": "fpccontextplatform",
+        "FPCBuildContextFont": {
+          "prefix": "fpccontexttextstyle",
           "body": [
-            "final FPCPlatform platform = context.fpcPlatform;",
+            "final FPCFont font = context.fpcFont;",
           ]
         },
-        "FPCBuildContextChangePlatform": {
-          "prefix": "fpccontextchangeplatform",
+        "FPCBuildContextChangeFont": {
+          "prefix": "fpccontextchangetextstyle",
           "body": [
-            "context.fpcChangePlatform(\${platform});",
+            "context.fpcChangeFont(\${font});",
           ]
         },
         "FPCBuildContextHaptic": {
@@ -362,16 +367,16 @@ void _generateSnippetsFiles(
             "context.fpcChangeHaptic(\${haptic});",
           ]
         },
-        "FPCBuildContextTheme": {
-          "prefix": "fpccontexttheme",
+        "FPCBuildContextPlatform": {
+          "prefix": "fpccontextplatform",
           "body": [
-            "final FPCTheme theme = context.fpcTheme;",
+            "final FPCPlatform platform = context.fpcPlatform;",
           ]
         },
-        "FPCBuildContextChangeTheme": {
-          "prefix": "fpccontextchangetheme",
+        "FPCBuildContextChangePlatform": {
+          "prefix": "fpccontextchangeplatform",
           "body": [
-            "context.fpcChangeTheme(\${theme});",
+            "context.fpcChangePlatform(\${platform});",
           ]
         },
         "FPCBuildContextSize": {
@@ -386,23 +391,37 @@ void _generateSnippetsFiles(
             "context.fpcChangeSize(\${size});",
           ]
         },
-        "FPCBuildContextFont": {
-          "prefix": "fpccontexttextstyle",
+        "FPCBuildContextTheme": {
+          "prefix": "fpccontexttheme",
           "body": [
-            "final FPCFont font = context.fpcFont;",
+            "final FPCTheme theme = context.fpcTheme;",
           ]
         },
-        "FPCBuildContextChangeFont": {
-          "prefix": "fpccontextchangetextstyle",
+        "FPCBuildContextChangeTheme": {
+          "prefix": "fpccontextchangetheme",
           "body": [
-            "context.fpcChangeFont(\${font});",
+            "context.fpcChangeTheme(\${theme});",
+          ]
+        },
+        "FPCBuildContextTimeOfDay": {
+          "prefix": "fpccontexttimeofday",
+          "body": [
+            "final FPCTimeOfDay timeOfDay = context.fpcTimeOfDay;",
+          ]
+        },
+        "FPCBuildContextChangeTimeOfDay": {
+          "prefix": "fpccontextchangetimeofday",
+          "body": [
+            "context.fpcChangeTimeOfDay(\${timeofday});",
           ]
         },
       },
     ),
   );
 
-  final File fpcGlobalSnippetsFile = File("fpc_global.json");
+  final File fpcGlobalSnippetsFile = File(
+    "fpc_global.json",
+  );
   fpcGlobalSnippetsFile.writeAsStringSync(
     _jsonEncoder.convert(
       const {
@@ -479,7 +498,11 @@ void _preparePackageTable() {
   final List<FileSystemEntity> snippetEntites = Directory.current.listSync(
     recursive: true,
   );
-  snippetEntites.sort((a, b) => a.path.compareTo(b.path));
+  snippetEntites.sort(
+    (a, b) => a.path.compareTo(
+      b.path,
+    ),
+  );
   final List<Map<String, String>> snippetList = [];
   for (FileSystemEntity entity in snippetEntites) {
     snippetList.add(
@@ -494,14 +517,28 @@ void _preparePackageTable() {
 }
 
 void _prepareReadmeTable() async {
-  final File readmeFile = File("README.md");
+  final File readmeFile = File(
+    "README.md",
+  );
   final IOSink sink = readmeFile.openWrite();
-  sink.write("| Prefix | Name of component or function |\n");
-  sink.write("| - | - |\n");
+  sink.write(
+    "| Prefix | Name of component or function |\n",
+  );
+  sink.write(
+    "| - | - |\n",
+  );
   final List<FileSystemEntity> snippetEntites = Directory.current.listSync(
     recursive: true,
   );
-  snippetEntites.sort((a, b) => a.path.compareTo(b.path));
+  snippetEntites.sort(
+    (
+      a,
+      b,
+    ) =>
+        a.path.compareTo(
+      b.path,
+    ),
+  );
   for (FileSystemEntity entity in snippetEntites) {
     if (entity.path.contains("fpc_") == false) {
       continue;
@@ -512,7 +549,11 @@ void _prepareReadmeTable() async {
         (jsonDecode((entity as File).readAsStringSync())
                 as Map<String, dynamic>)
             .map(
-      (key, value) => MapEntry(
+      (
+        key,
+        value,
+      ) =>
+          MapEntry(
         key,
         _Snippet(
           prefix: value["prefix"],
@@ -521,9 +562,13 @@ void _prepareReadmeTable() async {
       ),
     );
     for (MapEntry<String, _Snippet> entry in snippets.entries) {
-      sink.write("| ${entry.value.prefix} | ${entry.key} |\n");
+      sink.write(
+        "| ${entry.value.prefix} | ${entry.key} |\n",
+      );
     }
-    sink.write("|||\n");
+    sink.write(
+      "|||\n",
+    );
   }
   await sink.close();
 }
