@@ -33,7 +33,7 @@ export 'src/application/platform/navigation/lib.dart';
 export 'src/application/platform/picker/lib.dart';
 export 'src/application/platform/pin_field/lib.dart';
 export 'src/application/platform/platform/lib.dart';
-export 'src/application/platform/pop_up_menu/lib.dart';
+export 'src/application/platform/pop_up/lib.dart';
 export 'src/application/platform/radio/lib.dart';
 export 'src/application/platform/scaffold/lib.dart';
 export 'src/application/platform/scrollbar/lib.dart';
