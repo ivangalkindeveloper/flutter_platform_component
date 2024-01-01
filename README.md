@@ -49,6 +49,7 @@
   - [Disabled Snippets](#snippets)
 - [Design](#design)
 - [Dependencies](#dependencies)
+- [Additional information](#additional-information)
 
 <br>
 
@@ -110,6 +111,6 @@ Express our gratitude to the authors of these dependencies.
 
 <br>
 
-## Additional Information
+## Additional information
 For more details see example project.\
 And feel free to open an issue if you find any bugs or errors or suggestions.
