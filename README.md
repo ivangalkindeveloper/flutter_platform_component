@@ -1,6 +1,6 @@
 <h1 align="center">Flutter Platform Component</h1>
-
 <div align="center">
+  
   📱 Ready-made inherited component base using ready-made abstractions for quick use and decomposed by platform.
   <br>
   <br>
@@ -14,25 +14,23 @@
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT">
   </a>
+  
 </div>
-
 <div align="center">
+  
   <a href="https://www.buymeacoffee.com/ivangalkin">
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="32px" width= "128px">
   </a>
+  
 </div>
-
 <br>
-
 <div align="center">
-
+  
   [VS Code Snippets](https://marketplace.visualstudio.com/items?itemName=ivangalkin.flutter-platform-component-snippet) have been generated for this package:
   
   ![](https://github.com/ivangalkindeveloper/flutter_platform_component/blob/master/asset/snippet.gif)
-
+  
 </div>
-
-<br>
 
 ## Getting Started
 - [Documentation](#documentation)
@@ -49,14 +47,11 @@
   - [Disabled Snippets](#snippets)
 - [Design](#design)
 - [Dependencies](#dependencies)
+- [TODO](#todo)
 - [Additional information](#additional-information)
-
-<br>
 
 ## Documentation
 See the documentation for using the package and components here - [Flutter Platform Component Wiki](https://github.com/ivangalkindeveloper/flutter_platform_component/wiki/Flutter-Platform-Component-Wiki).
-
-<br>
 
 ## Benefits
 The package works according to the principle: fill out needed contracts - get all ready-made inherited platform components.
@@ -86,8 +81,6 @@ Every component that can be clicked has the property to be disabled implemented.
 ### Snippets
 VS Code snippets have been generated for this package for convenient development and creating your own widget wrappers.
 
-<br>
-
 ## Design
 Components follow the following design paradigm:
 1) The component should not contain business logic;
@@ -96,8 +89,6 @@ Components follow the following design paradigm:
 4) Component change the color of the disabled component, if it only has not background color;
 5) The design of cross-platform components and their behavior are not mix.
 
-<br>
-
 ## Dependencies
 The package uses a fork of the following dependencies:\
 [animate_do](https://pub.dev/packages/animate_do) - fade animations;\
@@ -105,11 +96,15 @@ The package uses a fork of the following dependencies:\
 [badges](https://pub.dev/packages/badges) - badges;\
 [dotted_border](https://pub.dev/packages/dotted_border) - dotted border container;\
 [flutter_vibrate](https://pub.dev/packages/flutter_vibrate) - all vibrations;\
-[modal_bottom_sheet](https://pub.dev/packages/modal_bottom_sheet) - transitions that support modal animations and modal windows appearance method;\
+[modal_bottom_sheet](https://pub.dev/packages/modal_bottom_sheet) (fork) - transitions that support modal animations and modal windows appearance method;\
 [pinput](https://pub.dev/packages/pinput) - code fields and PIN fields.\
 Express our gratitude to the authors of these dependencies.
 
-<br>
+## TODO
+1) Elevation of components;
+2) Support WEB & desktop;
+3) FPCTooltip;
+4) FPCDrawer.
 
 ## Additional information
 For more details see example project.\
