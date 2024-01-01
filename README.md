@@ -51,7 +51,7 @@
 - [Additional information](#additional-information)
 
 ## Documentation
-See the documentation for using the package and components here - [Flutter Platform Component Wiki](https://github.com/ivangalkindeveloper/flutter_platform_component/wiki/Flutter-Platform-Component-Wiki).
+See the documentation for using the package and components here - [Flutter Platform Component Wiki](https://github.com/ivangalkindeveloper/flutter_platform_component/wiki).
 
 ## Benefits
 The package works according to the principle: fill out needed contracts - get all ready-made inherited platform components.
