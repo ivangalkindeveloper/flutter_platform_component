@@ -1,3 +1,4 @@
+import 'package:flutter_platform_component/src/utility/extension/fpc_package_extension.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/widgets.dart';
