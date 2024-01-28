@@ -145,57 +145,57 @@ class FPCPopUpMenu extends FPCPlatformWidget {
       itemBuilder: (
         BuildContext context,
       ) =>
-          this
-              .items
-              .map(
-                (
-                  FPCPopUpItem item,
-                ) =>
-                    switch (item) {
-                  FPCPopUpMenuHeader() => header(
-                      item,
-                    ),
-                  FPCPopUpMenuTitle() => title(
-                      item,
-                    ),
-                  FPCPopUpMenuDivider() => const PullDownMenuDivider.large(),
-                  FPCPopUpMenuMediumRow(
-                    items: final List<FPCPopUpMenuMediumRowItem> items,
+          List.generate(
+        this.items.length,
+        (
+          int index,
+        ) {
+          final FPCPopUpItem item = this.items[index];
+          return switch (item) {
+            FPCPopUpMenuHeader() => header(
+                item,
+              ),
+            FPCPopUpMenuTitle() => title(
+                item,
+              ),
+            FPCPopUpMenuDivider() => const PullDownMenuDivider.large(),
+            FPCPopUpMenuMediumRow(
+              items: final List<FPCPopUpMenuMediumRowItem> items,
+            ) =>
+              PullDownMenuActionsRow.medium(
+                items: List.generate(
+                  items.length,
+                  (
+                    int index,
                   ) =>
-                    PullDownMenuActionsRow.medium(
-                      items: items
-                          .map(
-                            (
-                              FPCPopUpMenuMediumRowItem item,
-                            ) =>
-                                mediumRowMenuButton(
-                              item,
-                            ),
-                          )
-                          .toList(),
-                    ),
-                  FPCPopUpMenuSmallRow(
-                    items: final List<FPCPopUpMenuSmallRowItem> items,
+                      mediumRowMenuButton(
+                    items[index],
+                  ),
+                  growable: false,
+                ),
+              ),
+            FPCPopUpMenuSmallRow(
+              items: final List<FPCPopUpMenuSmallRowItem> items,
+            ) =>
+              PullDownMenuActionsRow.small(
+                items: List.generate(
+                  items.length,
+                  (
+                    int index,
                   ) =>
-                    PullDownMenuActionsRow.small(
-                      items: items
-                          .map(
-                            (
-                              FPCPopUpMenuSmallRowItem item,
-                            ) =>
-                                smallRowMenuButton(
-                              item,
-                            ),
-                          )
-                          .toList(),
-                    ),
-                  FPCPopUpMenuItem() => menuButton(
-                      item,
-                    ),
-                },
-              )
-              .cast<PullDownMenuEntry>()
-              .toList(),
+                      smallRowMenuButton(
+                    items[index],
+                  ),
+                  growable: false,
+                ),
+              ),
+            FPCPopUpMenuItem() => menuButton(
+                item,
+              ),
+          } as PullDownMenuEntry;
+        },
+        growable: false,
+      ),
       buttonBuilder: (
         BuildContext context,
         Future<void> Function() showMenu,
@@ -291,7 +291,6 @@ class FPCPopUpMenu extends FPCPlatformWidget {
         );
 
     MenuItemButton mediumRowMenuButton(
-      int length,
       FPCPopUpMenuMediumRowItem item,
     ) {
       final Color iconColor = item.isDestructive ? theme.danger : theme.black;
@@ -331,7 +330,6 @@ class FPCPopUpMenu extends FPCPlatformWidget {
     }
 
     Widget smallRowMenuButton(
-      int length,
       FPCPopUpMenuSmallRowItem item,
     ) {
       final Color iconColor = item.isDestructive ? theme.danger : theme.black;
@@ -410,58 +408,57 @@ class FPCPopUpMenu extends FPCPlatformWidget {
           ),
         ),
       ),
-      menuChildren: this
-          .items
-          .map(
-            (
-              FPCPopUpItem item,
+      menuChildren: List.generate(
+        this.items.length,
+        (
+          int index,
+        ) {
+          final FPCPopUpItem item = items[index];
+          return switch (item) {
+            FPCPopUpMenuHeader() => headerButton(
+                item,
+              ),
+            FPCPopUpMenuTitle() => title(
+                item,
+              ),
+            FPCPopUpMenuDivider() => const SizedBox(),
+            FPCPopUpMenuMediumRow(
+              items: final List<FPCPopUpMenuMediumRowItem> items,
             ) =>
-                switch (item) {
-              FPCPopUpMenuHeader() => headerButton(
-                  item,
+              Row(
+                children: List.generate(
+                  items.length,
+                  (
+                    int index,
+                  ) =>
+                      mediumRowMenuButton(
+                    items[index],
+                  ),
+                  growable: false,
                 ),
-              FPCPopUpMenuTitle() => title(
-                  item,
+              ),
+            FPCPopUpMenuSmallRow(
+              items: final List<FPCPopUpMenuSmallRowItem> items,
+            ) =>
+              Row(
+                children: List.generate(
+                  items.length,
+                  (
+                    int index,
+                  ) =>
+                      smallRowMenuButton(
+                    items[index],
+                  ),
+                  growable: false,
                 ),
-              FPCPopUpMenuDivider() => const SizedBox(),
-              FPCPopUpMenuMediumRow(
-                items: final List<FPCPopUpMenuMediumRowItem> items,
-              ) =>
-                Row(
-                  children: items
-                      .map(
-                        (
-                          FPCPopUpMenuMediumRowItem item,
-                        ) =>
-                            mediumRowMenuButton(
-                          items.length,
-                          item,
-                        ),
-                      )
-                      .toList(),
-                ),
-              FPCPopUpMenuSmallRow(
-                items: final List<FPCPopUpMenuSmallRowItem> items,
-              ) =>
-                Row(
-                  children: items
-                      .map(
-                        (
-                          FPCPopUpMenuSmallRowItem item,
-                        ) =>
-                            smallRowMenuButton(
-                          items.length,
-                          item,
-                        ),
-                      )
-                      .toList(),
-                ),
-              FPCPopUpMenuItem() => menuButton(
-                  item,
-                ),
-            },
-          )
-          .toList(),
+              ),
+            FPCPopUpMenuItem() => menuButton(
+                item,
+              ),
+          };
+        },
+        growable: false,
+      ),
       builder: (
         BuildContext context,
         MenuController controller,

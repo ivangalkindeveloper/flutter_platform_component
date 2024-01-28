@@ -54,37 +54,41 @@ class FPCPageIndicator extends StatelessWidget {
 
     return Row(
       mainAxisSize: MainAxisSize.min,
-      children: [
-        for (int index = 0; index < this.length; index++)
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              AnimatedContainer(
-                height: height,
-                width: this._width(
-                  size,
+      children: List.generate(
+        this.length,
+        (
+          int index,
+        ) =>
+            Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            AnimatedContainer(
+              height: height,
+              width: this._width(
+                size,
+                index,
+              ),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(
+                  size.s32,
+                ),
+                color: this._color(
                   index,
                 ),
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(
-                    size.s32,
-                  ),
-                  color: this._color(
-                    index,
-                  ),
-                ),
-                duration: durationBuild,
-                curve: animation.curve,
-                child: const SizedBox(),
               ),
-              if (index != (this.length - 1))
-                SizedBox(
-                  width: size.s16 / 2,
-                ),
-            ],
-          ),
-      ],
+              duration: durationBuild,
+              curve: animation.curve,
+              child: const SizedBox(),
+            ),
+            if (index != (this.length - 1))
+              SizedBox(
+                width: size.s16 / 2,
+              ),
+          ],
+        ),
+        growable: false,
+      ),
     );
   }
 }

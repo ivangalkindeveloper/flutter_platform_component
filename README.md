@@ -104,7 +104,8 @@ Express our gratitude to the authors of these dependencies.
 1) Elevation of components;
 2) Support WEB & desktop;
 3) FPCTooltip;
-4) FPCDrawer.
+4) FPCDrawer;
+5) Script for properties comments for pub scores.
 
 ## Additional information
 For more details see example project.\

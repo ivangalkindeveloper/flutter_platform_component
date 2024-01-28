@@ -1,9 +1,13 @@
+## 4.0.2
+* Optimizing map() to List.generate methods;
+* Updates dependencies.
+
 ## 4.0.1
 Addings:
 * Flutter Platform Component Wiki;
 
 Refactoring:
-* README;
+* README.
 
 ## 4.0.0
 Addings:

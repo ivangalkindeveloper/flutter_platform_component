@@ -109,17 +109,17 @@ class FPCActionBottomSheet<T> extends FPCPlatformWidget
       child: CupertinoActionSheet(
         title: title,
         message: content,
-        actions: items
-            .map(
-              (
-                FPCActionBottomSheetItem item,
-              ) =>
-                  buildItem(
-                size: size,
-                item: item,
-              ),
-            )
-            .toList(),
+        actions: List.generate(
+          this.items.length,
+          (
+            int index,
+          ) =>
+              buildItem(
+            size: size,
+            item: this.items[index],
+          ),
+          growable: false,
+        ),
         cancelButton: this.cancelItem != null
             ? buildItem(
                 size: size,
@@ -260,18 +260,20 @@ class FPCActionBottomSheet<T> extends FPCPlatformWidget
       child: Wrap(
         children: [
           if (content != null) content,
-          ...items.map(
+          ...List.generate(
+            items.length,
             (
-              FPCActionBottomSheetItem item,
+              int index,
             ) =>
                 buildItem(
               theme: theme,
               size: size,
               font: font,
               backgroundColor: backgroundColor,
-              item: item,
+              item: items[index],
               itemStyle: itemStyle,
             ),
+            growable: false,
           ),
           if (this.cancelItem != null)
             buildItem(

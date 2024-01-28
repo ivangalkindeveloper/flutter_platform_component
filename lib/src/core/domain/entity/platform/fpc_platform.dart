@@ -1,4 +1,3 @@
-import 'package:collection/collection.dart';
 import 'package:flutter/foundation.dart';
 
 enum FPCPlatform {
@@ -7,13 +6,14 @@ enum FPCPlatform {
 
   static FPCPlatform? fromString(
     String name,
-  ) =>
-      FPCPlatform.values.firstWhereOrNull(
-        (
-          FPCPlatform platform,
-        ) =>
-            platform.name == name,
-      );
+  ) {
+    for (FPCPlatform platform in FPCPlatform.values) {
+      if (platform.name == name) {
+        return platform;
+      }
+    }
+    return null;
+  }
 
   static FPCPlatform fromTarget(
     TargetPlatform platform,

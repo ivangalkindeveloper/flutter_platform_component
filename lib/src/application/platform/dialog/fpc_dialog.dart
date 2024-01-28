@@ -73,18 +73,17 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
       content: buildContent(
         style: this.descriptionStyle,
       ),
-      actions: this
-          .items
-          .map(
-            (
-              FPCDialogItem item,
-            ) =>
-                buildItem(
-              item: item,
-              itemStyle: this.itemStyle,
-            ),
-          )
-          .toList(),
+      actions: List.generate(
+        this.items.length,
+        (
+          int index,
+        ) =>
+            buildItem(
+          item: this.items[index],
+          itemStyle: this.itemStyle,
+        ),
+        growable: false,
+      ),
     );
   }
 
@@ -146,19 +145,18 @@ class FPCDialog<T> extends FPCPlatformWidget with FPCDialogMixin<T> {
       content: buildContent(
         style: this.descriptionStyle,
       ),
-      actions: this
-          .items
-          .map(
-            (
-              FPCDialogItem item,
-            ) =>
-                buildItem(
-              item: item,
-              style: this.itemStyle,
-              borderRadius: borderRadius,
-            ),
-          )
-          .toList(),
+      actions: List.generate(
+        this.items.length,
+        (
+          int index,
+        ) =>
+            buildItem(
+          item: this.items[index],
+          style: this.itemStyle,
+          borderRadius: borderRadius,
+        ),
+        growable: false,
+      ),
     );
   }
 }

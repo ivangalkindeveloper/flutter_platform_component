@@ -1,6 +1,5 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
 import 'package:dotted_border/dotted_border.dart';
-import 'package:collection/collection.dart';
 
 import 'package:animations/animations.dart'
     show ContainerTransitionType, SharedAxisTransitionType;
@@ -35,8 +34,14 @@ extension FPCTransitionTypeExtension on FPCSwitcherTransitionType {
 }
 
 extension FPCBadgePositionExtension on FPCBadgePosition {
-  FPCBadgePosition? fromString(String name) => FPCBadgePosition.values
-      .firstWhereOrNull((FPCBadgePosition position) => position.name == name);
+  FPCBadgePosition? fromString(String name) {
+    for (FPCBadgePosition position in FPCBadgePosition.values) {
+      if (position.name == name) {
+        return position;
+      }
+    }
+    return null;
+  }
 
   badges.BadgePosition get packageMapForCounter {
     switch (this) {

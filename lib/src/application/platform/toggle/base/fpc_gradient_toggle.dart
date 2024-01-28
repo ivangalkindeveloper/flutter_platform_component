@@ -2,7 +2,6 @@ import 'package:flutter_platform_component/src/core/data/exception/fpc_items_len
 import 'package:flutter_platform_component/src/core/data/exception/fpc_items_empty_exception.dart';
 import 'package:flutter_platform_component/src/application/helper/fpc_button_row_child.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
 
 class FPCGradientToggle<T> extends StatefulWidget {
@@ -157,51 +156,55 @@ class _FPCGradientToggleState<T> extends State<FPCGradientToggle<T>> {
           ),
           Row(
             mainAxisSize: MainAxisSize.min,
-            children: this.widget.items.mapIndexed((
-              int index,
-              FPCToggleItem item,
-            ) {
-              final void Function() onPressed = this.widget.isDisabled
-                  ? () {}
-                  : () {
-                      if (this._isValidationError == true) {
-                        setState(
-                          () => this._isValidationError = false,
-                        );
-                      }
-                      this.widget.onChanged(
-                            item.value,
+            children: List.generate(
+              this.widget.items.length,
+              (
+                int index,
+              ) {
+                final FPCToggleItem item = this.widget.items[index];
+                final void Function() onPressed = this.widget.isDisabled
+                    ? () {}
+                    : () {
+                        if (this._isValidationError == true) {
+                          setState(
+                            () => this._isValidationError = false,
                           );
-                    };
-              final bool isSelected = item.value == this.widget.value;
+                        }
+                        this.widget.onChanged(
+                              item.value,
+                            );
+                      };
+                final bool isSelected = item.value == this.widget.value;
 
-              return this._expandedWrapper(
-                child: _FPCGradientToggleButton(
-                  item: item,
-                  index: index,
-                  length: this.widget.items.length,
-                  unselectedBackgroundGradient:
-                      this.widget.unselectedBackgroundGradient,
-                  unselectedInternalGradient:
-                      this.widget.unselectedInternalGradient,
-                  unselectedSplashColor: this.widget.unselectedSplashColor,
-                  unselectedStyle: this.widget.unselectedStyle,
-                  selectedBackgroundGradient:
-                      this.widget.selectedBackgroundGradient,
-                  selectedInternalGradient:
-                      this.widget.selectedInternalGradient,
-                  selectedSplashColor: this.widget.selectedSplashColor,
-                  selectedStyle: this.widget.selectedStyle,
-                  internalIconHeight: this.widget.internalIconHeight,
-                  height: height,
-                  borderRadius: borderRadius,
-                  horizontalInterval: this.widget.horizontalInterval,
-                  onPressed: onPressed,
-                  isSelected: isSelected,
-                  isValidationError: this._isValidationError,
-                ),
-              );
-            }).toList(),
+                return this._expandedWrapper(
+                  child: _FPCGradientToggleButton(
+                    item: item,
+                    index: index,
+                    length: this.widget.items.length,
+                    unselectedBackgroundGradient:
+                        this.widget.unselectedBackgroundGradient,
+                    unselectedInternalGradient:
+                        this.widget.unselectedInternalGradient,
+                    unselectedSplashColor: this.widget.unselectedSplashColor,
+                    unselectedStyle: this.widget.unselectedStyle,
+                    selectedBackgroundGradient:
+                        this.widget.selectedBackgroundGradient,
+                    selectedInternalGradient:
+                        this.widget.selectedInternalGradient,
+                    selectedSplashColor: this.widget.selectedSplashColor,
+                    selectedStyle: this.widget.selectedStyle,
+                    internalIconHeight: this.widget.internalIconHeight,
+                    height: height,
+                    borderRadius: borderRadius,
+                    horizontalInterval: this.widget.horizontalInterval,
+                    onPressed: onPressed,
+                    isSelected: isSelected,
+                    isValidationError: this._isValidationError,
+                  ),
+                );
+              },
+              growable: false,
+            ),
           ),
         ],
       ),

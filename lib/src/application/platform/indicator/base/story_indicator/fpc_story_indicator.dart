@@ -38,25 +38,29 @@ class FPCStoryIndicator extends StatelessWidget {
     final FPCSize size = context.fpcSize;
 
     return Row(
-      children: [
-        for (int index = 0; index < this.length; index++)
-          Expanded(
-            child: Row(
-              children: [
-                Expanded(
-                  child: FPCProgressIndicator(
-                    backgroundColor: this.backgroundColor,
-                    color: this.color,
-                    value: this._value(
-                      index,
-                    ),
+      children: List.generate(
+        this.length,
+        (
+          int index,
+        ) =>
+            Expanded(
+          child: Row(
+            children: [
+              Expanded(
+                child: FPCProgressIndicator(
+                  backgroundColor: this.backgroundColor,
+                  color: this.color,
+                  value: this._value(
+                    index,
                   ),
                 ),
-                if (index != (this.length - 1)) SizedBox(width: size.s16 / 4),
-              ],
-            ),
+              ),
+              if (index != (this.length - 1)) SizedBox(width: size.s16 / 4),
+            ],
           ),
-      ],
+        ),
+        growable: false,
+      ),
     );
   }
 }

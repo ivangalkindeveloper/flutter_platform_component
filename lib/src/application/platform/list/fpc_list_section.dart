@@ -1,5 +1,4 @@
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
 
 import 'package:flutter/material.dart' show Colors;
@@ -58,10 +57,12 @@ class FPCListSection extends FPCPlatformWidget {
             borderRadius: BorderRadius.circular(32),
           ),
           dividerMargin: separatorPadding,
-          children: this.items.map(
+          children: List.generate(
+            this.items.length,
             (
-              FPCListSectionItem item,
+              int index,
             ) {
+              final FPCListSectionItem item = this.items[index];
               final Widget? subtitle = item.description != null
                   ? Text(
                       item.description!,
@@ -82,7 +83,8 @@ class FPCListSection extends FPCPlatformWidget {
                 onTap: item.onPressed,
               );
             },
-          ).toList(),
+            growable: false,
+          ),
         ),
       ],
     );
@@ -124,11 +126,13 @@ class FPCListSection extends FPCPlatformWidget {
 
     return Column(
       mainAxisSize: MainAxisSize.min,
-      children: this.items.mapIndexed(
+      children: List.generate(
+        this.items.length,
         (
           int index,
-          FPCListSectionItem item,
         ) {
+          final FPCListSectionItem item = this.items[index];
+
           final Radius topLeft = (index == 0)
               ? Radius.circular(borderRadius.topLeft.x)
               : Radius.zero;
@@ -220,7 +224,8 @@ class FPCListSection extends FPCPlatformWidget {
             ],
           );
         },
-      ).toList(),
+        growable: false,
+      ),
     );
   }
 }

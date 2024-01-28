@@ -3,7 +3,6 @@ import 'package:flutter_platform_component/src/core/data/exception/fpc_items_len
 import 'package:flutter_platform_component/src/core/data/exception/fpc_items_empty_exception.dart';
 import 'package:flutter_platform_component/src/application/helper/fpc_button_row_child.dart';
 import 'package:flutter_platform_component/flutter_platform_component.dart';
-import 'package:collection/collection.dart';
 import 'package:flutter/widgets.dart';
 
 import 'package:flutter/material.dart' show Colors;
@@ -160,56 +159,60 @@ class _FPCGradientSegmentControlState<T>
           ),
           Row(
             mainAxisSize: MainAxisSize.min,
-            children: this.widget.items.mapIndexed((
-              int index,
-              FPCSegmentControlItem item,
-            ) {
-              final void Function() onPressed = this.widget.isDisabled
-                  ? () {}
-                  : () {
-                      if (this._isValidationError = true) {
-                        setState(
-                          () => this._isValidationError = false,
-                        );
-                      }
-                      this.widget.onChanged(
-                            item.value,
+            children: List.generate(
+              this.widget.items.length,
+              (
+                int index,
+              ) {
+                final FPCSegmentControlItem item = this.widget.items[index];
+                final void Function() onPressed = this.widget.isDisabled
+                    ? () {}
+                    : () {
+                        if (this._isValidationError = true) {
+                          setState(
+                            () => this._isValidationError = false,
                           );
-                    };
-              final bool isSelected = this.widget.value == item.value;
+                        }
+                        this.widget.onChanged(
+                              item.value,
+                            );
+                      };
+                final bool isSelected = this.widget.value == item.value;
 
-              return this._expandedWrapper(
-                child: _FPCSegmentControlButton(
-                  index: index,
-                  item: item,
-                  length: this.widget.items.length,
-                  unselectedBackgroundGradient:
-                      this.widget.unselectedBackgroundGradient,
-                  unselectedBorderGradient:
-                      this.widget.unselectedBorderGradient,
-                  unselectedInternalGradient:
-                      this.widget.unselectedInternalGradient,
-                  unselectedSplashColor: this.widget.unselectedSplashColor,
-                  unselectedStyle: this.widget.unselectedStyle,
-                  selectedBackgroundGradient:
-                      this.widget.selectedBackgroundGradient,
-                  selectedBorderGradient: this.widget.selectedBorderGradient,
-                  selectedInternalGradient:
-                      this.widget.selectedInternalGradient,
-                  selectedSplashColor: this.widget.selectedSplashColor,
-                  selectedStyle: this.widget.selectedStyle,
-                  internalIconHeight: this.widget.internalIconHeight,
-                  height: height,
-                  borderRadius: borderRadius,
-                  borderWidth: this.widget.borderWidth,
-                  padding: this.widget.padding,
-                  isExpanded: this.widget.isExpanded,
-                  onPressed: onPressed,
-                  isSelected: isSelected,
-                  isValidationError: this._isValidationError,
-                ),
-              );
-            }).toList(),
+                return this._expandedWrapper(
+                  child: _FPCSegmentControlButton(
+                    index: index,
+                    item: item,
+                    length: this.widget.items.length,
+                    unselectedBackgroundGradient:
+                        this.widget.unselectedBackgroundGradient,
+                    unselectedBorderGradient:
+                        this.widget.unselectedBorderGradient,
+                    unselectedInternalGradient:
+                        this.widget.unselectedInternalGradient,
+                    unselectedSplashColor: this.widget.unselectedSplashColor,
+                    unselectedStyle: this.widget.unselectedStyle,
+                    selectedBackgroundGradient:
+                        this.widget.selectedBackgroundGradient,
+                    selectedBorderGradient: this.widget.selectedBorderGradient,
+                    selectedInternalGradient:
+                        this.widget.selectedInternalGradient,
+                    selectedSplashColor: this.widget.selectedSplashColor,
+                    selectedStyle: this.widget.selectedStyle,
+                    internalIconHeight: this.widget.internalIconHeight,
+                    height: height,
+                    borderRadius: borderRadius,
+                    borderWidth: this.widget.borderWidth,
+                    padding: this.widget.padding,
+                    isExpanded: this.widget.isExpanded,
+                    onPressed: onPressed,
+                    isSelected: isSelected,
+                    isValidationError: this._isValidationError,
+                  ),
+                );
+              },
+              growable: false,
+            ),
           ),
         ],
       ),

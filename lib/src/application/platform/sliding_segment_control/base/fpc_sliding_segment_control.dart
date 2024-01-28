@@ -177,10 +177,13 @@ class _FPCSlidingSegmentControlState<T>
           backgroundColor: backgroundColor,
           thumbColor: this.widget.thumbColor,
           children: Map.fromEntries(
-            this.widget.items.map(
+            List.generate(
+              this.widget.items.length,
               (
-                FPCSlidingSegmentControlItem item,
+                int index,
               ) {
+                final FPCSlidingSegmentControlItem item =
+                    this.widget.items[index];
                 final bool isSelected = this.widget.value == item.value;
                 final Color internalColor = this._internalColor(
                   isSelected: isSelected,
@@ -219,6 +222,7 @@ class _FPCSlidingSegmentControlState<T>
                   ),
                 );
               },
+              growable: false,
             ),
           ),
         ),
