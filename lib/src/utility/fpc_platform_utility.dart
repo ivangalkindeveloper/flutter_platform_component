@@ -16,6 +16,21 @@ class FPCPlatformUtility {
     }
   }
 
+  static T decomposeFromTarget<T, Cupertino extends T, Material extends T>({
+    required TargetPlatform platform,
+    required Cupertino cupertino,
+    required Material material,
+  }) {
+    switch (FPCPlatform.fromTarget(
+      platform,
+    )) {
+      case FPCPlatform.iOS:
+        return cupertino;
+      case FPCPlatform.android:
+        return material;
+    }
+  }
+
   static T decomposeFromContext<T, Cupertino extends T, Material extends T>({
     required BuildContext context,
     required Cupertino cupertino,
@@ -29,7 +44,7 @@ class FPCPlatformUtility {
     }
   }
 
-  static bool get isIO => [
+  static bool get isIO => const [
         TargetPlatform.iOS,
         TargetPlatform.android,
       ].contains(

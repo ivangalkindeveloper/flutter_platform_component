@@ -1,3 +1,6 @@
+## 4.0.3
+* Adding decomposeFromTarget method;
+
 ## 4.0.2
 * Optimizing map() to List.generate methods;
 * Updates dependencies.
